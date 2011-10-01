@@ -1,0 +1,30 @@
+To build and install cif command:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * You can set the following <Printer Model Name>.
+            mg8200 , mg6200 , mg5300 , mg4100 , mg3100 , mg2100 , ip4900 , e500
+
+Example mg8200:
+
+        ./autogen.sh --program-suffix=mg8200
+        make
+        make install
+
+
+Appendix:
+
+        * You can also set the following path.
+           --prefix
+                cif command (ex.cifmg8200)                : default ... /usr/local
+           --enable-libpath
+                *.conf,*.tbl(ex.cifmg8200.conf)           : default ... /usr/lib/bjlib
+
+       Example:
+
+           ./autogen.sh --program-suffix=mg8200 --enable-libpath=/usr/lib/bjlib
+           make
+           make install
+

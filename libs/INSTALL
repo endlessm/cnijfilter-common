@@ -1,0 +1,5 @@
+To build misc libraries:
+
+ build
+    ./autogen.sh
+    make

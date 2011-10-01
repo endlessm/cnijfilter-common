@@ -1,0 +1,39 @@
+
+How to build rpm:
+=================
+    * When you build one printer driver package.
+    --------------------------------------------
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --define="MODEL [Printer Model Name]" --define="MODEL_NUM [Printer Model ID]" --with build_common_package	
+
+
+    * When you build plural printer driver packages.
+    ------------------------------------------------
+	step 1)
+    $ rpmbuild -tc cnijfilter-source-X.XX-Y.tar.gz --with prepare_fastbuild
+	step 2)
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL [Printer Model Name]" --define="MODEL_NUM [Printer Model ID]" --with build_common_package	
+	step 3) and after step 3)
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL [Printer Model Name]" --define="MODEL_NUM [Printer Model ID]"
+
+    You can set the following [Printer Model Name]/[Printer Model ID].
+        [Printer Model Name]        [Printer Model ID]
+    ------------------------------------------------------------------
+         mx360                       380
+         mx410                       381
+         mx420                       382
+         mx880                       383
+         ix6500                      384
+
+
+Example:
+========
+    * Example for build MX360 package:
+	----------------------------------
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --define="MODEL MX360" --define="MODEL_NUM 380" --with build_common_package	
+
+    * Example for build MX360/MX410/MX420 packages:
+	-----------------------------------------------
+    $ rpmbuild -tc cnijfilter-source-X.XX-Y.tar.gz --with prepare_fastbuild
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL MX360" --define="MODEL_NUM 380" --with build_common_package	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL MX410" --define="MODEL_NUM 381"	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL MX420" --define="MODEL_NUM 382"	

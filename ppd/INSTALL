@@ -1,0 +1,13 @@
+To install ppd file:
+    ./autogen.sh --prefix=/usr --program-suffix=<Printer Model Name>
+	make install
+
+You can set the following <Printer Model Name>.
+    mg2100
+    mg3100
+    mg4100
+    mg5300
+    mg6200
+    mg8200
+    ip4900
+    e500

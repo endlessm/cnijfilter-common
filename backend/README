@@ -1,0 +1,23 @@
+cnijusb       --- CUPS USB backend for Canon Inkjet Printer Driver for Linux
+
+
+DESCRIPTION
+    The "cnijusb" is the CUPS backend program for USB.
+    which fork the "lgmon*" process to obtain the printer status.
+
+REQUIREMENTS
+    You need the following libraries.
+    * libcups                 (1.1.x or above)
+
+    And you need the following programs.
+    * CUPS                    (1.1.14 or above)
+
+INSTALLATION
+    See the file "INSTALL"
+
+LICENSE
+    See the file "LICENSE.canon.txt" which is the license terms for the
+    programs made by Canon, and "LICENSE.txt" which is the original license
+    terms for the usb backend program derived from the code made 
+    by Easy Software Products.
+
