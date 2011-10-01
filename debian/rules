@@ -88,7 +88,6 @@ clean:
 	dh_testroot
 	rm -f build-stamp configure-stamp
 	# Add here commands to clean up after the build process.
-	-$(MAKE) clean
 	-$(MAKE) distclean
 	find . -name Makefile.in -print > file_lists1
 	find . -name Makefile.in.in -print >> file_lists1
