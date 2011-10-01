@@ -70,7 +70,10 @@ dnl Set PACKAGE_SOURCE_DIR in config.h.
 packagesrcdir=`cd $srcdir && pwd`
 AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "${packagesrcdir}")
 
-CFLAGS="-O2"
+case "$CFLAGS" in
+  *-O2* ) ;;
+  *) CFLAGS="$CFLAGS -O2"
+esac
 
 dnl Use -Wall if we have gcc.
 changequote(,)dnl

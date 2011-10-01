@@ -61,7 +61,10 @@ AC_C_CONST
 AC_TYPE_SIZE_T
 
 dnl OPTION
-CFLAGS="-O2"
+case "$CFLAGS" in
+  *-O2* ) ;;
+  *) CFLAGS="$CFLAGS -O2"
+esac
 
 dnl Checks for library functions.
 AC_CHECK_FUNCS(socket)
