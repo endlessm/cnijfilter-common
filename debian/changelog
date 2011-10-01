@@ -1,6 +1,6 @@
-cnijfilter-common (3.60-1) stable; urgency=low
+cnijfilter-common-3.60 (3.60-1) oneiric; urgency=low
 
   * Initial Release.
 
- -- Canon Inc. <sup-debian@list.canon.co.jp>  Wed, 20 Jul 2011 12:00:00 +0900
+ -- Michael Gruz <michael-gruz@seznam.cz>  Sat, 01 Oct 2011 14:16:43 +0200
 

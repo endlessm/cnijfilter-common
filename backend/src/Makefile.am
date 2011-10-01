@@ -7,7 +7,7 @@ transform =
 
 cnijusb_SOURCES = cnij_backend_common.c cnij_usb.c
 
-CFLAGS = -O2 -Wall
+cnijusb_CFLAGS = -O2 -Wall
 
 cnijusb_LDADD = -lcups
 

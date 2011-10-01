@@ -26,6 +26,7 @@ PRINTER_PKG_PROGRAM+=printui
 PRINTER_PKG_PROGRAM+=lgmon
 PRINTER_PKG_PROGRAM+=cngpijmon
 
+SHELL = /bin/bash
 CFLAGS = -Wall -g
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
@@ -85,10 +86,40 @@ clean:
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
-
 	# Add here commands to clean up after the build process.
 	-$(MAKE) clean
-
+	-$(MAKE) distclean
+	find . -name Makefile.in -print > file_lists1
+	find . -name Makefile.in.in -print >> file_lists1
+	find . -name Makefile.org -print >> file_lists1
+	find . -name config.h -print >> file_lists1
+	find . -name config.h.org -print >> file_lists1
+	find . -name aclocal.m4 -print >> file_lists1
+	find . -name config.guess -print >> file_lists1
+	find . -name config.h.in -print >> file_lists1
+	find . -name config.sub -print >> file_lists1
+	find . -name config.log -print >> file_lists1
+	find . -name config.status -print >> file_lists1
+	find . -name configure -print >> file_lists1
+	find . -name depcomp -print >> file_lists1
+	find . -name install-sh -print >> file_lists1
+	find . -name ltmain.sh -print >> file_lists1
+	find . -name missing -print >> file_lists1
+	find . -name *.gmo -print >> file_lists1
+	find . -name POTFILES -print >> file_lists1
+	find . -name mkinstalldirs -print >> file_lists1
+	find . -name stamp-h1 -print >> file_lists1
+	find . -name file_lists -print >> file_lists1
+	find . -name COPYING -print >> file_lists1
+	for fn in `cat file_lists1`; do \
+	  if [ -d $${fn} ]; then \
+	    rm -r $${fn}; \
+	  else \
+	    rm -f $${fn}; \
+	  fi; \
+	done
+	rm -f file_lists1
+	rm -f install
 	dh_clean 
 
 install: build

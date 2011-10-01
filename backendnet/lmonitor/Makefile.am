@@ -6,7 +6,7 @@ transform =
 
 cnijnetprn_SOURCES = cnijnetchk.c cnijnetprn.c 
 
-CFLAGS = -O2 -Wall -I. -I./common 
+cnijnetprn_CFLAGS = -O2 -Wall -I. -I./common
 
 cnijnetprn_LDADD = -lcnnet -lc -ldl 
 cnijnetprn_LDFLAGS = -L../../com/libs_bin@ARC@

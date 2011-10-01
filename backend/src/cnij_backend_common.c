@@ -38,6 +38,7 @@
 // CUPS Header
 #include <cups/cups.h>
 #include <cups/ipp.h>
+#include <cups/ppd.h>
 
 // Header file for CANON
 #include "cnij_backend_common.h"
