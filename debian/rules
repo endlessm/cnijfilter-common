@@ -41,6 +41,7 @@ ifeq ($(LNGBITS),32)
 else
 	_arc=64
 endif
+LDFLAGS += -L../../com/libs_bin${_arc}
 
 configure: configure-stamp
 configure-stamp:
@@ -57,7 +58,7 @@ configure-stamp:
 	@echo "######## configure backend"; \
 	cd ./backend; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	@echo "######## configure backendnet"; \
-	cd ./backendnet; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin LDFLAGS="-L../../com/libs_bin${_arc}"
+	cd ./backendnet; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	@echo "######## configure sm sub process"; \
 	cd ./cngpijmon/cnijnpr; ./autogen.sh --prefix=/usr
 
@@ -120,6 +121,7 @@ clean:
 	done
 	rm -f file_lists1
 	rm -f install
+
 	dh_clean 
 
 install: build
