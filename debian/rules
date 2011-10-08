@@ -48,6 +48,9 @@ configure-stamp:
 	dh_testdir
 	# Add here commands to configure the package.
 
+	@echo "######## configure lib symlink"; \
+	cd ./; ./make-symlink.sh
+
 	### configure common package
 	@echo "######## configure libs"; \
 	cd ./libs; ./autogen.sh --prefix=/usr
