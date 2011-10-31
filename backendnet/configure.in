@@ -19,7 +19,11 @@ fi
 AC_DEFINE_UNQUOTED(BJLIB_PATH, "$enable_libpath")
 AC_SUBST(BJLIB_PATH)
 
-ARC=`getconf LONG_BIT`
+case "$CFLAGS" in
+  *-m32* ) ARC="32";;
+  *) ARC=`getconf LONG_BIT` 
+esac
+
 AC_SUBST(ARC)
 
 # Checks for programs.

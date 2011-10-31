@@ -1,0 +1,4 @@
+#/bin/bash
+cd skel
+./mk_debfile.pl ../rules
+mv cnijfilter-* ../

@@ -15,19 +15,20 @@ while( <IN> ){
 
 	if ( $line =~ /^PRINTER_DEPEND_PKG.+?=(.+$)/ ){
 		$info = $1;
-		if (  $info =~ /(.+)\-(.+)\-(.+)/ ){
+		if (  $info =~ /(.+)\-(.+)\-(.+)\-(.+)\-(.+)/ ){
 			$model = $2;
 			$num = $3;
+			$deco = "cnijfilter-$2-$3";
 			printf( "model: %s\n", $2 );
 			printf( "num: %s\n", $3 );
 			# doc file
 			`cp docs.skel cnijfilter-${model}series.docs`;
 
 			# postinst file
-			`perl -pe 's/XXXX/${info}/' postinst.skel >  cnijfilter-${model}series.postinst`;
+			`perl -pe 's/XXXX/${deco}/' postinst.skel >  cnijfilter-${model}series.postinst`;
 
-			# postinst file
-			`perl -pe 's/XXXX/${info}/' postrm.skel > cnijfilter-${model}series.postrm`;
+			# postrm file
+			`perl -pe 's/XXXX/${deco}/' postrm.skel > cnijfilter-${model}series.postrm`;
 		}
 	}
 }

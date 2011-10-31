@@ -1,0 +1,4177 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2010
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.30\n"
+"POT-Creation-Date: 2009-11-26 18:03+0900\n"
+"PO-Revision-Date: 2010-01-14 19:42+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_LOCALE
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "el_GR"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BLACK_LABEL
+#: po/gladestr.h:2
+msgid "  Black:"
+msgstr "  Μαύρο:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:4
+msgid "  Cyan:"
+msgstr "Κυανό:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:6
+msgid "  Magenta:"
+msgstr "Ματζέντα:"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_QUALITY
+#: po/gladestr.h:8
+msgid "  Set...  "
+msgstr "  Ρύθμιση...  "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:10
+msgid "  Yellow:"
+msgstr "Κίτρινο:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING_RANGE
+#: po/gladestr.h:13
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES_RANGE
+#: po/gladestr.h:15
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:16
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:17
+msgid "0"
+msgstr ""
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/gladestr.h:19
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/gladestr.h:21
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/gladestr.h:23
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/gladestr.h:25
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/gladestr.h:27
+msgid "5"
+msgstr "5"
+
+#. LUM_IDR_PV_MAIN_IDM_PV_VERSION
+#: po/gladestr.h:29
+msgid "About"
+msgstr "Πληροφορίες"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/gladestr.h:31
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "Ρύθμιση στη στήλη F (-3 έως +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/gladestr.h:33
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "Ρύθμιση στη στήλη G (-3 έως +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/gladestr.h:35
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "Ρύθμιση στη στήλη Q (-4 έως +4)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:37
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Ρύθμιση στις στήλες Α έως C (-3 έως +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/gladestr.h:39
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Ρύθμιση στις στήλες A έως D (-3 έως +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:41
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Ρύθμιση στις στήλες Α έως Ε (-3 έως +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/gladestr.h:43
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες A έως E (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/gladestr.h:45
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες A έως F (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/gladestr.h:47
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες A έως G (-5 έως +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/gladestr.h:49
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες D έως F (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/gladestr.h:51
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες E έως G (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/gladestr.h:53
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Ρύθμιση στις στήλες F και G (-3 έως +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/gladestr.h:55
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες F έως K (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/gladestr.h:57
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες G έως J (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/gladestr.h:59
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες G έως L (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/gladestr.h:61
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες H έως K (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/gladestr.h:63
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες H έως L (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/gladestr.h:65
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες H έως N (-5 έως +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/gladestr.h:67
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Ρύθμιση στις στήλες K και L (-3 έως +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/gladestr.h:69
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες K έως P (-5 έως +5)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/gladestr.h:71
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Ρύθμιση στις στήλες L και M (-3 έως +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/gladestr.h:73
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες L έως O (-5 έως +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:75
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες M και N (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/gladestr.h:77
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες M έως P (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/gladestr.h:79
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες M έως Q (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/gladestr.h:81
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες O έως T (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/gladestr.h:83
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Ρύθμιση στις στήλες P έως T (-5 έως +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/gladestr.h:85
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Ρύθμιση στις στήλες Q και R (-4 έως +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/gladestr.h:87
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες R έως U (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/gladestr.h:89
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες U και V (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/gladestr.h:91
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Ρύθμιση στις στήλες U και V (-3 έως +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/gladestr.h:93
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες V έως Y (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/gladestr.h:95
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Ρύθμιση στις στήλες W και X (-3 έως +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/gladestr.h:97
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες a έως e (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/gladestr.h:99
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες f έως j (-2 έως +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/gladestr.h:101
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Ρύθμιση στις στήλες f έως k (-2 έως +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/gladestr.h:103
+msgid "Align Print Head"
+msgstr "Ευθυγράμμιση της κεφαλής εκτύπωσης"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/gladestr.h:105
+msgid "Align heads manually"
+msgstr "Χειροκίνητη ευθυγράμμιση κεφαλών"
+
+#. LUM_IDS_CLEAN_ITEM_ALL
+#. util_ink_all_1
+#: po/gladestr.h:107 po/keystr.h:526
+msgid "All Colors"
+msgstr "Όλα τα χρώματα"
+
+#. LUM_IDD_PAG_PAGESET_XP_ETOE_IDC_STT_ETOEOVERPRINT
+#: po/gladestr.h:109
+msgid "Amount of Extension:"
+msgstr "Μέγεθος επέκτασης:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#. paper_gap_auto
+#: po/gladestr.h:111 po/keystr.h:444
+msgid "Auto"
+msgstr "Αυτόματη"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/gladestr.h:113
+msgid "Auto Power"
+msgstr "Αυτόματη λειτουργία"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/gladestr.h:115
+msgid "Auto Power Off"
+msgstr "Αυτόματο κλείσιμο"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/gladestr.h:117
+msgid "Auto Power Off:"
+msgstr "Αυτόματο κλείσιμο:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/gladestr.h:119
+msgid "Auto Power On:"
+msgstr "Αυτόματο άνοιγμα:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/gladestr.h:121
+msgid "Auto Power Settings"
+msgstr "Ρυθμίσεις αυτόματης λειτουργίας"
+
+#. LUM_IDS_PT_DN_AUTODUPLEX
+#. LUM_IDD_PAG_PAGESET_NT4_AUTODUP_IDC_CHK_DUPLEX
+#: po/gladestr.h:123 po/keystr.h:282
+msgid "Automatic Duplex Printing"
+msgstr "Αυτόματη εκτύπωση διπλής όψης"
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_TITLE_ETOE
+#: po/gladestr.h:125
+msgid "Available Media Types:"
+msgstr "Διαθέσιμοι τύποι μέσων:"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_CARTRIDGE
+#: po/gladestr.h:127
+msgid "BJ Cartridge:"
+msgstr "Φυσίγγιο BJ:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDCANCEL
+#: po/gladestr.h:129
+msgid "Back to Setup"
+msgstr "Επιστροφή στην Εγκατάσταση"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_B1_LABEL
+#. regi_bidir
+#: po/gladestr.h:131 po/keystr.h:508
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Αμφίδρομη ευθυγράμμιση (-5 έως +5)"
+
+#. LUM_IDS_CLEAN_ITEM_BLACK
+#. util_ink_black_0
+#: po/gladestr.h:133 po/keystr.h:530
+msgid "Black"
+msgstr "Μαύρο"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/gladestr.h:135
+msgid "Black Ink Tank"
+msgstr "Δοχείο μαύρης μελάνης"
+
+#. LUM_IDS_EDGETOEDGE
+#: po/gladestr.h:137
+msgid "Borderless"
+msgstr "Χωρίς περίγραμμα"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/gladestr.h:139
+msgid "Bottom Plate Cleaning"
+msgstr "Καθαρισμός της κάτω πλάκας"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BRIGHTNESS
+#: po/gladestr.h:141
+msgid "Brightness:"
+msgstr "Φωτεινότητα:"
+
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#. message_button_cancel
+#: po/gladestr.h:143 po/keystr.h:468
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: po/gladestr.h:144
+msgid ""
+"Canon Inkjet Printer Driver Ver.3.30 for Linux (UI)\n"
+"Copyright CANON INC. 2001-2010\n"
+"All Rights Reserved. "
+msgstr ""
+
+#. LUM_IDS_CASSETTE
+#. supply_cassette_02
+#: po/gladestr.h:148 po/keystr.h:263
+msgid "Cassette"
+msgstr "Κασέτα"
+
+#. LUM_LID_CENTERRING
+#: po/gladestr.h:150
+msgid "Centering"
+msgstr "Κεντράρισμα"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDOK
+#: po/gladestr.h:152
+msgid "Change"
+msgstr "Αλλαγή"
+
+#. LUM_LID_CHANGE_COMBINATION
+#: po/gladestr.h:154
+msgid "Change Combination"
+msgstr "Αλλαγή συνδυασμού"
+
+#. LUM_LID_CHANGE_MEDIA
+#: po/gladestr.h:156
+msgid "Change Media Type"
+msgstr "Αλλαγή τύπου μέσου"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/gladestr.h:158
+msgid "Cleaning"
+msgstr "Καθαρισμός"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_RESOLV2S
+#: po/gladestr.h:160
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Κάντε κλικ στο κουμπί Αλλαγή για να χρησιμοποιήσετε αυτόν το συνδυασμό ή στο \n"
+"κουμπί Επιστροφή στην Εγκατάσταση για να επιλέξετε έναν διαφορετικό συνδυασμό."
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/gladestr.h:162
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#. LUM_IDS_COLLATE
+#: po/gladestr.h:164
+msgid "Collate"
+msgstr "Συρραφή"
+
+#. LUM_IDS_CLEAN_ITEM_COLOR
+#. print_color_message
+#. util_ink_color_0
+#: po/gladestr.h:166 po/keystr.h:140 po/keystr.h:538
+msgid "Color"
+msgstr "Έγχρωμη"
+
+#. LUM_LID_COLOR_BALANCE
+#: po/gladestr.h:168
+msgid "Color Balance"
+msgstr "Ισορροπία χρωμάτων"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/gladestr.h:170
+msgid "Color Ink Tank"
+msgstr "Δοχείο έγχρωμης μελάνης"
+
+#. LUM_IDD_MANUALCOLOR_MATCHING_IDC_STT_COLORMODE
+#: po/gladestr.h:172
+msgid "Color Mode:"
+msgstr "Κατάσταση λειτουργίας χρωμάτων:"
+
+#. LUM_IDS_COLORADJUSTMENT
+#: po/gladestr.h:174
+msgid "Color/Intensity"
+msgstr "Χρώμα/Ένταση"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/gladestr.h:176
+msgid "Column A:"
+msgstr "Στήλη A:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/gladestr.h:178
+msgid "Column B:"
+msgstr "Στήλη B:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/gladestr.h:180
+msgid "Column C:"
+msgstr "Στήλη C:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/gladestr.h:182
+msgid "Column D:"
+msgstr "Στήλη D:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/gladestr.h:184
+msgid "Column E:"
+msgstr "Στήλη E:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/gladestr.h:186
+msgid "Column F:"
+msgstr "Στήλη F:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/gladestr.h:188
+msgid "Column G:"
+msgstr "Στήλη G:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/gladestr.h:190
+msgid "Column H:"
+msgstr "Στήλη H:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/gladestr.h:192
+msgid "Column I:"
+msgstr "Στήλη I:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/gladestr.h:194
+msgid "Column J:"
+msgstr "Στήλη J:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/gladestr.h:196
+msgid "Column K:"
+msgstr "Στήλη K:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/gladestr.h:198
+msgid "Column L:"
+msgstr "Στήλη L:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/gladestr.h:200
+msgid "Column M:"
+msgstr "Στήλη M:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/gladestr.h:202
+msgid "Column N:"
+msgstr "Στήλη N:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/gladestr.h:204
+msgid "Column O:"
+msgstr "Στήλη O:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/gladestr.h:206
+msgid "Column P:"
+msgstr "Στήλη P:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/gladestr.h:208
+msgid "Column Q:"
+msgstr "Στήλη Q:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/gladestr.h:210
+msgid "Column R:"
+msgstr "Στήλη R:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/gladestr.h:212
+msgid "Column S:"
+msgstr "Στήλη S:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/gladestr.h:214
+msgid "Column T:"
+msgstr "Στήλη T:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/gladestr.h:216
+msgid "Column U:"
+msgstr "Στήλη U:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/gladestr.h:218
+msgid "Column V:"
+msgstr "Στήλη V:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/gladestr.h:220
+msgid "Column W:"
+msgstr "Στήλη W:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/gladestr.h:222
+msgid "Column X:"
+msgstr "Στήλη X:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/gladestr.h:224
+msgid "Column Y:"
+msgstr "Στήλη Y:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/gladestr.h:226
+msgid "Column a:"
+msgstr "Στήλη a:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/gladestr.h:228
+msgid "Column b:"
+msgstr "Στήλη b:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/gladestr.h:230
+msgid "Column c:"
+msgstr "Στήλη c:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/gladestr.h:232
+msgid "Column d:"
+msgstr "Στήλη d:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/gladestr.h:234
+msgid "Column e:"
+msgstr "Στήλη e:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/gladestr.h:236
+msgid "Column f:"
+msgstr "Στήλη f:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/gladestr.h:238
+msgid "Column g:"
+msgstr "Στήλη g:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/gladestr.h:240
+msgid "Column h:"
+msgstr "Στήλη h:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/gladestr.h:242
+msgid "Column i:"
+msgstr "Στήλη i:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/gladestr.h:244
+msgid "Column j:"
+msgstr "Στήλη j:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/gladestr.h:246
+msgid "Column k:"
+msgstr "Στήλη k:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LABEL
+#: po/gladestr.h:248
+msgid "Contrast:"
+msgstr "Κοντράστ:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES
+#: po/gladestr.h:250
+msgid "Copies:"
+msgstr "Αντίτυπα:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_QUALITY_CUSTOM
+#: po/gladestr.h:252
+msgid "Custom"
+msgstr "Προσαρμογή"
+
+#. LUM_IDD_PAPER_CUSTOM
+#: po/gladestr.h:254
+msgid "Custom Paper Size"
+msgstr "Προσαρμοσμένο μέγεθος χαρτιού"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/gladestr.h:256
+msgid "Custom Settings"
+msgstr "Προσαρμοσμένες ρυθμίσεις"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:258
+msgid "Cyan:"
+msgstr "Κυανό:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_HI
+#: po/gladestr.h:260
+msgid "Dark "
+msgstr "Σκούρα "
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/gladestr.h:262
+msgid "Deep Cleaning"
+msgstr "Βαθύς καθαρισμός"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/gladestr.h:264
+msgid "Defaults"
+msgstr "Προεπιλογές"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DIFFUSION
+#: po/gladestr.h:266
+msgid "Diffusion"
+msgstr "Διάχυση"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/gladestr.h:268
+msgid "Display low ink warning"
+msgstr "Εμφάνιση προειδοποίησης για χαμηλή στάθμη μελάνης"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DITHERING
+#: po/gladestr.h:270
+msgid "Dither"
+msgstr "Απόδοση εικόνας"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/gladestr.h:272
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και εισαγάγετε στα πεδία για τις στήλες G έως L \n"
+"τον αριθμό του μοτίβου με τις λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/gladestr.h:276
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και εισαγάγετε στα πεδία για τις στήλες H έως O \n"
+"τον αριθμό του μοτίβου με τις λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/gladestr.h:280
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και εισαγάγετε στα πεδία για τις στήλες M έως R \n"
+"τον αριθμό του μοτίβου με τις λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/gladestr.h:284
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και εισαγάγετε στα πεδία για τις στήλες P έως V \n"
+"τον αριθμό του μοτίβου με τις λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/gladestr.h:288
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr ""
+"Παρατηρήστε προσεκτικά τα εκτυπωμένα μοτίβα και καταχωρήστε τον αριθμό του \n"
+"μοτίβου με τις λιγότερο εμφανείς οριζόντιες ρίγες στα πεδία για τις στήλες Q \n"
+"έως Y."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/gladestr.h:292
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Παρατηρήστε προσεκτικά τα εκτυπωμένα μοτίβα και καταχωρήστε τον αριθμό του \n"
+"μοτίβου με τις λιγότερο εμφανείς οριζόντιες ρίγες στα πεδία για τις στήλες O \n"
+"έως V."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/gladestr.h:296
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και καταχωρίστε τον αριθμό του μοτίβου με τις \n"
+"λιγότερο εμφανείς λωρίδες στα πεδία για τις στήλες K έως P."
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/gladestr.h:300
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και πληκτρολογήστε τον αριθμό μοτίβου του πιο \n"
+"ομοιόμορφου μοτίβου στις στήλες M και N."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/gladestr.h:303
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Παρατηρήστε προσεκτικά τα εκτυπωμένα μοτίβα και καταχωρήστε τον αριθμό του \n"
+"μοτίβου με τις λιγότερο εμφανείς οριζόντιες ρίγες στα πεδία για τις στήλες a \n"
+"έως j."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/gladestr.h:306
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Παρατηρήστε προσεκτικά τα εκτυπωμένα μοτίβα και καταχωρήστε τον αριθμό του \n"
+"μοτίβου με τις λιγότερο εμφανείς οριζόντιες ρίγες στα πεδία για τις στήλες a \n"
+"έως k."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/gladestr.h:309
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και εισαγάγετε στα πεδία για τις στήλες H έως Q \n"
+"τον αριθμό του μοτίβου με τις λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/gladestr.h:312
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και συμπληρώστε τα πεδία για τις στήλες L και M \n"
+"με τον αριθμό του μοτίβου που έχει τη μεγαλύτερη εξομάλυνση και δεν έχει ρίγες \n"
+"στα σημεία που σημειώνονται με βέλη."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/gladestr.h:316
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Εξετάστε τα εκτυπωμένα μοτίβα και συμπληρώστε τα πεδία για τις στήλες W και X \n"
+"με τον αριθμό του μοτίβου που έχει τη μεγαλύτερη εξομάλυνση και δεν έχει ρίγες \n"
+"στα σημεία που σημειώνονται με βέλη."
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/gladestr.h:320
+msgid "Execute"
+msgstr "Εκτέλεση"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/gladestr.h:322
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Εκτελέστε την ευθυγράμμιση κεφαλής εκτύπωσης. Εξετάστε τα εκτυπωμένα μοτίβα και \n"
+"εισαγάγετε στα πεδία για τις στήλες A έως F τον αριθμό του μοτίβου με τις \n"
+"λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/gladestr.h:326
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Εκτελέστε την ευθυγράμμιση κεφαλής εκτύπωσης. Εξετάστε τα εκτυπωμένα μοτίβα και \n"
+"εισαγάγετε στα πεδία για τις στήλες A έως G τον αριθμό του μοτίβου με τις \n"
+"λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/gladestr.h:330
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"Εκτέλεση ευθυγράμμισης κεφαλής εκτύπωσης Εξετάστε τα εκτυπωμένα μοτίβα και \n"
+"καταχωρίστε τον αριθμό του μοτίβου με τις λιγότερο εμφανείς λωρίδες στα πεδία \n"
+"για τις στήλες A έως J."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/gladestr.h:334
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Εκτελέστε την ευθυγράμμιση κεφαλής εκτύπωσης. Εξετάστε τα εκτυπωμένα μοτίβα και \n"
+"εισαγάγετε στα πεδία για τις στήλες A έως K τον αριθμό του μοτίβου με τις \n"
+"λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/gladestr.h:338
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Εκτελέστε την ευθυγράμμιση κεφαλής εκτύπωσης. Εξετάστε τα εκτυπωμένα μοτίβα και \n"
+"εισαγάγετε στα πεδία για τις στήλες A έως L τον αριθμό του μοτίβου με τις \n"
+"λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/gladestr.h:342
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Εκτελέστε την ευθυγράμμιση κεφαλής εκτύπωσης. Εξετάστε τα εκτυπωμένα μοτίβα και \n"
+"εισαγάγετε στα πεδία για τις στήλες A έως N τον αριθμό του μοτίβου με τις \n"
+"λιγότερο εμφανείς ραβδώσεις."
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/gladestr.h:346
+msgid "Exit"
+msgstr "Έξοδος"
+
+#. LUM_IDS_QUALITY_FAST
+#: po/gladestr.h:348
+msgid "Fast"
+msgstr "Γρήγορη"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FAST
+#: po/gladestr.h:350
+msgid "Fast "
+msgstr "Γρήγορη "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#. bin_pattern
+#: po/gladestr.h:352 po/keystr.h:410
+msgid "Fine"
+msgstr "Υψηλή"
+
+#. LUM_IDD_PAG_MAIN_IDC_CHK_GRAYSCALE
+#: po/gladestr.h:354
+msgid "Grayscale Printing"
+msgstr "Εκτύπωση σε κλίμακα του γκρι"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE
+#: po/gladestr.h:356
+msgid "Halftoning"
+msgstr "Απόδοση τόνων"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_HEIGHT_LABEL
+#: po/gladestr.h:358
+msgid "Height:     "
+msgstr "Ύψος:     "
+
+#. LUM_IDS_QUALITY_BEST
+#: po/gladestr.h:360
+msgid "High"
+msgstr "Υψηλή"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_HI
+#: po/gladestr.h:362
+msgid "High "
+msgstr "Υψηλή "
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:364
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Οριζόντια ευθυγράμμιση (-3 έως +7)"
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#. message_button_ignore
+#: po/gladestr.h:366 po/keystr.h:476
+msgid "Ignore"
+msgstr "Παράβλεψη"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/gladestr.h:368
+msgid "Ink Cartridge Settings"
+msgstr "Ρυθμίσεις φυσιγγίου μελάνης"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/gladestr.h:370
+msgid "Ink Cartridge:"
+msgstr "Φυσίγγιο μελάνης:"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/gladestr.h:372
+msgid "Ink Counter Reset"
+msgstr "Επαναφορά μετρητή μελάνης"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/gladestr.h:374
+msgid "Ink Drying Wait Time:"
+msgstr "Χρόνος αναμονής για στέγνωμα της μελάνης:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LABEL
+#: po/gladestr.h:376
+msgid "Intensity:"
+msgstr "Ένταση:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LO
+#: po/gladestr.h:378
+msgid "Light "
+msgstr "Ανοικ. "
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/gladestr.h:380
+msgid "Long"
+msgstr "Πολύς"
+
+#. LUM_IDS_STAPLE_LONGSIDE
+#: po/gladestr.h:382
+msgid "Long-side stapling"
+msgstr "Στερέωση στην μεγάλη πλευρά"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LO
+#: po/gladestr.h:384
+msgid "Low"
+msgstr "Χαμ."
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/gladestr.h:386
+msgid "Low Ink Warning Setting"
+msgstr "Ρύθμιση προειδοποίησης για χαμηλή στάθμη μελάνης"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:388
+msgid "Magenta:"
+msgstr "Ματζέντα:"
+
+#. LUM_IDD_PAG_MAIN
+#: po/gladestr.h:390
+msgid "Main"
+msgstr "Κύριες ρυθμίσεις"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/gladestr.h:392
+msgid "Maintenance"
+msgstr "Συντήρηση"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_MANUAL
+#: po/gladestr.h:394
+msgid "Manual"
+msgstr "Μη αυτόματα"
+
+#. LUM_IDS_MANUALCOLOR_WINDOWTITLE
+#: po/gladestr.h:396
+msgid "Manual Color Adjustment"
+msgstr "Μη αυτόματη ρύθμιση χρωμάτων"
+
+#. LUM_LID_MAX
+#: po/gladestr.h:398
+msgid "Max"
+msgstr "Μεγ."
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_MEDIATYPE
+#: po/gladestr.h:400
+msgid "Media Type:"
+msgstr "Τύπος μέσου:"
+
+#. LUM_LID_MIN
+#: po/gladestr.h:402
+msgid "Min"
+msgstr "Ελαχ."
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/gladestr.h:404
+msgid "Nozzle Check"
+msgstr "Έλεγχος ακροφυσίων"
+
+#. LUM_IDD_MESSAGEBOX_IDOK
+#. message_button_ok
+#: po/gladestr.h:406 po/keystr.h:466
+msgid "OK"
+msgstr "OK"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PRINTTYPE
+#: po/gladestr.h:408
+msgid "Page Layout:"
+msgstr "Διάρθρωση σελίδας:"
+
+#. LUM_IDD_PAG_PAGESET_XP
+#: po/gladestr.h:410
+msgid "Page Setup"
+msgstr "Διαμόρφωση σελίδας"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PAGESIZE
+#: po/gladestr.h:412
+msgid "Page Size:"
+msgstr "Μέγεθος σελίδας:"
+
+#. LUM_LID_PAPER_GAP
+#: po/gladestr.h:414
+msgid "Paper Gap:"
+msgstr "Κενό χαρτιού:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_PAPERSIZE
+#: po/gladestr.h:416
+msgid "Paper Size"
+msgstr "Μέγεθος χαρτιού"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/gladestr.h:418
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Ρύθμιση προέλευσης χαρτιού για απλό χαρτί"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/gladestr.h:420
+msgid "Paper Source:"
+msgstr "Προέλευση χαρτιού:"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/gladestr.h:422
+msgid "Pattern Check"
+msgstr "Έλεγχος μοτίβου"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSEPAGE
+#: po/gladestr.h:424
+msgid "Pause Page"
+msgstr "Διακοπή σελίδας"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSESCAN
+#: po/gladestr.h:426
+msgid "Pause Scan"
+msgstr "Διακοπή σάρωσης"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/gladestr.h:428
+msgid "Power Off"
+msgstr "Κλείσιμο εκτυπωτή"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/gladestr.h:430
+msgid "Prevent paper abrasion"
+msgstr "Αποφυγή γδαρσίματος χαρτιού"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/gladestr.h:432
+msgid "Print Alignment Value"
+msgstr "Εκτύπωση της τιμής ευθυγράμμισης"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/gladestr.h:434
+msgid "Print Check Pattern"
+msgstr "Εκτύπωση μοτίβου ελέγχου"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/gladestr.h:436
+msgid "Print Head Alignment"
+msgstr "Ευθυγράμμιση κεφαλής εκτύπωσης"
+
+#. LUM_IDD_CLEAN
+#: po/gladestr.h:438
+msgid "Print Head Cleaning"
+msgstr "Καθαρισμός της κεφαλής εκτύπωσης"
+
+#. LUM_IDD_PAG_MAIN_IDC_GRP_QUALITY
+#: po/gladestr.h:440
+msgid "Print Quality"
+msgstr "Ποιότητα εκτύπωσης"
+
+#. LUM_LID_PRINT_TYPE
+#: po/gladestr.h:442
+msgid "Print Type:"
+msgstr "Τύπος εκτύπωσης:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_CHK_REVERSE
+#: po/gladestr.h:444
+msgid "Print from Last Page"
+msgstr "Εκτύπωση από την τελευταία σελίδα"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_LABEL
+#: po/gladestr.h:446
+msgid "Quality"
+msgstr "Ποιότητα"
+
+#. LUM_IDD_SILENTMODE
+#: po/gladestr.h:448
+msgid "Quiet Mode"
+msgstr "Αθόρυβη λειτουργία"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/gladestr.h:450
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Για πληροφορίες σχετικά με τις προειδοποιήσεις για χαμηλή στάθμη μελάνης, \n"
+"διαβάστε το εγχειρίδιο χρήσης του εκτυπωτή σας."
+
+#. LUM_IDS_FEED_REAR
+#. supply_asf_reartray
+#: po/gladestr.h:452 po/keystr.h:249
+msgid "Rear Tray"
+msgstr "Πίσω θήκη"
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/gladestr.h:454
+msgid "Roller Cleaning"
+msgstr "Καθαρισμός κυλίνδρου"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING
+#: po/gladestr.h:456
+msgid "Scaling:"
+msgstr "Κλίμακα:"
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/gladestr.h:458
+msgid "Select the ink cartridge for printing."
+msgstr "Επιλέξτε το φυσίγγιο μελάνης για εκτύπωση."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/gladestr.h:460
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr ""
+"Επιλέξτε το δοχείο μελάνης που αντικαταστάθηκε πρόσφατα και κάντε κλικ στο \n"
+"κουμπί [Εκτέλεση].\n"
+
+#. LUM_IDD_GENERAL_RAD_2_IDOK
+#: po/gladestr.h:463
+msgid "Send"
+msgstr "Αποστολή"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/gladestr.h:465
+msgid "Short"
+msgstr "Λίγος"
+
+#. LUM_IDS_STAPLE_SHORTSIDE
+#: po/gladestr.h:467
+msgid "Short-side stapling"
+msgstr "Στερέωση στη μικρή πλευρά"
+
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#. color_correct_photo2
+#: po/gladestr.h:469 po/keystr.h:148
+msgid "Standard"
+msgstr "Τυπική"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_IDC_STT_EDGE
+#: po/gladestr.h:471
+msgid "Staple Side:"
+msgstr "Πλευρά στερέωσης:"
+
+#. LUM_IDD_PHA_START
+#: po/gladestr.h:473
+msgid "Start Print Head Alignment"
+msgstr "Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/gladestr.h:475
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires a sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Έναρξη καθαρισμού της κάτω πλάκας για να αποφευχθούν οι κηλίδες κατά την \n"
+"εκτύπωση.\n"
+"\n"
+"Η λειτουργία αυτή απαιτεί ένα φύλλο απλού χαρτιού μεγέθους A4 ή Letter. \n"
+"Ακολουθήστε τις οδηγίες αυτές για να εκτελέσετε καθαρισμό της κάτω πλάκας."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/gladestr.h:479
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Ο μετρητής που αντιστοιχεί στο νέο δοχείο μελάνης θα δείχνει ότι το δοχείο \n"
+"μελάνης είναι γεμάτο. Η ενέργεια αυτή εξασφαλίζει τη σωστή εμφάνιση της \n"
+"προειδοποίησης για χαμηλή στάθμη μελάνης."
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_TITLE2
+#: po/gladestr.h:483
+msgid "The following is recommended:"
+msgstr "Συνιστούνται τα παρακάτω:"
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/gladestr.h:485
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Τα ακροφύσια της κεφαλής εκτύπωσης δεν \n"
+"είναι βουλωμένα.\n"
+"Εάν το εκτυπωμένο μοτίβο μοιάζει με \n"
+"αυτό το μοτίβο, μπορείτε να \n"
+"χρησιμοποιήσετε τον εκτυπωτή αμέσως.\n"
+"Κάντε κλικ στο κουμπί Έξοδος."
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/gladestr.h:490
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Για να εξασφαλίσετε τη σωστή εμφάνιση μιας προειδοποίησης για χαμηλή στάθμη \n"
+"μελάνης, απαιτείται η ακόλουθη ενέργεια:\n"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_UNITS
+#: po/gladestr.h:494
+msgid "Units:"
+msgstr "Μονάδες:"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/gladestr.h:496
+msgid "Use quiet mode"
+msgstr "Χρήση αθόρυβης λειτουργίας"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/gladestr.h:498
+msgid "Using AC Adapter:"
+msgstr "Χρήση του τροφοδοτικού AC:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/gladestr.h:500
+msgid "Using Battery:"
+msgstr "Χρήση της μπαταρίας:"
+
+#. LUM_IDD_PAG_MAINTENANCE_IDC_BTN_STATUSMONITOR
+#: po/gladestr.h:502
+msgid "View Printer Status..."
+msgstr "Προβολή κατάστασης εκτυπωτή..."
+
+#. LUM_IDD_PAG_EFFECT_VIVID_IDC_CHK_VIVID
+#: po/gladestr.h:504
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/gladestr.h:506
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Κάθε φορά που αντικαθιστάτε ένα δοχείο μελάνης με καινούριο, πάντα να κάνετε \n"
+"κλικ στο κουμπί Επαναφορά μετρητή μελάνης στην καρτέλα Συντήρηση του \n"
+"προγράμματος οδήγησης του εκτυπωτή και να επιλέγετε το καινούριο δοχείο μελάνης."
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/gladestr.h:510
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Σε ποιο από τα ακόλουθα μοτίβα μοιάζει περισσότερο το εκτυπωμένο μοτίβο;"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_WIDTH_LABEL
+#: po/gladestr.h:512
+msgid "Width:    "
+msgstr "Πλάτος:    "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:514
+msgid "Yellow:"
+msgstr "Κίτρινο:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATION_IDC_STT_SA_TITLE
+#: po/gladestr.h:516
+msgid "You cannot print with the following combination:"
+msgstr "Δεν είναι δυνατή η εκτύπωση με τον παρακάτω συνδυασμό:"
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDC_STT_SA_TITLE
+#: po/gladestr.h:518
+msgid "You have selected the following combination:"
+msgstr "Έχετε επιλέξει τον παρακάτω συνδυασμό:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_INCH
+#: po/gladestr.h:520
+msgid "inch"
+msgstr "ίντσες"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_MM
+#: po/gladestr.h:522
+msgid "mm"
+msgstr "mm"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#. model_BJF850
+#: po/keystr.h:8
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:10
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:12
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:14
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:16
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:18
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:20
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:22
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:24
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:26
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:28
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:30
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:32
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:34
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:36
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:38
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:40
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:42
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:44
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:46
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:48
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:50
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:52
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:54
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:56
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:58
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:60
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:62
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:64
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:66
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:68
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:70
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:72
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:74
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:76
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:78
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:80
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:82
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:84
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:86
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:88
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:90
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:92
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:94
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:96
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:98
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:100
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:102
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:104
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:106
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:108
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:110
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:112
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:114
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:116
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:118
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:120
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:122
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:124
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:126
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:128
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:130
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:132
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:134
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:136
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:138
+msgid "MX870 series"
+msgstr ""
+
+#. print_mono_message
+#: po/keystr.h:142
+msgid "Grayscale"
+msgstr "Αποχρώσεις του γκρι"
+
+#. color_correct_photo
+#: po/keystr.h:144
+msgid "Photo"
+msgstr "Φωτογραφία"
+
+#. color_correct_graphics
+#: po/keystr.h:146
+msgid "Graphic"
+msgstr "Γραφικό"
+
+#. color_correct_natural
+#: po/keystr.h:150
+msgid "Linear Tone"
+msgstr "Γραμμικός τόνος"
+
+#. mediasize_recommend_message1_1
+#: po/keystr.h:152
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Συνιστάται η αλλαγή από %s σε %s."
+
+#. mediasize_recommend_message1_2
+#: po/keystr.h:154
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Κάντε κλικ στο κουμπί [Αλλαγή] για να χρησιμοποιήσετε τον νέο συνδυασμό, στο \n"
+"κουμπί [Παράβλεψη] για να χρησιμοποιήσετε τον τρέχοντα συνδυασμό ή στο κουμπί \n"
+"[Επιστροφή στην Εγκατάσταση] για να επιλέξετε έναν διαφορετικό συνδυασμό."
+
+#. mediasize_recommend_message2_1
+#: po/keystr.h:157
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "Προτείνεται η αλλαγή της ρύθμισης %s."
+
+#. mediasize_recommend_message2_2
+#: po/keystr.h:159
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Χρησιμοποιήστε τον επιλογέα παρακάτω για να επιλέξετε μια κατάλληλη ρύθμιση και \n"
+"κάντε κλικ στο κουμπί [Αλλαγή] για να χρησιμοποιήσετε τον νέο συνδυασμό."
+
+#. mediasize_recommend_message2_3
+#: po/keystr.h:162
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Κάντε κλικ στο κουμπί [Παράβλεψη] για να χρησιμοποιήσετε αυτόν το συνδυασμό ή \n"
+"στο κουμπί [Επιστροφή στην Εγκατάσταση] για να επιλέξετε έναν διαφορετικό \n"
+"συνδυασμό."
+
+#. mediasize_illegal_select_message2_1
+#: po/keystr.h:165
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "Προτείνεται η αλλαγή της ρύθμισης %s.  "
+
+#. mediasize_illegal_select_message2_2
+#: po/keystr.h:167
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+"Χρησιμοποιήστε τον επιλογέα παρακάτω για να επιλέξετε μια κατάλληλη ρύθμιση και \n"
+"κάντε κλικ στο κουμπί [Αλλαγή] για να χρησιμοποιήσετε τον νέο συνδυασμό. Κάντε \n"
+"κλικ στο κουμπί [Επιστροφή στην Εγκατάσταση] για να επι."
+
+#. lever_position_label
+#: po/keystr.h:170
+msgid "Paper Thickness Lever Position:"
+msgstr "Θέση ρυθμ/κού πάχους χαρτιού:"
+
+#. lever_position_label_2007
+#: po/keystr.h:172
+msgid "Paper Thickness Lever Position: "
+msgstr "Θέση ρυθμ/κού πάχους χαρτιού: "
+
+#. move_lever_position_alert
+#: po/keystr.h:174
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Μετακινήστε το ρυθμιστικό πάχους του χαρτιού %s."
+
+#. move_lever_position_alert_2007
+#: po/keystr.h:176
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Μετακινήστε το ρυθμιστικό πάχους του χαρτιού %s. "
+
+#. mediasize_change_media
+#: po/keystr.h:178
+msgid "Media Type"
+msgstr "Τύπος μέσου"
+
+#. mediasize_change_size
+#: po/keystr.h:180
+msgid "Page Size"
+msgstr "Μέγεθος σελίδας"
+
+#. mediatype_dialog_message
+#: po/keystr.h:182
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Τύπος μέσου: ο τύπος %s δεν είναι δυνατό να χρησιμοποιηθεί με το επιλεγμένο \n"
+"φυσίγγιο BJ.\n"
+"Επιλέξτε τον τύπο του μέσου που επιθυμείτε να χρησιμοποιήσετε."
+
+#. media_plain
+#: po/keystr.h:185
+msgid "Plain Paper"
+msgstr "Απλό χαρτί"
+
+#. media_ohp
+#: po/keystr.h:187
+msgid "Transparencies"
+msgstr "Διαφάνειες"
+
+#. media_bpf
+#: po/keystr.h:189
+msgid "Back Print Film"
+msgstr "Φιλμ αντεστρ. εκτύπωσης"
+
+#. media_bjcloth
+#: po/keystr.h:191
+msgid "Fabric Sheet"
+msgstr "Φύλλο υφάσματος"
+
+#. media_higlossfilm
+#: po/keystr.h:193
+msgid "High Gloss Film"
+msgstr "Γυαλιστερό φιλμ"
+
+#. media_postcard
+#: po/keystr.h:195
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#. media_envelope
+#: po/keystr.h:197
+msgid "Envelope"
+msgstr "Φάκελος"
+
+#. media_glossy_postcard
+#: po/keystr.h:199
+msgid "Glossy Postcard"
+msgstr "Glossy Postcard"
+
+#. media_hires
+#: po/keystr.h:201
+msgid "High Resolution Paper"
+msgstr "High Resolution Paper"
+
+#. media_tshirt
+#: po/keystr.h:203
+msgid "T-Shirt Transfers"
+msgstr "Σιδερότυπα"
+
+#. media_thick
+#: po/keystr.h:205
+msgid "Thick Paper"
+msgstr ""
+
+#. media_higloss_photo_film
+#: po/keystr.h:207
+msgid "High Gloss Photo Film"
+msgstr "Γυαλιστερό φωτογραφικό φιλμ"
+
+#. media_glossy_photo
+#: po/keystr.h:209
+msgid "Glossy Photo Paper"
+msgstr "Glossy Photo Paper"
+
+#. media_glossy_photocard
+#: po/keystr.h:211
+msgid "Glossy Photo Cards"
+msgstr "Γυαλιστερές κάρτες για φωτογραφίες"
+
+#. media_pro_photo
+#: po/keystr.h:213
+msgid "Photo Paper Pro"
+msgstr "Photo Paper Pro"
+
+#. media_inkjet_postcard
+#: po/keystr.h:215
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#. media_matte_photo
+#: po/keystr.h:217
+msgid "Matte Photo Paper"
+msgstr "Matte Photo Paper"
+
+#. media_photo_plus_glossy
+#: po/keystr.h:219
+msgid "Photo Paper Plus Glossy"
+msgstr "Photo Paper Plus Glossy"
+
+#. media_other
+#: po/keystr.h:221
+msgid "Other Paper"
+msgstr "Άλλο χαρτί"
+
+#. media_other_photo
+#: po/keystr.h:223
+msgid "Other Photo Paper"
+msgstr "Άλλο φωτογραφικό χαρτί"
+
+#. media_duplex_glossy
+#: po/keystr.h:225
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#. media_fine_art_paper
+#: po/keystr.h:227
+msgid "Fine Art Photo Rag"
+msgstr "Fine Art \"Photo Rag\""
+
+#. media_other_fine_art_paper
+#: po/keystr.h:229
+msgid "Other Fine Art Paper"
+msgstr "Άλλο χαρτί Fine Art"
+
+#. media_photo_paper_plus_glossy_ii
+#: po/keystr.h:231
+msgid "Photo Paper Plus Glossy II"
+msgstr "Photo Paper Plus Glossy II"
+
+#. media_photo_paper_plus_semi_gloss
+#: po/keystr.h:233
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "Photo Paper Plus Semi-gloss"
+
+#. media_photo_paper_pro_platinum
+#: po/keystr.h:235
+msgid "Photo Paper Pro Platinum"
+msgstr "Photo Paper Pro Platinum"
+
+#. media_photo_paper_pro_ii
+#: po/keystr.h:237
+msgid "Photo Paper Pro II"
+msgstr "Photo Paper Pro II"
+
+#. media_contents_glossy
+#: po/keystr.h:239
+msgid "Hagaki K"
+msgstr "Hagaki K"
+
+#. media_contents_prophoto
+#: po/keystr.h:241
+msgid "Hagaki P"
+msgstr "Hagaki P"
+
+#. media_address_postcard
+#: po/keystr.h:243
+msgid "Hagaki A"
+msgstr "Hagaki A"
+
+#. supply_manual
+#: po/keystr.h:245
+msgid "Manual Feed"
+msgstr "Χειροκίνητη τροφοδοσία"
+
+#. supply_asf
+#: po/keystr.h:247
+msgid "Auto Sheet Feeder"
+msgstr "Αυτ. τροφοδότης φύλλων"
+
+#. supply_asf2
+#: po/keystr.h:251
+msgid "Auto Feeder2"
+msgstr ""
+
+#. supply_cassette
+#: po/keystr.h:253
+msgid "Standard Cassette"
+msgstr ""
+
+#. supply_cassette2
+#: po/keystr.h:255
+msgid "Optional Cassette"
+msgstr ""
+
+#. supply_consecutive
+#: po/keystr.h:257
+msgid "Auto Select"
+msgstr "Αυτόματη επιλογή"
+
+#. supply_consecutive2
+#: po/keystr.h:259
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#. supply_tractor
+#: po/keystr.h:261
+msgid "Tractor Feeder"
+msgstr "Τροφοδότης μηχ/γραφικού"
+
+#. supply_printer_sw_select
+#: po/keystr.h:265
+msgid "Paper Feed Switch"
+msgstr "Διακόπτης τροφ.χαρτιού"
+
+#. supply_cassette_04
+#: po/keystr.h:267
+msgid "Front Feeder"
+msgstr "Εμπρόσθιος τροφοδότης"
+
+#. supply_cassette_04_fronttray
+#: po/keystr.h:269
+msgid "Front Tray"
+msgstr "Μπροστινή θήκη"
+
+#. supply_front_for_plain
+#: po/keystr.h:271
+msgid "Front for Plain Paper"
+msgstr "Μπροστά για απλό χαρτί"
+
+#. supply_front_for_plain_maetray
+#: po/keystr.h:273
+msgid "Front for Plain Paper "
+msgstr "Μπροστά για απλό χαρτί "
+
+#. supply_auto_continuous_feed
+#: po/keystr.h:275
+msgid "Continuous Autofeed"
+msgstr "Συνεχής αυτ.τροφοδοσία"
+
+#. supply_auto_select
+#: po/keystr.h:277
+msgid "Automatically Select"
+msgstr "Αυτόματη επιλογή"
+
+#. supply_change_mes
+#: po/keystr.h:279
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Το επιλεγμένο μέγεθος χαρτιού δεν μπορεί να χρησιμοποιηθεί με την τρέχουσα \n"
+"ρύθμιση \"Προέλευση χαρτιού\".\n"
+"Η ρύθμιση \"Προέλευση χαρτιού\" έχει αλλάξει σε %s."
+
+#. LUM_AlertMessTitlePaperNotAvailableForAutoDuplex_M
+#: po/keystr.h:284
+msgid ""
+"A page size that is not supported by the \n"
+"automatic duplex printing function is selected."
+msgstr ""
+"Έχει επιλεγεί μέγεθος σελίδας που δεν υποστηρίζεται από τη λειτουργία αυτόματης \n"
+"εκτύπωσης διπλής όψης."
+
+#. LUM_AlertMessPaperNotAvailableForAutoDuplex
+#: po/keystr.h:287
+#, c-format
+msgid "Uncheck %s."
+msgstr "Απενεργοποιήστε τη ρύθμιση %s."
+
+#. LUM_MODIFY_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/keystr.h:289
+msgid "Paper Source"
+msgstr "Προέλευση χαρτιού"
+
+#. LUM_MessPSNotCasette_M
+#: po/keystr.h:291
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "Επιλέξατε μέγεθος σελίδας που δεν μπορεί να τροφοδοτηθεί από την κασέτα."
+
+#. LUM_AlertMessPaperNotFedFromCassetteOrFront
+#: po/keystr.h:293
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "Αλλάξτε τη ρύθμιση %s σε %s."
+
+#. media_supply_change_mes
+#: po/keystr.h:295
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"Προέλευση χαρτιού: Η επιλογή '%s' δεν είναι διαθέσιμη για τον επιλεγμένο τύπο \n"
+"μέσου.\n"
+"Η ρύθμιση [Προέλευση χαρτιού] άλλαξε σε '%s'."
+
+#. bkenh_enh
+#: po/keystr.h:298
+msgid "Enhanced Black"
+msgstr ""
+
+#. size_a5
+#: po/keystr.h:300
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#. size_a4
+#: po/keystr.h:302
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#. size_a3
+#: po/keystr.h:304
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#. size_b5
+#: po/keystr.h:306
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#. size_b4
+#: po/keystr.h:308
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#. size_letter
+#: po/keystr.h:310
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#. size_legal
+#: po/keystr.h:312
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#. size_ledger
+#: po/keystr.h:314
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#. size_csize
+#: po/keystr.h:316
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#. size_post
+#: po/keystr.h:318
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#. size_env_10
+#: po/keystr.h:320
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+
+#. size_env_dl
+#: po/keystr.h:322
+msgid "DL Env. 220.0x110.0mm"
+msgstr "DL Env. 220.0x110.0mm"
+
+#. size_fools
+#: po/keystr.h:324
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#. size_env_j4
+#: po/keystr.h:326
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#. size_env_j6
+#: po/keystr.h:328
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#. size_letter_bleed
+#: po/keystr.h:330
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#. size_a4_bleed
+#: po/keystr.h:332
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#. size_a3_plus
+#: po/keystr.h:334
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm"
+
+#. size_photocard
+#: po/keystr.h:336
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#. size_user
+#: po/keystr.h:338
+msgid "Custom..."
+msgstr "Προσαρμογή..."
+
+#. size_env_10_p
+#: po/keystr.h:340
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+
+#. size_env_dl_p
+#: po/keystr.h:342
+msgid "DL Env. 110.0x220.0mm"
+msgstr "DL Env. 110.0x220.0mm"
+
+#. size_env_j4_p
+#: po/keystr.h:344
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#. size_env_j6_p
+#: po/keystr.h:346
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#. size_l
+#: po/keystr.h:348
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#. size_2l
+#: po/keystr.h:350
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#. size_4x6
+#: po/keystr.h:352
+msgid "4\"x6\" 10x15cm 101.6x152.4mm"
+msgstr "10x15cm 4\"x6\" 101.6x152.4mm"
+
+#. size_panorama
+#: po/keystr.h:354
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#. size_5x7
+#: po/keystr.h:356
+msgid "5\"x7\" 13x18cm 127.0x177.8mm"
+msgstr "13x18cm 5\"x7\" 127.0x177.8mm"
+
+#. size_post_dbl
+#: po/keystr.h:358
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#. size_businesscard
+#: po/keystr.h:360
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Κάρτα 2.16\"x3.58\" 55.0x91.0mm"
+
+#. size_creditcard
+#: po/keystr.h:362
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "Πιστωτική κάρτα 2.13\"x3.39\" 54.0x86.0mm"
+
+#. size_a4_fine_art
+#: po/keystr.h:364
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Fine Art A4 210.0x297.0mm"
+
+#. size_4X8
+#: po/keystr.h:366
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#. size_6giri
+#: po/keystr.h:368
+msgid "8\"x10\" 20x25cm 203.2x254.0mm"
+msgstr "20x25cm 8\"x10\" 203.2x254.0mm"
+
+#. size_wide
+#: po/keystr.h:370
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#. custom_size_mm_format
+#: po/keystr.h:372
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#. custom_size_inches_format
+#: po/keystr.h:374
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "ίντσες (%s-%s)"
+
+#. tmessage_position1
+#: po/keystr.h:376
+msgid "Position 1"
+msgstr ""
+
+#. tmessage_position2
+#: po/keystr.h:378
+msgid "Position 2"
+msgstr ""
+
+#. tmessage_position3
+#: po/keystr.h:380
+msgid "Position 3"
+msgstr ""
+
+#. tmessage_left
+#. tmessage_left2
+#: po/keystr.h:382 po/keystr.h:396
+msgid "Left"
+msgstr "Αριστ."
+
+#. tmessage_center
+#: po/keystr.h:384
+msgid "Center"
+msgstr ""
+
+#. tmessage_right
+#. tmessage_right2
+#: po/keystr.h:386 po/keystr.h:398
+msgid "Right"
+msgstr "Δεξιά"
+
+#. tmessage_lower
+#. tmessage_lower2
+#. plmessage_lower
+#: po/keystr.h:388 po/keystr.h:392 po/keystr.h:404
+msgid "Down"
+msgstr "Κάτω"
+
+#. tmessage_upper
+#. tmessage_upper2
+#. plmessage_upper
+#: po/keystr.h:390 po/keystr.h:394 po/keystr.h:406
+msgid "Up"
+msgstr "Επάνω"
+
+#. plmessage_foward
+#: po/keystr.h:400
+msgid "Front"
+msgstr ""
+
+#. plmessage_backword
+#: po/keystr.h:402
+msgid "Back"
+msgstr ""
+
+#. slmess_smooth
+#: po/keystr.h:408
+msgid "Smoothing"
+msgstr ""
+
+#. bin_pattern_hs
+#: po/keystr.h:412
+msgid "Fine(Fast)"
+msgstr ""
+
+#. banner_on
+#: po/keystr.h:414
+msgid "Banner Printing"
+msgstr ""
+
+#. cartridge_color
+#: po/keystr.h:416
+msgid "Color    "
+msgstr "Έγχρωμη    "
+
+#. cartridge_bk
+#: po/keystr.h:418
+msgid "Black    "
+msgstr "Μαύρο    "
+
+#. cartridge_photo
+#: po/keystr.h:420
+msgid "Photo    "
+msgstr "Φωτογραφία    "
+
+#. cartridge_bk_color
+#: po/keystr.h:422
+msgid "Black/Color    "
+msgstr "Μαύρο/Έγχρωμο    "
+
+#. cartridge_bk_photo
+#: po/keystr.h:424
+msgid "Black/Photo    "
+msgstr "Μαύρο/Φωτογρ.    "
+
+#. cartridge_photo_color
+#: po/keystr.h:426
+msgid "Photo/Color    "
+msgstr "Φωτογρ./Έγχρ.    "
+
+#. printing_type_fit
+#: po/keystr.h:428
+msgid "Fit-to-Page"
+msgstr "Προσαρμογή στη σελίδα"
+
+#. printing_type_normal
+#: po/keystr.h:430
+msgid "Normal-size"
+msgstr "Κανονικό μέγεθος"
+
+#. printing_type_scale
+#: po/keystr.h:432
+msgid "Scaled"
+msgstr "Κλίμακα"
+
+#. input_gamma_default
+#: po/keystr.h:434
+msgid "Default"
+msgstr ""
+
+#. input_gamma_10
+#: po/keystr.h:436
+msgid "More bright (Gamma = 1.0)"
+msgstr ""
+
+#. input_gamma_14
+#: po/keystr.h:438
+msgid "Light"
+msgstr "Ανοικτή"
+
+#. input_gamma_18
+#: po/keystr.h:440
+msgid "Normal"
+msgstr "Κανονική"
+
+#. input_gamma_22
+#: po/keystr.h:442
+msgid "Dark"
+msgstr "Σκούρα"
+
+#. paper_gap_wide
+#: po/keystr.h:446
+msgid "Wide"
+msgstr "Ευρύ"
+
+#. paper_gap_narrow
+#: po/keystr.h:448
+msgid "Narrow"
+msgstr "Στενό"
+
+#. LUM_IDS_EDGETOEDGE_SELECTED
+#: po/keystr.h:450
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Έχετε επιλέξει εκτύπωση χωρίς περίγραμμα.\n"
+"Το έγγραφο που θα εκτυπωθεί έχει μεγεθυνθεί ώστε να επεκτείνεται ελαφρώς εκτός \n"
+"του χαρτιού.\n"
+"Η ποιότητα εκτύπωσης ενδέχεται να επιδεινωθεί ή το φύλλο να έχει κηλίδες στο \n"
+"επάνω και κάτω μέρος, ανάλογα με τον τύπο μέσου που χρησιμοποιείται."
+
+#. mediaborder_dialog_message1
+#: po/keystr.h:455
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Δεν συνιστάται η εκτύπωση χωρίς περίγραμμα όταν ως Τύπος μέσου έχει επιλεγεί %s.\n"
+"Επιλέξτε τον τύπο του μέσου που επιθυμείτε να χρησιμοποιήσετε."
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_NOTE_ETOE
+#: po/keystr.h:458
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Το έγγραφο που θα εκτυπωθεί έχει μεγεθυνθεί ώστε να επεκτείνεται ελαφρώς εκτός \n"
+"του χαρτιού.\n"
+"Η ποιότητα εκτύπωσης ενδέχεται να επιδεινωθεί ή το φύλλο να έχει κηλίδες στο \n"
+"επάνω και κάτω μέρος, ανάλογα με τον τύπο μέσου που χρησιμοποιείται."
+
+#. LUM_IDS_SMMSG_ENVELOPE_SHORTEN_ASF
+#: po/keystr.h:462
+msgid ""
+"The printer is set to print on an envelope.\n"
+"Lower the paper support and then load an envelope.\n"
+"Then click OK to start printing."
+msgstr ""
+"Στον εκτυπωτή έχει οριστεί εκτύπωση σε φάκελο.\n"
+"Χαμηλώστε το στήριγμα χαρτιού και τοποθετήστε ένα φάκελο.\n"
+"Στη συνέχεια πατήστε OK για να ξεκινήσει η εκτύπωση."
+
+#. message_button_yes
+#: po/keystr.h:470
+msgid "Yes"
+msgstr "Ναι"
+
+#. message_button_no
+#: po/keystr.h:472
+msgid "No"
+msgstr "Όχι"
+
+#. message_button_abort
+#: po/keystr.h:474
+msgid "Abort"
+msgstr ""
+
+#. autopower_enable
+#: po/keystr.h:478
+msgid "Enable"
+msgstr "Ενεργοποίηση"
+
+#. autopower_disable
+#: po/keystr.h:480
+msgid "Disable"
+msgstr "Απενεργοποίηση"
+
+#. autopower_5min
+#: po/keystr.h:482
+msgid "5 minutes"
+msgstr "5 λεπτά"
+
+#. autopower_10min
+#: po/keystr.h:484
+msgid "10 minutes"
+msgstr "10 λεπτά"
+
+#. autopower_15min
+#: po/keystr.h:486
+msgid "15 minutes"
+msgstr "15 λεπτά"
+
+#. autopower_30min
+#: po/keystr.h:488
+msgid "30 minutes"
+msgstr "30 λεπτά"
+
+#. autopower_60min
+#: po/keystr.h:490
+msgid "60 minutes"
+msgstr "60 λεπτά"
+
+#. utility_message_3
+#: po/keystr.h:492
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Εκτυπώθηκαν κανονικά τα μοτίβα;\n"
+"\n"
+"Εάν δεν εκτυπώθηκαν μοτίβα ή εάν η εκτύπωση είναι σημαντικά αλλοιωμένη, κάντε \n"
+"κλικ στο κουμπί Όχι και ξεκινήστε πάλι από την αρχή."
+
+#. utility_message_4
+#: po/keystr.h:496
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Βεβαιωθείτε ότι ο εκτυπωτής είναι αναμμένος, το καλώδιο έχει συνδεθεί σωστά και \n"
+"ο εκτυπωτής είναι συνδεδεμένος και κατόπιν προσπαθήστε ξανά."
+
+#. utility_message_5
+#: po/keystr.h:498
+msgid "Print head alignment is now complete."
+msgstr "Η ευθυγράμμιση κεφαλών εκτύπωσης ολοκληρώθηκε."
+
+#. utility_message_6
+#: po/keystr.h:500
+msgid "Do not start another operation until the current one has finished."
+msgstr ""
+"Περιμένετε να ολοκληρωθεί η τρέχουσα λειτουργία πριν να ξεκινήσετε άλλη \n"
+"λειτουργία."
+
+#. utility_message_8
+#: po/keystr.h:502
+msgid "Turn the printer off?"
+msgstr "Θέλετε να κλείσετε τον εκτυπωτή;"
+
+#. utility_message_9
+#: po/keystr.h:504
+msgid "Write settings to printer?"
+msgstr "Θέλετε να εγγράψετε τις ρυθμίσεις στον εκτυπωτή;"
+
+#. utility_message_12
+#: po/keystr.h:506
+msgid "Start print head deep cleaning?"
+msgstr "Θέλετε να ξεκινήσει ο βαθύς καθαρισμός της κεφαλής εκτύπωσης;"
+
+#. utility_message_23
+#: po/keystr.h:510
+msgid "Execute black print head deep cleaning?"
+msgstr "Θέλετε να γίνει βαθύς καθαρισμός στη μαύρη κεφαλή εκτύπωσης;"
+
+#. utility_message_24
+#: po/keystr.h:512
+msgid "Execute color print head deep cleaning?"
+msgstr "Θέλετε να γίνει βαθύς καθαρισμός στην έγχρωμη κεφαλή εκτύπωσης;"
+
+#. utility_message_27
+#: po/keystr.h:514
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού.\n"
+"\n"
+"Αρχικά αφαιρέστε το χαρτί από τον τροφοδότη φύλλων. Αν κάνετε κλικ στο κουμπί \n"
+"OK θα ενεργοποιηθούν οι κύλινδροι τροφοδοσίας χαρτιού 30 φορές. Αυτή η \n"
+"διαδικασία θα διαρκέσει περίπου ενάμισι λεπτό. Όταν τοποθετήσετε τρία φύλλα \n"
+"απλού χαρτιού σύμφωνα με το μήνυμα, το χαρτί θα εκτυπωθεί και θα ολοκληρωθεί ο \n"
+"καθαρισμός των κυλίνδρων.\n"
+"\n"
+"Θέλετε να ξεκινήσει ο καθαρισμός των κυλίνδρων τροφοδοσίας;"
+
+#. utility_message_28
+#: po/keystr.h:522
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Τοποθετήστε τρία φύλλα απλού χαρτιού στον τροφοδότη φύλλων.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:524
+msgid "Feed roller cleaning is complete."
+msgstr "Ο καθαρισμός των κυλίνδρων τροφοδοσίας ολοκληρώθηκε."
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:528
+msgid "All Colors   BK, C, M, Y"
+msgstr "Όλα τα χρώματα   BK, C, M, Y"
+
+#. util_ink_black_1
+#: po/keystr.h:532
+msgid "Black   3eBK"
+msgstr "Μαύρο   3eBK"
+
+#. util_ink_black_2
+#: po/keystr.h:534
+msgid "Black   PGBK"
+msgstr "Μαύρο   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:536
+msgid "Black   BK"
+msgstr "Μαύρο   BK"
+
+#. util_ink_color_1
+#: po/keystr.h:540
+msgid "Color   6C, 6M, 6Y"
+msgstr "Έγχρωμη   6C, 6M, 6Y"
+
+#. util_ink_color_2
+#: po/keystr.h:542
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Έγχρωμη   6C, 6M, 6Y, 6BK"
+
+#. util_ink_color_3
+#: po/keystr.h:544
+msgid "Color   7C, 7M, 7Y"
+msgstr "Έγχρωμη 7C, 7M, 7Y"
+
+#. util_ink_color_4
+#: po/keystr.h:546
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Έγχρωμη 7C, 7M, 7Y, 7BK"
+
+#. util_ink_color_5
+#: po/keystr.h:548
+msgid "Color   C, M, Y, BK"
+msgstr "Έγχρωμη   C, M, Y, BK"
+
+#. util_ink_color_6
+#: po/keystr.h:550
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Έγχρωμη   C, M, Y, PC, PM, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:552
+msgid "Color   C, M, Y"
+msgstr "Έγχρωμη   C, M, Y"
+
+#. util_ink_gr1_1
+#: po/keystr.h:554
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Ομάδα 1   6BK, 6R, 6PC, 6PM"
+
+#. util_ink_gr1_2
+#: po/keystr.h:556
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Ομάδα 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#. util_ink_gr2_1
+#: po/keystr.h:558
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Ομάδα 2   6C, 6M, 6Y"
+
+#. util_ink_gr2_2
+#: po/keystr.h:560
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Ομάδα 2   7C, 7M, 7Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:562
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Περιμένετε να ολοκληρωθεί ο καθαρισμός προτού να ξεκινήσετε άλλη λειτουργία.\n"
+"\n"
+"Μόλις ολοκληρωθεί ο καθαρισμός, εκτελέστε έλεγχο ακροφυσίων για να ελέγξετε ότι \n"
+"τα ακροφύσια της κεφαλής εκτύπωσης έχουν αποφραχτεί."
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:566
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Καθαρίζει τα φραγμένα ακροφύσια της κεφαλής εκτύπωσης.\n"
+"\n"
+"Επιλέξτε την ομάδα μελάνης στην οποία θέλετε να κάνετε καθαρισμό. Εάν δεν είστε \n"
+"σίγουροι ποια ομάδα μελάνης χρειάζεται καθαρισμό, εκτελέστε έλεγχο ακροφυσίων."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:571
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Αποφράσσει τα ακροφύσια που δεν είναι δυνατόν να καθαριστούν με κανονικό \n"
+"καθαρισμό.\n"
+"\n"
+"Επιλέξτε την ομάδα μελάνης στην οποία θέλετε να κάνετε βαθύ καθαρισμό. Εάν δεν \n"
+"είστε σίγουροι ποια ομάδα μελάνης χρειάζεται βαθύ καθαρισμό, εκτελέστε έλεγχο \n"
+"ακροφυσίων."
+
+#. utility_message_41
+#: po/keystr.h:576
+msgid "Ink Group:"
+msgstr "Ομάδα μελάνης:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:578
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Με τον βαθύ καθαρισμό καταναλώνεται πολύ περισσότερη μελάνη από ό,τι με τον \n"
+"κανονικό καθαρισμό. Πραγματοποιήστε βαθύ καθαρισμό μόνο εάν η κατάσταση των \n"
+"ακροφυσίων δεν βελτιώνεται ύστερα από τον κανονικό καθαρισμό.\n"
+"\n"
+"Μόλις ολοκληρωθεί ο βαθύς καθαρισμός, εκτελέστε έλεγχο ακροφυσίων για να \n"
+"ελέγξετε ότι τα ακροφύσια της κεφαλής εκτύπωσης έχουν αποφραχτεί."
+
+#. utility_message_43
+#: po/keystr.h:584
+msgid "Cleaning consumes ink."
+msgstr "Κατά τον καθαρισμό καταναλώνεται μελάνη."
+
+#. utility_message_44
+#: po/keystr.h:586
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Τοποθετήστε ένα φύλλο χαρτιού μεγέθους A4 ή letter στην προέλευση χαρτιού που \n"
+"επιλέξατε από το διακόπτη τροφοδοσίας χαρτιού και κάντε κλικ στο κουμπί OK.\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:588
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Εάν το εκτυπωμένο μοτίβο μοιάζει με \n"
+"αυτό, τα ακροφύσια της κεφαλής \n"
+"εκτύπωσης ίσως είναι φραγμένα.\n"
+"Κάντε κλικ στο κουμπί Καθαρισμός.\n"
+"\n"
+"Αν το εκτυπωμένο μοτίβο δεν βελτιωθεί \n"
+"μετά από δύο Καθαρισμούς, εκτελέστε \n"
+"βαθύ καθαρισμό."
+
+#. utility_message_50
+#: po/keystr.h:596
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Τοποθετήστε ένα φύλλο χαρτιού μεγέθους Α4 ή Letter στον τροφοδότη φύλλων και \n"
+"κάντε κλικ στο κουμπί ΟΚ."
+
+#. utility_message_53
+#: po/keystr.h:598
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα αριστερά και τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή letter \n"
+"στον τροφοδότη χαρτιού. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, πατήστε OK.\n"
+
+#. utility_message_54
+#: po/keystr.h:606
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Εκτυπώνει ένα μοτίβο που σας επιτρέπει να ελέγξετε εάν τα ακροφύσια της κεφαλής \n"
+"εκτύπωσης είναι φραγμένα.\n"
+"\n"
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον), μετακινήστε το \n"
+"ρυθμιστικό πάχους χαρτιού του εκτυπωτή προς τα αριστερά, τοποθετήστε ένα φύλλο \n"
+"απλού χαρτιού μεγέθους A4 ή letter στον τροφοδότη χαρτιού και κάντε κλικ στο \n"
+"\"Εκτύπωση μοτίβου ελέγχου\".\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:611
+msgid "Color Only"
+msgstr "Μόνο χρώμα"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:613
+msgid "Black Only"
+msgstr "Μόνο μαύρη"
+
+#. util_ink_cartridge_3
+#: po/keystr.h:615
+msgid "Both Black and Color"
+msgstr "Μαύρη και έγχρωμη"
+
+#. utility_message_55
+#: po/keystr.h:617
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr ""
+"Εκτυπώνει χρησιμοποιώντας μόνο το φυσίγγιο έγχρωμης μελάνης αντί για το \n"
+"φυσίγγιο μαύρης μελάνης."
+
+#. utility_message_56
+#: po/keystr.h:620
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Εκτυπώνει χρησιμοποιώντας μόνο το φυσίγγιο μαύρης μελάνης αντί για το φυσίγγιο \n"
+"έγχρωμης μελάνης μόνο όταν έχει επιλεχθεί Απλό χαρτί για τον Τύπο μέσων στην \n"
+"καρτέλα Κύριες ρυθμίσεις."
+
+#. utility_message_57
+#: po/keystr.h:624
+msgid "Prints using both black and color cartridges."
+msgstr "Εκτυπώνει χρησιμοποιώντας τα φυσίγγια μαύρης και έγχρωμης μελάνης."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:626
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Ο εκτυπωτής θα εκτυπώσει ένα φύλλο μοτίβου για να ξεκινήσει αυτομάτως η \n"
+"ευθυγράμμιση.\n"
+"Περιμένετε να ολοκληρωθεί η τρέχουσα λειτουργία πριν να ξεκινήσετε άλλη \n"
+"λειτουργία."
+
+#. utility_message_60
+#: po/keystr.h:629
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Θα εκτυπωθεί το δεύτερο φύλλο μοτίβου ευθυγράμμισης κεφαλών.\n"
+"\n"
+"Πατήστε OK για να ξεκινήσει η εκτύπωση."
+
+#. utility_message_61
+#: po/keystr.h:633
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Θα εκτυπωθεί το τρίτο φύλλο μοτίβου ευθυγράμμισης κεφαλών.\n"
+"\n"
+"Πατήστε OK για να ξεκινήσει η εκτύπωση."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:637
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα αριστερά και τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή letter \n"
+"στην προέλευση χαρτιού που επιλέξατε από το διακόπτη τροφοδοσίας χαρτιού. Ο \n"
+"εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. utility_message_63
+#: po/keystr.h:647
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Η ευθυγράμμιση της κεφαλής εκτύπωσης ολοκληρώθηκε.\n"
+"Για να ολοκληρώσετε την ευθυγράμμιση, κάντε κλικ στο κουμπί Άκυρο.\n"
+"\n"
+"Εάν εμφανίζονται ραβδώσεις στην πλευρά εκτύπωσης, μπορείτε να αποτρέψετε την \n"
+"εμφάνισή τους ευθυγραμμίζοντας την κεφαλή εκτύπωσης.\n"
+"Για να πραγματοποιήσετε την ευθυγράμμιση αυτή, τοποθετήστε ένα φύλλο χαρτιού \n"
+"στον τροφοδότη φύλλων και κάντε κλικ στο OK."
+
+#. utility_message_64
+#: po/keystr.h:653
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Εκτυπώνει ένα μοτίβο που σας επιτρέπει να ελέγξετε εάν τα ακροφύσια της κεφαλής \n"
+"εκτύπωσης είναι φραγμένα.\n"
+"\n"
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον), μετακινήστε το \n"
+"ρυθμιστικό πάχους χαρτιού του εκτυπωτή προς τα αριστερά, τοποθετήστε ένα φύλλο \n"
+"απλού χαρτιού μεγέθους A4 ή letter στην προέλευση χαρτιού που επιλέχθηκε με το \n"
+"διακόπτη τροφοδοσίας και κάντε κλικ στο \"Εκτύπωση μοτίβου ελέγχου\"."
+
+#. utility_message_66
+#: po/keystr.h:659
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Εκτυπώνει ένα μοτίβο που σας επιτρέπει να ελέγξετε αν τα ακροφύσια κεφαλής \n"
+"εκτύπωσης είναι φραγμένα.\n"
+"\n"
+"Τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους Α4 ή Letter στον τροφοδότη φύλλων \n"
+"και κάντε κλικ στο κουμπί Εκτύπωση μοτίβου ελέγχου."
+
+#. utility_message_67
+#: po/keystr.h:663
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Η ευθυγράμμιση της κεφαλής εκτύπωσης ολοκληρώθηκε.\n"
+"Για να ολοκληρώσετε την ευθυγράμμιση, κάντε κλικ στο κουμπί Άκυρο.\n"
+"\n"
+"Εάν εμφανίζονται ραβδώσεις στην πλευρά εκτύπωσης, μπορείτε να αποτρέψετε την \n"
+"εμφάνισή τους ευθυγραμμίζοντας την κεφαλή εκτύπωσης.\n"
+"Για να γίνει ευθυγράμμιση, τοποθετήστε ένα φύλλο χαρτιού στην προέλευση χαρτιού \n"
+"που έχετε επιλέξει με το διακόπτη τροφοδοσίας χαρτιού και κάντε κλικ στο κουμπί \n"
+"ΟΚ."
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:671
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα δεξιά και τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή letter στον \n"
+"τροφοδότη φύλλων. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:681
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Εάν το εκτυπωμένο μοτίβο μοιάζει με αυτό, τα ακροφύσια της κεφαλής εκτύπωσης \n"
+"ίσως είναι φραγμένα.\n"
+"Κάντε κλικ στο κουμπί Καθαρισμός.\n"
+"\n"
+"Αν το εκτυπωμένο μοτίβο δεν βελτιωθεί μετά από δύο ή τρεις Καθαρισμούς, \n"
+"εκτελέστε βαθύ καθαρισμό."
+
+#. utility_message_71
+#: po/keystr.h:689
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Δεν είναι δυνατός ο μηδενισμός του μετρητή μελάνης, επειδή ο εκτυπωτής είναι \n"
+"ρυθμισμένος να μην εμφανίζει προειδοποίηση για χαμηλή στάθμη μελάνης.\n"
+"\n"
+"Για να ενεργοποιήσετε την εμφάνιση προειδοποίησης για χαμηλή στάθμη μελάνης, \n"
+"κάντε κλικ στο κουμπί Ρύθμιση προειδοποίησης για χαμηλή στάθμη μελάνης στην \n"
+"καρτέλα Συντήρηση του προγράμματος οδήγησης του εκτυπωτή.\n"
+"Διαβάστε το εγχειρίδιο του εκτυπωτή πριν από την πραγματοποίηση αυτής της \n"
+"λειτουργίας."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:695
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού.\n"
+"\n"
+"Καταρχήν, αφαιρέστε το χαρτί από την πίσω θήκη.\n"
+"Κάντε κλικ στο κουμπί OK για να ενεργοποιηθούν οι κύλινδροι τροφοδοσίας χαρτιού \n"
+"30 φορές. Αυτή η διαδικασία θα διαρκέσει περίπου ενάμισι λεπτό.\n"
+"\n"
+"Θέλετε να ξεκινήσει ο καθαρισμός των κυλίνδρων τροφοδοσίας;"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:702
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού.\n"
+"\n"
+"Καταρχήν, πατήστε το διακόπτη τροφοδοσίας χαρτιού στον εκτυπωτή και επιλέξτε τη \n"
+"προέλευση χαρτιού στην οποία θέλετε να κάνετε καθαρισμό και, στη συνέχεια, \n"
+"αφαιρέστε το χαρτί από την επιλεγμένη προέλευση χαρτιού.\n"
+"Κάντε κλικ στο κουμπί OK για να ενεργοποιηθούν οι κύλινδροι τροφοδοσίας χαρτιού \n"
+"30 φορές. Αυτή η διαδικασία θα διαρκέσει περίπου ενάμισι λεπτό.\n"
+"\n"
+"Θέλετε να ξεκινήσει ο καθαρισμός των κυλίνδρων τροφοδοσίας;"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:710
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Βεβαιωθείτε ότι ο θόρυβος έχει σταματήσει και, στη συνέχεια, τοποθετήστε τρία \n"
+"φύλλα απλού χαρτιού στην πίσω θήκη.\n"
+"Κάντε κλικ στο κουμπί OK για να εκτυπωθεί το χαρτί και να ολοκληρωθεί ο \n"
+"καθαρισμός των κυλίνδρων τροφοδοσίας."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:713
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Βεβαιωθείτε ότι ο θόρυβος έχει σταματήσει και, στη συνέχεια, τοποθετήστε τρία \n"
+"φύλλα απλού χαρτιού στην επιλεγμένη προέλευση χαρτιού.\n"
+"Κάντε κλικ στο κουμπί OK για να εκτυπωθεί το χαρτί και να ολοκληρωθεί ο \n"
+"καθαρισμός των κυλίνδρων τροφοδοσίας."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:716
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Αφαιρέστε το χαρτί από τον τροφοδότη φύλλων.\n"
+"2. Διπλώστε ένα απλό χαρτί μεγέθους A4 ή Letter στη μέση, έπειτα ξεδιπλώστε το \n"
+"χαρτί.\n"
+"3. Τοποθετήστε το χαρτί στον τροφοδότη φύλλων με τη ράχη της τσάκισης προς τα \n"
+"κάτω.\n"
+"4. Επιλέξτε Εκτέλεση."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:721
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Αφαιρέστε το χαρτί από την πίσω θήκη.\n"
+"2. Διπλώστε ένα απλό χαρτί μεγέθους A4 ή Letter στη μέση, έπειτα ξεδιπλώστε το \n"
+"χαρτί.\n"
+"3. Τοποθετήστε το χαρτί στην πίσω θήκη με τη ράχη της τσάκισης προς τα κάτω.\n"
+"4. Επιλέξτε [Εκτέλεση]."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:726
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Εκτυπώνει ένα μοτίβο που σας επιτρέπει να ελέγξετε εάν τα ακροφύσια της κεφαλής \n"
+"εκτύπωσης είναι φραγμένα.\n"
+"\n"
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ενεργοποιήστε τον), μετακινήστε \n"
+"το ρυθμιστικό πάχους χαρτιού του εκτυπωτή προς τα αριστερά, τοποθετήστε ένα \n"
+"φύλλο απλού χαρτιού μεγέθους A4 ή letter στην πίσω θήκη και κάντε κλικ στο \n"
+"[Εκτύπωση μοτίβου ελέγχου]."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:732
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα αριστερά και τοποθετήστε δύο φύλλα απλού χαρτιού μεγέθους A4 ή letter \n"
+"στην πίσω θήκη. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:742
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη αυτόματης ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους Α4 ή \n"
+"Letter στον τροφοδότη χαρτιού και κάντε κλικ στο κουμπί [Ευθυγράμμιση κεφαλής \n"
+"εκτύπωσης]. \n"
+"\n"
+"Για να πραγματοποιήσετε μη αυτόματη ευθυγράμμιση κεφαλών, κάντε κλικ στο κουμπί \n"
+"[Άκυρο].\n"
+"Κατόπιν, κάντε κλικ στο [Προσαρμοσμένες ρυθμίσεις] στην καρτέλα Συντήρηση του \n"
+"προγράμματος οδήγησης του εκτυπωτή, επιλέξτε [Μη αυτόματη ευθυγράμμιση κεφαλών] \n"
+"και κάντε κλικ στο [Αποστολή]. Στη συνέχεια, προσπαθήστε ξανά.\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:753
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη αυτόματης ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), τοποθετήστε δύο φύλλα Φωτογραφικού χαρτιού Ματ \n"
+"(ΜΡ-101) μεγέθους Α4 ή Letter, στην πίσω θήκη και κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης]. \n"
+"\n"
+"Για να πραγματοποιήσετε μη αυτόματη ευθυγράμμιση κεφαλών, κάντε κλικ στο κουμπί \n"
+"[Άκυρο].\n"
+"Κατόπιν, κάντε κλικ στο [Προσαρμοσμένες ρυθμίσεις] στην καρτέλα Συντήρηση του \n"
+"προγράμματος οδήγησης του εκτυπωτή, επιλέξτε [Μη αυτόματη ευθυγράμμιση κεφαλών] \n"
+"και κάντε κλικ στο [Αποστολή]. Στη συνέχεια, προσπαθήστε ξανά.\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:765
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr ""
+"Τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους Α4 ή Letter στην πίσω θήκη και \n"
+"κάντε κλικ στο κουμπί ΟΚ."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:767
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Ο εκτυπωτής θα εκτυπώσει δύο φύλλα μοτίβου για να ξεκινήσει αυτομάτως η \n"
+"ευθυγράμμιση.\n"
+"Περιμένετε να ολοκληρωθεί η τρέχουσα λειτουργία πριν να ξεκινήσετε άλλη \n"
+"λειτουργία."
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:770
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον) και τοποθετήστε τέσσερα φύλλα απλού χαρτιού μεγέθους A4 \n"
+"ή letter στην προέλευση χαρτιού που επιλέξατε από το διακόπτη τροφοδοσίας \n"
+"χαρτιού. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:780
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Θα εκτυπωθεί το τέταρτο φύλλο του μοτίβου ευθυγράμμισης κεφαλών.\n"
+"\n"
+"Πατήστε OK για να ξεκινήσει η εκτύπωση."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:784
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Εκτυπώνει ένα μοτίβο που σας επιτρέπει να ελέγξετε αν τα ακροφύσια κεφαλής \n"
+"εκτύπωσης είναι φραγμένα.\n"
+"\n"
+"Τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή Letter στην προέλευση χαρτιού \n"
+"που επιλέξατε από το διακόπτη τροφοδοσίας χαρτιού και κάντε κλικ στο κουμπί \n"
+"Εκτύπωση μοτίβου ελέγχου."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:789
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα αριστερά και τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή letter \n"
+"στην πίσω θήκη. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:799
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον) και τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή \n"
+"letter στην προέλευση χαρτιού που επιλέξατε από το διακόπτη τροφοδοσίας \n"
+"χαρτιού. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:809
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Τοποθετήστε ένα φύλλο χαρτιού μεγέθους Α4 ή Letter στην πίσω θήκη και κάντε \n"
+"κλικ στο κουμπί ΟΚ."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:811
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Η ευθυγράμμιση της κεφαλής εκτύπωσης ολοκληρώθηκε.\n"
+"Για να ολοκληρώσετε την ευθυγράμμιση, κάντε κλικ στο κουμπί Άκυρο.\n"
+"\n"
+"Εάν εμφανίζονται ραβδώσεις στην πλευρά εκτύπωσης, μπορείτε να αποτρέψετε την \n"
+"εμφάνισή τους ευθυγραμμίζοντας την κεφαλή εκτύπωσης.\n"
+"Για να πραγματοποιήσετε την ευθυγράμμιση αυτή, τοποθετήστε ένα φύλλο χαρτιού \n"
+"στην πίσω θήκη και κάντε κλικ στο OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:817
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον) και τοποθετήστε τρία φύλλα απλού χαρτιού μεγέθους A4 ή \n"
+"letter στην προέλευση χαρτιού που επιλέξατε από το διακόπτη τροφοδοσίας \n"
+"χαρτιού. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:827
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα αριστερά και τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή letter \n"
+"στον τροφοδότη φύλλων. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"[Ευθυγράμμιση κεφαλής εκτύπωσης].\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:837
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"Εκτυπώνει ένα μοτίβο που σας επιτρέπει να ελέγξετε εάν τα ακροφύσια της κεφαλής \n"
+"εκτύπωσης είναι φραγμένα.\n"
+"\n"
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ενεργοποιήστε τον), μετακινήστε \n"
+"το ρυθμιστικό πάχους χαρτιού του εκτυπωτή προς τα δεξιά, τοποθετήστε ένα φύλλο \n"
+"απλού χαρτιού μεγέθους A4 ή letter στην πίσω θήκη και κάντε κλικ στο [Εκτύπωση \n"
+"μοτίβου ελέγχου]."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:842
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Εκτυπώνει χρησιμοποιώντας μόνο το φυσίγγιο μαύρης μελάνης αντί για το φυσίγγιο \n"
+"έγχρωμης μελάνης μόνο όταν έχει επιλεχθεί Απλό χαρτί, Hagaki ή Φάκελος για τον \n"
+"Τύπο μέσου στην καρτέλα Κύριες ρυθμίσεις."
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:845
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα αριστερά και τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους A4 ή letter \n"
+"στην πίσω θήκη. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, πατήστε OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:853
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα δεξιά και τοποθετήστε δύο φύλλα απλού χαρτιού μεγέθους A4 ή letter στην \n"
+"πίσω θήκη. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"Ευθυγράμμιση της κεφαλής εκτύπωσης.\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"Εκτύπωση της τιμής ευθυγράμμισης."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:863
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click Send. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη αυτόματης ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), μετακινήστε το ρυθμιστικό πάχους χαρτιού του εκτυπωτή \n"
+"προς τα δεξιά και τοποθετήστε ένα φύλλο Φωτογραφικού χαρτιού Ματ (ΜΡ-101) \n"
+"μεγέθους Α4 ή Letter στην πίσω θήκη και κάντε κλικ στο κουμπί [Ευθυγράμμιση \n"
+"κεφαλής εκτύπωσης]. \n"
+"\n"
+"Για να πραγματοποιήσετε μη αυτόματη ευθυγράμμιση κεφαλών, κάντε κλικ στο κουμπί \n"
+"[Άκυρο].\n"
+"Κατόπιν, κάντε κλικ στο [Προσαρμοσμένες ρυθμίσεις] στην καρτέλα Συντήρηση του \n"
+"προγράμματος οδήγησης του εκτυπωτή, επιλέξτε [Μη αυτόματη ευθυγράμμιση κεφαλών] \n"
+"και κάντε κλικ στο [Αποστολή]. Στη συνέχεια, προσπαθήστε ξανά.\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"[Τιμή ευθυγράμμισης εκτύπωσης]."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:875
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Αφαιρέστε το χαρτί από την πίσω θήκη και στη συνέχεια τοποθετήστε το πρώτο \n"
+"φύλλο απλού χαρτιού μεγέθους Α4 ή letter.\n"
+"2. Διπλώστε το δεύτερο φύλλο απλού χαρτιού μεγέθους A4 ή letter στη μέση και \n"
+"ύστερα ξεδιπλώστε το.\n"
+"3. Τοποθετήστε το δεύτερο φύλλο με τη ράχη της τσάκισης προς τα κάτω μπροστά \n"
+"από το πρώτο.\n"
+"4. Επιλέξτε [Εκτέλεση]."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:880
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Έναρξη καθαρισμού της κάτω πλάκας για να αποφευχθούν οι κηλίδες κατά την \n"
+"εκτύπωση.\n"
+"\n"
+"Η λειτουργία αυτή απαιτεί δύο φύλλα απλού χαρτιού μεγέθους Α4 ή Letter. \n"
+"Ακολουθήστε τις οδηγίες αυτές για να εκτελέσετε καθαρισμό της κάτω πλάκας."
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:884
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click Send."
+msgstr ""
+"Ρυθμίζει την προέλευση χαρτιού για απλό χαρτί όταν επιλέξετε «Αυτόματη επιλογή» \n"
+"για την «Προέλευση χαρτιού».\n"
+"\n"
+"Επιλέξτε την προέλευση χαρτιού για απλό χαρτί και, στη συνέχεια, κάντε κλικ στο \n"
+"κουμπί «Αποστολή»."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:888
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Αποφράσσει τα ακροφύσια που δεν είναι δυνατόν να καθαριστούν με κανονικό \n"
+"καθαρισμό.\n"
+"\n"
+"Επιλέξτε την ομάδα μελάνης στην οποία θέλετε να κάνετε βαθύ καθαρισμό. Εάν μόνο \n"
+"το μαύρο ακροφύσιο είναι φραγμένο, επιλέξτε \"Μαύρο\". Εάν έχει φραχτεί μόνο το \n"
+"έγχρωμο ακροφύσιο ή το μαύρο και το έγχρωμο ακροφύσιο, επιλέξτε \"Όλα τα \n"
+"χρώματα\". Εάν δεν είστε βέβαιοι πιο ακροφύσιο έχει φραχτεί, εκτελέστε έλεγχο \n"
+"ακροφυσίων.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:894
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού.\n"
+"\n"
+"Επιλέξτε την προέλευση χαρτιού στην οποία θέλετε να κάνετε καθαρισμό και στη \n"
+"συνέχεια κάντε κλικ στο κουμπί OK."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:898
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού στην πίσω θήκη.\n"
+"\n"
+"Καταρχήν, αφαιρέστε το χαρτί από την πίσω θήκη και, στη συνέχεια, ανοίξτε τη \n"
+"θήκη εξόδου χαρτιού.\n"
+"Κάντε κλικ στο κουμπί OK για να ενεργοποιηθούν οι κύλινδροι τροφοδοσίας \n"
+"χαρτιού. Αυτή η διαδικασία θα διαρκέσει περίπου ενάμισι λεπτό.\n"
+"\n"
+"Θέλετε να ξεκινήσει ο καθαρισμός των κυλίνδρων τροφοδοσίας;"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:905
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού στην κασέτα.\n"
+"\n"
+"Καταρχήν, αφαιρέστε το χαρτί από την κασέτα και, στη συνέχεια, ανοίξτε τη θήκη \n"
+"εξόδου χαρτιού.\n"
+"Κάντε κλικ στο κουμπί OK για να ενεργοποιηθούν οι κύλινδροι τροφοδοσίας \n"
+"χαρτιού. Αυτή η διαδικασία θα διαρκέσει περίπου δύο λεπτά.\n"
+"\n"
+"Θέλετε να ξεκινήσει ο καθαρισμός των κυλίνδρων τροφοδοσίας;"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:912
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού στην πίσω θήκη.\n"
+"\n"
+"Καταρχήν, αφαιρέστε το χαρτί από την πίσω θήκη.\n"
+"Κάντε κλικ στο κουμπί OK για να ενεργοποιηθούν οι κύλινδροι τροφοδοσίας \n"
+"χαρτιού. Αυτή η διαδικασία θα διαρκέσει περίπου ενάμισι λεπτό.\n"
+"\n"
+"Θέλετε να ξεκινήσει ο καθαρισμός των κυλίνδρων τροφοδοσίας;"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:919
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Καθαρισμός των κυλίνδρων τροφοδοσίας χαρτιού στην κασέτα.\n"
+"\n"
+"Καταρχήν, αφαιρέστε το χαρτί από την κασέτα.\n"
+"Κάντε κλικ στο κουμπί OK για να ενεργοποιηθούν οι κύλινδροι τροφοδοσίας \n"
+"χαρτιού. Αυτή η διαδικασία θα διαρκέσει περίπου δύο λεπτά.\n"
+"\n"
+"Θέλετε να ξεκινήσει ο καθαρισμός των κυλίνδρων τροφοδοσίας;"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:926
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Βεβαιωθείτε ότι ο θόρυβος έχει σταματήσει και, στη συνέχεια, τοποθετήστε τρία \n"
+"φύλλα απλού χαρτιού στην κασέτα.\n"
+"Κάντε κλικ στο κουμπί OK για να εκτυπωθεί το χαρτί και να ολοκληρωθεί ο \n"
+"καθαρισμός των κυλίνδρων τροφοδοσίας."
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:929
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load a sheet of A4 or letter "
+"size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"Εκτυπώνεται ένα μοτίβο που σας επιτρέπει να ελέγξετε την κατάσταση των \n"
+"ακροφυσίων κεφαλής εκτύπωσης.\n"
+"\n"
+"Αρχικά επιλέξτε την προέλευση χαρτιού που θα χρησιμοποιηθεί. Έπειτα τοποθετήστε \n"
+"ένα φύλλο απλού χαρτιού μεγέθους A4 ή letter στην επιλεγμένη προέλευση χαρτιού \n"
+"και κάντε κλικ στο «Εκτύπωση μοτίβου ελέγχου»."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:934
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"Εκτυπώνεται ένα μοτίβο που σας επιτρέπει να ελέγξετε την κατάσταση των \n"
+"ακροφυσίων κεφαλής εκτύπωσης.\n"
+"\n"
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον), τοποθετήστε ένα \n"
+"φύλλο απλού χαρτιού μεγέθους A4 ή letter, στην κασέτα και κάντε κλικ στο κουμπί \n"
+"«Εκτύπωση μοτίβου ελέγχου»."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:939
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"Εκτυπώνεται ένα μοτίβο που σας επιτρέπει να ελέγξετε την κατάσταση των \n"
+"ακροφυσίων κεφαλής εκτύπωσης.\n"
+"\n"
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον), τοποθετήστε ένα \n"
+"φύλλο απλού χαρτιού μεγέθους A4 ή letter, στην πίσω θήκη και κάντε κλικ στο \n"
+"κουμπί «Εκτύπωση μοτίβου ελέγχου»."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:944
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον) και τοποθετήστε δύο φύλλα απλού χαρτιού μεγέθους Α4 ή \n"
+"letter στην πίσω θήκη. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"«Ευθυγράμμιση της κεφαλής εκτύπωσης».\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"«Τιμή ευθυγράμμισης εκτύπωσης»."
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:953
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Για την ευθυγράμμιση εκτελείται εκτύπωση. Επιλέξτε την προέλευση χαρτιού που θα \n"
+"χρησιμοποιηθεί και, στη συνέχεια, κάντε κλικ στην «Ευθυγράμμιση της κεφαλής \n"
+"εκτύπωσης»."
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:957
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"«Τιμή ευθυγράμμισης εκτύπωσης»."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:959
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον) και τοποθετήστε \n"
+"τρία φύλλα απλού χαρτιού μεγέθους A4 ή letter, στην πίσω θήκη.\n"
+"\n"
+"Όταν κάνετε κλικ στο OK θα εκτυπωθεί η ευθυγράμμιση."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:964
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον) και τοποθετήστε \n"
+"τρία φύλλα απλού χαρτιού μεγέθους A4 ή letter, στην κασέτα.\n"
+"\n"
+"Όταν κάνετε κλικ στο OK θα εκτυπωθεί η ευθυγράμμιση."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:969
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον) και τοποθετήστε ένα \n"
+"φύλλο απλού χαρτιού μεγέθους A4 ή letter, στην πίσω θήκη.\n"
+"\n"
+"Όταν κάνετε κλικ στο OK θα εκτυπωθούν οι τρέχουσες ρυθμίσεις."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:974
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Ετοιμάστε τον εκτυπωτή (συνδέστε το καλώδιο και ανάψτε τον) και τοποθετήστε ένα \n"
+"φύλλο απλού χαρτιού μεγέθους A4 ή letter, στην κασέτα.\n"
+"\n"
+"Όταν κάνετε κλικ στο OK θα εκτυπωθούν οι τρέχουσες ρυθμίσεις."
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:979
+msgid "Select the paper source to be used, and then click OK."
+msgstr ""
+"Επιλέξτε την προέλευση χαρτιού που θα χρησιμοποιηθεί και, στη συνέχεια, κάντε \n"
+"κλικ στο OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:981
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Τοποθετήστε ένα φύλλο απλού χαρτιού μεγέθους Α4 ή Letter στην κασέτα και κάντε \n"
+"κλικ στο κουμπί ΟΚ."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:983
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη αυτόματης ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον), τοποθετήστε ένα φύλλο Φωτογραφικό χαρτί Ματ (MP-101) \n"
+"μεγέθους Α4 ή Letter στην πίσω θήκη και κάντε κλικ στο κουμπί «Ευθυγράμμιση \n"
+"κεφαλής εκτύπωσης». \n"
+"\n"
+"Για να πραγματοποιήσετε μη αυτόματη ευθυγράμμιση κεφαλών, κάντε κλικ στο κουμπί \n"
+"«Άκυρο».\n"
+"Κατόπιν, κάντε κλικ στο «Προσαρμοσμένες ρυθμίσεις» στην καρτέλα Συντήρηση του \n"
+"προγράμματος οδήγησης του εκτυπωτή, επιλέξτε «Μη αυτόματη ευθυγράμμιση κεφαλών» \n"
+"και κάντε κλικ στο «Αποστολή». Στη συνέχεια, προσπαθήστε ξανά.\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"«Τιμή ευθυγράμμισης εκτύπωσης»."
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:994
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Επιλέγει τη ρύθμιση \"Αποφυγή γδαρσίματος χαρτιού\". Εάν εκτυπώσετε με \n"
+"ενεργοποιημένη αυτή τη ρύθμιση, ενδέχεται να επηρεαστεί η ποιότητα ή η ταχύτητα \n"
+"εκτύπωσης. Για να αλλάξετε τη ρύθμιση, απενεργοποιήστε την \"Αποφυγή \n"
+"γδαρσίματος χαρτιού\"."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:997
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Αποφράσσει τα ακροφύσια που δεν είναι δυνατόν να καθαριστούν με κανονικό \n"
+"καθαρισμό.\n"
+"\n"
+"Με τον βαθύ καθαρισμό καταναλώνεται πολύ περισσότερη μελάνη από ό,τι με τον \n"
+"κανονικό καθαρισμό. Πραγματοποιήστε βαθύ καθαρισμό μόνο εάν η κατάσταση των \n"
+"ακροφυσίων δεν βελτιώνεται ύστερα από τον κανονικό καθαρισμό.\n"
+"\n"
+"Μόλις ολοκληρωθεί ο βαθύς καθαρισμός, εκτελέστε έλεγχο ακροφυσίων για να \n"
+"ελέγξετε ότι τα ακροφύσια της κεφαλής εκτύπωσης έχουν αποφραχτεί."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:1005
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Μην ξεκινήσετε άλλη εφαρμογή έως ότου ο βαθύς καθαρισμός ολοκληρωθεί.\n"
+"\n"
+"Μόλις ολοκληρωθεί ο βαθύς καθαρισμός, εκτελέστε τον έλεγχο ακροφυσίων, \n"
+"προκειμένου να ελεγχθεί αν τα ακροφύσια της κεφαλής εκτύπωσης είναι αποφραγμένα."
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:1010
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Με την ευθυγράμμιση κεφαλής εκτύπωσης διορθώνεται η εσφαλμένη ευθυγράμμιση \n"
+"χρωμάτων και γραμμών. Ανατρέξτε στον οδηγό χρήστη και ευθυγραμμίστε την κεφαλή \n"
+"εκτύπωσης από τον πίνακα λειτουργίας του εκτυπωτή.\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στην επιλογή \n"
+"Εκτύπωση τιμής ευθυγράμμισης."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:1015
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"Έναρξη ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Εφόσον η ευθυγράμμιση προϋποθέτει εκτύπωση, ετοιμάστε τον εκτυπωτή (συνδέστε το \n"
+"καλώδιο και ανάψτε τον) και τοποθετήστε τρία φύλλα απλού χαρτιού μεγέθους Α4 ή \n"
+"letter στην πίσω θήκη. Ο εκτυπωτής θα εκτυπώσει ένα μοτίβο ευθυγράμμισης.\n"
+"\n"
+"Για να ευθυγραμμίσετε τη θέση της κεφαλής εκτύπωσης, κάντε κλικ στο κουμπί \n"
+"«Ευθυγράμμιση της κεφαλής εκτύπωσης».\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στο κουμπί \n"
+"«Τιμή ευθυγράμμισης εκτύπωσης».\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:1024
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Έναρξη αυτόματης ευθυγράμμισης κεφαλής εκτύπωσης.\n"
+"\n"
+"Καθώς για την ευθυγράμμιση απαιτείται εκτύπωση, ετοιμάστε τον εκτυπωτή, \n"
+"(συνδέστε το καλώδιο και ενεργοποιήστε τον), τοποθετήστε στην πίσω θήκη ένα \n"
+"φύλλο χαρτιού μεγέθους A4 ή letter, τύπου Matte Photo Paper (MP-101) και κάντε \n"
+"κλικ στην επιλογή Ευθυγράμμιση κεφαλής εκτύπωσης.\n"
+"\n"
+"Εάν τα αποτελέσματα της αυτόματης ευθυγράμμισης κεφαλής εκτύπωσης δεν είναι \n"
+"ικανοποιητικά, εκτελέστε μη αυτόματη ευθυγράμμιση κεφαλής εκτύπωσης για να \n"
+"ευθυγραμμίσετε με ακρίβεια την κεφαλή εκτύπωσης.\n"
+"Για να εκτελέσετε μη αυτόματη ευθυγράμμιση κεφαλής εκτύπωσης, επιλέξτε Άκυρο.\n"
+"Έπειτα, κάντε κλικ στην επιλογή Προσαρμοσμένες ρυθμίσεις στην καρτέλα Συντήρηση \n"
+"του προγράμματος οδήγησης του εκτυπωτή, ενεργοποιήστε το πλαίσιο Χειροκίνητη \n"
+"ευθυγράμμιση κεφαλών και κάντε κλικ στην επιλογή Αποστολή. Έπειτα προσπαθήστε \n"
+"ξανά.\n"
+"\n"
+"Για να εκτυπώσετε και να ελέγξετε την τρέχουσα ρύθμιση, κάντε κλικ στην επιλογή \n"
+"Εκτύπωση τιμής ευθυγράμμισης."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_3
+#: po/keystr.h:1037
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, Hagaki A, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Πραγματοποιείται εκτύπωση μόνο από το φυσίγγιο μαύρης μελάνης αντί για το \n"
+"φυσίγγιο έγχρωμης μελάνης μόνο όταν έχει επιλεγεί Απλό χαρτί, Hagaki A, Hagaki, \n"
+"ή Φάκελος στην καρτέλα Κύριες ρυθμίσεις."
+

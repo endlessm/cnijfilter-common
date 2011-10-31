@@ -1,0 +1,1 @@
+#undef BJLIB_PATH

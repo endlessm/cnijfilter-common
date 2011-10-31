@@ -1,0 +1,3857 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2010
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.30\n"
+"POT-Creation-Date: 2009-11-26 18:03+0900\n"
+"PO-Revision-Date: 2010-01-14 19:42+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_LOCALE
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "th_TH"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BLACK_LABEL
+#: po/gladestr.h:2
+msgid "  Black:"
+msgstr "  สีดำ:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:4
+msgid "  Cyan:"
+msgstr "สีฟ้า:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:6
+msgid "  Magenta:"
+msgstr "สีบานเย็น:"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_QUALITY
+#: po/gladestr.h:8
+msgid "  Set...  "
+msgstr "  ตั้งค่า...  "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:10
+msgid "  Yellow:"
+msgstr "สีเหลือง:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING_RANGE
+#: po/gladestr.h:13
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES_RANGE
+#: po/gladestr.h:15
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:16
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:17
+msgid "0"
+msgstr ""
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/gladestr.h:19
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/gladestr.h:21
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/gladestr.h:23
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/gladestr.h:25
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/gladestr.h:27
+msgid "5"
+msgstr "5"
+
+#. LUM_IDR_PV_MAIN_IDM_PV_VERSION
+#: po/gladestr.h:29
+msgid "About"
+msgstr "เกี่ยวกับ"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/gladestr.h:31
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "การปรับแต่งในคอลัมน์ F (-3 ถึง +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/gladestr.h:33
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "การปรับแต่งในคอลัมน์ G (-3 ถึง +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/gladestr.h:35
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "การปรับแต่งในคอลัมน์ Q (-4 ถึง +4)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:37
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "การปรับแต่งในคอลัมน์ A ถึง C (-3 ถึง +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/gladestr.h:39
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "การปรับแต่งในคอลัมน์ A ถึง D (-3 ถึง +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:41
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "การปรับแต่งในคอลัมน์ A ถึง E (-3 ถึง +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/gladestr.h:43
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ A ถึง E (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/gladestr.h:45
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ A ถึง F (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/gladestr.h:47
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ A ถึง G (-5 ถึง +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/gladestr.h:49
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ D ถึง F (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/gladestr.h:51
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ E ถึง G (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/gladestr.h:53
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "การปรับแต่งในคอลัมน์ F และ G (-3 ถึง +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/gladestr.h:55
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ F ถึง K (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/gladestr.h:57
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ G ถึง J (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/gladestr.h:59
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ G ถึง L (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/gladestr.h:61
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ H ถึง K (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/gladestr.h:63
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ H ถึง L (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/gladestr.h:65
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ H ถึง N (-5 ถึง +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/gladestr.h:67
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "การปรับแต่งในคอลัมน์ K และ L (-3 ถึง +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/gladestr.h:69
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ K ถึง P (-5 ถึง +5)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/gladestr.h:71
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "การปรับแต่งในคอลัมน์ L และ M (-3 ถึง +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/gladestr.h:73
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ L ถึง O (-5 ถึง +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:75
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ M และ N (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/gladestr.h:77
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ M ถึง P (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/gladestr.h:79
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ M ถึง Q (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/gladestr.h:81
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ O ถึง T (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/gladestr.h:83
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "การปรับแต่งในคอลัมน์ P ถึง T (-5 ถึง +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/gladestr.h:85
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "การปรับแต่งในคอลัมน์ Q และ R (-4 ถึง +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/gladestr.h:87
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ R ถึง U (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/gladestr.h:89
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ U และ V (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/gladestr.h:91
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "การปรับแต่งในคอลัมน์ U และ V (-3 ถึง +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/gladestr.h:93
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ V ถึง Y (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/gladestr.h:95
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "การปรับแต่งในคอลัมน์ W และ X (-3 ถึง +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/gladestr.h:97
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ a ถึง e (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/gladestr.h:99
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ f ถึง j (-2 ถึง +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/gladestr.h:101
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "การปรับแต่งในคอลัมน์ f ถึง k (-2 ถึง +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/gladestr.h:103
+msgid "Align Print Head"
+msgstr "จัดตำแหน่งหัวพิมพ์"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/gladestr.h:105
+msgid "Align heads manually"
+msgstr "จัดตำแหน่งหัวพิมพ์ด้วยตัวเอง"
+
+#. LUM_IDS_CLEAN_ITEM_ALL
+#. util_ink_all_1
+#: po/gladestr.h:107 po/keystr.h:526
+msgid "All Colors"
+msgstr "สีทั้งหมด"
+
+#. LUM_IDD_PAG_PAGESET_XP_ETOE_IDC_STT_ETOEOVERPRINT
+#: po/gladestr.h:109
+msgid "Amount of Extension:"
+msgstr "ปริมาณการขยาย:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#. paper_gap_auto
+#: po/gladestr.h:111 po/keystr.h:444
+msgid "Auto"
+msgstr "อัตโนมัติ"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/gladestr.h:113
+msgid "Auto Power"
+msgstr "เปิดปิดอัตโนมัติ"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/gladestr.h:115
+msgid "Auto Power Off"
+msgstr "ปิดอัตโนมัติ"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/gladestr.h:117
+msgid "Auto Power Off:"
+msgstr "ปิดอัตโนมัติ:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/gladestr.h:119
+msgid "Auto Power On:"
+msgstr "เปิดอัตโนมัติ:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/gladestr.h:121
+msgid "Auto Power Settings"
+msgstr "การตั้งค่าเปิดปิดอัตโนมัติ"
+
+#. LUM_IDS_PT_DN_AUTODUPLEX
+#. LUM_IDD_PAG_PAGESET_NT4_AUTODUP_IDC_CHK_DUPLEX
+#: po/gladestr.h:123 po/keystr.h:282
+msgid "Automatic Duplex Printing"
+msgstr "การพิมพ์ทั้งสองหน้าโดยอัตโนมัติ"
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_TITLE_ETOE
+#: po/gladestr.h:125
+msgid "Available Media Types:"
+msgstr "ชนิดสื่อสิ่งพิมพ์' ที่มีอยู่:"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_CARTRIDGE
+#: po/gladestr.h:127
+msgid "BJ Cartridge:"
+msgstr "คาร์ทริด BJ:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDCANCEL
+#: po/gladestr.h:129
+msgid "Back to Setup"
+msgstr "กลับไปตั้งค่า"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_B1_LABEL
+#. regi_bidir
+#: po/gladestr.h:131 po/keystr.h:508
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "การจัดตำแหน่งสองทิศทาง (-5 ถึง +5)"
+
+#. LUM_IDS_CLEAN_ITEM_BLACK
+#. util_ink_black_0
+#: po/gladestr.h:133 po/keystr.h:530
+msgid "Black"
+msgstr "สีดำ"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/gladestr.h:135
+msgid "Black Ink Tank"
+msgstr "ตลับหมึกสีดำ"
+
+#. LUM_IDS_EDGETOEDGE
+#: po/gladestr.h:137
+msgid "Borderless"
+msgstr "ไร้ขอบ"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/gladestr.h:139
+msgid "Bottom Plate Cleaning"
+msgstr "การทำความสะอาดแผ่นด้านล่าง"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BRIGHTNESS
+#: po/gladestr.h:141
+msgid "Brightness:"
+msgstr "ความสว่าง:"
+
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#. message_button_cancel
+#: po/gladestr.h:143 po/keystr.h:468
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: po/gladestr.h:144
+msgid ""
+"Canon Inkjet Printer Driver Ver.3.30 for Linux (UI)\n"
+"Copyright CANON INC. 2001-2010\n"
+"All Rights Reserved. "
+msgstr ""
+
+#. LUM_IDS_CASSETTE
+#. supply_cassette_02
+#: po/gladestr.h:148 po/keystr.h:263
+msgid "Cassette"
+msgstr "กลักกระดาษ"
+
+#. LUM_LID_CENTERRING
+#: po/gladestr.h:150
+msgid "Centering"
+msgstr "การกำหนดศูนย์กลาง"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDOK
+#: po/gladestr.h:152
+msgid "Change"
+msgstr "เปลี่ยน"
+
+#. LUM_LID_CHANGE_COMBINATION
+#: po/gladestr.h:154
+msgid "Change Combination"
+msgstr "เปลี่ยนการจับคู่"
+
+#. LUM_LID_CHANGE_MEDIA
+#: po/gladestr.h:156
+msgid "Change Media Type"
+msgstr "เปลี่ยนชนิดสื่อสิ่งพิมพ์"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/gladestr.h:158
+msgid "Cleaning"
+msgstr "การทำความสะอาด"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_RESOLV2S
+#: po/gladestr.h:160
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr "คลิก 'เปลี่ยน' เพื่อเรียกใช้งานหรือ 'กลับไปตั้งค่า'เพื่อเลือกการจับคู่อื่น"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/gladestr.h:162
+msgid "Close"
+msgstr "ปิด"
+
+#. LUM_IDS_COLLATE
+#: po/gladestr.h:164
+msgid "Collate"
+msgstr "เรียงชุด"
+
+#. LUM_IDS_CLEAN_ITEM_COLOR
+#. print_color_message
+#. util_ink_color_0
+#: po/gladestr.h:166 po/keystr.h:140 po/keystr.h:538
+msgid "Color"
+msgstr "สี"
+
+#. LUM_LID_COLOR_BALANCE
+#: po/gladestr.h:168
+msgid "Color Balance"
+msgstr "ความสมดุลของสี"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/gladestr.h:170
+msgid "Color Ink Tank"
+msgstr "ตลับหมึกสี"
+
+#. LUM_IDD_MANUALCOLOR_MATCHING_IDC_STT_COLORMODE
+#: po/gladestr.h:172
+msgid "Color Mode:"
+msgstr "โหมดสี:"
+
+#. LUM_IDS_COLORADJUSTMENT
+#: po/gladestr.h:174
+msgid "Color/Intensity"
+msgstr "สี/ความเข้ม"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/gladestr.h:176
+msgid "Column A:"
+msgstr "คอลัมน์ A:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/gladestr.h:178
+msgid "Column B:"
+msgstr "คอลัมน์ B:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/gladestr.h:180
+msgid "Column C:"
+msgstr "คอลัมน์ C:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/gladestr.h:182
+msgid "Column D:"
+msgstr "คอลัมน์ D:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/gladestr.h:184
+msgid "Column E:"
+msgstr "คอลัมน์ E:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/gladestr.h:186
+msgid "Column F:"
+msgstr "คอลัมน์ F:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/gladestr.h:188
+msgid "Column G:"
+msgstr "คอลัมน์ G:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/gladestr.h:190
+msgid "Column H:"
+msgstr "คอลัมน์ H:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/gladestr.h:192
+msgid "Column I:"
+msgstr "คอลัมน์ I:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/gladestr.h:194
+msgid "Column J:"
+msgstr "คอลัมน์ J:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/gladestr.h:196
+msgid "Column K:"
+msgstr "คอลัมน์ K:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/gladestr.h:198
+msgid "Column L:"
+msgstr "คอลัมน์ L:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/gladestr.h:200
+msgid "Column M:"
+msgstr "คอลัมน์ M:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/gladestr.h:202
+msgid "Column N:"
+msgstr "คอลัมน์ N:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/gladestr.h:204
+msgid "Column O:"
+msgstr "คอลัมน์ O:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/gladestr.h:206
+msgid "Column P:"
+msgstr "คอลัมน์ P:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/gladestr.h:208
+msgid "Column Q:"
+msgstr "คอลัมน์ Q:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/gladestr.h:210
+msgid "Column R:"
+msgstr "คอลัมน์ R:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/gladestr.h:212
+msgid "Column S:"
+msgstr "คอลัมน์ S:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/gladestr.h:214
+msgid "Column T:"
+msgstr "คอลัมน์ T:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/gladestr.h:216
+msgid "Column U:"
+msgstr "คอลัมน์ U:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/gladestr.h:218
+msgid "Column V:"
+msgstr "คอลัมน์ V:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/gladestr.h:220
+msgid "Column W:"
+msgstr "คอลัมน์ W:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/gladestr.h:222
+msgid "Column X:"
+msgstr "คอลัมน์ X:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/gladestr.h:224
+msgid "Column Y:"
+msgstr "คอลัมน์ Y:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/gladestr.h:226
+msgid "Column a:"
+msgstr "คอลัมน์ a:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/gladestr.h:228
+msgid "Column b:"
+msgstr "คอลัมน์ b:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/gladestr.h:230
+msgid "Column c:"
+msgstr "คอลัมน์ c:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/gladestr.h:232
+msgid "Column d:"
+msgstr "คอลัมน์ d:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/gladestr.h:234
+msgid "Column e:"
+msgstr "คอลัมน์ e:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/gladestr.h:236
+msgid "Column f:"
+msgstr "คอลัมน์ f:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/gladestr.h:238
+msgid "Column g:"
+msgstr "คอลัมน์ g:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/gladestr.h:240
+msgid "Column h:"
+msgstr "คอลัมน์ h:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/gladestr.h:242
+msgid "Column i:"
+msgstr "คอลัมน์ i:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/gladestr.h:244
+msgid "Column j:"
+msgstr "คอลัมน์ j:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/gladestr.h:246
+msgid "Column k:"
+msgstr "คอลัมน์ k:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LABEL
+#: po/gladestr.h:248
+msgid "Contrast:"
+msgstr "ความคมชัด:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES
+#: po/gladestr.h:250
+msgid "Copies:"
+msgstr "จำนวนชุด:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_QUALITY_CUSTOM
+#: po/gladestr.h:252
+msgid "Custom"
+msgstr "กำหนดเอง"
+
+#. LUM_IDD_PAPER_CUSTOM
+#: po/gladestr.h:254
+msgid "Custom Paper Size"
+msgstr "กำหนดขนาดกระดาษเอง"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/gladestr.h:256
+msgid "Custom Settings"
+msgstr "กำหนดการตั้งค่าเอง"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:258
+msgid "Cyan:"
+msgstr "สีฟ้า:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_HI
+#: po/gladestr.h:260
+msgid "Dark "
+msgstr "มืด "
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/gladestr.h:262
+msgid "Deep Cleaning"
+msgstr "การทำความสะอาดอย่างละเอียด"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/gladestr.h:264
+msgid "Defaults"
+msgstr "ค่ามาตราฐาน"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DIFFUSION
+#: po/gladestr.h:266
+msgid "Diffusion"
+msgstr "แพร่กระจาย"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/gladestr.h:268
+msgid "Display low ink warning"
+msgstr "แสดงคำเตือนหมึกเหลือน้อย"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DITHERING
+#: po/gladestr.h:270
+msgid "Dither"
+msgstr "แบบกระจาย"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/gladestr.h:272
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ G ถึง L"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/gladestr.h:276
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ H ถึง O"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/gladestr.h:280
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ M ถึง R"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/gladestr.h:284
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ P ถึง V"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/gladestr.h:288
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายทางตามแนวนอนโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ Q ถึง Y"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/gladestr.h:292
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายทางตามแนวนอนโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ O ถึง V"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/gladestr.h:296
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ K ถึง P"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/gladestr.h:300
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่เมือนกันที่สุดจากคอลัมน์ M และ N"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/gladestr.h:303
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายทางตามแนวนอนโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ a ถึง j"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/gladestr.h:306
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายทางตามแนวนอนโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ a ถึง k"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/gladestr.h:309
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ H ถึง Q"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/gladestr.h:312
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และในเขตข้อมูลสำหรับคอลัมน์ L และ M ให้ป้อนจำนวนรูปแบบที่เรียบที่สุดและไม่มีลายทางใดๆ ในบริเวณที่ถูกชี้ด้วยลูกศร"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/gladestr.h:316
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr "ตรวจสอบรูปแบบที่พิมพ์ออกมา และในเขตข้อมูลสำหรับคอลัมน์ W และ X ให้ป้อนจำนวนรูปแบบที่เรียบที่สุดและไม่มีลายทางใดๆ ในบริเวณที่ถูกชี้ด้วยลูกศร"
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/gladestr.h:320
+msgid "Execute"
+msgstr "ปฏิบัติ"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/gladestr.h:322
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr "ปฏิบัติการจัดตำแหน่งหัวพิมพ์ ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ A ถึง F"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/gladestr.h:326
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr "ปฏิบัติการจัดตำแหน่งหัวพิมพ์ ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ A ถึง G"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/gladestr.h:330
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr "ปฏิบัติการจัดตำแหน่งหัวพิมพ์ ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ A ถึง J"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/gladestr.h:334
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr "ปฏิบัติการจัดตำแหน่งหัวพิมพ์ ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ A ถึง K"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/gladestr.h:338
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr "ปฏิบัติการจัดตำแหน่งหัวพิมพ์ ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ A ถึง L"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/gladestr.h:342
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr "ปฏิบัติการจัดตำแหน่งหัวพิมพ์ ตรวจสอบรูปแบบที่พิมพ์ออกมา และป้อนจำนวนรูปแบบที่มีลายโดดเด่นน้อยที่สุดในเขตข้อมูลสำหรับคอลัมน์ A ถึง N"
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/gladestr.h:346
+msgid "Exit"
+msgstr "จบการทำงาน"
+
+#. LUM_IDS_QUALITY_FAST
+#: po/gladestr.h:348
+msgid "Fast"
+msgstr "เร็ว"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FAST
+#: po/gladestr.h:350
+msgid "Fast "
+msgstr "เร็ว "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#. bin_pattern
+#: po/gladestr.h:352 po/keystr.h:410
+msgid "Fine"
+msgstr "วิจิตร"
+
+#. LUM_IDD_PAG_MAIN_IDC_CHK_GRAYSCALE
+#: po/gladestr.h:354
+msgid "Grayscale Printing"
+msgstr "การพิมพ์เฉดสีเทา"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE
+#: po/gladestr.h:356
+msgid "Halftoning"
+msgstr "ครึ่งสี"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_HEIGHT_LABEL
+#: po/gladestr.h:358
+msgid "Height:     "
+msgstr "ความสูง:     "
+
+#. LUM_IDS_QUALITY_BEST
+#: po/gladestr.h:360
+msgid "High"
+msgstr "สูง"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_HI
+#: po/gladestr.h:362
+msgid "High "
+msgstr "สูง "
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/gladestr.h:364
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "การจัดตำแหน่งตามแนวนอน (-3 ถึง +7)"
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#. message_button_ignore
+#: po/gladestr.h:366 po/keystr.h:476
+msgid "Ignore"
+msgstr "ละเลย"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/gladestr.h:368
+msgid "Ink Cartridge Settings"
+msgstr "การตั้งค่าคาร์ทริดหมึก"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/gladestr.h:370
+msgid "Ink Cartridge:"
+msgstr "คาร์ทริดหมึก:"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/gladestr.h:372
+msgid "Ink Counter Reset"
+msgstr "รีเซ็ตตัววัดระดับหมึก"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/gladestr.h:374
+msgid "Ink Drying Wait Time:"
+msgstr "เวลารอหมึกแห้ง:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LABEL
+#: po/gladestr.h:376
+msgid "Intensity:"
+msgstr "ความเข้ม:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LO
+#: po/gladestr.h:378
+msgid "Light "
+msgstr "สว่าง "
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/gladestr.h:380
+msgid "Long"
+msgstr "ยาว"
+
+#. LUM_IDS_STAPLE_LONGSIDE
+#: po/gladestr.h:382
+msgid "Long-side stapling"
+msgstr "เย็บเล่มด้านยาว"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LO
+#: po/gladestr.h:384
+msgid "Low"
+msgstr "ต่ำ"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/gladestr.h:386
+msgid "Low Ink Warning Setting"
+msgstr "การตั้งค่าคำเตือนหมึกเหลือน้อย"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:388
+msgid "Magenta:"
+msgstr "สีบานเย็น:"
+
+#. LUM_IDD_PAG_MAIN
+#: po/gladestr.h:390
+msgid "Main"
+msgstr "หลัก"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/gladestr.h:392
+msgid "Maintenance"
+msgstr "การบำรุงรักษา"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_MANUAL
+#: po/gladestr.h:394
+msgid "Manual"
+msgstr "ด้วยตัวเอง"
+
+#. LUM_IDS_MANUALCOLOR_WINDOWTITLE
+#: po/gladestr.h:396
+msgid "Manual Color Adjustment"
+msgstr "การปรับสีด้วยตัวเอง"
+
+#. LUM_LID_MAX
+#: po/gladestr.h:398
+msgid "Max"
+msgstr "Max"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_MEDIATYPE
+#: po/gladestr.h:400
+msgid "Media Type:"
+msgstr "ชนิดสื่อสิ่งพิมพ์:"
+
+#. LUM_LID_MIN
+#: po/gladestr.h:402
+msgid "Min"
+msgstr "Min"
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/gladestr.h:404
+msgid "Nozzle Check"
+msgstr "ตรวจหัวฉีด"
+
+#. LUM_IDD_MESSAGEBOX_IDOK
+#. message_button_ok
+#: po/gladestr.h:406 po/keystr.h:466
+msgid "OK"
+msgstr "ตกลง"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PRINTTYPE
+#: po/gladestr.h:408
+msgid "Page Layout:"
+msgstr "เค้าโครงหน้า:"
+
+#. LUM_IDD_PAG_PAGESET_XP
+#: po/gladestr.h:410
+msgid "Page Setup"
+msgstr "ตั้งค่าหน้ากระดาษ"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PAGESIZE
+#: po/gladestr.h:412
+msgid "Page Size:"
+msgstr "ขนาดหน้า:"
+
+#. LUM_LID_PAPER_GAP
+#: po/gladestr.h:414
+msgid "Paper Gap:"
+msgstr "ช่องว่างกระดาษ:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_PAPERSIZE
+#: po/gladestr.h:416
+msgid "Paper Size"
+msgstr "ขนาดกระดาษ"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/gladestr.h:418
+msgid "Paper Source Setting for Plain Paper"
+msgstr "การตั้งค่าแหล่งจ่ายกระดาษแก่กระดาษธรรมดา"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/gladestr.h:420
+msgid "Paper Source:"
+msgstr "แหล่งจ่ายกระดาษ:"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/gladestr.h:422
+msgid "Pattern Check"
+msgstr "ตรวจสอบรูปแบบ"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSEPAGE
+#: po/gladestr.h:424
+msgid "Pause Page"
+msgstr "หยุดหน้าชั่วคราว"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSESCAN
+#: po/gladestr.h:426
+msgid "Pause Scan"
+msgstr "หยุดสแกนชั่วคราว"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/gladestr.h:428
+msgid "Power Off"
+msgstr "ปิดเครื่อง"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/gladestr.h:430
+msgid "Prevent paper abrasion"
+msgstr "ป้องกันกระดาษเสียไป"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/gladestr.h:432
+msgid "Print Alignment Value"
+msgstr "มูลค่าการจัดตำแหน่งพิมพ์"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/gladestr.h:434
+msgid "Print Check Pattern"
+msgstr "พิมพ์รูปแบบตรวจหัวฉีด"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/gladestr.h:436
+msgid "Print Head Alignment"
+msgstr "การจัดตำแหน่งหัวพิมพ์"
+
+#. LUM_IDD_CLEAN
+#: po/gladestr.h:438
+msgid "Print Head Cleaning"
+msgstr "การทำความสะอาดหัวพิมพ์"
+
+#. LUM_IDD_PAG_MAIN_IDC_GRP_QUALITY
+#: po/gladestr.h:440
+msgid "Print Quality"
+msgstr "คุณภาพการพิมพ์"
+
+#. LUM_LID_PRINT_TYPE
+#: po/gladestr.h:442
+msgid "Print Type:"
+msgstr "ชนิดการพิมพ์:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_CHK_REVERSE
+#: po/gladestr.h:444
+msgid "Print from Last Page"
+msgstr "พิมพ์จากหน้าสุดท้าย"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_LABEL
+#: po/gladestr.h:446
+msgid "Quality"
+msgstr "คุณภาพ"
+
+#. LUM_IDD_SILENTMODE
+#: po/gladestr.h:448
+msgid "Quiet Mode"
+msgstr "โหมดเงียบ"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/gladestr.h:450
+msgid "Read your printer manual for details about low ink warnings."
+msgstr "กรุณาอ่านคู่มือการใช้งานเครื่องพิมพ์สำหรับรายละเอียดเกี่ยวกับคำเตือนหมึกเหลือน้อย"
+
+#. LUM_IDS_FEED_REAR
+#. supply_asf_reartray
+#: po/gladestr.h:452 po/keystr.h:249
+msgid "Rear Tray"
+msgstr "เทรย์ด้านหลัง"
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/gladestr.h:454
+msgid "Roller Cleaning"
+msgstr "การทำความสะอาดลูกกลิ้ง"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING
+#: po/gladestr.h:456
+msgid "Scaling:"
+msgstr "การเปลี่ยนขนาด:"
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/gladestr.h:458
+msgid "Select the ink cartridge for printing."
+msgstr "เลือกคาร์ทริดหมึกสำหรับการพิมพ์"
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/gladestr.h:460
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "เลือกตลับหมึกที่เปลี่ยนใหม่ และคลิกปุ่ม 'ปฏิบัติ'\n"
+
+#. LUM_IDD_GENERAL_RAD_2_IDOK
+#: po/gladestr.h:463
+msgid "Send"
+msgstr "ส่ง"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/gladestr.h:465
+msgid "Short"
+msgstr "สั้น"
+
+#. LUM_IDS_STAPLE_SHORTSIDE
+#: po/gladestr.h:467
+msgid "Short-side stapling"
+msgstr "เย็บเล่มด้านสั้น"
+
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#. color_correct_photo2
+#: po/gladestr.h:469 po/keystr.h:148
+msgid "Standard"
+msgstr "มาตราฐาน"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_IDC_STT_EDGE
+#: po/gladestr.h:471
+msgid "Staple Side:"
+msgstr "ด้านเย็บเล่ม:"
+
+#. LUM_IDD_PHA_START
+#: po/gladestr.h:473
+msgid "Start Print Head Alignment"
+msgstr "เริ่มการจัดตำแหน่งหัวพิมพ์"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/gladestr.h:475
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires a sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"เริ่มการทำความสะอาดแผ่นด้านล่างเพื่อป้องกันกระดาษรอยเปื้อนขณะที่ทำการพิมพ์\n"
+"\n"
+"การปฏิบัตินี้ต้องการกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่ง ตามคำแนะนำเหล่านี้ไปปฏิบัติการทำความสะอาดแผ่นด้านล่าง"
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/gladestr.h:479
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr "การวัดระดับหมึกสัมพันธ์กับตลับหมึกที่เปลี่ยนใหม่จะกำกับระดับที่เต็ม การเลือกกระบวนการนี้ทำให้แสดงการเตือนหมึกเหลือน้อยถูกต้อง"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_TITLE2
+#: po/gladestr.h:483
+msgid "The following is recommended:"
+msgstr "มีข้อแนะนำดังต่อไปนี้:"
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/gladestr.h:485
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"หัวฉีดไม่ได้ถูกอัด\n"
+"หากรูปแบบที่พิมพ์ออกมาคล้ายกับรูปแบบตัวนี้ \n"
+"คุณสามารถใช้เครื่องพิมพ์ทันที\n"
+"คลิก 'จบการทำงาน'"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/gladestr.h:490
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr "เพื่อให้แน่ใจว่าแสดงคำเตือนหมึกเหลือน้อยอย่างถูกต้อง ให้ปฏิบัติดังนี้\n"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_UNITS
+#: po/gladestr.h:494
+msgid "Units:"
+msgstr "หน่วย:"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/gladestr.h:496
+msgid "Use quiet mode"
+msgstr "ใช้โหมดเงียบ"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/gladestr.h:498
+msgid "Using AC Adapter:"
+msgstr "ใช้ AC อะแด็ปเตอร์:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/gladestr.h:500
+msgid "Using Battery:"
+msgstr "ใช้แบตเตอรี่:"
+
+#. LUM_IDD_PAG_MAINTENANCE_IDC_BTN_STATUSMONITOR
+#: po/gladestr.h:502
+msgid "View Printer Status..."
+msgstr "แสดงสถานะเครื่องพิมพ์..."
+
+#. LUM_IDD_PAG_EFFECT_VIVID_IDC_CHK_VIVID
+#: po/gladestr.h:504
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/gladestr.h:506
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr "คลิกปุ่ม 'รีเซ็ตตัววัดระดับหมึก' บนแท็บ 'การบำรุงรักษา' ของไดรเวอร์เครื่องพิมพ์และเลือกเปลี่ยนตลับหมึกใหม่ในแต่ละครั้งที่มีการเปลี่ยนตลับหมึก"
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/gladestr.h:510
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "รูปแบบที่พิมพ์ออกมาคล้ายกับรูปแบบดังต่อไปตัวไหนที่สุด"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_WIDTH_LABEL
+#: po/gladestr.h:512
+msgid "Width:    "
+msgstr "ความกว้าง:    "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:514
+msgid "Yellow:"
+msgstr "สีเหลือง:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATION_IDC_STT_SA_TITLE
+#: po/gladestr.h:516
+msgid "You cannot print with the following combination:"
+msgstr "คุณไม่สามารถพิมพ์ด้วยการจับคู่ดังต่อไปนี้:"
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDC_STT_SA_TITLE
+#: po/gladestr.h:518
+msgid "You have selected the following combination:"
+msgstr "คุณได้เลือกการจับคู่ดังต่อไปนี้:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_INCH
+#: po/gladestr.h:520
+msgid "inch"
+msgstr "in"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_MM
+#: po/gladestr.h:522
+msgid "mm"
+msgstr "mm"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#. model_BJF850
+#: po/keystr.h:8
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:10
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:12
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:14
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:16
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:18
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:20
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:22
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:24
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:26
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:28
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:30
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:32
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:34
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:36
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:38
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:40
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:42
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:44
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:46
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:48
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:50
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:52
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:54
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:56
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:58
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:60
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:62
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:64
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:66
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:68
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:70
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:72
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:74
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:76
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:78
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:80
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:82
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:84
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:86
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:88
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:90
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:92
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:94
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:96
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:98
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:100
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:102
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:104
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:106
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:108
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:110
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:112
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:114
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:116
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:118
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:120
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:122
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:124
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:126
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:128
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:130
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:132
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:134
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:136
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:138
+msgid "MX870 series"
+msgstr ""
+
+#. print_mono_message
+#: po/keystr.h:142
+msgid "Grayscale"
+msgstr "เฉดสีเทา"
+
+#. color_correct_photo
+#: po/keystr.h:144
+msgid "Photo"
+msgstr "รูป"
+
+#. color_correct_graphics
+#: po/keystr.h:146
+msgid "Graphic"
+msgstr "กราฟิก"
+
+#. color_correct_natural
+#: po/keystr.h:150
+msgid "Linear Tone"
+msgstr "โทนสีเป็นเส้นตรง"
+
+#. mediasize_recommend_message1_1
+#: po/keystr.h:152
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "แนะนำให้เปลี่ยน '%s' เป็น '%s'"
+
+#. mediasize_recommend_message1_2
+#: po/keystr.h:154
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr "คลิก 'เปลี่ยน' เพื่อเรียกใช้การจับคู่ใหม่ คลิก 'ละเลย' เพื่อใช้การจับคู่ปัจจุบันหรือ 'กลับไปตั้งค่า' เพื่อเลือกการจับคู่อื่น"
+
+#. mediasize_recommend_message2_1
+#: po/keystr.h:157
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "แนะนำให้เปลี่ยนการตั้งค่า '%s'"
+
+#. mediasize_recommend_message2_2
+#: po/keystr.h:159
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr "ใช้ตัวเลือกข้างล่างเพื่อเลือกการตั้งค่าที่เหมาะสม และคลิก 'เปลี่ยน' เพื่อใช้การจับคู่ใหม่"
+
+#. mediasize_recommend_message2_3
+#: po/keystr.h:162
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr "คลิก 'ละเลย' เพื่อใช้การจับคู่ปัจจุบัน หรือ 'กลับไปตั้งค่า' เพื่อเลือกการจับคู่อื่น"
+
+#. mediasize_illegal_select_message2_1
+#: po/keystr.h:165
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "แนะนำให้เปลี่ยนการตั้งค่า '%s'  "
+
+#. mediasize_illegal_select_message2_2
+#: po/keystr.h:167
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr "ใช้ตัวเลือกข้างล่างเพื่อเลือกการตั้งค่าที่เหมาะสม และคลิก 'เปลี่ยน' เพื่อใช้การจับคู่ใหม่ คลิก 'กลับไปตั้งค่า' เพื่อเลือกการจับคู่อื่น"
+
+#. lever_position_label
+#: po/keystr.h:170
+msgid "Paper Thickness Lever Position:"
+msgstr "ตำแหน่งคานปรับความหนากระดาษ:"
+
+#. lever_position_label_2007
+#: po/keystr.h:172
+msgid "Paper Thickness Lever Position: "
+msgstr "ตำแหน่งคานปรับความหนากระดาษ: "
+
+#. move_lever_position_alert
+#: po/keystr.h:174
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "เลื่อนคานปรับความหนากระดาษ '%s'"
+
+#. move_lever_position_alert_2007
+#: po/keystr.h:176
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "เลื่อนคานปรับความหนากระดาษ '%s' "
+
+#. mediasize_change_media
+#: po/keystr.h:178
+msgid "Media Type"
+msgstr "ชนิดสื่อสิ่งพิมพ์"
+
+#. mediasize_change_size
+#: po/keystr.h:180
+msgid "Page Size"
+msgstr "ขนาดหน้า"
+
+#. mediatype_dialog_message
+#: po/keystr.h:182
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"ชนิดสื่อสิ่งพิมพ์: '%s' ไม่สามารถใช้ได้กับคาร์ทริด BJ ที่ถูกเลือก\n"
+"เลือกชนิดสื่อสิ่งพิมพ์ที่ตั้งใจจะใช้"
+
+#. media_plain
+#: po/keystr.h:185
+msgid "Plain Paper"
+msgstr "กระดาษธรรมดา"
+
+#. media_ohp
+#: po/keystr.h:187
+msgid "Transparencies"
+msgstr "แผ่นใส"
+
+#. media_bpf
+#: po/keystr.h:189
+msgid "Back Print Film"
+msgstr "แผ่นฟิล์มด้านหลัง"
+
+#. media_bjcloth
+#: po/keystr.h:191
+msgid "Fabric Sheet"
+msgstr "แผ่นผ้า"
+
+#. media_higlossfilm
+#: po/keystr.h:193
+msgid "High Gloss Film"
+msgstr "ฟิล์มมันมาก"
+
+#. media_postcard
+#: po/keystr.h:195
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#. media_envelope
+#: po/keystr.h:197
+msgid "Envelope"
+msgstr "ซองจดหมาย"
+
+#. media_glossy_postcard
+#: po/keystr.h:199
+msgid "Glossy Postcard"
+msgstr "โปสต์การ์ดชนิดมัน"
+
+#. media_hires
+#: po/keystr.h:201
+msgid "High Resolution Paper"
+msgstr "กระดาษที่มีความละเอียดสูง"
+
+#. media_tshirt
+#: po/keystr.h:203
+msgid "T-Shirt Transfers"
+msgstr "กระดาษพิมพ์ลายบนเสื้อ"
+
+#. media_thick
+#: po/keystr.h:205
+msgid "Thick Paper"
+msgstr ""
+
+#. media_higloss_photo_film
+#: po/keystr.h:207
+msgid "High Gloss Photo Film"
+msgstr "ฟิล์มรูปถ่ายมันมาก"
+
+#. media_glossy_photo
+#: po/keystr.h:209
+msgid "Glossy Photo Paper"
+msgstr "กระดาษเคลือบมันภาพถ่าย"
+
+#. media_glossy_photocard
+#: po/keystr.h:211
+msgid "Glossy Photo Cards"
+msgstr "การ์ดรูปถ่ายชนิดมัน"
+
+#. media_pro_photo
+#: po/keystr.h:213
+msgid "Photo Paper Pro"
+msgstr "กระดาษพิมพ์ภาพถ่ายระดับมืออาชีพ"
+
+#. media_inkjet_postcard
+#: po/keystr.h:215
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#. media_matte_photo
+#: po/keystr.h:217
+msgid "Matte Photo Paper"
+msgstr "กระดาษภาพถ่ายแบบด้าน"
+
+#. media_photo_plus_glossy
+#: po/keystr.h:219
+msgid "Photo Paper Plus Glossy"
+msgstr "กระดาษภาพถ่ายเคลือบมันพิเศษ"
+
+#. media_other
+#: po/keystr.h:221
+msgid "Other Paper"
+msgstr "กระดาษอื่น"
+
+#. media_other_photo
+#: po/keystr.h:223
+msgid "Other Photo Paper"
+msgstr "กระดาษภาพถ่ายอื่น"
+
+#. media_duplex_glossy
+#: po/keystr.h:225
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#. media_fine_art_paper
+#: po/keystr.h:227
+msgid "Fine Art Photo Rag"
+msgstr "Fine Art \"Photo Rag\""
+
+#. media_other_fine_art_paper
+#: po/keystr.h:229
+msgid "Other Fine Art Paper"
+msgstr "กระดาษ Fine Art อื่น"
+
+#. media_photo_paper_plus_glossy_ii
+#: po/keystr.h:231
+msgid "Photo Paper Plus Glossy II"
+msgstr "กระดาษภาพถ่ายเคลือบมันพิเศษ II"
+
+#. media_photo_paper_plus_semi_gloss
+#: po/keystr.h:233
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "กระดาษกึ่งเงา ภาพถ่ายพิเศษ"
+
+#. media_photo_paper_pro_platinum
+#: po/keystr.h:235
+msgid "Photo Paper Pro Platinum"
+msgstr "กระดาษภาพถ่ายมือโปรแบบแพลทินัม"
+
+#. media_photo_paper_pro_ii
+#: po/keystr.h:237
+msgid "Photo Paper Pro II"
+msgstr "กระดาษภาพถ่ายมือโปร II"
+
+#. media_contents_glossy
+#: po/keystr.h:239
+msgid "Hagaki K"
+msgstr "Hagaki K"
+
+#. media_contents_prophoto
+#: po/keystr.h:241
+msgid "Hagaki P"
+msgstr "Hagaki P"
+
+#. media_address_postcard
+#: po/keystr.h:243
+msgid "Hagaki A"
+msgstr "Hagaki A"
+
+#. supply_manual
+#: po/keystr.h:245
+msgid "Manual Feed"
+msgstr "ป้อนกระดาษด้วยตัวเอง"
+
+#. supply_asf
+#: po/keystr.h:247
+msgid "Auto Sheet Feeder"
+msgstr "ตัวป้อนกระดาษอัตโนมัติ"
+
+#. supply_asf2
+#: po/keystr.h:251
+msgid "Auto Feeder2"
+msgstr ""
+
+#. supply_cassette
+#: po/keystr.h:253
+msgid "Standard Cassette"
+msgstr ""
+
+#. supply_cassette2
+#: po/keystr.h:255
+msgid "Optional Cassette"
+msgstr ""
+
+#. supply_consecutive
+#: po/keystr.h:257
+msgid "Auto Select"
+msgstr "เลือกอัตโนมัติ"
+
+#. supply_consecutive2
+#: po/keystr.h:259
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#. supply_tractor
+#: po/keystr.h:261
+msgid "Tractor Feeder"
+msgstr "ตัวป้อนแทร็กเตอร์"
+
+#. supply_printer_sw_select
+#: po/keystr.h:265
+msgid "Paper Feed Switch"
+msgstr "สวิตช์ป้อนกระดาษ"
+
+#. supply_cassette_04
+#: po/keystr.h:267
+msgid "Front Feeder"
+msgstr "ตัวป้อนด้านหน้า"
+
+#. supply_cassette_04_fronttray
+#: po/keystr.h:269
+msgid "Front Tray"
+msgstr "เทรย์ด้านหน้า"
+
+#. supply_front_for_plain
+#: po/keystr.h:271
+msgid "Front for Plain Paper"
+msgstr "ป้อนกระดาษจากตัวป้อน"
+
+#. supply_front_for_plain_maetray
+#: po/keystr.h:273
+msgid "Front for Plain Paper "
+msgstr "ป้อนกระดาษจากตัวป้อน "
+
+#. supply_auto_continuous_feed
+#: po/keystr.h:275
+msgid "Continuous Autofeed"
+msgstr "ป้อนอัตโนมัติต่อเนื่อง"
+
+#. supply_auto_select
+#: po/keystr.h:277
+msgid "Automatically Select"
+msgstr "เลือกอัตโนมัติ"
+
+#. supply_change_mes
+#: po/keystr.h:279
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"ขนาดกระดาษที่ถูกเลือกไม่สามารถใช้ได้ในการตั้งค่าแหล่งจ่ายกระดาษปัจจุบัน\n"
+"การตั้งค่าแหล่งจ่ายกระดาษถูกเปลี่ยนเป็น '%s'"
+
+#. LUM_AlertMessTitlePaperNotAvailableForAutoDuplex_M
+#: po/keystr.h:284
+msgid ""
+"A page size that is not supported by the \n"
+"automatic duplex printing function is selected."
+msgstr "ฟังก์ชันการพิมพ์ทั้งสองหน้าโดยอัตโนมัติไม่สนับสนุนขนาดหน้าที่คุณใช้อยู่"
+
+#. LUM_AlertMessPaperNotAvailableForAutoDuplex
+#: po/keystr.h:287
+#, c-format
+msgid "Uncheck %s."
+msgstr "ไม่เลือก '%s'"
+
+#. LUM_MODIFY_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/keystr.h:289
+msgid "Paper Source"
+msgstr "แหล่งจ่ายกระดาษ"
+
+#. LUM_MessPSNotCasette_M
+#: po/keystr.h:291
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "ขนาดหน้าที่ไม่สามารถป้อนจากกลักกระดาษถูกเลือกอยู่"
+
+#. LUM_AlertMessPaperNotFedFromCassetteOrFront
+#: po/keystr.h:293
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "เปลี่ยนการตั้งค่า '%s' เป็น '%s'"
+
+#. media_supply_change_mes
+#: po/keystr.h:295
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"แหล่งจ่ายกระดาษ: ไม่สามารถใช้ '%s' ได้สำหรับ 'ชนิดสื่อสิ่งพิมพ์' ที่ถูกเลือก\n"
+"การตั้งค่า 'แหล่งจ่ายกระดาษ' ถูกเปลี่ยนเป็น '%s'"
+
+#. bkenh_enh
+#: po/keystr.h:298
+msgid "Enhanced Black"
+msgstr ""
+
+#. size_a5
+#: po/keystr.h:300
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#. size_a4
+#: po/keystr.h:302
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#. size_a3
+#: po/keystr.h:304
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#. size_b5
+#: po/keystr.h:306
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#. size_b4
+#: po/keystr.h:308
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#. size_letter
+#: po/keystr.h:310
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#. size_legal
+#: po/keystr.h:312
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#. size_ledger
+#: po/keystr.h:314
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#. size_csize
+#: po/keystr.h:316
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#. size_post
+#: po/keystr.h:318
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#. size_env_10
+#: po/keystr.h:320
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+
+#. size_env_dl
+#: po/keystr.h:322
+msgid "DL Env. 220.0x110.0mm"
+msgstr "DL Env. 220.0x110.0mm"
+
+#. size_fools
+#: po/keystr.h:324
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#. size_env_j4
+#: po/keystr.h:326
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#. size_env_j6
+#: po/keystr.h:328
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#. size_letter_bleed
+#: po/keystr.h:330
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#. size_a4_bleed
+#: po/keystr.h:332
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#. size_a3_plus
+#: po/keystr.h:334
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm"
+
+#. size_photocard
+#: po/keystr.h:336
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#. size_user
+#: po/keystr.h:338
+msgid "Custom..."
+msgstr "กำหนดเอง..."
+
+#. size_env_10_p
+#: po/keystr.h:340
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+
+#. size_env_dl_p
+#: po/keystr.h:342
+msgid "DL Env. 110.0x220.0mm"
+msgstr "DL Env. 110.0x220.0mm"
+
+#. size_env_j4_p
+#: po/keystr.h:344
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#. size_env_j6_p
+#: po/keystr.h:346
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#. size_l
+#: po/keystr.h:348
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#. size_2l
+#: po/keystr.h:350
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#. size_4x6
+#: po/keystr.h:352
+msgid "4\"x6\" 10x15cm 101.6x152.4mm"
+msgstr "4\"x6\" 10x15cm 101.6x152.4mm"
+
+#. size_panorama
+#: po/keystr.h:354
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#. size_5x7
+#: po/keystr.h:356
+msgid "5\"x7\" 13x18cm 127.0x177.8mm"
+msgstr "5\"x7\" 13x18cm 127.0x177.8mm"
+
+#. size_post_dbl
+#: po/keystr.h:358
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#. size_businesscard
+#: po/keystr.h:360
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Card 2.16\"x3.58\" 55.0x91.0mm"
+
+#. size_creditcard
+#: po/keystr.h:362
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "บัตรเครดิต 2.13\"x3.39\" 54.0x86.0mm"
+
+#. size_a4_fine_art
+#: po/keystr.h:364
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Fine Art A4 210.0x297.0mm"
+
+#. size_4X8
+#: po/keystr.h:366
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#. size_6giri
+#: po/keystr.h:368
+msgid "8\"x10\" 20x25cm 203.2x254.0mm"
+msgstr "8\"x10\" 20x25cm 203.2x254.0mm"
+
+#. size_wide
+#: po/keystr.h:370
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#. custom_size_mm_format
+#: po/keystr.h:372
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#. custom_size_inches_format
+#: po/keystr.h:374
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "in (%s-%s)"
+
+#. tmessage_position1
+#: po/keystr.h:376
+msgid "Position 1"
+msgstr ""
+
+#. tmessage_position2
+#: po/keystr.h:378
+msgid "Position 2"
+msgstr ""
+
+#. tmessage_position3
+#: po/keystr.h:380
+msgid "Position 3"
+msgstr ""
+
+#. tmessage_left
+#. tmessage_left2
+#: po/keystr.h:382 po/keystr.h:396
+msgid "Left"
+msgstr "ซ้าย"
+
+#. tmessage_center
+#: po/keystr.h:384
+msgid "Center"
+msgstr ""
+
+#. tmessage_right
+#. tmessage_right2
+#: po/keystr.h:386 po/keystr.h:398
+msgid "Right"
+msgstr "ขวา"
+
+#. tmessage_lower
+#. tmessage_lower2
+#. plmessage_lower
+#: po/keystr.h:388 po/keystr.h:392 po/keystr.h:404
+msgid "Down"
+msgstr "ล่าง"
+
+#. tmessage_upper
+#. tmessage_upper2
+#. plmessage_upper
+#: po/keystr.h:390 po/keystr.h:394 po/keystr.h:406
+msgid "Up"
+msgstr "บน"
+
+#. plmessage_foward
+#: po/keystr.h:400
+msgid "Front"
+msgstr ""
+
+#. plmessage_backword
+#: po/keystr.h:402
+msgid "Back"
+msgstr ""
+
+#. slmess_smooth
+#: po/keystr.h:408
+msgid "Smoothing"
+msgstr ""
+
+#. bin_pattern_hs
+#: po/keystr.h:412
+msgid "Fine(Fast)"
+msgstr ""
+
+#. banner_on
+#: po/keystr.h:414
+msgid "Banner Printing"
+msgstr ""
+
+#. cartridge_color
+#: po/keystr.h:416
+msgid "Color    "
+msgstr "สี    "
+
+#. cartridge_bk
+#: po/keystr.h:418
+msgid "Black    "
+msgstr "สีดำ    "
+
+#. cartridge_photo
+#: po/keystr.h:420
+msgid "Photo    "
+msgstr "รูป    "
+
+#. cartridge_bk_color
+#: po/keystr.h:422
+msgid "Black/Color    "
+msgstr "สีดำ/สี    "
+
+#. cartridge_bk_photo
+#: po/keystr.h:424
+msgid "Black/Photo    "
+msgstr "สีดำ/รูป    "
+
+#. cartridge_photo_color
+#: po/keystr.h:426
+msgid "Photo/Color    "
+msgstr "รูป/สี    "
+
+#. printing_type_fit
+#: po/keystr.h:428
+msgid "Fit-to-Page"
+msgstr "ตามขนาดหน้า"
+
+#. printing_type_normal
+#: po/keystr.h:430
+msgid "Normal-size"
+msgstr "ขนาดปกติ"
+
+#. printing_type_scale
+#: po/keystr.h:432
+msgid "Scaled"
+msgstr "เปลี่ยนขนาด"
+
+#. input_gamma_default
+#: po/keystr.h:434
+msgid "Default"
+msgstr ""
+
+#. input_gamma_10
+#: po/keystr.h:436
+msgid "More bright (Gamma = 1.0)"
+msgstr ""
+
+#. input_gamma_14
+#: po/keystr.h:438
+msgid "Light"
+msgstr "สว่าง"
+
+#. input_gamma_18
+#: po/keystr.h:440
+msgid "Normal"
+msgstr "ปกติ"
+
+#. input_gamma_22
+#: po/keystr.h:442
+msgid "Dark"
+msgstr "มืด"
+
+#. paper_gap_wide
+#: po/keystr.h:446
+msgid "Wide"
+msgstr "กว้าง"
+
+#. paper_gap_narrow
+#: po/keystr.h:448
+msgid "Narrow"
+msgstr "แคบ"
+
+#. LUM_IDS_EDGETOEDGE_SELECTED
+#: po/keystr.h:450
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"คุณได้เลือก 'การพิมพ์ไร้ขอบ'\n"
+"เอกสารที่จะพิมพ์ถูกขยายออกซึ่งจะยืดออกกระดาษเล็กน้อย\n"
+"คุณภาพการพิมพ์อาจลดลง หรืออาจมีเปื้อนซึมอยู่ที่ด้านบนและด้านล่างกระดาษ ซึ่งทั้งนี้ขึ้นอยู่กับชนิดสื่อสิ่งพิมพ์ที่คุณใช้อยู่"
+
+#. mediaborder_dialog_message1
+#: po/keystr.h:455
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"แนะนำอย่าใช้การพิมพ์ไร้ขอบเมื่อ '%s' ถูกเลือกสำหรับ 'ชนิดสื่อสิ่งพิมพ์'\n"
+"เลือกชนิดสื่อสิ่งพิมพ์ที่ตั้งใจจะใช้"
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_NOTE_ETOE
+#: po/keystr.h:458
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"เอกสารที่จะพิมพ์ถูกขยายออกซึ่งจะยืดออกกระดาษเล็กน้อย\n"
+"คุณภาพการพิมพ์อาจลดลง หรืออาจมีเปื้อนซึมอยู่ที่ด้านบนและด้านล่างกระดาษ ซึ่งทั้งนี้ขึ้นอยู่กับชนิดสื่อสิ่งพิมพ์ที่คุณใช้อยู่"
+
+#. LUM_IDS_SMMSG_ENVELOPE_SHORTEN_ASF
+#: po/keystr.h:462
+msgid ""
+"The printer is set to print on an envelope.\n"
+"Lower the paper support and then load an envelope.\n"
+"Then click OK to start printing."
+msgstr ""
+"เครื่องพิมพ์ถูกตั้งค่าเป็นการพิมพ์ซองจดหมาย\n"
+"ลดสิ่งค้ำกระดาษลงแล้วป้อนซองจดหมาย\n"
+"แล้วคลิก 'ตกลง' เพื่อเริ่มการพิมพ์"
+
+#. message_button_yes
+#: po/keystr.h:470
+msgid "Yes"
+msgstr "ใช่"
+
+#. message_button_no
+#: po/keystr.h:472
+msgid "No"
+msgstr "ไม่ใช่"
+
+#. message_button_abort
+#: po/keystr.h:474
+msgid "Abort"
+msgstr ""
+
+#. autopower_enable
+#: po/keystr.h:478
+msgid "Enable"
+msgstr "เปิดใช้งาน"
+
+#. autopower_disable
+#: po/keystr.h:480
+msgid "Disable"
+msgstr "ปิดใช้งาน"
+
+#. autopower_5min
+#: po/keystr.h:482
+msgid "5 minutes"
+msgstr "5 นาที"
+
+#. autopower_10min
+#: po/keystr.h:484
+msgid "10 minutes"
+msgstr "10 นาที"
+
+#. autopower_15min
+#: po/keystr.h:486
+msgid "15 minutes"
+msgstr "15 นาที"
+
+#. autopower_30min
+#: po/keystr.h:488
+msgid "30 minutes"
+msgstr "30 นาที"
+
+#. autopower_60min
+#: po/keystr.h:490
+msgid "60 minutes"
+msgstr "60 นาที"
+
+#. utility_message_3
+#: po/keystr.h:492
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"รูปแบบการพิมพ์ถูกต้องหรือไม่\n"
+"\n"
+"หากไม่มีรูปแบบใดๆ ถูกพิมพ์ออกหรือผลการพิมพ์พร่าเกินไป ให้คลิก 'ไม่ใช่ และเริ่มใหม่จากเริ่มต้น"
+
+#. utility_message_4
+#: po/keystr.h:496
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr "ตรวจให้แน่ใจว่าเครื่องพิมพ์เปิดอยู่ สายเชื่อมต่ออย่างถูกต้อง และเครื่องพิมพ์ออนไลนอยู่ แล้วลองใหม่"
+
+#. utility_message_5
+#: po/keystr.h:498
+msgid "Print head alignment is now complete."
+msgstr "การจัดตำแหน่งหัวพิมพ์เสร็จสมบูรณ์"
+
+#. utility_message_6
+#: po/keystr.h:500
+msgid "Do not start another operation until the current one has finished."
+msgstr "ห้ามเริ่มการดำเนินการอื่นๆ จนกว่างานปัจจุบันเสร็จสมบูรณ์"
+
+#. utility_message_8
+#: po/keystr.h:502
+msgid "Turn the printer off?"
+msgstr "ปิดเครื่องพิมพ์ไหม"
+
+#. utility_message_9
+#: po/keystr.h:504
+msgid "Write settings to printer?"
+msgstr "เขียนการตั้งค่าไปยังเครื่องพิมพ์ไหม"
+
+#. utility_message_12
+#: po/keystr.h:506
+msgid "Start print head deep cleaning?"
+msgstr "เริ่มการทำความสะอาดหัวพิมพ์อย่างละเอียดไหม"
+
+#. utility_message_23
+#: po/keystr.h:510
+msgid "Execute black print head deep cleaning?"
+msgstr "ปฏิบัติการทำความสะอาดหัวพิมพ์สีดำอย่างละเอียดไหม"
+
+#. utility_message_24
+#: po/keystr.h:512
+msgid "Execute color print head deep cleaning?"
+msgstr "ปฏิบัติการทำความสะอาดหัวพิมพ์สีอย่างละเอียดไหม"
+
+#. utility_message_27
+#: po/keystr.h:514
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษ\n"
+"\n"
+"ก่อนอื่น ให้เอากระดาษออกจากตัวป้อนกระดาษ การคลิก 'ตกลง' สามารถเรียกให้ลูกกลิ้งป้อนกระดาษทำงานได้ 30 ครั้ง ขั้นตอนดังกล่าวต้องใช้เวลาประมาณหนึ่งนาทีครึ่ง ในกรณีที่คุณได้ใส่กระดาษธรรมดาสามแผ่นตามข้อความ กระดาษจะถูกผลักออกและการทำความสะอาดลูกกลิ้งป้อนกระดาษจะเสร็จสมบูรณ์\n"
+"\n"
+"คุณต้องการเริ่มทำความสะอาดลูกกลิ้งป้อนกระดาษหรือไม่"
+
+#. utility_message_28
+#: po/keystr.h:522
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "ใส่กระดาษธรรมดาสามแผ่นในตัวป้อนกระดาษ\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:524
+msgid "Feed roller cleaning is complete."
+msgstr "การทำความสะอาดลูกกลิ้งป้อนกระดาษเสร็จสมบูรณ์"
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:528
+msgid "All Colors   BK, C, M, Y"
+msgstr "สีทั้งหมด   BK, C, M, Y"
+
+#. util_ink_black_1
+#: po/keystr.h:532
+msgid "Black   3eBK"
+msgstr "สีดำ   3eBK"
+
+#. util_ink_black_2
+#: po/keystr.h:534
+msgid "Black   PGBK"
+msgstr "สีดำ   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:536
+msgid "Black   BK"
+msgstr "สีดำ   BK"
+
+#. util_ink_color_1
+#: po/keystr.h:540
+msgid "Color   6C, 6M, 6Y"
+msgstr "สี   6C, 6M, 6Y"
+
+#. util_ink_color_2
+#: po/keystr.h:542
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "สี   6C, 6M, 6Y, 6BK"
+
+#. util_ink_color_3
+#: po/keystr.h:544
+msgid "Color   7C, 7M, 7Y"
+msgstr "สี   7C, 7M, 7Y"
+
+#. util_ink_color_4
+#: po/keystr.h:546
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "สี   7C, 7M, 7Y, 7BK"
+
+#. util_ink_color_5
+#: po/keystr.h:548
+msgid "Color   C, M, Y, BK"
+msgstr "สี   C, M, Y, BK"
+
+#. util_ink_color_6
+#: po/keystr.h:550
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "สี   C, M, Y, PC, PM, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:552
+msgid "Color   C, M, Y"
+msgstr "สี   C, M, Y"
+
+#. util_ink_gr1_1
+#: po/keystr.h:554
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "กลุ่มที่หนึ่ง   6BK, 6R, 6PC, 6PM"
+
+#. util_ink_gr1_2
+#: po/keystr.h:556
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "กลุ่มที่หนึ่ง   7BK, 7R, 7G, 7PC, 7PM"
+
+#. util_ink_gr2_1
+#: po/keystr.h:558
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "กลุ่มที่สอง   6C, 6M, 6Y"
+
+#. util_ink_gr2_2
+#: po/keystr.h:560
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "กลุ่มที่สอง   7C, 7M, 7Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:562
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"ห้ามเริ่มการดำเนินการอื่นๆ จนกว่าการทำความสะอาดเสร็จสมบูรณ์\n"
+"\n"
+"หลังจากการทำความสะอาดเสร็จลง ให้ปฏิบัติ 'ตรวจหัวฉีด' และตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่"
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:566
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"ทำความสะอาดหัวฉีดที่อัดแน่นอยู่\n"
+"\n"
+"เลือกกลุ่มน้ำหมึกที่ต้องทำความสะอาด หากคุณไม่แน่ใจว่ากลุ่มไหนต้องการทำความสะอาด ให้ปฏิบัติ 'ตรวจหัวฉีด'"
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:571
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"แก้ไขปัญหาหัวฉีดอัดซึ่งไม่สามารถล้างได้ด้วยการทำความสะอาดธรรมดา\n"
+"\n"
+"เลือกกลุ่มน้ำหมึกที่ต้องทำความสะอาดอย่างละเอียด หากคุณไม่แน่ใจว่ากลุ่มไหนต้องการทำความสะอาดอย่างละเอียด ลงปฏิบัติ 'ตรวจหัวฉีด'"
+
+#. utility_message_41
+#: po/keystr.h:576
+msgid "Ink Group:"
+msgstr "กลุ่มน้ำหมึก:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:578
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"การทำความสะอาดอย่างละเอียดต้องใช้น้ำหมึกมากกว่าการทำความสะอาดธรรมดา ปฏิบัติ 'การทำความสะอาดอย่างละเอียด' \n"
+"ในเมื่อสถานะหัวฉีดไม่ได้ปรับให้ดีขึ้นหลังจากการทำความสะอาดธรรมดาเท่านั้น\n"
+"\n"
+"หลังจากการทำความสะอาดอย่างละเอียดเสร็จสมบูรณ์ ให้ปฏิบัติ 'ตรวจหัวฉีด' และตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่"
+
+#. utility_message_43
+#: po/keystr.h:584
+msgid "Cleaning consumes ink."
+msgstr "การทำความสะอาดต้องใช้น้ำหมึกมาก"
+
+#. utility_message_44
+#: po/keystr.h:586
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr "ป้อนกระดาษขนาด A4 หรือ Letter แผ่นหนึ่งลงในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' และคลิก 'ตกลง'\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:588
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"หากรูปแบบที่พิมพ์ออกมาคล้ายกับรูปแบบตัวนี้ \n"
+"หัวฉีดอาจถูกอัดแล้ว\n"
+"คลิก 'การทำความสะอาด'\n"
+"\n"
+"หากรูปแบบที่พิมพ์ออกมาไม่ได้ดีขึ้นหลังจากได้ปฏิบัติการทำความสะอาดสองครั้ง \n"
+"ลงปฏิบัติการทำความสะอาดอย่างละเอียด"
+
+#. utility_message_50
+#: po/keystr.h:596
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr "ป้อนกระดาษขนาด A4 หรือ Letter แผ่นหนึ่งลงในตัวป้อนกระดาษและคลิก 'ตกลง'"
+
+#. utility_message_53
+#: po/keystr.h:598
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในตัวป้อนกระดาษ เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'ตกลง'\n"
+
+#. utility_message_54
+#: po/keystr.h:606
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในตัวป้อนกระดาษ และคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:611
+msgid "Color Only"
+msgstr "สีเท่านั้น"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:613
+msgid "Black Only"
+msgstr "สีดำเท่านั้น"
+
+#. util_ink_cartridge_3
+#: po/keystr.h:615
+msgid "Both Black and Color"
+msgstr "สีดำและสี"
+
+#. utility_message_55
+#: po/keystr.h:617
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "พิมพ์ด้วยการใช้คาร์ทริดสีเท่านั้นแทนที่คาร์ทริดสีดำเท่านั้น"
+
+#. utility_message_56
+#: po/keystr.h:620
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr "พิมพ์ด้วยการใช้คาร์ทริดสีดำเท่านั้นแทนที่คาร์ทริดสีเพียงในเมื่อ 'กระดาษธรรมดา' ถูกเลือกสำหรับ 'ชนิดสื่อสิ่งพิมพ์' บนแท็บ 'หลัก'"
+
+#. utility_message_57
+#: po/keystr.h:624
+msgid "Prints using both black and color cartridges."
+msgstr "พิมพ์ด้วยคาร์ทริดสีดำและสี"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:626
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งแผ่นหนึ่งออกมาเพื่อเริ่มการจัดตำแหน่งโดยอัตโนมัติ\n"
+"ห้ามเริ่มการดำเนินการอื่นๆ จนกว่างานปัจจุบันเสร็จสมบูรณ์"
+
+#. utility_message_60
+#: po/keystr.h:629
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"กระดาษแผ่นที่สองสำหรับรูปแบบการจัดตำแหน่งหัวพิมพ์จะถูกพิมพ์\n"
+"\n"
+"คลิก 'ตกลง' เพื่อเริ่มการพิมพ์"
+
+#. utility_message_61
+#: po/keystr.h:633
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"กระดาษแผ่นที่สามสำหรับรูปแบบการจัดตำแหน่งหัวพิมพ์จะถูกพิมพ์\n"
+"\n"
+"คลิก 'ตกลง' เพื่อเริ่มการพิมพ์"
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:637
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. utility_message_63
+#: po/keystr.h:647
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"การจัดตำแหน่งหัวพิมพ์เสร็จสมบูรณ์\n"
+"เพื่อให้การจัดตำแหน่งนี้เสร็จสิ้น คลิก 'ยกเลิก'\n"
+"\n"
+"หากมีลายใดๆ ปรากฏขึ้นมาในด้านการพิมพ์ ด้วยการจัดตำแหน่งหัวพิมพ์ คุณสามารถป้องกันไม่ให้แถบเหล่านี้ปรากฏขึ้นมาอีก\n"
+"เพื่อที่จะดำเนินการจัดตำแหน่งนี้ ให้ป้อนกระดาษแผ่นหนึ่งในตัวป้อนกระดาษแล้วคลิก 'ตกลง'"
+
+#. utility_message_64
+#: po/keystr.h:653
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' และคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. utility_message_66
+#: po/keystr.h:659
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในตัวป้อนกระดาษและคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. utility_message_67
+#: po/keystr.h:663
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"การจัดตำแหน่งหัวพิมพ์เสร็จสมบูรณ์\n"
+"เพื่อให้การจัดตำแหน่งนี้เสร็จสิ้น คลิก 'ยกเลิก'\n"
+"\n"
+"หากมีลายใดๆ ปรากฏขึ้นมาในด้านการพิมพ์ ด้วยการจัดตำแหน่งหัวพิมพ์ คุณสามารถป้องกันไม่ให้แถบเหล่านี้ปรากฏขึ้นมาอีก\n"
+"เพื่อทำการจัดตำแหน่ง ป้อนกระดาษแผ่นหนึ่งในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' และคลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:671
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางขวา และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในตัวป้อนกระดาษ เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:681
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"หากรูปแบบที่พิมพ์ออกมาคล้ายกับรูปแบบตัวนี้ หัวฉีดอาจถูกอัดแล้ว\n"
+"คลิก 'การทำความสะอาด'\n"
+"\n"
+"หากรูปแบบที่พิมพ์ออกมาไม่ได้ดีขึ้นหลังจากได้ปฏิบัติ 'การทำความสะอาด' สองถึงสามครั้ง ลงปฏิบัติ 'การทำความสะอาดอย่างละเอียด'"
+
+#. utility_message_71
+#: po/keystr.h:689
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"คุณไม่สามารถรีเซ็ตการวัดระดับหมึกได้ เนื่องจากเครื่องพิมพ์ถูกตั้งค่าเป็นไม่ให้คำเตือนหมึกเหลือน้อยแสดงออก\n"
+"\n"
+"เพื่อเปิดการใช้งานแสดงคำเตือนหมึกเหลือน้อย ให้คลิกปุ่ม 'การตั้งค่าคำเตือนหมึกเหลือน้อย' บนแท็บ 'การบำรุงรักษา' ของไดรเวอร์เครื่องพิมพ์\n"
+"กรุณาอ่านในคู่มือการใช้งานเครื่องพิมพ์ก่อนปฏิบัติทำ"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:695
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษ\n"
+"\n"
+"ก่อนอื่น ให้เอากระดาษออกจากเทรย์ด้านหลัง\n"
+"การคลิก 'ตกลง' สามารถเรียกให้ลูกกลิ้งป้อนกระดาษทำงานได้ 30 ครั้ง ขั้นตอนดังกล่าวต้องใช้เวลาประมาณหนึ่งนาทีครึ่ง\n"
+"\n"
+"คุณต้องการเริ่มทำความสะอาดลูกกลิ้งป้อนกระดาษหรือไม่"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:702
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษ\n"
+"\n"
+"ก่อนอื่น ให้กดปุ่ม Paper Feed Switch บนเครื่องพิมพ์เพื่อเลือกแหล่งจ่ายกระดาษเป้าหมายสำหรับการทำความสะอาด แล้วเอากระดาษออกจากแหล่งจ่ายกระดาษที่เลือกไว้\n"
+"การคลิก 'ตกลง' สามารถเรียกให้ลูกกลิ้งป้อนกระดาษทำงานได้ 30 ครั้ง ขั้นตอนดังกล่าวต้องใช้เวลาประมาณหนึ่งนาทีครึ่ง\n"
+"\n"
+"คุณต้องการเริ่มทำความสะอาดลูกกลิ้งป้อนกระดาษหรือไม่"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:710
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"ให้แน่ใจว่าเสียงรบกวนดำเนินการของเครื่องพิมพ์หยุดแล้ว แล้วป้อนกระดาษธรรมดาสามแผ่นลงในเทรย์ด้านหลัง\n"
+"การคลิก 'ตกลง' จะผลักกระดาษออกและให้การทำความสะอาดลูกกลิ้งป้อนกระดาษเสร็จสมบูรณ์"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:713
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"ให้แน่ใจว่าเสียงรบกวนดำเนินการของเครื่องพิมพ์หยุดแล้ว แล้วป้อนกระดาษธรรมดาสามแผ่นลงในแหล่งจ่ายกระดาษที่เลือกไว้\n"
+"การคลิก 'ตกลง' จะผลักกระดาษออกและให้การทำความสะอาดลูกกลิ้งป้อนกระดาษเสร็จสมบูรณ์"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:716
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. เอากระดาษออกจากตัวป้อนกระดาษ\n"
+"2. พับกระดาษขนาด A4 หรือ Letter ครึ่ง แผ่กระดาษออก\n"
+"3. ป้อนกระดาษอยู่ในตัวป้อนกระดาษโดยให้สันรอยพับอยู่ด้านล่าง\n"
+"4. คลิก 'ปฏิบัติ'"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:721
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. เอากระดาษออกจากเทรย์ด้านหลัง\n"
+"2. พับกระดาษขนาด A4 หรือ Letter ครึ่ง แผ่กระดาษออก\n"
+"3. ป้อนกระดาษอยู่ในเทรย์ด้านหลังโดยให้สันรอยพับอยู่ด้านล่าง\n"
+"4. คลิก 'ปฏิบัติ'"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:726
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในเทรย์ด้านหลัง และคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:732
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter สองแผ่นลงในเทรย์ด้านหลัง เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:742
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์โดยอัตโนมัติ\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในตัวป้อนกระดาษและคลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อปฏิบัติการจัดตำแหน่งหัวพิมพ์ด้วยตัวเอง ให้คลิก 'ยกเลิก'\n"
+"ต่อไป ให้คลิก 'กำหนดการตั้งค่าเอง' บนแท็บ 'การบำรุงรักษา' ของไดรเวอร์เครื่องพิมพ์ เลือก 'จัดตำแหน่งหัวพิมพ์ด้วยตัวเอง' และคลิก 'ส่ง' แล้วลองใหม่\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:753
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์โดยอัตโนมัติ\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) ป้อน 'กระดาษภาพถ่ายแบบด้าน (MP-101)' ขนาด A4 หรือ Letter สองแผ่นลงในเทรย์ด้านหลังและคลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อปฏิบัติการจัดตำแหน่งหัวพิมพ์ด้วยตัวเอง ให้คลิก 'ยกเลิก'\n"
+"ต่อไป ให้คลิก 'กำหนดการตั้งค่าเอง' บนแท็บ 'การบำรุงรักษา' ของไดรเวอร์เครื่องพิมพ์ เลือก 'จัดตำแหน่งหัวพิมพ์ด้วยตัวเอง' และคลิก 'ส่ง' แล้วลองใหม่\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:765
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr "ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในเทรย์ด้านหลัง และคลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:767
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งสองแผ่นออกมาเพื่อเริ่มการจัดตำแหน่งโดยอัตโนมัติ\n"
+"ห้ามเริ่มการดำเนินการอื่นๆ จนกว่างานปัจจุบันเสร็จสมบูรณ์"
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:770
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter สี่แผ่นลงในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:780
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"กระดาษแผ่นที่สี่สำหรับรูปแบบการจัดตำแหน่งหัวพิมพ์จะถูกพิมพ์\n"
+"\n"
+"คลิก 'ตกลง' เพื่อเริ่มการพิมพ์"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:784
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' และคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:789
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในเทรย์ด้านหลัง เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:799
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:809
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr "ป้อนกระดาษขนาด A4 หรือ Letter แผ่นหนึ่งลงในเทรย์ด้านหลัง และคลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:811
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"การจัดตำแหน่งหัวพิมพ์เสร็จสมบูรณ์\n"
+"เพื่อให้การจัดตำแหน่งนี้เสร็จสิ้น คลิก 'ยกเลิก'\n"
+"\n"
+"หากมีลายใดๆ ปรากฏขึ้นมาในด้านการพิมพ์ ด้วยการจัดตำแหน่งหัวพิมพ์ คุณสามารถป้องกันไม่ให้แถบเหล่านี้ปรากฏขึ้นมาอีก\n"
+"เพื่อที่จะดำเนินการจัดตำแหน่งนี้ ให้ป้อนกระดาษแผ่นหนึ่งในเทรย์ด้านหลัง แล้วคลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:817
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter สามแผ่นลงในแหล่งจ่ายกระดาษที่ถูกเลือกด้วย 'สวิตช์ป้อนกระดาษ' เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:827
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในตัวป้อนกระดาษ เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:837
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางขวา ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในเทรย์ด้านหลัง และคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:842
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr "พิมพ์ด้วยการใช้คาร์ทริดสีดำเท่านั้นแทนที่คาร์ทริดสีเพียงในเมื่อ 'กระดาษธรรมดา' 'Hagaki' หรือ 'ซองจดหมาย' ถูกเลือกสำหรับ 'ชนิดสื่อสิ่งพิมพ์' บนแท็บ 'หลัก'"
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:845
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) คานปรับความหนากระดาษของเครื่องพิมพ์ไปทางซ้าย และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งลงในเทรย์ด้านหลัง เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:853
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางขวา และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter สองแผ่นลงในเทรย์ด้านหลัง เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:863
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click Send. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์โดยอัตโนมัติ\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) เลื่อนคานปรับความหนากระดาษของเครื่องพิมพ์ไปทางขวา ป้อน 'กระดาษภาพถ่ายแบบด้าน (MP-101)' ขนาด A4 หรือ Letter แผ่นหนึ่งลงในเทรย์ด้านหลังและคลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อปฏิบัติการจัดตำแหน่งหัวพิมพ์ด้วยตัวเอง ให้คลิก 'ยกเลิก'\n"
+"ต่อไป ให้คลิก 'กำหนดการตั้งค่าเอง' บนแท็บ 'การบำรุงรักษา' ของไดรเวอร์เครื่องพิมพ์ เลือก 'จัดตำแหน่งหัวพิมพ์ด้วยตัวเอง' และคลิก 'ส่ง' แล้วลองใหม่\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:875
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. เอากระดาษออกจากเทรย์ด้านหลัง แล้วป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นแรก\n"
+"2. พับกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นที่สองครึ่ง แล้วแผ่กระดาษออก\n"
+"3. ป้อนกระดาษแผ่นที่สองอยู่ด้านหน้ากระดาษแผ่นแรกโดยให้สันรอยพับอยู่ด้านล่าง\n"
+"4. คลิก 'ปฏิบัติ'"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:880
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"เริ่มการทำความสะอาดแผ่นด้านล่างเพื่อป้องกันกระดาษรอยเปื้อนขณะที่ทำการพิมพ์\n"
+"\n"
+"การปฏิบัตินี้ต้องการกระดาษธรรมดาขนาด A4 หรือ Letter สองแผ่น ตามคำแนะนำเหล่านี้ไปปฏิบัติการทำความสะอาดแผ่นด้านล่าง"
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:884
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click Send."
+msgstr ""
+"ตั้งค่าแหล่งจ่ายกระดาษสำหรับกระดาษธรรมดาเมื่อ 'เลือกอัตโนมัติ' ถูกเลือกสำหรับ 'แหล่งจ่ายกระดาษ'\n"
+"\n"
+"เลือกแหล่งจ่ายกระดาษสำหรับกระดาษธรรมดา และคลิก 'ส่ง'"
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:888
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"แก้ไขปัญหาหัวฉีดอัดซึ่งไม่สามารถล้างได้ด้วยการทำความสะอาดธรรมดา\n"
+"\n"
+"เลือกกลุ่มน้ำหมึกที่ต้องทำความสะอาดอย่างละเอียด หากหัวฉีดสีดำอัดเท่านั้น เลือก 'สีดำ' \n"
+"หากหัวฉีดสีเท่านั้นหรือหัวฉีดสีดำและสีทั้งอัดอยู่ ให้เลือก 'สีทั้งหมด' หากคุณไม่แน่ใจว่าหัวฉีดไหนอัดอยู่ ให้ปฏิบัติ 'ตรวจหัวฉีด'\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:894
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษ\n"
+"\n"
+"เลือกแหล่งจ่ายกระดาษเป้าหมายสำหรับการทำความสะอาด แล้วคลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:898
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษสำหรับเทรย์ด้านหลัง\n"
+"\n"
+"ก่อนอื่น ให้เอากระดาษออกจากเทรย์ด้านหลัง แล้วเปิดเทรย์ออกกระดาษ\n"
+"การคลิก 'ตกลง' สามารถเรียกให้ลูกกลิ้งป้อนกระดาษทำงานได้ ขั้นตอนดังกล่าวต้องใช้เวลาประมาณหนึ่งนาทีครึ่ง\n"
+"\n"
+"คุณต้องการเริ่มทำความสะอาดลูกกลิ้งป้อนกระดาษหรือไม่"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:905
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษสำหรับกลักกระดาษ\n"
+"\n"
+"ก่อนอื่น ให้เอากระดาษออกจากกลักกระดาษ แล้วเปิดเทรย์ออกกระดาษ\n"
+"การคลิก 'ตกลง' สามารถเรียกให้ลูกกลิ้งป้อนกระดาษทำงานได้ ขั้นตอนดังกล่าวต้องใช้เวลาประมาณสองนาที\n"
+"\n"
+"คุณต้องการเริ่มทำความสะอาดลูกกลิ้งป้อนกระดาษหรือไม่"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:912
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษสำหรับเทรย์ด้านหลัง\n"
+"\n"
+"ก่อนอื่น ให้เอากระดาษออกจากเทรย์ด้านหลัง\n"
+"การคลิก 'ตกลง' สามารถเรียกให้ลูกกลิ้งป้อนกระดาษทำงานได้ ขั้นตอนดังกล่าวต้องใช้เวลาประมาณหนึ่งนาทีครึ่ง\n"
+"\n"
+"คุณต้องการเริ่มทำความสะอาดลูกกลิ้งป้อนกระดาษหรือไม่"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:919
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"การทำความสะอาดลูกกลิ้งป้อนกระดาษสำหรับกลักกระดาษ\n"
+"\n"
+"ก่อนอื่น ให้เอากระดาษออกจากกลักกระดาษ\n"
+"การคลิก 'ตกลง' สามารถเรียกให้ลูกกลิ้งป้อนกระดาษทำงานได้ ขั้นตอนดังกล่าวต้องใช้เวลาประมาณสองนาที\n"
+"\n"
+"คุณต้องการเริ่มทำความสะอาดลูกกลิ้งป้อนกระดาษหรือไม่"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:926
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"ให้แน่ใจว่าเสียงรบกวนดำเนินการของเครื่องพิมพ์หยุดแล้ว แล้วป้อนกระดาษธรรมดาสามแผ่นลงในกลักกระดาษ\n"
+"การคลิก 'ตกลง' จะผลักกระดาษออกและให้การทำความสะอาดลูกกลิ้งป้อนกระดาษเสร็จสมบูรณ์"
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:929
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load a sheet of A4 or letter "
+"size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"ก่อนอื่น ให้เลือกแหล่งจ่ายกระดาษที่จะใช้ แล้วป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในแหล่งจ่ายกระดาษที่เลือกอยู่ และคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:934
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในกลักกระดาษและคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:939
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"พิมพ์รูปแบบซึ่งทำให้คุณสามารถตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่\n"
+"\n"
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในเทรย์ด้านหลัง และคลิก 'พิมพ์รูปแบบตรวจหัวฉีด'"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:944
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด \n"
+"A4 หรือ Letter สองแผ่นลงในเทรย์ด้านหลัง เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:953
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"การจัดตำแหน่งต้องการพิมพ์ เลือกแหล่งจ่ายกระดาษที่จะใช้ แล้วคลิก 'จัดตำแหน่งหัวพิมพ์'"
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:957
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr "เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:959
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ letter สามแผ่นในเทรย์ด้านหลัง\n"
+"\n"
+"การคลิก 'ตกลง' จะพิมพ์รูปแบบการจัดตำแหน่ง"
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:964
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ letter สามแผ่นในกลักกระดาษ\n"
+"\n"
+"การคลิก 'ตกลง' จะพิมพ์รูปแบบการจัดตำแหน่ง"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:969
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ letter แผ่นหนึ่งในเทรย์ด้านหลัง\n"
+"\n"
+"การคลิก 'ตกลง' จะพิมพ์การตั้งค่าปัจจุบัน"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:974
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ letter แผ่นหนึ่งในกลักกระดาษ\n"
+"\n"
+"การคลิก 'ตกลง' จะพิมพ์การตั้งค่าปัจจุบัน"
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:979
+msgid "Select the paper source to be used, and then click OK."
+msgstr "เลือกแหล่งจ่ายกระดาษที่จะใช้ แล้วคลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:981
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr "ป้อนกระดาษธรรมดาขนาด A4 หรือ Letter แผ่นหนึ่งในกลักกระดาษและคลิก 'ตกลง'"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:983
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์โดยอัตโนมัติ\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) ป้อน 'กระดาษภาพถ่ายแบบด้าน (MP-101)' ขนาด A4 หรือ Letter แผ่นหนึ่งลงในเทรย์ด้านหลังและคลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อปฏิบัติการจัดตำแหน่งหัวพิมพ์ด้วยตัวเอง ให้คลิก 'ยกเลิก'\n"
+"ต่อไป ให้คลิก 'กำหนดการตั้งค่าเอง' บนแท็บ 'การบำรุงรักษา' ของไดรเวอร์เครื่องพิมพ์ เลือก 'จัดตำแหน่งหัวพิมพ์ด้วยตัวเอง' และคลิก 'ส่ง' แล้วลองใหม่\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:994
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"ตั้งค่า 'ป้องกันกระดาษเสียไป' หากคุณพิมพ์โดยเปิดใช้งานการตั้งค่านี้ อาจจะทำให้คุณภาพการพิมพ์และความเร็วการพิมพ์ลดลง ไม่เลือก \n"
+"'ป้องกันกระดาษเสียไป' เพื่อเปลี่ยนการตั้งค่า"
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:997
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"แก้ไขปัญหาหัวฉีดอัดซึ่งไม่สามารถล้างได้ด้วยการทำความสะอาดธรรมดา\n"
+"\n"
+"การทำความสะอาดอย่างละเอียดต้องใช้น้ำหมึกมากกว่าการทำความสะอาดธรรมดา ปฏิบัติ 'การทำความสะอาดอย่างละเอียด' ในเมื่อสถานะหัวฉีดไม่ได้ปรับให้ดีขึ้นหลังจากการทำความสะอาดธรรมดาเท่านั้น\n"
+"\n"
+"หลังจากการทำความสะอาดอย่างละเอียดเสร็จสมบูรณ์ ให้ปฏิบัติ 'ตรวจหัวฉีด' และตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:1005
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"ห้ามเริ่มการดำเนินการอื่นๆ จนกว่าการทำความสะอาดอย่างละเอียดเสร็จสมบูรณ์\n"
+"\n"
+"หลังจากการทำความสะอาดอย่างละเอียดเสร็จลง ให้ปฏิบัติตรวจหัวฉีดและตรวจว่าปัญหาอัดแน่นในหัวฉีดถูกแก้ไขแล้วหรือไม่"
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:1010
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"การปฏิบัติการจัดตำแหน่งหัวพิมพ์ลดความเพี้ยนของสีและลายเส้นลง โปรดอ่านคำแนะนำผู้ใช้ และจัดตำแหน่งหัวพิมพ์จากแผงการทำงานของเครื่องพิมพ์\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:1015
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) และป้อนกระดาษธรรมดาขนาด A4 หรือ Letter\n"
+" สามแผ่นลงในเทรย์ด้านหลัง เครื่องพิมพ์จะพิมพ์รูปแบบการจัดตำแหน่งออกมา\n"
+"\n"
+"เพื่อจัดตำแหน่งหัวพิมพ์ ให้คลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:1024
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"เริ่มการจัดตำแหน่งหัวพิมพ์โดยอัตโนมัติ\n"
+"\n"
+"เนื่องจากการจัดตำแหน่งต้องการพิมพ์ เตรียมเครื่องพิมพ์ให้พร้อม (ต่อสายและเปิดเครื่อง) ป้อน 'กระดาษภาพถ่ายแบบด้าน (MP-101)' \n"
+"ขนาด A4 หรือ Letter แผ่นหนึ่งลงในเทรย์ด้านหลังและคลิก 'จัดตำแหน่งหัวพิมพ์'\n"
+"\n"
+"หากผลของการจัดตำแหน่งหัวพิมพ์โดยอัตโนมัติไม่น่าพอใจ ให้ปฏิบัติการจัดตำแหน่งหัวพิมพ์ด้วยตัวเองเพื่อจัดตำแหน่งหัวพิมพ์อย่างแม่นยำ\n"
+"เพื่อปฏิบัติการจัดตำแหน่งหัวพิมพ์ด้วยตัวเอง ให้คลิก 'ยกเลิก'\n"
+"ต่อไป ให้คลิก 'กำหนดการตั้งค่าเอง' บนแท็บ 'การบำรุงรักษา' ของไดรเวอร์เครื่องพิมพ์ เลือก 'จัดตำแหน่งหัวพิมพ์ด้วยตัวเอง' และคลิก 'ส่ง' แล้วลองใหม่\n"
+"\n"
+"เพื่อพิมพ์และตรวจการตั้งค่าปัจจุบัน ให้คลิก 'มูลค่าการจัดตำแหน่งพิมพ์'"
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_3
+#: po/keystr.h:1037
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, Hagaki A, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr "พิมพ์ด้วยการใช้คาร์ทริดสีดำเท่านั้นแทนที่คาร์ทริดสีเพียงในเมื่อ 'กระดาษธรรมดา' 'Hagaki A' 'Hagaki' หรือ 'ซองจดหมาย' ถูกเลือกสำหรับ 'ชนิดสื่อสิ่งพิมพ์' บนแท็บ 'หลัก'"
+

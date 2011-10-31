@@ -11,14 +11,21 @@
 
 # define package name
 COMMON_PKG=cnijfilter-common
-PRINTER_DEPEND_PKG+=cnijfilter-mg2100-386
-PRINTER_DEPEND_PKG+=cnijfilter-mg3100-387
-PRINTER_DEPEND_PKG+=cnijfilter-mg4100-388
-PRINTER_DEPEND_PKG+=cnijfilter-mg5300-389
-PRINTER_DEPEND_PKG+=cnijfilter-mg6200-390
-PRINTER_DEPEND_PKG+=cnijfilter-mg8200-391
-PRINTER_DEPEND_PKG+=cnijfilter-ip4900-392
-PRINTER_DEPEND_PKG+=cnijfilter-e500-393
+PRINTER_DEPEND_PKG+=cnijfilter-ip2700-364-3.30-32
+PRINTER_DEPEND_PKG+=cnijfilter-mx340-365-3.30-32
+PRINTER_DEPEND_PKG+=cnijfilter-mx350-366-3.30-32
+PRINTER_DEPEND_PKG+=cnijfilter-mx870-367-3.30-32
+PRINTER_DEPEND_PKG+=cnijfilter-mg2100-386-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-mg3100-387-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-mg4100-388-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-mg5300-389-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-mg6200-390-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-mg8200-391-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-ip4900-392-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-e500-393-3.60-64
+
+PRINTER_DEPEND_VER+=3.30
+PRINTER_DEPEND_VER+=3.60
 
 PRINTER_PKG_PROGRAM+=ppd
 PRINTER_PKG_PROGRAM+=cnijfilter
@@ -63,20 +70,31 @@ configure-stamp:
 	@echo "######## configure backendnet"; \
 	cd ./backendnet; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	@echo "######## configure sm sub process"; \
-	cd ./cngpijmon/cnijnpr; ./autogen.sh --prefix=/usr
+	cd ./cngpijmon-3.60/cnijnpr; ./autogen.sh --prefix=/usr
 
 	#### configure printer package
-	echo "######## configure ppd file"; \
-	cd ./ppd && ./autogen.sh --prefix=/usr --enable-ppdpath=/usr/share/ppd --program-suffix=CN_IJ_MODEL
-	echo "######## configure cnijfilter"; \
-	cd ./cnijfilter && ./autogen.sh --prefix=/usr --enable-libpath=/usr/lib/bjlib --enable-binpath=/usr/bin --program-suffix=CN_IJ_MODEL
-	echo "######## configure printui"; \
-	cd ./printui && ./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --datadir=/usr/share
-	echo "######## configure lgmon"; \
-	cd ./lgmon && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=CN_IJ_MODEL
-	echo "######## configure cngpijmon"; \
-	cd ./cngpijmon && ./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --enable-progpath=/usr/bin --datadir=/usr/share
-
+	for ver in ${PRINTER_DEPEND_VER}; do \
+		echo "######## configure ppd file"; \
+		pushd ./ppd-$${ver}; \
+		./autogen.sh --prefix=/usr --enable-ppdpath=/usr/share/ppd --program-suffix=CN_IJ_MODEL; \
+		popd; \
+		echo "######## configure cnijfilter"; \
+		pushd ./cnijfilter-$${ver}; \
+		./autogen.sh --prefix=/usr --enable-libpath=/usr/lib/bjlib --enable-binpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
+		popd; \
+		echo "######## configure printui"; \
+		pushd ./printui-$${ver}; \
+		./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --datadir=/usr/share; \
+		popd; \
+		echo "######## configure lgmon"; \
+		pushd ./lgmon-$${ver}; \
+		./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
+		popd; \
+		echo "######## configure cngpijmon"; \
+		pushd ./cngpijmon-$${ver}; \
+		./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --enable-progpath=/usr/bin --datadir=/usr/share; \
+		popd; \
+	done
 
 	touch configure-stamp
 
@@ -90,6 +108,7 @@ clean:
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
+
 	# Add here commands to clean up after the build process.
 	-$(MAKE) distclean
 	find . -name Makefile.in -print > file_lists1
@@ -137,11 +156,21 @@ install: build
 		model_name=`echo $${pkg} | cut -d- -f2` && \
 		comm_name=`echo $${pkg} | cut -d- -f1` && \
 		model_num=`echo $${pkg} | cut -d- -f3` && \
+		model_ver=`echo $${pkg} | cut -d- -f4` && \
+		model_type=`echo $${pkg} | cut -d- -f5` && \
 		model_dir=$${comm_name}-$${model_name}series && \
 		deb_model_dir=$(CURDIR)/debian/$${model_dir}; \
+		if [ ${_arc} = "64" ]; then \
+			if [ $${model_type} = "64" ]; then \
+				model_in="1"; \
+			fi; \
+		else \
+			model_in="1"; \
+		fi; \
+		if [ $${model_in} = "1" ]; then \
 		for pg_name in ${PRINTER_PKG_PROGRAM}; do \
 			echo "######## install $${pg_name}"; \
-			pushd ./$${pg_name}; \
+			pushd ./$${pg_name}-$${model_ver}; \
 			find . -name Makefile -print > file_lists; \
 			find . -name config.h -print >> file_lists; \
 			for fn in `cat file_lists`; do \
@@ -169,6 +198,7 @@ install: build
 		if [ -f $${model_num}/database/cif$${model_name}.bscc ]; then \
 			install -c -m 644 -o lp -g lp $${model_num}/database/cif$${model_name}.bscc $${deb_model_dir}/usr/lib/bjlib; \
 		fi; \
+		fi; \
 	done
 
 	### install common package
@@ -183,7 +213,7 @@ install: build
 	@echo "######## install backendnet"; \
 	cd ./backendnet; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install sm sub process"; \
-	cd ./cngpijmon/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
+	cd ./cngpijmon-3.60/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install common library"; \
 	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
 	install -c -m 755 com/libs_bin${_arc}/libcnnet.so.* $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
