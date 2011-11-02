@@ -1,0 +1,20 @@
+To build and install lgmon:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+To build and install lgmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            mx360
+            mx410
+            mx420
+            mx880
+            ix6500
+
+Example for building the mx880 lgmon with the new automake and autoconf:
+        ./autogen.sh --program-suffix=mx880
+        make
+        make install
+

@@ -1388,7 +1388,7 @@ PRIVATE void insertStringToText_NoConv(const gchar *pWidgetName, const gchar *pS
 PRIVATE void freezeText(const gchar *pWidgetName, gboolean freeze)
 {
 /*** Parameters start ***/
-	GtkWidget	*widget = NULL;		// Temporary pointer to widget.
+	GtkWidget __attribute__ ((unused))	*widget = NULL;		// Temporary pointer to widget.
 /*** Parameters end ***/
 	
 	widget = lookupWidget(pWidgetName);
@@ -1482,7 +1482,7 @@ PUBLIC GtkWidget* lookupWidget(const gchar *pWidgetName)
 PUBLIC void outputCommandLineMessage(ENUM_OtherMessageID messageID)
 {
 	if (messageID > ID_OTHER_MESSAGE_NONE) {
-		fprintf(stderr, gOtherMessageTable[messageID]);
+		fprintf(stderr, "%s",gOtherMessageTable[messageID]);
 	}
 	
 	return;

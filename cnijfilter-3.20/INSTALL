@@ -1,0 +1,29 @@
+To build and install cif command:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * You can set the following <Printer Model Name>.
+            mp250 , mp270 , mp490 , mp550 , mp560 , ip4700 , mp640
+
+Example mp640:
+
+        ./autogen.sh --program-suffix=mp640
+        make
+        make install
+
+
+Appendix:
+
+        * You can also set the following path.
+           --prefix
+                cif command (ex.cifmp640)                : default ... /usr/local
+           --enable-libpath
+                *.conf,*.tbl(ex.cifmp640.conf)           : default ... /usr/lib/bjlib
+
+       Example:
+
+           ./autogen.sh --program-suffix=mp640 --enable-libpath=/usr/lib/bjlib
+           make
+           make install

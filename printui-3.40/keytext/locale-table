@@ -1,0 +1,32 @@
+# "Locale" string is defined in each .po file.
+# The glade file and the keytext file for each "Locale"
+# are defined here.
+# If not match, printui use the default glade and keytext file, 
+# "printui.glade", "printui.res", and use the default unit(mm).
+#
+# Locale  glade file     keytext file   default unit.
+en_US     printui.glade  printui.res    inch	# US
+en_GB     printui.glade  printui.res    mm		# Britain
+cs_CZ     printui.glade  printui.res    mm		# Czechoslovakian
+da_DK     printui.glade  printui.res    mm		# Danish
+de_DE     printui.glade  printui.res    mm		# German
+es_ES     printui.glade  printui.res    mm		# Spanish
+fi_FI     printui.glade  printui.res    mm		# Finnish
+fr_FR     printui.glade  printui.res    mm		# French
+el_GR     printui.glade  printui.res    mm		# Greek
+hu_HU     printui.glade  printui.res    mm		# Hungarian
+it_IT     printui.glade  printui.res    mm		# Italian
+nl_NL     printui.glade  printui.res    mm		# Dutch
+no_NO     printui.glade  printui.res    mm		# Norwegian
+pl_PL     printui.glade  printui.res    mm		# Polish
+pt_PT     printui.glade  printui.res    mm		# Portuguese
+ru_RU     printui.glade  printui.res    mm		# Russian
+sv_SE     printui.glade  printui.res    mm		# Swedish
+ko_KR     printui.glade  printui.res    mm		# Korean
+zh_CN     printui.glade  printui.res    mm		# Chinese(Simplified)
+zh_TW     printui.glade  printui.res    mm		# Chinese(Traditional)
+th_TH     printui.glade  printui.res    mm		# Thai
+tr_TR     printui.glade  printui.res    mm		# Turkish
+id_ID     printui.glade  printui.res    mm		# Indonesian
+ja_JP     printui.glade  printui.res    mm		# Japanese
+

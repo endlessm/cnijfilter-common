@@ -331,7 +331,8 @@ ParamList *get_ps_params(int ifd, BufList **ps_data)
 			{
 				if( !IS_BLANK(*p_code)  )
 					break;
-				*p_code++;
+				//*p_code++;
+				p_code++;
 			}
 			while( *p_code != '\0' )
 			{
@@ -1209,7 +1210,7 @@ fprintf(stderr, "pstocanonij: %s\n", cmd_buf);
 
 int exec_filter(char *cmd_buf, int ofd, int fds[2])
 {
-	int status = 0;
+	int __attribute__ ((unused)) status = 0;
 	int	child_pid = -1;
 	char *filter_param[4];
 	char shell_buf[256];

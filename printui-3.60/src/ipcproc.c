@@ -73,7 +73,7 @@ static int ConnectToServer()
 
 int PutIPCData(LPIPCU pipc)
 {
-	int fd;
+	int fd, __attribute__ ((unused)) result2;
 	char buf[IPCCMDLEN];
 
 	if( (fd = ConnectToServer()) == -1 )
@@ -82,10 +82,10 @@ int PutIPCData(LPIPCU pipc)
 	// Write "PRINT" command first.
 	strncpy(buf, "PRINT", IPCCMDLEN);
 	buf[IPCCMDLEN -1] = '\0';
-	write(fd, buf, IPCCMDLEN);
+	result2 = write(fd, buf, IPCCMDLEN);
 
 	// And for the time being, simply just write the contents of pipc.
-	write(fd, pipc, sizeof(IPCU));
+	result2 = write(fd, pipc, sizeof(IPCU));
 
 	close(fd);
 	return 0;
@@ -93,7 +93,7 @@ int PutIPCData(LPIPCU pipc)
 
 int PutCancel()
 {
-	int fd;
+	int fd, __attribute__ ((unused)) result2;
 	char buf[IPCCMDLEN];
 
 	if( (fd = ConnectToServer()) == -1 )
@@ -102,7 +102,7 @@ int PutCancel()
 	// Write "CANCEL" command.
 	strncpy(buf, "CANCEL", IPCCMDLEN);
 	buf[IPCCMDLEN -1] = '\0';
-	write(fd, buf, IPCCMDLEN);
+	result2 = write(fd, buf, IPCCMDLEN);
 
 	close(fd);
 	return 0;
@@ -110,7 +110,7 @@ int PutCancel()
 
 int PutPrintData(char *cmdsbuf, short length)
 {
-	int fd;
+	int fd, __attribute__ ((unused)) result2;
 	IPCU ipc;
 	char buf[IVEC_BUF_SIZE];
 	char *curPtr;
@@ -122,7 +122,7 @@ int PutPrintData(char *cmdsbuf, short length)
 	// Write "PDATA" command first.
 	strncpy(buf, "PDATA", IVEC_BUF_SIZE);
 	buf[IVEC_BUF_SIZE -1] = '\0';
-	write(fd, buf, IPCCMDLEN);
+	result2 = write(fd, buf, IPCCMDLEN);
 
 	if ( (IsIVECModel() == TRUE) && (g_bidi_mode == FALSE) ){
 		curPtr = ipc.cmds.cmds;
@@ -161,7 +161,7 @@ int PutPrintData(char *cmdsbuf, short length)
 		memcpy(ipc.cmds.cmds, cmdsbuf, length);
 	}	
 
-	write(fd, &ipc, sizeof(IPCU));
+	result2 = write(fd, &ipc, sizeof(IPCU));
 	retVal = 0;
 Err2:
 	close(fd);
@@ -171,14 +171,14 @@ Err1:
 
 int PutDeviceData(char *cmdsbuf, short length, char *devMode )
 {
-	int fd;
+	int fd, __attribute__ ((unused)) result2;
 	IPCU ipc;
 	char buf[IVEC_BUF_SIZE];
 	long cmdLen = 0;
 	short cmdType;
 	int retVal = -1;
 	char *curPtr;
-	char *model_name;
+	char __attribute__ ((unused)) *model_name;
 
 	model_name = GetModelName();
 
@@ -196,7 +196,7 @@ int PutDeviceData(char *cmdsbuf, short length, char *devMode )
 	// Write "POWEROFF" command first.
 	strncpy(buf, devMode, IVEC_BUF_SIZE);
 	buf[IVEC_BUF_SIZE-1] = '\0';
-	write(fd, buf, IPCCMDLEN);
+	result2 = write(fd, buf, IPCCMDLEN);
 
 	if ( (IsIVECModel() == TRUE) ){
 		curPtr = ipc.cmds.cmds;
@@ -242,7 +242,7 @@ int PutDeviceData(char *cmdsbuf, short length, char *devMode )
 		memcpy( ipc.cmds.cmds, cmdsbuf, length );
 	}
 
-	write(fd, &ipc, sizeof(IPCU));
+	result2 = write(fd, &ipc, sizeof(IPCU));
 	retVal = 0;
 Err2:
 	close(fd);
@@ -255,7 +255,7 @@ int PutFileData(char *cmdsbuf, short cmds_length,
 				char *fnamebuf, short fname_length)
 {
 
-	int fd;
+	int fd, __attribute__ ((unused)) result2;
 	char buf[IPCCMDLEN];
 	IPCU ipc;
 
@@ -265,14 +265,14 @@ int PutFileData(char *cmdsbuf, short cmds_length,
 	// Write "FDATA" command first.
 	strncpy(buf, "FDATA", IPCCMDLEN);
 	buf[IPCCMDLEN -1] = '\0';
-	write(fd, buf, IPCCMDLEN);
+	result2 = write(fd, buf, IPCCMDLEN);
 
 	// Prepare for ipc union, then copy buffer data.
 	ipc.fncmds.cmdslen = (long)cmds_length;
 	ipc.fncmds.filenamelen = (long)fname_length;
 	memcpy(ipc.fncmds.cmds, cmdsbuf, cmds_length);
 	memcpy(ipc.fncmds.filename, fnamebuf, fname_length);
-	write(fd, &ipc, sizeof(IPCU));
+	result2 = write(fd, &ipc, sizeof(IPCU));
 
 	close(fd);
 	return 0;
@@ -282,7 +282,7 @@ int PutDoubleData(char *cmdsbuf, short cmds_length,
 				  char *fnamebuf, short fname_length)
 {
 
-	int fd;
+	int fd, __attribute__ ((unused)) result2;
 	char buf[IPCCMDLEN];
 	IPCU ipc;
 
@@ -292,14 +292,14 @@ int PutDoubleData(char *cmdsbuf, short cmds_length,
 	// Write "FDATA" command first.
 	strncpy(buf, "WDATA", IPCCMDLEN);
 	buf[IPCCMDLEN -1] = '\0';
-	write(fd, buf, IPCCMDLEN);
+	result2 = write(fd, buf, IPCCMDLEN);
 
 	// Prepare for ipc union, then copy buffer data.
 	ipc.fncmds.cmdslen = (long)cmds_length;
 	ipc.fncmds.filenamelen = (long)fname_length;
 	memcpy(ipc.fncmds.cmds, cmdsbuf, cmds_length);
 	memcpy(ipc.fncmds.filename, fnamebuf, fname_length);
-	write(fd, &ipc, sizeof(IPCU));
+	result2 = write(fd, &ipc, sizeof(IPCU));
 
 	close(fd);
 	return 0;
@@ -307,7 +307,7 @@ int PutDoubleData(char *cmdsbuf, short cmds_length,
 
 int PutExecLM()
 {
-	int fd;
+	int fd, __attribute__ ((unused)) result2;
 	char buf[IPCCMDLEN];
 
 	if( (fd = ConnectToServer()) == -1 )
@@ -316,7 +316,7 @@ int PutExecLM()
 	// Write "EXECLM" command.
 	strncpy(buf, "EXECLM", IPCCMDLEN);
 	buf[IPCCMDLEN -1] = '\0';
-	write(fd, buf, IPCCMDLEN);
+	result2 = write(fd, buf, IPCCMDLEN);
 
 	close(fd);
 	return 0;

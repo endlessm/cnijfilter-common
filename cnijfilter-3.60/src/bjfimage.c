@@ -380,8 +380,8 @@ static short bufmatch( char *buf1, char *buf2, short length )
 {
 	short i = 0;
 	short result = -1;
-	char *tmp1;
-	char *tmp2;
+	char __attribute__ ((unused)) *tmp1;
+	char __attribute__ ((unused)) *tmp2;
 	
 	tmp1 = buf1;
 	tmp2 = buf2;
@@ -542,7 +542,7 @@ onErr:
 static short tiff_image_read_raster( LPBJF_IMAGEINFO lpbjfimage, char *buf, long x, long y, long width )
 {
 	char				*localbuf = NULL;
-	long				RasterLength;
+	long __attribute__ ((unused))	RasterLength;
 	short				bpp;
 	short				result = -1;
 	
@@ -600,13 +600,14 @@ static short bmp_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 	FILE				*readfp = NULL;
 	unsigned char		buffer[5];
 	short				result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	/* firstcall flg on for plural document */
 	lpbjfimage->isfirstcall = 1;
 
 	if ( filename != NULL ){
 		if ( (readfp = fopen( filename, "rb" )) == NULL ) goto onErr;
-		fread( buffer, 2, 1, readfp );
+		result1 = fread( buffer, 2, 1, readfp );
 	}
 	else
 		readfp = stdin;
@@ -631,7 +632,7 @@ static short bmp_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	unsigned char		**rawbuf = NULL;
 	unsigned char		*buf = NULL;
 	long				rstep = 0;
-	short				retbyte;
+	short __attribute__ ((unused))	retbyte;
 	short				tmpflg;
 	short				tmpformat;
 	FILE				*tmpfp;
@@ -755,6 +756,7 @@ static short bmp_image_read_raster( LPBJF_IMAGEINFO lpbjfimage, char *buf, long 
 	unsigned char 		**rawbuf=NULL;
 	FILE				*readfp= NULL;
 	short				result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	/*--- current area check ---*/
 	img_bpp = lpbjfimage->bpp;
@@ -800,18 +802,18 @@ static short bmp_image_read_raster( LPBJF_IMAGEINFO lpbjfimage, char *buf, long 
 		
 		if ( isfinalblock == 1 ){
 			for ( i=0; i<(block-1); i++ ){
-				fread( rawbuf[0], rasterlength, rstep, readfp );
+				result1 = fread( rawbuf[0], rasterlength, rstep, readfp );
 				lpbjfimage->readraster += rstep;
 			}
 			/*--- read reverse ---*/
 			fseek( readfp, 54L, SEEK_SET );
-			fread( rawbuf[rstep-laststep], rasterlength, laststep, readfp );
+			result1 = fread( rawbuf[rstep-laststep], rasterlength, laststep, readfp );
 			lpbjfimage->readraster += laststep;
 		}
 		else{
 			/*--- read reverse ---*/
 			fseek( readfp, ( rasterlength * (img_height - rstep - top) + 54L ), SEEK_SET );
-			fread( rawbuf[0], rasterlength, rstep, readfp );
+			result1 = fread( rawbuf[0], rasterlength, rstep, readfp );
 			lpbjfimage->readraster += rstep;
 		}	
 	}
@@ -850,13 +852,14 @@ onErr:
 static short bmp_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
 	long				length = 0;
-	long				top = 0;
+	long __attribute__ ((unused))	top = 0;
 	long				readraster = 0;
 	long				rasterlength = 0;
 	long				remain = 0;
 	unsigned char		*tmp;
 	FILE				*readfp = NULL;
 	short				result = -1;
+	size_t __attribute__ ((unused)) result1;
 	
 
 	/* copy global to local */
@@ -871,7 +874,7 @@ static short bmp_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 	if ( remain > 0 ){
 		if ( (tmp = malloc( remain * rasterlength )) == NULL ) goto onErr;
 	
-		fread( tmp, rasterlength, remain, readfp );
+		result1 = fread( tmp, rasterlength, remain, readfp );
 		
 		lpbjfimage->readraster = 0;
 
@@ -913,6 +916,7 @@ static short ppm_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 	FILE			*readfp = NULL;
 	unsigned char	buffer[5];
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	
 	/* firstcall flg on for plural document */
@@ -920,7 +924,7 @@ static short ppm_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 
 	if ( filename != NULL ){
 		if ( (readfp = fopen( filename, "rb" )) == NULL ) goto onErr;
-		fread( buffer, 2, 1, readfp );
+		result1 = fread( buffer, 2, 1, readfp );
 	}
 	else {
 		readfp = stdin;
@@ -1056,6 +1060,7 @@ static short ppm_image_read_raster
 	long			RasterLength = 0;
 	FILE			*readfp = NULL;
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 
 	/*---
@@ -1102,15 +1107,15 @@ static short ppm_image_read_raster
 
 		if ( isfinalblock == 1 ){
 			for ( i=0; i<(block-1); i++ ){
-				fread( rawbuf[0], RasterLength, rstep, readfp );
+				result1 = fread( rawbuf[0], RasterLength, rstep, readfp );
 				lpbjfimage->readraster += rstep;			 
 			}
-			fread( rawbuf[0], RasterLength, laststep, readfp );
+			result1 = fread( rawbuf[0], RasterLength, laststep, readfp );
 			lpbjfimage->readraster += laststep; 
 		}
 		else{
 			for ( i=0; i<block; i++ ){
-				fread( rawbuf[0], RasterLength, rstep, readfp );
+				result1 = fread( rawbuf[0], RasterLength, rstep, readfp );
 				lpbjfimage->readraster += rstep;
 			}
 		}
@@ -1134,13 +1139,14 @@ onErr:
 
 static short ppm_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
-	long			length, width, top;
+	long __attribute__ ((unused)) length, width, top;
 	long			readraster, remain;
 	long			RasterLength;
 	short			bpp;
 	unsigned char	*tmp = NULL;
 	FILE			*readfp = NULL;
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	top        = lpbjfimage->top;
 	width	   = lpbjfimage->width;
@@ -1155,7 +1161,7 @@ static short ppm_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 
 	if ( remain > 0 ){
 		if ( (tmp = malloc( remain * (width*bpp))) == NULL ) goto onErr;
-		fread( tmp, RasterLength, remain, readfp );
+		result1 = fread( tmp, RasterLength, remain, readfp );
 		lpbjfimage->readraster = 0;
 	}
 
@@ -1487,6 +1493,7 @@ static short png_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 	FILE			*readfp = NULL;
 	unsigned char	buffer[10];
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 
 	/* firstcall flg on for plural document */
@@ -1494,7 +1501,7 @@ static short png_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 
 	if ( filename != NULL ){
 		if ( (readfp = fopen( filename, "rb" )) == NULL ) goto onErr;
-		fread( buffer, 8, 1, readfp );
+		result1 = fread( buffer, 8, 1, readfp );
 	}
 	else {
 		readfp = stdin;
@@ -1513,12 +1520,12 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 {
 	FILE			*readfp;
 	FILE			*tmpfp;
-	unsigned char	buffer[50];
+	unsigned char __attribute__ ((unused)) buffer[50];
 	unsigned char	*buf = NULL;
 	unsigned char	**rawbuf = NULL;
 	short			tmpflg;
 	short			tmpformat;
-	short			retbyte = 0;
+	short __attribute__ ((unused)) retbyte = 0;
 	short			bpp = 3;
 	long			width = 0;
 	long			length = 0;
@@ -1526,13 +1533,13 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	long			RasterLength = 0;
 	long			i;
 	short			result = -1;
-	char			ch;
+	char __attribute__ ((unused)) ch;
 	png_structp		png_p;
 	png_infop		info_p;
 	int				bit_depth, color_type, interlace_type;
 
-	png_color_16 my_background, *image_background;
-   int intent,screen_gamma;
+	png_color_16 __attribute__ ((unused)) my_background, *image_background;
+	int __attribute__ ((unused)) intent,screen_gamma;
 
 
 	/*---
@@ -1687,8 +1694,8 @@ static short png_image_read_raster
 	long			i;
 	long			top, skip, rstep, laststep;
 	long			currentmax, currentpos;
-	long			RasterLength = 0;
-	FILE			*readfp = NULL;
+	long __attribute__ ((unused)) RasterLength = 0;
+	FILE __attribute__ ((unused)) *readfp = NULL;
 	short			result = -1;
 	png_structp		png_ptr;
 
@@ -1772,7 +1779,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
 	png_structp		png_ptr;
 	png_infop		info_ptr;
-	FILE			*readfp;
+	FILE __attribute__ ((unused)) *readfp;
 	short			result = -1;
 
 	png_ptr = (png_structp)lpbjfimage->png_ptr;
@@ -1785,7 +1792,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 	lpbjfimage->info_ptr = NULL;
 
 	return 0;
-onErr:
+//onErr:
 	return result;	
 
 }
@@ -1825,17 +1832,18 @@ int ppm_write_tmpfile( LPBJF_IMAGEINFO lpbjfimage, char *filename , char *outfil
 	short			retbyte;
 	char			ch;
 	unsigned char	*buf = NULL;
-	long			parm_len = 0;
+	long __attribute__ ((unused)) parm_len = 0;
 	int				fd = -1;
-	int				w_size;
+	int __attribute__ ((unused)) w_size;
 	long			block_num = 0;
 	long			lastblock_size = 0;
 	short			i;
-	
+	size_t __attribute__ ((unused)) result;
+
 	
 	if ( filename != NULL ){
 		if ( (readfp = fopen( filename, "rb" )) == NULL ) goto onErr;
-		fread( buffer, 2, 1, readfp );
+		result = fread( buffer, 2, 1, readfp );
 	}
 	else {
 		readfp = stdin;
@@ -1919,7 +1927,7 @@ static long readwritePPMParam( FILE *fp, long *width, long *height, long *maxval
 	char	max_buf[25];
 	char	*ptr = NULL;
 	long	count = 0;
-	int		w_size;
+	int __attribute__ ((unused)) w_size;
 
 	ch = (char)fgetc( fp );
 

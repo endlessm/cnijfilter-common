@@ -1,0 +1,18 @@
+To build and install lgmon:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+To build and install cngpijmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            mx860
+            mx330
+            mx320
+
+Example for building the mx860 lgmon with the new automake and autoconf:
+        ./autogen.sh --program-suffix=mx860
+        make
+        make install
+

@@ -310,7 +310,7 @@ static int getPrinterStatus(CNNLHANDLE hnd, char *buf, unsigned long size){
 static int getStatusCode(const char *src, const char *key, const char *val, const int index){
 	int i, j, start=-1;
 	int len = 0, keylen=0;
-	unsigned long bufsize=0; 
+	unsigned long __attribute__ ((unused)) bufsize=0; 
 	char result[1024];
 	char tmp[1024], *buf=NULL;
 	

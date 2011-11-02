@@ -1193,7 +1193,7 @@ on_default_button_clicked              (GtkButton       *button,
 	/* Ver.2.70 */
 	/* Get default Quality(3position) by "ENUMDEF" and toggle corresponding radio button */
 	{
-		GtkWidget* button;
+		GtkWidget* __attribute__ ((unused)) button;
 		short value[3];
 		int i;
 		short quality_value = GetDefaultnValue(CNCL_PRINTQUALITY);

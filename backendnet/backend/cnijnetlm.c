@@ -249,7 +249,7 @@ int		net_lgmon_exec( int argc, int mode, FILE *fp, int copies , char *resource, 
 	
 	if	( g_pid > 0 ) {				/* if child process has started....	*/
 		int child_status = 0;
-		pid_t child_pid = 0;
+		pid_t __attribute__ ((unused)) child_pid = 0;
 		
 		// waitpid( g_pid, NULL, 0) ;		/* child process wait		*/
 		child_pid = wait(&child_status);
@@ -356,7 +356,7 @@ void	data_write( int argc, FILE *fp, int copies, int pipe_fds )
 			}
 			
 			struct pollfd fds;
-			int pollst;
+			int __attribute__ ((unused)) pollst;
 			
 			fds.fd = pipe_fds;
 			fds.events = POLLOUT;

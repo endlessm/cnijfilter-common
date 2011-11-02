@@ -87,7 +87,7 @@ int LoadResources()
 					 G_DIR_SEPARATOR_S "locale-table", "r");
 
 	char* env_locale;
-	char* glade_name;
+	char* __attribute__ ((unused)) glade_name;
 	char* keytext_name;
 	char* unit_name;
 	gboolean last = 0;

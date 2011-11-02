@@ -1,0 +1,25 @@
+To build and install cngpijmon:
+
+        ./autogen.sh --datadir=/usr/local/share --program-suffix=<Printer Model Name> --enable-progpath=<cnijnpr Program Path>
+        make
+        make install
+
+To build and install cngpijmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            ix6500
+            mx360
+            mx410
+            mx420
+            mx880
+            
+You can set the following <cnijnpr Program Path>.
+            /usr/local/bin
+            /usr/bin
+
+
+Example for building the mx880 cngpijmon with the new automake and autoconf:
+        ./autogen.sh --datadir=/usr/local/share --program-suffix=mx880 --enable-progpath=/usr/local/bin
+        make
+        make install
+

@@ -35,6 +35,7 @@
 #include <net/if.h>
 #include <sys/sysctl.h>
 #include <config.h>
+#include <unistd.h>
 
 #include <dlfcn.h>
 #include "cncl.h"
@@ -59,7 +60,7 @@ int     p_search_result = 0;
 
 void cnijnpr_sigterm_handler(int sig_code)
 {
-	int err;
+	int __attribute__ ((unused)) err;
 
 	if( p_search_result == 1 ){
 		err = CNNL_Abort(h);
@@ -88,8 +89,8 @@ void cnijnpr_sigterm_handler(int sig_code)
 /**********************************************/
 int main (int argc, const char **argv)
 {
-	int		rtn = 0 ;
-	int		wrtn = 0 ;
+	int __attribute__ ((unused)) rtn = 0 ;
+	int __attribute__ ((unused)) wrtn = 0 ;
 	int		err_count = 0 ;
 	int		poweroff_flag = 0;
 	int		fd;
@@ -100,13 +101,13 @@ int main (int argc, const char **argv)
 	static char		session_errcount = 0;
 	char	statusStr[1024];
 	output_dev		Odev;
-	CNCLData		CnclData;
-	CNCLErr			cnclerr = -1;
+	CNCLData __attribute__ ((unused)) CnclData;
+	CNCLErr __attribute__ ((unused)) cnclerr = -1;
 	char			module_name[128];
-	char			deviceid_buf[512];
+	char __attribute__ ((unused)) deviceid_buf[512];
 	int				command_type = -1;
 	void	*handle = NULL;
-	short 	(*prntobscc)( char *, short, char *, short, short * );
+	short 	(*prntobscc)( char *, short, char *, short, short * ) = NULL;
 
 	if( (argv[1] == NULL) || (argv[2] == NULL) || (argv[3] == NULL) || (argv[4] == NULL) )
 		return (-1);
@@ -211,7 +212,7 @@ int main (int argc, const char **argv)
 				}
 
 				if(rtn == CNNL_RET_SUCCESS){
-					int i=0,ret3=-1;
+					int i=0, __attribute__ ((unused)) ret3=-1;
 					short bscc_size=-1;
 
 					rtn = CNNL_DataRead(h, &buf[1], &buffsz, BUFSZ, 3, 3000);

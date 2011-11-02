@@ -25,4 +25,4 @@ cngpijmon_SOURCES = \
 #cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lcups -lbscc2sts
 cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lcups
 
-cngpijmon_LDFLAGS = -L../../lgmon/src
+cngpijmon_LDFLAGS = -L../../lgmon-3.30/src
