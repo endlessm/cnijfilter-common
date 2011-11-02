@@ -65,7 +65,7 @@ PRINTER_PKG_PROGRAM+=lgmon
 PRINTER_PKG_PROGRAM+=cngpijmon
 
 SHELL = /bin/bash
-CFLAGS = -Wall -g -m32
+CFLAGS = -Wall -g
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
 	CFLAGS += -O0
@@ -77,7 +77,7 @@ LNGBITS := $(shell getconf LONG_BIT)
 ifeq ($(LNGBITS),32)
 	_arc=32
 else
-	_arc=32
+	_arc=64
 endif
 LDFLAGS += -L../../com/libs_bin${_arc}
 
