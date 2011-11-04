@@ -369,7 +369,7 @@ int get_printer_status(int dev_path, char *buf, int *reg, int *bytes)
                 return 0;
         }
 
-	error = p_dvacs->ptdev_ioctl(dev_path, LPGETSTATUS, (int)&status);
+	error = p_dvacs->ptdev_ioctl(dev_path, LPGETSTATUS, &status);
 	if(!error){
 		*reg = status;
 		return 0;

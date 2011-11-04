@@ -64,7 +64,7 @@ short GetIPCData(LPIPCU pipc, char *sname)
 	if (listen(s, 5))
 		return RET_ERROR;
 
-	while ((c = accept(s, (struct sockaddr *)&sun, &adrlen)) >= 0) {
+	while ((c = accept(s, (struct sockaddr *)&sun, (socklen_t *)&adrlen)) >= 0) {
 		/* read command first */
 		result1 = read(c, buf, IPCCMDLEN);
 

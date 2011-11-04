@@ -8,6 +8,14 @@ if test "${enable_progpath}" = "" ; then
    enable_progpath="${ac_default_prefix}/bin"
 fi
 
+AC_DEFINE([ENABLE_NLS], [], [Description])
+AC_DEFINE([HAVE_GETTEXT], [], [Description])
+AC_DEFINE([HAVE_LC_MESSAGES], [], [Description])
+AC_DEFINE([PACKAGE_LOCALE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_DATA_DIR], [], [Description])
+AC_DEFINE([PACKAGE_SOURCE_DIR], [], [Description])
+AC_DEFINE([PROG_PATH], [], [Description])
+
 AC_DEFINE_UNQUOTED(PROG_PATH, "$enable_progpath")
 AC_SUBST(PROG_PATH)
 

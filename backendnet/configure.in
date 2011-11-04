@@ -8,6 +8,9 @@ if test "${enable_progpath}" = "" ; then
    enable_progpath="${ac_default_prefix}/bin"
 fi
 
+AC_DEFINE([PROG_PATH], [], [Description])
+AC_DEFINE([BJLIB_PATH], [], [Description])
+
 AC_DEFINE_UNQUOTED(PROG_PATH, "$enable_progpath")
 AC_SUBST(PROG_PATH)
 
@@ -32,6 +35,7 @@ AC_PROG_CC
 AC_PROG_INSTALL
 AC_PROG_MAKE_SET
 AM_PROG_LIBTOOL
+AM_PROG_CC_C_O
 
 # Checks for libraries.
 # FIXME: Replace `main' with a function in `-lcups':

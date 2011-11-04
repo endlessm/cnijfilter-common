@@ -12,6 +12,16 @@ AM_INIT_AUTOMAKE(printui${program_suffix}, 3.30-1)
 AM_CONFIG_HEADER(config.h)
 AM_MAINTAINER_MODE
 
+AC_DEFINE([ENABLE_NLS], [], [Description])
+AC_DEFINE([HAVE_LC_MESSAGES], [], [Description])
+AC_DEFINE([HAVE_GETTEXT], [], [Description])
+AC_DEFINE([GETTEXT_PACKAGE], [], [Description])
+AC_DEFINE([PACKAGE_LOCALE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_DATA_DIR], [], [Description])
+AC_DEFINE([PACKAGE_SOURCE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_PRINTER_MODEL], [], [Description])
+AC_DEFINE([XBJLIBPATH], [], [Description])
+
 AC_DEFINE_UNQUOTED(PACKAGE_PRINTER_MODEL, "${program_suffix}")
 
 case "${program_suffix}" in
@@ -43,6 +53,7 @@ AC_ISC_POSIX
 AC_PROG_CC
 AM_PROG_CC_STDC
 AC_HEADER_STDC
+AM_PROG_CC_C_O
 
 AM_PATH_GTK_2_0(2.6.0, ,
             AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))

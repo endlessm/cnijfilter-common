@@ -225,7 +225,7 @@ void ShowUtilButtons(UIMainDialog* main_window)
 }
 
 static
-void ShowPaperGapCombo(main_window)
+void ShowPaperGapCombo(UIMainDialog* main_window)
 {
 	int show_lever_box = FALSE;
 

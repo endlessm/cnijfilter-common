@@ -164,6 +164,7 @@ clean:
 	find . -name stamp-h1 -print >> file_lists1
 	find . -name file_lists -print >> file_lists1
 	find . -name COPYING -print >> file_lists1
+	find . -name compile -print >> file_lists1
 	for fn in `cat file_lists1`; do \
 	  if [ -d $${fn} ]; then \
 	    rm -r $${fn}; \

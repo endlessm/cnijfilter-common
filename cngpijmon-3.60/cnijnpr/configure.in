@@ -9,6 +9,8 @@ if test "${enable_libpath}" = "" ; then
    enable_libpath="/usr/lib/bjlib"
 fi
 
+AC_DEFINE([BJLIB_PATH], [], [Description])
+
 AC_DEFINE_UNQUOTED(BJLIB_PATH, "$enable_libpath")
 AC_SUBST(BJLIB_PATH)
 

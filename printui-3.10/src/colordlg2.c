@@ -150,7 +150,7 @@ static short SetGammaCombo(UIColorDialog2* dialog, short gamma)
 }
 
 /* Ver.2.90 */
-static short CofirmSpinValue( spinbutton )
+static short CofirmSpinValue(GtkSpinButton *spinbutton)
 {
 	short	result = 0;
 

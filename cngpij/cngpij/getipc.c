@@ -60,7 +60,7 @@ int GetIPCData(LPIPCU pipc, char *sname)
 	if( listen(server_fd, 5) )
 		return RET_ERROR;
 
-	while( (client_fd = accept(server_fd, (struct sockaddr *)&sun, &len)) >= 0 )
+	while( (client_fd = accept(server_fd, (struct sockaddr *)&sun, (socklen_t * __restrict__)&len)) >= 0 )
 	{
 		/* read command first */
 		result2 = read(client_fd, buf, IPCCMDLEN);

@@ -9,6 +9,8 @@ if test "${enable_libpath}" = "" ; then
    enable_libpath="/usr/lib/bjlib"
 fi
 
+AC_DEFINE([BJLIB_PATH], [], [Description])
+
 AC_DEFINE_UNQUOTED(BJLIB_PATH, "$enable_libpath")
 AC_SUBST(BJLIB_PATH)
 
@@ -39,8 +41,15 @@ case "$CFLAGS" in
   *-O2* ) ;;
   *) CFLAGS="$CFLAGS -O2"
 esac
+case "$CFLAGS" in
+  *-Wall* ) ;;
+  *) CFLAGS="$CFLAGS -Wall"
+esac
+case "$CFLAGS" in
+  *-m32* ) ARC="32";;
+  *) ARC=`getconf LONG_BIT` 
+esac
 
-ARC=`getconf LONG_BIT`
 AC_SUBST(ARC)
 
 AC_OUTPUT(Makefile

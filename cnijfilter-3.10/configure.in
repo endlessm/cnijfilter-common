@@ -11,6 +11,11 @@ if test "${enable_libpath}" = ""; then
   enable_libpath="/usr/lib/bjlib"
 fi
 
+AC_DEFINE([PACKAGE], [], [Description])
+AC_DEFINE([VERSION], [], [Description])
+AC_DEFINE([XBJLIBPATH], [], [Description])
+AC_DEFINE([XBINPATH], [], [Description])
+
 AC_DEFINE_UNQUOTED(XBJLIBPATH, $enable_libpath)
 AC_SUBST(XBJLIBPATH)
 
