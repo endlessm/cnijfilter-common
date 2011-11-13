@@ -1,3 +1,9 @@
+cnijfilter-common-3.60 (3.60.2) oneiric; urgency=low
+
+  * RC1.
+
+ -- Michael Gruz <michael-gruz@seznam.cz>  Sun, 13 Nov 2011 10:08:47 +0100
+
 cnijfilter-common-3.60 (3.60-1) oneiric; urgency=low
 
   * Initial Release.
