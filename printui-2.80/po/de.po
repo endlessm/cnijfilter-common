@@ -1,0 +1,2812 @@
+# Inkjet Printer Driver Ver.2.80 for Linux
+# Copyright CANON INC. 2001-2007
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 2.80\n"
+"POT-Creation-Date: 2007-10-25 18:30+0900\n"
+"PO-Revision-Date: 2007-10-25 19:45+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "de_DE"
+
+
+
+
+
+#: po/gladestr.h:1
+msgid "  Black:"
+msgstr "  Schwarz:"
+
+#: po/gladestr.h:2
+msgid "  Cyan:"
+msgstr "  Cyan:"
+
+#: po/gladestr.h:3
+msgid "  Magenta:"
+msgstr "  Magenta:"
+
+#: po/gladestr.h:4
+msgid "  Set ...  "
+msgstr "  Einstellen...   "
+
+#: po/gladestr.h:5
+msgid "  Yellow:"
+msgstr "  Gelb:"
+
+#: po/gladestr.h:7
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#: po/gladestr.h:8
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:9
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:10
+msgid "0"
+msgstr "0"
+
+#: po/gladestr.h:11
+msgid "1"
+msgstr "1"
+
+#: po/gladestr.h:12
+msgid "2"
+msgstr "2"
+
+#: po/gladestr.h:13
+msgid "3"
+msgstr "3"
+
+#: po/gladestr.h:14
+msgid "4"
+msgstr "4"
+
+#: po/gladestr.h:15
+msgid "5"
+msgstr "5"
+
+#: po/gladestr.h:16
+msgid "About"
+msgstr "Info"
+
+#: po/gladestr.h:17
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Anpassung in Spalte A bis C (-3 bis +7)"
+
+#: po/gladestr.h:18
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Anpassung in Spalte A bis D (-3 bis +7)"
+
+#: po/gladestr.h:19
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Anpassung in Spalte A bis E (-3 bis +7)"
+
+#: po/gladestr.h:20
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Anpassung in Spalte A bis F (-5 bis +5)"
+
+#: po/gladestr.h:21
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Anpassung in Spalte D bis F (-5 bis +5)"
+
+#: po/gladestr.h:22
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Anpassung in Spalte E bis G (-5 bis +5)"
+
+#: po/gladestr.h:23
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Anpassung in Spalte F bis K (-5 bis +5)"
+
+#: po/gladestr.h:24
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Anpassung in Spalte G bis J (-5 bis +5)"
+
+#: po/gladestr.h:25
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Anpassung in Spalte G bis L (-5 bis +5)"
+
+#: po/gladestr.h:26
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Anpassung in Spalte H bis K (-5 bis +5)"
+
+#: po/gladestr.h:27
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Anpassung in Spalte K und L (-3 bis +3)"
+
+#: po/gladestr.h:28
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Anpassung in Spalte L und M (-3 bis +3)"
+
+#: po/gladestr.h:29
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Anpassung in Spalte L bis O (-5 bis +5)"
+
+#: po/gladestr.h:30
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Anpassung in Spalte M und N (-2 bis +2)"
+
+#: po/gladestr.h:31
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Anpassung in Spalte M bis P (-2 bis +2)"
+
+#: po/gladestr.h:32
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Anpassung in Spalte P bis T (-5 bis +5)"
+
+#: po/gladestr.h:33
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Anpassung in Spalte Q und R (-4 bis +4)"
+
+#: po/gladestr.h:34
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Anpassung in Spalte U und V (-3 bis +3)"
+
+#: po/gladestr.h:35
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Anpassung in Spalte a bis e (-2 bis +2)"
+
+#: po/gladestr.h:36
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Anpassung in Spalte f bis k (-2 bis +2)"
+
+#: po/gladestr.h:37
+msgid "Align heads manually"
+msgstr "Druckköpfe manuell ausrichten"
+
+#: po/gladestr.h:38 po/keystr.h:262
+msgid "All Colors"
+msgstr "Alle Farben"
+
+#: po/gladestr.h:39
+msgid "Amount of Extension:"
+msgstr "Erweiterungsumfang:"
+
+#: po/gladestr.h:40 po/keystr.h:189
+msgid "Auto"
+msgstr "Automatisch "
+
+#: po/gladestr.h:41
+msgid "Auto Power"
+msgstr "Autom. Ein/Aus"
+
+#: po/gladestr.h:42
+msgid "Auto Power Off"
+msgstr "Automatisches Ausschalten"
+
+#: po/gladestr.h:43
+msgid "Auto Power Off:"
+msgstr "Automatisches Ausschalten:"
+
+#: po/gladestr.h:44
+msgid "Auto Power On:"
+msgstr "Automatisches Einschalten:"
+
+#: po/gladestr.h:45
+msgid "Auto Power Settings"
+msgstr "Autom. Ein/Aus-Einstellungen"
+
+#: po/gladestr.h:46
+msgid "Automatic Duplex Printing"
+msgstr "Automatischer Duplexdruck"
+
+#: po/gladestr.h:47
+msgid "Available Media Types:"
+msgstr "Verfügbare Medientypen:"
+
+#: po/gladestr.h:48
+msgid "BJ Cartridge:"
+msgstr "BJ-Patrone:"
+
+#: po/gladestr.h:49
+msgid "Back to Setup"
+msgstr "Zurück zum Setup"
+
+#: po/gladestr.h:50 po/keystr.h:240
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Bidirektionale Ausrichtung (-5 bis +5)"
+
+#: po/gladestr.h:51 po/keystr.h:263
+msgid "Black"
+msgstr "Schwarz"
+
+#: po/gladestr.h:52
+msgid "Black Ink Tank"
+msgstr "Schwarzer Tintenbehälter"
+
+#: po/gladestr.h:53
+msgid "Borderless Printing"
+msgstr "Randloser Druck"
+
+#: po/gladestr.h:54
+msgid "Bottom Plate Cleaning"
+msgstr "Bodenplattenreinigung"
+
+#: po/gladestr.h:55
+msgid "Brightness:"
+msgstr "Helligkeit:"
+
+#: po/gladestr.h:56 po/keystr.h:202
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: po/gladestr.h:57
+msgid ""
+"Canon Inkjet Printer Driver Ver.2.80 for Linux\n"
+"Copyright CANON INC. 2001-2007\n"
+"All Rights Reserved. "
+msgstr ""
+
+#: po/gladestr.h:60
+msgid "Centering"
+msgstr "Zentrierung"
+
+#: po/gladestr.h:61
+msgid "Change"
+msgstr "Ändern"
+
+#: po/gladestr.h:62
+msgid "Change Combination"
+msgstr "Kombination ändern"
+
+#: po/gladestr.h:63
+msgid "Change Media Type"
+msgstr "Medientyp ändern"
+
+#: po/gladestr.h:64
+msgid "Changing the Paper Source "
+msgstr "Papierzufuhr ändern"
+
+#: po/gladestr.h:65
+msgid "Cleaning"
+msgstr "Reinigung"
+
+#: po/gladestr.h:66
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Klicken Sie auf \"Ändern\", um diese Kombination zu verwenden, oder auf \n"
+"\"Zurück zum Setup\", um eine andere Kombination auszuwählen."
+
+#: po/gladestr.h:67
+msgid "Collate"
+msgstr "Sortieren"
+
+#: po/gladestr.h:68 po/keystr.h:50 po/keystr.h:266
+msgid "Color"
+msgstr "Farbe"
+
+#: po/gladestr.h:69
+msgid "Color Balance"
+msgstr "Farbbalance"
+
+#: po/gladestr.h:70
+msgid "Color Ink Tank"
+msgstr "Farbtintenbehälter"
+
+#: po/gladestr.h:71
+msgid "Color Mode:"
+msgstr "Farbmodus:"
+
+#: po/gladestr.h:72
+msgid "Color/Intensity:"
+msgstr "Farbe/Intensität:"
+
+#: po/gladestr.h:73
+msgid "Column A:"
+msgstr "Spalte A:"
+
+#: po/gladestr.h:74
+msgid "Column B:"
+msgstr "Spalte B:"
+
+#: po/gladestr.h:75
+msgid "Column C:"
+msgstr "Spalte C:"
+
+#: po/gladestr.h:76
+msgid "Column D:"
+msgstr "Spalte D:"
+
+#: po/gladestr.h:77
+msgid "Column E:"
+msgstr "Spalte E:"
+
+#: po/gladestr.h:78
+msgid "Column F:"
+msgstr "Spalte F:"
+
+#: po/gladestr.h:79
+msgid "Column G:"
+msgstr "Spalte G:"
+
+#: po/gladestr.h:80
+msgid "Column H:"
+msgstr "Spalte H:"
+
+#: po/gladestr.h:81
+msgid "Column I:"
+msgstr "Spalte I:"
+
+#: po/gladestr.h:82
+msgid "Column J:"
+msgstr "Spalte J:"
+
+#: po/gladestr.h:83
+msgid "Column K:"
+msgstr "Spalte K:"
+
+#: po/gladestr.h:84
+msgid "Column L:"
+msgstr "Spalte L:"
+
+#: po/gladestr.h:85
+msgid "Column M:"
+msgstr "Spalte M:"
+
+#: po/gladestr.h:86
+msgid "Column N:"
+msgstr "Spalte N:"
+
+#: po/gladestr.h:87
+msgid "Column O:"
+msgstr "Spalte O:"
+
+#: po/gladestr.h:88
+msgid "Column P:"
+msgstr "Spalte P:"
+
+#: po/gladestr.h:89
+msgid "Column Q:"
+msgstr "Spalte Q:"
+
+#: po/gladestr.h:90
+msgid "Column R:"
+msgstr "Spalte R:"
+
+#: po/gladestr.h:91
+msgid "Column S:"
+msgstr "Spalte S:"
+
+#: po/gladestr.h:92
+msgid "Column T:"
+msgstr "Spalte T:"
+
+#: po/gladestr.h:93
+msgid "Column U:"
+msgstr "Spalte U:"
+
+#: po/gladestr.h:94
+msgid "Column V:"
+msgstr "Spalte V:"
+
+#: po/gladestr.h:95
+msgid "Column a:"
+msgstr "Spalte a:"
+
+#: po/gladestr.h:96
+msgid "Column b:"
+msgstr "Spalte b:"
+
+#: po/gladestr.h:97
+msgid "Column c:"
+msgstr "Spalte c:"
+
+#: po/gladestr.h:98
+msgid "Column d:"
+msgstr "Spalte d:"
+
+#: po/gladestr.h:99
+msgid "Column e:"
+msgstr "Spalte e:"
+
+#: po/gladestr.h:100
+msgid "Column f:"
+msgstr "Spalte f:"
+
+#: po/gladestr.h:101
+msgid "Column g:"
+msgstr "Spalte g:"
+
+#: po/gladestr.h:102
+msgid "Column h:"
+msgstr "Spalte h:"
+
+#: po/gladestr.h:103
+msgid "Column i:"
+msgstr "Spalte i:"
+
+#: po/gladestr.h:104
+msgid "Column j:"
+msgstr "Spalte j:"
+
+#: po/gladestr.h:105
+msgid "Column k:"
+msgstr "Spalte k:"
+
+#: po/gladestr.h:106
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#: po/gladestr.h:107
+msgid "Copies:"
+msgstr "Kopien:"
+
+#: po/gladestr.h:108
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: po/gladestr.h:109
+msgid "Custom Paper Size"
+msgstr "Benutzerdefiniertes Papierformat"
+
+#: po/gladestr.h:110
+msgid "Custom Settings"
+msgstr "Benutzerdefinierte Einstellungen"
+
+#: po/gladestr.h:111
+msgid "Dark "
+msgstr "Dunkel "
+
+#: po/gladestr.h:112
+msgid "Deep Cleaning"
+msgstr "Intensivreinigung"
+
+#: po/gladestr.h:113
+msgid ""
+"Deep Cleaning requires a lot of ink. Execute it only when you have not "
+"resolved the print head problem by trying cleaning several times.\n"
+"\n"
+"Select the print head for deep cleaning."
+msgstr ""
+"Bei der Intensivreinigung ist der Tintenverbrauch sehr hoch. Führen Sie nur \n"
+"dann eine Intensivreinigung durch, wenn das Druckkopfproblem trotz mehrfacher \n"
+"Reinigung nicht behoben wurde.\n"
+"\n"
+"Wählen Sie den Druckkopf für die Intensivreinigung aus."
+
+#: po/gladestr.h:116
+msgid "Defaults"
+msgstr "Standard "
+
+#: po/gladestr.h:117
+msgid "Diffusion"
+msgstr "Diffusion"
+
+#: po/gladestr.h:118
+msgid "Display low ink warning"
+msgstr "Tintenstandwarnung anzeigen"
+
+#: po/gladestr.h:119
+msgid "Dither"
+msgstr "Dither"
+
+#: po/gladestr.h:120
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Überprüfen Sie die gedruckten Muster und geben Sie die für die Spalten M und N \n"
+"die Nummer des Musters ein, das am gleichmäßigsten ist."
+
+#: po/gladestr.h:122
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns G to L."
+msgstr ""
+"Prüfen Sie die gedruckten Muster und geben Sie in die Spalten G bis L die \n"
+"Zahlen der Muster ein, die in den durch Pfeile gekennzeichneten Bereichen die \n"
+"wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:124
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns H to O."
+msgstr ""
+"Prüfen Sie die gedruckten Muster und geben Sie in die Spalten H bis O die \n"
+"Zahlen der Muster ein, die in den durch Pfeile gekennzeichneten Bereichen die \n"
+"wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:126
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns M to R."
+msgstr ""
+"Prüfen Sie die gedruckten Muster und geben Sie in die Spalten M bis R die \n"
+"Zahlen der Muster ein, die in den durch Pfeile gekennzeichneten Bereichen die \n"
+"wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:128
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns P to V."
+msgstr ""
+"Prüfen Sie die gedruckten Muster und geben Sie in die Spalten P bis V die \n"
+"Zahlen der Muster ein, die in den durch Pfeile gekennzeichneten Bereichen die \n"
+"wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:130
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Prüfen Sie die gedruckten Muster und geben Sie in die Spalten a bis k jeweils \n"
+"die Nummer des Musters ein, das die wenigsten erkennbaren horizontalen \n"
+"Streifen aufweist."
+
+#: po/gladestr.h:132
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns L and M "
+"with \n"
+"the number of the pattern that is smoothest and has no stripes in the "
+"areas \n"
+"indicated by arrows."
+msgstr ""
+"Prüfen Sie die gedruckten Muster und geben Sie in die Spalten L und M die \n"
+"Zahlen der Muster ein, die in den durch Pfeile gekennzeichneten Bereichen die \n"
+"wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:135
+msgid "Execute"
+msgstr "Ausführen"
+
+#: po/gladestr.h:136
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in \n"
+"the fields for columns A to F."
+msgstr ""
+"Führen Sie eine Druckkopfausrichtung durch. Prüfen Sie die gedruckten Muster \n"
+"und geben Sie in die Spalten A bis F die Zahlen der Muster ein, die in den \n"
+"durch Pfeile gekennzeichneten Bereichen die wenigsten Streifen aufweisen. "
+
+#: po/gladestr.h:139
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in \n"
+"the fields for columns A to G."
+msgstr ""
+"Führen Sie eine Druckkopfausrichtung aus. Prüfen Sie die gedruckten Muster und \n"
+"geben Sie in die Spalten A bis G die Zahlen der Muster ein, die in den durch \n"
+"Pfeile gekennzeichneten Bereichen die wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:142
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in \n"
+"the fields for columns A to K."
+msgstr ""
+"Führen Sie eine Druckkopfausrichtung durch. Prüfen Sie die gedruckten Muster \n"
+"und geben Sie in die Spalten A bis K die Zahlen der Muster ein, die in den \n"
+"durch Pfeile gekennzeichneten Bereichen die wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:145
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in "
+"the \n"
+"fields for columns A to L."
+msgstr ""
+"Führen Sie eine Druckkopfausrichtung aus. Prüfen Sie die gedruckten Muster und \n"
+"geben Sie in die Spalten A bis L die Zahlen der Muster ein, die in den durch \n"
+"Pfeile gekennzeichneten Bereichen die wenigsten Streifen aufweisen."
+
+#: po/gladestr.h:148
+msgid ""
+"Executes Bottom Plate Cleaning.\n"
+"\n"
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half. Unfold the paper, and load "
+"the paper into \n"
+"the sheet feeder with the ridge of the crease facing down. Then click "
+"Execute."
+msgstr ""
+"Führt eine Bodenplattenreinigung aus.\n"
+"\n"
+"1. Entfernen Sie das Papier aus dem Papiereinzug.\n"
+"2. Falten Sie ein A4-Blatt einmal. Entfalten Sie es wieder und legen Sie es \n"
+"mit dem Kamm der Knickfalte nach unten in den Papiereinzug ein. Klicken Sie \n"
+"dann auf \"Ausführen\"."
+
+#: po/gladestr.h:153
+msgid "Exit"
+msgstr "Beenden"
+
+#: po/gladestr.h:154
+msgid "Fast"
+msgstr "Schnell"
+
+#: po/gladestr.h:155 po/keystr.h:172
+msgid "Fine"
+msgstr "Fein"
+
+#: po/gladestr.h:156
+msgid "Grayscale Printing"
+msgstr "Graustufen drucken"
+
+#: po/gladestr.h:157
+msgid "Halftoning:"
+msgstr "Halbton:"
+
+#: po/gladestr.h:158
+msgid "Height:     "
+msgstr "Höhe:    "
+
+#: po/gladestr.h:159
+msgid "High"
+msgstr "Hoch"
+
+#: po/gladestr.h:160
+msgid "High "
+msgstr "Hoch "
+
+#: po/gladestr.h:161
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Horizontale Ausrichtung (-3 bis +7)"
+
+#: po/gladestr.h:162 po/keystr.h:303
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute Deep Cleaning."
+msgstr ""
+"Wenn das gedruckte Muster diesem Muster \n"
+"gleicht, sind möglicherweise die \n"
+"Druckkopfdüsen verstopft.\n"
+"Klicken Sie auf \"Reinigung\".\n"
+"\n"
+"Wenn das Ergebnis des Testdrucks auch \n"
+"nach zwei Reinigungsgängen nicht \n"
+"zufrieden stellend ist, führen Sie eine \n"
+"Intensivreinigung durch."
+
+#: po/gladestr.h:169 po/keystr.h:206
+msgid "Ignore"
+msgstr "Ignorieren"
+
+#: po/gladestr.h:170
+msgid "Ink Cartridge Settings"
+msgstr "Tintenpatroneneinstellungen"
+
+#: po/gladestr.h:171
+msgid "Ink Cartridge:"
+msgstr "Tintenpatrone:"
+
+#: po/gladestr.h:172
+msgid "Ink Counter Reset"
+msgstr "Tintenzähler zurückstellen"
+
+#: po/gladestr.h:173
+msgid "Ink Drying Wait Time:"
+msgstr "Wartezeit für Tintentrocknung:"
+
+#: po/gladestr.h:174
+msgid "Intensity:"
+msgstr "Intensität:"
+
+#: po/gladestr.h:175
+msgid "Light "
+msgstr "Hell "
+
+#: po/gladestr.h:176
+msgid "Long"
+msgstr "Lang"
+
+#: po/gladestr.h:177
+msgid "Long-side stapling"
+msgstr "Längsseite heften"
+
+#: po/gladestr.h:178
+msgid "Low"
+msgstr "Niedrig"
+
+#: po/gladestr.h:179
+msgid "Low Ink Warning Setting"
+msgstr "Einstellung für Tintenstandwarnung"
+
+#: po/gladestr.h:180
+msgid "Main"
+msgstr "Optionen "
+
+#: po/gladestr.h:181
+msgid "Maintenance"
+msgstr "Wartung"
+
+#: po/gladestr.h:182
+msgid "Manual"
+msgstr "Manuell"
+
+#: po/gladestr.h:183
+msgid "Manual Color Adjustment"
+msgstr "Manuelle Farbeinstellung"
+
+#: po/gladestr.h:184
+msgid "Max"
+msgstr "Max"
+
+#: po/gladestr.h:185
+msgid "Media Type:"
+msgstr "Medientyp:"
+
+#: po/gladestr.h:186
+msgid "Min"
+msgstr "Min"
+
+#: po/gladestr.h:187
+msgid "Nozzle Check"
+msgstr "Düsentest"
+
+#: po/gladestr.h:188 po/keystr.h:201
+msgid "OK"
+msgstr "OK"
+
+#: po/gladestr.h:189
+msgid "Page Layout:"
+msgstr "Seitenlayout:"
+
+#: po/gladestr.h:190
+msgid "Page Setup"
+msgstr "Seite einrichten"
+
+#: po/gladestr.h:191
+msgid "Page Size:"
+msgstr "Seitenformat:"
+
+#: po/gladestr.h:192
+msgid "Paper Gap:"
+msgstr "Papierabstand:"
+
+#: po/gladestr.h:193
+msgid "Paper Size"
+msgstr "Papierformat"
+
+#: po/gladestr.h:194
+msgid "Paper Source:"
+msgstr "Papierzufuhr:"
+
+#: po/gladestr.h:195
+msgid "Pattern Check"
+msgstr "Musterüberprüfung"
+
+#: po/gladestr.h:196
+msgid "Pause Page"
+msgstr "Pause nach jeder Seite"
+
+#: po/gladestr.h:197
+msgid "Pause Scan"
+msgstr "Pause nach Scan-Vorgang"
+
+#: po/gladestr.h:198
+msgid "Power Off"
+msgstr "Ausschalten"
+
+#: po/gladestr.h:199
+msgid "Prevent paper abrasion"
+msgstr "Papierabrieb verhindern"
+
+#: po/gladestr.h:200
+msgid "Print Alignment Value"
+msgstr "Druckausrichtungswert"
+
+#: po/gladestr.h:201
+msgid "Print Check Pattern"
+msgstr "Prüfmuster drucken"
+
+#: po/gladestr.h:202
+msgid "Print Head Alignment"
+msgstr "Druckkopfausrichtung"
+
+#: po/gladestr.h:203
+msgid "Print Head Cleaning"
+msgstr "Druckkopfreinigung"
+
+#: po/gladestr.h:204
+msgid "Print Head:"
+msgstr "Druckkopf:"
+
+#: po/gladestr.h:205
+msgid "Print Quality:"
+msgstr "Druckqualität:"
+
+#: po/gladestr.h:206
+msgid "Print Type:"
+msgstr "Bildtyp:"
+
+#: po/gladestr.h:207
+msgid "Print from Last Page"
+msgstr "Ab der letzten Seite drucken"
+
+#: po/gladestr.h:208
+msgid "Quality:"
+msgstr "Qualität:"
+
+#: po/gladestr.h:209
+msgid "Quiet Mode"
+msgstr "Geräuscharmer Modus"
+
+#: po/gladestr.h:210
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Detaillierte Informationen zu Tintenstandwarnungen finden Sie im \n"
+"Druckerhandbuch."
+
+#: po/gladestr.h:211
+msgid "Roller Cleaning"
+msgstr "Reinigung der Papiereinzugwalzen"
+
+#: po/gladestr.h:212
+msgid "Scaling:"
+msgstr "Skalierung:"
+
+#: po/gladestr.h:213
+msgid "Select print head for cleaning."
+msgstr "Wählen Sie den zu reinigenden Druckkopf."
+
+#: po/gladestr.h:214
+msgid "Select the ink cartridge for printing."
+msgstr "Wählen Sie die Tintenpatrone für den Druckvorgang aus."
+
+#: po/gladestr.h:215
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr ""
+"Wählen Sie den neu eingesetzten Tintenbehälter, und klicken Sie dann auf die \n"
+"Schaltfläche Ausführen.\n"
+
+#: po/gladestr.h:217
+msgid "Send"
+msgstr "Senden"
+
+#: po/gladestr.h:218
+msgid "Short"
+msgstr "Kurz"
+
+#: po/gladestr.h:219
+msgid "Short-side stapling"
+msgstr "Breitseite heften"
+
+#: po/gladestr.h:220 po/keystr.h:54
+msgid "Standard"
+msgstr "Standard"
+
+#: po/gladestr.h:221
+msgid "Staple Side:"
+msgstr "Heftseite:"
+
+#: po/gladestr.h:222
+msgid "Start Print Head Alignment"
+msgstr "Druckkopfausrichtung starten"
+
+#: po/gladestr.h:223
+msgid ""
+"Starting Bottom Plate Cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation needs a sheet of A4 or letter size, plain paper. Follow these "
+"directions to execute Bottom Plate Cleaning."
+msgstr ""
+"Es wird eine Bodenplattenreinigung durchgeführt, um ein Verschmieren des \n"
+"Papiers während des Druckvorgangs zu verhindern.\n"
+"\n"
+"Für diesen Vorgang ist ein Blatt Normalpapier des Formats A4 oder Letter \n"
+"erforderlich. Befolgen Sie die folgenden Anweisungen zur Durchführung der \n"
+"Bodenplattenreinigung."
+
+#: po/gladestr.h:226
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Der Zähler des betreffenden Tintenbehälters zeigt nun an, dass dieser voll \n"
+"ist. Hierdurch wird sichergestellt, dass die Tintenstandwarnung ordnungsgemäß \n"
+"arbeitet."
+
+#: po/gladestr.h:229
+msgid "The following is recommended:"
+msgstr "Folgendes wird empfohlen:"
+
+#: po/gladestr.h:230
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit.\n"
+msgstr ""
+"Die Druckkopfdüsen sind nicht verstopft.\n"
+"Wenn das gedruckte Muster \n"
+"diesem Muster entspricht, können Sie den Drucker \n"
+"sofort verwenden.\n"
+"Klicken Sie auf \"Beenden\".\n"
+
+#: po/gladestr.h:235
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Damit die Tintenstandwarnung ordnungsgemäß arbeiten kann, führen Sie folgenden \n"
+"Vorgang aus:\n"
+
+#: po/gladestr.h:238
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute Deep \n"
+"Cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute Nozzle Check and check whether the \n"
+"print head nozzles have been unclogged."
+msgstr ""
+"Reinigt verstopfte Düsen, die bei der normalen Reinigung nicht gereinigt \n"
+"werden konnten.\n"
+"\n"
+"Bei der Intensivreinigung wird wesentlich mehr Tinte verbraucht als bei der \n"
+"normalen Reinigung. Führen Sie die Intensivreinigung nur durch, wenn die Düsen \n"
+"nach der normalen Reinigung immer noch verstopft sind.\n"
+"\n"
+"Führen Sie nach Beendigung der Intensivreinigung den Düsentest aus, um zu \n"
+"überprüfen, ob die Druckkopfdüsen ausreichend gereinigt sind."
+
+#: po/gladestr.h:245
+msgid "Units:"
+msgstr "Einheiten:"
+
+#: po/gladestr.h:246
+msgid "Use quiet mode"
+msgstr "Geräuscharmen Modus verwenden"
+
+#: po/gladestr.h:247
+msgid "Using AC Adapter:"
+msgstr "Netzteil verwenden:"
+
+#: po/gladestr.h:248
+msgid "Using Battery:"
+msgstr "Batterie verwenden:"
+
+#: po/gladestr.h:249
+msgid "View Printer Status..."
+msgstr "Druckerstatus anzeigen..."
+
+#: po/gladestr.h:250
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#: po/gladestr.h:251
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Achten Sie nach dem Austauschen eines Tintenbehälters darauf, den Tintenzähler \n"
+"im Register \"Wartung\" des Druckertreibers zurückzusetzen und den neuen \n"
+"Tintenbehälter auszuwählen."
+
+#: po/gladestr.h:254
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Welches der folgenden Muster kommt dem gedruckten Muster am nächsten?"
+
+#: po/gladestr.h:255
+msgid "Width:    "
+msgstr "Breite:    "
+
+#: po/gladestr.h:256
+msgid "You cannot print with the following combination:"
+msgstr "Sie können mit der folgenden Kombination nicht drucken:"
+
+#: po/gladestr.h:257
+msgid "You have selected the following combination:"
+msgstr "Sie haben die folgende Kombination ausgewählt:"
+
+#: po/gladestr.h:258
+msgid "inch"
+msgstr "Inch"
+
+#: po/gladestr.h:259
+msgid "mm"
+msgstr "mm"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/keystr.h:7
+msgid "BJF850"
+msgstr ""
+
+#: po/keystr.h:8
+msgid "BJF860"
+msgstr ""
+
+#: po/keystr.h:9
+msgid "BJF870"
+msgstr ""
+
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#: po/keystr.h:11
+msgid "BJS600"
+msgstr ""
+
+#: po/keystr.h:12
+msgid "BJS630"
+msgstr ""
+
+#: po/keystr.h:13
+msgid "BJS6300"
+msgstr ""
+
+#: po/keystr.h:14
+msgid "BJF900"
+msgstr ""
+
+#: po/keystr.h:15
+msgid "BJF9000"
+msgstr ""
+
+#: po/keystr.h:16
+msgid "BJS500"
+msgstr ""
+
+#: po/keystr.h:17
+msgid "BJS300"
+msgstr ""
+
+#: po/keystr.h:18
+msgid "PIXUS 550i"
+msgstr ""
+
+#: po/keystr.h:19
+msgid "PIXUS 850i"
+msgstr ""
+
+#: po/keystr.h:20
+msgid "PIXUS 950i"
+msgstr ""
+
+#: po/keystr.h:21
+msgid "i250"
+msgstr ""
+
+#: po/keystr.h:22
+msgid "i255"
+msgstr ""
+
+#: po/keystr.h:23
+msgid "PIXUS 560i"
+msgstr ""
+
+#: po/keystr.h:24
+msgid "PIXUS 860i"
+msgstr ""
+
+#: po/keystr.h:25
+msgid "PIXUS 990i"
+msgstr ""
+
+#: po/keystr.h:26
+msgid "PIXUS iP3100"
+msgstr ""
+
+#: po/keystr.h:27
+msgid "PIXUS iP4100"
+msgstr ""
+
+#: po/keystr.h:28
+msgid "PIXUS iP8600"
+msgstr ""
+
+#: po/keystr.h:29
+msgid "PIXMA iP1000"
+msgstr ""
+
+#: po/keystr.h:30
+msgid "PIXMA iP1500"
+msgstr ""
+
+#: po/keystr.h:31
+msgid "iP2200"
+msgstr ""
+
+#: po/keystr.h:32
+msgid "iP4200"
+msgstr ""
+
+#: po/keystr.h:33
+msgid "iP6600D"
+msgstr ""
+
+#: po/keystr.h:34
+msgid "iP7500"
+msgstr ""
+
+#: po/keystr.h:35
+msgid "MP500"
+msgstr ""
+
+#: po/keystr.h:36
+msgid "iP3300"
+msgstr ""
+
+#: po/keystr.h:37
+msgid "MP510"
+msgstr ""
+
+#: po/keystr.h:38
+msgid "iP4300"
+msgstr ""
+
+#: po/keystr.h:39
+msgid "MP600"
+msgstr ""
+
+#: po/keystr.h:40
+msgid "MP160"
+msgstr ""
+
+#: po/keystr.h:41
+msgid "iP90"
+msgstr ""
+
+#: po/keystr.h:42
+msgid "iP2500 series"
+msgstr ""
+
+#: po/keystr.h:43
+msgid "iP1800 series"
+msgstr ""
+
+#: po/keystr.h:44
+msgid "MP140 series"
+msgstr ""
+
+#: po/keystr.h:45
+msgid "MP210 series"
+msgstr ""
+
+#: po/keystr.h:46
+msgid "iP3500 series"
+msgstr ""
+
+#: po/keystr.h:47
+msgid "iP4500 series"
+msgstr ""
+
+#: po/keystr.h:48
+msgid "MP610 series"
+msgstr ""
+
+#: po/keystr.h:49
+msgid "MP520 series"
+msgstr ""
+
+#: po/keystr.h:51
+msgid "Grayscale"
+msgstr "Graustufen"
+
+#: po/keystr.h:52
+msgid "Photo"
+msgstr "Foto"
+
+#: po/keystr.h:53
+msgid "Graphic"
+msgstr "Grafik"
+
+#: po/keystr.h:55
+msgid "Linear Tone"
+msgstr "Linearer Farbton"
+
+#: po/keystr.h:56
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Ändern von %s in %s wird empfohlen."
+
+#: po/keystr.h:57
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Klicken Sie auf \"Ändern\", um die neue Kombination zu verwenden, auf \n"
+"\"Ignorieren\", um die aktuelle Kombination zu verwenden oder auf \"Zurück zum \n"
+"Setup\", um eine andere Kombination auszuwählen."
+
+#: po/keystr.h:59
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "%s-Einstellung sollte geändert werden."
+
+#: po/keystr.h:60
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Verwenden Sie die Auswahloption unten, um eine passende Einstellung zu finden, \n"
+"und klicken Sie auf \"Ändern\", um die neue Kombination zu übernehmen."
+
+#: po/keystr.h:62
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Auf \"Ignorieren\" klicken, um die aktuelle Kombination zu verwenden, oder auf \n"
+"\"Zurück zum Setup\", um eine andere Kombination auszuwählen."
+
+#: po/keystr.h:64
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "%s-Einstellung sollte geändert werden. "
+
+#: po/keystr.h:65
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to use\n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+
+#: po/keystr.h:67
+msgid "Paper Thickness Lever Position:"
+msgstr "Position des Papierstärkehebels: "
+
+#: po/keystr.h:68
+msgid "Paper Thickness Lever Position: "
+msgstr "Position des Papierstärkehebels:"
+
+#: po/keystr.h:69
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Verschieben Sie den Papierstärkehebel %s. "
+
+#: po/keystr.h:70
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Verschieben Sie den Papierstärkehebel %s."
+
+#: po/keystr.h:71
+msgid "Media Type"
+msgstr "Medientyp"
+
+#: po/keystr.h:72
+msgid "Page Size"
+msgstr "Seitenformat"
+
+#: po/keystr.h:73
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Medientyp: %s kann mit der ausgewählten BJ-Patrone nicht verwendet werden.\n"
+"Wählen Sie den Medientyp aus, der verwendet werden soll."
+
+#: po/keystr.h:75
+msgid "Plain Paper"
+msgstr "Normalpapier"
+
+#: po/keystr.h:76
+msgid "Transparencies"
+msgstr "Folien"
+
+#: po/keystr.h:77
+msgid "Back Print Film"
+msgstr "Back-Print-Film"
+
+#: po/keystr.h:78
+msgid "Fabric Sheet"
+msgstr "Textil"
+
+#: po/keystr.h:79
+msgid "High Gloss Film"
+msgstr "Hochglanzfilm"
+
+#: po/keystr.h:80
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: po/keystr.h:81
+msgid "Envelope"
+msgstr "Briefumschlag"
+
+#: po/keystr.h:82
+msgid "Glossy Postcard"
+msgstr "Hochglanz-Postkarte"
+
+#: po/keystr.h:83
+msgid "High Resolution Paper"
+msgstr "Hochauflösendes Papier"
+
+#: po/keystr.h:84
+msgid "T-Shirt Transfers"
+msgstr "T-Shirt-Transferfolie"
+
+#: po/keystr.h:85
+msgid "Thick Paper"
+msgstr ""
+
+#: po/keystr.h:86
+msgid "High Gloss Photo Film"
+msgstr "Foto-Hochglanzfilm"
+
+#: po/keystr.h:87
+msgid "Glossy Photo Paper"
+msgstr "Foto Glanzpapier"
+
+#: po/keystr.h:88
+msgid "Glossy Photo Cards"
+msgstr "Hochglanz-Fotokarten"
+
+#: po/keystr.h:89
+msgid "Photo Paper Pro"
+msgstr "Professional Fotopapier"
+
+#: po/keystr.h:90
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#: po/keystr.h:91
+msgid "Matte Photo Paper"
+msgstr "Fotopapier Matt"
+
+#: po/keystr.h:92
+msgid "Photo Paper Plus Glossy"
+msgstr "Fotoglanzpapier Plus"
+
+#: po/keystr.h:93
+msgid "Other Paper"
+msgstr "Anderes Papier"
+
+#: po/keystr.h:94
+msgid "Other Photo Paper"
+msgstr "Anderes Fotopapier"
+
+#: po/keystr.h:95
+msgid "Photo Paper Plus Double Sided"
+msgstr "Fotopapier Plus Doppelseitig"
+
+#: po/keystr.h:96
+msgid "Fine Art Photo Rag"
+msgstr ""
+
+#: po/keystr.h:97
+msgid "Other Fine Art Paper"
+msgstr "Anderes Fine Art-Papier"
+
+#: po/keystr.h:98
+msgid "Photo Paper Plus Glossy II"
+msgstr "Fotoglanzpapier Plus II"
+
+#: po/keystr.h:99
+msgid "Manual Feed"
+msgstr "Manueller Einzug"
+
+#: po/keystr.h:100
+msgid "Auto Sheet Feeder"
+msgstr "Autom. Papiereinzug"
+
+#: po/keystr.h:101
+msgid "Rear Tray"
+msgstr "Hinteres Fach"
+
+#: po/keystr.h:102
+msgid "Auto Feeder2"
+msgstr ""
+
+#: po/keystr.h:103
+msgid "Standard Cassette"
+msgstr "Standardkassette"
+
+#: po/keystr.h:104
+msgid "Optional Cassette"
+msgstr "Zusatzkassette"
+
+#: po/keystr.h:105
+msgid "Auto Select"
+msgstr "Autom. Auswahl"
+
+#: po/keystr.h:106
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#: po/keystr.h:107
+msgid "Tractor Feeder"
+msgstr "Traktor"
+
+#: po/keystr.h:108
+msgid "Cassette"
+msgstr "Kassette"
+
+#: po/keystr.h:109
+msgid "Paper Feed Switch"
+msgstr "Papierzufuhrtaste"
+
+#: po/keystr.h:110
+msgid "Front Feeder"
+msgstr "Vorderer Papiereinzug"
+
+#: po/keystr.h:111
+msgid "Front Tray"
+msgstr "Vorderes Fach"
+
+#: po/keystr.h:112
+msgid "Front for Plain Paper"
+msgstr "Vorne für Normalpapier"
+
+#: po/keystr.h:113
+msgid "Front for Plain Paper "
+msgstr "Vorne für Normalpapier "
+
+#: po/keystr.h:114
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Das ausgewählte Papierformat kann in der aktuellen Einstellung für die \n"
+"Papierzufuhr nicht verwendet werden.\n"
+"Die Einstellung für die Papierzufuhr wird in \"%s\" geändert."
+
+#: po/keystr.h:116
+msgid "Enhanced Black"
+msgstr ""
+
+#: po/keystr.h:117
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#: po/keystr.h:118
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#: po/keystr.h:119
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#: po/keystr.h:120
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#: po/keystr.h:121
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#: po/keystr.h:122
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#: po/keystr.h:123
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#: po/keystr.h:124
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#: po/keystr.h:125
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#: po/keystr.h:126
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#: po/keystr.h:127
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr "Umschlag #10 9.5\"x4.12\" 241.3x104.6mm"
+
+#: po/keystr.h:128
+msgid "DL Env. 220.0x110.0mm"
+msgstr "Umschlag DL 220.0x110.0mm"
+
+#: po/keystr.h:129
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#: po/keystr.h:130
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#: po/keystr.h:131
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#: po/keystr.h:132
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#: po/keystr.h:133
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#: po/keystr.h:134
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm "
+
+#: po/keystr.h:135
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:136
+msgid "Custom..."
+msgstr "Benutzerdefiniert..."
+
+#: po/keystr.h:137
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr "Umschlag #10 4.12\"x9.5\" 104.6x241.3mm"
+
+#: po/keystr.h:138
+msgid "DL Env. 110.0x220.0mm"
+msgstr "Umschlag DL 110.0x220.0mm"
+
+#: po/keystr.h:139
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#: po/keystr.h:140
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#: po/keystr.h:141
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#: po/keystr.h:142
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#: po/keystr.h:143
+msgid "4\"x6\" 101.6x152.4mm"
+msgstr "10x15 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:144
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#: po/keystr.h:145
+msgid "5\"x7\" 127.0x177.8mm"
+msgstr "13x18 5\"x7\" 127.0x177.8mm"
+
+#: po/keystr.h:146
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#: po/keystr.h:147
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Karte 2.16\"x3.58\" 55.0x91.0mm "
+
+#: po/keystr.h:148
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "Kreditkarte 2.13\"x3.39\" 54.0x86.0mm "
+
+#: po/keystr.h:149
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Fine Art A4 210.0x297.0mm"
+
+#: po/keystr.h:150
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#: po/keystr.h:151
+msgid "8\"x10\" 203.2x254.0mm"
+msgstr "8\"x10\" 203.2x254.0mm"
+
+#: po/keystr.h:152
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#: po/keystr.h:153
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#: po/keystr.h:154
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "Inch (%s-%s)"
+
+#: po/keystr.h:155
+msgid "Position 1"
+msgstr ""
+
+#: po/keystr.h:156
+msgid "Position 2"
+msgstr ""
+
+#: po/keystr.h:157
+msgid "Position 3"
+msgstr ""
+
+#: po/keystr.h:158 po/keystr.h:165
+msgid "Left"
+msgstr "Links"
+
+#: po/keystr.h:159
+msgid "Center"
+msgstr "Zentrieren"
+
+#: po/keystr.h:160 po/keystr.h:166
+msgid "Right"
+msgstr "Rechts"
+
+#: po/keystr.h:161 po/keystr.h:163 po/keystr.h:169
+msgid "Down"
+msgstr "Unten"
+
+#: po/keystr.h:162 po/keystr.h:164 po/keystr.h:170
+msgid "Up"
+msgstr "Oben"
+
+#: po/keystr.h:167
+msgid "Front"
+msgstr ""
+
+#: po/keystr.h:168
+msgid "Back"
+msgstr "Zurück"
+
+#: po/keystr.h:171
+msgid "Smoothing"
+msgstr ""
+
+#: po/keystr.h:173
+msgid "Fine(Fast)"
+msgstr ""
+
+#: po/keystr.h:174
+msgid "Banner Printing"
+msgstr "Banner-Druck"
+
+#: po/keystr.h:175
+msgid "Color    "
+msgstr ""
+
+#: po/keystr.h:176
+msgid "Black    "
+msgstr "Schwarz    "
+
+#: po/keystr.h:177
+msgid "Photo    "
+msgstr "Foto "
+
+#: po/keystr.h:178
+msgid "Black/Color    "
+msgstr "Schwarz/Farbe    "
+
+#: po/keystr.h:179
+msgid "Black/Photo    "
+msgstr "Schwarz/Foto    "
+
+#: po/keystr.h:180
+msgid "Photo/Color    "
+msgstr "Foto/Farbe    "
+
+#: po/keystr.h:181
+msgid "Fit-to-Page Printing"
+msgstr "An Seite anpassen"
+
+#: po/keystr.h:182
+msgid "Normal-size Printing"
+msgstr "Normale Druckgröße"
+
+#: po/keystr.h:183
+msgid "Scaled Printing"
+msgstr "Zoomdruck"
+
+#: po/keystr.h:184
+msgid "Default"
+msgstr ""
+
+#: po/keystr.h:185
+msgid "More bright (Gamma = 1.0)"
+msgstr "Heller (Gamma = 1,0)"
+
+#: po/keystr.h:186
+msgid "Light"
+msgstr "Hell"
+
+#: po/keystr.h:187
+msgid "Normal"
+msgstr "Normal"
+
+#: po/keystr.h:188
+msgid "Dark"
+msgstr "Dunkel"
+
+#: po/keystr.h:190
+msgid "Wide"
+msgstr "Weit"
+
+#: po/keystr.h:191
+msgid "Narrow"
+msgstr "Eng"
+
+#: po/keystr.h:192
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed slightly extends off the paper.\n"
+"Print quality may deteriorate or the sheet may be stained\n"
+"at the top and bottom depending on the type of the media used."
+msgstr ""
+"Sie haben die Option für randlosen Druck gewählt.\n"
+"Das zu druckende Dokument reicht leicht über die Kanten des Papiers hinaus.\n"
+"Je nach Medientyp können sich am oberen und unteren Blattrand \n"
+"Qualitätseinbußen oder Flecken bemerkbar machen."
+
+#: po/keystr.h:196
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Randloses Drucken wird nicht empfohlen, wenn %s als Medientyp ausgewählt ist.\n"
+"Wählen Sie den zu verwendenden Medientyp aus."
+
+#: po/keystr.h:198
+msgid ""
+"The document to be printed slightly extends off the paper.\n"
+"Print quality may deteriorate or the sheet may be stained\n"
+"at the top and bottom depending on the type of the media used."
+msgstr ""
+"Das zu druckende Dokument reicht leicht über die Kanten des Papiers hinaus.\n"
+"Je nach Medientyp können sich am oberen und unteren Blattrand \n"
+"Qualitätseinbußen oder Flecken bemerkbar machen."
+
+#: po/keystr.h:203
+msgid "Yes"
+msgstr "Ja"
+
+#: po/keystr.h:204
+msgid "No"
+msgstr "Nein"
+
+#: po/keystr.h:205
+msgid "Abort"
+msgstr ""
+
+#: po/keystr.h:207
+msgid "Enable"
+msgstr "Aktiviert"
+
+#: po/keystr.h:208
+msgid "Disable"
+msgstr "Deaktiviert"
+
+#: po/keystr.h:209
+msgid "5 minutes"
+msgstr "5 Minuten"
+
+#: po/keystr.h:210
+msgid "10 minutes"
+msgstr "10 Minuten"
+
+#: po/keystr.h:211
+msgid "15 minutes"
+msgstr "15 Minuten"
+
+#: po/keystr.h:212
+msgid "30 minutes"
+msgstr "30 Minuten"
+
+#: po/keystr.h:213
+msgid "60 minutes"
+msgstr "60 Minuten"
+
+#: po/keystr.h:214 po/keystr.h:220
+msgid "Do not start another operation until the current one has finished."
+msgstr ""
+"Starten Sie keinen anderen Vorgang, bevor der aktuelle Vorgang abgeschlossen \n"
+"ist."
+
+#: po/keystr.h:215
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Ist die Qualität des Testausdrucks zufrieden stellend?\n"
+"\n"
+"Wenn kein Muster gedruckt wurde oder wenn der Ausdruck deutlich verschmiert \n"
+"ist, klicken Sie auf \"Nein\" und starten Sie den Vorgang erneut."
+
+#: po/keystr.h:218
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Vergewissern Sie sich, dass der Drucker eingeschaltet, das Kabel angeschlossen \n"
+"und der Drucker online ist, und versuchen Sie es noch einmal."
+
+#: po/keystr.h:219
+msgid "Print head alignment is now complete."
+msgstr "Die Druckkopfausrichtung ist jetzt abgeschlossen."
+
+#: po/keystr.h:221
+msgid ""
+"Start printing nozzle check pattern? Load some paper into the sheet feeder "
+"to proceed with printing."
+msgstr ""
+"Düsentestmuster jetzt drucken? Legen Sie Papier in den Papiereinzug ein, um \n"
+"den Druckvorgang fortzusetzen."
+
+#: po/keystr.h:222
+msgid "Turn the printer off?"
+msgstr "Drucker ausschalten?"
+
+#: po/keystr.h:223
+msgid "Write settings to printer?"
+msgstr "Einstellungen an den Drucker schreiben?"
+
+#: po/keystr.h:224
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"You will need the special Cleaning Plate and two sheets of plain paper.\n"
+"First, wet the cleaning area of the Cleaning Plate. Wipe away any moisture "
+"in other areas on the front and back.\n"
+"Place the Cleaning Plate in the sheet feeder so that the cleaning area is "
+"towards you.\n"
+"During cleaning, the paper feed rollers will be activated 20 times. The "
+"process will take about a minute.\n"
+"\n"
+"Do you want to start roller cleaning?"
+msgstr ""
+"Reinigung der Papiereinzugwalzen.\n"
+"\n"
+"Sie benötigen die Reinigungsplatte und zwei Blätter Normalpapier.\n"
+"Feuchten Sie zunächst den Reinigungsbereich der Reinigungsplatte an. Entfernen \n"
+"Sie die Feuchtigkeit im vorderen und hinteren Bereich.\n"
+"Legen Sie die Reinigungsplatte so in den Papiereinzug ein, dass der \n"
+"Reinigungsbereich zu Ihnen zeigt.\n"
+"Während der Reinigung werden die Papiereinzugwalzen 20-mal betätigt. Der \n"
+"Vorgang dauert ungefähr eine Minute.\n"
+"\n"
+"Möchten Sie die Reinigung ausführen?"
+
+#: po/keystr.h:232
+msgid "Start cleaning?"
+msgstr "Reinigung starten?"
+
+#: po/keystr.h:233
+msgid "Start print head deep cleaning?"
+msgstr "Intensivreinigung des Druckkopfs starten?"
+
+#: po/keystr.h:234
+msgid ""
+"To remove any moisture left on the paper feed rollers,\n"
+"keep the Cleaning Plate in place and insert the first sheet of plain paper "
+"into the sheet feeder."
+msgstr ""
+"Um auf den Papiereinzugswalzen verbliebene Feuchtigkeit zu entfernen,\n"
+"lassen Sie die Reinigungsplatte im Gerät und legen Sie ein Blatt Normalpapier \n"
+"in den Papiereinzug ein."
+
+#: po/keystr.h:236
+msgid ""
+"With the Cleaning Plate still in place,\n"
+"insert the second sheet of plain paper into the sheet feeder to remove any "
+"remaining moisture."
+msgstr ""
+"Entfernen Sie die Reinigungsplatte nicht\n"
+"und legen Sie ein zweites Blatt Normalpapier in den Papiereinzug ein, um die \n"
+"Feuchtigkeit restlos zu beseitigen."
+
+#: po/keystr.h:238
+msgid ""
+"Feed roller cleaning is complete.\n"
+"Remove the Cleaning Plate."
+msgstr ""
+"Die Reinigung der Einzugsrollen ist abgeschlossen.\n"
+"Entfernen Sie bitte die Reinigungsplatte."
+
+#: po/keystr.h:241
+msgid ""
+"Starting print head alignment to compensate for print head installation "
+"positioning error.\n"
+"\n"
+"Since alignment involves printing, make sure the printer is ready (cable "
+"connected and printer power on), \n"
+"set the printer's paper thickness lever to the left, and load a sheet of "
+"paper into the sheet feeder. \n"
+"Head alignment patterns will be printed.\n"
+"\n"
+"Start print head alignment?"
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet, um Positionierungsfehler des \n"
+"Druckkopfs bei der Installation zu korrigieren.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, stellen Sie sicher, dass \n"
+"der Drucker aktiv ist (Kabel angeschlossen und Drucker eingeschaltet), \n"
+"schieben Sie den Papierstärkehebel des Druckers nach links und legen Sie ein \n"
+"Blatt Papier in den Papiereinzug ein. Es werden Druckkopfausrichtungsmuster \n"
+"gedruckt.\n"
+"\n"
+"Druckkopfausrichtung starten?"
+
+#: po/keystr.h:248
+msgid ""
+"Additional print head alignment patterns will be printed.\n"
+"\n"
+"Load another sheet of paper and click OK."
+msgstr ""
+"Es werden zusätzliche Druckkopfausrichtungsmuster gedruckt.\n"
+"\n"
+"Legen Sie ein weiteres Blatt Papier ein und klicken Sie auf \"OK\"."
+
+#: po/keystr.h:251
+msgid "Execute black print head deep cleaning?"
+msgstr "Intensivreinigung des schwarzen Druckkopfs starten?"
+
+#: po/keystr.h:252
+msgid "Execute color print head deep cleaning?"
+msgstr "Intensivreinigung des Farbdruckkopfs starten?"
+
+#: po/keystr.h:253
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Reinigung der Papiereinzugwalzen.\n"
+"\n"
+"Entfernen Sie zunächst das Papier aus dem Papierfach. Wenn Sie auf \"OK\" \n"
+"klicken, werden die Papiereinzugwalzen 30-mal aktiviert. Dieser Vorgang dauert \n"
+"etwa eineinhalb Minuten. Wenn Sie, wie in der Meldung beschrieben, drei \n"
+"Blätter Normalpapier einlegen, wird das Papier ausgeworfen und die Reinigung \n"
+"der Einzugwalzen wird beendet.\n"
+"\n"
+"Soll mit der Reinigung der Einzugwalzen begonnen werden?"
+
+#: po/keystr.h:260
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Legen Sie drei Blätter Normalpapier in den Papiereinzug ein.\n"
+
+#: po/keystr.h:261
+msgid "Feed roller cleaning is complete."
+msgstr "Die Reinigung der Einzugsrollen ist abgeschlossen."
+
+#: po/keystr.h:264
+msgid "Black   3eBK"
+msgstr "Schwarz   3eBK"
+
+#: po/keystr.h:265
+msgid "Black   PGBK"
+msgstr "Schwarz   PGBK"
+
+#: po/keystr.h:267
+msgid "Color   6C, 6M, 6Y"
+msgstr "Farbe   6C, 6M, 6Y"
+
+#: po/keystr.h:268
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Farbe   6C, 6M, 6Y, 6BK"
+
+#: po/keystr.h:269
+msgid "Color   7C, 7M, 7Y"
+msgstr "Farbe   7C, 7M, 7Y"
+
+#: po/keystr.h:270
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Farbe   7C, 7M, 7Y, 7BK"
+
+#: po/keystr.h:271
+msgid "Color   C, M, Y, BK"
+msgstr "Farbe  C, M, Y, BK"
+
+#: po/keystr.h:272
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Farbe   C, M, Y, PC, PM, BK"
+
+#: po/keystr.h:273
+msgid "Color   C, M, Y"
+msgstr "Farbe   C, M, Y"
+
+#: po/keystr.h:274
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Gruppe 1   6BK, 6R, 6PC, 6PM"
+
+#: po/keystr.h:275
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Gruppe 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#: po/keystr.h:276
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Gruppe 2   6C, 6M, 6Y"
+
+#: po/keystr.h:277
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Gruppe 2   7C, 7M, 7Y"
+
+#: po/keystr.h:278
+msgid "Execute print head deep cleaning for Group 1?\n"
+msgstr "Intensivreinigung des Druckkopfs für Gruppe 1 starten?\n"
+
+#: po/keystr.h:279
+msgid "Execute print head deep cleaning for Group 2?\n"
+msgstr "Intensivreinigung des Druckkopfs für Gruppe 2 starten?\n"
+
+#: po/keystr.h:280
+msgid ""
+"Executes print head cleaning.\n"
+"\n"
+"Select the print head for cleaning. The ink group can be identified \n"
+"from the nozzle check pattern."
+msgstr ""
+"Ausführung der Druckkopfreinigung.\n"
+"\n"
+"Wählen Sie den Druckkopf für die Reinigung aus. Die Tintengruppe kann anhand \n"
+"des Düsentestmusters ermittelt werden."
+
+#: po/keystr.h:284
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute Nozzle Check to check whether the print head "
+"nozzles have been unclogged.\n"
+msgstr ""
+"Starten Sie einen neuen Vorgang erst, wenn die Reinigung abgeschlossen ist.\n"
+"\n"
+"Führen Sie den Düsentest aus, um zu prüfen, ob die Düsen nicht mehr verstopft \n"
+"sind.\n"
+
+#: po/keystr.h:287
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute Nozzle Check.\n"
+msgstr ""
+"Reinigt verstopfte Druckkopfdüsen.\n"
+"\n"
+"Wählen Sie die zu reinigende Tintengruppe. Wenn Sie nicht sicher sind, welche \n"
+"Tintengruppe gereinigt werden muss, führen Sie einen Düsentest durch.\n"
+
+#: po/keystr.h:291
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute Nozzle Check.\n"
+msgstr ""
+"Reinigt verstopfte Düsen, die bei der normalen Reinigung nicht gereinigt \n"
+"werden konnten.\n"
+"\n"
+"Wählen Sie die zu reinigende Tintengruppe. Wenn Sie nicht sicher sind, für \n"
+"welche Tintengruppe eine Intensivreinigung durchgeführt werden muss, führen \n"
+"Sie einen Düsentest durch.\n"
+
+#: po/keystr.h:295
+msgid "Ink Group:"
+msgstr "Tintengruppe:"
+
+#: po/keystr.h:296
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute Deep \n"
+"Cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute Nozzle Check and check whether the \n"
+"print head nozzles have been unclogged.\n"
+msgstr ""
+"Bei der Intensivreinigung wird mehr Tinte als bei der normalen Reinigung \n"
+"verbraucht. Führen Sie eine Intensivreinigung nur dann durch, wenn sich der \n"
+"Zustand der Düse nach der normalen Reinigung nicht ändert.\n"
+"\n"
+"Führen Sie nach Beendigung der Intensivreinigung den Düsentest aus, um zu \n"
+"überprüfen, ob die Druckkopfdüsen ausreichend gereinigt sind.\n"
+
+#: po/keystr.h:301
+msgid "Cleaning consumes ink."
+msgstr "Bei einer Reinigung wird Tinte verbraucht."
+
+#: po/keystr.h:302
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Legen Sie ein Blatt Papier des Formats A4 oder Letter in die über die \n"
+"Papierzufuhrtaste ausgewählte Papierquelle ein und klicken Sie auf \"OK\".\n"
+
+#: po/keystr.h:310 po/keystr.h:353
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Die Druckkopfausrichtung ist abgeschlossen.\n"
+"Klicken Sie zum Beenden der Ausrichtung auf \"Abbrechen\".\n"
+"\n"
+"Wenn Streifen auf dem Ausdruck erscheinen, können Sie zur Verbesserung des \n"
+"Druckbilds den Druckkopf ausrichten.\n"
+"Legen Sie für die Ausrichtung ein Blatt Papier in den Papiereinzug ein und \n"
+"klicken Sie auf \"OK\"."
+
+#: po/keystr.h:315
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Legen Sie ein Blatt Normalpapier des Formats A4 oder Letter in den \n"
+"Papiereinzug ein und klicken Sie auf \"OK\"."
+
+#: po/keystr.h:316
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), schieben Sie den \n"
+"Papierstärkehebel des Druckers nach links und legen Sie ein Blatt Normalpapier \n"
+"des Formats A4 oder Letter in den Papiereinzug ein. Der Drucker druckt ein \n"
+"Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"OK\".\n"
+
+#: po/keystr.h:323
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Druckt ein Muster, anhand dessen Sie überprüfen können, ob die Druckkopfdüsen \n"
+"verstopft sind.\n"
+"\n"
+"Aktivieren Sie den Drucker (Kabel anschließen und Drucker einschalten), \n"
+"schieben Sie den Papierstärkehebel des Druckers nach links, legen Sie ein \n"
+"Blatt Normalpapier des Formats A4 oder Letter in den Papiereinzug ein und \n"
+"klicken Sie auf \"Prüfmuster drucken\".\n"
+
+#: po/keystr.h:327
+msgid "Color Only"
+msgstr "Nur Farbe"
+
+#: po/keystr.h:328
+msgid "Black Only"
+msgstr "Nur Schwarz"
+
+#: po/keystr.h:329
+msgid "Both Black and Color"
+msgstr "Schwarz und Farbe"
+
+#: po/keystr.h:330
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Druckt nur mit der Farbtintenpatrone statt mit der schwarzen Tintenpatrone."
+
+#: po/keystr.h:332
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Druckt nur mit der schwarzen Tintenpatrone statt mit der Farbtintenpatrone, \n"
+"wenn im Register \"Optionen\" unter \"Medientyp\" die Option \"Normalpapier\" \n"
+"ausgewählt ist."
+
+#: po/keystr.h:335
+msgid "Prints using both black and color cartridges."
+msgstr "Druckt unter Verwendung der schwarzen und der Farbtintenpatronen."
+
+#: po/keystr.h:336
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Der Drucker druckt ein Blatt Anpassungsmuster, um die Ausrichtung automatisch \n"
+"zu starten.\n"
+"Starten Sie keinen anderen Vorgang, bevor der aktuelle Vorgang abgeschlossen \n"
+"ist."
+
+#: po/keystr.h:338
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Das zweite Blatt des Druckkopfausrichtungsmusters wird gedruckt.\n"
+"\n"
+"Klicken Sie auf \"OK\", um den Druckvorgang zu starten."
+
+#: po/keystr.h:341
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Das dritte Blatt des Druckkopfausrichtungsmusters wird gedruckt.\n"
+"\n"
+"Klicken Sie auf \"OK\", um den Druckvorgang zu starten."
+
+#: po/keystr.h:344
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), schieben Sie den \n"
+"Papierstärkehebel des Druckers nach links und legen Sie ein Blatt Normalpapier \n"
+"des Formats A4 oder Letter in die über die Papierzufuhrtaste ausgewählte \n"
+"Papierquelle ein. Der Drucker druckt ein Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:358
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Druckt ein Muster, anhand dessen Sie überprüfen können, ob die Druckkopfdüsen \n"
+"verstopft sind.\n"
+"\n"
+"Aktivieren Sie den Drucker (Kabel anschließen und Drucker einschalten), \n"
+"schieben Sie den Papierstärkehebel nach links, legen Sie ein Blatt \n"
+"Normalpapier des Formats A4 oder Letter in die mit der Papierzufuhrtaste \n"
+"ausgewählte Papierquelle ein und klicken Sie auf \"Prüfmuster drucken\"."
+
+#: po/keystr.h:363
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Druckt ein Muster, anhand dessen Sie überprüfen können, ob die Druckkopfdüsen \n"
+"verstopft sind.\n"
+"\n"
+"Legen Sie ein Blatt Normalpapier des Formats A4 oder Letter in den \n"
+"Papiereinzug ein und klicken Sie auf \"Prüfmuster drucken\"."
+
+#: po/keystr.h:366
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Die Druckkopfausrichtung ist abgeschlossen.\n"
+"Klicken Sie zum Beenden der Ausrichtung auf \"Abbrechen\".\n"
+"\n"
+"Wenn Streifen auf dem Ausdruck erscheinen, können Sie zur Verbesserung des \n"
+"Druckbilds den Druckkopf ausrichten.\n"
+"Legen Sie hierzu ein Blatt Papier in die über die Papierzufuhrtaste gewählte \n"
+"Papierquelle ein und klicken Sie auf \"OK\"."
+
+#: po/keystr.h:373
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), schieben Sie den \n"
+"Papierstärkehebel nach rechts und legen Sie ein Blatt Normalpapier des Formats \n"
+"A4 oder Letter in den Papiereinzug ein. Der Drucker druckt ein \n"
+"Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:382
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute Deep Cleaning."
+msgstr ""
+"Wenn das gedruckte Muster diesem Muster gleicht, sind möglicherweise die \n"
+"Druckkopfdüsen verstopft.\n"
+"Klicken Sie auf \"Reinigung\".\n"
+"\n"
+"Wenn das Ergebnis des Testdrucks auch nach zwei Reinigungsgängen nicht \n"
+"zufrieden stellend ist, führen Sie eine Intensivreinigung durch."
+
+#: po/keystr.h:389
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Sie können den Tintenzähler nicht zurücksetzen, weil der Drucker so \n"
+"konfiguriert ist, dass keine Tintenstandwarnung angezeigt wird.\n"
+"\n"
+"Um die Anzeige der Tintenstandwarnung zu aktivieren, klicken Sie auf \n"
+"\"Einstellung für Tintenstandwarnung\" im Register \"Wartung\" des \n"
+"Druckertreibers.\n"
+"Lesen Sie die entsprechenden Informationen im Druckerhandbuch, bevor Sie \n"
+"diesen Vorgang ausführen."
+
+#: po/keystr.h:394
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Reinigen von Papierzuführungswalzen.\n"
+"\n"
+"Entfernen Sie das Papier aus dem hinteren Fach.\n"
+"Durch Klicken auf OK werden die Papierzuführungswalzen 30-mal aktiviert. Dies \n"
+"dauert etwa 1,5 Minuten.\n"
+"\n"
+"Möchten Sie mit der Reinigung der Papierzuführungswalzen beginnen?"
+
+#: po/keystr.h:400
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Reinigen der Papierzuführungswalzen.\n"
+"\n"
+"Drücken Sie den Papierzuführungsschalter am Drucker und wählen Sie die \n"
+"Zielpapierzufuhr zum Reinigen aus. Entfernen Sie dann das Papier aus der \n"
+"gewählten Papierzufuhr.\n"
+"Durch Klicken auf OK werden die Papierzuführungswalzen 30-mal aktiviert. Dies \n"
+"dauert etwa 1,5 Minuten.\n"
+"\n"
+"Möchten Sie mit der Reinigung der Papierzuführungswalzen beginnen?"
+
+#: po/keystr.h:407
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Stellen Sie sicher, dass beim Drucker kein Betriebsgeräusch mehr vorhanden ist \n"
+"und legen Sie dann drei Blatt Papier in das hintere Fach ein.\n"
+"Klicken Sie auf OK, um das Papier auszuwerfen und die Reinigung der \n"
+"Papierzuführungswalzen vollständig auszuführen."
+
+#: po/keystr.h:409
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Stellen Sie sicher, dass beim Drucker kein Betriebsgeräusch mehr vorhanden ist \n"
+"und legen Sie dann drei Blatt Papier in die ausgewählte Papierzufuhr.\n"
+"Klicken Sie auf OK, um das Papier auszuwerfen und die Reinigung der \n"
+"Papierzuführungswalzen vollständig auszuführen."
+
+#: po/keystr.h:411
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Entfernen Sie das Papier aus dem Papiereinzug.\n"
+"2. Falten Sie ein Blatt Normalpapier des Formats A4 oder Letter in der Mitte \n"
+"und falten Sie es wieder auseinander.\n"
+"3. Legen Sie das Papier mit dem Kamm der Knickfalte nach unten zeigend in den \n"
+"Papiereinzug ein.\n"
+"4. Klicken Sie auf \"Ausführen\"."
+
+#: po/keystr.h:415
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Entfernen Sie das Papier aus dem hinteren Fach.\n"
+"2. Falten Sie ein Blatt Normalpapier des Formats A4 oder Letter in der Mitte \n"
+"und falten Sie es wieder auseinander.\n"
+"3. Legen Sie das Papier mit dem Kamm der Knickfalte nach unten zeigend in das \n"
+"hintere Fach ein.\n"
+"4. Klicken Sie auf \"Ausführen\"."
+
+#: po/keystr.h:419
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Druckt ein Muster, anhand dessen Sie überprüfen können, ob die Druckkopfdüsen \n"
+"verstopft sind.\n"
+"\n"
+"Aktivieren Sie den Drucker (Kabel anschließen und Drucker einschalten), \n"
+"schieben Sie den Papierstärkehebel des Druckers nach links, legen Sie ein \n"
+"Blatt Normalpapier des Formats A4 oder Letter in das hintere Fach ein und \n"
+"klicken Sie auf \"Prüfmuster drucken\"."
+
+#: po/keystr.h:424
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), schieben Sie den \n"
+"Papierstärkehebel des Druckers nach links und legen Sie zwei Blatt \n"
+"Normalpapier des Formats A4 oder Letter in das hintere Fach ein. Der Drucker \n"
+"druckt ein Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:433
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Print Head Alignment. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die automatische Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), legen Sie ein Blatt \n"
+"Normalpapier des Formats A4 oder Letter in den Papiereinzug ein und klicken \n"
+"Sie auf \"Druckkopfausrichtung\". \n"
+"\n"
+"Klicken Sie auf \"Abbrechen\", um die Druckköpfe manuell auszurichten.\n"
+"Klicken Sie anschließend auf \"Benutzerdefinierte Einstellungen\" auf der \n"
+"Registerkarte \"Wartung\" des Druckertreibers, aktivieren Sie \"Druckköpfe \n"
+"manuell ausrichten\" und klicken Sie auf \"Senden\". Versuchen Sie es \n"
+"anschließend erneut.\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:443
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Print \n"
+"Head Alignment. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die automatische Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), legen Sie zwei Blatt \n"
+"Fotopapier Matt (MP-101) des Formats A4 oder Letter in das hintere Fach ein \n"
+"und klicken Sie auf \"Druckkopfausrichtung\". \n"
+"\n"
+"Klicken Sie auf \"Abbrechen\", um die Druckköpfe manuell auszurichten.\n"
+"Klicken Sie anschließend auf \"Benutzerdefinierte Einstellungen\" auf der \n"
+"Registerkarte \"Wartung\" des Druckertreibers, aktivieren Sie \"Druckköpfe \n"
+"manuell ausrichten\" und klicken Sie auf \"Senden\". Versuchen Sie es \n"
+"anschließend erneut.\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:454
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr ""
+"Legen Sie ein Blatt Normalpapier des Formats A4 oder Letter in das hintere \n"
+"Fach ein und klicken Sie auf \"OK\"."
+
+#: po/keystr.h:455
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Der Drucker druckt zwei Blätter Anpassungsmuster, um die Ausrichtung \n"
+"automatisch zu starten.\n"
+"Starten Sie keinen anderen Vorgang, bevor der aktuelle Vorgang abgeschlossen \n"
+"ist."
+
+#: po/keystr.h:457
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten) und legen Sie vier Blatt \n"
+"Normalpapier des Formats A4 oder Letter in die über die Papierzufuhrtaste \n"
+"ausgewählte Papierquelle ein. Der Drucker druckt ein Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:466
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Das vierte Blatt des Musters für die Druckkopfausrichtung wird gedruckt.\n"
+"\n"
+"Klicken Sie auf \"OK\", um den Druckvorgang zu starten."
+
+#: po/keystr.h:469
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Druckt ein Muster, anhand dessen Sie überprüfen können, ob die Druckkopfdüsen \n"
+"verstopft sind.\n"
+"\n"
+"Legen Sie ein Blatt Normalpapier des Formats A4 oder Letter in die über die \n"
+"Papierzufuhrtaste ausgewählte Papierquelle ein und klicken Sie auf \n"
+"\"Prüfmuster drucken\"."
+
+#: po/keystr.h:473
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), schieben Sie den \n"
+"Papierstärkehebel des Druckers nach links und legen Sie ein Blatt Normalpapier \n"
+"des Formats A4 oder Letter in das hintere Fach ein. Der Drucker druckt ein \n"
+"Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:482
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten) und legen Sie ein Blatt \n"
+"Normalpapier des Formats A4 oder Letter in die über die Papierzufuhrtaste \n"
+"ausgewählte Papierquelle ein. Der Drucker druckt ein Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:491
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Legen Sie ein Blatt Papier des Formats A4 oder Letter in das hintere Fach ein \n"
+"und klicken Sie auf \"OK\"."
+
+#: po/keystr.h:492
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Die Druckkopfausrichtung ist abgeschlossen.\n"
+"Klicken Sie zum Beenden der Ausrichtung auf \"Abbrechen\".\n"
+"\n"
+"Wenn Streifen auf dem Ausdruck erscheinen, können Sie zur Verbesserung des \n"
+"Druckbilds den Druckkopf ausrichten.\n"
+"Legen Sie für die Ausrichtung ein Blatt Papier in das hintere Fach ein und \n"
+"klicken Sie auf \"OK\"."
+
+#: po/keystr.h:497
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten) und legen Sie drei Blatt \n"
+"Normalpapier des Formats A4 oder Letter in die über die Papierzufuhrtaste \n"
+"ausgewählte Papierquelle ein. Der Drucker druckt ein Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."
+
+#: po/keystr.h:506
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Die Druckkopfausrichtung wird gestartet.\n"
+"\n"
+"Da für die Ausrichtung ein Ausdruck erforderlich ist, aktivieren Sie den \n"
+"Drucker (Kabel anschließen und Drucker einschalten), schieben Sie den \n"
+"Papierstärkehebel des Druckers nach links und legen Sie ein Blatt Normalpapier \n"
+"des Formats A4 oder Letter in den Papiereinzug ein. Der Drucker druckt ein \n"
+"Ausrichtungsmuster.\n"
+"\n"
+"Klicken Sie zum Ausrichten der Druckkopfposition auf \"Druckkopfausrichtung\".\n"
+"\n"
+"Klicken Sie auf \"Druckausrichtungswert\", um eine Seite zu drucken und die \n"
+"aktuelle Einstellung zu überprüfen."

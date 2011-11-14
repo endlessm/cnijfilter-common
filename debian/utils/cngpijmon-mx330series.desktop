@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+MimeType=text/pro
+Name=Cngpijmon-MX330
+Exec=cngpijmonmx330
+Icon=printer.png
+Categories=Graphics
+Type=Application
+Terminal=false
+Comment=Status monitor for Canon Inkjet Printer Driver under CUPS.
+

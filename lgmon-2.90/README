@@ -1,0 +1,19 @@
+lgmon --- Language monitor for a printing status.
+
+DESCRIPTION
+    "lgmon" is a Language monitoring program for Canon Inkjet Printers.
+
+REQUIREMENTS
+    You need automake and autoconf to build programs.
+    * automake        (1.9.5 or above)
+    * autoconf        (2.59  or above)
+
+    You need the following libraries.
+    * Gtk+                    (2.4.x or above)
+
+INSTALLATION
+    See the file "INSTALL"
+
+LICENSE
+    * "lgmon" is licensed under the terms of the GNU General
+      Public License.  (See the file COPYING.)

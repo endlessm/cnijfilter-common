@@ -1,0 +1,29 @@
+To build and install cif command:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * You can set the following <Printer Model Name>.
+            ip1900 , ip3600 , ip4600 , mp190 , mp240 , mp540 , mp630
+
+Example ip4600:
+
+        ./autogen.sh --program-suffix=ip4600
+        make
+        make install
+
+
+Appendix:
+
+        * You can also set the following path.
+           --prefix
+                cif command (ex.cifip4600)                : default ... /usr/local
+           --enable-libpath
+                *.conf,*.tbl(ex.cifip4600.conf)           : default ... /usr/lib/bjlib
+
+       Example:
+
+           ./autogen.sh --program-suffix=ip4600 --enable-libpath=/usr/lib/bjlib
+           make
+           make install

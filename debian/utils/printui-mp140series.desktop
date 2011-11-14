@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+MimeType=text/pro
+Name=Printui-MP140
+Exec=cngpij -PCanon-MP140
+Icon=printer.png
+Categories=Graphics
+Type=Application
+Terminal=false
+Comment="printui" is a GUI program for Canon Inkjet Printer. You can easily select several parameters for printing.
+

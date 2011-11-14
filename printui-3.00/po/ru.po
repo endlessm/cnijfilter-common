@@ -1,0 +1,3310 @@
+# Inkjet Printer Driver Ver.3.00 for Linux
+# Copyright CANON INC. 2001-2008
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.00\n"
+"POT-Creation-Date: 2008-07-24 19:46+0900\n"
+"PO-Revision-Date: 2008-08-21 0:41+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "ru_RU"
+
+
+
+
+
+#: po/gladestr.h:1
+msgid "  Black:"
+msgstr "  Черный:"
+
+#: po/gladestr.h:2
+msgid "  Cyan:"
+msgstr "  Голубой:"
+
+#: po/gladestr.h:3
+msgid "  Magenta:"
+msgstr "  Малиновый:"
+
+#: po/gladestr.h:4
+msgid "  Set...  "
+msgstr "  Задать...  "
+
+#: po/gladestr.h:5
+msgid "  Yellow:"
+msgstr "  Желтый:"
+
+#: po/gladestr.h:7
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#: po/gladestr.h:8
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:9
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:10
+msgid "0"
+msgstr "0"
+
+#: po/gladestr.h:11
+msgid "1"
+msgstr "1"
+
+#: po/gladestr.h:12
+msgid "2"
+msgstr "2"
+
+#: po/gladestr.h:13
+msgid "3"
+msgstr "3"
+
+#: po/gladestr.h:14
+msgid "4"
+msgstr "4"
+
+#: po/gladestr.h:15
+msgid "5"
+msgstr "5"
+
+#: po/gladestr.h:16
+msgid "About"
+msgstr "О программе"
+
+#: po/gladestr.h:17
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Регулировка в столбцах с A по C (-3...+7)"
+
+#: po/gladestr.h:18
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Регулировка в столбцах с A по D (-3...+7)"
+
+#: po/gladestr.h:19
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Регулировка в столбцах с A по E (-3...+7)"
+
+#: po/gladestr.h:20
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Регулировка в столбцах с A по E (-5...+5)"
+
+#: po/gladestr.h:21
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Регулировка в столбцах с A по F (-5...+5)"
+
+#: po/gladestr.h:22
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Регулировка в столбцах с A по G (-5...+5)"
+
+#: po/gladestr.h:23
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Регулировка в столбцах с D по F (-5...+5)"
+
+#: po/gladestr.h:24
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Регулировка в столбцах с E по G (-5...+5)"
+
+#: po/gladestr.h:25
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Регулировка в столбцах F и G (-3...+3)"
+
+#: po/gladestr.h:26
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Регулировка в столбцах с F по K (-5...+5)"
+
+#: po/gladestr.h:27
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Регулировка в столбцах с G по J (-5...+5)"
+
+#: po/gladestr.h:28
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Регулировка в столбцах с G по L (-5...+5)"
+
+#: po/gladestr.h:29
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Регулировка в столбцах с H по K (-5...+5)"
+
+#: po/gladestr.h:30
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Регулировка в столбцах с H по L (-5...+5)"
+
+#: po/gladestr.h:31
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Регулировка в столбцах с H по N (-5...+5)"
+
+#: po/gladestr.h:32
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Регулировка в столбцах K и L (-3...+3)"
+
+#: po/gladestr.h:33
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Регулировка в столбцах L и M (-3...+3)"
+
+#: po/gladestr.h:34
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Регулировка в столбцах с L по O (-5...+5)"
+
+#: po/gladestr.h:35
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Регулировка в столбцах M и N (-2...+2)"
+
+#: po/gladestr.h:36
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Регулировка в столбцах с M по P (-2...+2)"
+
+#: po/gladestr.h:37
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Регулировка в столбцах с M по Q (-5...+5)"
+
+#: po/gladestr.h:38
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Регулировка в столбцах с O по T (-2...+2)"
+
+#: po/gladestr.h:39
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Регулировка в столбцах с P по T (-5...+5)"
+
+#: po/gladestr.h:40
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Регулировка в столбцах Q и R (-4...+4)"
+
+#: po/gladestr.h:41
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Регулировка в столбцах U и V (-2...+2)"
+
+#: po/gladestr.h:42
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Регулировка в столбцах U и V (-3...+3)"
+
+#: po/gladestr.h:43
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Регулировка в столбцах W и X (-3...+3)"
+
+#: po/gladestr.h:44
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Регулировка в столбцах с a по e (-2...+2)"
+
+#: po/gladestr.h:45
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Регулировка в столбцах с f по j (-2...+2)"
+
+#: po/gladestr.h:46
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Регулировка в столбцах с f по k (-2...+2)"
+
+#: po/gladestr.h:47
+msgid "Align Print Head"
+msgstr "Выровнять печатающую головку"
+
+#: po/gladestr.h:48
+msgid "Align heads manually"
+msgstr "Выравнивать головки вручную"
+
+#: po/gladestr.h:49 po/keystr.h:258
+msgid "All Colors"
+msgstr "Все цвета"
+
+#: po/gladestr.h:50
+msgid "Amount of Extension:"
+msgstr "Степень расширения:"
+
+#: po/gladestr.h:51 po/keystr.h:212
+msgid "Auto"
+msgstr "Авто"
+
+#: po/gladestr.h:52
+msgid "Auto Power"
+msgstr "Управление питанием"
+
+#: po/gladestr.h:53
+msgid "Auto Power Off"
+msgstr "Автовыключение"
+
+#: po/gladestr.h:54
+msgid "Auto Power Off:"
+msgstr "Автовыключение:"
+
+#: po/gladestr.h:55
+msgid "Auto Power On:"
+msgstr "Автовключение:"
+
+#: po/gladestr.h:56
+msgid "Auto Power Settings"
+msgstr "Автоматическое управление питанием"
+
+#: po/gladestr.h:57 po/keystr.h:130
+msgid "Automatic Duplex Printing"
+msgstr "Автоматическая двухсторонняя печать"
+
+#: po/gladestr.h:58
+msgid "Available Media Types:"
+msgstr "Доступные носители:"
+
+#: po/gladestr.h:59
+msgid "BJ Cartridge:"
+msgstr "Картридж BJ:"
+
+#: po/gladestr.h:60
+msgid "Back to Setup"
+msgstr "Возврат к настройке"
+
+#: po/gladestr.h:61 po/keystr.h:246
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "В двух направлениях (-5...+5)"
+
+#: po/gladestr.h:62 po/keystr.h:260
+msgid "Black"
+msgstr "Черный"
+
+#: po/gladestr.h:63
+msgid "Black Ink Tank"
+msgstr "Черная чернильница"
+
+#: po/gladestr.h:64
+msgid "Borderless Printing"
+msgstr "Печать без полей"
+
+#: po/gladestr.h:65
+msgid "Bottom Plate Cleaning"
+msgstr "Чистка поддона"
+
+#: po/gladestr.h:66
+msgid "Brightness:"
+msgstr "Яркость:"
+
+#: po/gladestr.h:67 po/keystr.h:225
+msgid "Cancel"
+msgstr "Отмена"
+
+#: po/gladestr.h:68
+msgid ""
+"Canon Inkjet Printer Driver Ver.3.00 for Linux\n"
+"Copyright CANON INC. 2001-2008\n"
+"All Rights Reserved. "
+msgstr ""
+
+#: po/gladestr.h:71 po/keystr.h:120
+msgid "Cassette"
+msgstr "Кассета"
+
+#: po/gladestr.h:72
+msgid "Centering"
+msgstr "Центрирование"
+
+#: po/gladestr.h:73
+msgid "Change"
+msgstr "Изменить"
+
+#: po/gladestr.h:74
+msgid "Change Combination"
+msgstr "Изменить сочетание"
+
+#: po/gladestr.h:75
+msgid "Change Media Type"
+msgstr "Смена типа носителя"
+
+#: po/gladestr.h:76
+msgid "Cleaning"
+msgstr "Очистка"
+
+#: po/gladestr.h:77
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Нажмите кнопку 'Изменить', чтобы использовать это, или кнопку 'Возврат к \n"
+"настройке', чтобы выбрать другое сочетание параметров."
+
+#: po/gladestr.h:78
+msgid "Collate"
+msgstr "Разобрать"
+
+#: po/gladestr.h:79 po/keystr.h:59 po/keystr.h:264
+msgid "Color"
+msgstr "Цвет"
+
+#: po/gladestr.h:80
+msgid "Color Balance"
+msgstr "Баланс цвета"
+
+#: po/gladestr.h:81
+msgid "Color Ink Tank"
+msgstr "Цветная чернильница"
+
+#: po/gladestr.h:82
+msgid "Color Mode:"
+msgstr "Цветной режим:"
+
+#: po/gladestr.h:83
+msgid "Color/Intensity:"
+msgstr "Цвет/интенсивность:"
+
+#: po/gladestr.h:84
+msgid "Column A:"
+msgstr "Столбец А:"
+
+#: po/gladestr.h:85
+msgid "Column B:"
+msgstr "Столбец В:"
+
+#: po/gladestr.h:86
+msgid "Column C:"
+msgstr "Столбец С:"
+
+#: po/gladestr.h:87
+msgid "Column D:"
+msgstr "Столбец D:"
+
+#: po/gladestr.h:88
+msgid "Column E:"
+msgstr "Столбец Е:"
+
+#: po/gladestr.h:89
+msgid "Column F:"
+msgstr "Столбец F:"
+
+#: po/gladestr.h:90
+msgid "Column G:"
+msgstr "Столбец G:"
+
+#: po/gladestr.h:91
+msgid "Column H:"
+msgstr "Столбец H:"
+
+#: po/gladestr.h:92
+msgid "Column I:"
+msgstr "Столбец I:"
+
+#: po/gladestr.h:93
+msgid "Column J:"
+msgstr "Столбец J:"
+
+#: po/gladestr.h:94
+msgid "Column K:"
+msgstr "Столбец К:"
+
+#: po/gladestr.h:95
+msgid "Column L:"
+msgstr "Столбец L:"
+
+#: po/gladestr.h:96
+msgid "Column M:"
+msgstr "Столбец M:"
+
+#: po/gladestr.h:97
+msgid "Column N:"
+msgstr "Столбец N:"
+
+#: po/gladestr.h:98
+msgid "Column O:"
+msgstr "Столбец O:"
+
+#: po/gladestr.h:99
+msgid "Column P:"
+msgstr "Столбец P:"
+
+#: po/gladestr.h:100
+msgid "Column Q:"
+msgstr "Столбец Q:"
+
+#: po/gladestr.h:101
+msgid "Column R:"
+msgstr "Столбец R:"
+
+#: po/gladestr.h:102
+msgid "Column S:"
+msgstr "Столбец S:"
+
+#: po/gladestr.h:103
+msgid "Column T:"
+msgstr "Столбец T:"
+
+#: po/gladestr.h:104
+msgid "Column U:"
+msgstr "Столбец U:"
+
+#: po/gladestr.h:105
+msgid "Column V:"
+msgstr "Столбец V:"
+
+#: po/gladestr.h:106
+msgid "Column W:"
+msgstr "Столбец W:"
+
+#: po/gladestr.h:107
+msgid "Column X:"
+msgstr "Столбец X:"
+
+#: po/gladestr.h:108
+msgid "Column a:"
+msgstr "Столбец a:"
+
+#: po/gladestr.h:109
+msgid "Column b:"
+msgstr "Столбец b:"
+
+#: po/gladestr.h:110
+msgid "Column c:"
+msgstr "Столбец c:"
+
+#: po/gladestr.h:111
+msgid "Column d:"
+msgstr "Столбец d:"
+
+#: po/gladestr.h:112
+msgid "Column e:"
+msgstr "Столбец e:"
+
+#: po/gladestr.h:113
+msgid "Column f:"
+msgstr "Столбец f:"
+
+#: po/gladestr.h:114
+msgid "Column g:"
+msgstr "Столбец g:"
+
+#: po/gladestr.h:115
+msgid "Column h:"
+msgstr "Столбец h:"
+
+#: po/gladestr.h:116
+msgid "Column i:"
+msgstr "Столбец i:"
+
+#: po/gladestr.h:117
+msgid "Column j:"
+msgstr "Столбец j:"
+
+#: po/gladestr.h:118
+msgid "Column k:"
+msgstr "Столбец k:"
+
+#: po/gladestr.h:119
+msgid "Contrast:"
+msgstr "Контрастность:"
+
+#: po/gladestr.h:120
+msgid "Copies:"
+msgstr "Копии:"
+
+#: po/gladestr.h:121
+msgid "Custom"
+msgstr "Другое"
+
+#: po/gladestr.h:122
+msgid "Custom Paper Size"
+msgstr "Специальный размер бумаги"
+
+#: po/gladestr.h:123
+msgid "Custom Settings"
+msgstr "Специальные параметры"
+
+#: po/gladestr.h:124
+msgid "Dark "
+msgstr "Темн."
+
+#: po/gladestr.h:125
+msgid "Deep Cleaning"
+msgstr "Глубокая очистка"
+
+#: po/gladestr.h:126
+msgid "Defaults"
+msgstr "По умолч."
+
+#: po/gladestr.h:127
+msgid "Diffusion"
+msgstr "Диффузия"
+
+#: po/gladestr.h:128
+msgid "Display low ink warning"
+msgstr "Выводить сообщение о недостатке чернил"
+
+#: po/gladestr.h:129
+msgid "Dither"
+msgstr "Градации"
+
+#: po/gladestr.h:130
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"полосками в поля столбцов G по L."
+
+#: po/gladestr.h:133
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"полосками в поля столбцов H по O."
+
+#: po/gladestr.h:136
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"полосками в поля столбцов M по R."
+
+#: po/gladestr.h:139
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"полосками в поля столбцов P по V."
+
+#: po/gladestr.h:142
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"горизонтальными полосами в поля столбцов O по V."
+
+#: po/gladestr.h:145
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Рассмотрите отпечатанные образцы и ведите номер самого однородного образца для \n"
+"столбцов M и N."
+
+#: po/gladestr.h:147
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"горизонтальными полосами в поля столбцов a по j."
+
+#: po/gladestr.h:149
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"горизонтальными полосами в поля столбцов a по k."
+
+#: po/gladestr.h:151
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите номер образца с наименее заметными \n"
+"полосками в поля столбцов H по Q."
+
+#: po/gladestr.h:153
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите в поля столбцов L и M номер лучшего \n"
+"образца, не имеющего полос в зонах, показанных стрелками."
+
+#: po/gladestr.h:156
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Рассмотрите отпечатанные образцы и введите в поля столбцов W и X номер лучшего \n"
+"образца, не имеющего полос в зонах, показанных стрелками."
+
+#: po/gladestr.h:159
+msgid "Execute"
+msgstr "Выполнить"
+
+#: po/gladestr.h:160
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Выполните выравнивание печатающих головок. Рассмотрите отпечатанные образцы и \n"
+"введите номер образца с наименее заметными полосками в поля столбцов A по F."
+
+#: po/gladestr.h:163
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Выполните выравнивание печатающих головок. Рассмотрите отпечатанные образцы и \n"
+"введите номер образца с наименее заметными полосками в поля столбцов A по G."
+
+#: po/gladestr.h:166
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Выполните выравнивание печатающих головок. Рассмотрите отпечатанные образцы и \n"
+"введите номер образца с наименее заметными полосками в поля столбцов A по K."
+
+#: po/gladestr.h:169
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Выполните выравнивание печатающих головок. Рассмотрите отпечатанные образцы и \n"
+"введите номер образца с наименее заметными полосками в поля столбцов A по L."
+
+#: po/gladestr.h:172
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Выполните выравнивание печатающих головок. Рассмотрите отпечатанные образцы и \n"
+"введите номер образца с наименее заметными полосками в поля столбцов A по N."
+
+#: po/gladestr.h:175
+msgid ""
+"Executes Bottom Plate Cleaning.\n"
+"\n"
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half. Unfold the paper, and load "
+"the paper into \n"
+"the sheet feeder with the ridge of the crease facing down. Then click "
+"Execute."
+msgstr ""
+
+#: po/gladestr.h:180
+msgid "Exit"
+msgstr "Выход"
+
+#: po/gladestr.h:181
+msgid "Fast"
+msgstr "Ниже"
+
+#: po/gladestr.h:182 po/keystr.h:195
+msgid "Fine"
+msgstr "Выше"
+
+#: po/gladestr.h:183
+msgid "Grayscale Printing"
+msgstr "Оттенки серого"
+
+#: po/gladestr.h:184
+msgid "Halftoning:"
+msgstr "Полутона:"
+
+#: po/gladestr.h:185
+msgid "Height:     "
+msgstr "Высота:    "
+
+#: po/gladestr.h:186
+msgid "High"
+msgstr "Высокое"
+
+#: po/gladestr.h:187
+msgid "High "
+msgstr "Высок."
+
+#: po/gladestr.h:188
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "По горизонтали (-3...+7)"
+
+#: po/gladestr.h:189
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute Deep Cleaning."
+msgstr ""
+
+#: po/gladestr.h:196 po/keystr.h:229
+msgid "Ignore"
+msgstr "Пропустить"
+
+#: po/gladestr.h:197
+msgid "Ink Cartridge Settings"
+msgstr "Параметры картриджа"
+
+#: po/gladestr.h:198
+msgid "Ink Cartridge:"
+msgstr "Картридж:"
+
+#: po/gladestr.h:199
+msgid "Ink Counter Reset"
+msgstr "Сброс датчика уровня"
+
+#: po/gladestr.h:200
+msgid "Ink Drying Wait Time:"
+msgstr "Задержка на сушку:"
+
+#: po/gladestr.h:201
+msgid "Intensity:"
+msgstr "Интенсивность:"
+
+#: po/gladestr.h:202
+msgid "Light "
+msgstr "Светл."
+
+#: po/gladestr.h:203
+msgid "Long"
+msgstr "долго"
+
+#: po/gladestr.h:204
+msgid "Long-side stapling"
+msgstr "Переплет по длине"
+
+#: po/gladestr.h:205
+msgid "Low"
+msgstr "Низк."
+
+#: po/gladestr.h:206
+msgid "Low Ink Warning Setting"
+msgstr "Отслеживание уровня чернил"
+
+#: po/gladestr.h:207
+msgid "Main"
+msgstr "Главная"
+
+#: po/gladestr.h:208
+msgid "Maintenance"
+msgstr "Обслуживание"
+
+#: po/gladestr.h:209
+msgid "Manual"
+msgstr "Вручную"
+
+#: po/gladestr.h:210
+msgid "Manual Color Adjustment"
+msgstr "Настройка цветов вручную"
+
+#: po/gladestr.h:211
+msgid "Max"
+msgstr "Макс."
+
+#: po/gladestr.h:212
+msgid "Media Type:"
+msgstr "Тип носителя:"
+
+#: po/gladestr.h:213
+msgid "Min"
+msgstr "Мин."
+
+#: po/gladestr.h:214
+msgid "Nozzle Check"
+msgstr "Проверка сопел"
+
+#: po/gladestr.h:215 po/keystr.h:224
+msgid "OK"
+msgstr "ОК"
+
+#: po/gladestr.h:216
+msgid "Page Layout:"
+msgstr "Макет страницы:"
+
+#: po/gladestr.h:217
+msgid "Page Setup"
+msgstr "Страница"
+
+#: po/gladestr.h:218
+msgid "Page Size:"
+msgstr "Размер стр.:"
+
+#: po/gladestr.h:219
+msgid "Paper Gap:"
+msgstr "Зазор над бумагой:"
+
+#: po/gladestr.h:220
+msgid "Paper Size"
+msgstr "Размер бумаги"
+
+#: po/gladestr.h:221
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Настр. ист. бум. для обычной бумаги"
+
+#: po/gladestr.h:222
+msgid "Paper Source:"
+msgstr "Источник бумаги:"
+
+#: po/gladestr.h:223
+msgid "Pattern Check"
+msgstr "Проверка образца"
+
+#: po/gladestr.h:224
+msgid "Pause Page"
+msgstr "Пауза между страницами"
+
+#: po/gladestr.h:225
+msgid "Pause Scan"
+msgstr "Печать с возможностью приостановки"
+
+#: po/gladestr.h:226
+msgid "Power Off"
+msgstr "Отключение питания"
+
+#: po/gladestr.h:227
+msgid "Prevent paper abrasion"
+msgstr "Предотвращение потертости бумаги"
+
+#: po/gladestr.h:228
+msgid "Print Alignment Value"
+msgstr "Напечатать значение выравнивания"
+
+#: po/gladestr.h:229
+msgid "Print Check Pattern"
+msgstr "Печать контрольного образца"
+
+#: po/gladestr.h:230
+msgid "Print Head Alignment"
+msgstr "Выравнивание печатающих головок"
+
+#: po/gladestr.h:231
+msgid "Print Head Cleaning"
+msgstr "Очистка печатающей головки"
+
+#: po/gladestr.h:232
+msgid "Print Quality:"
+msgstr "Качество печати:"
+
+#: po/gladestr.h:233
+msgid "Print Type:"
+msgstr "Тип печати:"
+
+#: po/gladestr.h:234
+msgid "Print from Last Page"
+msgstr "Печать с последней страницы"
+
+#: po/gladestr.h:235
+msgid "Quality:"
+msgstr "Качество:"
+
+#: po/gladestr.h:236
+msgid "Quiet Mode"
+msgstr "Бесшумный режим"
+
+#: po/gladestr.h:237
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Сведения о предупреждениях о низком уровне чернил имеются в руководстве по \n"
+"эксплуатации принтера."
+
+#: po/gladestr.h:238 po/keystr.h:113
+msgid "Rear Tray"
+msgstr "Задний лоток"
+
+#: po/gladestr.h:239
+msgid "Roller Cleaning"
+msgstr "Очистка роликов"
+
+#: po/gladestr.h:240
+msgid "Scaling:"
+msgstr "Масштаб:"
+
+#: po/gladestr.h:241
+msgid "Select the ink cartridge for printing."
+msgstr "Выберите картридж для печати."
+
+#: po/gladestr.h:242
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Выберите чернильницу, которая была заменена, и нажмите кнопку 'Выполнить'.\n"
+
+#: po/gladestr.h:244
+msgid "Send"
+msgstr "Отправить"
+
+#: po/gladestr.h:245
+msgid "Short"
+msgstr "недолго"
+
+#: po/gladestr.h:246
+msgid "Short-side stapling"
+msgstr "Переплет по ширине"
+
+#: po/gladestr.h:247 po/keystr.h:63
+msgid "Standard"
+msgstr "Стандарт"
+
+#: po/gladestr.h:248
+msgid "Staple Side:"
+msgstr "Сторона переплета:"
+
+#: po/gladestr.h:249
+msgid "Start Print Head Alignment"
+msgstr "Запуск выравнивания печатающих головок"
+
+#: po/gladestr.h:250
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires a sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Начало чистки поддона для предотвращения появления на бумаге пятен при печати.\n"
+"\n"
+"Для этой операции требуется лист обычной бумаги размера A4 или Letter. Следуйте \n"
+"этим указаниям, чтобы выполнить чистку поддона."
+
+#: po/gladestr.h:253
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Датчик, соответствующий замененной чернильнице, будет показывать, что эта \n"
+"чернильница полна. Эта операция обеспечивает своевременность предупреждения о \n"
+"низком уровне чернил."
+
+#: po/gladestr.h:256
+msgid "The following is recommended:"
+msgstr "Рекомендуется следующее:"
+
+#: po/gladestr.h:257
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Сопла печатающей головки не засорены.\n"
+"Если отпечатанный образец соответствует \n"
+"этому образцу, то вы можете \n"
+"использовать принтер прямо сейчас.\n"
+"Нажмите кнопку 'Выход'."
+
+#: po/gladestr.h:261
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Чтобы обеспечить своевременное предупреждение о низком уровне чернил, \n"
+"необходимо выполнять следующие действия.\n"
+
+#: po/gladestr.h:264
+msgid "Units:"
+msgstr "Единицы:"
+
+#: po/gladestr.h:265
+msgid "Use quiet mode"
+msgstr "Использовать бесшумный режим"
+
+#: po/gladestr.h:266
+msgid "Using AC Adapter:"
+msgstr "Питание от сети:"
+
+#: po/gladestr.h:267
+msgid "Using Battery:"
+msgstr "Питание от батареи:"
+
+#: po/gladestr.h:268
+msgid "View Printer Status..."
+msgstr "Сведения о состоянии принтера..."
+
+#: po/gladestr.h:269
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#: po/gladestr.h:270
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"После замены любой чернильницы всегда нажимайте кнопку 'Сброс датчика уровня' \n"
+"на вкладке 'Обслуживание' драйвера принтера и указывайте новую чернильницу."
+
+#: po/gladestr.h:273
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr ""
+"Какому из следующих образцов в наибольшей степени соответствует отпечатанный \n"
+"образец?"
+
+#: po/gladestr.h:274
+msgid "Width:    "
+msgstr "Ширина:    "
+
+#: po/gladestr.h:275
+msgid "You cannot print with the following combination:"
+msgstr "Нельзя печатать при таком сочетании параметров:"
+
+#: po/gladestr.h:276
+msgid "You have selected the following combination:"
+msgstr "Выбрано следующее сочетание параметров:"
+
+#: po/gladestr.h:277
+msgid "inch"
+msgstr "дюйм"
+
+#: po/gladestr.h:278
+msgid "mm"
+msgstr "мм"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/keystr.h:7
+msgid "BJF850"
+msgstr ""
+
+#: po/keystr.h:8
+msgid "BJF860"
+msgstr ""
+
+#: po/keystr.h:9
+msgid "BJF870"
+msgstr ""
+
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#: po/keystr.h:11
+msgid "BJS600"
+msgstr ""
+
+#: po/keystr.h:12
+msgid "BJS630"
+msgstr ""
+
+#: po/keystr.h:13
+msgid "BJS6300"
+msgstr ""
+
+#: po/keystr.h:14
+msgid "BJF900"
+msgstr ""
+
+#: po/keystr.h:15
+msgid "BJF9000"
+msgstr ""
+
+#: po/keystr.h:16
+msgid "BJS500"
+msgstr ""
+
+#: po/keystr.h:17
+msgid "BJS300"
+msgstr ""
+
+#: po/keystr.h:18
+msgid "PIXUS 550i"
+msgstr ""
+
+#: po/keystr.h:19
+msgid "PIXUS 850i"
+msgstr ""
+
+#: po/keystr.h:20
+msgid "PIXUS 950i"
+msgstr ""
+
+#: po/keystr.h:21
+msgid "i250"
+msgstr ""
+
+#: po/keystr.h:22
+msgid "i255"
+msgstr ""
+
+#: po/keystr.h:23
+msgid "PIXUS 560i"
+msgstr ""
+
+#: po/keystr.h:24
+msgid "PIXUS 860i"
+msgstr ""
+
+#: po/keystr.h:25
+msgid "PIXUS 990i"
+msgstr ""
+
+#: po/keystr.h:26
+msgid "PIXUS iP3100"
+msgstr ""
+
+#: po/keystr.h:27
+msgid "PIXUS iP4100"
+msgstr ""
+
+#: po/keystr.h:28
+msgid "PIXUS iP8600"
+msgstr ""
+
+#: po/keystr.h:29
+msgid "PIXMA iP1000"
+msgstr ""
+
+#: po/keystr.h:30
+msgid "PIXMA iP1500"
+msgstr ""
+
+#: po/keystr.h:31
+msgid "iP2200"
+msgstr ""
+
+#: po/keystr.h:32
+msgid "iP4200"
+msgstr ""
+
+#: po/keystr.h:33
+msgid "iP6600D"
+msgstr ""
+
+#: po/keystr.h:34
+msgid "iP7500"
+msgstr ""
+
+#: po/keystr.h:35
+msgid "MP500"
+msgstr ""
+
+#: po/keystr.h:36
+msgid "iP3300"
+msgstr ""
+
+#: po/keystr.h:37
+msgid "MP510"
+msgstr ""
+
+#: po/keystr.h:38
+msgid "iP4300"
+msgstr ""
+
+#: po/keystr.h:39
+msgid "MP600"
+msgstr ""
+
+#: po/keystr.h:40
+msgid "MP160"
+msgstr ""
+
+#: po/keystr.h:41
+msgid "iP90"
+msgstr ""
+
+#: po/keystr.h:42
+msgid "iP2500 series"
+msgstr ""
+
+#: po/keystr.h:43
+msgid "iP1800 series"
+msgstr ""
+
+#: po/keystr.h:44
+msgid "MP140 series"
+msgstr ""
+
+#: po/keystr.h:45
+msgid "MP210 series"
+msgstr ""
+
+#: po/keystr.h:46
+msgid "iP3500 series"
+msgstr ""
+
+#: po/keystr.h:47
+msgid "iP4500 series"
+msgstr ""
+
+#: po/keystr.h:48
+msgid "MP610 series"
+msgstr ""
+
+#: po/keystr.h:49
+msgid "MP520 series"
+msgstr ""
+
+#: po/keystr.h:50
+msgid "iP100 series"
+msgstr ""
+
+#: po/keystr.h:51
+msgid "iP2600 series"
+msgstr ""
+
+#: po/keystr.h:52
+msgid "iP3600 series"
+msgstr ""
+
+#: po/keystr.h:53
+msgid "iP4600 series"
+msgstr ""
+
+#: po/keystr.h:54
+msgid "MP630 series"
+msgstr ""
+
+#: po/keystr.h:55
+msgid "MP540 series"
+msgstr ""
+
+#: po/keystr.h:56
+msgid "MP240 series"
+msgstr ""
+
+#: po/keystr.h:57
+msgid "MP190 series"
+msgstr ""
+
+#: po/keystr.h:58
+msgid "iP1900 series"
+msgstr ""
+
+#: po/keystr.h:60
+msgid "Grayscale"
+msgstr "Оттенки серого"
+
+#: po/keystr.h:61
+msgid "Photo"
+msgstr "Фото"
+
+#: po/keystr.h:62
+msgid "Graphic"
+msgstr "Графика"
+
+#: po/keystr.h:64
+msgid "Linear Tone"
+msgstr "Линейный тон"
+
+#: po/keystr.h:65
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Рекомендуется изменить значение '%s' на '%s'."
+
+#: po/keystr.h:66
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Нажмите кнопку 'Изменить', чтобы использовать новые параметры, 'Пропустить', \n"
+"чтобы использовать текущие параметры или 'Возврат к настройке', чтобы выбрать \n"
+"другие параметры."
+
+#: po/keystr.h:68
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "Рекомендуется изменить параметр '%s'."
+
+#: po/keystr.h:69
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Выберите ниже подходящее значение и нажмите кнопку 'Изменить', чтобы \n"
+"использовать новые параметры."
+
+#: po/keystr.h:71
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Нажмите кнопку 'Пропустить', чтобы использовать текущие параметры, или кнопку \n"
+"Возврат к настройке', чтобы выбрать другие параметры."
+
+#: po/keystr.h:73
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "Рекомендуется изменить параметр '%s'. "
+
+#: po/keystr.h:74
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to use\n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+
+#: po/keystr.h:76
+msgid "Paper Thickness Lever Position:"
+msgstr "Положение рычага толщины:"
+
+#: po/keystr.h:77
+msgid "Paper Thickness Lever Position: "
+msgstr "Положение рычага толщины: "
+
+#: po/keystr.h:78
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Переместите рычаг толщины бумаги %s. "
+
+#: po/keystr.h:79
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Переместите рычаг толщины бумаги %s."
+
+#: po/keystr.h:80
+msgid "Media Type"
+msgstr "Тип носителя"
+
+#: po/keystr.h:81
+msgid "Page Size"
+msgstr "Размер страницы"
+
+#: po/keystr.h:82
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Тип носителя: значение '%s' нельзя использовать с выбранным картриджем BJ.\n"
+"Выберите тип носителя, который вы хотите использовать."
+
+#: po/keystr.h:84
+msgid "Plain Paper"
+msgstr "Обычная бумага"
+
+#: po/keystr.h:85
+msgid "Transparencies"
+msgstr "Прозрачные пленки"
+
+#: po/keystr.h:86
+msgid "Back Print Film"
+msgstr "Пленка для оборот. печати"
+
+#: po/keystr.h:87
+msgid "Fabric Sheet"
+msgstr "Ткань"
+
+#: po/keystr.h:88
+msgid "High Gloss Film"
+msgstr "Глянцевая пленка"
+
+#: po/keystr.h:89
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: po/keystr.h:90
+msgid "Envelope"
+msgstr "Конверт"
+
+#: po/keystr.h:91
+msgid "Glossy Postcard"
+msgstr "Глянцевая открытка"
+
+#: po/keystr.h:92
+msgid "High Resolution Paper"
+msgstr "High Resolution Paper"
+
+#: po/keystr.h:93
+msgid "T-Shirt Transfers"
+msgstr "Термопереводные материалы"
+
+#: po/keystr.h:94
+msgid "Thick Paper"
+msgstr ""
+
+#: po/keystr.h:95
+msgid "High Gloss Photo Film"
+msgstr "Глянцевая фотопленка"
+
+#: po/keystr.h:96
+msgid "Glossy Photo Paper"
+msgstr "Glossy Photo Paper"
+
+#: po/keystr.h:97
+msgid "Glossy Photo Cards"
+msgstr "Глянцевые открытки"
+
+#: po/keystr.h:98
+msgid "Photo Paper Pro"
+msgstr "Photo Paper Pro"
+
+#: po/keystr.h:99
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#: po/keystr.h:100
+msgid "Matte Photo Paper"
+msgstr "Matte Photo Paper"
+
+#: po/keystr.h:101
+msgid "Photo Paper Plus Glossy"
+msgstr "Photo Paper Plus Glossy"
+
+#: po/keystr.h:102
+msgid "Other Paper"
+msgstr "Другая бумага"
+
+#: po/keystr.h:103
+msgid "Other Photo Paper"
+msgstr "Другая фотобумага"
+
+#: po/keystr.h:104
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#: po/keystr.h:105
+msgid "Fine Art Photo Rag"
+msgstr ""
+
+#: po/keystr.h:106
+msgid "Other Fine Art Paper"
+msgstr "Другая бумага Fine Art"
+
+#: po/keystr.h:107
+msgid "Photo Paper Plus Glossy II"
+msgstr "Photo Paper Plus Glossy II"
+
+#: po/keystr.h:108
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "Photo Paper Plus Semi-gloss"
+
+#: po/keystr.h:109
+msgid "Photo Paper Pro Platinum"
+msgstr "Photo Paper Pro Platinum"
+
+#: po/keystr.h:110
+msgid "Photo Paper Pro II"
+msgstr "Photo Paper Pro II"
+
+#: po/keystr.h:111
+msgid "Manual Feed"
+msgstr "Ручная подача"
+
+#: po/keystr.h:112
+msgid "Auto Sheet Feeder"
+msgstr "Устройство автоподачи"
+
+#: po/keystr.h:114
+msgid "Auto Feeder2"
+msgstr ""
+
+#: po/keystr.h:115
+msgid "Standard Cassette"
+msgstr "Стандартная кассета"
+
+#: po/keystr.h:116
+msgid "Optional Cassette"
+msgstr "Дополнительная кассета"
+
+#: po/keystr.h:117
+msgid "Auto Select"
+msgstr "Автоматический выбор"
+
+#: po/keystr.h:118
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#: po/keystr.h:119
+msgid "Tractor Feeder"
+msgstr "Перфорированная бумага"
+
+#: po/keystr.h:121
+msgid "Paper Feed Switch"
+msgstr "Переключ. подачи бумаги"
+
+#: po/keystr.h:122
+msgid "Front Feeder"
+msgstr "Переднее устр. подачи"
+
+#: po/keystr.h:123
+msgid "Front Tray"
+msgstr "Передний лоток"
+
+#: po/keystr.h:124
+msgid "Front for Plain Paper"
+msgstr "Спереди для обычн. бум."
+
+#: po/keystr.h:125
+msgid "Front for Plain Paper "
+msgstr "Спереди для обычн. бум. "
+
+#: po/keystr.h:126
+msgid "Continuous Autofeed"
+msgstr "Непрерывная автоподача"
+
+#: po/keystr.h:127
+msgid "Automatically Select"
+msgstr "Автовыбор"
+
+#: po/keystr.h:128
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Выбранный размер бумаги нельзя использовать при текущей настройке источника \n"
+"бумаги.\n"
+"Значение параметра 'Источник бумаги' изменяется на '%s'."
+
+#: po/keystr.h:131
+msgid ""
+"A page size that is not supported by the \n"
+"automatic duplex printing function is selected."
+msgstr ""
+"Выбран размер страницы, который не поддерживается функцией автоматической \n"
+"двухсторонней печати."
+
+#: po/keystr.h:133
+#, c-format
+msgid "Uncheck %s."
+msgstr "Снимите флажок '%s'."
+
+#: po/keystr.h:134
+msgid "Paper Source"
+msgstr "Источник бумаги"
+
+#: po/keystr.h:135
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "Был выбран размер страницы, который нельзя подавать из кассеты."
+
+#: po/keystr.h:136
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "Установите для параметра '%s' значение '%s'."
+
+#: po/keystr.h:137
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"Источник бумаги: '%s' нельзя использовать для выбранного типа носителя.\n"
+"Значение параметра 'Источник бумаги' изменено на '%s'."
+
+#: po/keystr.h:139
+msgid "Enhanced Black"
+msgstr ""
+
+#: po/keystr.h:140
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#: po/keystr.h:141
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#: po/keystr.h:142
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#: po/keystr.h:143
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#: po/keystr.h:144
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#: po/keystr.h:145
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#: po/keystr.h:146
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#: po/keystr.h:147
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#: po/keystr.h:148
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#: po/keystr.h:149
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#: po/keystr.h:150
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr "Станд. конв. №10 9.5\"x4.12\" 241.3x104.6mm"
+
+#: po/keystr.h:151
+msgid "DL Env. 220.0x110.0mm"
+msgstr "Конв. DL 220.0x110.0mm"
+
+#: po/keystr.h:152
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#: po/keystr.h:153
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#: po/keystr.h:154
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#: po/keystr.h:155
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#: po/keystr.h:156
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#: po/keystr.h:157
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm"
+
+#: po/keystr.h:158
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:159
+msgid "Custom..."
+msgstr "Специальный..."
+
+#: po/keystr.h:160
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr "Станд. конв. №10 4.12\"x9.5\" 104.6x241.3mm"
+
+#: po/keystr.h:161
+msgid "DL Env. 110.0x220.0mm"
+msgstr "Конв. DL 110.0x220.0mm"
+
+#: po/keystr.h:162
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#: po/keystr.h:163
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#: po/keystr.h:164
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#: po/keystr.h:165
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#: po/keystr.h:166
+msgid "4\"x6\" 10x15cm 101.6x152.4mm"
+msgstr "10x15cm 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:167
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#: po/keystr.h:168
+msgid "5\"x7\" 13x18cm 127.0x177.8mm"
+msgstr "13x18cm 5\"x7\" 127.0x177.8mm"
+
+#: po/keystr.h:169
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#: po/keystr.h:170
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Карточка 2.16\"x3.58\" 55.0x91.0mm"
+
+#: po/keystr.h:171
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "Кредитная карточка 2.13\"x3.39\" 54.0x86.0mm"
+
+#: po/keystr.h:172
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Fine Art A4 210.0x297.0mm"
+
+#: po/keystr.h:173
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#: po/keystr.h:174
+msgid "8\"x10\" 20x25cm 203.2x254.0mm"
+msgstr "20x25cm 8\"x10\" 203.2x254.0mm"
+
+#: po/keystr.h:175
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#: po/keystr.h:176
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "мм (%s-%s)"
+
+#: po/keystr.h:177
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "дюймов (%s-%s)"
+
+#: po/keystr.h:178
+msgid "Position 1"
+msgstr ""
+
+#: po/keystr.h:179
+msgid "Position 2"
+msgstr ""
+
+#: po/keystr.h:180
+msgid "Position 3"
+msgstr ""
+
+#: po/keystr.h:181 po/keystr.h:188
+msgid "Left"
+msgstr "влево"
+
+#: po/keystr.h:182
+msgid "Center"
+msgstr "В центре"
+
+#: po/keystr.h:183 po/keystr.h:189
+msgid "Right"
+msgstr "вправо"
+
+#: po/keystr.h:184 po/keystr.h:186 po/keystr.h:192
+msgid "Down"
+msgstr "опущен"
+
+#: po/keystr.h:185 po/keystr.h:187 po/keystr.h:193
+msgid "Up"
+msgstr "поднят"
+
+#: po/keystr.h:190
+msgid "Front"
+msgstr ""
+
+#: po/keystr.h:191
+msgid "Back"
+msgstr "Назад"
+
+#: po/keystr.h:194
+msgid "Smoothing"
+msgstr ""
+
+#: po/keystr.h:196
+msgid "Fine(Fast)"
+msgstr ""
+
+#: po/keystr.h:197
+msgid "Banner Printing"
+msgstr "Печать транспаранта"
+
+#: po/keystr.h:198
+msgid "Color    "
+msgstr ""
+
+#: po/keystr.h:199
+msgid "Black    "
+msgstr "Черный    "
+
+#: po/keystr.h:200
+msgid "Photo    "
+msgstr "Фото "
+
+#: po/keystr.h:201
+msgid "Black/Color    "
+msgstr "Черный/цветной    "
+
+#: po/keystr.h:202
+msgid "Black/Photo    "
+msgstr "Черный/фото    "
+
+#: po/keystr.h:203
+msgid "Photo/Color    "
+msgstr "Фото/цветной    "
+
+#: po/keystr.h:204
+msgid "Fit-to-Page Printing"
+msgstr "По размеру бумаги"
+
+#: po/keystr.h:205
+msgid "Normal-size Printing"
+msgstr "Норм. размер"
+
+#: po/keystr.h:206
+msgid "Scaled Printing"
+msgstr "Масштабирование"
+
+#: po/keystr.h:207
+msgid "Default"
+msgstr ""
+
+#: po/keystr.h:208
+msgid "More bright (Gamma = 1.0)"
+msgstr "Ярче (гамма = 1,0)"
+
+#: po/keystr.h:209
+msgid "Light"
+msgstr "Светлая"
+
+#: po/keystr.h:210
+msgid "Normal"
+msgstr "Обычн."
+
+#: po/keystr.h:211
+msgid "Dark"
+msgstr "Темная"
+
+#: po/keystr.h:213
+msgid "Wide"
+msgstr "Широкое"
+
+#: po/keystr.h:214
+msgid "Narrow"
+msgstr "Узкое"
+
+#: po/keystr.h:215
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Вы выбрали режим печати без полей.\n"
+"Печатаемый документ увеличивается так, чтобы его размер слегка превышал размер \n"
+"бумаги.\n"
+"При использовании некоторых носителей качество печати может несколько \n"
+"снизиться, в верхней части и на обратной стороне листа возможно появление "
+"пятен."
+
+#: po/keystr.h:219
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Не рекомендуется выполнять печать без полей, когда для параметра 'Тип носителя' \n"
+"выбрано значение '%s'.\n"
+"Выберите тип носителя, который вы хотите использовать."
+
+#: po/keystr.h:221
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Печатаемый документ увеличивается так, чтобы его размер слегка превышал размер \n"
+"бумаги.\n"
+"При использовании некоторых носителей качество печати может несколько \n"
+"снизиться, в верхней части и на обратной стороне листа возможно появление "
+"пятен."
+
+#: po/keystr.h:226
+msgid "Yes"
+msgstr "Да"
+
+#: po/keystr.h:227
+msgid "No"
+msgstr "Нет"
+
+#: po/keystr.h:228
+msgid "Abort"
+msgstr ""
+
+#: po/keystr.h:230
+msgid "Enable"
+msgstr "включено"
+
+#: po/keystr.h:231
+msgid "Disable"
+msgstr "выключено"
+
+#: po/keystr.h:232
+msgid "5 minutes"
+msgstr "5 мин"
+
+#: po/keystr.h:233
+msgid "10 minutes"
+msgstr "10 мин"
+
+#: po/keystr.h:234
+msgid "15 minutes"
+msgstr "15 мин"
+
+#: po/keystr.h:235
+msgid "30 minutes"
+msgstr "30 мин"
+
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 мин"
+
+#: po/keystr.h:237
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Были ли образцы напечатаны нормально?\n"
+"\n"
+"Если образцы не были напечатаны или печать выполнена с заметным снижением \n"
+"резкости, нажмите кнопку 'Нет' и начните сначала."
+
+#: po/keystr.h:240
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Убедитесь в том, что принтер включен, кабель подключен правильно и принтер \n"
+"находится на связи, после чего повторите попытку."
+
+#: po/keystr.h:241
+msgid "Print head alignment is now complete."
+msgstr "Выравнивание печатающих головок завершено."
+
+#: po/keystr.h:242
+msgid "Do not start another operation until the current one has finished."
+msgstr "Не начинайте другую операцию до завершения текущей операции."
+
+#: po/keystr.h:243
+msgid "Turn the printer off?"
+msgstr "Выключить принтер?"
+
+#: po/keystr.h:244
+msgid "Write settings to printer?"
+msgstr "Записать значения в память принтера?"
+
+#: po/keystr.h:245
+msgid "Start print head deep cleaning?"
+msgstr "Начать глубокую очистку печатающей головки?"
+
+#: po/keystr.h:247
+msgid "Execute black print head deep cleaning?"
+msgstr "Выполнить глубокую очистку головки монохромной печати?"
+
+#: po/keystr.h:248
+msgid "Execute color print head deep cleaning?"
+msgstr "Выполнить глубокую очистку головки цветной печати?"
+
+#: po/keystr.h:249
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Очистка подающих роликов.\n"
+"\n"
+"Прежде всего, удалите бумагу из устройства подачи. Нажатием кнопки 'ОК' ролики \n"
+"будут задействованы 30 раз. Это займет приблизительно полторы минуты. Очистка \n"
+"подающих роликов будет завершена, когда вы, увидев соответствующее сообщение, \n"
+"вставите три листа обычной бумаги, и эти листы выйдут из принтера.\n"
+"\n"
+"Начать очистку подающих роликов?"
+
+#: po/keystr.h:256
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Вставьте три листа обычной бумаги в устройство подачи.\n"
+
+#: po/keystr.h:257
+msgid "Feed roller cleaning is complete."
+msgstr "Очистка подающих роликов завершена."
+
+#: po/keystr.h:259
+msgid "All Colors   BK, C, M, Y"
+msgstr "Все цвета   BK, C, M, Y"
+
+#: po/keystr.h:261
+msgid "Black   3eBK"
+msgstr "Черный   3eBK"
+
+#: po/keystr.h:262
+msgid "Black   PGBK"
+msgstr "Черный   PGBK"
+
+#: po/keystr.h:263
+msgid "Black   BK"
+msgstr "Черный   BK"
+
+#: po/keystr.h:265
+msgid "Color   6C, 6M, 6Y"
+msgstr "Цвет   6C, 6M, 6Y"
+
+#: po/keystr.h:266
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Цвет   6C, 6M, 6Y, 6BK"
+
+#: po/keystr.h:267
+msgid "Color   7C, 7M, 7Y"
+msgstr "Цвет   7C, 7M, 7Y"
+
+#: po/keystr.h:268
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Цвет   7C, 7M, 7Y, 7BK"
+
+#: po/keystr.h:269
+msgid "Color   C, M, Y, BK"
+msgstr "Цвет   C, M, Y, BK"
+
+#: po/keystr.h:270
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Цвет   C, M, Y, PC, PM, BK"
+
+#: po/keystr.h:271
+msgid "Color   C, M, Y"
+msgstr "Цвет   C, M, Y"
+
+#: po/keystr.h:272
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Группа 1   6BK, 6R, 6PC, 6PM"
+
+#: po/keystr.h:273
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Группа 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#: po/keystr.h:274
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Группа 2   6C, 6M, 6Y"
+
+#: po/keystr.h:275
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Группа 2   7C, 7M, 7Y"
+
+#: po/keystr.h:276
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Не начинайте другую операцию до завершения очистки.\n"
+"\n"
+"По окончании очистки выполните проверку сопел, чтобы проверить, удалось ли \n"
+"устранить засорение сопел печатающей головки."
+
+#: po/keystr.h:279
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Очистка засоренных сопел печатающей головки.\n"
+"\n"
+"Выберите группу чернильниц для выполнения очистки. Если вы не знаете, какая \n"
+"группа чернильниц подлежит очистке, воспользуйтесь функцией 'Проверка сопел'."
+
+#: po/keystr.h:283
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Очистка засоренных сопел, которые не удалось очистить методом обычной очистки.\n"
+"\n"
+"Выберите группу чернильниц для выполнения глубокой очистки. Если вы не знаете, \n"
+"какая группа чернильниц подлежит глубокой очистке, воспользуйтесь функцией \n"
+"Проверка сопел'."
+
+#: po/keystr.h:287
+msgid "Ink Group:"
+msgstr "Группа чернильниц:"
+
+#: po/keystr.h:288
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"В ходе глубокой очистки расходуется намного больше чернил, чем при обычной \n"
+"очистке. Выполняйте глубокую очистку, только если после обычной очистки \n"
+"состояние сопел не улучшилось.\n"
+"\n"
+"По окончании глубокой очистки воспользуйтесь функцией 'Проверка сопел' и \n"
+"проверьте, удалось ли устранить засорение сопел печатающей головки."
+
+#: po/keystr.h:293
+msgid "Cleaning consumes ink."
+msgstr "При выполнении очистки расходуются чернила."
+
+#: po/keystr.h:294
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Вставьте лист бумаги размера A4 или Letter в источник, выбранный с помощью \n"
+"переключателя подачи бумаги, и нажмите кнопку 'ОК'.\n"
+
+#: po/keystr.h:295
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Если отпечатанный образец соответствует \n"
+"этому образцу, то, возможно, сопла \n"
+"головки засорены.\n"
+"Нажмите кнопку 'Очистка'.\n"
+"\n"
+"Если качество образца не повышается \n"
+"после двух запусков функции 'Очистка', \n"
+"воспользуйтесь функцией 'Глубокая очистка'."
+
+#: po/keystr.h:302
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Вставьте лист бумаги размера A4 или Letter в устройство подачи и нажмите кнопку \n"
+"ОК'."
+
+#: po/keystr.h:303
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), установите рычаг толщины бумаги в принтере влево и \n"
+"вставьте лист обычной бумаги размера A4 или Letter в устройство подачи. Принтер \n"
+"напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'ОК'.\n"
+
+#: po/keystr.h:310
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Печать образца, по которому можно определить, засорены ли сопла печатающей \n"
+"головки.\n"
+"\n"
+"Подготовьте принтер (подключите кабель и включите питание), установите рычаг \n"
+"толщины бумаги влево, вставьте лист обычной бумаги размера A4 или Letter в \n"
+"устройство подачи и нажмите кнопку 'Печать контрольного образца'.\n"
+
+#: po/keystr.h:314
+msgid "Color Only"
+msgstr "Только цветной"
+
+#: po/keystr.h:315
+msgid "Black Only"
+msgstr "Только черный"
+
+#: po/keystr.h:316
+msgid "Both Black and Color"
+msgstr "Черный и цветной"
+
+#: po/keystr.h:317
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Печать с использованием только цветного картриджа вместо черного картриджа."
+
+#: po/keystr.h:319
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Печать с использованием только черного картриджа вместо цветного картриджа, \n"
+"только когда на вкладке 'Главная' для параметра 'Тип носителя' выбрано значение \n"
+"Обычная бумага'."
+
+#: po/keystr.h:322
+msgid "Prints using both black and color cartridges."
+msgstr "Печать с использованием и черного, и цветного картриджа."
+
+#: po/keystr.h:323
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Принтер напечатает один лист с образцами, чтобы начать выравнивание \n"
+"автоматически.\n"
+"Не начинайте другую операцию до завершения текущей операции."
+
+#: po/keystr.h:325
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Будет напечатан второй лист образцов для выравнивания головок.\n"
+"\n"
+"Нажмите кнопку 'ОК', чтобы начать печать."
+
+#: po/keystr.h:328
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Будет напечатан третий лист образцов для выравнивания головок.\n"
+"\n"
+"Нажмите кнопку 'ОК', чтобы начать печать."
+
+#: po/keystr.h:331
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере влево \n"
+"и вставьте лист обычной бумаги размера A4 или Letter в источник, выбранный с \n"
+"помощью переключателя подачи бумаги. Принтер напечатает образец для \n"
+"выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:340
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Выравнивание печатающих головок завершено.\n"
+"Чтобы закончить выравнивание, нажмите кнопку 'Отмена'.\n"
+"\n"
+"Если на лицевой стороне бумаги видны полоски, можно предотвратить их появление, \n"
+"выполнив выравнивание печатающих головок.\n"
+"Чтобы выполнить выравнивание, вставьте лист бумаги в устройство подачи и \n"
+"нажмите кнопку 'ОК'."
+
+#: po/keystr.h:345
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Печать образца, по которому можно определить, засорены ли сопла печатающей \n"
+"головки.\n"
+"\n"
+"Подготовьте принтер (подключите кабель и включите питание), установите рычаг \n"
+"толщины бумаги влево, вставьте лист обычной бумаги размера A4 или Letter в \n"
+"источник, выбранный с помощью переключателя подачи бумаги, и нажмите кнопку \n"
+"Печать контрольного образца'."
+
+#: po/keystr.h:350
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Печать образца, по которому можно определить, засорены ли сопла печатающей \n"
+"головки.\n"
+"\n"
+"Вставьте лист обычной бумаги размера A4 или Letter в устройство подачи и \n"
+"нажмите кнопку 'Печать контрольного образца'."
+
+#: po/keystr.h:353
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Выравнивание печатающих головок завершено.\n"
+"Чтобы закончить выравнивание, нажмите кнопку 'Отмена'.\n"
+"\n"
+"Если на лицевой стороне бумаги видны полоски, можно предотвратить их появление, \n"
+"выполнив выравнивание печатающих головок.\n"
+"Чтобы выполнить выравнивание, вставьте лист бумаги в источник, выбранный с \n"
+"помощью переключателя подачи бумаги, и нажмите кнопку 'ОК'."
+
+#: po/keystr.h:360
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере вправо \n"
+"и вставьте лист обычной бумаги размера A4 или Letter в устройство подачи. \n"
+"Принтер напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:369
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Если отпечатанный образец соответствует этому образцу, то, возможно, сопла \n"
+"головки засорены.\n"
+"Нажмите кнопку 'Очистка'.\n"
+"\n"
+"Если качество образца не повышается после двух или трех запусков функции \n"
+"Очистка', воспользуйтесь функцией 'Глубокая очистка'."
+
+#: po/keystr.h:376
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Сбросить датчик уровня нельзя, поскольку предупреждение о низком уровне чернил \n"
+"отключено.\n"
+"\n"
+"Чтобы включить функцию отслеживания уровня чернил, нажмите кнопку 'Отслеживание \n"
+"уровня чернил' на вкладке 'Обслуживание' драйвера принтера.\n"
+"Прочитайте руководство по эксплуатации принтера, прежде чем выполнять эту \n"
+"операцию."
+
+#: po/keystr.h:381
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Очистка подающих роликов.\n"
+"\n"
+"Прежде всего, удалите бумагу из заднего лотка.\n"
+"При нажатии кнопки 'ОК' ролики будут задействованы 30 раз. Это займет \n"
+"приблизительно полторы минуты.\n"
+"\n"
+"Начать очистку подающих роликов?"
+
+#: po/keystr.h:387
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Очистка подающих роликов.\n"
+"\n"
+"Прежде всего, нажмите переключатель подачи бумаги на принтере для выбора \n"
+"источника бумаги для очистки, а затем удалите бумагу из выбранного источника \n"
+"бумаги.\n"
+"При нажатии кнопки 'ОК' ролики будут задействованы 30 раз. Это займет \n"
+"приблизительно полторы минуты.\n"
+"\n"
+"Начать очистку подающих роликов?"
+
+#: po/keystr.h:394
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Проверьте, прекратился ли шум принтера, а затем вставьте три листа обычной \n"
+"бумаги в задний лоток.\n"
+"При нажатии кнопки 'ОК' выйдет бумага, и очистка подающих роликов будет \n"
+"завершена."
+
+#: po/keystr.h:396
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Проверьте, прекратился ли шум принтера, а затем вставьте три листа обычной \n"
+"бумаги в выбранный источник бумаги.\n"
+"При нажатии кнопки 'ОК' выйдет бумага, и очистка подающих роликов будет \n"
+"завершена."
+
+#: po/keystr.h:398
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Удалите бумагу из устройства подачи.\n"
+"2. Сложите лист обычной бумаги размера A4 или Letter пополам, затем разверните \n"
+"лист.\n"
+"3. Вставьте лист в устройство подачи так, чтобы кромка сгиба, бывшая наружной, \n"
+"оказалась снизу.\n"
+"4. Нажмите кнопку 'Выполнить'."
+
+#: po/keystr.h:402
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Удалите бумагу из заднего лотка.\n"
+"2. Сложите лист обычной бумаги размера A4 или Letter пополам, затем разверните \n"
+"лист.\n"
+"3. Вставьте лист в задний лоток так, чтобы кромка сгиба, бывшая наружной, \n"
+"оказалась снизу.\n"
+"4. Нажмите кнопку 'Выполнить'."
+
+#: po/keystr.h:406
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Печать образца, по которому можно определить, засорены ли сопла печатающей \n"
+"головки.\n"
+"\n"
+"Подготовьте принтер (подключите кабель и включите питание), установите рычаг \n"
+"толщины бумаги влево, вставьте лист обычной бумаги размера A4 или Letter в \n"
+"задний лоток и нажмите кнопку 'Печать контрольного образца'."
+
+#: po/keystr.h:411
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере влево \n"
+"и вставьте два листа обычной бумаги размера A4 или Letter в задний лоток. \n"
+"Принтер напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:420
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало автоматического выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), вставьте один лист обычной бумаги размера A4 или \n"
+"Letter в устройство подачи и нажмите кнопку 'Выравнивание печатающих головок'. \n"
+"\n"
+"Чтобы выполнить выравнивание головок вручную, нажмите кнопку 'Отмена'.\n"
+"Затем нажмите кнопку 'Специальные параметры' на вкладке 'Обслуживание' драйвера \n"
+"принтера, установите флажок 'Выравнивать головки вручную' и нажмите кнопку \n"
+"Отправить'. Затем повторите попытку.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:430
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало автоматического выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), вставьте два листа матовой фотобумаги (MP-101) \n"
+"размера A4 или Letter в задний лоток и нажмите кнопку 'Выравнивание печатающих \n"
+"головок'. \n"
+"\n"
+"Чтобы выполнить выравнивание головок вручную, нажмите кнопку 'Отмена'.\n"
+"Затем нажмите кнопку 'Специальные параметры' на вкладке 'Обслуживание' драйвера \n"
+"принтера, установите флажок 'Выравнивать головки вручную' и нажмите кнопку \n"
+"Отправить'. Затем повторите попытку.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:441
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr ""
+"Вставьте лист обычной бумаги размера A4 или Letter в задний лоток и нажмите \n"
+"кнопку 'ОК'."
+
+#: po/keystr.h:442
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Принтер напечатает два листа с образцами, чтобы начать выравнивание \n"
+"автоматически.\n"
+"Не начинайте другую операцию до завершения текущей операции."
+
+#: po/keystr.h:444
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), вставьте четыре листа обычной бумаги размера A4 или \n"
+"Letter в источник, выбранный с помощью переключателя подачи бумаги. Принтер \n"
+"напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:453
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Будет напечатан четвертый лист образцов для выравнивания головок.\n"
+"\n"
+"Нажмите кнопку 'ОК', чтобы начать печать."
+
+#: po/keystr.h:456
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Печать образца, по которому можно определить, засорены ли сопла печатающей \n"
+"головки.\n"
+"\n"
+"Вставьте лист обычной бумаги размера A4 или Letter в источник, выбранный с \n"
+"помощью переключателя подачи бумаги, и нажмите кнопку 'Печать контрольного \n"
+"образца'."
+
+#: po/keystr.h:460
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере влево \n"
+"и вставьте лист обычной бумаги размера A4 или Letter в задний лоток. Принтер \n"
+"напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:469
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), вставьте лист обычной бумаги размера A4 или Letter \n"
+"в источник, выбранный с помощью переключателя подачи бумаги. Принтер напечатает \n"
+"образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:478
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr "Вставьте лист бумаги размера A4 или Letter в задний лоток и нажмите кнопку 'ОК'."
+
+#: po/keystr.h:479
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Выравнивание печатающих головок завершено.\n"
+"Чтобы закончить выравнивание, нажмите кнопку 'Отмена'.\n"
+"\n"
+"Если на лицевой стороне бумаги видны полоски, можно предотвратить их появление, \n"
+"выполнив выравнивание печатающих головок.\n"
+"Чтобы выполнить выравнивание, вставьте лист бумаги в задний лоток и нажмите \n"
+"кнопку 'ОК'."
+
+#: po/keystr.h:484
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), вставьте три листа обычной бумаги размера A4 или \n"
+"Letter в источник, выбранный с помощью переключателя подачи бумаги. Принтер \n"
+"напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:493
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере влево \n"
+"и вставьте лист обычной бумаги размера A4 или Letter в устройство подачи. \n"
+"Принтер напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"Печать образца, по которому можно определить, засорены ли сопла печатающей \n"
+"головки.\n"
+"\n"
+"Подготовьте принтер (подключите кабель и включите питание), установите рычаг \n"
+"толщины бумаги вправо, вставьте лист обычной бумаги размера A4 или Letter в \n"
+"задний лоток и нажмите кнопку 'Печать контрольного образца'."
+
+#: po/keystr.h:506
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Печать с использованием только черного картриджа вместо цветного картриджа, \n"
+"только когда на вкладке 'Главная' для параметра 'Тип носителя' выбрано значение \n"
+"Обычная бумага', 'Hagaki' или 'Конверт'."
+
+#: po/keystr.h:508
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере влево \n"
+"и вставьте лист обычной бумаги размера A4 или Letter в задний лоток. Принтер \n"
+"напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'ОК'."
+
+#: po/keystr.h:515
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере влево \n"
+"и вставьте два листа обычной бумаги размера A4 или Letter в задний лоток. \n"
+"Принтер напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Напечатать значение \n"
+"выравнивания'."
+
+#: po/keystr.h:524
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click Send. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало автоматического выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), переместите рычаг толщины бумаги на принтере \n"
+"вправо, вставьте один лист матовой фотобумаги (MP-101) размера A4 или Letter в \n"
+"задний лоток и нажмите кнопку 'Выравнивание печатающих головок'. \n"
+"\n"
+"Чтобы выполнить выравнивание головок вручную, нажмите кнопку 'Отмена'.\n"
+"Затем нажмите кнопку 'Специальные параметры' на вкладке 'Обслуживание' драйвера \n"
+"принтера, установите флажок 'Выравнивать головки вручную' и нажмите кнопку \n"
+"Отправить'. Затем повторите попытку.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Значение выравнивания \n"
+"печати'."
+
+#: po/keystr.h:535
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Удалите бумагу из заднего лотка, а затем вставьте первый лист обычной бумаги \n"
+"размера A4 или Letter.\n"
+"2. Сложите второй лист обычной бумаги размера A4 или Letter пополам, затем \n"
+"разверните лист.\n"
+"3. Вставьте второй лист перед первым так, чтобы кромка сгиба, бывшая наружной, \n"
+"оказалась снизу.\n"
+"4. Нажмите кнопку 'Выполнить'."
+
+#: po/keystr.h:539
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Начало чистки поддона для предотвращения появления на бумаге пятен при печати.\n"
+"\n"
+"Для этой операции требуются два листа обычной бумаги размера A4 или Letter. \n"
+"Следуйте этим указаниям, чтобы выполнить чистку поддона."
+
+#: po/keystr.h:542
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click Send."
+msgstr ""
+"Настройка источника бумаги для обычной бумаги, когда для параметра 'Источник \n"
+"бумаги' установлено значение 'Автовыбор'.\n"
+"\n"
+"Выберите источник бумаги для обычной бумаги и нажмите кнопку 'Отправить'."
+
+#: po/keystr.h:545
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Очистка засоренных сопел, которые не удалось очистить методом обычной очистки.\n"
+"\n"
+"Выберите группу чернильниц для выполнения глубокой очистки. Если засорено \n"
+"только сопло черной чернильницы, выберите 'Черный'. Если загрязнены только \n"
+"сопла цветных чернил или сопла и черных, и цветных чернил, выберите 'Все \n"
+"цвета'. Если вы не знаете, какое сопло загрязнено, выполните проверку сопел.\n"
+
+#: po/keystr.h:550
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Очистка подающих роликов.\n"
+"\n"
+"Выберите источник бумаги для очистки и нажмите кнопку 'ОК'."
+
+#: po/keystr.h:553
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Очистка подающих роликов заднего лотка.\n"
+"\n"
+"Прежде всего, удалите бумагу из заднего лотка, а затем откройте лоток приема \n"
+"бумаги.\n"
+"При нажатии кнопки 'ОК' ролики будут задействованы. Это займет приблизительно \n"
+"полторы минуты.\n"
+"\n"
+"Начать очистку подающих роликов?"
+
+#: po/keystr.h:559
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Очистка подающих роликов кассеты.\n"
+"\n"
+"Прежде всего, удалите бумагу из кассеты, а затем откройте лоток приема бумаги.\n"
+"При нажатии кнопки 'ОК' ролики будут задействованы. Это займет приблизительно \n"
+"две минуты.\n"
+"\n"
+"Начать очистку подающих роликов?"
+
+#: po/keystr.h:565
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Очистка подающих роликов заднего лотка.\n"
+"\n"
+"Прежде всего, удалите бумагу из заднего лотка.\n"
+"При нажатии кнопки 'ОК' ролики будут задействованы. Это займет приблизительно \n"
+"полторы минуты.\n"
+"\n"
+"Начать очистку подающих роликов?"
+
+#: po/keystr.h:571
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Очистка подающих роликов кассеты.\n"
+"\n"
+"Прежде всего, удалите бумагу из кассеты.\n"
+"При нажатии кнопки 'ОК' ролики будут задействованы. Это займет приблизительно \n"
+"две минуты.\n"
+"\n"
+"Начать очистку подающих роликов?"
+
+#: po/keystr.h:577
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Проверьте, прекратился ли шум принтера, а затем вставьте три листа обычной \n"
+"бумаги в кассету.\n"
+"При нажатии кнопки 'ОК' выйдет бумага, и очистка подающих роликов будет \n"
+"завершена."
+
+#: po/keystr.h:579
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load a sheet of A4 or letter "
+"size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"Печать образца, позволяющего определить, засорены ли сопла печатающей головки.\n"
+"\n"
+"Сначала выберите источник бумаги, который необходимо использовать. Затем \n"
+"вставьте лист бумаги размера A4 или Letter в выбранный источник и нажмите \n"
+"кнопку 'Печать контрольного образца'."
+
+#: po/keystr.h:583
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"Печать образца, позволяющего определить, засорены ли сопла печатающей головки.\n"
+"\n"
+"Подготовьте принтер (подключите кабель и включите питание), вставьте лист \n"
+"обычной бумаги размера A4 или Letter в кассету и нажмите кнопку 'Печать \n"
+"контрольного образца'."
+
+#: po/keystr.h:587
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"Печать образца, позволяющего определить, засорены ли сопла печатающей головки.\n"
+"\n"
+"Подготовьте принтер (подключите кабель и включите питание), вставьте лист \n"
+"обычной бумаги размера A4 или Letter в задний лоток и нажмите кнопку 'Печать \n"
+"контрольного образца'."
+
+#: po/keystr.h:591
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание) и вставьте два листа обычной бумаги размера A4 или \n"
+"Letter в задний лоток. Принтер напечатает образец для выравнивания.\n"
+"\n"
+"Чтобы выровнять положение печатающих головок, нажмите кнопку 'Выровнять \n"
+"печатающую головку'.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Напечатать значение \n"
+"выравнивания'."
+
+#: po/keystr.h:599
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Начало выравнивания печатающих головок.\n"
+"\n"
+"При выравнивании выполняется печать. Выберите источник бумаги, который \n"
+"необходимо использовать, и нажмите кнопку 'Выровнять печатающую головку'."
+
+#: po/keystr.h:602
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Чтобы проверить текущую настройку, нажмите кнопку 'Напечатать значение \n"
+"выравнивания'."
+
+#: po/keystr.h:603
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Подготовьте принтер (подключите кабель и включите питание) и вставьте три листа \n"
+"обычной бумаги размера A4 или Letter в задний лоток.\n"
+"\n"
+"После нажатия кнопки 'OK' начнется печать образца для выравнивания."
+
+#: po/keystr.h:607
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Подготовьте принтер (подключите кабель и включите питание) и вставьте три листа \n"
+"обычной бумаги размера A4 или Letter в кассету.\n"
+"\n"
+"После нажатия кнопки 'OK' начнется печать образца для выравнивания."
+
+#: po/keystr.h:611
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Подготовьте принтер (подключите кабель и включите питание) и вставьте лист \n"
+"обычной бумаги размера A4 или Letter в задний лоток.\n"
+"\n"
+"После нажатия кнопки 'OK' начнется печать с текущими настройками."
+
+#: po/keystr.h:615
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Подготовьте принтер (подключите кабель и включите питание) и вставьте лист \n"
+"обычной бумаги размера A4 или Letter в кассету.\n"
+"\n"
+"После нажатия кнопки 'OK' начнется печать с текущими настройками."
+
+#: po/keystr.h:619
+msgid "Select the paper source to be used, and then click OK."
+msgstr ""
+"Выберите источник бумаги, который необходимо использовать, и нажмите кнопку \n"
+"OK'."
+
+#: po/keystr.h:620
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Вставьте лист обычной бумаги размера A4 или Letter в кассету и нажмите кнопку \n"
+"ОК'."
+
+#: po/keystr.h:621
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Начало автоматического выравнивания печатающих головок.\n"
+"\n"
+"Поскольку при выравнивании выполняется печать, подготовьте принтер (подключите \n"
+"кабель и включите питание), вставьте один лист матовой фотобумаги (MP-101) \n"
+"размера A4 или Letter в задний лоток и нажмите кнопку 'Выравнивание печатающих \n"
+"головок'. \n"
+"\n"
+"Чтобы выполнить выравнивание головок вручную, нажмите кнопку 'Отмена'.\n"
+"Затем нажмите кнопку 'Специальные параметры' на вкладке 'Обслуживание' драйвера \n"
+"принтера, установите флажок 'Выравнивать головки вручную' и нажмите кнопку \n"
+"Отправить'. Затем повторите попытку.\n"
+"\n"
+"Чтобы проверить текущую настройку, нажмите кнопку 'Напечатать значение \n"
+"выравнивания'."
+
+#: po/keystr.h:631
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Включение режима предотвращения потертости бумаги. Если выполнять печать с \n"
+"включенной настройкой, это может повлиять на качество или скорость печати. \n"
+"Чтобы изменить настройку, снимите флажок 'Предотвращение потертости бумаги'."
+
+#: po/keystr.h:633
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Очистка засоренных сопел, которые не удалось очистить методом обычной очистки.\n"
+"\n"
+"В ходе глубокой очистки расходуется намного больше чернил, чем при обычной \n"
+"очистке. Выполняйте глубокую очистку, только если после обычной очистки \n"
+"состояние сопел не улучшилось.\n"
+"\n"
+"По окончании глубокой очистки воспользуйтесь функцией 'Проверка сопел' и \n"
+"проверьте, удалось ли устранить засорение сопел печатающей головки."

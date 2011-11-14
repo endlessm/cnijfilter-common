@@ -1,0 +1,25 @@
+To build and install cngpijmon:
+
+        ./autogen.sh --program-suffix=(Printer-Name)
+        make
+        make install
+
+        * Execute the following, when autoconf's version is 2.60 or above.
+		  ./autogen.sh --datadir=/usr/local/share --program-suffix=(Printer Model Name)
+
+To build and install cngpijmon with AUTOCONF
+
+  please set (Printer-Name) to your printer's name.
+
+  support printer :
+	iP3300
+	iP4300
+	MP160
+	MP510
+	MP600
+	iP90
+	iP2500 series
+	iP1800 series
+
+  example)
+	 ./autogen.sh --program-suffix=ip3300

@@ -1,0 +1,17 @@
+To build and install printui:
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * Execute the following, when autoconf's version is 2.60 or above.
+		  ./autogen.sh --datadir=/usr/local/share --program-suffix=<Printer Model Name>
+
+
+You can set the following <Printer Model Name>.
+            ip100
+            ip2600
+
+Example for building the ip100:
+        ./autogen.sh --program-suffix=ip100
+        make
+        make install

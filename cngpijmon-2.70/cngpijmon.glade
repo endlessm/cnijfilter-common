@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<GTK-Interface>
+
+<project>
+  <name>Glade</name>
+  <program_name>stsmon_test2</program_name>
+  <directory></directory>
+  <source_directory>src</source_directory>
+  <pixmaps_directory>pixmaps</pixmaps_directory>
+  <language>C</language>
+  <gnome_support>False</gnome_support>
+  <gettext_support>True</gettext_support>
+  <output_translatable_strings>True</output_translatable_strings>
+  <translatable_strings_file>po/glade.h</translatable_strings_file>
+</project>
+
+<widget>
+  <class>GtkWindow</class>
+  <name>mainWindow</name>
+  <signal>
+    <name>destroy</name>
+    <handler>on_mainWindow_destroy</handler>
+    <last_modification_time>Tue, 05 Mar 2002 04:27:43 GMT</last_modification_time>
+  </signal>
+  <signal>
+    <name>delete_event</name>
+    <handler>on_mainWindow_delete_event</handler>
+    <last_modification_time>Tue, 05 Mar 2002 04:27:52 GMT</last_modification_time>
+  </signal>
+  <title>title</title>
+  <type>GTK_WINDOW_TOPLEVEL</type>
+  <position>GTK_WIN_POS_NONE</position>
+  <modal>False</modal>
+  <allow_shrink>False</allow_shrink>
+  <allow_grow>True</allow_grow>
+  <auto_shrink>False</auto_shrink>
+
+  <widget>
+    <class>GtkVBox</class>
+    <name>vboxMain</name>
+    <homogeneous>False</homogeneous>
+    <spacing>0</spacing>
+
+    <widget>
+      <class>GtkScrolledWindow</class>
+      <name>scrolledMain</name>
+      <border_width>10</border_width>
+      <width>320</width>
+      <height>230</height>
+      <hscrollbar_policy>GTK_POLICY_NEVER</hscrollbar_policy>
+      <vscrollbar_policy>GTK_POLICY_ALWAYS</vscrollbar_policy>
+      <hupdate_policy>GTK_UPDATE_CONTINUOUS</hupdate_policy>
+      <vupdate_policy>GTK_UPDATE_CONTINUOUS</vupdate_policy>
+      <child>
+	<padding>10</padding>
+	<expand>True</expand>
+	<fill>True</fill>
+      </child>
+
+      <widget>
+	<class>GtkText</class>
+	<name>textMainStatus</name>
+	<can_focus>True</can_focus>
+	<editable>False</editable>
+	<text>printer status message</text>
+      </widget>
+    </widget>
+
+    <widget>
+      <class>GtkHSeparator</class>
+      <name>hseparatorMain1</name>
+      <visible>False</visible>
+      <child>
+	<padding>0</padding>
+	<expand>False</expand>
+	<fill>False</fill>
+      </child>
+    </widget>
+
+    <widget>
+      <class>GtkLabel</class>
+      <name>labelMainCartridgeType</name>
+      <visible>False</visible>
+      <label>Cartridge Type:</label>
+      <justify>GTK_JUSTIFY_LEFT</justify>
+      <wrap>False</wrap>
+      <xalign>0</xalign>
+      <yalign>0.5</yalign>
+      <xpad>10</xpad>
+      <ypad>3</ypad>
+      <child>
+	<padding>0</padding>
+	<expand>False</expand>
+	<fill>True</fill>
+      </child>
+    </widget>
+
+    <widget>
+      <class>GtkLabel</class>
+      <name>labelMainLeverPosition</name>
+      <label></label>
+      <justify>GTK_JUSTIFY_LEFT</justify>
+      <wrap>False</wrap>
+      <xalign>0</xalign>
+      <yalign>0.5</yalign>
+      <xpad>10</xpad>
+      <ypad>3</ypad>
+      <child>
+	<padding>0</padding>
+	<expand>False</expand>
+	<fill>True</fill>
+      </child>
+    </widget>
+
+    <widget>
+      <class>GtkHSeparator</class>
+      <name>hseparatorMain2</name>
+      <visible>False</visible>
+      <child>
+	<padding>0</padding>
+	<expand>False</expand>
+	<fill>False</fill>
+      </child>
+    </widget>
+
+    <widget>
+      <class>GtkDrawingArea</class>
+      <name>drawMainCartridge</name>
+      <width>50</width>
+      <height>90</height>
+      <signal>
+	<name>configure_event</name>
+	<handler>on_drawMainCartridge_configure_event</handler>
+	<last_modification_time>Tue, 05 Mar 2002 04:27:16 GMT</last_modification_time>
+      </signal>
+      <signal>
+	<name>expose_event</name>
+	<handler>on_drawMainCartridge_expose_event</handler>
+	<last_modification_time>Tue, 05 Mar 2002 04:27:26 GMT</last_modification_time>
+      </signal>
+      <child>
+	<padding>0</padding>
+	<expand>False</expand>
+	<fill>True</fill>
+      </child>
+    </widget>
+
+    <widget>
+      <class>GtkHSeparator</class>
+      <name>hseparatorMain3</name>
+      <child>
+	<padding>0</padding>
+	<expand>False</expand>
+	<fill>False</fill>
+      </child>
+    </widget>
+
+    <widget>
+      <class>GtkHButtonBox</class>
+      <name>hbuttonboxMain</name>
+      <border_width>5</border_width>
+      <layout_style>GTK_BUTTONBOX_END</layout_style>
+      <spacing>0</spacing>
+      <child_min_width>85</child_min_width>
+      <child_min_height>21</child_min_height>
+      <child_ipad_x>11</child_ipad_x>
+      <child_ipad_y>0</child_ipad_y>
+      <child>
+	<padding>0</padding>
+	<expand>False</expand>
+	<fill>False</fill>
+      </child>
+
+      <widget>
+	<class>GtkButton</class>
+	<name>buttonMainContinue</name>
+	<can_default>True</can_default>
+	<can_focus>True</can_focus>
+	<signal>
+	  <name>clicked</name>
+	  <handler>on_buttonMainContinue_clicked</handler>
+	  <last_modification_time>Tue, 05 Mar 2002 04:35:02 GMT</last_modification_time>
+	</signal>
+	<label>Continue</label>
+	<relief>GTK_RELIEF_NORMAL</relief>
+      </widget>
+
+      <widget>
+	<class>GtkButton</class>
+	<name>buttonMainCancel</name>
+	<sensitive>False</sensitive>
+	<can_default>True</can_default>
+	<can_focus>True</can_focus>
+	<signal>
+	  <name>clicked</name>
+	  <handler>on_buttonMainCancel_clicked</handler>
+	  <last_modification_time>Tue, 05 Mar 2002 04:35:10 GMT</last_modification_time>
+	</signal>
+	<label>Cancel Printing</label>
+	<relief>GTK_RELIEF_NORMAL</relief>
+      </widget>
+    </widget>
+  </widget>
+</widget>
+
+</GTK-Interface>

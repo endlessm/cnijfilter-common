@@ -2,3 +2,6 @@
 cd skel
 ./mk_debfile.pl ../rules
 mv cnijfilter-* ../
+mv printui-* ../utils/
+mv cngpijmon-* ../utils/
+

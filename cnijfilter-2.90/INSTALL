@@ -1,0 +1,31 @@
+To build and install cif command:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * You can set the following <Printer Model Name>.
+            ip100 , ip2600
+
+Example ip2600:
+
+        ./autogen.sh --program-suffix=ip2600
+        make
+        make install
+
+
+Appendix:
+
+        * You can also set the following path.
+           --prefix
+                cif command (ex.cifip2600)                : default ... /usr/local
+           --enable-binpath
+                printui,lgmon(ex.printuiip2600)           : default ... /usr/local/bin
+           --enable-libpath
+                *.conf,*.tbl(ex.cifip2600.conf)           : default ... /usr/lib/bjlib
+
+       Example:
+
+           ./autogen.sh --program-suffix=ip2600 --enable-binpath=/usr/local/bin --enable-libpath=/usr/lib/bjlib
+           make
+           make install

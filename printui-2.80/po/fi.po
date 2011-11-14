@@ -1,0 +1,2736 @@
+# Inkjet Printer Driver Ver.2.80 for Linux
+# Copyright CANON INC. 2001-2007
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 2.80\n"
+"POT-Creation-Date: 2007-10-25 18:30+0900\n"
+"PO-Revision-Date: 2007-10-25 19:47+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "fi_FI"
+
+
+
+
+
+#: po/gladestr.h:1
+msgid "  Black:"
+msgstr "  Musta:"
+
+#: po/gladestr.h:2
+msgid "  Cyan:"
+msgstr "  Syaani:"
+
+#: po/gladestr.h:3
+msgid "  Magenta:"
+msgstr "  Magenta:"
+
+#: po/gladestr.h:4
+msgid "  Set ...  "
+msgstr "  Aseta...  "
+
+#: po/gladestr.h:5
+msgid "  Yellow:"
+msgstr "  Keltainen:"
+
+#: po/gladestr.h:7
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20–400)"
+
+#: po/gladestr.h:8
+msgid "(1-999)"
+msgstr "(1–999)"
+
+#: po/gladestr.h:9
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:10
+msgid "0"
+msgstr "0"
+
+#: po/gladestr.h:11
+msgid "1"
+msgstr "1"
+
+#: po/gladestr.h:12
+msgid "2"
+msgstr "2"
+
+#: po/gladestr.h:13
+msgid "3"
+msgstr "3"
+
+#: po/gladestr.h:14
+msgid "4"
+msgstr "4"
+
+#: po/gladestr.h:15
+msgid "5"
+msgstr "5"
+
+#: po/gladestr.h:16
+msgid "About"
+msgstr "Lisätietoja "
+
+#: po/gladestr.h:17
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Muutosten teko sarakkeissa A-C (-3 - +7)"
+
+#: po/gladestr.h:18
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Muutosten teko sarakkeissa A–D (-3–+7)"
+
+#: po/gladestr.h:19
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Muutosten teko sarakkeissa A-E (-3 - +7)"
+
+#: po/gladestr.h:20
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa A–F (-5–+5)"
+
+#: po/gladestr.h:21
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa D-F (-5 - +5)"
+
+#: po/gladestr.h:22
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa E–G (-5–+5)"
+
+#: po/gladestr.h:23
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa F–K (-5–+5)"
+
+#: po/gladestr.h:24
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa G–J (-5–+5)"
+
+#: po/gladestr.h:25
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa G–L (-5–+5)"
+
+#: po/gladestr.h:26
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa H–K (-5–+5)"
+
+#: po/gladestr.h:27
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Muutosten teko sarakkeissa K ja L (-3 - +3)"
+
+#: po/gladestr.h:28
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Muutosten teko sarakkeissa L ja M (-3–+3)"
+
+#: po/gladestr.h:29
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa L–O (-5–+5)"
+
+#: po/gladestr.h:30
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Muutosten teko sarakkeissa M ja N (-2 - +2)"
+
+#: po/gladestr.h:31
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Muutosten teko sarakkeissa M–P (-2–+2)"
+
+#: po/gladestr.h:32
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Muutosten teko sarakkeissa P–T (-5–+5)"
+
+#: po/gladestr.h:33
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Muutosten teko sarakkeissa Q ja R (-4–+4)"
+
+#: po/gladestr.h:34
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Muutosten teko sarakkeissa U ja V (-3–+3)"
+
+#: po/gladestr.h:35
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Muutosten teko sarakkeissa a–e (-2–+2)"
+
+#: po/gladestr.h:36
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Muutosten teko sarakkeissa f–k (-2–+2)"
+
+#: po/gladestr.h:37
+msgid "Align heads manually"
+msgstr "Kohdista tulostuspäät manuaalisesti"
+
+#: po/gladestr.h:38 po/keystr.h:262
+msgid "All Colors"
+msgstr "Kaikki värit"
+
+#: po/gladestr.h:39
+msgid "Amount of Extension:"
+msgstr "Laajennuksen määrä:"
+
+#: po/gladestr.h:40 po/keystr.h:189
+msgid "Auto"
+msgstr "Autom."
+
+#: po/gladestr.h:41
+msgid "Auto Power"
+msgstr "Automaattinen virrankatkaisu"
+
+#: po/gladestr.h:42
+msgid "Auto Power Off"
+msgstr "Automaattinen virrankatkaisu: "
+
+#: po/gladestr.h:43
+msgid "Auto Power Off:"
+msgstr "Automaattinen virrankatkaisu:"
+
+#: po/gladestr.h:44
+msgid "Auto Power On:"
+msgstr "Automaattinen virrankytkentä:"
+
+#: po/gladestr.h:45
+msgid "Auto Power Settings"
+msgstr "Automaattinen virta -asetukset"
+
+#: po/gladestr.h:46
+msgid "Automatic Duplex Printing"
+msgstr "Automaattinen kaksipuolinen tulostus"
+
+#: po/gladestr.h:47
+msgid "Available Media Types:"
+msgstr "Käytettävissä olevat tulostusmateriaalit:"
+
+#: po/gladestr.h:48
+msgid "BJ Cartridge:"
+msgstr "BJ-värikasetti:"
+
+#: po/gladestr.h:49
+msgid "Back to Setup"
+msgstr "Takaisin asetuksiin"
+
+#: po/gladestr.h:50 po/keystr.h:240
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Kaksisuuntainen kohdistus (-5 - +5)"
+
+#: po/gladestr.h:51 po/keystr.h:263
+msgid "Black"
+msgstr "Musta"
+
+#: po/gladestr.h:52
+msgid "Black Ink Tank"
+msgstr "Musta Mustesäiliö"
+
+#: po/gladestr.h:53
+msgid "Borderless Printing"
+msgstr "Reunaton tulostus"
+
+#: po/gladestr.h:54
+msgid "Bottom Plate Cleaning"
+msgstr "Alalevyn puhdistus"
+
+#: po/gladestr.h:55
+msgid "Brightness:"
+msgstr "Kirkkaus:"
+
+#: po/gladestr.h:56 po/keystr.h:202
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: po/gladestr.h:57
+msgid ""
+"Canon Inkjet Printer Driver Ver.2.80 for Linux\n"
+"Copyright CANON INC. 2001-2007\n"
+"All Rights Reserved. "
+msgstr ""
+
+#: po/gladestr.h:60
+msgid "Centering"
+msgstr "Keskitys"
+
+#: po/gladestr.h:61
+msgid "Change"
+msgstr "Muuta"
+
+#: po/gladestr.h:62
+msgid "Change Combination"
+msgstr "Vaihda yhdistelmä"
+
+#: po/gladestr.h:63
+msgid "Change Media Type"
+msgstr "Vaihda tulostusmateriaali"
+
+#: po/gladestr.h:64
+msgid "Changing the Paper Source "
+msgstr "Paperilähteen vaihtaminen"
+
+#: po/gladestr.h:65
+msgid "Cleaning"
+msgstr "Puhdistus "
+
+#: po/gladestr.h:66
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Jos haluat käyttää tätä, napsauta Muuta. Jos haluat valita muun \n"
+"asetusyhdistelmän, valitse Takaisin asetuksiin."
+
+#: po/gladestr.h:67
+msgid "Collate"
+msgstr "Lajittele"
+
+#: po/gladestr.h:68 po/keystr.h:50 po/keystr.h:266
+msgid "Color"
+msgstr "Väri"
+
+#: po/gladestr.h:69
+msgid "Color Balance"
+msgstr "Väritasapaino"
+
+#: po/gladestr.h:70
+msgid "Color Ink Tank"
+msgstr "Värimustesäiliö"
+
+#: po/gladestr.h:71
+msgid "Color Mode:"
+msgstr "Väritila:"
+
+#: po/gladestr.h:72
+msgid "Color/Intensity:"
+msgstr "Väri/Voimakkuus:"
+
+#: po/gladestr.h:73
+msgid "Column A:"
+msgstr "Sarake A:"
+
+#: po/gladestr.h:74
+msgid "Column B:"
+msgstr "Sarake B:"
+
+#: po/gladestr.h:75
+msgid "Column C:"
+msgstr "Sarake C:"
+
+#: po/gladestr.h:76
+msgid "Column D:"
+msgstr "Sarake D:"
+
+#: po/gladestr.h:77
+msgid "Column E:"
+msgstr "Sarake E:"
+
+#: po/gladestr.h:78
+msgid "Column F:"
+msgstr "Sarake F:"
+
+#: po/gladestr.h:79
+msgid "Column G:"
+msgstr "Sarake G:"
+
+#: po/gladestr.h:80
+msgid "Column H:"
+msgstr "Sarake H:"
+
+#: po/gladestr.h:81
+msgid "Column I:"
+msgstr "Sarake I:"
+
+#: po/gladestr.h:82
+msgid "Column J:"
+msgstr "Sarake J:"
+
+#: po/gladestr.h:83
+msgid "Column K:"
+msgstr "Sarake K:"
+
+#: po/gladestr.h:84
+msgid "Column L:"
+msgstr "Sarake L:"
+
+#: po/gladestr.h:85
+msgid "Column M:"
+msgstr "Sarake M:"
+
+#: po/gladestr.h:86
+msgid "Column N:"
+msgstr "Sarake N:"
+
+#: po/gladestr.h:87
+msgid "Column O:"
+msgstr "Sarake O:"
+
+#: po/gladestr.h:88
+msgid "Column P:"
+msgstr "Sarake P:"
+
+#: po/gladestr.h:89
+msgid "Column Q:"
+msgstr "Sarake Q:"
+
+#: po/gladestr.h:90
+msgid "Column R:"
+msgstr "Sarake R:"
+
+#: po/gladestr.h:91
+msgid "Column S:"
+msgstr "Sarake S:"
+
+#: po/gladestr.h:92
+msgid "Column T:"
+msgstr "Sarake T:"
+
+#: po/gladestr.h:93
+msgid "Column U:"
+msgstr "Sarake U:"
+
+#: po/gladestr.h:94
+msgid "Column V:"
+msgstr "Sarake V:"
+
+#: po/gladestr.h:95
+msgid "Column a:"
+msgstr "Sarake a:"
+
+#: po/gladestr.h:96
+msgid "Column b:"
+msgstr "Sarake b:"
+
+#: po/gladestr.h:97
+msgid "Column c:"
+msgstr "Sarake c:"
+
+#: po/gladestr.h:98
+msgid "Column d:"
+msgstr "Sarake d:"
+
+#: po/gladestr.h:99
+msgid "Column e:"
+msgstr "Sarake e:"
+
+#: po/gladestr.h:100
+msgid "Column f:"
+msgstr "Sarake f:"
+
+#: po/gladestr.h:101
+msgid "Column g:"
+msgstr "Sarake g:"
+
+#: po/gladestr.h:102
+msgid "Column h:"
+msgstr "Sarake h:"
+
+#: po/gladestr.h:103
+msgid "Column i:"
+msgstr "Sarake i:"
+
+#: po/gladestr.h:104
+msgid "Column j:"
+msgstr "Sarake j:"
+
+#: po/gladestr.h:105
+msgid "Column k:"
+msgstr "Sarake k:"
+
+#: po/gladestr.h:106
+msgid "Contrast:"
+msgstr "Kontrasti:"
+
+#: po/gladestr.h:107
+msgid "Copies:"
+msgstr "Kopioita:"
+
+#: po/gladestr.h:108
+msgid "Custom"
+msgstr "Mukautettu"
+
+#: po/gladestr.h:109
+msgid "Custom Paper Size"
+msgstr "Mukautettu paperikoko"
+
+#: po/gladestr.h:110
+msgid "Custom Settings"
+msgstr "Mukautetut asetukset"
+
+#: po/gladestr.h:111
+msgid "Dark "
+msgstr "Tumma "
+
+#: po/gladestr.h:112
+msgid "Deep Cleaning"
+msgstr "Perusteellinen puhdistus"
+
+#: po/gladestr.h:113
+msgid ""
+"Deep Cleaning requires a lot of ink. Execute it only when you have not "
+"resolved the print head problem by trying cleaning several times.\n"
+"\n"
+"Select the print head for deep cleaning."
+msgstr ""
+"Perusteellinen puhdistus kuluttaa runsaasti mustetta. Suorita perusteellinen \n"
+"puhdistus vain, jos tulostuspään ongelma ei korjaannu usean tavallisen \n"
+"puhdistuksen jälkeen.\n"
+"\n"
+"Valitse tulostuspää perusteellista puhdistusta varten."
+
+#: po/gladestr.h:116
+msgid "Defaults"
+msgstr "Oletukset"
+
+#: po/gladestr.h:117
+msgid "Diffusion"
+msgstr "Hajauttaminen"
+
+#: po/gladestr.h:118
+msgid "Display low ink warning"
+msgstr "Näytä alhaisen mustetason varoitus"
+
+#: po/gladestr.h:119
+msgid "Dither"
+msgstr "Muuntaminen"
+
+#: po/gladestr.h:120
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr "Tutki tulostuskuviot ja anna sarakkeiden M ja N tasaisimman kuvion kuvionumero."
+
+#: po/gladestr.h:122
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns G to L."
+msgstr ""
+"Tutki tulostuskuvioita ja kirjoita parhaiten tulostuneiden kuvioiden numerot \n"
+"sarakkeiden G - L kenttiin."
+
+#: po/gladestr.h:124
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns H to O."
+msgstr ""
+"Tutki tulostuskuvioita ja kirjoita parhaiten tulostuneiden kuvioiden numerot \n"
+"sarakkeiden H–O kenttiin."
+
+#: po/gladestr.h:126
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns M to R."
+msgstr ""
+"Tutki tulostuskuvioita ja kirjoita parhaiten tulostuneiden kuvioiden numerot \n"
+"sarakkeiden M–R kenttiin."
+
+#: po/gladestr.h:128
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least amount of streaking in the fields for columns P to V."
+msgstr ""
+"Tutki tulostuskuvioita ja kirjoita parhaiten tulostuneiden kuvioiden numerot \n"
+"sarakkeiden P–V kenttiin."
+
+#: po/gladestr.h:130
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Tutki tulostuskuvioita ja kirjoita huomaamattomimpia raitoja sisältävien \n"
+"kuvioiden numerot sarakkeiden a–k kenttiin."
+
+#: po/gladestr.h:132
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns L and M "
+"with \n"
+"the number of the pattern that is smoothest and has no stripes in the "
+"areas \n"
+"indicated by arrows."
+msgstr ""
+"Tutki tulostuskuvioita ja täytä sarakkeiden L ja M kenttiin sen kuvion numero, \n"
+"joka on tasaisin ja jonka nuolten osoittamilla alueilla ei ole raitoja."
+
+#: po/gladestr.h:135
+msgid "Execute"
+msgstr "Suorita"
+
+#: po/gladestr.h:136
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in \n"
+"the fields for columns A to F."
+msgstr ""
+"Kohdista tulostuspäät. Tutki tulostuskuvioita ja kirjoita parhaiten \n"
+"tulostuneiden kuvioiden numerot sarakkeiden A–F kenttiin."
+
+#: po/gladestr.h:139
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in \n"
+"the fields for columns A to G."
+msgstr ""
+"Kohdista tulostuspäät. Tutki tulostuskuvioita ja kirjoita parhaiten \n"
+"tulostuneiden kuvioiden numerot sarakkeiden A–G kenttiin."
+
+#: po/gladestr.h:142
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in \n"
+"the fields for columns A to K."
+msgstr ""
+"Kohdista tulostuspäät. Tutki tulostuskuvioita ja kirjoita parhaiten \n"
+"tulostuneiden kuvioiden numerot sarakkeiden A–K kenttiin."
+
+#: po/gladestr.h:145
+msgid ""
+"Execute print head alignment. Examine the printed patterns, and enter \n"
+"the pattern number of the pattern with the least amount of streaking in "
+"the \n"
+"fields for columns A to L."
+msgstr ""
+"Kohdista tulostuspäät. Tutki tulostuskuvioita ja kirjoita parhaiten \n"
+"tulostuneiden kuvioiden numerot sarakkeiden A–L kenttiin."
+
+#: po/gladestr.h:148
+msgid ""
+"Executes Bottom Plate Cleaning.\n"
+"\n"
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half. Unfold the paper, and load "
+"the paper into \n"
+"the sheet feeder with the ridge of the crease facing down. Then click "
+"Execute."
+msgstr ""
+"Suorittaa alalevyn puhdistuksen.\n"
+"\n"
+"1. Poista paperi arkinsyöttölaitteesta.\n"
+"2. Taita A4- tai Letter-kokoinen paperiarkki puoliksi. Suorista paperi ja \n"
+"lisää se arkinsyöttölaitteeseen taite edellä. Napsauta sen jälkeen Suorita."
+
+#: po/gladestr.h:153
+msgid "Exit"
+msgstr "Lopeta"
+
+#: po/gladestr.h:154
+msgid "Fast"
+msgstr "Nopea"
+
+#: po/gladestr.h:155 po/keystr.h:172
+msgid "Fine"
+msgstr "Terävä"
+
+#: po/gladestr.h:156
+msgid "Grayscale Printing"
+msgstr "Harmaasävytulostus"
+
+#: po/gladestr.h:157
+msgid "Halftoning:"
+msgstr "Rasterointi:"
+
+#: po/gladestr.h:158
+msgid "Height:     "
+msgstr "Korkeus:    "
+
+#: po/gladestr.h:159
+msgid "High"
+msgstr "Korkea"
+
+#: po/gladestr.h:160
+msgid "High "
+msgstr "Korkea "
+
+#: po/gladestr.h:161
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Vaakasuuntainen kohdistus (-3 - +7)"
+
+#: po/gladestr.h:162 po/keystr.h:303
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute Deep Cleaning."
+msgstr ""
+"Jos tulostunut kuvio muistuttaa tätä kuviota, \n"
+"tulostuspään suuttimet voivat \n"
+"olla tukkeutuneet.\n"
+"Napsauta Puhdistus.\n"
+"\n"
+"Jos tulostunut kuvio ei parane, vaikka olet \n"
+"suorittanut puhdistuksen \n"
+"kaksi kertaa, suorita perusteellinen puhdistus."
+
+#: po/gladestr.h:169 po/keystr.h:206
+msgid "Ignore"
+msgstr "Ohita"
+
+#: po/gladestr.h:170
+msgid "Ink Cartridge Settings"
+msgstr "Mustekasetin asetukset"
+
+#: po/gladestr.h:171
+msgid "Ink Cartridge:"
+msgstr "Mustekasetti:"
+
+#: po/gladestr.h:172
+msgid "Ink Counter Reset"
+msgstr "Nollaa mustelaskuri"
+
+#: po/gladestr.h:173
+msgid "Ink Drying Wait Time:"
+msgstr "Musteen kuivumisaika:"
+
+#: po/gladestr.h:174
+msgid "Intensity:"
+msgstr "Voimakkuus:"
+
+#: po/gladestr.h:175
+msgid "Light "
+msgstr "Vaalea "
+
+#: po/gladestr.h:176
+msgid "Long"
+msgstr "Pitkä"
+
+#: po/gladestr.h:177
+msgid "Long-side stapling"
+msgstr "Nide pitkälle reunalle"
+
+#: po/gladestr.h:178
+msgid "Low"
+msgstr "Matala"
+
+#: po/gladestr.h:179
+msgid "Low Ink Warning Setting"
+msgstr "Mustetason varoitusasetus"
+
+#: po/gladestr.h:180
+msgid "Main"
+msgstr "Päävalikko"
+
+#: po/gladestr.h:181
+msgid "Maintenance"
+msgstr "Ylläpito"
+
+#: po/gladestr.h:182
+msgid "Manual"
+msgstr "Manuaalinen"
+
+#: po/gladestr.h:183
+msgid "Manual Color Adjustment"
+msgstr "Manuaalinen värien säätö"
+
+#: po/gladestr.h:184
+msgid "Max"
+msgstr "Enint."
+
+#: po/gladestr.h:185
+msgid "Media Type:"
+msgstr "Tulostusmateriaali:"
+
+#: po/gladestr.h:186
+msgid "Min"
+msgstr "Väh."
+
+#: po/gladestr.h:187
+msgid "Nozzle Check"
+msgstr "Suutintesti"
+
+#: po/gladestr.h:188 po/keystr.h:201
+msgid "OK"
+msgstr "OK"
+
+#: po/gladestr.h:189
+msgid "Page Layout:"
+msgstr "Sivun asettelu:"
+
+#: po/gladestr.h:190
+msgid "Page Setup"
+msgstr "Sivun asetukset"
+
+#: po/gladestr.h:191
+msgid "Page Size:"
+msgstr "Sivukoko:"
+
+#: po/gladestr.h:192
+msgid "Paper Gap:"
+msgstr "Paperin rako:"
+
+#: po/gladestr.h:193
+msgid "Paper Size"
+msgstr "Paperikoko"
+
+#: po/gladestr.h:194
+msgid "Paper Source:"
+msgstr "Paperilähde:"
+
+#: po/gladestr.h:195
+msgid "Pattern Check"
+msgstr "Kuviotarkistus"
+
+#: po/gladestr.h:196
+msgid "Pause Page"
+msgstr "Keskeytä sivu"
+
+#: po/gladestr.h:197
+msgid "Pause Scan"
+msgstr "Keskeytä kuvanluku"
+
+#: po/gladestr.h:198
+msgid "Power Off"
+msgstr "Virrankatkaisu"
+
+#: po/gladestr.h:199
+msgid "Prevent paper abrasion"
+msgstr "Estä paperin hankaus"
+
+#: po/gladestr.h:200
+msgid "Print Alignment Value"
+msgstr "Tulostuksen kohdistusarvo"
+
+#: po/gladestr.h:201
+msgid "Print Check Pattern"
+msgstr "Tulosta tarkistuskuvio"
+
+#: po/gladestr.h:202
+msgid "Print Head Alignment"
+msgstr "Tulostuspään kohdistus"
+
+#: po/gladestr.h:203
+msgid "Print Head Cleaning"
+msgstr "Tulostuspään puhdistus"
+
+#: po/gladestr.h:204
+msgid "Print Head:"
+msgstr "Tulostuspää:"
+
+#: po/gladestr.h:205
+msgid "Print Quality:"
+msgstr "Tulostuslaatu:"
+
+#: po/gladestr.h:206
+msgid "Print Type:"
+msgstr "Tulostustapa:"
+
+#: po/gladestr.h:207
+msgid "Print from Last Page"
+msgstr "Tulosta viimeisestä sivusta"
+
+#: po/gladestr.h:208
+msgid "Quality:"
+msgstr "Laatu:"
+
+#: po/gladestr.h:209
+msgid "Quiet Mode"
+msgstr "Hiljainen tila"
+
+#: po/gladestr.h:210
+msgid "Read your printer manual for details about low ink warnings."
+msgstr "Tarkempia tietoja muste vähissä -varoituksista on tulostimen käyttöoppaassa."
+
+#: po/gladestr.h:211
+msgid "Roller Cleaning"
+msgstr "Telojen puhdistus"
+
+#: po/gladestr.h:212
+msgid "Scaling:"
+msgstr "Skaalaus:"
+
+#: po/gladestr.h:213
+msgid "Select print head for cleaning."
+msgstr "Valitse puhdistettava tulostuspää."
+
+#: po/gladestr.h:214
+msgid "Select the ink cartridge for printing."
+msgstr "Valitse käytettävä mustekasetti."
+
+#: po/gladestr.h:215
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Valitse vaihdettu mustesäiliö ja napsauta Suorita-painiketta.\n"
+
+#: po/gladestr.h:217
+msgid "Send"
+msgstr "Lähetä"
+
+#: po/gladestr.h:218
+msgid "Short"
+msgstr "Lyhyt"
+
+#: po/gladestr.h:219
+msgid "Short-side stapling"
+msgstr "Nide lyhyelle reunalle"
+
+#: po/gladestr.h:220 po/keystr.h:54
+msgid "Standard"
+msgstr "Normaali"
+
+#: po/gladestr.h:221
+msgid "Staple Side:"
+msgstr "Nidottu reuna:"
+
+#: po/gladestr.h:222
+msgid "Start Print Head Alignment"
+msgstr "Käynnistä Tulostuspään kohdistus"
+
+#: po/gladestr.h:223
+msgid ""
+"Starting Bottom Plate Cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation needs a sheet of A4 or letter size, plain paper. Follow these "
+"directions to execute Bottom Plate Cleaning."
+msgstr ""
+"Käynnistä alalevyn puhdistus estääksesi paperitahrat tulostuksen aikana.\n"
+"\n"
+"Tähän tarvitaan yksi arkki A4- tai Letter-kokoista tavallista paperia. \n"
+"Puhdista alalevy näitä ohjeita noudattaen."
+
+#: po/gladestr.h:226
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Mustesäiliötä vastaava laskuri osoittaa, että säiliö on täynnä. Toimimalla \n"
+"näin varmistat, että muste vähissä -varoitus näkyy oikein."
+
+#: po/gladestr.h:229
+msgid "The following is recommended:"
+msgstr "Suositellaan seuraavaa:"
+
+#: po/gladestr.h:230
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit.\n"
+msgstr ""
+"Tulostuspään suuttimet eivät ole tukkeutuneet.\n"
+"Jos tulostunut kuvio muistuttaa tätä kuviota, \n"
+"voit käyttää tulostinta välittömästi.\n"
+"Napsauta Lopeta.\n"
+
+#: po/gladestr.h:235
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr "Varmista alhaisen mustetason varoituksen oikea toiminta seuraavasti:\n"
+
+#: po/gladestr.h:238
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute Deep \n"
+"Cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute Nozzle Check and check whether the \n"
+"print head nozzles have been unclogged."
+msgstr ""
+"Puhdistaa suuttimet, joita ei voida puhdistaa tavallisella puhdistustoiminnolla.\n"
+"\n"
+"Perusteellinen puhdistus kuluttaa paljon enemmän mustetta kuin tavallinen \n"
+"puhdistus. Suorita perusteellinen puhdistus ainoastaan, jos suutinten tila ei \n"
+"parane tavallisen puhdistuksen jälkeen.\n"
+"\n"
+"Kun perusteellinen puhdistus on valmis, suorita suutintesti ja tarkista, \n"
+"ovatko tulostuspään suuttimet puhdistuneet."
+
+#: po/gladestr.h:245
+msgid "Units:"
+msgstr "Yksiköt:"
+
+#: po/gladestr.h:246
+msgid "Use quiet mode"
+msgstr "Käytä hiljaista tilaa"
+
+#: po/gladestr.h:247
+msgid "Using AC Adapter:"
+msgstr "Käytetään verkkolaitetta:"
+
+#: po/gladestr.h:248
+msgid "Using Battery:"
+msgstr "Käytetään akkua:"
+
+#: po/gladestr.h:249
+msgid "View Printer Status..."
+msgstr "Näytä tulostimen tila..."
+
+#: po/gladestr.h:250
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#: po/gladestr.h:251
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Kun olet vaihtanut jonkin mustesäiliön, valitse aina Nollaa mustelaskuri \n"
+"-painike tulostinajurin Ylläpito-välilehdestä ja valitse uusi mustesäiliö."
+
+#: po/gladestr.h:254
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Mitä seuraavista kuvioista tulostunut kuvio muistuttaa eniten?"
+
+#: po/gladestr.h:255
+msgid "Width:    "
+msgstr "Leveys:    "
+
+#: po/gladestr.h:256
+msgid "You cannot print with the following combination:"
+msgstr "Seuraavalla yhdistelmällä ei voi tulostaa:"
+
+#: po/gladestr.h:257
+msgid "You have selected the following combination:"
+msgstr "Olet valinnut seuraavan yhdistelmän:"
+
+#: po/gladestr.h:258
+msgid "inch"
+msgstr "tuuma"
+
+#: po/gladestr.h:259
+msgid "mm"
+msgstr "mm"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/keystr.h:7
+msgid "BJF850"
+msgstr ""
+
+#: po/keystr.h:8
+msgid "BJF860"
+msgstr ""
+
+#: po/keystr.h:9
+msgid "BJF870"
+msgstr ""
+
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#: po/keystr.h:11
+msgid "BJS600"
+msgstr ""
+
+#: po/keystr.h:12
+msgid "BJS630"
+msgstr ""
+
+#: po/keystr.h:13
+msgid "BJS6300"
+msgstr ""
+
+#: po/keystr.h:14
+msgid "BJF900"
+msgstr ""
+
+#: po/keystr.h:15
+msgid "BJF9000"
+msgstr ""
+
+#: po/keystr.h:16
+msgid "BJS500"
+msgstr ""
+
+#: po/keystr.h:17
+msgid "BJS300"
+msgstr ""
+
+#: po/keystr.h:18
+msgid "PIXUS 550i"
+msgstr ""
+
+#: po/keystr.h:19
+msgid "PIXUS 850i"
+msgstr ""
+
+#: po/keystr.h:20
+msgid "PIXUS 950i"
+msgstr ""
+
+#: po/keystr.h:21
+msgid "i250"
+msgstr ""
+
+#: po/keystr.h:22
+msgid "i255"
+msgstr ""
+
+#: po/keystr.h:23
+msgid "PIXUS 560i"
+msgstr ""
+
+#: po/keystr.h:24
+msgid "PIXUS 860i"
+msgstr ""
+
+#: po/keystr.h:25
+msgid "PIXUS 990i"
+msgstr ""
+
+#: po/keystr.h:26
+msgid "PIXUS iP3100"
+msgstr ""
+
+#: po/keystr.h:27
+msgid "PIXUS iP4100"
+msgstr ""
+
+#: po/keystr.h:28
+msgid "PIXUS iP8600"
+msgstr ""
+
+#: po/keystr.h:29
+msgid "PIXMA iP1000"
+msgstr ""
+
+#: po/keystr.h:30
+msgid "PIXMA iP1500"
+msgstr ""
+
+#: po/keystr.h:31
+msgid "iP2200"
+msgstr ""
+
+#: po/keystr.h:32
+msgid "iP4200"
+msgstr ""
+
+#: po/keystr.h:33
+msgid "iP6600D"
+msgstr ""
+
+#: po/keystr.h:34
+msgid "iP7500"
+msgstr ""
+
+#: po/keystr.h:35
+msgid "MP500"
+msgstr ""
+
+#: po/keystr.h:36
+msgid "iP3300"
+msgstr ""
+
+#: po/keystr.h:37
+msgid "MP510"
+msgstr ""
+
+#: po/keystr.h:38
+msgid "iP4300"
+msgstr ""
+
+#: po/keystr.h:39
+msgid "MP600"
+msgstr ""
+
+#: po/keystr.h:40
+msgid "MP160"
+msgstr ""
+
+#: po/keystr.h:41
+msgid "iP90"
+msgstr ""
+
+#: po/keystr.h:42
+msgid "iP2500 series"
+msgstr ""
+
+#: po/keystr.h:43
+msgid "iP1800 series"
+msgstr ""
+
+#: po/keystr.h:44
+msgid "MP140 series"
+msgstr ""
+
+#: po/keystr.h:45
+msgid "MP210 series"
+msgstr ""
+
+#: po/keystr.h:46
+msgid "iP3500 series"
+msgstr ""
+
+#: po/keystr.h:47
+msgid "iP4500 series"
+msgstr ""
+
+#: po/keystr.h:48
+msgid "MP610 series"
+msgstr ""
+
+#: po/keystr.h:49
+msgid "MP520 series"
+msgstr ""
+
+#: po/keystr.h:51
+msgid "Grayscale"
+msgstr "Harmaasävy"
+
+#: po/keystr.h:52
+msgid "Photo"
+msgstr "Valokuva"
+
+#: po/keystr.h:53
+msgid "Graphic"
+msgstr "Grafiikka"
+
+#: po/keystr.h:55
+msgid "Linear Tone"
+msgstr "Lineaarinen sävy"
+
+#: po/keystr.h:56
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Arvo %s kannattaa muuttaa arvoksi %s."
+
+#: po/keystr.h:57
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Napsauta Muuta, jos haluat käyttää uutta yhdistelmää. Jos haluat käyttää \n"
+"nykyisiä asetuksia, napsauta Ohita. Jos haluat valita jonkin muun asetuksen, \n"
+"valitse Takaisin asetuksiin."
+
+#: po/keystr.h:59
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "Asetuksen %s muuttamista suositellaan."
+
+#: po/keystr.h:60
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Valitse alla olevalla valitsimella sopivat asetukset ja ota uusi yhdistelmä \n"
+"käyttöön valitsemalla Muuta."
+
+#: po/keystr.h:62
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Jos haluat käyttää nykyisiä asetuksia, valitse Ohita. Jos haluat valita jonkin \n"
+"muun asetuksen, valitse Takaisin asetuksiin."
+
+#: po/keystr.h:64
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "Asetuksen %s muuttamista suositellaan. "
+
+#: po/keystr.h:65
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to use\n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+
+#: po/keystr.h:67
+msgid "Paper Thickness Lever Position:"
+msgstr "Paksuudensäätövivun asento: "
+
+#: po/keystr.h:68
+msgid "Paper Thickness Lever Position: "
+msgstr "Paksuudensäätövivun asento:"
+
+#: po/keystr.h:69
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Siirrä paperin paksuudensäätövipua %s. "
+
+#: po/keystr.h:70
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Siirrä paperin paksuudensäätövipua %s."
+
+#: po/keystr.h:71
+msgid "Media Type"
+msgstr "Tulostusmateriaali"
+
+#: po/keystr.h:72
+msgid "Page Size"
+msgstr "Sivukoko"
+
+#: po/keystr.h:73
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Tulostusmateriaali: %s ei sovellu valitulle BJ-värikasetille.\n"
+"Valitse käytettävä materiaali."
+
+#: po/keystr.h:75
+msgid "Plain Paper"
+msgstr "Tavallinen paperi"
+
+#: po/keystr.h:76
+msgid "Transparencies"
+msgstr "Piirtoheitinkalvot"
+
+#: po/keystr.h:77
+msgid "Back Print Film"
+msgstr "Taustatulostuskiiltomuovi"
+
+#: po/keystr.h:78
+msgid "Fabric Sheet"
+msgstr "Kangas"
+
+#: po/keystr.h:79
+msgid "High Gloss Film"
+msgstr "Kiiltomuovi"
+
+#: po/keystr.h:80
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: po/keystr.h:81
+msgid "Envelope"
+msgstr "Kirjekuori"
+
+#: po/keystr.h:82
+msgid "Glossy Postcard"
+msgstr "Kiiltävä postikortti"
+
+#: po/keystr.h:83
+msgid "High Resolution Paper"
+msgstr "High Resolution Paper"
+
+#: po/keystr.h:84
+msgid "T-Shirt Transfers"
+msgstr "T-paidan siirtokuvat"
+
+#: po/keystr.h:85
+msgid "Thick Paper"
+msgstr ""
+
+#: po/keystr.h:86
+msgid "High Gloss Photo Film"
+msgstr "Kiiltovalokuvamuovi"
+
+#: po/keystr.h:87
+msgid "Glossy Photo Paper"
+msgstr "Glossy Photo Paper"
+
+#: po/keystr.h:88
+msgid "Glossy Photo Cards"
+msgstr "Kiiltävät valokuvakortit"
+
+#: po/keystr.h:89
+msgid "Photo Paper Pro"
+msgstr "Photo Paper Pro"
+
+#: po/keystr.h:90
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#: po/keystr.h:91
+msgid "Matte Photo Paper"
+msgstr "Matte Photo Paper"
+
+#: po/keystr.h:92
+msgid "Photo Paper Plus Glossy"
+msgstr "Photo Paper Plus Glossy"
+
+#: po/keystr.h:93
+msgid "Other Paper"
+msgstr "Muu paperi"
+
+#: po/keystr.h:94
+msgid "Other Photo Paper"
+msgstr "Muu valokuvapaperi"
+
+#: po/keystr.h:95
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#: po/keystr.h:96
+msgid "Fine Art Photo Rag"
+msgstr ""
+
+#: po/keystr.h:97
+msgid "Other Fine Art Paper"
+msgstr "Muu Fine Art -paperi"
+
+#: po/keystr.h:98
+msgid "Photo Paper Plus Glossy II"
+msgstr "Photo Paper Plus Glossy II"
+
+#: po/keystr.h:99
+msgid "Manual Feed"
+msgstr "Käsisyöttö"
+
+#: po/keystr.h:100
+msgid "Auto Sheet Feeder"
+msgstr "Autom. arkinsyöttö"
+
+#: po/keystr.h:101
+msgid "Rear Tray"
+msgstr "Takalokero"
+
+#: po/keystr.h:102
+msgid "Auto Feeder2"
+msgstr ""
+
+#: po/keystr.h:103
+msgid "Standard Cassette"
+msgstr "Standardipaperikasetti"
+
+#: po/keystr.h:104
+msgid "Optional Cassette"
+msgstr "Valinnainen väriainekasetti"
+
+#: po/keystr.h:105
+msgid "Auto Select"
+msgstr "Automaattinen valinta"
+
+#: po/keystr.h:106
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#: po/keystr.h:107
+msgid "Tractor Feeder"
+msgstr "Jatkolomake"
+
+#: po/keystr.h:108
+msgid "Cassette"
+msgstr "Kasetti"
+
+#: po/keystr.h:109
+msgid "Paper Feed Switch"
+msgstr "Paperinsyöttökytkin"
+
+#: po/keystr.h:110
+msgid "Front Feeder"
+msgstr "Etusyöttölaite"
+
+#: po/keystr.h:111
+msgid "Front Tray"
+msgstr "Etulokero"
+
+#: po/keystr.h:112
+msgid "Front for Plain Paper"
+msgstr "Etusyöt.tav.paper.vart."
+
+#: po/keystr.h:113
+msgid "Front for Plain Paper "
+msgstr "Etusyöt.tav.paper.vart. "
+
+#: po/keystr.h:114
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Valittua paperikokoa ei voida käyttää nykyisellä paperilähdeasetuksella.\n"
+"Paperilähdeasetukseksi vaihdetaan %s."
+
+#: po/keystr.h:116
+msgid "Enhanced Black"
+msgstr ""
+
+#: po/keystr.h:117
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#: po/keystr.h:118
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#: po/keystr.h:119
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#: po/keystr.h:120
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#: po/keystr.h:121
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#: po/keystr.h:122
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#: po/keystr.h:123
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#: po/keystr.h:124
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#: po/keystr.h:125
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#: po/keystr.h:126
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#: po/keystr.h:127
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr "Kirjekuori (Comm. Env.) #10 9.5\"x4.12\" 241.3x104.6mm"
+
+#: po/keystr.h:128
+msgid "DL Env. 220.0x110.0mm"
+msgstr "DL kirjek. 220.0 x 110.0 mm"
+
+#: po/keystr.h:129
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#: po/keystr.h:130
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#: po/keystr.h:131
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#: po/keystr.h:132
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#: po/keystr.h:133
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#: po/keystr.h:134
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm "
+
+#: po/keystr.h:135
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:136
+msgid "Custom..."
+msgstr "Mukautettu..."
+
+#: po/keystr.h:137
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr "Kirjekuori (Comm. Env.) #10 4.12\"x9.5\" 104.6x241.3mm"
+
+#: po/keystr.h:138
+msgid "DL Env. 110.0x220.0mm"
+msgstr "DL kirjek. 110.0x220.0mm"
+
+#: po/keystr.h:139
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#: po/keystr.h:140
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#: po/keystr.h:141
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#: po/keystr.h:142
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#: po/keystr.h:143
+msgid "4\"x6\" 101.6x152.4mm"
+msgstr "10x15 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:144
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#: po/keystr.h:145
+msgid "5\"x7\" 127.0x177.8mm"
+msgstr "13x18 5\"x7\" 127.0x177.8mm"
+
+#: po/keystr.h:146
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#: po/keystr.h:147
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Kortti 2.16\"x3.58\" 55.0x91.0mm "
+
+#: po/keystr.h:148
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "Luottokortti 2.13\"x3.39\" 54.0x86.0mm "
+
+#: po/keystr.h:149
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Fine Art A4 210.0x297.0mm"
+
+#: po/keystr.h:150
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#: po/keystr.h:151
+msgid "8\"x10\" 203.2x254.0mm"
+msgstr "8\"x10\" 203.2x254.0mm"
+
+#: po/keystr.h:152
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#: po/keystr.h:153
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s–%s)"
+
+#: po/keystr.h:154
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "tuumaa (%s–%s)"
+
+#: po/keystr.h:155
+msgid "Position 1"
+msgstr ""
+
+#: po/keystr.h:156
+msgid "Position 2"
+msgstr ""
+
+#: po/keystr.h:157
+msgid "Position 3"
+msgstr ""
+
+#: po/keystr.h:158 po/keystr.h:165
+msgid "Left"
+msgstr "Vasen"
+
+#: po/keystr.h:159
+msgid "Center"
+msgstr "Keskitä"
+
+#: po/keystr.h:160 po/keystr.h:166
+msgid "Right"
+msgstr "Oikea"
+
+#: po/keystr.h:161 po/keystr.h:163 po/keystr.h:169
+msgid "Down"
+msgstr "Alas"
+
+#: po/keystr.h:162 po/keystr.h:164 po/keystr.h:170
+msgid "Up"
+msgstr "Ylös"
+
+#: po/keystr.h:167
+msgid "Front"
+msgstr ""
+
+#: po/keystr.h:168
+msgid "Back"
+msgstr "Takaisin"
+
+#: po/keystr.h:171
+msgid "Smoothing"
+msgstr ""
+
+#: po/keystr.h:173
+msgid "Fine(Fast)"
+msgstr ""
+
+#: po/keystr.h:174
+msgid "Banner Printing"
+msgstr "Banner-tulostus"
+
+#: po/keystr.h:175
+msgid "Color    "
+msgstr ""
+
+#: po/keystr.h:176
+msgid "Black    "
+msgstr "Musta"
+
+#: po/keystr.h:177
+msgid "Photo    "
+msgstr "Valokuva "
+
+#: po/keystr.h:178
+msgid "Black/Color    "
+msgstr "Musta/Väri"
+
+#: po/keystr.h:179
+msgid "Black/Photo    "
+msgstr "Musta/Valokuva"
+
+#: po/keystr.h:180
+msgid "Photo/Color    "
+msgstr "Valokuva/Väri"
+
+#: po/keystr.h:181
+msgid "Fit-to-Page Printing"
+msgstr "Sovita sivulle -tulostus"
+
+#: po/keystr.h:182
+msgid "Normal-size Printing"
+msgstr "Normaalikokoinen tulostus"
+
+#: po/keystr.h:183
+msgid "Scaled Printing"
+msgstr "Skaalattu tulostus"
+
+#: po/keystr.h:184
+msgid "Default"
+msgstr ""
+
+#: po/keystr.h:185
+msgid "More bright (Gamma = 1.0)"
+msgstr "Kirkkaampi (Gamma = 1.0)"
+
+#: po/keystr.h:186
+msgid "Light"
+msgstr "Vaalea"
+
+#: po/keystr.h:187
+msgid "Normal"
+msgstr "Normaali "
+
+#: po/keystr.h:188
+msgid "Dark"
+msgstr "Tumma"
+
+#: po/keystr.h:190
+msgid "Wide"
+msgstr "Leveä"
+
+#: po/keystr.h:191
+msgid "Narrow"
+msgstr "Kapea"
+
+#: po/keystr.h:192
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed slightly extends off the paper.\n"
+"Print quality may deteriorate or the sheet may be stained\n"
+"at the top and bottom depending on the type of the media used."
+msgstr ""
+"Olet valinnut reunattoman tulostuksen.\n"
+"Tulostettava asiakirja ulottuu hiukan paperin ulkopuolelle.\n"
+"Tulostettaessa joillekin materiaaleille tulostuslaatu voi huonontua tai arkin \n"
+"ylä- ja alareuna voivat tahriintua."
+
+#: po/keystr.h:196
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Reunatonta tulostusta ei suositella, kun Tulostusmateriaali-asetuksena on %s.\n"
+"Valitse käytettävä materiaali."
+
+#: po/keystr.h:198
+msgid ""
+"The document to be printed slightly extends off the paper.\n"
+"Print quality may deteriorate or the sheet may be stained\n"
+"at the top and bottom depending on the type of the media used."
+msgstr ""
+"Tulostettava asiakirja ulottuu hiukan paperin ulkopuolelle.\n"
+"Tulostettaessa joillekin materiaaleille tulostuslaatu voi huonontua tai arkin \n"
+"ylä- ja alareuna voivat tahriintua."
+
+#: po/keystr.h:203
+msgid "Yes"
+msgstr "Kyllä"
+
+#: po/keystr.h:204
+msgid "No"
+msgstr "Ei"
+
+#: po/keystr.h:205
+msgid "Abort"
+msgstr ""
+
+#: po/keystr.h:207
+msgid "Enable"
+msgstr "Kytke"
+
+#: po/keystr.h:208
+msgid "Disable"
+msgstr "Poista käytöstä"
+
+#: po/keystr.h:209
+msgid "5 minutes"
+msgstr "5 minuuttia"
+
+#: po/keystr.h:210
+msgid "10 minutes"
+msgstr "10 minuuttia"
+
+#: po/keystr.h:211
+msgid "15 minutes"
+msgstr "15 minuuttia"
+
+#: po/keystr.h:212
+msgid "30 minutes"
+msgstr "30 minuuttia"
+
+#: po/keystr.h:213
+msgid "60 minutes"
+msgstr "60 minuuttia"
+
+#: po/keystr.h:214 po/keystr.h:220
+msgid "Do not start another operation until the current one has finished."
+msgstr "Älä aloita uutta toimintoa, ennen kuin nykyinen on lopetettu."
+
+#: po/keystr.h:215
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Tulostuiko kuvio oikein?\n"
+"\n"
+"Jos kuviot eivät tulostuneet tai tuloste on epäselvä, napsauta Ei ja aloita \n"
+"uudelleen alusta."
+
+#: po/keystr.h:218
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Tarkista, että tulostimessa on virtaa, kaapeli on kytketty kunnolla ja että \n"
+"tulostin on linjalla. Yritä sitten uudelleen."
+
+#: po/keystr.h:219
+msgid "Print head alignment is now complete."
+msgstr "Tulostuspään kohdistus on nyt valmis."
+
+#: po/keystr.h:221
+msgid ""
+"Start printing nozzle check pattern? Load some paper into the sheet feeder "
+"to proceed with printing."
+msgstr ""
+"Aloitetaanko suuttimien tarkistuskuvion tulostus? Voit jatkaa tulostusta \n"
+"lisäämällä arkinsyöttölaitteeseen paperia."
+
+#: po/keystr.h:222
+msgid "Turn the printer off?"
+msgstr "Haluatko sammuttaa tulostimen?"
+
+#: po/keystr.h:223
+msgid "Write settings to printer?"
+msgstr "Haluatko kirjoittaa asetukset tulostimeen?"
+
+#: po/keystr.h:224
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"You will need the special Cleaning Plate and two sheets of plain paper.\n"
+"First, wet the cleaning area of the Cleaning Plate. Wipe away any moisture "
+"in other areas on the front and back.\n"
+"Place the Cleaning Plate in the sheet feeder so that the cleaning area is "
+"towards you.\n"
+"During cleaning, the paper feed rollers will be activated 20 times. The "
+"process will take about a minute.\n"
+"\n"
+"Do you want to start roller cleaning?"
+msgstr ""
+"Puhdistetaan paperinsyöttörullat.\n"
+"\n"
+"Tarvitset erityisen puhdistuslevyn ja kaksi tavallista paperiarkkia.\n"
+"Kastele ensin puhdistuslevyn puhdistusalue. Pyyhi kosteus pois levyn etu- ja \n"
+"takapuolelta.\n"
+"Aseta puhdistuslevy arkinsyöttölaitteeseen puhdistusalue itseesi päin.\n"
+"Paperinsyöttörullat aktivoidaan puhdistuksen aikana 20 kertaa. Puhdistus \n"
+"kestää noin minuutin.\n"
+"\n"
+"Haluatko aloittaa rullien puhdistuksen?"
+
+#: po/keystr.h:232
+msgid "Start cleaning?"
+msgstr "Aloitetaanko puhdistus?"
+
+#: po/keystr.h:233
+msgid "Start print head deep cleaning?"
+msgstr "Aloitetaanko tulostuspään perusteellinen puhdistus?"
+
+#: po/keystr.h:234
+msgid ""
+"To remove any moisture left on the paper feed rollers,\n"
+"keep the Cleaning Plate in place and insert the first sheet of plain paper "
+"into the sheet feeder."
+msgstr ""
+"Voit poistaa paperinsyöttöteloihin mahdollisesti muodostuneen kosteuden\n"
+"pitämällä puhdistuslevyn paikallaan ja asettamalla ensimmäisen tavallisen \n"
+"paperiarkin arkinsyöttölaitteeseen."
+
+#: po/keystr.h:236
+msgid ""
+"With the Cleaning Plate still in place,\n"
+"insert the second sheet of plain paper into the sheet feeder to remove any "
+"remaining moisture."
+msgstr ""
+"Kun puhdistuslevy on vielä paikallaan,\n"
+"poista mahdollinen kosteus asettamalla toinen tavallinen paperiarkki \n"
+"arkinsyöttölaitteeseen."
+
+#: po/keystr.h:238
+msgid ""
+"Feed roller cleaning is complete.\n"
+"Remove the Cleaning Plate."
+msgstr ""
+"Syöttötelan puhdistus on valmis.\n"
+"Poista puhdistuslevy."
+
+#: po/keystr.h:241
+msgid ""
+"Starting print head alignment to compensate for print head installation "
+"positioning error.\n"
+"\n"
+"Since alignment involves printing, make sure the printer is ready (cable "
+"connected and printer power on), \n"
+"set the printer's paper thickness lever to the left, and load a sheet of "
+"paper into the sheet feeder. \n"
+"Head alignment patterns will be printed.\n"
+"\n"
+"Start print head alignment?"
+msgstr ""
+"Aloitetaan tulostuspään kohdistusvirheen korjaava kohdistus.\n"
+"\n"
+"Kohdistus edellyttää tulostamista. Varmista, että tulostin on valmiina \n"
+"(kaapeli ja virta kytkettynä), siirrä paperin paksuudensäätövipua vasemmalle \n"
+"ja lisää arkinsyöttölaitteeseen paperiarkki. Tulostuspään kohdistuskuviot \n"
+"tulostetaan.\n"
+"\n"
+"Haluatko aloittaa tulostuspään kohdistuksen?"
+
+#: po/keystr.h:248
+msgid ""
+"Additional print head alignment patterns will be printed.\n"
+"\n"
+"Load another sheet of paper and click OK."
+msgstr ""
+"Tulostaa ylimääräisiä tulostuspäiden kohdistuskuvioita.\n"
+"\n"
+"Lisää uusi paperi ja valitse OK."
+
+#: po/keystr.h:251
+msgid "Execute black print head deep cleaning?"
+msgstr "Suoritetaanko mustan tulostuspään perusteellinen puhdistus?"
+
+#: po/keystr.h:252
+msgid "Execute color print head deep cleaning?"
+msgstr "Suoritetaanko värillisen tulostuspään perusteellinen puhdistus?"
+
+#: po/keystr.h:253
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Puhdistetaan paperinsyöttörullat.\n"
+"\n"
+"Poista ensin paperi arkinsyöttölaitteesta. Aktivoi paperinsyöttörullat 30 \n"
+"kertaa napsauttamalla OK. Aktivointi kestää noin puolitoista minuuttia. Kun \n"
+"lisäät tulostimeen kolme paperiarkkia ilmoituksen mukaan, paperi poistetaan ja \n"
+"syöttörullien puhdistus suoritetaan loppuun.\n"
+"\n"
+"Haluatko aloittaa syöttörullien puhdistuksen?"
+
+#: po/keystr.h:260
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Lisää arkinsyöttölaitteeseen kolme arkkia tavallista paperia.\n"
+
+#: po/keystr.h:261
+msgid "Feed roller cleaning is complete."
+msgstr "Syöttötelan puhdistus on valmis."
+
+#: po/keystr.h:264
+msgid "Black   3eBK"
+msgstr "Musta   3eBK"
+
+#: po/keystr.h:265
+msgid "Black   PGBK"
+msgstr "Musta   PGBK"
+
+#: po/keystr.h:267
+msgid "Color   6C, 6M, 6Y"
+msgstr "Väri   6C, 6M, 6Y"
+
+#: po/keystr.h:268
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Väri   6C, 6M, 6Y, 6BK"
+
+#: po/keystr.h:269
+msgid "Color   7C, 7M, 7Y"
+msgstr "Väri   7C, 7M, 7Y"
+
+#: po/keystr.h:270
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Väri   7C, 7M, 7Y, 7BK"
+
+#: po/keystr.h:271
+msgid "Color   C, M, Y, BK"
+msgstr "Väri   C, M, Y, BK"
+
+#: po/keystr.h:272
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Väri   C, M, Y, PC, PM, BK"
+
+#: po/keystr.h:273
+msgid "Color   C, M, Y"
+msgstr "Väri   C, M, Y"
+
+#: po/keystr.h:274
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Ryhmä 1   6BK, 6R, 6PC, 6PM"
+
+#: po/keystr.h:275
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Ryhmä 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#: po/keystr.h:276
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Ryhmä 2   6C, 6M, 6Y"
+
+#: po/keystr.h:277
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Ryhmä 2   7C, 7M, 7Y"
+
+#: po/keystr.h:278
+msgid "Execute print head deep cleaning for Group 1?\n"
+msgstr "Suoritetaanko ryhmän 1 tulostuspäiden perusteellinen puhdistus?\n"
+
+#: po/keystr.h:279
+msgid "Execute print head deep cleaning for Group 2?\n"
+msgstr "Suoritetaanko ryhmän 2 tulostuspäiden perusteellinen puhdistus?\n"
+
+#: po/keystr.h:280
+msgid ""
+"Executes print head cleaning.\n"
+"\n"
+"Select the print head for cleaning. The ink group can be identified \n"
+"from the nozzle check pattern."
+msgstr ""
+"Suorittaa tulostuspäiden puhdistuksen.\n"
+"\n"
+"Valitse puhdistettava tulostuspää. Voit tunnistaa musteryhmän \n"
+"suutintestikuviosta."
+
+#: po/keystr.h:284
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute Nozzle Check to check whether the print head "
+"nozzles have been unclogged.\n"
+msgstr ""
+"Älä aloita uutta toimintoa, ennen kuin puhdistus on valmis.\n"
+"\n"
+"Kun puhdistus on valmis, suorita suutintesti ja tarkista, ovatko tulostuspään \n"
+"suuttimet puhdistuneet.\n"
+
+#: po/keystr.h:287
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute Nozzle Check.\n"
+msgstr ""
+"Puhdistaa tulostuspään tukkeutuneet suuttimet.\n"
+"\n"
+"Valitse puhdistettava kohdemusteryhmä. Jos et ole varma puhdistettavasta \n"
+"musteryhmästä, suorita Suutintesti.\n"
+
+#: po/keystr.h:291
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute Nozzle Check.\n"
+msgstr ""
+"Puhdistaa suuttimet, joita ei voida puhdistaa tavallisella puhdistustoiminnolla.\n"
+"\n"
+"Valitse perusteellisesti puhdistettava kohdemusteryhmä. Jos et ole varma \n"
+"perusteellisesti puhdistettavasta musteryhmästä, suorita Suutintesti.\n"
+
+#: po/keystr.h:295
+msgid "Ink Group:"
+msgstr "Musteryhmä:"
+
+#: po/keystr.h:296
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute Deep \n"
+"Cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute Nozzle Check and check whether the \n"
+"print head nozzles have been unclogged.\n"
+msgstr ""
+"Perusteellinen puhdistus kuluttaa paljon enemmän mustetta kuin normaali \n"
+"puhdistus. Suorita perusteellinen puhdistus ainoastaan, jos suutinten tila ei \n"
+"parane tavallisen puhdistuksen jälkeen.\n"
+"\n"
+"Kun perusteellinen puhdistus on valmis, suorita suutintesti ja tarkista, \n"
+"ovatko tulostuspään suuttimet puhdistuneet.\n"
+
+#: po/keystr.h:301
+msgid "Cleaning consumes ink."
+msgstr "Puhdistus kuluttaa mustetta."
+
+#: po/keystr.h:302
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Lisää paperinsyöttökytkimellä valittuun paperilähteeseen A4- tai \n"
+"Letter-kokoinen paperiarkki ja napsauta OK.\n"
+
+#: po/keystr.h:310 po/keystr.h:353
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Tulostuspään kohdistus on valmis.\n"
+"Lopeta kohdistus valitsemalla Peruuta.\n"
+"\n"
+"Jos tulostuspuolella on raitoja, voit vähentää niitä kohdistamalla tulostuspään.\n"
+"Voit aloittaa kohdistuksen lisäämällä paperiarkin arkisyöttölaitteeseen ja \n"
+"napsauttamalla OK."
+
+#: po/keystr.h:315
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr "Lisää arkinsyöttölaitteeseen A4- tai Letter-kokoinen paperiarkki ja valitse OK."
+
+#: po/keystr.h:316
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Kohdistus edellyttää tulostamista. Valmistele tulostin (kytke kaapeli ja virta \n"
+"tulostimeen), siirrä paperin paksuudensäätövipua vasemmalle ja lisää \n"
+"arkinsyöttölaitteeseen yksi arkki A4- tai Letter-kokoista tavallista paperia. \n"
+"Tulostin tulostaa kohdistuskuvion.\n"
+"\n"
+"Voit kohdistaa tulostuspään napsauttamalla OK.\n"
+
+#: po/keystr.h:323
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Tulostaa kuvion, jonka avulla voit tarkistaa, ovatko tulostuspään suuttimet \n"
+"tukossa.\n"
+"\n"
+"Valmistele tulostin (kytke kaapeli ja tulostimeen virta), siirrä paperin \n"
+"paksuudensäätövipua vasemmalle, lisää arkinsyöttölaitteeseen arkki A4- tai \n"
+"Letter-kokoista tavallista paperia ja napsauta Tulosta tarkistuskuvio.\n"
+
+#: po/keystr.h:327
+msgid "Color Only"
+msgstr "Vain väri"
+
+#: po/keystr.h:328
+msgid "Black Only"
+msgstr "Vain musta"
+
+#: po/keystr.h:329
+msgid "Both Black and Color"
+msgstr "Musta ja väri"
+
+#: po/keystr.h:330
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Käyttää tulostukseen mustan mustekasetin sijasta vain värillistä mustekasettia."
+
+#: po/keystr.h:332
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Käyttää tulostukseen värillisen mustekasetin sijasta vain mustaa \n"
+"mustekasettia, kun Päävalikosta on valittu Tulostustyypiksi tavallinen paperi."
+
+#: po/keystr.h:335
+msgid "Prints using both black and color cartridges."
+msgstr "Käyttää tulostukseen sekä mustaa että värillistä mustekasettia."
+
+#: po/keystr.h:336
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Tulostin tulostaa yhden kuvioarkin ennen automaattista kohdistusta.\n"
+"Älä aloita uutta toimintoa, ennen kuin nykyinen on lopetettu."
+
+#: po/keystr.h:338
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Tulostuspään kohdistuskuvion toinen arkki tulostuu.\n"
+"\n"
+"Aloita tulostus napsauttamalla OK."
+
+#: po/keystr.h:341
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Tulostuspään kohdistuskuvion kolmas arkki tulostuu.\n"
+"\n"
+"Aloita tulostus napsauttamalla OK."
+
+#: po/keystr.h:344
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta), käännä paperin paksuudensäätövipua \n"
+"vasemmalle ja lisää paperinsyöttökytkimellä valittuun paperilähteeseen arkki \n"
+"A4- tai Letter-kokoista tavallista paperia. Tulostin tulostaa kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:358
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Tulostaa kuvion, jonka avulla voit tarkistaa, ovatko tulostuspään suuttimet \n"
+"tukossa.\n"
+"\n"
+"Aseta tulostin tulostusvalmiuteen (liitä kaapeli ja kytke tulostimeen virta), \n"
+"siirrä paperin paksuudensäätövipua vasemmalle, lisää arkki A4- tai \n"
+"Letter-kokoista tavallista paperia paperinsyöttökytkimellä valittuun \n"
+"paperilähteeseen ja valitse Tulosta tarkistuskuvio."
+
+#: po/keystr.h:363
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Tulostaa kuvion, jonka avulla voit tarkistaa, ovatko tulostuspään suuttimet \n"
+"tukossa.\n"
+"\n"
+"Lisää arkinsyöttölaitteeseen A4- tai Letter-kokoinen tavallinen paperiarkki ja \n"
+"napsauta Tulosta tarkistuskuvio."
+
+#: po/keystr.h:366
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Tulostuspään kohdistus on valmis.\n"
+"Lopeta kohdistus valitsemalla Peruuta.\n"
+"\n"
+"Jos tulostuspuolella on raitoja, voit vähentää niitä kohdistamalla tulostuspään.\n"
+"Voit aloittaa kohdistuksen lisäämällä paperiarkin paperinsyöttökytkimellä \n"
+"valittuun paperilähteeseen ja napsauttamalla OK."
+
+#: po/keystr.h:373
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta), siirrä paperin paksuudensäätövipua \n"
+"oikealle ja lisää arkinsyöttölaitteeseen arkki A4- tai Letter-kokoista \n"
+"tavallista paperia. Tulostin tulostaa kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:382
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute Deep Cleaning."
+msgstr ""
+"Jos tulostunut kuvio muistuttaa tätä kuviota, tulostuspään suuttimet voivat \n"
+"olla tukkeutuneet.\n"
+"Napsauta Puhdistus.\n"
+"\n"
+"Jos tulostunut kuvio ei parane, vaikka olet suorittanut puhdistuksen kaksi tai \n"
+"kolme kertaa, suorita perusteellinen puhdistus."
+
+#: po/keystr.h:389
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Mustelaskuria ei voi nollata, koska tulostin on määritetty olemaan näyttämättä \n"
+"Muste vähissä -varoitusta.\n"
+"\n"
+"Voit ottaa Muste vähissä -varoituksen näyttämisen käyttöön napsauttamalla \n"
+"tulostinajurin Ylläpito-välilehdessä Mustetason varoitusasetus.\n"
+"Tutustu tulostimen käyttöoppaaseen ennen toiminnon suorittamista."
+
+#: po/keystr.h:394
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Puhdistetaan paperinsyöttörullat.\n"
+"\n"
+"Poista ensin paperi takalokerosta.\n"
+"Aktivoi paperinsyöttörullat 30 kertaa valitsemalla OK. Aktivointi kestää noin \n"
+"puolitoista minuuttia.\n"
+"\n"
+"Haluatko aloittaa syöttörullien puhdistuksen?"
+
+#: po/keystr.h:400
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Puhdistetaan paperinsyöttörullat.\n"
+"\n"
+"Valitse ensin puhdistettava paperilähde painamalla tulostimen \n"
+"paperinsyöttökytkintä. Poista sitten paperi valitusta paperilähteestä.\n"
+"Aktivoi paperinsyöttörullat 30 kertaa valitsemalla OK. Aktivointi kestää noin \n"
+"puolitoista minuuttia.\n"
+"\n"
+"Haluatko aloittaa syöttörullien puhdistuksen?"
+
+#: po/keystr.h:407
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Varmista, että tulostimen käyttöääni ei enää kuulu. Lisää sitten takalokeroon \n"
+"kolme arkkia tavallista paperia.\n"
+"Kun valitset OK, paperi tulee ulos ja syöttörullien puhdistus suoritetaan \n"
+"loppuun."
+
+#: po/keystr.h:409
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Varmista, että tulostimen käyttöääni ei enää kuulu. Lisää sitten valittuun \n"
+"paperilähdelokeroon kolme arkkia tavallista paperia.\n"
+"Kun valitset OK, paperi tulee ulos ja syöttörullien puhdistus suoritetaan \n"
+"loppuun."
+
+#: po/keystr.h:411
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Poista paperi arkinsyöttölaitteesta.\n"
+"2. Taita A4- tai Letter-kokoinen paperiarkki ensin puoliksi ja avaa sitten \n"
+"taite.\n"
+"3. Aseta paperi arkinsyöttölaitteeseen niin, että taite jää alaspäin.\n"
+"4. Napsauta Suorita."
+
+#: po/keystr.h:415
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Poista paperi takalokerosta.\n"
+"2. Taita A4- tai Letter-kokoinen paperiarkki ensin puoliksi ja avaa sitten \n"
+"taite.\n"
+"3. Aseta paperi takalokeroon niin, että taite jää alaspäin.\n"
+"4. Valitse Suorita."
+
+#: po/keystr.h:419
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Tulostaa kuvion, jonka avulla voit tarkistaa, ovatko tulostuspään suuttimet \n"
+"tukossa.\n"
+"\n"
+"Valmistele tulostin (liitä kaapeli ja kytke tulostimeen virta), siirrä paperin \n"
+"paksuudensäätövipua vasemmalle, lisää takalokeroon arkki A4- tai \n"
+"Letter-kokoista tavallista paperia ja valitse Tulosta tarkistuskuvio."
+
+#: po/keystr.h:424
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta), siirrä paperin paksuudensäätövipua \n"
+"vasemmalle ja lisää takalokeroon kaksi A4- tai Letter-kokoista tavallista \n"
+"paperiarkkia. Tulostin tulostaa kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:433
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Print Head Alignment. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan automaattinen tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen aikana, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta), lisää arkinsyöttölaitteeseen arkki A4- \n"
+"tai Letter-kokoista tavallista paperia ja valitse Tulostuspään kohdistus. \n"
+"\n"
+"Voit kohdistaa tulostuspään manuaalisesti valitsemalla Peruuta.\n"
+"Valitse seuraavaksi tulostinajurin Ylläpito-välilehdestä Mukautetut asetukset, \n"
+"valitse Kohdista tulostuspäät manuaalisesti ja valitse sitten Lähetä. Yritä \n"
+"sitten uudelleen.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:443
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Print \n"
+"Head Alignment. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan automaattinen tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen aikana, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta), lisää takalokeroon kaksi arkkia A4- tai \n"
+"Letter-kokoista Matte Photo Paper (MP-101) -paperia ja valitse Tulostuspään \n"
+"kohdistus. \n"
+"\n"
+"Voit kohdistaa tulostuspään manuaalisesti valitsemalla Peruuta.\n"
+"Valitse seuraavaksi tulostinajurin Ylläpito-välilehdestä Mukautetut asetukset, \n"
+"valitse Kohdista tulostuspäät manuaalisesti ja valitse sitten Lähetä. Yritä \n"
+"sitten uudelleen.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:454
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr "Lisää takalokeroon A4- tai Letter-kokoinen tavallinen paperiarkki ja valitse OK."
+
+#: po/keystr.h:455
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Tulostin tulostaa kaksi kuvioarkkia ennen automaattista kohdistusta.\n"
+"Älä aloita uutta toimintoa, ennen kuin nykyinen on lopetettu."
+
+#: po/keystr.h:457
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta) ja lisää paperinsyöttökytkimellä valittuun \n"
+"paperilähteeseen neljä A4- tai Letter-kokoista paperiarkkia. Tulostin tulostaa \n"
+"kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:466
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Tulostuspään kohdistuskuvion neljäs arkki tulostetaan.\n"
+"\n"
+"Aloita tulostus napsauttamalla OK."
+
+#: po/keystr.h:469
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Tulostaa kuvion, jonka avulla voit tarkistaa, ovatko tulostuspään suuttimet \n"
+"tukossa.\n"
+"\n"
+"Lisää paperinsyöttökytkimellä valittuun paperilähteeseen A4- tai \n"
+"Letter-kokoinen tavallinen paperiarkki ja napsauta Tulosta tarkistuskuvio."
+
+#: po/keystr.h:473
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta), siirrä paperin paksuudensäätövipua \n"
+"vasemmalle ja lisää takalokeroon arkki A4- tai Letter-kokoista tavallista \n"
+"paperia. Tulostin tulostaa kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:482
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta) ja lisää paperinsyöttökytkimellä valittuun \n"
+"paperilähteeseen arkki A4- tai Letter-kokoista tavallista paperia. Tulostin \n"
+"tulostaa kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:491
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr "Lisää takalokeroon A4- tai Letter-kokoinen paperiarkki ja valitse OK."
+
+#: po/keystr.h:492
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Tulostuspään kohdistus on valmis.\n"
+"Lopeta kohdistus valitsemalla Peruuta.\n"
+"\n"
+"Jos tulostuspuolella on raitoja, voit vähentää niitä kohdistamalla tulostuspään.\n"
+"Voit aloittaa kohdistuksen lisäämällä paperiarkin takalokeroon ja valitsemalla \n"
+"OK."
+
+#: po/keystr.h:497
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta) ja lisää paperinsyöttökytkimellä valittuun \n"
+"paperilähteeseen kolme A4- tai Letter-kokoista paperiarkkia. Tulostin tulostaa \n"
+"kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."
+
+#: po/keystr.h:506
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Print Head Alignment.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aloitetaan tulostuspään kohdistus.\n"
+"\n"
+"Koska tulostin tulostaa kohdistuksen yhteydessä, valmistele tulostin (liitä \n"
+"kaapeli ja kytke tulostimeen virta), siirrä paperin paksuudensäätövipua \n"
+"vasemmalle ja lisää arkinsyöttölaitteeseen arkki A4- tai Letter-kokoista \n"
+"tavallista paperia. Tulostin tulostaa kohdistuskuvion.\n"
+"\n"
+" Voit kohdistaa tulostuspään valitsemalla Tulostuspään kohdistus.\n"
+"\n"
+"Tulosta ja tarkista nykyinen asetus valitsemalla Tulostuksen kohdistusarvo."

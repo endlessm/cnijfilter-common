@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?> <!--*- mode: xml -*-->
+<!DOCTYPE glade-project SYSTEM "http://glade.gnome.org/glade-project-2.0.dtd">
+
+<glade-project>
+  <name>Cngpijmon_v280</name>
+  <program_name>cngpijmon_v280</program_name>
+  <gnome_support>FALSE</gnome_support>
+  <output_main_file>FALSE</output_main_file>
+  <backup_source_files>FALSE</backup_source_files>
+</glade-project>

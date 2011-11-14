@@ -11,6 +11,33 @@
 
 # define package name
 COMMON_PKG=cnijfilter-common
+PRINTER_DEPEND_PKG+=cnijfilter-ip90-253-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp160-291-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip3300-292-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp510-293-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip4300-294-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp600-295-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip2500-311-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip1800-312-2.70-32
+
+PRINTER_DEPEND_PKG+=cnijfilter-mp140-315-2.80-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp210-316-2.80-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip3500-319-2.80-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp520-328-2.80-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip4500-326-2.80-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp610-327-2.80-32
+
+PRINTER_DEPEND_PKG+=cnijfilter-ip100-303-2.90-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip2600-331-2.90-32
+
+PRINTER_DEPEND_PKG+=cnijfilter-ip3600-333-3.00-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip4600-334-3.00-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp630-336-3.00-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp540-338-3.00-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp240-341-3.00-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp190-342-3.00-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip1900-346-3.00-32
+
 PRINTER_DEPEND_PKG+=cnijfilter-mx860-347-3.10-32
 PRINTER_DEPEND_PKG+=cnijfilter-mx320-348-3.10-32
 PRINTER_DEPEND_PKG+=cnijfilter-mx330-349-3.10-32
@@ -51,6 +78,10 @@ PRINTER_DEPEND_PKG+=cnijfilter-mg8200-391-3.60-64
 PRINTER_DEPEND_PKG+=cnijfilter-ip4900-392-3.60-64
 PRINTER_DEPEND_PKG+=cnijfilter-e500-393-3.60-64
 
+PRINTER_DEPEND_VER+=2.70
+PRINTER_DEPEND_VER+=2.80
+PRINTER_DEPEND_VER+=2.90
+PRINTER_DEPEND_VER+=3.00
 PRINTER_DEPEND_VER+=3.10
 PRINTER_DEPEND_VER+=3.20
 PRINTER_DEPEND_VER+=3.30
@@ -165,6 +196,7 @@ clean:
 	find . -name file_lists -print >> file_lists1
 	find . -name COPYING -print >> file_lists1
 	find . -name compile -print >> file_lists1
+	find . -name .deps -print >> file_lists1
 	for fn in `cat file_lists1`; do \
 	  if [ -d $${fn} ]; then \
 	    rm -r $${fn}; \
@@ -286,7 +318,7 @@ binary-arch: build install
 	dh_compress
 	dh_fixperms --exclude=bscc --exclude=cnnet.ini
 #	dh_perl
-	dh_makeshlibs
+#	dh_makeshlibs
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol

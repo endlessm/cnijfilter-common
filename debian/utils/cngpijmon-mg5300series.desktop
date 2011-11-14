@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+MimeType=text/pro
+Name=Cngpijmon-MG5300
+Exec=cngpijmonmg5300
+Icon=printer.png
+Categories=Graphics
+Type=Application
+Terminal=false
+Comment=Status monitor for Canon Inkjet Printer Driver under CUPS.
+

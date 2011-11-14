@@ -1,0 +1,3289 @@
+# Inkjet Printer Driver Ver.3.00 for Linux
+# Copyright CANON INC. 2001-2008
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.00\n"
+"POT-Creation-Date: 2008-07-24 19:46+0900\n"
+"PO-Revision-Date: 2008-08-21 0:35+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "cs_CZ"
+
+
+
+
+
+#: po/gladestr.h:1
+msgid "  Black:"
+msgstr "  Černá:"
+
+#: po/gladestr.h:2
+msgid "  Cyan:"
+msgstr "  Azurová:"
+
+#: po/gladestr.h:3
+msgid "  Magenta:"
+msgstr "  Purpurová:"
+
+#: po/gladestr.h:4
+msgid "  Set...  "
+msgstr "  Nastavit...  "
+
+#: po/gladestr.h:5
+msgid "  Yellow:"
+msgstr "  Žlutá:"
+
+#: po/gladestr.h:7
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#: po/gladestr.h:8
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:9
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:10
+msgid "0"
+msgstr "0"
+
+#: po/gladestr.h:11
+msgid "1"
+msgstr "1"
+
+#: po/gladestr.h:12
+msgid "2"
+msgstr "2"
+
+#: po/gladestr.h:13
+msgid "3"
+msgstr "3"
+
+#: po/gladestr.h:14
+msgid "4"
+msgstr "4"
+
+#: po/gladestr.h:15
+msgid "5"
+msgstr "5"
+
+#: po/gladestr.h:16
+msgid "About"
+msgstr "Etiketa"
+
+#: po/gladestr.h:17
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Nastavení ve sloupcích A až C (-3 až +7)"
+
+#: po/gladestr.h:18
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Nastavení ve sloupcích A až D (-3 až +7)"
+
+#: po/gladestr.h:19
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Nastavení ve sloupcích A až E (-3 až +7)"
+
+#: po/gladestr.h:20
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Nastavení ve sloupcích A až E (-5 až +5)"
+
+#: po/gladestr.h:21
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Nastavení ve sloupcích A až F (-5 až +5)"
+
+#: po/gladestr.h:22
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Nastavení ve sloupcích A až G (-5 až +5)"
+
+#: po/gladestr.h:23
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Nastavení ve sloupcích D až F (-5 až +5)"
+
+#: po/gladestr.h:24
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Nastavení ve sloupcích E až G (-5 až +5)"
+
+#: po/gladestr.h:25
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Nastavení ve sloupcích F a G (-3 až +3)"
+
+#: po/gladestr.h:26
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Nastavení ve sloupcích F až K (-5 až +5)"
+
+#: po/gladestr.h:27
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Nastavení ve sloupcích G až J (-5 až +5)"
+
+#: po/gladestr.h:28
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Nastavení ve sloupcích G až L (-5 až +5)"
+
+#: po/gladestr.h:29
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Nastavení ve sloupcích H až K (-5 až +5)"
+
+#: po/gladestr.h:30
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Nastavení ve sloupcích H až L (-5 až +5)"
+
+#: po/gladestr.h:31
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Nastavení ve sloupcích H až N (-5 až +5)"
+
+#: po/gladestr.h:32
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Nastavení ve sloupcích K a L (-3 až +3)"
+
+#: po/gladestr.h:33
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Nastavení ve sloupcích L a M (-3 až +3)"
+
+#: po/gladestr.h:34
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Nastavení ve sloupcích L až O (-5 až +5)"
+
+#: po/gladestr.h:35
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Nastavení ve sloupcích M a N (-2 až +2)"
+
+#: po/gladestr.h:36
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Nastavení ve sloupcích M až P (-2 až +2)"
+
+#: po/gladestr.h:37
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Nastavení ve sloupcích M až Q (-5 až +5)"
+
+#: po/gladestr.h:38
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Nastavení ve sloupcích O až T (-2 až +2)"
+
+#: po/gladestr.h:39
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Nastavení ve sloupcích P až T (-5 až +5)"
+
+#: po/gladestr.h:40
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Nastavení ve sloupcích Q a R (-4 až +4)"
+
+#: po/gladestr.h:41
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Nastavení ve sloupcích U a V (-2 až +2)"
+
+#: po/gladestr.h:42
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Nastavení ve sloupcích U a V (-3 až +3)"
+
+#: po/gladestr.h:43
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Nastavení ve sloupcích W a X (-3 až +3)"
+
+#: po/gladestr.h:44
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Nastavení ve sloupcích a až e (-2 až +2)"
+
+#: po/gladestr.h:45
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Nastavení ve sloupcích f až j (-2 až +2)"
+
+#: po/gladestr.h:46
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Nastavení ve sloupcích f až k (-2 až +2)"
+
+#: po/gladestr.h:47
+msgid "Align Print Head"
+msgstr "Nastavit tiskovou hlavu"
+
+#: po/gladestr.h:48
+msgid "Align heads manually"
+msgstr "Nastavit hlavy ručně"
+
+#: po/gladestr.h:49 po/keystr.h:258
+msgid "All Colors"
+msgstr "Všechny barvy"
+
+#: po/gladestr.h:50
+msgid "Amount of Extension:"
+msgstr "Velikost přesahu:"
+
+#: po/gladestr.h:51 po/keystr.h:212
+msgid "Auto"
+msgstr "Automaticky "
+
+#: po/gladestr.h:52
+msgid "Auto Power"
+msgstr "Automatické zapínání/vypínání"
+
+#: po/gladestr.h:53
+msgid "Auto Power Off"
+msgstr "Automatické vypnutí"
+
+#: po/gladestr.h:54
+msgid "Auto Power Off:"
+msgstr "Automatické vypnutí:"
+
+#: po/gladestr.h:55
+msgid "Auto Power On:"
+msgstr "Automatické zapnutí:"
+
+#: po/gladestr.h:56
+msgid "Auto Power Settings"
+msgstr "Nastavení automatického zapínání/vypínání"
+
+#: po/gladestr.h:57 po/keystr.h:130
+msgid "Automatic Duplex Printing"
+msgstr "Automatický oboustranný tisk"
+
+#: po/gladestr.h:58
+msgid "Available Media Types:"
+msgstr "Dostupné typy médií:"
+
+#: po/gladestr.h:59
+msgid "BJ Cartridge:"
+msgstr "BJ kazeta:"
+
+#: po/gladestr.h:60
+msgid "Back to Setup"
+msgstr "Zpět k nastavení"
+
+#: po/gladestr.h:61 po/keystr.h:246
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Oboustranné nastavení (-5 až +5)"
+
+#: po/gladestr.h:62 po/keystr.h:260
+msgid "Black"
+msgstr "Černá"
+
+#: po/gladestr.h:63
+msgid "Black Ink Tank"
+msgstr "Nádržka s černým inkoustem"
+
+#: po/gladestr.h:64
+msgid "Borderless Printing"
+msgstr "Tisk bez ohraničení"
+
+#: po/gladestr.h:65
+msgid "Bottom Plate Cleaning"
+msgstr "Čištění spodní desky"
+
+#: po/gladestr.h:66
+msgid "Brightness:"
+msgstr "Jas:"
+
+#: po/gladestr.h:67 po/keystr.h:225
+msgid "Cancel"
+msgstr "Storno"
+
+#: po/gladestr.h:68
+msgid ""
+"Canon Inkjet Printer Driver Ver.3.00 for Linux\n"
+"Copyright CANON INC. 2001-2008\n"
+"All Rights Reserved. "
+msgstr ""
+
+#: po/gladestr.h:71 po/keystr.h:120
+msgid "Cassette"
+msgstr "Kazeta"
+
+#: po/gladestr.h:72
+msgid "Centering"
+msgstr "Střed"
+
+#: po/gladestr.h:73
+msgid "Change"
+msgstr "Změnit"
+
+#: po/gladestr.h:74
+msgid "Change Combination"
+msgstr "Změnit kombinaci"
+
+#: po/gladestr.h:75
+msgid "Change Media Type"
+msgstr "Změnit typ média"
+
+#: po/gladestr.h:76
+msgid "Cleaning"
+msgstr "Čištění"
+
+#: po/gladestr.h:77
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Klepnutím na tlačítko Změnit použijte tuto kombinaci nebo klepnutím na možnost \n"
+"Zpět k nastavení vyberte jinou kombinaci."
+
+#: po/gladestr.h:78
+msgid "Collate"
+msgstr "Kompletovat"
+
+#: po/gladestr.h:79 po/keystr.h:59 po/keystr.h:264
+msgid "Color"
+msgstr "Barva"
+
+#: po/gladestr.h:80
+msgid "Color Balance"
+msgstr "Vyvážení barev"
+
+#: po/gladestr.h:81
+msgid "Color Ink Tank"
+msgstr "Nádržka s barevným inkoustem"
+
+#: po/gladestr.h:82
+msgid "Color Mode:"
+msgstr "Barevný režim:"
+
+#: po/gladestr.h:83
+msgid "Color/Intensity:"
+msgstr "Barva / Intenzita:"
+
+#: po/gladestr.h:84
+msgid "Column A:"
+msgstr "Sloupec A:"
+
+#: po/gladestr.h:85
+msgid "Column B:"
+msgstr "Sloupec B:"
+
+#: po/gladestr.h:86
+msgid "Column C:"
+msgstr "Sloupec C:"
+
+#: po/gladestr.h:87
+msgid "Column D:"
+msgstr "Sloupec D:"
+
+#: po/gladestr.h:88
+msgid "Column E:"
+msgstr "Sloupec E:"
+
+#: po/gladestr.h:89
+msgid "Column F:"
+msgstr "Sloupec F:"
+
+#: po/gladestr.h:90
+msgid "Column G:"
+msgstr "Sloupec G:"
+
+#: po/gladestr.h:91
+msgid "Column H:"
+msgstr "Sloupec H:"
+
+#: po/gladestr.h:92
+msgid "Column I:"
+msgstr "Sloupec I:"
+
+#: po/gladestr.h:93
+msgid "Column J:"
+msgstr "Sloupec J:"
+
+#: po/gladestr.h:94
+msgid "Column K:"
+msgstr "Sloupec K:"
+
+#: po/gladestr.h:95
+msgid "Column L:"
+msgstr "Sloupec L:"
+
+#: po/gladestr.h:96
+msgid "Column M:"
+msgstr "Sloupec M:"
+
+#: po/gladestr.h:97
+msgid "Column N:"
+msgstr "Sloupec N:"
+
+#: po/gladestr.h:98
+msgid "Column O:"
+msgstr "Sloupec O:"
+
+#: po/gladestr.h:99
+msgid "Column P:"
+msgstr "Sloupec P:"
+
+#: po/gladestr.h:100
+msgid "Column Q:"
+msgstr "Sloupec Q:"
+
+#: po/gladestr.h:101
+msgid "Column R:"
+msgstr "Sloupec R:"
+
+#: po/gladestr.h:102
+msgid "Column S:"
+msgstr "Sloupec S:"
+
+#: po/gladestr.h:103
+msgid "Column T:"
+msgstr "Sloupec T:"
+
+#: po/gladestr.h:104
+msgid "Column U:"
+msgstr "Sloupec U:"
+
+#: po/gladestr.h:105
+msgid "Column V:"
+msgstr "Sloupec V:"
+
+#: po/gladestr.h:106
+msgid "Column W:"
+msgstr "Sloupec W:"
+
+#: po/gladestr.h:107
+msgid "Column X:"
+msgstr "Sloupec X:"
+
+#: po/gladestr.h:108
+msgid "Column a:"
+msgstr "Sloupec a:"
+
+#: po/gladestr.h:109
+msgid "Column b:"
+msgstr "Sloupec b:"
+
+#: po/gladestr.h:110
+msgid "Column c:"
+msgstr "Sloupec c:"
+
+#: po/gladestr.h:111
+msgid "Column d:"
+msgstr "Sloupec d:"
+
+#: po/gladestr.h:112
+msgid "Column e:"
+msgstr "Sloupec e:"
+
+#: po/gladestr.h:113
+msgid "Column f:"
+msgstr "Sloupec f:"
+
+#: po/gladestr.h:114
+msgid "Column g:"
+msgstr "Sloupec g:"
+
+#: po/gladestr.h:115
+msgid "Column h:"
+msgstr "Sloupec h:"
+
+#: po/gladestr.h:116
+msgid "Column i:"
+msgstr "Sloupec i:"
+
+#: po/gladestr.h:117
+msgid "Column j:"
+msgstr "Sloupec j:"
+
+#: po/gladestr.h:118
+msgid "Column k:"
+msgstr "Sloupec k:"
+
+#: po/gladestr.h:119
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#: po/gladestr.h:120
+msgid "Copies:"
+msgstr "Počet kopií:"
+
+#: po/gladestr.h:121
+msgid "Custom"
+msgstr "Uživatelská"
+
+#: po/gladestr.h:122
+msgid "Custom Paper Size"
+msgstr "Uživatelská velikost papíru"
+
+#: po/gladestr.h:123
+msgid "Custom Settings"
+msgstr "Uživatelská nastavení"
+
+#: po/gladestr.h:124
+msgid "Dark "
+msgstr "Tmavý "
+
+#: po/gladestr.h:125
+msgid "Deep Cleaning"
+msgstr "Hloubkové čištění"
+
+#: po/gladestr.h:126
+msgid "Defaults"
+msgstr "Výchozí"
+
+#: po/gladestr.h:127
+msgid "Diffusion"
+msgstr "Difúze"
+
+#: po/gladestr.h:128
+msgid "Display low ink warning"
+msgstr "Zobrazit varování při nízké hladině inkoustu"
+
+#: po/gladestr.h:129
+msgid "Dither"
+msgstr "Ditrování"
+
+#: po/gladestr.h:130
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce G až L zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:133
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce H až O zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:136
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce M až R zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:139
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce P až V zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:142
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce O až V zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#: po/gladestr.h:145
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce M a N zadejte čísla \n"
+"nejzarovnanějších vzorků."
+
+#: po/gladestr.h:147
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce a až j zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#: po/gladestr.h:149
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce a až k zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#: po/gladestr.h:151
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce H až Q zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:153
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce L a M zadejte číslo \n"
+"vzorku, který je nejlépe vyhlazený a nemá v oblastech označených šipkami žádné \n"
+"pruhy."
+
+#: po/gladestr.h:156
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce W a X zadejte číslo \n"
+"vzorku, který je nejlépe vyhlazený a nemá v oblastech označených šipkami žádné \n"
+"pruhy."
+
+#: po/gladestr.h:159
+msgid "Execute"
+msgstr "Provést"
+
+#: po/gladestr.h:160
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až F zadejte číslo vzorku, který obsahuje nejméně viditelné proužky. "
+
+#: po/gladestr.h:163
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až G zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:166
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až K zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:169
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až L zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:172
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až N zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#: po/gladestr.h:175
+msgid ""
+"Executes Bottom Plate Cleaning.\n"
+"\n"
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half. Unfold the paper, and load "
+"the paper into \n"
+"the sheet feeder with the ridge of the crease facing down. Then click "
+"Execute."
+msgstr ""
+
+#: po/gladestr.h:180
+msgid "Exit"
+msgstr "Konec"
+
+#: po/gladestr.h:181
+msgid "Fast"
+msgstr "Rychlý"
+
+#: po/gladestr.h:182 po/keystr.h:195
+msgid "Fine"
+msgstr "Jemný"
+
+#: po/gladestr.h:183
+msgid "Grayscale Printing"
+msgstr "Tisk v odstínech šedi"
+
+#: po/gladestr.h:184
+msgid "Halftoning:"
+msgstr "Polotóny:"
+
+#: po/gladestr.h:185
+msgid "Height:     "
+msgstr "Výška:    "
+
+#: po/gladestr.h:186
+msgid "High"
+msgstr "Vysoká"
+
+#: po/gladestr.h:187
+msgid "High "
+msgstr "Vysoký "
+
+#: po/gladestr.h:188
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Horizontální nastavení (-3 až +7)"
+
+#: po/gladestr.h:189
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute Deep Cleaning."
+msgstr ""
+
+#: po/gladestr.h:196 po/keystr.h:229
+msgid "Ignore"
+msgstr "Ignorovat"
+
+#: po/gladestr.h:197
+msgid "Ink Cartridge Settings"
+msgstr "Nastavení inkoustové kazety"
+
+#: po/gladestr.h:198
+msgid "Ink Cartridge:"
+msgstr "Inkoustová kazeta:"
+
+#: po/gladestr.h:199
+msgid "Ink Counter Reset"
+msgstr "Vynulování počítadla inkoustu"
+
+#: po/gladestr.h:200
+msgid "Ink Drying Wait Time:"
+msgstr "Doba čekání na zaschnutí inkoustu:"
+
+#: po/gladestr.h:201
+msgid "Intensity:"
+msgstr "Intenzita:"
+
+#: po/gladestr.h:202
+msgid "Light "
+msgstr "Světlý "
+
+#: po/gladestr.h:203
+msgid "Long"
+msgstr "Dlouhá"
+
+#: po/gladestr.h:204
+msgid "Long-side stapling"
+msgstr "Sešití na delší straně"
+
+#: po/gladestr.h:205
+msgid "Low"
+msgstr "Nízký"
+
+#: po/gladestr.h:206
+msgid "Low Ink Warning Setting"
+msgstr "Nastavení varování při nízké hladině inkoustu"
+
+#: po/gladestr.h:207
+msgid "Main"
+msgstr "Hlavní"
+
+#: po/gladestr.h:208
+msgid "Maintenance"
+msgstr "Údržba"
+
+#: po/gladestr.h:209
+msgid "Manual"
+msgstr "Ručně"
+
+#: po/gladestr.h:210
+msgid "Manual Color Adjustment"
+msgstr "Ruční nastavení barev"
+
+#: po/gladestr.h:211
+msgid "Max"
+msgstr "Max."
+
+#: po/gladestr.h:212
+msgid "Media Type:"
+msgstr "Typ média:"
+
+#: po/gladestr.h:213
+msgid "Min"
+msgstr "Min."
+
+#: po/gladestr.h:214
+msgid "Nozzle Check"
+msgstr "Kontrola trysek"
+
+#: po/gladestr.h:215 po/keystr.h:224
+msgid "OK"
+msgstr "OK"
+
+#: po/gladestr.h:216
+msgid "Page Layout:"
+msgstr "Rozvržení stránky:"
+
+#: po/gladestr.h:217
+msgid "Page Setup"
+msgstr "Vzhled stránky"
+
+#: po/gladestr.h:218
+msgid "Page Size:"
+msgstr "Velikost stránky:"
+
+#: po/gladestr.h:219
+msgid "Paper Gap:"
+msgstr "Otvor pro papír:"
+
+#: po/gladestr.h:220
+msgid "Paper Size"
+msgstr "Velikost papíru"
+
+#: po/gladestr.h:221
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Nastavení zdroje papíru pro běžný papír"
+
+#: po/gladestr.h:222
+msgid "Paper Source:"
+msgstr "Zdroj papíru:"
+
+#: po/gladestr.h:223
+msgid "Pattern Check"
+msgstr "Kontrola vzorku"
+
+#: po/gladestr.h:224
+msgid "Pause Page"
+msgstr "Pozastavit stránku"
+
+#: po/gladestr.h:225
+msgid "Pause Scan"
+msgstr "Pozastavit skenování"
+
+#: po/gladestr.h:226
+msgid "Power Off"
+msgstr "Vypnout"
+
+#: po/gladestr.h:227
+msgid "Prevent paper abrasion"
+msgstr "Zamezit otěru papíru"
+
+#: po/gladestr.h:228
+msgid "Print Alignment Value"
+msgstr "Tisknout hodnotu zarovnání"
+
+#: po/gladestr.h:229
+msgid "Print Check Pattern"
+msgstr "Tisk testovacího vzorku"
+
+#: po/gladestr.h:230
+msgid "Print Head Alignment"
+msgstr "Nastavení tiskové hlavy"
+
+#: po/gladestr.h:231
+msgid "Print Head Cleaning"
+msgstr "Čištění tiskové hlavy"
+
+#: po/gladestr.h:232
+msgid "Print Quality:"
+msgstr "Kvalita tisku:"
+
+#: po/gladestr.h:233
+msgid "Print Type:"
+msgstr "Typ tisku:"
+
+#: po/gladestr.h:234
+msgid "Print from Last Page"
+msgstr "Tisk od poslední stránky"
+
+#: po/gladestr.h:235
+msgid "Quality:"
+msgstr "Kvalita:"
+
+#: po/gladestr.h:236
+msgid "Quiet Mode"
+msgstr "Tichý režim"
+
+#: po/gladestr.h:237
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Podrobné informace o varování při nízké hladině inkoustu naleznete v příručce \n"
+"tiskárny."
+
+#: po/gladestr.h:238 po/keystr.h:113
+msgid "Rear Tray"
+msgstr "Zadní přihrádka"
+
+#: po/gladestr.h:239
+msgid "Roller Cleaning"
+msgstr "Čištění kladek"
+
+#: po/gladestr.h:240
+msgid "Scaling:"
+msgstr "Měřítko:"
+
+#: po/gladestr.h:241
+msgid "Select the ink cartridge for printing."
+msgstr "Vyberte kazetu s inkoustem pro tisk."
+
+#: po/gladestr.h:242
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Vyberte nově vyměněnou nádržku a klepněte na tlačítko Provést.\n"
+
+#: po/gladestr.h:244
+msgid "Send"
+msgstr "Odeslat"
+
+#: po/gladestr.h:245
+msgid "Short"
+msgstr "Krátká"
+
+#: po/gladestr.h:246
+msgid "Short-side stapling"
+msgstr "Sešití na kratší straně"
+
+#: po/gladestr.h:247 po/keystr.h:63
+msgid "Standard"
+msgstr "Standardní"
+
+#: po/gladestr.h:248
+msgid "Staple Side:"
+msgstr "Sešívaná strana:"
+
+#: po/gladestr.h:249
+msgid "Start Print Head Alignment"
+msgstr "Spustit nastavení tiskové hlavy"
+
+#: po/gladestr.h:250
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires a sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Spouští se čištění spodní desky, které zabraňuje rozmazání inkoustu po papíru \n"
+"během tisku.\n"
+"\n"
+"Tato operace vyžaduje list běžného papíru velikosti A4 nebo Letter. Podle \n"
+"těchto pokynů proveďte čištění spodní desky."
+
+#: po/gladestr.h:253
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Počítadlo příslušné vyměněné nádržky s inkoustem bude ukazovat plnou nádržku. \n"
+"Tento úkon zajistí správné zobrazení varování o docházejícím inkoustu."
+
+#: po/gladestr.h:256
+msgid "The following is recommended:"
+msgstr "Doporučení:"
+
+#: po/gladestr.h:257
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Trysky tiskových hlav nejsou ucpané.\n"
+"Pokud se vytištěný vzorek podobá tomuto \n"
+"vzorku, můžete tiskárnu použít ihned.\n"
+"Klepněte na tlačítko Konec."
+
+#: po/gladestr.h:261
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Chcete-li zajistit správné zobrazení varování při nízké hladině inkoustu, \n"
+"musíte postupovat následovně:\n"
+
+#: po/gladestr.h:264
+msgid "Units:"
+msgstr "Jednotky:"
+
+#: po/gladestr.h:265
+msgid "Use quiet mode"
+msgstr "Použít tichý režim"
+
+#: po/gladestr.h:266
+msgid "Using AC Adapter:"
+msgstr "Použití síťového adaptéru:"
+
+#: po/gladestr.h:267
+msgid "Using Battery:"
+msgstr "Použití baterie:"
+
+#: po/gladestr.h:268
+msgid "View Printer Status..."
+msgstr "Zobrazit stav tiskárny..."
+
+#: po/gladestr.h:269
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#: po/gladestr.h:270
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Po každé výměně nádržky s inkoustem za novou klepněte na tlačítko Vynulování \n"
+"počitadla inkoustu na kartě Údržba v ovladači tiskárny a vyberte novou nádržku."
+
+#: po/gladestr.h:273
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Který z následujících vzorků se nejvíce podobá vytištěnému vzorku?"
+
+#: po/gladestr.h:274
+msgid "Width:    "
+msgstr "Šířka:    "
+
+#: po/gladestr.h:275
+msgid "You cannot print with the following combination:"
+msgstr "S následující kombinací nelze tisknout:"
+
+#: po/gladestr.h:276
+msgid "You have selected the following combination:"
+msgstr "Byla vybrána následující kombinace:"
+
+#: po/gladestr.h:277
+msgid "inch"
+msgstr "palec"
+
+#: po/gladestr.h:278
+msgid "mm"
+msgstr "mm"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/keystr.h:7
+msgid "BJF850"
+msgstr ""
+
+#: po/keystr.h:8
+msgid "BJF860"
+msgstr ""
+
+#: po/keystr.h:9
+msgid "BJF870"
+msgstr ""
+
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#: po/keystr.h:11
+msgid "BJS600"
+msgstr ""
+
+#: po/keystr.h:12
+msgid "BJS630"
+msgstr ""
+
+#: po/keystr.h:13
+msgid "BJS6300"
+msgstr ""
+
+#: po/keystr.h:14
+msgid "BJF900"
+msgstr ""
+
+#: po/keystr.h:15
+msgid "BJF9000"
+msgstr ""
+
+#: po/keystr.h:16
+msgid "BJS500"
+msgstr ""
+
+#: po/keystr.h:17
+msgid "BJS300"
+msgstr ""
+
+#: po/keystr.h:18
+msgid "PIXUS 550i"
+msgstr ""
+
+#: po/keystr.h:19
+msgid "PIXUS 850i"
+msgstr ""
+
+#: po/keystr.h:20
+msgid "PIXUS 950i"
+msgstr ""
+
+#: po/keystr.h:21
+msgid "i250"
+msgstr ""
+
+#: po/keystr.h:22
+msgid "i255"
+msgstr ""
+
+#: po/keystr.h:23
+msgid "PIXUS 560i"
+msgstr ""
+
+#: po/keystr.h:24
+msgid "PIXUS 860i"
+msgstr ""
+
+#: po/keystr.h:25
+msgid "PIXUS 990i"
+msgstr ""
+
+#: po/keystr.h:26
+msgid "PIXUS iP3100"
+msgstr ""
+
+#: po/keystr.h:27
+msgid "PIXUS iP4100"
+msgstr ""
+
+#: po/keystr.h:28
+msgid "PIXUS iP8600"
+msgstr ""
+
+#: po/keystr.h:29
+msgid "PIXMA iP1000"
+msgstr ""
+
+#: po/keystr.h:30
+msgid "PIXMA iP1500"
+msgstr ""
+
+#: po/keystr.h:31
+msgid "iP2200"
+msgstr ""
+
+#: po/keystr.h:32
+msgid "iP4200"
+msgstr ""
+
+#: po/keystr.h:33
+msgid "iP6600D"
+msgstr ""
+
+#: po/keystr.h:34
+msgid "iP7500"
+msgstr ""
+
+#: po/keystr.h:35
+msgid "MP500"
+msgstr ""
+
+#: po/keystr.h:36
+msgid "iP3300"
+msgstr ""
+
+#: po/keystr.h:37
+msgid "MP510"
+msgstr ""
+
+#: po/keystr.h:38
+msgid "iP4300"
+msgstr ""
+
+#: po/keystr.h:39
+msgid "MP600"
+msgstr ""
+
+#: po/keystr.h:40
+msgid "MP160"
+msgstr ""
+
+#: po/keystr.h:41
+msgid "iP90"
+msgstr ""
+
+#: po/keystr.h:42
+msgid "iP2500 series"
+msgstr ""
+
+#: po/keystr.h:43
+msgid "iP1800 series"
+msgstr ""
+
+#: po/keystr.h:44
+msgid "MP140 series"
+msgstr ""
+
+#: po/keystr.h:45
+msgid "MP210 series"
+msgstr ""
+
+#: po/keystr.h:46
+msgid "iP3500 series"
+msgstr ""
+
+#: po/keystr.h:47
+msgid "iP4500 series"
+msgstr ""
+
+#: po/keystr.h:48
+msgid "MP610 series"
+msgstr ""
+
+#: po/keystr.h:49
+msgid "MP520 series"
+msgstr ""
+
+#: po/keystr.h:50
+msgid "iP100 series"
+msgstr ""
+
+#: po/keystr.h:51
+msgid "iP2600 series"
+msgstr ""
+
+#: po/keystr.h:52
+msgid "iP3600 series"
+msgstr ""
+
+#: po/keystr.h:53
+msgid "iP4600 series"
+msgstr ""
+
+#: po/keystr.h:54
+msgid "MP630 series"
+msgstr ""
+
+#: po/keystr.h:55
+msgid "MP540 series"
+msgstr ""
+
+#: po/keystr.h:56
+msgid "MP240 series"
+msgstr ""
+
+#: po/keystr.h:57
+msgid "MP190 series"
+msgstr ""
+
+#: po/keystr.h:58
+msgid "iP1900 series"
+msgstr ""
+
+#: po/keystr.h:60
+msgid "Grayscale"
+msgstr "Odstíny šedi"
+
+#: po/keystr.h:61
+msgid "Photo"
+msgstr "Fotografická"
+
+#: po/keystr.h:62
+msgid "Graphic"
+msgstr "Grafika "
+
+#: po/keystr.h:64
+msgid "Linear Tone"
+msgstr "Lineární tón"
+
+#: po/keystr.h:65
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Doporučuje se změna z %s na %s."
+
+#: po/keystr.h:66
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Klepněte na Změnit, pokud chcete použít novou kombinaci, Ignorovat, pokud \n"
+"chcete použít stávající kombinaci, nebo Zpět k nastavení, pokud chcete vybrat \n"
+"jinou kombinaci."
+
+#: po/keystr.h:68
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "Doporučujeme změnit nastavení %s."
+
+#: po/keystr.h:69
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Pomocí selektoru zvolte vhodné nastavení a pak klepnutím na tlačítko Změnit \n"
+"použijte novou kombinaci."
+
+#: po/keystr.h:71
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Chcete-li použít aktuální kombinaci, klepněte na tlačítko Ignorovat. Chcete-li \n"
+"vybrat jinou kombinaci, klepněte na tlačítko Zpět k nastavení."
+
+#: po/keystr.h:73
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "Doporučujeme změnit nastavení %s. "
+
+#: po/keystr.h:74
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to use\n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+
+#: po/keystr.h:76
+msgid "Paper Thickness Lever Position:"
+msgstr "Poloha páčky tloušťky papíru:"
+
+#: po/keystr.h:77
+msgid "Paper Thickness Lever Position: "
+msgstr "Poloha páčky tloušťky papíru: "
+
+#: po/keystr.h:78
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Přesuňte páčku pro nastavení tloušťky papíru %s. "
+
+#: po/keystr.h:79
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Přesuňte páčku pro nastavení tloušťky papíru %s."
+
+#: po/keystr.h:80
+msgid "Media Type"
+msgstr "Typ média"
+
+#: po/keystr.h:81
+msgid "Page Size"
+msgstr "Velikost stránky"
+
+#: po/keystr.h:82
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Typ média: %s nelze používat se zvolenou BJ kazetou.\n"
+"Vyberte typ média, který chcete používat."
+
+#: po/keystr.h:84
+msgid "Plain Paper"
+msgstr "Běžný papír"
+
+#: po/keystr.h:85
+msgid "Transparencies"
+msgstr "Fólie"
+
+#: po/keystr.h:86
+msgid "Back Print Film"
+msgstr "Film pro tisk na zadní str."
+
+#: po/keystr.h:87
+msgid "Fabric Sheet"
+msgstr "Textilní list"
+
+#: po/keystr.h:88
+msgid "High Gloss Film"
+msgstr "Vysoce lesklý film"
+
+#: po/keystr.h:89
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: po/keystr.h:90
+msgid "Envelope"
+msgstr "Obálka"
+
+#: po/keystr.h:91
+msgid "Glossy Postcard"
+msgstr "Lesklá pohlednice"
+
+#: po/keystr.h:92
+msgid "High Resolution Paper"
+msgstr "High Resolution Paper"
+
+#: po/keystr.h:93
+msgid "T-Shirt Transfers"
+msgstr "Nažehlovací listy"
+
+#: po/keystr.h:94
+msgid "Thick Paper"
+msgstr ""
+
+#: po/keystr.h:95
+msgid "High Gloss Photo Film"
+msgstr "Vysoce lesklý fotogr. film"
+
+#: po/keystr.h:96
+msgid "Glossy Photo Paper"
+msgstr "Glossy Photo Paper"
+
+#: po/keystr.h:97
+msgid "Glossy Photo Cards"
+msgstr "Lesklý fotografický papír FM"
+
+#: po/keystr.h:98
+msgid "Photo Paper Pro"
+msgstr "Photo Paper Pro"
+
+#: po/keystr.h:99
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#: po/keystr.h:100
+msgid "Matte Photo Paper"
+msgstr "Matte Photo Paper"
+
+#: po/keystr.h:101
+msgid "Photo Paper Plus Glossy"
+msgstr "Photo Paper Plus Glossy"
+
+#: po/keystr.h:102
+msgid "Other Paper"
+msgstr "Jiný papír"
+
+#: po/keystr.h:103
+msgid "Other Photo Paper"
+msgstr "Další fotopapír"
+
+#: po/keystr.h:104
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#: po/keystr.h:105
+msgid "Fine Art Photo Rag"
+msgstr ""
+
+#: po/keystr.h:106
+msgid "Other Fine Art Paper"
+msgstr "Jiný papír Fine Art"
+
+#: po/keystr.h:107
+msgid "Photo Paper Plus Glossy II"
+msgstr "Photo Paper Plus Glossy II"
+
+#: po/keystr.h:108
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "Photo Paper Plus Semi-gloss"
+
+#: po/keystr.h:109
+msgid "Photo Paper Pro Platinum"
+msgstr "Photo Paper Pro Platinum"
+
+#: po/keystr.h:110
+msgid "Photo Paper Pro II"
+msgstr "Photo Paper Pro II"
+
+#: po/keystr.h:111
+msgid "Manual Feed"
+msgstr "Ruční podávání"
+
+#: po/keystr.h:112
+msgid "Auto Sheet Feeder"
+msgstr "Automat. podavač listů"
+
+#: po/keystr.h:114
+msgid "Auto Feeder2"
+msgstr ""
+
+#: po/keystr.h:115
+msgid "Standard Cassette"
+msgstr "Standardní kazeta"
+
+#: po/keystr.h:116
+msgid "Optional Cassette"
+msgstr "Volitelná kazeta"
+
+#: po/keystr.h:117
+msgid "Auto Select"
+msgstr "Automatický výběr"
+
+#: po/keystr.h:118
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#: po/keystr.h:119
+msgid "Tractor Feeder"
+msgstr "Traktorový podavač"
+
+#: po/keystr.h:121
+msgid "Paper Feed Switch"
+msgstr "Přepínač podávání pap."
+
+#: po/keystr.h:122
+msgid "Front Feeder"
+msgstr "Přední podavač"
+
+#: po/keystr.h:123
+msgid "Front Tray"
+msgstr "Přední přihrádka"
+
+#: po/keystr.h:124
+msgid "Front for Plain Paper"
+msgstr "Přední podáv. běž. pap."
+
+#: po/keystr.h:125
+msgid "Front for Plain Paper "
+msgstr "Přední podáv. běž. pap. "
+
+#: po/keystr.h:126
+msgid "Continuous Autofeed"
+msgstr "Souvislé aut. podávání"
+
+#: po/keystr.h:127
+msgid "Automatically Select"
+msgstr "Automaticky vybrat"
+
+#: po/keystr.h:128
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Papír vybrané velikosti nelze použít s aktuálně nastaveným zdrojem papíru.\n"
+"Zdroj papíru byl změněn na %s."
+
+#: po/keystr.h:131
+msgid ""
+"A page size that is not supported by the \n"
+"automatic duplex printing function is selected."
+msgstr ""
+"Je vybrána velikost stránky, která není podporována funkcí automatického \n"
+"oboustranného tisku."
+
+#: po/keystr.h:133
+#, c-format
+msgid "Uncheck %s."
+msgstr "Zrušte zaškrtnutí políčka %s."
+
+#: po/keystr.h:134
+msgid "Paper Source"
+msgstr "Zdroj papíru"
+
+#: po/keystr.h:135
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "Byla vybrána velikost stránky, kterou nelze ze zásobníku podat."
+
+#: po/keystr.h:136
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "Změňte nastavení %s na %s."
+
+#: po/keystr.h:137
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"Zdroj papíru: %s není k dispozici pro vybraný typ média.\n"
+"Nastavení zdroje papíru bylo změněno na %s."
+
+#: po/keystr.h:139
+msgid "Enhanced Black"
+msgstr ""
+
+#: po/keystr.h:140
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#: po/keystr.h:141
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#: po/keystr.h:142
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#: po/keystr.h:143
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#: po/keystr.h:144
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#: po/keystr.h:145
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#: po/keystr.h:146
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#: po/keystr.h:147
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#: po/keystr.h:148
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#: po/keystr.h:149
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#: po/keystr.h:150
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr "Běžná obálka č.10 9.5\"x4.12\" 241.3x104.6mm"
+
+#: po/keystr.h:151
+msgid "DL Env. 220.0x110.0mm"
+msgstr "Obálka DL 220.0x110.0mm"
+
+#: po/keystr.h:152
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#: po/keystr.h:153
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#: po/keystr.h:154
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#: po/keystr.h:155
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#: po/keystr.h:156
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#: po/keystr.h:157
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm "
+
+#: po/keystr.h:158
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:159
+msgid "Custom..."
+msgstr "Uživatelský..."
+
+#: po/keystr.h:160
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr "Běžná obálka č.10 4.12\"x9.5\" 104.6x241.3mm"
+
+#: po/keystr.h:161
+msgid "DL Env. 110.0x220.0mm"
+msgstr "Obálka DL 110.0x220.0mm"
+
+#: po/keystr.h:162
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#: po/keystr.h:163
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#: po/keystr.h:164
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#: po/keystr.h:165
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#: po/keystr.h:166
+msgid "4\"x6\" 10x15cm 101.6x152.4mm"
+msgstr "10x15cm 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:167
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#: po/keystr.h:168
+msgid "5\"x7\" 13x18cm 127.0x177.8mm"
+msgstr "13x18cm 5\"x7\" 127.0x177.8mm"
+
+#: po/keystr.h:169
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#: po/keystr.h:170
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Karta 2.16\"x3.58\" 55.0x91.0mm"
+
+#: po/keystr.h:171
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "Kreditní karta 2.13\"x3.39\" 54.0x86.0mm"
+
+#: po/keystr.h:172
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Jemná grafika A4 210.0x297.0mm"
+
+#: po/keystr.h:173
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#: po/keystr.h:174
+msgid "8\"x10\" 20x25cm 203.2x254.0mm"
+msgstr "20x25cm 8\"x10\" 203.2x254.0mm"
+
+#: po/keystr.h:175
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#: po/keystr.h:176
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#: po/keystr.h:177
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "palce (%s-%s)"
+
+#: po/keystr.h:178
+msgid "Position 1"
+msgstr ""
+
+#: po/keystr.h:179
+msgid "Position 2"
+msgstr ""
+
+#: po/keystr.h:180
+msgid "Position 3"
+msgstr ""
+
+#: po/keystr.h:181 po/keystr.h:188
+msgid "Left"
+msgstr "Vlevo"
+
+#: po/keystr.h:182
+msgid "Center"
+msgstr "Na střed"
+
+#: po/keystr.h:183 po/keystr.h:189
+msgid "Right"
+msgstr "Vpravo"
+
+#: po/keystr.h:184 po/keystr.h:186 po/keystr.h:192
+msgid "Down"
+msgstr "Dolů"
+
+#: po/keystr.h:185 po/keystr.h:187 po/keystr.h:193
+msgid "Up"
+msgstr "Nahoru"
+
+#: po/keystr.h:190
+msgid "Front"
+msgstr ""
+
+#: po/keystr.h:191
+msgid "Back"
+msgstr "Zpět"
+
+#: po/keystr.h:194
+msgid "Smoothing"
+msgstr ""
+
+#: po/keystr.h:196
+msgid "Fine(Fast)"
+msgstr ""
+
+#: po/keystr.h:197
+msgid "Banner Printing"
+msgstr "Tisk transparentu"
+
+#: po/keystr.h:198
+msgid "Color    "
+msgstr ""
+
+#: po/keystr.h:199
+msgid "Black    "
+msgstr "Černá"
+
+#: po/keystr.h:200
+msgid "Photo    "
+msgstr "Fotografická "
+
+#: po/keystr.h:201
+msgid "Black/Color    "
+msgstr "Černá/barevná"
+
+#: po/keystr.h:202
+msgid "Black/Photo    "
+msgstr "Černá/fotografická"
+
+#: po/keystr.h:203
+msgid "Photo/Color    "
+msgstr "Fotografická/barevná"
+
+#: po/keystr.h:204
+msgid "Fit-to-Page Printing"
+msgstr "Tisk přizpůsobený velikosti stránky"
+
+#: po/keystr.h:205
+msgid "Normal-size Printing"
+msgstr "Tisk normální velikosti"
+
+#: po/keystr.h:206
+msgid "Scaled Printing"
+msgstr "Tisk v měřítku"
+
+#: po/keystr.h:207
+msgid "Default"
+msgstr ""
+
+#: po/keystr.h:208
+msgid "More bright (Gamma = 1.0)"
+msgstr "Více jasná (Gamma = 1.0)"
+
+#: po/keystr.h:209
+msgid "Light"
+msgstr "Světlý"
+
+#: po/keystr.h:210
+msgid "Normal"
+msgstr "Normální"
+
+#: po/keystr.h:211
+msgid "Dark"
+msgstr "Tmavý"
+
+#: po/keystr.h:213
+msgid "Wide"
+msgstr "Širokoúhlá"
+
+#: po/keystr.h:214
+msgid "Narrow"
+msgstr "Úzká"
+
+#: po/keystr.h:215
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Byl vybrán tisk bez ohraničení.\n"
+"Tištěný dokument bude zvětšen, takže bude mírně přesahovat přes papír.\n"
+"Kvalita tisku se může zhoršit nebo se list může zabarvit v horní nebo dolní \n"
+"části \n"
+"(v závislosti na typu použitého média)."
+
+#: po/keystr.h:219
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Tisk bez ohraničení se nedoporučuje, pokud je jako Typ média vybrána možnost %s.\n"
+"Vyberte typ média, který chcete používat."
+
+#: po/keystr.h:221
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Tištěný dokument bude zvětšen, takže bude mírně přesahovat přes papír.\n"
+"Kvalita tisku se může zhoršit nebo se list může zabarvit v horní nebo dolní \n"
+"části \n"
+"(v závislosti na typu použitého média)."
+
+#: po/keystr.h:226
+msgid "Yes"
+msgstr "Ano"
+
+#: po/keystr.h:227
+msgid "No"
+msgstr "Ne"
+
+#: po/keystr.h:228
+msgid "Abort"
+msgstr ""
+
+#: po/keystr.h:230
+msgid "Enable"
+msgstr "Povolit"
+
+#: po/keystr.h:231
+msgid "Disable"
+msgstr "Zakázat"
+
+#: po/keystr.h:232
+msgid "5 minutes"
+msgstr "5 minut"
+
+#: po/keystr.h:233
+msgid "10 minutes"
+msgstr "10 minut"
+
+#: po/keystr.h:234
+msgid "15 minutes"
+msgstr "15 minut"
+
+#: po/keystr.h:235
+msgid "30 minutes"
+msgstr "30 minut"
+
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 minut"
+
+#: po/keystr.h:237
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Vytiskly se vzorky správně?\n"
+"\n"
+"Pokud se nevytiskly žádné vzorky nebo pokud je tiskový výstup znatelně \n"
+"rozmazaný, klepněte na tlačítko Ne a začněte znovu od začátku."
+
+#: po/keystr.h:240
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Zkontrolujte, zda je tiskárna zapnuta, zda je kabel správně připojen a zda je \n"
+"tiskárna online. Potom akci opakujte."
+
+#: po/keystr.h:241
+msgid "Print head alignment is now complete."
+msgstr "Nastavení tiskové hlavy je nyní dokončeno."
+
+#: po/keystr.h:242
+msgid "Do not start another operation until the current one has finished."
+msgstr "Nespouštějte další operaci, dokud není dokončena aktuální operace."
+
+#: po/keystr.h:243
+msgid "Turn the printer off?"
+msgstr "Chcete vypnout tiskárnu?"
+
+#: po/keystr.h:244
+msgid "Write settings to printer?"
+msgstr "Zapsat nastavení do tiskárny?"
+
+#: po/keystr.h:245
+msgid "Start print head deep cleaning?"
+msgstr "Chcete spustit hloubkové čištění tiskové hlavy?"
+
+#: po/keystr.h:247
+msgid "Execute black print head deep cleaning?"
+msgstr "Chcete spustit hloubkové čištění černé tiskové hlavy?"
+
+#: po/keystr.h:248
+msgid "Execute color print head deep cleaning?"
+msgstr "Chcete spustit hloubkové čištění barevné tiskové hlavy?"
+
+#: po/keystr.h:249
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve vyjměte z podavače listů veškerý papír. Klepnutím na tlačítko OK se 30x \n"
+"aktivují válečky podavače papíru. Celá akce bude trvat asi minutu a půl. Když \n"
+"vložíte tři listy běžného papíru podle zobrazené zprávy, papír se vysune a \n"
+"čištění válečku podavače bude dokončeno.\n"
+"\n"
+"Chcete spustit čištění válečku podavače?"
+
+#: po/keystr.h:256
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Do podavače listů vložte tři listy běžného papíru.\n"
+
+#: po/keystr.h:257
+msgid "Feed roller cleaning is complete."
+msgstr "Čištění válečků podavače je dokončeno."
+
+#: po/keystr.h:259
+msgid "All Colors   BK, C, M, Y"
+msgstr "Všechny barvy   BK, C, M, Y"
+
+#: po/keystr.h:261
+msgid "Black   3eBK"
+msgstr "Černá   3eBK"
+
+#: po/keystr.h:262
+msgid "Black   PGBK"
+msgstr "Černá   PGBK"
+
+#: po/keystr.h:263
+msgid "Black   BK"
+msgstr "Černá   BK"
+
+#: po/keystr.h:265
+msgid "Color   6C, 6M, 6Y"
+msgstr "Barva   6C, 6M, 6Y"
+
+#: po/keystr.h:266
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Barva   6C, 6M, 6Y, 6BK"
+
+#: po/keystr.h:267
+msgid "Color   7C, 7M, 7Y"
+msgstr "Barva   7C, 7M, 7Y"
+
+#: po/keystr.h:268
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Barva   7C, 7M, 7Y, 7BK"
+
+#: po/keystr.h:269
+msgid "Color   C, M, Y, BK"
+msgstr "Barva C, M, Y, BK"
+
+#: po/keystr.h:270
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Barva   C, M, Y, PC, PM, BK"
+
+#: po/keystr.h:271
+msgid "Color   C, M, Y"
+msgstr "Barva   C, M, Y"
+
+#: po/keystr.h:272
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Skupina 1   6BK, 6R, 6PC, 6PM"
+
+#: po/keystr.h:273
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Skupina 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#: po/keystr.h:274
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Skupina 2   6C, 6M, 6Y"
+
+#: po/keystr.h:275
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Skupina 2   7C, 7M, 7Y"
+
+#: po/keystr.h:276
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Nespouštějte další operaci, dokud čištění neskončí.\n"
+"\n"
+"Po dokončení čištění spusťte kontrolu trysek a zkontrolujte, zda jsou trysky \n"
+"tiskových hlav vyčištěny."
+
+#: po/keystr.h:279
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Vyčistí ucpané trysky tiskové hlavy.\n"
+"\n"
+"Vyberte skupinu inkoustů, pro kterou chcete vyčistit tiskové hlavy. Pokud si \n"
+"nejste jisti, pro kterou skupinu inkoustů je nutné vyčistit tiskové hlavy, \n"
+"proveďte kontrolu trysek."
+
+#: po/keystr.h:283
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Vyčistí trysky tiskové hlavy, které nelze vyčistit běžným čištěním.\n"
+"\n"
+"Vyberte skupinu inkoustů, pro které chcete tiskové hlavy hloubkově vyčistit. \n"
+"Pokud si nejste jisti, pro kterou skupinu inkoustů je nutné tiskové hlavy \n"
+"hloubkově vyčistit, proveďte kontrolu trysek."
+
+#: po/keystr.h:287
+msgid "Ink Group:"
+msgstr "Skupina inkoustů:"
+
+#: po/keystr.h:288
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Hloubkové čištění spotřebuje mnohem více inkoustu než běžné čištění. Spusťte \n"
+"hloubkové čištění, pouze pokud se stav trysek nezlepší po běžném čištění.\n"
+"\n"
+"Po skončení hloubkového čištění spusťte program Kontrola trysek a zkontrolujte, \n"
+"zda jsou trysky tiskových hlav vyčištěny."
+
+#: po/keystr.h:293
+msgid "Cleaning consumes ink."
+msgstr "Při čištění se spotřebovává inkoust."
+
+#: po/keystr.h:294
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Vložte list papíru formátu A4 nebo Letter do zdroje vybraného přepínačem \n"
+"Podávání papíru a klepněte na tlačítko OK.\n"
+
+#: po/keystr.h:295
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Pokud se vytištěný vzorek podobá tomuto \n"
+"vzorku, mohou být trysky tiskových hlav \n"
+"ucpané.\n"
+"Klepněte na tlačítko Čištění.\n"
+"\n"
+"Pokud se vytištěný vzorek nezlepší ani \n"
+"po druhém čištění, spusťte hloubkové \n"
+"čištění."
+
+#: po/keystr.h:302
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Do podavače papíru vložte list papíru velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko OK."
+
+#: po/keystr.h:303
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabely a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do podavače papíru \n"
+"vložte list běžného papíru formátu A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko OK nastavíte polohu tiskové hlavy.\n"
+
+#: po/keystr.h:310
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a zapněte ji), posuňte páčku tloušťky papíru \n"
+"na tiskárně doleva, vložte do podavače list běžného papíru formátu A4 nebo \n"
+"Letter a klepněte na tlačítko Tisk testovacího vzorku.\n"
+
+#: po/keystr.h:314
+msgid "Color Only"
+msgstr "Pouze barevná"
+
+#: po/keystr.h:315
+msgid "Black Only"
+msgstr "Pouze černá"
+
+#: po/keystr.h:316
+msgid "Both Black and Color"
+msgstr "Černá i barevná"
+
+#: po/keystr.h:317
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Tiskne pouze pomocí barevné kazety místo černé kazety."
+
+#: po/keystr.h:319
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Tiskne pouze pomocí černé kazety místo barevné kazety, a to pouze v případě, že \n"
+"je na kartě Hlavní v poli Typ média vybrána možnost Běžný papír."
+
+#: po/keystr.h:322
+msgid "Prints using both black and color cartridges."
+msgstr "Tiskne pomocí černé i barevné kazety."
+
+#: po/keystr.h:323
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Tiskárna zahájí automatické nastavení vytisknutím jednoho listu se vzorky.\n"
+"Nespouštějte další operaci, dokud není dokončena aktuální operace."
+
+#: po/keystr.h:325
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Bude vytištěn druhý list vzorků pro kontrolu nastavení tiskové hlavy.\n"
+"\n"
+"Spusťte tisk klepnutím na tlačítko OK."
+
+#: po/keystr.h:328
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Bude vytištěn třetí list vzorků pro kontrolu nastavení tiskové hlavy.\n"
+"\n"
+"Spusťte tisk klepnutím na tlačítko OK."
+
+#: po/keystr.h:331
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zdroje papíru \n"
+"vybraného přepínačem podávání papíru vložte list běžného papíru velikosti A4 \n"
+"nebo Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:340
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Nastavení tiskové hlavy je dokončeno.\n"
+"Chcete-li dokončit nastavení, klepněte na tlačítko Storno.\n"
+"\n"
+"Pokud se na potištěné straně objevují proužky, můžete zabránit jejich výskytu \n"
+"nastavením tiskové hlavy.\n"
+"Chcete-li provést toto nastavení, vložte do list papíru do podavače listů a \n"
+"klepněte na tlačítko OK."
+
+#: po/keystr.h:345
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a zapněte ji), posuňte páčku tloušťky papíru \n"
+"na tiskárně doleva, vložte list běžného papíru formátu A4 nebo Letter do zdroje \n"
+"vybraného přepínačem podávání papíru a klepněte na tlačítko Tisk testovacího \n"
+"vzorku."
+
+#: po/keystr.h:350
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Do podavače listů vložte list běžného papíru velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko Tisk testovacího vzorku."
+
+#: po/keystr.h:353
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Nastavení tiskové hlavy je dokončeno.\n"
+"Chcete-li dokončit nastavení, klepněte na tlačítko Storno.\n"
+"\n"
+"Pokud se na potištěné straně objevují proužky, můžete zabránit jejich výskytu \n"
+"nastavením tiskové hlavy.\n"
+"Chcete-li provést toto nastavení, vložte list papíru do zdroje vybraného \n"
+"přepínačem podávání papíru a klepněte na tlačítko OK."
+
+#: po/keystr.h:360
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doprava a do podavače listů \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:369
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Pokud se vytištěný vzorek podobá tomuto vzorku, mohou být trysky tiskových hlav \n"
+"ucpané.\n"
+"Klepněte na tlačítko Čištění.\n"
+"\n"
+"Pokud se vytištěný vzorek nezlepší ani po druhém či třetím čištění, spusťte \n"
+"hloubkové čištění."
+
+#: po/keystr.h:376
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Počítadlo inkoustu nelze vynulovat, protože v tiskárně je vypnuto zobrazení \n"
+"varování při nízké hladině inkoustu.\n"
+"\n"
+"Zobrazení varování při nízké hladině inkoustu zapnete klepnutím na tlačítko \n"
+"Nastavení varování při nízké hladině inkoustu na kartě Údržba v ovladači \n"
+"tiskárny.\n"
+"Před provedením této akce si přečtěte uživatelskou příručku k tiskárně."
+
+#: po/keystr.h:381
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve vyjměte ze zadní přihrádky veškerý papír.\n"
+"Klepnutím na tlačítko OK se 30x aktivují válečky podavače papíru. Celá akce \n"
+"bude trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#: po/keystr.h:387
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve stisknutím přepínače podávání papíru vyberte cílový zdroj papíru pro \n"
+"čištění a pak z vybraného zdroje papíru vyjměte papír.\n"
+"Klepnutím na tlačítko OK se 30x aktivují válečky podavače papíru. Celá akce \n"
+"bude trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#: po/keystr.h:394
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Ověřte, že se neozývá provozní hluk tiskárny, a pak vložte do zadní přihrádky \n"
+"tři listy běžného papíru.\n"
+"Klepnutím na tlačítko OK se papír vysune a čištění válečků podavače bude \n"
+"dokončeno."
+
+#: po/keystr.h:396
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Ověřte, že se neozývá provozní hluk tiskárny, a pak vložte do vybraného zdroje \n"
+"papíru tři listy běžného papíru.\n"
+"Klepnutím na tlačítko OK se papír vysune a čištění válečků podavače bude \n"
+"dokončeno."
+
+#: po/keystr.h:398
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Vyjměte papír z podavače listů.\n"
+"2. Přeložte běžný papír velikosti A4 nebo Letter na polovinu a potom ho opět \n"
+"rozložte.\n"
+"3. Do podavače listů vložte papír vnitřní stranou listů směrem nahoru.\n"
+"4. Klepněte na tlačítko Provést."
+
+#: po/keystr.h:402
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Vyjměte papír ze zadní přihrádky.\n"
+"2. Přeložte běžný papír velikosti A4 nebo Letter na polovinu a potom ho opět \n"
+"rozložte.\n"
+"3. Do zadní přihrádky vložte papír vnitřní stranou listů směrem nahoru.\n"
+"4. Klepněte na tlačítko Provést."
+
+#: po/keystr.h:406
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), posuňte páčku nastavení \n"
+"tloušťky papíru doleva, vložte do zadní přihrádky list běžného papíru formátu \n"
+"A4 nebo Letter a klepněte na tlačítko Tisk testovacího vzorku."
+
+#: po/keystr.h:411
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zadní přihrádky \n"
+"vložte dva listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:420
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), do podavače listů vložte list běžného papíru velikosti A4 \n"
+"nebo Letter a klepněte na tlačítko Nastavit tiskovou hlavu. \n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko \n"
+"Odeslat. Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:430
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), do zadní přihrádky vložte dva listy papíru Matte Photo Paper \n"
+"(MP-101) velikosti A4 nebo Letter a klepněte na tlačítko Nastavit tiskovou \n"
+"hlavu. \n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko \n"
+"Odeslat. Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:441
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr ""
+"Do zadní přihrádky vložte list běžného papíru velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko OK."
+
+#: po/keystr.h:442
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Tiskárna zahájí automatické nastavení vytisknutím dvou listů se vzorky.\n"
+"Nespouštějte další operaci, dokud není dokončena aktuální operace."
+
+#: po/keystr.h:444
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zdroje papíru vybraného přepínačem podávání papíru \n"
+"vložte čtyři listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:453
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Bude vytištěn čtvrtý list vzorků pro kontrolu nastavení tiskové hlavy.\n"
+"\n"
+"Spusťte tisk klepnutím na tlačítko OK."
+
+#: po/keystr.h:456
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Vložte list běžného papíru velikosti A4 nebo Letter do zdroje vybraného \n"
+"přepínačem podávání papíru a klepněte na tlačítko Tisk testovacího vzorku."
+
+#: po/keystr.h:460
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zadní přihrádky \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:469
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zdroje papíru vybraného přepínačem podávání papíru \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:478
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Do zadní přihrádky vložte list papíru velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko OK."
+
+#: po/keystr.h:479
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Nastavení tiskové hlavy je dokončeno.\n"
+"Chcete-li dokončit nastavení, klepněte na tlačítko Storno.\n"
+"\n"
+"Pokud se na potištěné straně objevují proužky, můžete zabránit jejich výskytu \n"
+"nastavením tiskové hlavy.\n"
+"Chcete-li provést toto nastavení, vložte do list papíru do zadní přihrádky a \n"
+"klepněte na tlačítko OK."
+
+#: po/keystr.h:484
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zdroje papíru vybraného přepínačem podávání papíru \n"
+"vložte tři listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:493
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do podavače listů \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda trysky tiskových hlav nejsou \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), posuňte páčku tloušťky \n"
+"papíru doprava, do zadní přihrádky vložte list běžného papíru formátu A4 nebo \n"
+"Letter a klepněte na tlačítko Tisk testovacího vzorku."
+
+#: po/keystr.h:506
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Tiskne pouze pomocí černé kazety místo barevné kazety, a to pouze v případě, že \n"
+"je na kartě Hlavní v poli Typ média vybrána možnost Běžný papír, Hagaki nebo \n"
+"Obálka."
+
+#: po/keystr.h:508
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zadní přihrádky \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko OK nastavíte polohu tiskové hlavy."
+
+#: po/keystr.h:515
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doprava a do zadní přihrádky \n"
+"vložte dva listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:524
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click Send. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doprava, do zadní přihrádky \n"
+"vložte list papíru Matte Photo Paper (MP-101) velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko Nastavit tiskovou hlavu. \n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko \n"
+"Odeslat. Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:535
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Vyjměte papír ze zadní přihrádky a pak vložte první list běžného papíru \n"
+"velikosti A4 nebo Letter.\n"
+"2. Přeložte druhý list běžného papíru velikosti A4 nebo Letter na polovinu a \n"
+"potom ho opět rozložte.\n"
+"3. Vložte druhý list před první, a to hřbetem přeložení směrem dolů.\n"
+"4. Klepněte na tlačítko Provést."
+
+#: po/keystr.h:539
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Spouští se čištění spodní desky, které zabraňuje rozmazání inkoustu po papíru \n"
+"během tisku.\n"
+"\n"
+"Tato operace vyžaduje jeden list běžného papíru velikosti A4 nebo Letter. Podle \n"
+"těchto pokynů proveďte čištění spodní desky."
+
+#: po/keystr.h:542
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click Send."
+msgstr ""
+"Pokud je v poli Zdroj papíru vybrána možnost Automaticky vybrat, nastaví zdroj \n"
+"papíru pro běžný papír.\n"
+"\n"
+"Vyberte zdroj papíru pro běžný papír a pak klepněte na tlačítko Odeslat."
+
+#: po/keystr.h:545
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Vyčistí trysky tiskové hlavy, které nelze vyčistit běžným čištěním.\n"
+"\n"
+"Vyberte skupinu inkoustů, pro které chcete tiskové hlavy hloubkově vyčistit. \n"
+"Pokud je ucpaná pouze černá tryska, vyberte možnost Černá. Pokud jsou ucpány \n"
+"pouze barevné trysky nebo černé i barevné trysky, vyberte možnost Všechny \n"
+"barvy. Pokud si nejste jisti, která tryska je ucpaná, proveďte kontrolu trysek.\n"
+
+#: po/keystr.h:550
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Vyberte cílový zdroj papíru pro čištění a pak klepněte na tlačítko OK."
+
+#: po/keystr.h:553
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro zadní přihrádku.\n"
+"\n"
+"Nejprve odeberte papír ze zadní přihrádky a pak otevřete výstupní přihrádku na \n"
+"papír.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#: po/keystr.h:559
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro kazetu.\n"
+"\n"
+"Nejprve odeberte papír z kazety a pak otevřete výstupní přihrádku na papír.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi dvě minuty.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#: po/keystr.h:565
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro zadní přihrádku.\n"
+"\n"
+"Nejprve odeberte papír ze zadní přihrádky.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#: po/keystr.h:571
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro kazetu.\n"
+"\n"
+"Nejprve odeberte papír z kazety.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi dvě minuty.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#: po/keystr.h:577
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Ověřte, že se neozývá provozní hluk tiskárny, a pak do kazety vložte tři listy \n"
+"běžného papíru.\n"
+"Klepnutím na tlačítko OK se papír vysune a čištění válečků podavače bude \n"
+"dokončeno."
+
+#: po/keystr.h:579
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load a sheet of A4 or letter "
+"size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Nejprve vyberte požadovaný zdroj papíru. Potom vložte list běžného papíru \n"
+"velikosti A4 nebo Letter do vybraného zdroje papíru a klepněte na tlačítko Tisk \n"
+"testovacího vzorku."
+
+#: po/keystr.h:583
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), do kazety vložte list \n"
+"běžného papíru velikosti A4 nebo Letter a klepněte na tlačítko Tisk testovacího \n"
+"vzorku."
+
+#: po/keystr.h:587
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který umožňuje zkontrolovat, zda nejsou trysky tiskových hlav \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), do zadní přihrádky \n"
+"vložte list běžného papíru velikosti A4 nebo Letter a klepněte na tlačítko Tisk \n"
+"testovacího vzorku."
+
+#: po/keystr.h:591
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zadní přihrádky vložte dva listy běžného papíru \n"
+"velikosti A4 nebo Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:599
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Při nastavení probíhá tisk. Vyberte požadovaný zdroj papíru a pak klepněte na \n"
+"tlačítko Nastavit tiskovou hlavu."
+
+#: po/keystr.h:602
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:603
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte) a do zadní přihrádky \n"
+"vložte tři listy běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne vzorek nastavení."
+
+#: po/keystr.h:607
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte) a do kazety vložte tři \n"
+"listy běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne vzorek nastavení."
+
+#: po/keystr.h:611
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte) a do zadní přihrádky \n"
+"vložte list běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne aktuální nastavení."
+
+#: po/keystr.h:615
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte) a do kazety vložte list \n"
+"běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne aktuální nastavení."
+
+#: po/keystr.h:619
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Vyberte požadovaný zdroj papíru a pak klepněte na tlačítko OK."
+
+#: po/keystr.h:620
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Do kazety vložte list běžného papíru velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko OK."
+
+#: po/keystr.h:621
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), do zadní přihrádky vložte jeden list papíru Matte Photo \n"
+"Paper (MP-101) velikosti A4 nebo Letter a klepněte na tlačítko Nastavit \n"
+"tiskovou hlavu. \n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko \n"
+"Odeslat. Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#: po/keystr.h:631
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Nastaví možnost Zamezit otěru papíru. Budete-li tisknout s tímto nastavením, \n"
+"může to ovlivnit kvalitu nebo rychlost tisku. Chcete-li změnit toto nastavení, \n"
+"zrušte zaškrtnutí políčka Zamezit otěru papíru."
+
+#: po/keystr.h:633
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Vyčistí trysky tiskové hlavy, které nelze vyčistit běžným čištěním.\n"
+"\n"
+"Hloubkové čištění spotřebuje mnohem více inkoustu než běžné čištění. Spusťte \n"
+"hloubkové čištění, pouze pokud se stav trysek nezlepší po běžném čištění.\n"
+"\n"
+"Po skončení hloubkového čištění spusťte program Kontrola trysek a zkontrolujte, \n"
+"zda jsou trysky tiskových hlav vyčištěny."

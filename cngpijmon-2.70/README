@@ -1,0 +1,37 @@
+cngpijmon --- Status monitor for Canon Inkjet Printer Driver under CUPS.
+
+DESCRIPTION
+    The "cngpijmon" is the status monitoring program for Canon Inkjet
+    Printers under CUPS. You can obtain the printer status, for instance,
+    ink level, paper jam, cover opened, and so on. The only thing you have to
+    do is as following;
+
+        cngpijmon IP3300
+
+        * You can ommit the printer name "IP3300", and the default
+          printer will be used.
+
+    The GUI is shown on the screen, and if you start printing, you can see
+    all printer status on it.
+
+
+REQUIREMENTS
+    You need automake and autoconf to build these programs.
+    * automake                (1.4   or above)
+    * autoconf                (2.13  or above)
+
+    You need the following libraries.
+    * libcups                 (1.1.x or above)
+    * Gtk+                    (1.2.x or above)
+    * libglade                (0.6   or above)
+
+    And you need the following programs.
+    * CUPS                    (1.1.14 or above)
+    * Ghostscript             (5.50   or above)
+    * cnijfilter command set. (2.60   or above)
+       e.g.) cnijfilter-ip4300-2.70-1.i386.rpm
+
+      "cnijfilter command set" is provided by Canon INC.
+
+INSTALLATION
+    See the file "INSTALL"

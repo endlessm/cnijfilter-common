@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2009
+ *  Copyright CANON INC. 2001-2011
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify

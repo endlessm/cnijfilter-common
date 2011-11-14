@@ -1,0 +1,19 @@
+To build and install cngpijmon:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * Execute the following, when autoconf's version is 2.60 or above.
+		  ./autogen.sh --datadir=/usr/local/share --program-suffix=<Printer Model Name>
+
+To build and install cngpijmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            ip2600
+            ip100
+
+Example for building the ip100 cngpijmon with the new automake and autoconf:
+        ./autogen.sh --program-suffix=ip100
+        make
+        make install

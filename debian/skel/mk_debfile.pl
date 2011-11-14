@@ -19,6 +19,7 @@ while( <IN> ){
 			$model = $2;
 			$num = $3;
 			$deco = "cnijfilter-$2-$3";
+			$modeluc = uc $model;
 			printf( "model: %s\n", $2 );
 			printf( "num: %s\n", $3 );
 			# doc file
@@ -29,6 +30,16 @@ while( <IN> ){
 
 			# postrm file
 			`perl -pe 's/XXXX/${deco}/' postrm.skel > cnijfilter-${model}series.postrm`;
+
+			# printui.desktop file
+			`perl -pe 's/YYYY/${modeluc}/' printui.desktop.skel > printui-${model}series.desktop`;
+
+			# cngpijmon.desktop file
+			`perl -pe 's/XXXX/${model}/' cngpijmon.desktop.skel > cngpijmon-${model}series.desktop`;
+			`perl -i -pe 's/YYYY/${modeluc}/' cngpijmon-${model}series.desktop`;
+
+			# install file
+			`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series.install`;
 		}
 	}
 }

@@ -1,0 +1,3255 @@
+# Inkjet Printer Driver Ver.3.00 for Linux
+# Copyright CANON INC. 2001-2008
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.00\n"
+"POT-Creation-Date: 2008-07-24 19:46+0900\n"
+"PO-Revision-Date: 2008-08-21 0:42+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "ko_KR"
+
+
+
+
+
+#: po/gladestr.h:1
+msgid "  Black:"
+msgstr "  블랙:"
+
+#: po/gladestr.h:2
+msgid "  Cyan:"
+msgstr "  시안:"
+
+#: po/gladestr.h:3
+msgid "  Magenta:"
+msgstr "  마젠타:"
+
+#: po/gladestr.h:4
+msgid "  Set...  "
+msgstr "  설정...  "
+
+#: po/gladestr.h:5
+msgid "  Yellow:"
+msgstr "  옐로:"
+
+#: po/gladestr.h:7
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#: po/gladestr.h:8
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:9
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:10
+msgid "0"
+msgstr "0"
+
+#: po/gladestr.h:11
+msgid "1"
+msgstr "1"
+
+#: po/gladestr.h:12
+msgid "2"
+msgstr "2"
+
+#: po/gladestr.h:13
+msgid "3"
+msgstr "3"
+
+#: po/gladestr.h:14
+msgid "4"
+msgstr "4"
+
+#: po/gladestr.h:15
+msgid "5"
+msgstr "5"
+
+#: po/gladestr.h:16
+msgid "About"
+msgstr "정보"
+
+#: po/gladestr.h:17
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "A에서 C까지의 열에서 조절(-3에서 +7)"
+
+#: po/gladestr.h:18
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "A에서 D까지의 열에서 조절(-3에서 +7)"
+
+#: po/gladestr.h:19
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "A에서 E까지의 열에서 조절(-3에서 +7)"
+
+#: po/gladestr.h:20
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "A에서 E까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:21
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "A에서 F까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:22
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "A에서 G까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:23
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "D에서 F까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:24
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "E에서 G까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:25
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "F 및 G 열에서 조절(-3에서 +3)"
+
+#: po/gladestr.h:26
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "F에서 K까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:27
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "G에서 J까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:28
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "G에서 L까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:29
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "H에서 K까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:30
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "H에서 L까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:31
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "H에서 N까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:32
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "K 및 L 열에서 조절(-3에서 +3)"
+
+#: po/gladestr.h:33
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "L 및 M 열에서 조절(-3에서 +3)"
+
+#: po/gladestr.h:34
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "L에서 O까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:35
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "M 및 N 열에서 조절(-2에서 +2)"
+
+#: po/gladestr.h:36
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "M에서 P까지의 열에서 조절(-2에서 +2)"
+
+#: po/gladestr.h:37
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "M에서 Q까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:38
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "O에서 T까지의 열에서 조절(-2에서 +2)"
+
+#: po/gladestr.h:39
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "P에서 T까지의 열에서 조절(-5에서 +5)"
+
+#: po/gladestr.h:40
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Q 및 R 열에서 조절(-4에서 +4)"
+
+#: po/gladestr.h:41
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "U 및 V 열에서 조절(-2에서 +2)"
+
+#: po/gladestr.h:42
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "U 및 V 열에서 조절(-3에서 +3)"
+
+#: po/gladestr.h:43
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "W 및 X 열에서 조절(-3에서 +3)"
+
+#: po/gladestr.h:44
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "a에서 e까지의 열에서 조절(-2에서 +2)"
+
+#: po/gladestr.h:45
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "f에서 j까지의 열에서 조절(-2에서 +2)"
+
+#: po/gladestr.h:46
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "f에서 k까지의 열에서 조절(-2에서 +2)"
+
+#: po/gladestr.h:47
+msgid "Align Print Head"
+msgstr "프린트 헤드 정렬"
+
+#: po/gladestr.h:48
+msgid "Align heads manually"
+msgstr "수동 프린트 헤드 정렬"
+
+#: po/gladestr.h:49 po/keystr.h:258
+msgid "All Colors"
+msgstr "모든 컬러"
+
+#: po/gladestr.h:50
+msgid "Amount of Extension:"
+msgstr "확장량:"
+
+#: po/gladestr.h:51 po/keystr.h:212
+msgid "Auto"
+msgstr "자동 "
+
+#: po/gladestr.h:52
+msgid "Auto Power"
+msgstr "자동 전원"
+
+#: po/gladestr.h:53
+msgid "Auto Power Off"
+msgstr "자동 전원 끄기"
+
+#: po/gladestr.h:54
+msgid "Auto Power Off:"
+msgstr "자동 전원 끄기:"
+
+#: po/gladestr.h:55
+msgid "Auto Power On:"
+msgstr "자동 전원 켜기:"
+
+#: po/gladestr.h:56
+msgid "Auto Power Settings"
+msgstr "자동 전원 설정"
+
+#: po/gladestr.h:57 po/keystr.h:130
+msgid "Automatic Duplex Printing"
+msgstr "자동 양면 인쇄"
+
+#: po/gladestr.h:58
+msgid "Available Media Types:"
+msgstr "사용 가능한 용지 종류:"
+
+#: po/gladestr.h:59
+msgid "BJ Cartridge:"
+msgstr "          "
+
+#: po/gladestr.h:60
+msgid "Back to Setup"
+msgstr "설정으로 돌아가기"
+
+#: po/gladestr.h:61 po/keystr.h:246
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "양방향 정렬 (-5에서 +5)"
+
+#: po/gladestr.h:62 po/keystr.h:260
+msgid "Black"
+msgstr "블랙 "
+
+#: po/gladestr.h:63
+msgid "Black Ink Tank"
+msgstr "블랙 잉크 탱크"
+
+#: po/gladestr.h:64
+msgid "Borderless Printing"
+msgstr "경계면 없는 인쇄"
+
+#: po/gladestr.h:65
+msgid "Bottom Plate Cleaning"
+msgstr "밑판 청소"
+
+#: po/gladestr.h:66
+msgid "Brightness:"
+msgstr "명도:"
+
+#: po/gladestr.h:67 po/keystr.h:225
+msgid "Cancel"
+msgstr "취소"
+
+#: po/gladestr.h:68
+msgid ""
+"Canon Inkjet Printer Driver Ver.3.00 for Linux\n"
+"Copyright CANON INC. 2001-2008\n"
+"All Rights Reserved. "
+msgstr ""
+
+#: po/gladestr.h:71 po/keystr.h:120
+msgid "Cassette"
+msgstr "카세트"
+
+#: po/gladestr.h:72
+msgid "Centering"
+msgstr "가운데"
+
+#: po/gladestr.h:73
+msgid "Change"
+msgstr "변경"
+
+#: po/gladestr.h:74
+msgid "Change Combination"
+msgstr "조합 변경"
+
+#: po/gladestr.h:75
+msgid "Change Media Type"
+msgstr "용지 종류 변경"
+
+#: po/gladestr.h:76
+msgid "Cleaning"
+msgstr "청소"
+
+#: po/gladestr.h:77
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"[변경]을 클릭하여 이 조합을 사용하거나, [설정으로 돌아가기]를 클릭하\n"
+"여 다른 조합을 선택합니다."
+
+#: po/gladestr.h:78
+msgid "Collate"
+msgstr "페이지 나누기"
+
+#: po/gladestr.h:79 po/keystr.h:59 po/keystr.h:264
+msgid "Color"
+msgstr "컬러"
+
+#: po/gladestr.h:80
+msgid "Color Balance"
+msgstr "컬러 균형"
+
+#: po/gladestr.h:81
+msgid "Color Ink Tank"
+msgstr "컬러 잉크 탱크"
+
+#: po/gladestr.h:82
+msgid "Color Mode:"
+msgstr "컬러 모드:"
+
+#: po/gladestr.h:83
+msgid "Color/Intensity:"
+msgstr "컬러/농도:"
+
+#: po/gladestr.h:84
+msgid "Column A:"
+msgstr "열 A:"
+
+#: po/gladestr.h:85
+msgid "Column B:"
+msgstr "열 B:"
+
+#: po/gladestr.h:86
+msgid "Column C:"
+msgstr "열 C:"
+
+#: po/gladestr.h:87
+msgid "Column D:"
+msgstr "열 D:"
+
+#: po/gladestr.h:88
+msgid "Column E:"
+msgstr "열 E:"
+
+#: po/gladestr.h:89
+msgid "Column F:"
+msgstr "열 F:"
+
+#: po/gladestr.h:90
+msgid "Column G:"
+msgstr "열 G:"
+
+#: po/gladestr.h:91
+msgid "Column H:"
+msgstr "열 H:"
+
+#: po/gladestr.h:92
+msgid "Column I:"
+msgstr "열 I:"
+
+#: po/gladestr.h:93
+msgid "Column J:"
+msgstr "열 J:"
+
+#: po/gladestr.h:94
+msgid "Column K:"
+msgstr "열 K:"
+
+#: po/gladestr.h:95
+msgid "Column L:"
+msgstr "열 L:"
+
+#: po/gladestr.h:96
+msgid "Column M:"
+msgstr "열 M:"
+
+#: po/gladestr.h:97
+msgid "Column N:"
+msgstr "열 N:"
+
+#: po/gladestr.h:98
+msgid "Column O:"
+msgstr "열 O:"
+
+#: po/gladestr.h:99
+msgid "Column P:"
+msgstr "열 P:"
+
+#: po/gladestr.h:100
+msgid "Column Q:"
+msgstr "열 Q:"
+
+#: po/gladestr.h:101
+msgid "Column R:"
+msgstr "열 R:"
+
+#: po/gladestr.h:102
+msgid "Column S:"
+msgstr "열 S:"
+
+#: po/gladestr.h:103
+msgid "Column T:"
+msgstr "열 T:"
+
+#: po/gladestr.h:104
+msgid "Column U:"
+msgstr "열 U:"
+
+#: po/gladestr.h:105
+msgid "Column V:"
+msgstr "열 V:"
+
+#: po/gladestr.h:106
+msgid "Column W:"
+msgstr "열 W:"
+
+#: po/gladestr.h:107
+msgid "Column X:"
+msgstr "열 X:"
+
+#: po/gladestr.h:108
+msgid "Column a:"
+msgstr "열 a:"
+
+#: po/gladestr.h:109
+msgid "Column b:"
+msgstr "열 b:"
+
+#: po/gladestr.h:110
+msgid "Column c:"
+msgstr "열 c:"
+
+#: po/gladestr.h:111
+msgid "Column d:"
+msgstr "열 d:"
+
+#: po/gladestr.h:112
+msgid "Column e:"
+msgstr "열 e:"
+
+#: po/gladestr.h:113
+msgid "Column f:"
+msgstr "열 f:"
+
+#: po/gladestr.h:114
+msgid "Column g:"
+msgstr "열 g:"
+
+#: po/gladestr.h:115
+msgid "Column h:"
+msgstr "열 h:"
+
+#: po/gladestr.h:116
+msgid "Column i:"
+msgstr "열 i:"
+
+#: po/gladestr.h:117
+msgid "Column j:"
+msgstr "열 j:"
+
+#: po/gladestr.h:118
+msgid "Column k:"
+msgstr "열 k:"
+
+#: po/gladestr.h:119
+msgid "Contrast:"
+msgstr "대비도:"
+
+#: po/gladestr.h:120
+msgid "Copies:"
+msgstr "매수:"
+
+#: po/gladestr.h:121
+msgid "Custom"
+msgstr "사용자 정의"
+
+#: po/gladestr.h:122
+msgid "Custom Paper Size"
+msgstr "사용자 정의 용지 크기"
+
+#: po/gladestr.h:123
+msgid "Custom Settings"
+msgstr "사용자 정의 설정"
+
+#: po/gladestr.h:124
+msgid "Dark "
+msgstr "진하게 "
+
+#: po/gladestr.h:125
+msgid "Deep Cleaning"
+msgstr "정밀 청소"
+
+#: po/gladestr.h:126
+msgid "Defaults"
+msgstr "기본"
+
+#: po/gladestr.h:127
+msgid "Diffusion"
+msgstr "확산"
+
+#: po/gladestr.h:128
+msgid "Display low ink warning"
+msgstr "잉크 잔량 경고 표시"
+
+#: po/gladestr.h:129
+msgid "Dither"
+msgstr "디더"
+
+#: po/gladestr.h:130
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"인쇄된 패턴을 검사한 후 G에서 L까지의 열에 눈에 띄는 선이 제일 적은\n"
+" 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:133
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"인쇄된 패턴을 검사한 후 H에서 O까지의 열에 눈에 띄는 선이 제일 적은\n"
+" 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:136
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"인쇄된 패턴을 검사한 후 M에서 R까지의 열에 눈에 띄는 선이 제일 적은\n"
+" 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:139
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"인쇄된 패턴을 검사한 후 P에서 V까지의 열에 눈에 띄는 선이 제일 적은\n"
+" 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:142
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"인쇄된 패턴을 검사한 후 O에서 V까지의 열에 가로 줄무늬가 제일 적은 \n"
+"패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:145
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"인쇄된 패턴을 검사한 후 M 및 N 열에 제일 평평한 패턴의 패턴 번호를\n"
+" 입력합니다."
+
+#: po/gladestr.h:147
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"인쇄된 패턴을 검사한 후 a에서 j까지의 열에 가로 줄무늬가 제일 적은 \n"
+"패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:149
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"인쇄된 패턴을 검사한 후 a에서 k까지의 열에 가로 줄무늬가 제일 적은 \n"
+"패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:151
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"인쇄된 패턴을 검사한 후 H에서 Q까지의 열에 눈에 띄는 선이 제일 적은\n"
+" 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:153
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"인쇄된 패턴을 검사한 후 화살표로 표시된 부분에서 가장 부드럽고 줄무늬가\n"
+" 없는 패턴의 번호를 L와 M 열에 입력합니다."
+
+#: po/gladestr.h:156
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"인쇄된 패턴을 검사한 후 W 및 X 열에 화살표로 표시된 부분에서 가장 \n"
+"부드럽고 줄무늬가 없는 패턴의 번호를 입력합니다."
+
+#: po/gladestr.h:159
+msgid "Execute"
+msgstr "실행"
+
+#: po/gladestr.h:160
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"프린트 헤드 정렬을 실행합니다. 인쇄된 패턴을 검사한 후 A에서 F까지의\n"
+" 열에 눈에 띄는 선이 제일 적은 패턴의 패턴 번호를 입력합니다. "
+
+#: po/gladestr.h:163
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"프린트 헤드 정렬을 실행합니다. 인쇄된 패턴을 검사한 후 A에서 G까지의\n"
+" 열에 눈에 띄는 선이 제일 적은 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:166
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"프린트 헤드 정렬을 실행합니다. 인쇄된 패턴을 검사한 후 A에서 K까지의\n"
+" 열에 눈에 띄는 선이 제일 적은 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:169
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"프린트 헤드 정렬을 실행합니다. 인쇄된 패턴을 검사한 후 A에서 L까지의\n"
+" 열에 눈에 띄는 선이 제일 적은 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:172
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"프린트 헤드 정렬을 실행합니다. 인쇄된 패턴을 검사한 후 A에서 N까지의\n"
+" 열에 눈에 띄는 선이 제일 적은 패턴의 패턴 번호를 입력합니다."
+
+#: po/gladestr.h:175
+msgid ""
+"Executes Bottom Plate Cleaning.\n"
+"\n"
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half. Unfold the paper, and load "
+"the paper into \n"
+"the sheet feeder with the ridge of the crease facing down. Then click "
+"Execute."
+msgstr ""
+
+#: po/gladestr.h:180
+msgid "Exit"
+msgstr "끝내기"
+
+#: po/gladestr.h:181
+msgid "Fast"
+msgstr "고속"
+
+#: po/gladestr.h:182 po/keystr.h:195
+msgid "Fine"
+msgstr "고품질 "
+
+#: po/gladestr.h:183
+msgid "Grayscale Printing"
+msgstr "회색톤 인쇄"
+
+#: po/gladestr.h:184
+msgid "Halftoning:"
+msgstr "하프톤:"
+
+#: po/gladestr.h:185
+msgid "Height:     "
+msgstr "높이:    "
+
+#: po/gladestr.h:186
+msgid "High"
+msgstr "고품질"
+
+#: po/gladestr.h:187
+msgid "High "
+msgstr "높음"
+
+#: po/gladestr.h:188
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "가로 방향 정렬 (-3에서 +7)"
+
+#: po/gladestr.h:189
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute Deep Cleaning."
+msgstr ""
+
+#: po/gladestr.h:196 po/keystr.h:229
+msgid "Ignore"
+msgstr "무시"
+
+#: po/gladestr.h:197
+msgid "Ink Cartridge Settings"
+msgstr "잉크 카트리지 설정"
+
+#: po/gladestr.h:198
+msgid "Ink Cartridge:"
+msgstr "잉크 카트리지:"
+
+#: po/gladestr.h:199
+msgid "Ink Counter Reset"
+msgstr "잉크 카운터 재설정"
+
+#: po/gladestr.h:200
+msgid "Ink Drying Wait Time:"
+msgstr "잉크 말리는 대기 시간:"
+
+#: po/gladestr.h:201
+msgid "Intensity:"
+msgstr "농도:"
+
+#: po/gladestr.h:202
+msgid "Light "
+msgstr "연하게 "
+
+#: po/gladestr.h:203
+msgid "Long"
+msgstr "길게"
+
+#: po/gladestr.h:204
+msgid "Long-side stapling"
+msgstr "긴 면 제본"
+
+#: po/gladestr.h:205
+msgid "Low"
+msgstr "낮음"
+
+#: po/gladestr.h:206
+msgid "Low Ink Warning Setting"
+msgstr "잉크 잔량 경고 설정"
+
+#: po/gladestr.h:207
+msgid "Main"
+msgstr "기본"
+
+#: po/gladestr.h:208
+msgid "Maintenance"
+msgstr "유지 관리"
+
+#: po/gladestr.h:209
+msgid "Manual"
+msgstr "수동"
+
+#: po/gladestr.h:210
+msgid "Manual Color Adjustment"
+msgstr "수동 컬러 조절"
+
+#: po/gladestr.h:211
+msgid "Max"
+msgstr "최대"
+
+#: po/gladestr.h:212
+msgid "Media Type:"
+msgstr "용지 종류:"
+
+#: po/gladestr.h:213
+msgid "Min"
+msgstr "최소"
+
+#: po/gladestr.h:214
+msgid "Nozzle Check"
+msgstr "노즐 점검"
+
+#: po/gladestr.h:215 po/keystr.h:224
+msgid "OK"
+msgstr "확인"
+
+#: po/gladestr.h:216
+msgid "Page Layout:"
+msgstr "페이지 레이아웃:"
+
+#: po/gladestr.h:217
+msgid "Page Setup"
+msgstr "페이지 설정"
+
+#: po/gladestr.h:218
+msgid "Page Size:"
+msgstr "페이지 크기:"
+
+#: po/gladestr.h:219
+msgid "Paper Gap:"
+msgstr "용지 갭:"
+
+#: po/gladestr.h:220
+msgid "Paper Size"
+msgstr "용지 크기"
+
+#: po/gladestr.h:221
+msgid "Paper Source Setting for Plain Paper"
+msgstr "보통 용지의 용지 공급 설정"
+
+#: po/gladestr.h:222
+msgid "Paper Source:"
+msgstr "용지 공급:"
+
+#: po/gladestr.h:223
+msgid "Pattern Check"
+msgstr "패턴 점검"
+
+#: po/gladestr.h:224
+msgid "Pause Page"
+msgstr "페이지 일시 중지"
+
+#: po/gladestr.h:225
+msgid "Pause Scan"
+msgstr "스캔 일시 중지"
+
+#: po/gladestr.h:226
+msgid "Power Off"
+msgstr "전원 끄기"
+
+#: po/gladestr.h:227
+msgid "Prevent paper abrasion"
+msgstr "용지 마손 방지"
+
+#: po/gladestr.h:228
+msgid "Print Alignment Value"
+msgstr "정렬 값 인쇄"
+
+#: po/gladestr.h:229
+msgid "Print Check Pattern"
+msgstr "점검 패턴 인쇄"
+
+#: po/gladestr.h:230
+msgid "Print Head Alignment"
+msgstr "프린트 헤드 정렬"
+
+#: po/gladestr.h:231
+msgid "Print Head Cleaning"
+msgstr "프린트 헤드 청소"
+
+#: po/gladestr.h:232
+msgid "Print Quality:"
+msgstr "인쇄 품질:"
+
+#: po/gladestr.h:233
+msgid "Print Type:"
+msgstr "인쇄 형식:"
+
+#: po/gladestr.h:234
+msgid "Print from Last Page"
+msgstr ""
+"                                        \n"
+"           "
+
+#: po/gladestr.h:235
+msgid "Quality:"
+msgstr "품질:"
+
+#: po/gladestr.h:236
+msgid "Quiet Mode"
+msgstr "음소거 모드"
+
+#: po/gladestr.h:237
+msgid "Read your printer manual for details about low ink warnings."
+msgstr "프린터 안내서의 잉크 잔량 경고에 관한 상세한 설명을 읽어 보십시오."
+
+#: po/gladestr.h:238 po/keystr.h:113
+msgid "Rear Tray"
+msgstr "뒷면 트레이"
+
+#: po/gladestr.h:239
+msgid "Roller Cleaning"
+msgstr "롤러 청소"
+
+#: po/gladestr.h:240
+msgid "Scaling:"
+msgstr "배율:"
+
+#: po/gladestr.h:241
+msgid "Select the ink cartridge for printing."
+msgstr "인쇄에 사용할 잉크 카트리지를 선택합니다."
+
+#: po/gladestr.h:242
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "새로 바꾼 잉크 탱크를 선택하고, [실행] 버튼을 클릭합니다.\n"
+
+#: po/gladestr.h:244
+msgid "Send"
+msgstr "보내기"
+
+#: po/gladestr.h:245
+msgid "Short"
+msgstr "짧게"
+
+#: po/gladestr.h:246
+msgid "Short-side stapling"
+msgstr "짧은 면 제본"
+
+#: po/gladestr.h:247 po/keystr.h:63
+msgid "Standard"
+msgstr "표준"
+
+#: po/gladestr.h:248
+msgid "Staple Side:"
+msgstr "제본 면:"
+
+#: po/gladestr.h:249
+msgid "Start Print Head Alignment"
+msgstr "프린트 헤드 정렬을 시작"
+
+#: po/gladestr.h:250
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires a sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"밑판 청소를 실행하여 인쇄 중 용지가 얼룩지는 것을 방지합니다.\n"
+"\n"
+"이 조작은 A4 또는 Letter 크기의 보통 용지 한 장을 수요합니다.\n"
+" 명령에 따라 밑판 청소를 실행합니다."
+
+#: po/gladestr.h:253
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"방금 바뀌어진 잉크 탱크는 가득 차 있다고 나타날 것입니다. 이 작업은 \n"
+"잉크 잔량 경고 표시가 정상임을 보장합니다."
+
+#: po/gladestr.h:256
+msgid "The following is recommended:"
+msgstr "다음을 권장합니다."
+
+#: po/gladestr.h:257
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"프린트 헤드 노즐이 막히지 않았습니다.\n"
+"인쇄된 패턴이 이 패턴과 비슷하면 프린터를 \n"
+"즉시 사용할 수 있습니다.\n"
+"[끝내기]를 클릭합니다."
+
+#: po/gladestr.h:261
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"잉크 잔량 경고가 정상적으로 나타남을 보장하려면, 다음과 같은 조작이 수\n"
+"요됩니다.\n"
+
+#: po/gladestr.h:264
+msgid "Units:"
+msgstr "단위:"
+
+#: po/gladestr.h:265
+msgid "Use quiet mode"
+msgstr "음소거 모드 사용"
+
+#: po/gladestr.h:266
+msgid "Using AC Adapter:"
+msgstr "AC 어댑터 사용:"
+
+#: po/gladestr.h:267
+msgid "Using Battery:"
+msgstr "배터리 사용:"
+
+#: po/gladestr.h:268
+msgid "View Printer Status..."
+msgstr ""
+"                                        \n"
+"                          "
+
+#: po/gladestr.h:269
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#: po/gladestr.h:270
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"잉크 탱크를 새 것으로 교체한 후에는 언제나 프린터 드라이버의 [유지 관\n"
+"리] 탭에서 [잉크 카운터 재설정] 버튼을 클릭하여 새 잉크 탱크를 선택\n"
+"합니다."
+
+#: po/gladestr.h:273
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "인쇄된 패턴이 아래 패턴들 중의 어느 것과 제일 비슷합니까?"
+
+#: po/gladestr.h:274
+msgid "Width:    "
+msgstr "너비:    "
+
+#: po/gladestr.h:275
+msgid "You cannot print with the following combination:"
+msgstr "다음과 같은 조합으로는 인쇄를 할 수 없습니다."
+
+#: po/gladestr.h:276
+msgid "You have selected the following combination:"
+msgstr "다음과 같은 조합을 선택했습니다."
+
+#: po/gladestr.h:277
+msgid "inch"
+msgstr "in"
+
+#: po/gladestr.h:278
+msgid "mm"
+msgstr "mm"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/keystr.h:7
+msgid "BJF850"
+msgstr ""
+
+#: po/keystr.h:8
+msgid "BJF860"
+msgstr ""
+
+#: po/keystr.h:9
+msgid "BJF870"
+msgstr ""
+
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#: po/keystr.h:11
+msgid "BJS600"
+msgstr ""
+
+#: po/keystr.h:12
+msgid "BJS630"
+msgstr ""
+
+#: po/keystr.h:13
+msgid "BJS6300"
+msgstr ""
+
+#: po/keystr.h:14
+msgid "BJF900"
+msgstr ""
+
+#: po/keystr.h:15
+msgid "BJF9000"
+msgstr ""
+
+#: po/keystr.h:16
+msgid "BJS500"
+msgstr ""
+
+#: po/keystr.h:17
+msgid "BJS300"
+msgstr ""
+
+#: po/keystr.h:18
+msgid "PIXUS 550i"
+msgstr ""
+
+#: po/keystr.h:19
+msgid "PIXUS 850i"
+msgstr ""
+
+#: po/keystr.h:20
+msgid "PIXUS 950i"
+msgstr ""
+
+#: po/keystr.h:21
+msgid "i250"
+msgstr ""
+
+#: po/keystr.h:22
+msgid "i255"
+msgstr ""
+
+#: po/keystr.h:23
+msgid "PIXUS 560i"
+msgstr ""
+
+#: po/keystr.h:24
+msgid "PIXUS 860i"
+msgstr ""
+
+#: po/keystr.h:25
+msgid "PIXUS 990i"
+msgstr ""
+
+#: po/keystr.h:26
+msgid "PIXUS iP3100"
+msgstr ""
+
+#: po/keystr.h:27
+msgid "PIXUS iP4100"
+msgstr ""
+
+#: po/keystr.h:28
+msgid "PIXUS iP8600"
+msgstr ""
+
+#: po/keystr.h:29
+msgid "PIXMA iP1000"
+msgstr ""
+
+#: po/keystr.h:30
+msgid "PIXMA iP1500"
+msgstr ""
+
+#: po/keystr.h:31
+msgid "iP2200"
+msgstr ""
+
+#: po/keystr.h:32
+msgid "iP4200"
+msgstr ""
+
+#: po/keystr.h:33
+msgid "iP6600D"
+msgstr ""
+
+#: po/keystr.h:34
+msgid "iP7500"
+msgstr ""
+
+#: po/keystr.h:35
+msgid "MP500"
+msgstr ""
+
+#: po/keystr.h:36
+msgid "iP3300"
+msgstr ""
+
+#: po/keystr.h:37
+msgid "MP510"
+msgstr ""
+
+#: po/keystr.h:38
+msgid "iP4300"
+msgstr ""
+
+#: po/keystr.h:39
+msgid "MP600"
+msgstr ""
+
+#: po/keystr.h:40
+msgid "MP160"
+msgstr ""
+
+#: po/keystr.h:41
+msgid "iP90"
+msgstr ""
+
+#: po/keystr.h:42
+msgid "iP2500 series"
+msgstr ""
+
+#: po/keystr.h:43
+msgid "iP1800 series"
+msgstr ""
+
+#: po/keystr.h:44
+msgid "MP140 series"
+msgstr ""
+
+#: po/keystr.h:45
+msgid "MP210 series"
+msgstr ""
+
+#: po/keystr.h:46
+msgid "iP3500 series"
+msgstr ""
+
+#: po/keystr.h:47
+msgid "iP4500 series"
+msgstr ""
+
+#: po/keystr.h:48
+msgid "MP610 series"
+msgstr ""
+
+#: po/keystr.h:49
+msgid "MP520 series"
+msgstr ""
+
+#: po/keystr.h:50
+msgid "iP100 series"
+msgstr ""
+
+#: po/keystr.h:51
+msgid "iP2600 series"
+msgstr ""
+
+#: po/keystr.h:52
+msgid "iP3600 series"
+msgstr ""
+
+#: po/keystr.h:53
+msgid "iP4600 series"
+msgstr ""
+
+#: po/keystr.h:54
+msgid "MP630 series"
+msgstr ""
+
+#: po/keystr.h:55
+msgid "MP540 series"
+msgstr ""
+
+#: po/keystr.h:56
+msgid "MP240 series"
+msgstr ""
+
+#: po/keystr.h:57
+msgid "MP190 series"
+msgstr ""
+
+#: po/keystr.h:58
+msgid "iP1900 series"
+msgstr ""
+
+#: po/keystr.h:60
+msgid "Grayscale"
+msgstr "회색조"
+
+#: po/keystr.h:61
+msgid "Photo"
+msgstr "포토"
+
+#: po/keystr.h:62
+msgid "Graphic"
+msgstr "그래픽 "
+
+#: po/keystr.h:64
+msgid "Linear Tone"
+msgstr "연속 색조"
+
+#: po/keystr.h:65
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "%s에서 %s로 변경하기를 추천합니다."
+
+#: po/keystr.h:66
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"[변경]을 클릭하여 새로운 조합을 사용하고, [무시]를 클릭하여 현재 조\n"
+"합을 사용하거나 [설정으로 돌아가기]를 클릭하여 다른 조합을 선택합니다."
+
+#: po/keystr.h:68
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "[%s] 설정 변경을 권장합니다."
+
+#: po/keystr.h:69
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"아래의 선택기를 사용하여 적합한 설정을 선택하고, [변경]을 클릭하여 새\n"
+"로운 조합을 사용합니다."
+
+#: po/keystr.h:71
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"[무시]를 클릭하여 현재 조합을 사용하거나 [설정으로 돌아가기]를 클릭하\n"
+"여 다른 조합을 선택합니다."
+
+#: po/keystr.h:73
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "[%s] 설정 변경을 권장합니다. "
+
+#: po/keystr.h:74
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to use\n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+
+#: po/keystr.h:76
+msgid "Paper Thickness Lever Position:"
+msgstr "용지 두께 레버 위치:"
+
+#: po/keystr.h:77
+msgid "Paper Thickness Lever Position: "
+msgstr "용지 두께 레버 위치: "
+
+#: po/keystr.h:78
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "용지 두께 레버를 %s로 이동시킵니다. "
+
+#: po/keystr.h:79
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "용지 두께 레버를 %s로 이동시킵니다."
+
+#: po/keystr.h:80
+msgid "Media Type"
+msgstr "용지 종류"
+
+#: po/keystr.h:81
+msgid "Page Size"
+msgstr "페이지 크기"
+
+#: po/keystr.h:82
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"용지 종류: %s은 선택된 [BJ 카트리지]와 함께 사용할 수 없습니다.\n"
+"사용할 용지 종류를 선택합니다."
+
+#: po/keystr.h:84
+msgid "Plain Paper"
+msgstr "보통 용지"
+
+#: po/keystr.h:85
+msgid "Transparencies"
+msgstr "백 프린트 필름"
+
+#: po/keystr.h:86
+msgid "Back Print Film"
+msgstr "백 프린트 필름 "
+
+#: po/keystr.h:87
+msgid "Fabric Sheet"
+msgstr "섬유지"
+
+#: po/keystr.h:88
+msgid "High Gloss Film"
+msgstr "고광택 필름"
+
+#: po/keystr.h:89
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: po/keystr.h:90
+msgid "Envelope"
+msgstr "편지 봉투"
+
+#: po/keystr.h:91
+msgid "Glossy Postcard"
+msgstr "광택 엽서"
+
+#: po/keystr.h:92
+msgid "High Resolution Paper"
+msgstr "고해상 용지"
+
+#: po/keystr.h:93
+msgid "T-Shirt Transfers"
+msgstr "티셔츠 전사지"
+
+#: po/keystr.h:94
+msgid "Thick Paper"
+msgstr ""
+
+#: po/keystr.h:95
+msgid "High Gloss Photo Film"
+msgstr "고광택 포토 필름"
+
+#: po/keystr.h:96
+msgid "Glossy Photo Paper"
+msgstr "포토광택지"
+
+#: po/keystr.h:97
+msgid "Glossy Photo Cards"
+msgstr "광택 포토 카드"
+
+#: po/keystr.h:98
+msgid "Photo Paper Pro"
+msgstr "프로포토용지"
+
+#: po/keystr.h:99
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#: po/keystr.h:100
+msgid "Matte Photo Paper"
+msgstr "무광택 포토 용지"
+
+#: po/keystr.h:101
+msgid "Photo Paper Plus Glossy"
+msgstr "포토 플러스 광택지"
+
+#: po/keystr.h:102
+msgid "Other Paper"
+msgstr "다른 용지"
+
+#: po/keystr.h:103
+msgid "Other Photo Paper"
+msgstr "다른 포토 용지"
+
+#: po/keystr.h:104
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#: po/keystr.h:105
+msgid "Fine Art Photo Rag"
+msgstr ""
+
+#: po/keystr.h:106
+msgid "Other Fine Art Paper"
+msgstr "다른 Fine Art 용지"
+
+#: po/keystr.h:107
+msgid "Photo Paper Plus Glossy II"
+msgstr "포토 플러스 광택지 II"
+
+#: po/keystr.h:108
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "포토 플러스 반광택지"
+
+#: po/keystr.h:109
+msgid "Photo Paper Pro Platinum"
+msgstr "프로 플래티넘 포토 용지"
+
+#: po/keystr.h:110
+msgid "Photo Paper Pro II"
+msgstr "프로포토용지 II"
+
+#: po/keystr.h:111
+msgid "Manual Feed"
+msgstr "수동 공급"
+
+#: po/keystr.h:112
+msgid "Auto Sheet Feeder"
+msgstr "자동 용지 공급기"
+
+#: po/keystr.h:114
+msgid "Auto Feeder2"
+msgstr ""
+
+#: po/keystr.h:115
+msgid "Standard Cassette"
+msgstr "표준 카세트"
+
+#: po/keystr.h:116
+msgid "Optional Cassette"
+msgstr "선택형 카세트"
+
+#: po/keystr.h:117
+msgid "Auto Select"
+msgstr "자동 선택 "
+
+#: po/keystr.h:118
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#: po/keystr.h:119
+msgid "Tractor Feeder"
+msgstr "트랙터 공급기"
+
+#: po/keystr.h:121
+msgid "Paper Feed Switch"
+msgstr "용지 공급 스위치"
+
+#: po/keystr.h:122
+msgid "Front Feeder"
+msgstr "앞면 공급기"
+
+#: po/keystr.h:123
+msgid "Front Tray"
+msgstr "앞면 트레이"
+
+#: po/keystr.h:124
+msgid "Front for Plain Paper"
+msgstr "앞면 공급기로 보통 용지 공급"
+
+#: po/keystr.h:125
+msgid "Front for Plain Paper "
+msgstr "앞면 공급기로 보통 용지 공급 "
+
+#: po/keystr.h:126
+msgid "Continuous Autofeed"
+msgstr "연속 자동 공급"
+
+#: po/keystr.h:127
+msgid "Automatically Select"
+msgstr "자동 선택"
+
+#: po/keystr.h:128
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"선택된 용지 크기는 현재 [용지 공급] 설정에서 사용할 수 없습니다.\n"
+"[용지 공급] 설정이 [%s]로 변경됩니다."
+
+#: po/keystr.h:131
+msgid ""
+"A page size that is not supported by the \n"
+"automatic duplex printing function is selected."
+msgstr "자동 양면 인쇄 기능의 지원을 받지 못하는 페이지 크기가 선택되었습니다."
+
+#: po/keystr.h:133
+#, c-format
+msgid "Uncheck %s."
+msgstr "[%s]의 선택을 취소하십시오."
+
+#: po/keystr.h:134
+msgid "Paper Source"
+msgstr "용지 공급"
+
+#: po/keystr.h:135
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "카세트에서 공급 받을 수 없는 페이지 크기가 선택되었습니다."
+
+#: po/keystr.h:136
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "[%s] 설정을 [%s]로 변경하십시오."
+
+#: po/keystr.h:137
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"용지 공급: [%s]은(는) 선택된 [용지 종류]에 사용될 수 없습니다.\n"
+"[용지 공급]은 이미 [%s](으)로 바뀌어 설정되었습니다."
+
+#: po/keystr.h:139
+msgid "Enhanced Black"
+msgstr ""
+
+#: po/keystr.h:140
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#: po/keystr.h:141
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#: po/keystr.h:142
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#: po/keystr.h:143
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#: po/keystr.h:144
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#: po/keystr.h:145
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#: po/keystr.h:146
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#: po/keystr.h:147
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#: po/keystr.h:148
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#: po/keystr.h:149
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#: po/keystr.h:150
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr ""
+"Comm. 편지 봉투 #10 9.5\"x4.12\" 241.3x104.6\n"
+"mm"
+
+#: po/keystr.h:151
+msgid "DL Env. 220.0x110.0mm"
+msgstr "DL 편지 봉투 220.0x110.0mm"
+
+#: po/keystr.h:152
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#: po/keystr.h:153
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#: po/keystr.h:154
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#: po/keystr.h:155
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#: po/keystr.h:156
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#: po/keystr.h:157
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm"
+
+#: po/keystr.h:158
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:159
+msgid "Custom..."
+msgstr "사용자 정의..."
+
+#: po/keystr.h:160
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr ""
+"Comm. 편지 봉투 #10 4.12\"x9.5\" 104.6x241.3\n"
+"mm"
+
+#: po/keystr.h:161
+msgid "DL Env. 110.0x220.0mm"
+msgstr "DL 편지 봉투 110.0x220.0mm"
+
+#: po/keystr.h:162
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#: po/keystr.h:163
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#: po/keystr.h:164
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#: po/keystr.h:165
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#: po/keystr.h:166
+msgid "4\"x6\" 10x15cm 101.6x152.4mm"
+msgstr "4\"x6\" 10x15cm 101.6x152.4mm"
+
+#: po/keystr.h:167
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#: po/keystr.h:168
+msgid "5\"x7\" 13x18cm 127.0x177.8mm"
+msgstr "5\"x7\" 13x18cm 127.0x177.8mm"
+
+#: po/keystr.h:169
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#: po/keystr.h:170
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Card 2.16\"x3.58\" 55.0x91.0mm"
+
+#: po/keystr.h:171
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "신용카드 2.13\"x3.39\" 54.0x86.0mm"
+
+#: po/keystr.h:172
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Fine Art A4 210.0x297.0mm"
+
+#: po/keystr.h:173
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#: po/keystr.h:174
+msgid "8\"x10\" 20x25cm 203.2x254.0mm"
+msgstr "8\"x10\" 20x25cm 203.2x254.0mm"
+
+#: po/keystr.h:175
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#: po/keystr.h:176
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#: po/keystr.h:177
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "in (%s-%s)"
+
+#: po/keystr.h:178
+msgid "Position 1"
+msgstr ""
+
+#: po/keystr.h:179
+msgid "Position 2"
+msgstr ""
+
+#: po/keystr.h:180
+msgid "Position 3"
+msgstr ""
+
+#: po/keystr.h:181 po/keystr.h:188
+msgid "Left"
+msgstr "왼쪽으로"
+
+#: po/keystr.h:182
+msgid "Center"
+msgstr "가운데"
+
+#: po/keystr.h:183 po/keystr.h:189
+msgid "Right"
+msgstr "오른쪽으로"
+
+#: po/keystr.h:184 po/keystr.h:186 po/keystr.h:192
+msgid "Down"
+msgstr "아래로"
+
+#: po/keystr.h:185 po/keystr.h:187 po/keystr.h:193
+msgid "Up"
+msgstr "위로"
+
+#: po/keystr.h:190
+msgid "Front"
+msgstr ""
+
+#: po/keystr.h:191
+msgid "Back"
+msgstr "뒤로"
+
+#: po/keystr.h:194
+msgid "Smoothing"
+msgstr ""
+
+#: po/keystr.h:196
+msgid "Fine(Fast)"
+msgstr ""
+
+#: po/keystr.h:197
+msgid "Banner Printing"
+msgstr "배너 인쇄"
+
+#: po/keystr.h:198
+msgid "Color    "
+msgstr ""
+
+#: po/keystr.h:199
+msgid "Black    "
+msgstr "블랙"
+
+#: po/keystr.h:200
+msgid "Photo    "
+msgstr "포토 "
+
+#: po/keystr.h:201
+msgid "Black/Color    "
+msgstr "블랙/칼라"
+
+#: po/keystr.h:202
+msgid "Black/Photo    "
+msgstr "블랙/포토"
+
+#: po/keystr.h:203
+msgid "Photo/Color    "
+msgstr "포토/칼라"
+
+#: po/keystr.h:204
+msgid "Fit-to-Page Printing"
+msgstr "페이지 크기에 따라 인쇄"
+
+#: po/keystr.h:205
+msgid "Normal-size Printing"
+msgstr "보통 크기 인쇄"
+
+#: po/keystr.h:206
+msgid "Scaled Printing"
+msgstr "배율 인쇄"
+
+#: po/keystr.h:207
+msgid "Default"
+msgstr ""
+
+#: po/keystr.h:208
+msgid "More bright (Gamma = 1.0)"
+msgstr "더 밝게 하기 (Gamma = 1.0)"
+
+#: po/keystr.h:209
+msgid "Light"
+msgstr "연하게"
+
+#: po/keystr.h:210
+msgid "Normal"
+msgstr "보통 "
+
+#: po/keystr.h:211
+msgid "Dark"
+msgstr "진하게"
+
+#: po/keystr.h:213
+msgid "Wide"
+msgstr "넓음"
+
+#: po/keystr.h:214
+msgid "Narrow"
+msgstr "좁음"
+
+#: po/keystr.h:215
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"[경계면 없는 인쇄]를 선택했습니다.\n"
+"인쇄할 문서가 확대되어 용지 크기를 약간 벗어납니다.\n"
+"사용된 용지 종류에 따라, 인쇄 품질이 떨어지거나 용지의 위와 아랫 부분\n"
+"이 지저분해질 수 있습니다."
+
+#: po/keystr.h:219
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"[용지 종류]가 [%s]로 선택된 경우, [경계면 없는 인쇄]를 사용하지\n"
+" 않기를 권장합니다. \n"
+"사용할 용지 종류를 선택합니다."
+
+#: po/keystr.h:221
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"인쇄할 문서가 확대되어 용지 크기를 약간 벗어납니다.\n"
+"사용된 용지 종류에 따라, 인쇄 품질이 떨어지거나 용지의 위와 아랫 부분\n"
+"이 지저분해질 수 있습니다."
+
+#: po/keystr.h:226
+msgid "Yes"
+msgstr "예 "
+
+#: po/keystr.h:227
+msgid "No"
+msgstr "아니오"
+
+#: po/keystr.h:228
+msgid "Abort"
+msgstr ""
+
+#: po/keystr.h:230
+msgid "Enable"
+msgstr "실행 "
+
+#: po/keystr.h:231
+msgid "Disable"
+msgstr "실행 금지"
+
+#: po/keystr.h:232
+msgid "5 minutes"
+msgstr "5 분"
+
+#: po/keystr.h:233
+msgid "10 minutes"
+msgstr "10 분"
+
+#: po/keystr.h:234
+msgid "15 minutes"
+msgstr "15 분"
+
+#: po/keystr.h:235
+msgid "30 minutes"
+msgstr "30 분"
+
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 분"
+
+#: po/keystr.h:237
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"패턴이 정상적으로 인쇄되었습니까?\n"
+"\n"
+"만일 패턴이 아예 인쇄되지 않았거나, 희미하게 인쇄된 경우, [아니오]를\n"
+" 클릭하고 처음부터 다시 시작합니다."
+
+#: po/keystr.h:240
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"프린터 전원이 켜졌는지, 케이블이 제대로 연결되었는지, 프린터가 온라인 \n"
+"상태인지 확인한 후, 다시 시도합니다."
+
+#: po/keystr.h:241
+msgid "Print head alignment is now complete."
+msgstr "프린트 헤드 정렬이 완료되었습니다."
+
+#: po/keystr.h:242
+msgid "Do not start another operation until the current one has finished."
+msgstr "지금 이 작업을 마치기 전에 다른 작업을 시작하지 마십시오."
+
+#: po/keystr.h:243
+msgid "Turn the printer off?"
+msgstr "프린터를 끄시겠습니까?"
+
+#: po/keystr.h:244
+msgid "Write settings to printer?"
+msgstr "설정을 프린터에 입력하시겠습니까?"
+
+#: po/keystr.h:245
+msgid "Start print head deep cleaning?"
+msgstr "프린트 헤드 정밀 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:247
+msgid "Execute black print head deep cleaning?"
+msgstr "블랙 프린트 헤드 정밀 청소를 실행하시겠습니까?"
+
+#: po/keystr.h:248
+msgid "Execute color print head deep cleaning?"
+msgstr "컬러 프린트 헤드 정밀 청소를 실행하시겠습니까?"
+
+#: po/keystr.h:249
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"용지 공급 롤러를 청소합니다.\n"
+"\n"
+"먼저 용지 공급기로부터 용지를 제거합니다. [확인]을 클릭하면 용지 공급\n"
+" 롤러는 30회 작동합니다. 이 작업을 하는데 약 1분 30초 걸립니다.\n"
+" 메시지에 따라 보통 용지 세 장을 로드하면 용지가 빠져 나오면서 공급 \n"
+"롤러 청소가 완료됩니다.\n"
+"\n"
+"공급 롤러 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:256
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "용지 공급기에 보통 용지 세 장을 로드합니다.\n"
+
+#: po/keystr.h:257
+msgid "Feed roller cleaning is complete."
+msgstr "공급 롤러 청소가 완료되었습니다."
+
+#: po/keystr.h:259
+msgid "All Colors   BK, C, M, Y"
+msgstr "모든 컬러   BK, C, M, Y"
+
+#: po/keystr.h:261
+msgid "Black   3eBK"
+msgstr "블랙   3eBK"
+
+#: po/keystr.h:262
+msgid "Black   PGBK"
+msgstr "블랙   PGBK"
+
+#: po/keystr.h:263
+msgid "Black   BK"
+msgstr "블랙   BK"
+
+#: po/keystr.h:265
+msgid "Color   6C, 6M, 6Y"
+msgstr "컬러   6C, 6M, 6Y"
+
+#: po/keystr.h:266
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "컬러   6C, 6M, 6Y, 6BK"
+
+#: po/keystr.h:267
+msgid "Color   7C, 7M, 7Y"
+msgstr "컬러   7C, 7M, 7Y"
+
+#: po/keystr.h:268
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "컬러   7C, 7M, 7Y, 7BK"
+
+#: po/keystr.h:269
+msgid "Color   C, M, Y, BK"
+msgstr "컬러   C, M, Y, BK"
+
+#: po/keystr.h:270
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "컬러   C, M, Y, PC, PM, BK"
+
+#: po/keystr.h:271
+msgid "Color   C, M, Y"
+msgstr "컬러   C, M, Y"
+
+#: po/keystr.h:272
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "그룹 1   6BK, 6R, 6PC, 6PM"
+
+#: po/keystr.h:273
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "그룹 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#: po/keystr.h:274
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "그룹 2   6C, 6M, 6Y"
+
+#: po/keystr.h:275
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "그룹 2   7C, 7M, 7Y"
+
+#: po/keystr.h:276
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"청소가 끝나기 전에 다른 작업을 시작하지 마십시오.\n"
+"\n"
+"청소 후 노즐 점검을 실행하여 프린트 헤드 노즐의 막힌 부분이 제거되었는\n"
+"지 확인합니다."
+
+#: po/keystr.h:279
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"막힌 프린트 헤드 노즐을 청소합니다.\n"
+"\n"
+"청소하려는 잉크 그룹을 선택합니다. 어느 잉크 그룹을 청소해야 할지 확실\n"
+"하지 않으면 노즐 점검을 실행하십시오."
+
+#: po/keystr.h:283
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"일반 청소로 제거되지 않는 노즐의 막힌 부분을 제거합니다.\n"
+"\n"
+"정밀 청소하려는 잉크 그룹을 선택합니다. 어느 잉크 그룹을 정밀 청소해야\n"
+" 할지 확실하지 않으면 노즐 점검을 실행하십시오."
+
+#: po/keystr.h:287
+msgid "Ink Group:"
+msgstr "잉크 그룹:"
+
+#: po/keystr.h:288
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"정밀 청소는 일반 청소보다 잉크를 많이 더 소모합니다. 일반 청소 후 노\n"
+"즐 상황이 제고되지 않는 경우에만 정밀 청소를 실행합니다.\n"
+"\n"
+"정밀 청소 후 노즐 점검을 실행하여 프린트 헤드 노즐의 막힌 부분이 제거\n"
+"되었는지 확인합니다."
+
+#: po/keystr.h:293
+msgid "Cleaning consumes ink."
+msgstr "청소는 잉크를 소모합니다."
+
+#: po/keystr.h:294
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"[용지 공급 스위치]로 선택한 용지 공급기에 A4 또는 Letter 크기\n"
+"의 용지 한 장을 로드한 후 [확인]을 클릭합니다.\n"
+
+#: po/keystr.h:295
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"인쇄된 패턴이 이 패턴과 비슷하면 프린트 \n"
+"헤드 노즐이 막혔을 수 있습니다.\n"
+"[청소]를 클릭합니다.\n"
+"\n"
+"[청소]를 두 번 실행한 후에도 인쇄된 패턴이 \n"
+"제고되지 않으면 정밀 청소를 실행합니다."
+
+#: po/keystr.h:302
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"용지 공급기에 A4 또는 Letter 크기의 용지 한 장을 로드한 후 [\n"
+"확인]을 클릭합니다."
+
+#: po/keystr.h:303
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터의 용지 두께 레버를 왼쪽으로 이동한 후, 용지 공급기에 A4 \n"
+"또는 Letter 크기의 보통 용지 한 장을 로드합니다. 프린터가 정렬 \n"
+"패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [확인]을 클릭합니다.\n"
+
+#: po/keystr.h:310
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 프린터의 용지 두께 레\n"
+"버를 왼쪽으로 이동한 후, 용지 공급기에 A4 또는 Letter 크기의 \n"
+"보통 용지 한 장을 로드하고 [점검 패턴 인쇄]를 클릭합니다.\n"
+
+#: po/keystr.h:314
+msgid "Color Only"
+msgstr "컬러만 사용"
+
+#: po/keystr.h:315
+msgid "Black Only"
+msgstr "블랙만 사용"
+
+#: po/keystr.h:316
+msgid "Both Black and Color"
+msgstr "블랙과 컬러를 모두 사용"
+
+#: po/keystr.h:317
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "블랙 카트리지 대신 컬러 카트리지만 사용하여 인쇄합니다."
+
+#: po/keystr.h:319
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"[기본] 탭의 [용지 종류]에서 [보통 용지]가 선택되었을 때에만 컬러 \n"
+"카트리지 대신 블랙 카트리지만 사용하여 인쇄합니다."
+
+#: po/keystr.h:322
+msgid "Prints using both black and color cartridges."
+msgstr "블랙 카트리지와 컬러 카트리지를 모두 사용하여 인쇄합니다."
+
+#: po/keystr.h:323
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"프린터가 패턴 한 장을 인쇄하여 정렬을 자동으로 시작합니다.\n"
+"지금 이 작업을 마치기 전에 다른 작업을 시작하지 마십시오."
+
+#: po/keystr.h:325
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"프린트 헤드 정렬 패턴의 두 번째 용지가 인쇄될 것입니다.\n"
+"\n"
+"[확인]을 클릭하여 인쇄를 시작합니다."
+
+#: po/keystr.h:328
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"프린트 헤드 정렬 패턴의 세 번째 용지가 인쇄될 것입니다.\n"
+"\n"
+"[확인]을 클릭하여 인쇄를 시작합니다."
+
+#: po/keystr.h:331
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터의 용지 두께 레버를 왼쪽으로 이동한 후, [용지 공급 스위치]\n"
+"로 선택한 용지 공급기에 A4 또는 Letter 크기의 보통 용지 한 장\n"
+"을 로드합니다. 프린터가 정렬 패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:340
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"프린트 헤드 정렬이 완료되었습니다.\n"
+"정렬을 마치려면, [취소]를 클릭합니다.\n"
+"\n"
+"인쇄 면에 선이 나타나면 프린트 헤드를 정렬하여 선의 출현을 방지할 수 \n"
+"있습니다.\n"
+"계속 정렬하려면 용지 공급기에 용지 한 장을 로드하고 [확인]을 클릭합니\n"
+"다."
+
+#: po/keystr.h:345
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 프린터의 용지 두께 레\n"
+"버를 왼쪽으로 이동한 후, [용지 공급 스위치]로 선택한 용지 공급기에 \n"
+"A4 또는 Letter 크기의 보통 용지 한 장을 로드하고 [점검 패턴 \n"
+"인쇄]를 클릭합니다."
+
+#: po/keystr.h:350
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"용지 공급기에 A4 또는 Letter 크기의 보통 용지 한 장을 로드하고\n"
+" [점검 패턴 인쇄]를 클릭합니다."
+
+#: po/keystr.h:353
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"프린트 헤드 정렬이 완료되었습니다.\n"
+"정렬을 마치려면, [취소]를 클릭합니다.\n"
+"\n"
+"인쇄 면에 선이 나타나면 프린트 헤드를 정렬하여 선의 출현을 방지할 수 \n"
+"있습니다.\n"
+"계속 정렬하려면 [용지 공급 스위치]로 선택한 용지 공급기 안에 용지 한\n"
+" 장을 로드하고 [확인]을 클릭합니다."
+
+#: po/keystr.h:360
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터 용지 두께 레버를 오른쪽으로 이동한 후, 용지 공급기에 A4 \n"
+"또는 Letter 크기의 보통 용지 한 장을 로드합니다. 프린터가 정렬 \n"
+"패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:369
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"인쇄된 패턴이 이 패턴과 비슷하면 프린트 헤드 노즐이 막혔을 수 있습니다\n"
+".\n"
+"[청소]를 클릭합니다.\n"
+"\n"
+"[청소]를 두 세번 실행한 후에도 인쇄된 패턴이 제고되지 않으면 정밀 청\n"
+"소를 실행합니다."
+
+#: po/keystr.h:376
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"프린터에 잉크 잔량 경고 보이지 않기를 설정하였기에 잉크 카운터를 재설정\n"
+" 할 수 없습니다.\n"
+"\n"
+"잉크 잔량 경고 표시를 실행하려면, 프린터 드라이버의 [유지 관리] 탭에\n"
+"서 [잉크 잔량 경고 설정]을 클릭합니다.\n"
+"이 작업을 실행하기 전, 프린터 안내서를 읽어보십시오."
+
+#: po/keystr.h:381
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"용지 공급 롤러를 청소합니다.\n"
+"\n"
+"먼저 뒷면 트레이로부터 용지를 제거합니다.\n"
+"[확인]을 클릭하면 용지 공급 롤러는 30회 작동합니다. 이 작업을 하는\n"
+"데 약 1분 30초 걸립니다.\n"
+"\n"
+"공급 롤러 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:387
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"용지 공급 롤러를 청소합니다.\n"
+"\n"
+"먼저 프린터의 [용지 공급 스위치]를 눌러 청소할 대상 용지 공급기를 선\n"
+"택한 후, 선택한 용지 공급기로부터 용지를 제거합니다.\n"
+"[확인]을 클릭하면 용지 공급 롤러는 30회 작동합니다. 이 작업을 하는\n"
+"데 약 1분 30초 걸립니다.\n"
+"\n"
+"공급 롤러 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:394
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"프린터의 조작 소음이 멈췄는지 확인한 후 뒷면 트레이에 보통 용지 세 장\n"
+"을 로드합니다.\n"
+"[확인]을 클릭하면 용지가 배출되고 공급 롤러 청소가 완료됩니다."
+
+#: po/keystr.h:396
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"프린터의 조작 소음이 멈췄는지 확인한 후 선택한 용지 공급기에 보통 용지\n"
+" 세 장을 로드합니다.\n"
+"[확인]을 클릭하면 용지가 배출되고 공급 롤러 청소가 완료됩니다."
+
+#: po/keystr.h:398
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. 용지 공급기의 용지를 제거합니다.\n"
+"2. A4 또는 Letter 크기의 보통 용지를 반으로 접었다 다시 펼칩\n"
+"니다. \n"
+"3. 접은 자국의 융기선이 아래로 향하게 용지를 용지 공급기에 로드합니다\n"
+".\n"
+"4. [실행]을 클릭합니다."
+
+#: po/keystr.h:402
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. 뒷면 트레이의 용지를 제거합니다.\n"
+"2. A4 또는 Letter 크기의 보통 용지를 반으로 접었다 다시 펼칩\n"
+"니다.\n"
+"3. 접은 자국의 융기선이 아래로 향하게 용지를 뒷면 트레이에 로드합니다\n"
+".\n"
+"4. [실행]을 클릭합니다."
+
+#: po/keystr.h:406
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 프린터의 용지 두께 레\n"
+"버를 왼쪽으로 이동한 후, 뒷면 트레이에 A4 또는 Letter 크기의 \n"
+"보통 용지 한 장을 로드하고 [점검 패턴 인쇄]를 클릭합니다."
+
+#: po/keystr.h:411
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터의 용지 두께 레버를 왼쪽으로 이동한 후, 뒷면 트레이에 A4 \n"
+"또는 Letter 크기의 보통 용지 두 장을 로드합니다. 프린터가 정렬 \n"
+"패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:420
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"자동 프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 용지 공급기에 A4 또는 Letter 크기의 보통 용지 한 장을 로드\n"
+"한 후 [프린트 헤드 정렬]을 클릭합니다. \n"
+"\n"
+"수동 프린트 헤드 정렬을 실행하려면 [취소]를 클릭합니다.\n"
+"그 후 프린터 드라이버의 [유지 관리] 탭에서 [사용자 정의 설정]을 클\n"
+"릭하고, [수동 프린트 헤드 정렬]을 선택한 후 [보내기]를 클릭합니다.\n"
+" 다음 다시 시도해 봅니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:430
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"자동 프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 뒷면 트레이에 A4 또는 Letter 크기의 무광택 포토 용지(MP-\n"
+"101) 두 장을 로드한 후 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"수동 프린트 헤드 정렬을 실행하려면 [취소]를 클릭합니다.\n"
+"그 후 프린터 드라이버의 [유지 관리] 탭에서 [사용자 정의 설정]을 클\n"
+"릭하고, [수동 프린트 헤드 정렬]을 선택한 후 [보내기]를 클릭합니다.\n"
+" 다음 다시 시도해 봅니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:441
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr ""
+"뒷면 트레이에 A4 또는 Letter 크기의 보통 용지 한 장을 로드하고\n"
+" [확인]을 클릭합니다."
+
+#: po/keystr.h:442
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"프린터가 패턴 두 장을 인쇄하여 정렬을 자동으로 시작합니다.\n"
+"지금 이 작업을 마치기 전에 다른 작업을 시작하지 마십시오."
+
+#: po/keystr.h:444
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", [용지 공급 스위치]로 선택한 용지 공급기에 A4 또는 Letter \n"
+"크기의 보통 용지 네 장을 로드합니다. 프린터가 정렬 패턴을 인쇄할 것입\n"
+"니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:453
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"프린트 헤드 정렬 패턴의 네 번째 용지가 인쇄될 것입니다.\n"
+"\n"
+"[확인]을 클릭하여 인쇄를 시작합니다."
+
+#: po/keystr.h:456
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"[용지 공급 스위치]로 선택한 용지 공급기에 A4 또는 Letter 크기\n"
+"의 보통 용지 한 장을 로드하고 [점검 패턴 인쇄]를 클릭합니다."
+
+#: po/keystr.h:460
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터의 용지 두께 레버를 왼쪽으로 이동한 후, 뒷면 트레이에 A4 \n"
+"또는 Letter 크기의 보통 용지 한 장을 로드합니다. 프린터가 정렬 \n"
+"패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:469
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", [용지 공급 스위치]로 선택한 용지 공급기에 A4 또는 Letter \n"
+"크기의 보통 용지 한 장을 로드합니다. 프린터가 정렬 패턴을 인쇄할 것입\n"
+"니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:478
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"뒷면 트레이에 A4 또는 Letter 크기의 용지 한 장을 로드하고 [확\n"
+"인]을 클릭합니다."
+
+#: po/keystr.h:479
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"프린트 헤드 정렬이 완료되었습니다.\n"
+"정렬을 마치려면, [취소]를 클릭합니다.\n"
+"\n"
+"인쇄 면에 선이 나타나면 프린트 헤드를 정렬하여 선의 출현을 방지할 수 \n"
+"있습니다.\n"
+"계속 정렬하려면 뒷면 트레이에 용지 한 장을 로드하고 [확인]을 클릭합니\n"
+"다."
+
+#: po/keystr.h:484
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", [용지 공급 스위치]로 선택한 용지 공급기에 A4 또는 Letter \n"
+"크기의 보통 용지 세 장을 로드합니다. 프린터가 정렬 패턴을 인쇄할 것입\n"
+"니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:493
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터의 용지 두께 레버를 왼쪽으로 이동한 후, 용지 공급기에 A4 \n"
+"또는 Letter 크기의 보통 용지 한 장을 로드합니다. 프린터가 정렬 \n"
+"패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 프린터의 용지 두께 레\n"
+"버를 오른쪽으로 이동한 후, 뒷면 트레이에 A4 또는 Letter 크기의\n"
+" 보통 용지 한 장을 로드하고 [점검 패턴 인쇄]를 클릭합니다."
+
+#: po/keystr.h:506
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"[기본] 탭의 [용지 종류]에서 [보통 용지], [Hagaki], 또는 \n"
+"[편지 봉투]가 선택되었을 때에만 컬러 카트리지 대신 블랙 카트리지만 사\n"
+"용하여 인쇄합니다."
+
+#: po/keystr.h:508
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터의 용지 두께 레버를 왼쪽으로 이동한 후, 뒷면 트레이에 A4 \n"
+"또는 Letter 크기의 보통 용지 한 장을 로드합니다. 프린터가 정렬 \n"
+"패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [확인]을 클릭합니다."
+
+#: po/keystr.h:515
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터 용지 두께 레버를 오른쪽으로 이동한 후, 뒷면 트레이에 A4 \n"
+"또는 Letter 크기의 보통 용지 두 장을 로드합니다. 프린터가 정렬 \n"
+"패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:524
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click Send. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"자동 프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 프린터 용지 두께 레버를 오른쪽으로 이동한 후, 뒷면 트레이에 A4 \n"
+"또는 Letter 크기의 무광택 포토 용지(MP-101) 한 장을 로드한\n"
+" 후 [프린트 헤드 정렬]을 클릭합니다. \n"
+"\n"
+"수동 프린트 헤드 정렬을 실행하려면 [취소]를 클릭합니다.\n"
+"그 후 프린터 드라이버의 [유지 관리] 탭에서 [사용자 정의 설정]을 클\n"
+"릭하고, [수동 프린트 헤드 정렬]을 선택한 후 [보내기]를 클릭합니다.\n"
+" 다음 다시 시도해 봅니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:535
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. 뒷면 트레이의 용지를 제거한 후 첫번째 A4 또는 Letter 크기\n"
+"의 보통 용지를 로드합니다.\n"
+"2. 두번째 A4 또는 Letter 크기의 보통 용지를 반으로 접었다 다\n"
+"시 펼칩니다.\n"
+"3. 접은 자국의 융기선이 아래로 향하게 두번째 용지를 첫번째 용지 앞에\n"
+" 로드합니다.\n"
+"4. [실행]을 클릭합니다."
+
+#: po/keystr.h:539
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"밑판 청소를 실행하여 인쇄 중 용지가 얼룩지는 것을 방지합니다.\n"
+"\n"
+"이 조작은 A4 또는 Letter 크기의 보통 용지 두 장을 수요합니다.\n"
+" 명령에 따라 밑판 청소를 실행합니다."
+
+#: po/keystr.h:542
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click Send."
+msgstr ""
+"[용지 공급]에서 [자동 선택]이 선택되었을 때 보통 용지의 용지 공급을\n"
+" 설정합니다.\n"
+"\n"
+"보통 용지의 용지 공급을 선택한 후 [보내기]를 클릭합니다."
+
+#: po/keystr.h:545
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"일반 청소로 제거되지 않는 노즐의 막힌 부분을 제거합니다.\n"
+"\n"
+"정밀 청소하려는 잉크 그룹을 선택합니다. 블랙 노즐만 막혔으면 [블랙]을\n"
+" 선택합니다. 컬러 노즐만 막혔거나 블랙 및 컬러 노즐이 모두 막혔으면 \n"
+"[모든 컬러]를 선택합니다. 어느 노즐이 막혔는지 확인할 수 없으면 노즐\n"
+" 점검을 실행하십시오.\n"
+
+#: po/keystr.h:550
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"용지 공급 롤러를 청소합니다.\n"
+"\n"
+"청소할 대상 용지 공급기를 선택한 후 [확인]을 클릭합니다."
+
+#: po/keystr.h:553
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"뒷면 트레이의 용지 공급 롤러를 청소합니다.\n"
+"\n"
+"먼저 뒷면 트레이로부터 용지를 제거한 다음 용지 출력 트레이를 엽니다.\n"
+"[확인]을 클릭하면 용지 공급 롤러가 작동합니다. 이 작업을 하는데 약 \n"
+"1분 30초 걸립니다.\n"
+"\n"
+"공급 롤러 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:559
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"카세트의 용지 공급 롤러를 청소합니다.\n"
+"\n"
+"먼저 카세트로부터 용지를 제거한 다음 용지 출력 트레이를 엽니다.\n"
+"[확인]을 클릭하면 용지 공급 롤러가 작동합니다. 이 작업을 하는데 약 \n"
+"2분 걸립니다.\n"
+"\n"
+"공급 롤러 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:565
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"뒷면 트레이의 용지 공급 롤러를 청소합니다.\n"
+"\n"
+"먼저 뒷면 트레이로부터 용지를 제거합니다.\n"
+"[확인]을 클릭하면 용지 공급 롤러가 작동합니다. 이 작업을 하는데 약 \n"
+"1분 30초 걸립니다.\n"
+"\n"
+"공급 롤러 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:571
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"카세트의 용지 공급 롤러를 청소합니다.\n"
+"\n"
+"먼저 카세트로부터 용지를 제거합니다.\n"
+"[확인]을 클릭하면 용지 공급 롤러가 작동합니다. 이 작업을 하는데 약 \n"
+"2분 걸립니다.\n"
+"\n"
+"공급 롤러 청소를 시작하시겠습니까?"
+
+#: po/keystr.h:577
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"프린터의 조작 소음이 멈췄는지 확인한 후 카세트에 보통 용지 세 장을 로\n"
+"드합니다.\n"
+"[확인]을 클릭하면 용지가 배출되고 공급 롤러 청소가 완료됩니다."
+
+#: po/keystr.h:579
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load a sheet of A4 or letter "
+"size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"먼저 사용할 용지 공급기를 선택합니다. 그 다음 선택한 용지 공급기에 A\n"
+"4 또는 Letter 크기의 보통 용지 한 장을 로드하고 [점검 패턴 인\n"
+"쇄]를 클릭합니다."
+
+#: po/keystr.h:583
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 카세트에 A4 또는 L\n"
+"etter 크기의 보통 용지 한 장을 로드하고 [점검 패턴 인쇄]를 클릭\n"
+"합니다."
+
+#: po/keystr.h:587
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"패턴을 인쇄하여 프린트 헤드 노즐이 막혔는지 검사합니다.\n"
+"\n"
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 뒷면 트레이에 A4 또\n"
+"는 Letter 크기의 보통 용지 한 장을 로드하고 [점검 패턴 인쇄]를\n"
+" 클릭합니다."
+
+#: po/keystr.h:591
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 뒷면 트레이에 A4 또는 Letter 크기의 보통 용지 두 장을 로드\n"
+"합니다. 프린터가 정렬 패턴을 인쇄할 것입니다.\n"
+"\n"
+"프린트 헤드 위치를 정렬하려면 [프린트 헤드 정렬]을 클릭합니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:599
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 합니다. 사용할 용지 공급기를 선택한 후 [프린트 헤드 \n"
+"정렬]을 클릭합니다."
+
+#: po/keystr.h:602
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr "현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:603
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 뒷면 트레이에 A4 또\n"
+"는 Letter 크기의 보통 용지 세 장을 로드합니다.\n"
+"\n"
+"[확인]을 클릭하면 정렬 패턴을 인쇄합니다."
+
+#: po/keystr.h:607
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 카세트에 A4 또는 L\n"
+"etter 크기의 보통 용지 세 장을 로드합니다.\n"
+"\n"
+"[확인]을 클릭하면 정렬 패턴을 인쇄합니다."
+
+#: po/keystr.h:611
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 뒷면 트레이에 A4 또\n"
+"는 Letter 크기의 보통 용지 한 장을 로드합니다.\n"
+"\n"
+"[확인]을 클릭하면 현재 설정을 인쇄합니다."
+
+#: po/keystr.h:615
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"프린터를 준비해 놓고(케이블 연결과 전원 켜기), 카세트에 A4 또는 L\n"
+"etter 크기의 보통 용지 한 장을 로드합니다.\n"
+"\n"
+"[확인]을 클릭하면 현재 설정을 인쇄합니다."
+
+#: po/keystr.h:619
+msgid "Select the paper source to be used, and then click OK."
+msgstr "사용할 용지 공급기를 선택한 후 [확인]을 클릭합니다."
+
+#: po/keystr.h:620
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"카세트에 A4 또는 Letter 크기의 보통 용지 한 장을 로드하고 [확\n"
+"인]을 클릭합니다."
+
+#: po/keystr.h:621
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"자동 프린트 헤드 정렬을 시작합니다.\n"
+"\n"
+"정렬 중 인쇄를 하므로, 프린터를 준비해 놓고(케이블 연결과 전원 켜기)\n"
+", 뒷면 트레이에 A4 또는 Letter 크기의 무광택 포토 용지(MP-\n"
+"101) 한 장을 로드한 후 [프린트 헤드 정렬]을 클릭합니다. \n"
+"\n"
+"수동 프린트 헤드 정렬을 실행하려면 [취소]를 클릭합니다.\n"
+"그 후 프린터 드라이버의 [유지 관리] 탭에서 [사용자 정의 설정]을 클\n"
+"릭하고, [수동 프린트 헤드 정렬]을 선택한 후 [보내기]를 클릭합니다.\n"
+" 다음 다시 시도해 봅니다.\n"
+"\n"
+"현재 설정을 인쇄하고 점검하려면 [정렬 값 인쇄]를 클릭합니다."
+
+#: po/keystr.h:631
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"[용지 마손 방지]를 설정합니다. 이 설정을 사용하여 인쇄하면 인쇄 품질\n"
+" 또는 인쇄 속도가 영향 받을 가능성이 있습니다. 설정을 변경하려면 [용\n"
+"지 마손 방지]의 선택을 취소하십시오."
+
+#: po/keystr.h:633
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"일반 청소로 제거되지 않는 노즐의 막힌 부분을 제거합니다.\n"
+"\n"
+"정밀 청소는 일반 청소보다 잉크를 많이 더 소모합니다. 일반 청소 후 노\n"
+"즐 상황이 제고되지 않는 경우에만 정밀 청소를 실행합니다.\n"
+"\n"
+"정밀 청소 후 노즐 점검을 실행하여 프린트 헤드 노즐의 막힌 부분이 제거\n"
+"되었는지 확인합니다."

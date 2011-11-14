@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+MimeType=text/pro
+Name=Printui-IP2500
+Exec=cngpij -PCanon-IP2500
+Icon=printer.png
+Categories=Graphics
+Type=Application
+Terminal=false
+Comment="printui" is a GUI program for Canon Inkjet Printer. You can easily select several parameters for printing.
+

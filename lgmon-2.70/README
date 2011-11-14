@@ -1,0 +1,39 @@
+cnijfilter --- Canon Inkjet Printer Driver for Linux
+
+DESCRIPTION
+    cnijfilter is a filter program for Canon Inkjet Printer.
+
+    cnijfilter has a basic command line interface. You can print
+    a image file directly, and select printing parameters,
+    for example a paper type, paper size, print speed, print quality,
+    color adjustment, etc.
+
+    Additionally cnijfilter has a useful GUI, so you can easily select
+    several parameters for printing.
+
+REQUIREMENTS
+<all>
+    You need automake and autoconf to build programs.
+    * automake  (1.4   or above)
+    * autoconf  (2.13  or above)
+
+<printui>
+    * Gtk+      (1.2.x or above)
+    * libglade  (0.6   or above)
+    * libxml    (1.8.x or above)
+    * libpopt   (1.4   or above)
+    * libcnclui (1.0.x or above)
+
+<stsmon>
+    * Gtk+      (1.2.x or above)
+
+<lgmon>
+
+LANGUAGES SUPPORTED
+    * English, Britain, Czechoslovakian, Danish, German, Spanish, Finnish, 
+      French, Greek, Hungarian, Italian, Dutch, Norwegian, Polish, 
+      Portuguese, Russian, Swedish, Korean, Chinese(Simplified), 
+      Chinese(Traditional), Thai, Turkish, and Japanese.
+
+INSTALLATION
+    See the file "INSTALL"

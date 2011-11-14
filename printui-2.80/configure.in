@@ -1,0 +1,126 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(configure.in)
+AC_ARG_PROGRAM
+
+if test "${program_suffix}" = "NONE"; then
+  program_suffix="ip3500"
+  program_transform_name="s,\$\$,${program_suffix},;"
+fi
+
+AM_INIT_AUTOMAKE(printui${program_suffix}, 2.80-1)
+AM_CONFIG_HEADER(config.h)
+AM_MAINTAINER_MODE
+
+AC_DEFINE([ENABLE_NLS], [], [Description])
+AC_DEFINE([HAVE_LC_MESSAGES], [], [Description])
+AC_DEFINE([HAVE_GETTEXT], [], [Description])
+AC_DEFINE([GETTEXT_PACKAGE], [], [Description])
+AC_DEFINE([PACKAGE_LOCALE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_DATA_DIR], [], [Description])
+AC_DEFINE([PACKAGE_SOURCE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_PRINTER_MODEL], [], [Description])
+AC_DEFINE([XBJLIBPATH], [], [Description])
+
+AC_DEFINE_UNQUOTED(PACKAGE_PRINTER_MODEL, "${program_suffix}")
+
+case "${program_suffix}" in
+  mp140) CNCL_LIB_ID=315;;
+  mp210) CNCL_LIB_ID=316;;
+  ip3500) CNCL_LIB_ID=319;;
+  mp520) CNCL_LIB_ID=328;;
+  ip4500) CNCL_LIB_ID=326;;
+  mp610) CNCL_LIB_ID=327;;
+  CN_IJ_MODEL) CNCL_LIB_ID=CN_IJ_MODEL_NUM;;
+esac
+AC_SUBST(CNCL_LIB_ID)
+
+AC_ARG_ENABLE(uidebug)
+if test "${enable_uidebug}" = "yes"; then
+  UI_DFLAGS=-D_PRINTUI_DEBUG_
+fi
+
+AC_SUBST(UI_DFLAGS)
+
+AC_ARG_ENABLE(libpath)
+if test "${enable_libpath}" = ""; then
+  enable_libpath="/usr/lib/bjlib"
+fi
+
+AC_DEFINE_UNQUOTED(XBJLIBPATH, $enable_libpath)
+AC_SUBST(XBJLIBPATH)
+
+
+AC_ISC_POSIX
+AC_PROG_CC
+AM_PROG_CC_STDC
+AC_HEADER_STDC
+AM_PROG_CC_C_O
+
+AM_PATH_GTK_2_0(2.6.0, ,
+            AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
+
+GETTEXT_PACKAGE=printui${program_suffix}
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+
+dnl Add the languages which your application supports here.
+ALL_LINGUAS="cs da de el es fi fr hu it ja ko nl nb pl pt ru sv th tr zh zh_TW"
+AM_GLIB_GNU_GETTEXT
+
+dnl Set PACKAGE_LOCALE_DIR in config.h.
+if test "x${prefix}" = "xNONE"; then
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${ac_default_prefix}/${DATADIRNAME}/locale")
+else
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${prefix}/${DATADIRNAME}/locale")
+fi
+
+dnl Set PACKAGE_DATA_DIR in config.h.
+if test "x${datadir}" = 'x${prefix}/share'; then
+  if test "x${prefix}" = "xNONE"; then
+    AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${ac_default_prefix}/share/${PACKAGE}")
+  else
+    AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${prefix}/share/${PACKAGE}")
+  fi
+else
+  AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${datadir}/${PACKAGE}")
+fi
+
+dnl Set PACKAGE_SOURCE_DIR in config.h.
+packagesrcdir=`cd $srcdir && pwd`
+AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "${packagesrcdir}")
+
+dnl Use -Wall if we have gcc.
+changequote(,)dnl
+if test "x$GCC" = "xyes"; then
+  case " $CFLAGS " in
+  *[\ \	]-Wall[\ \	]*) ;;
+  *) CFLAGS="$CFLAGS -Wall" ;;
+  esac
+fi
+changequote([,])dnl
+
+case "$CFLAGS" in
+  *-O2* ) ;;
+  *) CFLAGS="$CFLAGS -O2"
+esac
+
+XML2_CFLAGS=`xml2-config --cflags`
+AC_SUBST(XML2_CFLAGS)
+
+case "$CFLAGS" in
+  *-m32* ) ARC="32";;
+  *) ARC=`getconf LONG_BIT` 
+esac
+
+AC_SUBST(ARC)
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+include/Makefile
+include/cncl/Makefile
+include/misc/Makefile
+po/Makefile.in
+])
+

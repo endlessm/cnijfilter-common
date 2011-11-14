@@ -1,0 +1,1296 @@
+# Inkjet Printer Driver Ver.2.80 for Linux
+# Copyright CANON INC. 2001-2007
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cngpijmon 2.80\n"
+"POT-Creation-Date: 2007-07-10 17:13+0900\n"
+"PO-Revision-Date: 2007-09-03 11:27+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+
+#. Printer status message table.
+#: src/bjcupsmon_ui.c:42
+msgid ""
+"The ink absorber is full.\n"
+"Contact the service center.\n"
+msgstr ""
+"Ο συλλέκτης μελάνης είναι πλήρης.\n"
+"Επικοινωνήστε με το κέντρο υπηρεσία.\n"
+
+
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"The ink absorber is full.\n"
+"It needs to be replaced.\n"
+"Further printing is not possible until this part is replaced.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Ο συλλέκτης μελάνης είναι πλήρης.\n"
+"Πρέπει να αντικατασταθεί.\n"
+"Δεν θα είναι δυνατή η εκτύπωση έως ότου αντικατασταθεί αυτό το εξάρτημα.\n"
+"Επικοινωνήστε με το κέντρο υποστήριξης ή με το κέντρο υπηρεσία.\n"
+"Ο συλλέκτης μελάνης μπορεί να αντικατασταθεί μόνο από εξειδικευμένο τεχνικό.\n"
+
+
+#: src/bjcupsmon_ui.c:44
+#, c-format
+msgid ""
+"Service error %s.\n"
+"Cancel printing and turn the printer off and then on again.\n"
+"If this doesn't clear the error, see the printer manual for more detail."
+msgstr ""
+"Σφάλμα υπηρεσίας %s.\n"
+"Ακυρώστε την εκτύπωση, απενεργοποιήστε και ενεργοποιήστε εκ νέου τον εκτυπωτή.\n"
+"Εάν το σφάλμα δεν διορθωθεί, ανατρέξτε στο εγχειρίδιο του εκτυπωτή για περισσότερες πληροφορίες."
+
+#: src/bjcupsmon_ui.c:46
+msgid "Paper out!\n"
+msgstr "Το χαρτί τελείωσε\n"
+
+#: src/bjcupsmon_ui.c:47
+msgid "Load paper.\n"
+msgstr "Τοποθέτηση χαρτιού.\n"
+
+#: src/bjcupsmon_ui.c:48
+msgid "Load paper into the sheet feeder.\n"
+msgstr "Τοποθετήστε χαρτί στον τροφοδότη φύλλων.\n"
+
+#: src/bjcupsmon_ui.c:49
+msgid "Load paper into the cassette.\n"
+msgstr "Τοποθετήστε χαρτί στην κασέτα.\n"
+
+#: src/bjcupsmon_ui.c:50
+msgid "Load paper into the front feeder.\n"
+msgstr "Τοποθετήστε χαρτί στον εμπρόσθιο τροφοδότη.\n"
+
+#: src/bjcupsmon_ui.c:51
+msgid "Press the printer's RESUME button.\n"
+msgstr "Πατήστε το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή.\n"
+
+#: src/bjcupsmon_ui.c:52
+msgid "Press the printer's OK button.\n"
+msgstr "Πατήστε το κουμπί OK του εκτυπωτή.\n"
+
+#: src/bjcupsmon_ui.c:53
+msgid "Press the printer's Start button.\n"
+msgstr "Πατήστε το κουμπί Έναρξη του εκτυπωτή.\n"
+
+#: src/bjcupsmon_ui.c:54
+msgid "Paper is jammed.\n"
+msgstr "Το χαρτί έχει μπλοκάρει.\n"
+
+#: src/bjcupsmon_ui.c:55 src/bjcupsmon_ui.c:56
+msgid "Paper is jammed at the paper output slot.\n"
+msgstr "Παρουσιάστηκε εμπλοκή στη σχισμή εξόδου χαρτιού.\n"
+
+#: src/bjcupsmon_ui.c:57
+msgid "Remove the jammed paper.\n"
+msgstr "Αφαιρέστε το μπλοκαρισμένο χαρτί.\n"
+
+#: src/bjcupsmon_ui.c:58 src/bjcupsmon_ui.c:135
+msgid ""
+"Press the printer's RESUME button. Printing resumes from the next paper.\n"
+msgstr "Πατήστε το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή. Η εκτύπωση συνεχίζεται από το επόμενο χαρτί.\n"
+
+#: src/bjcupsmon_ui.c:59 src/bjcupsmon_ui.c:137
+msgid "Press the printer's OK button. Printing resumes from the next paper.\n"
+msgstr "Πατήστε το κουμπί OK του εκτυπωτή. Η εκτύπωση συνεχίζεται από το επόμενο χαρτί.\n"
+
+#: src/bjcupsmon_ui.c:60
+msgid ""
+"Press the printer's Start button. Printing resumes from the next paper.\n"
+msgstr "Πατήστε το κουμπί Έναρξη του εκτυπωτή. Η εκτύπωση συνεχίζεται από το επόμενο χαρτί.\n"
+
+#: src/bjcupsmon_ui.c:61 src/bjcupsmon_ui.c:68
+msgid "Paper is jammed in the transport unit.\n"
+msgstr "Υπάρχει μπλοκαρισμένο χαρτί στη μονάδα μεταφοράς.\n"
+
+#: src/bjcupsmon_ui.c:62
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, first remove the cassette and remove the paper from the cassette "
+"side.\n"
+msgstr "Ανοίξτε το πίσω κάλυμμα, αφαιρέστε το χαρτί που έχει προκαλέσει την εμπλοκή. Εάν δεν μπορείτε να αφαιρέσετε το χαρτί, αφαιρέστε πρώτα την κασέτα και στη συνέχεια το χαρτί από την πλευρά της κασέτας.\n"
+
+#: src/bjcupsmon_ui.c:63
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, remove the paper from the front feeder side.\n"
+msgstr "Ανοίξτε το πίσω κάλυμμα, αφαιρέστε το χαρτί που έχει προκαλέσει την εμπλοκή. Εάν δεν είναι δυνατή η αφαίρεση του μπλοκαρισμένου χαρτιού, αφαιρέστε το χαρτί από τον εμπρόσθιο τροφοδότη.\n"
+
+#: src/bjcupsmon_ui.c:64 src/bjcupsmon_ui.c:66 src/bjcupsmon_ui.c:69
+msgid "Paper is jammed in the duplexing transport unit.\n"
+msgstr "Το χαρτί μπλόκαρε στη μονάδα μεταφοράς εκτυπώσεων διπλής όψης.\n"
+
+#: src/bjcupsmon_ui.c:65
+msgid ""
+"Remove the cassette, push the printer over onto its back side, and then open "
+"the duplexing transport unit cover. Next, remove the jammed paper, and "
+"quickly return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Αφαιρέστε την κασέτα, ανασηκώστε τον εκτυπωτή και στη συνέχεια ανοίξτε το κάλυμμα της μονάδας μεταφοράς εκτυπώσεων διπλής όψης. Κατόπιν, αφαιρέστε το μπλοκαρισμένο χαρτί και επαναφέρετε αμέσως τον εκτυπωτή στην κανονική του θέση.\n"
+"Ανατρέξτε στον οδηγό λειτουργίας για περισσότερες λεπτομέρειες.\n"
+
+
+#: src/bjcupsmon_ui.c:67
+msgid ""
+"Remove the cassette, push the printer over onto its side, and then open the "
+"duplexing transport unit cover. Next, remove the jammed paper, and quickly "
+"return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Αφαιρέστε την κασέτα, ανασηκώστε τον εκτυπωτή, και στη συνέχεια ανοίξτε τη μονάδα μεταφοράς εκτυπώσεων διπλής όψης. Κατόπιν, αφαιρέστε το μπλοκαρισμένο χαρτί και επαναφέρετε αμέσως τον εκτυπωτή στην κανονική του θέση.\n"
+"Ανατρέξτε στον οδηγό λειτουργίας για περισσότερες λεπτομέρειες.\n"
+
+
+#: src/bjcupsmon_ui.c:70
+msgid ""
+"Operator error.\n"
+"Press the printer's RESUME button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then on again.\n"
+msgstr ""
+"Σφάλμα χειριστή.\n"
+"πατήστε το κουμπί ΣΥΝΕΧΙΣΗ στον εκτυπωτή.\n"
+"Εάν το σφάλμα δεν απαλείφεται, ακυρώστε την εκτύπωση, σβήστε τον εκτυπωτή και κατόπιν ανάψτε τον πάλι.\n"
+
+
+#: src/bjcupsmon_ui.c:71
+msgid ""
+"Operator error.\n"
+"Press the printer's OK button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then on again.\n"
+msgstr ""
+"Σφάλμα χειριστή.\n"
+"πατήστε το κουμπί OK στον εκτυπωτή.\n"
+"Εάν το σφάλμα δεν απαλείφεται, ακυρώστε την εκτύπωση, σβήστε τον εκτυπωτή και κατόπιν ανάψτε τον πάλι.\n"
+
+
+#: src/bjcupsmon_ui.c:72
+msgid ""
+"Operator error.\n"
+"Press the printer's Start button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then on again.\n"
+msgstr ""
+"Σφάλμα χειριστή.\n"
+"Πατήστε το κουμπί Έναρξη του εκτυπωτή.\n"
+"Εάν το σφάλμα δεν απαλείφεται, ακυρώστε την εκτύπωση, σβήστε τον εκτυπωτή και κατόπιν ανάψτε τον πάλι.\n"
+
+
+#: src/bjcupsmon_ui.c:73
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Ο συλλέκτης μελάνης είναι σχεδόν πλήρης.\n"
+"Πατήστε το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή για να συνεχιστεί η εκτύπωση.\n"
+"Επικοινωνήστε με το κέντρο υπηρεσία."
+
+#: src/bjcupsmon_ui.c:74
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Ο συλλέκτης μελάνης είναι σχεδόν πλήρης.\n"
+"Πατήστε το κουμπί OK του εκτυπωτή για να συνεχιστεί η εκτύπωση.\n"
+"Επικοινωνήστε με το κέντρο υπηρεσία."
+
+#: src/bjcupsmon_ui.c:75
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Ο συλλέκτης μελάνης είναι σχεδόν πλήρης.\n"
+"Πατήστε το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή για να συνεχιστεί η εκτύπωση.\n"
+"Ο εκτυπωτής θα χρειαστεί σύντομα συντήρηση για να αντικατασταθεί ο συλλέκτης μελάνης.\n"
+"Επικοινωνήστε με το κέντρο υποστήριξης ή με το κέντρο υπηρεσία.\n"
+"Ο συλλέκτης μελάνης μπορεί να αντικατασταθεί μόνο από εξειδικευμένο τεχνικό."
+
+#: src/bjcupsmon_ui.c:76
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Ο συλλέκτης μελάνης είναι σχεδόν πλήρης.\n"
+"Πατήστε το κουμπί OK του εκτυπωτή για να συνεχιστεί η εκτύπωση.\n"
+"Ο εκτυπωτής θα χρειαστεί σύντομα συντήρηση για να αντικατασταθεί ο συλλέκτης μελάνης.\n"
+"Επικοινωνήστε με το κέντρο υποστήριξης ή με το κέντρο υπηρεσία.\n"
+"Ο συλλέκτης μελάνης μπορεί να αντικατασταθεί μόνο από εξειδικευμένο τεχνικό."
+
+#: src/bjcupsmon_ui.c:77
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Ο συλλέκτης μελάνης είναι σχεδόν πλήρης.\n"
+"Πατήστε το κουμπί \"Έναρξη\" του εκτυπωτή για να συνεχίσετε την εκτύπωση.\n"
+"Επικοινωνήστε με το κέντρο υπηρεσία."
+
+#: src/bjcupsmon_ui.c:78
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Ο συλλέκτης μελάνης είναι σχεδόν πλήρης.\n"
+"Πατήστε το κουμπί \"Έναρξη\" του εκτυπωτή για να συνεχίσετε την εκτύπωση.\n"
+"Ο εκτυπωτής θα χρειαστεί σύντομα συντήρηση για να αντικατασταθεί ο συλλέκτης μελάνης.\n"
+"Επικοινωνήστε με το κέντρο υποστήριξης ή με το κέντρο υπηρεσία.\n"
+"Ο συλλέκτης μελάνης μπορεί να αντικατασταθεί μόνο από εξειδικευμένο τεχνικό."
+
+#: src/bjcupsmon_ui.c:79
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"You can continue printing under the ink out condition by pressing the RESUME "
+"button. Replace the empty ink tank immediately after the printing. The "
+"printer may be damaged if printing is continued under the ink out condition."
+msgstr ""
+"Η μελάνη έχει εξαντληθεί.\n"
+"Αντικαταστήστε το δοχείο μελάνης και κλείστε το κάλυμμα. Κατά την αντικατάσταση του δοχείου μελάνης, βεβαιωθείτε ότι το εσωτερικό κάλυμμα είναι ανοιχτό.\n"
+"\n"
+"Μπορείτε να συνεχίσετε την εκτύπωση σε κατάσταση άδειου δοχείου μελάνης πατώντας το κουμπί ΣΥΝΕΧΙΣΗ. Αντικαταστήστε το άδειο δοχείο μελάνης αμέσως μετά την εκτύπωση. Ενδέχεται να προκληθεί ζημιά στον εκτυπωτή εάν συνεχίσετε να εκτυπώνετε στην κατάσταση άδειου δοχείου μελάνης."
+
+#: src/bjcupsmon_ui.c:80
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the cartridge cannot be changed. Close the "
+"cover, wait for printing to finish, then open the cover again and change the "
+"print head or ink tank.\n"
+msgstr ""
+"Το κάλυμμα του εκτυπωτή είναι ανοιχτό.\n"
+"Εάν η εκτύπωση είναι σε εξέλιξη, το φυσίγγιο δεν μπορεί να αλλαχθεί. Κλείστε το κάλυμμα, περιμένετε να ολοκληρωθεί η εκτύπωση και, στη συνέχεια, ανοίξτε πάλι το κάλυμμα και αλλάξτε την κεφαλή εκτύπωσης ή το δοχείο μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:81
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank.\n"
+msgstr ""
+"Το κάλυμμα του εκτυπωτή είναι ανοιχτό.\n"
+"Εάν υπάρχει εκτύπωση σε εξέλιξη, η κεφαλή εκτύπωσης ή το δοχείο μελάνης δεν μπορούν να αλλαχθούν. Κλείστε το κάλυμμα, περιμένετε να ολοκληρωθεί η εκτύπωση και, στη συνέχεια, ανοίξτε πάλι το κάλυμμα και αλλάξτε την κεφαλή εκτύπωσης ή το δοχείο μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:82
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Open the paper output tray. Printing will restart.\n"
+msgstr ""
+"Δεν είναι δυνατή η εκτέλεση εκτύπωσης εγγράφου, επειδή η κασέτα εξόδου χαρτιού είναι κλειστή.\n"
+"Ανοίξτε την κασέτα εξόδου χαρτιού. Η εκτύπωση θα ξεκινήσει ξανά.\n"
+
+
+#: src/bjcupsmon_ui.c:83
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Press the printer's Open button, and open the paper output tray. Printing "
+"will restart.\n"
+msgstr ""
+"Δεν είναι δυνατή η εκτέλεση εκτύπωσης εγγράφου, επειδή η κασέτα εξόδου χαρτιού είναι κλειστή.\n"
+"Πατήστε το κουμπί Άνοιγμα του εκτυπωτή και ανοίξτε την κασέτα εξόδου χαρτιού. Η εκτύπωση θα ξεκινήσει ξανά.\n"
+
+
+#: src/bjcupsmon_ui.c:84
+msgid ""
+"Operator error.\n"
+"The connected printer cannot work correctly.\n"
+msgstr ""
+"Σφάλμα χειριστή.\n"
+"Ο συνδεδεμένος εκτυπωτής δεν μπορεί να λειτουργήσει σωστά.\n"
+
+
+#: src/bjcupsmon_ui.c:85
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr ""
+"Γίνεται καθαρισμός.\n"
+"Περιμένετε.\n"
+
+
+#: src/bjcupsmon_ui.c:86
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the ink cartridge, close the printer's cover.\n"
+msgstr ""
+"Η υποδοχή βρίσκεται στη θέση αντικατάστασης.\n"
+"Αφού αντικαταστήσετε το φυσίγγιο μελάνης, κλείστε το κάλυμμα του εκτυπωτή.\n"
+
+
+#: src/bjcupsmon_ui.c:87
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the print head or the ink tank, close the cover of the "
+"printer. To replace only the ink tank, do not remove the print head from the "
+"printer. Do not touch the lock lever.\n"
+msgstr ""
+"Η υποδοχή βρίσκεται στη θέση αντικατάστασης.\n"
+"Αφού αντικαταστήσετε την κεφαλή εκτύπωσης ή το δοχείο μελάνης, κλείστε το κάλυμμα του εκτυπωτή. Για να αντικαταστήσετε μόνο το δοχείο μελάνης, μην αφαιρείτε την κεφαλή εκτύπωσης από τον εκτυπωτή. Μην αγγίζετε το μοχλό ασφαλείας.\n"
+
+
+#: src/bjcupsmon_ui.c:88 src/bjcupsmon_ui.c:92
+msgid "Printing.\n"
+msgstr "Εκτύπωση.\n"
+
+#: src/bjcupsmon_ui.c:89
+msgid "The printer is performing another operation.\n"
+msgstr "Ο εκτυπωτής πραγματοποιεί άλλη λειτουργία.\n"
+
+#: src/bjcupsmon_ui.c:90
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the ink tank, close the cover.\n"
+msgstr ""
+"Η υποδοχή βρίσκεται στη θέση αντικατάστασης.\n"
+"Αφού αντικαταστήσετε το δοχείο μελάνης, κλείστε το κάλυμμα του εκτυπωτή.\n"
+
+
+#: src/bjcupsmon_ui.c:91
+msgid ""
+"A print head is not installed or the installed print head is not compatible "
+"with this printer.\n"
+"Install an appropriate print head and close the cover of the printer.\n"
+msgstr ""
+"Δεν έχει εγκατασταθεί η σωστή κεφαλή εκτύπωσης ή η εγκατεστημένη κεφαλή εκτύπωσης δεν είναι συμβατή με αυτόν τον εκτυπωτή.\n"
+"Εγκαταστήστε τη σωστή κεφαλή εκτύπωσης και κλείστε το κάλυμμα του εκτυπωτή.\n"
+
+
+#: src/bjcupsmon_ui.c:93
+msgid "Printer is online.\n"
+msgstr "Ο εκτυπωτής είναι συνδεδεμένος.\n"
+
+#: src/bjcupsmon_ui.c:94
+msgid ""
+"\n"
+"The following ink tank is running low.\n"
+msgstr ""
+"\n"
+"Το παρακάτω δοχείο μελάνης έχει χαμηλή στάθμη.\n"
+
+
+#: src/bjcupsmon_ui.c:95
+msgid ""
+"\n"
+"The following ink is running low.\n"
+msgstr ""
+"\n"
+"Το παρακάτω φυσίγγιο μελάνης έχει χαμηλή στάθμη.\n"
+
+
+#: src/bjcupsmon_ui.c:96 src/bjcupsmon_ui.c:164
+msgid " Black <BCI-7eBK>\n"
+msgstr " Μαύρο <BCI-7eBK>\n"
+
+#: src/bjcupsmon_ui.c:97 src/bjcupsmon_ui.c:165
+msgid " Black <BCI-9BK>\n"
+msgstr " Μαύρο <BCI-9BK>\n"
+
+#: src/bjcupsmon_ui.c:98 src/bjcupsmon_ui.c:166
+msgid " Photo Cyan <BCI-7ePC>\n"
+msgstr " Φωτογραφικό κυανό <BCI-7ePC>\n"
+
+#: src/bjcupsmon_ui.c:99 src/bjcupsmon_ui.c:167
+msgid " Photo Magenta <BCI-7ePM>\n"
+msgstr " Φωτογραφική ματζέντα <BCI-7ePM>\n"
+
+#: src/bjcupsmon_ui.c:100 src/bjcupsmon_ui.c:168
+msgid " Cyan <BCI-7eC>\n"
+msgstr " Κυανό <BCI-7eC>\n"
+
+#: src/bjcupsmon_ui.c:101 src/bjcupsmon_ui.c:169
+msgid " Magenta <BCI-7eM>\n"
+msgstr " Ματζέντα <BCI-7eM>\n"
+
+#: src/bjcupsmon_ui.c:102 src/bjcupsmon_ui.c:170
+msgid " Yellow <BCI-7eY>\n"
+msgstr " Κίτρινο <BCI-7eY>\n"
+
+#: src/bjcupsmon_ui.c:103
+msgid " Red <BCI-7R>\n"
+msgstr " Κόκκινο <BCI-7R>\n"
+
+#: src/bjcupsmon_ui.c:104
+msgid " Green <BCI-7G>\n"
+msgstr " Πράσινο <BCI-7G>\n"
+
+#: src/bjcupsmon_ui.c:105
+msgid " Black <BCI-3eBK>\n"
+msgstr " Μαύρο <BCI-3eBK>\n"
+
+#: src/bjcupsmon_ui.c:106 src/bjcupsmon_ui.c:198
+msgid " Black <BCI-15 Black>\n"
+msgstr " Μαύρο <BCI-15 Black>\n"
+
+#: src/bjcupsmon_ui.c:107 src/bjcupsmon_ui.c:199
+msgid " Color <BCI-16 Color>\n"
+msgstr " Έγχρωμη <BCI-16 Color>\n"
+
+#: src/bjcupsmon_ui.c:108 src/bjcupsmon_ui.c:194
+msgid "dummy1"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:109 src/bjcupsmon_ui.c:195
+msgid "dummy2"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:110 src/bjcupsmon_ui.c:196
+msgid "dummy3"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:111 src/bjcupsmon_ui.c:197
+msgid "dummy4"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:112
+msgid " Black <BCI-24 Black>\n"
+msgstr " Μαύρο <BCI-24 Black>\n"
+
+#: src/bjcupsmon_ui.c:113
+msgid " Color <BCI-24 Color>\n"
+msgstr " Έγχρωμη <BCI-24 Color>\n"
+
+#: src/bjcupsmon_ui.c:114
+msgid ""
+"\n"
+"Prepare a new ink tank.\n"
+"\n"
+msgstr ""
+"\n"
+"Προετοιμάστε ένα νέο δοχείο μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:115 src/bjcupsmon_ui.c:176
+msgid " Black <PG-40>\n"
+msgstr " Μαύρο <PG-40>\n"
+
+#: src/bjcupsmon_ui.c:116 src/bjcupsmon_ui.c:181
+msgid " Color <CL-41>\n"
+msgstr " Έγχρωμη <CL-41>\n"
+
+#: src/bjcupsmon_ui.c:117 src/bjcupsmon_ui.c:187
+msgid " Black <CLI-8BK>\n"
+msgstr " Μαύρο <CLI-8BK>\n"
+
+#: src/bjcupsmon_ui.c:118 src/bjcupsmon_ui.c:188
+msgid " Black <PGI-5BK>\n"
+msgstr " Μαύρο <PGI-5BK>\n"
+
+#: src/bjcupsmon_ui.c:119 src/bjcupsmon_ui.c:189
+msgid " Photo Cyan <CLI-8PC>\n"
+msgstr " Φωτογραφικό κυανό <CLI-8PC>\n"
+
+#: src/bjcupsmon_ui.c:120 src/bjcupsmon_ui.c:190
+msgid " Photo Magenta <CLI-8PM>\n"
+msgstr " Φωτογραφική ματζέντα <CLI-8PM>\n"
+
+#: src/bjcupsmon_ui.c:121 src/bjcupsmon_ui.c:191
+msgid " Cyan <CLI-8C>\n"
+msgstr " Κυανό <CLI-8C>\n"
+
+#: src/bjcupsmon_ui.c:122 src/bjcupsmon_ui.c:192
+msgid " Magenta <CLI-8M>\n"
+msgstr " Ματζέντα <CLI-8M>\n"
+
+#: src/bjcupsmon_ui.c:123 src/bjcupsmon_ui.c:193
+msgid " Yellow <CLI-8Y>\n"
+msgstr " Κίτρινο <CLI-8Y>\n"
+
+#: src/bjcupsmon_ui.c:124
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"The resulting print quality may not be satisfactory, if printing is "
+"continued under this condition.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"Προετοιμάστε ένα νέο φυσίγγιο μελάνης. \n"
+"Εάν η εκτύπωση συνεχιστεί υπό αυτές τις συνθήκες, ενδέχεται να μην είναι ικανοποιητική η ποιότητα εκτύπωσης. \n"
+"Εάν έχει αδειάσει το φυσίγγιο μαύρης ή έγχρωμης μελάνης, από τις Ρυθμίσεις φυσιγγίου μελάνης στην καρτέλα Συντήρηση του προγράμματος οδήγησης του εκτυπωτή, μπορείτε να ρυθμίσετε τον εκτυπωτή να συνεχίσει να εκτυπώνει με το άλλο φυσίγγιο.\n"
+
+
+#: src/bjcupsmon_ui.c:125
+msgid ""
+"\n"
+"The ink cartridge has been installed or replaced.\n"
+"If the printout contains misaligned lines or is not satisfactory after the "
+"installation or replacement, refer to the user's guide and carry out the "
+"print head alignment.\n"
+msgstr ""
+"\n"
+"Έχει εγκατασταθεί ή αντικαταστάθηκε η κασέτα μελάνης.\n"
+"Αν μετά από την εγκατάσταση ή την αντικατάσταση η εκτύπωση περιέχει ακανόνιστες γραμμές ή δεν είναι ικανοποιητική, ανατρέξτε στο εγχειρίδιο χρήσης και εκτελέστε ευθυγράμμιση κεφαλών εκτύπωσης.\n"
+
+
+#: src/bjcupsmon_ui.c:126
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"Ο εκτυπωτής έχει ρυθμιστεί ώστε να μην εμφανίζει προειδοποίηση για χαμηλή στάθμη μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:128 src/bjcupsmon_ui.c:131
+msgid "Printing cannot be executed because the inner cover is open.\n"
+msgstr "Η εκτύπωση δεν μπορεί να εκτελεστεί διότι το εσωτερικό κάλυμμα είναι ανοιχτό.\n"
+
+#: src/bjcupsmon_ui.c:129 src/bjcupsmon_ui.c:134
+msgid "Close the inner cover.\n"
+msgstr "Κλείστε το εσωτερικό κάλυμμα.\n"
+
+#: src/bjcupsmon_ui.c:130
+msgid "Press the printer's RESUME button. Printing will restart.\n"
+msgstr "Πατήστε το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή. Η εκτύπωση θα ξεκινήσει ξανά.\n"
+
+#: src/bjcupsmon_ui.c:132
+msgid "Press the printer's OK button. Printing will restart.\n"
+msgstr "Πατήστε το κουμπί OK του εκτυπωτή. Η εκτύπωση θα ξεκινήσει ξανά.\n"
+
+#: src/bjcupsmon_ui.c:133 src/bjcupsmon_ui.c:136
+msgid "During printing, the inner cover of the printer was opened.\n"
+msgstr "Κατά την εκτύπωση, το εσωτερικό κάλυμμα του εκτυπωτή άνοιξε.\n"
+
+#: src/bjcupsmon_ui.c:138
+msgid ""
+"An ink tank is not installed properly.\n"
+"Open the cover of the printer, make sure the ink tank is installed properly, "
+"and close the cover."
+msgstr ""
+"Ένα δοχείο μελάνης δεν έχει τοποθετηθεί σωστά.\n"
+"Ανοίξτε το κάλυμμα του εκτυπωτή, βεβαιωθείτε ότι το δοχείο μελάνης είναι τοποθετημένο σωστά και κλείστε το κάλυμμα."
+
+#: src/bjcupsmon_ui.c:139
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Open the printer's cover, make sure the ink cartridge is installed properly, "
+"and close the cover.\n"
+msgstr ""
+"Ένα φυσίγγιο μελάνης δεν έχει εγκατασταθεί σωστά.\n"
+"Ανοίξτε το κάλυμμα του εκτυπωτή, βεβαιωθείτε ότι το φυσίγγιο μελάνης έχει τοποθετηθεί σωστά και κλείστε το κάλυμμα.\n"
+
+
+#: src/bjcupsmon_ui.c:140
+msgid ""
+"A digital camera or device that is not supported by the direct printing "
+"function is connected to the direct print port. Disconnect the cable from "
+"the direct print port. If the device is connected via a USB hub, unplug the "
+"USB hub, and then connect the device directly to the direct print port.\n"
+msgstr "Μια ψηφιακή κάμερα ή συσκευή που δεν υποστηρίζεται από τη λειτουργία άμεσης εκτύπωσης είναι συνδεδεμένη στη θύρα άμεσης εκτύπωσης. Αποσυνδέστε το καλώδιο από τη θύρα άμεσης εκτύπωσης. Αν η συσκευή είναι συνδεδεμένη μέσω διανομέα USB, αποσυνδέστε το διανομέα USB και στη συνέχεια συνδέστε τη συσκευή απευθείας στη θύρα άμεσης εκτύπωσης.\n"
+
+#: src/bjcupsmon_ui.c:141
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's RESUME button to clear the error.\n"
+msgstr ""
+"Προέκυψε κάποιο σφάλμα κατά την αυτόματη ευθυγράμμιση κεφαλής εκτύπωσης.\n"
+"\n"
+"Τα ακροφύσια κεφαλής εκτύπωσης ενδέχεται να έχουν φράξει. Προβείτε στον καθαρισμό ανατρέχοντας στην καρτέλα Συντήρηση του προγράμματος οδήγησης του εκτυπωτή και εκτελέστε ξανά την ευθυγράμμιση κεφαλής εκτύπωσης.\n"
+"\n"
+"Εάν δεν αποκατασταθεί το σφάλμα, ανατρέξτε στον οδηγό λειτουργίας για να ελέγξετε το σφάλμα ή για να πραγματοποιήσετε χειροκίνητη ευθυγράμμιση.\n"
+"\n"
+"Πατήστε το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή για απαλοιφή του σφάλματος.\n"
+
+
+#. 860i 990i
+#: src/bjcupsmon_ui.c:142
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's OK button to clear the error.\n"
+msgstr ""
+"Προέκυψε κάποιο σφάλμα κατά την αυτόματη ευθυγράμμιση κεφαλής εκτύπωσης.\n"
+"\n"
+"Τα ακροφύσια κεφαλής εκτύπωσης ενδέχεται να έχουν φράξει. Προβείτε στον καθαρισμό ανατρέχοντας στην καρτέλα Συντήρηση του προγράμματος οδήγησης του εκτυπωτή και εκτελέστε ξανά την ευθυγράμμιση κεφαλής εκτύπωσης.\n"
+"\n"
+"Εάν δεν αποκατασταθεί το σφάλμα, ανατρέξτε στον οδηγό λειτουργίας για να ελέγξετε το σφάλμα ή για να πραγματοποιήσετε χειροκίνητη ευθυγράμμιση.\n"
+"\n"
+"Πατήστε το κουμπί OK του εκτυπωτή για να σβήσετε το σφάλμα.\n"
+
+
+#: src/bjcupsmon_ui.c:143
+msgid ""
+"An ink tank error has occurred.\n"
+"Open the printer's cover and replace the ink tank on which the ink lamp is "
+"off.\n"
+msgstr ""
+"Προέκυψε σφάλμα κάποιου δοχείου μελάνης.\n"
+"Ανοίξτε το κάλυμμα του εκτυπωτή και αντικαταστήστε το δοχείο μελάνης στο οποίο η ένδειξη μελάνης είναι σβηστή.\n"
+
+
+#: src/bjcupsmon_ui.c:144
+msgid "More than one ink tank of the following color is installed.\n"
+msgstr "Έχουν τοποθετηθεί περισσότερα από ένα δοχεία μελάνης του ακόλουθου χρώματος.\n"
+
+#: src/bjcupsmon_ui.c:145 src/bjcupsmon_ui.c:147
+msgid "The following ink tank cannot be recognized.\n"
+msgstr "Το ακόλουθο δοχείο μελάνης δεν μπορεί να αναγνωριστεί.\n"
+
+#: src/bjcupsmon_ui.c:146
+msgid ""
+"An ink tank is not installed in the correct position.\n"
+"Confirm that the following ink tank is installed in the appropriate "
+"position.\n"
+msgstr ""
+"Κάποιο δοχείο μελάνης δεν έχει τοποθετηθεί στη σωστή θέση.\n"
+"Βεβαιωθείτε ότι το ακόλουθο δοχείο μελάνης έχει τοποθετηθεί στην κατάλληλη θέση.\n"
+
+
+#: src/bjcupsmon_ui.c:148
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink tank installed. Then printing can continue under "
+"the ink out condition. Replace the empty ink tank immediately after the "
+"printing. The printer may be damaged if printing is continued under the ink "
+"out condition.\n"
+msgstr ""
+"Η μελάνη έχει εξαντληθεί.\n"
+"Αντικαταστήστε το δοχείο μελάνης και κλείστε το κάλυμμα. Κατά την αντικατάσταση του δοχείου μελάνης, βεβαιωθείτε ότι το εσωτερικό κάλυμμα είναι ανοιχτό.\n"
+"\n"
+"Εάν η εκτύπωση είναι σε εξέλιξη και θέλετε να συνεχίσετε να εκτυπώνετε, πατήστε το κουμπί ΣΥΝΕΧΙΣΗ αφού τοποθετήσετε το δοχείο μελάνης. Η εκτύπωση μπορεί να συνεχιστεί σε κατάσταση άδειου δοχείου μελάνης. Αντικαταστήστε το άδειο δοχείο μελάνης αμέσως μετά την εκτύπωση. Ενδέχεται να προκληθεί ζημιά στον εκτυπωτή εάν συνεχίσετε να εκτυπώνετε στην κατάσταση άδειου δοχείου μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:149 src/bjcupsmon_ui.c:158
+msgid "The following ink may have run out.\n"
+msgstr "Η ακόλουθη μελάνη μπορεί να έχει τελειώσει.\n"
+
+#: src/bjcupsmon_ui.c:150
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's RESUME button. Then printing can continue. Replacing the ink tank "
+"is recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Συνιστάται η αντικατάσταση του δοχείου μελάνης.\n"
+"Αν υπάρχει εκτύπωση σε εξέλιξη και θέλετε να τη συνεχίσετε, πατήστε το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή. Τότε μπορείτε να συνεχίσετε την εκτύπωση. Συνιστάται η αντικατάσταση του δοχείου μελάνης μετά την εκτύπωση. Ενδέχεται να προκληθεί ζημιά στον εκτυπωτή εάν συνεχίσετε να εκτυπώνετε στην κατάσταση άδειου δοχείου μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:151
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button. Then printing can continue. Replacing the ink tank is "
+"recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Συνιστάται η αντικατάσταση του δοχείου μελάνης.\n"
+"Αν υπάρχει εκτύπωση σε εξέλιξη και θέλετε να τη συνεχίσετε, πατήστε το κουμπί OK του εκτυπωτή. Τότε μπορείτε να συνεχίσετε την εκτύπωση. Συνιστάται η αντικατάσταση του δοχείου μελάνης μετά την εκτύπωση. Ενδέχεται να προκληθεί ζημιά στον εκτυπωτή εάν συνεχίσετε να εκτυπώνετε στην κατάσταση άδειου δοχείου μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:152 src/bjcupsmon_ui.c:153
+msgid ""
+"The remaining level of the following ink cannot be correctly detected. "
+"Replace the ink tank.\n"
+msgstr "Δεν είναι δυνατή η σωστή ανίχνευση του επιπέδου της ακόλουθης μελάνης που απομένει. Αντικαταστήστε το δοχείο μελάνης.\n"
+
+#: src/bjcupsmon_ui.c:154 src/bjcupsmon_ui.c:155
+msgid ""
+"The ink tank is not installed.\n"
+"Install the ink tank properly and close the printer's cover.\n"
+msgstr ""
+"Το δοχείο μελάνης δεν έχει τοποθετηθεί.\n"
+"Τοποθετήστε το δοχείο μελάνης σωστά και κλείστε το κάλυμμα του εκτυπωτή.\n"
+
+
+#: src/bjcupsmon_ui.c:156
+msgid "The following ink cartridge cannot be recognized.\n"
+msgstr "Το ακόλουθο φυσίγγιο μελάνης δεν μπορεί να αναγνωριστεί.\n"
+
+#: src/bjcupsmon_ui.c:157
+msgid "The following ink cartridge has previously been used.\n"
+msgstr "Το ακόλουθο φυσίγγιο μελάνης έχει ήδη χρησιμοποιηθεί.\n"
+
+#: src/bjcupsmon_ui.c:159
+msgid "The remaining level of the following ink is unknown.\n"
+msgstr "Το επίπεδο της μελάνης που απομένει είναι άγνωστο.\n"
+
+#: src/bjcupsmon_ui.c:160
+msgid ""
+"\n"
+"There is a possibility that the printer cannot detect the remaining ink "
+"level properly. \n"
+"Reset the ink counter using the Maintenance tab of the printer driver "
+"whenever you have replaced any ink tank with new one.\n"
+msgstr ""
+"\n"
+"Υπάρχει το ενδεχόμενο ο εκτυπωτής να μην μπορέσει να ανιχνεύσει σωστά τη μελάνη που απομένει. Επαναφέρετε το μετρητή μελάνης χρησιμοποιώντας την καρτέλα [Συντήρηση] του προγράμματος οδήγησης εκτυπωτή, κάθε φορά που αντικαθιστάτε ένα δοχείο μελάνης με ένα νέο.\n"
+
+
+#: src/bjcupsmon_ui.c:161
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"Η μελάνη έχει εξαντληθεί.\n"
+"Αντικαταστήστε το φυσίγγιο μελάνης και κλείστε το κάλυμμα.\n"
+"\n"
+"Εάν η εκτύπωση είναι σε εξέλιξη και θέλετε να συνεχίσετε να εκτυπώνετε, πατήστε το κουμπί ΣΥΝΕΧΙΣΗ αφού τοποθετήσετε το φυσίγγιο μελάνης. Η εκτύπωση μπορεί να συνεχιστεί σε κατάσταση άδειου δοχείου μελάνης. Αντικαταστήστε το άδειο φυσίγγιο μελάνης αμέσως μετά την εκτύπωση. Η ποιότητα της εκτύπωσης δεν θα είναι ικανοποιητική, εάν η εκτύπωση συνεχιστεί στην κατάσταση άδειου δοχείου μελάνης. \n"
+
+
+#: src/bjcupsmon_ui.c:162
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button with the ink cartridge installed. Then printing can "
+"continue under the ink out condition. Replace the empty ink cartridge "
+"immediately after the printing. The resulting print quality is not "
+"satisfactory, if printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"Η μελάνη έχει εξαντληθεί.\n"
+"Αντικαταστήστε το φυσίγγιο μελάνης και κλείστε το κάλυμμα.\n"
+"\n"
+"Αν βρίσκεται σε εξέλιξη μια εκτύπωση και θέλετε να συνεχίσετε να εκτυπώνετε, πατήστε το κουμπί ΟΚ του εκτυπωτή όταν τοποθετήσετε το δοχείο μελάνης. Η εκτύπωση μπορεί να συνεχιστεί σε κατάσταση άδειου δοχείου μελάνης. Αντικαταστήστε το άδειο φυσίγγιο μελάνης αμέσως μετά την εκτύπωση. Η ποιότητα της εκτύπωσης δεν θα είναι ικανοποιητική, εάν η εκτύπωση συνεχιστεί στην κατάσταση άδειου δοχείου μελάνης. \n"
+
+
+#: src/bjcupsmon_ui.c:163
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"Start button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"Η μελάνη έχει εξαντληθεί.\n"
+"Αντικαταστήστε το φυσίγγιο μελάνης και κλείστε το κάλυμμα.\n"
+"\n"
+"Εάν η εκτύπωση είναι σε εξέλιξη και θέλετε να συνεχίσετε να εκτυπώνετε, πατήστε το κουμπί Έναρξη αφού τοποθετήσετε το φυσίγγιο μελάνης. Η εκτύπωση μπορεί να συνεχιστεί σε κατάσταση άδειου δοχείου μελάνης. Αντικαταστήστε το άδειο φυσίγγιο μελάνης αμέσως μετά την εκτύπωση. Η ποιότητα της εκτύπωσης δεν θα είναι ικανοποιητική, εάν η εκτύπωση συνεχιστεί στην κατάσταση άδειου δοχείου μελάνης. \n"
+
+
+#: src/bjcupsmon_ui.c:171
+msgid " Black\n"
+msgstr " Μαύρο\n"
+
+#: src/bjcupsmon_ui.c:172
+msgid " Color\n"
+msgstr " Χρώμα\n"
+
+#: src/bjcupsmon_ui.c:173
+msgid " Black <PG-30>\n"
+msgstr " Μαύρο <PG-30>\n"
+
+#: src/bjcupsmon_ui.c:174
+msgid " Black <PG-830>\n"
+msgstr " Μαύρο <PG-830>\n"
+
+#: src/bjcupsmon_ui.c:175
+msgid " Black <PG-37>\n"
+msgstr " Μαύρο <PG-37>\n"
+
+#: src/bjcupsmon_ui.c:177
+msgid " Black <PG-50>\n"
+msgstr " Μαύρο <PG-50>\n"
+
+#: src/bjcupsmon_ui.c:178
+msgid " Color <CL-31>\n"
+msgstr " Έγχρωμη <CL-31>\n"
+
+#: src/bjcupsmon_ui.c:179
+msgid " Color <CL-831>\n"
+msgstr " Έγχρωμη <CL-831>\n"
+
+#: src/bjcupsmon_ui.c:180
+msgid " Color <CL-38>\n"
+msgstr " Έγχρωμη <CL-38>\n"
+
+#: src/bjcupsmon_ui.c:182
+msgid " Color <CL-51>\n"
+msgstr " Έγχρωμη <CL-51>\n"
+
+#: src/bjcupsmon_ui.c:183
+msgid " Black <BC-70>\n"
+msgstr " Μαύρο <BC-70>\n"
+
+#: src/bjcupsmon_ui.c:184
+msgid " Black <BC-90>\n"
+msgstr " Μαύρο <BC-90>\n"
+
+#: src/bjcupsmon_ui.c:185
+msgid " Color <BC-71>\n"
+msgstr " Έγχρωμη <BC-71>\n"
+
+#: src/bjcupsmon_ui.c:186
+msgid " Color <BC-91>\n"
+msgstr " Έγχρωμη <BC-91>\n"
+
+#: src/bjcupsmon_ui.c:200
+msgid " Black Ink Tank\n"
+msgstr " Δοχείο μαύρης μελάνης\n"
+
+#: src/bjcupsmon_ui.c:201
+msgid " Color Ink Tank\n"
+msgstr " Δοχείο έγχρωμης μελάνης\n"
+
+#: src/bjcupsmon_ui.c:202
+msgid "Use only one ink tank per color at a time.\n"
+msgstr "Να χρησιμοποιείτε μόνο ένα δοχείο μελάνης ανά χρώμα κάθε φορά.\n"
+
+#: src/bjcupsmon_ui.c:203 src/bjcupsmon_ui.c:209
+msgid ""
+"\n"
+"Printing cannot be executed because the ink cartridge may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink cartridge.\n"
+msgstr ""
+"\n"
+"Η εκτύπωση δεν μπορεί να εκτελεστεί επειδή η κασέτα μελάνης δεν είναι εγκατεστημένη σωστά ή δεν είναι συμβατή με αυτό τον εκτυπωτή.\n"
+"\n"
+"Εγκαταστήστε την κατάλληλη κασέτα μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:204
+msgid ""
+"\n"
+"Printing cannot be executed because the ink tank may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink tank.\n"
+msgstr ""
+"\n"
+"Η εκτύπωση δεν μπορεί να εκτελεστεί επειδή το δοχείο μελάνης δεν είναι εγκατεστημένο σωστά ή δεν είναι συμβατό με αυτό τον εκτυπωτή.\n"
+"\n"
+"Εγκαταστήστε το κατάλληλο δοχείο μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:205
+msgid "The following ink has run out.\n"
+msgstr "Η ακόλουθη μελάνη εξαντλήθηκε.\n"
+
+#: src/bjcupsmon_ui.c:206
+msgid "dummy B-36_01"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:207
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's RESUME button for at least "
+"5 seconds, and then release it. Releasing the function for detecting the "
+"remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"Η εκτύπωση υπό τις υπάρχουσες συνθήκες ενδέχεται να προκαλέσει ζημιά στον εκτυπωτή. Σας ενημερώνουμε ότι η Canon δεν φέρει ευθύνη για οποιαδήποτε δυσλειτουργία ή ζημιά ενδέχεται να προκληθεί από το ξαναγέμισμα των δοχείων μελάνης.\n"
+"\n"
+"Για να συνεχίσετε την εκτύπωση, πρέπει να απενεργοποιήσετε τη λειτουργία εντοπισμού της ποσότητας μελάνης που απομένει. Πατήστε και κρατήστε πατημένο το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή για τουλάχιστον 5 δευτερόλεπτα και στη συνέχεια αφήστε το. Η απενεργοποίηση της λειτουργίας ανίχνευσης της ποσότητας μελάνης που απομένει αποθηκεύεται στη μνήμη.\n"
+"Αυτή η λειτουργία θα απενεργοποιήσει τη διαδικασία εντοπισμού της στάθμης της ανωτέρω μελάνης που απομένει.\n"
+
+
+#: src/bjcupsmon_ui.c:208
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it. Releasing the function for detecting "
+"the remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"Η εκτύπωση υπό τις υπάρχουσες συνθήκες ενδέχεται να προκαλέσει ζημιά στον εκτυπωτή. Σας ενημερώνουμε ότι η Canon δεν φέρει ευθύνη για οποιαδήποτε δυσλειτουργία ή ζημιά ενδέχεται να προκληθεί από το ξαναγέμισμα των δοχείων μελάνης.\n"
+"\n"
+"Για να συνεχίσετε την εκτύπωση, πρέπει να απενεργοποιήσετε τη λειτουργία εντοπισμού της ποσότητας μελάνης που απομένει. Πατήστε και κρατήστε πατημένο το κουμπί Διακοπή/Επαναφορά του εκτυπωτή για τουλάχιστον 5 δευτερόλεπτα και στη συνέχεια αφήστε το. Η απενεργοποίηση της λειτουργίας ανίχνευσης της ποσότητας μελάνης που απομένει αποθηκεύεται στη μνήμη.\n"
+"Αυτή η λειτουργία θα απενεργοποιήσει τη διαδικασία εντοπισμού της στάθμης της ανωτέρω μελάνης που απομένει.\n"
+
+
+#: src/bjcupsmon_ui.c:210
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+msgstr ""
+"\n"
+"Η λειτουργία προσδιορισμού της ποσότητας μελάνης που απομένει θα απενεργοποιηθεί καθώς δεν είναι δυνατόν να εντοπιστεί σωστά η ποσότητα μελάνης.\n"
+"\n"
+"Εάν θέλετε να συνεχίσετε να εκτυπώνετε χωρίς αυτή τη λειτουργία, πατήστε το κουμπί ΣΥΝΕΧΙΣΗ.\n"
+
+
+#: src/bjcupsmon_ui.c:211
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"If you want to continue printing without this function, press the printer's "
+"RESUME button for at least 5 seconds.\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+msgstr ""
+"\n"
+"Η λειτουργία προσδιορισμού της ποσότητας μελάνης που απομένει θα απενεργοποιηθεί καθώς δεν είναι δυνατόν να εντοπιστεί σωστά η ποσότητα μελάνης. \n"
+"Αν θέλετε να συνεχίσετε την εκτύπωση χωρίς αυτήν τη λειτουργία, πατήστε το κουμπί ΣΥΝΕΧΙΣΗ/ΑΚΥΡΩΣΗ του εκτυπωτή για τουλάχιστον 5 δευτερόλεπτα.  \n"
+"Η Canon συνιστά να χρησιμοποιείτε νέα, αυθεντικά φυσίγγια μελάνης της Canon για να έχετε τη βέλτιστη ποιότητα. \n"
+"Σας ενημερώνουμε ότι η Canon δεν φέρει καμία ευθύνη για οποιαδήποτε δυσλειτουργία ή πρόβλημα προκληθεί από τη συνέχιση της εκτύπωσης σε κατάσταση άδειου δοχείου μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:212
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the printer's "
+"OK button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"Η λειτουργία προσδιορισμού της ποσότητας μελάνης που απομένει θα απενεργοποιηθεί καθώς δεν είναι δυνατόν να εντοπιστεί σωστά η ποσότητα μελάνης.\n"
+"\n"
+"Αν θέλετε να συνεχίσετε την εκτύπωση χωρίς αυτήν τη λειτουργία, πατήστε το κουμπί ΟΚ του εκτυπωτή.\n"
+"\n"
+"Η Canon συνιστά τη χρήση αυθεντικών φυσιγγίων μελάνης Canon για άριστα αποτελέσματα.\n"
+
+
+#: src/bjcupsmon_ui.c:213
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the printer's "
+"Start button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"Η λειτουργία προσδιορισμού της ποσότητας μελάνης που απομένει θα απενεργοποιηθεί καθώς δεν είναι δυνατόν να εντοπιστεί σωστά η ποσότητα μελάνης.\n"
+"\n"
+"Αν θέλετε να συνεχίσετε την εκτύπωση χωρίς αυτήν τη λειτουργία, πατήστε το κουμπί Έναρξη του εκτυπωτή.\n"
+"\n"
+"Η Canon συνιστά τη χρήση αυθεντικών φυσιγγίων μελάνης Canon για άριστα αποτελέσματα.\n"
+
+
+#: src/bjcupsmon_ui.c:214
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"Προετοιμάστε ένα νέο φυσίγγιο μελάνης.\n"
+"Εάν έχει αδειάσει το φυσίγγιο μαύρης ή έγχρωμης μελάνης, από τις Ρυθμίσεις φυσιγγίου μελάνης στην καρτέλα Συντήρηση του προγράμματος οδήγησης του εκτυπωτή, μπορείτε να ρυθμίσετε τον εκτυπωτή να συνεχίσει να εκτυπώνει με το άλλο φυσίγγιο.\n"
+
+
+#: src/bjcupsmon_ui.c:215
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, press and hold the printer's RESUME button for at "
+"least 5 seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Αντικαταστήστε το δοχείο μελάνης. Η εκτύπωση στην τρέχουσα κατάσταση μπορεί να προκαλέσει ζημιά στον εκτυπωτή.\n"
+"Για να συνεχίσετε την εκτύπωση, πατήστε και κρατήστε πατημένο το κουμπί ΣΥΝΕΧΙΣΗ του εκτυπωτή για τουλάχιστον 5 δευτερόλεπτα και έπειτα αφήστε το.\n"
+"Έτσι απενεργοποιείται η λειτουργία εντοπισμού της στάθμης της παραπάνω μελάνης και η απενεργοποίηση της λειτουργίας αποθηκεύεται στη μνήμη.\n"
+"Σας ενημερώνουμε ότι η Canon δεν φέρει καμία ευθύνη για οποιαδήποτε δυσλειτουργία ή πρόβλημα προκληθεί από τη συνέχιση της εκτύπωσης σε κατάσταση άδειου δοχείου μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:216
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Αντικαταστήστε το δοχείο μελάνης. Η εκτύπωση στην τρέχουσα κατάσταση μπορεί να προκαλέσει ζημιά στον εκτυπωτή.\n"
+"Για να συνεχίσετε την εκτύπωση, πατήστε και κρατήστε πατημένο το κουμπί Διακοπή/Επαναφορά του εκτυπωτή για τουλάχιστον 5 δευτερόλεπτα και έπειτα αφήστε το.\n"
+"Έτσι απενεργοποιείται η λειτουργία εντοπισμού της στάθμης της παραπάνω μελάνης και η απενεργοποίηση της λειτουργίας αποθηκεύεται στη μνήμη.\n"
+"Σας ενημερώνουμε ότι η Canon δεν φέρει καμία ευθύνη για οποιαδήποτε δυσλειτουργία ή πρόβλημα προκληθεί από τη συνέχιση της εκτύπωσης σε κατάσταση άδειου δοχείου μελάνης.\n"
+
+
+#: src/bjcupsmon_ui.c:217
+msgid ""
+"\n"
+"Replace the ink cartridge and close the cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's RESUME button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Αντικαταστήστε το φυσίγγιο μελάνης και κλείστε το κάλυμμα. \n"
+"Αν υπάρχει εκτύπωση σε εξέλιξη και θέλετε να τη συνεχίσετε, πατήστε το κουμπί ΣΥΝΕΧΙΣΗ για τουλάχιστον 5 δευτερόλεπτα, αφού τοποθετήσετε το φυσίγγιο μελάνης. Η εκτύπωση μπορεί να συνεχιστεί σε κατάσταση άδειου δοχείου μελάνης. \n"
+"Απενεργοποιείται η λειτουργία ανίχνευσης της στάθμης μελάνης που απομένει. \n"
+"Αντικαταστήστε το άδειο φυσίγγιο μελάνης αμέσως μετά την εκτύπωση. \n"
+"Εάν η εκτύπωση συνεχιστεί σε κατάσταση άδειου φυσιγγίου μελάνης, δεν θα είναι ικανοποιητική η ποιότητα εκτύπωσης.\n"
+
+
+#. Ver.2.80 for B-53 Stop/Reset
+#: src/bjcupsmon_ui.c:219
+msgid ""
+"\n"
+"Replace the ink cartridge and close the cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's Stop/Reset button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Αντικαταστήστε το φυσίγγιο μελάνης και κλείστε το κάλυμμα. \n"
+"Αν υπάρχει εκτύπωση σε εξέλιξη και θέλετε να τη συνεχίσετε, πατήστε το κουμπί Διακοπή/Επαναφορά για τουλάχιστον 5 δευτερόλεπτα, αφού τοποθετήσετε το φυσίγγιο μελάνης. Η εκτύπωση μπορεί να συνεχιστεί σε κατάσταση άδειου δοχείου μελάνης. \n"
+"Απενεργοποιείται η λειτουργία ανίχνευσης της στάθμης μελάνης που απομένει. \n"
+"Αντικαταστήστε το άδειο φυσίγγιο μελάνης αμέσως μετά την εκτύπωση. \n"
+"Εάν η εκτύπωση συνεχιστεί σε κατάσταση άδειου φυσιγγίου μελάνης, δεν θα είναι ικανοποιητική η ποιότητα εκτύπωσης.\n"
+
+
+#: src/bjcupsmon_ui.c:220
+msgid "dummy B-36_03"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:221
+msgid ""
+"\n"
+"The function for detecting the remaining levels of the following ink has "
+"been released.\n"
+msgstr ""
+"\n"
+"Απενεργοποιήθηκε η λειτουργία για τον εντοπισμό της ποσότητας μελάνης που απομένει.\n"
+
+
+#: src/bjcupsmon_ui.c:222
+msgid ""
+"Battery exhausted.\n"
+"Turn the printer off and either plug the AC adapter in, or change to a fully "
+"charged battery pack. If printing is in progress, stop printing then perform "
+"the process.\n"
+msgstr ""
+"Η μπαταρία άδειασε.\n"
+"Κλείστε τον εκτυπωτή και συνδέστε τον στο τροφοδοτικό AC ή τοποθετήστε μια πλήρως φορτισμένη μπαταρία. Αν υπάρχει εκτύπωση σε εξέλιξη, διακόψτε τη διαδικασία και, στη συνέχεια, εκτελέστε τη διαδικασία.\n"
+
+
+#: src/bjcupsmon_ui.c:223
+msgid "dummuy C-5"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:224
+msgid "The battery is low.\n"
+msgstr "Χαμηλή στάθμη μπαταρίας.\n"
+
+#: src/bjcupsmon_ui.c:225
+msgid ""
+"Print job has been canceled by the printer's RESUME button being pressed.\n"
+msgstr "Η εργασία εκτύπωσης ακυρώθηκε με το πάτημα του κουμπιού ΣΥΝΕΧΙΣΗ του εκτυπωτή.\n"
+
+#: src/bjcupsmon_ui.c:226
+msgid ""
+"Print job has been canceled by the printer's Stop/Reset button being "
+"pressed.\n"
+msgstr "Η εργασία εκτύπωσης ακυρώθηκε επειδή πατήσατε το κουμπί Διακοπή/Επαναφορά στον εκτυπωτή.\n"
+
+#: src/bjcupsmon_ui.c:227
+msgid "Preparing for printing.\n"
+msgstr "Γίνεται προετοιμασία της εκτύπωσης.\n"
+
+#: src/bjcupsmon_ui.c:228
+msgid "Waiting for the previous page to dry.\n"
+msgstr "Η εκτύπωση είναι σε αναμονή.\n"
+
+#: src/bjcupsmon_ui.c:229
+msgid "Printer is busy.\n"
+msgstr "Ο εκτυπωτής είναι απασχολημένος.\n"
+
+#: src/bjcupsmon_ui.c:230
+msgid "Load paper into the rear tray.\n"
+msgstr "Τοποθετήστε χαρτί στην πίσω θήκη.\n"
+
+#: src/bjcupsmon_ui.c:231
+msgid "Load paper into the front tray.\n"
+msgstr "Τοποθετήστε χαρτί στην μπροστινή θήκη.\n"
+
+#: src/bjcupsmon_ui.c:232
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, remove the paper from the front tray side.\n"
+msgstr "Ανοίξτε το πίσω κάλυμμα, αφαιρέστε το χαρτί που έχει προκαλέσει την εμπλοκή. Εάν δεν είναι δυνατή η αφαίρεση του μπλοκαρισμένου χαρτιού, αφαιρέστε το χαρτί από την πλευρά της μπροστινής θήκης.\n"
+
+#: src/bjcupsmon_ui.c:233
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"If you want to continue printing without this function, press the printer's "
+"Stop/Reset button for at least 5 seconds.\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+msgstr ""
+"\n"
+"Η λειτουργία προσδιορισμού της ποσότητας μελάνης που απομένει θα απενεργοποιηθεί καθώς δεν είναι δυνατόν να εντοπιστεί σωστά η ποσότητα μελάνης. \n"
+"Αν θέλετε να συνεχίσετε την εκτύπωση χωρίς αυτήν τη λειτουργία, πατήστε το κουμπί Διακοπή/Επαναφορά του εκτυπωτή για τουλάχιστον 5 δευτερόλεπτα.  \n"
+"Η Canon συνιστά να χρησιμοποιείτε νέα, αυθεντικά φυσίγγια μελάνης της Canon για να έχετε τη βέλτιστη ποιότητα. \n"
+"Σας ενημερώνουμε ότι η Canon δεν φέρει καμία ευθύνη για οποιαδήποτε δυσλειτουργία ή πρόβλημα προκληθεί από τη συνέχιση της εκτύπωσης σε κατάσταση άδειου δοχείου μελάνης.\n"
+
+
+#. Other message table.
+#: src/bjcupsmon_ui.c:238
+msgid "Ready.\n"
+msgstr "Έτοιμο.\n"
+
+#: src/bjcupsmon_ui.c:239
+msgid "Unknown printer.\n"
+msgstr "Άγνωστος εκτυπωτής.\n"
+
+#: src/bjcupsmon_ui.c:240
+msgid "Spooler error.\n"
+msgstr "Σφάλμα σε ουρά εκτύπωσης.\n"
+
+#: src/bjcupsmon_ui.c:435
+msgid "Cartridge Type:"
+msgstr "Τύπος φυσιγγίου:"
+
+#: src/bjcupsmon_ui.c:441 src/bjcupsmon_ui.c:448
+msgid "Scanner"
+msgstr "Σαρωτής"
+
+#: src/bjcupsmon_ui.c:454 src/bjcupsmon_ui.c:461
+msgid "Unsupported"
+msgstr "Δεν υποστηρίζεται"
+
+#: src/bjcupsmon_ui.c:473 src/bjcupsmon_ui.c:480
+msgid "Photo"
+msgstr "Φωτογραφία"
+
+#: src/bjcupsmon_ui.c:489 src/bjcupsmon_ui.c:496
+msgid "Black"
+msgstr "Μαύρο"
+
+#: src/bjcupsmon_ui.c:510 src/bjcupsmon_ui.c:517
+msgid "Color"
+msgstr "Έγχρωμη"
+
+#: src/bjcupsmon_ui.c:526
+msgid "Unknown"
+msgstr "Άγνωστο"
+
+#: src/bjcupsmon_ui.c:542
+msgid "Paper Thickness Lever Position:"
+msgstr "Θέση ρυθμ/κού πάχους χαρτιού:"
+
+#: src/bjcupsmon_ui.c:544
+msgid "                                                "
+msgstr " "
+
+#. Up.
+#: src/bjcupsmon_ui.c:547
+msgid "up"
+msgstr "επάνω"
+
+#. Down.
+#: src/bjcupsmon_ui.c:551
+msgid "down"
+msgstr "κάτω"
+
+#. Left.
+#: src/bjcupsmon_ui.c:555
+msgid "left"
+msgstr "αριστερά"
+
+#. Right.
+#: src/bjcupsmon_ui.c:559
+msgid "right"
+msgstr "δεξιά"

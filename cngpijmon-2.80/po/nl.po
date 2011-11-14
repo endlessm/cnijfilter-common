@@ -1,0 +1,1296 @@
+# Inkjet Printer Driver Ver.2.80 for Linux
+# Copyright CANON INC. 2001-2007
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cngpijmon 2.80\n"
+"POT-Creation-Date: 2007-07-10 17:13+0900\n"
+"PO-Revision-Date: 2007-09-03 11:29+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+
+#. Printer status message table.
+#: src/bjcupsmon_ui.c:42
+msgid ""
+"The ink absorber is full.\n"
+"Contact the service center.\n"
+msgstr ""
+"Het absorptiekussen voor inkt is vol.\n"
+"Neem contact op met het servicecentrum.\n"
+
+
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"The ink absorber is full.\n"
+"It needs to be replaced.\n"
+"Further printing is not possible until this part is replaced.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Het absorptiekussen voor inkt is vol.\n"
+"Dit moet worden vervangen.\n"
+"U kunt pas weer afdrukken als dit onderdeel is vervangen.\n"
+"Neem contact op met het ondersteuningscentrum of servicecentrum.\n"
+"Het absorptiekussen voor inkt kan alleen door een gekwalificeerde technicus worden vervangen.\n"
+
+
+#: src/bjcupsmon_ui.c:44
+#, c-format
+msgid ""
+"Service error %s.\n"
+"Cancel printing and turn the printer off and then on again.\n"
+"If this doesn't clear the error, see the printer manual for more detail."
+msgstr ""
+"Servicefout %s.\n"
+"Annuleer het afdrukken en schakel de printer uit en weer in.\n"
+"Als hiermee de fout niet wordt hersteld, raadpleegt u de printerhandleiding voor meer informatie."
+
+#: src/bjcupsmon_ui.c:46
+msgid "Paper out!\n"
+msgstr "Papier op!\n"
+
+#: src/bjcupsmon_ui.c:47
+msgid "Load paper.\n"
+msgstr "Plaats papier in de printer.\n"
+
+#: src/bjcupsmon_ui.c:48
+msgid "Load paper into the sheet feeder.\n"
+msgstr "Plaats papier in de papierinvoer.\n"
+
+#: src/bjcupsmon_ui.c:49
+msgid "Load paper into the cassette.\n"
+msgstr "Plaats papier in de cassette.\n"
+
+#: src/bjcupsmon_ui.c:50
+msgid "Load paper into the front feeder.\n"
+msgstr "Plaats papier in de voorste invoer.\n"
+
+#: src/bjcupsmon_ui.c:51
+msgid "Press the printer's RESUME button.\n"
+msgstr "Druk op de knop HERVATTEN op de printer.\n"
+
+#: src/bjcupsmon_ui.c:52
+msgid "Press the printer's OK button.\n"
+msgstr "Druk op de knop OK op de printer.\n"
+
+#: src/bjcupsmon_ui.c:53
+msgid "Press the printer's Start button.\n"
+msgstr "Druk op de knop Starten op de printer.\n"
+
+#: src/bjcupsmon_ui.c:54
+msgid "Paper is jammed.\n"
+msgstr "Papierstoring.\n"
+
+#: src/bjcupsmon_ui.c:55 src/bjcupsmon_ui.c:56
+msgid "Paper is jammed at the paper output slot.\n"
+msgstr "Papierstoring bij de papieruitvoersleuf.\n"
+
+#: src/bjcupsmon_ui.c:57
+msgid "Remove the jammed paper.\n"
+msgstr "Verwijder het vastgelopen papier.\n"
+
+#: src/bjcupsmon_ui.c:58 src/bjcupsmon_ui.c:135
+msgid ""
+"Press the printer's RESUME button. Printing resumes from the next paper.\n"
+msgstr "Druk op de knop HERVATTEN op de printer. Het afdrukken wordt bij het volgende vel papier hervat.\n"
+
+#: src/bjcupsmon_ui.c:59 src/bjcupsmon_ui.c:137
+msgid "Press the printer's OK button. Printing resumes from the next paper.\n"
+msgstr "Druk op de knop OK op de printer. Het afdrukken wordt bij het volgende vel papier hervat.\n"
+
+#: src/bjcupsmon_ui.c:60
+msgid ""
+"Press the printer's Start button. Printing resumes from the next paper.\n"
+msgstr "Druk op de knop Starten op de printer. Het afdrukken wordt bij het volgende vel papier hervat.\n"
+
+#: src/bjcupsmon_ui.c:61 src/bjcupsmon_ui.c:68
+msgid "Paper is jammed in the transport unit.\n"
+msgstr "Papierstoring in de transporteenheid.\n"
+
+#: src/bjcupsmon_ui.c:62
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, first remove the cassette and remove the paper from the cassette "
+"side.\n"
+msgstr "Open de achterklep en verwijder het vastgelopen papier. Als u het vastgelopen papier niet kunt verwijderen, verwijdert u eerst de cassette en haalt u het papier vervolgens aan de cassettezijde eruit\n"
+
+#: src/bjcupsmon_ui.c:63
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, remove the paper from the front feeder side.\n"
+msgstr "Open de achterklep en verwijder het vastgelopen papier. Als u het vastgelopen papier niet kunt verwijderen, verwijdert u het papier aan de kant van de voorste invoer.\n"
+
+#: src/bjcupsmon_ui.c:64 src/bjcupsmon_ui.c:66 src/bjcupsmon_ui.c:69
+msgid "Paper is jammed in the duplexing transport unit.\n"
+msgstr "Papierstoring in de duplex-transporteenheid.\n"
+
+#: src/bjcupsmon_ui.c:65
+msgid ""
+"Remove the cassette, push the printer over onto its back side, and then open "
+"the duplexing transport unit cover. Next, remove the jammed paper, and "
+"quickly return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Verwijder de cassette en duw de printer op zijn rug. Open vervolgens de klep van de duplex-transporteenheid. Verwijder het vastgelopen papier en zet de printer onmiddellijk weer rechtop.\n"
+"Raadpleeg de gebruikershandleiding voor details.\n"
+
+
+#: src/bjcupsmon_ui.c:67
+msgid ""
+"Remove the cassette, push the printer over onto its side, and then open the "
+"duplexing transport unit cover. Next, remove the jammed paper, and quickly "
+"return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Verwijder de cassette en duw de printer op zijn zij. Open vervolgens de klep van de duplex-transporteenheid. Verwijder het vastgelopen papier en zet de printer onmiddellijk weer rechtop.\n"
+"Raadpleeg de Gebruikershandleiding voor details.\n"
+
+
+#: src/bjcupsmon_ui.c:70
+msgid ""
+"Operator error.\n"
+"Press the printer's RESUME button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then on again.\n"
+msgstr ""
+"Bedieningsfout.\n"
+"Druk op de knop HERVATTEN op de printer.\n"
+"Als hiermee de fout niet wordt hersteld, annuleert u het afdrukken en schakelt u de printer uit en weer in.\n"
+
+
+#: src/bjcupsmon_ui.c:71
+msgid ""
+"Operator error.\n"
+"Press the printer's OK button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then on again.\n"
+msgstr ""
+"Bedieningsfout.\n"
+"Druk op de knop OK op de printer.\n"
+"Als hiermee de fout niet wordt hersteld, annuleert u het afdrukken en schakelt u de printer uit en weer in.\n"
+
+
+#: src/bjcupsmon_ui.c:72
+msgid ""
+"Operator error.\n"
+"Press the printer's Start button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then on again.\n"
+msgstr ""
+"Bedieningsfout.\n"
+"Druk op de startknop op de printer.\n"
+"Als hiermee de fout niet wordt hersteld, annuleert u het afdrukken en schakelt u de printer uit en weer in.\n"
+
+
+#: src/bjcupsmon_ui.c:73
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Het absorptiekussen voor inkt is bijna vol.\n"
+"Druk op de knop HERVATTEN op de printer om door te gaan met afdrukken.\n"
+"Neem contact op met het servicecentrum."
+
+#: src/bjcupsmon_ui.c:74
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Het absorptiekussen voor inkt is bijna vol.\n"
+"Druk op de knop OK op de printer om door te gaan met afdrukken.\n"
+"Neem contact op met het servicecentrum."
+
+#: src/bjcupsmon_ui.c:75
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Het absorptiekussen voor inkt is bijna vol.\n"
+"Druk op de knop HERVATTEN op de printer om door te gaan met afdrukken.\n"
+"Er moet binnenkort onderhoud aan de printer worden uitgevoerd om het absorptiekussen voor inkt te vervangen.\n"
+"Neem contact op met het ondersteuningscentrum of servicecentrum.\n"
+"Het absorptiekussen voor inkt kan alleen door een gekwalificeerde technicus worden vervangen."
+
+#: src/bjcupsmon_ui.c:76
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Het absorptiekussen voor inkt is bijna vol.\n"
+"Druk op de knop OK op de printer om door te gaan met afdrukken.\n"
+"Er moet binnenkort onderhoud aan de printer worden uitgevoerd om het absorptiekussen voor inkt te vervangen.\n"
+"Neem contact op met het ondersteuningscentrum of servicecentrum.\n"
+"Het absorptiekussen voor inkt kan alleen door een gekwalificeerde technicus worden vervangen."
+
+#: src/bjcupsmon_ui.c:77
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Het absorptiekussen voor inkt is bijna vol.\n"
+"Druk op de knop Starten op de printer om door te gaan met afdrukken.\n"
+"Neem contact op met het servicecentrum."
+
+#: src/bjcupsmon_ui.c:78
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Het absorptiekussen voor inkt is bijna vol.\n"
+"Druk op de knop Starten op de printer om door te gaan met afdrukken.\n"
+"Er moet binnenkort onderhoud aan de printer worden uitgevoerd om het absorptiekussen voor inkt te vervangen.\n"
+"Neem contact op met het ondersteuningscentrum of servicecentrum.\n"
+"Het absorptiekussen voor inkt kan alleen door een gekwalificeerde technicus worden vervangen."
+
+#: src/bjcupsmon_ui.c:79
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"You can continue printing under the ink out condition by pressing the RESUME "
+"button. Replace the empty ink tank immediately after the printing. The "
+"printer may be damaged if printing is continued under the ink out condition."
+msgstr ""
+"De inkt is op.\n"
+"Vervang de inkttank en sluit de klep. Wanneer u de inkttank vervangt, moet de binnenste klep geopend zijn.\n"
+"\n"
+"Door op de knop HERVATTEN op de printer te drukken kunt u doorgaan met afdrukken, ondanks het feit dat de inkt op is. Vervang de lege inkttank onmiddellijk na het afdrukken. Als u de printer blijft gebruiken wanneer de inkttank leeg is, kan de printer beschadigd raken."
+
+#: src/bjcupsmon_ui.c:80
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the cartridge cannot be changed. Close the "
+"cover, wait for printing to finish, then open the cover again and change the "
+"print head or ink tank.\n"
+msgstr ""
+"De klep van de printer staat open.\n"
+"Als de printer bezig is met afdrukken, kan de inktpatroon niet worden vervangen. Sluit de klep, wacht tot het afdrukken is voltooid, open de klep dan opnieuw en vervang de printkop of inkttank.\n"
+
+
+#: src/bjcupsmon_ui.c:81
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank.\n"
+msgstr ""
+"De klep van de printer staat open.\n"
+"Als de printer bezig is met afdrukken, kan de printkop of inkttank niet worden vervangen. Sluit de klep, wacht tot het afdrukken is voltooid, open de klep dan opnieuw en vervang de printkop of inkttank.\n"
+
+
+#: src/bjcupsmon_ui.c:82
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Open the paper output tray. Printing will restart.\n"
+msgstr ""
+"Er kunnen geen documenten worden afgedrukt, omdat de papieruitvoerlade is gesloten.\n"
+"Open de papieruitvoerlade. Het afdrukken wordt opnieuw gestart.\n"
+
+
+#: src/bjcupsmon_ui.c:83
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Press the printer's Open button, and open the paper output tray. Printing "
+"will restart.\n"
+msgstr ""
+"Er kunnen geen documenten worden afgedrukt, omdat de papieruitvoerlade is gesloten.\n"
+"Druk op de knop Openen op de printer en open de papieruitvoerlade. Het afdrukken wordt opnieuw gestart.\n"
+
+
+#: src/bjcupsmon_ui.c:84
+msgid ""
+"Operator error.\n"
+"The connected printer cannot work correctly.\n"
+msgstr ""
+"Bedieningsfout.\n"
+"De aangesloten printer kan niet goed werken.\n"
+
+
+#: src/bjcupsmon_ui.c:85
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr ""
+"Bezig met reinigen.\n"
+"Een ogenblik geduld.\n"
+
+
+#: src/bjcupsmon_ui.c:86
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the ink cartridge, close the printer's cover.\n"
+msgstr ""
+"De houder staat op de vervangingspositie.\n"
+"Sluit de klep van de printer na het vervangen van de inktpatroon.\n"
+
+
+#: src/bjcupsmon_ui.c:87
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the print head or the ink tank, close the cover of the "
+"printer. To replace only the ink tank, do not remove the print head from the "
+"printer. Do not touch the lock lever.\n"
+msgstr ""
+"De houder staat op de vervangingspositie.\n"
+"Sluit de klep van de printer na het vervangen van de printkop of inkttank. Als u alleen de inkttank wilt vervangen, moet u de printkop niet uit de printer verwijderen. Raak de vergrendeling niet aan.\n"
+
+
+#: src/bjcupsmon_ui.c:88 src/bjcupsmon_ui.c:92
+msgid "Printing.\n"
+msgstr "Bezig met afdrukken.\n"
+
+#: src/bjcupsmon_ui.c:89
+msgid "The printer is performing another operation.\n"
+msgstr "Er wordt een andere taak op de printer uitgevoerd.\n"
+
+#: src/bjcupsmon_ui.c:90
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the ink tank, close the cover.\n"
+msgstr ""
+"De houder staat op de vervangingspositie.\n"
+"Sluit de klep van de printer na het vervangen van de inkttank.\n"
+
+
+#: src/bjcupsmon_ui.c:91
+msgid ""
+"A print head is not installed or the installed print head is not compatible "
+"with this printer.\n"
+"Install an appropriate print head and close the cover of the printer.\n"
+msgstr ""
+"Er is geen printkop geïnstalleerd of de geïnstalleerde printkop is niet compatibel met deze printer.\n"
+"Installeer de juiste printkop en sluit de klep van de printer.\n"
+
+
+#: src/bjcupsmon_ui.c:93
+msgid "Printer is online.\n"
+msgstr "De printer is online.\n"
+
+#: src/bjcupsmon_ui.c:94
+msgid ""
+"\n"
+"The following ink tank is running low.\n"
+msgstr ""
+"\n"
+"De volgende inkttank is bijna leeg.\n"
+
+
+#: src/bjcupsmon_ui.c:95
+msgid ""
+"\n"
+"The following ink is running low.\n"
+msgstr ""
+"\n"
+"De volgende inkt is bijna op.\n"
+
+
+#: src/bjcupsmon_ui.c:96 src/bjcupsmon_ui.c:164
+msgid " Black <BCI-7eBK>\n"
+msgstr " Zwart <BCI-7eBK>\n"
+
+#: src/bjcupsmon_ui.c:97 src/bjcupsmon_ui.c:165
+msgid " Black <BCI-9BK>\n"
+msgstr " Zwart <BCI-9BK>\n"
+
+#: src/bjcupsmon_ui.c:98 src/bjcupsmon_ui.c:166
+msgid " Photo Cyan <BCI-7ePC>\n"
+msgstr " Cyaan Foto <BCI-7ePC>\n"
+
+#: src/bjcupsmon_ui.c:99 src/bjcupsmon_ui.c:167
+msgid " Photo Magenta <BCI-7ePM>\n"
+msgstr " Magenta Foto <BCI-7ePM>\n"
+
+#: src/bjcupsmon_ui.c:100 src/bjcupsmon_ui.c:168
+msgid " Cyan <BCI-7eC>\n"
+msgstr " Cyaan <BCI-7eC>\n"
+
+#: src/bjcupsmon_ui.c:101 src/bjcupsmon_ui.c:169
+msgid " Magenta <BCI-7eM>\n"
+msgstr " Magenta <BCI-7eM>\n"
+
+#: src/bjcupsmon_ui.c:102 src/bjcupsmon_ui.c:170
+msgid " Yellow <BCI-7eY>\n"
+msgstr " Geel <BCI-7eY>\n"
+
+#: src/bjcupsmon_ui.c:103
+msgid " Red <BCI-7R>\n"
+msgstr " Rood <BCI-7R>\n"
+
+#: src/bjcupsmon_ui.c:104
+msgid " Green <BCI-7G>\n"
+msgstr " Groen <BCI-7G>\n"
+
+#: src/bjcupsmon_ui.c:105
+msgid " Black <BCI-3eBK>\n"
+msgstr " Zwart <BCI-3eBK>\n"
+
+#: src/bjcupsmon_ui.c:106 src/bjcupsmon_ui.c:198
+msgid " Black <BCI-15 Black>\n"
+msgstr " Zwart <BCI-15 Black>\n"
+
+#: src/bjcupsmon_ui.c:107 src/bjcupsmon_ui.c:199
+msgid " Color <BCI-16 Color>\n"
+msgstr " Kleur <BCI-16 Color>\n"
+
+#: src/bjcupsmon_ui.c:108 src/bjcupsmon_ui.c:194
+msgid "dummy1"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:109 src/bjcupsmon_ui.c:195
+msgid "dummy2"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:110 src/bjcupsmon_ui.c:196
+msgid "dummy3"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:111 src/bjcupsmon_ui.c:197
+msgid "dummy4"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:112
+msgid " Black <BCI-24 Black>\n"
+msgstr " Zwart <BCI-24 Black>\n"
+
+#: src/bjcupsmon_ui.c:113
+msgid " Color <BCI-24 Color>\n"
+msgstr " Kleur <BCI-24 Color>\n"
+
+#: src/bjcupsmon_ui.c:114
+msgid ""
+"\n"
+"Prepare a new ink tank.\n"
+"\n"
+msgstr ""
+"\n"
+"Bereid een nieuwe inkttank voor.\n"
+
+
+#: src/bjcupsmon_ui.c:115 src/bjcupsmon_ui.c:176
+msgid " Black <PG-40>\n"
+msgstr " Zwart <PG-40>\n"
+
+#: src/bjcupsmon_ui.c:116 src/bjcupsmon_ui.c:181
+msgid " Color <CL-41>\n"
+msgstr " Kleur <CL-41>\n"
+
+#: src/bjcupsmon_ui.c:117 src/bjcupsmon_ui.c:187
+msgid " Black <CLI-8BK>\n"
+msgstr " Zwart <CLI-8BK>\n"
+
+#: src/bjcupsmon_ui.c:118 src/bjcupsmon_ui.c:188
+msgid " Black <PGI-5BK>\n"
+msgstr " Zwart <PGI-5BK>\n"
+
+#: src/bjcupsmon_ui.c:119 src/bjcupsmon_ui.c:189
+msgid " Photo Cyan <CLI-8PC>\n"
+msgstr " Cyaan Foto <CLI-8PC>\n"
+
+#: src/bjcupsmon_ui.c:120 src/bjcupsmon_ui.c:190
+msgid " Photo Magenta <CLI-8PM>\n"
+msgstr " Magenta Foto <CLI-8PM>\n"
+
+#: src/bjcupsmon_ui.c:121 src/bjcupsmon_ui.c:191
+msgid " Cyan <CLI-8C>\n"
+msgstr " Cyaan <CLI-8C>\n"
+
+#: src/bjcupsmon_ui.c:122 src/bjcupsmon_ui.c:192
+msgid " Magenta <CLI-8M>\n"
+msgstr " Magenta <CLI-8M>\n"
+
+#: src/bjcupsmon_ui.c:123 src/bjcupsmon_ui.c:193
+msgid " Yellow <CLI-8Y>\n"
+msgstr " Geel <CLI-8Y>\n"
+
+#: src/bjcupsmon_ui.c:124
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"The resulting print quality may not be satisfactory, if printing is "
+"continued under this condition.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"Bereid een nieuwe inktpatroon voor. \n"
+"Het kan zijn dat de afdrukkwaliteit niet voldoende is als u de printer blijft gebruiken terwijl de inkt bijna op is. \n"
+"Als de zwarte inktpatroon of de kleureninktpatroon leeg is, kunt u via de Inktpatrooninstellingen op het tabblad Onderhoud van het printerstuurprogramma de printer zo instellen het afdrukken met de andere inktpatroon wordt voortgezet.\n"
+
+
+#: src/bjcupsmon_ui.c:125
+msgid ""
+"\n"
+"The ink cartridge has been installed or replaced.\n"
+"If the printout contains misaligned lines or is not satisfactory after the "
+"installation or replacement, refer to the user's guide and carry out the "
+"print head alignment.\n"
+msgstr ""
+"\n"
+"De inktpatroon is geïnstalleerd of vervangen.\n"
+"Als na het installeren of vervangen van de inktpatroon lijnen niet zijn uitgelijnd of de afdruk niet naar wens is, raadpleegt u de gebruikershandleiding en voert u een printkopuitlijning uit.\n"
+
+
+#: src/bjcupsmon_ui.c:126
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"De waarschuwing voor weinig inkt is uitgeschakeld.\n"
+
+
+#: src/bjcupsmon_ui.c:128 src/bjcupsmon_ui.c:131
+msgid "Printing cannot be executed because the inner cover is open.\n"
+msgstr "Het afdrukken kan niet worden uitgevoerd, omdat de binnenste klep is geopend.\n"
+
+#: src/bjcupsmon_ui.c:129 src/bjcupsmon_ui.c:134
+msgid "Close the inner cover.\n"
+msgstr "Sluit de binnenste klep.\n"
+
+#: src/bjcupsmon_ui.c:130
+msgid "Press the printer's RESUME button. Printing will restart.\n"
+msgstr "Druk op de knop HERVATTEN op de printer. Het afdrukken wordt opnieuw gestart.\n"
+
+#: src/bjcupsmon_ui.c:132
+msgid "Press the printer's OK button. Printing will restart.\n"
+msgstr "Druk op de knop OK op de printer. Het afdrukken wordt opnieuw gestart.\n"
+
+#: src/bjcupsmon_ui.c:133 src/bjcupsmon_ui.c:136
+msgid "During printing, the inner cover of the printer was opened.\n"
+msgstr "De binnenste klep van de printer werd tijdens het afdrukken geopend.\n"
+
+#: src/bjcupsmon_ui.c:138
+msgid ""
+"An ink tank is not installed properly.\n"
+"Open the cover of the printer, make sure the ink tank is installed properly, "
+"and close the cover."
+msgstr ""
+"Een inkttank is niet correct geïnstalleerd.\n"
+"Open de klep van de printer, verhelp het probleem en sluit de klep."
+
+#: src/bjcupsmon_ui.c:139
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Open the printer's cover, make sure the ink cartridge is installed properly, "
+"and close the cover.\n"
+msgstr ""
+"Een inktpatroon is niet correct geïnstalleerd.\n"
+"Open de klep van de printer en installeer de inktpatroon op juiste wijze. Sluit vervolgens de klep.\n"
+
+
+#: src/bjcupsmon_ui.c:140
+msgid ""
+"A digital camera or device that is not supported by the direct printing "
+"function is connected to the direct print port. Disconnect the cable from "
+"the direct print port. If the device is connected via a USB hub, unplug the "
+"USB hub, and then connect the device directly to the direct print port.\n"
+msgstr "De digitale camera of het digitale apparaat aangesloten op de poort voor Direct afdrukken wordt niet ondersteund door de functie voor Direct afdrukken. Verwijder de kabel uit de poort voor direct afdrukken. Als het apparaat is aangesloten via een USB-hub, maakt u de USB-hub los en sluit u het apparaat rechtstreeks aan op de printerpoort.\n"
+
+#: src/bjcupsmon_ui.c:141
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's RESUME button to clear the error.\n"
+msgstr ""
+"Er trad een fout op tijdens de automatische uitlijning van de printkop.\n"
+"\n"
+"Het is mogelijk dat de spuitopeningen van de printkop verstopt zijn. Voer een reiniging uit via het tabblad Onderhoud van het printerstuurprogramma en voer printkopuitlijning opnieuw uit.\n"
+"\n"
+"Als de fout nog steeds optreedt, raadpleegt u de gebruikershandleiding voor meer informatie over deze fout of voert u een handmatige uitlijning uit.\n"
+"\n"
+"Druk op de knop HERVATTEN op de printer om de fout te wissen.\n"
+
+
+#. 860i 990i
+#: src/bjcupsmon_ui.c:142
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's OK button to clear the error.\n"
+msgstr ""
+"Er trad een fout op tijdens de automatische uitlijning van de printkop.\n"
+"\n"
+"Het is mogelijk dat de spuitopeningen van de printkop verstopt zijn. Voer een reiniging uit via het tabblad Onderhoud van het printerstuurprogramma en voer printkopuitlijning opnieuw uit.\n"
+"\n"
+"Als de fout nog steeds optreedt, raadpleegt u de Gebruikershandleiding voor meer informatie over deze fout of voert u een handmatige uitlijning uit.\n"
+"\n"
+"Druk op de knop OK op de printer om de fout te wissen.\n"
+
+
+#: src/bjcupsmon_ui.c:143
+msgid ""
+"An ink tank error has occurred.\n"
+"Open the printer's cover and replace the ink tank on which the ink lamp is "
+"off.\n"
+msgstr ""
+"Er is een inkttankfout opgetreden.\n"
+"Open de klep van de printer en vervang de inkttank waarvan het inktlampje niet brandt.\n"
+
+
+#: src/bjcupsmon_ui.c:144
+msgid "More than one ink tank of the following color is installed.\n"
+msgstr "Er is meer dan een inkttank met de volgende kleur geïnstalleerd\n"
+
+#: src/bjcupsmon_ui.c:145 src/bjcupsmon_ui.c:147
+msgid "The following ink tank cannot be recognized.\n"
+msgstr "De volgende inkttank wordt niet herkend.\n"
+
+#: src/bjcupsmon_ui.c:146
+msgid ""
+"An ink tank is not installed in the correct position.\n"
+"Confirm that the following ink tank is installed in the appropriate "
+"position.\n"
+msgstr ""
+"Een inkttank is niet in de juiste positie geplaatst.\n"
+"Controleer of de volgende inkttank in de juiste positie is geïnstalleerd.\n"
+
+
+#: src/bjcupsmon_ui.c:148
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink tank installed. Then printing can continue under "
+"the ink out condition. Replace the empty ink tank immediately after the "
+"printing. The printer may be damaged if printing is continued under the ink "
+"out condition.\n"
+msgstr ""
+"De inkt is op.\n"
+"Vervang de inkttank en sluit de klep. Wanneer u de inkttank vervangt, moet de binnenste klep geopend zijn.\n"
+"\n"
+"Als de printer bezig is met een afdruktaak en u wilt doorgaan met afdrukken met de geïnstalleerde inkttank, drukt u op de knop HERVATTEN. U kunt hierdoor toch afdrukken, ondanks het feit dat de inkt op is. Vervang de lege inkttank onmiddellijk na het afdrukken. Als u de printer blijft gebruiken wanneer de inkttank leeg is, kan de printer beschadigd raken.\n"
+
+
+#: src/bjcupsmon_ui.c:149 src/bjcupsmon_ui.c:158
+msgid "The following ink may have run out.\n"
+msgstr "De volgende inkt is mogelijk op.\n"
+
+#: src/bjcupsmon_ui.c:150
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's RESUME button. Then printing can continue. Replacing the ink tank "
+"is recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Aanbevolen wordt de inkttank te vervangen.\n"
+"Als de printer bezig is met een afdruktaak en u wilt doorgaan met afdrukken, drukt u op de knop HERVATTEN op de printer. U kunt hierdoor toch afdrukken. Aanbevolen wordt de inkttank na het afdrukken te vervangen. Als u de printer blijft gebruiken wanneer de inkttank leeg is, kan de printer beschadigd raken.\n"
+
+
+#: src/bjcupsmon_ui.c:151
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button. Then printing can continue. Replacing the ink tank is "
+"recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Aanbevolen wordt de inkttank te vervangen.\n"
+"Als de printer bezig is met een afdruktaak en u wilt doorgaan met afdrukken, drukt u op de knop OK op de printer. U kunt hierdoor toch afdrukken. Aanbevolen wordt de inkttank na het afdrukken te vervangen. Als u de printer blijft gebruiken wanneer de inkttank leeg is, kan de printer beschadigd raken.\n"
+
+
+#: src/bjcupsmon_ui.c:152 src/bjcupsmon_ui.c:153
+msgid ""
+"The remaining level of the following ink cannot be correctly detected. "
+"Replace the ink tank.\n"
+msgstr "Het resterende inktniveau van de volgende inkt kan niet worden vastgesteld. Vervang de inkttank.\n"
+
+#: src/bjcupsmon_ui.c:154 src/bjcupsmon_ui.c:155
+msgid ""
+"The ink tank is not installed.\n"
+"Install the ink tank properly and close the printer's cover.\n"
+msgstr ""
+"De inkttank is niet geïnstalleerd.\n"
+"Installeer de inkttank op juiste wijze en sluit de klep van de printer.\n"
+
+
+#: src/bjcupsmon_ui.c:156
+msgid "The following ink cartridge cannot be recognized.\n"
+msgstr "De volgende inktpatroon wordt niet herkend.\n"
+
+#: src/bjcupsmon_ui.c:157
+msgid "The following ink cartridge has previously been used.\n"
+msgstr "De volgende inktpatroon is eerder gebruikt.\n"
+
+#: src/bjcupsmon_ui.c:159
+msgid "The remaining level of the following ink is unknown.\n"
+msgstr "Het inktniveau in de volgende inkttank is onbekend.\n"
+
+#: src/bjcupsmon_ui.c:160
+msgid ""
+"\n"
+"There is a possibility that the printer cannot detect the remaining ink "
+"level properly. \n"
+"Reset the ink counter using the Maintenance tab of the printer driver "
+"whenever you have replaced any ink tank with new one.\n"
+msgstr ""
+"\n"
+"Het is mogelijk dat de printer niet goed kan detecteren hoeveel inkt de inkttank bevat. Wanneer u een inkttank vervangt door een nieuwe, moet u de inktteller opnieuw instellen. U doet dit op het tabblad Onderhoud van het printerstuurprogramma.\n"
+
+
+#: src/bjcupsmon_ui.c:161
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"De inkt is op.\n"
+"Vervang de inktpatroon en sluit de klep.\n"
+"\n"
+"Als de printer bezig is met een afdruktaak en u wilt doorgaan met afdrukken met de geïnstalleerde inktpatroon, drukt u op de knop HERVATTEN. U kunt hierdoor toch afdrukken, ondanks het feit dat de inkt op is. Vervang de lege inktpatroon onmiddellijk na het afdrukken. Als u het afdrukken met een lege inktpatroon voortzet, resulteert dit in een slechte afdrukkwaliteit. \n"
+
+
+#: src/bjcupsmon_ui.c:162
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button with the ink cartridge installed. Then printing can "
+"continue under the ink out condition. Replace the empty ink cartridge "
+"immediately after the printing. The resulting print quality is not "
+"satisfactory, if printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"De inkt is op.\n"
+"Vervang de inktpatroon en sluit de klep.\n"
+"\n"
+"Als de printer bezig is met een afdruktaak en u wilt doorgaan met afdrukken met de geïnstalleerde inktpatroon, drukt u op de knop OK op de printer. U kunt hierdoor toch afdrukken, ondanks het feit dat de inkt op is. Vervang de lege inktpatroon onmiddellijk na het afdrukken. Als u het afdrukken met een lege inktpatroon voortzet, kan dit resulteren in een onaanvaardbare afdrukkwaliteit. \n"
+
+
+#: src/bjcupsmon_ui.c:163
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"Start button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"De inkt is op.\n"
+"Vervang de inktpatroon en sluit de klep.\n"
+"\n"
+"Als de printer bezig is met een afdruktaak en u wilt doorgaan met afdrukken met de geïnstalleerde inktpatroon, drukt u op de knop Starten. U kunt hierdoor toch afdrukken, ondanks het feit dat de inkt op is. Vervang de lege inktpatroon onmiddellijk na het afdrukken. Als u het afdrukken met een lege inktpatroon voortzet, resulteert dit in een slechte afdrukkwaliteit. \n"
+
+
+#: src/bjcupsmon_ui.c:171
+msgid " Black\n"
+msgstr " Zwart \n"
+
+#: src/bjcupsmon_ui.c:172
+msgid " Color\n"
+msgstr " Kleur\n"
+
+#: src/bjcupsmon_ui.c:173
+msgid " Black <PG-30>\n"
+msgstr " Zwart <PG-30>\n"
+
+#: src/bjcupsmon_ui.c:174
+msgid " Black <PG-830>\n"
+msgstr " Zwart <PG-830>\n"
+
+#: src/bjcupsmon_ui.c:175
+msgid " Black <PG-37>\n"
+msgstr " Zwart <PG-37>\n"
+
+#: src/bjcupsmon_ui.c:177
+msgid " Black <PG-50>\n"
+msgstr " Zwart <PG-50>\n"
+
+#: src/bjcupsmon_ui.c:178
+msgid " Color <CL-31>\n"
+msgstr " Kleur <CL-31>\n"
+
+#: src/bjcupsmon_ui.c:179
+msgid " Color <CL-831>\n"
+msgstr " Kleur <CL-831>\n"
+
+#: src/bjcupsmon_ui.c:180
+msgid " Color <CL-38>\n"
+msgstr " Kleur <CL-38>\n"
+
+#: src/bjcupsmon_ui.c:182
+msgid " Color <CL-51>\n"
+msgstr " Kleur <CL-51>\n"
+
+#: src/bjcupsmon_ui.c:183
+msgid " Black <BC-70>\n"
+msgstr " Zwart <BC-70>\n"
+
+#: src/bjcupsmon_ui.c:184
+msgid " Black <BC-90>\n"
+msgstr " Zwart <BC-90>\n"
+
+#: src/bjcupsmon_ui.c:185
+msgid " Color <BC-71>\n"
+msgstr " Kleur <BC-71>\n"
+
+#: src/bjcupsmon_ui.c:186
+msgid " Color <BC-91>\n"
+msgstr " Kleur <BC-91>\n"
+
+#: src/bjcupsmon_ui.c:200
+msgid " Black Ink Tank\n"
+msgstr " Zwarte-Inkttank\n"
+
+#: src/bjcupsmon_ui.c:201
+msgid " Color Ink Tank\n"
+msgstr " Kleureninkttank\n"
+
+#: src/bjcupsmon_ui.c:202
+msgid "Use only one ink tank per color at a time.\n"
+msgstr "Gebruik slechts één inkttank per kleur tegelijk.\n"
+
+#: src/bjcupsmon_ui.c:203 src/bjcupsmon_ui.c:209
+msgid ""
+"\n"
+"Printing cannot be executed because the ink cartridge may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink cartridge.\n"
+msgstr ""
+"\n"
+"Het afdrukken kan niet worden uitgevoerd, omdat de inktpatroon niet correct is geïnstalleerd of niet compatibel is met deze printer.\n"
+"\n"
+"Installeer de juiste inktpatroon.\n"
+
+
+#: src/bjcupsmon_ui.c:204
+msgid ""
+"\n"
+"Printing cannot be executed because the ink tank may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink tank.\n"
+msgstr ""
+"\n"
+"Het afdrukken kan niet worden uitgevoerd, omdat de inkttank niet correct is geïnstalleerd of niet compatibel is met deze printer.\n"
+"\n"
+"Installeer de juiste inkttank.\n"
+
+
+#: src/bjcupsmon_ui.c:205
+msgid "The following ink has run out.\n"
+msgstr "De volgende inkt is op.\n"
+
+#: src/bjcupsmon_ui.c:206
+msgid "dummy B-36_01"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:207
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's RESUME button for at least "
+"5 seconds, and then release it. Releasing the function for detecting the "
+"remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"Wanneer u in deze situatie afdrukt, kan de printer beschadigd raken. Canon is niet aansprakelijk voor een slechte werking van of schade aan de printer veroorzaakt door opnieuw gevulde inkttanks.\n"
+"\n"
+"Wanneer u het afdrukken wilt voortzetten, moet u de functie voor het detecteren van het resterende inktniveau uitschakelen. Druk op de knop HERVATTEN op de printer en houd deze ten minste 5 seconden ingedrukt. Het uitschakelen van de functie voor het detecteren van het resterende inktniveau wordt onthouden.\n"
+"Hiermee schakelt u de functie voor het detecteren van het resterende inktniveau voor de bovenstaande inkt uit.\n"
+
+
+#: src/bjcupsmon_ui.c:208
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it. Releasing the function for detecting "
+"the remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"Wanneer u in deze situatie afdrukt, kan de printer beschadigd raken. Canon is niet aansprakelijk voor een slechte werking van of schade aan de printer veroorzaakt door opnieuw gevulde inkttanks.\n"
+"\n"
+"Wanneer u het afdrukken wilt voortzetten, moet u de functie voor het detecteren van het resterende inktniveau uitschakelen. Druk op de knop Stoppen/herstellen op de printer en houd deze ten minste 5 seconden ingedrukt. Het uitschakelen van de functie voor het detecteren van het resterende inktniveau wordt onthouden.\n"
+"Hiermee schakelt u de functie voor het detecteren van het resterende inktniveau voor de bovenstaande inkt uit.\n"
+
+
+#: src/bjcupsmon_ui.c:210
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+msgstr ""
+"\n"
+"De functie voor het bepalen van de resterende inktvoorraad wordt uitgeschakeld aangezien de inktvoorraad niet correct kan worden bepaald.\n"
+"\n"
+"Als u wilt doorgaan met het afdrukken zonder deze functie, drukt u op de knop HERVATTEN.\n"
+
+
+#: src/bjcupsmon_ui.c:211
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"If you want to continue printing without this function, press the printer's "
+"RESUME button for at least 5 seconds.\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+msgstr ""
+"\n"
+"De functie voor het bepalen van de resterende inktvoorraad wordt uitgeschakeld aangezien de inktvoorraad niet correct kan worden bepaald. \n"
+"Als u wilt doorgaan met afdrukken zonder deze functie, drukt u minstens 5 seconden op de knop HERVATTEN op de printer. \n"
+"Voor de beste kwaliteit beveelt Canon het gebruik van nieuwe, originele Canon-cartridges aan. \n"
+"Canon is niet aansprakelijk voor een slechte werking of problemen veroorzaakt door het voortzetten van het afdrukken met een lege inkttank.\n"
+
+
+#: src/bjcupsmon_ui.c:212
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the printer's "
+"OK button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"De functie voor het bepalen van de resterende inktvoorraad wordt uitgeschakeld aangezien de inktvoorraad niet correct kan worden bepaald.\n"
+"\n"
+"Als u wilt doorgaan met het afdrukken zonder deze functie, drukt u op de knop OK op de printer.\n"
+"\n"
+"Aangeraden wordt echte Canon-cartridges te gebruiken om een optimale kwaliteit te verkrijgen.\n"
+
+
+#: src/bjcupsmon_ui.c:213
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the printer's "
+"Start button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"De functie voor het bepalen van de resterende inktvoorraad wordt uitgeschakeld aangezien de inktvoorraad niet correct kan worden bepaald.\n"
+"\n"
+"Als u wilt doorgaan met het afdrukken zonder deze functie, drukt u op de knop Starten op de printer.\n"
+"\n"
+"Aangeraden wordt echte Canon-cartridges te gebruiken om een optimale kwaliteit te verkrijgen.\n"
+
+
+#: src/bjcupsmon_ui.c:214
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"Bereid een nieuwe inktpatroon voor.\n"
+"Als de zwarte inktpatroon of de kleureninktpatroon leeg is, kunt u via de Inktpatrooninstellingen op het tabblad Onderhoud van het printerstuurprogramma de printer zo instellen het afdrukken met de andere inktpatroon wordt voortgezet.\n"
+
+
+#: src/bjcupsmon_ui.c:215
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, press and hold the printer's RESUME button for at "
+"least 5 seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Vervang de inkttank. Wanneer u in deze situatie afdrukt, kan de printer beschadigd raken.\n"
+"Als u wilt doorgaan met afdrukken, drukt u op de knop HERVATTEN op de printer en houdt u deze ten minste 5 seconden ingedrukt. \n"
+"Hiermee schakelt u de functie voor het detecteren van het resterende niveau van de bovenstaande inkt uit. Het uitschakelen van deze functie wordt onthouden.\n"
+"Canon is niet aansprakelijk voor een slechte werking of problemen veroorzaakt door het voortzetten van het afdrukken met een lege inkttank.\n"
+
+
+#: src/bjcupsmon_ui.c:216
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Vervang de inkttank. Wanneer u in deze situatie afdrukt, kan de printer beschadigd raken.\n"
+"Als u wilt doorgaan met afdrukken, drukt u op de knop Stoppen/herstellen op de printer en houdt u deze ten minste 5 seconden ingedrukt. \n"
+"Hiermee schakelt u de functie voor het detecteren van het resterende niveau van de bovenstaande inkt uit. Het uitschakelen van deze functie wordt onthouden.\n"
+"Canon is niet aansprakelijk voor een slechte werking of problemen veroorzaakt door het voortzetten van het afdrukken met een lege inkttank.\n"
+
+
+#: src/bjcupsmon_ui.c:217
+msgid ""
+"\n"
+"Replace the ink cartridge and close the cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's RESUME button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Vervang de inktpatroon en sluit de klep. \n"
+"Als er wordt afgedrukt en u wilt doorgaan met afdrukken, drukt u minstens 5 seconden op de knop HERVATTEN terwijl de inktpatroon is geïnstalleerd. Het afdrukken kan worden voortgezet terwijl de inkt bijna op is. \n"
+"De functie voor het bepalen van de resterende inktvoorraad wordt uitgeschakeld. \n"
+"Vervang de lege inktpatroon direct na het afdrukken. \n"
+"De afdrukkwaliteit is niet voldoende als u de printer blijft gebruiken wanneer de inkt op is.\n"
+
+
+#. Ver.2.80 for B-53 Stop/Reset
+#: src/bjcupsmon_ui.c:219
+msgid ""
+"\n"
+"Replace the ink cartridge and close the cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's Stop/Reset button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Vervang de inktpatroon en sluit de klep. \n"
+"Als er wordt afgedrukt en u wilt doorgaan met afdrukken, drukt u minstens 5 seconden op de knop Stoppen/herstellen terwijl de inktpatroon is geïnstalleerd. Het afdrukken kan worden voortgezet terwijl de inkt bijna op is. \n"
+"De functie voor het bepalen van de resterende inktvoorraad wordt uitgeschakeld. \n"
+"Vervang de lege inktpatroon direct na het afdrukken. \n"
+"De afdrukkwaliteit is niet voldoende als u de printer blijft gebruiken wanneer de inkt op is.\n"
+
+
+#: src/bjcupsmon_ui.c:220
+msgid "dummy B-36_03"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:221
+msgid ""
+"\n"
+"The function for detecting the remaining levels of the following ink has "
+"been released.\n"
+msgstr ""
+"\n"
+"De functie voor het detecteren van het resterende inktniveau van de volgende inkt is uitgeschakeld.\n"
+
+
+#: src/bjcupsmon_ui.c:222
+msgid ""
+"Battery exhausted.\n"
+"Turn the printer off and either plug the AC adapter in, or change to a fully "
+"charged battery pack. If printing is in progress, stop printing then perform "
+"the process.\n"
+msgstr ""
+"De batterij is leeg.\n"
+"Zet de printer uit en sluit de netspanningsadapter aan of schakel over op een volledig opgeladen batterijset. Als de printer bezig is met afdrukken, zet u het afdrukken stop en voert u vervolgens de benodigde handelingen uit.\n"
+
+
+#: src/bjcupsmon_ui.c:223
+msgid "dummuy C-5"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:224
+msgid "The battery is low.\n"
+msgstr "De batterij is bijna leeg.\n"
+
+#: src/bjcupsmon_ui.c:225
+msgid ""
+"Print job has been canceled by the printer's RESUME button being pressed.\n"
+msgstr "De afdruktaak is geannuleerd, omdat op de knop HERVATTEN van de printer is gedrukt.\n"
+
+#: src/bjcupsmon_ui.c:226
+msgid ""
+"Print job has been canceled by the printer's Stop/Reset button being "
+"pressed.\n"
+msgstr "De afdruktaak is geannuleerd, omdat op de knop Stoppen/herstellen van de printer is gedrukt.\n"
+
+#: src/bjcupsmon_ui.c:227
+msgid "Preparing for printing.\n"
+msgstr "Voorbereiden voor het afdrukken.\n"
+
+#: src/bjcupsmon_ui.c:228
+msgid "Waiting for the previous page to dry.\n"
+msgstr "Wacht tot de vorige pagina droog is.\n"
+
+#: src/bjcupsmon_ui.c:229
+msgid "Printer is busy.\n"
+msgstr "De printer is bezig.\n"
+
+#: src/bjcupsmon_ui.c:230
+msgid "Load paper into the rear tray.\n"
+msgstr "Plaats papier in de achterste lade.\n"
+
+#: src/bjcupsmon_ui.c:231
+msgid "Load paper into the front tray.\n"
+msgstr "Plaats papier in de voorste lade.\n"
+
+#: src/bjcupsmon_ui.c:232
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, remove the paper from the front tray side.\n"
+msgstr "Open de achterklep en verwijder het vastgelopen papier. Als u het vastgelopen papier niet kunt verwijderen, verwijdert u het papier aan de kant van de voorste lade.\n"
+
+#: src/bjcupsmon_ui.c:233
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"If you want to continue printing without this function, press the printer's "
+"Stop/Reset button for at least 5 seconds.\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+msgstr ""
+"\n"
+"De functie voor het bepalen van de resterende inktvoorraad wordt uitgeschakeld aangezien de inktvoorraad niet correct kan worden bepaald. \n"
+"Als u wilt doorgaan met afdrukken zonder deze functie, drukt u minstens 5 seconden op de knop Stoppen/herstellen op de printer. \n"
+"Voor de beste kwaliteit beveelt Canon het gebruik van nieuwe, originele Canon-cartridges aan. \n"
+"Canon is niet aansprakelijk voor een slechte werking of problemen veroorzaakt door het voortzetten van het afdrukken met een lege inkttank.\n"
+
+
+#. Other message table.
+#: src/bjcupsmon_ui.c:238
+msgid "Ready.\n"
+msgstr "Gereed.\n"
+
+#: src/bjcupsmon_ui.c:239
+msgid "Unknown printer.\n"
+msgstr "Onbekende printer.\n"
+
+#: src/bjcupsmon_ui.c:240
+msgid "Spooler error.\n"
+msgstr "Spoolerfout.\n"
+
+#: src/bjcupsmon_ui.c:435
+msgid "Cartridge Type:"
+msgstr "Type cartridge:"
+
+#: src/bjcupsmon_ui.c:441 src/bjcupsmon_ui.c:448
+msgid "Scanner"
+msgstr "Scanner"
+
+#: src/bjcupsmon_ui.c:454 src/bjcupsmon_ui.c:461
+msgid "Unsupported"
+msgstr "Niet ondersteund"
+
+#: src/bjcupsmon_ui.c:473 src/bjcupsmon_ui.c:480
+msgid "Photo"
+msgstr "Foto"
+
+#: src/bjcupsmon_ui.c:489 src/bjcupsmon_ui.c:496
+msgid "Black"
+msgstr "Zwart"
+
+#: src/bjcupsmon_ui.c:510 src/bjcupsmon_ui.c:517
+msgid "Color"
+msgstr "Kleur"
+
+#: src/bjcupsmon_ui.c:526
+msgid "Unknown"
+msgstr "Onbek."
+
+#: src/bjcupsmon_ui.c:542
+msgid "Paper Thickness Lever Position:"
+msgstr "Positie diktehendel:"
+
+#: src/bjcupsmon_ui.c:544
+msgid "                                                "
+msgstr " "
+
+#. Up.
+#: src/bjcupsmon_ui.c:547
+msgid "up"
+msgstr "omhoog"
+
+#. Down.
+#: src/bjcupsmon_ui.c:551
+msgid "down"
+msgstr "omlaag"
+
+#. Left.
+#: src/bjcupsmon_ui.c:555
+msgid "left"
+msgstr "Links "
+
+#. Right.
+#: src/bjcupsmon_ui.c:559
+msgid "right"
+msgstr "Rechts "

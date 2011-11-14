@@ -1,0 +1,6 @@
+AC_INIT(canonip4300.ppd)
+AM_INIT_AUTOMAKE(canonppd, 1.0.0, no-define)
+
+AC_PROG_INSTALL
+
+AC_OUTPUT(Makefile)

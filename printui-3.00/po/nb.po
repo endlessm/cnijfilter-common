@@ -1,0 +1,3273 @@
+# Inkjet Printer Driver Ver.3.00 for Linux
+# Copyright CANON INC. 2001-2008
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.00\n"
+"POT-Creation-Date: 2008-07-24 19:46+0900\n"
+"PO-Revision-Date: 2008-08-21 0:39+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+#: src/loadres.c:104
+msgid "Locale"
+msgstr "nb_NO"
+
+
+
+
+
+#: po/gladestr.h:1
+msgid "  Black:"
+msgstr "  Svart:"
+
+#: po/gladestr.h:2
+msgid "  Cyan:"
+msgstr "  Cyan:"
+
+#: po/gladestr.h:3
+msgid "  Magenta:"
+msgstr "  Magenta:"
+
+#: po/gladestr.h:4
+msgid "  Set...  "
+msgstr "  Angi...   "
+
+#: po/gladestr.h:5
+msgid "  Yellow:"
+msgstr "  Gul:"
+
+#: po/gladestr.h:7
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20–400)"
+
+#: po/gladestr.h:8
+msgid "(1-999)"
+msgstr "(1–999)"
+
+#: po/gladestr.h:9
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:10
+msgid "0"
+msgstr "0"
+
+#: po/gladestr.h:11
+msgid "1"
+msgstr "1"
+
+#: po/gladestr.h:12
+msgid "2"
+msgstr "2"
+
+#: po/gladestr.h:13
+msgid "3"
+msgstr "3"
+
+#: po/gladestr.h:14
+msgid "4"
+msgstr "4"
+
+#: po/gladestr.h:15
+msgid "5"
+msgstr "5"
+
+#: po/gladestr.h:16
+msgid "About"
+msgstr "Om"
+
+#: po/gladestr.h:17
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Justering i kolonner A til C (-3 til +7)"
+
+#: po/gladestr.h:18
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Justering i kolonner A til D (-3 til +7)"
+
+#: po/gladestr.h:19
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Justering i kolonner A til E (-3 til +7)"
+
+#: po/gladestr.h:20
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Justering i kolonner A til E (-5 til +5)"
+
+#: po/gladestr.h:21
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Justering i kolonner A til F (-5 til +5)"
+
+#: po/gladestr.h:22
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Justering i kolonner A til G (-5 til +5)"
+
+#: po/gladestr.h:23
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Justering i kolonner D til F (-5 til +5)"
+
+#: po/gladestr.h:24
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Justering i kolonner E til G (-5 til +5)"
+
+#: po/gladestr.h:25
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Justering i kolonner F og G (-3 til +3)"
+
+#: po/gladestr.h:26
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Justering i kolonner F til K (-5 til +5)"
+
+#: po/gladestr.h:27
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Justering i kolonner G til J (-5 til +5)"
+
+#: po/gladestr.h:28
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Justering i kolonner G til L (-5 til +5)"
+
+#: po/gladestr.h:29
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Justering i kolonner H til K (-5 til +5)"
+
+#: po/gladestr.h:30
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Justering i kolonner H til L (-5 til +5)"
+
+#: po/gladestr.h:31
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Justering i kolonner H til N (-5 til +5)"
+
+#: po/gladestr.h:32
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Justering i kolonner K og L (-3 til +3)"
+
+#: po/gladestr.h:33
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Justering i kolonner L og M (-3 til +3)"
+
+#: po/gladestr.h:34
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Justering i kolonner L til O (-5 til +5)"
+
+#: po/gladestr.h:35
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Justering i kolonner M og N (-2 til +2)"
+
+#: po/gladestr.h:36
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Justering i kolonner M til P (-2 til +2)"
+
+#: po/gladestr.h:37
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Justering i kolonner M til Q (-5 til +5)"
+
+#: po/gladestr.h:38
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Justering i kolonner O til T (-2 til +2)"
+
+#: po/gladestr.h:39
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Justering i kolonner P til T (-5 til +5)"
+
+#: po/gladestr.h:40
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Justering i kolonner Q og R (-4 til +4)"
+
+#: po/gladestr.h:41
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Justering i kolonner U og V (-2 til +2)"
+
+#: po/gladestr.h:42
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Justering i kolonner U og V (-3 til +3)"
+
+#: po/gladestr.h:43
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Justering i kolonner W og X (-3 til +3)"
+
+#: po/gladestr.h:44
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Justering i kolonner a til e (-2 til +2)"
+
+#: po/gladestr.h:45
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Justering i kolonner f til j (-2 til +2)"
+
+#: po/gladestr.h:46
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Justering i kolonner f til k (-2 til +2)"
+
+#: po/gladestr.h:47
+msgid "Align Print Head"
+msgstr "Juster skrivehode"
+
+#: po/gladestr.h:48
+msgid "Align heads manually"
+msgstr "Juster hoder manuelt"
+
+#: po/gladestr.h:49 po/keystr.h:258
+msgid "All Colors"
+msgstr "Alle farger"
+
+#: po/gladestr.h:50
+msgid "Amount of Extension:"
+msgstr "Utvidelse:"
+
+#: po/gladestr.h:51 po/keystr.h:212
+msgid "Auto"
+msgstr "Auto"
+
+#: po/gladestr.h:52
+msgid "Auto Power"
+msgstr "Automatisk avslåing"
+
+#: po/gladestr.h:53
+msgid "Auto Power Off"
+msgstr "Auto-avslåing"
+
+#: po/gladestr.h:54
+msgid "Auto Power Off:"
+msgstr "Auto-avslåing:"
+
+#: po/gladestr.h:55
+msgid "Auto Power On:"
+msgstr "Auto-påslåing:"
+
+#: po/gladestr.h:56
+msgid "Auto Power Settings"
+msgstr "Innstillinger for automatisk avslåing"
+
+#: po/gladestr.h:57 po/keystr.h:130
+msgid "Automatic Duplex Printing"
+msgstr "Automatisk dupleksutskrift"
+
+#: po/gladestr.h:58
+msgid "Available Media Types:"
+msgstr "Tilgjengelige medietyper:"
+
+#: po/gladestr.h:59
+msgid "BJ Cartridge:"
+msgstr "BJ-kassett:"
+
+#: po/gladestr.h:60
+msgid "Back to Setup"
+msgstr "Tilbake til oppsett"
+
+#: po/gladestr.h:61 po/keystr.h:246
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Toveisjustering (-5 til +5)"
+
+#: po/gladestr.h:62 po/keystr.h:260
+msgid "Black"
+msgstr "Svart"
+
+#: po/gladestr.h:63
+msgid "Black Ink Tank"
+msgstr "Svart Blekktank"
+
+#: po/gladestr.h:64
+msgid "Borderless Printing"
+msgstr "Kant til kant-utskrift"
+
+#: po/gladestr.h:65
+msgid "Bottom Plate Cleaning"
+msgstr "Bunnplaterengjøring"
+
+#: po/gladestr.h:66
+msgid "Brightness:"
+msgstr "Lysstyrke:"
+
+#: po/gladestr.h:67 po/keystr.h:225
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: po/gladestr.h:68
+msgid ""
+"Canon Inkjet Printer Driver Ver.3.00 for Linux\n"
+"Copyright CANON INC. 2001-2008\n"
+"All Rights Reserved. "
+msgstr ""
+
+#: po/gladestr.h:71 po/keystr.h:120
+msgid "Cassette"
+msgstr "Kassett"
+
+#: po/gladestr.h:72
+msgid "Centering"
+msgstr "Midtstill"
+
+#: po/gladestr.h:73
+msgid "Change"
+msgstr "Endre"
+
+#: po/gladestr.h:74
+msgid "Change Combination"
+msgstr "Endre kombinasjon"
+
+#: po/gladestr.h:75
+msgid "Change Media Type"
+msgstr "Endre medietype"
+
+#: po/gladestr.h:76
+msgid "Cleaning"
+msgstr "Rengjør"
+
+#: po/gladestr.h:77
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Klikk på Endre hvis du vil bruke denne innstillingen, eller klikk på Tilbake \n"
+"til oppsett for å velge en annen kombinasjon."
+
+#: po/gladestr.h:78
+msgid "Collate"
+msgstr "Sorter"
+
+#: po/gladestr.h:79 po/keystr.h:59 po/keystr.h:264
+msgid "Color"
+msgstr "Farge"
+
+#: po/gladestr.h:80
+msgid "Color Balance"
+msgstr "Fargebalanse"
+
+#: po/gladestr.h:81
+msgid "Color Ink Tank"
+msgstr "Fargeblekktank"
+
+#: po/gladestr.h:82
+msgid "Color Mode:"
+msgstr "Fargemodus:"
+
+#: po/gladestr.h:83
+msgid "Color/Intensity:"
+msgstr "Farge/Intensitet:"
+
+#: po/gladestr.h:84
+msgid "Column A:"
+msgstr "Kolonne A:"
+
+#: po/gladestr.h:85
+msgid "Column B:"
+msgstr "Kolonne B:"
+
+#: po/gladestr.h:86
+msgid "Column C:"
+msgstr "Kolonne C:"
+
+#: po/gladestr.h:87
+msgid "Column D:"
+msgstr "Kolonne D:"
+
+#: po/gladestr.h:88
+msgid "Column E:"
+msgstr "Kolonne E:"
+
+#: po/gladestr.h:89
+msgid "Column F:"
+msgstr "Kolonne F:"
+
+#: po/gladestr.h:90
+msgid "Column G:"
+msgstr "Kolonne G:"
+
+#: po/gladestr.h:91
+msgid "Column H:"
+msgstr "Kolonne H:"
+
+#: po/gladestr.h:92
+msgid "Column I:"
+msgstr "Kolonne I:"
+
+#: po/gladestr.h:93
+msgid "Column J:"
+msgstr "Kolonne J:"
+
+#: po/gladestr.h:94
+msgid "Column K:"
+msgstr "Kolonne K:"
+
+#: po/gladestr.h:95
+msgid "Column L:"
+msgstr "Kolonne L:"
+
+#: po/gladestr.h:96
+msgid "Column M:"
+msgstr "Kolonne M:"
+
+#: po/gladestr.h:97
+msgid "Column N:"
+msgstr "Kolonne N:"
+
+#: po/gladestr.h:98
+msgid "Column O:"
+msgstr "Kolonne O:"
+
+#: po/gladestr.h:99
+msgid "Column P:"
+msgstr "Kolonne P:"
+
+#: po/gladestr.h:100
+msgid "Column Q:"
+msgstr "Kolonne Q:"
+
+#: po/gladestr.h:101
+msgid "Column R:"
+msgstr "Kolonne R:"
+
+#: po/gladestr.h:102
+msgid "Column S:"
+msgstr "Kolonne S:"
+
+#: po/gladestr.h:103
+msgid "Column T:"
+msgstr "Kolonne T:"
+
+#: po/gladestr.h:104
+msgid "Column U:"
+msgstr "Kolonne U:"
+
+#: po/gladestr.h:105
+msgid "Column V:"
+msgstr "Kolonne V:"
+
+#: po/gladestr.h:106
+msgid "Column W:"
+msgstr "Kolonne W:"
+
+#: po/gladestr.h:107
+msgid "Column X:"
+msgstr "Kolonne X:"
+
+#: po/gladestr.h:108
+msgid "Column a:"
+msgstr "Kolonne a:"
+
+#: po/gladestr.h:109
+msgid "Column b:"
+msgstr "Kolonne b:"
+
+#: po/gladestr.h:110
+msgid "Column c:"
+msgstr "Kolonne c:"
+
+#: po/gladestr.h:111
+msgid "Column d:"
+msgstr "Kolonne d:"
+
+#: po/gladestr.h:112
+msgid "Column e:"
+msgstr "Kolonne e:"
+
+#: po/gladestr.h:113
+msgid "Column f:"
+msgstr "Kolonne f:"
+
+#: po/gladestr.h:114
+msgid "Column g:"
+msgstr "Kolonne g:"
+
+#: po/gladestr.h:115
+msgid "Column h:"
+msgstr "Kolonne h:"
+
+#: po/gladestr.h:116
+msgid "Column i:"
+msgstr "Kolonne i:"
+
+#: po/gladestr.h:117
+msgid "Column j:"
+msgstr "Kolonne j:"
+
+#: po/gladestr.h:118
+msgid "Column k:"
+msgstr "Kolonne k:"
+
+#: po/gladestr.h:119
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#: po/gladestr.h:120
+msgid "Copies:"
+msgstr "Kopier:"
+
+#: po/gladestr.h:121
+msgid "Custom"
+msgstr "Egendefinert"
+
+#: po/gladestr.h:122
+msgid "Custom Paper Size"
+msgstr "Egendefinert papirstørrelse"
+
+#: po/gladestr.h:123
+msgid "Custom Settings"
+msgstr "Egendefinerte innstillinger"
+
+#: po/gladestr.h:124
+msgid "Dark "
+msgstr "Mørk　"
+
+#: po/gladestr.h:125
+msgid "Deep Cleaning"
+msgstr "Dyprensing"
+
+#: po/gladestr.h:126
+msgid "Defaults"
+msgstr "Standarder"
+
+#: po/gladestr.h:127
+msgid "Diffusion"
+msgstr "Diffusjon"
+
+#: po/gladestr.h:128
+msgid "Display low ink warning"
+msgstr "Vis advarsel om lite blekk"
+
+#: po/gladestr.h:129
+msgid "Dither"
+msgstr "Dither"
+
+#: po/gladestr.h:130
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest streker i feltene for kolonnene G til L."
+
+#: po/gladestr.h:133
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest streker i feltene for kolonnene H til O."
+
+#: po/gladestr.h:136
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest streker i feltene for kolonnene M til R."
+
+#: po/gladestr.h:139
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest streker i feltene for kolonnene P til V."
+
+#: po/gladestr.h:142
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest vannrette striper i feltene for kolonnene O til V."
+
+#: po/gladestr.h:145
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Undersøk mønstrene som skrives ut, og angi nummeret på mønsteret som er jevnest \n"
+"for kolonne M og N."
+
+#: po/gladestr.h:147
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest vannrette striper i feltene for kolonnene a til j."
+
+#: po/gladestr.h:149
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest vannrette striper i feltene for kolonnene a til k."
+
+#: po/gladestr.h:151
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Se på mønsteret på utskriften, og angi mønsternummeret for mønsteret med \n"
+"færrest streker i feltene for kolonnene H til Q."
+
+#: po/gladestr.h:153
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Se på mønsteret på utskriften, og fyll ut feltene for kolonnene L og M med \n"
+"nummeret for mønsteret som er jevnest, og som ikke har noen striper i områdene \n"
+"som er merket med piler."
+
+#: po/gladestr.h:156
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Se på mønsteret på utskriften, og fyll ut feltene for kolonne W og X med \n"
+"nummeret for mønsteret som er jevnest, og som ikke har noen striper i områdene \n"
+"som er merket med piler."
+
+#: po/gladestr.h:159
+msgid "Execute"
+msgstr "Utfør"
+
+#: po/gladestr.h:160
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Utfør justering av skrivehode. Se på mønsteret på utskriften, og angi \n"
+"mønsternummeret for mønsteret med færrest streker i feltene for kolonnene A til \n"
+"F. "
+
+#: po/gladestr.h:163
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Utfør justering av skrivehode. Se på mønsteret på utskriften, og angi \n"
+"mønsternummeret for mønsteret med færrest streker i feltene for kolonnene A til \n"
+"G."
+
+#: po/gladestr.h:166
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Utfør justering av skrivehode. Se på mønsteret på utskriften, og angi \n"
+"mønsternummeret for mønsteret med færrest streker i feltene for kolonnene A til \n"
+"K."
+
+#: po/gladestr.h:169
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Utfør justering av skrivehode. Se på mønsteret på utskriften, og angi \n"
+"mønsternummeret for mønsteret med færrest streker i feltene for kolonnene A til \n"
+"L."
+
+#: po/gladestr.h:172
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Utfør justering av skrivehode. Se på mønsteret på utskriften, og angi \n"
+"mønsternummeret for mønsteret med færrest streker i feltene for kolonnene A til \n"
+"N."
+
+#: po/gladestr.h:175
+msgid ""
+"Executes Bottom Plate Cleaning.\n"
+"\n"
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half. Unfold the paper, and load "
+"the paper into \n"
+"the sheet feeder with the ridge of the crease facing down. Then click "
+"Execute."
+msgstr ""
+
+#: po/gladestr.h:180
+msgid "Exit"
+msgstr "Avslutt"
+
+#: po/gladestr.h:181
+msgid "Fast"
+msgstr "Rask"
+
+#: po/gladestr.h:182 po/keystr.h:195
+msgid "Fine"
+msgstr "Fin"
+
+#: po/gladestr.h:183
+msgid "Grayscale Printing"
+msgstr "Gråtoneutskrift"
+
+#: po/gladestr.h:184
+msgid "Halftoning:"
+msgstr "Rastrering:"
+
+#: po/gladestr.h:185
+msgid "Height:     "
+msgstr "Høyde:    "
+
+#: po/gladestr.h:186
+msgid "High"
+msgstr "Høy"
+
+#: po/gladestr.h:187
+msgid "High "
+msgstr "Høy　"
+
+#: po/gladestr.h:188
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Vannrett justering (-3 til +7)"
+
+#: po/gladestr.h:189
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute Deep Cleaning."
+msgstr ""
+
+#: po/gladestr.h:196 po/keystr.h:229
+msgid "Ignore"
+msgstr "Ignorer"
+
+#: po/gladestr.h:197
+msgid "Ink Cartridge Settings"
+msgstr "Innstillinger for blekkassett"
+
+#: po/gladestr.h:198
+msgid "Ink Cartridge:"
+msgstr "Blekkassett:"
+
+#: po/gladestr.h:199
+msgid "Ink Counter Reset"
+msgstr "Nullstill blekkmåler"
+
+#: po/gladestr.h:200
+msgid "Ink Drying Wait Time:"
+msgstr "Ventetid for blekktørking:"
+
+#: po/gladestr.h:201
+msgid "Intensity:"
+msgstr "Intensitet:"
+
+#: po/gladestr.h:202
+msgid "Light "
+msgstr "Lys　"
+
+#: po/gladestr.h:203
+msgid "Long"
+msgstr "Lang"
+
+#: po/gladestr.h:204
+msgid "Long-side stapling"
+msgstr "Langsidestifting"
+
+#: po/gladestr.h:205
+msgid "Low"
+msgstr "Lav"
+
+#: po/gladestr.h:206
+msgid "Low Ink Warning Setting"
+msgstr "Innstilling for advarsel om lite blekk"
+
+#: po/gladestr.h:207
+msgid "Main"
+msgstr "Hoved"
+
+#: po/gladestr.h:208
+msgid "Maintenance"
+msgstr "Vedlikehold"
+
+#: po/gladestr.h:209
+msgid "Manual"
+msgstr "Manuell"
+
+#: po/gladestr.h:210
+msgid "Manual Color Adjustment"
+msgstr "Manuell fargejustering"
+
+#: po/gladestr.h:211
+msgid "Max"
+msgstr "Maks."
+
+#: po/gladestr.h:212
+msgid "Media Type:"
+msgstr "Medietype:"
+
+#: po/gladestr.h:213
+msgid "Min"
+msgstr "Min."
+
+#: po/gladestr.h:214
+msgid "Nozzle Check"
+msgstr "Dysesjekk"
+
+#: po/gladestr.h:215 po/keystr.h:224
+msgid "OK"
+msgstr "OK"
+
+#: po/gladestr.h:216
+msgid "Page Layout:"
+msgstr "Sideoppsett:"
+
+#: po/gladestr.h:217
+msgid "Page Setup"
+msgstr "Utskriftsformat"
+
+#: po/gladestr.h:218
+msgid "Page Size:"
+msgstr "Sidestørrelse:"
+
+#: po/gladestr.h:219
+msgid "Paper Gap:"
+msgstr "Papirmellomrom:"
+
+#: po/gladestr.h:220
+msgid "Paper Size"
+msgstr "Papirstørrelse"
+
+#: po/gladestr.h:221
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Papirkildeinnstilling for vanlig papir"
+
+#: po/gladestr.h:222
+msgid "Paper Source:"
+msgstr "Papirkilde:"
+
+#: po/gladestr.h:223
+msgid "Pattern Check"
+msgstr "Mønstersjekk"
+
+#: po/gladestr.h:224
+msgid "Pause Page"
+msgstr "Stopp side"
+
+#: po/gladestr.h:225
+msgid "Pause Scan"
+msgstr "Stopp skanning"
+
+#: po/gladestr.h:226
+msgid "Power Off"
+msgstr "Avslåing"
+
+#: po/gladestr.h:227
+msgid "Prevent paper abrasion"
+msgstr "Forhindre papirslitasje"
+
+#: po/gladestr.h:228
+msgid "Print Alignment Value"
+msgstr "Skriv ut justeringsverdi"
+
+#: po/gladestr.h:229
+msgid "Print Check Pattern"
+msgstr "Utskrift av sjekkmønster"
+
+#: po/gladestr.h:230
+msgid "Print Head Alignment"
+msgstr "Justering av skrivehodet"
+
+#: po/gladestr.h:231
+msgid "Print Head Cleaning"
+msgstr "Rengjøring av skrivehode"
+
+#: po/gladestr.h:232
+msgid "Print Quality:"
+msgstr "Utskriftskvalitet:"
+
+#: po/gladestr.h:233
+msgid "Print Type:"
+msgstr "Utskriftstype:"
+
+#: po/gladestr.h:234
+msgid "Print from Last Page"
+msgstr "Skriv ut fra siste side"
+
+#: po/gladestr.h:235
+msgid "Quality:"
+msgstr "Kvalitet:"
+
+#: po/gladestr.h:236
+msgid "Quiet Mode"
+msgstr "Stillemodus"
+
+#: po/gladestr.h:237
+msgid "Read your printer manual for details about low ink warnings."
+msgstr "Les skriverhåndboken for å få informasjon om advarsler om lite blekk."
+
+#: po/gladestr.h:238 po/keystr.h:113
+msgid "Rear Tray"
+msgstr "Bakskuff"
+
+#: po/gladestr.h:239
+msgid "Roller Cleaning"
+msgstr "Rengjøring av ruller"
+
+#: po/gladestr.h:240
+msgid "Scaling:"
+msgstr "Skalering:"
+
+#: po/gladestr.h:241
+msgid "Select the ink cartridge for printing."
+msgstr "Velg blekkassett for utskrift."
+
+#: po/gladestr.h:242
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Velg den nye blekktanken og klikk på Utfør.\n"
+
+#: po/gladestr.h:244
+msgid "Send"
+msgstr "Send"
+
+#: po/gladestr.h:245
+msgid "Short"
+msgstr "Kort"
+
+#: po/gladestr.h:246
+msgid "Short-side stapling"
+msgstr "Kortsidestifting"
+
+#: po/gladestr.h:247 po/keystr.h:63
+msgid "Standard"
+msgstr "Standard"
+
+#: po/gladestr.h:248
+msgid "Staple Side:"
+msgstr "Stifteside:"
+
+#: po/gladestr.h:249
+msgid "Start Print Head Alignment"
+msgstr "Starter justering av skrivehodet"
+
+#: po/gladestr.h:250
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires a sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Starter rengjøring av bunnplaten for å unngå flekker på papiret under \n"
+"utskriften.\n"
+"\n"
+"Til denne operasjonen trenger du to ark med vanlig papir i A4- eller \n"
+"Letter-format. Følg disse retningslinjene for å utføre bunnplaterengjøring."
+
+#: po/gladestr.h:253
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Måleren som hører til den nye blekktanken, indikerer at den er full. Denne \n"
+"handlingen sikrer riktig visning av advarsel om lite blekk."
+
+#: po/gladestr.h:256
+msgid "The following is recommended:"
+msgstr "Følgende anbefales:"
+
+#: po/gladestr.h:257
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Skrivehodedysene er ikke tilstoppet.\n"
+"Hvis utskriftsmønsteret ligner på dette \n"
+"mønsteret, kan du bruke skriveren \n"
+"med en gang.\n"
+"Klikk på Avslutt."
+
+#: po/gladestr.h:261
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Hvis du vil sikre nøyaktig visning av advarselen om lite blekk, må du gjøre \n"
+"følgende:\n"
+
+#: po/gladestr.h:264
+msgid "Units:"
+msgstr "Enheter:"
+
+#: po/gladestr.h:265
+msgid "Use quiet mode"
+msgstr "Bruk stillemodus"
+
+#: po/gladestr.h:266
+msgid "Using AC Adapter:"
+msgstr "Ved bruk av adapter:"
+
+#: po/gladestr.h:267
+msgid "Using Battery:"
+msgstr "Ved bruk av batteri:"
+
+#: po/gladestr.h:268
+msgid "View Printer Status..."
+msgstr "Vis skriverstatus..."
+
+#: po/gladestr.h:269
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#: po/gladestr.h:270
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Når du har byttet ut en blekktank, må du alltid klikke på Nullstill blekkmåler \n"
+"i kategorien Vedlikehold i skriverdriveren, og velge den nye blekktanken."
+
+#: po/gladestr.h:273
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Hvilket av disse mønstrene ligner utskrifsmønsteret mest på?"
+
+#: po/gladestr.h:274
+msgid "Width:    "
+msgstr "Bredde:    "
+
+#: po/gladestr.h:275
+msgid "You cannot print with the following combination:"
+msgstr "Du kan ikke skrive ut med følgende kombinasjon:"
+
+#: po/gladestr.h:276
+msgid "You have selected the following combination:"
+msgstr "Du har valgt følgende kombinasjon:"
+
+#: po/gladestr.h:277
+msgid "inch"
+msgstr "tomme"
+
+#: po/gladestr.h:278
+msgid "mm"
+msgstr "mm"
+
+#.
+#. * Translatable strings file generated by keytext.pl.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/keystr.h:7
+msgid "BJF850"
+msgstr ""
+
+#: po/keystr.h:8
+msgid "BJF860"
+msgstr ""
+
+#: po/keystr.h:9
+msgid "BJF870"
+msgstr ""
+
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#: po/keystr.h:11
+msgid "BJS600"
+msgstr ""
+
+#: po/keystr.h:12
+msgid "BJS630"
+msgstr ""
+
+#: po/keystr.h:13
+msgid "BJS6300"
+msgstr ""
+
+#: po/keystr.h:14
+msgid "BJF900"
+msgstr ""
+
+#: po/keystr.h:15
+msgid "BJF9000"
+msgstr ""
+
+#: po/keystr.h:16
+msgid "BJS500"
+msgstr ""
+
+#: po/keystr.h:17
+msgid "BJS300"
+msgstr ""
+
+#: po/keystr.h:18
+msgid "PIXUS 550i"
+msgstr ""
+
+#: po/keystr.h:19
+msgid "PIXUS 850i"
+msgstr ""
+
+#: po/keystr.h:20
+msgid "PIXUS 950i"
+msgstr ""
+
+#: po/keystr.h:21
+msgid "i250"
+msgstr ""
+
+#: po/keystr.h:22
+msgid "i255"
+msgstr ""
+
+#: po/keystr.h:23
+msgid "PIXUS 560i"
+msgstr ""
+
+#: po/keystr.h:24
+msgid "PIXUS 860i"
+msgstr ""
+
+#: po/keystr.h:25
+msgid "PIXUS 990i"
+msgstr ""
+
+#: po/keystr.h:26
+msgid "PIXUS iP3100"
+msgstr ""
+
+#: po/keystr.h:27
+msgid "PIXUS iP4100"
+msgstr ""
+
+#: po/keystr.h:28
+msgid "PIXUS iP8600"
+msgstr ""
+
+#: po/keystr.h:29
+msgid "PIXMA iP1000"
+msgstr ""
+
+#: po/keystr.h:30
+msgid "PIXMA iP1500"
+msgstr ""
+
+#: po/keystr.h:31
+msgid "iP2200"
+msgstr ""
+
+#: po/keystr.h:32
+msgid "iP4200"
+msgstr ""
+
+#: po/keystr.h:33
+msgid "iP6600D"
+msgstr ""
+
+#: po/keystr.h:34
+msgid "iP7500"
+msgstr ""
+
+#: po/keystr.h:35
+msgid "MP500"
+msgstr ""
+
+#: po/keystr.h:36
+msgid "iP3300"
+msgstr ""
+
+#: po/keystr.h:37
+msgid "MP510"
+msgstr ""
+
+#: po/keystr.h:38
+msgid "iP4300"
+msgstr ""
+
+#: po/keystr.h:39
+msgid "MP600"
+msgstr ""
+
+#: po/keystr.h:40
+msgid "MP160"
+msgstr ""
+
+#: po/keystr.h:41
+msgid "iP90"
+msgstr ""
+
+#: po/keystr.h:42
+msgid "iP2500 series"
+msgstr ""
+
+#: po/keystr.h:43
+msgid "iP1800 series"
+msgstr ""
+
+#: po/keystr.h:44
+msgid "MP140 series"
+msgstr ""
+
+#: po/keystr.h:45
+msgid "MP210 series"
+msgstr ""
+
+#: po/keystr.h:46
+msgid "iP3500 series"
+msgstr ""
+
+#: po/keystr.h:47
+msgid "iP4500 series"
+msgstr ""
+
+#: po/keystr.h:48
+msgid "MP610 series"
+msgstr ""
+
+#: po/keystr.h:49
+msgid "MP520 series"
+msgstr ""
+
+#: po/keystr.h:50
+msgid "iP100 series"
+msgstr ""
+
+#: po/keystr.h:51
+msgid "iP2600 series"
+msgstr ""
+
+#: po/keystr.h:52
+msgid "iP3600 series"
+msgstr ""
+
+#: po/keystr.h:53
+msgid "iP4600 series"
+msgstr ""
+
+#: po/keystr.h:54
+msgid "MP630 series"
+msgstr ""
+
+#: po/keystr.h:55
+msgid "MP540 series"
+msgstr ""
+
+#: po/keystr.h:56
+msgid "MP240 series"
+msgstr ""
+
+#: po/keystr.h:57
+msgid "MP190 series"
+msgstr ""
+
+#: po/keystr.h:58
+msgid "iP1900 series"
+msgstr ""
+
+#: po/keystr.h:60
+msgid "Grayscale"
+msgstr "Gråtoner"
+
+#: po/keystr.h:61
+msgid "Photo"
+msgstr "Foto"
+
+#: po/keystr.h:62
+msgid "Graphic"
+msgstr "Grafikk "
+
+#: po/keystr.h:64
+msgid "Linear Tone"
+msgstr "Lineær tone"
+
+#: po/keystr.h:65
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Bytte fra %s til %s anbefales."
+
+#: po/keystr.h:66
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Klikk på Endre for å bruke den nye kombinasjonen, Ignorer hvis du vil bruke \n"
+"gjeldende kombinasjon, eller Tilbake til oppsett hvis du vil velge en annen \n"
+"kombinasjon."
+
+#: po/keystr.h:68
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "Du bør endre innstillingen %s."
+
+#: po/keystr.h:69
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Bruk velgeren nedenfor til å angi en passende innstilling. Klikk på Endre for å \n"
+"bruke den nye kombinasjonen."
+
+#: po/keystr.h:71
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Klikk på Ignorer hvis du vil bruke gjeldende kombinasjon, eller klikk på \n"
+"Tilbake til oppsett for å velge en annen kombinasjon."
+
+#: po/keystr.h:73
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "Du bør endre innstillingen %s.　"
+
+#: po/keystr.h:74
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to use\n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+
+#: po/keystr.h:76
+msgid "Paper Thickness Lever Position:"
+msgstr "Posisjon for papirtykkelsesspak:"
+
+#: po/keystr.h:77
+msgid "Paper Thickness Lever Position: "
+msgstr "Posisjon for papirtykkelsesspak: "
+
+#: po/keystr.h:78
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Flytt papirtykkelsesspaken %s. "
+
+#: po/keystr.h:79
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Flytt papirtykkelsesspaken %s."
+
+#: po/keystr.h:80
+msgid "Media Type"
+msgstr "Medietype"
+
+#: po/keystr.h:81
+msgid "Page Size"
+msgstr "Sidestørrelse"
+
+#: po/keystr.h:82
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Medietype: %s kan ikke brukes med den valgte BJ-kassetten.\n"
+"Velg medietypen du vil bruke."
+
+#: po/keystr.h:84
+msgid "Plain Paper"
+msgstr "Vanlig papir"
+
+#: po/keystr.h:85
+msgid "Transparencies"
+msgstr "Transparenter"
+
+#: po/keystr.h:86
+msgid "Back Print Film"
+msgstr "Baklysfilm"
+
+#: po/keystr.h:87
+msgid "Fabric Sheet"
+msgstr "Tekstilark"
+
+#: po/keystr.h:88
+msgid "High Gloss Film"
+msgstr "Høyglansfilm"
+
+#: po/keystr.h:89
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: po/keystr.h:90
+msgid "Envelope"
+msgstr "Konvolutt"
+
+#: po/keystr.h:91
+msgid "Glossy Postcard"
+msgstr "Beglanset postkort"
+
+#: po/keystr.h:92
+msgid "High Resolution Paper"
+msgstr "High Resolution Paper"
+
+#: po/keystr.h:93
+msgid "T-Shirt Transfers"
+msgstr "T-skjorteoverføringsark"
+
+#: po/keystr.h:94
+msgid "Thick Paper"
+msgstr ""
+
+#: po/keystr.h:95
+msgid "High Gloss Photo Film"
+msgstr "Høyglanset fotofilm"
+
+#: po/keystr.h:96
+msgid "Glossy Photo Paper"
+msgstr "Glossy Photo Paper"
+
+#: po/keystr.h:97
+msgid "Glossy Photo Cards"
+msgstr "Glanset fotokort"
+
+#: po/keystr.h:98
+msgid "Photo Paper Pro"
+msgstr "Photo Paper Pro"
+
+#: po/keystr.h:99
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#: po/keystr.h:100
+msgid "Matte Photo Paper"
+msgstr "Matte Photo Paper"
+
+#: po/keystr.h:101
+msgid "Photo Paper Plus Glossy"
+msgstr "Photo Paper Plus Glossy"
+
+#: po/keystr.h:102
+msgid "Other Paper"
+msgstr "Annet papir"
+
+#: po/keystr.h:103
+msgid "Other Photo Paper"
+msgstr "Annet fotopapir"
+
+#: po/keystr.h:104
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#: po/keystr.h:105
+msgid "Fine Art Photo Rag"
+msgstr ""
+
+#: po/keystr.h:106
+msgid "Other Fine Art Paper"
+msgstr "Annet Fine Art-papir"
+
+#: po/keystr.h:107
+msgid "Photo Paper Plus Glossy II"
+msgstr "Photo Paper Plus Glossy II"
+
+#: po/keystr.h:108
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "Photo Paper Plus Semi-gloss"
+
+#: po/keystr.h:109
+msgid "Photo Paper Pro Platinum"
+msgstr "Photo Paper Pro Platinum"
+
+#: po/keystr.h:110
+msgid "Photo Paper Pro II"
+msgstr "Photo Paper Pro II"
+
+#: po/keystr.h:111
+msgid "Manual Feed"
+msgstr "Manuell mating"
+
+#: po/keystr.h:112
+msgid "Auto Sheet Feeder"
+msgstr "Automatisk arkmater"
+
+#: po/keystr.h:114
+msgid "Auto Feeder2"
+msgstr ""
+
+#: po/keystr.h:115
+msgid "Standard Cassette"
+msgstr "Standardkassett"
+
+#: po/keystr.h:116
+msgid "Optional Cassette"
+msgstr "Valgfri kassett"
+
+#: po/keystr.h:117
+msgid "Auto Select"
+msgstr "Autovalg"
+
+#: po/keystr.h:118
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#: po/keystr.h:119
+msgid "Tractor Feeder"
+msgstr "Traktormater"
+
+#: po/keystr.h:121
+msgid "Paper Feed Switch"
+msgstr "Papirmatingsbryter"
+
+#: po/keystr.h:122
+msgid "Front Feeder"
+msgstr "Frontmater"
+
+#: po/keystr.h:123
+msgid "Front Tray"
+msgstr "Frontskuff"
+
+#: po/keystr.h:124
+msgid "Front for Plain Paper"
+msgstr "Front for vanlig papir"
+
+#: po/keystr.h:125
+msgid "Front for Plain Paper "
+msgstr "Front for vanlig papir　"
+
+#: po/keystr.h:126
+msgid "Continuous Autofeed"
+msgstr "Fortløpende automating"
+
+#: po/keystr.h:127
+msgid "Automatically Select"
+msgstr "Velg automatisk"
+
+#: po/keystr.h:128
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Den valgte papirstørrelsen kan ikke brukes i gjeldende innstilling for \n"
+"papirkilde.\n"
+"Innstillingen for papirkilde er endret til %s."
+
+#: po/keystr.h:131
+msgid ""
+"A page size that is not supported by the \n"
+"automatic duplex printing function is selected."
+msgstr ""
+"Du har valgt en sidestørrelse som ikke støttes av funksjonen for automatisk \n"
+"dupleksutskrift."
+
+#: po/keystr.h:133
+#, c-format
+msgid "Uncheck %s."
+msgstr "Fjern merket for %s."
+
+#: po/keystr.h:134
+msgid "Paper Source"
+msgstr "Papirkilde"
+
+#: po/keystr.h:135
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "Du har valgt en sidestørrelse som ikke kan mates fra kassetten."
+
+#: po/keystr.h:136
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "Endre innstillingen %s til innstillingen %s."
+
+#: po/keystr.h:137
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"Papirkilden: %s er ikke tilgjengelig for den valgte medietypen.\n"
+"Innstillingen for papirkilde er endret til %s."
+
+#: po/keystr.h:139
+msgid "Enhanced Black"
+msgstr ""
+
+#: po/keystr.h:140
+msgid "A5 148.0x210.0mm"
+msgstr "A5 148.0x210.0mm"
+
+#: po/keystr.h:141
+msgid "A4 210.0x297.0mm"
+msgstr "A4 210.0x297.0mm"
+
+#: po/keystr.h:142
+msgid "A3 297.0x420.0mm"
+msgstr "A3 297.0x420.0mm"
+
+#: po/keystr.h:143
+msgid "B5 182.0x257.0mm"
+msgstr "B5 182.0x257.0mm"
+
+#: po/keystr.h:144
+msgid "B4 257.0x364.0mm"
+msgstr "B4 257.0x364.0mm"
+
+#: po/keystr.h:145
+msgid "Letter 8.5\"x11\" 215.9x279.4mm"
+msgstr "Letter 8.5\"x11\" 215.9x279.4mm"
+
+#: po/keystr.h:146
+msgid "Legal 8.5\"x14\" 215.9x355.6mm"
+msgstr "Legal 8.5\"x14\" 215.9x355.6mm"
+
+#: po/keystr.h:147
+msgid "11\"x17\" 279.4x431.8mm"
+msgstr "11\"x17\" 279.4x431.8mm"
+
+#: po/keystr.h:148
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr "17\"x22\" 431.8x558.8mm"
+
+#: po/keystr.h:149
+msgid "Hagaki 100.0x148.0mm"
+msgstr "Hagaki 100.0x148.0mm"
+
+#: po/keystr.h:150
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.6mm"
+msgstr "Comm. Konv. #10 9.5\"x4.12\" 241.3x104.6mm"
+
+#: po/keystr.h:151
+msgid "DL Env. 220.0x110.0mm"
+msgstr "DL-konv. 220.0x110.0mm"
+
+#: po/keystr.h:152
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr "13.5\"x17\" 342.9x431.8mm"
+
+#: po/keystr.h:153
+msgid "Youkei 4 235.0x105.0mm"
+msgstr "Youkei 4 235.0x105.0mm"
+
+#: po/keystr.h:154
+msgid "Youkei 6 190.0x98.0mm"
+msgstr "Youkei 6 190.0x98.0mm"
+
+#: po/keystr.h:155
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr "Letter+ 9\"x13.3\" 228.6x337.8mm"
+
+#: po/keystr.h:156
+msgid "A4+ 223.5x355.6mm"
+msgstr "A4+ 223.5x355.6mm"
+
+#: po/keystr.h:157
+msgid "A3+ 13\"x19\" 329.0x483.0mm"
+msgstr "A3+ 13\"x19\" 329.0x483.0mm "
+
+#: po/keystr.h:158
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr "Canon 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:159
+msgid "Custom..."
+msgstr "Egendefinert..."
+
+#: po/keystr.h:160
+msgid "Comm. Env. #10 4.12\"x9.5\" 104.6x241.3mm"
+msgstr "Comm. Konv. #10 4.12\"x9.5\" 104.6x241.3mm"
+
+#: po/keystr.h:161
+msgid "DL Env. 110.0x220.0mm"
+msgstr "DL-konv. 110.0x220.0mm"
+
+#: po/keystr.h:162
+msgid "Youkei 4 105.0x235.0mm"
+msgstr "Youkei 4 105.0x235.0mm"
+
+#: po/keystr.h:163
+msgid "Youkei 6 98.0x190.0mm"
+msgstr "Youkei 6 98.0x190.0mm"
+
+#: po/keystr.h:164
+msgid "L 89.0x127.0mm"
+msgstr "L 89.0x127.0mm"
+
+#: po/keystr.h:165
+msgid "2L 127.0x178.0mm"
+msgstr "2L 127.0x178.0mm"
+
+#: po/keystr.h:166
+msgid "4\"x6\" 10x15cm 101.6x152.4mm"
+msgstr "10x15cm 4\"x6\" 101.6x152.4mm"
+
+#: po/keystr.h:167
+msgid "P 89.0x254.0mm"
+msgstr "P 89.0x254.0mm"
+
+#: po/keystr.h:168
+msgid "5\"x7\" 13x18cm 127.0x177.8mm"
+msgstr "13x18cm 5\"x7\" 127.0x177.8mm"
+
+#: po/keystr.h:169
+msgid "Hagaki 2 200.0x148.0mm"
+msgstr "Hagaki 2 200.0x148.0mm"
+
+#: po/keystr.h:170
+msgid "Card 2.16\"x3.58\" 55.0x91.0mm"
+msgstr "Kort 2.16\"x3.58\" 55.0x91.0mm"
+
+#: po/keystr.h:171
+msgid "Credit Card 2.13\"x3.39\" 54.0x86.0mm"
+msgstr "Kredittkort 2.13\"x3.39\" 54.0x86.0mm"
+
+#: po/keystr.h:172
+msgid "Fine Art A4 210.0x297.0mm"
+msgstr "Fine Art A4 210.0x297.0mm"
+
+#: po/keystr.h:173
+msgid "4\"x8\" 101.6x203.2mm"
+msgstr "4\"x8\" 101.6x203.2mm"
+
+#: po/keystr.h:174
+msgid "8\"x10\" 20x25cm 203.2x254.0mm"
+msgstr "20x25cm 8\"x10\" 203.2x254.0mm"
+
+#: po/keystr.h:175
+msgid "Wide 4\"x7.1\" 101.6x180.6mm"
+msgstr "Wide 4\"x7.1\" 101.6x180.6mm"
+
+#: po/keystr.h:176
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s–%s)"
+
+#: po/keystr.h:177
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "tommer(%s–%s) "
+
+#: po/keystr.h:178
+msgid "Position 1"
+msgstr ""
+
+#: po/keystr.h:179
+msgid "Position 2"
+msgstr ""
+
+#: po/keystr.h:180
+msgid "Position 3"
+msgstr ""
+
+#: po/keystr.h:181 po/keystr.h:188
+msgid "Left"
+msgstr "Venstre"
+
+#: po/keystr.h:182
+msgid "Center"
+msgstr "Midtstill"
+
+#: po/keystr.h:183 po/keystr.h:189
+msgid "Right"
+msgstr "Høyre"
+
+#: po/keystr.h:184 po/keystr.h:186 po/keystr.h:192
+msgid "Down"
+msgstr "Ned"
+
+#: po/keystr.h:185 po/keystr.h:187 po/keystr.h:193
+msgid "Up"
+msgstr "Opp"
+
+#: po/keystr.h:190
+msgid "Front"
+msgstr ""
+
+#: po/keystr.h:191
+msgid "Back"
+msgstr "Tilbake"
+
+#: po/keystr.h:194
+msgid "Smoothing"
+msgstr ""
+
+#: po/keystr.h:196
+msgid "Fine(Fast)"
+msgstr ""
+
+#: po/keystr.h:197
+msgid "Banner Printing"
+msgstr "Bannerutskrift"
+
+#: po/keystr.h:198
+msgid "Color    "
+msgstr ""
+
+#: po/keystr.h:199
+msgid "Black    "
+msgstr "Svart"
+
+#: po/keystr.h:200
+msgid "Photo    "
+msgstr "Foto　"
+
+#: po/keystr.h:201
+msgid "Black/Color    "
+msgstr "Svart/farge"
+
+#: po/keystr.h:202
+msgid "Black/Photo    "
+msgstr "Svart/foto"
+
+#: po/keystr.h:203
+msgid "Photo/Color    "
+msgstr "Foto/farge"
+
+#: po/keystr.h:204
+msgid "Fit-to-Page Printing"
+msgstr "Tilpass til side-utskrift"
+
+#: po/keystr.h:205
+msgid "Normal-size Printing"
+msgstr "Normal utskrift"
+
+#: po/keystr.h:206
+msgid "Scaled Printing"
+msgstr "Skalert utskrift"
+
+#: po/keystr.h:207
+msgid "Default"
+msgstr ""
+
+#: po/keystr.h:208
+msgid "More bright (Gamma = 1.0)"
+msgstr "Lysere (Gamma = 1,0)"
+
+#: po/keystr.h:209
+msgid "Light"
+msgstr "Lys"
+
+#: po/keystr.h:210
+msgid "Normal"
+msgstr "Vanlig "
+
+#: po/keystr.h:211
+msgid "Dark"
+msgstr "Mørk"
+
+#: po/keystr.h:213
+msgid "Wide"
+msgstr "Stor"
+
+#: po/keystr.h:214
+msgid "Narrow"
+msgstr "Smal"
+
+#: po/keystr.h:215
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Du har valgt kant til kant-utskrift.\n"
+"Dokumentet som skal skrives ut, blir forstørret slik at det går litt utenfor \n"
+"papiret.\n"
+"Utskriftskvaliteten kan bli noe dårligere, eller arket kan bli flekkete øverst \n"
+"og nederst, avhengig av hvilken medietype som brukes."
+
+#: po/keystr.h:219
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Kant til kant-utskrift anbefales ikke når %s er valgt for Medietype.\n"
+"Velg medietypen du vil bruke."
+
+#: po/keystr.h:221
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Dokumentet som skal skrives ut, blir forstørret slik at det går utenfor papiret.\n"
+"Utskriftskvaliteten kan bli noe dårligere eller arket kan bli flekkete øverst \n"
+"og nederst, avhengig av hvilken medietype som brukes."
+
+#: po/keystr.h:226
+msgid "Yes"
+msgstr "Ja"
+
+#: po/keystr.h:227
+msgid "No"
+msgstr "Nei"
+
+#: po/keystr.h:228
+msgid "Abort"
+msgstr ""
+
+#: po/keystr.h:230
+msgid "Enable"
+msgstr "Aktiver"
+
+#: po/keystr.h:231
+msgid "Disable"
+msgstr "Deaktiver"
+
+#: po/keystr.h:232
+msgid "5 minutes"
+msgstr "5 minutter"
+
+#: po/keystr.h:233
+msgid "10 minutes"
+msgstr "10 minutter"
+
+#: po/keystr.h:234
+msgid "15 minutes"
+msgstr "15 minutter"
+
+#: po/keystr.h:235
+msgid "30 minutes"
+msgstr "30 minutter"
+
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 minutter"
+
+#: po/keystr.h:237
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Ble mønsteret skrevet ut normalt?\n"
+"\n"
+"Hvis ingen mønstere ble skrevet ut eller hvis utskriften er utydelig, klikker \n"
+"du på Nei og starter på nytt fra begynnelsen."
+
+#: po/keystr.h:240
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Kontroller at skriveren er slått på, at kabelen er koblet til og at skriveren \n"
+"er online. Prøv deretter på nytt."
+
+#: po/keystr.h:241
+msgid "Print head alignment is now complete."
+msgstr "Justering av skrivehodet er nå ferdig."
+
+#: po/keystr.h:242
+msgid "Do not start another operation until the current one has finished."
+msgstr "Ikke start flere operasjoner før gjeldende operasjon er fullført."
+
+#: po/keystr.h:243
+msgid "Turn the printer off?"
+msgstr "Slå av skriveren?"
+
+#: po/keystr.h:244
+msgid "Write settings to printer?"
+msgstr "Skrive innstillingene til skriveren?"
+
+#: po/keystr.h:245
+msgid "Start print head deep cleaning?"
+msgstr "Starte dyprensing av skrivehode?"
+
+#: po/keystr.h:247
+msgid "Execute black print head deep cleaning?"
+msgstr "Utføre dyprensing av svart skrivehode?"
+
+#: po/keystr.h:248
+msgid "Execute color print head deep cleaning?"
+msgstr "Utføre dyprensing av fargeskrivehode?"
+
+#: po/keystr.h:249
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rengjør papirmateruller.\n"
+"\n"
+"Fjern først papiret fra arkmateren. Klikk på OK for å aktivere 30 omdreininger \n"
+"av papirmaterullene. Denne aktiveringen vil ta omtrent halvannet minutt. Når du \n"
+"i samsvar med meldingen legger i tre ark med vanlig papir, blir papir matet ut, \n"
+"og rengjøringen av materullene fullføres.\n"
+"\n"
+"Vil du starte rengjøring av materuller?"
+
+#: po/keystr.h:256
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Legg tre ark med vanlig papir i arkmateren.\n"
+
+#: po/keystr.h:257
+msgid "Feed roller cleaning is complete."
+msgstr "Rengjøring av materuller er fullført."
+
+#: po/keystr.h:259
+msgid "All Colors   BK, C, M, Y"
+msgstr "Alle farger   BK, C, M, Y"
+
+#: po/keystr.h:261
+msgid "Black   3eBK"
+msgstr "Svart   3eSv"
+
+#: po/keystr.h:262
+msgid "Black   PGBK"
+msgstr "Svart   PGBK"
+
+#: po/keystr.h:263
+msgid "Black   BK"
+msgstr "Svart   BK"
+
+#: po/keystr.h:265
+msgid "Color   6C, 6M, 6Y"
+msgstr "Farge   6C, 6M, 6G"
+
+#: po/keystr.h:266
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Farge   6C, 6M, 6G, 6Sv"
+
+#: po/keystr.h:267
+msgid "Color   7C, 7M, 7Y"
+msgstr "Farge   7C, 7M, 7Y"
+
+#: po/keystr.h:268
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Farge   7C, 7M, 7Y, 7BK"
+
+#: po/keystr.h:269
+msgid "Color   C, M, Y, BK"
+msgstr "Farge   C, M, Y, BK"
+
+#: po/keystr.h:270
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Farge   C, M, Y, PC, PM, BK"
+
+#: po/keystr.h:271
+msgid "Color   C, M, Y"
+msgstr "Farge   C, M, Y"
+
+#: po/keystr.h:272
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Gruppe 1   6Sv, 6R, 6RoC, 6RoM"
+
+#: po/keystr.h:273
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Gruppe 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#: po/keystr.h:274
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Gruppe 2   6C, 6M, 6G"
+
+#: po/keystr.h:275
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Gruppe 2   7C, 7M, 7Y"
+
+#: po/keystr.h:276
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Ikke start en ny operasjon før rengjøringen er fullført.\n"
+"\n"
+"Når rengjøringen er fullført, utfører du en dysesjekk for å undersøke om \n"
+"skrivehodedysene fortsatt er tilstoppet."
+
+#: po/keystr.h:279
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Rengjør tilstoppede skrivehodedyser.\n"
+"\n"
+"Velg blekkgruppen for rengjøring. Hvis du er usikker på blekkgruppen for \n"
+"rengjøring, utfører du en dysesjekk."
+
+#: po/keystr.h:283
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Fjerner tilstoppingen av dyser som ikke kan renses på vanlig måte.\n"
+"\n"
+"Velg blekkgruppen for dyprensing. Hvis du er usikker på blekkgruppen for \n"
+"dyprensing, utfører du en dysesjekk."
+
+#: po/keystr.h:287
+msgid "Ink Group:"
+msgstr "Blekkgruppe:"
+
+#: po/keystr.h:288
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Dyprensing krever langt mer blekk enn vanlig rengjøring. Utfør bare dyprensing \n"
+"hvis vanlig rengjøring ikke løser dyseproblemet.\n"
+"\n"
+"Når dyprensingen er fullført, utfører du en dysesjekk og undersøker om \n"
+"skrivehodedysene fortsatt er tilstoppet."
+
+#: po/keystr.h:293
+msgid "Cleaning consumes ink."
+msgstr "Rengjøring forbruker blekk."
+
+#: po/keystr.h:294
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Legg et vanlig ark i A4- eller Letter-format i papirkilden som ble valgt av \n"
+"papirmatingsbryteren, og klikk på OK.\n"
+
+#: po/keystr.h:295
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Hvis mønsteret som skrives ut, ligner på \n"
+"dette mønsteret, kan skrivehodedysene være tilstoppet.\n"
+"Klikk på Rengjør.\n"
+"\n"
+"Hvis mønsteret som skrives ut, \n"
+"ikke forbedres etter to rengjøringer, utfører du dyprensing."
+
+#: po/keystr.h:302
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr "Legg ett ark i A4- eller Letter-format i arkmateren og klikk på OK."
+
+#: po/keystr.h:303
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot venstre og legge et ark \n"
+"med vanlig papir i A4- eller Letter-format i arkmateren. Skriveren skriver ut \n"
+"et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på OK.\n"
+
+#: po/keystr.h:310
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Skriver ut et mønster som du kan bruke til å kontrollere om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Klargjør skriveren (koble til kabelen og slå på skriveren), flytt \n"
+"papirtykkelsesspaken mot venstre, legg et ark med vanlig papir i A4- eller \n"
+"Letter-format i arkmateren, og klikk på Utskrift av sjekkmønster.\n"
+
+#: po/keystr.h:314
+msgid "Color Only"
+msgstr "Bare farge"
+
+#: po/keystr.h:315
+msgid "Black Only"
+msgstr "Bare svart"
+
+#: po/keystr.h:316
+msgid "Both Black and Color"
+msgstr "Både svart og farge"
+
+#: po/keystr.h:317
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Skriver ut bare med fargekassett i stedet for svart blekkassett."
+
+#: po/keystr.h:319
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Skriver ut bare med svart blekkassett i stedet for fargekassett når Vanlig \n"
+"papir er valgt som Medietype i kategorien Hoved."
+
+#: po/keystr.h:322
+msgid "Prints using both black and color cartridges."
+msgstr "Skriver ut med både svart blekkassett og fargekassett."
+
+#: po/keystr.h:323
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Skriveren skriver ut ett ark med justeringsmønster for å starte justering \n"
+"automatisk.\n"
+"Ikke start flere operasjoner før gjeldende operasjon er fullført."
+
+#: po/keystr.h:325
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Det andre arket med hodejusteringsmønster skrives ut.\n"
+"\n"
+"Klikk på OK for å starte utskriften."
+
+#: po/keystr.h:328
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Det tredje arket med hodejusteringsmønster skrives ut.\n"
+"\n"
+"Klikk på OK for å starte utskriften."
+
+#: po/keystr.h:331
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot venstre, og legge et ark \n"
+"med vanlig papir i A4- eller Letter-format i papirkilden som ble valgt av \n"
+"papirmatingsbryteren. Skriveren skriver ut et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:340
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Justering av skrivehodet er fullført.\n"
+"Klikk på Avbryt for å avslutte justeringen.\n"
+"\n"
+"Du kan unngå streker på utskriftssiden ved å justere skrivehodet.\n"
+"Hvis du vil utføre justeringen, legger du et ark i arkmateren og klikker på OK."
+
+#: po/keystr.h:345
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster som du kan bruke til å kontrollere om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Klargjør skriveren (koble til kabelen og slå på skriveren), flytt \n"
+"papirtykkelsesspaken mot venstre, legg et ark med vanlig papir i A4- eller \n"
+"Letter-format i papirkilden som ble valgt av papirmatingsbryteren, og klikk på \n"
+"Utskrift av sjekkmønster."
+
+#: po/keystr.h:350
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster som du kan bruke til å kontrollere om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Legg ett ark med vanlig papir i A4- eller Letter-format i arkmateren og klikk \n"
+"på Utskrift av sjekkmønster."
+
+#: po/keystr.h:353
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Justering av skrivehodet er fullført.\n"
+"Klikk på Avbryt for å avslutte justeringen.\n"
+"\n"
+"Du kan unngå streker på utskriftssiden ved å justere skrivehodet.\n"
+"Hvis du vil utføre justeringen, legger du et ark i papirkilden som er valgt av \n"
+"papirmatingsbryteren, og klikker på OK."
+
+#: po/keystr.h:360
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot høyre, og legge et ark \n"
+"med vanlig papir i A4- eller Letter-format i arkmateren. Skriveren skriver ut \n"
+"et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:369
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Hvis mønsteret som skrives ut, ligner på dette mønsteret, kan skrivehodedysene \n"
+"være tilstoppet.\n"
+"Klikk på Rengjør.\n"
+"\n"
+"Hvis mønsteret som skrives ut, ikke forbedres etter to til tre rengjøringer, \n"
+"utfører du dyprensing."
+
+#: po/keystr.h:376
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Du kan ikke nullstille blekkmåleren fordi du har angitt at skriveren skal \n"
+"deaktivere visning av advarsel om lite blekk.\n"
+"\n"
+"Hvis du vil aktivere visning av advarsel om lite blekk, klikker du på \n"
+"Innstilling for advarsel om lite blekk i kategorien Vedlikehold i \n"
+"skriverdriveren.\n"
+"Les i skriverhåndboken før du utfører denne operasjonen."
+
+#: po/keystr.h:381
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rengjøre papirmaterullene.\n"
+"\n"
+"Fjern først papiret fra bakskuffen.\n"
+"Hvis du klikker på OK, aktiveres papirmaterullene 30 ganger. Dette tar omtrent \n"
+"ett og et halvt minutt.\n"
+"\n"
+"Vil du starte rengjøring av materullene?"
+
+#: po/keystr.h:387
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rengjøre papirmaterullene.\n"
+"\n"
+"Trykk først på papirmatingsbryteren på skriveren for å velge målpapirkilden for \n"
+"rengjøring, og fjern deretter papiret fra den valgte papirkilden.\n"
+"Hvis du klikker på OK, aktiveres papirmaterullene 30 ganger. Dette tar omtrent \n"
+"ett og et halvt minutt.\n"
+"\n"
+"Vil du starte rengjøring av materullene?"
+
+#: po/keystr.h:394
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Vent til driftstøyen i skriveren er borte, og legg tre ark med vanlig papir i \n"
+"bakskuffen.\n"
+"Hvis du klikker på OK, mates papiret ut, og rengjøringen av materullene \n"
+"fullføres."
+
+#: po/keystr.h:396
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Vent til driftstøyen i skriveren er borte, og legg tre ark med vanlig papir i \n"
+"den valgte papirkilden.\n"
+"Hvis du klikker på OK, mates papiret ut, og rengjøringen av materullene \n"
+"fullføres."
+
+#: po/keystr.h:398
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Fjern papiret fra arkmateren.\n"
+"2. Brett et ark med vanlig papir i A4- eller Letter-format i to, og brett \n"
+"deretter papiret opp igjen.\n"
+"3. Legg papiret i arkmateren med bretten ned.\n"
+"4. Klikk på Utfør."
+
+#: po/keystr.h:402
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Fjern papiret fra bakskuffen.\n"
+"2. Brett et ark med vanlig papir i A4- eller Letter-format i to, og brett \n"
+"deretter papiret opp igjen.\n"
+"3. Legg papiret i bakskuffen med brettekanten ned.\n"
+"4. Klikk på Utfør."
+
+#: po/keystr.h:406
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load a sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster som du kan bruke til å kontrollere om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Klargjør skriveren (koble til kabelen og slå på skriveren), flytt \n"
+"papirtykkelsesspaken mot venstre, legg et ark med vanlig papir i A4- eller \n"
+"Letter-format i bakskuffen, og klikk på Utskrift av sjekkmønster."
+
+#: po/keystr.h:411
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot venstre, og legge to ark \n"
+"med vanlig papir i A4- eller Letter-format i bakskuffen. Skriveren skriver ut \n"
+"et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:420
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), legge et ark med vanlig papir i A4- eller Letter-format i \n"
+"arkmateren, og klikke på Juster skrivehode. \n"
+"\n"
+"Klikk på Avbryt for å utføre manuell justering av hode.\n"
+"Klikk deretter på Egendefinerte innstillinger i kategorien Vedlikehold i \n"
+"skriverdriveren, merk av for Juster hoder manuelt, og klikk på Send. Deretter \n"
+"prøver du igjen.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:430
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), legge to ark fotopapir matt (MP-101) i A4- eller \n"
+"Letter-format i bakskuffen, og klikke på Juster skrivehode. \n"
+"\n"
+"Klikk på Avbryt for å utføre manuell justering av hode.\n"
+"Klikk deretter på Egendefinerte innstillinger i kategorien Vedlikehold i \n"
+"skriverdriveren, merk av for Juster hoder manuelt, og klikk på Send. Deretter \n"
+"prøver du igjen.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:441
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the rear tray and click "
+"OK."
+msgstr ""
+"Legg et ark med vanlig papir i A4- eller Letter-format i bakskuffen og klikk på \n"
+"OK."
+
+#: po/keystr.h:442
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Skriveren skriver ut to ark med justeringsmønster for å starte justering \n"
+"automatisk.\n"
+"Ikke start flere operasjoner før gjeldende operasjon er fullført."
+
+#: po/keystr.h:444
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), og legge fire ark med vanlig papir i A4- eller \n"
+"Letter-format i papirkilden som ble valgt av papirmatingsbryteren. Skriveren \n"
+"skriver ut et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:453
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Det fjerde arket med hodejusteringsmønster blir skrevet ut.\n"
+"\n"
+"Klikk på OK for å starte utskriften."
+
+#: po/keystr.h:456
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster som du kan bruke til å kontrollere om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Legg ett ark med vanlig papir i A4- eller Letter-format i papirkilden som ble \n"
+"valgt av papirmatingsbryteren, og klikk på Utskrift av sjekkmønster."
+
+#: po/keystr.h:460
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot venstre, og legge et ark \n"
+"med vanlig papir i A4- eller Letter-format i bakskuffen. Skriveren skriver ut \n"
+"et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:469
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), og legge et ark med vanlig papir i A4- eller \n"
+"Letter-format i papirkilden som ble valgt av papirmatingsbryteren. Skriveren \n"
+"skriver ut et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:478
+msgid ""
+"Load a sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr "Legg et ark i A4- eller Letter-format i bakskuffen og klikk på OK."
+
+#: po/keystr.h:479
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Justering av skrivehodet er fullført.\n"
+"Klikk på Avbryt for å avslutte justeringen.\n"
+"\n"
+"Du kan unngå streker på utskriftssiden ved å justere skrivehodet.\n"
+"Hvis du vil utføre justeringen, legger du et ark i bakskuffen og klikker på OK."
+
+#: po/keystr.h:484
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), og legge tre ark med vanlig papir i A4- eller \n"
+"Letter-format i papirkilden som ble valgt av papirmatingsbryteren. Skriveren \n"
+"skriver ut et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:493
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot venstre, og legge et ark \n"
+"med vanlig papir i A4- eller Letter-format i arkmateren. Skriveren skriver ut \n"
+"et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster som du kan bruke til å kontrollere om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Klargjør skriveren (koble til kabelen og slå på skriveren), flytt \n"
+"papirtykkelsesspaken mot høyre, legg et ark med vanlig papir i A4- eller \n"
+"Letter-format i bakskuffen, og klikk på Utskrift av sjekkmønster."
+
+#: po/keystr.h:506
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Skriver ut bare med svart blekkassett i stedet for fargekassett når Vanlig \n"
+"papir, Hagaki eller Konvolutt er valgt som Medietype i kategorien Hoved."
+
+#: po/keystr.h:508
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot venstre, og legge et ark \n"
+"med vanlig papir i A4- eller Letter-format i bakskuffen. Skriveren skriver ut \n"
+"et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på OK."
+
+#: po/keystr.h:515
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot høyre, og legge to ark \n"
+"med vanlig papir i A4- eller Letter-format i bakskuffen. Skriveren skriver ut \n"
+"et justeringsmønster.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:524
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click Send. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk skrivehodejustering.\n"
+"\n"
+"Justeringen omfatter utskrift, så du må klargjøre skriveren (koble til kabelen \n"
+"og slå på skriveren), flytte papirtykkelsesspaken mot høyre, legge et ark \n"
+"fotopapir matt (MP-101) i A4- eller Letter-format i bakskuffen, og klikke på \n"
+"Juster skrivehode. \n"
+"\n"
+"Klikk på Avbryt for å utføre manuell justering av hode.\n"
+"Klikk deretter på Egendefinerte innstillinger i kategorien Vedlikehold i \n"
+"skriverdriveren, merk av for Juster hoder manuelt, og klikk på Send. Deretter \n"
+"prøver du igjen.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:535
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Fjern papiret fra bakskuffen, og legg deretter i det ene ark med vanlig \n"
+"papir i A4- eller Letter-format.\n"
+"2. Brett det andre arket i A4- eller Letter-format én gang, og brett det \n"
+"deretter ut igjen.\n"
+"3. Legg det andre arket med brettekanten ned og foran det første arket.\n"
+"4. Klikk på Utfør."
+
+#: po/keystr.h:539
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Starter bunnplaterengjøring for å unngå flekker under utskrift.\n"
+"\n"
+"Til denne operasjonen trenger du to ark med vanlig papir i A4- eller \n"
+"Letter-format. Følg disse retningslinjene for å utføre bunnplaterengjøring."
+
+#: po/keystr.h:542
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click Send."
+msgstr ""
+"Angir papirkilden for vanlig papir når Velg automatisk er valgt for Papirkilde.\n"
+"\n"
+"Velg papirkilden for vanlig papir, og klikk på Send."
+
+#: po/keystr.h:545
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Fjerner tilstoppingen av dyser som ikke kan renses på vanlig måte.\n"
+"\n"
+"Velg blekkgruppen for dyprensing. Hvis bare den svarte dysen er tilstoppet, \n"
+"velger du Svart. Hvis bare fargedysene eller både den svarte dysen og \n"
+"fargedysene er tilstoppet, velger du Alle farger. Hvis du er usikker på hvilken \n"
+"dyse som er tilstoppet, utfører du en dysesjekk.\n"
+
+#: po/keystr.h:550
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Rengjør papirmateruller.\n"
+"\n"
+"Velg ønsket papirkilde for rengjøring, og klikk deretter på OK."
+
+#: po/keystr.h:553
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rengjør papirmateruller for bakskuff.\n"
+"\n"
+"Fjern først papiret fra bakskuffen, og åpne deretter papirutmatingsbrettet.\n"
+"Hvis du klikker OK, aktiveres papirmaterullene. Dette tar omtrent ett og et \n"
+"halvt minutt.\n"
+"\n"
+"Vil du starte rengjøring av materullene?"
+
+#: po/keystr.h:559
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rengjør papirmateruller for kassetten.\n"
+"\n"
+"Fjern først papiret fra kassetten, og åpne deretter papirutmatingsbrettet.\n"
+"Hvis du klikker OK, aktiveres papirmaterullene. Dette tar omtrent to minutt.\n"
+"\n"
+"Vil du starte rengjøring av materullene?"
+
+#: po/keystr.h:565
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rengjør papirmateruller for bakskuff.\n"
+"\n"
+"Fjern først papiret fra bakskuffen.\n"
+"Hvis du klikker OK, aktiveres papirmaterullene. Dette tar omtrent ett og et \n"
+"halvt minutt.\n"
+"\n"
+"Vil du starte rengjøring av materullene?"
+
+#: po/keystr.h:571
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rengjør papirmateruller for kassetten.\n"
+"\n"
+"Fjern først papiret fra kassetten.\n"
+"Hvis du klikker OK, aktiveres papirmaterullene. Dette tar omtrent to minutt.\n"
+"\n"
+"Vil du starte rengjøring av materullene?"
+
+#: po/keystr.h:577
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Vent til driftstøyen i skriveren er borte, og legg tre ark med vanlig papir i \n"
+"kassetten.\n"
+"Hvis du klikker på OK, mates papiret ut, og rengjøringen av materullene \n"
+"fullføres."
+
+#: po/keystr.h:579
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load a sheet of A4 or letter "
+"size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster du kan bruke til å undersøke om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Velg papirkilden som skal brukes. Legg et ark vanlig papir i A4- eller \n"
+"Letter-format i papirkilden du valgte, og klikk på Utskrift av sjekkmønster."
+
+#: po/keystr.h:583
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster du kan bruke til å undersøke om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Klargjør skriveren (koble til kabelen og slå på skriveren), legg et ark vanlig \n"
+"papir i A4- eller Letter-format i kassetten, og klikk på Utskrift av \n"
+"sjekkmønster."
+
+#: po/keystr.h:587
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"Skriver ut et mønster du kan bruke til å undersøke om skrivehodedysene er \n"
+"tilstoppet.\n"
+"\n"
+"Klargjør skriveren (koble til kabelen og slå på skriveren), legg et ark vanlig \n"
+"papir i A4- eller Letter-format i bakskuffen, og klikk på Utskrift av \n"
+"sjekkmønster."
+
+#: po/keystr.h:591
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter justering av skrivehodet.\n"
+"\n"
+"Siden justeringen omfatter utskrift, må du klargjøre skriveren (koble til \n"
+"kabelen og slå på skriveren), og legge to ark vanlig papir i A4- eller \n"
+"Letter-format i bakskuffen. Et justeringsmønster skrives ut.\n"
+"\n"
+"Hvis du vil justere skrivehodeposisjonen, klikker du på Juster skrivehode.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:599
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Starter justering av skrivehodet.\n"
+"\n"
+"Justeringen omfatter utskrift. Velg papirkilden som skal brukes, og klikk på \n"
+"Juster skrivehode."
+
+#: po/keystr.h:602
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:603
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Klargjør skriveren (koble til kabelen og slå på skriveren), og legg tre ark \n"
+"vanlig papir i A4- eller Letter-format i bakskuffen.\n"
+"\n"
+"Et justeringsmønster skrives ut når du klikker på OK."
+
+#: po/keystr.h:607
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Klargjør skriveren (koble til kabelen og slå på skriveren), og legg tre ark \n"
+"vanlig papir i A4- eller Letter-format i kassetten.\n"
+"\n"
+"Et justeringsmønster skrives ut når du klikker på OK."
+
+#: po/keystr.h:611
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Klargjør skriveren (koble til kabelen og slå på skriveren), og legg et ark \n"
+"vanlig papir i A4- eller Letter-format i bakskuffen.\n"
+"\n"
+"Den gjeldende innstillingen skrives ut når du klikker på OK."
+
+#: po/keystr.h:615
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load a "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Klargjør skriveren (koble til kabelen og slå på skriveren), og legg et ark \n"
+"vanlig papir i A4- eller Letter-format i kassetten.\n"
+"\n"
+"Den gjeldende innstillingen skrives ut når du klikker på OK."
+
+#: po/keystr.h:619
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Velg papirkilden som skal brukes, og klikk på OK."
+
+#: po/keystr.h:620
+msgid ""
+"Load a sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Legg et ark med vanlig papir i A4- eller Letter-format i kassetten, og klikk på \n"
+"OK."
+
+#: po/keystr.h:621
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click Send. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk justering av skrivehodet.\n"
+"\n"
+"Siden justeringen omfatter utskrift, må du klargjøre skriveren (koble til \n"
+"kabelen og slå på skriveren), legge et fotopapir (matt, MP-101) i A4- eller \n"
+"Letter-format i bakskuffen, og klikke på Juster skrivehode. \n"
+"\n"
+"Hvis du vil utføre manuell justering av hode, klikker du på Avbryt.\n"
+"Klikk deretter på Egendefinerte innstillinger i kategorien Vedlikehold i \n"
+"skriverdriveren, merk av for Juster hoder manuelt, og klikk på Send. Prøv \n"
+"deretter på nytt.\n"
+"\n"
+"Hvis du vil skrive ut og kontrollere den gjeldende innstillingen, klikker du på \n"
+"Skriv ut justeringsverdi."
+
+#: po/keystr.h:631
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Angir Forhindre papirslitasje. Hvis du skriver ut med denne innstillingen \n"
+"aktivert, kan det gå ut over utskriftskvaliteten eller utskriftshastigheten. \n"
+"Hvis du vil endre innstillingen, fjerner du merket for Forhindre papirslitasje."
+
+#: po/keystr.h:633
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Fjerner tilstoppingen av dyser som ikke kan renses på vanlig måte.\n"
+"\n"
+"Dyprensing krever langt mer blekk enn vanlig rengjøring. Utfør bare dyprensing \n"
+"hvis vanlig rengjøring ikke løser dyseproblemet.\n"
+"\n"
+"Når dyprensingen er fullført, utfører du en dysesjekk og undersøker om \n"
+"skrivehodedysene fortsatt er tilstoppet."
