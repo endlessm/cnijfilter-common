@@ -1,0 +1,904 @@
+# Canon Inkjet Print Filter 2.60 for Linux
+# Copyright CANON INC. 2001-2007
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cngpijmon 2.60\n"
+"POT-Creation-Date: 2007-08-06 16:59+0900\n"
+"PO-Revision-Date: 2007-08-07 8:50+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-KR\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+
+#. Printer status message table.
+#. N_("The used ink tank is full.\nCancel printing and turn the printer off and then back on.\nIf this doesn't clear the error, see the printer manual for more detail.\n"),
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"The waste ink absorber is full.\n"
+"Contact the service center for the replacement of the waste ink absorber."
+msgstr ""
+"나머지 잉크 흡수기가 찼습니다.\n"
+"서비스 센터에 연락하여 나머지 잉크 흡수기를 교체하십시오."
+
+#: src/bjcupsmon_ui.c:44
+#, c-format
+msgid ""
+"Service error %s.\n"
+"Cancel printing and turn the printer off and then back on.\n"
+"If this doesn't clear the error, see the printer manual for more detail."
+msgstr ""
+"서비스 에러 %s.\n"
+"인쇄를 취소하고 프린터를 껐다가 다시 켭니다.\n"
+"만일 에러를 제거할 수 없다면, 자세한 정보는 프린터 매뉴얼을 참조하십시오."
+
+#: src/bjcupsmon_ui.c:46
+msgid "Paper out!\n"
+msgstr "용지를 다 썼습니다!\n"
+
+#: src/bjcupsmon_ui.c:47
+msgid "Load paper.\n"
+msgstr "용지를 로드합니다.\n"
+
+#: src/bjcupsmon_ui.c:48 src/bjcupsmon_ui.c:50
+msgid "Load paper in the sheet feeder.\n"
+msgstr "용지 공급기에 용지를 로드합니다.\n"
+
+#: src/bjcupsmon_ui.c:49 src/bjcupsmon_ui.c:51
+msgid "Load paper in the cassette.\n"
+msgstr "카셋트에 용지를 로드합니다.\n"
+
+#: src/bjcupsmon_ui.c:52
+msgid "Press printer's RESUME button.\n"
+msgstr "프린터의 [계속] 버튼을 누릅니다.\n"
+
+#: src/bjcupsmon_ui.c:53
+msgid "Press printer's OK button.\n"
+msgstr "프린터의 [OK] 버튼을 누릅니다.\n"
+
+#: src/bjcupsmon_ui.c:54
+msgid "Paper is jammed.\n"
+msgstr "용지가 걸렸습니다.\n"
+
+#: src/bjcupsmon_ui.c:55 src/bjcupsmon_ui.c:56
+msgid "Paper is jammed at the paper output slot.\n"
+msgstr "용지가 용지 출력 슬롯에 걸렸습니다.\n"
+
+#: src/bjcupsmon_ui.c:57
+msgid "Remove the jammed paper.\n"
+msgstr "걸린 용지를 제거합니다.\n"
+
+#: src/bjcupsmon_ui.c:58 src/bjcupsmon_ui.c:143
+msgid "Press printer's RESUME button. Printing resumes from the next paper.\n"
+msgstr "프린터의 [계속] 버튼을 누릅니다. 다음 용지의 인쇄가 계속됩니다.\n"
+
+#: src/bjcupsmon_ui.c:59 src/bjcupsmon_ui.c:145
+msgid "Press printer's OK button. Printing resumes from the next paper.\n"
+msgstr "프린터의 [OK] 버튼을 누릅니다. 다음 용지의 인쇄가 계속됩니다.\n"
+
+#: src/bjcupsmon_ui.c:60 src/bjcupsmon_ui.c:66
+msgid "Paper is jammed in the transport unit.\n"
+msgstr "용지가 운송 유닛에 걸렸습니다.\n"
+
+#: src/bjcupsmon_ui.c:61
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, first remove the cassette and remove the paper from the cassette "
+"side.\n"
+msgstr "후면 커버를 열어 걸린 용지를 제거합니다. 걸린 용지가 제거되지 않으면 먼저 카셋트를 제거한 후 카셋트 쪽에서 용지를 제거합니다.\n"
+
+#: src/bjcupsmon_ui.c:62 src/bjcupsmon_ui.c:64 src/bjcupsmon_ui.c:67
+msgid "Paper is jammed in the duplexing transport unit.\n"
+msgstr "용지가 양면 운송 유닛에 걸렸습니다.\n"
+
+#: src/bjcupsmon_ui.c:63
+msgid ""
+"Remove the cassette, push the printer over onto its back side, and then open "
+"the duplexing transport unit cover. Next, remove the jammed paper, and "
+"quickly return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"카셋트를 제거한 후 프린터를 뒤로 넘어 뜨리고 양면 운송 유닛 커버를 엽니다. 다음 걸린 용지를 제거하고 프린터를 직립 위치로 빨리 되돌려 놓습니다.\n"
+"자세한 정보는 사용자 가이드를 참조하십시오.\n"
+
+
+#: src/bjcupsmon_ui.c:65
+msgid ""
+"Remove the cassette, push the printer over onto its side, and then open the "
+"duplexing transport unit cover. Next, remove the jammed paper, and quickly "
+"return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"카셋트를 제거한 후 프린터를 옆으로 넘어 뜨리고 양면 운송 유닛 커버를 엽니다. 다음 걸린 용지를 제거하고 프린터를 직립 위치로 빨리 되돌려 놓습니다.\n"
+"자세한 정보는 사용자 가이드를 참조하십시오.\n"
+
+
+#: src/bjcupsmon_ui.c:68 src/bjcupsmon_ui.c:101
+msgid ""
+"Correct print head is not installed. Install an appropriate print head and "
+"close the cover of the printer.\n"
+msgstr "알맞은 프린트 헤드가 설치되지 않았습니다. 알맞은 프린트 헤드를 설치한 후 프린터의 커버를 닫습니다.\n"
+
+#: src/bjcupsmon_ui.c:69
+msgid ""
+"Operator error.\n"
+"Press printer's RESUME button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"작업자 에러.\n"
+"프린터의 [계속] 버튼을 누릅니다.\n"
+"만일 에러를 제거할 수 없다면, 인쇄를 취소하고 프린터를 껐다가 다시 켭니다.\n"
+
+
+#: src/bjcupsmon_ui.c:70
+msgid ""
+"Operator error.\n"
+"Press printer's OK button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"작업자 에러.\n"
+"프린터의 [OK] 버튼을 누릅니다.\n"
+"만일 에러를 제거할 수 없다면, 인쇄를 취소하고 프린터를 껐다가 다시 켭니다.\n"
+
+
+#: src/bjcupsmon_ui.c:71
+msgid ""
+"Scanner Cartridge detected!\n"
+"Change to appropriate cartridge.\n"
+"Click Cancel Printing to cancel operation.\n"
+msgstr ""
+"스캐너 카트리지를 검사하였습니다!\n"
+"알맞은 카트리지로 교체합니다.\n"
+"[인쇄 취소]를 클릭하여 작업을 취소합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:72
+msgid ""
+"The waste ink absorber is almost full.\n"
+"Press the printer's RESUME button to restart printing."
+msgstr ""
+"나머지 잉크 흡수기가 거의 찹니다.\n"
+"프린터의 [계속] 버튼을 눌러 인쇄를 다시 시작합니다."
+
+#: src/bjcupsmon_ui.c:73
+msgid ""
+"The waste ink absorber is almost full.\n"
+"Press the printer's OK button to restart printing."
+msgstr ""
+"나머지 잉크 흡수기가 거의 찹니다.\n"
+"프린터의 [OK] 버튼을 눌러 인쇄를 다시 시작합니다."
+
+#: src/bjcupsmon_ui.c:74
+msgid ""
+"Protector not installed.\n"
+"Install a protector properly in the printer.\n"
+msgstr ""
+"보호기가 아직 설치되지 않았습니다.\n"
+"프린터에 보호기를 정확하게 설치합니다.\n"
+
+
+#. N_("Ink has run out.\nReplace ink tank and close the front cover.\n"),
+#: src/bjcupsmon_ui.c:76
+msgid ""
+"Ink has run out.\n"
+"Replace ink tank and close the cover. When replacing the ink tank, make sure "
+"that the Inner Cover is open.\n"
+"\n"
+"You can continue printing under the ink out condition by pressing the RESUME "
+"button. Replace the empty ink tank immediately after the printing. The "
+"printer may be damaged if printing is continued under the ink out "
+"condition.\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:77
+msgid " Black [7]\n"
+msgstr " 블랙 [7]\n"
+
+#: src/bjcupsmon_ui.c:78
+msgid " Photo Black [7]\n"
+msgstr " 포토 블랙 [7]\n"
+
+#: src/bjcupsmon_ui.c:79
+msgid " Photo Cyan [7]\n"
+msgstr " 포토 시안 [7]\n"
+
+#: src/bjcupsmon_ui.c:80
+msgid " Photo Magenta [7]\n"
+msgstr " 포토 마젠타 [7]\n"
+
+#: src/bjcupsmon_ui.c:81
+msgid " Cyan [7]\n"
+msgstr " 시안 [7]\n"
+
+#: src/bjcupsmon_ui.c:82
+msgid " Magenta [7]\n"
+msgstr " 마젠타 [7]\n"
+
+#: src/bjcupsmon_ui.c:83
+msgid " Yellow [7]\n"
+msgstr " 옐로 [7]\n"
+
+#: src/bjcupsmon_ui.c:84 src/bjcupsmon_ui.c:112
+msgid " Red [7]\n"
+msgstr " 빨간색 [7]\n"
+
+#: src/bjcupsmon_ui.c:85 src/bjcupsmon_ui.c:113
+msgid " Green [7]\n"
+msgstr " 초록색 [7]\n"
+
+#: src/bjcupsmon_ui.c:86
+msgid " Black [3e]\n"
+msgstr " 블랙 [3e]\n"
+
+#. N_("Front cover is open.\nUnable to print until the front cover is closed.\n"),
+#: src/bjcupsmon_ui.c:88
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the cartridge cannot be changed. Close the "
+"cover, wait for printing to finish, then open the cover again and change the "
+"print head or ink tank.\n"
+msgstr ""
+"프린터 커버가 열렸습니다.\n"
+"인쇄가 진행 중이면 카트리지를 교체할 수 없습니다. 커버를 닫고 인쇄가 끝마치기를 기다렸다가 커버를 다시 열고 프린트 헤드 또는 잉크 탱크를 교체합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:89
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank.\n"
+msgstr ""
+"프린터 커버가 열렸습니다.\n"
+"인쇄가 진행 중이면 프린트 헤드나 잉크 탱크를 교체할 수 없습니다. 커버를 닫고 인쇄가 끝마치기를 기다렸다가 커버를 다시 열고 프린트 헤드 또는 잉크 탱크를 교체합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:90
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Open the paper output tray. Printing will restart.\n"
+msgstr ""
+"용지 출력 트레이가 닫겨져 있기 때문에 문서 인쇄가 실행되지 않습니다.\n"
+"용지 출력 트레이를 엽니다. 인쇄가 다시 시작됩니다.\n"
+
+
+#: src/bjcupsmon_ui.c:91
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Press the Open button, and open the paper output tray. Printing will "
+"restart.\n"
+msgstr ""
+"용지 출력 트레이가 닫겨져 있기 때문에 인쇄가 실행되지 않습니다.\n"
+"[열기] 버튼을 눌러 용지 출력 트레이를 엽니다. 인쇄가 다시 시작됩니다.\n"
+
+
+#: src/bjcupsmon_ui.c:92
+msgid ""
+"Operator error.\n"
+"The connected printer cannot work correctly.\n"
+msgstr ""
+"작업자 에러.\n"
+"연결된 프린터가 제대로 작업하지 않습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:93
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr ""
+"청소 중입니다.\n"
+"기다려 주십시오.\n"
+
+
+#: src/bjcupsmon_ui.c:94
+msgid ""
+"The holder is at the replacement position.\n"
+"After replacing the ink cartridge, close the printer's cover.\n"
+msgstr ""
+"홀더가 교체 위치에 있습니다.\n"
+"잉크 카트리지를 교체한 후 프린터의 커버를 닫습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:95
+msgid ""
+"The holder is at the replacement position.\n"
+"After replacing the print head or the ink tank, close the cover of the "
+"printer. To replace only the ink tanks, do not remove the print head from "
+"the printer. Do not touch the locking lever.\n"
+msgstr ""
+"홀더가 교체 위치에 있습니다.\n"
+"프린트 헤드 또는 잉크 탱크를 교체한 후, 프린터의 커버를 닫습니다. 잉크 탱크만 교체하는 경우, 프린터로부터 프린트 헤드를 제거하지 않습니다. 잠금 레버를 다치지 마십시오.\n"
+
+
+#: src/bjcupsmon_ui.c:96
+msgid ""
+"The holder is at the replacement position.\n"
+"If you need to replace the print head or the ink tank, first open the Inner "
+"Cover. After the replacement is completed, close the Inner Cover, and then "
+"close the cover of the printer.\n"
+"If you are replacing only the ink tank, leave the print head attached. Do "
+"not touch the lock lever.\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:97 src/bjcupsmon_ui.c:102
+msgid "Printing.\n"
+msgstr "인쇄 중입니다.\n"
+
+#: src/bjcupsmon_ui.c:98
+msgid "The printer is performing another operation.\n"
+msgstr "프린터가 다른 조작을 실행하고 있습니다.\n"
+
+#: src/bjcupsmon_ui.c:99
+msgid ""
+"Scanner Cartridge detected.\n"
+"You cannot print with this cartridge. Install another BJ Cartridge in your "
+"printer.\n"
+msgstr ""
+"스캐너 카트리지를 검사하였습니다. \n"
+"이 카트리지로는 인쇄가 불가능합니다. 프린터에 다른 BJ 카트리지를 설치하십시오.\n"
+
+
+#: src/bjcupsmon_ui.c:100
+msgid ""
+"Unsupported cartridge installed.\n"
+"Change to appropriate BJ cartridge.\n"
+msgstr ""
+"지원받지 않는 카트리지가 설치되었습니다.\n"
+"알맞은 BJ 카트리지로 교체하십시오.\n"
+
+
+#: src/bjcupsmon_ui.c:103
+msgid "Printer is online.\n"
+msgstr "프린터가 온라인 상태입니다.\n"
+
+#: src/bjcupsmon_ui.c:104 src/bjcupsmon_ui.c:118
+msgid ""
+"\n"
+"The following ink tanks are running low.\n"
+msgstr ""
+"\n"
+"다음과 같은 잉크 탱크들은 조금 남았습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:105 src/bjcupsmon_ui.c:163
+msgid " Black [7e]\n"
+msgstr " 블랙 [7e]\n"
+
+#: src/bjcupsmon_ui.c:106 src/bjcupsmon_ui.c:164
+msgid " Black [9]\n"
+msgstr " 블랙 [9]\n"
+
+#: src/bjcupsmon_ui.c:107 src/bjcupsmon_ui.c:165
+msgid " Photo Cyan [7e]\n"
+msgstr " 포토 시안 [7e]\n"
+
+#: src/bjcupsmon_ui.c:108 src/bjcupsmon_ui.c:166
+msgid " Photo Magenta [7e]\n"
+msgstr " 포토 마젠타 [7e]\n"
+
+#: src/bjcupsmon_ui.c:109 src/bjcupsmon_ui.c:167
+msgid " Cyan [7e]\n"
+msgstr " 시안 [7e]\n"
+
+#: src/bjcupsmon_ui.c:110 src/bjcupsmon_ui.c:168
+msgid " Magenta [7e]\n"
+msgstr " 마젠타 [7e]\n"
+
+#: src/bjcupsmon_ui.c:111 src/bjcupsmon_ui.c:169
+msgid " Yellow [7e]\n"
+msgstr " 옐로 [7e]\n"
+
+#: src/bjcupsmon_ui.c:114
+msgid " Black [9e]\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:115
+msgid " Black [24]\n"
+msgstr " 블랙 [24]\n"
+
+#: src/bjcupsmon_ui.c:116
+msgid " Color [24]\n"
+msgstr " 칼라 [24]\n"
+
+#: src/bjcupsmon_ui.c:117
+msgid "Prepare new ink tanks.\n"
+msgstr "새 잉크 탱크를 준비하십시오.\n"
+
+#: src/bjcupsmon_ui.c:119 src/bjcupsmon_ui.c:172
+msgid " Black [40]\n"
+msgstr " 블랙 [40]\n"
+
+#: src/bjcupsmon_ui.c:120 src/bjcupsmon_ui.c:173
+msgid " Black [50]\n"
+msgstr " 블랙 [50]\n"
+
+#: src/bjcupsmon_ui.c:121 src/bjcupsmon_ui.c:174
+msgid " Color [41]\n"
+msgstr " 칼라 [41]\n"
+
+#: src/bjcupsmon_ui.c:122 src/bjcupsmon_ui.c:175
+msgid " Color [51]\n"
+msgstr " 칼라 [51]\n"
+
+#: src/bjcupsmon_ui.c:123 src/bjcupsmon_ui.c:176
+msgid " Black [8]\n"
+msgstr " 블랙 [8]\n"
+
+#: src/bjcupsmon_ui.c:124 src/bjcupsmon_ui.c:177
+msgid " Black [5]\n"
+msgstr " 블랙 [5]\n"
+
+#: src/bjcupsmon_ui.c:125 src/bjcupsmon_ui.c:178
+msgid " Photo Cyan [8]\n"
+msgstr " 포토 시안 [8]\n"
+
+#: src/bjcupsmon_ui.c:126 src/bjcupsmon_ui.c:179
+msgid " Photo Magenta [8]\n"
+msgstr " 포토 마젠타 [8]\n"
+
+#: src/bjcupsmon_ui.c:127 src/bjcupsmon_ui.c:180
+msgid " Cyan [8]\n"
+msgstr " 시안 [8]\n"
+
+#: src/bjcupsmon_ui.c:128 src/bjcupsmon_ui.c:181
+msgid " Magenta [8]\n"
+msgstr " 마젠타 [8]\n"
+
+#: src/bjcupsmon_ui.c:129 src/bjcupsmon_ui.c:182
+msgid " Yellow [8]\n"
+msgstr " 옐로 [8]\n"
+
+#: src/bjcupsmon_ui.c:130
+msgid ""
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"새 잉크 카트리지를 준비하십시오.\n"
+"블랙 잉크와 칼라 잉크를 다 썼으면, 프린터 드라이버의 [유지 관리] 탭에 있는 [잉크  카트리지 설정]에서 다른 카트리지로 계속 인쇄하도록 프린터를 설정합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:131
+msgid ""
+"\n"
+"The ink cartridge has been installed or replaced.\n"
+"If the printout contains misaligned lines or is not satisfactory after the "
+"installation or replacement, refer to the user's guide and carry out the "
+"print head alignment.\n"
+msgstr ""
+"\n"
+"잉크 카트리지를 설치하거나 교체했습니다.\n"
+"잉크 카트리지를 설치하거나 교체한 후 인쇄 출력물에 잘못 정렬된 라인이 있거나 만족스럽지 않으면, 사용자 가이드를 참조한 후 프린트 헤드 정렬을 진행합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:132
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"프린터에 잉크 잔량 경고가 보이지 않게 설정하였습니다.\n"
+
+
+#. N_("The CD-R Tray Feeder is installed in the printer.\nAfter ensuring that the CD-R tray has been removed, remove the CD-R Tray Feeder and then press the RESUME button. Printing will then restart.\n"),
+#: src/bjcupsmon_ui.c:135 src/bjcupsmon_ui.c:138
+msgid "Printing cannot be executed because the inner cover is open.\n"
+msgstr "내부 커버가 열려 있기 때문에 인쇄를 실행할 수 없습니다.\n"
+
+#: src/bjcupsmon_ui.c:136 src/bjcupsmon_ui.c:142
+msgid "Close the inner cover.\n"
+msgstr "내부 커버를 닫습니다.\n"
+
+#: src/bjcupsmon_ui.c:137
+msgid "Press printer's RESUME button. Printing will restart.\n"
+msgstr "프린터의 [계속] 버튼을 누릅니다. 인쇄가 다시 시작됩니다.\n"
+
+#: src/bjcupsmon_ui.c:139
+msgid "Press printer's OK button. Printing will restart.\n"
+msgstr "프린터의 [OK] 버튼을 누릅니다. 인쇄가 다시 시작됩니다.\n"
+
+#: src/bjcupsmon_ui.c:140
+msgid ""
+"The printer's front cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the front cover, wait for printing to finish, then open the cover "
+"again and change the print head or ink tank. If the CD-R Tray Feeder is "
+"installed, the print head or ink tank cannot be also changed. Close the "
+"front cover, remove the CD-R Tray Feeder, open the front cover again, and "
+"change the print head or ink tank."
+msgstr ""
+
+#: src/bjcupsmon_ui.c:141 src/bjcupsmon_ui.c:144
+msgid "During printing, the inner cover of the printer was opened.\n"
+msgstr "인쇄 중에 프린터의 내부 커버가 열렸습니다.\n"
+
+#: src/bjcupsmon_ui.c:146
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Open the printer's cover, make sure the ink cartridge is installed properly, "
+"and close the cover.\n"
+msgstr ""
+"한 잉크 카트리지가 정확하게 설치되지 않았습니다.\n"
+"프린터 커버를 열고 잉크  카트리지가 정확하게 설치 되었는지를 확인하고 커버를 닫습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:147
+msgid ""
+"A digital camera or device that is not supported by the direct printing "
+"function is connected to the direct print port. Disconnect the cable from "
+"the direct print port.\n"
+msgstr "직접 인쇄 기능의 지원을 받지 못하는 디지털 카메라 혹은 설비가 직접 인쇄 포트에 연결되었습니다. 케이블을 직접 인쇄 포트에서 제거합니다.\n"
+
+#. 560i 860i 990i
+#: src/bjcupsmon_ui.c:148
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's RESUME button to clear the error.\n"
+msgstr ""
+"자동 프린트 헤드 정렬 중 에러가 발생하였습니다.\n"
+"\n"
+"프린트 헤드 노즐이 막혔을 수 있습니다. 프린터 드라이버의 [유지 관리] 탭에서 청소를 진행한 후, 프린트 헤드 정렬을 다시 진행합니다. \n"
+"\n"
+"에러가 또 다시 발생하면, 사용자 가이드를 참조하여 에러를 검사하거나 수동 정렬을 진행합니다.\n"
+"\n"
+"프린터의 [계속] 버튼을 눌러 에러를 제거합니다.\n"
+
+
+#. 860i 990i
+#: src/bjcupsmon_ui.c:149
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's OK button to clear the error.\n"
+msgstr ""
+"자동 프린트 헤드 정렬 중 에러가 발생하였습니다.\n"
+"\n"
+"프린트 헤드 노즐이 막혔을 수 있습니다. 프린터 드라이버의 [유지 관리] 탭에서 청소를 진행한 후, 프린트 헤드 정렬을 다시 진행합니다. \n"
+"\n"
+"에러가 또 다시 발생하면, 사용자 가이드를 참조하여 에러를 검사하거나 수동 정렬을 진행합니다.\n"
+"\n"
+"프린터의 [OK] 버튼을 눌러 에러를 제거합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:150
+msgid ""
+"Ink tank errors have occurred.\n"
+"Open the printer's cover and replace the ink tanks on which ink lamps are "
+"off."
+msgstr ""
+"잉크 탱크 에러가 발생했습니다.\n"
+"프린터 커버를 열고 잉크 램프가 꺼진 잉크 탱크를 교체합니다."
+
+#: src/bjcupsmon_ui.c:151
+msgid "More than one ink tank of the following color is installed.\n"
+msgstr "두 개 이상의 같은 색 잉크가 설치되어 있습니다.\n"
+
+#: src/bjcupsmon_ui.c:152 src/bjcupsmon_ui.c:154
+msgid "The following ink tank cannot be recognized.\n"
+msgstr "다음의 잉크 탱크를 식별할 수 없습니다.\n"
+
+#: src/bjcupsmon_ui.c:153
+msgid ""
+"Some ink tanks are not installed in place.\n"
+"Confirm that the following ink tanks are installed in the appropriate "
+"positions.\n"
+msgstr ""
+"일부 잉크 탱크가 제대로 설정되어 있지 않습니다.\n"
+"다음의 잉크 탱크가 알맞은 위치에 설치되어 있는지 확인합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:155
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink tank installed. Then printing can continue under "
+"the ink out condition. Replace the empty ink tank immediately after the "
+"printing. The printer may be damaged if printing is continued under the ink "
+"out condition.\n"
+msgstr ""
+"잉크를 다 썼습니다.\n"
+"잉크 탱크 교체 후 커버를 닫습니다. 잉크 탱크 교체 시 내부 커버가 열려 있는지 확인합니다.\n"
+"\n"
+"인쇄하고 있는 중이며 계속해서 인쇄하려면, 잉크 탱크를 설치하고 [계속] 버튼을 누릅니다. 그러면 잉크를 다 쓴 상태에서 인쇄를 계속할 수 있습니다. 인쇄한 후 빈 잉크 탱크를 즉시 교체합니다. 잉크를 다 쓴 상태에서 인쇄를 계속하면 프린터에 손상이 올 수 있습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:156
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button with the ink tank installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink tank immediately after "
+"the printing. The printer may be damaged if printing is continued under the "
+"ink out condition.\n"
+msgstr ""
+"잉크를 다 썼습니다.\n"
+"잉크 탱크 교체 후 커버를 닫습니다. 잉크 탱크 교체 시 내부 커버가 열려 있는지 확인합니다.\n"
+"\n"
+"인쇄하고 있는 중이며 계속해서 인쇄하려면, 잉크 탱크를 설치하고 프린터의 [OK] 버튼을 누릅니다. 그러면 잉크를 다 쓴 상태에서 인쇄를 계속할 수 있습니다. 인쇄한 후 빈 잉크 탱크를 즉시 교체합니다. 잉크를 다 쓴 상태에서 인쇄를 계속하면 프린터에 손상이 올 수 있습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:157 src/bjcupsmon_ui.c:158
+msgid ""
+"The remaining level of the following ink cannot be correctly detected. "
+"Replace the ink tank.\n"
+msgstr "다음 잉크의 잔량을 정확히 검사할 수 없습니다. 잉크 탱크를 교체합니다.\n"
+
+#: src/bjcupsmon_ui.c:159
+msgid "The following ink cartridge cannot be recognized.\n"
+msgstr "다음의 잉크 카트리지를 식별할 수 없습니다.\n"
+
+#: src/bjcupsmon_ui.c:160 src/bjcupsmon_ui.c:161
+msgid "The following ink cartridge has previously been used.\n"
+msgstr "다음의 잉크 카트리지는 이미 사용되었던 것입니다.\n"
+
+#: src/bjcupsmon_ui.c:162
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition.\n"
+msgstr ""
+"잉크를 다 썼습니다.\n"
+"잉크 카트리지를 교체하고 커버를 닫습니다.\n"
+"\n"
+"인쇄하고 있는 중이며 계속해서 인쇄하려면 잉크 카트리지를 설치하고 [계속] 버튼을 누릅니다. 그러면 잉크를 다 쓴 상태에서 인쇄를 계속할 수 있습니다. 인쇄한 후 빈 잉크 탱크를 즉시 교체합니다. 잉크를 다 쓴 상태에서 인쇄를 계속하면 결과물의 인쇄 품질이 떨어질 수 있습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:170
+msgid " Black\n"
+msgstr " 블랙\n"
+
+#: src/bjcupsmon_ui.c:171
+msgid " Color\n"
+msgstr " 칼라\n"
+
+#: src/bjcupsmon_ui.c:183
+msgid "Use only one ink tank per color at a time.\n"
+msgstr "한 번에 한 색의 잉크 탱크만 사용하십시오.\n"
+
+#: src/bjcupsmon_ui.c:184 src/bjcupsmon_ui.c:189
+msgid ""
+"Printing cannot be executed because the ink cartridge may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink cartridge.\n"
+msgstr ""
+"잉크 카트리지가 제대로 설정되지 않았거나 프린터와 호환되지 않기 때문에 인쇄를 실행할 수 없습니다.\n"
+"\n"
+"알맞은 잉크 카트리지를 설치합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:185
+msgid ""
+"Printing cannot be executed because the ink tank may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink tank.\n"
+msgstr ""
+"잉크 탱크가 제대로 설정되지 않았거나 프린터와 호환되지 않기 때문에 인쇄를 실행할 수 없습니다.\n"
+"\n"
+"알맞은 잉크 탱크를 설치합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:186
+msgid ""
+"\n"
+"The following ink tanks have run out.\n"
+msgstr ""
+"\n"
+"다음과 같은 잉크 탱크들을 이미 다 썼습니다.\n"
+
+
+#: src/bjcupsmon_ui.c:187
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's RESUME button for at least "
+"5 seconds, and then release it. Releasing the function for detecting the "
+"remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"이 상태에서 인쇄할 시 프린터에 손상이 올 수 있습니다. 리필 잉크 탱크 사용으로 인한 프린터 고장 또는 손상에 대하여 Canon은 그 어떠한 책임도 지지 않는다는 점에 주의하십시오.\n"
+"\n"
+"인쇄를 계속하려면 잉크 잔량을 검사하는 기능을 해제해야 합니다. 프린터의 [계속] 버튼을 5초 이상 누른 다음 놓습니다. 잉크 잔량을 검사하는 기능을 해제했다는 것이 기억됩니다.\n"
+"이 조작은 위의 잉크의 잔량을 검사하는 기능을 해제합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:188
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it. Releasing the function for detecting "
+"the remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"이 상태에서 인쇄할 시 프린터에 손상이 올 수 있습니다. 리필 잉크 탱크 사용으로 인한 프린터 고장 또는 손상에 대하여 Canon은 그 어떠한 책임도 지지 않는다는 점에 주의하십시오.\n"
+"\n"
+"인쇄를 계속하려면 잉크 잔량을 검사하는 기능을 해제해야 합니다. 프린터의 [중지/리셋] 버튼을 5초 이상 누른 다음 놓습니다. 잉크 잔량을 검사하는 기능을 해제했다는 것이 기억됩니다.\n"
+"이 조작은 위의 잉크의 잔량을 검사하는 기능을 해제합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:190
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+msgstr ""
+"\n"
+"잉크 잔량을 정확히 검사할 수 없기 때문에 잉크 잔량 검사 기능을 사용할 수 없게 됩니다.\n"
+"\n"
+"이 기능이 없이 인쇄를 계속하려면 [계속] 버튼을 누릅니다.\n"
+
+
+#: src/bjcupsmon_ui.c:191
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"잉크 잔량을 정확히 검사할 수 없기 때문에 잉크 잔량 검사 기능을 사용할 수 없게 됩니다.\n"
+"\n"
+"이 기능이 없이 인쇄를 계속하려면 [계속] 버튼을 누릅니다.\n"
+"\n"
+"최적의 품질을 얻기 위하여 Canon은 새 순정 Canon 카트리지를 사용할 것을 권장합니다.\n"
+
+
+#: src/bjcupsmon_ui.c:192
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"새 잉크 카트리지를 준비하십시오.\n"
+"블랙 잉크와 칼라 잉크를 다 썼으면, 프린터 드라이버의 [유지 관리] 탭에 있는 [잉크  카트리지 설정]에서 다른 카트리지로 계속 인쇄하도록 프린터를 설정합니다.\n"
+
+
+#. Other message table.
+#: src/bjcupsmon_ui.c:197
+msgid "Ready.\n"
+msgstr "준비되어 있습니다.\n"
+
+#: src/bjcupsmon_ui.c:198
+msgid "Unknown printer.\n"
+msgstr "모르는 프린터입니다.\n"
+
+#: src/bjcupsmon_ui.c:199
+msgid "Spooler error.\n"
+msgstr "스풀러 에러입니다.\n"
+
+#: src/bjcupsmon_ui.c:384 po/glade.h:9
+msgid "Cartridge Type:"
+msgstr "카트리지 유형:"
+
+#: src/bjcupsmon_ui.c:390 src/bjcupsmon_ui.c:397
+msgid "Scanner"
+msgstr "스캐너"
+
+#: src/bjcupsmon_ui.c:403 src/bjcupsmon_ui.c:410
+msgid "Unsupported"
+msgstr "지원하지 않습니다"
+
+#: src/bjcupsmon_ui.c:422 src/bjcupsmon_ui.c:429
+msgid "Photo"
+msgstr "포토"
+
+#: src/bjcupsmon_ui.c:437 src/bjcupsmon_ui.c:444
+msgid "Black"
+msgstr "블랙 "
+
+#: src/bjcupsmon_ui.c:456 src/bjcupsmon_ui.c:463
+msgid "Color"
+msgstr "칼라 "
+
+#: src/bjcupsmon_ui.c:472
+msgid "Unknown"
+msgstr "아직 모릅니다"
+
+#: src/bjcupsmon_ui.c:488
+msgid "Paper Thickness Lever Position:"
+msgstr "용지 두께 레버 위치:"
+
+#: src/bjcupsmon_ui.c:490
+msgid "                                                "
+msgstr ""
+
+#. Up.
+#: src/bjcupsmon_ui.c:493
+msgid "up"
+msgstr "위로"
+
+#. Down.
+#: src/bjcupsmon_ui.c:497
+msgid "down"
+msgstr "아래로"
+
+#. Left.
+#: src/bjcupsmon_ui.c:501
+msgid "left"
+msgstr "왼쪽"
+
+#. Right.
+#: src/bjcupsmon_ui.c:505
+msgid "right"
+msgstr "오른쪽"
+
+#. End outputCommandLineMessage
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/glade.h:7
+msgid "title"
+msgstr ""
+
+#: po/glade.h:8
+msgid "printer status message"
+msgstr ""
+
+#: po/glade.h:10
+msgid "Continue"
+msgstr "계속"
+
+#: po/glade.h:11
+msgid "Cancel Printing"
+msgstr "인쇄 취소"

@@ -1,0 +1,21 @@
+To build and install printui:
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * Execute the following, when autoconf's version is 2.60 or above.
+		  ./autogen.sh --datadir=/usr/local/share --program-suffix=<Printer Model Name>
+
+		* Remove a "-c" option of the msgfmt command, when an error occurs at the time of a po file compilation.
+
+You can set the following <Printer Model Name>.
+            ip2200
+            ip4200
+            ip6600d
+            ip7500
+            mp500
+
+Example for building the ip4200:
+        ./autogen.sh --program-suffix=ip4200
+        make
+        make install

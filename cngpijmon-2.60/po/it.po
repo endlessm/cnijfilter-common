@@ -1,0 +1,904 @@
+# Canon Inkjet Print Filter 2.60 for Linux
+# Copyright CANON INC. 2001-2007
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cngpijmon 2.60\n"
+"POT-Creation-Date: 2007-08-06 16:59+0900\n"
+"PO-Revision-Date: 2007-08-07 8:48+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+
+#. Printer status message table.
+#. N_("The used ink tank is full.\nCancel printing and turn the printer off and then back on.\nIf this doesn't clear the error, see the printer manual for more detail.\n"),
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"The waste ink absorber is full.\n"
+"Contact the service center for the replacement of the waste ink absorber."
+msgstr ""
+"L'assorbitore di inchiostro in eccesso è pieno.\n"
+"Per la sua sostituzione, rivolgersi al centro assistenza."
+
+#: src/bjcupsmon_ui.c:44
+#, c-format
+msgid ""
+"Service error %s.\n"
+"Cancel printing and turn the printer off and then back on.\n"
+"If this doesn't clear the error, see the printer manual for more detail."
+msgstr ""
+"Errore di servizio %s.\n"
+"Annullare la stampa quindi spegnere e poi riaccendere la stampante.\n"
+"Se questo non risolve l'errore, consultare il manuale della stampante per ulteriori dettagli."
+
+#: src/bjcupsmon_ui.c:46
+msgid "Paper out!\n"
+msgstr "Carta esaurita\n"
+
+#: src/bjcupsmon_ui.c:47
+msgid "Load paper.\n"
+msgstr "Caricare carta.\n"
+
+#: src/bjcupsmon_ui.c:48 src/bjcupsmon_ui.c:50
+msgid "Load paper in the sheet feeder.\n"
+msgstr "Caricare la carta nell'alimentatore fogli.\n"
+
+#: src/bjcupsmon_ui.c:49 src/bjcupsmon_ui.c:51
+msgid "Load paper in the cassette.\n"
+msgstr "Caricare carta nel cassetto.\n"
+
+#: src/bjcupsmon_ui.c:52
+msgid "Press printer's RESUME button.\n"
+msgstr "Premere il tasto RIPRENDI della stampante.\n"
+
+#: src/bjcupsmon_ui.c:53
+msgid "Press printer's OK button.\n"
+msgstr "Premere il pulsante OK sulla stampante.\n"
+
+#: src/bjcupsmon_ui.c:54
+msgid "Paper is jammed.\n"
+msgstr "Carta inceppata.\n"
+
+#: src/bjcupsmon_ui.c:55 src/bjcupsmon_ui.c:56
+msgid "Paper is jammed at the paper output slot.\n"
+msgstr "Carta inceppata nella fessura di uscita dei fogli.\n"
+
+#: src/bjcupsmon_ui.c:57
+msgid "Remove the jammed paper.\n"
+msgstr "Rimuovere la carta inceppata.\n"
+
+#: src/bjcupsmon_ui.c:58 src/bjcupsmon_ui.c:143
+msgid "Press printer's RESUME button. Printing resumes from the next paper.\n"
+msgstr "Premere il tasto RIPRENDI della stampante. La stampa riprende dal foglio successivo.\n"
+
+#: src/bjcupsmon_ui.c:59 src/bjcupsmon_ui.c:145
+msgid "Press printer's OK button. Printing resumes from the next paper.\n"
+msgstr "Premere il pulsante OK sulla stampante. La stampa riprende dal foglio successivo.\n"
+
+#: src/bjcupsmon_ui.c:60 src/bjcupsmon_ui.c:66
+msgid "Paper is jammed in the transport unit.\n"
+msgstr "Carta inceppata nell'unità di trasporto.\n"
+
+#: src/bjcupsmon_ui.c:61
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, first remove the cassette and remove the paper from the cassette "
+"side.\n"
+msgstr "Aprire il coperchio posteriore, rimuovere la carta inceppata. Se non è possibile rimuovere la carta inceppata, rimuovere innanzitutto il cassetto e togliere la carta dal lato del cassetto.\n"
+
+#: src/bjcupsmon_ui.c:62 src/bjcupsmon_ui.c:64 src/bjcupsmon_ui.c:67
+msgid "Paper is jammed in the duplexing transport unit.\n"
+msgstr "Carta inceppata nell'unità di trasporto fronte/retro.\n"
+
+#: src/bjcupsmon_ui.c:63
+msgid ""
+"Remove the cassette, push the printer over onto its back side, and then open "
+"the duplexing transport unit cover. Next, remove the jammed paper, and "
+"quickly return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Rimuovere il cassetto, sollevare la stampante appoggiandola sul lato posteriore e aprire l'unità di trasporto fronte/retro. Successivamente, rimuovere la carta inceppata e riportare la stampante in posizione normale.\n"
+"Per ulteriori dettagli, consultare il manuale dell'utente.\n"
+
+
+#: src/bjcupsmon_ui.c:65
+msgid ""
+"Remove the cassette, push the printer over onto its side, and then open the "
+"duplexing transport unit cover. Next, remove the jammed paper, and quickly "
+"return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Rimuovere il cassetto, sollevare la stampante appoggiandola sul lato e aprire l'unità di trasporto fronte/retro. Successivamente, rimuovere la carta inceppata e riportare la stampante in posizione normale.\n"
+"Per ulteriori dettagli, consultare il Manuale dell'utente.\n"
+
+
+#: src/bjcupsmon_ui.c:68 src/bjcupsmon_ui.c:101
+msgid ""
+"Correct print head is not installed. Install an appropriate print head and "
+"close the cover of the printer.\n"
+msgstr "Non è stata installata la testina di stampa corretta. Installare una testina di stampa corretta e chiudere il coperchio della stampante.\n"
+
+#: src/bjcupsmon_ui.c:69
+msgid ""
+"Operator error.\n"
+"Press printer's RESUME button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"Errore dell'operatore.\n"
+"Premere il pulsante RIPRENDI della stampante.\n"
+"Se l'errore non viene cancellato, annullare la stampa e spegnere e poi riaccendere la stampante.\n"
+
+
+#: src/bjcupsmon_ui.c:70
+msgid ""
+"Operator error.\n"
+"Press printer's OK button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"Errore operatore.\n"
+"Premere il pulsante OK sulla stampante.\n"
+"Se l'errore non viene eliminato, annullare la stampa e quindi spegnere e riaccendere la stampante.\n"
+
+
+#: src/bjcupsmon_ui.c:71
+msgid ""
+"Scanner Cartridge detected!\n"
+"Change to appropriate cartridge.\n"
+"Click Cancel Printing to cancel operation.\n"
+msgstr ""
+"È stata rilevata una cartuccia scanner.\n"
+"Sostituire con la cartuccia corretta.\n"
+"Fare clic su Annulla stampa per annullare l'operazione.\n"
+
+
+#: src/bjcupsmon_ui.c:72
+msgid ""
+"The waste ink absorber is almost full.\n"
+"Press the printer's RESUME button to restart printing."
+msgstr ""
+"L'assorbitore di inchiostro in eccesso è quasi pieno.\n"
+"Premere il pulsante RIPRENDI sulla stampante per riavviare la stampa."
+
+#: src/bjcupsmon_ui.c:73
+msgid ""
+"The waste ink absorber is almost full.\n"
+"Press the printer's OK button to restart printing."
+msgstr ""
+"L'assorbitore di inchiostro in eccesso è quasi pieno.\n"
+"Premere il pulsante OK sulla stampante per riavviare la stampa."
+
+#: src/bjcupsmon_ui.c:74
+msgid ""
+"Protector not installed.\n"
+"Install a protector properly in the printer.\n"
+msgstr ""
+"Dispositivo di protezione non installato.\n"
+"Installare correttamente un dispositivo di protezione sulla stampante.\n"
+
+
+#. N_("Ink has run out.\nReplace ink tank and close the front cover.\n"),
+#: src/bjcupsmon_ui.c:76
+msgid ""
+"Ink has run out.\n"
+"Replace ink tank and close the cover. When replacing the ink tank, make sure "
+"that the Inner Cover is open.\n"
+"\n"
+"You can continue printing under the ink out condition by pressing the RESUME "
+"button. Replace the empty ink tank immediately after the printing. The "
+"printer may be damaged if printing is continued under the ink out "
+"condition.\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:77
+msgid " Black [7]\n"
+msgstr " Nero [7]\n"
+
+#: src/bjcupsmon_ui.c:78
+msgid " Photo Black [7]\n"
+msgstr " Nero foto [7]\n"
+
+#: src/bjcupsmon_ui.c:79
+msgid " Photo Cyan [7]\n"
+msgstr " Ciano foto [7]\n"
+
+#: src/bjcupsmon_ui.c:80
+msgid " Photo Magenta [7]\n"
+msgstr " Magenta foto [7]\n"
+
+#: src/bjcupsmon_ui.c:81
+msgid " Cyan [7]\n"
+msgstr " Ciano [7]\n"
+
+#: src/bjcupsmon_ui.c:82
+msgid " Magenta [7]\n"
+msgstr " Magenta [7]\n"
+
+#: src/bjcupsmon_ui.c:83
+msgid " Yellow [7]\n"
+msgstr " Giallo [7]\n"
+
+#: src/bjcupsmon_ui.c:84 src/bjcupsmon_ui.c:112
+msgid " Red [7]\n"
+msgstr " Rosso [7]\n"
+
+#: src/bjcupsmon_ui.c:85 src/bjcupsmon_ui.c:113
+msgid " Green [7]\n"
+msgstr " Verde [7]\n"
+
+#: src/bjcupsmon_ui.c:86
+msgid " Black [3e]\n"
+msgstr " Nero [3e]\n"
+
+#. N_("Front cover is open.\nUnable to print until the front cover is closed.\n"),
+#: src/bjcupsmon_ui.c:88
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the cartridge cannot be changed. Close the "
+"cover, wait for printing to finish, then open the cover again and change the "
+"print head or ink tank.\n"
+msgstr ""
+"Il coperchio della stampante è aperto.\n"
+"Se è in corso la stampa, non sarà possibile sostituire la cartuccia. Chiudere il coperchio, attendere la fine dell'operazione di stampa e quindi riaprire il coperchio e sostituire la testina di stampa o il serbatoio di inchiostro.\n"
+
+
+#: src/bjcupsmon_ui.c:89
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank.\n"
+msgstr ""
+"Il coperchio della stampante è aperto.\n"
+"Se è in corso la stampa, non sarà possibile sostituire la testina di stampa o il serbatoio d'inchiostro. Chiudere il coperchio, attendere la fine dell'operazione di stampa e quindi riaprire il coperchio e sostituire la testina di stampa o il serbatoio d'inchiostro.\n"
+
+
+#: src/bjcupsmon_ui.c:90
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Open the paper output tray. Printing will restart.\n"
+msgstr ""
+"Impossibile eseguire la stampa del documento perché il vassoio di uscita è chiuso.\n"
+"Aprire il vassoio di uscita. La stampa viene riavviata.\n"
+
+
+#: src/bjcupsmon_ui.c:91
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Press the Open button, and open the paper output tray. Printing will "
+"restart.\n"
+msgstr ""
+"Impossibile eseguire la stampa del documento perché il vassoio di uscita è chiuso.\n"
+"Premere il pulsante Apri per aprire il vassoio di uscita. La stampa viene riavviata.\n"
+
+
+#: src/bjcupsmon_ui.c:92
+msgid ""
+"Operator error.\n"
+"The connected printer cannot work correctly.\n"
+msgstr ""
+"Errore operatore.\n"
+"La stampante collegata non può funzionare correttamente.\n"
+
+
+#: src/bjcupsmon_ui.c:93
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr ""
+"Pulizia in corso.\n"
+"Attendere.\n"
+
+
+#: src/bjcupsmon_ui.c:94
+msgid ""
+"The holder is at the replacement position.\n"
+"After replacing the ink cartridge, close the printer's cover.\n"
+msgstr ""
+"Il supporto dello spessore si trova nella posizione di sostituzione.\n"
+"Dopo aver sostituito la cartuccia di inchiostro, chiudere il coperchio della stampante\n"
+
+
+#: src/bjcupsmon_ui.c:95
+msgid ""
+"The holder is at the replacement position.\n"
+"After replacing the print head or the ink tank, close the cover of the "
+"printer. To replace only the ink tanks, do not remove the print head from "
+"the printer. Do not touch the locking lever.\n"
+msgstr ""
+"Il supporto si trova nella posizione di sostituzione.\n"
+"Dopo avere sostituito la testina di stampa o il serbatoio d'inchiostro, chiudere il coperchio della stampante. Per sostituire solo i serbatoi d'inchiostro, non rimuovere la testina di stampa dalla stampante. Non toccare la leva di bloccaggio.\n"
+
+
+#: src/bjcupsmon_ui.c:96
+msgid ""
+"The holder is at the replacement position.\n"
+"If you need to replace the print head or the ink tank, first open the Inner "
+"Cover. After the replacement is completed, close the Inner Cover, and then "
+"close the cover of the printer.\n"
+"If you are replacing only the ink tank, leave the print head attached. Do "
+"not touch the lock lever.\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:97 src/bjcupsmon_ui.c:102
+msgid "Printing.\n"
+msgstr "Stampa in corso.\n"
+
+#: src/bjcupsmon_ui.c:98
+msgid "The printer is performing another operation.\n"
+msgstr "È in corso l'esecuzione di un'altra operazione.\n"
+
+#: src/bjcupsmon_ui.c:99
+msgid ""
+"Scanner Cartridge detected.\n"
+"You cannot print with this cartridge. Install another BJ Cartridge in your "
+"printer.\n"
+msgstr ""
+"Rilevata cartuccia scanner.\n"
+"Non è possibile stampare con questa cartuccia. Installare un'altra cartuccia BJ nella stampante.\n"
+
+
+#: src/bjcupsmon_ui.c:100
+msgid ""
+"Unsupported cartridge installed.\n"
+"Change to appropriate BJ cartridge.\n"
+msgstr ""
+"Installata cartuccia non supportata.\n"
+"Sostituire con la cartuccia BJ corretta.\n"
+
+
+#: src/bjcupsmon_ui.c:103
+msgid "Printer is online.\n"
+msgstr "Stampante in linea.\n"
+
+#: src/bjcupsmon_ui.c:104 src/bjcupsmon_ui.c:118
+msgid ""
+"\n"
+"The following ink tanks are running low.\n"
+msgstr ""
+"\n"
+"I seguenti serbatoi di inchiostro stanno divenendo insufficienti.\n"
+
+
+#: src/bjcupsmon_ui.c:105 src/bjcupsmon_ui.c:163
+msgid " Black [7e]\n"
+msgstr " Nero [7e]\n"
+
+#: src/bjcupsmon_ui.c:106 src/bjcupsmon_ui.c:164
+msgid " Black [9]\n"
+msgstr " Nero [9]\n"
+
+#: src/bjcupsmon_ui.c:107 src/bjcupsmon_ui.c:165
+msgid " Photo Cyan [7e]\n"
+msgstr " Ciano foto [7e]\n"
+
+#: src/bjcupsmon_ui.c:108 src/bjcupsmon_ui.c:166
+msgid " Photo Magenta [7e]\n"
+msgstr " Magenta foto [7e]\n"
+
+#: src/bjcupsmon_ui.c:109 src/bjcupsmon_ui.c:167
+msgid " Cyan [7e]\n"
+msgstr " Ciano [7e]\n"
+
+#: src/bjcupsmon_ui.c:110 src/bjcupsmon_ui.c:168
+msgid " Magenta [7e]\n"
+msgstr " Magenta [7e]\n"
+
+#: src/bjcupsmon_ui.c:111 src/bjcupsmon_ui.c:169
+msgid " Yellow [7e]\n"
+msgstr " Giallo [7e]\n"
+
+#: src/bjcupsmon_ui.c:114
+msgid " Black [9e]\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:115
+msgid " Black [24]\n"
+msgstr " Nero [24]\n"
+
+#: src/bjcupsmon_ui.c:116
+msgid " Color [24]\n"
+msgstr " Colore [24]\n"
+
+#: src/bjcupsmon_ui.c:117
+msgid "Prepare new ink tanks.\n"
+msgstr "Preparare i serbatoi di inchiostro nuovi.\n"
+
+#: src/bjcupsmon_ui.c:119 src/bjcupsmon_ui.c:172
+msgid " Black [40]\n"
+msgstr " Nero [40]\n"
+
+#: src/bjcupsmon_ui.c:120 src/bjcupsmon_ui.c:173
+msgid " Black [50]\n"
+msgstr " Nero [50]\n"
+
+#: src/bjcupsmon_ui.c:121 src/bjcupsmon_ui.c:174
+msgid " Color [41]\n"
+msgstr " Colore [41]\n"
+
+#: src/bjcupsmon_ui.c:122 src/bjcupsmon_ui.c:175
+msgid " Color [51]\n"
+msgstr " Colore [51]\n"
+
+#: src/bjcupsmon_ui.c:123 src/bjcupsmon_ui.c:176
+msgid " Black [8]\n"
+msgstr " Nero [8]\n"
+
+#: src/bjcupsmon_ui.c:124 src/bjcupsmon_ui.c:177
+msgid " Black [5]\n"
+msgstr " Nero [5]\n"
+
+#: src/bjcupsmon_ui.c:125 src/bjcupsmon_ui.c:178
+msgid " Photo Cyan [8]\n"
+msgstr " Ciano foto [8]\n"
+
+#: src/bjcupsmon_ui.c:126 src/bjcupsmon_ui.c:179
+msgid " Photo Magenta [8]\n"
+msgstr " Magenta foto [8]\n"
+
+#: src/bjcupsmon_ui.c:127 src/bjcupsmon_ui.c:180
+msgid " Cyan [8]\n"
+msgstr " Ciano [8]\n"
+
+#: src/bjcupsmon_ui.c:128 src/bjcupsmon_ui.c:181
+msgid " Magenta [8]\n"
+msgstr " Magenta [8]\n"
+
+#: src/bjcupsmon_ui.c:129 src/bjcupsmon_ui.c:182
+msgid " Yellow [8]\n"
+msgstr " Giallo [8]\n"
+
+#: src/bjcupsmon_ui.c:130
+msgid ""
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"Preparare una cartuccia di inchiostro nuova.\n"
+"Se la cartuccia di inchiostro nera o a colori è esaurita, è possibile impostare la stampante affinché continui la stampa con le altre cartucce dalle Impostazioni cartuccia di inchiostro nella scheda Manutenzione del driver della stampante.\n"
+
+
+#: src/bjcupsmon_ui.c:131
+msgid ""
+"\n"
+"The ink cartridge has been installed or replaced.\n"
+"If the printout contains misaligned lines or is not satisfactory after the "
+"installation or replacement, refer to the user's guide and carry out the "
+"print head alignment.\n"
+msgstr ""
+"\n"
+"La cartuccia di inchiostro è stata installata o sostituita.\n"
+"Se la stampa contiene linee non allineate o non è soddisfacente dopo l'installazione o la sostituzione, consultare il manuale dell'utente ed eseguire l'allineamento della testina di stampa.\n"
+
+
+#: src/bjcupsmon_ui.c:132
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"È stata disattivata la visualizzazione dell'avviso di inchiostro insufficiente.\n"
+
+
+#. N_("The CD-R Tray Feeder is installed in the printer.\nAfter ensuring that the CD-R tray has been removed, remove the CD-R Tray Feeder and then press the RESUME button. Printing will then restart.\n"),
+#: src/bjcupsmon_ui.c:135 src/bjcupsmon_ui.c:138
+msgid "Printing cannot be executed because the inner cover is open.\n"
+msgstr "Impossibile stampare perché il coperchio interno è aperto.\n"
+
+#: src/bjcupsmon_ui.c:136 src/bjcupsmon_ui.c:142
+msgid "Close the inner cover.\n"
+msgstr "Chiudere il coperchio interno.\n"
+
+#: src/bjcupsmon_ui.c:137
+msgid "Press printer's RESUME button. Printing will restart.\n"
+msgstr "Premere il pulsante RIPRENDI della stampante. La stampa viene riavviata.\n"
+
+#: src/bjcupsmon_ui.c:139
+msgid "Press printer's OK button. Printing will restart.\n"
+msgstr "Premere il pulsante OK sulla stampante. La stampa viene riavviata.\n"
+
+#: src/bjcupsmon_ui.c:140
+msgid ""
+"The printer's front cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the front cover, wait for printing to finish, then open the cover "
+"again and change the print head or ink tank. If the CD-R Tray Feeder is "
+"installed, the print head or ink tank cannot be also changed. Close the "
+"front cover, remove the CD-R Tray Feeder, open the front cover again, and "
+"change the print head or ink tank."
+msgstr ""
+
+#: src/bjcupsmon_ui.c:141 src/bjcupsmon_ui.c:144
+msgid "During printing, the inner cover of the printer was opened.\n"
+msgstr "Durante la stampa, il coperchio interno della stampante è stato aperto.\n"
+
+#: src/bjcupsmon_ui.c:146
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Open the printer's cover, make sure the ink cartridge is installed properly, "
+"and close the cover.\n"
+msgstr ""
+"Una cartuccia di inchiostro non è installata correttamente.\n"
+"Aprire il coperchio della stampante, assicurarsi che la cartuccia di inchiostro sia installata correttamente e chiudere il coperchio.\n"
+
+
+#: src/bjcupsmon_ui.c:147
+msgid ""
+"A digital camera or device that is not supported by the direct printing "
+"function is connected to the direct print port. Disconnect the cable from "
+"the direct print port.\n"
+msgstr "Una fotocamera digitale o un'altra periferica non supportata dalla funzione di stampa diretta è collegata alla porta di stampa diretta. Disconnettere il cavo dalla porta di stampa diretta.\n"
+
+#. 560i 860i 990i
+#: src/bjcupsmon_ui.c:148
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's RESUME button to clear the error.\n"
+msgstr ""
+"Errore durante l'allineamento automatico della testina di stampa.\n"
+"\n"
+"Gli ugelli della testina di stampa potrebbero essere ostruiti. Eseguire la pulizia dalla scheda Manutenzione del driver della stampante ed eseguire nuovamente l'allineamento della testina di stampa.\n"
+"\n"
+"Se l'errore persiste, consultare il manuale dell'utente per verificare l'errore o eseguire l'allineamento manuale.\n"
+"\n"
+"Premere il pulsante RIPRENDI sulla stampante per cancellare l'errore.\n"
+
+
+#. 860i 990i
+#: src/bjcupsmon_ui.c:149
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's OK button to clear the error.\n"
+msgstr ""
+"Errore durante l'allineamento automatico della testina di stampa.\n"
+"\n"
+"Gli ugelli della testina di stampa potrebbero essere ostruiti. Eseguire la pulizia dalla scheda Manutenzione del driver della stampante ed eseguire nuovamente l'allineamento della testina di stampa.\n"
+"\n"
+"Se l'errore persiste, consultare il Manuale dell'utente per verificare l'errore o eseguire l'allineamento manuale.\n"
+"\n"
+"Premere il pulsante OK sulla stampante per eliminare l'errore.\n"
+
+
+#: src/bjcupsmon_ui.c:150
+msgid ""
+"Ink tank errors have occurred.\n"
+"Open the printer's cover and replace the ink tanks on which ink lamps are "
+"off."
+msgstr ""
+"Si sono verificati errori relativi al serbatoio di inchiostro.\n"
+"Aprire il coperchio della stampante e sostituire i serbatoi di inchiostro sui quali gli indicatori luminosi dell'inchiostro sono spenti."
+
+#: src/bjcupsmon_ui.c:151
+msgid "More than one ink tank of the following color is installed.\n"
+msgstr "È stato installato più di un serbatoio di inchiostro del seguente colore.\n"
+
+#: src/bjcupsmon_ui.c:152 src/bjcupsmon_ui.c:154
+msgid "The following ink tank cannot be recognized.\n"
+msgstr "Impossibile riconoscere il seguente serbatoio di inchiostro.\n"
+
+#: src/bjcupsmon_ui.c:153
+msgid ""
+"Some ink tanks are not installed in place.\n"
+"Confirm that the following ink tanks are installed in the appropriate "
+"positions.\n"
+msgstr ""
+"Alcuni serbatoi di inchiostro non sono installati in posizione.\n"
+"Confermare che i seguenti serbatoi di inchiostro siano installati nelle posizioni appropriate.\n"
+
+
+#: src/bjcupsmon_ui.c:155
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink tank installed. Then printing can continue under "
+"the ink out condition. Replace the empty ink tank immediately after the "
+"printing. The printer may be damaged if printing is continued under the ink "
+"out condition.\n"
+msgstr ""
+"Inchiostro esaurito.\n"
+"Sostituire il serbatoio di inchiostro e chiudere il coperchio. Quando si sostituisce il serbatoio di inchiostro, assicurarsi che il coperchio interno sia aperto.\n"
+"\n"
+"Se è in corso la stampa e si desidera continuare a stampare, premere il pulsante RIPRENDI con il serbatoio di inchiostro installato. La stampa può proseguire in stato di inchiostro esaurito. Sostituire il serbatoio di inchiostro vuoto subito dopo la stampa. Continuando la stampa in stato di inchiostro esaurito è possibile danneggiare la stampante.\n"
+
+
+#: src/bjcupsmon_ui.c:156
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button with the ink tank installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink tank immediately after "
+"the printing. The printer may be damaged if printing is continued under the "
+"ink out condition.\n"
+msgstr ""
+"Inchiostro esaurito.\n"
+"Sostituire il serbatoio di inchiostro e chiudere il coperchio. Quando si sostituisce il serbatoio di inchiostro, assicurarsi che il coperchio interno sia aperto.\n"
+"\n"
+"Se è in corso la stampa e si desidera continuare a stampare, premere il pulsante OK con il serbatoio di inchiostro installato. La stampa può proseguire in stato di inchiostro esaurito. Sostituire il serbatoio di inchiostro vuoto subito dopo la stampa. Continuando la stampa in stato di inchiostro esaurito è possibile danneggiare la stampante.\n"
+
+
+#: src/bjcupsmon_ui.c:157 src/bjcupsmon_ui.c:158
+msgid ""
+"The remaining level of the following ink cannot be correctly detected. "
+"Replace the ink tank.\n"
+msgstr "Impossibile rilevare correttamente il livello di inchiostro rimanente nel seguente serbatoio. Sostituire il serbatoio d'inchiostro.\n"
+
+#: src/bjcupsmon_ui.c:159
+msgid "The following ink cartridge cannot be recognized.\n"
+msgstr "Impossibile riconoscere la seguente cartuccia di inchiostro.\n"
+
+#: src/bjcupsmon_ui.c:160 src/bjcupsmon_ui.c:161
+msgid "The following ink cartridge has previously been used.\n"
+msgstr "La seguente cartuccia di inchiostro è già stata usata.\n"
+
+#: src/bjcupsmon_ui.c:162
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition.\n"
+msgstr ""
+"Inchiostro esaurito.\n"
+"Sostituire la cartuccia di inchiostro e chiudere il coperchio.\n"
+"\n"
+"Se è in corso la stampa e si desidera continuare a stampare, premere il pulsante RIPRENDI con la cartuccia di inchiostro installata. La stampa può proseguire in stato di inchiostro esaurito. Sostituire la cartuccia di inchiostro esaurita subito dopo la stampa. Se si continua la stampa in stato di inchiostro esaurito, la qualità di stampa non sarà soddisfacente.\n"
+
+
+#: src/bjcupsmon_ui.c:170
+msgid " Black\n"
+msgstr " Nero\n"
+
+#: src/bjcupsmon_ui.c:171
+msgid " Color\n"
+msgstr " Colore\n"
+
+#: src/bjcupsmon_ui.c:183
+msgid "Use only one ink tank per color at a time.\n"
+msgstr "Utilizzare solo un serbatoio di inchiostro per colore alla volta.\n"
+
+#: src/bjcupsmon_ui.c:184 src/bjcupsmon_ui.c:189
+msgid ""
+"Printing cannot be executed because the ink cartridge may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink cartridge.\n"
+msgstr ""
+"Impossibile stampare perché la cartuccia di inchiostro non è installata correttamente o non è compatibile con questa stampante.\n"
+"\n"
+"Installare la cartuccia di inchiostro appropriata.\n"
+
+
+#: src/bjcupsmon_ui.c:185
+msgid ""
+"Printing cannot be executed because the ink tank may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink tank.\n"
+msgstr ""
+"Impossibile stampare perché il serbatoio di inchiostro non è installato correttamente o non è compatibile con questa stampante.\n"
+"\n"
+"Installare il serbatoio di inchiostro appropriato.\n"
+
+
+#: src/bjcupsmon_ui.c:186
+msgid ""
+"\n"
+"The following ink tanks have run out.\n"
+msgstr ""
+"\n"
+"I seguenti serbatoi di inchiostro sono stati esauriti.\n"
+
+
+#: src/bjcupsmon_ui.c:187
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's RESUME button for at least "
+"5 seconds, and then release it. Releasing the function for detecting the "
+"remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"La stampa in questa condizione potrebbe danneggiare la stampante. Canon non sarà responsabile per malfunzionamenti o danni alla stampante causati da serbatoi d'inchiostro rigenerati.\n"
+"\n"
+"Per continuare a stampare, è necessario disattivare la funzione di rilevamento del livello d'inchiostro rimanente. Tenere premuto il pulsante RIPRENDI sulla stampante per almeno 5 secondi, quindi rilasciarlo. La disattivazione della funzione di rilevamento del livello d'inchiostro rimanente viene memorizzata.\n"
+"Questa operazione disattiva la funzione di rilevamento del livello di inchiostro rimanente nel serbatoio sopraindicato.\n"
+
+
+#: src/bjcupsmon_ui.c:188
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it. Releasing the function for detecting "
+"the remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"La stampa in questa condizione potrebbe danneggiare la stampante. Canon non sarà responsabile per malfunzionamenti o danni alla stampante causati da serbatoi d'inchiostro rigenerati.\n"
+"\n"
+"Per continuare a stampare, è necessario disattivare la funzione di rilevamento del livello d'inchiostro rimanente. Tenere premuto il pulsante Arresta/Ripristina sulla stampante per almeno 5 secondi, quindi rilasciarlo. La disattivazione della funzione di rilevamento del livello d'inchiostro rimanente viene memorizzata.\n"
+"Questa operazione disattiva la funzione di rilevamento del livello di inchiostro rimanente nel serbatoio sopraindicato.\n"
+
+
+#: src/bjcupsmon_ui.c:190
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+msgstr ""
+"\n"
+"La funzione di rilevamento del livello di inchiostro rimanente verrà disattivata perché non è possibile rilevare correttamente il livello di inchiostro.\n"
+"\n"
+"Se si desidera continuare la stampa senza questa funzione, premere il pulsante RIPRENDI.\n"
+
+
+#: src/bjcupsmon_ui.c:191
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"La funzione di rilevamento del livello di inchiostro rimanente verrà disattivata perché non è possibile rilevare correttamente il livello di inchiostro.\n"
+"\n"
+"Se si desidera continuare la stampa senza questa funzione, premere il pulsante RIPRENDI.\n"
+"\n"
+"Canon consiglia di utilizzare cartucce nuove originali Canon per ottenere una qualità ottimale.\n"
+
+
+#: src/bjcupsmon_ui.c:192
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"Preparare una cartuccia di inchiostro nuova.\n"
+"Se la cartuccia di inchiostro nera o a colori è esaurita, è possibile impostare la stampante affinché continui la stampa con le altre cartucce dalle Impostazioni cartuccia di inchiostro nella scheda Manutenzione del driver della stampante.\n"
+
+
+#. Other message table.
+#: src/bjcupsmon_ui.c:197
+msgid "Ready.\n"
+msgstr "Pronta.\n"
+
+#: src/bjcupsmon_ui.c:198
+msgid "Unknown printer.\n"
+msgstr "Stampante sconosciuta.\n"
+
+#: src/bjcupsmon_ui.c:199
+msgid "Spooler error.\n"
+msgstr "Errore dello spooler.\n"
+
+#: src/bjcupsmon_ui.c:384 po/glade.h:9
+msgid "Cartridge Type:"
+msgstr "Tipo di cartuccia:"
+
+#: src/bjcupsmon_ui.c:390 src/bjcupsmon_ui.c:397
+msgid "Scanner"
+msgstr "Scanner"
+
+#: src/bjcupsmon_ui.c:403 src/bjcupsmon_ui.c:410
+msgid "Unsupported"
+msgstr "Non supportata"
+
+#: src/bjcupsmon_ui.c:422 src/bjcupsmon_ui.c:429
+msgid "Photo"
+msgstr "Foto"
+
+#: src/bjcupsmon_ui.c:437 src/bjcupsmon_ui.c:444
+msgid "Black"
+msgstr "Nero"
+
+#: src/bjcupsmon_ui.c:456 src/bjcupsmon_ui.c:463
+msgid "Color"
+msgstr "Colore"
+
+#: src/bjcupsmon_ui.c:472
+msgid "Unknown"
+msgstr "Ignota"
+
+#: src/bjcupsmon_ui.c:488
+msgid "Paper Thickness Lever Position:"
+msgstr "Pos. leva regolazione spessore:"
+
+#: src/bjcupsmon_ui.c:490
+msgid "                                                "
+msgstr ""
+
+#. Up.
+#: src/bjcupsmon_ui.c:493
+msgid "up"
+msgstr "su"
+
+#. Down.
+#: src/bjcupsmon_ui.c:497
+msgid "down"
+msgstr "giù"
+
+#. Left.
+#: src/bjcupsmon_ui.c:501
+msgid "left"
+msgstr "a sinistra"
+
+#. Right.
+#: src/bjcupsmon_ui.c:505
+msgid "right"
+msgstr "destra"
+
+#. End outputCommandLineMessage
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/glade.h:7
+msgid "title"
+msgstr ""
+
+#: po/glade.h:8
+msgid "printer status message"
+msgstr ""
+
+#: po/glade.h:10
+msgid "Continue"
+msgstr "Continua"
+
+#: po/glade.h:11
+msgid "Cancel Printing"
+msgstr "Annulla stampa"

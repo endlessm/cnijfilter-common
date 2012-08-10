@@ -1,0 +1,904 @@
+# Canon Inkjet Print Filter 2.60 for Linux
+# Copyright CANON INC. 2001-2007
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cngpijmon 2.60\n"
+"POT-Creation-Date: 2007-08-06 16:59+0900\n"
+"PO-Revision-Date: 2007-08-07 8:52+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=BIG5\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+
+#. Printer status message table.
+#. N_("The used ink tank is full.\nCancel printing and turn the printer off and then back on.\nIf this doesn't clear the error, see the printer manual for more detail.\n"),
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"The waste ink absorber is full.\n"
+"Contact the service center for the replacement of the waste ink absorber."
+msgstr ""
+"廢棄墨水吸收器已滿。\n"
+"請洽詢服務中心更換廢棄墨水吸收器。"
+
+#: src/bjcupsmon_ui.c:44
+#, c-format
+msgid ""
+"Service error %s.\n"
+"Cancel printing and turn the printer off and then back on.\n"
+"If this doesn't clear the error, see the printer manual for more detail."
+msgstr ""
+"維修錯誤%s。\n"
+"取消列印並關閉印表機，然後重新開啟。\n"
+"如果這樣不能消除錯誤，請參閱印表機手冊以獲取更多詳細資訊。"
+
+#: src/bjcupsmon_ui.c:46
+msgid "Paper out!\n"
+msgstr "紙張用盡！\n"
+
+#: src/bjcupsmon_ui.c:47
+msgid "Load paper.\n"
+msgstr "裝入紙張。\n"
+
+#: src/bjcupsmon_ui.c:48 src/bjcupsmon_ui.c:50
+msgid "Load paper in the sheet feeder.\n"
+msgstr "在送紙器中裝入紙張。\n"
+
+#: src/bjcupsmon_ui.c:49 src/bjcupsmon_ui.c:51
+msgid "Load paper in the cassette.\n"
+msgstr "在紙匣中裝入紙張。\n"
+
+#: src/bjcupsmon_ui.c:52
+msgid "Press printer's RESUME button.\n"
+msgstr "按印表機的 [恢復] 按鈕。\n"
+
+#: src/bjcupsmon_ui.c:53
+msgid "Press printer's OK button.\n"
+msgstr "按印表機的 [OK] 按鈕。\n"
+
+#: src/bjcupsmon_ui.c:54
+msgid "Paper is jammed.\n"
+msgstr "紙張被夾。\n"
+
+#: src/bjcupsmon_ui.c:55 src/bjcupsmon_ui.c:56
+msgid "Paper is jammed at the paper output slot.\n"
+msgstr "出紙槽出現夾紙情況。\n"
+
+#: src/bjcupsmon_ui.c:57
+msgid "Remove the jammed paper.\n"
+msgstr "移除被夾紙張。\n"
+
+#: src/bjcupsmon_ui.c:58 src/bjcupsmon_ui.c:143
+msgid "Press printer's RESUME button. Printing resumes from the next paper.\n"
+msgstr "按印表機上的 [恢復] 按鈕。從下一頁恢復列印。\n"
+
+#: src/bjcupsmon_ui.c:59 src/bjcupsmon_ui.c:145
+msgid "Press printer's OK button. Printing resumes from the next paper.\n"
+msgstr "按印表機的 [OK] 按鈕。從下一頁恢復列印。\n"
+
+#: src/bjcupsmon_ui.c:60 src/bjcupsmon_ui.c:66
+msgid "Paper is jammed in the transport unit.\n"
+msgstr "傳送單元出現夾紙情況。\n"
+
+#: src/bjcupsmon_ui.c:61
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, first remove the cassette and remove the paper from the cassette "
+"side.\n"
+msgstr "打開後蓋，移除被夾紙張。如果無法移除被夾紙張，請先移除紙匣，然後從紙匣一側移除被夾紙張。\n"
+
+#: src/bjcupsmon_ui.c:62 src/bjcupsmon_ui.c:64 src/bjcupsmon_ui.c:67
+msgid "Paper is jammed in the duplexing transport unit.\n"
+msgstr "雙面傳送單元出現夾紙情況。\n"
+
+#: src/bjcupsmon_ui.c:63
+msgid ""
+"Remove the cassette, push the printer over onto its back side, and then open "
+"the duplexing transport unit cover. Next, remove the jammed paper, and "
+"quickly return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"移除紙匣， 翻轉印表機使其背面朝下，然後打開雙面傳送單元蓋。接著，移除被夾紙張，並將印表機迅速恢復到豎直位置。\n"
+"請參閱使用者指南獲取詳細資訊。\n"
+
+
+#: src/bjcupsmon_ui.c:65
+msgid ""
+"Remove the cassette, push the printer over onto its side, and then open the "
+"duplexing transport unit cover. Next, remove the jammed paper, and quickly "
+"return the printer to its upright position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"移除紙匣， 翻轉印表機使其背面朝下，然後打開雙面傳送單元蓋。接著，移除被夾紙張，並將印表機迅速恢復到豎直位置。\n"
+"請參閱使用者指南獲取詳細資訊。\n"
+
+
+#: src/bjcupsmon_ui.c:68 src/bjcupsmon_ui.c:101
+msgid ""
+"Correct print head is not installed. Install an appropriate print head and "
+"close the cover of the printer.\n"
+msgstr "未安裝正確的列印頭。安裝合適的列印頭，然後關閉印表機機蓋。\n"
+
+#: src/bjcupsmon_ui.c:69
+msgid ""
+"Operator error.\n"
+"Press printer's RESUME button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"操作員錯誤。\n"
+"按印表機的 [恢復] 按鈕。\n"
+"如果這樣不能消除錯誤，則取消列印並關閉印表機，然後重新開啟。\n"
+
+
+#: src/bjcupsmon_ui.c:70
+msgid ""
+"Operator error.\n"
+"Press printer's OK button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"操作員錯誤。\n"
+"按印表機的 [OK] 按鈕。\n"
+"如果這樣不能消除錯誤，則取消列印並關閉印表機，然後重新開啟。\n"
+
+
+#: src/bjcupsmon_ui.c:71
+msgid ""
+"Scanner Cartridge detected!\n"
+"Change to appropriate cartridge.\n"
+"Click Cancel Printing to cancel operation.\n"
+msgstr ""
+"檢測到掃描器墨水匣！\n"
+"更換為合適的墨水匣。\n"
+"按一下 [取消列印] 以取消操作。\n"
+
+
+#: src/bjcupsmon_ui.c:72
+msgid ""
+"The waste ink absorber is almost full.\n"
+"Press the printer's RESUME button to restart printing."
+msgstr ""
+"廢棄墨水吸收器將滿。\n"
+"按印表機的 [恢復] 按鈕重新開始列印。"
+
+#: src/bjcupsmon_ui.c:73
+msgid ""
+"The waste ink absorber is almost full.\n"
+"Press the printer's OK button to restart printing."
+msgstr ""
+"廢棄墨水吸收器將滿。\n"
+"按印表機的 [OK] 按鈕重新開始列印。"
+
+#: src/bjcupsmon_ui.c:74
+msgid ""
+"Protector not installed.\n"
+"Install a protector properly in the printer.\n"
+msgstr ""
+"未安裝保護器！\n"
+"請正確安裝保護器。\n"
+
+
+#. N_("Ink has run out.\nReplace ink tank and close the front cover.\n"),
+#: src/bjcupsmon_ui.c:76
+msgid ""
+"Ink has run out.\n"
+"Replace ink tank and close the cover. When replacing the ink tank, make sure "
+"that the Inner Cover is open.\n"
+"\n"
+"You can continue printing under the ink out condition by pressing the RESUME "
+"button. Replace the empty ink tank immediately after the printing. The "
+"printer may be damaged if printing is continued under the ink out "
+"condition.\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:77
+msgid " Black [7]\n"
+msgstr " 黑色 [7]\n"
+
+#: src/bjcupsmon_ui.c:78
+msgid " Photo Black [7]\n"
+msgstr " 相片黑色 [7]\n"
+
+#: src/bjcupsmon_ui.c:79
+msgid " Photo Cyan [7]\n"
+msgstr " 相片藍色 [7]\n"
+
+#: src/bjcupsmon_ui.c:80
+msgid " Photo Magenta [7]\n"
+msgstr " 相片紅色 [7]\n"
+
+#: src/bjcupsmon_ui.c:81
+msgid " Cyan [7]\n"
+msgstr " 藍色 [7]\n"
+
+#: src/bjcupsmon_ui.c:82
+msgid " Magenta [7]\n"
+msgstr " 紅色 [7]\n"
+
+#: src/bjcupsmon_ui.c:83
+msgid " Yellow [7]\n"
+msgstr " 黃色 [7]\n"
+
+#: src/bjcupsmon_ui.c:84 src/bjcupsmon_ui.c:112
+msgid " Red [7]\n"
+msgstr " 橘紅色 [7]\n"
+
+#: src/bjcupsmon_ui.c:85 src/bjcupsmon_ui.c:113
+msgid " Green [7]\n"
+msgstr " 綠色 [7]\n"
+
+#: src/bjcupsmon_ui.c:86
+msgid " Black [3e]\n"
+msgstr " 黑色 [3e]\n"
+
+#. N_("Front cover is open.\nUnable to print until the front cover is closed.\n"),
+#: src/bjcupsmon_ui.c:88
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the cartridge cannot be changed. Close the "
+"cover, wait for printing to finish, then open the cover again and change the "
+"print head or ink tank.\n"
+msgstr ""
+"印表機機蓋已打開。\n"
+"如果列印在進行中，無法更換墨水匣。關閉機蓋，等待列印完成，然後再打開機蓋並且更換列印頭或墨水盒。\n"
+
+
+#: src/bjcupsmon_ui.c:89
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank.\n"
+msgstr ""
+"印表機機蓋已打開。\n"
+"如果列印在進行中，無法更換列印頭或墨水盒。關閉機蓋，等待列印完成，然後再次打開機蓋並且更換列印頭或墨水盒。\n"
+
+
+#: src/bjcupsmon_ui.c:90
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Open the paper output tray. Printing will restart.\n"
+msgstr ""
+"由於出紙托盤已關閉，所以無法執行文件列印。\n"
+"打開出紙托盤。列印將重新開始。\n"
+
+
+#: src/bjcupsmon_ui.c:91
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Press the Open button, and open the paper output tray. Printing will "
+"restart.\n"
+msgstr ""
+"由於出紙托盤已關閉，所以無法執行文件列印。\n"
+"按 [開啟] 按鈕，並打開出紙托盤。列印將重新開始。\n"
+
+
+#: src/bjcupsmon_ui.c:92
+msgid ""
+"Operator error.\n"
+"The connected printer cannot work correctly.\n"
+msgstr ""
+"操作員錯誤。\n"
+"連接的印表機無法正常工作。\n"
+
+
+#: src/bjcupsmon_ui.c:93
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr ""
+"清潔進行中。\n"
+"請等待。\n"
+
+
+#: src/bjcupsmon_ui.c:94
+msgid ""
+"The holder is at the replacement position.\n"
+"After replacing the ink cartridge, close the printer's cover.\n"
+msgstr ""
+"固定座已在更換位置。\n"
+"更換墨水盒後，關閉印表機機蓋。\n"
+
+
+#: src/bjcupsmon_ui.c:95
+msgid ""
+"The holder is at the replacement position.\n"
+"After replacing the print head or the ink tank, close the cover of the "
+"printer. To replace only the ink tanks, do not remove the print head from "
+"the printer. Do not touch the locking lever.\n"
+msgstr ""
+"固定座已在更換位置。\n"
+"更換列印頭或墨水盒後，關閉印表機機蓋。只更換墨水盒時，請不要從印表機移除列印頭。不要碰觸鎖定桿。\n"
+
+
+#: src/bjcupsmon_ui.c:96
+msgid ""
+"The holder is at the replacement position.\n"
+"If you need to replace the print head or the ink tank, first open the Inner "
+"Cover. After the replacement is completed, close the Inner Cover, and then "
+"close the cover of the printer.\n"
+"If you are replacing only the ink tank, leave the print head attached. Do "
+"not touch the lock lever.\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:97 src/bjcupsmon_ui.c:102
+msgid "Printing.\n"
+msgstr "列印中。\n"
+
+#: src/bjcupsmon_ui.c:98
+msgid "The printer is performing another operation.\n"
+msgstr "印表機正在執行其他操作。\n"
+
+#: src/bjcupsmon_ui.c:99
+msgid ""
+"Scanner Cartridge detected.\n"
+"You cannot print with this cartridge. Install another BJ Cartridge in your "
+"printer.\n"
+msgstr ""
+"檢測到掃描器墨水匣。\n"
+"您無法用這個墨水匣列印。請在您的印表機安裝另一個 BJ 墨水匣。\n"
+
+
+#: src/bjcupsmon_ui.c:100
+msgid ""
+"Unsupported cartridge installed.\n"
+"Change to appropriate BJ cartridge.\n"
+msgstr ""
+"安裝了不支援的墨水匣。\n"
+"更換為合適的 BJ 墨水匣。\n"
+
+
+#: src/bjcupsmon_ui.c:103
+msgid "Printer is online.\n"
+msgstr "印表機已連線。\n"
+
+#: src/bjcupsmon_ui.c:104 src/bjcupsmon_ui.c:118
+msgid ""
+"\n"
+"The following ink tanks are running low.\n"
+msgstr ""
+"\n"
+"以下墨水盒墨水量很少。\n"
+
+
+#: src/bjcupsmon_ui.c:105 src/bjcupsmon_ui.c:163
+msgid " Black [7e]\n"
+msgstr " 黑色 [7e]\n"
+
+#: src/bjcupsmon_ui.c:106 src/bjcupsmon_ui.c:164
+msgid " Black [9]\n"
+msgstr " 黑色 [9]\n"
+
+#: src/bjcupsmon_ui.c:107 src/bjcupsmon_ui.c:165
+msgid " Photo Cyan [7e]\n"
+msgstr " 相片藍色 [7e]\n"
+
+#: src/bjcupsmon_ui.c:108 src/bjcupsmon_ui.c:166
+msgid " Photo Magenta [7e]\n"
+msgstr " 相片紅色 [7e]\n"
+
+#: src/bjcupsmon_ui.c:109 src/bjcupsmon_ui.c:167
+msgid " Cyan [7e]\n"
+msgstr " 藍色 [7e]\n"
+
+#: src/bjcupsmon_ui.c:110 src/bjcupsmon_ui.c:168
+msgid " Magenta [7e]\n"
+msgstr " 紅色 [7e]\n"
+
+#: src/bjcupsmon_ui.c:111 src/bjcupsmon_ui.c:169
+msgid " Yellow [7e]\n"
+msgstr " 黃色 [7e]\n"
+
+#: src/bjcupsmon_ui.c:114
+msgid " Black [9e]\n"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:115
+msgid " Black [24]\n"
+msgstr " 黑色 [24]\n"
+
+#: src/bjcupsmon_ui.c:116
+msgid " Color [24]\n"
+msgstr " 彩色 [24]\n"
+
+#: src/bjcupsmon_ui.c:117
+msgid "Prepare new ink tanks.\n"
+msgstr "準備新墨水盒。\n"
+
+#: src/bjcupsmon_ui.c:119 src/bjcupsmon_ui.c:172
+msgid " Black [40]\n"
+msgstr " 黑色 [40]\n"
+
+#: src/bjcupsmon_ui.c:120 src/bjcupsmon_ui.c:173
+msgid " Black [50]\n"
+msgstr " 黑色 [50]\n"
+
+#: src/bjcupsmon_ui.c:121 src/bjcupsmon_ui.c:174
+msgid " Color [41]\n"
+msgstr " 彩色 [41]\n"
+
+#: src/bjcupsmon_ui.c:122 src/bjcupsmon_ui.c:175
+msgid " Color [51]\n"
+msgstr " 彩色 [51]\n"
+
+#: src/bjcupsmon_ui.c:123 src/bjcupsmon_ui.c:176
+msgid " Black [8]\n"
+msgstr " 黑色 [8]\n"
+
+#: src/bjcupsmon_ui.c:124 src/bjcupsmon_ui.c:177
+msgid " Black [5]\n"
+msgstr " 黑色 [5]\n"
+
+#: src/bjcupsmon_ui.c:125 src/bjcupsmon_ui.c:178
+msgid " Photo Cyan [8]\n"
+msgstr " 相片藍色 [8]\n"
+
+#: src/bjcupsmon_ui.c:126 src/bjcupsmon_ui.c:179
+msgid " Photo Magenta [8]\n"
+msgstr " 相片紅色 [8]\n"
+
+#: src/bjcupsmon_ui.c:127 src/bjcupsmon_ui.c:180
+msgid " Cyan [8]\n"
+msgstr " 藍色 [8]\n"
+
+#: src/bjcupsmon_ui.c:128 src/bjcupsmon_ui.c:181
+msgid " Magenta [8]\n"
+msgstr " 紅色 [8]\n"
+
+#: src/bjcupsmon_ui.c:129 src/bjcupsmon_ui.c:182
+msgid " Yellow [8]\n"
+msgstr " 黃色 [8]\n"
+
+#: src/bjcupsmon_ui.c:130
+msgid ""
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"準備新的墨水盒。\n"
+"如果黑色或彩色墨水盒已用儘，在印表機驅動程式 [維護] 標籤上的 [墨水盒設定] 中可以設定印表機使用其他墨水盒繼續列印。\n"
+
+
+#: src/bjcupsmon_ui.c:131
+msgid ""
+"\n"
+"The ink cartridge has been installed or replaced.\n"
+"If the printout contains misaligned lines or is not satisfactory after the "
+"installation or replacement, refer to the user's guide and carry out the "
+"print head alignment.\n"
+msgstr ""
+"\n"
+"墨水盒被安裝或更換。\n"
+"如果墨水盒安裝或更換後列印結果有未對齊的線條，請參閱使用者指南並執行列印頭校準。\n"
+
+
+#: src/bjcupsmon_ui.c:132
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"印表機被設定成不顯示低墨水警示。\n"
+
+
+#. N_("The CD-R Tray Feeder is installed in the printer.\nAfter ensuring that the CD-R tray has been removed, remove the CD-R Tray Feeder and then press the RESUME button. Printing will then restart.\n"),
+#: src/bjcupsmon_ui.c:135 src/bjcupsmon_ui.c:138
+msgid "Printing cannot be executed because the inner cover is open.\n"
+msgstr "因為印表機內蓋已打開，列印無法執行。\n"
+
+#: src/bjcupsmon_ui.c:136 src/bjcupsmon_ui.c:142
+msgid "Close the inner cover.\n"
+msgstr "關閉內蓋。\n"
+
+#: src/bjcupsmon_ui.c:137
+msgid "Press printer's RESUME button. Printing will restart.\n"
+msgstr "按印表機的 [恢復] 按鈕。列印將重新開始。\n"
+
+#: src/bjcupsmon_ui.c:139
+msgid "Press printer's OK button. Printing will restart.\n"
+msgstr "按印表機的 [OK] 按鈕。列印將重新開始。\n"
+
+#: src/bjcupsmon_ui.c:140
+msgid ""
+"The printer's front cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the front cover, wait for printing to finish, then open the cover "
+"again and change the print head or ink tank. If the CD-R Tray Feeder is "
+"installed, the print head or ink tank cannot be also changed. Close the "
+"front cover, remove the CD-R Tray Feeder, open the front cover again, and "
+"change the print head or ink tank."
+msgstr ""
+
+#: src/bjcupsmon_ui.c:141 src/bjcupsmon_ui.c:144
+msgid "During printing, the inner cover of the printer was opened.\n"
+msgstr "列印過程中，印表機內蓋被打開。\n"
+
+#: src/bjcupsmon_ui.c:146
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Open the printer's cover, make sure the ink cartridge is installed properly, "
+"and close the cover.\n"
+msgstr ""
+"墨水盒安裝不正確。\n"
+"請打開印表機的機蓋，確認墨水盒已經正確安裝，然後關閉機蓋。\n"
+
+
+#: src/bjcupsmon_ui.c:147
+msgid ""
+"A digital camera or device that is not supported by the direct printing "
+"function is connected to the direct print port. Disconnect the cable from "
+"the direct print port.\n"
+msgstr "不支援直接列印功能的數位相機或設備連接到直接列印連接埠。從直接列印連接埠斷開線纜。\n"
+
+#. 560i 860i 990i
+#: src/bjcupsmon_ui.c:148
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's RESUME button to clear the error.\n"
+msgstr ""
+"在自動列印頭校準中出現錯誤。\n"
+"\n"
+"列印頭噴嘴可能被堵塞。執行印表機驅動程式 [維護] 標籤上的清洗，然後重新執行列印頭校準。\n"
+"\n"
+"如果仍然發生錯誤，請參閱使用者指南以檢查錯誤或執行手動校準。\n"
+"\n"
+"請按印表機的 [恢復] 按鈕消除錯誤。\n"
+
+
+#. 860i 990i
+#: src/bjcupsmon_ui.c:149
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's OK button to clear the error.\n"
+msgstr ""
+"在自動列印頭校準中出現錯誤。\n"
+"\n"
+"列印頭噴嘴可能被堵塞。執行印表機驅動程式 [維護] 標籤上的清洗，然後重新執行列印頭校準。\n"
+"\n"
+"如果仍然發生錯誤，請參閱使用者指南以檢查錯誤或執行手動校準。\n"
+"\n"
+"請按印表機的 [OK] 按鈕消除錯誤。\n"
+
+
+#: src/bjcupsmon_ui.c:150
+msgid ""
+"Ink tank errors have occurred.\n"
+"Open the printer's cover and replace the ink tanks on which ink lamps are "
+"off."
+msgstr ""
+"出現墨水盒錯誤。\n"
+"打開印表機機蓋，然後更換墨水指示燈熄滅的墨水盒。"
+
+#: src/bjcupsmon_ui.c:151
+msgid "More than one ink tank of the following color is installed.\n"
+msgstr "以下色彩安裝了多個墨水盒。\n"
+
+#: src/bjcupsmon_ui.c:152 src/bjcupsmon_ui.c:154
+msgid "The following ink tank cannot be recognized.\n"
+msgstr "無法識別以下墨水盒。\n"
+
+#: src/bjcupsmon_ui.c:153
+msgid ""
+"Some ink tanks are not installed in place.\n"
+"Confirm that the following ink tanks are installed in the appropriate "
+"positions.\n"
+msgstr ""
+"某些墨水盒沒有安裝在適當位置。\n"
+"請確認以下墨水盒已安裝在適當的位置。\n"
+
+
+#: src/bjcupsmon_ui.c:155
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink tank installed. Then printing can continue under "
+"the ink out condition. Replace the empty ink tank immediately after the "
+"printing. The printer may be damaged if printing is continued under the ink "
+"out condition.\n"
+msgstr ""
+"墨水用盡。\n"
+"更換墨水盒，然後關閉機蓋。更換墨水盒時，確認內蓋已打開。\n"
+"\n"
+"如果列印在進行中，並且想要繼續列印，請在安裝有墨水盒時按 [恢復] 按鈕。然後可以在墨水用盡的情況下繼續列印。列印之後請立即更換耗盡的墨水盒。如果在墨水用盡的情況下繼續列印，可能使印表機受損。\n"
+
+
+#: src/bjcupsmon_ui.c:156
+msgid ""
+"Ink has run out.\n"
+"Replace the ink tank and close the cover. When replacing the ink tank, make "
+"sure that the inner cover is open.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button with the ink tank installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink tank immediately after "
+"the printing. The printer may be damaged if printing is continued under the "
+"ink out condition.\n"
+msgstr ""
+"墨水用盡。\n"
+"更換墨水盒，然後關閉機蓋。更換墨水盒時，確認內蓋已打開。\n"
+"\n"
+"如果列印在進行中，並且想要繼續列印，請在安裝有墨水盒時按印表機的 [OK] 按鈕。然後可以在墨水用盡的情況下繼續列印。列印之後請立即更換耗盡的墨水盒。如果在墨水用盡的情況下繼續列印，可能使印表機受損。\n"
+
+
+#: src/bjcupsmon_ui.c:157 src/bjcupsmon_ui.c:158
+msgid ""
+"The remaining level of the following ink cannot be correctly detected. "
+"Replace the ink tank.\n"
+msgstr "無法正確偵測以下墨水的剩餘量。請更換墨水盒。\n"
+
+#: src/bjcupsmon_ui.c:159
+msgid "The following ink cartridge cannot be recognized.\n"
+msgstr "無法識別以下墨水盒。\n"
+
+#: src/bjcupsmon_ui.c:160 src/bjcupsmon_ui.c:161
+msgid "The following ink cartridge has previously been used.\n"
+msgstr "以下墨水盒曾被使用過。\n"
+
+#: src/bjcupsmon_ui.c:162
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition.\n"
+msgstr ""
+"墨水用盡。\n"
+"更換墨水盒，然後關閉機蓋。\n"
+"\n"
+"如果列印在進行中，並且想要繼續列印，請在安裝有墨水盒時按 [恢復] 按鈕。然後可以在墨水用盡的情況下繼續列印。列印之後請立即更換耗盡的墨水盒。如果在墨水用盡的情況下繼續列印，列印結果的品質不會令人滿意。\n"
+
+
+#: src/bjcupsmon_ui.c:170
+msgid " Black\n"
+msgstr " 黑色\n"
+
+#: src/bjcupsmon_ui.c:171
+msgid " Color\n"
+msgstr " 彩色\n"
+
+#: src/bjcupsmon_ui.c:183
+msgid "Use only one ink tank per color at a time.\n"
+msgstr "每次每種色彩只使用一個墨水盒。\n"
+
+#: src/bjcupsmon_ui.c:184 src/bjcupsmon_ui.c:189
+msgid ""
+"Printing cannot be executed because the ink cartridge may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink cartridge.\n"
+msgstr ""
+"可能因為墨水盒安裝不正確或墨水盒與本印表機不相容，列印無法執行。\n"
+"\n"
+"安裝合適的墨水盒。 \n"
+
+
+#: src/bjcupsmon_ui.c:185
+msgid ""
+"Printing cannot be executed because the ink tank may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink tank.\n"
+msgstr ""
+"可能因為墨水盒安裝不正確或墨水盒與本印表機不相容，列印無法執行。\n"
+"\n"
+"安裝合適的墨水盒。\n"
+
+
+#: src/bjcupsmon_ui.c:186
+msgid ""
+"\n"
+"The following ink tanks have run out.\n"
+msgstr ""
+"\n"
+"以下墨水盒墨水用盡。\n"
+
+
+#: src/bjcupsmon_ui.c:187
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's RESUME button for at least "
+"5 seconds, and then release it. Releasing the function for detecting the "
+"remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"在目前情況下列印，將可能會使印表機受損。請注意，對於使用耗盡過而又再填充的墨水盒而導致的印表機故障或損壞，Canon 將不承擔任何責任。\n"
+"\n"
+"如要繼續列印，您需要使偵測剩餘墨水量的功能失效。請按住印表機的 [重試] 按鈕至少 5 秒鐘，再放開。偵測剩餘墨水量的功能失效將被記錄。\n"
+"該操作將使以上墨水剩餘量偵測功能失效。\n"
+
+
+#: src/bjcupsmon_ui.c:188
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it. Releasing the function for detecting "
+"the remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"在目前情況下列印，將可能會使印表機受損。請注意，對於使用耗盡過而又再填充的墨水盒而導致的印表機故障或損壞，Canon 將不承擔任何責任。\n"
+"\n"
+"如要繼續列印，您需要使偵測剩餘墨水量的功能失效。請按住印表機的 [停止/重新設定] 按鈕至少 5 秒鐘，再放開。偵測剩餘墨水量的功能失效將被記錄。\n"
+"該操作將使以上墨水剩餘量偵測功能失效。\n"
+
+
+#: src/bjcupsmon_ui.c:190
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+msgstr ""
+"\n"
+"因為不能正確檢測墨水量，剩餘墨水量檢測功能將被停用。\n"
+"\n"
+"如果您想不使用該功能並繼續列印，請按 [恢復] 按鈕。\n"
+
+
+#: src/bjcupsmon_ui.c:191
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the RESUME "
+"button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"因為不能正確檢測墨水量，剩餘墨水量檢測功能將被停用。\n"
+"\n"
+"如果您想不使用該功能並繼續列印，請按 [恢復] 按鈕。\n"
+"\n"
+"為得到最佳品質，Canon 推薦您使用新的真正 Canon 墨水匣。\n"
+
+
+#: src/bjcupsmon_ui.c:192
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"準備新的墨水盒。\n"
+"如果黑色或彩色墨水盒已用儘，在印表機驅動程式 [維護] 標籤上的 [墨水盒設定] 中可以設定印表機使用其他墨水盒繼續列印。\n"
+
+
+#. Other message table.
+#: src/bjcupsmon_ui.c:197
+msgid "Ready.\n"
+msgstr "就緒。\n"
+
+#: src/bjcupsmon_ui.c:198
+msgid "Unknown printer.\n"
+msgstr "未知的印表機。\n"
+
+#: src/bjcupsmon_ui.c:199
+msgid "Spooler error.\n"
+msgstr "多工緩衝處理器出錯。\n"
+
+#: src/bjcupsmon_ui.c:384 po/glade.h:9
+msgid "Cartridge Type:"
+msgstr "墨水匣類型:"
+
+#: src/bjcupsmon_ui.c:390 src/bjcupsmon_ui.c:397
+msgid "Scanner"
+msgstr "掃描器"
+
+#: src/bjcupsmon_ui.c:403 src/bjcupsmon_ui.c:410
+msgid "Unsupported"
+msgstr "不支援"
+
+#: src/bjcupsmon_ui.c:422 src/bjcupsmon_ui.c:429
+msgid "Photo"
+msgstr "相片"
+
+#: src/bjcupsmon_ui.c:437 src/bjcupsmon_ui.c:444
+msgid "Black"
+msgstr "黑色 "
+
+#: src/bjcupsmon_ui.c:456 src/bjcupsmon_ui.c:463
+msgid "Color"
+msgstr "彩色 "
+
+#: src/bjcupsmon_ui.c:472
+msgid "Unknown"
+msgstr "不明"
+
+#: src/bjcupsmon_ui.c:488
+msgid "Paper Thickness Lever Position:"
+msgstr "紙張厚度調整桿位置:"
+
+#: src/bjcupsmon_ui.c:490
+msgid "                                                "
+msgstr ""
+
+#. Up.
+#: src/bjcupsmon_ui.c:493
+msgid "up"
+msgstr "靠上"
+
+#. Down.
+#: src/bjcupsmon_ui.c:497
+msgid "down"
+msgstr "靠下"
+
+#. Left.
+#: src/bjcupsmon_ui.c:501
+msgid "left"
+msgstr "左邊"
+
+#. Right.
+#: src/bjcupsmon_ui.c:505
+msgid "right"
+msgstr "右邊"
+
+#. End outputCommandLineMessage
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/glade.h:7
+msgid "title"
+msgstr ""
+
+#: po/glade.h:8
+msgid "printer status message"
+msgstr ""
+
+#: po/glade.h:10
+msgid "Continue"
+msgstr "繼續"
+
+#: po/glade.h:11
+msgid "Cancel Printing"
+msgstr "取消列印"

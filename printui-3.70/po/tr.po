@@ -1,0 +1,4766 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.70\n"
+"POT-Creation-Date: 2011-12-19 11:20+0900\n"
+"PO-Revision-Date: 2011-12-19 11:22+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_LOCALE
+#: src/loadres.c:103
+msgid "Locale"
+msgstr "tr_TR"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BLACK_LABEL
+#: po/gladestr.h:2 po/keystr.h:1109
+msgid "  Black:"
+msgstr "  Siyah:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:4
+msgid "  Cyan:"
+msgstr "Camgöbeği:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:6
+msgid "  Magenta:"
+msgstr "Eflatun:"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_QUALITY
+#: po/gladestr.h:8 po/keystr.h:1115
+msgid "  Set...  "
+msgstr "  Ayarla...  "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:10
+msgid "  Yellow:"
+msgstr "Sarı:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING_RANGE
+#: po/gladestr.h:13 po/keystr.h:1119
+#, no-c-format
+msgid "% (20-400)"
+msgstr "(20-400)"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES_RANGE
+#: po/gladestr.h:15 po/keystr.h:1121
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:16
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:17
+msgid "0"
+msgstr ""
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/gladestr.h:19 po/keystr.h:1127 po/keystr.h:1641
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/gladestr.h:21 po/keystr.h:1129 po/keystr.h:1643
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/gladestr.h:23 po/keystr.h:1131 po/keystr.h:1645
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/gladestr.h:25 po/keystr.h:1133 po/keystr.h:1647
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/gladestr.h:27 po/keystr.h:1135 po/keystr.h:1649
+msgid "5"
+msgstr "5"
+
+#. LUM_COLON
+#: po/gladestr.h:28 po/keystr.h:1716
+msgid ":"
+msgstr ":"
+
+#. LUM_IDR_PV_MAIN_IDM_PV_VERSION
+#: po/gladestr.h:30 po/keystr.h:1137
+msgid "About"
+msgstr "Hakkında"
+
+#. LUM_IDD_PAG_PAGESET_XP_ETOE_IDC_STT_ETOEOVERPRINT
+#: po/gladestr.h:32 po/keystr.h:1205
+msgid "Amount of Extension:"
+msgstr "Uzantı Miktarı:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#. paper_gap_auto
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#: po/gladestr.h:34 po/keystr.h:504 po/keystr.h:1207
+msgid "Auto"
+msgstr "Otomatik"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/gladestr.h:36 po/keystr.h:1209
+msgid "Auto Power"
+msgstr "Otomatik Güç"
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_TITLE_ETOE
+#: po/gladestr.h:38 po/keystr.h:1221
+msgid "Available Media Types:"
+msgstr "Kullanılabilir Ortam Türleri:"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_CARTRIDGE
+#: po/gladestr.h:40 po/keystr.h:1223
+msgid "BJ Cartridge:"
+msgstr "BJ Kartuşu:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDCANCEL
+#: po/gladestr.h:42 po/keystr.h:1225
+msgid "Back to Setup"
+msgstr "Kur'a Dön"
+
+#. LUM_IDS_EDGETOEDGE
+#: po/gladestr.h:44 po/keystr.h:1233
+msgid "Borderless"
+msgstr "Kenarlıksız"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/gladestr.h:46 po/keystr.h:1235
+msgid "Bottom Plate Cleaning"
+msgstr "Alt Plaka Temizleme"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BRIGHTNESS
+#: po/gladestr.h:48 po/keystr.h:1237
+msgid "Brightness:"
+msgstr "Parlaklık:"
+
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#. message_button_cancel
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#: po/gladestr.h:50 po/keystr.h:528 po/keystr.h:1239
+msgid "Cancel"
+msgstr "İptal"
+
+#. LUM_LID_CENTERRING
+#: po/gladestr.h:52 po/keystr.h:1245
+msgid "Centering"
+msgstr "Ortalama"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDOK
+#: po/gladestr.h:54 po/keystr.h:1247
+msgid "Change"
+msgstr "Değiştir"
+
+#. LUM_LID_CHANGE_COMBINATION
+#: po/gladestr.h:56 po/keystr.h:1249
+msgid "Change Combination"
+msgstr "Birleşimi Değiştir"
+
+#. LUM_LID_CHANGE_MEDIA
+#: po/gladestr.h:58 po/keystr.h:1251
+msgid "Change Media Type"
+msgstr "Ortam Türünü Değiştir"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/gladestr.h:60 po/keystr.h:1253
+msgid "Cleaning"
+msgstr "Temizleme"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_RESOLV2S
+#: po/gladestr.h:62 po/keystr.h:1255
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Bunu kullanmak için Değiştir'i veya farklı bir birleşim seçmek için Kur'a Dön'ü \n"
+"tıklatın."
+
+#. LUM_IDS_COLLATE
+#: po/gladestr.h:64 po/keystr.h:1257
+msgid "Collate"
+msgstr "Harmanla"
+
+#. LUM_LID_COLOR_BALANCE
+#: po/gladestr.h:66 po/keystr.h:1261
+msgid "Color Balance"
+msgstr "Renk Dengesi"
+
+#. LUM_IDD_MANUALCOLOR_MATCHING_IDC_STT_COLORMODE
+#: po/gladestr.h:68 po/keystr.h:1265
+msgid "Color Mode:"
+msgstr "Renk Modu:"
+
+#. LUM_IDS_COLORADJUSTMENT
+#: po/gladestr.h:70 po/keystr.h:1267
+msgid "Color/Intensity"
+msgstr "Renk/Yoğunluk"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LABEL
+#: po/gladestr.h:72 po/keystr.h:1339
+msgid "Contrast:"
+msgstr "Karşıtlık:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_LO
+#: po/gladestr.h:74
+msgid "Cool"
+msgstr "Soğuk"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES
+#: po/gladestr.h:76 po/keystr.h:1341
+msgid "Copies:"
+msgstr "Kopya Sayısı:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_QUALITY_CUSTOM
+#: po/gladestr.h:78 po/keystr.h:1343
+msgid "Custom"
+msgstr "Özel"
+
+#. LUM_IDD_PAPER_CUSTOM
+#: po/gladestr.h:80 po/keystr.h:1345
+msgid "Custom Paper Size"
+msgstr "Özel Kağıt Boyutu"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/gladestr.h:82 po/keystr.h:1347 po/keystr.h:1629
+msgid "Custom Settings"
+msgstr "Özel Ayarlar"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:84 po/keystr.h:1111 po/keystr.h:1349
+msgid "Cyan:"
+msgstr "Camgöbeği:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_HI
+#: po/gladestr.h:86 po/keystr.h:1351
+msgid "Dark "
+msgstr "Koyu "
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/gladestr.h:88 po/keystr.h:1353
+msgid "Deep Cleaning"
+msgstr "Yoğun Temizleme"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/gladestr.h:90 po/keystr.h:1355
+msgid "Defaults"
+msgstr "Varsayılanlar"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DIFFUSION
+#: po/gladestr.h:92 po/keystr.h:1357
+msgid "Diffusion"
+msgstr "Dağılma"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DITHERING
+#: po/gladestr.h:94 po/keystr.h:1361
+msgid "Dither"
+msgstr "Titreme"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_AUTODUP_IDC_CHK_DUPLEX
+#: po/gladestr.h:96 po/keystr.h:1759
+msgid "Duplex Printing"
+msgstr "Çift Taraflı Yazdırma"
+
+#. LUM_IDS_QUALITY_FAST
+#: po/gladestr.h:98 po/keystr.h:1427
+msgid "Fast"
+msgstr "Hızlı"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FAST
+#: po/gladestr.h:100 po/keystr.h:1429
+msgid "Fast "
+msgstr "Hızlı "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#. bin_pattern
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#: po/gladestr.h:102 po/keystr.h:470 po/keystr.h:1431
+msgid "Fine"
+msgstr "İnce"
+
+#. LUM_IDD_PAG_MAIN_IDC_CHK_GRAYSCALE
+#: po/gladestr.h:104 po/keystr.h:1433
+msgid "Grayscale Printing"
+msgstr "Gri Tonlamalı Yazdırma"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE
+#: po/gladestr.h:106 po/keystr.h:1435
+msgid "Halftoning"
+msgstr "Yarı Tonlama"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_HEIGHT_LABEL
+#: po/gladestr.h:108 po/keystr.h:1437
+msgid "Height:     "
+msgstr "Yükseklik:     "
+
+#. LUM_IDS_QUALITY_BEST
+#: po/gladestr.h:110 po/keystr.h:1439
+msgid "High"
+msgstr "Yüksek"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_HI
+#: po/gladestr.h:112 po/keystr.h:1441
+msgid "High "
+msgstr "Yüksek "
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#. message_button_ignore
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#: po/gladestr.h:114 po/keystr.h:536 po/keystr.h:1445
+msgid "Ignore"
+msgstr "Yoksay"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/gladestr.h:116 po/keystr.h:1447
+msgid "Ink Cartridge Settings"
+msgstr "Mürekkep Kartuşu Ayarları"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/gladestr.h:118 po/keystr.h:1451
+msgid "Ink Counter Reset"
+msgstr "Mürekkep Sayacı Sıfırlama"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LABEL
+#: po/gladestr.h:120 po/keystr.h:1455
+msgid "Intensity:"
+msgstr "Yoğunluk:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LO
+#: po/gladestr.h:122 po/keystr.h:1457
+msgid "Light "
+msgstr "Açık "
+
+#. LUM_IDS_STAPLE_LONGSIDE
+#: po/gladestr.h:124 po/keystr.h:1461
+msgid "Long-side stapling"
+msgstr "Uzun kenar zımbalama"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LO
+#: po/gladestr.h:126 po/keystr.h:1463
+msgid "Low"
+msgstr "Düşük"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/gladestr.h:128 po/keystr.h:1465
+msgid "Low Ink Warning Setting"
+msgstr "Mürekkep Az Uyarısı Ayarı"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:130 po/keystr.h:1113 po/keystr.h:1467
+msgid "Magenta:"
+msgstr "Eflatun:"
+
+#. LUM_IDD_PAG_MAIN
+#: po/gladestr.h:132 po/keystr.h:1469
+msgid "Main"
+msgstr "Ana"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/gladestr.h:134 po/keystr.h:1471
+msgid "Maintenance"
+msgstr "Bakım"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_MANUAL
+#: po/gladestr.h:136 po/keystr.h:1473
+msgid "Manual"
+msgstr "El İle"
+
+#. LUM_IDS_MANUALCOLOR_WINDOWTITLE
+#: po/gladestr.h:138 po/keystr.h:1475
+msgid "Manual Color Adjustment"
+msgstr "El İle Renk Ayarlama"
+
+#. LUM_LID_MAX
+#: po/gladestr.h:140 po/keystr.h:1477
+msgid "Max"
+msgstr "Maks"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_MEDIATYPE
+#: po/gladestr.h:142 po/keystr.h:1479
+msgid "Media Type:"
+msgstr "Ortam Türü:"
+
+#. LUM_LID_MIN
+#: po/gladestr.h:144 po/keystr.h:1481
+msgid "Min"
+msgstr "Min"
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/gladestr.h:146 po/keystr.h:1483
+msgid "Nozzle Check"
+msgstr "Püskürtme Ucu Denetimi"
+
+#. LUM_IDD_MESSAGEBOX_IDOK
+#. message_button_ok
+#. LUM_IDD_MESSAGEBOX_IDOK
+#: po/gladestr.h:148 po/keystr.h:526 po/keystr.h:1485
+msgid "OK"
+msgstr "Tamam"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PRINTTYPE
+#: po/gladestr.h:150 po/keystr.h:1487
+msgid "Page Layout:"
+msgstr "Sayfa Yerleşimi:"
+
+#. LUM_IDD_PAG_PAGESET_XP
+#: po/gladestr.h:152 po/keystr.h:1489
+msgid "Page Setup"
+msgstr "Sayfa Yapısı"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PAGESIZE
+#: po/gladestr.h:154 po/keystr.h:1491
+msgid "Page Size:"
+msgstr "Sayfa Boyutu:"
+
+#. LUM_LID_PAPER_GAP
+#: po/gladestr.h:156 po/keystr.h:1493
+msgid "Paper Gap:"
+msgstr "Kağıt Boşluğu:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_PAPERSIZE
+#: po/gladestr.h:158 po/keystr.h:1495
+msgid "Paper Size"
+msgstr "Kağıt Boyutu"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/gladestr.h:160 po/keystr.h:1497
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Düz Kağıt için Kağıt Kaynağı Ayarı"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/gladestr.h:162 po/keystr.h:1499
+msgid "Paper Source:"
+msgstr "Kağıt Kaynağı:"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/gladestr.h:164 po/keystr.h:1507
+msgid "Power Off"
+msgstr "Kapalı"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/gladestr.h:166 po/keystr.h:1515
+msgid "Print Head Alignment"
+msgstr "Yazıcı Kafası Hizalama"
+
+#. LUM_IDD_PAG_MAIN_IDC_GRP_QUALITY
+#: po/gladestr.h:168 po/keystr.h:1519
+msgid "Print Quality"
+msgstr "Baskı Kalitesi"
+
+#. LUM_LID_PRINT_TYPE
+#: po/gladestr.h:170 po/keystr.h:1521
+msgid "Print Type:"
+msgstr "Yazdırma Türü:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_CHK_REVERSE
+#: po/gladestr.h:172 po/keystr.h:1523
+msgid "Print from Last Page"
+msgstr "Son Sayfadan İtibaren Yazdır"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_LABEL
+#: po/gladestr.h:174 po/keystr.h:1525
+msgid "Quality"
+msgstr "Kalite"
+
+#. LUM_IDD_QUIETSETTINGS
+#: po/gladestr.h:176 po/keystr.h:1701
+msgid "Quiet Settings"
+msgstr "Sessizlik Ayarları"
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/gladestr.h:178 po/keystr.h:1533
+msgid "Roller Cleaning"
+msgstr "Silindir Temizleme"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING
+#: po/gladestr.h:180 po/keystr.h:1535
+msgid "Scaling:"
+msgstr "Ölçeklendirme Yüzdesi:"
+
+#. LUM_IDS_STAPLE_SHORTSIDE
+#: po/gladestr.h:182 po/keystr.h:1545
+msgid "Short-side stapling"
+msgstr "Kısa kenar zımbalama"
+
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#. color_correct_photo2
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#: po/gladestr.h:184 po/keystr.h:204 po/keystr.h:1547
+msgid "Standard"
+msgstr "Standart"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_IDC_STT_EDGE
+#: po/gladestr.h:186 po/keystr.h:1549
+msgid "Staple Side:"
+msgstr "Zımba Tarafı:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_TITLE2
+#: po/gladestr.h:188 po/keystr.h:1561
+msgid "The following is recommended:"
+msgstr "Aşağıdaki önerilir:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_LABEL
+#: po/gladestr.h:190
+msgid "Tone:"
+msgstr "Ton:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_UNITS
+#: po/gladestr.h:192 po/keystr.h:1571
+msgid "Units:"
+msgstr "Birim:"
+
+#. LUM_IDD_PAG_MAINTENANCE_IDC_BTN_STATUSMONITOR
+#: po/gladestr.h:194 po/keystr.h:1579
+msgid "View Printer Status..."
+msgstr "Yazıcı Durumunu Görüntüle..."
+
+#. LUM_IDD_PAG_EFFECT_VIVID_IDC_CHK_VIVID
+#: po/gladestr.h:196 po/keystr.h:1581
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_HI
+#: po/gladestr.h:198
+msgid "Warm"
+msgstr "Sıcak"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_WIDTH_LABEL
+#: po/gladestr.h:200 po/keystr.h:1589
+msgid "Width:    "
+msgstr "Genişlik:    "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:202 po/keystr.h:1117 po/keystr.h:1591
+msgid "Yellow:"
+msgstr "Sarı:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATION_IDC_STT_SA_TITLE
+#: po/gladestr.h:204 po/keystr.h:1593
+msgid "You cannot print with the following combination:"
+msgstr "Aşağıdaki birleşimle yazdıramazsınız:"
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDC_STT_SA_TITLE
+#: po/gladestr.h:206 po/keystr.h:1595
+msgid "You have selected the following combination:"
+msgstr "Aşağıdaki birleşimi seçtiniz:"
+
+#: po/gladestr.h:207
+msgid "dialog1"
+msgstr ""
+
+#: po/gladestr.h:208
+msgid "dialog3"
+msgstr ""
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_INCH
+#: po/gladestr.h:210 po/keystr.h:1597
+msgid "inch"
+msgstr "inç"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_MM
+#: po/gladestr.h:212 po/keystr.h:1599
+msgid "mm"
+msgstr "mm"
+
+#. LUM_VERSION_PRODUCT_NAME
+#: po/keystr.h:2
+msgid "Canon Inkjet Printer Driver"
+msgstr "Canon Inkjet Yazıcı Sürücüsü"
+
+#. LUM_VERSION_VER_STR
+#: po/keystr.h:4
+#, c-format
+msgid "Version %s"
+msgstr "Sürüm %s"
+
+#. LUM_VERSION_COPYRIGHT1_STR
+#: po/keystr.h:6
+#, c-format
+msgid "Copyright CANON INC. %s-%s"
+msgstr "Copyright CANON INC. %s-%s"
+
+#. LUM_VERSION_COPYRIGHT2_STR
+#: po/keystr.h:8
+msgid "All Rights Reserved."
+msgstr "All Rights Reserved."
+
+#. LUM_LID_CAPTION
+#: po/keystr.h:10
+msgid "Canon XXXXXX"
+msgstr ""
+
+#. model_BJF850
+#.
+#: po/keystr.h:12 po/keystr.h:1123 po/keystr.h:1125 po/keystr.h:1241
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:14
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:16
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:18
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:20
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:22
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:24
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:26
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:28
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:30
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:32
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:34
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:36
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:38
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:40
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:42
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:44
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:46
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:48
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:50
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:52
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:54
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:56
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:58
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:60
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:62
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:64
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:66
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:68
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:70
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:72
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:74
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:76
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:78
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:80
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:82
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:84
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:86
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:88
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:90
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:92
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:94
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:96
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:98
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:100
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:102
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:104
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:106
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:108
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:110
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:112
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:114
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:116
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:118
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:120
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:122
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:124
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:126
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:128
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:130
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:132
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:134
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:136
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:138
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:140
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:142
+msgid "MX870 series"
+msgstr ""
+
+#. model_MP495
+#: po/keystr.h:144
+msgid "MP495 series"
+msgstr ""
+
+#. model_MP280
+#: po/keystr.h:146
+msgid "MP280 series"
+msgstr ""
+
+#. model_MG5100
+#: po/keystr.h:148
+msgid "MG5100 series"
+msgstr ""
+
+#. model_MG5200
+#: po/keystr.h:150
+msgid "MG5200 series"
+msgstr ""
+
+#. model_IP4800
+#: po/keystr.h:152
+msgid "iP4800 series"
+msgstr ""
+
+#. model_MG6100
+#: po/keystr.h:154
+msgid "MG6100 series"
+msgstr ""
+
+#. model_MG8100
+#: po/keystr.h:156
+msgid "MG8100 series"
+msgstr ""
+
+#. model_MX360
+#: po/keystr.h:158
+msgid "MX360 series"
+msgstr ""
+
+#. model_MX410
+#: po/keystr.h:160
+msgid "MX410 series"
+msgstr ""
+
+#. model_MX420
+#: po/keystr.h:162
+msgid "MX420 series"
+msgstr ""
+
+#. model_MX880
+#: po/keystr.h:164
+msgid "MX880 series"
+msgstr ""
+
+#. model_IX6500
+#: po/keystr.h:166
+msgid "iX6500 series"
+msgstr ""
+
+#. model_MG2100
+#: po/keystr.h:168
+msgid "MG2100 series"
+msgstr ""
+
+#. model_MG3100
+#: po/keystr.h:170
+msgid "MG3100 series"
+msgstr ""
+
+#. model_MG4100
+#: po/keystr.h:172
+msgid "MG4100 series"
+msgstr ""
+
+#. model_MG5300
+#: po/keystr.h:174
+msgid "MG5300 series"
+msgstr ""
+
+#. model_MG6200
+#: po/keystr.h:176
+msgid "MG6200 series"
+msgstr ""
+
+#. model_MG8200
+#: po/keystr.h:178
+msgid "MG8200 series"
+msgstr ""
+
+#. model_IP4900
+#: po/keystr.h:180
+msgid "iP4900 series"
+msgstr ""
+
+#. model_E500
+#: po/keystr.h:182
+msgid "E500 series"
+msgstr ""
+
+#. model_MX710
+#: po/keystr.h:184
+msgid "MX710 series"
+msgstr ""
+
+#. model_MX890
+#: po/keystr.h:186
+msgid "MX890 series"
+msgstr ""
+
+#. model_MX370
+#: po/keystr.h:188
+msgid "MX370 series"
+msgstr ""
+
+#. model_MX430
+#: po/keystr.h:190
+msgid "MX430 series"
+msgstr ""
+
+#. model_MX510
+#: po/keystr.h:192
+msgid "MX510 series"
+msgstr ""
+
+#. model_E600
+#: po/keystr.h:194
+msgid "E600 series"
+msgstr ""
+
+#. print_color_message
+#. util_ink_color_0
+#. LUM_IDS_CLEAN_ITEM_COLOR
+#: po/keystr.h:196 po/keystr.h:598 po/keystr.h:1259
+msgid "Color"
+msgstr ""
+
+#. print_mono_message
+#: po/keystr.h:198
+msgid "Grayscale"
+msgstr "Gri Tonlamalı"
+
+#. color_correct_photo
+#: po/keystr.h:200
+msgid "Photo"
+msgstr "Fotoğraf"
+
+#. color_correct_graphics
+#: po/keystr.h:202
+msgid "Graphic"
+msgstr "Grafik"
+
+#. color_correct_natural
+#: po/keystr.h:206
+msgid "Linear Tone"
+msgstr "Doğrusal Ton"
+
+#. mediasize_recommend_message1_1
+#: po/keystr.h:208
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "%s öğesinin %s olarak değiştirilmesi önerilir."
+
+#. mediasize_recommend_message1_2
+#: po/keystr.h:210
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Yeni birleşimi kullanmak için Değiştir'i, geçerli birleşimi kullanmak için \n"
+"Yoksay'ı veya farklı bir birleşim seçmek için Kur'a Dön'ü tıklatın."
+
+#. mediasize_recommend_message2_1
+#: po/keystr.h:213
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "%s ayarının değiştirilmesi önerilir."
+
+#. mediasize_recommend_message2_2
+#: po/keystr.h:215
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Uygun ayarı seçmek için aşağıdaki seçiciyi kullanın ve yeni birleşimi kullanmak \n"
+"için Değiştir'i tıklatın."
+
+#. mediasize_recommend_message2_3
+#: po/keystr.h:218
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Geçerli birleşimi kullanmak için Yoksay'ı veya farklı bir birleşim seçmek için \n"
+"Kur'a Dön'ü tıklatın."
+
+#. mediasize_illegal_select_message2_1
+#: po/keystr.h:221
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "%s ayarının değiştirilmesi önerilir.  "
+
+#. mediasize_illegal_select_message2_2
+#: po/keystr.h:223
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+"Uygun ayarı seçmek için aşağıdaki seçiciyi kullanın ve yeni birleşimi kullanmak \n"
+"için Değiştir'i tıklatın. Farklı bir birleşim seçmek için Kur'a Dön'ü tıklatın."
+
+#. lever_position_label
+#: po/keystr.h:226
+msgid "Paper Thickness Lever Position:"
+msgstr "Kağıt Kalınlığı Kolunun Konumu:"
+
+#. lever_position_label_2007
+#: po/keystr.h:228
+msgid "Paper Thickness Lever Position: "
+msgstr "Kağıt Kalınlığı Kolunun Konumu: "
+
+#. move_lever_position_alert
+#: po/keystr.h:230
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Kağıt kalınlığı kolunu kaydırın %s."
+
+#. move_lever_position_alert_2007
+#: po/keystr.h:232
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Kağıt kalınlığı kolunu kaydırın %s. "
+
+#. mediasize_change_media
+#: po/keystr.h:234
+msgid "Media Type"
+msgstr "Ortam Türü"
+
+#. mediasize_change_size
+#: po/keystr.h:236
+msgid "Page Size"
+msgstr "Sayfa Boyutu"
+
+#. mediatype_dialog_message
+#: po/keystr.h:238
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Ortam Türü: %s, seçili BJ Kartuşu ile birlikte kullanılamaz.\n"
+"Kullanmak istediğiniz ortam türünü seçin."
+
+#. media_plain
+#: po/keystr.h:241
+msgid "Plain Paper"
+msgstr "Düz Kağıt"
+
+#. media_ohp
+#: po/keystr.h:243
+msgid "Transparencies"
+msgstr "Asetatlar"
+
+#. media_bpf
+#: po/keystr.h:245
+msgid "Back Print Film"
+msgstr "Arka Tarafına Yazdırılan Film"
+
+#. media_bjcloth
+#: po/keystr.h:247
+msgid "Fabric Sheet"
+msgstr "Kumaş Yaprak"
+
+#. media_higlossfilm
+#: po/keystr.h:249
+msgid "High Gloss Film"
+msgstr "Çok Parlak Film"
+
+#. media_postcard
+#: po/keystr.h:251
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#. media_envelope
+#: po/keystr.h:253
+msgid "Envelope"
+msgstr "Zarf"
+
+#. media_glossy_postcard
+#: po/keystr.h:255
+msgid "Glossy Postcard"
+msgstr "Parlak Kartpostal"
+
+#. media_hires
+#: po/keystr.h:257
+msgid "High Resolution Paper"
+msgstr "High Resolution Paper"
+
+#. media_tshirt
+#: po/keystr.h:259
+msgid "T-Shirt Transfers"
+msgstr "T-Shirt Üzerine Aktarma"
+
+#. media_thick
+#: po/keystr.h:261
+msgid "Thick Paper"
+msgstr ""
+
+#. media_higloss_photo_film
+#: po/keystr.h:263
+msgid "High Gloss Photo Film"
+msgstr "Çok Parlak Fotoğraf Filmi"
+
+#. media_glossy_photo
+#: po/keystr.h:265
+msgid "Glossy Photo Paper"
+msgstr "Glossy Photo Paper"
+
+#. media_glossy_photocard
+#: po/keystr.h:267
+msgid "Glossy Photo Cards"
+msgstr "Parlak Fotoğraf Kartları"
+
+#. media_pro_photo
+#: po/keystr.h:269
+msgid "Photo Paper Pro"
+msgstr "Photo Paper Pro"
+
+#. media_inkjet_postcard
+#: po/keystr.h:271
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#. media_matte_photo
+#: po/keystr.h:273
+msgid "Matte Photo Paper"
+msgstr "Matte Photo Paper"
+
+#. media_photo_plus_glossy
+#: po/keystr.h:275
+msgid "Photo Paper Plus Glossy"
+msgstr "Photo Paper Plus Glossy"
+
+#. media_other
+#: po/keystr.h:277
+msgid "Other Paper"
+msgstr "Diğer Kağıt"
+
+#. media_other_photo
+#: po/keystr.h:279
+msgid "Other Photo Paper"
+msgstr "Diğer Fotoğraf Kağıdı"
+
+#. media_duplex_glossy
+#: po/keystr.h:281
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#. media_fine_art_paper
+#: po/keystr.h:283
+msgid "Fine Art \"Photo Rag\""
+msgstr "Fine Art \"Photo Rag\""
+
+#. media_other_fine_art_paper
+#: po/keystr.h:285
+msgid "Other Fine Art Paper"
+msgstr "Diğer Fine Art Kağıt"
+
+#. media_photo_paper_plus_glossy_ii
+#: po/keystr.h:287
+msgid "Photo Paper Plus Glossy II"
+msgstr "Photo Paper Plus Glossy II"
+
+#. media_photo_paper_plus_semi_gloss
+#: po/keystr.h:289
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "Photo Paper Plus Semi-gloss"
+
+#. media_photo_paper_pro_platinum
+#: po/keystr.h:291
+msgid "Photo Paper Pro Platinum"
+msgstr "Photo Paper Pro Platinum"
+
+#. media_photo_paper_pro_ii
+#: po/keystr.h:293
+msgid "Photo Paper Pro II"
+msgstr "Photo Paper Pro II"
+
+#. media_contents_glossy
+#: po/keystr.h:295
+msgid "Hagaki K"
+msgstr "Hagaki K"
+
+#. media_contents_prophoto
+#: po/keystr.h:297
+msgid "Hagaki P"
+msgstr "Hagaki P"
+
+#. media_address_postcard
+#: po/keystr.h:299
+msgid "Hagaki A"
+msgstr "Hagaki A"
+
+#. supply_manual
+#: po/keystr.h:301
+msgid "Manual Feed"
+msgstr "El İle Besleme"
+
+#. supply_asf
+#: po/keystr.h:303
+msgid "Auto Sheet Feeder"
+msgstr "Otomatik Sayfa Bsl"
+
+#. supply_asf_reartray
+#. LUM_IDS_FEED_REAR
+#: po/keystr.h:305 po/keystr.h:1531
+msgid "Rear Tray"
+msgstr "Arka Tepsi"
+
+#. supply_asf2
+#: po/keystr.h:307
+msgid "Auto Feeder2"
+msgstr ""
+
+#. supply_cassette
+#: po/keystr.h:309
+msgid "Standard Cassette"
+msgstr ""
+
+#. supply_cassette2
+#: po/keystr.h:311
+msgid "Optional Cassette"
+msgstr ""
+
+#. supply_consecutive
+#: po/keystr.h:313
+msgid "Auto Select"
+msgstr "Otomatik Seç"
+
+#. supply_consecutive2
+#: po/keystr.h:315
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#. supply_tractor
+#: po/keystr.h:317
+msgid "Tractor Feeder"
+msgstr "Sürekli Form Besleyici"
+
+#. supply_cassette_02
+#. LUM_IDS_CASSETTE
+#: po/keystr.h:319 po/keystr.h:1243
+msgid "Cassette"
+msgstr "Kaset"
+
+#. supply_printer_sw_select
+#: po/keystr.h:321
+msgid "Paper Feed Switch"
+msgstr "Kağıt Besleme Düğmesi"
+
+#. supply_cassette_04
+#: po/keystr.h:323
+msgid "Front Feeder"
+msgstr "Ön Besleyici"
+
+#. supply_cassette_04_fronttray
+#. supply_cassette_06
+#: po/keystr.h:325 po/keystr.h:1699
+msgid "Front Tray"
+msgstr "Ön Tepsi"
+
+#. supply_front_for_plain
+#: po/keystr.h:327
+msgid "Front for Plain Paper"
+msgstr "Düz Kağıt için Ön"
+
+#. supply_front_for_plain_maetray
+#: po/keystr.h:329
+msgid "Front for Plain Paper "
+msgstr "Düz Kağıt için Ön "
+
+#. supply_auto_continuous_feed
+#: po/keystr.h:331
+msgid "Continuous Autofeed"
+msgstr "Sürekli Otomatik Bsl."
+
+#. supply_auto_select
+#: po/keystr.h:333
+msgid "Automatically Select"
+msgstr "Otomatik Seç"
+
+#. supply_change_mes
+#: po/keystr.h:335
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Seçili kağıt boyutu, geçerli Kağıt Kaynağı ayarında kullanılamaz.\n"
+"Kağıt Kaynağı ayarı %s olarak değiştirildi."
+
+#. LUM_IDD_PAG_PAGESET_NT4_AUTODUP_IDC_CHK_DUPLEX
+#. LUM_IDS_PT_DN_AUTODUPLEX
+#: po/keystr.h:338 po/keystr.h:1219
+msgid "Automatic Duplex Printing"
+msgstr "Otomatik Çift Taraflı Yazdırma"
+
+#. LUM_AlertMessTitlePaperNotAvailableForAutoDuplex_M
+#: po/keystr.h:340
+msgid ""
+"A page size that is not supported by \n"
+"the duplex printing function is selected."
+msgstr "Çift taraflı yazdırma işlevinin desteklemediği bir sayfa boyutu seçildi."
+
+#. LUM_AlertMessPaperNotAvailableForAutoDuplex
+#: po/keystr.h:343
+#, c-format
+msgid "Uncheck %s."
+msgstr "%s seçimini kaldırın."
+
+#. LUM_MODIFY_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/keystr.h:345
+msgid "Paper Source"
+msgstr "Kağıt Kaynağı"
+
+#. LUM_MessPSNotCasette_M
+#: po/keystr.h:347
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "Kasetten beslenemeyecek bir sayfa boyutu seçildi."
+
+#. LUM_AlertMessPaperNotFedFromCassetteOrFront
+#: po/keystr.h:349
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "%s ayarını %s ile değiştirin."
+
+#. media_supply_change_mes
+#: po/keystr.h:351
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"Kağıt Kaynağı: %s seçilen Ortam Türü için kullanılamıyor.\n"
+"Kağıt Kaynağı ayarı %s olarak değiştirildi."
+
+#. bkenh_enh
+#: po/keystr.h:354
+msgid "Enhanced Black"
+msgstr ""
+
+#. size_a5
+#: po/keystr.h:356
+msgid "A5 [5.83\"x8.27\" 148.0x210.0mm]"
+msgstr "A5 [148.0x210.0mm 5.83\"x8.27\"]"
+
+#. size_a4
+#: po/keystr.h:358
+msgid "A4 [8.27\"x11.69\" 210.0x297.0mm]"
+msgstr "A4 [210.0x297.0mm 8.27\"x11.69\"]"
+
+#. size_a3
+#: po/keystr.h:360
+msgid "A3 [11.69\"x16.54\" 297.0x420.0mm]"
+msgstr "A3 [297.0x420.0mm 11.69\"x16.54\"]"
+
+#. size_b5
+#: po/keystr.h:362
+msgid "B5 [7.17\"x10.12\" 182.0x257.0mm]"
+msgstr "B5 [182.0x257.0mm 7.17\"x10.12\"]"
+
+#. size_b4
+#: po/keystr.h:364
+msgid "B4 [10.12\"x14.33\" 257.0x364.0mm]"
+msgstr "B4 [257.0x364.0mm 10.12\"x14.33\"]"
+
+#. size_letter
+#: po/keystr.h:366
+msgid "Letter [8.50\"x11.00\" 215.9x279.4mm]"
+msgstr "Letter [215.9x279.4mm 8.50\"x11.00\"]"
+
+#. size_legal
+#: po/keystr.h:368
+msgid "Legal [8.50\"x14.00\" 215.9x355.6mm]"
+msgstr "Legal [215.9x355.6mm 8.50\"x14.00\"]"
+
+#. size_ledger
+#: po/keystr.h:370
+msgid "11\"x17\" [11.00\"x17.00\" 279.4x431.8mm]"
+msgstr "11\"x17\" [279.4x431.8mm 11.00\"x17.00\"]"
+
+#. size_csize
+#: po/keystr.h:372
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr ""
+
+#. size_post
+#: po/keystr.h:374
+msgid "Hagaki [3.94\"x5.83\" 100.0x148.0mm]"
+msgstr "Hagaki [100.0x148.0mm 3.94\"x5.83\"]"
+
+#. size_env_10
+#: po/keystr.h:376
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.8mm"
+msgstr ""
+
+#. size_env_dl
+#: po/keystr.h:378
+msgid "DL Env. 220.0x110.0mm"
+msgstr ""
+
+#. size_fools
+#: po/keystr.h:380
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr ""
+
+#. size_env_j4
+#: po/keystr.h:382
+msgid "Youkei 4 235.0x105.0mm"
+msgstr ""
+
+#. size_env_j6
+#: po/keystr.h:384
+msgid "Youkei 6 190.0x98.0mm"
+msgstr ""
+
+#. size_letter_bleed
+#: po/keystr.h:386
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr ""
+
+#. size_a4_bleed
+#: po/keystr.h:388
+msgid "A4+ 223.5x355.6mm"
+msgstr ""
+
+#. size_a3_plus
+#: po/keystr.h:390
+msgid "A3+ [12.95\"x19.02\" 329.0x483.0mm]"
+msgstr "A3+ [329.0x483.0mm 12.95\"x19.02\"]"
+
+#. size_photocard
+#: po/keystr.h:392
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr ""
+
+#. size_user
+#: po/keystr.h:394
+msgid "Custom..."
+msgstr "Özel..."
+
+#. size_env_10_p
+#: po/keystr.h:396
+msgid "Comm. Env. #10 [4.12\"x9.50\" 104.8x241.3mm]"
+msgstr "Ticari Zarf #10 [104.8x241.3mm 4.12\"x9.50\"]"
+
+#. size_env_dl_p
+#: po/keystr.h:398
+msgid "DL Env. [4.33\"x8.66\" 110.0x220.0mm]"
+msgstr "DL Zarf [110.0x220.0mm 4.33\"x8.66\"]"
+
+#. size_env_j4_p
+#: po/keystr.h:400
+msgid "Youkei 4 [4.13\"x9.25\" 105.0x235.0mm]"
+msgstr "Youkei 4 [105.0x235.0mm 4.13\"x9.25\"]"
+
+#. size_env_j6_p
+#: po/keystr.h:402
+msgid "Youkei 6 [3.86\"x7.48\" 98.0x190.0mm]"
+msgstr "Youkei 6 [98.0x190.0mm 3.86\"x7.48\"]"
+
+#. size_l
+#: po/keystr.h:404
+msgid "L [3.50\"x5.00\" 89.0x127.0mm]"
+msgstr "L [89.0x127.0mm 3.50\"x5.00\"]"
+
+#. size_2l
+#: po/keystr.h:406
+msgid "2L [5.00\"x7.01\" 127.0x178.0mm]"
+msgstr "2L [127.0x178.0mm 5.00\"x7.01\"]"
+
+#. size_4x6
+#: po/keystr.h:408
+msgid "4\"x6\" [4.00\"x6.00\" 101.6x152.4mm]"
+msgstr "4\"x6\" [101.6x152.4mm 4.00\"x6.00\"]"
+
+#. size_panorama
+#: po/keystr.h:410
+msgid "P 89.0x254.0mm"
+msgstr ""
+
+#. size_5x7
+#: po/keystr.h:412
+msgid "5\"x7\" [5.00\"x7.00\" 127.0x177.8mm]"
+msgstr "5\"x7\" [127.0x177.8mm 5.00\"x7.00\"]"
+
+#. size_post_dbl
+#: po/keystr.h:414
+msgid "Hagaki 2 [7.87\"x5.83\" 200.0x148.0mm]"
+msgstr "Hagaki 2 [200.0x148.0mm 7.87\"x5.83\"]"
+
+#. size_businesscard
+#: po/keystr.h:416
+msgid "Card [2.17\"x3.58\" 55.0x91.0mm]"
+msgstr "Kart [55.0x91.0mm 2.17\"x3.58\"]"
+
+#. size_creditcard
+#: po/keystr.h:418
+msgid "Credit Card [2.13\"x3.39\" 54.0x86.0mm]"
+msgstr "K. Krtı [54.0x86.0mm 2.13\"x3.39\"]"
+
+#. size_letter_fine_art
+#: po/keystr.h:420
+msgid "Fine Art Letter [8.50\"x11.00\" 215.9x279.4mm]"
+msgstr "Fine Art Letter [215.9x279.4mm 8.50\"x11.00\"]"
+
+#. size_a4_fine_art
+#: po/keystr.h:422
+msgid "Fine Art A4 [8.27\"x11.69\" 210.0x297.0mm]"
+msgstr "Fine Art A4 [210.0x297.0mm 8.27\"x11.69\"]"
+
+#. size_4X8
+#: po/keystr.h:424
+msgid "4\"x8\" [4.00\"x8.00\" 101.6x203.2mm]"
+msgstr "4\"x8\" [101.6x203.2mm 4.00\"x8.00\"]"
+
+#. size_4giri
+#: po/keystr.h:426
+msgid "10\"x12\" [10.00\"x12.00\" 254.0x304.8mm]"
+msgstr "10\"x12\" [254.0x304.8mm 10.00\"x12.15\"]"
+
+#. size_6giri
+#: po/keystr.h:428
+msgid "8\"x10\" [8.00\"x10.00\" 203.2x254.0mm]"
+msgstr "8\"x10\" [203.2x254.0mm 8.00\"x10.00\"]"
+
+#. size_wide
+#: po/keystr.h:430
+msgid "Wide [4.00\"x7.11\" 101.6x180.6mm]"
+msgstr "Wide [101.6x180.6mm 4.00\"x7.11\"]"
+
+#. custom_size_mm_format
+#: po/keystr.h:432
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#. custom_size_inches_format
+#: po/keystr.h:434
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "inç (%s-%s)"
+
+#. tmessage_position1
+#: po/keystr.h:436
+msgid "Position 1"
+msgstr ""
+
+#. tmessage_position2
+#: po/keystr.h:438
+msgid "Position 2"
+msgstr ""
+
+#. tmessage_position3
+#: po/keystr.h:440
+msgid "Position 3"
+msgstr ""
+
+#. tmessage_left
+#. tmessage_left2
+#: po/keystr.h:442 po/keystr.h:456
+msgid "Left"
+msgstr "Sol"
+
+#. tmessage_center
+#: po/keystr.h:444
+msgid "Center"
+msgstr ""
+
+#. tmessage_right
+#. tmessage_right2
+#: po/keystr.h:446 po/keystr.h:458
+msgid "Right"
+msgstr "Sağ"
+
+#. tmessage_lower
+#. tmessage_lower2
+#. plmessage_lower
+#: po/keystr.h:448 po/keystr.h:452 po/keystr.h:464
+msgid "Down"
+msgstr "Aşağı"
+
+#. tmessage_upper
+#. tmessage_upper2
+#. plmessage_upper
+#: po/keystr.h:450 po/keystr.h:454 po/keystr.h:466
+msgid "Up"
+msgstr "Yukarı"
+
+#. plmessage_foward
+#: po/keystr.h:460
+msgid "Front"
+msgstr ""
+
+#. plmessage_backword
+#: po/keystr.h:462
+msgid "Back"
+msgstr ""
+
+#. slmess_smooth
+#: po/keystr.h:468
+msgid "Smoothing"
+msgstr ""
+
+#. bin_pattern_hs
+#: po/keystr.h:472
+msgid "Fine(Fast)"
+msgstr ""
+
+#. banner_on
+#: po/keystr.h:474
+msgid "Banner Printing"
+msgstr ""
+
+#. cartridge_color
+#: po/keystr.h:476
+msgid "Color    "
+msgstr "Renkli    "
+
+#. cartridge_bk
+#: po/keystr.h:478
+msgid "Black    "
+msgstr "Siyah    "
+
+#. cartridge_photo
+#: po/keystr.h:480
+msgid "Photo    "
+msgstr "Fotoğraf    "
+
+#. cartridge_bk_color
+#: po/keystr.h:482
+msgid "Black/Color    "
+msgstr "Siyah/Renkli    "
+
+#. cartridge_bk_photo
+#: po/keystr.h:484
+msgid "Black/Photo    "
+msgstr "Siyah/Fotoğraf    "
+
+#. cartridge_photo_color
+#: po/keystr.h:486
+msgid "Photo/Color    "
+msgstr "Fotoğraf/Renkli    "
+
+#. printing_type_fit
+#: po/keystr.h:488
+msgid "Fit-to-Page"
+msgstr "Sayfaya Sığdır"
+
+#. printing_type_normal
+#: po/keystr.h:490
+msgid "Normal-size"
+msgstr "Normal Boyut"
+
+#. printing_type_scale
+#: po/keystr.h:492
+msgid "Scaled"
+msgstr "Ölçeklendirilmiş"
+
+#. input_gamma_default
+#: po/keystr.h:494
+msgid "Default"
+msgstr ""
+
+#. input_gamma_10
+#: po/keystr.h:496
+msgid "More bright (Gamma = 1.0)"
+msgstr ""
+
+#. input_gamma_14
+#: po/keystr.h:498
+msgid "Light"
+msgstr "Açık"
+
+#. input_gamma_18
+#: po/keystr.h:500
+msgid "Normal"
+msgstr "Normal"
+
+#. input_gamma_22
+#: po/keystr.h:502
+msgid "Dark"
+msgstr "Koyu"
+
+#. paper_gap_wide
+#: po/keystr.h:506
+msgid "Wide"
+msgstr "Geniş"
+
+#. paper_gap_narrow
+#: po/keystr.h:508
+msgid "Narrow"
+msgstr "Dar"
+
+#. LUM_IDS_EDGETOEDGE_SELECTED
+#: po/keystr.h:510
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Kenarlıksız Yazdırma'yı seçtiniz.\n"
+"Yazdırılacak belge yaprağın dışına biraz taşacak şekilde büyütülmüş.\n"
+"Kullanılan ortama göre baskı kalitesi düşebilir veya sayfanın üstünde veya \n"
+"altında leke oluşabilir."
+
+#. mediaborder_dialog_message1
+#: po/keystr.h:515
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Ortam Türü için %s seçildiğinde kenarlıksız yazdırma önerilmez.\n"
+"Kullanmak istediğiniz ortam türünü seçin."
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_NOTE_ETOE
+#: po/keystr.h:518
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Yazdırılacak belge yaprağın dışına biraz taşacak şekilde büyütülmüş.\n"
+"Kullanılan ortama göre baskı kalitesi düşebilir veya sayfanın üstünde veya \n"
+"altında leke oluşabilir."
+
+#. LUM_IDS_SMMSG_ENVELOPE_SHORTEN_ASF
+#: po/keystr.h:522
+msgid ""
+"The printer is set to print on an envelope.\n"
+"Lower the paper support and then load an envelope.\n"
+"Then click OK to start printing."
+msgstr ""
+"Yazıcı zarfa yazdıracak şekilde ayarlanmış.\n"
+"Kağıt desteğini indirin ve bir zarf yükleyin.\n"
+"Ardından, yazdırmayı başlatmak için Tamam'ı tıklatın."
+
+#. message_button_yes
+#: po/keystr.h:530
+msgid "Yes"
+msgstr "Evet"
+
+#. message_button_no
+#: po/keystr.h:532
+msgid "No"
+msgstr "Hayır"
+
+#. message_button_abort
+#: po/keystr.h:534
+msgid "Abort"
+msgstr ""
+
+#. autopower_enable
+#: po/keystr.h:538
+msgid "Enable"
+msgstr "Etkinleştir"
+
+#. autopower_disable
+#: po/keystr.h:540
+msgid "Disable"
+msgstr "Devre Dışı Bırak"
+
+#. autopower_5min
+#: po/keystr.h:542
+msgid "5 minutes"
+msgstr "5 dakika"
+
+#. autopower_10min
+#: po/keystr.h:544
+msgid "10 minutes"
+msgstr "10 dakika"
+
+#. autopower_15min
+#: po/keystr.h:546
+msgid "15 minutes"
+msgstr "15 dakika"
+
+#. autopower_30min
+#: po/keystr.h:548
+msgid "30 minutes"
+msgstr "30 dakika"
+
+#. autopower_60min
+#: po/keystr.h:550
+msgid "60 minutes"
+msgstr "60 dakika"
+
+#. utility_message_3
+#: po/keystr.h:552
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Desenler normal yazdırıldı mı?\n"
+"\n"
+"Hiçbir desen yazdırılmadıysa veya çıktı fark edilir derecede bulanıksa, Hayır'ı \n"
+"tıklatın ve baştan başlayın."
+
+#. utility_message_4
+#: po/keystr.h:556
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Yazıcının açık olduğundan, kablonun düzgün olarak takılı olduğundan ve \n"
+"yazıcının çevrimiçi olduğundan emin olun ve sonra yeniden deneyin."
+
+#. utility_message_5
+#: po/keystr.h:558
+msgid "Print head alignment is now complete."
+msgstr "Yazıcı kafası hizalaması şimdi tamamlandı."
+
+#. utility_message_6
+#: po/keystr.h:560
+msgid "Do not start another operation until the current one has finished."
+msgstr "Geçerli işlem tamamlanana kadar başka bir işlem başlatmayın."
+
+#. utility_message_8
+#: po/keystr.h:562
+msgid "Turn the printer off?"
+msgstr "Yazıcı kapatılsın mı?"
+
+#. utility_message_9
+#: po/keystr.h:564
+msgid "Apply settings to printer?"
+msgstr "Ayarlar yazıcıya uygulansın mı?"
+
+#. utility_message_12
+#: po/keystr.h:566
+msgid "Start print head deep cleaning?"
+msgstr "Yazıcı kafası yoğun temizleme işlemi başlatılsın mı?"
+
+#. regi_bidir
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:568 po/keystr.h:1227
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Çift Yönlü Hizalama (-5 - +5)"
+
+#. utility_message_23
+#: po/keystr.h:570
+msgid "Execute black print head deep cleaning?"
+msgstr "Siyah yazıcı kafası yoğun temizleme işlemi gerçekleştirilsin mi?"
+
+#. utility_message_24
+#: po/keystr.h:572
+msgid "Execute color print head deep cleaning?"
+msgstr "Renkli yazıcı kafası yoğun temizleme işlemi gerçekleştirilsin mi?"
+
+#. utility_message_27
+#: po/keystr.h:574
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"Önce, sayfa besleyicideki kağıtları çıkarın. Tamam'ı tıklattığınızda kağıt \n"
+"besleme silindirleri 30 kez etkinleştirilir. Bu yaklaşık bir buçuk dakika \n"
+"sürer. İletiye göre üç düz kağıt yüklediğinizde, kağıt çıkarılır ve besleme \n"
+"silindirini temizleme tamamlanır.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. utility_message_28
+#: po/keystr.h:582
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Sayfa besleyiciye üç sayfa düz kağıt yükleyin.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:584
+msgid "Feed roller cleaning is complete."
+msgstr "Besleme silindiri temizleme işlemi tamamlandı."
+
+#. util_ink_all_1
+#. LUM_IDS_CLEAN_ITEM_ALL
+#: po/keystr.h:586 po/keystr.h:1203
+msgid "All Colors"
+msgstr "Tüm Renkler"
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:588
+msgid "All Colors   BK, C, M, Y"
+msgstr "Tüm Renkler   BK, C, M, Y"
+
+#. util_ink_black_0
+#. LUM_IDS_CLEAN_ITEM_BLACK
+#: po/keystr.h:590 po/keystr.h:1229
+msgid "Black"
+msgstr "Siyah"
+
+#. util_ink_black_1
+#: po/keystr.h:592
+msgid "Black   3eBK"
+msgstr "Siyah   3eBK"
+
+#. util_ink_black_2
+#: po/keystr.h:594
+msgid "Black   PGBK"
+msgstr "Siyah   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:596
+msgid "Black   BK"
+msgstr "Siyah   BK"
+
+#. util_ink_color_1
+#: po/keystr.h:600
+msgid "Color   6C, 6M, 6Y"
+msgstr "Renkli   6C, 6M, 6Y"
+
+#. util_ink_color_2
+#: po/keystr.h:602
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Renkli   6C, 6M, 6Y, 6BK"
+
+#. util_ink_color_3
+#: po/keystr.h:604
+msgid "Color   7C, 7M, 7Y"
+msgstr "Renkli   7C, 7M, 7Y"
+
+#. util_ink_color_4
+#: po/keystr.h:606
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Renkli   7C, 7M, 7Y, 7BK"
+
+#. util_ink_color_5
+#: po/keystr.h:608
+msgid "Color   C, M, Y, BK"
+msgstr "Renkli   C, M, Y, BK"
+
+#. util_ink_color_6
+#: po/keystr.h:610
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Renkli   C, M, Y, PC, PM, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:612
+msgid "Color   C, M, Y"
+msgstr "Renkli   C, M, Y"
+
+#. util_ink_gr1_1
+#: po/keystr.h:614
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Grup 1   6BK, 6R, 6PC, 6PM"
+
+#. util_ink_gr1_2
+#: po/keystr.h:616
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Grup 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#. util_ink_gr2_1
+#: po/keystr.h:618
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Grup 2   6C, 6M, 6Y"
+
+#. util_ink_gr2_2
+#: po/keystr.h:620
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Grup 2   7C, 7M, 7Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:622
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Temizleme işlemi tamamlanana kadar başka bir işlem başlatmayın.\n"
+"\n"
+"Temizleme tamamlandıktan sonra, yazıcı kafası püskürtme uçlarındaki \n"
+"tıkanıklığın açılıp açılmadığını denetlemek için püskürtme ucu denetimi \n"
+"gerçekleştirin."
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:626
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Tıkanmış yazıcı kafası püskürtme uçlarını temizler.\n"
+"\n"
+"Temizlenecek hedef mürekkep grubunu seçin. Temizlenecek mürekkep grubundan emin \n"
+"değilseniz, püskürtme ucu denetimini gerçekleştirin."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:631
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Normal temizleme ile temizlenemeyen püskürtme uçlarındaki tıkanıklığı giderir.\n"
+"\n"
+"Yoğun temizleme yapılacak hedef mürekkep grubunu seçin. Yoğun temizleme \n"
+"yapılacak mürekkep grubundan emin değilseniz, püskürtme ucu denetimini \n"
+"gerçekleştirin."
+
+#. utility_message_41
+#: po/keystr.h:636
+msgid "Ink Group:"
+msgstr "Mürekkep Grubu:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:638
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Yoğun temizleme normal temizlemeden çok daha fazla mürekkep harcar. Yalnızca \n"
+"normal temizlemeden sonra püskürtme ucu durumu iyileşmezse yoğun temizleme \n"
+"gerçekleştirin.\n"
+"\n"
+"Yoğun temizleme tamamlandıktan sonra, püskürtme ucu denetimini gerçekleştirerek \n"
+"yazıcı kafası püskürtme uçlarındaki tıkanıklığın açılıp açılmadığını denetleyin."
+
+#. utility_message_43
+#: po/keystr.h:644
+msgid "Cleaning consumes ink."
+msgstr "Temizleme işlemi mürekkep kullanır."
+
+#. utility_message_44
+#: po/keystr.h:646
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Kağıt Besleme Düğmesi ile seçilen kağıt kaynağına A4 veya Letter boyutunda bir \n"
+"kağıt yükleyin ve Tamam'ı tıklatın.\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:648
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Yazdırılan desen bu desen benziyorsa, \n"
+"yazıcı kafası püskürtme uçları tıkanmış \n"
+"olabilir.\n"
+"Temizleme'yi tıklatın.\n"
+"\n"
+"Temizleme iki kez gerçekleştirildikten \n"
+"sonra da yazdırılan desen iyileşmezse, \n"
+"yoğun temizleme gerçekleştirin."
+
+#. utility_message_50
+#: po/keystr.h:656
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Sayfa besleyiciye bir sayfa A4 veya letter boyutunda kağıt yükleyin ve Tamam’ı \n"
+"tıklatın."
+
+#. utility_message_53
+#: po/keystr.h:658
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcının gücünü açın), yazıcının kağıt kalınlığı kolunu sola itin ve sayfa \n"
+"besleyiciye bir sayfa A4 veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir \n"
+"hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Tamam'ı tıklatın.\n"
+
+#. utility_message_54
+#: po/keystr.h:666
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını denetlemenize olanak \n"
+"tanıyan bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcının gücünü açın), yazıcının \n"
+"kağıt kalınlığı kolunu sola itin, sayfa besleyiciye bir sayfa A4 veya Letter \n"
+"boyutlu düz kağıt yükleyin ve Yazdırma Denetim Deseni'ni tıklatın.\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:671
+msgid "Color Only"
+msgstr "Yalnızca Renkli"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:673
+msgid "Black Only"
+msgstr "Yalnızca Siyah"
+
+#. util_ink_cartridge_3
+#: po/keystr.h:675
+msgid "Both Black and Color"
+msgstr "Siyah ve Renkli"
+
+#. utility_message_55
+#: po/keystr.h:677
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Siyah kartuş yerine yalnızca renkli kartuş kullanarak yazdırır."
+
+#. utility_message_56
+#: po/keystr.h:680
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Ana Sekmesinde Düz Kağıt seçili olduğunda renkli kartuş yerine yalnızca siyah \n"
+"kartuşu kullanarak yazdırır."
+
+#. utility_message_57
+#: po/keystr.h:684
+msgid "Prints using both black and color cartridges."
+msgstr "Siyah ve renkli kartuşları kullanarak yazdırır."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:686
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Yazıcı, hizalamayı otomatik olarak başlatmak için bir sayfa desen yazdıracak.\n"
+"Geçerli işlem tamamlanana kadar başka bir işlem başlatmayın."
+
+#. utility_message_60
+#: po/keystr.h:689
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Kafa hizalama deseninin ikinci sayfası yazdırılacak.\n"
+"\n"
+"Yazdırmayı başlatmak için Tamam'ı tıklatın."
+
+#. utility_message_61
+#: po/keystr.h:693
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Kafa hizalama deseninin üçüncü sayfası yazdırılacak.\n"
+"\n"
+"Yazdırmayı başlatmak için Tamam'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:697
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sola itin ve Kağıt Besleme \n"
+"Düğmesi ile seçilen kağıt kaynağına bir sayfa A4 veya Letter boyutlu düz kağıt \n"
+"yükleyin. Yazıcı bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. utility_message_63
+#: po/keystr.h:707
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Yazıcı kafası hizalaması tamamlandı.\n"
+"Hizalamayı bitirmek için, İptal'i tıklatın.\n"
+"\n"
+"Yazdırılan tarafta çizikler görünüyorsa, yazıcı kafasını hizalayarak çiziklerin \n"
+"görünmesini engelleyebilirsiniz.\n"
+"Bu hizalamayı yapmak için, sayfa besleyiciye bir sayfa kağıt koyun ve Tamam'ı \n"
+"tıklatın."
+
+#. utility_message_64
+#: po/keystr.h:713
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını denetlemenize olanak \n"
+"tanıyan bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın), yazıcının kağıt \n"
+"kalınlığı kolunu sola itin, Kağıt Besleme Düğmesi tarafından seçilen kağıt \n"
+"kaynağına A4 veya Letter boyutunda bir yaprak düz kağıt koyun ve Yazdırma \n"
+"Denetim Deseni'ni tıklatın."
+
+#. utility_message_66
+#: po/keystr.h:719
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını denetlemenize olanak \n"
+"tanıyan bir desen yazdırır.\n"
+"\n"
+"Sayfa besleyiciye A4 veya Letter boyutunda bir sayfa düz kağıt yükleyin ve \n"
+"Yazdırma Denetim Deseni'ni tıklatın."
+
+#. utility_message_67
+#: po/keystr.h:723
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Yazıcı kafası hizalaması tamamlandı.\n"
+"Hizalamayı bitirmek için, İptal'i tıklatın.\n"
+"\n"
+"Yazdırılan tarafta çizikler görünüyorsa, yazıcı kafasını hizalayarak çiziklerin \n"
+"görünmesini engelleyebilirsiniz.\n"
+"Bu hizalamayı yapmak için, Kağıt Besleme Düğmesi ile seçilen kağıt kaynağına \n"
+"bir sayfa kağıt yükleyin ve Tamam'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:731
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sağa itin ve sayfa besleyiciye \n"
+"bir sayfa A4 veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni \n"
+"yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:741
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Yazdırılan desen bu desen benziyorsa, yazıcı kafası püskürtme uçları tıkanmış \n"
+"olabilir.\n"
+"Temizleme'yi tıklatın.\n"
+"\n"
+"Temizleme iki ila üç kez gerçekleştirildikten sonra da yazdırılan desen \n"
+"iyileşmezse, yoğun temizleme gerçekleştirin."
+
+#. utility_message_71
+#: po/keystr.h:749
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Yazıcı mürekkep az uyarısı görüntülemeyecek şekilde ayarlandığından, mürekkep \n"
+"sayacını sıfırlayamazsınız.\n"
+"\n"
+"Mürekkep az uyarısının görüntülenmesini etkinleştirmek için, yazıcı sürücüsünün \n"
+"Bakım sekmesindeki Mürekkep Az Uyarısı Ayarı düğmesini tıklatın.\n"
+"Bu işlemi gerçekleştirmeden önce yazıcınızın kılavuzunu okuyun."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:755
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"Önce arka tepsideki kağıdı çıkarın.\n"
+"Tamam'ı tıklattığınızda kağıt besleme silindirleri 30 kez etkinleştirilir. Bu \n"
+"yaklaşık bir buçuk dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:762
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"Önce temizleme işlemi için hedef kağıt kaynağını seçmek amacıyla yazıcının \n"
+"Kağıt Besleme Düğmesi’ne basın ve ardından seçilen kağıt kaynağındaki kağıdı \n"
+"çıkarın.\n"
+"Tamam'ı tıklattığınızda kağıt besleme silindirleri 30 kez etkinleştirilir. Bu \n"
+"yaklaşık bir buçuk dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:770
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Yazıcının işletim gürültüsünün kesildiğini doğrulayın ve ardından arka tepsiye \n"
+"üç sayfa düz kağıt yükleyin.\n"
+"Tamam’ı tıklattığınızda kağıt çıkartılacak ve besleme silindiri temizleme \n"
+"işlemi tamamlanacaktır."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:773
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Yazıcının işletim gürültüsünün kesildiğini doğrulayın ve ardından seçilen kağıt \n"
+"kaynağına üç sayfa düz kağıt yükleyin.\n"
+"Tamam’ı tıklattığınızda kağıt çıkartılacak ve besleme silindiri temizleme \n"
+"işlemi tamamlanacaktır."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:776
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Kağıdı sayfa besleyiciden çıkarın.\n"
+"2. A4 veya Letter boyutlu bir düz kağıdı ikiye katlayın, sonra da açın.\n"
+"3. Kağıdı, katlama izinin sırtı aşağıya gelecek şekilde sayfa besleyiciye \n"
+"yükleyin.\n"
+"4. Yürüt’ü tıklatın."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:781
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Kağıdı arka tepsiden çıkarın.\n"
+"2. A4 veya Letter boyutlu bir düz kağıdı ikiye katlayın, sonra da açın.\n"
+"3. Kağıdı, katlama izinin sırtı aşağıya gelecek şekilde arka tepsiye yükleyin.\n"
+"4. Yürüt’ü tıklatın."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:786
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load one sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını denetlemenize olanak \n"
+"tanıyan bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın), yazıcının kağıt \n"
+"kalınlığı kolunu sola itin, arka tepsiye bir sayfa A4 veya letter boyutlu düz \n"
+"kağıt yükleyin ve Yazdırma Denetim Deseni'ni tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:792
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sola itin ve arka tepsiye iki \n"
+"sayfa A4 veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni \n"
+"yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:802
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Otomatik yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma işlemini de içerdiğinden, yazıcıyı hazır duruma getirin \n"
+"(kabloyu takıp yazıcıyı açın), sayfa besleyiciye bir sayfa A4 veya Letter \n"
+"boyutlu düz kağıt yükleyin ve Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"El ile yazıcı kafası hizalaması gerçekleştirmek için, İptal'i tıklatın.\n"
+"Sonra, yazıcı sürücüsünün Bakım sekmesinde Özel Ayarlar'ı tıklatın, Kafaları el \n"
+"ile hizala'yı işaretleyin ve Tamam'ı tıklatın. Ardından, yeniden deneyin.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:813
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Otomatik yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma işlemini de içerdiğinden, yazıcıyı hazır duruma getirin \n"
+"(kabloyu takıp yazıcıyı açın), arka tepsiye iki sayfa A4 veya Letter boyutlu \n"
+"Matte Photo Paper (MP-101) yükleyin ve Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"El ile yazıcı kafası hizalaması gerçekleştirmek için, İptal'i tıklatın.\n"
+"Sonra, yazıcı sürücüsünün Bakım sekmesinde Özel Ayarlar'ı tıklatın, Kafaları el \n"
+"ile hizala'yı işaretleyin ve Tamam'ı tıklatın. Ardından, yeniden deneyin.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:825
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK."
+msgstr ""
+"Arka tepsiye bir sayfa A4 veya letter boyutlu düz kağıt yükleyin ve Tamam'ı \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:827
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Yazıcı, hizalamayı otomatik olarak başlatmak için iki sayfa desen yazdıracak.\n"
+"Geçerli işlem tamamlanana kadar başka bir işlem başlatmayın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:830
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın) ve Kağıt Besleme Düğmesi ile seçilen kağıt kaynağına dört sayfa \n"
+"A4 veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:840
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Kafa hizalama deseninin dördüncü sayfası yazdırılacak.\n"
+"\n"
+"Yazdırmayı başlatmak için Tamam'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:844
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını denetlemenize olanak \n"
+"tanıyan bir desen yazdırır.\n"
+"\n"
+"Kağıt Besleme Düğmesi ile seçilen kağıt kaynağına A4 veya Letter boyutunda bir \n"
+"sayfa düz kağıt yükleyin ve Yazdırma Denetim Deseni'ni tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:849
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sola itin ve arka tepsiye bir \n"
+"sayfa A4 veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni \n"
+"yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:859
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Otomatik yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma işlemini de içerdiğinden, yazıcıyı hazır duruma getirin \n"
+"(kabloyu takıp yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sağa itin, \n"
+"sayfa besleyiciye iki sayfa kağıt yükleyin ve Yazıcı Kafasını Hizala'yı \n"
+"tıklatın.\n"
+"\n"
+"El ile yazıcı kafası hizalaması gerçekleştirmek için, İptal'i tıklatın.\n"
+"Sonra, yazıcı sürücüsünün Bakım sekmesinde Özel Ayarlar'ı tıklatın, Kafaları el \n"
+"ile hizala'yı işaretleyin ve Tamam'ı tıklatın. Ardından, yeniden deneyin.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:869
+msgid ""
+"Load one sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Arka tepsiye bir sayfa A4 veya letter boyutlu kağıt yükleyin ve Tamam'ı \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:871
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Yazıcı kafası hizalaması tamamlandı.\n"
+"Hizalamayı bitirmek için, İptal'i tıklatın.\n"
+"\n"
+"Yazdırılan tarafta çizikler görünüyorsa, yazıcı kafasını hizalayarak çiziklerin \n"
+"görünmesini engelleyebilirsiniz.\n"
+"Bu hizalamayı yapmak için, arka tepsiye bir sayfa kağıt koyun ve Tamam'ı \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:877
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın) ve Kağıt Besleme Düğmesi ile seçilen kağıt kaynağına üç sayfa A4 \n"
+"veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:887
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sola itin ve sayfa besleyiciye \n"
+"bir sayfa A4 veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni \n"
+"yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:897
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını denetlemenize olanak \n"
+"tanıyan bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın), yazıcının kağıt \n"
+"kalınlığı kolunu sağa itin, arka tepsiye bir sayfa A4 veya Letter boyutlu düz \n"
+"kağıt yükleyin ve Yazdırma Denetim Deseni'ni tıklatın."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:902
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Ana Sekmesinde Ortam Türü için yalnızca Düz Kağıt, Hagaki veya Zarf seçili \n"
+"olduğunda renkli kartuş yerine yalnızca siyah kartuşu kullanarak yazdırır."
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:905
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load one sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sola itin ve arka tepsiye bir \n"
+"sayfa A4 veya letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni \n"
+"yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Tamam'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:913
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sağa itin ve arka tepsiye iki \n"
+"sayfa A4 veya Letter boyutlu düz kağıt yükleyin. Yazıcı bir hizalama deseni \n"
+"yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:923
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Otomatik yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma işlemini de içerdiğinden, yazıcıyı hazır duruma getirin \n"
+"(kabloyu takıp yazıcıyı açın), yazıcının kağıt kalınlığı kolunu sağa itin, arka \n"
+"tepsiye bir sayfa A4 veya Letter boyutlu Matte Photo Paper (MP-101) yükleyin ve \n"
+"Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"El ile yazıcı kafası hizalaması gerçekleştirmek için, İptal'i tıklatın.\n"
+"Sonra, yazıcı sürücüsünün Bakım sekmesinde Özel Ayarlar'ı tıklatın, Kafaları el \n"
+"ile hizala'yı işaretleyin ve Tamam'ı tıklatın. Ardından, yeniden deneyin.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:935
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Kağıdı arka tepsiden çıkarın ardından ilk A4 veya letter boyutlu düz kağıt \n"
+"sayfasını yükleyin.\n"
+"2. İkinci A4 veya letter boyutlu düz kağıt sayfasını ikiye katlayın ve ardından \n"
+"kağıdı açın.\n"
+"3. Katlama izinin sırtı aşağı gelecek şekilde ikinci sayfayı ilk sayfanın önüne \n"
+"yükleyin.\n"
+"4. Yürüt'ü tıklatın."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:940
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Yazdırma sırasında kağıtların lekelenmesini engellemek için alt plaka temizleme \n"
+"işlemi başlatılıyor.\n"
+"\n"
+"Bu işlem için A4 veya Letter boyutunda iki sayfa düz kağıt gerekmektedir. Alt \n"
+"plaka temizleme işlemini gerçekleştirmek için bu yönergelere uyun."
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:944
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click OK."
+msgstr ""
+"Kağıt Kaynağı için Otomatik Seç ayarı seçiliyken düz kağıt için kağıt kaynağını \n"
+"ayarlar.\n"
+"\n"
+"Düz kağıt için kağıt kaynağını seçin ve ardından Tamam'ı tıklatın."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:948
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Normal temizleme ile temizlenemeyen püskürtme uçlarındaki tıkanıklığı giderir.\n"
+"\n"
+"Yoğun temizleme yapılacak hedef mürekkep grubunu seçin. Yalnızca siyah \n"
+"püskürtme ucu tıkalı ise Siyah’ı seçin. Yalnızca renkli püskürtme uçları veya \n"
+"hem renkli hem siyah püskürtme uçları tıkalı ise Tüm Renkler’i seçin. Hangi \n"
+"püskürtme ucunun tıkalı olduğundan emin değilseniz, püskürtme ucu denetimini \n"
+"yürütün.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:954
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"Temizlenecek hedef kağıt kaynağını seçin ve ardından Tamam’ı tıkatın."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:958
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Arka tepsi için kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"Önce kağıdı arka tepsiden çıkartın ve sonra kağıt çıkış tepsisini açın.\n"
+"Tamam seçeneği tıklatıldığında kağıt besleme silindirleri etkinleşir. Bu \n"
+"yaklaşık bir buçuk dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:965
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Kaset için kağıt besleme silindirini temizleme.\n"
+"\n"
+"Önce kağıdı kasetten çıkartın ve sonra kağıt çıkış tepsisini açın.\n"
+"Tamam seçeneği tıklatıldığında kağıt besleme silindirleri etkinleşir. Bu işlem \n"
+"yaklaşık iki dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:972
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Arka tepsi için kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"Önce kağıdı arka tepsiden çıkarın.\n"
+"Tamam seçeneği tıklatıldığında kağıt besleme silindirleri etkinleşir. Bu işlem \n"
+"yaklaşık bir buçuk dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:979
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Kaset için kağıt besleme silindirini temizleme.\n"
+"\n"
+"Önce kağıdı kasetten çıkarın.\n"
+"Tamam seçeneği tıklandığında kağıt besleme silindirleri etkinleşir. Bu işlem \n"
+"yaklaşık iki dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:986
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Yazıcının işletim gürültüsünün kesildiğini doğrulayın ve ardından kasete üç \n"
+"sayfa düz kağıt yükleyin.\n"
+"Tamam’ı tıklattığınızda kağıt çıkartılacak ve besleme silindiri temizleme \n"
+"işlemi tamamlanacaktır."
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:989
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load one sheet of A4 or "
+"letter size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını kontrol edebileceğiniz \n"
+"bir desen yazdırır.\n"
+"\n"
+"Önce kullanılacak kağıt kaynağını seçin. Ardından, seçilen kağıt kaynağına bir \n"
+"sayfa A4 veya letter boyutlu düz kağıt yükleyin ve Yazdırma Denetim Deseni'ni \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:994
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını kontrol edebileceğiniz \n"
+"bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın), kasete bir sayfa A4 \n"
+"veya letter boyutlu düz kağıt yükleyin ve Yazdırma Denetim Deseni'ni tıklatın."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:999
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını kontrol edebileceğiniz \n"
+"bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın), arka tepsiye bir sayfa \n"
+"A4 veya letter boyutlu düz kağıt yükleyin ve Yazdırma Denetim Deseni'ni \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:1004
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın) ve arka tepsiye iki sayfa A4 veya letter boyutlu düz kağıt \n"
+"yükleyin. Yazıcı bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:1013
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama, yazdırma içerir. Kullanılacak kağıt kaynağını seçin ve ardından \n"
+"Yazıcı Kafasını Hizala’yı tıklatın."
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:1017
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr "Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:1019
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın) ve arka tepsiye üç \n"
+"sayfa A4 veya letter boyutlu düz kağıt yükleyin.\n"
+"\n"
+"Tamam düğmesine tıklatıldığında bir hizalama deseni yazdırılacaktır."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:1024
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın) ve kasete üç sayfa A4 \n"
+"veya letter boyutlu düz kağıt yükleyin.\n"
+"\n"
+"Tamam düğmesine tıklatıldığında bir hizalama deseni yazdırılacaktır."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:1029
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Yazıcıyı hazırlayın (kablo bağlantısını yapın ve cihazı açın) ve arka tepsiye \n"
+"bir sayfa A4 veya letter boyutlu düz kağıt yükleyin.\n"
+"\n"
+"Tamam düğmesine tıklatıldığında geçerli ayar yazdırılacaktır."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:1034
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Yazıcıyı hazırlayın (kablo bağlantısını yapın ve cihazı açın) ve kasete bir \n"
+"sayfa A4 veya letter boyutlu düz kağıt yükleyin.\n"
+"\n"
+"Tamam düğmesine tıklatıldığında geçerli ayar yazdırılacaktır."
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:1039
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Kullanılacak kağıt kaynağını seçin ve ardından Tamam’ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:1041
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr "Kasete bir sayfa A4 veya letter boyutlu düz kağıt yükleyin ve Tamam'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:1043
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Otomatik yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma işlemini de içerdiğinden, yazıcıyı hazır duruma getirin \n"
+"(kabloyu takıp yazıcıyı açın), arka tepsiye bir sayfa A4 veya letter boyutlu \n"
+"Matte Photo Paper (MP-101) yükleyin ve Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"El ile yazıcı kafası hizalaması gerçekleştirmek için, İptal'i tıklatın.\n"
+"Sonra, yazıcı sürücüsünün Bakım sekmesinde Özel Ayarlar'ı tıklatın, Kafaları el \n"
+"ile hizala'yı işaretleyin ve Tamam'ı tıklatın. Ardından, yeniden deneyin.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:1054
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Kağıt yıpranmasını engelle ayarını yapar. Yazdırma işlemini bu ayar devredeyken \n"
+"yaparsanız yazdırma kalitesi veya yazdırma hızı etkilenebilir. Bu ayarı \n"
+"değiştirmek için, Kağıt yıpranmasını engelle seçimini kaldırın."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:1057
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Normal temizleme ile temizlenemeyen püskürtme uçlarındaki tıkanıklığı giderir.\n"
+"\n"
+"Yoğun temizleme normal temizlemeden çok daha fazla mürekkep harcar. Yalnızca \n"
+"normal temizlemeden sonra püskürtme ucu durumu iyileşmezse yoğun temizleme \n"
+"gerçekleştirin.\n"
+"\n"
+"Yoğun temizleme tamamlandıktan sonra, püskürtme ucu denetimini gerçekleştirerek \n"
+"yazıcı kafası püskürtme uçlarındaki tıkanıklığın açılıp açılmadığını denetleyin."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:1065
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Yoğun temizleme tamamlanıncaya kadar başka bir işlem başlatmayın.\n"
+"\n"
+"Yoğun temizleme tamamlandıktan sonra, yazıcı kafası püskürtme uçlarının açılıp \n"
+"açılmadığını görmek için püskürtme ucu denetimi yapın."
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:1070
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalama işleminin yürütülmesi, renkler ve çizgilerdeki hizalama \n"
+"hatalarını düzeltir. Kullanıcı kılavuzuna bakın ve yazıcı kafasını yazıcının \n"
+"işletim panelinden hizalayın.\n"
+"\n"
+"Yazdırmak ve geçerli değeri denetlemek için, Hizalama Değerini Yazdır’ı \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:1075 po/keystr.h:1100
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın) ve arka tepsiye üç sayfa A4 veya letter boyutlu düz kağıt \n"
+"yükleyin. Yazıcı bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın.\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:1084
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Otomatik yazıcı kafası hizalamasını başlatma.\n"
+"\n"
+"Hizalama yazdırma işlemini de içerdiğinden, yazıcıyı hazır duruma getirin \n"
+"(kabloyu takıp yazıcıyı açın), A4 veya letter boyutunda bir Matte Photo Paper \n"
+"(MP-101) sayfasını arka tepsiye yükleyin ve Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Otomatik yazıcı kafası hizalama sonuçları tatmin edici değilse, yazıcı kafasını \n"
+"tam olarak hizalamak için el ile yazıcı kafası hizalama işlemini yapın.\n"
+"El ile yazıcı kafası hizalama işlemini yapmak için İptal'i tıklatın.\n"
+"Sonra, yazıcı sürücüsünün Bakım sekmesinde Özel Ayarlar'ı tıklatın, Kafaları el \n"
+"ile hizala'yı işaretleyin ve Tamam'ı tıklatın. Ardından, yeniden deneyin.\n"
+"\n"
+"Yazdırmak ve geçerli ayarı denetlemek için, Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_3
+#: po/keystr.h:1097
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, Hagaki A, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Yalnızca Ana Sekmede Ortam Türü için Düz Kağıt, Hagaki A, Hagaki veya Zarf \n"
+"seçildiğinde, renkli kartuş yerine yalnızca siyah kartuşu kullanarak yazdırır."
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1139
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "A - C Sütunlarında Ayarlama (-3 - +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/keystr.h:1141
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "A - D Sütunlarında Ayarlama (-3 - +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1143
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "A - E Sütunlarında Ayarlama (-3 - +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/keystr.h:1145
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "A - E Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/keystr.h:1147
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "A - F Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/keystr.h:1149
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "A - G Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:1151
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "D - F Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/keystr.h:1153
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "E - G Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/keystr.h:1155
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "F - G Sütunlarında Ayarlama (-3 - +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:1157
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "F - K Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/keystr.h:1159
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "G - J Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/keystr.h:1161
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "G - L Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/keystr.h:1163
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "H - K Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/keystr.h:1165
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "H - L Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/keystr.h:1167
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "H - N Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:1169
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "K - L Sütunlarında Ayarlama (-3 - +3)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:1171
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "L - M Sütunlarında Ayarlama (-3 - +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/keystr.h:1173
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "L - O Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1175
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "M - N Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/keystr.h:1177
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "M - P Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/keystr.h:1179
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "M - Q Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/keystr.h:1181
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "O - T Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/keystr.h:1183
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "P - T Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/keystr.h:1185
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Q - R Sütunlarında Ayarlama (-4 - +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/keystr.h:1187
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "U - V Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/keystr.h:1189
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "U - V Sütunlarında Ayarlama (-3 - +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/keystr.h:1191
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "W - X Sütunlarında Ayarlama (-3 - +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/keystr.h:1193
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "a - e Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/keystr.h:1195
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "f - j Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/keystr.h:1197
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "f - k Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/keystr.h:1199
+msgid "Align Print Head"
+msgstr "Yazıcı Kafasını Hizala"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/keystr.h:1201 po/keystr.h:1633
+msgid "Align heads manually"
+msgstr "Kafaları el ile hizala"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:1211
+msgid "Auto Power Off"
+msgstr "Otomatik Kapatma"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:1213
+msgid "Auto Power Off:"
+msgstr "Otomatik Kapatma:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/keystr.h:1215
+msgid "Auto Power On:"
+msgstr "Otomatik Açma:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/keystr.h:1217
+msgid "Auto Power Settings"
+msgstr "Otomatik Güç Ayarları"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/keystr.h:1231
+msgid "Black Ink Tank"
+msgstr "Siyah Mürekkep Haznesi"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/keystr.h:1263
+msgid "Color Ink Tank"
+msgstr "Renkli Mürekkep Haznesi"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/keystr.h:1269
+msgid "Column A:"
+msgstr "Sütun A:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/keystr.h:1271
+msgid "Column B:"
+msgstr "Sütun B:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/keystr.h:1273
+msgid "Column C:"
+msgstr "Sütun C:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/keystr.h:1275
+msgid "Column D:"
+msgstr "Sütun D:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/keystr.h:1277
+msgid "Column E:"
+msgstr "Sütun E:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/keystr.h:1279
+msgid "Column F:"
+msgstr "Sütun F:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/keystr.h:1281
+msgid "Column G:"
+msgstr "Sütun G:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/keystr.h:1283
+msgid "Column H:"
+msgstr "Sütun H:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/keystr.h:1285
+msgid "Column I:"
+msgstr "Sütun I:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/keystr.h:1287
+msgid "Column J:"
+msgstr "Sütun J:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/keystr.h:1289
+msgid "Column K:"
+msgstr "Sütun K:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/keystr.h:1291
+msgid "Column L:"
+msgstr "Sütun L:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/keystr.h:1293
+msgid "Column M:"
+msgstr "Sütun M:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/keystr.h:1295
+msgid "Column N:"
+msgstr "Sütun N:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/keystr.h:1297
+msgid "Column O:"
+msgstr "Sütun O:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/keystr.h:1299
+msgid "Column P:"
+msgstr "Sütun P:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/keystr.h:1301
+msgid "Column Q:"
+msgstr "Sütun Q:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/keystr.h:1303
+msgid "Column R:"
+msgstr "Sütun R:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/keystr.h:1305
+msgid "Column S:"
+msgstr "Sütun S:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/keystr.h:1307
+msgid "Column T:"
+msgstr "Sütun T:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/keystr.h:1309
+msgid "Column U:"
+msgstr "Sütun U:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/keystr.h:1311
+msgid "Column V:"
+msgstr "Sütun V:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/keystr.h:1313
+msgid "Column W:"
+msgstr "Sütun W:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/keystr.h:1315
+msgid "Column X:"
+msgstr "Sütun X:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/keystr.h:1317
+msgid "Column a:"
+msgstr "Sütun a:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/keystr.h:1319
+msgid "Column b:"
+msgstr "Sütun b:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/keystr.h:1321
+msgid "Column c:"
+msgstr "Sütun c:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/keystr.h:1323
+msgid "Column d:"
+msgstr "Sütun d:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/keystr.h:1325
+msgid "Column e:"
+msgstr "Sütun e:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/keystr.h:1327
+msgid "Column f:"
+msgstr "Sütun f:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/keystr.h:1329
+msgid "Column g:"
+msgstr "Sütun g:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/keystr.h:1331
+msgid "Column h:"
+msgstr "Sütun h:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/keystr.h:1333
+msgid "Column i:"
+msgstr "Sütun i:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/keystr.h:1335
+msgid "Column j:"
+msgstr "Sütun j:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/keystr.h:1337
+msgid "Column k:"
+msgstr "Sütun k:"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/keystr.h:1359
+msgid "Display low ink warning"
+msgstr "Mürekkep az uyarısını görüntüler"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:1363
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az belirgin çizik oluşan desenin desen \n"
+"numarasını G ile L arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/keystr.h:1367
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az belirgin çizik oluşan desenin desen \n"
+"numarasını H ile O arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/keystr.h:1371
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az belirgin çizik oluşan desenin desen \n"
+"numarasını M ile R arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/keystr.h:1375
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az belirgin çizik oluşan desenin desen \n"
+"numarasını P ile V arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/keystr.h:1379
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Yazdırılan desenleri inceleyip yatay şeritlerin en az belirgin olduğu desenin \n"
+"desen numarasını O ile V arasındaki sütunların alanlarına girin."
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/keystr.h:1383
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Yazdırılan desenleri inceleyip M ve N sütunları için en düzgün desenin desen \n"
+"numarasını girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/keystr.h:1386
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve yatay şeritlerin en az belirgin olduğu \n"
+"desenin desen numarasını a ile j arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/keystr.h:1389
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve yatay şeritlerin en az belirgin olduğu \n"
+"desenin desen numarasını a ile k arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/keystr.h:1392
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az belirgin çizik oluşan desenin desen \n"
+"numarasını H ile Q arasındaki sütunların alanlarına girin."
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:1395
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve L ile M sütunlarıyla ilgili alanlara, en \n"
+"düzgün ve oklarla gösterilen alanlarda şerit içermeyen desenin numarasını girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/keystr.h:1399
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Yazdırılan desenleri inceleyip W ve X sütunlarıyla ilgili alanlara en düzgün ve \n"
+"oklarla gösterilen alanlarda şerit içermeyen desenin numarasını girin."
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/keystr.h:1403
+msgid "Execute"
+msgstr "Yürüt"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/keystr.h:1405
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Yazıcı kafası hizalaması gerçekleştirin. Yazdırılan desenleri inceleyin ve en \n"
+"az belirgin çizik oluşan desenin desen numarasını A ile F arasındaki sütunların \n"
+"alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/keystr.h:1409
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Yazıcı kafası hizalaması gerçekleştirin. Yazdırılan desenleri inceleyin ve en \n"
+"az belirgin çizik oluşan desenin desen numarasını A ile G arasındaki sütunların \n"
+"alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/keystr.h:1413
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Yazıcı kafası hizalaması gerçekleştirin. Yazdırılan desenleri inceleyin ve en \n"
+"az belirgin çizik oluşan desenin desen numarasını A ile K arasındaki sütunların \n"
+"alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/keystr.h:1417
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Yazıcı kafası hizalaması gerçekleştirin. Yazdırılan desenleri inceleyin ve en \n"
+"az belirgin çizik oluşan desenin desen numarasını A ile L arasındaki sütunların \n"
+"alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/keystr.h:1421
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Yazıcı kafası hizalaması gerçekleştirin. Yazdırılan desenleri inceleyin ve en \n"
+"az belirgin çizik oluşan desenin desen numarasını A ile N arasındaki sütunların \n"
+"alanlarına girin."
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/keystr.h:1425
+msgid "Exit"
+msgstr "Çıkış"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1443
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Yatay Hizalama (-3 - +7)"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/keystr.h:1449
+msgid "Ink Cartridge:"
+msgstr "Mürekkep Kartuşu:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/keystr.h:1453 po/keystr.h:1635
+msgid "Ink Drying Wait Time:"
+msgstr "Mürekkep Kuruma Bekleme Süresi:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/keystr.h:1459 po/keystr.h:1639
+msgid "Long"
+msgstr "Uzun"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/keystr.h:1501
+msgid "Pattern Check"
+msgstr "Desen Denetimi"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSEPAGE
+#: po/keystr.h:1503
+msgid "Pause Page"
+msgstr "Sayfayı Duraklat"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSESCAN
+#: po/keystr.h:1505
+msgid "Pause Scan"
+msgstr "Taramayı Duraklat"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/keystr.h:1509 po/keystr.h:1631
+msgid "Prevent paper abrasion"
+msgstr "Kağıt yıpranmasını engelle"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/keystr.h:1511
+msgid "Print Alignment Value"
+msgstr "Hizalama Değerini Yazdır"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/keystr.h:1513
+msgid "Print Check Pattern"
+msgstr "Yazdırma Denetim Deseni"
+
+#. LUM_IDD_CLEAN
+#: po/keystr.h:1517
+msgid "Print Head Cleaning"
+msgstr "Yazıcı Kafası Temizleme"
+
+#. LUM_IDD_SILENTMODE
+#: po/keystr.h:1527
+msgid "Quiet Mode"
+msgstr "Sessiz Mod"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/keystr.h:1529
+msgid "Read your printer manual for details about low ink warnings."
+msgstr "Mürekkep az uyarılarıyla ilgili ayrıntılar için yazıcı kılavuzunuzu okuyun."
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/keystr.h:1537
+msgid "Select the ink cartridge for printing."
+msgstr "Yazdırma için mürekkep kartuşunu seçin."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/keystr.h:1539
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Yeni değiştirilen mürekkep haznesini seçin ve Yürüt düğmesini tıklatın.\n"
+
+#. LUM_IDD_GENERAL_RAD_2_IDOK
+#: po/keystr.h:1541 po/keystr.h:1651
+msgid "Send"
+msgstr ""
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/keystr.h:1543 po/keystr.h:1637
+msgid "Short"
+msgstr "Kısa"
+
+#. LUM_IDD_PHA_START
+#: po/keystr.h:1551
+msgid "Start Print Head Alignment"
+msgstr "Yazıcı Kafası Hizalamasını Başlat"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/keystr.h:1553
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires one sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Yazdırma sırasında kağıtların lekelenmesini engellemek için alt plaka temizleme \n"
+"işlemi başlatılıyor.\n"
+"\n"
+"Bu işlem için A4 veya letter boyutunda bir sayfa düz kağıt gerekmektedir. Alt \n"
+"plaka temizleme işlemini gerçekleştirmek için bu yönergelere uyun."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/keystr.h:1557
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Değiştirilen mürekkep haznesine karşılık gelen sayaç haznenin dolu olduğunu \n"
+"gösterir. Bu işlem mürekkep az uyarısının düzgün görüntülenmesini sağlar."
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/keystr.h:1563
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Yazdırma kafası püskürtme uçları \n"
+"tıkanmamış.\n"
+"Yazdırılan desen bu desene benziyorsa, \n"
+"yazıcıyı hemen kullanabilirsiniz.\n"
+"Çıkış'ı tıklatın."
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/keystr.h:1568
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Mürekkep az uyarısının düzgün görüntülenmesini sağlamak için aşağıdaki işlem \n"
+"gereklidir:\n"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/keystr.h:1573
+msgid "Use quiet mode"
+msgstr "Sessiz modu kullan"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/keystr.h:1575
+msgid "Using AC Adapter:"
+msgstr "AC Adaptör kullanılıyor:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/keystr.h:1577
+msgid "Using Battery:"
+msgstr "Pil kullanılıyor:"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/keystr.h:1583
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Bir mürekkep haznesini yenisiyle değiştirdiğinizde, her zaman yazıcı \n"
+"sürücüsünün Bakım sekmesindeki Mürekkep Sayacı Sıfırlama düğmesini tıklatın ve \n"
+"yeni mürekkep haznesini seçin."
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/keystr.h:1587
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Yazdırılan desen aşağıdaki desenlerden hangisine daha çok benziyor?"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/keystr.h:1601
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "K - P Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/keystr.h:1603
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "Sütun F’de Ayarlama (-3 - +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/keystr.h:1605
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "Sütun G’de Ayarlama (-3 - +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/keystr.h:1607
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "Sütun Q’de Ayarlama (-4 - +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/keystr.h:1609
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "R - U Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/keystr.h:1611
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "V - Y Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/keystr.h:1613
+msgid "Close"
+msgstr "Kapat"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/keystr.h:1615
+msgid "Column Y:"
+msgstr "Sütun Y:"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/keystr.h:1617
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr ""
+"Yazdırılan desenleri inceleyip yatay şeritlerin en az belirgin olduğu desenin \n"
+"desen numarasını Q ile Y arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/keystr.h:1621
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az fark edilebilir çizgi içeren desenin \n"
+"desen numarasını K ile P sütunlarına ilişkin alanlara girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/keystr.h:1625
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"Yazıcı kafası hizalamasını yürütün. Yazdırılan desenleri inceleyin ve en az \n"
+"fark edilebilir çizgi içeren desenin desen numarasını A ile J sütunlarına \n"
+"ilişkin alanlara girin."
+
+#. LUM_IDS_CLEAN_ITEM_E5
+#: po/keystr.h:1653
+msgid "Color   C, M, Y, BK, GY"
+msgstr "Renkli   C, M, Y, BK, GY"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A3_07
+#: po/keystr.h:1655
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half vertically, then unfold the "
+"paper.\n"
+"3. With the ridge of the crease facing down, load the paper in landscape "
+"orientation into the rear tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Arka tepsideki kağıdı alın.\n"
+"2. A4 veya letter boyutundaki düz kağıdı, dikey olarak ortadan katlayın, \n"
+"ardından açın.\n"
+"3. Katlama yeri aşağı bakacak biçimde kağıdı yatay yönlendirme konumunda arka \n"
+"tepsiye yerleştirin.\n"
+"4. Yürüt’ü tıklatın."
+
+#. LUM_IDS_AUTOPOWER_120MINUTES
+#: po/keystr.h:1660
+msgid "120 minutes"
+msgstr "120 dakika"
+
+#. LUM_IDS_AUTOPOWER_240MINUTES
+#: po/keystr.h:1662
+msgid "240 minutes"
+msgstr "240 dakika"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_11_PAPERSRC
+#: po/keystr.h:1664
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size plain paper, and click Align Print "
+"Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Otomatik yazıcı kafası hizalama başlatılıyor.\n"
+"\n"
+"Hizalamaya yazdırma işlemi dahil olduğundan yazıcıyı hazırlayın (kabloyu \n"
+"bağlayın ve gücü açın), A4 veya letter boyutlu bir düz kağıt yükleyin ve Yazıcı \n"
+"Kafasını Hizala seçeneğini tıklatın.\n"
+"\n"
+"Otomatik yazıcı kafası hizalama sonucundan memnun değilseniz yazıcı kafasını \n"
+"istediğiniz gibi ayarlamak için el ile yazıcı kafasını hizalama özelliğini \n"
+"kullanın.\n"
+"El ile kafa hizalaması gerçekleştirmek için, İptal'i tıklatın.\n"
+"Sonra, yazıcı sürücüsünün Bakım sekmesinde Özel Ayarlar'ı tıklatın, Kafaları el \n"
+"ile hizala'yı işaretleyin ve Tamam'ı tıklatın. Ardından, yeniden deneyin.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTPAPERJAM
+#: po/keystr.h:1675
+msgid "Prevent paper jam"
+msgstr "Kağıt sıkışmasını engelle"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR7
+#: po/keystr.h:1677
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray, then open the front cover and extend "
+"the paper output tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"İlk önce arka tepsiden kağıdı çıkarın. Sonra, ön kapağı açın ve kağıt çıkış \n"
+"tepsisini dışarı çekin.\n"
+"Tamam'ı tıklattığınızda kağıt besleme silindirleri 30 kez etkinleştirilir. Bu \n"
+"yaklaşık bir buçuk dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_P
+#: po/keystr.h:1684
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for columns H to "
+"P."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az belirgin çizik oluşan desenin desen \n"
+"numarasını H ile P arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_55
+#: po/keystr.h:1687
+msgid "Adjustment in Columns M to P (-5 to +5)"
+msgstr "M - P Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_i
+#: po/keystr.h:1689
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for "
+"columns a to i."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve yatay şeritlerin en az belirgin olduğu \n"
+"desenin desen numarasını a ile i arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_i_22
+#: po/keystr.h:1692
+msgid "Adjustment in Columns f to i (-2 to +2)"
+msgstr "f - i Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PREVENTPAPERGAP_MSG
+#: po/keystr.h:1694
+msgid ""
+"Set Prevent paper jam only when A3 size plain paper jams frequently near the "
+"paper output slot.\n"
+"\n"
+"This setting increases the printing time for A3 size plain paper.\n"
+"Also, the print quality may deteriorate."
+msgstr ""
+"Kağıt sıkışmasını engelle seçeneğini, yalnızca A3 boyutunda düz kağıt kağıt \n"
+"çıkışı yuvasının yakınında sık sık sıkıştığında ayarlayın.\n"
+"\n"
+"Bu ayar, A3 boyutunda düz kağıt için yazdırma süresini artırır.\n"
+"Ayrıca, yazdırma kalitesi düşebilir."
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_DISABLE
+#: po/keystr.h:1703
+msgid "Do not use quiet mode"
+msgstr "Sessiz modu kullanma"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_ENABLE
+#: po/keystr.h:1705
+msgid "Always use quiet mode"
+msgstr "Her zaman sessiz modu kullan"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_HOURS
+#: po/keystr.h:1707
+msgid "Use quiet mode during specified hours"
+msgstr "Belirtilen saatlerde sessiz modu kullan"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_FROM
+#: po/keystr.h:1709
+msgid "Start time:"
+msgstr "Başlangıç saati:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_TO
+#: po/keystr.h:1711
+msgid "End time:"
+msgstr "Bitiş saati:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTING_WARN
+#: po/keystr.h:1713
+msgid ""
+"When the hours are specified, quiet mode is not applied to operations \n"
+"(copy, direct print, etc.) performed directly from the printer."
+msgstr ""
+"Saatler belirtildiğinde sessiz modu doğrudan yazıcıdan gerçekleştirilen \n"
+"işlemlere (kopyalama, doğrudan yazdırma vb.) uygulanmaz."
+
+#. LUM_IDS_MNTMSG_WRITESETTING_ATPOFF_NW
+#: po/keystr.h:1718
+msgid ""
+"Apply the setting to printer?\n"
+"If the printer is connected to a network, it will not turn off \n"
+"automatically even if Auto Power Off is set."
+msgstr ""
+"Ayar yazıcıya uygulansın mı?\n"
+"Yazıcı bir ağa bağlıysa, Otomatik Kapatma ayarlanmış olsa da otomatik olarak \n"
+"kapanmaz."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT7
+#: po/keystr.h:1722
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the front tray, then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Kağıt besleme silindirlerini temizleme.\n"
+"\n"
+"Önce kağıdı ön tepsiden çıkartın ve sonra kağıt çıkış tepsisini açın.\n"
+"Tamam'ı tıklattığınızda kağıt besleme silindirleri etkinleştirilir. Bu işlemin \n"
+"tamamlanması yaklaşık iki dakika sürer.\n"
+"\n"
+"Besleme silindiri temizleme işlemini başlatmak istiyor musunuz?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT7
+#: po/keystr.h:1729
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the front tray.\n"
+"After confirming that the paper output tray is open, clicking OK will eject "
+"paper and complete feed roller cleaning."
+msgstr ""
+"Yazıcının işletim gürültüsünün kesildiğini doğrulayın ve ardından ön tepsiye üç \n"
+"sayfa düz kağıt yükleyin.\n"
+"Kağıt çıkış tepsisinin açık olduğunu onayladıktan sonra Tamam'ı tıklattığınızda \n"
+"kağıt çıkartılacak ve besleme silindiri temizleme işlemi tamamlanacaktır."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_FRONT
+#: po/keystr.h:1732
+msgid ""
+"1. Remove the paper from the front tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the front "
+"tray, \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Open the paper output tray and click Execute."
+msgstr ""
+"1. Ön tepsideki kağıdı alın.\n"
+"2. A4 veya letter boyutlu bir düz kağıdı ikiye katlayın, sonra da açın.\n"
+"3. Kağıdın bir kenarını ortadaki katlama yeri ile hizalayarak katlayın, sonra \n"
+"kağıdın katını açın.\n"
+"4. Katlama yerleri yukarı bakarken, katlama yeri olmayan yarımın kenarları size \n"
+"bakacak şekilde kağıdı ön tepsiye yerleştirin.\n"
+"5. Kağıt çıkış tepsisini açın ve Yürüt'ü tıklatın."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTWFEED
+#: po/keystr.h:1739
+msgid "Prevent paper double-feed"
+msgstr "Kağıt çift beslemeyi engelle"
+
+#. LUM_IDS_MNTMSG_PREVENTWFEED_MSG
+#: po/keystr.h:1741
+msgid ""
+"Set Prevent paper double-feed only when double-feeding of plain paper "
+"occurs.\n"
+"\n"
+"Using this function decreases the print speed but reduces the occurrence of "
+"double-feeding."
+msgstr ""
+"Kağıt çift beslemeyi engelle özelliğini yalnızca düz kağıt çift beslemesi \n"
+"gerçekleştiğinde ayarlayın.\n"
+"\n"
+"Bu işlevin kullanımı yazdırma hızını düşürür ancak çift besleme gerçekleşmesini \n"
+"azaltır."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_PAPERSRC_11
+#: po/keystr.h:1745
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 \n"
+"or letter size plain paper, and click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını kontrol edebileceğiniz \n"
+"bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kablo bağlantısı yapın ve yazıcıyı açın), bir sayfa A4 \n"
+"veya letter boyutlu düz kağıt yükleyin ve Yazdırma Denetim Deseni'ni tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_PAPERSRC_11
+#: po/keystr.h:1750
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalama başlatılıyor.\n"
+"\n"
+"Hizalama işlemi yazdırma da gerektirdiğinden yazıcıyı hazırlayın (kablo \n"
+"bağlantısını yapın ve cihazı açın) ve üç sayfa A4 veya letter boyutlu düz kağıt \n"
+"yükleyin. Yazıcı, bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Yazdırmak ve geçerli ayarı denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_MessTitlePaperLoadGuide
+#: po/keystr.h:1761
+msgid "Check how to load paper."
+msgstr "Nasıl kağıt yüklendiğini kontrol edin."
+
+#. LUM_MessContentsPaperLoadGuide
+#: po/keystr.h:1763
+msgid ""
+"Fit the paper into the front tray so that the printing side faces down.\n"
+"Insert the paper completely to the end of the front tray.\n"
+"\n"
+"Click [OK] to start printing."
+msgstr ""
+"Yazdırma yapmak istediğiniz taraf aşağı bakacak şekilde kağıdı ön tepsiye \n"
+"yerleştirin.\n"
+"Kağıdı ön tepsinin sonuna kadar gelecek şekilde tamamen yerleştirin.\n"
+"\n"
+"Yazdırmayı başlatmak için [Tamam] öğesini tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_K_55
+#: po/keystr.h:1768
+msgid "Adjustment in Columns G to K (-5 to +5)"
+msgstr "G - K Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_L_Q
+#: po/keystr.h:1770
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns L to Q."
+msgstr ""
+"Yazdırılan desenleri inceleyin ve en az belirgin çizik oluşan desenin desen \n"
+"numarasını L ile Q arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_R_Z
+#: po/keystr.h:1774
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for \n"
+"columns R to Z."
+msgstr ""
+"Yazdırılan desenleri inceleyip yatay şeritlerin en az belirgin olduğu desenin \n"
+"desen numarasını R ile Z arasındaki sütunların alanlarına girin."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_44
+#: po/keystr.h:1778
+msgid "Adjustment in Column R (-4 to +4)"
+msgstr "Sütun R'de Ayarlama (-4 - +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_S_V_22
+#: po/keystr.h:1780
+msgid "Adjustment in Columns S to V (-2 to +2)"
+msgstr "S - V Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_Z_22
+#: po/keystr.h:1782
+msgid "Adjustment in Columns W to Z (-2 to +2)"
+msgstr "W - Z Sütunlarında Ayarlama (-2 - +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_Q_55
+#: po/keystr.h:1784
+msgid "Adjustment in Columns L to Q (-5 to +5)"
+msgstr "L - Q Sütunlarında Ayarlama (-5 - +5)"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Z
+#: po/keystr.h:1786
+msgid "Column Z:"
+msgstr "Sütun Z:"
+
+#. LUM_IDS_MNTMSG_MSI_COLLECTING
+#: po/keystr.h:1788
+msgid ""
+"Collecting printer status about maintenance.\n"
+"Please wait."
+msgstr ""
+"Bakımla ilgili yazıcı durumu toplanıyor.\n"
+"Lütfen bekleyin."
+
+#. LUM_IDS_MNTMSG_MSI_NOTAVAILABLE
+#: po/keystr.h:1791
+msgid ""
+"This printer status about maintenance cannot be collected.\n"
+"The displayed information may be different from the current settings."
+msgstr ""
+"Bakımla ilgili bu yazıcının durumu alınamıyor.\n"
+"Görüntülenen bilgiler geçerli ayarlardan farklı olabilir."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_FRONTTRAY
+#: po/keystr.h:1794
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the front tray, and click the Print Check Pattern."
+msgstr ""
+"Yazıcı kafası püskürtme uçlarının tıkalı olup olmadığını kontrol edebileceğiniz \n"
+"bir desen yazdırır.\n"
+"\n"
+"Yazıcıyı hazırlayın (kabloyu bağlayın ve yazıcıyı açın), ön tepsiye bir sayfa \n"
+"A4 veya letter boyutlu düz kağıt yükleyin ve Yazdırma Denetim Deseni'ni \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_FRONT_11
+#: po/keystr.h:1799
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the front tray and "
+"click OK."
+msgstr ""
+"Ön tepsiye bir sayfa A4 veya letter boyutlu düz kağıt yükleyin ve Tamam'ı \n"
+"tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_PAPERSRC_11
+#: po/keystr.h:1801
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, plain paper.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Yazıcıyı hazırlayın (kablo bağlantısını yapın ve cihazı açın) ve bir sayfa A4 \n"
+"veya letter boyutlu düz kağıt yükleyin.\n"
+"\n"
+"Tamam düğmesine tıklatıldığında geçerli ayar yazdırılacaktır."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_11
+#: po/keystr.h:1805
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK. "
+msgstr "Kasete bir sayfa A4 veya letter boyutlu düz kağıt yükleyin ve Tamam'ı tıklatın. "
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_REAR_11
+#: po/keystr.h:1807
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK. "
+msgstr ""
+"Arka tepsiye bir sayfa A4 veya letter boyutlu düz kağıt yükleyin ve Tamam'ı \n"
+"tıklatın. "
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_FRONTTRAY
+#: po/keystr.h:1809
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the front tray. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalama başlatılıyor.\n"
+"\n"
+"Hizalama işlemi yazdırma da gerektirdiğinden yazıcıyı hazırlayın (kablo \n"
+"bağlantısını yapın ve cihazı açın) ve ön tepsiye üç sayfa A4 veya letter \n"
+"boyutlu düz kağıt yükleyin. Yazıcı, bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Yazdırmak ve geçerli ayarı denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE
+#: po/keystr.h:1819
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size, plain paper into the cassette. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Yazıcı kafası hizalaması başlatılıyor.\n"
+"\n"
+"Hizalama yazdırma içerdiğinden yazıcıyı hazırlayın (kabloyu bağlayın ve \n"
+"yazıcıyı açın) ve kasete üç sayfa A4 veya letter boyutlu düz kağıt yükleyin. \n"
+"Yazıcı bir hizalama deseni yazdırır.\n"
+"\n"
+"Yazıcı kafası konumunu hizalamak için Yazıcı Kafasını Hizala'yı tıklatın.\n"
+"\n"
+"Geçerli ayarla yazdırmak ve denetlemek için Hizalama Değerini Yazdır'ı tıklatın."
+
+#. LUM_SPACE_01
+#: po/keystr.h:1829
+msgid " "
+msgstr " "
+

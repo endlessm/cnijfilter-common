@@ -1,0 +1,4785 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.70\n"
+"POT-Creation-Date: 2011-12-19 11:20+0900\n"
+"PO-Revision-Date: 2011-12-19 11:22+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_LOCALE
+#: src/loadres.c:103
+msgid "Locale"
+msgstr "id_ID"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BLACK_LABEL
+#: po/gladestr.h:2 po/keystr.h:1109
+msgid "  Black:"
+msgstr "  Hitam :"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:4
+msgid "  Cyan:"
+msgstr "Sian :"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:6
+msgid "  Magenta:"
+msgstr "Magenta :"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_QUALITY
+#: po/gladestr.h:8 po/keystr.h:1115
+msgid "  Set...  "
+msgstr "  Set ...  "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:10
+msgid "  Yellow:"
+msgstr "Kuning :"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING_RANGE
+#: po/gladestr.h:13 po/keystr.h:1119
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES_RANGE
+#: po/gladestr.h:15 po/keystr.h:1121
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:16
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:17
+msgid "0"
+msgstr ""
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/gladestr.h:19 po/keystr.h:1127 po/keystr.h:1641
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/gladestr.h:21 po/keystr.h:1129 po/keystr.h:1643
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/gladestr.h:23 po/keystr.h:1131 po/keystr.h:1645
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/gladestr.h:25 po/keystr.h:1133 po/keystr.h:1647
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/gladestr.h:27 po/keystr.h:1135 po/keystr.h:1649
+msgid "5"
+msgstr "5"
+
+#. LUM_COLON
+#: po/gladestr.h:28 po/keystr.h:1716
+msgid ":"
+msgstr ":"
+
+#. LUM_IDR_PV_MAIN_IDM_PV_VERSION
+#: po/gladestr.h:30 po/keystr.h:1137
+msgid "About"
+msgstr "Tentang "
+
+#. LUM_IDD_PAG_PAGESET_XP_ETOE_IDC_STT_ETOEOVERPRINT
+#: po/gladestr.h:32 po/keystr.h:1205
+msgid "Amount of Extension:"
+msgstr "Jumlah Perluasan :"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#. paper_gap_auto
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#: po/gladestr.h:34 po/keystr.h:504 po/keystr.h:1207
+msgid "Auto"
+msgstr "Otomatis "
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/gladestr.h:36 po/keystr.h:1209
+msgid "Auto Power"
+msgstr "Daya Otomatis"
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_TITLE_ETOE
+#: po/gladestr.h:38 po/keystr.h:1221
+msgid "Available Media Types:"
+msgstr "Tipe Media yang Tersedia :"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_CARTRIDGE
+#: po/gladestr.h:40 po/keystr.h:1223
+msgid "BJ Cartridge:"
+msgstr "Kartrij BJ :"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDCANCEL
+#: po/gladestr.h:42 po/keystr.h:1225
+msgid "Back to Setup"
+msgstr "Kembali ke Pengesetan "
+
+#. LUM_IDS_EDGETOEDGE
+#: po/gladestr.h:44 po/keystr.h:1233
+msgid "Borderless"
+msgstr "Tanpa Tepi"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/gladestr.h:46 po/keystr.h:1235
+msgid "Bottom Plate Cleaning"
+msgstr "Pembersihan Pelat Bawah"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BRIGHTNESS
+#: po/gladestr.h:48 po/keystr.h:1237
+msgid "Brightness:"
+msgstr "Kecerahan :"
+
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#. message_button_cancel
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#: po/gladestr.h:50 po/keystr.h:528 po/keystr.h:1239
+msgid "Cancel"
+msgstr "Batal"
+
+#. LUM_LID_CENTERRING
+#: po/gladestr.h:52 po/keystr.h:1245
+msgid "Centering"
+msgstr "Mengetengahkan"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDOK
+#: po/gladestr.h:54 po/keystr.h:1247
+msgid "Change"
+msgstr "Ubah "
+
+#. LUM_LID_CHANGE_COMBINATION
+#: po/gladestr.h:56 po/keystr.h:1249
+msgid "Change Combination"
+msgstr "Ubah Kombinasi"
+
+#. LUM_LID_CHANGE_MEDIA
+#: po/gladestr.h:58 po/keystr.h:1251
+msgid "Change Media Type"
+msgstr "Ubah Tipe Media"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/gladestr.h:60 po/keystr.h:1253
+msgid "Cleaning"
+msgstr "Pembersihan"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_RESOLV2S
+#: po/gladestr.h:62 po/keystr.h:1255
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Klik Ubah untuk menggunakan ini, atau Kembali ke Pengesetan untuk memilih \n"
+"kombinasi yang berbeda."
+
+#. LUM_IDS_COLLATE
+#: po/gladestr.h:64 po/keystr.h:1257
+msgid "Collate"
+msgstr "Kolasi"
+
+#. LUM_LID_COLOR_BALANCE
+#: po/gladestr.h:66 po/keystr.h:1261
+msgid "Color Balance"
+msgstr "Keseimbangan Warna"
+
+#. LUM_IDD_MANUALCOLOR_MATCHING_IDC_STT_COLORMODE
+#: po/gladestr.h:68 po/keystr.h:1265
+msgid "Color Mode:"
+msgstr "Moda Warna :"
+
+#. LUM_IDS_COLORADJUSTMENT
+#: po/gladestr.h:70 po/keystr.h:1267
+msgid "Color/Intensity"
+msgstr "Warna/Intensitas"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LABEL
+#: po/gladestr.h:72 po/keystr.h:1339
+msgid "Contrast:"
+msgstr "Kontras :"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_LO
+#: po/gladestr.h:74
+msgid "Cool"
+msgstr "Dingin"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES
+#: po/gladestr.h:76 po/keystr.h:1341
+msgid "Copies:"
+msgstr "Salinan :"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_QUALITY_CUSTOM
+#: po/gladestr.h:78 po/keystr.h:1343
+msgid "Custom"
+msgstr "Serasi "
+
+#. LUM_IDD_PAPER_CUSTOM
+#: po/gladestr.h:80 po/keystr.h:1345
+msgid "Custom Paper Size"
+msgstr "Ukuran Kertas Serasi"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/gladestr.h:82 po/keystr.h:1347 po/keystr.h:1629
+msgid "Custom Settings"
+msgstr "Setelan Serasi"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:84 po/keystr.h:1111 po/keystr.h:1349
+msgid "Cyan:"
+msgstr "Sian :"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_HI
+#: po/gladestr.h:86 po/keystr.h:1351
+msgid "Dark "
+msgstr "Gelap "
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/gladestr.h:88 po/keystr.h:1353
+msgid "Deep Cleaning"
+msgstr "Pembersihan Tingkat Dalam"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/gladestr.h:90 po/keystr.h:1355
+msgid "Defaults"
+msgstr "Setelan Asal "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DIFFUSION
+#: po/gladestr.h:92 po/keystr.h:1357
+msgid "Diffusion"
+msgstr "Menyebar"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DITHERING
+#: po/gladestr.h:94 po/keystr.h:1361
+msgid "Dither"
+msgstr "Getar"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_AUTODUP_IDC_CHK_DUPLEX
+#: po/gladestr.h:96 po/keystr.h:1759
+msgid "Duplex Printing"
+msgstr "Pencetakan Dupleks "
+
+#. LUM_IDS_QUALITY_FAST
+#: po/gladestr.h:98 po/keystr.h:1427
+msgid "Fast"
+msgstr "Cepat"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FAST
+#: po/gladestr.h:100 po/keystr.h:1429
+msgid "Fast "
+msgstr "Cepat "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#. bin_pattern
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#: po/gladestr.h:102 po/keystr.h:470 po/keystr.h:1431
+msgid "Fine"
+msgstr "Bagus"
+
+#. LUM_IDD_PAG_MAIN_IDC_CHK_GRAYSCALE
+#: po/gladestr.h:104 po/keystr.h:1433
+msgid "Grayscale Printing"
+msgstr "Pencetakan Keabu-abuan "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE
+#: po/gladestr.h:106 po/keystr.h:1435
+msgid "Halftoning"
+msgstr "Corak Warna Separuh "
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_HEIGHT_LABEL
+#: po/gladestr.h:108 po/keystr.h:1437
+msgid "Height:     "
+msgstr "Ketinggian :     "
+
+#. LUM_IDS_QUALITY_BEST
+#: po/gladestr.h:110 po/keystr.h:1439
+msgid "High"
+msgstr "Tinggi"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_HI
+#: po/gladestr.h:112 po/keystr.h:1441
+msgid "High "
+msgstr "Tinggi "
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#. message_button_ignore
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#: po/gladestr.h:114 po/keystr.h:536 po/keystr.h:1445
+msgid "Ignore"
+msgstr "Abaikan "
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/gladestr.h:116 po/keystr.h:1447
+msgid "Ink Cartridge Settings"
+msgstr "Setelan Kartrij Tinta"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/gladestr.h:118 po/keystr.h:1451
+msgid "Ink Counter Reset"
+msgstr "Tata Ulang Pengukur Tinta"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LABEL
+#: po/gladestr.h:120 po/keystr.h:1455
+msgid "Intensity:"
+msgstr "Intensitas :"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LO
+#: po/gladestr.h:122 po/keystr.h:1457
+msgid "Light "
+msgstr "Terang "
+
+#. LUM_IDS_STAPLE_LONGSIDE
+#: po/gladestr.h:124 po/keystr.h:1461
+msgid "Long-side stapling"
+msgstr "Penstapleran sisi panjang"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LO
+#: po/gladestr.h:126 po/keystr.h:1463
+msgid "Low"
+msgstr "Rendah"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/gladestr.h:128 po/keystr.h:1465
+msgid "Low Ink Warning Setting"
+msgstr "Setelan Peringatan Tinta Akan Habis"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:130 po/keystr.h:1113 po/keystr.h:1467
+msgid "Magenta:"
+msgstr "Magenta :"
+
+#. LUM_IDD_PAG_MAIN
+#: po/gladestr.h:132 po/keystr.h:1469
+msgid "Main"
+msgstr "Utama"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/gladestr.h:134 po/keystr.h:1471
+msgid "Maintenance"
+msgstr "Perawatan"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_MANUAL
+#: po/gladestr.h:136 po/keystr.h:1473
+msgid "Manual"
+msgstr "Manual "
+
+#. LUM_IDS_MANUALCOLOR_WINDOWTITLE
+#: po/gladestr.h:138 po/keystr.h:1475
+msgid "Manual Color Adjustment"
+msgstr "Pengaturan Warna Manual"
+
+#. LUM_LID_MAX
+#: po/gladestr.h:140 po/keystr.h:1477
+msgid "Max"
+msgstr "Maks"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_MEDIATYPE
+#: po/gladestr.h:142 po/keystr.h:1479
+msgid "Media Type:"
+msgstr "Tipe Media :"
+
+#. LUM_LID_MIN
+#: po/gladestr.h:144 po/keystr.h:1481
+msgid "Min"
+msgstr "Min"
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/gladestr.h:146 po/keystr.h:1483
+msgid "Nozzle Check"
+msgstr "Pemeriksaan Mulut Semprot"
+
+#. LUM_IDD_MESSAGEBOX_IDOK
+#. message_button_ok
+#. LUM_IDD_MESSAGEBOX_IDOK
+#: po/gladestr.h:148 po/keystr.h:526 po/keystr.h:1485
+msgid "OK"
+msgstr "OK"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PRINTTYPE
+#: po/gladestr.h:150 po/keystr.h:1487
+msgid "Page Layout:"
+msgstr "Tata Letak Halaman :"
+
+#. LUM_IDD_PAG_PAGESET_XP
+#: po/gladestr.h:152 po/keystr.h:1489
+msgid "Page Setup"
+msgstr "Pengesetan Halaman"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PAGESIZE
+#: po/gladestr.h:154 po/keystr.h:1491
+msgid "Page Size:"
+msgstr "Ukuran Halaman :"
+
+#. LUM_LID_PAPER_GAP
+#: po/gladestr.h:156 po/keystr.h:1493
+msgid "Paper Gap:"
+msgstr "Jarak Kertas:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_PAPERSIZE
+#: po/gladestr.h:158 po/keystr.h:1495
+msgid "Paper Size"
+msgstr "Ukuran Kertas"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/gladestr.h:160 po/keystr.h:1497
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Setelan Sumber Kertas untuk Kertas Biasa"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/gladestr.h:162 po/keystr.h:1499
+msgid "Paper Source:"
+msgstr "Sumber Kertas :"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/gladestr.h:164 po/keystr.h:1507
+msgid "Power Off"
+msgstr "Daya Mati"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/gladestr.h:166 po/keystr.h:1515
+msgid "Print Head Alignment"
+msgstr "Penjajaran Kepala Cetak"
+
+#. LUM_IDD_PAG_MAIN_IDC_GRP_QUALITY
+#: po/gladestr.h:168 po/keystr.h:1519
+msgid "Print Quality"
+msgstr "Kualitas Cetak"
+
+#. LUM_LID_PRINT_TYPE
+#: po/gladestr.h:170 po/keystr.h:1521
+msgid "Print Type:"
+msgstr "Tipe Pencetakan:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_CHK_REVERSE
+#: po/gladestr.h:172 po/keystr.h:1523
+msgid "Print from Last Page"
+msgstr "Cetak dari Halaman Terakhir "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_LABEL
+#: po/gladestr.h:174 po/keystr.h:1525
+msgid "Quality"
+msgstr "Kualitas "
+
+#. LUM_IDD_QUIETSETTINGS
+#: po/gladestr.h:176 po/keystr.h:1701
+msgid "Quiet Settings"
+msgstr "Setelan Diam"
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/gladestr.h:178 po/keystr.h:1533
+msgid "Roller Cleaning"
+msgstr "Pembersihan Penggulung"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING
+#: po/gladestr.h:180 po/keystr.h:1535
+msgid "Scaling:"
+msgstr "Penskalaan :"
+
+#. LUM_IDS_STAPLE_SHORTSIDE
+#: po/gladestr.h:182 po/keystr.h:1545
+msgid "Short-side stapling"
+msgstr "Penstapleran sisi pendek"
+
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#. color_correct_photo2
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#: po/gladestr.h:184 po/keystr.h:204 po/keystr.h:1547
+msgid "Standard"
+msgstr "Standar"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_IDC_STT_EDGE
+#: po/gladestr.h:186 po/keystr.h:1549
+msgid "Staple Side:"
+msgstr "Sisi Stapler :"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_TITLE2
+#: po/gladestr.h:188 po/keystr.h:1561
+msgid "The following is recommended:"
+msgstr "Hal berikut ini dianjurkan:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_LABEL
+#: po/gladestr.h:190
+msgid "Tone:"
+msgstr "Corak Warna :"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_UNITS
+#: po/gladestr.h:192 po/keystr.h:1571
+msgid "Units:"
+msgstr "Unit:"
+
+#. LUM_IDD_PAG_MAINTENANCE_IDC_BTN_STATUSMONITOR
+#: po/gladestr.h:194 po/keystr.h:1579
+msgid "View Printer Status..."
+msgstr "Tampilkan Status Pencetak ..."
+
+#. LUM_IDD_PAG_EFFECT_VIVID_IDC_CHK_VIVID
+#: po/gladestr.h:196 po/keystr.h:1581
+msgid "Vivid Photo"
+msgstr "Vivid Photo "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_HI
+#: po/gladestr.h:198
+msgid "Warm"
+msgstr "Hangat"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_WIDTH_LABEL
+#: po/gladestr.h:200 po/keystr.h:1589
+msgid "Width:    "
+msgstr "Kelebaran :    "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:202 po/keystr.h:1117 po/keystr.h:1591
+msgid "Yellow:"
+msgstr "Kuning :"
+
+#. LUM_IDD_SA_INVALIDCOMBINATION_IDC_STT_SA_TITLE
+#: po/gladestr.h:204 po/keystr.h:1593
+msgid "You cannot print with the following combination:"
+msgstr "Anda tidak dapat mencetak dengan kombinasi berikut ini:"
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDC_STT_SA_TITLE
+#: po/gladestr.h:206 po/keystr.h:1595
+msgid "You have selected the following combination:"
+msgstr "Anda telah memilih kombinasi berikut ini:"
+
+#: po/gladestr.h:207
+msgid "dialog1"
+msgstr ""
+
+#: po/gladestr.h:208
+msgid "dialog3"
+msgstr ""
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_INCH
+#: po/gladestr.h:210 po/keystr.h:1597
+msgid "inch"
+msgstr "inci "
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_MM
+#: po/gladestr.h:212 po/keystr.h:1599
+msgid "mm"
+msgstr "mm "
+
+#. LUM_VERSION_PRODUCT_NAME
+#: po/keystr.h:2
+msgid "Canon Inkjet Printer Driver"
+msgstr "Pengandar Pencetak Inkjet Canon"
+
+#. LUM_VERSION_VER_STR
+#: po/keystr.h:4
+#, c-format
+msgid "Version %s"
+msgstr "Versi %s"
+
+#. LUM_VERSION_COPYRIGHT1_STR
+#: po/keystr.h:6
+#, c-format
+msgid "Copyright CANON INC. %s-%s"
+msgstr "Copyright CANON INC. %s-%s"
+
+#. LUM_VERSION_COPYRIGHT2_STR
+#: po/keystr.h:8
+msgid "All Rights Reserved."
+msgstr "All Rights Reserved."
+
+#. LUM_LID_CAPTION
+#: po/keystr.h:10
+msgid "Canon XXXXXX"
+msgstr ""
+
+#. model_BJF850
+#.
+#: po/keystr.h:12 po/keystr.h:1123 po/keystr.h:1125 po/keystr.h:1241
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:14
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:16
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:18
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:20
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:22
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:24
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:26
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:28
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:30
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:32
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:34
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:36
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:38
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:40
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:42
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:44
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:46
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:48
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:50
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:52
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:54
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:56
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:58
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:60
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:62
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:64
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:66
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:68
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:70
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:72
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:74
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:76
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:78
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:80
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:82
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:84
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:86
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:88
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:90
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:92
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:94
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:96
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:98
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:100
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:102
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:104
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:106
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:108
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:110
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:112
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:114
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:116
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:118
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:120
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:122
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:124
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:126
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:128
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:130
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:132
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:134
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:136
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:138
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:140
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:142
+msgid "MX870 series"
+msgstr ""
+
+#. model_MP495
+#: po/keystr.h:144
+msgid "MP495 series"
+msgstr ""
+
+#. model_MP280
+#: po/keystr.h:146
+msgid "MP280 series"
+msgstr ""
+
+#. model_MG5100
+#: po/keystr.h:148
+msgid "MG5100 series"
+msgstr ""
+
+#. model_MG5200
+#: po/keystr.h:150
+msgid "MG5200 series"
+msgstr ""
+
+#. model_IP4800
+#: po/keystr.h:152
+msgid "iP4800 series"
+msgstr ""
+
+#. model_MG6100
+#: po/keystr.h:154
+msgid "MG6100 series"
+msgstr ""
+
+#. model_MG8100
+#: po/keystr.h:156
+msgid "MG8100 series"
+msgstr ""
+
+#. model_MX360
+#: po/keystr.h:158
+msgid "MX360 series"
+msgstr ""
+
+#. model_MX410
+#: po/keystr.h:160
+msgid "MX410 series"
+msgstr ""
+
+#. model_MX420
+#: po/keystr.h:162
+msgid "MX420 series"
+msgstr ""
+
+#. model_MX880
+#: po/keystr.h:164
+msgid "MX880 series"
+msgstr ""
+
+#. model_IX6500
+#: po/keystr.h:166
+msgid "iX6500 series"
+msgstr ""
+
+#. model_MG2100
+#: po/keystr.h:168
+msgid "MG2100 series"
+msgstr ""
+
+#. model_MG3100
+#: po/keystr.h:170
+msgid "MG3100 series"
+msgstr ""
+
+#. model_MG4100
+#: po/keystr.h:172
+msgid "MG4100 series"
+msgstr ""
+
+#. model_MG5300
+#: po/keystr.h:174
+msgid "MG5300 series"
+msgstr ""
+
+#. model_MG6200
+#: po/keystr.h:176
+msgid "MG6200 series"
+msgstr ""
+
+#. model_MG8200
+#: po/keystr.h:178
+msgid "MG8200 series"
+msgstr ""
+
+#. model_IP4900
+#: po/keystr.h:180
+msgid "iP4900 series"
+msgstr ""
+
+#. model_E500
+#: po/keystr.h:182
+msgid "E500 series"
+msgstr ""
+
+#. model_MX710
+#: po/keystr.h:184
+msgid "MX710 series"
+msgstr ""
+
+#. model_MX890
+#: po/keystr.h:186
+msgid "MX890 series"
+msgstr ""
+
+#. model_MX370
+#: po/keystr.h:188
+msgid "MX370 series"
+msgstr ""
+
+#. model_MX430
+#: po/keystr.h:190
+msgid "MX430 series"
+msgstr ""
+
+#. model_MX510
+#: po/keystr.h:192
+msgid "MX510 series"
+msgstr ""
+
+#. model_E600
+#: po/keystr.h:194
+msgid "E600 series"
+msgstr ""
+
+#. print_color_message
+#. util_ink_color_0
+#. LUM_IDS_CLEAN_ITEM_COLOR
+#: po/keystr.h:196 po/keystr.h:598 po/keystr.h:1259
+msgid "Color"
+msgstr ""
+
+#. print_mono_message
+#: po/keystr.h:198
+msgid "Grayscale"
+msgstr "Keabu-abuan"
+
+#. color_correct_photo
+#: po/keystr.h:200
+msgid "Photo"
+msgstr "Foto"
+
+#. color_correct_graphics
+#: po/keystr.h:202
+msgid "Graphic"
+msgstr "Grafik"
+
+#. color_correct_natural
+#: po/keystr.h:206
+msgid "Linear Tone"
+msgstr "Corak Warna Linear"
+
+#. mediasize_recommend_message1_1
+#: po/keystr.h:208
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Mengubah %s ke %s dianjurkan."
+
+#. mediasize_recommend_message1_2
+#: po/keystr.h:210
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Klik Ubah untuk menggunakan kombinasi baru, Abaikan untuk menggunakan kombinasi \n"
+"sekarang, atau Kembali ke Pengesetan untuk memilih kombinasi yang berbeda."
+
+#. mediasize_recommend_message2_1
+#: po/keystr.h:213
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "Dianjurkan untuk mengubah setelan %s."
+
+#. mediasize_recommend_message2_2
+#: po/keystr.h:215
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Gunakan pemilih di bawah ini untuk memilih setelan yang sesuai dan klik Ubah \n"
+"untuk menggunakan kombinasi baru."
+
+#. mediasize_recommend_message2_3
+#: po/keystr.h:218
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Klik Abaikan untuk menggunakan kombinasi sekarang atau Kembali ke Pengesetan \n"
+"untuk memilih kombinasi yang berbeda."
+
+#. mediasize_illegal_select_message2_1
+#: po/keystr.h:221
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "Dianjurkan untuk mengubah setelan %s.  "
+
+#. mediasize_illegal_select_message2_2
+#: po/keystr.h:223
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+"Gunakan pemilih di bawah ini untuk memilih setelan yang sesuai dan klik Ubah \n"
+"untuk menggunakan kombinasi baru. Klik Kembali ke Pengesetan untuk memilih \n"
+"kombinasi yang berbeda."
+
+#. lever_position_label
+#: po/keystr.h:226
+msgid "Paper Thickness Lever Position:"
+msgstr "Posisi Tuas Ketebalan Kertas:"
+
+#. lever_position_label_2007
+#: po/keystr.h:228
+msgid "Paper Thickness Lever Position: "
+msgstr "Posisi Tuas Ketebalan Kertas: "
+
+#. move_lever_position_alert
+#: po/keystr.h:230
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Pindahkan tuas ukuran ketebalan kertas %s."
+
+#. move_lever_position_alert_2007
+#: po/keystr.h:232
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Pindahkan tuas ukuran ketebalan kertas %s. "
+
+#. mediasize_change_media
+#: po/keystr.h:234
+msgid "Media Type"
+msgstr "Tipe Media"
+
+#. mediasize_change_size
+#: po/keystr.h:236
+msgid "Page Size"
+msgstr "Ukuran Halaman"
+
+#. mediatype_dialog_message
+#: po/keystr.h:238
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Tipe Media: %s tidak dapat digunakan dengan Kartrij BJ yang dipilih.\n"
+"Pilih tipe media yang Anda ingin gunakan."
+
+#. media_plain
+#: po/keystr.h:241
+msgid "Plain Paper"
+msgstr "Kertas Biasa"
+
+#. media_ohp
+#: po/keystr.h:243
+msgid "Transparencies"
+msgstr "Film Transparan"
+
+#. media_bpf
+#: po/keystr.h:245
+msgid "Back Print Film"
+msgstr "Film Cetak Balik"
+
+#. media_bjcloth
+#: po/keystr.h:247
+msgid "Fabric Sheet"
+msgstr "Kertas Berserat"
+
+#. media_higlossfilm
+#: po/keystr.h:249
+msgid "High Gloss Film"
+msgstr "Film Glossy Tinggi"
+
+#. media_postcard
+#: po/keystr.h:251
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#. media_envelope
+#: po/keystr.h:253
+msgid "Envelope"
+msgstr "Amplop"
+
+#. media_glossy_postcard
+#: po/keystr.h:255
+msgid "Glossy Postcard"
+msgstr "Kartu Pos Glossy"
+
+#. media_hires
+#: po/keystr.h:257
+msgid "High Resolution Paper"
+msgstr "Kertas Resolusi Tinggi"
+
+#. media_tshirt
+#: po/keystr.h:259
+msgid "T-Shirt Transfers"
+msgstr "Pencetakan Transfer T-Shirt"
+
+#. media_thick
+#: po/keystr.h:261
+msgid "Thick Paper"
+msgstr ""
+
+#. media_higloss_photo_film
+#: po/keystr.h:263
+msgid "High Gloss Photo Film"
+msgstr "Film Foto Glossy Tinggi"
+
+#. media_glossy_photo
+#: po/keystr.h:265
+msgid "Glossy Photo Paper"
+msgstr "Kertas Foto Glossy"
+
+#. media_glossy_photocard
+#: po/keystr.h:267
+msgid "Glossy Photo Cards"
+msgstr "Kartu Foto Glossy"
+
+#. media_pro_photo
+#: po/keystr.h:269
+msgid "Photo Paper Pro"
+msgstr "Kertas Foto Pro"
+
+#. media_inkjet_postcard
+#: po/keystr.h:271
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#. media_matte_photo
+#: po/keystr.h:273
+msgid "Matte Photo Paper"
+msgstr "Kertas Foto Matte"
+
+#. media_photo_plus_glossy
+#: po/keystr.h:275
+msgid "Photo Paper Plus Glossy"
+msgstr "Kertas Foto Plus Glossy"
+
+#. media_other
+#: po/keystr.h:277
+msgid "Other Paper"
+msgstr "Kertas Lain"
+
+#. media_other_photo
+#: po/keystr.h:279
+msgid "Other Photo Paper"
+msgstr "Kertas Foto Lain"
+
+#. media_duplex_glossy
+#: po/keystr.h:281
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#. media_fine_art_paper
+#: po/keystr.h:283
+msgid "Fine Art \"Photo Rag\""
+msgstr "Fine Art \"Photo Rag\""
+
+#. media_other_fine_art_paper
+#: po/keystr.h:285
+msgid "Other Fine Art Paper"
+msgstr "Kertas Fine Art Lain"
+
+#. media_photo_paper_plus_glossy_ii
+#: po/keystr.h:287
+msgid "Photo Paper Plus Glossy II"
+msgstr "Kertas Foto Glossy II"
+
+#. media_photo_paper_plus_semi_gloss
+#: po/keystr.h:289
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "Kertas Foto Plus Semi Glossy"
+
+#. media_photo_paper_pro_platinum
+#: po/keystr.h:291
+msgid "Photo Paper Pro Platinum"
+msgstr "Kertas Foto Pro Platinum"
+
+#. media_photo_paper_pro_ii
+#: po/keystr.h:293
+msgid "Photo Paper Pro II"
+msgstr "Kertas Foto Pro II"
+
+#. media_contents_glossy
+#: po/keystr.h:295
+msgid "Hagaki K"
+msgstr "Hagaki K"
+
+#. media_contents_prophoto
+#: po/keystr.h:297
+msgid "Hagaki P"
+msgstr "Hagaki P"
+
+#. media_address_postcard
+#: po/keystr.h:299
+msgid "Hagaki A"
+msgstr "Hagaki A"
+
+#. supply_manual
+#: po/keystr.h:301
+msgid "Manual Feed"
+msgstr "Penyaluran Manual"
+
+#. supply_asf
+#: po/keystr.h:303
+msgid "Auto Sheet Feeder"
+msgstr "Penyalur Kertas Otomatis"
+
+#. supply_asf_reartray
+#. LUM_IDS_FEED_REAR
+#: po/keystr.h:305 po/keystr.h:1531
+msgid "Rear Tray"
+msgstr "Tatakan Belakang"
+
+#. supply_asf2
+#: po/keystr.h:307
+msgid "Auto Feeder2"
+msgstr ""
+
+#. supply_cassette
+#: po/keystr.h:309
+msgid "Standard Cassette"
+msgstr ""
+
+#. supply_cassette2
+#: po/keystr.h:311
+msgid "Optional Cassette"
+msgstr ""
+
+#. supply_consecutive
+#: po/keystr.h:313
+msgid "Auto Select"
+msgstr "Pilih Otomatis"
+
+#. supply_consecutive2
+#: po/keystr.h:315
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#. supply_tractor
+#: po/keystr.h:317
+msgid "Tractor Feeder"
+msgstr "Penyalur Penyangga"
+
+#. supply_cassette_02
+#. LUM_IDS_CASSETTE
+#: po/keystr.h:319 po/keystr.h:1243
+msgid "Cassette"
+msgstr "Kotak Kertas"
+
+#. supply_printer_sw_select
+#: po/keystr.h:321
+msgid "Paper Feed Switch"
+msgstr "Tukar Penyaluran Kertas"
+
+#. supply_cassette_04
+#: po/keystr.h:323
+msgid "Front Feeder"
+msgstr "Penyalur Depan"
+
+#. supply_cassette_04_fronttray
+#. supply_cassette_06
+#: po/keystr.h:325 po/keystr.h:1699
+msgid "Front Tray"
+msgstr "Tatakan Depan"
+
+#. supply_front_for_plain
+#: po/keystr.h:327
+msgid "Front for Plain Paper"
+msgstr "Depan untuk Kertas Biasa"
+
+#. supply_front_for_plain_maetray
+#: po/keystr.h:329
+msgid "Front for Plain Paper "
+msgstr "Depan untuk Kertas Biasa "
+
+#. supply_auto_continuous_feed
+#: po/keystr.h:331
+msgid "Continuous Autofeed"
+msgstr "Terus Salur Otomatis"
+
+#. supply_auto_select
+#: po/keystr.h:333
+msgid "Automatically Select"
+msgstr "Pilih Secara Otomatis"
+
+#. supply_change_mes
+#: po/keystr.h:335
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Ukuran kertas yang dipilih tidak dapat digunakan dalam setelan Sumber Kertas \n"
+"sekarang.\n"
+"Setelan Sumber Kertas diubah ke %s."
+
+#. LUM_IDD_PAG_PAGESET_NT4_AUTODUP_IDC_CHK_DUPLEX
+#. LUM_IDS_PT_DN_AUTODUPLEX
+#: po/keystr.h:338 po/keystr.h:1219
+msgid "Automatic Duplex Printing"
+msgstr "Pencetakan Dupleks Otomatis"
+
+#. LUM_AlertMessTitlePaperNotAvailableForAutoDuplex_M
+#: po/keystr.h:340
+msgid ""
+"A page size that is not supported by \n"
+"the duplex printing function is selected."
+msgstr "Ukuran halaman yang tidak didukung oleh fungsi pencetakan dupleks dipilih."
+
+#. LUM_AlertMessPaperNotAvailableForAutoDuplex
+#: po/keystr.h:343
+#, c-format
+msgid "Uncheck %s."
+msgstr "Jangan centang %s."
+
+#. LUM_MODIFY_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/keystr.h:345
+msgid "Paper Source"
+msgstr "Sumber Kertas"
+
+#. LUM_MessPSNotCasette_M
+#: po/keystr.h:347
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "Ukuran halaman yang tidak dapat disalurkan dari kotak kertas telah dipilih."
+
+#. LUM_AlertMessPaperNotFedFromCassetteOrFront
+#: po/keystr.h:349
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "Ubah setelan %s menjadi %s."
+
+#. media_supply_change_mes
+#: po/keystr.h:351
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"Setelan Sumber Kertas saat ini tidak tersedia untuk Tipe Media yang dipilih.\n"
+"Setelan Sumber Kertas telah diubah."
+
+#. bkenh_enh
+#: po/keystr.h:354
+msgid "Enhanced Black"
+msgstr ""
+
+#. size_a5
+#: po/keystr.h:356
+msgid "A5 [5.83\"x8.27\" 148.0x210.0mm]"
+msgstr "A5 [5,83\"x8,27\" 148,0x210,0mm]"
+
+#. size_a4
+#: po/keystr.h:358
+msgid "A4 [8.27\"x11.69\" 210.0x297.0mm]"
+msgstr "A4 [8,27\"x11,69\" 210,0x297,0mm]"
+
+#. size_a3
+#: po/keystr.h:360
+msgid "A3 [11.69\"x16.54\" 297.0x420.0mm]"
+msgstr "A3 [11,69\"x16,54\" 297,0x420,0mm]"
+
+#. size_b5
+#: po/keystr.h:362
+msgid "B5 [7.17\"x10.12\" 182.0x257.0mm]"
+msgstr "B5 [7,17\"x10,12\" 182,0x257,0mm]"
+
+#. size_b4
+#: po/keystr.h:364
+msgid "B4 [10.12\"x14.33\" 257.0x364.0mm]"
+msgstr "B4 [10,12\"x14,33\" 257,0x364,0mm]"
+
+#. size_letter
+#: po/keystr.h:366
+msgid "Letter [8.50\"x11.00\" 215.9x279.4mm]"
+msgstr "Letter [8,50\"x11,00\" 215,9x279,4mm]"
+
+#. size_legal
+#: po/keystr.h:368
+msgid "Legal [8.50\"x14.00\" 215.9x355.6mm]"
+msgstr "Legal [8,50\"x14,00\" 215,9x355,6mm]"
+
+#. size_ledger
+#: po/keystr.h:370
+msgid "11\"x17\" [11.00\"x17.00\" 279.4x431.8mm]"
+msgstr "11\"x17\" [11,00\"x17,00\" 279,4x431,8mm]"
+
+#. size_csize
+#: po/keystr.h:372
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr ""
+
+#. size_post
+#: po/keystr.h:374
+msgid "Hagaki [3.94\"x5.83\" 100.0x148.0mm]"
+msgstr "Hagaki [3,94\"x5,83\" 100,0x148,0mm]"
+
+#. size_env_10
+#: po/keystr.h:376
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.8mm"
+msgstr ""
+
+#. size_env_dl
+#: po/keystr.h:378
+msgid "DL Env. 220.0x110.0mm"
+msgstr ""
+
+#. size_fools
+#: po/keystr.h:380
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr ""
+
+#. size_env_j4
+#: po/keystr.h:382
+msgid "Youkei 4 235.0x105.0mm"
+msgstr ""
+
+#. size_env_j6
+#: po/keystr.h:384
+msgid "Youkei 6 190.0x98.0mm"
+msgstr ""
+
+#. size_letter_bleed
+#: po/keystr.h:386
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr ""
+
+#. size_a4_bleed
+#: po/keystr.h:388
+msgid "A4+ 223.5x355.6mm"
+msgstr ""
+
+#. size_a3_plus
+#: po/keystr.h:390
+msgid "A3+ [12.95\"x19.02\" 329.0x483.0mm]"
+msgstr "A3+ [12.95\"x19.02\" 329,0x483,0mm]"
+
+#. size_photocard
+#: po/keystr.h:392
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr ""
+
+#. size_user
+#: po/keystr.h:394
+msgid "Custom..."
+msgstr "Serasikan..."
+
+#. size_env_10_p
+#: po/keystr.h:396
+msgid "Comm. Env. #10 [4.12\"x9.50\" 104.8x241.3mm]"
+msgstr "Comm. Amplop #10 [4,12\"x9,50\" 104,8x241,3mm]"
+
+#. size_env_dl_p
+#: po/keystr.h:398
+msgid "DL Env. [4.33\"x8.66\" 110.0x220.0mm]"
+msgstr "DL Amplop [4,33\"x8,66\" 110,0x220,0mm]"
+
+#. size_env_j4_p
+#: po/keystr.h:400
+msgid "Youkei 4 [4.13\"x9.25\" 105.0x235.0mm]"
+msgstr "Youkei 4 [4,13\"x9,25\" 105,0x235,0mm]"
+
+#. size_env_j6_p
+#: po/keystr.h:402
+msgid "Youkei 6 [3.86\"x7.48\" 98.0x190.0mm]"
+msgstr "Youkei 6 [3,86\"x7,48\" 98,0x190,0mm]"
+
+#. size_l
+#: po/keystr.h:404
+msgid "L [3.50\"x5.00\" 89.0x127.0mm]"
+msgstr "L [3,50\"x5,00\" 89,0x127,0mm]"
+
+#. size_2l
+#: po/keystr.h:406
+msgid "2L [5.00\"x7.01\" 127.0x178.0mm]"
+msgstr "2L [5,00\"x7,01\" 127,0x178,0mm]"
+
+#. size_4x6
+#: po/keystr.h:408
+msgid "4\"x6\" [4.00\"x6.00\" 101.6x152.4mm]"
+msgstr "4\"x6\" [4,00\"x6,00\" 101,6x152,4mm]"
+
+#. size_panorama
+#: po/keystr.h:410
+msgid "P 89.0x254.0mm"
+msgstr ""
+
+#. size_5x7
+#: po/keystr.h:412
+msgid "5\"x7\" [5.00\"x7.00\" 127.0x177.8mm]"
+msgstr "5\"x7\" [5,00\"x7,00\" 127,0x177,8mm]"
+
+#. size_post_dbl
+#: po/keystr.h:414
+msgid "Hagaki 2 [7.87\"x5.83\" 200.0x148.0mm]"
+msgstr "Hagaki 2 [7,87\"x5,83\" 200,0x148,0mm]"
+
+#. size_businesscard
+#: po/keystr.h:416
+msgid "Card [2.17\"x3.58\" 55.0x91.0mm]"
+msgstr "Card [2,17\"x3,58\" 55.0x91.0mm]"
+
+#. size_creditcard
+#: po/keystr.h:418
+msgid "Credit Card [2.13\"x3.39\" 54.0x86.0mm]"
+msgstr "Credit Card [2,13\"x3,39\" 54,0x86,0mm]"
+
+#. size_letter_fine_art
+#: po/keystr.h:420
+msgid "Fine Art Letter [8.50\"x11.00\" 215.9x279.4mm]"
+msgstr "Fine Art Letter [8,50\"x11,00\" 215,9x279,4mm]"
+
+#. size_a4_fine_art
+#: po/keystr.h:422
+msgid "Fine Art A4 [8.27\"x11.69\" 210.0x297.0mm]"
+msgstr "Fine Art A4 [8,27\"x11,69\" 210,0x297,0mm]"
+
+#. size_4X8
+#: po/keystr.h:424
+msgid "4\"x8\" [4.00\"x8.00\" 101.6x203.2mm]"
+msgstr "4\"x8\" [4,00\"x8,00\" 101,6x203,2mm]"
+
+#. size_4giri
+#: po/keystr.h:426
+msgid "10\"x12\" [10.00\"x12.00\" 254.0x304.8mm]"
+msgstr "10\"x12\" [10,00\"x12,00\" 254,0x304,8mm]"
+
+#. size_6giri
+#: po/keystr.h:428
+msgid "8\"x10\" [8.00\"x10.00\" 203.2x254.0mm]"
+msgstr "8\"x10\" [8,00\"x10,00\" 203,2x254,0mm]"
+
+#. size_wide
+#: po/keystr.h:430
+msgid "Wide [4.00\"x7.11\" 101.6x180.6mm]"
+msgstr "Wide [4.00\"x7.11\" 101,6x180,6mm]"
+
+#. custom_size_mm_format
+#: po/keystr.h:432
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#. custom_size_inches_format
+#: po/keystr.h:434
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "inci (%s-%s)"
+
+#. tmessage_position1
+#: po/keystr.h:436
+msgid "Position 1"
+msgstr ""
+
+#. tmessage_position2
+#: po/keystr.h:438
+msgid "Position 2"
+msgstr ""
+
+#. tmessage_position3
+#: po/keystr.h:440
+msgid "Position 3"
+msgstr ""
+
+#. tmessage_left
+#. tmessage_left2
+#: po/keystr.h:442 po/keystr.h:456
+msgid "Left"
+msgstr "Kiri"
+
+#. tmessage_center
+#: po/keystr.h:444
+msgid "Center"
+msgstr ""
+
+#. tmessage_right
+#. tmessage_right2
+#: po/keystr.h:446 po/keystr.h:458
+msgid "Right"
+msgstr "Kanan"
+
+#. tmessage_lower
+#. tmessage_lower2
+#. plmessage_lower
+#: po/keystr.h:448 po/keystr.h:452 po/keystr.h:464
+msgid "Down"
+msgstr "Turun"
+
+#. tmessage_upper
+#. tmessage_upper2
+#. plmessage_upper
+#: po/keystr.h:450 po/keystr.h:454 po/keystr.h:466
+msgid "Up"
+msgstr "Naik"
+
+#. plmessage_foward
+#: po/keystr.h:460
+msgid "Front"
+msgstr ""
+
+#. plmessage_backword
+#: po/keystr.h:462
+msgid "Back"
+msgstr ""
+
+#. slmess_smooth
+#: po/keystr.h:468
+msgid "Smoothing"
+msgstr ""
+
+#. bin_pattern_hs
+#: po/keystr.h:472
+msgid "Fine(Fast)"
+msgstr ""
+
+#. banner_on
+#: po/keystr.h:474
+msgid "Banner Printing"
+msgstr ""
+
+#. cartridge_color
+#: po/keystr.h:476
+msgid "Color    "
+msgstr "Berwarna    "
+
+#. cartridge_bk
+#: po/keystr.h:478
+msgid "Black    "
+msgstr "Hitam    "
+
+#. cartridge_photo
+#: po/keystr.h:480
+msgid "Photo    "
+msgstr "Foto    "
+
+#. cartridge_bk_color
+#: po/keystr.h:482
+msgid "Black/Color    "
+msgstr "Hitam/Berwarna    "
+
+#. cartridge_bk_photo
+#: po/keystr.h:484
+msgid "Black/Photo    "
+msgstr "Hitam/Foto    "
+
+#. cartridge_photo_color
+#: po/keystr.h:486
+msgid "Photo/Color    "
+msgstr "Foto/Berwarna    "
+
+#. printing_type_fit
+#: po/keystr.h:488
+msgid "Fit-to-Page"
+msgstr "Pas ke Halaman"
+
+#. printing_type_normal
+#: po/keystr.h:490
+msgid "Normal-size"
+msgstr "Ukuran normal"
+
+#. printing_type_scale
+#: po/keystr.h:492
+msgid "Scaled"
+msgstr "Berskala"
+
+#. input_gamma_default
+#: po/keystr.h:494
+msgid "Default"
+msgstr ""
+
+#. input_gamma_10
+#: po/keystr.h:496
+msgid "More bright (Gamma = 1.0)"
+msgstr ""
+
+#. input_gamma_14
+#: po/keystr.h:498
+msgid "Light"
+msgstr "Terang"
+
+#. input_gamma_18
+#: po/keystr.h:500
+msgid "Normal"
+msgstr "Normal"
+
+#. input_gamma_22
+#: po/keystr.h:502
+msgid "Dark"
+msgstr "Gelap"
+
+#. paper_gap_wide
+#: po/keystr.h:506
+msgid "Wide"
+msgstr "Lebar"
+
+#. paper_gap_narrow
+#: po/keystr.h:508
+msgid "Narrow"
+msgstr "Sempit"
+
+#. LUM_IDS_EDGETOEDGE_SELECTED
+#: po/keystr.h:510
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Anda telah memilih Pencetakan Tanpa Tepi.\n"
+"Dokumen yang akan dicetak telah diperbesar, sehingga sedikit melampaui kertas.\n"
+"Kualitas cetakan dapat berkurang, atau lembar kertas dapat ternoda di bagian \n"
+"atas dan bawah tergantung pada tipe media yang digunakan."
+
+#. mediaborder_dialog_message1
+#: po/keystr.h:515
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Pencetakan tanpa tepi tidak dianjurkan ketika %s dipilih sebagai Tipe Media.\n"
+"Pilih tipe media yang Anda ingin gunakan."
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_NOTE_ETOE
+#: po/keystr.h:518
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Dokumen yang akan dicetak telah diperbesar, sehingga sedikit melampaui kertas.\n"
+"Kualitas cetakan dapat berkurang, atau lembar kertas dapat ternoda di bagian \n"
+"atas dan bawah tergantung pada tipe media yang digunakan."
+
+#. LUM_IDS_SMMSG_ENVELOPE_SHORTEN_ASF
+#: po/keystr.h:522
+msgid ""
+"The printer is set to print on an envelope.\n"
+"Lower the paper support and then load an envelope.\n"
+"Then click OK to start printing."
+msgstr ""
+"Pencetak diatur untuk mencetak pada amplop.\n"
+"Turunkan penyangga kertas dan kemudian muatkan amplop.\n"
+"Kemudian klik OK untuk mulai mencetak."
+
+#. message_button_yes
+#: po/keystr.h:530
+msgid "Yes"
+msgstr "Ya"
+
+#. message_button_no
+#: po/keystr.h:532
+msgid "No"
+msgstr "Tidak"
+
+#. message_button_abort
+#: po/keystr.h:534
+msgid "Abort"
+msgstr ""
+
+#. autopower_enable
+#: po/keystr.h:538
+msgid "Enable"
+msgstr "Fungsikan"
+
+#. autopower_disable
+#: po/keystr.h:540
+msgid "Disable"
+msgstr "Disfungsikan"
+
+#. autopower_5min
+#: po/keystr.h:542
+msgid "5 minutes"
+msgstr "5 menit"
+
+#. autopower_10min
+#: po/keystr.h:544
+msgid "10 minutes"
+msgstr "10 menit"
+
+#. autopower_15min
+#: po/keystr.h:546
+msgid "15 minutes"
+msgstr "15 menit"
+
+#. autopower_30min
+#: po/keystr.h:548
+msgid "30 minutes"
+msgstr "30 menit"
+
+#. autopower_60min
+#: po/keystr.h:550
+msgid "60 minutes"
+msgstr "60 menit"
+
+#. utility_message_3
+#: po/keystr.h:552
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Apakah pola tercetak secara normal?\n"
+"\n"
+"Jika tidak ada pola yang tercetak atau jika hasil cetakan kabur, klik Tidak dan \n"
+"mulai lagi dari awal."
+
+#. utility_message_4
+#: po/keystr.h:556
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Pastikan pencetak dinyalakan, kabel disambungkan dengan benar, dan pencetak \n"
+"daring kemudian coba lagi."
+
+#. utility_message_5
+#: po/keystr.h:558
+msgid "Print head alignment is now complete."
+msgstr "Penjajaran kepala cetak sekarang selesai."
+
+#. utility_message_6
+#: po/keystr.h:560
+msgid "Do not start another operation until the current one has finished."
+msgstr "Jangan mulai operasi lain sampai operasi sekarang selesai."
+
+#. utility_message_8
+#: po/keystr.h:562
+msgid "Turn the printer off?"
+msgstr "Matikan pencetak?"
+
+#. utility_message_9
+#: po/keystr.h:564
+msgid "Apply settings to printer?"
+msgstr "Terapkan setelan ke pencetak?"
+
+#. utility_message_12
+#: po/keystr.h:566
+msgid "Start print head deep cleaning?"
+msgstr "Mulai pembersihan tingkat dalam kepala cetak?"
+
+#. regi_bidir
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:568 po/keystr.h:1227
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Penjajaran Dua Arah (-5 sampai +5)"
+
+#. utility_message_23
+#: po/keystr.h:570
+msgid "Execute black print head deep cleaning?"
+msgstr "Laksanakan pembersihan tingkat dalam kepala cetak hitam?"
+
+#. utility_message_24
+#: po/keystr.h:572
+msgid "Execute color print head deep cleaning?"
+msgstr "Laksanakan pembersihan tingkat dalam kepala cetak berwarna?"
+
+#. utility_message_27
+#: po/keystr.h:574
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas.\n"
+"\n"
+"Pertama keluarkan kertas dari penyalur kertas. Mengklik OK akan mengaktifkan \n"
+"penggulung penyaluran kertas 30 kali. Hal ini akan memakan waktu sekitar satu \n"
+"setengah menit. Ketika Anda memuatkan tiga lembar kertas biasa sesuai dengan \n"
+"pesan, kertas akan dikeluarkan dan pembersihan penggulung penyaluran akan \n"
+"selesai.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. utility_message_28
+#: po/keystr.h:582
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Muatkan tiga lembar kertas biasa ke dalam penyalur kertas.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:584
+msgid "Feed roller cleaning is complete."
+msgstr "Pembersihan penggulung penyaluran selesai."
+
+#. util_ink_all_1
+#. LUM_IDS_CLEAN_ITEM_ALL
+#: po/keystr.h:586 po/keystr.h:1203
+msgid "All Colors"
+msgstr "Semua Warna "
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:588
+msgid "All Colors   BK, C, M, Y"
+msgstr "Semua Warna   BK, C, M, Y "
+
+#. util_ink_black_0
+#. LUM_IDS_CLEAN_ITEM_BLACK
+#: po/keystr.h:590 po/keystr.h:1229
+msgid "Black"
+msgstr "Hitam "
+
+#. util_ink_black_1
+#: po/keystr.h:592
+msgid "Black   3eBK"
+msgstr "Hitam   3eBK "
+
+#. util_ink_black_2
+#: po/keystr.h:594
+msgid "Black   PGBK"
+msgstr "Hitam   PGBK "
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:596
+msgid "Black   BK"
+msgstr "Hitam   BK "
+
+#. util_ink_color_1
+#: po/keystr.h:600
+msgid "Color   6C, 6M, 6Y"
+msgstr "Berwarna   6C, 6M, 6Y "
+
+#. util_ink_color_2
+#: po/keystr.h:602
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Berwarna   6C, 6M, 6Y, 6BK "
+
+#. util_ink_color_3
+#: po/keystr.h:604
+msgid "Color   7C, 7M, 7Y"
+msgstr "Berwarna   7C, 7M, 7Y "
+
+#. util_ink_color_4
+#: po/keystr.h:606
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Berwarna   7C, 7M, 7Y, 7BK "
+
+#. util_ink_color_5
+#: po/keystr.h:608
+msgid "Color   C, M, Y, BK"
+msgstr "Berwarna   C, M, Y, BK "
+
+#. util_ink_color_6
+#: po/keystr.h:610
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Berwarna   C, M, Y, PC, PM, BK "
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:612
+msgid "Color   C, M, Y"
+msgstr "Berwarna   C, M, Y "
+
+#. util_ink_gr1_1
+#: po/keystr.h:614
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Grup 1   6BK, 6R, 6PC, 6PM "
+
+#. util_ink_gr1_2
+#: po/keystr.h:616
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Grup 1   7BK, 7R, 7G, 7PC, 7PM "
+
+#. util_ink_gr2_1
+#: po/keystr.h:618
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Grup 2   6C, 6M, 6Y "
+
+#. util_ink_gr2_2
+#: po/keystr.h:620
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Grup 2   7C, 7M, 7Y "
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:622
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Jangan mulai operasi lain sampai pembersihan selesai.\n"
+"\n"
+"Setelah pembersihan selesai, laksanakan pemeriksaan mulut semprot untuk \n"
+"memeriksa apakah mulut semprot kepala cetak telah lancar."
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:626
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Membersihkan mulut semprot kepala cetak yang tersumbat.\n"
+"\n"
+"Pilih grup tinta target untuk pembersihan. Jika Anda tidak yakin atas grup \n"
+"tinta untuk pembersihan, laksanakan pemeriksaan mulut semprot."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:631
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Melancarkan mulut semprot yang tidak dapat dibersihkan dengan pembersihan biasa.\n"
+"\n"
+"Pilih grup tinta target untuk pembersihan tingkat dalam. Jika Anda tidak yakin \n"
+"atas grup tinta untuk pembersihan tingkat dalam, laksanakan pemeriksaan mulut \n"
+"semprot."
+
+#. utility_message_41
+#: po/keystr.h:636
+msgid "Ink Group:"
+msgstr "Grup Tinta:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:638
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Pembersihan tingkat dalam mengonsumsi lebih banyak tinta daripada pembersihan \n"
+"biasa. Laksanakan pembersihan tingkat dalam hanya jika kondisi mulut semprot \n"
+"tidak membaik setelah pembersihan biasa.\n"
+"\n"
+"Setelah pembersihan tingkat dalam selesai, laksanakan pemeriksaan mulut semprot \n"
+"dan periksa apakah mulut semprot kepala cetak telah lancar."
+
+#. utility_message_43
+#: po/keystr.h:644
+msgid "Cleaning consumes ink."
+msgstr "Pembersihan konsumsi tinta."
+
+#. utility_message_44
+#: po/keystr.h:646
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Muatkan selembar kertas ukuran A4 atau letter ke dalam sumber kertas yang \n"
+"dipilih oleh Tukar Penyaluran Kertas dan klik OK.\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:648
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Jika pola yang dicetak menyerupai pola \n"
+"ini, mulut semprot kepala cetak mungkin \n"
+"tersumbat.\n"
+"Klik Pembersihan.\n"
+"\n"
+"Jika pola yang dicetak tidak membaik, \n"
+"bahkan setelah Pembersihan dilaksanakan \n"
+"dua kali, laksanakan pembersihan \n"
+"tingkat dalam."
+
+#. utility_message_50
+#: po/keystr.h:656
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Muatkan selembar kertas ukuran A4 atau letter ke dalam penyalur kertas dan klik \n"
+"OK."
+
+#. utility_message_53
+#: po/keystr.h:658
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kiri dan muatkan selembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam penyalur kertas. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik OK.\n"
+
+#. utility_message_54
+#: po/keystr.h:666
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), atur tuas ketebalan kertas \n"
+"pencetak ke kiri, muatkan selembar kertas ukuran A4 atau letter, kertas biasa \n"
+"ke dalam penyalur kertas, dan klik Cetak Pola Pemeriksaan.\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:671
+msgid "Color Only"
+msgstr "Hanya Berwarna"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:673
+msgid "Black Only"
+msgstr "Hanya Hitam"
+
+#. util_ink_cartridge_3
+#: po/keystr.h:675
+msgid "Both Black and Color"
+msgstr "Hitam dan Berwarna"
+
+#. utility_message_55
+#: po/keystr.h:677
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Mencetak hanya menggunakan kartrij berwarna bukan kartrij hitam."
+
+#. utility_message_56
+#: po/keystr.h:680
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Mencetak hanya menggunakan kartrij hitam bukan kartrij berwarna ketika Kertas \n"
+"Biasa dipilih sebagai Tipe Media pada Tab Utama."
+
+#. utility_message_57
+#: po/keystr.h:684
+msgid "Prints using both black and color cartridges."
+msgstr "Mencetak menggunakan kartrij hitam dan berwarna."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:686
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Pencetak akan mencetak satu lembar pola untuk memulai penjajaran secara \n"
+"otomatis.\n"
+"Jangan mulai operasi lain sampai operasi sekarang selesai."
+
+#. utility_message_60
+#: po/keystr.h:689
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Lembar kedua pola penjajaran kepala cetak akan dicetak.\n"
+"\n"
+"Klik OK untuk mulai mencetak."
+
+#. utility_message_61
+#: po/keystr.h:693
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Lembar ketiga pola penjajaran kepala cetak akan dicetak.\n"
+"\n"
+"Klik OK untuk mulai mencetak."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:697
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kiri dan muatkan selembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam sumber kertas yang dipilih \n"
+"dengan Tukar Penyaluran Kertas. Pencetak akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. utility_message_63
+#: po/keystr.h:707
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Penjajaran kepala cetak selesai.\n"
+"Untuk mengakhiri penjajaran, klik Batal.\n"
+"\n"
+"Jika goresan muncul pada sisi pencetakan, Anda dapat mencegahnya muncul dengan \n"
+"menyejajarkan kepala cetak.\n"
+"Untuk melaksanakan penjajaran ini, muatkan selembar kertas ke dalam penyalur \n"
+"kertas dan klik OK."
+
+#. utility_message_64
+#: po/keystr.h:713
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), atur tuas ketebalan kertas \n"
+"pencetak ke kiri, muatkan selembar kertas ukuran A4 atau letter, kertas biasa \n"
+"ke dalam sumber kertas yang dipilih dengan Tukar Penyaluran Kertas, dan klik \n"
+"Cetak Pola Pemeriksaan."
+
+#. utility_message_66
+#: po/keystr.h:719
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Muatkan selembar kertas ukuran A4 atau letter, kertas biasa ke dalam penyalur \n"
+"kertas dan klik Cetak Pola Pemeriksaan."
+
+#. utility_message_67
+#: po/keystr.h:723
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Penjajaran kepala cetak selesai.\n"
+"Untuk mengakhiri penjajaran, klik Batal.\n"
+"\n"
+"Jika goresan muncul pada sisi pencetakan, Anda dapat mencegahnya muncul dengan \n"
+"menyejajarkan kepala cetak.\n"
+"Untuk melaksanakan penjajaran ini, muatkan selembar kertas ke dalam sumber \n"
+"kertas yang dipilih oleh Tukar Penyaluran Kertas dan klik OK."
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:731
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kanan dan muatkan selembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam penyalur kertas. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:741
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Jika pola yang dicetak menyerupai pola ini, mulut semprot kepala cetak mungkin \n"
+"tersumbat.\n"
+"Klik Pembersihan.\n"
+"\n"
+"Jika pola yang dicetak tidak membaik, bahkan setelah Pembersihan dilaksanakan \n"
+"dua sampai tiga kali, laksanakan pembersihan tingkat dalam."
+
+#. utility_message_71
+#: po/keystr.h:749
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Anda tidak dapat menata ulang pengukur tinta karena pencetak diatur untuk \n"
+"mendisfungsikan tampilan peringatan tinta akan habis.\n"
+"\n"
+"Untuk memfungsikan tampilan peringatan tinta akan habis, klik tombol Setelan \n"
+"Peringatan Tinta Akan Habis di tab Perawatan pada pengandar pencetak.\n"
+"Baca petunjuk pencetak Anda sebelum melaksanakan operasi ini."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:755
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas.\n"
+"\n"
+"Pertama keluarkan kertas dari tatakan belakang.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas 30 kali. Hal ini \n"
+"akan memakan waktu sekitar satu setengah menit.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:762
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas.\n"
+"\n"
+"Pertama tekan Paper Feed Switch pada pencetak untuk memilih sumber kertas \n"
+"target untuk pembersihan, dan kemudian keluarkan kertas dari sumber kertas yang \n"
+"dipilih.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas 30 kali. Hal ini \n"
+"akan memakan waktu sekitar satu setengah menit.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:770
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Pastikan bunyi operasi pencetak telah dihentikan, dan kemudian muatkan tiga \n"
+"lembar kertas biasa ke dalam tatakan belakang.\n"
+"Mengklik OK akan mengeluarkan kertas dan menyelesaikan pembersihan penggulung \n"
+"penyaluran."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:773
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Pastikan bunyi operasi pencetak telah dihentikan, dan kemudian muatkan tiga \n"
+"lembar kertas biasa ke dalam sumber kertas yang dipilih.\n"
+"Mengklik OK akan mengeluarkan kertas dan menyelesaikan pembersihan penggulung \n"
+"penyaluran."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:776
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Keluarkan kertas dari penyalur kertas.\n"
+"2. Lipat kertas ukuran A4 atau letter, kertas biasa menjadi dua, kemudian buka \n"
+"lipatan kertas tersebut.\n"
+"3. Dengan bagian punggung lipatan menghadap ke bawah, muatkan kertas ke dalam \n"
+"penyalur kertas.\n"
+"4. Klik Laksanakan."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:781
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Keluarkan kertas dari tatakan belakang.\n"
+"2. Lipat kertas ukuran A4 atau letter, kertas biasa menjadi dua, kemudian buka \n"
+"lipatan kertas tersebut.\n"
+"3. Dengan bagian punggung lipatan menghadap ke bawah, muatkan kertas ke dalam \n"
+"tatakan belakang.\n"
+"4. Klik Laksanakan."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:786
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load one sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), atur tuas ketebalan kertas \n"
+"pencetak ke kiri, muatkan selembar kertas ukuran A4 atau letter, kertas biasa \n"
+"ke dalam tatakan belakang, dan klik Cetak Pola Pemeriksaan."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:792
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kiri dan muatkan dua lembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam tatakan belakang. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:802
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak otomatis.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), muatkan selembar kertas ukuran A4 atau letter, kertas biasa ke dalam \n"
+"penyalur kertas dan klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk melaksanakan penjajaran kepala cetak manual, klik Batal.\n"
+"Berikutnya, klik Setelan Serasi di tab Perawatan pada pengandar pencetak, \n"
+"centang Sejajarkan kepala cetak secara manual, dan klik OK. Kemudian coba lagi.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:813
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak otomatis.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), muatkan dua lembar kertas ukuran A4 atau letter, Kertas Foto Matte \n"
+"(MP-101) ke dalam tatakan belakang dan klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk melaksanakan penjajaran kepala cetak manual, klik Batal.\n"
+"Berikutnya, klik Setelan Serasi di tab Perawatan pada pengandar pencetak, \n"
+"centang Sejajarkan kepala cetak secara manual, dan klik OK. Kemudian coba lagi.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:825
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK."
+msgstr ""
+"Muatkan satu lembar kertas ukuran A4 atau letter, kertas biasa ke dalam tatakan \n"
+"belakang dan klik OK."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:827
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Pencetak akan mencetak dua lembar pola untuk memulai penjajaran secara otomatis.\n"
+"Jangan mulai operasi lain sampai operasi sekarang selesai."
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:830
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan) dan muatkan empat lembar kertas ukuran A4 atau letter, kertas biasa \n"
+"ke dalam sumber kertas yang dipilih dengan Tukar Penyaluran Kertas. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:840
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Lembar keempat pola penjajaran kepala cetak akan dicetak.\n"
+"\n"
+"Klik OK untuk mulai mencetak."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:844
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Muatkan selembar kertas ukuran A4 atau letter, kertas biasa ke dalam sumber \n"
+"kertas yang dipilih dengan Tukar Penyaluran Kertas dan klik Cetak Pola \n"
+"Pemeriksaan."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:849
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kiri dan muatkan selembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam tatakan belakang. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:859
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan) dan muatkan selembar kertas ukuran A4 atau letter, kertas biasa ke \n"
+"dalam sumber kertas yang dipilih dengan Tukar Penyaluran Kertas. Pencetak akan \n"
+"mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:869
+msgid ""
+"Load one sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Muatkan satu lembar kertas ukuran A4 atau letter ke dalam tatakan belakang dan \n"
+"klik OK."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:871
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Penjajaran kepala cetak selesai.\n"
+"Untuk mengakhiri penjajaran, klik Batal.\n"
+"\n"
+"Jika goresan muncul pada sisi pencetakan, Anda dapat mencegahnya muncul dengan \n"
+"menyejajarkan kepala cetak.\n"
+"Untuk melaksanakan penjajaran ini, muatkan selembar kertas ke dalam tatakan \n"
+"belakang dan klik OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:877
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan) dan muatkan tiga lembar kertas ukuran A4 atau letter, kertas biasa ke \n"
+"dalam sumber kertas yang dipilih dengan Tukar Penyaluran Kertas. Pencetak akan \n"
+"mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:887
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kiri dan muatkan selembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam penyalur kertas. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:897
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), atur tuas ketebalan kertas \n"
+"pencetak ke kanan, muatkan selembar kertas ukuran A4 atau letter, kertas biasa \n"
+"ke dalam tatakan belakang, dan klik Cetak Pola Pemeriksaan."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:902
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Mencetak hanya menggunakan kartrij hitam bukan kartrij berwarna ketika Kertas \n"
+"Biasa, Hagaki, atau Amplop dipilih sebagai Tipe Media pada Tab Utama."
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:905
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load one sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kiri dan muatkan selembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam tatakan belakang. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:913
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kanan dan muatkan dua lembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam tatakan belakang. Pencetak \n"
+"akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:923
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak otomatis.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), atur tuas ketebalan kertas pencetak ke kanan, muatkan selembar \n"
+"kertas ukuran A4 atau letter, Kertas Foto Matte (MP-101) ke dalam tatakan \n"
+"belakang dan klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk melaksanakan penjajaran kepala cetak manual, klik Batal.\n"
+"Berikutnya, klik Setelan Serasi di tab Perawatan pada pengandar pencetak, \n"
+"centang Sejajarkan kepala cetak secara manual, dan klik OK. Kemudian coba lagi.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:935
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Keluarkan kertas dari tatakan belakang, dan kemudian muatkan kertas pertama \n"
+"ukuran A4 atau letter, kertas biasa.\n"
+"2. Lipat separuh kertas kedua ukuran A4 atau letter, kertas biasa, dan kemudian \n"
+"buka lipatan kertas tersebut.\n"
+"3. Dengan bagian punggung lipatan menghadap ke bawah, muatkan kertas kedua di \n"
+"depan kertas pertama.\n"
+"4. Klik Laksanakan."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:940
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Memulai pembersihan pelat bawah untuk mencegah kertas ternoda selama pencetakan.\n"
+"\n"
+"Operasi ini membutuhkan dua lembar kertas ukuran A4 atau letter, kertas biasa. \n"
+"Ikuti petunjuk ini untuk melaksanakan pembersihan pelat bawah."
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:944
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click OK."
+msgstr ""
+"Mengeset sumber kertas untuk kertas biasa ketika Pilih Secara Otomatis dipilih \n"
+"untuk Sumber Kertas.\n"
+"\n"
+"Pilih sumber kertas untuk kertas biasa, dan kemudian klik OK."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:948
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Melancarkan mulut semprot yang tidak dapat dibersihkan dengan pembersihan biasa.\n"
+"\n"
+"Pilih grup tinta target untuk pembersihan tingkat dalam. Jika hanya mulut \n"
+"semprot hitam yang tersumbat, pilih Hitam. Jika mulut semprot berwarna atau \n"
+"mulut semprot hitam dan berwarna yang tersumbat, pilih Semua Warna. Jika Anda \n"
+"tidak yakin mulut semprot mana yang tersumbat, laksanakan pemeriksaan mulut \n"
+"semprot.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:954
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Pembersihan penggulung penyaluran kertas.\n"
+"\n"
+"Pilih target sumber kertas untuk pembersihan, dan kemudian klik OK."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:958
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas untuk tatakan belakang.\n"
+"\n"
+"Pertama keluarkan kertas dari tatakan belakang, dan kemudian buka tatakan \n"
+"keluaran kertas.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas. Hal ini akan \n"
+"memakan waktu sekitar satu setengah menit.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:965
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas untuk kotak kertas.\n"
+"\n"
+"Pertama keluarkan kertas dari kotak kertas, dan kemudian buka tatakan keluaran \n"
+"kertas.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas. Hal ini akan \n"
+"memakan waktu sekitar dua menit.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:972
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas untuk tatakan belakang.\n"
+"\n"
+"Pertama keluarkan kertas dari tatakan belakang.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas. Hal ini akan \n"
+"memakan waktu sekitar satu setengah menit.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:979
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas untuk kotak kertas.\n"
+"\n"
+"Pertama keluarkan kertas dari kotak kertas.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas. Hal ini akan \n"
+"memakan waktu sekitar dua menit.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:986
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Pastikan bunyi operasi pencetak telah dihentikan, dan kemudian muatkan tiga \n"
+"lembar kertas biasa ke dalam kotak kertas.\n"
+"Mengklik OK akan mengeluarkan kertas dan menyelesaikan pembersihan penggulung \n"
+"penyaluran."
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:989
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load one sheet of A4 or "
+"letter size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Pertama pilih sumber kertas yang akan digunakan. Kemudian muatkan satu lembar \n"
+"kertas ukuran A4 atau letter, kertas biasa ke dalam sumber kertas yang dipilih \n"
+"dan klik Cetak Pola Pemeriksaan."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:994
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), muatkan satu lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa ke dalam kotak kertas, dan klik Cetak Pola \n"
+"Pemeriksaan."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:999
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), muatkan satu lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa ke dalam tatakan belakang, dan klik Cetak \n"
+"Pola Pemeriksaan."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:1004
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan) dan muatkan dua lembar kertas ukuran A4 atau letter, kertas biasa ke \n"
+"dalam tatakan belakang. Pencetak akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:1013
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Penjajaran melibatkan pencetakan. Pilih sumber kertas yang akan digunakan, dan \n"
+"kemudian klik Sejajarkan Kepala Cetak."
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:1017
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr "Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:1019
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Siapkan pencetak (sambungkan kabel dan nyalakan) dan muatkan tiga lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa ke dalam tatakan belakang.\n"
+"\n"
+"Mengklik OK akan mencetak pola penjajaran."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:1024
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Siapkan pencetak (sambungkan kabel dan nyalakan) dan muatkan tiga lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa ke dalam kotak kertas.\n"
+"\n"
+"Mengklik OK akan mencetak pola penjajaran."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:1029
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Siapkan pencetak (sambungkan kabel dan nyalakan) dan muatkan satu lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa ke dalam tatakan belakang.\n"
+"\n"
+"Mengklik OK akan mencetak setelan sekarang."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:1034
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Siapkan pencetak (sambungkan kabel dan nyalakan) dan muatkan satu lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa ke dalam kotak kertas.\n"
+"\n"
+"Mengklik OK akan mencetak setelan sekarang."
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:1039
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Pilih sumber kertas yang akan digunakan, dan kemudian klik OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:1041
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Muatkan satu lembar kertas ukuran A4 atau letter, kertas biasa ke dalam kotak \n"
+"kertas dan klik OK."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:1043
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak otomatis.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), muatkan selembar kertas ukuran A4 atau letter, Kertas Foto Matte \n"
+"(MP-101) ke dalam tatakan belakang dan klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk melaksanakan penjajaran kepala cetak manual, klik Batal.\n"
+"Berikutnya, klik Setelan Serasi di tab Perawatan pada pengandar pencetak, \n"
+"centang Sejajarkan kepala cetak secara manual, dan klik OK. Kemudian coba lagi.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:1054
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Mengeset Cegah abrasi kertas. Jika Anda mencetak dengan setelan ini \n"
+"difungsikan, kualitas cetak atau kecepatan cetak mungkin terpengaruhi. Untuk \n"
+"mengubah setelan, jangan centang Cegah abrasi kertas."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:1057
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Melancarkan mulut semprot yang tidak dapat dibersihkan dengan pembersihan biasa.\n"
+"\n"
+"Pembersihan tingkat dalam mengonsumsi lebih banyak tinta daripada pembersihan \n"
+"biasa. Laksanakan pembersihan tingkat dalam hanya jika kondisi mulut semprot \n"
+"tidak membaik setelah pembersihan biasa.\n"
+"\n"
+"Setelah pembersihan tingkat dalam selesai, laksanakan pemeriksaan mulut semprot \n"
+"dan periksa apakah mulut semprot kepala cetak telah lancar."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:1065
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Jangan mulai operasi lain sampai pembersihan tingkat dalam selesai.\n"
+"\n"
+"Setelah pembersihan tingkat dalam selesai, laksanakan pemeriksaan mulut semprot \n"
+"untuk memeriksa apakah mulut semprot kepala cetak telah lancar."
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:1070
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Melaksanakan penjajaran kepala cetak mengoreksi ketidaksejajaran warna dan \n"
+"garis. Rujuk petunjuk pengguna, dan sejajarkan kepala cetak dari panel operasi \n"
+"pencetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:1075 po/keystr.h:1100
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan) dan muatkan tiga lembar kertas ukuran A4 atau letter, kertas biasa ke \n"
+"dalam tatakan belakang. Pencetak akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan.\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:1084
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak otomatis.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), muatkan selembar kertas ukuran A4 atau letter, Kertas Foto Matte \n"
+"(MP-101) ke dalam tatakan belakang dan klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Jika hasil penjajaran kepala cetak otomatis tidak memuaskan, lakukan penjajaran \n"
+"kepala cetak manual untuk menyejajarkan kepala cetak dengan tepat.\n"
+"Untuk melaksanakan penjajaran kepala cetak manual, klik Batal.\n"
+"Berikutnya, klik Setelan Serasi di tab Perawatan pada pengandar pencetak, \n"
+"centang Sejajarkan kepala cetak secara manual, dan klik OK. Kemudian coba lagi.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_3
+#: po/keystr.h:1097
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, Hagaki A, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Mencetak hanya menggunakan kartrij hitam bukan kartrij berwarna hanya ketika \n"
+"Kertas Biasa, Hagaki A, Hagaki, atau Amplop dipilih sebagai Tipe Media pada Tab \n"
+"Utama."
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1139
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Pengaturan Kolom A sampai C (-3 sampai +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/keystr.h:1141
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Pengaturan Kolom A sampai D (-3 sampai +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1143
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Pengaturan Kolom A sampai E (-3 sampai +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/keystr.h:1145
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Pengaturan Kolom A sampai E (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/keystr.h:1147
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Pengaturan Kolom A sampai F (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/keystr.h:1149
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Pengaturan Kolom A sampai G (-5 sampai +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:1151
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Pengaturan Kolom D sampai F (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/keystr.h:1153
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Pengaturan Kolom E sampai G (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/keystr.h:1155
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Pengaturan Kolom F dan G (-3 sampai +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:1157
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Pengaturan Kolom F sampai K (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/keystr.h:1159
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Pengaturan Kolom G sampai J (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/keystr.h:1161
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Pengaturan Kolom G sampai L (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/keystr.h:1163
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Pengaturan Kolom H sampai K (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/keystr.h:1165
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Pengaturan Kolom H sampai L (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/keystr.h:1167
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Pengaturan Kolom H sampai N (-5 sampai +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:1169
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Pengaturan Kolom K dan L (-3 sampai +3)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:1171
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Pengaturan Kolom L dan M (-3 sampai +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/keystr.h:1173
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Pengaturan Kolom L sampai O (-5 sampai +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1175
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Pengaturan Kolom M dan N (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/keystr.h:1177
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Pengaturan Kolom M sampai P (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/keystr.h:1179
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Pengaturan Kolom M sampai Q (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/keystr.h:1181
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Pengaturan Kolom O sampai T (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/keystr.h:1183
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Pengaturan Kolom P sampai T (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/keystr.h:1185
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Pengaturan Kolom Q dan R (-4 sampai +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/keystr.h:1187
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Pengaturan Kolom U dan V (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/keystr.h:1189
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Pengaturan Kolom U dan V (-3 sampai +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/keystr.h:1191
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Pengaturan Kolom W dan X (-3 sampai +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/keystr.h:1193
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Pengaturan Kolom a sampai e (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/keystr.h:1195
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Pengaturan Kolom f sampai j (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/keystr.h:1197
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Pengaturan Kolom f sampai k (-2 sampai +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/keystr.h:1199
+msgid "Align Print Head"
+msgstr "Sejajarkan Kepala Cetak "
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/keystr.h:1201 po/keystr.h:1633
+msgid "Align heads manually"
+msgstr "Sejajarkan kepala cetak secara manual "
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:1211
+msgid "Auto Power Off"
+msgstr "Daya Otomatis Mati"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:1213
+msgid "Auto Power Off:"
+msgstr "Daya Otomatis Mati :"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/keystr.h:1215
+msgid "Auto Power On:"
+msgstr "Daya Otomatis Nyala :"
+
+#. LUM_IDD_AUTOPOWER
+#: po/keystr.h:1217
+msgid "Auto Power Settings"
+msgstr "Setelan Daya Otomatis"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/keystr.h:1231
+msgid "Black Ink Tank"
+msgstr "Kotak Tinta Hitam "
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/keystr.h:1263
+msgid "Color Ink Tank"
+msgstr "Kotak Tinta Berwarna "
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/keystr.h:1269
+msgid "Column A:"
+msgstr "Kolom A :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/keystr.h:1271
+msgid "Column B:"
+msgstr "Kolom B :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/keystr.h:1273
+msgid "Column C:"
+msgstr "Kolom C :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/keystr.h:1275
+msgid "Column D:"
+msgstr "Kolom D :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/keystr.h:1277
+msgid "Column E:"
+msgstr "Kolom E :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/keystr.h:1279
+msgid "Column F:"
+msgstr "Kolom F :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/keystr.h:1281
+msgid "Column G:"
+msgstr "Kolom G :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/keystr.h:1283
+msgid "Column H:"
+msgstr "Kolom H :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/keystr.h:1285
+msgid "Column I:"
+msgstr "Kolom I :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/keystr.h:1287
+msgid "Column J:"
+msgstr "Kolom J :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/keystr.h:1289
+msgid "Column K:"
+msgstr "Kolom K :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/keystr.h:1291
+msgid "Column L:"
+msgstr "Kolom L :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/keystr.h:1293
+msgid "Column M:"
+msgstr "Kolom M :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/keystr.h:1295
+msgid "Column N:"
+msgstr "Kolom N :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/keystr.h:1297
+msgid "Column O:"
+msgstr "Kolom O :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/keystr.h:1299
+msgid "Column P:"
+msgstr "Kolom P :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/keystr.h:1301
+msgid "Column Q:"
+msgstr "Kolom Q :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/keystr.h:1303
+msgid "Column R:"
+msgstr "Kolom R :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/keystr.h:1305
+msgid "Column S:"
+msgstr "Kolom S :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/keystr.h:1307
+msgid "Column T:"
+msgstr "Kolom T :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/keystr.h:1309
+msgid "Column U:"
+msgstr "Kolom U :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/keystr.h:1311
+msgid "Column V:"
+msgstr "Kolom V :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/keystr.h:1313
+msgid "Column W:"
+msgstr "Kolom W :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/keystr.h:1315
+msgid "Column X:"
+msgstr "Kolom X :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/keystr.h:1317
+msgid "Column a:"
+msgstr "Kolom a :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/keystr.h:1319
+msgid "Column b:"
+msgstr "Kolom b :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/keystr.h:1321
+msgid "Column c:"
+msgstr "Kolom c :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/keystr.h:1323
+msgid "Column d:"
+msgstr "Kolom d :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/keystr.h:1325
+msgid "Column e:"
+msgstr "Kolom e :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/keystr.h:1327
+msgid "Column f:"
+msgstr "Kolom f :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/keystr.h:1329
+msgid "Column g:"
+msgstr "Kolom g :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/keystr.h:1331
+msgid "Column h:"
+msgstr "Kolom h :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/keystr.h:1333
+msgid "Column i:"
+msgstr "Kolom i :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/keystr.h:1335
+msgid "Column j:"
+msgstr "Kolom j :"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/keystr.h:1337
+msgid "Column k:"
+msgstr "Kolom k :"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/keystr.h:1359
+msgid "Display low ink warning"
+msgstr "Tampilkan peringatan tinta akan habis "
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:1363
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom G sampai L."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/keystr.h:1367
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom H sampai O."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/keystr.h:1371
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom M sampai R."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/keystr.h:1375
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom P sampai V."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/keystr.h:1379
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan belang horizontal \n"
+"yang terlihat paling sedikit pada daerah pola tersebut ke kolom O sampai V."
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/keystr.h:1383
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola yang paling rata ke kolom M \n"
+"dan N."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/keystr.h:1386
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan belang horizontal \n"
+"yang terlihat paling sedikit pada daerah pola tersebut ke kolom a sampai j."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/keystr.h:1389
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan belang horizontal \n"
+"yang terlihat paling sedikit pada daerah pola tersebut ke kolom a sampai k."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/keystr.h:1392
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom H sampai Q."
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:1395
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Periksa pola yang dicetak, dan isi kolom L dan M dengan nomor pola yang paling \n"
+"mulus dan tidak memiliki belang pada area yang ditunjukkan dengan panah."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/keystr.h:1399
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Periksa pola yang dicetak, dan isi kolom W dan X dengan nomor pola yang paling \n"
+"mulus dan tidak memiliki belang pada area yang ditunjukkan dengan panah."
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/keystr.h:1403
+msgid "Execute"
+msgstr "Laksanakan"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/keystr.h:1405
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Laksanakan penjajaran kepala cetak. Periksa pola yang dicetak, dan masukkan \n"
+"nomor pola dengan goresan yang terlihat paling sedikit pada daerah pola \n"
+"tersebut ke kolom A sampai F."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/keystr.h:1409
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Laksanakan penjajaran kepala cetak. Periksa pola yang dicetak, dan masukkan \n"
+"nomor pola dengan goresan yang terlihat paling sedikit pada daerah pola \n"
+"tersebut ke kolom A sampai G."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/keystr.h:1413
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Laksanakan penjajaran kepala cetak. Periksa pola yang dicetak, dan masukkan \n"
+"nomor pola dengan goresan yang terlihat paling sedikit pada daerah pola \n"
+"tersebut ke kolom A sampai K."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/keystr.h:1417
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Laksanakan penjajaran kepala cetak. Periksa pola yang dicetak, dan masukkan \n"
+"nomor pola dengan goresan yang terlihat paling sedikit pada daerah pola \n"
+"tersebut ke kolom A sampai L."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/keystr.h:1421
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Laksanakan penjajaran kepala cetak. Periksa pola yang dicetak, dan masukkan \n"
+"nomor pola dengan goresan yang terlihat paling sedikit pada daerah pola \n"
+"tersebut ke kolom A sampai N."
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/keystr.h:1425
+msgid "Exit"
+msgstr "Keluar "
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1443
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Penjajaran Horizontal (-3 sampai +7)"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/keystr.h:1449
+msgid "Ink Cartridge:"
+msgstr "Kartrij Tinta:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/keystr.h:1453 po/keystr.h:1635
+msgid "Ink Drying Wait Time:"
+msgstr "Waktu Tunggu Pengeringan Tinta :"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/keystr.h:1459 po/keystr.h:1639
+msgid "Long"
+msgstr "Panjang"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/keystr.h:1501
+msgid "Pattern Check"
+msgstr "Pemeriksaan Pola"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSEPAGE
+#: po/keystr.h:1503
+msgid "Pause Page"
+msgstr "Jedakan Halaman "
+
+#. LUM_IDS_CUSTOM_CPT_PAUSESCAN
+#: po/keystr.h:1505
+msgid "Pause Scan"
+msgstr "Jedakan Pemindaian "
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/keystr.h:1509 po/keystr.h:1631
+msgid "Prevent paper abrasion"
+msgstr "Cegah abrasi kertas "
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/keystr.h:1511
+msgid "Print Alignment Value"
+msgstr "Nilai Penjajaran Pencetakan "
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/keystr.h:1513
+msgid "Print Check Pattern"
+msgstr "Cetak Pola Pemeriksaan "
+
+#. LUM_IDD_CLEAN
+#: po/keystr.h:1517
+msgid "Print Head Cleaning"
+msgstr "Pembersihan Kepala Cetak"
+
+#. LUM_IDD_SILENTMODE
+#: po/keystr.h:1527
+msgid "Quiet Mode"
+msgstr "Moda Diam"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/keystr.h:1529
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Baca petunjuk pencetak Anda untuk keterangan lebih lanjut tentang peringatan \n"
+"tinta akan habis."
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/keystr.h:1537
+msgid "Select the ink cartridge for printing."
+msgstr "Pilih kartrij tinta untuk pencetakan."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/keystr.h:1539
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Pilih kotak tinta yang baru diganti dan klik tombol Laksanakan.\n"
+
+#. LUM_IDD_GENERAL_RAD_2_IDOK
+#: po/keystr.h:1541 po/keystr.h:1651
+msgid "Send"
+msgstr ""
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/keystr.h:1543 po/keystr.h:1637
+msgid "Short"
+msgstr "Pendek"
+
+#. LUM_IDD_PHA_START
+#: po/keystr.h:1551
+msgid "Start Print Head Alignment"
+msgstr "Mulai Penjajaran Kepala Cetak"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/keystr.h:1553
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires one sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Memulai pembersihan pelat bawah untuk mencegah kertas ternoda selama pencetakan.\n"
+"\n"
+"Operasi ini membutuhkan satu lembar kertas ukuran A4 atau letter, kertas biasa. \n"
+"Ikuti petunjuk ini untuk melaksanakan pembersihan pelat bawah."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/keystr.h:1557
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Pengukur yang berhubungan dengan kotak tinta yang diganti akan menunjukkan \n"
+"bahwa kotak tinta penuh. Operasi ini memastikan tampilan peringatan tinta akan \n"
+"habis yang benar."
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/keystr.h:1563
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Mulut semprot kepala cetak tidak \n"
+"tersumbat.\n"
+"Jika pola yang dicetak menyerupai pola \n"
+"ini, Anda dapat segera menggunakan \n"
+"pencetak.\n"
+"Klik Keluar."
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/keystr.h:1568
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Untuk memastikan tampilan peringatan tinta akan habis yang benar, operasi \n"
+"berikut ini dibutuhkan:\n"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/keystr.h:1573
+msgid "Use quiet mode"
+msgstr "Gunakan moda diam "
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/keystr.h:1575
+msgid "Using AC Adapter:"
+msgstr "Menggunakan Adaptor AC :"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/keystr.h:1577
+msgid "Using Battery:"
+msgstr "Menggunakan Baterai :"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/keystr.h:1583
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Ketika Anda mengganti kotak tinta dengan yang baru, selalu klik tombol Tata \n"
+"Ulang Pengukur Tinta di tab Perawatan pada pengandar pencetak dan pilih kotak \n"
+"tinta baru."
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/keystr.h:1587
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Mana di antara pola berikut ini yang paling menyerupai pola yang dicetak?"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/keystr.h:1601
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "Pengaturan Kolom K sampai P (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/keystr.h:1603
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "Pengaturan Kolom F (-3 sampai +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/keystr.h:1605
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "Pengaturan Kolom G (-3 sampai +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/keystr.h:1607
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "Pengaturan Kolom Q (-4 sampai +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/keystr.h:1609
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "Pengaturan Kolom R sampai U (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/keystr.h:1611
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "Pengaturan Kolom V sampai Y (-2 sampai +2)"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/keystr.h:1613
+msgid "Close"
+msgstr "Tutup "
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/keystr.h:1615
+msgid "Column Y:"
+msgstr "Kolom Y :"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/keystr.h:1617
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan belang horizontal \n"
+"yang terlihat paling sedikit pada daerah pola tersebut ke kolom Q sampai Y."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/keystr.h:1621
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom K sampai P."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/keystr.h:1625
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"Laksanakan penjajaran kepala cetak. Periksa pola yang dicetak, dan masukkan \n"
+"nomor pola dengan goresan yang terlihat paling sedikit pada daerah pola \n"
+"tersebut ke kolom A sampai J."
+
+#. LUM_IDS_CLEAN_ITEM_E5
+#: po/keystr.h:1653
+msgid "Color   C, M, Y, BK, GY"
+msgstr "Berwarna   C, M, Y, BK, GY "
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A3_07
+#: po/keystr.h:1655
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half vertically, then unfold the "
+"paper.\n"
+"3. With the ridge of the crease facing down, load the paper in landscape "
+"orientation into the rear tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Keluarkan kertas dari tatakan belakang.\n"
+"2. Lipat kertas ukuran A4 atau letter, kertas biasa menjadi dua secara \n"
+"vertikal, kemudian buka lipatan kertas tersebut.\n"
+"3. Dengan bagian punggung lipatan menghadap ke bawah, muatkan kertas ke dalam \n"
+"tatakan belakang dalam orientasi pemandangan.\n"
+"4. Klik Laksanakan."
+
+#. LUM_IDS_AUTOPOWER_120MINUTES
+#: po/keystr.h:1660
+msgid "120 minutes"
+msgstr "120 menit"
+
+#. LUM_IDS_AUTOPOWER_240MINUTES
+#: po/keystr.h:1662
+msgid "240 minutes"
+msgstr "240 menit"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_11_PAPERSRC
+#: po/keystr.h:1664
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size plain paper, and click Align Print "
+"Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak otomatis.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), muatkan satu lembar kertas biasa ukuran A4 atau letter, dan klik \n"
+"Sejajarkan Kepala Cetak.\n"
+"\n"
+"Jika hasil penjajaran kepala cetak otomatis tidak memuaskan, lakukan penjajaran \n"
+"kepala cetak manual untuk menyejajarkan kepala cetak dengan tepat.\n"
+"Untuk melaksanakan penjajaran kepala cetak manual, klik Batal.\n"
+"Berikutnya, klik Setelan Serasi di tab Perawatan pada pengandar pencetak, \n"
+"centang Sejajarkan kepala cetak secara manual, dan klik OK. Kemudian coba lagi.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTPAPERJAM
+#: po/keystr.h:1675
+msgid "Prevent paper jam"
+msgstr "Cegah kertas macet "
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR7
+#: po/keystr.h:1677
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray, then open the front cover and extend "
+"the paper output tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas.\n"
+"\n"
+"Pertama keluarkan kertas dari tatakan belakang, kemudian buka penutup depan dan \n"
+"perpanjang tatakan keluaran kertas.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas 30 kali. Hal ini \n"
+"akan memakan waktu sekitar satu setengah menit.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_P
+#: po/keystr.h:1684
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for columns H to "
+"P."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom H sampai P."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_55
+#: po/keystr.h:1687
+msgid "Adjustment in Columns M to P (-5 to +5)"
+msgstr "Pengaturan Kolom M sampai P (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_i
+#: po/keystr.h:1689
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for "
+"columns a to i."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan belang horizontal \n"
+"yang terlihat paling sedikit pada daerah pola tersebut ke kolom a sampai i."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_i_22
+#: po/keystr.h:1692
+msgid "Adjustment in Columns f to i (-2 to +2)"
+msgstr "Pengaturan Kolom f sampai i (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PREVENTPAPERGAP_MSG
+#: po/keystr.h:1694
+msgid ""
+"Set Prevent paper jam only when A3 size plain paper jams frequently near the "
+"paper output slot.\n"
+"\n"
+"This setting increases the printing time for A3 size plain paper.\n"
+"Also, the print quality may deteriorate."
+msgstr ""
+"Set Cegah kertas macet hanya ketika kertas biasa berukuran A3 sering macet di \n"
+"dekat slot keluaran kertas.\n"
+"\n"
+"Setelan ini menambah waktu pencetakan untuk kertas biasa berukuran A3.\n"
+"Juga, kualitas cetakan mungkin berkurang."
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_DISABLE
+#: po/keystr.h:1703
+msgid "Do not use quiet mode"
+msgstr "Jangan gunakan moda diam "
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_ENABLE
+#: po/keystr.h:1705
+msgid "Always use quiet mode"
+msgstr "Selalu gunakan moda diam "
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_HOURS
+#: po/keystr.h:1707
+msgid "Use quiet mode during specified hours"
+msgstr "Gunakan moda diam selama jam yang ditentukan "
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_FROM
+#: po/keystr.h:1709
+msgid "Start time:"
+msgstr "Waktu mulai :"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_TO
+#: po/keystr.h:1711
+msgid "End time:"
+msgstr "Waktu selesai :"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTING_WARN
+#: po/keystr.h:1713
+msgid ""
+"When the hours are specified, quiet mode is not applied to operations \n"
+"(copy, direct print, etc.) performed directly from the printer."
+msgstr ""
+"Ketika jam telah ditentukan, moda diam tidak diterapkan pada operasi (salin, \n"
+"cetak langsung, dan lainnya) yang dilaksanakan secara langsung dari pencetak."
+
+#. LUM_IDS_MNTMSG_WRITESETTING_ATPOFF_NW
+#: po/keystr.h:1718
+msgid ""
+"Apply the setting to printer?\n"
+"If the printer is connected to a network, it will not turn off \n"
+"automatically even if Auto Power Off is set."
+msgstr ""
+"Terapkan setelan ke pencetak?\n"
+"Jika pencetak terhubung ke jaringan, ini tidak akan mati secara otomatis \n"
+"meskipun Daya Otomatis Mati diset."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT7
+#: po/keystr.h:1722
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the front tray, then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Pembersihan penggulung penyaluran kertas.\n"
+"\n"
+"Pertama keluarkan kertas dari tatakan depan, kemudian buka tatakan keluaran \n"
+"kertas.\n"
+"Mengklik OK akan mengaktifkan penggulung penyaluran kertas. Hal ini akan \n"
+"memakan waktu sekitar dua menit untuk diselesaikan.\n"
+"\n"
+"Apakah Anda ingin memulai pembersihan penggulung penyaluran?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT7
+#: po/keystr.h:1729
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the front tray.\n"
+"After confirming that the paper output tray is open, clicking OK will eject "
+"paper and complete feed roller cleaning."
+msgstr ""
+"Pastikan bunyi operasi pencetak telah dihentikan, dan kemudian muatkan tiga \n"
+"lembar kertas biasa ke dalam tatakan depan.\n"
+"Setelah memastikan bahwa tatakan keluaran kertas terbuka, mengklik OK akan \n"
+"mengeluarkan kertas dan menyelesaikan pembersihan penggulung penyaluran."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_FRONT
+#: po/keystr.h:1732
+msgid ""
+"1. Remove the paper from the front tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the front "
+"tray, \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Open the paper output tray and click Execute."
+msgstr ""
+"1. Keluarkan kertas dari tatakan depan.\n"
+"2. Lipat kertas ukuran A4 atau letter, kertas biasa menjadi dua, kemudian buka \n"
+"lipatan kertas tersebut.\n"
+"3. Lipat satu sisi kertas ke setengah sisi lainnya, menyejajarkan sisi dengan \n"
+"pusat lipatan, kemudian buka lipatan kertas.\n"
+"4. Dengan bagian punggung lipatan menghadap ke atas, muatkan kertas ke dalam \n"
+"tatakan depan, sehingga sisi setengahnya yang tidak memiliki lipatan \n"
+"membelakangi Anda.\n"
+"5. Buka tatakan keluaran kertas dan klik Laksanakan."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTWFEED
+#: po/keystr.h:1739
+msgid "Prevent paper double-feed"
+msgstr "Cegah penyaluran kertas dua kali "
+
+#. LUM_IDS_MNTMSG_PREVENTWFEED_MSG
+#: po/keystr.h:1741
+msgid ""
+"Set Prevent paper double-feed only when double-feeding of plain paper "
+"occurs.\n"
+"\n"
+"Using this function decreases the print speed but reduces the occurrence of "
+"double-feeding."
+msgstr ""
+"Set Cegah penyaluran kertas dua kali hanya ketika penyaluran dua kali kertas \n"
+"biasa terjadi.\n"
+"\n"
+"Menggunakan fungsi ini menurunkan kecepatan cetak tetapi mengurangi terjadinya \n"
+"penyaluran dua kali."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_PAPERSRC_11
+#: po/keystr.h:1745
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 \n"
+"or letter size plain paper, and click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), muatkan satu lembar kertas \n"
+"biasa ukuran A4 atau letter, dan klik Cetak Pola Pemeriksaan."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_PAPERSRC_11
+#: po/keystr.h:1750
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan) dan muatkan tiga lembar kertas ukuran A4 atau letter, kertas biasa. \n"
+"Pencetak akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_MessTitlePaperLoadGuide
+#: po/keystr.h:1761
+msgid "Check how to load paper."
+msgstr "Periksa cara memuatkan kertas."
+
+#. LUM_MessContentsPaperLoadGuide
+#: po/keystr.h:1763
+msgid ""
+"Fit the paper into the front tray so that the printing side faces down.\n"
+"Insert the paper completely to the end of the front tray.\n"
+"\n"
+"Click [OK] to start printing."
+msgstr ""
+"Paskan kertas ke dalam tatakan depan sehingga sisi yang ingin Anda cetak \n"
+"menghadap ke bawah.\n"
+"Masukkan kertas sepenuhnya sampai ujung tatakan depan.\n"
+"\n"
+"Klik [OK] untuk memulai pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_K_55
+#: po/keystr.h:1768
+msgid "Adjustment in Columns G to K (-5 to +5)"
+msgstr "Pengaturan Kolom G sampai K (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_L_Q
+#: po/keystr.h:1770
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns L to Q."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan goresan yang terlihat \n"
+"paling sedikit pada daerah pola tersebut ke kolom L sampai Q."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_R_Z
+#: po/keystr.h:1774
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for \n"
+"columns R to Z."
+msgstr ""
+"Periksa pola yang dicetak, dan masukkan nomor pola dengan belang horizontal \n"
+"yang terlihat paling sedikit pada daerah pola tersebut ke kolom R sampai Z."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_44
+#: po/keystr.h:1778
+msgid "Adjustment in Column R (-4 to +4)"
+msgstr "Pengaturan Kolom R (-4 sampai +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_S_V_22
+#: po/keystr.h:1780
+msgid "Adjustment in Columns S to V (-2 to +2)"
+msgstr "Pengaturan Kolom S sampai V (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_Z_22
+#: po/keystr.h:1782
+msgid "Adjustment in Columns W to Z (-2 to +2)"
+msgstr "Pengaturan Kolom W sampai Z (-2 sampai +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_Q_55
+#: po/keystr.h:1784
+msgid "Adjustment in Columns L to Q (-5 to +5)"
+msgstr "Pengaturan Kolom L sampai Q (-5 sampai +5)"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Z
+#: po/keystr.h:1786
+msgid "Column Z:"
+msgstr "Kolom Z :"
+
+#. LUM_IDS_MNTMSG_MSI_COLLECTING
+#: po/keystr.h:1788
+msgid ""
+"Collecting printer status about maintenance.\n"
+"Please wait."
+msgstr ""
+"Mengumpulkan status pencetak tentang perawatan.\n"
+"Silakan tunggu."
+
+#. LUM_IDS_MNTMSG_MSI_NOTAVAILABLE
+#: po/keystr.h:1791
+msgid ""
+"This printer status about maintenance cannot be collected.\n"
+"The displayed information may be different from the current settings."
+msgstr ""
+"Status tentang perawatan pencetak ini tidak dapat dikumpulkan.\n"
+"Informasi yang ditampilkan mungkin berbeda dari setelan sekarang."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_FRONTTRAY
+#: po/keystr.h:1794
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the front tray, and click the Print Check Pattern."
+msgstr ""
+"Mencetak pola supaya Anda mengetahui apakah mulut semprot kepala cetak \n"
+"tersumbat.\n"
+"\n"
+"Siapkan pencetak (sambungkan kabel dan nyalakan), muatkan satu lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa ke dalam tatakan depan, dan klik Cetak Pola \n"
+"Pemeriksaan."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_FRONT_11
+#: po/keystr.h:1799
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the front tray and "
+"click OK."
+msgstr ""
+"Muatkan satu lembar kertas ukuran A4 atau letter, kertas biasa ke dalam tatakan \n"
+"depan dan klik OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_PAPERSRC_11
+#: po/keystr.h:1801
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, plain paper.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Siapkan pencetak (sambungkan kabel dan nyalakan) dan muatkan satu lembar kertas \n"
+"ukuran A4 atau letter, kertas biasa.\n"
+"\n"
+"Mengklik OK akan mencetak setelan sekarang."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_11
+#: po/keystr.h:1805
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK. "
+msgstr ""
+"Muatkan satu lembar kertas ukuran A4 atau letter, kertas biasa ke dalam kotak \n"
+"kertas dan klik OK. "
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_REAR_11
+#: po/keystr.h:1807
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK. "
+msgstr ""
+"Muatkan satu lembar kertas ukuran A4 atau letter, kertas biasa ke dalam tatakan \n"
+"belakang dan klik OK. "
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_FRONTTRAY
+#: po/keystr.h:1809
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the front tray. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan) dan muatkan tiga lembar kertas ukuran A4 atau letter, kertas biasa ke \n"
+"dalam tatakan depan. Pencetak akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE
+#: po/keystr.h:1819
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size, plain paper into the cassette. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Memulai penjajaran kepala cetak.\n"
+"\n"
+"Karena penjajaran melibatkan pencetakan, siapkan pencetak (sambungkan kabel dan \n"
+"nyalakan), dan muatkan tiga lembar kertas ukuran A4 atau letter, kertas biasa \n"
+"ke dalam kotak kertas. Pencetak akan mencetak pola penjajaran.\n"
+"\n"
+"Untuk menyejajarkan posisi kepala cetak, klik Sejajarkan Kepala Cetak.\n"
+"\n"
+"Untuk mencetak dan memeriksa setelan sekarang, klik Nilai Penjajaran Pencetakan."
+
+#. LUM_SPACE_01
+#: po/keystr.h:1829
+msgid " "
+msgstr " "
+

@@ -1,0 +1,4818 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: printui 3.70\n"
+"POT-Creation-Date: 2011-12-19 11:20+0900\n"
+"PO-Revision-Date: 2011-12-19 11:22+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_LOCALE
+#: src/loadres.c:103
+msgid "Locale"
+msgstr "da_DK"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BLACK_LABEL
+#: po/gladestr.h:2 po/keystr.h:1109
+msgid "  Black:"
+msgstr "  Sort:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:4
+msgid "  Cyan:"
+msgstr "Cyan:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:6
+msgid "  Magenta:"
+msgstr "Magenta:"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_QUALITY
+#: po/gladestr.h:8 po/keystr.h:1115
+msgid "  Set...  "
+msgstr "  Indstil...  "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:10
+msgid "  Yellow:"
+msgstr "Gul:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING_RANGE
+#: po/gladestr.h:13 po/keystr.h:1119
+#, no-c-format
+msgid "% (20-400)"
+msgstr "% (20-400)"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES_RANGE
+#: po/gladestr.h:15 po/keystr.h:1121
+msgid "(1-999)"
+msgstr "(1-999)"
+
+#: po/gladestr.h:16
+msgid "*"
+msgstr ""
+
+#: po/gladestr.h:17
+msgid "0"
+msgstr ""
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/gladestr.h:19 po/keystr.h:1127 po/keystr.h:1641
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/gladestr.h:21 po/keystr.h:1129 po/keystr.h:1643
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/gladestr.h:23 po/keystr.h:1131 po/keystr.h:1645
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/gladestr.h:25 po/keystr.h:1133 po/keystr.h:1647
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/gladestr.h:27 po/keystr.h:1135 po/keystr.h:1649
+msgid "5"
+msgstr "5"
+
+#. LUM_COLON
+#: po/gladestr.h:28 po/keystr.h:1716
+msgid ":"
+msgstr ":"
+
+#. LUM_IDR_PV_MAIN_IDM_PV_VERSION
+#: po/gladestr.h:30 po/keystr.h:1137
+msgid "About"
+msgstr "Om"
+
+#. LUM_IDD_PAG_PAGESET_XP_ETOE_IDC_STT_ETOEOVERPRINT
+#: po/gladestr.h:32 po/keystr.h:1205
+msgid "Amount of Extension:"
+msgstr "Udvidelsesgrad:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#. paper_gap_auto
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_AUTO
+#: po/gladestr.h:34 po/keystr.h:504 po/keystr.h:1207
+msgid "Auto"
+msgstr "Automatisk"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/gladestr.h:36 po/keystr.h:1209
+msgid "Auto Power"
+msgstr "Automatisk strømforsyning"
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_TITLE_ETOE
+#: po/gladestr.h:38 po/keystr.h:1221
+msgid "Available Media Types:"
+msgstr "Tilgængelige medietyper:"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_CARTRIDGE
+#: po/gladestr.h:40 po/keystr.h:1223
+msgid "BJ Cartridge:"
+msgstr "BJ-patron:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDCANCEL
+#: po/gladestr.h:42 po/keystr.h:1225
+msgid "Back to Setup"
+msgstr "Tilbage til Opsætning"
+
+#. LUM_IDS_EDGETOEDGE
+#: po/gladestr.h:44 po/keystr.h:1233
+msgid "Borderless"
+msgstr "Uden kant"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/gladestr.h:46 po/keystr.h:1235
+msgid "Bottom Plate Cleaning"
+msgstr "Rensning af bundplade"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_BRIGHTNESS
+#: po/gladestr.h:48 po/keystr.h:1237
+msgid "Brightness:"
+msgstr "Lysstyrke:"
+
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#. message_button_cancel
+#. LUM_IDD_MESSAGEBOX_IDCANCEL
+#: po/gladestr.h:50 po/keystr.h:528 po/keystr.h:1239
+msgid "Cancel"
+msgstr "Annuller"
+
+#. LUM_LID_CENTERRING
+#: po/gladestr.h:52 po/keystr.h:1245
+msgid "Centering"
+msgstr "Centrering"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDOK
+#: po/gladestr.h:54 po/keystr.h:1247
+msgid "Change"
+msgstr "Skift"
+
+#. LUM_LID_CHANGE_COMBINATION
+#: po/gladestr.h:56 po/keystr.h:1249
+msgid "Change Combination"
+msgstr "Skift kombination"
+
+#. LUM_LID_CHANGE_MEDIA
+#: po/gladestr.h:58 po/keystr.h:1251
+msgid "Change Media Type"
+msgstr "Skift medietype"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/gladestr.h:60 po/keystr.h:1253
+msgid "Cleaning"
+msgstr "Rensning"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_RESOLV2S
+#: po/gladestr.h:62 po/keystr.h:1255
+msgid ""
+"Click Change to use this, or Back to Setup to select a different combination."
+msgstr ""
+"Klik på Skift for at bruge denne kombination eller på Tilbage til Opsætning for \n"
+"at vælge en anden kombination."
+
+#. LUM_IDS_COLLATE
+#: po/gladestr.h:64 po/keystr.h:1257
+msgid "Collate"
+msgstr "Sætvis"
+
+#. LUM_LID_COLOR_BALANCE
+#: po/gladestr.h:66 po/keystr.h:1261
+msgid "Color Balance"
+msgstr "Farvebalance"
+
+#. LUM_IDD_MANUALCOLOR_MATCHING_IDC_STT_COLORMODE
+#: po/gladestr.h:68 po/keystr.h:1265
+msgid "Color Mode:"
+msgstr "Farvestatus:"
+
+#. LUM_IDS_COLORADJUSTMENT
+#: po/gladestr.h:70 po/keystr.h:1267
+msgid "Color/Intensity"
+msgstr "Farve/Intensitet"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LABEL
+#: po/gladestr.h:72 po/keystr.h:1339
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_LO
+#: po/gladestr.h:74
+msgid "Cool"
+msgstr "Kølig"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_COPIES
+#: po/gladestr.h:76 po/keystr.h:1341
+msgid "Copies:"
+msgstr "Kopier:"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_QUALITY_CUSTOM
+#: po/gladestr.h:78 po/keystr.h:1343
+msgid "Custom"
+msgstr "Brugerdefineret"
+
+#. LUM_IDD_PAPER_CUSTOM
+#: po/gladestr.h:80 po/keystr.h:1345
+msgid "Custom Paper Size"
+msgstr "Brugerdefineret papirstørrelse"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/gladestr.h:82 po/keystr.h:1347 po/keystr.h:1629
+msgid "Custom Settings"
+msgstr "Tilpasset"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_CYAN_LABEL
+#: po/gladestr.h:84 po/keystr.h:1111 po/keystr.h:1349
+msgid "Cyan:"
+msgstr "Cyan:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_HI
+#: po/gladestr.h:86 po/keystr.h:1351
+msgid "Dark "
+msgstr "Mørk "
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/gladestr.h:88 po/keystr.h:1353
+msgid "Deep Cleaning"
+msgstr "Grundig rensning"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/gladestr.h:90 po/keystr.h:1355
+msgid "Defaults"
+msgstr "Standarder"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DIFFUSION
+#: po/gladestr.h:92 po/keystr.h:1357
+msgid "Diffusion"
+msgstr "Diffusion"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE_DITHERING
+#: po/gladestr.h:94 po/keystr.h:1361
+msgid "Dither"
+msgstr "Simulering"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_AUTODUP_IDC_CHK_DUPLEX
+#: po/gladestr.h:96 po/keystr.h:1759
+msgid "Duplex Printing"
+msgstr "Dupleksudskrivning"
+
+#. LUM_IDS_QUALITY_FAST
+#: po/gladestr.h:98 po/keystr.h:1427
+msgid "Fast"
+msgstr "Hurtig"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FAST
+#: po/gladestr.h:100 po/keystr.h:1429
+msgid "Fast "
+msgstr "Hurtig "
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#. bin_pattern
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_FINE
+#: po/gladestr.h:102 po/keystr.h:470 po/keystr.h:1431
+msgid "Fine"
+msgstr "Fin"
+
+#. LUM_IDD_PAG_MAIN_IDC_CHK_GRAYSCALE
+#: po/gladestr.h:104 po/keystr.h:1433
+msgid "Grayscale Printing"
+msgstr "Gråtoneudskrift"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_HALFTONE
+#: po/gladestr.h:106 po/keystr.h:1435
+msgid "Halftoning"
+msgstr "Halvtoning"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_HEIGHT_LABEL
+#: po/gladestr.h:108 po/keystr.h:1437
+msgid "Height:     "
+msgstr "Højde:     "
+
+#. LUM_IDS_QUALITY_BEST
+#: po/gladestr.h:110 po/keystr.h:1439
+msgid "High"
+msgstr "Høj"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_HI
+#: po/gladestr.h:112 po/keystr.h:1441
+msgid "High "
+msgstr "Høj "
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#. message_button_ignore
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDIGNORE
+#: po/gladestr.h:114 po/keystr.h:536 po/keystr.h:1445
+msgid "Ignore"
+msgstr "Ignorer"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/gladestr.h:116 po/keystr.h:1447
+msgid "Ink Cartridge Settings"
+msgstr "Indstillinger for blækpatron"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/gladestr.h:118 po/keystr.h:1451
+msgid "Ink Counter Reset"
+msgstr "Nulstil blækmåler"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LABEL
+#: po/gladestr.h:120 po/keystr.h:1455
+msgid "Intensity:"
+msgstr "Intensitet:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_INTENSITY_LO
+#: po/gladestr.h:122 po/keystr.h:1457
+msgid "Light "
+msgstr "Lys "
+
+#. LUM_IDS_STAPLE_LONGSIDE
+#: po/gladestr.h:124 po/keystr.h:1461
+msgid "Long-side stapling"
+msgstr "Hæftning på lang led"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_COLORCONTRAST_LO
+#: po/gladestr.h:126 po/keystr.h:1463
+msgid "Low"
+msgstr "Lav"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/gladestr.h:128 po/keystr.h:1465
+msgid "Low Ink Warning Setting"
+msgstr "Indstillinger for advarsel om lav blækstand"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_MAGENTA_LABEL
+#: po/gladestr.h:130 po/keystr.h:1113 po/keystr.h:1467
+msgid "Magenta:"
+msgstr "Magenta:"
+
+#. LUM_IDD_PAG_MAIN
+#: po/gladestr.h:132 po/keystr.h:1469
+msgid "Main"
+msgstr "Indstillinger"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/gladestr.h:134 po/keystr.h:1471
+msgid "Maintenance"
+msgstr "Vedligeholdelse"
+
+#. LUM_IDD_PAG_MAIN_IDC_RAD_COLORADJ_MANUAL
+#: po/gladestr.h:136 po/keystr.h:1473
+msgid "Manual"
+msgstr "Manuel"
+
+#. LUM_IDS_MANUALCOLOR_WINDOWTITLE
+#: po/gladestr.h:138 po/keystr.h:1475
+msgid "Manual Color Adjustment"
+msgstr "Manuel farvejustering"
+
+#. LUM_LID_MAX
+#: po/gladestr.h:140 po/keystr.h:1477
+msgid "Max"
+msgstr "Maks."
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_MEDIATYPE
+#: po/gladestr.h:142 po/keystr.h:1479
+msgid "Media Type:"
+msgstr "Medietype:"
+
+#. LUM_LID_MIN
+#: po/gladestr.h:144 po/keystr.h:1481
+msgid "Min"
+msgstr "Min."
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/gladestr.h:146 po/keystr.h:1483
+msgid "Nozzle Check"
+msgstr "Dysetest"
+
+#. LUM_IDD_MESSAGEBOX_IDOK
+#. message_button_ok
+#. LUM_IDD_MESSAGEBOX_IDOK
+#: po/gladestr.h:148 po/keystr.h:526 po/keystr.h:1485
+msgid "OK"
+msgstr "OK"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PRINTTYPE
+#: po/gladestr.h:150 po/keystr.h:1487
+msgid "Page Layout:"
+msgstr "Sidelayout:"
+
+#. LUM_IDD_PAG_PAGESET_XP
+#: po/gladestr.h:152 po/keystr.h:1489
+msgid "Page Setup"
+msgstr "Sideopsætning"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_PAGESIZE
+#: po/gladestr.h:154 po/keystr.h:1491
+msgid "Page Size:"
+msgstr "Sidestørrelse:"
+
+#. LUM_LID_PAPER_GAP
+#: po/gladestr.h:156 po/keystr.h:1493
+msgid "Paper Gap:"
+msgstr "Papirafstand:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_PAPERSIZE
+#: po/gladestr.h:158 po/keystr.h:1495
+msgid "Paper Size"
+msgstr "Papirstørrelse"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/gladestr.h:160 po/keystr.h:1497
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Indstillingen for papirkilden for almindeligt papir"
+
+#. LUM_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/gladestr.h:162 po/keystr.h:1499
+msgid "Paper Source:"
+msgstr "Papirkilde:"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/gladestr.h:164 po/keystr.h:1507
+msgid "Power Off"
+msgstr "Strømforsyning afbrudt"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/gladestr.h:166 po/keystr.h:1515
+msgid "Print Head Alignment"
+msgstr "Printhovedjustering"
+
+#. LUM_IDD_PAG_MAIN_IDC_GRP_QUALITY
+#: po/gladestr.h:168 po/keystr.h:1519
+msgid "Print Quality"
+msgstr "Udskriftskvalitet"
+
+#. LUM_LID_PRINT_TYPE
+#: po/gladestr.h:170 po/keystr.h:1521
+msgid "Print Type:"
+msgstr "Udskriftstype:"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_CHK_REVERSE
+#: po/gladestr.h:172 po/keystr.h:1523
+msgid "Print from Last Page"
+msgstr "Udskriv fra sidste side"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_LABEL
+#: po/gladestr.h:174 po/keystr.h:1525
+msgid "Quality"
+msgstr "Kvalitet"
+
+#. LUM_IDD_QUIETSETTINGS
+#: po/gladestr.h:176 po/keystr.h:1701
+msgid "Quiet Settings"
+msgstr "Indstillinger for ingen brugerinput"
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/gladestr.h:178 po/keystr.h:1533
+msgid "Roller Cleaning"
+msgstr "Rensning af printerruller"
+
+#. LUM_IDD_PAG_PAGESET_XP_IDC_STT_SCALING
+#: po/gladestr.h:180 po/keystr.h:1535
+msgid "Scaling:"
+msgstr "Skalering:"
+
+#. LUM_IDS_STAPLE_SHORTSIDE
+#: po/gladestr.h:182 po/keystr.h:1545
+msgid "Short-side stapling"
+msgstr "Hæftning på kort led"
+
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#. color_correct_photo2
+#. LUM_IDS_OUTPUTSTYLE_STANDARD
+#: po/gladestr.h:184 po/keystr.h:204 po/keystr.h:1547
+msgid "Standard"
+msgstr "Standard"
+
+#. LUM_IDD_PAG_PAGESET_XP_MANUDUP_IDC_STT_EDGE
+#: po/gladestr.h:186 po/keystr.h:1549
+msgid "Staple Side:"
+msgstr "Hæft side:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATIONONE_IDC_STT_SA_TITLE2
+#: po/gladestr.h:188 po/keystr.h:1561
+msgid "The following is recommended:"
+msgstr "Følgende anbefales:"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_LABEL
+#: po/gladestr.h:190
+msgid "Tone:"
+msgstr "Tone:"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_UNITS
+#: po/gladestr.h:192 po/keystr.h:1571
+msgid "Units:"
+msgstr "Enheder:"
+
+#. LUM_IDD_PAG_MAINTENANCE_IDC_BTN_STATUSMONITOR
+#: po/gladestr.h:194 po/keystr.h:1579
+msgid "View Printer Status..."
+msgstr "Vis printerstatus..."
+
+#. LUM_IDD_PAG_EFFECT_VIVID_IDC_CHK_VIVID
+#: po/gladestr.h:196 po/keystr.h:1581
+msgid "Vivid Photo"
+msgstr "Vivid Photo"
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_TONE_HI
+#: po/gladestr.h:198
+msgid "Warm"
+msgstr "Varm"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_STT_WIDTH_LABEL
+#: po/gladestr.h:200 po/keystr.h:1589
+msgid "Width:    "
+msgstr "Bredde:    "
+
+#. LUM_IDD_MANUALCOLOR_COLOR_IDC_STT_YELLOW_LABEL
+#: po/gladestr.h:202 po/keystr.h:1117 po/keystr.h:1591
+msgid "Yellow:"
+msgstr "Gul:"
+
+#. LUM_IDD_SA_INVALIDCOMBINATION_IDC_STT_SA_TITLE
+#: po/gladestr.h:204 po/keystr.h:1593
+msgid "You cannot print with the following combination:"
+msgstr "Du kan ikke udskrive med følgende kombination:"
+
+#. LUM_IDD_SA_RECOMMENDCOMBINATIONONE_IDC_STT_SA_TITLE
+#: po/gladestr.h:206 po/keystr.h:1595
+msgid "You have selected the following combination:"
+msgstr "Du har valgt følgende kombination:"
+
+#: po/gladestr.h:207
+msgid "dialog1"
+msgstr ""
+
+#: po/gladestr.h:208
+msgid "dialog3"
+msgstr ""
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_INCH
+#: po/gladestr.h:210 po/keystr.h:1597
+msgid "inch"
+msgstr "tomme"
+
+#. LUM_IDD_PAPER_CUSTOM_IDC_RAD_MM
+#: po/gladestr.h:212 po/keystr.h:1599
+msgid "mm"
+msgstr "mm"
+
+#. LUM_VERSION_PRODUCT_NAME
+#: po/keystr.h:2
+msgid "Canon Inkjet Printer Driver"
+msgstr "Canon Inkjet-printerdriver"
+
+#. LUM_VERSION_VER_STR
+#: po/keystr.h:4
+#, c-format
+msgid "Version %s"
+msgstr "Version %s"
+
+#. LUM_VERSION_COPYRIGHT1_STR
+#: po/keystr.h:6
+#, c-format
+msgid "Copyright CANON INC. %s-%s"
+msgstr "Copyright CANON INC. %s-%s"
+
+#. LUM_VERSION_COPYRIGHT2_STR
+#: po/keystr.h:8
+msgid "All Rights Reserved."
+msgstr "All Rights Reserved."
+
+#. LUM_LID_CAPTION
+#: po/keystr.h:10
+msgid "Canon XXXXXX"
+msgstr ""
+
+#. model_BJF850
+#.
+#: po/keystr.h:12 po/keystr.h:1123 po/keystr.h:1125 po/keystr.h:1241
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:14
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:16
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:18
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:20
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:22
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:24
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:26
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:28
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:30
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:32
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:34
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:36
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:38
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:40
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:42
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:44
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:46
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:48
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:50
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:52
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:54
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:56
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:58
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:60
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:62
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:64
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:66
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:68
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:70
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:72
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:74
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:76
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:78
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:80
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:82
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:84
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:86
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:88
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:90
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:92
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:94
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:96
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:98
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:100
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:102
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:104
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:106
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:108
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:110
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:112
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:114
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:116
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:118
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:120
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:122
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:124
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:126
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:128
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:130
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:132
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:134
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:136
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:138
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:140
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:142
+msgid "MX870 series"
+msgstr ""
+
+#. model_MP495
+#: po/keystr.h:144
+msgid "MP495 series"
+msgstr ""
+
+#. model_MP280
+#: po/keystr.h:146
+msgid "MP280 series"
+msgstr ""
+
+#. model_MG5100
+#: po/keystr.h:148
+msgid "MG5100 series"
+msgstr ""
+
+#. model_MG5200
+#: po/keystr.h:150
+msgid "MG5200 series"
+msgstr ""
+
+#. model_IP4800
+#: po/keystr.h:152
+msgid "iP4800 series"
+msgstr ""
+
+#. model_MG6100
+#: po/keystr.h:154
+msgid "MG6100 series"
+msgstr ""
+
+#. model_MG8100
+#: po/keystr.h:156
+msgid "MG8100 series"
+msgstr ""
+
+#. model_MX360
+#: po/keystr.h:158
+msgid "MX360 series"
+msgstr ""
+
+#. model_MX410
+#: po/keystr.h:160
+msgid "MX410 series"
+msgstr ""
+
+#. model_MX420
+#: po/keystr.h:162
+msgid "MX420 series"
+msgstr ""
+
+#. model_MX880
+#: po/keystr.h:164
+msgid "MX880 series"
+msgstr ""
+
+#. model_IX6500
+#: po/keystr.h:166
+msgid "iX6500 series"
+msgstr ""
+
+#. model_MG2100
+#: po/keystr.h:168
+msgid "MG2100 series"
+msgstr ""
+
+#. model_MG3100
+#: po/keystr.h:170
+msgid "MG3100 series"
+msgstr ""
+
+#. model_MG4100
+#: po/keystr.h:172
+msgid "MG4100 series"
+msgstr ""
+
+#. model_MG5300
+#: po/keystr.h:174
+msgid "MG5300 series"
+msgstr ""
+
+#. model_MG6200
+#: po/keystr.h:176
+msgid "MG6200 series"
+msgstr ""
+
+#. model_MG8200
+#: po/keystr.h:178
+msgid "MG8200 series"
+msgstr ""
+
+#. model_IP4900
+#: po/keystr.h:180
+msgid "iP4900 series"
+msgstr ""
+
+#. model_E500
+#: po/keystr.h:182
+msgid "E500 series"
+msgstr ""
+
+#. model_MX710
+#: po/keystr.h:184
+msgid "MX710 series"
+msgstr ""
+
+#. model_MX890
+#: po/keystr.h:186
+msgid "MX890 series"
+msgstr ""
+
+#. model_MX370
+#: po/keystr.h:188
+msgid "MX370 series"
+msgstr ""
+
+#. model_MX430
+#: po/keystr.h:190
+msgid "MX430 series"
+msgstr ""
+
+#. model_MX510
+#: po/keystr.h:192
+msgid "MX510 series"
+msgstr ""
+
+#. model_E600
+#: po/keystr.h:194
+msgid "E600 series"
+msgstr ""
+
+#. print_color_message
+#. util_ink_color_0
+#. LUM_IDS_CLEAN_ITEM_COLOR
+#: po/keystr.h:196 po/keystr.h:598 po/keystr.h:1259
+msgid "Color"
+msgstr ""
+
+#. print_mono_message
+#: po/keystr.h:198
+msgid "Grayscale"
+msgstr "Gråtone"
+
+#. color_correct_photo
+#: po/keystr.h:200
+msgid "Photo"
+msgstr "Foto"
+
+#. color_correct_graphics
+#: po/keystr.h:202
+msgid "Graphic"
+msgstr "Grafik"
+
+#. color_correct_natural
+#: po/keystr.h:206
+msgid "Linear Tone"
+msgstr "Lineær tone"
+
+#. mediasize_recommend_message1_1
+#: po/keystr.h:208
+#, c-format
+msgid "Changing %s to %s is recommended."
+msgstr "Det anbefales at skifte %s til %s."
+
+#. mediasize_recommend_message1_2
+#: po/keystr.h:210
+msgid ""
+"Click Change to use the new combination, Ignore to use the current \n"
+"combination, or Back to Setup to select a different combination."
+msgstr ""
+"Klik på Skift for at bruge den nye kombination, på Ignorer for at bruge den \n"
+"nuværende kombination eller på Tilbage til Opsætning for at vælge en anden \n"
+"kombination."
+
+#. mediasize_recommend_message2_1
+#: po/keystr.h:213
+#, c-format
+msgid "Changing %s setting is recommended."
+msgstr "Det anbefales, at indstillingen for %s ændres."
+
+#. mediasize_recommend_message2_2
+#: po/keystr.h:215
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination."
+msgstr ""
+"Brug vælgeren nedenfor til at vælge en passende indstilling, og klik på Skift \n"
+"for at bruge den nye kombination."
+
+#. mediasize_recommend_message2_3
+#: po/keystr.h:218
+msgid ""
+"Click Ignore to use the current combination or Back to Setup to select a \n"
+"different combination."
+msgstr ""
+"Klik på Ignorer for at bruge den aktuelle kombination eller på Tilbage til \n"
+"Opsætning for at vælge en anden kombination."
+
+#. mediasize_illegal_select_message2_1
+#: po/keystr.h:221
+#, c-format
+msgid "Changing %s setting is recommended.  "
+msgstr "Det anbefales, at indstillingen for %s ændres.  "
+
+#. mediasize_illegal_select_message2_2
+#: po/keystr.h:223
+msgid ""
+"Use the selector below to choose a suitable setting and click Change to "
+"use \n"
+"the new combination. Click Back to Setup to select a different combination."
+msgstr ""
+"Brug vælgeren nedenfor til at vælge en passende indstilling, og klik på Skift \n"
+"for at bruge den nye kombination. Klik på Tilbage til Opsætning for at vælge en \n"
+"anden kombination."
+
+#. lever_position_label
+#: po/keystr.h:226
+msgid "Paper Thickness Lever Position:"
+msgstr "Placering af greb til papirtykkelse:"
+
+#. lever_position_label_2007
+#: po/keystr.h:228
+msgid "Paper Thickness Lever Position: "
+msgstr "Placering af greb til papirtykkelse: "
+
+#. move_lever_position_alert
+#: po/keystr.h:230
+#, c-format
+msgid "Move the paper thickness lever %s."
+msgstr "Flyt grebet til justering af papirtykkelse %s."
+
+#. move_lever_position_alert_2007
+#: po/keystr.h:232
+#, c-format
+msgid "Move the paper thickness lever %s. "
+msgstr "Flyt grebet til justering af papirtykkelse %s. "
+
+#. mediasize_change_media
+#: po/keystr.h:234
+msgid "Media Type"
+msgstr "Medietype"
+
+#. mediasize_change_size
+#: po/keystr.h:236
+msgid "Page Size"
+msgstr "Sidestørrelse"
+
+#. mediatype_dialog_message
+#: po/keystr.h:238
+#, c-format
+msgid ""
+"Media Type: %s cannot be used with the selected BJ Cartridge.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Medietype: %s kan ikke bruges sammen med den valgte BJ-patron.\n"
+"Vælg den type medie, du ønsker at bruge."
+
+#. media_plain
+#: po/keystr.h:241
+msgid "Plain Paper"
+msgstr "Almindeligt papir"
+
+#. media_ohp
+#: po/keystr.h:243
+msgid "Transparencies"
+msgstr "Transparenter"
+
+#. media_bpf
+#: po/keystr.h:245
+msgid "Back Print Film"
+msgstr "Back Print-film"
+
+#. media_bjcloth
+#: po/keystr.h:247
+msgid "Fabric Sheet"
+msgstr "Tekstilark"
+
+#. media_higlossfilm
+#: po/keystr.h:249
+msgid "High Gloss Film"
+msgstr "Højglansfilm"
+
+#. media_postcard
+#: po/keystr.h:251
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#. media_envelope
+#: po/keystr.h:253
+msgid "Envelope"
+msgstr "Konvolut"
+
+#. media_glossy_postcard
+#: po/keystr.h:255
+msgid "Glossy Postcard"
+msgstr "Blankt postkort"
+
+#. media_hires
+#: po/keystr.h:257
+msgid "High Resolution Paper"
+msgstr "High Resolution Paper"
+
+#. media_tshirt
+#: po/keystr.h:259
+msgid "T-Shirt Transfers"
+msgstr "Overføringspapir til t-shirt"
+
+#. media_thick
+#: po/keystr.h:261
+msgid "Thick Paper"
+msgstr ""
+
+#. media_higloss_photo_film
+#: po/keystr.h:263
+msgid "High Gloss Photo Film"
+msgstr "Højglansfotofilm"
+
+#. media_glossy_photo
+#: po/keystr.h:265
+msgid "Glossy Photo Paper"
+msgstr "Glossy Photo Paper"
+
+#. media_glossy_photocard
+#: po/keystr.h:267
+msgid "Glossy Photo Cards"
+msgstr "Blankt fotokort"
+
+#. media_pro_photo
+#: po/keystr.h:269
+msgid "Photo Paper Pro"
+msgstr "Photo Paper Pro"
+
+#. media_inkjet_postcard
+#: po/keystr.h:271
+msgid "Ink Jet Hagaki"
+msgstr "Ink Jet Hagaki"
+
+#. media_matte_photo
+#: po/keystr.h:273
+msgid "Matte Photo Paper"
+msgstr "Matte Photo Paper"
+
+#. media_photo_plus_glossy
+#: po/keystr.h:275
+msgid "Photo Paper Plus Glossy"
+msgstr "Photo Paper Plus Glossy"
+
+#. media_other
+#: po/keystr.h:277
+msgid "Other Paper"
+msgstr "Andet papir"
+
+#. media_other_photo
+#: po/keystr.h:279
+msgid "Other Photo Paper"
+msgstr "Andet fotopapir"
+
+#. media_duplex_glossy
+#: po/keystr.h:281
+msgid "Photo Paper Plus Double Sided"
+msgstr "Photo Paper Plus Double Sided"
+
+#. media_fine_art_paper
+#: po/keystr.h:283
+msgid "Fine Art \"Photo Rag\""
+msgstr "Fine Art \"Photo Rag\""
+
+#. media_other_fine_art_paper
+#: po/keystr.h:285
+msgid "Other Fine Art Paper"
+msgstr "Andet Fine Art papir"
+
+#. media_photo_paper_plus_glossy_ii
+#: po/keystr.h:287
+msgid "Photo Paper Plus Glossy II"
+msgstr "Photo Paper Plus Glossy II"
+
+#. media_photo_paper_plus_semi_gloss
+#: po/keystr.h:289
+msgid "Photo Paper Plus Semi-gloss"
+msgstr "Photo Paper Plus Semi-gloss"
+
+#. media_photo_paper_pro_platinum
+#: po/keystr.h:291
+msgid "Photo Paper Pro Platinum"
+msgstr "Photo Paper Pro Platinum"
+
+#. media_photo_paper_pro_ii
+#: po/keystr.h:293
+msgid "Photo Paper Pro II"
+msgstr "Photo Paper Pro II"
+
+#. media_contents_glossy
+#: po/keystr.h:295
+msgid "Hagaki K"
+msgstr "Hagaki K"
+
+#. media_contents_prophoto
+#: po/keystr.h:297
+msgid "Hagaki P"
+msgstr "Hagaki P"
+
+#. media_address_postcard
+#: po/keystr.h:299
+msgid "Hagaki A"
+msgstr "Hagaki A"
+
+#. supply_manual
+#: po/keystr.h:301
+msgid "Manual Feed"
+msgstr "Manuel indføring"
+
+#. supply_asf
+#: po/keystr.h:303
+msgid "Auto Sheet Feeder"
+msgstr "Automatisk arkføder"
+
+#. supply_asf_reartray
+#. LUM_IDS_FEED_REAR
+#: po/keystr.h:305 po/keystr.h:1531
+msgid "Rear Tray"
+msgstr "Bagerste bakke"
+
+#. supply_asf2
+#: po/keystr.h:307
+msgid "Auto Feeder2"
+msgstr ""
+
+#. supply_cassette
+#: po/keystr.h:309
+msgid "Standard Cassette"
+msgstr ""
+
+#. supply_cassette2
+#: po/keystr.h:311
+msgid "Optional Cassette"
+msgstr ""
+
+#. supply_consecutive
+#: po/keystr.h:313
+msgid "Auto Select"
+msgstr "Automatisk udvælgelse"
+
+#. supply_consecutive2
+#: po/keystr.h:315
+msgid "Consecutive paper feeding"
+msgstr ""
+
+#. supply_tractor
+#: po/keystr.h:317
+msgid "Tractor Feeder"
+msgstr "Traktorføder"
+
+#. supply_cassette_02
+#. LUM_IDS_CASSETTE
+#: po/keystr.h:319 po/keystr.h:1243
+msgid "Cassette"
+msgstr "Kassette"
+
+#. supply_printer_sw_select
+#: po/keystr.h:321
+msgid "Paper Feed Switch"
+msgstr "Papirfødningskontakt"
+
+#. supply_cassette_04
+#: po/keystr.h:323
+msgid "Front Feeder"
+msgstr "Frontføder"
+
+#. supply_cassette_04_fronttray
+#. supply_cassette_06
+#: po/keystr.h:325 po/keystr.h:1699
+msgid "Front Tray"
+msgstr "Forreste bakke"
+
+#. supply_front_for_plain
+#: po/keystr.h:327
+msgid "Front for Plain Paper"
+msgstr "Front til alm. papir"
+
+#. supply_front_for_plain_maetray
+#: po/keystr.h:329
+msgid "Front for Plain Paper "
+msgstr "Front til alm. papir "
+
+#. supply_auto_continuous_feed
+#: po/keystr.h:331
+msgid "Continuous Autofeed"
+msgstr "Uafbrudt autofødning"
+
+#. supply_auto_select
+#: po/keystr.h:333
+msgid "Automatically Select"
+msgstr "Vælg automatisk"
+
+#. supply_change_mes
+#: po/keystr.h:335
+#, c-format
+msgid ""
+"The selected paper size cannot be used in the current Paper Source setting.\n"
+"Paper Source setting is changed to the %s."
+msgstr ""
+"Den valgte papirstørrelse kan ikke bruges i den aktuelle papirkildeindstilling.\n"
+"Papirkildeindstillingen er ændret til %s."
+
+#. LUM_IDD_PAG_PAGESET_NT4_AUTODUP_IDC_CHK_DUPLEX
+#. LUM_IDS_PT_DN_AUTODUPLEX
+#: po/keystr.h:338 po/keystr.h:1219
+msgid "Automatic Duplex Printing"
+msgstr "Automatisk dupleksudskrivning"
+
+#. LUM_AlertMessTitlePaperNotAvailableForAutoDuplex_M
+#: po/keystr.h:340
+msgid ""
+"A page size that is not supported by \n"
+"the duplex printing function is selected."
+msgstr ""
+"Du har valgt en sidestørrelse, der ikke understøttes af funktionen til \n"
+"dupleksudskrivning."
+
+#. LUM_AlertMessPaperNotAvailableForAutoDuplex
+#: po/keystr.h:343
+#, c-format
+msgid "Uncheck %s."
+msgstr "Fjern markeringen af %s."
+
+#. LUM_MODIFY_IDD_PAG_MAIN_IDC_STT_PAPERFEED
+#: po/keystr.h:345
+msgid "Paper Source"
+msgstr "Papirkilde"
+
+#. LUM_MessPSNotCasette_M
+#: po/keystr.h:347
+msgid "A page size that cannot be fed from the cassette was selected."
+msgstr "Der blev valgt en sidestørrelse, der ikke kan indføres fra kassetten."
+
+#. LUM_AlertMessPaperNotFedFromCassetteOrFront
+#: po/keystr.h:349
+#, c-format
+msgid "Change the %s setting to %s."
+msgstr "Skift indstillingen %s til %s."
+
+#. media_supply_change_mes
+#: po/keystr.h:351
+#, c-format
+msgid ""
+"Paper Source: %s is not available for the selected Media Type.\n"
+"Paper Source setting has been changed to %s."
+msgstr ""
+"Papirkilde: %s er ikke tilgængelig for den valgte medietype.\n"
+"Papirkildeindstillingerne er blevet ændret til %s."
+
+#. bkenh_enh
+#: po/keystr.h:354
+msgid "Enhanced Black"
+msgstr ""
+
+#. size_a5
+#: po/keystr.h:356
+msgid "A5 [5.83\"x8.27\" 148.0x210.0mm]"
+msgstr "A5 [148.0x210.0mm 5.83\"x8.27\"]"
+
+#. size_a4
+#: po/keystr.h:358
+msgid "A4 [8.27\"x11.69\" 210.0x297.0mm]"
+msgstr "A4 [210.0x297.0mm 8.27\"x11.69\"]"
+
+#. size_a3
+#: po/keystr.h:360
+msgid "A3 [11.69\"x16.54\" 297.0x420.0mm]"
+msgstr "A3 [297.0x420.0mm 11.69\"x16.54\"]"
+
+#. size_b5
+#: po/keystr.h:362
+msgid "B5 [7.17\"x10.12\" 182.0x257.0mm]"
+msgstr "B5 [182.0x257.0mm 7.17\"x10.12\"]"
+
+#. size_b4
+#: po/keystr.h:364
+msgid "B4 [10.12\"x14.33\" 257.0x364.0mm]"
+msgstr "B4 [257.0x364.0mm 10.12\"x14.33\"]"
+
+#. size_letter
+#: po/keystr.h:366
+msgid "Letter [8.50\"x11.00\" 215.9x279.4mm]"
+msgstr "Letter [215.9x279.4mm 8.50\"x11.00\"]"
+
+#. size_legal
+#: po/keystr.h:368
+msgid "Legal [8.50\"x14.00\" 215.9x355.6mm]"
+msgstr "Legal [215.9x355.6mm 8.50\"x14.00\"]"
+
+#. size_ledger
+#: po/keystr.h:370
+msgid "11\"x17\" [11.00\"x17.00\" 279.4x431.8mm]"
+msgstr "11\"x17\" [279.4x431.8mm 11.00\"x17.00\"]"
+
+#. size_csize
+#: po/keystr.h:372
+msgid "17\"x22\" 431.8x558.8mm"
+msgstr ""
+
+#. size_post
+#: po/keystr.h:374
+msgid "Hagaki [3.94\"x5.83\" 100.0x148.0mm]"
+msgstr "Hagaki [100.0x148.0mm 3.94\"x5.83\"]"
+
+#. size_env_10
+#: po/keystr.h:376
+msgid "Comm. Env. #10 9.5\"x4.12\" 241.3x104.8mm"
+msgstr ""
+
+#. size_env_dl
+#: po/keystr.h:378
+msgid "DL Env. 220.0x110.0mm"
+msgstr ""
+
+#. size_fools
+#: po/keystr.h:380
+msgid "13.5\"x17\" 342.9x431.8mm"
+msgstr ""
+
+#. size_env_j4
+#: po/keystr.h:382
+msgid "Youkei 4 235.0x105.0mm"
+msgstr ""
+
+#. size_env_j6
+#: po/keystr.h:384
+msgid "Youkei 6 190.0x98.0mm"
+msgstr ""
+
+#. size_letter_bleed
+#: po/keystr.h:386
+msgid "Letter+ 9\"x13.3\" 228.6x337.8mm"
+msgstr ""
+
+#. size_a4_bleed
+#: po/keystr.h:388
+msgid "A4+ 223.5x355.6mm"
+msgstr ""
+
+#. size_a3_plus
+#: po/keystr.h:390
+msgid "A3+ [12.95\"x19.02\" 329.0x483.0mm]"
+msgstr "A3+ [329.0x483.0mm 12.95\"x19.02\"]"
+
+#. size_photocard
+#: po/keystr.h:392
+msgid "Canon 4\"x6\" 101.6x152.4mm"
+msgstr ""
+
+#. size_user
+#: po/keystr.h:394
+msgid "Custom..."
+msgstr "Brugerdefineret..."
+
+#. size_env_10_p
+#: po/keystr.h:396
+msgid "Comm. Env. #10 [4.12\"x9.50\" 104.8x241.3mm]"
+msgstr "Kommerciel konvolut str. 10 [104.8x241.3mm 4.12\"x9.50\"]"
+
+#. size_env_dl_p
+#: po/keystr.h:398
+msgid "DL Env. [4.33\"x8.66\" 110.0x220.0mm]"
+msgstr "DL-konvolut [110.0x220.0mm 4.33\"x8.66\"]"
+
+#. size_env_j4_p
+#: po/keystr.h:400
+msgid "Youkei 4 [4.13\"x9.25\" 105.0x235.0mm]"
+msgstr "Youkei 4 [105.0x235.0mm 4.13\"x9.25\"]"
+
+#. size_env_j6_p
+#: po/keystr.h:402
+msgid "Youkei 6 [3.86\"x7.48\" 98.0x190.0mm]"
+msgstr "Youkei 6 [98.0x190.0mm 3.86\"x7.48\"]"
+
+#. size_l
+#: po/keystr.h:404
+msgid "L [3.50\"x5.00\" 89.0x127.0mm]"
+msgstr "L [89.0x127.0mm 3.50\"x5.00\"]"
+
+#. size_2l
+#: po/keystr.h:406
+msgid "2L [5.00\"x7.01\" 127.0x178.0mm]"
+msgstr "2L [127.0x178.0mm 5.00\"x7.01\"]"
+
+#. size_4x6
+#: po/keystr.h:408
+msgid "4\"x6\" [4.00\"x6.00\" 101.6x152.4mm]"
+msgstr "4\"x6\" [101.6x152.4mm 4.00\"x6.00\"]"
+
+#. size_panorama
+#: po/keystr.h:410
+msgid "P 89.0x254.0mm"
+msgstr ""
+
+#. size_5x7
+#: po/keystr.h:412
+msgid "5\"x7\" [5.00\"x7.00\" 127.0x177.8mm]"
+msgstr "5\"x7\" [127.0x177.8mm 5.00\"x7.00\"]"
+
+#. size_post_dbl
+#: po/keystr.h:414
+msgid "Hagaki 2 [7.87\"x5.83\" 200.0x148.0mm]"
+msgstr "Hagaki 2 [200.0x148.0mm 7.87\"x5.83\"]"
+
+#. size_businesscard
+#: po/keystr.h:416
+msgid "Card [2.17\"x3.58\" 55.0x91.0mm]"
+msgstr "Kort [55.0x91.0mm 2.17\"x3.58\"]"
+
+#. size_creditcard
+#: po/keystr.h:418
+msgid "Credit Card [2.13\"x3.39\" 54.0x86.0mm]"
+msgstr "Kreditkort [54.0x86.0mm 2.13\"x3.39\"]"
+
+#. size_letter_fine_art
+#: po/keystr.h:420
+msgid "Fine Art Letter [8.50\"x11.00\" 215.9x279.4mm]"
+msgstr "Fine Art Letter [215.9x279.4mm 8.50\"x11.00\"]"
+
+#. size_a4_fine_art
+#: po/keystr.h:422
+msgid "Fine Art A4 [8.27\"x11.69\" 210.0x297.0mm]"
+msgstr "Fine Art A4 [210.0x297.0mm 8.27\"x11.69\"]"
+
+#. size_4X8
+#: po/keystr.h:424
+msgid "4\"x8\" [4.00\"x8.00\" 101.6x203.2mm]"
+msgstr "4\"x8\" [101.6x203.2mm 4.00\"x8.00\"]"
+
+#. size_4giri
+#: po/keystr.h:426
+msgid "10\"x12\" [10.00\"x12.00\" 254.0x304.8mm]"
+msgstr "10\"x12\" [254.0x304.8mm 10.00\"x12.01\"]"
+
+#. size_6giri
+#: po/keystr.h:428
+msgid "8\"x10\" [8.00\"x10.00\" 203.2x254.0mm]"
+msgstr "8\"x10\" [203.2x254.0mm 8.00\"x10.00\"]"
+
+#. size_wide
+#: po/keystr.h:430
+msgid "Wide [4.00\"x7.11\" 101.6x180.6mm]"
+msgstr "Wide [101.6x180.6mm 4.00\"x7.11\"]"
+
+#. custom_size_mm_format
+#: po/keystr.h:432
+#, c-format
+msgid "mm (%s-%s)"
+msgstr "mm (%s-%s)"
+
+#. custom_size_inches_format
+#: po/keystr.h:434
+#, c-format
+msgid "inches (%s-%s)"
+msgstr "tommer (%s-%s)"
+
+#. tmessage_position1
+#: po/keystr.h:436
+msgid "Position 1"
+msgstr ""
+
+#. tmessage_position2
+#: po/keystr.h:438
+msgid "Position 2"
+msgstr ""
+
+#. tmessage_position3
+#: po/keystr.h:440
+msgid "Position 3"
+msgstr ""
+
+#. tmessage_left
+#. tmessage_left2
+#: po/keystr.h:442 po/keystr.h:456
+msgid "Left"
+msgstr "Venstre"
+
+#. tmessage_center
+#: po/keystr.h:444
+msgid "Center"
+msgstr ""
+
+#. tmessage_right
+#. tmessage_right2
+#: po/keystr.h:446 po/keystr.h:458
+msgid "Right"
+msgstr "Højre"
+
+#. tmessage_lower
+#. tmessage_lower2
+#. plmessage_lower
+#: po/keystr.h:448 po/keystr.h:452 po/keystr.h:464
+msgid "Down"
+msgstr "Ned"
+
+#. tmessage_upper
+#. tmessage_upper2
+#. plmessage_upper
+#: po/keystr.h:450 po/keystr.h:454 po/keystr.h:466
+msgid "Up"
+msgstr "Op"
+
+#. plmessage_foward
+#: po/keystr.h:460
+msgid "Front"
+msgstr ""
+
+#. plmessage_backword
+#: po/keystr.h:462
+msgid "Back"
+msgstr ""
+
+#. slmess_smooth
+#: po/keystr.h:468
+msgid "Smoothing"
+msgstr ""
+
+#. bin_pattern_hs
+#: po/keystr.h:472
+msgid "Fine(Fast)"
+msgstr ""
+
+#. banner_on
+#: po/keystr.h:474
+msgid "Banner Printing"
+msgstr ""
+
+#. cartridge_color
+#: po/keystr.h:476
+msgid "Color    "
+msgstr "Farve    "
+
+#. cartridge_bk
+#: po/keystr.h:478
+msgid "Black    "
+msgstr "Sort    "
+
+#. cartridge_photo
+#: po/keystr.h:480
+msgid "Photo    "
+msgstr "Foto    "
+
+#. cartridge_bk_color
+#: po/keystr.h:482
+msgid "Black/Color    "
+msgstr "Sort/Farve    "
+
+#. cartridge_bk_photo
+#: po/keystr.h:484
+msgid "Black/Photo    "
+msgstr "Sort/Foto    "
+
+#. cartridge_photo_color
+#: po/keystr.h:486
+msgid "Photo/Color    "
+msgstr "Foto/Farve    "
+
+#. printing_type_fit
+#: po/keystr.h:488
+msgid "Fit-to-Page"
+msgstr "Tilpas til side"
+
+#. printing_type_normal
+#: po/keystr.h:490
+msgid "Normal-size"
+msgstr "Normalstørrelse"
+
+#. printing_type_scale
+#: po/keystr.h:492
+msgid "Scaled"
+msgstr "Skaleret"
+
+#. input_gamma_default
+#: po/keystr.h:494
+msgid "Default"
+msgstr ""
+
+#. input_gamma_10
+#: po/keystr.h:496
+msgid "More bright (Gamma = 1.0)"
+msgstr ""
+
+#. input_gamma_14
+#: po/keystr.h:498
+msgid "Light"
+msgstr "Lys"
+
+#. input_gamma_18
+#: po/keystr.h:500
+msgid "Normal"
+msgstr "Normal"
+
+#. input_gamma_22
+#: po/keystr.h:502
+msgid "Dark"
+msgstr "Mørk"
+
+#. paper_gap_wide
+#: po/keystr.h:506
+msgid "Wide"
+msgstr "Bred"
+
+#. paper_gap_narrow
+#: po/keystr.h:508
+msgid "Narrow"
+msgstr "Smal"
+
+#. LUM_IDS_EDGETOEDGE_SELECTED
+#: po/keystr.h:510
+msgid ""
+"You have selected Borderless Printing.\n"
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Du har valgt Udskrivning uden kant.\n"
+"Det dokument, der skal udskrives, er blevet forstørret, så det er lidt større \n"
+"end papiret.\n"
+"Udskriftskvaliteten kan blive forringet, eller der kan komme pletter øverst og \n"
+"nederst på udskriften, afhængigt af hvilken type medie du bruger."
+
+#. mediaborder_dialog_message1
+#: po/keystr.h:515
+#, c-format
+msgid ""
+"Borderless printing is not recommended when %s is selected for Media Type.\n"
+"Select the type of media you wish to use."
+msgstr ""
+"Udskrivning uden kant anbefales ikke, når %s er valgt som medietype.\n"
+"Vælg den type medie, du ønsker at bruge."
+
+#. LUM_IDD_MEDIA_CHANGE_ETOE_IDC_STT_MEDIA_NOTE_ETOE
+#: po/keystr.h:518
+msgid ""
+"The document to be printed is enlarged, so that it slightly extends off the "
+"paper.\n"
+"Print quality may deteriorate, or the sheet may be stained at the top and "
+"bottom \n"
+"depending on the type of media used."
+msgstr ""
+"Det dokument, der skal udskrives, er blevet forstørret, så det er lidt større \n"
+"end papiret.\n"
+"Udskriftskvaliteten kan blive forringet, eller der kan komme pletter øverst og \n"
+"nederst på udskriften, afhængigt af hvilken type medie du bruger."
+
+#. LUM_IDS_SMMSG_ENVELOPE_SHORTEN_ASF
+#: po/keystr.h:522
+msgid ""
+"The printer is set to print on an envelope.\n"
+"Lower the paper support and then load an envelope.\n"
+"Then click OK to start printing."
+msgstr ""
+"Printeren er indstillet til at udskrive på en konvolut.\n"
+"Sænk papirstøtten, og ilæg derefter en konvolut.\n"
+"Klik derefter på OK for at starte udskrivningen."
+
+#. message_button_yes
+#: po/keystr.h:530
+msgid "Yes"
+msgstr "Ja"
+
+#. message_button_no
+#: po/keystr.h:532
+msgid "No"
+msgstr "Nej"
+
+#. message_button_abort
+#: po/keystr.h:534
+msgid "Abort"
+msgstr ""
+
+#. autopower_enable
+#: po/keystr.h:538
+msgid "Enable"
+msgstr "Aktiver"
+
+#. autopower_disable
+#: po/keystr.h:540
+msgid "Disable"
+msgstr "Deaktiver"
+
+#. autopower_5min
+#: po/keystr.h:542
+msgid "5 minutes"
+msgstr "5 minutter"
+
+#. autopower_10min
+#: po/keystr.h:544
+msgid "10 minutes"
+msgstr "10 minutter"
+
+#. autopower_15min
+#: po/keystr.h:546
+msgid "15 minutes"
+msgstr "15 minutter"
+
+#. autopower_30min
+#: po/keystr.h:548
+msgid "30 minutes"
+msgstr "30 minutter"
+
+#. autopower_60min
+#: po/keystr.h:550
+msgid "60 minutes"
+msgstr "60 minutter"
+
+#. utility_message_3
+#: po/keystr.h:552
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Blev mønstrene udskrevet normalt?\n"
+"\n"
+"Hvis der ikke var udskrevet nogen mønstre, eller hvis udskriften var meget \n"
+"udtværet, skal du klikke på Nej og starte forfra."
+
+#. utility_message_4
+#: po/keystr.h:556
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Kontroller, at der er tændt for printeren, at kablet er tilsluttet korrekt, \n"
+"samt at printeren er online, og prøv derefter igen."
+
+#. utility_message_5
+#: po/keystr.h:558
+msgid "Print head alignment is now complete."
+msgstr "Printhovedjusteringen er nu fuldført."
+
+#. utility_message_6
+#: po/keystr.h:560
+msgid "Do not start another operation until the current one has finished."
+msgstr "Undlad at starte en ny handling, før den igangværende handling er afsluttet."
+
+#. utility_message_8
+#: po/keystr.h:562
+msgid "Turn the printer off?"
+msgstr "Skal printeren slukkes?"
+
+#. utility_message_9
+#: po/keystr.h:564
+msgid "Apply settings to printer?"
+msgstr "Vil du anvende indstillingerne på printeren?"
+
+#. utility_message_12
+#: po/keystr.h:566
+msgid "Start print head deep cleaning?"
+msgstr "Vil du starte grundig rensning af printhovedet?"
+
+#. regi_bidir
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:568 po/keystr.h:1227
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Tovejsjustering (-5 til +5)"
+
+#. utility_message_23
+#: po/keystr.h:570
+msgid "Execute black print head deep cleaning?"
+msgstr "Vil du foretage grundig rensning af det sorte printhoved?"
+
+#. utility_message_24
+#: po/keystr.h:572
+msgid "Execute color print head deep cleaning?"
+msgstr "Vil du foretage grundig rensning af farveprinthovedet?"
+
+#. utility_message_27
+#: po/keystr.h:574
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsrullerne.\n"
+"\n"
+"Fjern først papir fra arkføderen. Når du klikker på OK, aktiveres \n"
+"papirfødningsrullerne 30 gange. Dette vil tage cirka 90 sekunder. Når du \n"
+"ilægger tre ark almideligt papir som beskrevet i meddelelsen, udskydes papiret, \n"
+"og rensningen af printerrullerne er færdig.\n"
+"\n"
+"Vil du starte rensningen af printerrullerne?"
+
+#. utility_message_28
+#: po/keystr.h:582
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Læg tre ark almindeligt papir i arkføderen.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:584
+msgid "Feed roller cleaning is complete."
+msgstr "Rensningen af papirfødningsrullen er fuldført."
+
+#. util_ink_all_1
+#. LUM_IDS_CLEAN_ITEM_ALL
+#: po/keystr.h:586 po/keystr.h:1203
+msgid "All Colors"
+msgstr "Alle farver"
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:588
+msgid "All Colors   BK, C, M, Y"
+msgstr "Alle Farver   BK, C, M, Y"
+
+#. util_ink_black_0
+#. LUM_IDS_CLEAN_ITEM_BLACK
+#: po/keystr.h:590 po/keystr.h:1229
+msgid "Black"
+msgstr "Sort"
+
+#. util_ink_black_1
+#: po/keystr.h:592
+msgid "Black   3eBK"
+msgstr "Sort   3eBK"
+
+#. util_ink_black_2
+#: po/keystr.h:594
+msgid "Black   PGBK"
+msgstr "Sort   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:596
+msgid "Black   BK"
+msgstr "Sort   BK"
+
+#. util_ink_color_1
+#: po/keystr.h:600
+msgid "Color   6C, 6M, 6Y"
+msgstr "Farve   6C, 6M, 6Y"
+
+#. util_ink_color_2
+#: po/keystr.h:602
+msgid "Color   6C, 6M, 6Y, 6BK"
+msgstr "Farve   6C, 6M, 6Y, 6BK"
+
+#. util_ink_color_3
+#: po/keystr.h:604
+msgid "Color   7C, 7M, 7Y"
+msgstr "Farve   7C, 7M, 7Y"
+
+#. util_ink_color_4
+#: po/keystr.h:606
+msgid "Color   7C, 7M, 7Y, 7BK"
+msgstr "Farve   7C, 7M, 7Y, 7BK"
+
+#. util_ink_color_5
+#: po/keystr.h:608
+msgid "Color   C, M, Y, BK"
+msgstr "Farve   C, M, Y, BK"
+
+#. util_ink_color_6
+#: po/keystr.h:610
+msgid "Color   C, M, Y, PC, PM, BK"
+msgstr "Farve   C, M, Y, PC, PM, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:612
+msgid "Color   C, M, Y"
+msgstr "Farve   C, M, Y"
+
+#. util_ink_gr1_1
+#: po/keystr.h:614
+msgid "Group 1   6BK, 6R, 6PC, 6PM"
+msgstr "Gruppe 1   6BK, 6R, 6PC, 6PM"
+
+#. util_ink_gr1_2
+#: po/keystr.h:616
+msgid "Group 1   7BK, 7R, 7G, 7PC, 7PM"
+msgstr "Gruppe 1   7BK, 7R, 7G, 7PC, 7PM"
+
+#. util_ink_gr2_1
+#: po/keystr.h:618
+msgid "Group 2   6C, 6M, 6Y"
+msgstr "Gruppe 2   6C, 6M, 6Y"
+
+#. util_ink_gr2_2
+#: po/keystr.h:620
+msgid "Group 2   7C, 7M, 7Y"
+msgstr "Gruppe 2   7C, 7M, 7Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:622
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Undlad at starte en ny handling, før rensningen er afsluttet.\n"
+"\n"
+"Udfør dysetest efter rensningen for at kontrollere, om printhoveddyserne er \n"
+"blevet renset."
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:626
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Renser tilstoppede printhoveddyser.\n"
+"\n"
+"Vælg den blækgruppe, der skal renses. Hvis du ikke ved, hvilken blækgruppe der \n"
+"skal renses, skal du udføre dysetest."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:631
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Fjerner tilstopningen af dyser, der ikke kan renses med en normal rensning.\n"
+"\n"
+"Vælg den blækgruppe, der skal foretages grundig rensning af. Hvis du ikke ved, \n"
+"hvilken blækgruppe der skal udføres grundig rensning på, skal du udføre \n"
+"dysetest."
+
+#. utility_message_41
+#: po/keystr.h:636
+msgid "Ink Group:"
+msgstr "Blækgruppe:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:638
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Grundig rensning bruger meget mere blæk end normal rensning. Udfør kun grundig \n"
+"rensning, hvis dyserne ikke forbedres efter normal rensning.\n"
+"\n"
+"Udfør dysetest efter den grundige rensning for at kontrollere, om \n"
+"printhoveddyserne er blevet renset."
+
+#. utility_message_43
+#: po/keystr.h:644
+msgid "Cleaning consumes ink."
+msgstr "Rensning bruger blæk."
+
+#. utility_message_44
+#: po/keystr.h:646
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Læg et ark papir i A4- eller letter-størrelse i den papirkilde, der er valgt af \n"
+"kontakten til papirfødning, og klik på OK.\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:648
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Hvis det udskrevne mønster ligner dette \n"
+"mønster, er printhoveddyserne muligvis \n"
+"tilstoppede.\n"
+"Klik på Rensning.\n"
+"\n"
+"Hvis det udskrevne mønster ikke \n"
+"forbedres efter rensning to gange, skal \n"
+"du udføre en grundig rensning."
+
+#. utility_message_50
+#: po/keystr.h:656
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr "Læg et ark papir i A4- eller Letter-størrelse i arkføderen, og klik på OK."
+
+#. utility_message_53
+#: po/keystr.h:658
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Der skal udskrives under printhovedjustering. Derfor skal du gøre printeren \n"
+"klar (tilslut kablet, og tænd for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse mod venstre og lægge et ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i arkføderen. Printeren udskriver et justeringsmønster.\n"
+"\n"
+"Klik på OK for at justere printhovedets placering.\n"
+
+#. utility_message_54
+#: po/keystr.h:666
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click the Print Check Pattern.\n"
+msgstr ""
+"Udskriver et mønster, så du kan kontrollere, om printhoveddyserne er \n"
+"tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), flyt printerens \n"
+"greb til justering af papirtykkelse mod venstre, læg et ark almindeligt papir i \n"
+"A4- eller Letter-størrelse i arkføderen, og klik på Udskriv kontrolmønster.\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:671
+msgid "Color Only"
+msgstr "Kun farve"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:673
+msgid "Black Only"
+msgstr "Kun sort"
+
+#. util_ink_cartridge_3
+#: po/keystr.h:675
+msgid "Both Black and Color"
+msgstr "Både sort og farve"
+
+#. utility_message_55
+#: po/keystr.h:677
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Udskriver kun med farveblækpatron i stedet for sort blækpatron."
+
+#. utility_message_56
+#: po/keystr.h:680
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Udskriver kun med sort blækpatron i stedet for kun farveblækpatron, når \n"
+"Almindeligt papir er valgt for Medietype på fanen Indstillinger."
+
+#. utility_message_57
+#: po/keystr.h:684
+msgid "Prints using both black and color cartridges."
+msgstr "Udskriver med både sort blækpatron og farveblækpatron."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:686
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Printeren udskriver ét ark med justeringsmønstre for at starte den automatiske \n"
+"justering.\n"
+"Du må ikke starte en ny handling, før den igangværende handling er afsluttet."
+
+#. utility_message_60
+#: po/keystr.h:689
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Der udskrives endnu et ark med et printhovedjusteringsmønster.\n"
+"\n"
+"Klik på OK for at starte udskrivningen."
+
+#. utility_message_61
+#: po/keystr.h:693
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Der udskrives et tredje ark med et printhovedjusteringsmønster.\n"
+"\n"
+"Klik på OK for at starte udskrivningen."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:697
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse til venstre, og lægge et ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i den papirkilde, som er valgt med \n"
+"papirfødningskontakten. Printeren udskriver et justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. utility_message_63
+#: po/keystr.h:707
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Printhovedjusteringen er fuldført.\n"
+"Klik på Annuller for at afslutte justeringen.\n"
+"\n"
+"Hvis der er streger på den udskrevne side, kan du undgå dette fremover ved at \n"
+"justere printhovedet.\n"
+"Hvis du vil udføre denne justering, skal du lægge et ark papir i arkføderen og \n"
+"klikke på OK."
+
+#. utility_message_64
+#: po/keystr.h:713
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, der gør det muligt at kontrollere, om printhoveddyserne \n"
+"er tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), flyt printerens \n"
+"greb til justering af papirtykkelse mod venstre, læg et ark almindeligt papir i \n"
+"A4- eller Letter-størrelse i den papirkilde, der er valgt vha. \n"
+"papirfødningskontakten, og klik på Udskriv kontrolmønster."
+
+#. utility_message_66
+#: po/keystr.h:719
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster til kontrol af, om printhoveddyserne er tilstoppede.\n"
+"\n"
+"Ilæg et ark almindeligt papir i A4- eller Letter-størrelse i arkføderen, og \n"
+"klik på Udskriv kontrolmønster."
+
+#. utility_message_67
+#: po/keystr.h:723
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Printhovedjusteringen er fuldført.\n"
+"Klik på Annuller for at afslutte justeringen.\n"
+"\n"
+"Hvis der er streger på den udskrevne side, kan du undgå dette fremover ved at \n"
+"justere printhovedet.\n"
+"Hvis du vil udføre med denne justering, skal du ilægge et ark papir i den \n"
+"papirkilde, der er valgt af Kontakt til papirfødning, og klikke på OK."
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:731
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse til højre, lægge et ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i arkføderen. Printeren udskriver et justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:741
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Hvis det udskrevne mønster ligner dette mønster, er printhoveddyserne muligvis \n"
+"tilstoppede.\n"
+"Klik på Rensning.\n"
+"\n"
+"Hvis det udskrevne mønster ikke forbedres efter rensning to eller tre gange, \n"
+"skal du udføre en grundig rensning."
+
+#. utility_message_71
+#: po/keystr.h:749
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Du kan ikke nulstille blækmåleren, da printeren er indstillet til at deaktivere \n"
+"visningen af en advarsel om lav blækstand.\n"
+"\n"
+"Hvis du vil aktivere visningen af en advarsel om lav blækstand, skal du klikke \n"
+"på knappen Indstillinger for advarsel om lav blækstand på fanen Vedligeholdelse \n"
+"for printerdriveren.\n"
+"Læs manualen til printeren, før du udfører denne handling."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:755
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsruller.\n"
+"\n"
+"Tag først papiret ud af den bagerste bakke.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne 30 gange. Dette tager \n"
+"cirka 90 sekunder.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:762
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsrullerne.\n"
+"\n"
+"Tryk først på papirfødningskontakten på printeren for at vælge målpapirkilden \n"
+"til rensning, og fjern derefter papiret fra den valgte papirkilde.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne 30 gange. Dette tager \n"
+"cirka 90 sekunder.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:770
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Kontrollér, at driftsstøjen fra printeren er standset, og læg derefter tre ark \n"
+"almindeligt papir i den bagerste bakke.\n"
+"Hvis du klikker på OK udskydes papiret, og rensningen af printerrullerne \n"
+"færdiggøres."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:773
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Kontrollér, at driftsstøjen fra printeren er standset, og læg derefter tre ark \n"
+"almindeligt papir i den valgte papirkilde.\n"
+"Hvis du klikker på OK udskydes papiret, og rensningen af printerrullerne \n"
+"færdiggøres."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:776
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Fjern papiret fra arkføderen.\n"
+"2. Fold almindeligt papir i A4- eller Letter-størrelse på midten, og fold \n"
+"derefter papiret ud.\n"
+"3. Læg papiret i arkføderen med foldekanten nedad.\n"
+"4. Klik på Udfør."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:781
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Fjern papiret fra den bagerste bakke.\n"
+"2. Fold et ark almindeligt papir i A4- eller Letter-størrelse på midten, og \n"
+"fold derefter papiret ud.\n"
+"3. Læg papiret i den bagerste bakke med foldekanten nedad.\n"
+"4. Klik på Udfør."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:786
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load one sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, så du kan kontrollere, om printhoveddyserne er \n"
+"tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), flyt printerens \n"
+"greb til justering af papirtykkelse mod venstre, læg ét ark almindeligt papir i \n"
+"A4- eller Letter-størrelse i den bagerste bakke, og klik på Udskriv \n"
+"kontrolmønster."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:792
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Der skal udskrives under printhovedjustering. Derfor skal du gøre printeren \n"
+"klar (tilslut kablet, og tænd for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse mod venstre og lægge to ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i den bagerste bakke. Printeren udskriver et \n"
+"justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:802
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), lægge ét ark almindeligt papir \n"
+"i A4- eller Letter-størrelse i arkføderen og klikke på Printhovedjustering.\n"
+"\n"
+"Hvis du vil udføre manuel justering, skal du klikke på Annuller.\n"
+"Klik derefter på Tilpasset på fanen Vedligeholdelse i printerdriveren, marker \n"
+"afkrydsningsfeltet Juster hoveder manuelt, og klik på OK. Prøv derefter igen.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:813
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), lægge to ark Matte Photo Paper \n"
+"(MP-101) i A4- eller Letter-størrelse i den bagerste bakke og klikke på \n"
+"Printhovedjustering.\n"
+"\n"
+"Hvis du vil udføre manuel justering, skal du klikke på Annuller.\n"
+"Klik derefter på Tilpasset på fanen Vedligeholdelse i printerdriveren, marker \n"
+"afkrydsningsfeltet Juster hoveder manuelt, og klik på OK. Prøv derefter igen.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:825
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK."
+msgstr ""
+"Læg ét ark almindeligt papir i A4- eller Letter-størrelse i den bagerste bakke, \n"
+"og klik på OK."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:827
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Printeren udskriver to ark med justeringsmønstre for at starte den automatiske \n"
+"justering.\n"
+"Du må ikke starte en ny handling, før den igangværende handling er afsluttet."
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:830
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren) og lægge fire ark almindeligt \n"
+"papir i A4- eller Letter-størrelse i den papirkilde, som er valgt med \n"
+"papirfødningskontakten. Printeren udskriver et justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:840
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Det fjerde ark med printhovedjusteringsmønsteret udskrives.\n"
+"\n"
+"Klik på OK for at starte udskrivningen."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:844
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster til kontrol af, om printhoveddyserne er tilstoppede.\n"
+"\n"
+"Ilæg et ark almindeligt papir i A4- eller Letter-størrelse i papirkilden, der \n"
+"er valgt af Kontakt til papirfødning, og klik på Udskriv kontrolmønster."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:849
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse til venstre og lægge et ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i den bagerste bakke. Printeren udskriver et \n"
+"justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:859
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren) og lægge et ark almindeligt \n"
+"papir i A4- eller Letter-størrelse i den papirkilde, som er valgt med \n"
+"papirfødningskontakten. Printeren udskriver et justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:869
+msgid ""
+"Load one sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Læg ét ark papir i A4- eller Letter-størrelse i den bagerste bakke, og klik på \n"
+"OK."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:871
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Printhovedjusteringen er fuldført.\n"
+"Klik på Annuller for at afslutte justeringen.\n"
+"\n"
+"Hvis der er streger på den udskrevne side, kan du undgå dette fremover ved at \n"
+"justere printhovedet.\n"
+"Hvis du vil udføre denne justering, skal du lægge et ark papir i den bagerste \n"
+"bakke og klikke på OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:877
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren) og lægge tre ark almindeligt \n"
+"papir i A4- eller Letter-størrelse i den papirkilde, som er valgt med \n"
+"papirfødningskontakten. Printeren udskriver et justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:887
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse til venstre, lægge et ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i arkføderen. Printeren udskriver et justeringsmønster.\n"
+"\n"
+"Klik på Printhovedjustering for at justere printhovedets placering.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:897
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, så du kan kontrollere, om printhoveddyserne er \n"
+"tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), flyt printerens \n"
+"greb til justering af papirtykkelse mod højre, læg et ark almindeligt papir i \n"
+"A4- eller Letter-størrelse i den bagerste bakke, og klik på Udskriv \n"
+"kontrolmønster."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:902
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Udskriver kun med sort patron i stedet for kun farvepatron, når Almindeligt \n"
+"papir, Hagaki eller Konvolut er valgt for Medietype på fanen Indstillinger."
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:905
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load one sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Der skal udskrives under printhovedjustering. Derfor skal du gøre printeren \n"
+"klar (tilslut kablet, og tænd for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse mod venstre og lægge ét ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i den bagerste bakke. Printeren udskriver et \n"
+"justeringsmønster.\n"
+"\n"
+"Klik på OK for at justere printhovedets placering."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:913
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Der skal udskrives under printhovedjustering. Derfor skal du gøre printeren \n"
+"klar (tilslut kablet, og tænd for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse mod højre og lægge to ark almindeligt papir i A4- \n"
+"eller Letter-størrelse i den bagerste bakke. Printeren udskriver et \n"
+"justeringsmønster.\n"
+"\n"
+"Klik på Juster printerhoved for at justere printhovedets placering.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:923
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), flytte printerens greb til \n"
+"justering af papirtykkelse til højre, lægge ét ark mat fotopapir (MP-101) i A4- \n"
+"eller Letter-størrelse i den bagerste bakke og klikke på Printhovedjustering.\n"
+"\n"
+"Hvis du vil udføre manuel justering, skal du klikke på Annuller.\n"
+"Klik derefter på Tilpasset på fanen Vedligeholdelse i printerdriveren, marker \n"
+"afkrydsningsfeltet Juster hoveder manuelt, og klik på OK. Prøv derefter igen.\n"
+"\n"
+"Klik på Værdi for udskrivningsjustering for at udskrive og kontrollere den \n"
+"aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:935
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Fjern papiret fra den bagerste bakke, og læg derefter det første ark \n"
+"almindeligt papir i A4- eller Letter-størrelse i den bagerste bakke.\n"
+"2. Fold det andet ark almindeligt papir i A4- eller Letter-størrelse på midten, \n"
+"og fold det ud.\n"
+"3. Læg det andet ark papir med foldekanten nedad foran det først papiret i \n"
+"arkføderen.\n"
+"4. Klik på Udfør."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:940
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Starter rensning af bundplade for at forhindre, at blækket udtværes under \n"
+"udskrivningen.\n"
+"\n"
+"Hertil kræves to ark almindeligt papir i A4- eller Letter-størrelse. Følg \n"
+"anvisningerne for at udføre rensningen af bundpladen."
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:944
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click OK."
+msgstr ""
+"Indstiller papirkilden til almindeligt papir, når Vælg automatisk er valgt \n"
+"under Papirkilde.\n"
+"\n"
+"Vælg papirkilden til almindeligt papir, og klik derefter på OK."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:948
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Fjerner tilstopningen af dyser, der ikke kan renses med en normal rensning.\n"
+"\n"
+"Vælg den blækgruppe, der skal foretages grundig rensning af. Hvis det kun er \n"
+"den sorte dyse, der er tilstoppet, skal du vælge Sort. Hvis det kun er \n"
+"farvedyserne, eller hvis både den sorte dyse og farvedyserne er tilstoppede, \n"
+"skal du vælge Alle farver. Hvis du ikke ved, hvilken dyse der er tilstoppet, \n"
+"skal du udføre dysetest.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:954
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Rensning af papirfødningsruller.\n"
+"\n"
+"Vælg målpapirkilden til rensning, og klik derefter på OK."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:958
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsruller for den bagerste bakke.\n"
+"\n"
+"Fjern først papiret fra den bagerste bakke, og åbn derefter udbakken til papir.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne. Dette tager cirka 90 \n"
+"sekunder.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:965
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsruller for kassetten.\n"
+"\n"
+"Fjern først papiret fra kassetten, og åbn derefter udbakken til papir.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne. Dette tager cirka 2 \n"
+"minutter.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:972
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsruller for den bagerste bakke.\n"
+"\n"
+"Fjern først papiret fra den bagerste bakke.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne. Dette tager cirka 90 \n"
+"sekunder.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:979
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsruller for kassetten.\n"
+"\n"
+"Fjern først papiret fra kassetten.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne. Dette tager cirka 2 \n"
+"minutter.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:986
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Kontrollér, at driftsstøjen fra printeren er standset, og læg derefter tre ark \n"
+"almindeligt papir i kassetten.\n"
+"Hvis du klikker på OK udskydes papiret, og rensningen af printerrullerne \n"
+"færdiggøres."
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:989
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load one sheet of A4 or "
+"letter size, \n"
+"plain paper into the selected paper source and click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, der gør det muligt at kontrollere, om printhoveddyserne \n"
+"er tilstoppede.\n"
+"\n"
+"Vælg først den papirkilde, der skal bruges. Læg derefter ét ark almindeligt \n"
+"papir i A4- eller Letter-størrelse i den valgte papirkilde, og klik på Udskriv \n"
+"kontrolmønster."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:994
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, der gør det muligt at kontrollere, om printhoveddyserne \n"
+"er tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), og læg ét ark \n"
+"almindeligt papir i A4- eller Letter-størrelse i kassetten, og klik derefter på \n"
+"Udskriv kontrolmønster."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:999
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, der gør det muligt at kontrollere, om printhoveddyserne \n"
+"er tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), og læg ét ark \n"
+"almindeligt papir i A4- eller Letter-størrelse i den bagerste bakke, og klik \n"
+"derefter på Udskriv kontrolmønster."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:1004
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren) og lægge to ark almindeligt \n"
+"papir i A4- eller Letter-størrelse i den bagerste bakke. Printeren udskriver et \n"
+"justeringsmønster.\n"
+"\n"
+"Klik på Juster printerhoved for at justere printhovedets placering.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:1013
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Justeringen omfatter udskrivning. Vælg den papirkilde, der skal bruges, og klik \n"
+"derefter på Juster printerhoved."
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:1017
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:1019
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Gør printeren klar (tilslut kablet, og tænd for printeren), og læg tre ark \n"
+"almindeligt papir i A4- eller Letter-størrelse i den bagerste bakke.\n"
+"\n"
+"Hvis du klikker på OK, udskrives et justeringsmønster."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:1024
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Gør printeren klar (tilslut kablet, og tænd for printeren), og læg tre ark \n"
+"almindeligt papir i A4- eller Letter-størrelse i kassetten.\n"
+"\n"
+"Hvis du klikker på OK, udskrives et justeringsmønster."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:1029
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Skal printeren være klar til udskrift (forbind kabel, og tænd printer), og læg \n"
+"ét ark almindeligt papir i A4- eller Letter-størrelse i den bagerste bakke.\n"
+"\n"
+"Hvis du klikker på OK, udskrives den aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:1034
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Skal printeren være klar til udskrift (forbind kabel, og tænd printer), og læg \n"
+"ét ark almindeligt papir i A4- eller Letter-størrelse i kassetten.\n"
+"\n"
+"Hvis du klikker på OK, udskrives den aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:1039
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Vælg den papirkilde, der skal bruges, og klik derefter på OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:1041
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Læg ét ark almindeligt papir i A4- eller Letter-størrelse i kassetten, og klik \n"
+"på OK."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:1043
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk justering af printhoved.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), lægge ét ark almindeligt papir \n"
+"i A4- eller Letter-størrelse Matte Photo Paper (MP-101) i den bagerste bakke og \n"
+"klikke på Juster printerhoved.\n"
+"\n"
+"Hvis du vil udføre manuel justering, skal du klikke på Annuller.\n"
+"Klik derefter på Tilpasset under fanen Vedligeholdelse i printerdriveren, \n"
+"marker afkrydsningsfeltet Juster hoveder manuelt, og klik på OK. Prøv derefter \n"
+"igen.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:1054
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Angiver Undgå papirafskrabning. Hvis du udskriver med denne indstilling \n"
+"aktiveret, kan det få indflydelse på udskrivningskvaliteten eller -hastigheden. \n"
+"Hvis du vil ændre denne indstilling, skal du fjerne markeringen af Undgå \n"
+"papirafskrabning."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:1057
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Fjerner tilstopningen af dyser, der ikke kan renses med en normal rensning.\n"
+"\n"
+"Grundig rensning bruger meget mere blæk end normal rensning. Udfør kun grundig \n"
+"rensning, hvis det udskrevne mønster ikke forbedres efter normal rensning.\n"
+"\n"
+"Udfør dysetest efter den grundige rensning for at kontrollere, om \n"
+"printhoveddyserne er blevet renset."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:1065
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Vent med andre arbejdsopgaver, indtil den grundige rensning er afsluttet.\n"
+"\n"
+"Når den grundige rensning er afsluttet, skal du udføre en dysekontrol for at \n"
+"se, om printhoveddyserne er tilstoppede."
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:1070
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Ved at udføre justering af printhoved korrigeres den forkerte justering af \n"
+"farver og streger. Se brugervejledningen, og juster printhovedet fra printerens \n"
+"betjeningspanel.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:1075 po/keystr.h:1100
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren) og lægge tre ark almindeligt \n"
+"papir i A4- eller Letter-størrelse i den bagerste bakke. Printeren udskriver et \n"
+"justeringsmønster.\n"
+"\n"
+"Klik på Juster printerhoved for at justere printhovedets placering.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling.\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:1084
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Start af automatisk printhovedjustering.\n"
+"\n"
+"Da justeringen omfatter udskrivning, skal du gøre printeren klar (tilslut \n"
+"kablet, og tænd printeren), ilæg ét ark Matte Photo Paper (MP-101) i A4- eller \n"
+"Letter-størrelse i den bagerste bakke, og klik på Juster printhoved.\n"
+"\n"
+"Hvis resultatet af automatisk printhovedjustering ikke er tilfredsstillende, \n"
+"skal du foretage manuel printhovedjustering for at justere printhovedet præcist.\n"
+"Klik på Annuller for at foretage manuel printhovedjustering.\n"
+"Klik derefter på Tilpasset på fanen Vedligeholdelse i printerdriveren, marker \n"
+"Juster hoveder manuelt, og klik på OK. Forsøg derefter igen.\n"
+"\n"
+"Klik på Udskriv justeringsværdi, for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_3
+#: po/keystr.h:1097
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, Hagaki A, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Udskriver kun med sort blækpatron i stedet for farveblækpatron, når Almindeligt \n"
+"papir, Hagaki A, Hagaki eller Konvolut er valgt som Medietype på fanen \n"
+"Indstillinger."
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1139
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Justering af kolonne A til C (-3 til +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/keystr.h:1141
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Justering af kolonne A til D (-3 til +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1143
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Justering af kolonne A til E (-3 til +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/keystr.h:1145
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Justering af kolonne A til E (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/keystr.h:1147
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Justering af kolonne A til F (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/keystr.h:1149
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Justering af kolonne A til G (-5 til +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:1151
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Justering af kolonne D til F (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/keystr.h:1153
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Justering af kolonne E til G (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/keystr.h:1155
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Justering af kolonne F og G (-3 til +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:1157
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Justering af kolonne F til K (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/keystr.h:1159
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Justering af kolonne G til J (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/keystr.h:1161
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Justering af kolonne G til L (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/keystr.h:1163
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Justering af kolonne H til K (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/keystr.h:1165
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Justering af kolonne H til L (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/keystr.h:1167
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Justering af kolonne H til N (-5 til +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:1169
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Justering af kolonne K og L (-3 til +3)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:1171
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Justering af kolonne L og M (-3 til +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/keystr.h:1173
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Justering af kolonne L til O (-5 til +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1175
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Justering af kolonne M og N (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/keystr.h:1177
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Justering af kolonne M til P (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/keystr.h:1179
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Justering af kolonne M til Q (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/keystr.h:1181
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Justering af kolonne O til T (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/keystr.h:1183
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Justering af kolonne P til T (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/keystr.h:1185
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Justering af kolonne Q og R (-4 til +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/keystr.h:1187
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Justering af kolonne U og V (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/keystr.h:1189
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Justering af kolonne U og V (-3 til +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/keystr.h:1191
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Justering af kolonne W og X (-3 til +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/keystr.h:1193
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Justering af kolonne a til e (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/keystr.h:1195
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Justering af kolonne f til j (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/keystr.h:1197
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Justering af kolonne f til k (-2 til +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/keystr.h:1199
+msgid "Align Print Head"
+msgstr "Juster printerhoved"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/keystr.h:1201 po/keystr.h:1633
+msgid "Align heads manually"
+msgstr "Juster hoveder manuelt"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:1211
+msgid "Auto Power Off"
+msgstr "Sluk automatisk strømforsyning efter"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:1213
+msgid "Auto Power Off:"
+msgstr "Sluk automatisk strømforsyning efter:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/keystr.h:1215
+msgid "Auto Power On:"
+msgstr "Aktiver automatisk strømforsyning:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/keystr.h:1217
+msgid "Auto Power Settings"
+msgstr "Indstillinger for automatisk strømforsyning"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/keystr.h:1231
+msgid "Black Ink Tank"
+msgstr "Sort Blækbeholder"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/keystr.h:1263
+msgid "Color Ink Tank"
+msgstr "Farveblækbeholder"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/keystr.h:1269
+msgid "Column A:"
+msgstr "Kolonne A:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/keystr.h:1271
+msgid "Column B:"
+msgstr "Kolonne B:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/keystr.h:1273
+msgid "Column C:"
+msgstr "Kolonne C:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/keystr.h:1275
+msgid "Column D:"
+msgstr "Kolonne D:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/keystr.h:1277
+msgid "Column E:"
+msgstr "Kolonne E:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/keystr.h:1279
+msgid "Column F:"
+msgstr "Kolonne F:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/keystr.h:1281
+msgid "Column G:"
+msgstr "Kolonne G:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/keystr.h:1283
+msgid "Column H:"
+msgstr "Kolonne H:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/keystr.h:1285
+msgid "Column I:"
+msgstr "Kolonne I:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/keystr.h:1287
+msgid "Column J:"
+msgstr "Kolonne J:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/keystr.h:1289
+msgid "Column K:"
+msgstr "Kolonne K:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/keystr.h:1291
+msgid "Column L:"
+msgstr "Kolonne L:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/keystr.h:1293
+msgid "Column M:"
+msgstr "Kolonne M:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/keystr.h:1295
+msgid "Column N:"
+msgstr "Kolonne N:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/keystr.h:1297
+msgid "Column O:"
+msgstr "Kolonne O:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/keystr.h:1299
+msgid "Column P:"
+msgstr "Kolonne P:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/keystr.h:1301
+msgid "Column Q:"
+msgstr "Kolonne Q:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/keystr.h:1303
+msgid "Column R:"
+msgstr "Kolonne R:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/keystr.h:1305
+msgid "Column S:"
+msgstr "Kolonne S:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/keystr.h:1307
+msgid "Column T:"
+msgstr "Kolonne T:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/keystr.h:1309
+msgid "Column U:"
+msgstr "Kolonne U:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/keystr.h:1311
+msgid "Column V:"
+msgstr "Kolonne V:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/keystr.h:1313
+msgid "Column W:"
+msgstr "Kolonne W:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/keystr.h:1315
+msgid "Column X:"
+msgstr "Kolonne X:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/keystr.h:1317
+msgid "Column a:"
+msgstr "Kolonne a:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/keystr.h:1319
+msgid "Column b:"
+msgstr "Kolonne b:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/keystr.h:1321
+msgid "Column c:"
+msgstr "Kolonne c:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/keystr.h:1323
+msgid "Column d:"
+msgstr "Kolonne d:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/keystr.h:1325
+msgid "Column e:"
+msgstr "Kolonne e:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/keystr.h:1327
+msgid "Column f:"
+msgstr "Kolonne f:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/keystr.h:1329
+msgid "Column g:"
+msgstr "Kolonne g:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/keystr.h:1331
+msgid "Column h:"
+msgstr "Kolonne h:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/keystr.h:1333
+msgid "Column i:"
+msgstr "Kolonne i:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/keystr.h:1335
+msgid "Column j:"
+msgstr "Kolonne j:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/keystr.h:1337
+msgid "Column k:"
+msgstr "Kolonne k:"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/keystr.h:1359
+msgid "Display low ink warning"
+msgstr "Vis advarsel for lavt blækniveau"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:1363
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Undersøg de udskrevne mønstre, og skriv nummeret på det mønster, som har \n"
+"færrest synlige streger i felterne for kolonnerne G til L."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/keystr.h:1367
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Undersøg de udskrevne mønstre, og skriv nummeret på det mønster, som har \n"
+"færrest synlige streger i felterne for kolonnerne H til O."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/keystr.h:1371
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Undersøg de udskrevne mønstre, og skriv nummeret på det mønster, som har \n"
+"færrest synlige streger i felterne for kolonnerne M til R."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/keystr.h:1375
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Undersøg de udskrevne mønstre, og skriv nummeret på det mønster, som har \n"
+"færrest synlige streger i felterne for kolonnerne P til V."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/keystr.h:1379
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Undersøg de udskrevne mønstre, og angiv mønsternummeret på det mønster, der \n"
+"indeholder de mindst synlige vandrette striber, i felterne for kolonnerne O til \n"
+"V."
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/keystr.h:1383
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Undersøg de udskrevne mønstre, og angiv mønsternummeret på det mest jævne \n"
+"mønster for kolonnerne M og N."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/keystr.h:1386
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Undersøg de udskrevne mønstre, og angiv mønsternummeret på det mønster, der \n"
+"indeholder de mindst synlige vandrette striber, i felterne for kolonnerne a til \n"
+"j."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/keystr.h:1389
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Undersøg de udskrevne mønstre, og angiv mønsternummeret på det mønster, der \n"
+"indeholder de mindst synlige vandrette striber, i felterne for kolonnerne a til \n"
+"k."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/keystr.h:1392
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Undersøg de udskrevne mønstre, og skriv nummeret på det mønster, som har \n"
+"færrest synlige streger i felterne for kolonnerne H til Q."
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:1395
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Undersøg de udskrevne mønstre, og udfyld felterne for kolonne L og M med \n"
+"nummeret på det mønster, som er mest jævnt og ikke har striber i de områder, \n"
+"der er angivet med pile."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/keystr.h:1399
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Undersøg de udskrevne mønstre, og udfyld felterne for kolonne W og X med \n"
+"nummeret på det mønster, som er mest jævnt og ikke har striber i de områder, \n"
+"der er angivet med pile."
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/keystr.h:1403
+msgid "Execute"
+msgstr "Udfør"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/keystr.h:1405
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Udfør justering af printhoved. Undersøg de udskrevne mønstre, og skriv nummeret \n"
+"på det mønster, som har færrest synlige streger i felterne for kolonnerne A til \n"
+"F."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/keystr.h:1409
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Udfør justering af printhoved. Undersøg de udskrevne mønstre, og skriv nummeret \n"
+"på det mønster, som har færrest synlige streger i felterne for kolonnerne A til \n"
+"G."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/keystr.h:1413
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Udfør justering af printhoved. Undersøg de udskrevne mønstre, og skriv nummeret \n"
+"på det mønster, som har færrest synlige streger i felterne for kolonnerne A til \n"
+"K."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/keystr.h:1417
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Udfør justering af printhoved. Undersøg de udskrevne mønstre, og skriv nummeret \n"
+"på det mønster, som har færrest synlige streger i felterne for kolonnerne A til \n"
+"L."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/keystr.h:1421
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Udfør justering af printhoved. Undersøg de udskrevne mønstre, og skriv nummeret \n"
+"på det mønster, som har færrest synlige streger i felterne for kolonnerne A til \n"
+"N."
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/keystr.h:1425
+msgid "Exit"
+msgstr "Afslut"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:1443
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Vandret justering (-3 til +7)"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/keystr.h:1449
+msgid "Ink Cartridge:"
+msgstr "Blækpatron:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/keystr.h:1453 po/keystr.h:1635
+msgid "Ink Drying Wait Time:"
+msgstr "Blækkets tørretid:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/keystr.h:1459 po/keystr.h:1639
+msgid "Long"
+msgstr "Lang"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/keystr.h:1501
+msgid "Pattern Check"
+msgstr "Mønsterkontrol"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSEPAGE
+#: po/keystr.h:1503
+msgid "Pause Page"
+msgstr "Sidestop"
+
+#. LUM_IDS_CUSTOM_CPT_PAUSESCAN
+#: po/keystr.h:1505
+msgid "Pause Scan"
+msgstr "Scanningsstop"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/keystr.h:1509 po/keystr.h:1631
+msgid "Prevent paper abrasion"
+msgstr "Undgå papirafskrabning"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/keystr.h:1511
+msgid "Print Alignment Value"
+msgstr "Udskriv justeringsværdi"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/keystr.h:1513
+msgid "Print Check Pattern"
+msgstr "Udskriv kontrolmønster"
+
+#. LUM_IDD_CLEAN
+#: po/keystr.h:1517
+msgid "Print Head Cleaning"
+msgstr "Rensning af printhoved"
+
+#. LUM_IDD_SILENTMODE
+#: po/keystr.h:1527
+msgid "Quiet Mode"
+msgstr "Ingen brugerinput"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/keystr.h:1529
+msgid "Read your printer manual for details about low ink warnings."
+msgstr "Se i printerhåndbogen for at få oplysninger om advarsel om lav blækstand."
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/keystr.h:1537
+msgid "Select the ink cartridge for printing."
+msgstr "Vælg blækpatronen til udskrivning."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/keystr.h:1539
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Vælg den nyindsatte blækbeholder, og klik på knappen Udfør.\n"
+
+#. LUM_IDD_GENERAL_RAD_2_IDOK
+#: po/keystr.h:1541 po/keystr.h:1651
+msgid "Send"
+msgstr ""
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/keystr.h:1543 po/keystr.h:1637
+msgid "Short"
+msgstr "Kort"
+
+#. LUM_IDD_PHA_START
+#: po/keystr.h:1551
+msgid "Start Print Head Alignment"
+msgstr "Start printhovedjustering"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/keystr.h:1553
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires one sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Start af rensning af bundpladen forhindrer udtværing på papiret under \n"
+"udskrivning.\n"
+"\n"
+"Denne handling kræver ét ark almindeligt papir i A4- eller Letter-størrelse. \n"
+"Følg anvisningerne for at udføre rensning af bundpladen."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/keystr.h:1557
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Den indikator, der viser blækniveauet i den nyindsatte blækbeholder, vil \n"
+"angive, at beholderen er fuld. Der vil således blive vist en korrekt advarsel, \n"
+"når blækniveauet er lavt."
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/keystr.h:1563
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Printhoveddyserne er ikke tilstoppede.\n"
+"Hvis det udskrevne mønster ligner dette \n"
+"mønster, kan du bruge printeren med det \n"
+"samme.\n"
+"Klik på Afslut."
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/keystr.h:1568
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr "Følgende handling er nødvendig for at få vist en advarsel om lav blækstand:\n"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/keystr.h:1573
+msgid "Use quiet mode"
+msgstr "Brug ingen brugerinput"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/keystr.h:1575
+msgid "Using AC Adapter:"
+msgstr "Brug af lysnetadapter:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/keystr.h:1577
+msgid "Using Battery:"
+msgstr "Brug af batteri:"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/keystr.h:1583
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Når du har udskiftet en blækbeholder med en ny, skal du altid klikke på knappen \n"
+"Nulstil blæktæller på fanen Vedligeholdelse for printerdriveren og vælge den \n"
+"nye blækbeholder."
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/keystr.h:1587
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Hvilke af de følgende mønstre ligner det udskrevne mønster mest?"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/keystr.h:1601
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "Justering af kolonne K til P (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/keystr.h:1603
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "Justering af kolonne F (-3 til +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/keystr.h:1605
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "Justering af kolonne G (-3 til +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/keystr.h:1607
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "Justering af kolonne Q (-4 til +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/keystr.h:1609
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "Justering af kolonne R til U (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/keystr.h:1611
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "Justering af kolonne V til Y (-2 til +2)"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/keystr.h:1613
+msgid "Close"
+msgstr "Luk"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/keystr.h:1615
+msgid "Column Y:"
+msgstr "Kolonne Y:"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/keystr.h:1617
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr ""
+"Undersøg de udskrevne mønstre, og angiv mønsternummeret på det mønster, der \n"
+"indeholder de mindst synlige vandrette striber, i felterne for kolonnerne Q til \n"
+"Y."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/keystr.h:1621
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr ""
+"Undersøg de udskrevne mønstre, og indtast nummeret på mønsteret med de mindst \n"
+"synlige striber, i felterne for kolonne K til P."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/keystr.h:1625
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"Udfør printhovedjustering. Undersøg de udskrevne mønstre, og indtast nummeret \n"
+"på mønsteret med de mindst synlige striber, i felterne for kolonne A til J."
+
+#. LUM_IDS_CLEAN_ITEM_E5
+#: po/keystr.h:1653
+msgid "Color   C, M, Y, BK, GY"
+msgstr "Farve   C, M, Y, BK, GY"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A3_07
+#: po/keystr.h:1655
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half vertically, then unfold the "
+"paper.\n"
+"3. With the ridge of the crease facing down, load the paper in landscape "
+"orientation into the rear tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Fjern papiret fra den bageste bakke.\n"
+"2. Fold almindeligt papir i A4- eller Letter-format i midten lodret, og fold \n"
+"derefter papiret ud igen.\n"
+"3. Med ryggen af folden vendende nedad lægges papiret i vandret retning i \n"
+"bageste papirbakke.\n"
+"4. Klik på Udfør."
+
+#. LUM_IDS_AUTOPOWER_120MINUTES
+#: po/keystr.h:1660
+msgid "120 minutes"
+msgstr "120 minutter"
+
+#. LUM_IDS_AUTOPOWER_240MINUTES
+#: po/keystr.h:1662
+msgid "240 minutes"
+msgstr "240 minutter"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_11_PAPERSRC
+#: po/keystr.h:1664
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size plain paper, and click Align Print "
+"Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter automatisk printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren), lægge ét ark almindeligt papir \n"
+"i A4- eller Letter-størrelse og klikke på Juster printerhoved.\n"
+"\n"
+"Hvis resultatet af automatisk printhovedjustering ikke er tilfredsstillende, \n"
+"skal du foretage manuel printhovedjustering for at justere printhovedet præcist.\n"
+"Hvis du vil udføre manuel justering, skal du klikke på Annuller.\n"
+"Klik derefter på Tilpasset på fanen Vedligeholdelse i printerdriveren, marker \n"
+"afkrydsningsfeltet Juster hoveder manuelt, og klik på OK. Prøv derefter igen.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTPAPERJAM
+#: po/keystr.h:1675
+msgid "Prevent paper jam"
+msgstr "Undgå papirstop"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR7
+#: po/keystr.h:1677
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray, then open the front cover and extend "
+"the paper output tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsruller.\n"
+"\n"
+"Tag først papiret ud af den bagerste bakke, åbn frontdækslet og forlæng \n"
+"udbakken til papir.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne 30 gange. Dette tager \n"
+"cirka 90 sekunder.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_P
+#: po/keystr.h:1684
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for columns H to "
+"P."
+msgstr ""
+"Undersøg de udskrevne mønstre, og skriv nummeret på det mønster, som har \n"
+"færrest synlige streger i felterne for kolonnerne H til P."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_55
+#: po/keystr.h:1687
+msgid "Adjustment in Columns M to P (-5 to +5)"
+msgstr "Justering af kolonne M til P (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_i
+#: po/keystr.h:1689
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for "
+"columns a to i."
+msgstr ""
+"Undersøg de udskrevne mønstre, og angiv mønsternummeret på det mønster, der \n"
+"indeholder de mindst synlige vandrette striber, i felterne for kolonnerne a til \n"
+"i."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_i_22
+#: po/keystr.h:1692
+msgid "Adjustment in Columns f to i (-2 to +2)"
+msgstr "Justering af kolonne f til i (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PREVENTPAPERGAP_MSG
+#: po/keystr.h:1694
+msgid ""
+"Set Prevent paper jam only when A3 size plain paper jams frequently near the "
+"paper output slot.\n"
+"\n"
+"This setting increases the printing time for A3 size plain paper.\n"
+"Also, the print quality may deteriorate."
+msgstr ""
+"Vælg kun Undgå papirstop, hvis der ofte opstår papirstop nær \n"
+"papiroutputåbningen med almindeligt papir i A3-format.\n"
+"\n"
+"Denne indstilling øger udskrivningstiden for almindeligt papir i A3-format.\n"
+"Desuden kan udskriftskvaliteten blive forringet."
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_DISABLE
+#: po/keystr.h:1703
+msgid "Do not use quiet mode"
+msgstr "Anvend ikke tilstanden Ingen brugerinput"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_ENABLE
+#: po/keystr.h:1705
+msgid "Always use quiet mode"
+msgstr "Anvend altid tilstanden Ingen brugerinput"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_HOURS
+#: po/keystr.h:1707
+msgid "Use quiet mode during specified hours"
+msgstr "Anvend tilstanden Ingen brugerinput i det angivne tidsrum"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_FROM
+#: po/keystr.h:1709
+msgid "Start time:"
+msgstr "Starttidspunkt:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_TO
+#: po/keystr.h:1711
+msgid "End time:"
+msgstr "Sluttidspunkt:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTING_WARN
+#: po/keystr.h:1713
+msgid ""
+"When the hours are specified, quiet mode is not applied to operations \n"
+"(copy, direct print, etc.) performed directly from the printer."
+msgstr ""
+"Når antallet af timer er angivet, anvendes tilstanden Ingen brugerinput ikke \n"
+"til handlinger (kopier, direkte udskrivning osv.), der udføres direkte fra \n"
+"printeren."
+
+#. LUM_IDS_MNTMSG_WRITESETTING_ATPOFF_NW
+#: po/keystr.h:1718
+msgid ""
+"Apply the setting to printer?\n"
+"If the printer is connected to a network, it will not turn off \n"
+"automatically even if Auto Power Off is set."
+msgstr ""
+"Vil du anvende indstillingen på printeren?\n"
+"Hvis printeren er tilsluttet til et netværk, slukkes den ikke automatisk, \n"
+"selvom Sluk automatisk strømforsyning efter er angivet."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT7
+#: po/keystr.h:1722
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the front tray, then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Rensning af papirfødningsruller.\n"
+"\n"
+"Fjern først papiret fra den forreste bakke, og åbn derefter udbakken til papir.\n"
+"Hvis du klikker på OK, aktiveres papirfødningsrullerne. Dette tager cirka to \n"
+"minutter at fuldføre.\n"
+"\n"
+"Vil du starte rensningen af papirfødningsrullerne?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT7
+#: po/keystr.h:1729
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the front tray.\n"
+"After confirming that the paper output tray is open, clicking OK will eject "
+"paper and complete feed roller cleaning."
+msgstr ""
+"Kontrollér, at driftsstøjen fra printeren er standset, og læg derefter tre ark \n"
+"almindeligt papir i den forreste bakke.\n"
+"Hvis du klikker på OK, efter du har kontrolleret, at udbakken til papir er \n"
+"åben, udskydes papiret, og rensningen af printerrullerne færdiggøres."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_FRONT
+#: po/keystr.h:1732
+msgid ""
+"1. Remove the paper from the front tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the front "
+"tray, \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Open the paper output tray and click Execute."
+msgstr ""
+"1. Fjern papiret fra den forreste bakke.\n"
+"2. Fold almindeligt papir i A4- eller Letter-størrelse på midten, og fold \n"
+"derefter papiret ud.\n"
+"3. Fold den ene side af papiret på en ny midte, så kanten flugter med midterste \n"
+"folde, og fold derefter papiret ud.\n"
+"4. Med ryggene af foldene vendende opad lægges papiret i forreste bakke, så \n"
+"kanten på midten uden fold peger væk fra dig.\n"
+"5. Åbn udbakken til papir, og klik på Udfør."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTWFEED
+#: po/keystr.h:1739
+msgid "Prevent paper double-feed"
+msgstr "Undgå dobbeltfødning af papir"
+
+#. LUM_IDS_MNTMSG_PREVENTWFEED_MSG
+#: po/keystr.h:1741
+msgid ""
+"Set Prevent paper double-feed only when double-feeding of plain paper "
+"occurs.\n"
+"\n"
+"Using this function decreases the print speed but reduces the occurrence of "
+"double-feeding."
+msgstr ""
+"Angiv kun Undgå dobbeltfødning af papir, hvis der opstår dobbeltfødning af \n"
+"almindeligt papir.\n"
+"\n"
+"Brug af denne funktion kan reducere udskrivningshastigheden, men reducerer \n"
+"forekomsten af dobbeltfødning."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_PAPERSRC_11
+#: po/keystr.h:1745
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 \n"
+"or letter size plain paper, and click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, der gør det muligt at kontrollere, om printhoveddyserne \n"
+"er tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), og læg ét ark \n"
+"almindeligt papir i A4- eller Letter-størrelse, og klik derefter på Udskriv \n"
+"kontrolmønster."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_PAPERSRC_11
+#: po/keystr.h:1750
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Start printhovedjustering.\n"
+"\n"
+"Da justeringen omfatter udskrivning, skal printeren være klar til udskrift \n"
+"(forbind kabel, og tænd printer), og læg tre ark almindeligt papir i A4- eller \n"
+"Letter-størrelse. Printeren vil udskrive et justeringsmønster.\n"
+"\n"
+"For at justere skrivehovedpositionen skal du klikke på Juster printerhoved.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_MessTitlePaperLoadGuide
+#: po/keystr.h:1761
+msgid "Check how to load paper."
+msgstr "Se, hvordan du lægger papir i."
+
+#. LUM_MessContentsPaperLoadGuide
+#: po/keystr.h:1763
+msgid ""
+"Fit the paper into the front tray so that the printing side faces down.\n"
+"Insert the paper completely to the end of the front tray.\n"
+"\n"
+"Click [OK] to start printing."
+msgstr ""
+"Læg papiret i den forreste bakke, så den side, du vil udskrive på, vender nedad.\n"
+"Indsæt papiret helt til enden af den forreste bakke.\n"
+"\n"
+"Klik på [OK] for at starte udskrivningen."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_K_55
+#: po/keystr.h:1768
+msgid "Adjustment in Columns G to K (-5 to +5)"
+msgstr "Justering af kolonne G til K (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_L_Q
+#: po/keystr.h:1770
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns L to Q."
+msgstr ""
+"Undersøg de udskrevne mønstre, og skriv nummeret på det mønster, som har \n"
+"færrest synlige streger i felterne for kolonnerne L til Q."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_R_Z
+#: po/keystr.h:1774
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for \n"
+"columns R to Z."
+msgstr ""
+"Undersøg de udskrevne mønstre, og angiv mønsternummeret på det mønster, der \n"
+"indeholder de mindst synlige vandrette striber, i felterne for kolonnerne R til \n"
+"Z."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_44
+#: po/keystr.h:1778
+msgid "Adjustment in Column R (-4 to +4)"
+msgstr "Justering af kolonne R (-4 til +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_S_V_22
+#: po/keystr.h:1780
+msgid "Adjustment in Columns S to V (-2 to +2)"
+msgstr "Justering af kolonne S til V (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_Z_22
+#: po/keystr.h:1782
+msgid "Adjustment in Columns W to Z (-2 to +2)"
+msgstr "Justering af kolonne W til Z (-2 til +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_Q_55
+#: po/keystr.h:1784
+msgid "Adjustment in Columns L to Q (-5 to +5)"
+msgstr "Justering af kolonne L til Q (-5 til +5)"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Z
+#: po/keystr.h:1786
+msgid "Column Z:"
+msgstr "Kolonne Z:"
+
+#. LUM_IDS_MNTMSG_MSI_COLLECTING
+#: po/keystr.h:1788
+msgid ""
+"Collecting printer status about maintenance.\n"
+"Please wait."
+msgstr ""
+"Indsamler printerstatus vedrørende vedligeholdelse.\n"
+"Vent et øjeblik."
+
+#. LUM_IDS_MNTMSG_MSI_NOTAVAILABLE
+#: po/keystr.h:1791
+msgid ""
+"This printer status about maintenance cannot be collected.\n"
+"The displayed information may be different from the current settings."
+msgstr ""
+"Denne printerstatus vedrørende vedligeholdelse kan ikke indsamles.\n"
+"De viste oplysninger kan være forskellige fra de aktuelle indstillinger."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_FRONTTRAY
+#: po/keystr.h:1794
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the front tray, and click the Print Check Pattern."
+msgstr ""
+"Udskriver et mønster, der gør det muligt at kontrollere, om printhoveddyserne \n"
+"er tilstoppede.\n"
+"\n"
+"Gør printeren klar (tilslut kablet, og tænd for printeren), og læg ét ark \n"
+"almindeligt papir i A4- eller Letter-størrelse i den forreste bakke, og klik \n"
+"derefter på Udskriv kontrolmønster."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_FRONT_11
+#: po/keystr.h:1799
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the front tray and "
+"click OK."
+msgstr ""
+"Læg ét ark almindeligt papir i A4- eller Letter-størrelse i den forreste bakke, \n"
+"og klik på OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_PAPERSRC_11
+#: po/keystr.h:1801
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, plain paper.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Skal printeren være klar til udskrift (forbind kabel, og tænd printer), og læg \n"
+"ét ark almindeligt papir i A4- eller Letter-størrelse.\n"
+"\n"
+"Hvis du klikker på OK, udskrives den aktuelle indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_11
+#: po/keystr.h:1805
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK. "
+msgstr ""
+"Læg ét ark almindeligt papir i A4- eller Letter-størrelse i kassetten, og klik \n"
+"på OK. "
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_REAR_11
+#: po/keystr.h:1807
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK. "
+msgstr ""
+"Læg ét ark almindeligt papir i A4- eller Letter-størrelse i den bagerste bakke, \n"
+"og klik på OK. "
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_FRONTTRAY
+#: po/keystr.h:1809
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the front tray. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Start printhovedjustering.\n"
+"\n"
+"Da justeringen omfatter udskrivning, skal printeren være klar til udskrift \n"
+"(forbind kabel, og tænd printer), og læg tre ark almindeligt papir i A4- eller \n"
+"Letter-størrelse i den forreste bakke. Printeren vil udskrive et \n"
+"justeringsmønster.\n"
+"\n"
+"For at justere skrivehovedpositionen skal du klikke på Juster printerhoved.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE
+#: po/keystr.h:1819
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size, plain paper into the cassette. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Starter printhovedjustering.\n"
+"\n"
+"Da der skal foretages en udskrivning under justeringen, skal du gøre printeren \n"
+"klar (tilslutte kablet og tænde for printeren) og lægge tre ark almindeligt \n"
+"papir i A4- eller Letter-størrelse i kassetten. Printeren udskriver et \n"
+"justeringsmønster.\n"
+"\n"
+"Klik på Juster printerhoved for at justere printhovedets placering.\n"
+"\n"
+"Klik på Udskriv justeringsværdi for at udskrive og kontrollere den aktuelle \n"
+"indstilling."
+
+#. LUM_SPACE_01
+#: po/keystr.h:1829
+msgid " "
+msgstr " "
+

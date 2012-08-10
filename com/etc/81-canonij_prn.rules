@@ -1,0 +1,149 @@
+# Canon PIXUS 850i
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1072", MODE="664"
+# Canon PIXUS 550i
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1073", MODE="664"
+# Canon PIXUS 950i
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1077", MODE="664"
+# Canon PIXUS 860i
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="107f", MODE="664"
+# Canon i250
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1084", MODE="664"
+# Canon i255
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1085", MODE="664"
+# Canon PIXUS 560i
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1086", MODE="664"
+# Canon iP90
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="109d", MODE="664"
+# Canon iP2200
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="109f", MODE="664"
+# Canon iP4200
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10a2", MODE="664"
+# Canon iP6600D
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10a9", MODE="664"
+# Canon iP3300
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10b5", MODE="664"
+# Canon iP4300
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10b6", MODE="664"
+# Canon iP100 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10b9", MODE="664"
+# Canon iP2500 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10c1", MODE="664"
+# Canon iP1800 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10c2", MODE="664"
+# Canon iP3500 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10c3", MODE="664"
+# Canon iP4500 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10c4", MODE="664"
+# Canon iP2600 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10c8", MODE="664"
+# Canon iP4600 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10c9", MODE="664"
+# Canon iP3600 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10ca", MODE="664"
+# Canon iP1900 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10cd", MODE="664"
+# Canon iP4700 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10d2", MODE="664"
+# Canon iP2700 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10d3", MODE="664"
+# Canon iP4800 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10d5", MODE="664"
+# Canon iX6500 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10d7", MODE="664"
+# Canon MP500
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="170c", MODE="664"
+# Canon MP160
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1714", MODE="664"
+# Canon MP510
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1717", MODE="664"
+# Canon MP600
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1718", MODE="664"
+# Canon MP210 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1721", MODE="664"
+# Canon MP520 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1724", MODE="664"
+# Canon MP610 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1725", MODE="664"
+# Canon MP140 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="172b", MODE="664"
+# Canon MP630 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="172e", MODE="664"
+# Canon MP540 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1730", MODE="664"
+# Canon MP240 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1732", MODE="664"
+# Canon MP190 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1734", MODE="664"
+# Canon MX860 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1735", MODE="664"
+# Canon MX320 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1736", MODE="664"
+# Canon MX330 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1737", MODE="664"
+# Canon MP250 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="173a", MODE="664"
+# Canon MP270 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="173b", MODE="664"
+# Canon MP490 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="173c", MODE="664"
+# Canon MP550 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="173d", MODE="664"
+# Canon M560 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="173e", MODE="664"
+# Canon MP640 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="173f", MODE="664"
+# Canon MX340 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1741", MODE="664"
+# Canon MX350 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1742", MODE="664"
+# Canon MX870 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1743", MODE="664"
+# Canon MP280 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1746", MODE="664"
+# Canon MP495 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1747", MODE="664"
+# Canon MG5100 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1748", MODE="664"
+# Canon MG5200 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1749", MODE="664"
+# Canon MG6100 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="174a", MODE="664"
+# Canon MG8100 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="174b", MODE="664"
+# Canon MX360 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="174d", MODE="664"
+# Canon MX410 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="174e", MODE="664"
+# Canon MX420 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="174f", MODE="664"
+# Canon MX880 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1750", MODE="664"
+# Canon MG2100 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1751", MODE="664"
+# Canon MG3100 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1752", MODE="664"
+# Canon MG4100 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1753", MODE="664"
+# Canon MG5300 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1754", MODE="664"
+# Canon MG6200 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1755", MODE="664"
+# Canon MG8200 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1756", MODE="664"
+# Canon E500 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1758", MODE="664"
+# Canon MX370 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1759", MODE="664"
+# Canon E600 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175a", MODE="664"
+# Canon MX430
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175b", MODE="664"
+# Canon MX510 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175c", MODE="664"
+# Canon MX710 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175d", MODE="664"
+# Canon MX890 series
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175e", MODE="664"
+
+
+

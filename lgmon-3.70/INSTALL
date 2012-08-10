@@ -1,0 +1,28 @@
+To build and install lgmon:
+
+        for rpm
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        for deb
+        ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=<Printer Model Name>
+        make
+        make install
+
+To build and install lgmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            ip100
+            mx890
+            mx710
+            mx510
+            mx430
+            mx370
+            e600
+
+Example for building the mx890 lgmon with the new automake and autoconf:
+        for rpm
+        ./autogen.sh --program-suffix=mx890
+        for deb
+        ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=mx890
+        make
+        make install
+
