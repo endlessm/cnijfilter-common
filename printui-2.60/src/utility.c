@@ -1824,8 +1824,11 @@ void on_autopower_send_button_clicked(GtkButton *button, gpointer user_data)
 	power_on_combo = LookupWidget(GTK_WIDGET(button), "autopower_combo1");	
 	power_off_combo = LookupWidget(GTK_WIDGET(button), "autopower_combo2");	
 
-	const power_on_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_on_combo)->entry));	
-	const power_off_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_off_combo)->entry));	
+	/* Ver.2.80 */
+	power_on_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_on_combo));
+	power_off_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_off_combo));
+//	power_on_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_on_combo)->entry));	
+//	power_off_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_off_combo)->entry));	
 	
 	poweron_index = GetAutoPowerIndex(AutoPowerOnKey, 2, power_on_mode);
 	poweroff_index = GetAutoPowerIndex(AutoPowerOffKey, 6, power_off_mode);
