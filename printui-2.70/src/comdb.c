@@ -46,7 +46,7 @@
 
 
 // BJ library dir
-#define	BJ_LIB_DIR	"/usr/lib/bjlib"
+#define	BJ_LIB_DIR	mkpath(XBJLIBPATH)
 
 
 int InitDataBase(char* model_name)

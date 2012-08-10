@@ -12,6 +12,16 @@ AM_INIT_AUTOMAKE(printui${program_suffix}, 2.60-4)
 AM_CONFIG_HEADER(config.h)
 AM_MAINTAINER_MODE
 
+AC_DEFINE([ENABLE_NLS], [], [Description])
+AC_DEFINE([HAVE_LC_MESSAGES], [], [Description])
+AC_DEFINE([HAVE_GETTEXT], [], [Description])
+AC_DEFINE([GETTEXT_PACKAGE], [], [Description])
+AC_DEFINE([PACKAGE_LOCALE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_DATA_DIR], [], [Description])
+AC_DEFINE([PACKAGE_SOURCE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_PRINTER_MODEL], [], [Description])
+AC_DEFINE([XBJLIBPATH], [], [Description])
+
 AC_DEFINE_UNQUOTED(PACKAGE_PRINTER_MODEL, "${program_suffix}")
 
 case "${program_suffix}" in
@@ -41,21 +51,12 @@ fi
 AC_DEFINE_UNQUOTED(XBJLIBPATH, $enable_libpath)
 AC_SUBST(XBJLIBPATH)
 
-case "$CFLAGS" in
-  *-O2* ) ;;
-  *) CFLAGS="$CFLAGS -O2"
-esac
-
-ARC=`getconf LONG_BIT`
-case "$CFLAGS" in
-  *-m32* ) ARC=32;;
-esac
-AC_SUBST(ARC)
 
 AC_ISC_POSIX
 AC_PROG_CC
 AM_PROG_CC_STDC
 AC_HEADER_STDC
+AM_PROG_CC_C_O
 
 AM_PATH_GTK_2_0(2.6.0, ,
             AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
@@ -90,8 +91,30 @@ dnl Set PACKAGE_SOURCE_DIR in config.h.
 packagesrcdir=`cd $srcdir && pwd`
 AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "${packagesrcdir}")
 
+dnl Use -Wall if we have gcc.
+changequote(,)dnl
+if test "x$GCC" = "xyes"; then
+  case " $CFLAGS " in
+  *[\ \	]-Wall[\ \	]*) ;;
+  *) CFLAGS="$CFLAGS -Wall" ;;
+  esac
+fi
+changequote([,])dnl
+
+case "$CFLAGS" in
+  *-O2* ) ;;
+  *) CFLAGS="$CFLAGS -O2"
+esac
+
 XML2_CFLAGS=`xml2-config --cflags`
 AC_SUBST(XML2_CFLAGS)
+
+case "$CFLAGS" in
+  *-m32* ) ARC="32";;
+  *) ARC=`getconf LONG_BIT` 
+esac
+
+AC_SUBST(ARC)
 
 AC_OUTPUT([
 Makefile

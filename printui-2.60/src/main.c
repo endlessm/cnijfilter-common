@@ -170,7 +170,7 @@ int main(int argc, char *argv[])
 void SetGtkResourceFile()
 {
 	// Get gtk resources.
-	gchar* home_dir = NULL;
+	const gchar* home_dir = NULL;
 	gchar* rc_path = NULL;
 
 	home_dir = g_get_home_dir();

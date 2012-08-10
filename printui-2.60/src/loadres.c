@@ -80,7 +80,6 @@ static int ReadLine(FILE* fp, char* buf, int size)
 #define	DEFAULT_KEYTEXT_FILE	"printui.res"
 #define	DEFAULT_UNIT_MM			"mm"	// "mm" or "inch"
 
-#define _(String) dgettext(PACKAGE, String)
 
 int LoadResources()
 {

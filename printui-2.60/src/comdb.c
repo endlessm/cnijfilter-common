@@ -763,7 +763,7 @@ int UpdateMenuLink(short id, short value)
 	short print_quality;
 	short media_supply;
 	short dither_pat;
-	short auto_duplex;
+	short __attribute__ ((unused)) auto_duplex;
 
 	short select_paper_size;		// paper size combo selected paper size
 	short changed_paper_size;		// CNCL_GetMenulink(1st) selected paper size

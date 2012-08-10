@@ -42,6 +42,7 @@ short GetIPCData(LPIPCU pipc, char *sname)
 {
 	struct sockaddr_un		sun;
 	int						s, c;
+	int __attribute__ ((unused)) result1;
 	char					buf[128];
 	size_t					adrlen;
 	short					ret = RET_ERROR;
@@ -63,12 +64,12 @@ short GetIPCData(LPIPCU pipc, char *sname)
 	if (listen(s, 5))
 		return RET_ERROR;
 
-	while ((c = accept(s, (struct sockaddr *)&sun, &adrlen)) >= 0) {
+	while ((c = accept(s, (struct sockaddr *)&sun, (socklen_t *)&adrlen)) >= 0) {
 		/* read command first */
-		read(c, buf, IPCCMDLEN);
+		result1 = read(c, buf, IPCCMDLEN);
 
 		if (strcmp(buf, "PRINT") == 0) {			/* PRINT command */
-			read(c, pipc, sizeof(IPCU));
+			result1 = read(c, pipc, sizeof(IPCU));
 			close(c);
 			ret = RET_PRINT;
 			break;
@@ -79,13 +80,13 @@ short GetIPCData(LPIPCU pipc, char *sname)
 			break;
 		}
 		else if (strcmp(buf, "PDATA") == 0) {		/* PDATA command (for maintenance) */
-			read(c, pipc, sizeof(IPCU));
+			result1 = read(c, pipc, sizeof(IPCU));
 			close(c);
 			ret = RET_PDATA;
 			break;
 		}
 		else if (strcmp(buf, "FDATA") == 0) {		/* FDATA command (to print testpattern) */
-			read(c, pipc, sizeof(IPCU));
+			result1 = read(c, pipc, sizeof(IPCU));
 			close(c);
 			ret = RET_FDATA;
 			break;

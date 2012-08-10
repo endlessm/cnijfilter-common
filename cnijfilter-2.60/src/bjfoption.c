@@ -28,6 +28,7 @@
 #include <stdlib.h>
 #include <popt.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "cncl.h"
 #include "cncldef.h"
@@ -538,7 +539,7 @@ short SetCmdOption(
 	/*--- Analyze command line ---*/
 	init_optioninfo( lpbjfoption );
 	
-	optcon = poptGetContext( NULL, cargc, cargv, optionsTable, 0 );
+	optcon = poptGetContext( NULL, cargc, (const char **)cargv, optionsTable, 0 );
 	
 	memset(confname , 0x00 , sizeof(confname));
 	MakeModelnameConfname( cargv[0], modelname, confname, BJFILTERXXXXRCPATH, BJFILTERDOTCONF );

@@ -381,7 +381,7 @@ int GetTextArrayValueFromCombo(GtkWidget* window, gchar *combo_name,
 		const gchar* key_array[], const short value_array[])
 {
 	GtkWidget* combo = LookupWidget(window, combo_name);
-	gchar* current = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
+	const gchar* current = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
 	int i;
 
 	for( i = 0 ; key_array[i] != NULL ; i++ )

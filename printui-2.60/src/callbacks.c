@@ -445,6 +445,7 @@ on_quality_button_clicked              (GtkButton       *button,
 	EnableSignal();
 }
 
+#if 0
 static void
 confirm_media_supply_change(short old_supply_value)
 {
@@ -466,6 +467,7 @@ confirm_media_supply_change(short old_supply_value)
 		UpdateMenuLink(CNCL_MEDIASUPPLY, old_supply_value);
 	}
 }
+#endif
 
 static void
 update_by_media_type_entry()
@@ -476,7 +478,7 @@ update_by_media_type_entry()
 				(char*)gtk_entry_get_text(GTK_ENTRY(entry)));
 
 	// Save current supply value.
-	short supply_value = GetCurrentnValue(CNCL_MEDIASUPPLY);
+//	short supply_value = GetCurrentnValue(CNCL_MEDIASUPPLY);
 
 	UpdateMenuLink(CNCL_MEDIATYPE, type_value);
 

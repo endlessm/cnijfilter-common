@@ -34,6 +34,7 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <fcntl.h>
+#include <ctype.h>
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
 #define CIFTEMPFILEINPUT "/tmp/ciftmpXXXXXX"
@@ -1356,6 +1357,7 @@ static short ForkLgmon( LPBJFILTERINFO lpbjfinfo, char *dispname, char *modelnam
 	char	small_modelname[256],lgmonname[256];
 	short	i;
 	short	result = 0;
+	size_t __attribute__ ((unused)) result1;
 
 	short cnt;
 	
@@ -1371,7 +1373,7 @@ static short ForkLgmon( LPBJFILTERINFO lpbjfinfo, char *dispname, char *modelnam
 		
 		if  ( lpbjfinfo->pid_lgmon == 0 ) {			/* lgmon is not invoked yet */
 
-			pipe( lpbjfinfo->pipefds );
+			result1 = pipe( lpbjfinfo->pipefds );
 			lpbjfinfo->pid_lgmon = fork();
 
 			if ( lpbjfinfo->pid_lgmon == 0 ) {		/* child process */
