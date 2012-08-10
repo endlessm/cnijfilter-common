@@ -1,6 +1,6 @@
 /*
  *  CUPS add-on module for Canon Inkjet Printer.
- *  Copyright CANON INC. 2001-2011
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -60,7 +60,7 @@ int GetIPCData(LPIPCU pipc, char *sname)
 	if( listen(server_fd, 5) )
 		return RET_ERROR;
 
-	while( (client_fd = accept(server_fd, (struct sockaddr *)&sun, (socklen_t * __restrict__)&len)) >= 0 )
+	while( (client_fd = accept(server_fd, (struct sockaddr *)&sun, (socklen_t *)&len)) >= 0 )
 	{
 		/* read command first */
 		result2 = read(client_fd, buf, IPCCMDLEN);

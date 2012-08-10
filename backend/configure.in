@@ -1,5 +1,5 @@
 AC_INIT(src/cnij_backend_common.c)
-AM_INIT_AUTOMAKE(backend, 3.60-1)
+AM_INIT_AUTOMAKE(backend, 3.70-1)
 
 AM_CONFIG_HEADER(config.h)
 

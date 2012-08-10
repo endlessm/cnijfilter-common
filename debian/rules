@@ -11,73 +11,87 @@
 
 # define package name
 COMMON_PKG=cnijfilter-common
-PRINTER_DEPEND_PKG+=cnijfilter-ip90-253-2.70-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp160-291-2.70-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip3300-292-2.70-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp510-293-2.70-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip4300-294-2.70-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp600-295-2.70-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip2500-311-2.70-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip1800-312-2.70-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip2200-256-2.60-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip4200-260-2.60-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip6600d-265-2.60-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip7500-266-2.60-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp500-273-2.60-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mp140-315-2.80-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp210-316-2.80-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip3500-319-2.80-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp520-328-2.80-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip4500-326-2.80-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp610-327-2.80-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip90-253-2.70-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp160-291-2.70-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip3300-292-2.70-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp510-293-2.70-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip4300-294-2.70-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp600-295-2.70-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip2500-311-2.70-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip1800-312-2.70-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip100-303-2.90-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip2600-331-2.90-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp140-315-2.80-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp210-316-2.80-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip3500-319-2.80-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp520-328-2.80-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip4500-326-2.80-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp610-327-2.80-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip3600-333-3.00-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip4600-334-3.00-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp630-336-3.00-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp540-338-3.00-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp240-341-3.00-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp190-342-3.00-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip1900-346-3.00-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip100-303-3.70-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-ip2600-331-2.90-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mx860-347-3.10-32
-PRINTER_DEPEND_PKG+=cnijfilter-mx320-348-3.10-32
-PRINTER_DEPEND_PKG+=cnijfilter-mx330-349-3.10-32
+PRINTER_DEPEND_PKG+=cnijfilter-ip3600-333-3.00-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip4600-334-3.00-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp630-336-3.00-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp540-338-3.00-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp240-341-3.00-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp190-342-3.00-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip1900-346-3.00-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mp270-357-3.20-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp490-358-3.20-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp550-359-3.20-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp560-360-3.20-32
-PRINTER_DEPEND_PKG+=cnijfilter-ip4700-361-3.20-32
-PRINTER_DEPEND_PKG+=cnijfilter-mp640-362-3.20-32
+PRINTER_DEPEND_PKG+=cnijfilter-mx860-347-3.10-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx320-348-3.10-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx330-349-3.10-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip2700-364-3.30-32
-PRINTER_DEPEND_PKG+=cnijfilter-mx340-365-3.30-32
-PRINTER_DEPEND_PKG+=cnijfilter-mx350-366-3.30-32
-PRINTER_DEPEND_PKG+=cnijfilter-mx870-367-3.30-32
+PRINTER_DEPEND_PKG+=cnijfilter-mp270-357-3.20-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp490-358-3.20-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp550-359-3.20-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp560-360-3.20-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip4700-361-3.20-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp640-362-3.20-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mp250-356-3.40-64
-PRINTER_DEPEND_PKG+=cnijfilter-mp280-370-3.40-64
-PRINTER_DEPEND_PKG+=cnijfilter-mp495-369-3.40-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg5100-373-3.40-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg5200-374-3.40-64
-PRINTER_DEPEND_PKG+=cnijfilter-ip4800-375-3.40-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg6100-376-3.40-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg8100-377-3.40-64
+PRINTER_DEPEND_PKG+=cnijfilter-ip2700-364-3.30-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx340-365-3.30-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx350-366-3.30-32-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx870-367-3.30-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mx360-380-3.50-64
-PRINTER_DEPEND_PKG+=cnijfilter-mx410-381-3.50-64
-PRINTER_DEPEND_PKG+=cnijfilter-mx420-382-3.50-64
-PRINTER_DEPEND_PKG+=cnijfilter-mx880-383-3.50-64
-PRINTER_DEPEND_PKG+=cnijfilter-ix6500-384-3.50-64
+PRINTER_DEPEND_PKG+=cnijfilter-mp250-356-3.40-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp280-370-3.40-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mp495-369-3.40-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg5100-373-3.40-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg5200-374-3.40-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip4800-375-3.40-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg6100-376-3.40-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg8100-377-3.40-64-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mg2100-386-3.60-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg3100-387-3.60-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg4100-388-3.60-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg5300-389-3.60-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg6200-390-3.60-64
-PRINTER_DEPEND_PKG+=cnijfilter-mg8200-391-3.60-64
-PRINTER_DEPEND_PKG+=cnijfilter-ip4900-392-3.60-64
-PRINTER_DEPEND_PKG+=cnijfilter-e500-393-3.60-64
+PRINTER_DEPEND_PKG+=cnijfilter-mx360-380-3.50-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx410-381-3.50-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx420-382-3.50-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mx880-383-3.50-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-ix6500-384-3.50-64-no
 
+PRINTER_DEPEND_PKG+=cnijfilter-mg2100-386-3.60-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg3100-387-3.60-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg4100-388-3.60-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg5300-389-3.60-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg6200-390-3.60-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-mg8200-391-3.60-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-ip4900-392-3.60-64-no
+PRINTER_DEPEND_PKG+=cnijfilter-e500-393-3.60-64-no
+
+PRINTER_DEPEND_PKG+=cnijfilter-mx710-394-3.70-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx890-395-3.70-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx370-396-3.70-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx430-397-3.70-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx510-398-3.70-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-e600-399-3.70-64-yes
+
+PRINTER_DEPEND_VER+=2.60
 PRINTER_DEPEND_VER+=2.70
 PRINTER_DEPEND_VER+=2.80
 PRINTER_DEPEND_VER+=2.90
@@ -88,6 +102,7 @@ PRINTER_DEPEND_VER+=3.30
 PRINTER_DEPEND_VER+=3.40
 PRINTER_DEPEND_VER+=3.50
 PRINTER_DEPEND_VER+=3.60
+PRINTER_DEPEND_VER+=3.70
 
 PRINTER_PKG_PROGRAM+=ppd
 PRINTER_PKG_PROGRAM+=cnijfilter
@@ -95,8 +110,13 @@ PRINTER_PKG_PROGRAM+=printui
 PRINTER_PKG_PROGRAM+=lgmon
 PRINTER_PKG_PROGRAM+=cngpijmon
 
+PRINTER_PKG_PPD+=cnijfilter-ip5200
+PRINTER_PKG_PPD+=cnijfilter-ip5200r
+
 SHELL = /bin/bash
 CFLAGS = -Wall -g
+# -m32
+#LDFLAGS += -L/lib32 -L/usr/lib32
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
 	CFLAGS += -O0
@@ -109,6 +129,7 @@ ifeq ($(LNGBITS),32)
 	_arc=32
 else
 	_arc=64
+#	_arc=32
 endif
 LDFLAGS += -L../../com/libs_bin${_arc}
 
@@ -132,7 +153,7 @@ configure-stamp:
 	@echo "######## configure backendnet"; \
 	cd ./backendnet; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	@echo "######## configure sm sub process"; \
-	cd ./cngpijmon-3.60/cnijnpr; ./autogen.sh --prefix=/usr
+	cd ./cngpijmon-3.70/cnijnpr; ./autogen.sh --prefix=/usr
 
 	#### configure printer package
 	for ver in ${PRINTER_DEPEND_VER}; do \
@@ -264,6 +285,24 @@ install: build
 		fi; \
 		fi; \
 	done
+	### install printer package only ppd
+	for pkg in ${PRINTER_PKG_PPD}; do \
+		model_name=`echo $${pkg} | cut -d- -f2` && \
+		comm_name=`echo $${pkg} | cut -d- -f1` && \
+		model_dir=$${comm_name}-$${model_name}series && \
+		deb_model_dir=$(CURDIR)/debian/$${model_dir}; \
+			pushd ./ppd; \
+			find . -name Makefile -print > file_lists; \
+			find . -name config.h -print >> file_lists; \
+			for fn in `cat file_lists`; do \
+				if [ ! -f $${fn}.org ]; then \
+					cp $${fn} $${fn}.org; \
+				fi; \
+				sed -e s/CN_IJ_MODEL/$${model_name}/g $${fn}.org > cn_ij_tmp; mv cn_ij_tmp $${fn}; \
+			done; \
+			make clean; make; make install DESTDIR=$${deb_model_dir}; \
+			popd; \
+	done
 
 	### install common package
 	@echo "######## compile libs"; \
@@ -277,12 +316,14 @@ install: build
 	@echo "######## install backendnet"; \
 	cd ./backendnet; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install sm sub process"; \
-	cd ./cngpijmon-3.60/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
+	cd ./cngpijmon-3.70/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install common library"; \
 	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
 	install -c -m 755 com/libs_bin${_arc}/libcnnet.so.* $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
 	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib; \
 	install -c -m 644 -o lp -g lp com/ini/cnnet.ini $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib;
+	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d; \
+	install -c -m 644 etc/*.rules $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d;
 
 	# Add here commands to install the package into debian/cnijfilter-common.
 	#$(MAKE) install DESTDIR=$(CURDIR)/debian/cnijfilter-common
@@ -315,7 +356,7 @@ binary-arch: build install
 	dh_installman
 	dh_link
 	dh_strip
-	dh_compress
+	dh_compress -X.txt
 	dh_fixperms --exclude=bscc --exclude=cnnet.ini
 #	dh_perl
 #	dh_makeshlibs

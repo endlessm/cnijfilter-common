@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2011
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -127,6 +127,13 @@
 #define CND_MG8200        (1391)
 #define CND_IP4900        (1392)
 #define CND_E500          (1393)
+
+#define CND_MX710         (1394)
+#define CND_MX890         (1395)
+#define CND_MX370         (1396)
+#define CND_MX430         (1397)
+#define CND_MX510         (1398)
+#define CND_E600          (1399)
 
 
 /* MediaType (MediaType) */

@@ -2,7 +2,7 @@
 %bcond_with fastbuild
 %bcond_with build_common_package
 
-%define VERSION 3.60
+%define VERSION 3.70
 %define RELEASE 1
 
 %define _arc  %(getconf LONG_BIT)
@@ -167,11 +167,11 @@ pushd backend
 popd
 
 pushd backendnet
-    ./autogen.sh --prefix=%{_prefix} --enable-progpath=%{_bindir} LDFLAGS="-L../../com/libs_bin%{_arc}"
+    ./autogen.sh --prefix=%{_prefix} --enable-libpath=%{_libdir}/bjlib --enable-progpath=%{_bindir} LDFLAGS="-L../../com/libs_bin%{_arc}"
 popd
 
 pushd cngpijmon/cnijnpr
-    ./autogen.sh --prefix=%{_prefix}
+    ./autogen.sh --prefix=%{_prefix} --enable-libpath=%{_libdir}/bjlib
 popd
 make
 %endif
@@ -211,6 +211,7 @@ mkdir -p ${RPM_BUILD_ROOT}%{_cupsbindir}/backend
 mkdir -p ${RPM_BUILD_ROOT}%{_cupsbindir64}/filter
 mkdir -p ${RPM_BUILD_ROOT}%{_cupsbindir64}/backend
 mkdir -p ${RPM_BUILD_ROOT}%{_prefix}/share/cups/model
+mkdir -p ${RPM_BUILD_ROOT}/etc/udev/rules.d/
 
 install -c -m 644 com/ini/cnnet.ini  		${RPM_BUILD_ROOT}%{_libdir}/bjlib
 
@@ -220,6 +221,8 @@ install -c -s -m 755 com/libs_bin%{_arc}/*.so.* 	${RPM_BUILD_ROOT}%{_libdir}
 install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/filter/pstocanonij	${RPM_BUILD_ROOT}%{_cupsbindir64}/filter/pstocanonij
 install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/backend/cnijusb	${RPM_BUILD_ROOT}%{_cupsbindir64}/backend/cnijusb
 install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/backend/cnijnet	${RPM_BUILD_ROOT}%{_cupsbindir64}/backend/cnijnet
+
+install -c -m 644 etc/*.rules ${RPM_BUILD_ROOT}/etc/udev/rules.d/
 %endif
 
 
@@ -231,6 +234,7 @@ rm -rf $RPM_BUILD_ROOT
 if [ -x /sbin/ldconfig ]; then
 	/sbin/ldconfig
 fi
+
 %postun
 # remove cnbp* libs
 for LIBS in %{CNBP_LIBS}
@@ -268,6 +272,11 @@ fi
 if [ -x /sbin/ldconfig ]; then
 	/sbin/ldconfig
 fi
+if [ -x /sbin/udevadm ]; then
+	/sbin/udevadm control --reload-rules 2> /dev/null
+	/sbin/udevadm trigger --action=add --subsystem-match=usb 2> /dev/null
+fi
+
 %postun -n cnijfilter-common
 for LIBS in %{COM_LIBS}
 do
@@ -306,6 +315,11 @@ fi
 %doc LICENSE-cnijfilter-%{VERSION}SC.txt
 %doc LICENSE-cnijfilter-%{VERSION}FR.txt
 
+%doc lproptions/lproptions-%{MODEL}-%{VERSION}JP.txt
+%doc lproptions/lproptions-%{MODEL}-%{VERSION}EN.txt
+%doc lproptions/lproptions-%{MODEL}-%{VERSION}SC.txt
+%doc lproptions/lproptions-%{MODEL}-%{VERSION}FR.txt
+
 %if %{with build_common_package}
 %files -n cnijfilter-common
 %defattr(-,root,root)
@@ -320,6 +334,8 @@ fi
 %{_bindir}/cnijnetprn
 %{_libdir}/libcnnet.so*
 %attr(644, lp, lp) %{_libdir}/bjlib/cnnet.ini
+
+/etc/udev/rules.d/*.rules
 
 %doc LICENSE-cnijfilter-%{VERSION}JP.txt
 %doc LICENSE-cnijfilter-%{VERSION}EN.txt

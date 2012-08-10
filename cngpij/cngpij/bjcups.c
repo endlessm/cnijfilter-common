@@ -1,6 +1,6 @@
 /*
  *  CUPS add-on module for Canon Inkjet Printer.
- *  Copyright CANON INC. 2001-2011
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -42,8 +42,8 @@
 #include "bjcups.h"
 #include "bjutil.h"
 
-#define	BJCUPS_VERSION	"cngpij Ver.3.60  Copyright CANON INC. 2002-2011\n"
-#define BJCUPS_INTVER	"cngpij Internal Version : 3.60.01.002\n"
+#define	BJCUPS_VERSION	"cngpij Ver.3.70  Copyright CANON INC. 2002-2012\n"
+#define BJCUPS_INTVER	"cngpij Internal Version : 3.70.01.005\n"
 
 #define	BJ_SOCKET		"/tmp/ijui"
 
@@ -58,11 +58,17 @@
 #define	UI_OPT_INTVER	8
 #define	UI_OPT_CHECKENTRY	16
 
+/* Ver.3.70 */
+#define	LINE_BUF_SIZE	1024
+#define CNPPD_SETTINGS_SUPPORT_DEVURI_OPT	"EnableDEVURIOption"
+#define TRUE 1
+#define FALSE 0
 
 char* g_printer_name = NULL;
 
 
 extern int GetIPCData(LPIPCU pipc, char *sname);
+static short getDeviceURI( const char *pDestName, char *pDeviceURI, short bufSize);
 
 
 int get_value_and_param_array(short id, short** value, char*** param)
@@ -246,6 +252,9 @@ static short check_entry_name(const char *printer_name)
 	char			compare_name[256];
 	short			target_name_len;
 	short			result = 1;				/* not exist */
+	char	devURIBuf[10224];
+
+	getDeviceURI( printer_name, devURIBuf, sizeof(devURIBuf) );
 
 	target_name_len = strlen( printer_name );
 	if( target_name_len > 255 )
@@ -277,7 +286,6 @@ static short check_entry_name(const char *printer_name)
 				strncpy( compare_name , current_dests->name , strlen( current_dests->name ) );
 				char_lower( compare_name , strlen( compare_name ) );
 
-//				fprintf(stderr,"target=%s  compare=%s\n",target_name,compare_name);
 	
 				if( !strncmp( target_name , compare_name , target_name_len ) )
 				{
@@ -287,7 +295,6 @@ static short check_entry_name(const char *printer_name)
 			}
 			else
 			{
-//				fprintf(stderr,"compare=#%s# len=%d\n",current_dests->name,strlen(compare_name));
 			}
 			current_dests++;
 		}
@@ -670,7 +677,7 @@ static cups_lang_t * bjcupsLangDefault( )
 
 
 
-static short getDeviceURI( char *pDestName, char *pDeviceURI, short bufSize)
+static short getDeviceURI( const char *pDestName, char *pDeviceURI, short bufSize)
 {
 /*** Parameters start ***/
 	http_t			*pHTTP;						// Pointer to HTTP connection.
@@ -752,7 +759,79 @@ onErr:
 }// End getDeviceURI
 
 
+static int read_line(FILE *fp, char *buf, int buf_size)
+{
+	int cc = EOF;
+	int i = 0;
 
+	if( buf != NULL && buf_size > 0 )
+	{
+		while( (cc = fgetc(fp)) != EOF )
+		{
+			if( cc == 0x0d || cc == 0x0a )
+				break;
+			if( i < buf_size - 1 )
+				buf[i++] = cc;
+		}
+		buf[i] = 0;
+	}
+
+	return (cc == EOF)? -1 : i;
+}
+
+
+static int ParseCNPpdOption( int *value, char *key )
+{
+	const char *p_ppd_name = cupsGetPPD( g_printer_name );
+	char *keyStr;
+	FILE *fp = NULL;
+	char line_buf[LINE_BUF_SIZE];
+	int result = -1;
+
+	if ( (value == NULL) || (key == NULL) ) goto onErr1;
+	*value = 0;	
+
+	if ( (fp = fopen( p_ppd_name, "r" )) == NULL ) goto onErr1;
+
+	while( read_line( fp, line_buf, LINE_BUF_SIZE ) >= 0 ){
+		if( line_buf[0] == '*' && line_buf[1] == '%' ){
+			keyStr = strtok(line_buf, " ");
+			if ( (keyStr != NULL) && (!strcmp(keyStr, "*%CNPpdOptions")) ){
+				keyStr = strtok(NULL, " ");
+				while ( keyStr != NULL ){
+					if ( !strcmp(keyStr, key) ){
+						*value = 1;
+						break;
+					}								
+					keyStr = strtok(NULL, " ");
+				}
+			}
+		}
+	}
+
+	result = 0;
+	if ( fp != NULL ) fclose( fp );
+onErr1:
+	return result;
+}
+
+static int isSupportMSI( void )
+{
+	int value;
+	int result = FALSE;
+
+	if ( ParseCNPpdOption( &value, CNPPD_SETTINGS_SUPPORT_DEVURI_OPT ) < 0 ) goto onErr;
+
+	if ( value == 1 ) {
+		result = TRUE;
+	}
+	else {
+		result = FALSE;
+	}
+
+onErr:
+	return result;
+}
 
 
 
@@ -766,7 +845,7 @@ int main(int argc, char* argv[])
 	char *ui_path = NULL;
 	char ui_name[256];
 	char socket_name[64];
-	char *ui_arg[6];
+	char *ui_arg[8];
 
 	/* Ver.3.20 */
 	short		ret=-1;
@@ -779,7 +858,9 @@ int main(int argc, char* argv[])
 	short		add_direct = 0;
 	const char 		*p_ppd_name;
 	ppd_file_t	*p_ppd;
-	
+
+	/* Ver.3.70 */
+	int arg_num;	
 
 	if( argc == 1 )
 	{
@@ -816,7 +897,6 @@ int main(int argc, char* argv[])
 	{
 		memset( device_uri_buf , 0x00 , device_uri_buf_len );
 		ret = getDeviceURI( g_printer_name , device_uri_buf , device_uri_buf_len );
-//		fprintf(stderr, "device_uri_buf=%s\n",device_uri_buf);
 		if( ret < -1 )
 		{
 			fputs("ERROR: Can't get device URI.\n", stderr);
@@ -826,7 +906,6 @@ int main(int argc, char* argv[])
 		if( !strncmp( device_uri_buf , canon_usb_backend_str , strlen( canon_usb_backend_str ) ) ) canon_backend_flag = 1;
 		else if( !strncmp( device_uri_buf , canon_net_backend_str , strlen( canon_net_backend_str ) ) ) canon_backend_flag = 1;
 		
-//		fprintf(stderr,"canon_backend_flag=%d\n",canon_backend_flag);
 		
 		/* PPD open and check cupsModelNumber */
 		p_ppd_name = cupsGetPPD( g_printer_name );
@@ -861,15 +940,30 @@ int main(int argc, char* argv[])
 
 	snprintf(socket_name, 63, "%s%d", BJ_SOCKET, getpid());
 
-	ui_arg[0] = ui_name;
-	ui_arg[1] = "-s";
-	ui_arg[2] = socket_name;
-	ui_arg[3] = "--cups";
-	/* Ver.3.20 */
-	if( add_bidi ) ui_arg[4] = "--bidi";
-	else ui_arg[4] = NULL;
 
-	ui_arg[5] = NULL;
+	for ( arg_num=0; arg_num<sizeof(ui_arg)/sizeof(char*); arg_num++ ) {
+		ui_arg[arg_num] = NULL;
+	}
+
+	arg_num = 0;
+	ui_arg[arg_num] = ui_name; arg_num++;
+	ui_arg[arg_num] = "-s"; arg_num++;
+	ui_arg[arg_num] = socket_name; arg_num++;
+	ui_arg[arg_num] = "--cups"; arg_num++;
+
+	/* Ver.3.20 */
+	if( add_bidi ) {
+		ui_arg[arg_num] = "--bidi"; arg_num++;
+	}
+
+	/* Ver.3.70 */
+	if ( canon_backend_flag ) {
+		if ( isSupportMSI() == 1 ) {
+			ui_arg[arg_num] = "--devuri"; arg_num++;
+			ui_arg[arg_num] = device_uri_buf; arg_num++;
+		}
+	}
+
 
 
 #if 0
