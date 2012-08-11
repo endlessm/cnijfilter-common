@@ -401,7 +401,7 @@ static int check_signal()
 
 static int print_normal()
 {
-	int error = 0;
+	int __attribute__ ((unused)) error = 0;
 	int r_size;
 	int w_size;
 	char *buf;

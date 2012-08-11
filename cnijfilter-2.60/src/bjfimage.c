@@ -108,7 +108,7 @@ short bjf_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 		if ( !fread( tbuf, 2, 1, stdin ) ) goto onErr;
 
 		/*-- support ppm stdin --*/
-		if ( bufmatch( PPMRAWSTART, tbuf, 2 ) > 0 ){
+		if ( bufmatch( PPMRAWSTART, (char *)tbuf, 2 ) > 0 ){
 			lpbjfimage->imageformat = BJFIMAGE_PPM;
 		}
 		else {
@@ -128,13 +128,13 @@ short bjf_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 			tf = NULL;
 		}
 	
-		if ( ( bufmatch( TIFFSTART1, tbuf, 2 ) > 0 ) | ( bufmatch( TIFFSTART2, tbuf, 2 ) > 0 ) )
+		if ( ( bufmatch( TIFFSTART1, (char *)tbuf, 2 ) > 0 ) | ( bufmatch( TIFFSTART2, (char *)tbuf, 2 ) > 0 ) )
 			lpbjfimage->imageformat = BJFIMAGE_TIFF;
-		else if ( bufmatch( BMPSTART, tbuf, 2 ) > 0 )
+		else if ( bufmatch( BMPSTART, (char *)tbuf, 2 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_BMP;
-		else if ( bufmatch( PPMRAWSTART, tbuf, 2 ) > 0 )
+		else if ( bufmatch( PPMRAWSTART, (char *)tbuf, 2 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_PPM;
-		else if ( bufmatch( PNGSTART, tbuf, 8 ) > 0 )
+		else if ( bufmatch( PNGSTART, (char *)tbuf, 8 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_PNG;
 		else{
 			bjf_error( "not support this image format", FILE_ERROR );
@@ -380,8 +380,8 @@ static short bufmatch( char *buf1, char *buf2, short length )
 {
 	short i = 0;
 	short result = -1;
-	char *tmp1;
-	char *tmp2;
+	char __attribute__ ((unused)) *tmp1;
+	char __attribute__ ((unused)) *tmp2;
 	
 	tmp1 = buf1;
 	tmp2 = buf2;
@@ -542,7 +542,7 @@ onErr:
 static short tiff_image_read_raster( LPBJF_IMAGEINFO lpbjfimage, char *buf, long x, long y, long width )
 {
 	char				*localbuf = NULL;
-	long				RasterLength;
+	long __attribute__ ((unused))	RasterLength;
 	short				bpp;
 	short				result = -1;
 	
@@ -632,7 +632,7 @@ static short bmp_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	unsigned char		**rawbuf = NULL;
 	unsigned char		*buf = NULL;
 	long				rstep = 0;
-	short				retbyte;
+	short __attribute__ ((unused))	retbyte;
 	short				tmpflg;
 	short				tmpformat;
 	FILE				*tmpfp;
@@ -852,7 +852,7 @@ onErr:
 static short bmp_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
 	long				length = 0;
-	long				top = 0;
+	long __attribute__ ((unused))	top = 0;
 	long				readraster = 0;
 	long				rasterlength = 0;
 	long				remain = 0;
@@ -989,7 +989,7 @@ static short ppm_image_init( LPBJF_IMAGEINFO lpbjfimage )
 			goto onErr;
 		}
 
-		if ( bufmatch( PPMRAWSTART, buffer, 2 ) < 0 ) goto onErr;
+		if ( bufmatch( PPMRAWSTART, (char *)buffer, 2 ) < 0 ) goto onErr;
 	}
 
 	/* skip "0x0A" after "P6" */
@@ -1139,7 +1139,7 @@ onErr:
 
 static short ppm_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
-	long			length, width, top;
+	long __attribute__ ((unused)) length, width, top;
 	long			readraster, remain;
 	long			RasterLength;
 	short			bpp;
@@ -1297,7 +1297,7 @@ static short ppm_image_init_rev( LPBJF_IMAGEINFO lpbjfimage )
 			goto onErr;
 		}
 
-		if ( bufmatch( PPMRAWSTART, buffer, 2 ) < 0 ) goto onErr;
+		if ( bufmatch( PPMRAWSTART, (char *)buffer, 2 ) < 0 ) goto onErr;
 	}
 
 	/* skip "0x0A" after "P6" */
@@ -1520,12 +1520,12 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 {
 	FILE			*readfp;
 	FILE			*tmpfp;
-	unsigned char	buffer[50];
+	unsigned char __attribute__ ((unused)) buffer[50];
 	unsigned char	*buf = NULL;
 	unsigned char	**rawbuf = NULL;
 	short			tmpflg;
 	short			tmpformat;
-	short			retbyte = 0;
+	short __attribute__ ((unused)) retbyte = 0;
 	short			bpp = 3;
 	long			width = 0;
 	long			length = 0;
@@ -1533,13 +1533,13 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	long			RasterLength = 0;
 	long			i;
 	short			result = -1;
-	char			ch;
+	char __attribute__ ((unused)) ch;
 	png_structp		png_p;
 	png_infop		info_p;
 	int				bit_depth, color_type, interlace_type;
 
-	png_color_16 my_background, *image_background;
-   int intent,screen_gamma;
+	png_color_16 __attribute__ ((unused)) my_background, *image_background;
+	int __attribute__ ((unused)) intent,screen_gamma;
 
 
 	/*---
@@ -1592,7 +1592,7 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 
 	png_read_info( png_p, info_p );
 
-	png_get_IHDR( png_p, info_p, &width, &length, &bit_depth,
+	png_get_IHDR( png_p, info_p, (png_uint_32 *)&width, (png_uint_32 *)&length, &bit_depth,
 	              &color_type, &interlace_type, NULL, NULL);
 
 	/* not support Interlace */
@@ -1694,8 +1694,8 @@ static short png_image_read_raster
 	long			i;
 	long			top, skip, rstep, laststep;
 	long			currentmax, currentpos;
-	long			RasterLength = 0;
-	FILE			*readfp = NULL;
+	long __attribute__ ((unused)) RasterLength = 0;
+	FILE __attribute__ ((unused)) *readfp = NULL;
 	short			result = -1;
 	png_structp		png_ptr;
 
@@ -1779,7 +1779,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
 	png_structp		png_ptr;
 	png_infop		info_ptr;
-	FILE			*readfp;
+	FILE __attribute__ ((unused)) *readfp;
 	short			result = -1;
 
 	png_ptr = (png_structp)lpbjfimage->png_ptr;
@@ -1792,7 +1792,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 	lpbjfimage->info_ptr = NULL;
 
 	return 0;
-onErr:
+//onErr:
 	return result;	
 
 }
@@ -1832,9 +1832,9 @@ int ppm_write_tmpfile( LPBJF_IMAGEINFO lpbjfimage, char *filename , char *outfil
 	short			retbyte;
 	char			ch;
 	unsigned char	*buf = NULL;
-	long			parm_len = 0;
+	long __attribute__ ((unused)) parm_len = 0;
 	int				fd = -1;
-	int				w_size;
+	int __attribute__ ((unused)) w_size;
 	long			block_num = 0;
 	long			lastblock_size = 0;
 	short			i;
@@ -1857,7 +1857,7 @@ int ppm_write_tmpfile( LPBJF_IMAGEINFO lpbjfimage, char *filename , char *outfil
 		return CIF_FILE_END;	/* end document --> return */
 	}
 
-	if ( bufmatch( PPMRAWSTART, buffer, 2 ) < 0 ) goto onErr;
+	if ( bufmatch( PPMRAWSTART, (char *)buffer, 2 ) < 0 ) goto onErr;
 
 	/* make tempfile to output */
 	fd = mkstemp(outfile);
@@ -1927,7 +1927,7 @@ static long readwritePPMParam( FILE *fp, long *width, long *height, long *maxval
 	char	max_buf[25];
 	char	*ptr = NULL;
 	long	count = 0;
-	int		w_size;
+	int __attribute__ ((unused)) w_size;
 
 	ch = (char)fgetc( fp );
 

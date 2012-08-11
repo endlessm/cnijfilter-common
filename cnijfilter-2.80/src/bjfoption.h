@@ -207,7 +207,7 @@ typedef struct {
 } BJF_OPTINFO, *LPBJF_OPTINFO;
 
 /* over margin */
-static short ExtensionTbl[][2] = 
+static short __attribute__ ((unused)) ExtensionTbl[][2] = 
 {
 	{0, CND_OVERMARGINLEVEL_00},
 	{1, CND_OVERMARGINLEVEL_01},
@@ -245,7 +245,7 @@ static short ExtensionTbl[][2] =
 #define		OPT_ERR_CODE_MAX	(23)
 
 
-static char usage_err_mes[OPT_ERR_CODE_MAX][256]={
+static char __attribute__ ((unused)) usage_err_mes[OPT_ERR_CODE_MAX][256]={
 	"Allowed argument of \"--imageres\" : 1 - 32767\n",
 	"",
 	"",

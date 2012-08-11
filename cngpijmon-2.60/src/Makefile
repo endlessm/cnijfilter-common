@@ -16,10 +16,10 @@
 
 
 
-pkgdatadir = $(datadir)/cngpijmonCN_IJ_MODEL
-pkgincludedir = $(includedir)/cngpijmonCN_IJ_MODEL
-pkglibdir = $(libdir)/cngpijmonCN_IJ_MODEL
-pkglibexecdir = $(libexecdir)/cngpijmonCN_IJ_MODEL
+pkgdatadir = $(datadir)/cngpijmonmp500
+pkgincludedir = $(includedir)/cngpijmonmp500
+pkglibdir = $(libdir)/cngpijmonmp500
+pkglibexecdir = $(libexecdir)/cngpijmonmp500
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -68,12 +68,12 @@ DIST_SOURCES = $(cngpijmon_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/misak/src/cnijfilter-common/cngpijmon-2.60/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/misak/cnijfilter-common/cngpijmon-2.60/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/misak/src/cnijfilter-common/cngpijmon-2.60/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/misak/src/cnijfilter-common/cngpijmon-2.60/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/misak/src/cnijfilter-common/cngpijmon-2.60/missing --run automake-1.11
-AWK = gawk
+AUTOCONF = ${SHELL} /home/misak/cnijfilter-common/cngpijmon-2.60/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/misak/cnijfilter-common/cngpijmon-2.60/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/misak/cnijfilter-common/cngpijmon-2.60/missing --run automake-1.11
+AWK = mawk
 CATALOGS =  cs.gmo da.gmo de.gmo el.gmo es.gmo fi.gmo fr.gmo hu.gmo it.gmo ja.gmo ko.gmo nl.gmo no.gmo pl.gmo pt.gmo ru.gmo sv.gmo th.gmo tr.gmo zh.gmo zh_TW.gmo
 CATOBJEXT = .gmo
 CC = gcc
@@ -90,11 +90,11 @@ ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
 EXEEXT = 
-GETTEXT_PACKAGE = cngpijmonCN_IJ_MODEL
+GETTEXT_PACKAGE = cngpijmonmp500
 GMOFILES =  cs.gmo da.gmo de.gmo el.gmo es.gmo fi.gmo fr.gmo hu.gmo it.gmo ja.gmo ko.gmo nl.gmo no.gmo pl.gmo pt.gmo ru.gmo sv.gmo th.gmo tr.gmo zh.gmo zh_TW.gmo
 GMSGFMT = /usr/bin/msgfmt
 GREP = /bin/grep
-GTK_CFLAGS = -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
+GTK_CFLAGS = -pthread -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
 GTK_LIBS = -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lglib-2.0  
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
@@ -103,17 +103,17 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INSTOBJEXT = .mo
 INTLLIBS = 
-LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin64
+LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin32
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/misak/src/cnijfilter-common/cngpijmon-2.60/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/misak/cnijfilter-common/cngpijmon-2.60/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 MKINSTALLDIRS = ./mkinstalldirs
 MSGFMT = /usr/bin/msgfmt
 MSGFMT_OPTS = -c
 OBJEXT = o
-PACKAGE = cngpijmonCN_IJ_MODEL
+PACKAGE = cngpijmonmp500
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = 
 PACKAGE_STRING = 
@@ -134,10 +134,10 @@ USE_NLS = yes
 VERSION = 2.60-4
 XGETTEXT = /usr/bin/xgettext
 XML2_CFLAGS = -I/usr/include/libxml2
-abs_builddir = /home/misak/src/cnijfilter-common/cngpijmon-2.60/src
-abs_srcdir = /home/misak/src/cnijfilter-common/cngpijmon-2.60/src
-abs_top_builddir = /home/misak/src/cnijfilter-common/cngpijmon-2.60
-abs_top_srcdir = /home/misak/src/cnijfilter-common/cngpijmon-2.60
+abs_builddir = /home/misak/cnijfilter-common/cngpijmon-2.60/src
+abs_srcdir = /home/misak/cnijfilter-common/cngpijmon-2.60/src
+abs_top_builddir = /home/misak/cnijfilter-common/cngpijmon-2.60
+abs_top_srcdir = /home/misak/cnijfilter-common/cngpijmon-2.60
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -156,7 +156,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/misak/src/cnijfilter-common/cngpijmon-2.60/install-sh
+install_sh = ${SHELL} /home/misak/cnijfilter-common/cngpijmon-2.60/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -166,7 +166,7 @@ mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr
-program_transform_name = s&$$&CN_IJ_MODEL&
+program_transform_name = s&$$&mp500&
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -178,7 +178,7 @@ top_builddir = ..
 top_srcdir = ..
 INCLUDES = \
 	-DUSE_LIB_GLASE	\
-	-pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
+	-pthread -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
 
 cngpijmon_SOURCES = \
 	bjcupsmon_main.c \
@@ -193,7 +193,7 @@ cngpijmon_SOURCES = \
 	interface.c interface.h support.c support.h 
 
 cngpijmon_LDADD = -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lglib-2.0   $(INTLLIBS) -lxml2 -lcups 
-cngpijmon_LDFLAGS = -L../../lgmon/src
+cngpijmon_LDFLAGS = -L../../lgmon-2.60/src
 all: all-am
 
 .SUFFIXES:

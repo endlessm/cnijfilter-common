@@ -126,5 +126,7 @@ extern short SetBbox( LPBJF_POS_IMGINFO, long *, LPBJF_POSINFO, LPBJF_MARGIN_INF
 short bjf_pos_set_paperwidth( LPBJF_MARGIN_INFO , long );
 short bjf_pos_set_paperlength( LPBJF_MARGIN_INFO , long );
 
+extern void bjf_margin_init( LPBJF_MARGIN_INFO );
+extern short SetExtLevel( LPBJF_MARGIN_INFO, short);
 
 #endif

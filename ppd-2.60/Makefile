@@ -91,12 +91,12 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/misak/src/cnijfilter-common/ppd-2.60/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/misak/cnijfilter-common/ppd-2.60/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/misak/src/cnijfilter-common/ppd-2.60/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/misak/src/cnijfilter-common/ppd-2.60/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/misak/src/cnijfilter-common/ppd-2.60/missing --run automake-1.11
-AWK = gawk
+AUTOCONF = ${SHELL} /home/misak/cnijfilter-common/ppd-2.60/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/misak/cnijfilter-common/ppd-2.60/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/misak/cnijfilter-common/ppd-2.60/missing --run automake-1.11
+AWK = mawk
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\"
 ECHO_C = 
@@ -110,7 +110,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/misak/src/cnijfilter-common/ppd-2.60/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/misak/cnijfilter-common/ppd-2.60/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 PACKAGE = canonppd
 PACKAGE_BUGREPORT = 
@@ -120,16 +120,16 @@ PACKAGE_TARNAME =
 PACKAGE_URL = 
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
-PPD_SUFFIX = CN_IJ_MODEL
+PPD_SUFFIX = ip5200r
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = 
 VERSION = 1.0.0
 XPPDPATH = /usr/share/ppd
-abs_builddir = /home/misak/src/cnijfilter-common/ppd-2.60
-abs_srcdir = /home/misak/src/cnijfilter-common/ppd-2.60
-abs_top_builddir = /home/misak/src/cnijfilter-common/ppd-2.60
-abs_top_srcdir = /home/misak/src/cnijfilter-common/ppd-2.60
+abs_builddir = /home/misak/cnijfilter-common/ppd-2.60
+abs_srcdir = /home/misak/cnijfilter-common/ppd-2.60
+abs_top_builddir = /home/misak/cnijfilter-common/ppd-2.60
+abs_top_srcdir = /home/misak/cnijfilter-common/ppd-2.60
 am__leading_dot = .
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
@@ -145,7 +145,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/misak/src/cnijfilter-common/ppd-2.60/install-sh
+install_sh = ${SHELL} /home/misak/cnijfilter-common/ppd-2.60/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -155,7 +155,7 @@ mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr
-program_transform_name = s&$$&CN_IJ_MODEL&
+program_transform_name = s&$$&ip5200r&
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -167,7 +167,7 @@ top_builddir = .
 top_srcdir = .
 ppddir = /usr/share/ppd
 ppd_DATA = \
-	canonCN_IJ_MODEL.ppd
+	canonip5200r.ppd
 
 all: all-am
 

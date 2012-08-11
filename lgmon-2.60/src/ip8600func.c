@@ -124,7 +124,7 @@ int pixusip8600_setalert(bscc2sts_tbl *p_tbl, int color_num)
  */
 int pixusip8600_setoperate(ST_STORESET *p_s, ST_BSCC2STS *p_ct, bscc2sts_tbl *p_tbl, ST_BSCCBUF *p_bsccbuf)
 {
-  int ret;
+  int __attribute__ ((unused)) ret;
   int i=0;
 
   if( (p_s->p_bsccsts == NULL) ){

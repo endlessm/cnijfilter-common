@@ -4,11 +4,11 @@ AC_INIT(configure.in)
 AC_ARG_PROGRAM
 
 if test "${program_suffix}" = "NONE"; then
-  program_suffix="CN_IJ_MODEL_NUM"
+  program_suffix="mx890"
   program_transform_name="s,\$\$,${program_suffix},;"
 fi
 
-AM_INIT_AUTOMAKE(lgmon${program_suffix}, 2.60-4)
+AM_INIT_AUTOMAKE(lgmon{program_suffix}, 2.60-4)
 AM_CONFIG_HEADER(config.h)
 dnl AM_MAINTAINER_MODE
 
@@ -29,6 +29,14 @@ AC_DEFINE_UNQUOTED(PROG_PATH, "$enable_progpath")
 AC_SUBST(PROG_PATH)
 
 AC_ISC_POSIX
+
+case "$CFLAGS" in
+  *-m32* ) ARC="32";;
+  *) ARC=`getconf LONG_BIT` 
+esac
+
+AC_SUBST(ARC)
+
 AC_PROG_CC
 AM_PROG_CC_STDC
 AC_HEADER_STDC

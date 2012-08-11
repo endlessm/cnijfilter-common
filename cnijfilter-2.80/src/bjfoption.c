@@ -469,7 +469,7 @@ static short ConvExtToID( short value )
 		}
 	}
 	
-onErr:
+//onErr:
 	return result; 
 
 }
@@ -492,7 +492,7 @@ short SetCmdOption(
 	OPT					opt;
 	poptContext			optcon;
 	char				confname[256];
-	short				first_modelstrnum,i;
+	short __attribute__ ((unused))	first_modelstrnum,i;
 	short				ret;
 
 	struct poptOption optionsTable[] = {
@@ -596,7 +596,7 @@ int cmdlinesw(
 	UIDB			uidb;
 	short			DefaultGamma = 0;
 	short			DefaultIntent = 0;	/* Default value (PHOTO) */
-	short			i,j;
+	short  i, __attribute__ ((unused)) j;
 	short			count_switch=0;
 	short			ext = -1;
 	short			change_paperload = 0;
@@ -1465,7 +1465,7 @@ void init_optioninfo( LPBJF_OPTINFO lpbjfoption )
 void MakeModelnameConfname( char *argv0, char *modelname, char *confname, char *path, char *extname )
 {
 	static char		bjfilter_path[] = "cif";
-	char			small_modelname[256],tmpconfilename[256],confilename[256];
+	char __attribute__ ((unused)) small_modelname[256],tmpconfilename[256],confilename[256];
 	short			bjfiltstrlen = strlen(bjfilter_path);
 	short			argv0strlen = strlen(argv0);
 	short			i,count;
@@ -1614,7 +1614,7 @@ static long convert_str_to_long(char *str)
 	long	value = 0L;
 	char	c;
 	
-	while(c = *str)
+	while((c = *str))
 	{
 		if(c < '0' || '9' < c)
 			return -2; /* invalid value */

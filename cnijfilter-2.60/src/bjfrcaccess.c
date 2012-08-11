@@ -92,7 +92,7 @@ static char *bjf_access_resource( char *rcFname, char *objString, char *rcString
 	char		*ptr[MODELNUM];
 	char		*result = NULL;
 	static char tmpbuf[MODELLEN];
-	short		flag;
+	short __attribute__ ((unused)) flag;
 
 
 	for( i=0 ; i<MODELNUM ; i++ ) ptr[i] = NULL;

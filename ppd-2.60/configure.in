@@ -2,7 +2,7 @@ AC_INIT(canonip4200.ppd)
 AM_INIT_AUTOMAKE(canonppd, 1.0.0, no-define)
 
 if test "${program_suffix}" = "NONE"; then
-	program_suffix="CN_IJ_MODEL_NUM"
+	program_suffix="mp250"
 fi
 PPD_SUFFIX=$program_suffix
 AC_SUBST(PPD_SUFFIX)

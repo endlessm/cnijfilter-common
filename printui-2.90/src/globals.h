@@ -35,6 +35,12 @@
 #define	GLOBAL	extern
 #endif
 
+// 2009/11/13
+#define catpath2(dir,name)	dir name
+#define catpath(dir,name)	catpath2(dir , name)
+#define mkpath2(path)		#path
+#define mkpath(path)		mkpath2(path)
+
 
 #define	PRINTING_TYPE_FIT		1
 #define	PRINTING_TYPE_NORMAL	2

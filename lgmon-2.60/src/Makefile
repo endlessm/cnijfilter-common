@@ -17,10 +17,10 @@
 
 
 
-pkgdatadir = $(datadir)/lgmonCN_IJ_MODEL
-pkgincludedir = $(includedir)/lgmonCN_IJ_MODEL
-pkglibdir = $(libdir)/lgmonCN_IJ_MODEL
-pkglibexecdir = $(libexecdir)/lgmonCN_IJ_MODEL
+pkgdatadir = $(datadir)/lgmon{program_suffix}
+pkgincludedir = $(includedir)/lgmon{program_suffix}
+pkglibdir = $(libdir)/lgmon{program_suffix}
+pkglibexecdir = $(libexecdir)/lgmon{program_suffix}
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -82,12 +82,13 @@ DIST_SOURCES = $(libbscc2sts_a_SOURCES) $(lgmon_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/misak/src/cnijfilter-common/lgmon-2.60/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/misak/cnijfilter-common/lgmon-2.60/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/misak/src/cnijfilter-common/lgmon-2.60/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/misak/src/cnijfilter-common/lgmon-2.60/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/misak/src/cnijfilter-common/lgmon-2.60/missing --run automake-1.11
-AWK = gawk
+ARC = 32
+AUTOCONF = ${SHELL} /home/misak/cnijfilter-common/lgmon-2.60/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/misak/cnijfilter-common/lgmon-2.60/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/misak/cnijfilter-common/lgmon-2.60/missing --run automake-1.11
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -Wall -g -O2
@@ -102,21 +103,21 @@ ECHO_T =
 EGREP = /bin/grep -E
 EXEEXT = 
 GREP = /bin/grep
-GTK_CFLAGS = -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
+GTK_CFLAGS = -pthread -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
 GTK_LIBS = -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lglib-2.0  
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin64
+LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin32
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/misak/src/cnijfilter-common/lgmon-2.60/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/misak/cnijfilter-common/lgmon-2.60/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
-PACKAGE = lgmonCN_IJ_MODEL
+PACKAGE = lgmon{program_suffix}
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = 
 PACKAGE_STRING = 
@@ -131,10 +132,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 2.60-4
-abs_builddir = /home/misak/src/cnijfilter-common/lgmon-2.60/src
-abs_srcdir = /home/misak/src/cnijfilter-common/lgmon-2.60/src
-abs_top_builddir = /home/misak/src/cnijfilter-common/lgmon-2.60
-abs_top_srcdir = /home/misak/src/cnijfilter-common/lgmon-2.60
+abs_builddir = /home/misak/cnijfilter-common/lgmon-2.60/src
+abs_srcdir = /home/misak/cnijfilter-common/lgmon-2.60/src
+abs_top_builddir = /home/misak/cnijfilter-common/lgmon-2.60
+abs_top_srcdir = /home/misak/cnijfilter-common/lgmon-2.60
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -153,7 +154,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/misak/src/cnijfilter-common/lgmon-2.60/install-sh
+install_sh = ${SHELL} /home/misak/cnijfilter-common/lgmon-2.60/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -163,7 +164,7 @@ mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr
-program_transform_name = s&$$&CN_IJ_MODEL&
+program_transform_name = s&$$&mp500&
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -175,7 +176,7 @@ top_builddir = ..
 top_srcdir = ..
 INCLUDES = \
 	-I$(top_srcdir)/src \
-	-pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
+	-pthread -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
 
 lgmon_SOURCES = \
 	langmon.c lm.h \

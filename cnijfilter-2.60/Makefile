@@ -15,10 +15,10 @@
 
 
 
-pkgdatadir = $(datadir)/cifCN_IJ_MODEL
-pkgincludedir = $(includedir)/cifCN_IJ_MODEL
-pkglibdir = $(libdir)/cifCN_IJ_MODEL
-pkglibexecdir = $(libexecdir)/cifCN_IJ_MODEL
+pkgdatadir = $(datadir)/cifmp500
+pkgincludedir = $(includedir)/cifmp500
+pkglibdir = $(libdir)/cifmp500
+pkglibexecdir = $(libexecdir)/cifmp500
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -35,7 +35,7 @@ subdir = .
 DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
 	$(top_srcdir)/configure AUTHORS COPYING ChangeLog INSTALL NEWS \
-	acconfig.h depcomp install-sh missing
+	depcomp install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
@@ -103,17 +103,17 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-ARC = 64
-AUTOCONF = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run automake-1.11
-AWK = gawk
+ARC = 32
+AUTOCONF = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run automake-1.11
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -Wall -g -O2
-CNCL_LIB_ID = CN_IJ_MODEL_NUM
+CNCL_LIB_ID = 273
 CPP = gcc -E
 CPPFLAGS = -D_FORTIFY_SOURCE=2
 CYGPATH_W = echo
@@ -130,14 +130,14 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin64
+LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin32
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
-PACKAGE = cifCN_IJ_MODEL
+PACKAGE = cifmp500
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = 
 PACKAGE_STRING = 
@@ -151,10 +151,10 @@ STRIP =
 VERSION = 2.60-4
 XBINPATH = 
 XBJLIBPATH = 
-abs_builddir = /home/misak/src/cnijfilter-common/cnijfilter-2.60
-abs_srcdir = /home/misak/src/cnijfilter-common/cnijfilter-2.60
-abs_top_builddir = /home/misak/src/cnijfilter-common/cnijfilter-2.60
-abs_top_srcdir = /home/misak/src/cnijfilter-common/cnijfilter-2.60
+abs_builddir = /home/misak/cnijfilter-common/cnijfilter-2.60
+abs_srcdir = /home/misak/cnijfilter-common/cnijfilter-2.60
+abs_top_builddir = /home/misak/cnijfilter-common/cnijfilter-2.60
+abs_top_srcdir = /home/misak/cnijfilter-common/cnijfilter-2.60
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -173,7 +173,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/install-sh
+install_sh = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -183,7 +183,7 @@ mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr
-program_transform_name = s&$$&CN_IJ_MODEL&
+program_transform_name = s&$$&mp500&
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -240,7 +240,7 @@ config.h: stamp-h1
 stamp-h1: $(srcdir)/config.h.in $(top_builddir)/config.status
 	@rm -f stamp-h1
 	cd $(top_builddir) && $(SHELL) ./config.status config.h
-$(srcdir)/config.h.in:  $(am__configure_deps) $(top_srcdir)/acconfig.h
+$(srcdir)/config.h.in:  $(am__configure_deps) 
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f stamp-h1
 	touch $@

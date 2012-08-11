@@ -16,10 +16,10 @@
 
 
 
-pkgdatadir = $(datadir)/cifCN_IJ_MODEL
-pkgincludedir = $(includedir)/cifCN_IJ_MODEL
-pkglibdir = $(libdir)/cifCN_IJ_MODEL
-pkglibexecdir = $(libexecdir)/cifCN_IJ_MODEL
+pkgdatadir = $(datadir)/cifmp500
+pkgincludedir = $(includedir)/cifmp500
+pkglibdir = $(libdir)/cifmp500
+pkglibexecdir = $(libexecdir)/cifmp500
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -65,17 +65,17 @@ DIST_SOURCES = $(cif_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-ARC = 64
-AUTOCONF = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run automake-1.11
-AWK = gawk
+ARC = 32
+AUTOCONF = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run automake-1.11
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -Wall -g -O2
-CNCL_LIB_ID = CN_IJ_MODEL_NUM
+CNCL_LIB_ID = 273
 CPP = gcc -E
 CPPFLAGS = -D_FORTIFY_SOURCE=2
 CYGPATH_W = echo
@@ -92,14 +92,14 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin64
+LDFLAGS = -Wl,-Bsymbolic-functions -Wl,-z,relro -L../../com/libs_bin32
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
-PACKAGE = cifCN_IJ_MODEL
+PACKAGE = cifmp500
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = 
 PACKAGE_STRING = 
@@ -113,10 +113,10 @@ STRIP =
 VERSION = 2.60-4
 XBINPATH = 
 XBJLIBPATH = 
-abs_builddir = /home/misak/src/cnijfilter-common/cnijfilter-2.60/src
-abs_srcdir = /home/misak/src/cnijfilter-common/cnijfilter-2.60/src
-abs_top_builddir = /home/misak/src/cnijfilter-common/cnijfilter-2.60
-abs_top_srcdir = /home/misak/src/cnijfilter-common/cnijfilter-2.60
+abs_builddir = /home/misak/cnijfilter-common/cnijfilter-2.60/src
+abs_srcdir = /home/misak/cnijfilter-common/cnijfilter-2.60/src
+abs_top_builddir = /home/misak/cnijfilter-common/cnijfilter-2.60
+abs_top_srcdir = /home/misak/cnijfilter-common/cnijfilter-2.60
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -135,7 +135,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/misak/src/cnijfilter-common/cnijfilter-2.60/install-sh
+install_sh = ${SHELL} /home/misak/cnijfilter-common/cnijfilter-2.60/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -145,7 +145,7 @@ mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr
-program_transform_name = s&$$&CN_IJ_MODEL&
+program_transform_name = s&$$&mp500&
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -178,10 +178,10 @@ cif_SOURCES = \
 	bjflist.c \
 	uitypes.h 
 
-cif_LDADD = -lcnbpcmcmCN_IJ_MODEL_NUM -lcnbpessCN_IJ_MODEL_NUM -lm -ldl -ltiff -lpng\
-			-lcnbpcnclapiCN_IJ_MODEL_NUM -lcnbpcnclbjcmdCN_IJ_MODEL_NUM -lcnbpcncluiCN_IJ_MODEL_NUM -lpopt
+cif_LDADD = -lcnbpcmcm273 -lcnbpess273 -lm -ldl -ltiff -lpng\
+			-lcnbpcnclapi273 -lcnbpcnclbjcmd273 -lcnbpcnclui273 -lpopt
 
-cif_LDFLAGS = -L../../CN_IJ_MODEL_NUM/libs_bin64
+cif_LDFLAGS = -L../../273/libs_bin32
 all: all-am
 
 .SUFFIXES:

@@ -29,7 +29,7 @@
 #include <signal.h>
 #include <unistd.h>
 #include <sys/wait.h>
-
+#include <stdlib.h>
 
 #define	SHELL_PATH	"/bin/sh"
 
@@ -59,7 +59,7 @@ int exec_command(char* command)
 		execv(SHELL_PATH, av);
 
 		printf("error\n");
-		exit(127);
+		exit (127);
 	}
 	else
 	{

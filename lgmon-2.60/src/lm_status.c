@@ -251,13 +251,15 @@ static unsigned char get_bst(char *buf)
 	ptr += strlen(STR_BST);
 	work[0] = *ptr;
 	work[1] = 0x00;
-	sscanf(work, "%x", &wk); /* conv Hex string to value(Hi) */
-	val = (char)(wk<<4);
+	sscanf((char*)work, "%x", &wk); /* conv Hex string to value(Hi) */
+	/* sscanf(work, "%x", &wk);*/ /* conv Hex string to value(Hi) */
+	val = (char)(wk<<4); 
 
 	ptr++;
 	work[0] = *ptr;
 	work[1] = 0x00;
-	sscanf(work, "%x", &wk); /* conv HEX string to value(Lo) */
+	sscanf((char*)work, "%x", &wk); /* conv HEX string to value(Lo) */
+	/* sscanf(work, "%x", &wk);*/  /* conv HEX string to value(Lo) */
 	val |= (char)wk;
 
 	return val;

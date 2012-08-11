@@ -2402,7 +2402,7 @@ on_ink_cartridge_dialog_entry_changed  (GtkEditable     *editable,
 	char*		type;
 	gchar* 		msg;
 
-	type = gtk_entry_get_text(GTK_ENTRY(editable));
+	type = (char*)gtk_entry_get_text(GTK_ENTRY(editable));
 	cartridge_cur_index = KeyToIndex(InkCartridgeInfo.type, 
 										InkCartridgeInfo.index_num, type);
 
@@ -2422,7 +2422,7 @@ on_ink_cartridge_dialog_ok_button_clicked
 	result = ID_OK;
 
 	combo = LookupWidget(GTK_WIDGET(button), "ink_cartridge_dialog_combo");
-	type = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
+	type = (char*)gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
 
 	cartridge_cur_index = KeyToIndex(InkCartridgeInfo.type, 
 										InkCartridgeInfo.index_num, type);
@@ -6592,7 +6592,7 @@ void UtilInkReset(LPUIDB uidb)
 	GtkWidget*	reset_dialog;	
 	char		buf[128];
 	char		*p = buf;
-	char 		*model_name;
+	char __attribute__ ((unused)) *model_name;
 	int			total_bytes=0;
 	GtkWidget*	cancel_button;
 	
@@ -6658,7 +6658,7 @@ void UtilInkWarning(LPUIDB uidb)
 	int			cmd_bytes;
 	char		*p = buf;
 	char 		temp[32];
-	char 		*model_name;
+	char __attribute__ ((unused)) *model_name;
 	int 		total_bytes;
 	GtkWidget*	send_button;
 	
@@ -6723,7 +6723,7 @@ void UtilQuietMode(LPUIDB uidb)
 	int			cmd_bytes;
 	char		*p = buf;
 	char 		temp[32];
-	char 		*model_name;
+	char __attribute__ ((unused)) *model_name;
 	int 		total_bytes;
 	GtkWidget*	send_button;
 	

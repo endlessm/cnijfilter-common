@@ -33,7 +33,7 @@
 
 
 #define	CNIJNPR_CMD_BASE_STR				PROG_PATH "/cnijnpr"
-#define GINT_TO_POINTER(i) ((gpointer) (glong) (i))
+//#define GINT_TO_POINTER(i) ((gpointer) (glong) (i))
 
 /*** Global parameters ***/
 PUBLIC ST_PrinterStatus	gPrinterStatus;			// Printer status.

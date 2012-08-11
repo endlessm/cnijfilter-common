@@ -114,7 +114,6 @@ UIUserSizeDialog* CreateUserSizeDialog(UIDialog* parent, gboolean unit_inch)
 {
 	UIUserSizeDialog* dialog
 		 = (UIUserSizeDialog*)CreateDialog(sizeof(UIUserSizeDialog), parent);
-	GtkWidget* button;
 
 #ifdef	USE_LIB_GLADE
 	UI_DIALOG(dialog)->window = LookupWidget(NULL, "user_size_dialog");

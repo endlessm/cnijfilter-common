@@ -21,4 +21,4 @@ cngpijmon_SOURCES = \
 
 cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lxml2 -lcups 
 
-cngpijmon_LDFLAGS = -L../../lgmon/src
+cngpijmon_LDFLAGS = -L../../lgmon-2.60/src

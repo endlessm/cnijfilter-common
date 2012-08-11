@@ -110,8 +110,8 @@ PRINTER_PKG_PROGRAM+=printui
 PRINTER_PKG_PROGRAM+=lgmon
 PRINTER_PKG_PROGRAM+=cngpijmon
 
-PRINTER_PKG_PPD+=cnijfilter-ip5200
-PRINTER_PKG_PPD+=cnijfilter-ip5200r
+PRINTER_PKG_PPD+=cnijfilter-ip5200-2.60
+PRINTER_PKG_PPD+=cnijfilter-ip5200r-2.60
 
 SHELL = /bin/bash
 CFLAGS = -Wall -g
@@ -286,15 +286,16 @@ install: build
 		fi; \
 	done
 	### install printer package only ppd
-	for pkg in ${PRINTER_PKG_PPD}; do \
-		model_name=`echo $${pkg} | cut -d- -f2` && \
-		comm_name=`echo $${pkg} | cut -d- -f1` && \
+	for pkgppd in ${PRINTER_PKG_PPD}; do \
+		model_name=`echo $${pkgppd} | cut -d- -f2` && \
+		comm_name=`echo $${pkgppd} | cut -d- -f1` && \
+		model_ver=`echo $${pkgppd} | cut -d- -f3` && \
 		model_dir=$${comm_name}-$${model_name}series && \
 		deb_model_dir=$(CURDIR)/debian/$${model_dir}; \
-			pushd ./ppd; \
-			find . -name Makefile -print > file_lists; \
-			find . -name config.h -print >> file_lists; \
-			for fn in `cat file_lists`; do \
+			pushd ./ppd-$${model_ver}; \
+			find . -name Makefile -print > file_lists_ppd; \
+			find . -name config.h -print >> file_lists_ppd; \
+			for fn in `cat file_lists_ppd`; do \
 				if [ ! -f $${fn}.org ]; then \
 					cp $${fn} $${fn}.org; \
 				fi; \
@@ -318,12 +319,12 @@ install: build
 	@echo "######## install sm sub process"; \
 	cd ./cngpijmon-3.70/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install common library"; \
-	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
-	install -c -m 755 com/libs_bin${_arc}/libcnnet.so.* $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
-	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib; \
-	install -c -m 644 -o lp -g lp com/ini/cnnet.ini $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib;
-	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d; \
-	install -c -m 644 etc/*.rules $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d;
+	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib
+	install -c -m 755 com/libs_bin${_arc}/libcnnet.so.* $(CURDIR)/debian/${COMMON_PKG}/usr/lib
+	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib
+	install -c -m 644 -o lp -g lp com/ini/cnnet.ini $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib
+	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d
+	install -c -m 644 etc/*.rules $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d
 
 	# Add here commands to install the package into debian/cnijfilter-common.
 	#$(MAKE) install DESTDIR=$(CURDIR)/debian/cnijfilter-common

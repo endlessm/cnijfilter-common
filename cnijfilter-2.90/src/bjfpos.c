@@ -85,7 +85,7 @@ static long round_up( double );
 
 
 
-static short check_imagesize( double defwidth, double defheight, double inwidth, double inheight )
+static short __attribute__ ((unused)) check_imagesize( double defwidth, double defheight, double inwidth, double inheight )
 { 
 	short result = 0;
 	
@@ -563,7 +563,7 @@ short ImageCenter(
 )
 {
 	long				img_width,img_height;
-	double				img_xresolution, img_yresolution;
+	double __attribute__ ((unused)) img_xresolution, img_yresolution;
 	double				prn_xresolution, prn_yresolution;
 	double				prnarea_width, prnarea_height;
 	double				prn_width, prn_height;

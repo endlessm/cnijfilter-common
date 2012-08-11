@@ -161,6 +161,8 @@ ST_FUNCMODEL modeltable[]={
   ,{"IP2500",		processforip2500}
   ,{"IP1800",		processforip2500}
   ,{"IP90",			processforip90}
+  ,{"END_PRINTER", 0}
+  /* ,{ENDTAG, 0} */
 };
 
 
@@ -189,7 +191,11 @@ ST_STORESET storeset[]={
   {&p_tbl->lever_position,   sizeof(p_tbl->lever_position), (p_bsccbuf+LVR)->p_bsccsts},
 };
 
-  for(i=0; i<MAXMODELNUM; i++){
+ /* MAXMODELNUM delete */
+ /* for(i=0; i<modeltable[i].prnname!=ENDTAG; i++){ */
+  for(i=0; ; i++){
+	if( strncmp("END_PRINTER", modeltable[i].prnname, strlen("END_PRINTER"))==0 )
+		break;
 	if( strncmp(p_tbl->pr_name, modeltable[i].prnname, strlen(modeltable[i].prnname))==0 ){
 	  ret = (*modeltable[i].model)(&storeset[0], p_tbl, p_bsccbuf);
 	  return(ret);

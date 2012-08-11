@@ -12,8 +12,8 @@
 # - Modified by jacob berkman <jacob@ximian.com> to install
 #   Makefile.in.in and po2tbl.sed.in for use with glib-gettextize
 
-GETTEXT_PACKAGE = printuiCN_IJ_MODEL
-PACKAGE = printuiCN_IJ_MODEL
+GETTEXT_PACKAGE = printuimp500
+PACKAGE = printuimp500
 VERSION = 2.60-4
 
 SHELL = /bin/bash

@@ -35,6 +35,7 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <fcntl.h>
+#include <ctype.h>
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
 #define CIFTEMPFILEINPUT "/tmp/ciftmpXXXXXX"
@@ -85,7 +86,7 @@ static short exec_testprint( char *command , long cmdslen , char *filename , int
 static long get_file_bytes( char *filename );
 
 
-static int createInputfile( char name );
+//static int __attribute__ ((unused)) createInputfile( char name );
 
 static short modify_image_form( LPBJFILTERINFO );
 static short output_blank_page( CNCLPtr , int , int , LPBJF_ROOT );
@@ -124,19 +125,19 @@ int main( int argc, char *argv[] )
 	CNCLPAPERSIZE   	cnclpapersize;
 	BJFLTCOLORSYSTEM	bjfltcolor;
 	LPBJFILTERINFO		lpbjinfo = NULL;
-	IPCU				ipc;
-	short				ret;
+	IPCU __attribute__ ((unused))	ipc;
+	short __attribute__ ((unused))	ret;
 	char				socketname[256];
 	short				modelstrnum,i;
 	char				dispname[256];
-	char				modelname[256];
+	char __attribute__ ((unused))	modelname[256];
 	char				tmp_modelname[256],small_modelname[256];
-	char				*bsccdata = NULL;
+	char __attribute__ ((unused))	*bsccdata = NULL;
 	FILE				*fp = NULL;
 	char				confname[256];
 	short				id = 0;
-	short				testprint_ret;
-	DATA_INFO			data_info;
+	short __attribute__ ((unused))	testprint_ret;
+	DATA_INFO __attribute__ ((unused)) data_info;
 
 #if DEBUGLOG
 	create_log( );
@@ -239,20 +240,20 @@ static short MakeBJPrintData
 	long				ImageHeight;
 	long				topskip;
 	long				page_width;
-	long				i;
+	long __attribute__ ((unused))	i;
 	short				bpp;
 	
 	CNCLNAMEINFO		cnclnameinfo;
 	BJFLTCOMSYSTEM		bjfltcom;
 	char 				tblPath[] = BJLIBPATH;
-	FILE				*fp=NULL;
-	CPKInt16			result;
+	FILE __attribute__ ((unused)) *fp=NULL;
+	CPKInt16 __attribute__ ((unused)) result;
 	char				*tmp_filename = NULL;
 	short				rev_flag = 0;
 	CIFRASTERINFO		CifRasterInfo;
 	int					f_input = -1;
 	LPBJF_ROOT			root = NULL;
-	int					fd;
+	int	__attribute__ ((unused)) fd;
 	short				dumpp_ret;
 	BJFLTOVERMARGININFO	bjfltovermargin;
 
@@ -618,7 +619,7 @@ finish3:
 	bjf_image_close( &lpbjinfo->bjfimage );
 	
 	/* dump plural pages. */
-	if(fd>0)close(fd);
+//	if(fd>0)close(fd);
 	while(bjf_dispose_root(root) > 0) {
 		removeTempfileCompletely(root);
 	}
@@ -1240,7 +1241,7 @@ static short dumpPage(LPBJF_NODE node, int prn)
 	}
 	ret = node->curCopies;
 	
-onErr:
+//onErr:
 	if(fd>0)close(fd);
 	return ret;
 }
@@ -1414,7 +1415,7 @@ onErr:
 /*-------------------------------------------------------------*/
 /* write testprint pattern.                                    */
 /*-------------------------------------------------------------*/
-static short exec_testprint( char *command , long cmdslen , char *filename , int prn)
+static short __attribute__ ((unused)) exec_testprint( char *command , long cmdslen , char *filename , int prn)
 {
 	CPKByte	buf[BUFSIZ];
 	int		fd = 0;
@@ -1439,7 +1440,7 @@ static short exec_testprint( char *command , long cmdslen , char *filename , int
 
 	ret = 0;
 	
-onErr:
+//onErr:
 	if(fd>0)close(fd);
 	return ret;
 	
@@ -1579,7 +1580,7 @@ static short process_raster_data( LPCIFRASTERINFO lpCifRasterInfo , LPBJFILTERIN
 	CPKUInt16			current_page = 0;
 	long				page_width;
 	short				bpp;
-	long				topskip = 0;
+	long __attribute__ ((unused))	topskip = 0;
 	CNCLPtr				lpCnclData;
 	int					fd;
 
@@ -1679,7 +1680,7 @@ static short process_raster_data( LPCIFRASTERINFO lpCifRasterInfo , LPBJFILTERIN
 				goto onErr;
 			}
 		} while ( cnclerr == 1 );
-next:
+//next:
 		lpCnclData->Vpos += 1 ;
 
 		TotalRest += Rest;
@@ -1706,7 +1707,7 @@ onErr:
 /*-------------------------------------------------------------*/
 static short flush_raster_data( CNCLPtr lpCnclData , LPBJFILTERINFO lpbjinfo , int fd , LPBJF_ROOT root )
 {
-	long				restLines, tmpRestLines;
+	long __attribute__ ((unused))	restLines, tmpRestLines;
 	short				result;
 	long				i;
 	CNCLErr				cnclerr = -1;
@@ -1744,7 +1745,7 @@ onErr:
 /*-------------------------------------------------------------*/
 /* obtain the total file byte size.                            */
 /*-------------------------------------------------------------*/
-static long get_file_bytes( char *filename )
+static long __attribute__ ((unused)) get_file_bytes( char *filename )
 {
 	struct stat stat_buf;
 
