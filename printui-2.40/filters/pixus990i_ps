@@ -1,0 +1,73 @@
+#!/bin/sh
+
+args=$@
+resolution=600
+papersize=a4
+
+if [ -e /etc/sysconfig/i18n ]; then
+  export LANG=`grep LANG /etc/sysconfig/i18n | perl -e '$line = <>;\
+  $line =~ / *LANG=\"*([\w\-]+\.*[\w\-]*)\"*/; print $1' 2>/dev/null`
+  lang=`grep LANG /etc/sysconfig/i18n | perl -e '$line = <>;\
+  $line =~ / *LANG=\"*([\w\-]+)\.*[\w\-]*\"*/; print $1' 2>/dev/null`
+elif [ -e /etc/sysconfig/language ]; then
+  export LANG=`grep RC_LANG= /etc/sysconfig/language | perl -e '$line = <>;\
+  $line =~ / *RC_LANG=\"*([\w\-]+\.*[\w\-]*)\"*/; print $1' 2>/dev/null`
+  lang=`grep RC_LANG= /etc/sysconfig/language | perl -e '$line = <>;\
+  $line =~ / *RC_LANG=\"*([\w\-]+)\.*[\w\-]*\"*/; print $1' 2>/dev/null`
+else
+  lang = ""
+fi
+
+if [ "$lang" != "" ]; then
+  unit=`grep $lang /usr/local/share/printuipixus990i/locale-table | \
+  perl -e '$line = <>;\
+  $line =~ /([\S]+)[ \t]+([\S]+)[ \t]+([\S]+)[ \t]+(mm|inch)/;\
+  print $4' 2>/dev/null`
+fi
+
+if [ "$unit" = "inch" ]; then
+    papersize=letter
+fi
+
+ijopt=`echo $args | perl -e '$sw = <>; $sw =~ /(^| +)-[jJ] *([\w\W]+)/;\
+  $sw = $2; $sw =~ s/ +(-[^-][\w\W]+)[\w\W]*//; print $sw' 2>/dev/null`
+hostname=`echo $args | perl -e '$sw = <>;\
+  $sw =~ /(^| +)-[hH] *([\S]+)( |$)/;\ print $2' 2>/dev/null`
+
+set -- `getopt -o x -l bboxon -- $ijopt 2>/dev/null`
+for option in "$@"; do
+  case $option in
+    --bboxon) tmpfile="y"; bbox="--bbox";;
+    *) : ;;
+  esac
+  shift
+done
+
+infile="-"
+if [ $tmpfile ]; then
+  infile=`mktemp "/tmp/ijps_XXXXXX"`; cat - >$infile;
+fi
+
+if [ $bbox ]; then
+  if [ -f $infile ]; then
+    bbox="$bbox `cat $infile |\
+    perl -e '$x1 = "0"; $y1 = "0"; $x2 = "0"; $y2 = "0";\
+    while(<>){ $line = $_; chomp $line;\
+    if($line =~ /^(%%EndComments) *$/){\
+      print "$x1,$y1,$x2,$y2"; exit;}\
+    if($line =~ /^(%%BoundingBox:) *([\d]+) +([\d]+) +([\d]+) +([\d]+) *$/){\
+      $x1 = $2; $y1 = $3; $x2 = $4; $y2 = $5;}}\
+    print "$x1,$y1,$x2,$y2";' 2>/dev/null`"
+  else
+    $bbox=""
+  fi
+fi
+
+/usr/local/bin/ijcmdpixus990i "gs -q -r$resolution -dNOPROMPT -dSAFER \
+-sPAPERSIZE=$papersize -sDEVICE=ppmraw -sOutputFile=- $infile |\
+/usr/local/bin/cifpixus990i --display $hostname:0.0 --gui \
+--imageres $resolution $bbox --lgmon"
+
+if [ $tmpfile ]; then
+  rm -f $infile
+fi

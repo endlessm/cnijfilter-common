@@ -1,0 +1,6 @@
+# List of source files containing translatable strings.
+
+src/bjcupsmon_ui.c
+#ifdef USE_libglade
+po/glade.h
+#endif USE_libglade

@@ -1,0 +1,545 @@
+# Canon Bubble Jet Print Filter for Linux Ver.2.50
+# Copyright CANON INC. 2001-2005
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bjcupsmon 2.50\n"
+"POT-Creation-Date: 2005-02-07 14:44+0900\n"
+"PO-Revision-Date: 2005-02-07 17:07+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+#. Printer status message table.
+#. 
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"The waste ink absorber is full.\n"
+"Contact the service center for the replacement of the waste ink absorber."
+msgstr ""
+"Zbiornik na zu¿yty atrament jest pe³ny.\n"
+"Skontaktuj siê z punktem serwisowym w celu wymiany zbiornika."
+
+#: src/bjcupsmon_ui.c:44
+#, c-format
+msgid ""
+"Service error %s.\n"
+"Cancel printing and turn the printer off and then back on.\n"
+"If this doesn't clear the error, see the printer manual for more detail."
+msgstr ""
+"B³±d serwisowy %s.\n"
+"Anuluj drukowanie i wy³±cz drukarkê, a nastêpnie w³±cz j± ponownie.\n"
+"Je¶li ta operacja nie spowoduje usuniêcia b³êdu, poszukaj szczegó³owych informacji w podrêczniku u¿ytkownika drukarki."
+
+#: src/bjcupsmon_ui.c:46
+msgid ""
+"Paper out.\n"
+"Load paper and press printer's RESUME button.\n"
+msgstr ""
+"Brak papieru.\n"
+"Za³aduj papier i naci¶nij przycisk WZNÓW drukarki.\n"
+
+
+#: src/bjcupsmon_ui.c:47
+msgid "Paper out!\n"
+msgstr "Brak papieru\n"
+
+#: src/bjcupsmon_ui.c:48
+msgid "Load paper in the sheet feeder.\n"
+msgstr "Za³aduj papier do podajnika arkuszy.\n"
+
+#: src/bjcupsmon_ui.c:49
+msgid "Load paper in the cassette.\n"
+msgstr "Za³aduj papier do kasety.\n"
+
+#: src/bjcupsmon_ui.c:50
+msgid "Press printer's RESUME button.\n"
+msgstr "Naci¶nij przycisk WZNÓW drukarki.\n"
+
+#: src/bjcupsmon_ui.c:51
+msgid ""
+"Paper jammed.\n"
+"Remove jammed paper and press printer's RESUME button.\n"
+msgstr ""
+"Zakleszczony papier.\n"
+"Usuñ zakleszczony papier i naci¶nij przycisk WZNÓW drukarki.\n"
+
+
+#: src/bjcupsmon_ui.c:52
+msgid ""
+"Paper is jammed at the Paper ejection slot.\n"
+"Remove the jammed paper, and press the RESUME button. Printing resumes from "
+"the next paper."
+msgstr ""
+"Wyst±pi³o zakleszczenie papieru przy otworze wyrzucania papieru.\n"
+"Wyjmij zakleszczony papier i naci¶nij przycisk WZNÓW. Drukowanie zostanie wznowione od nastêpnego arkusza."
+
+#: src/bjcupsmon_ui.c:53
+msgid ""
+"Paper is jammed in the Transport unit.\n"
+"Open the rear cover, remove the jammed paper, and then press the RESUME "
+"button. Printing resumes from the next sheet.\n"
+"If the jammed paper cannot be removed, first remove the cassette and remove "
+"the paper from the cassette side."
+msgstr ""
+"Wyst±pi³o zakleszczenie papieru w zespole przenoszenia papieru.\n"
+"Otwórz tyln± pokrywê, usuñ zakleszczony papier i naci¶nij przycisk WZNÓW. Drukowanie zostanie wznowione od nastêpnego arkusza.\n"
+"Je¶li zakleszczonego papieru nie da siê wyj±æ, wyjmij kasetê i spróbuj wyj±æ papier od strony kasety."
+
+#: src/bjcupsmon_ui.c:54
+msgid ""
+"Paper is jammed in the Duplexing Transport section.\n"
+"First, remove the cassette, push the printer over onto its back side, and "
+"then open the Duplexing Transport unit. Next, remove the jammed paper, and "
+"quickly return the printer to its upright position. Finally, press the "
+"RESUME button on the printer. Printing resumes from the next sheet.\n"
+"Refer to the user's guide for details."
+msgstr ""
+"Wyst±pi³o zakleszczenie papieru w sekcji przenoszenia papieru dla druku dwustronnego.\n"
+"Najpierw wyjmij kasetê, postaw drukarkê na jej bocznej ¶ciance i otwórz zespó³ przenoszenia papieru dla druku dwustronnego. Nastêpnie wyjmij zakleszczony papier i szybko postaw drukarkê w normalnej pozycji. Na koñcu naci¶nij przycisk WZNÓW na drukarce. Drukowanie zostanie wznowione od nastêpnego arkusza.\n"
+"Szczegó³owe informacje mo¿na znale¼æ w podrêczniku u¿ytkownika."
+
+#: src/bjcupsmon_ui.c:55
+msgid ""
+"Cartridge not installed!\n"
+"Install appropriate BJ cartridge in the printer.\n"
+"or\n"
+"Click Cancel Printing if no cartridge available.\n"
+msgstr ""
+"Kaseta z tuszem nie jest zainstalowana!\n"
+"Zainstaluj w drukarce odpowiedni± kasetê BJ.\n"
+"lub\n"
+"Kliknij przycisk Anuluj drukowanie, je¶li ¿adna kaseta z tuszem nie jest dostêpna.\n"
+
+
+#: src/bjcupsmon_ui.c:56
+msgid ""
+"Operator error.\n"
+"Press printer's RESUME button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"B³±d operatora.\n"
+"Naci¶nij przycisk WZNÓW drukarki.\n"
+"Je¶li ta operacja nie spowoduje usuniêcia b³êdu, anuluj drukowanie i wy³±cz drukarkê, a nastêpnie w³±cz j± ponownie.\n"
+
+
+#: src/bjcupsmon_ui.c:57
+msgid ""
+"Scanner Cartridge detected!\n"
+"Change to appropriate cartridge.\n"
+"Click Cancel Printing to cancel operation.\n"
+msgstr ""
+"Wykryto kasetê skanera!\n"
+"Zmieñ na odpowiedni± kasetê.\n"
+"Kliknij przycisk Anuluj drukowanie, aby anulowaæ operacjê.\n"
+
+
+#: src/bjcupsmon_ui.c:58
+msgid ""
+"The waste ink absorber is almost full.\n"
+"Press the printer's RESUME button to restart printing."
+msgstr ""
+"Zbiornik na zu¿yty atrament jest prawie pe³ny.\n"
+"Naci¶nij przycisk WZNÓW drukarki, aby ponownie uruchomiæ drukowanie."
+
+#: src/bjcupsmon_ui.c:59
+msgid ""
+"Protector not installed.\n"
+"Install a protector properly in the printer.\n"
+msgstr ""
+"Modu³ zabezpieczaj±cy nie jest zainstalowany!\n"
+"Zainstaluj prawid³owo modu³ zabezpieczaj±cy w drukarce.\n"
+
+
+#. 
+#: src/bjcupsmon_ui.c:61
+msgid ""
+"Ink has run out.\n"
+"Replace ink tank and close the cover. When replacing the ink tank, make sure "
+"that the Inner Cover is open.\n"
+"\n"
+"You can continue printing under the ink out condition by pressing the RESUME "
+"button. Replace the empty ink tank immediately after the printing. The "
+"printer may be damaged if printing is continued under the ink out "
+"condition.\n"
+msgstr ""
+"Zabrak³o atramentu.\n"
+"Wymieñ zbiornik z atramentem i zamknij pokrywê. Podczas wymieniania zbiornika z atramentem nale¿y pamiêtaæ, aby wewnêtrzna pokrywa by³a otwarta.\n"
+"\n"
+"Mo¿esz kontynuowaæ drukowanie mimo braku atramentu, naciskaj±c przycisk WZNÓW. Wymieñ pusty zbiornik po atramencie natychmiast po zakoñczeniu tego wydruku. Kontynuowanie drukowania przy braku atramentu grozi uszkodzeniem drukarki.\n"
+
+
+#: src/bjcupsmon_ui.c:62 src/bjcupsmon_ui.c:89
+msgid " Black [7]\n"
+msgstr " Czarny [7]\n"
+
+#: src/bjcupsmon_ui.c:63 src/bjcupsmon_ui.c:90
+msgid " Photo Black [7]\n"
+msgstr " Czarny fotograficzny [7]\n"
+
+#: src/bjcupsmon_ui.c:64 src/bjcupsmon_ui.c:91
+msgid " Photo Cyan [7]\n"
+msgstr " B³êkitny fotograficzny [7]\n"
+
+#: src/bjcupsmon_ui.c:65 src/bjcupsmon_ui.c:92
+msgid " Photo Magenta [7]\n"
+msgstr " Amarantowy fotograficzny [7]\n"
+
+#: src/bjcupsmon_ui.c:66 src/bjcupsmon_ui.c:93
+msgid " Cyan [7]\n"
+msgstr " B³êkitny [7]\n"
+
+#: src/bjcupsmon_ui.c:67 src/bjcupsmon_ui.c:94
+msgid " Magenta [7]\n"
+msgstr " Amarantowy [7]\n"
+
+#: src/bjcupsmon_ui.c:68 src/bjcupsmon_ui.c:95
+msgid " Yellow [7]\n"
+msgstr " ¯ó³ty [7]\n"
+
+#: src/bjcupsmon_ui.c:69 src/bjcupsmon_ui.c:96
+msgid " Red [7]\n"
+msgstr " Czerwony [7]\n"
+
+#: src/bjcupsmon_ui.c:70 src/bjcupsmon_ui.c:97
+msgid " Green [7]\n"
+msgstr " Zielony [7]\n"
+
+#: src/bjcupsmon_ui.c:71 src/bjcupsmon_ui.c:98
+msgid " Black [3e]\n"
+msgstr " Czarny [3e]\n"
+
+#. 
+#: src/bjcupsmon_ui.c:73
+msgid ""
+"The printer's front cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the front cover, wait for printing to finish, then open the cover "
+"again and change the print head or ink tank.\n"
+msgstr ""
+"Pokrywa przednia jest otwarta.\n"
+"Je¶li trwa drukowanie, nie jest mo¿liwa wymiana g³owicy drukuj±cej ani zbiornika tuszu. Zamknij pokrywê przedni±, poczekaj na zakoñczenie drukowania, a nastêpnie ponownie otwórz pokrywê i wymieñ g³owicê drukuj±c± lub zbiornik tuszu.\n"
+
+
+#: src/bjcupsmon_ui.c:74
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank.\n"
+msgstr ""
+"Pokrywa drukarki jest otwarta.\n"
+"Je¶li trwa drukowanie, nie jest mo¿liwa wymiana g³owicy drukuj±cej ani zbiornika z atramentem. Zamknij pokrywê, poczekaj na zakoñczenie drukowania, a nastêpnie ponownie otwórz pokrywê i wymieñ g³owicê drukuj±c± lub zbiornik z atramentem.\n"
+
+
+#: src/bjcupsmon_ui.c:75
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Open the paper output tray. Printing will restart.\n"
+msgstr ""
+"Nie mo¿na przeprowadziæ drukowania dokumentu, poniewa¿  wyj¶ciowy zasobnik papieru jest zamkniêty.\n"
+"Otwórz wyj¶ciowy zasobnik papieru. Drukowanie zostanie wznowione.\n"
+
+
+#: src/bjcupsmon_ui.c:76
+msgid ""
+"Operator error.\n"
+"The connected printer cannot work correctly.\n"
+msgstr ""
+"B³±d operatora.\n"
+"Pod³±czona drukarka nie mo¿e funkcjonowaæ prawid³owo.\n"
+
+
+#: src/bjcupsmon_ui.c:77
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr ""
+"Czyszczenie.\n"
+"Czekaj.\n"
+
+
+#: src/bjcupsmon_ui.c:78
+msgid ""
+"Cartridge replacement is in progress.\n"
+"Close the front cover after replacement is completed.\n"
+msgstr ""
+"Trwa zamienianie kasety.\n"
+"Po zakoñczeniu wymiany zamknij przedni± pokrywê drukarki.\n"
+
+
+#: src/bjcupsmon_ui.c:79
+msgid ""
+"The holder is at the replacement position.\n"
+"After replacing the print head or the ink tank, close the front cover of the "
+"printer. To replace only the ink tanks, do not remove the print head from "
+"the printer. Do not touch the locking lever.\n"
+msgstr ""
+"Uchwyt znajduje siê w pozycji umo¿liwiaj±cej zamianê.\n"
+"Po wymianie g³owicy drukuj±cej lub zbiornika tuszu zamknij pokrywê przedni± drukarki. Je¶li chcesz wymieniæ tylko zbiorniki z atramentem, nie usuwaj z drukarki g³owicy drukuj±cej. Nie wolno dotykaæ d¼wigni blokady.\n"
+
+
+#: src/bjcupsmon_ui.c:80
+msgid ""
+"The holder is at the replacement position.\n"
+"If you need to replace the print head or the ink tank, first open the Inner "
+"Cover. After the replacement is completed, close the Inner Cover, and then "
+"close the cover of the printer.\n"
+"If you are replacing only the ink tank, leave the print head attached. Do "
+"not touch the lock lever.\n"
+msgstr ""
+"Uchwyt znajduje siê w pozycji umo¿liwiaj±cej zamianê.\n"
+"Je¶li wymagana jest wymiana g³owicy drukuj±cej lub zbiornika z atramentem, najpierw otwórz wewnêtrzn± pokrywê. Po zakoñczeniu wymiany zamknij wewnêtrzn± pokrywê, a nastêpnie zamknij pokrywê drukarki.\n"
+"Je¶li chcesz wymieniæ tylko zbiornik z atramentem, nie usuwaj z drukarki g³owicy drukuj±cej. Nie wolno dotykaæ d¼wigni blokady.\n"
+
+
+#: src/bjcupsmon_ui.c:81 src/bjcupsmon_ui.c:86
+msgid "Printing.\n"
+msgstr "Trwa drukowanie.\n"
+
+#: src/bjcupsmon_ui.c:82
+msgid ""
+"Printer is in use via another interface.\n"
+"Please wait.\n"
+msgstr ""
+"Drukarka jest u¿ywana za po¶rednictwem innego interfejsu.\n"
+"Czekaj.\n"
+
+
+#: src/bjcupsmon_ui.c:83
+msgid ""
+"Scanner Cartridge detected.\n"
+"You cannot print with this cartridge. Install another BJ Cartridge in your "
+"printer.\n"
+msgstr ""
+"Wykryto kasetê skanera.\n"
+"Drukowanie przy u¿yciu tej kasety nie jest mo¿liwe. Zainstaluj w drukarce inn± kasetê BJ.\n"
+
+
+#: src/bjcupsmon_ui.c:84
+msgid ""
+"Unsupported cartridge installed.\n"
+"Change to appropriate BJ cartridge.\n"
+msgstr ""
+"Zainstalowano nieobs³ugiwan± kasetê.\n"
+"Zmieñ na odpowiedni± kasetê BJ.\n"
+
+
+#: src/bjcupsmon_ui.c:85
+msgid ""
+"Cartridge not installed!\n"
+"Install appropriate BJ cartridge in the printer.\n"
+msgstr ""
+"Kaseta z tuszem nie jest zainstalowana!\n"
+"Zainstaluj w drukarce odpowiedni± kasetê BJ.\n"
+
+
+#: src/bjcupsmon_ui.c:87
+msgid "Printer is online.\n"
+msgstr "Drukarka jest pod³±czona.\n"
+
+#: src/bjcupsmon_ui.c:88
+msgid ""
+"\n"
+"The following ink tanks are running low.\n"
+msgstr ""
+"\n"
+"W nastêpuj±cych zbiornikach koñczy siê atrament.\n"
+
+
+#: src/bjcupsmon_ui.c:99 src/bjcupsmon_ui.c:102
+msgid " Black [24]\n"
+msgstr " Czarny [24]\n"
+
+#: src/bjcupsmon_ui.c:100 src/bjcupsmon_ui.c:103
+msgid " Color [24]\n"
+msgstr " Kolorowy [24]\n"
+
+#: src/bjcupsmon_ui.c:101
+msgid ""
+"\n"
+"The remaining level of the following ink is unknown.\n"
+msgstr ""
+"\n"
+"Nieznany jest poziom nastêpuj±cego atramentu.\n"
+
+
+#: src/bjcupsmon_ui.c:104
+msgid ""
+"\n"
+"There is a possibility that the printer cannot detect the remaining ink "
+"level properly.\n"
+"Reset the ink counter using the Maintenance tab of the printer driver "
+"whenever you have replaced any ink tank with new one.\n"
+msgstr ""
+"\n"
+"Istnieje mo¿liwo¶æ, ¿e drukarka nie mo¿e poprawnie wykryæ poziomu pozosta³ego atramentu. Resetuj licznik u¿ywaj±c karty Obs³uga sterownika drukarki po ka¿dej wymianie któregokolwiek zbiornika z atramentem na nowy.\n"
+
+
+#: src/bjcupsmon_ui.c:105
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"Drukarka nie jest ustawiona na wy¶wietlanie ostrze¿enia o niskim poziomie atramentu.\n"
+
+
+#. 
+#: src/bjcupsmon_ui.c:108
+msgid ""
+"Printing cannot be executed because the Inner Cover is open.\n"
+"Close the Inner Cover, and then press the RESUME button on the printer. "
+"Printing will restart."
+msgstr ""
+"A nyomtatás nem végezhetõ el, mert a belsõ fedõ nyitva van\n"
+" Zárja le a belsõ fedõt, és nyomja meg a nyomtatón lévõ WZNÓW gombot. A nyomtatás újraindul."
+
+#: src/bjcupsmon_ui.c:109
+msgid ""
+"The printer's front cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the front cover, wait for printing to finish, then open the cover "
+"again and change the print head or ink tank. If the CD-R Tray Feeder is "
+"installed, the print head or ink tank cannot be also changed. Close the "
+"front cover, remove the CD-R Tray Feeder, open the front cover again, and "
+"change the print head or ink tank."
+msgstr ""
+"Pokrywa przednia jest otwarta.\n"
+"Je¶li trwa drukowanie, nie jest mo¿liwa wymiana g³owicy drukuj±cej ani zbiornika z atramentem. Zamknij pokrywê przedni±, poczekaj na zakoñczenie drukowania, a nastêpnie ponownie otwórz pokrywê i wymieñ g³owicê drukuj±c± lub zbiornik z atramentem. Je¶li w drukarce jest zainstalowana prowadnica podajnika dysku CD-R, równie¿ nie jest mo¿liwa wymiana g³owicy drukuj±cej ani zbiornika z atramentem. Zamknij pokrywê przedni±, zdemontuj prowadnicê podajnika dysku CD-R, ponownie otwórz pokrywê przedni± i wymieñ g³owicê drukuj±c± lub zbiornik z atramentem."
+
+#: src/bjcupsmon_ui.c:110
+msgid ""
+"During printing, the Inner Cover of the printer was opened.\n"
+"Close the Inner Cover, and press the RESUME button on the printer. Printing "
+"resumes from the next paper."
+msgstr ""
+"Podczas drukowania wewnêtrzna pokrywa drukarki by³a otwarta.\n"
+"Zamknij pokrywê wewnêtrzn± i naci¶nij przycisk WZNÓW na drukarce. Drukowanie zostanie wznowione od nastêpnego arkusza."
+
+#: src/bjcupsmon_ui.c:111
+msgid ""
+"An ink tank is not installed properly.\n"
+"Open the front cover of the printer, make sure the ink tank is installed "
+"properly, and close the front cover.\n"
+msgstr ""
+"Zbiornik z atramentem jest zainstalowany nieprawid³owo.\n"
+"Otwórz przedni± pokrywê drukarki, upewnij siê, ¿e zbiornik z atramentem jest zainstalowany prawid³owo i zamknij przedni± pokrywê.\n"
+
+
+#. i255 i250
+#: src/bjcupsmon_ui.c:112
+msgid ""
+"A digital camera or device that is not supported by the direct printing "
+"function is connected to the Direct Print Port. Disconnect the cable from "
+"the Direct Print Port, and press the RESUME button.\n"
+msgstr "Do portu drukowania bezpo¶redniego pod³±czono cyfrowy aparat fotograficzny lub inne urz±dzenie nieobs³ugiwane przez funkcjê drukowania bezpo¶redniego. Od³±cz kabel od portu drukowania bezpo¶redniego i naci¶nij przycisk WZNÓW.\n"
+
+#. 560i 860i 990i
+#: src/bjcupsmon_ui.c:113
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"Press the RESUME button to clear the error. Refer to the user's guide to "
+"check the error, and reexecute print head alignment. If an error still "
+"occurs, carry out manual alignment.\n"
+msgstr ""
+"Podczas automatycznego wyrównywania g³owic wyst±pi³ b³±d.\n"
+"Naci¶nij przycisk WZNÓW, aby skasowaæ b³±d. Sprawd¼ w Podrêczniku u¿ytkownika, co oznacza ten b³±d, i ponownie wykonaj automatyczne wyrównywanie g³owic. Je¶li b³±d wystêpuje nadal, wykonaj rêczne wyrównywanie g³owic.\n"
+
+
+#. Other message table.
+#: src/bjcupsmon_ui.c:117
+msgid "Ready.\n"
+msgstr "Gotowa.\n"
+
+#: src/bjcupsmon_ui.c:118
+msgid "Unknown printer.\n"
+msgstr "Nieznana drukarka.\n"
+
+#: src/bjcupsmon_ui.c:119
+msgid "Spooler error.\n"
+msgstr "B³±d buforu.\n"
+
+#: po/glade.h:9 src/bjcupsmon_ui.c:300
+msgid "Cartridge Type:"
+msgstr "Typ kasety:"
+
+#: src/bjcupsmon_ui.c:306 src/bjcupsmon_ui.c:313
+msgid "Scanner"
+msgstr "Skaner"
+
+#: src/bjcupsmon_ui.c:319 src/bjcupsmon_ui.c:326
+msgid "Unsupported"
+msgstr "Nieobs³ugiwane"
+
+#: src/bjcupsmon_ui.c:336 src/bjcupsmon_ui.c:343
+msgid "Photo"
+msgstr "Fotografia"
+
+#: src/bjcupsmon_ui.c:349 src/bjcupsmon_ui.c:356
+msgid "Black"
+msgstr "Czarny"
+
+#: src/bjcupsmon_ui.c:365 src/bjcupsmon_ui.c:372
+msgid "Color"
+msgstr "Kolor"
+
+#: src/bjcupsmon_ui.c:381
+msgid "Unknown"
+msgstr "Nieznany"
+
+#: src/bjcupsmon_ui.c:397
+msgid "Paper Thickness Lever Position:"
+msgstr "Pozycja d¼wigni grubo¶ci papieru:"
+
+#: src/bjcupsmon_ui.c:399
+msgid "                                                "
+msgstr ""
+
+#. Up.
+#: src/bjcupsmon_ui.c:402
+msgid "up"
+msgstr "Na górze"
+
+#. Down.
+#: src/bjcupsmon_ui.c:406
+msgid "down"
+msgstr "Na dole"
+
+#. Left.
+#: src/bjcupsmon_ui.c:410
+msgid "left"
+msgstr "Z lewej"
+
+#. Right.
+#: src/bjcupsmon_ui.c:414
+msgid "right"
+msgstr "Z prawej"
+
+#. End outputCommandLineMessage
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: po/glade.h:7
+msgid "title"
+msgstr ""
+
+#: po/glade.h:8
+msgid "printer status message"
+msgstr ""
+
+#: po/glade.h:10
+msgid "Continue"
+msgstr "Kontynuuj"
+
+#: po/glade.h:11
+msgid "Cancel Printing"
+msgstr "Anuluj drukowanie"

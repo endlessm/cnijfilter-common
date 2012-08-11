@@ -1,0 +1,81 @@
+## Process this file with automake to produce Makefile.in
+
+SUBDIRS = po src cmd include
+
+install-data-local:
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(pkgdatadir); \
+	for glade in $(srcdir)/*.glade; do \
+	  if test -f $$glade; then \
+	    $(INSTALL_DATA) $$glade $(DESTDIR)$(pkgdatadir); \
+	  fi \
+	done
+
+	if test -d $(srcdir)/pixmaps; then \
+	  for pixmap in $(srcdir)/pixmaps/*; do \
+	    if test -f $$pixmap; then \
+	      $(INSTALL_DATA) $$pixmap $(DESTDIR)$(pkgdatadir); \
+	    fi \
+	  done \
+	fi
+
+	if test -d $(srcdir)/keytext; then \
+	  for keytext in $(srcdir)/keytext/*; do \
+	    if test -f $$keytext; then \
+	      $(INSTALL_DATA) $$keytext $(DESTDIR)$(pkgdatadir); \
+	    fi \
+	  done \
+	fi
+
+	if test -d $(srcdir)/filters; then \
+	  pushd $(srcdir)/filters; \
+	  for filters in _*; do \
+	    if test -f $$filters; then \
+	      model=`echo | sed '$(transform)'`; \
+	      destfilter=$$model$$filters; \
+	      ./$$filters $$model >$$destfilter; \
+	      $(INSTALL_PROGRAM) $$destfilter $(DESTDIR)$(bindir); \
+	    fi \
+	  done; \
+	  popd; \
+	fi
+
+dist-hook:
+	mkdir $(distdir); \
+	for glade in glade/*; do \
+	  if test -f $$glade; then \
+	    cp -p $$glade $(distdir); \
+	  fi \
+	done
+
+	if test -d pixmaps; then \
+	  mkdir $(distdir)/pixmaps; \
+	  for pixmap in pixmaps/*; do \
+	    if test -f $$pixmap; then \
+	      cp -p $$pixmap $(distdir)/pixmaps; \
+	    fi \
+	  done \
+	fi
+
+	if test -d keytext; then \
+	  mkdir $(distdir)/keytext; \
+	  for keytext in keytext/*; do \
+	    if test -f $$keytext; then \
+	      cp -p $$keytext $(distdir)/keytext; \
+	    fi \
+	  done \
+	fi
+
+	if test -d filters; then \
+	  mkdir $(distdir)/filters; \
+	  for filters in filters/_*; do \
+	    if test -f $$filters; then \
+	      cp -p $$filters $(distdir)/filters; \
+	    fi \
+	  done \
+	fi
+
+
+ACLOCAL_AMFLAGS = -I m4
+
+EXTRA_DIST = mkinstalldirs  config.rpath

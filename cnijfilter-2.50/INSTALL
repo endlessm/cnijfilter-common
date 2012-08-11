@@ -1,0 +1,29 @@
+To build and install cif command:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * You can set the following <Printer Model Name>.
+            pixmaip1000 , pixmaip1500 , pixusip3100 , pixusip4100 , pixusip8600
+
+Example PIXUS iP3100:
+
+        ./autogen.sh --program-suffix=pixusip3100
+        make
+        make install
+
+
+Appendix:
+
+        * You can also set the following path.
+           --prefix
+                cif command (ex.cifip4200)                : default ... /usr/local
+           --enable-libpath
+                *.conf,*.tbl(ex.cifpixusip3100.conf) : default ... /usr/lib/bjlib
+
+       Example:
+
+           ./autogen.sh --program-suffix=pixusip3100 --enable-binpath=/usr/local/bin --enable-libpath=/usr/lib/bjlib
+           make
+           make install

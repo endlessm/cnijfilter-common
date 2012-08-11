@@ -1,0 +1,19 @@
+To build and install lgmon:
+
+ build lgmon
+
+        ./autogen.sh --program-suffix=(Printer-Name)
+        make
+        make install
+
+  please set (Printer-Name) to your printer's name.
+
+  support priter :
+	pixus560i
+	pixus860i
+	pixus990i
+
+  example)
+	 ./autogen.sh --program-suffix=pixus560i
+ 
+

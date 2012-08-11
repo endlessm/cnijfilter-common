@@ -1,0 +1,352 @@
+# Canon Bubble Jet Print Filter for Linux ver.2.2.0
+# Copyright CANON INC. 2001-2003
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bjcupsmon 2.2\n"
+"POT-Creation-Date: 2003-02-13 14:42+0900\n"
+"PO-Revision-Date: 2003-02-13 10:24+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/bjcupsmon_ui.c:34
+msgid ""
+"The used ink tank is full.\n"
+"Cancel printing and turn the printer off and then back on.\n"
+"If this doesn't clear the error, see the printer manual for details.\n"
+msgstr ""
+"廃インクタンクがいっぱいになりました。\n"
+"いったん印刷を中止して、プリンタの電源を切り、しばらくしてから電源を入れ直し"
+"てください。\n"
+"エラーが解除されない場合は、プリンタの取扱説明書を参照してください。\n"
+
+#: src/bjcupsmon_ui.c:35
+msgid "Service error "
+msgstr "サービスエラーが発生しました。"
+
+#: src/bjcupsmon_ui.c:36
+msgid ""
+".\n"
+"Cancel printing and turn the printer off and then back on.\n"
+"If this doesn't clear the error, see the printer manual for details.\n"
+msgstr ""
+" \n"
+"印刷を中止して、プリンタの電源を切り、もう一度電源を入れてください。\n"
+"エラーが解除されないときは、プリンタの取扱説明書を参照してください。\n"
+
+#: src/bjcupsmon_ui.c:37
+msgid ""
+"Paper out.\n"
+"Load paper and press printer's RESUME button.\n"
+msgstr ""
+"用紙がありません。\n"
+"用紙をセットして、プリンタのリセットボタンを押してください。\n"
+
+#: src/bjcupsmon_ui.c:38
+msgid ""
+"Paper jammed.\n"
+"Remove jammed paper and press printer's RESUME button.\n"
+msgstr ""
+"用紙が詰まりました。\n"
+"詰まった用紙を取り除いて、プリンタのリセットボタンを押してください。\n"
+
+#: src/bjcupsmon_ui.c:39
+msgid ""
+"Cartridge not installed.\n"
+"Install appropriate BJ cartridge in the printer.\n"
+"or\n"
+"Click Cancel Printing if no cartridge avairable.\n"
+msgstr ""
+"BJカートリッジが取り付けられていません。\n"
+"BJカートリッジを取り付けてください。\n"
+"取り付けない場合は、[印刷中止]をクリックしてください。\n"
+
+#: src/bjcupsmon_ui.c:40
+msgid ""
+"Operator error.\n"
+"Press printer's RESUME button.\n"
+"If this doesn't clear the error, cancel printing and turn the printer off "
+"and then back on.\n"
+msgstr ""
+"オペレータエラーが発生しました。\n"
+"プリンタのリセットボタンを押してください。\n"
+"エラーが解除されないときは、いったん印刷を中止してプリンタの電源を切り、もう"
+"一度電源を入れてください。\n"
+
+#: src/bjcupsmon_ui.c:41
+msgid ""
+"Scanner Cartridge detected.\n"
+"Change to appropriate cartridge.\n"
+"Click Cancel Printing to cancel operation.\n"
+msgstr ""
+"スキャナカートリッジが取り付けられています。\n"
+"正しいBJカートリッジに交換してください。\n"
+"交換しない場合は[印刷中止]をクリックしてください。\n"
+
+#: src/bjcupsmon_ui.c:42
+msgid ""
+"The used ink tank is almost full.\n"
+"Press the printer's RESUME button to restart printing.\n"
+msgstr ""
+"廃インクタンクがいっぱいになりかけています。\n"
+"プリンタのリセットボタンを押すと印刷が再開されます。\n"
+
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"Protector not installed.\n"
+"Install a protector properly in the printer.\n"
+msgstr ""
+"プロテクタが取り付けられていません。\n"
+"正しく取り付けてください。\n"
+
+#: src/bjcupsmon_ui.c:44
+msgid ""
+"Ink has run out.\n"
+"Replace ink tank and close the front cover.\n"
+msgstr ""
+"インクがなくなりました。\n"
+"インクタンクを交換して、カバーを閉じてください。\n"
+
+#: src/bjcupsmon_ui.c:45 src/bjcupsmon_ui.c:64 src/bjcupsmon_ui.c:73
+msgid " Black\n"
+msgstr "  ブラック\n"
+
+#: src/bjcupsmon_ui.c:46 src/bjcupsmon_ui.c:65
+msgid " Photo Black\n"
+msgstr "  フォト ブラック\n"
+
+#: src/bjcupsmon_ui.c:47 src/bjcupsmon_ui.c:66
+msgid " Photo Cyan\n"
+msgstr "  フォト シアン\n"
+
+#: src/bjcupsmon_ui.c:48 src/bjcupsmon_ui.c:67
+msgid " Photo Magenta\n"
+msgstr "  フォト マゼンタ\n"
+
+#: src/bjcupsmon_ui.c:49 src/bjcupsmon_ui.c:68
+msgid " Cyan\n"
+msgstr "  シアン\n"
+
+#: src/bjcupsmon_ui.c:50 src/bjcupsmon_ui.c:69
+msgid " Magenta\n"
+msgstr "  マゼンタ\n"
+
+#: src/bjcupsmon_ui.c:51 src/bjcupsmon_ui.c:70
+msgid " Yellow\n"
+msgstr "  イエロー\n"
+
+#: src/bjcupsmon_ui.c:52
+msgid ""
+"Front cover is open.\n"
+"Unable to print until the front cover is closed.\n"
+msgstr ""
+"カバーが開いています。\n"
+"印刷を実行する場合は、カバーを閉じてください。\n"
+
+#: src/bjcupsmon_ui.c:53
+msgid ""
+"Operator error.\n"
+"The connected printer cannot work correctry.\n"
+msgstr ""
+"オペレータエラーが発生しました。\n"
+"接続しているプリンタでは正しく印刷できません。\n"
+
+#: src/bjcupsmon_ui.c:54
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr "クリーニング中です。\n"
+
+#: src/bjcupsmon_ui.c:55
+msgid ""
+"Cartridge replacement is in progress.\n"
+"Close the front cover after replacement is completed.\n"
+msgstr ""
+"カートリッジ交換中です。\n"
+"交換が終ったら、カバーを閉じてください。\n"
+
+#: src/bjcupsmon_ui.c:56 src/bjcupsmon_ui.c:61
+msgid "Printing.\n"
+msgstr "印刷中です。\n"
+
+#: src/bjcupsmon_ui.c:57
+msgid ""
+"Printer is in use via another interface.\n"
+"Please wait.\n"
+msgstr ""
+"他のインターフェースでプリンタが使用中です。\n"
+"印刷が可能になるまでしばらくお待ちください。\n"
+
+#: src/bjcupsmon_ui.c:58
+msgid ""
+"Scanner Cartridge detected.\n"
+"You cannot print with this cartridge.\n"
+"Change to appropriate BJ cartridge.\n"
+msgstr ""
+"スキャナカートリッジがセットされています。\n"
+"スキャナカートリッジでは印刷できません。\n"
+"BJカートリッジに交換してください。\n"
+
+#: src/bjcupsmon_ui.c:59
+msgid ""
+"Unsupported cartridge installed.\n"
+"Change to appropraite BJ cartridge.\n"
+msgstr ""
+"サポートしていないカートリッジが搭載されています。\n"
+"BJカートリッジに交換してください。\n"
+
+#: src/bjcupsmon_ui.c:60
+msgid ""
+"Cartridge not installed.\n"
+"Install appropriate BJ cartridge in the printer.\n"
+msgstr ""
+"BJカートリッジが取り付けられていません。\n"
+"BJカートリッジを取り付けてください。\n"
+
+#: src/bjcupsmon_ui.c:62
+msgid "Printer is online.\n"
+msgstr "プリンタはオンラインです。\n"
+
+#: src/bjcupsmon_ui.c:63
+msgid ""
+"\n"
+"The following Ink tank are running low.\n"
+msgstr ""
+"\n"
+"下記のインクは少なくなっています。\n"
+
+#: src/bjcupsmon_ui.c:71 src/bjcupsmon_ui.c:74
+msgid " Color\n"
+msgstr "  カラー\n"
+
+#: src/bjcupsmon_ui.c:72
+msgid ""
+"\n"
+"The remaininig level of the following ink is unknown:\n"
+msgstr ""
+"\n"
+"下記のインクの残量が不明です。\n"
+
+#: src/bjcupsmon_ui.c:75
+msgid ""
+"\n"
+"There is a possibility that the printer cannot detect the remaining ink "
+"level properly.\n"
+"Reset the ink counter using the Maintenance tab of the printer driver "
+"properties whenever you have replaced any ink tank with new one.\n"
+msgstr ""
+"\n"
+"プリンタがインク残量を正しく検知できていない可能性がありますので、新しいイン"
+"クタンクに交換したときに、プリンタドライバのユーティリティでインクカウンタを"
+"リセットしてください。\n"
+
+#: src/bjcupsmon_ui.c:76
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"プリンタはインク残量警告を表示しない設定になっています。\n"
+
+#: src/bjcupsmon_ui.c:78
+msgid ""
+"The CD-R tray guide is installed in the printer.\n"
+"After ensuring that the CD-R tray has been removed, remove the CD-R tray "
+"guide and then press the RESUME button. Printing will restart.\n"
+msgstr ""
+"プリンタにCD-Rトレイガイドが取り付けられています。\n"
+"CD-Rトレイが取り出されていることを確認し、CD-Rトレイガイドを取り外してから、"
+"プリンタのリセットボタンを押してください。印刷が再開されます。\n"
+
+#: src/bjcupsmon_ui.c:79
+msgid ""
+"The printer's front cover is open.\n"
+"If printing is progress, the print head or ink tank cannot be changed. Close "
+"the front cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank. If the CD-R tray guide is installed, the "
+"print head or ink tank cannot be also changed. Close the front cover, remove "
+"the CD-R tray guide, open the front cover again, and change the print head "
+"or ink tank."
+msgstr ""
+"プリンタのフロントカバーが開いています。\n"
+"印刷中の場合はプリントヘッドまたはインクタンクを交換できません。一旦フロント"
+"カバーを閉じ、印刷が終ってから再度フロントカバーを開けて交換を行ってくださ"
+"い。また、CD-Rトレイガイドが取り付けら?譴討い訃豺腓盡魎垢任?泙擦鵝０戝競侫蹈"
+"鵐肇?弌爾鯤弔検?CD-Rトレイガイドを取り外してから、再度フロントカバーを開けて"
+"交換を行ってください。"
+
+#: src/bjcupsmon_ui.c:83
+msgid "Ready.\n"
+msgstr "待機中。\n"
+
+#: src/bjcupsmon_ui.c:84
+msgid "Unknown printer.\n"
+msgstr "不明なプリンタです。\n"
+
+#: src/bjcupsmon_ui.c:85
+msgid "Spooler error.\n"
+msgstr "スプーラ異常です。\n"
+
+#: src/bjcupsmon_ui.c:193
+msgid "Cartridge Type : "
+msgstr "搭載カートリッジ："
+
+#: src/bjcupsmon_ui.c:199 src/bjcupsmon_ui.c:206
+msgid "Scanner"
+msgstr "スキャナ"
+
+#: src/bjcupsmon_ui.c:212 src/bjcupsmon_ui.c:219
+msgid "Unsupported"
+msgstr "未対応"
+
+#: src/bjcupsmon_ui.c:227 src/bjcupsmon_ui.c:234
+msgid "Photo"
+msgstr "フォト"
+
+#: src/bjcupsmon_ui.c:240 src/bjcupsmon_ui.c:247
+msgid "Black"
+msgstr "ブラック"
+
+#: src/bjcupsmon_ui.c:255 src/bjcupsmon_ui.c:262
+msgid "Color"
+msgstr "カラー"
+
+#: src/bjcupsmon_ui.c:271
+msgid "Unknown"
+msgstr "不明"
+
+#: src/bjcupsmon_ui.c:287
+msgid "Paper thickness lever position : "
+msgstr "紙間選択レバー位置："
+
+#: src/bjcupsmon_ui.c:289
+msgid "                                                "
+msgstr ""
+
+#: src/bjcupsmon_ui.c:292
+msgid "up"
+msgstr "上"
+
+#: src/bjcupsmon_ui.c:296
+msgid "down"
+msgstr "下"
+
+#: src/bjcupsmon_ui.c:300
+msgid "left"
+msgstr "左"
+
+#: src/bjcupsmon_ui.c:304
+msgid "right"
+msgstr "右"
+
+#: po/glade.h:7
+msgid "Continue"
+msgstr "印刷続行"
+
+#: po/glade.h:8
+msgid "Cancel Printing"
+msgstr "印刷中止"

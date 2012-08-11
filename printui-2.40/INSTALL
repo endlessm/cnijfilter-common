@@ -1,0 +1,29 @@
+To build and install printui:
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * Execute the following, when autoconf's version is 2.50 or above.
+		  ./autogen.sh --datadir=/usr/local/share --program-suffix=<Printer Model Name>
+
+		* Remove a "-c" option of the msgfmt command, when an error occurs at the time of a po file compilation.
+
+You can set the following <Printer Model Name>.
+            pixus560i
+            pixus860i
+            pixus990i
+            i250
+            i255
+            pixus550i
+            pixus850i
+            pixus950i
+            bjf900
+            bjf9000
+            bjs300
+            bjs500
+
+Example for building the pixus560i:
+        ./autogen.sh --program-suffix=pixus560i
+        make
+        make install
+

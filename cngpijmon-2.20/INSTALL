@@ -1,0 +1,6 @@
+To build and install cngpijmon:
+
+        ./autogen.sh
+        make
+        make install
+
