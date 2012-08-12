@@ -212,8 +212,9 @@ PRIVATE gint checkPrinterState(gchar *pDestName, gchar *pURI, gchar *pServerName
 	else {
 		pRequest = ippNew();
 		
-		pRequest->request.op.operation_id = IPP_GET_PRINTER_ATTRIBUTES;
-		pRequest->request.op.request_id   = 1;
+		pRequest = ippNewRequest(IPP_GET_PRINTER_ATTRIBUTES);
+//		pRequest->request.op.operation_id = IPP_GET_PRINTER_ATTRIBUTES;
+//		pRequest->request.op.request_id   = 1;
 		
 		pLanguage = bjcupsLangDefault();			// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19 
 				

@@ -455,7 +455,7 @@ gboolean CheckMediaSizeCombination(LPBJFLTDEVICE bjdev, gboolean* change_item)
 	if( table->base )
 	{
 		UIMediaSizeDialog* dialog = NULL;
-		int (*show_dialog)(UIMediaSizeDialog*, gchar*);
+		int (*show_dialog)(UIMediaSizeDialog*, gchar*) = NULL;
 
 		switch( table->type )
 		{
