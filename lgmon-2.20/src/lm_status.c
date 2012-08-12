@@ -141,6 +141,7 @@ static int setup_bscc(int dev_path)
 		else
 			sleep(1);
 	}
+
 	release_printer_sem(sem_id);
 	free(bscc_com);
 
@@ -165,10 +166,11 @@ static int init_rback(int sock, int dev_path)
 
 int status_get_process(int sm_sock_fd)
 {
+
 	int dev_path = PRNT_PATH;
 
-        sigemptyset(&sigmask);
-        sigaddset(&sigmask, SIGTERM);
+	sigemptyset(&sigmask);
+	sigaddset(&sigmask, SIGTERM);
 
 	/* signal handler setup */
 	signal_setup(SIGTERM, lm_stget_sighand);
@@ -243,13 +245,15 @@ static unsigned char get_bst(char *buf)
 	ptr += strlen(STR_BST);
 	work[0] = *ptr;
 	work[1] = 0x00;
-	sscanf(work, "%x", &wk); /* conv Hex string to value(Hi) */
-	val = (char)(wk<<4);
+	sscanf((char*)work, "%x", &wk); /* conv Hex string to value(Hi) */
+	/* sscanf(work, "%x", &wk);*/ /* conv Hex string to value(Hi) */
+	val = (char)(wk<<4); 
 
 	ptr++;
 	work[0] = *ptr;
 	work[1] = 0x00;
-	sscanf(work, "%x", &wk); /* conv HEX string to value(Lo) */
+	sscanf((char*)work, "%x", &wk); /* conv HEX string to value(Lo) */
+	/* sscanf(work, "%x", &wk);*/  /* conv HEX string to value(Lo) */
 	val |= (char)wk;
 
 	return val;

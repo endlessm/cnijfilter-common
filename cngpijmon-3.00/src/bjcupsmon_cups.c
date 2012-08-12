@@ -1,12 +1,11 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2008
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; either version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -25,6 +24,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <pwd.h>
+
 
 #include "bjcupsmon_common.h"
 #include "bjcupsmon_cups.h"
@@ -415,6 +415,13 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 	uid_t			userID;									// User ID.
 	struct passwd	*pPasswd;								// Pointer to password structure.
 	gint			retVal = ID_ERR_PRINT_JOB_NOT_EXIST;	// Return value.
+	//for CUPS 1.4.3 STR #3383
+	static const char * const jobattrs[] =					// Job attributes
+ 		{
+		  "job-id",
+		  "job-originating-user-name",
+		  "job-state"
+		};
 /*** Parameters end ***/
 	
 	// Get login name.
@@ -436,6 +443,8 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_CHARSET, "attributes-charset", NULL, cupsLangEncoding(pLanguage));
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_LANGUAGE, "attributes-natural-language", NULL, pLanguage->language);
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_URI, "printer-uri", NULL, pURI);
+		//for CUPS 1.4.3 STR #3383
+		ippAddStrings(pRequest, IPP_TAG_OPERATION, IPP_TAG_KEYWORD, "requested-attributes",(int)(sizeof(jobattrs) / sizeof(jobattrs[0])), NULL, jobattrs);
 		
 		if ((pResponse = cupsDoRequest(pHTTP, pRequest, "/")) != NULL) {
 			if (pResponse->request.status.status_code > IPP_OK_CONFLICT) {
@@ -496,7 +505,7 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 	if (retVal == ID_ERR_NO_ERROR && pJobID != NULL) {
 		*pJobID = jobID;
 	}
-	
+
 	return(retVal);
 }// End getJobID
 

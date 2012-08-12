@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -108,7 +108,7 @@ short bjf_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 		if ( !fread( tbuf, 2, 1, stdin ) ) goto onErr;
 
 		/*-- support ppm stdin --*/
-		if ( bufmatch( PPMRAWSTART, (char *)tbuf, 2 ) > 0 ){
+		if ( bufmatch( (char *)PPMRAWSTART, (char *)tbuf, 2 ) > 0 ){
 			lpbjfimage->imageformat = BJFIMAGE_PPM;
 		}
 		else {
@@ -128,13 +128,13 @@ short bjf_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 			tf = NULL;
 		}
 	
-		if ( ( bufmatch( TIFFSTART1, (char *)tbuf, 2 ) > 0 ) | ( bufmatch( TIFFSTART2, (char *)tbuf, 2 ) > 0 ) )
+		if ( ( bufmatch( (char*)TIFFSTART1, (char *)tbuf, 2 ) > 0 ) | ( bufmatch( (char*)TIFFSTART2, (char *)tbuf, 2 ) > 0 ) )
 			lpbjfimage->imageformat = BJFIMAGE_TIFF;
-		else if ( bufmatch( BMPSTART, (char *)tbuf, 2 ) > 0 )
+		else if ( bufmatch( (char*)BMPSTART, (char *)tbuf, 2 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_BMP;
-		else if ( bufmatch( PPMRAWSTART, (char *)tbuf, 2 ) > 0 )
+		else if ( bufmatch( (char*)PPMRAWSTART, (char *)tbuf, 2 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_PPM;
-		else if ( bufmatch( PNGSTART, (char *)tbuf, 8 ) > 0 )
+		else if ( bufmatch( (char*)PNGSTART, (char *)tbuf, 8 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_PNG;
 		else{
 			bjf_error( "not support this image format", FILE_ERROR );
@@ -989,7 +989,7 @@ static short ppm_image_init( LPBJF_IMAGEINFO lpbjfimage )
 			goto onErr;
 		}
 
-		if ( bufmatch( PPMRAWSTART, (char *)buffer, 2 ) < 0 ) goto onErr;
+		if ( bufmatch( (char*)PPMRAWSTART, (char*)buffer, 2 ) < 0 ) goto onErr;
 	}
 
 	/* skip "0x0A" after "P6" */
@@ -1297,7 +1297,7 @@ static short ppm_image_init_rev( LPBJF_IMAGEINFO lpbjfimage )
 			goto onErr;
 		}
 
-		if ( bufmatch( PPMRAWSTART, (char *)buffer, 2 ) < 0 ) goto onErr;
+		if ( bufmatch( (char *)PPMRAWSTART, (char*)buffer, 2 ) < 0 ) goto onErr;
 	}
 
 	/* skip "0x0A" after "P6" */
@@ -1592,7 +1592,7 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 
 	png_read_info( png_p, info_p );
 
-	png_get_IHDR( png_p, info_p, (png_uint_32 *)&width, (png_uint_32 *)&length, &bit_depth,
+	png_get_IHDR( png_p, info_p, (unsigned long *)&width, (unsigned long *)&length, &bit_depth,
 	              &color_type, &interlace_type, NULL, NULL);
 
 	/* not support Interlace */
@@ -1826,7 +1826,7 @@ int ppm_write_tmpfile( LPBJF_IMAGEINFO lpbjfimage, char *filename , char *outfil
 	long			length = 0;
 	long			maxvalue = 0;
 	short			bpp = 3;
-	long __attribute__ ((unused)) RasterLength = 0;	/* width of a raster */
+	long			RasterLength = 0;	/* width of a raster */
 	long			read_len = 0;
 	long			imagesize = 0;
 	short			retbyte;
@@ -1857,7 +1857,7 @@ int ppm_write_tmpfile( LPBJF_IMAGEINFO lpbjfimage, char *filename , char *outfil
 		return CIF_FILE_END;	/* end document --> return */
 	}
 
-	if ( bufmatch( PPMRAWSTART, (char *)buffer, 2 ) < 0 ) goto onErr;
+	if ( bufmatch( (char *)PPMRAWSTART, (char*)buffer, 2 ) < 0 ) goto onErr;
 
 	/* make tempfile to output */
 	fd = mkstemp(outfile);

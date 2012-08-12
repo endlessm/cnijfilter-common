@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2006 
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -588,7 +588,7 @@ int cmdlinesw(
 	int				id;
 	UIDB			uidb;
 	short			DefaultGamma = 0;
-	short  i, __attribute__ ((unused)) j;
+	short __attribute__ ((unused)) i,j;
 	short			count_switch=0;
 	short			ext = -1;
 	short			ret;
@@ -626,7 +626,7 @@ int cmdlinesw(
 		internalversion();
 		goto onError;
 	}
-	
+
 	/* check if filename is specified, or not (stdin mode) */
 	if (poptPeekArg(*optcon) == 0) {
 		lpbjf_optinfo->stdswitch = ON;
@@ -742,8 +742,8 @@ int cmdlinesw(
 	}
 
 
-	/* Check whether following options are supported or not.
-	  --  "borderless"  , "papergap" , "duplex" , "inkcartridgesettings" --
+	/* Check whether following options(or parameters) are supported or not.
+	  --  "borderless"  , "papergap" , "duplex" , "inkcartridgesettings" , "renderintent vivid"--
 	*/
 	if (FindValue(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, CND_MARGIN_MINUS) >= 0) {
 		borderless_support = 1;
@@ -806,8 +806,6 @@ int cmdlinesw(
 		count_switch++;
 	}
 
-
-	/* -- changed the place of code to work in gui mode, and work with --fit option */
     /* Location */
 	if (setopt[OPTINDEX(OPTLOCATION)] & OPTBIT(OPTLOCATION)) {
 		if (strcmp(opt->location, "center") == 0)
@@ -900,17 +898,20 @@ int cmdlinesw(
 
 	/* Borderless */
 	if (setopt[OPTINDEX(OPTBORDERLESS)] & OPTBIT(OPTBORDERLESS))
-	 {
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, CND_MARGIN_MINUS) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, 1, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			if(borderless_support){
-				fprintf(stderr, "Error: inappropriate borderless selection\n");
-			}else{
-				fprintf(stderr, "Error: \"--borderless\" option is not supported by this printer\n");
+	{
+		if( borderless_support ){
+			if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, CND_MARGIN_MINUS) >= 0) {
+				SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, 1, 1);
+				CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 			}
+			else {
+				fprintf(stderr, "Error: inappropriate borderless selection\n");
+				/* inappropriate selection error. */
+				goto onError;
+			}
+
+		}else{	/* not support borderless */
+			fprintf(stderr, "Error: \"--borderless\" option is not supported by this printer\n");
 			/* inappropriate selection error. */
 			goto onError;
 		}
@@ -1037,18 +1038,21 @@ int cmdlinesw(
 
 
 	/* duplex */
-	if (setopt[OPTINDEX(OPTDUPLEX)] & OPTBIT(OPTDUPLEX)) {
-
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_DUPLEX_PRINTING, CND_DUPLEX_AUTO) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_DUPLEX_PRINTING, 1, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			if(duplex_support){
-				fprintf(stderr, "Error: inappropriate duplex selection\n");
-			}else{
-				fprintf(stderr, "Error: \"--duplex\" option is not supported by this printer\n");
+	if (setopt[OPTINDEX(OPTDUPLEX)] & OPTBIT(OPTDUPLEX))
+	{
+		if( duplex_support ){
+			if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_DUPLEX_PRINTING, CND_DUPLEX_AUTO) >= 0) {
+				SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_DUPLEX_PRINTING, 1, 1);
+				CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 			}
+			else {
+				fprintf(stderr, "Error: inappropriate duplex selection\n");
+				/* inappropriate selection error. */
+				goto onError;
+			}
+		
+		}else{	/* not support duplex */
+			fprintf(stderr, "Error: \"--duplex\" option is not supported by this printer\n");
 			/* inappropriate selection error. */
 			goto onError;
 		}
@@ -1100,22 +1104,25 @@ int cmdlinesw(
 	/* PaperGap */
 	if (setopt[OPTINDEX(OPTPAPERGAP)] & OPTBIT(OPTPAPERGAP)) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRPAPERGAP, opt->papergap )) == BJFRCACCESSERROR ){
-			fprintf(stderr, "Error: invalid papergap\n");
-			ret = OPT_ERR_GAP - 50;
-			goto onErrorMessage;
-		}
-
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			if(papergap_support){
-				fprintf(stderr, "Error: inappropriate papergap selection\n");
-			}else{
-				fprintf(stderr, "Error: \"--papergap\" option is not supported by this printer\n");
+		if( papergap_support ){
+			if ((id = bjf_get_resource_id( confname, OPTSTRPAPERGAP, opt->papergap )) == BJFRCACCESSERROR ){
+				fprintf(stderr, "Error: invalid papergap\n");
+				ret = OPT_ERR_GAP - 50;
+				goto onErrorMessage;
 			}
+	
+			if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id) >= 0) {
+				SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id, 1);
+				CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
+			}
+			else {
+				fprintf(stderr, "Error: inappropriate papergap selection\n");
+				/* inappropriate selection error. */
+				goto onError;
+			}
+		
+		}else{	/* not support PaperGap */
+			fprintf(stderr, "Error: \"--papergap\" option is not supported by this printer\n");
 			/* inappropriate selection error. */
 			goto onError;
 		}
@@ -1251,23 +1258,27 @@ int cmdlinesw(
 
 
 	/* inkcartridgesettings */
-	if (setopt[OPTINDEX(OPTINKCARTRIDGESETTINGS)] & OPTBIT(OPTINKCARTRIDGESETTINGS)) {
-		if ((id = bjf_get_resource_id( confname, OPTSTRCARTRIDGE, opt->inkcartridgesettings )) == BJFRCACCESSERROR ){
-			fprintf(stderr, "Error: invalid inkcartridgesettings name\n");
-			ret = OPT_ERR_INKCAR - 50;
-			goto onErrorMessage;
-		}
-		
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_INKCARTRIDGESETTINGS, id) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_INKCARTRIDGESETTINGS, id, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			if( ics_support ){
-				fprintf(stderr, "Error: inappropriate inkcartridgesettings selection\n");
-			}else{
-				fprintf(stderr, "Error: \"--inkcartridgesettings\" option is not supported by this printer\n");
+	if (setopt[OPTINDEX(OPTINKCARTRIDGESETTINGS)] & OPTBIT(OPTINKCARTRIDGESETTINGS))
+	{
+		if( ics_support ){
+			if ((id = bjf_get_resource_id( confname, OPTSTRCARTRIDGE, opt->inkcartridgesettings )) == BJFRCACCESSERROR ){
+				fprintf(stderr, "Error: invalid inkcartridgesettings name\n");
+				ret = OPT_ERR_INKCAR - 50;
+				goto onErrorMessage;
 			}
+			
+			if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_INKCARTRIDGESETTINGS, id) >= 0) {
+				SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_INKCARTRIDGESETTINGS, id, 1);
+				CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
+			}
+			else {
+				fprintf(stderr, "Error: inappropriate inkcartridgesettings selection\n");
+				/* inappropriate selection error. */
+				goto onError;
+			}
+		
+		}else{	/* not support inkcartridgesettings */
+			fprintf(stderr, "Error: \"--inkcartridgesettings\" option is not supported by this printer\n");
 			/* inappropriate selection error. */
 			goto onError;
 		}
@@ -1424,8 +1435,7 @@ short CheckSettings( LPBJFLTDEVICE bjdevice , char *confname )
 			bjdevice->bjfltInkcartridgesettings = GetDefaultnValue(uidb.lpdbTop, uidb.dbsize, CNCL_INKCARTRIDGESETTINGS);
 		}
 	}
-
-
+	
 	/* Check mismatch between fineart media and size */
 	if ( ( bjdevice->bjfltMediaType == CND_MEDIA_FINE_ART_PAPER ) || (  bjdevice->bjfltMediaType == CND_MEDIA_OTHER_FINE_ART_PAPER ) ){
 		if( bjdevice->bjfltPaperSize != CND_SIZE_A4_FINE_ART ){

@@ -87,42 +87,35 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 			break;
 		}
 
-		gtk_widget_set_sensitive(
-			LookupWidget(window, "print_bw_button1"), sensitive);
-		gtk_widget_set_sensitive(
-			LookupWidget(window, "print_bw_button2"), sensitive);
+		gtk_widget_set_sensitive( LookupWidget(window, "print_bw_button1"), sensitive);
+		gtk_widget_set_sensitive( LookupWidget(window, "print_bw_button2"), sensitive);
 	}
 
 	// Media type combo
 	if( !SameName(except_name, "media_type_combo") )
 	{
 		GList* glist = GetComboList(CNCL_MEDIATYPE);
-		SetGListToCombo(window, "media_type_combo",
-							glist, GetCurrentString(CNCL_MEDIATYPE));
+		SetGListToCombo(window, "media_type_combo", glist, GetCurrentString(CNCL_MEDIATYPE));
 	}
 
 	// Media supply combo
 	if( !SameName(except_name, "media_supply_combo") )
 	{
 		GList* glist = GetComboList(CNCL_MEDIASUPPLY);
-		SetGListToCombo(window, "media_supply_combo",
-							glist, GetCurrentString(CNCL_MEDIASUPPLY));
+		SetGListToCombo(window, "media_supply_combo", glist, GetCurrentString(CNCL_MEDIASUPPLY));
 	}
 
 	// Cartridge type combo
 	if( !SameName(except_name, "cartridge_type_combo") )
 	{
 		GList* glist = GetComboList(CNCL_CARTRIDGE);
-		SetGListToCombo(window, "cartridge_type_combo",
-							glist, GetCurrentString(CNCL_CARTRIDGE));
+		SetGListToCombo(window, "cartridge_type_combo", glist, GetCurrentString(CNCL_CARTRIDGE));
 	}
 
 	// Quality radio button
 	{
-		gboolean custom_active = GTK_TOGGLE_BUTTON(
-					LookupWidget(window, "quality_custom_button"))->active;
-		GtkWidget* custom_button
-					 = LookupWidget(window, "quality_dialog_button");
+		gboolean custom_active = GTK_TOGGLE_BUTTON( LookupWidget(window, "quality_custom_button"))->active;
+		GtkWidget* custom_button  = LookupWidget(window, "quality_dialog_button");
 		short quality = GetCurrentnValue(CNCL_PRINTQUALITY);
 		GtkWidget* button;
 		short value[3];
@@ -143,11 +136,9 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 				gtk_widget_set_sensitive(button, TRUE);
 			else
 				gtk_widget_set_sensitive(button, FALSE);
-
 		}
 
-		if( custom_active )
-		{	// activate custom button
+		if( custom_active ){	// activate custom button
 			gtk_widget_set_sensitive(custom_button, TRUE);
 		}
 	}
@@ -155,16 +146,15 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 	// Color auto radio button
 	{
 		GtkWidget* button = LookupWidget(window, "color_auto_button");
-		gtk_toggle_button_set_active(
-			GTK_TOGGLE_BUTTON(button), g_main_window->color_auto);
+		gtk_toggle_button_set_active( GTK_TOGGLE_BUTTON(button), g_main_window->color_auto );
 		
 	}
+
 	// Color adjust radio button
 	{
 		GtkWidget* button = LookupWidget(window, "color_dialog_button");
 
-		if( GTK_TOGGLE_BUTTON(
-				LookupWidget(window, "color_manual_button"))->active )
+		if( GTK_TOGGLE_BUTTON( LookupWidget(window, "color_manual_button"))->active )
 			gtk_widget_set_sensitive(button, TRUE);
 		else
 			gtk_widget_set_sensitive(button, FALSE);
@@ -182,8 +172,7 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 	if( !SameName(except_name, "paper_gap_combo") )
 	{
 		GList* glist = GetComboList(CNCL_PAPERGAP_COMMAND);
-		SetGListToCombo(window, "paper_gap_combo",
-							glist, GetCurrentString(CNCL_PAPERGAP_COMMAND));
+		SetGListToCombo(window, "paper_gap_combo", glist, GetCurrentString(CNCL_PAPERGAP_COMMAND));
 	}
 
 	/////////////////////////////////////////////////////////////////
@@ -192,8 +181,7 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 	if( !SameName(except_name, "media_size_combo") )
 	{
 		GList* glist = GetComboList(CNCL_PAPERSIZE);
-		SetGListToCombo(window, "media_size_combo",
-							glist, GetCurrentString(CNCL_PAPERSIZE));
+		SetGListToCombo(window, "media_size_combo", glist, GetCurrentString(CNCL_PAPERSIZE));
 	}
 
 	// Printing type combo
@@ -218,10 +206,8 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 	// Printing scaling spin.
 	if( !SameName(except_name, "printing_scaling_button") )
 	{
-		GtkSpinButton* scaling_spin
-			= (GtkSpinButton*)LookupWidget(window, "printing_scaling_spin");
-		gtk_adjustment_set_value(scaling_spin->adjustment,
-			(gfloat)g_main_window->scaling);
+		GtkSpinButton* scaling_spin = (GtkSpinButton*)LookupWidget(window, "printing_scaling_spin");
+		gtk_adjustment_set_value(scaling_spin->adjustment, (gfloat)g_main_window->scaling);
 	}
 
 	// Centering button.
@@ -262,10 +248,8 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 	// Copies spin.
 	if( !SameName(except_name, "copies_spin") )
 	{
-		GtkSpinButton* copies_spin
-			= (GtkSpinButton*)LookupWidget(window, "copies_spin");
-		gtk_adjustment_set_value(copies_spin->adjustment,
-			(gfloat)g_main_window->copies);
+		GtkSpinButton* copies_spin = (GtkSpinButton*)LookupWidget(window, "copies_spin");
+		gtk_adjustment_set_value(copies_spin->adjustment, (gfloat)g_main_window->copies);
 	}
 }
 
@@ -340,7 +324,7 @@ int GetTextArrayValueFromCombo(GtkWidget* window, gchar *combo_name,
 		const gchar* key_array[], const short value_array[])
 {
 	GtkWidget* combo = LookupWidget(window, combo_name);
-	gchar* current = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
+	const gchar* current = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
 	int i;
 
 	for( i = 0 ; key_array[i] != NULL ; i++ )

@@ -65,7 +65,7 @@ static gint TreeTraverseFunc(gpointer key, gpointer value, gpointer data)
 
 static void FreeTree(GTree* tree)
 {
-	g_tree_traverse(tree, TreeTraverseFunc, G_IN_ORDER, NULL);
+	g_tree_foreach(tree, TreeTraverseFunc, NULL);
 	g_tree_destroy(tree);
 }
 
@@ -73,11 +73,11 @@ static void AddKeyAndTextToTree(xmlNodePtr xmlnode, GTree* tree)
 {
 	char *key, *text;
 
-	if( !xmlnode->name || g_strcasecmp(xmlnode->name,"Item") != 0 )
+	if( !xmlnode->name || g_ascii_strcasecmp((const gchar *)xmlnode->name,"Item") != 0 )
 		return;
 
-	key  = g_strdup(xmlGetProp(xmlnode,"key"));
-	text = g_strdup(xmlNodeGetContent(xmlnode));
+	key  = g_strdup((const gchar *)xmlGetProp(xmlnode,(const xmlChar *)"key"));
+	text = g_strdup((const gchar *)xmlNodeGetContent(xmlnode));
 
 	if( key != NULL && text != NULL )
 	{
@@ -104,7 +104,7 @@ static gboolean ReadXMLFile(char *fname, GTree* tree)
 
 	if( doc->xmlRootNode == NULL
 	 || doc->xmlRootNode->name == NULL
-	 || g_strcasecmp(doc->xmlRootNode->name, "KeyTextList") != 0)
+	 || g_ascii_strcasecmp((const gchar *)doc->xmlRootNode->name, "KeyTextList") != 0)
 	{
 		xmlFreeDoc(doc);
 		return FALSE;
@@ -185,7 +185,7 @@ gchar* LookupKey(KeyTextList* list, const gchar* text)
 		return NULL;
 
 	g_reverse_key = NULL;
-	g_tree_traverse(list->tree, ReverseSearchFunc, G_IN_ORDER, (gpointer)text);
+	g_tree_foreach(list->tree, ReverseSearchFunc, (gpointer)text);
 
 	return g_reverse_key;
 }

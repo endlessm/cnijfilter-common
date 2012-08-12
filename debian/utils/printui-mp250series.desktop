@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP250
-Exec=cngpij -PCanon-MP250
+Exec=cngpij -P Canon-MP250
 Icon=printer.png
 Categories=Graphics
 Type=Application

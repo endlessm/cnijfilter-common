@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP510
-Exec=cngpij -PCanon-MP510
+Exec=cngpij -P Canon-MP510
 Icon=printer.png
 Categories=Graphics
 Type=Application

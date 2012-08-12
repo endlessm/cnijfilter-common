@@ -56,7 +56,7 @@ ST_BSCCBUF bsccbuf[]={
   {"DWS",NULL},
   {"DOC",NULL},
   {"DSC",NULL},
-  {"CIR",NULL}
+  {"CIR",NULL},
 };
 
 
@@ -119,13 +119,13 @@ int bscc2sts(char *printer, char *bscc, output_dev *Odev, bscc2sts_tbl *Pr_sts)
  */
 static const
 ST_FUNCMODEL modeltable[]={
-  {"BJF900",processforf9xx},
-  {"BJF9000",processforf9xx},
-  {"BJS300",processfors300},
-  {"BJS500",processfors500},
-  {"PIXUS950I",processfor950i},
-  {"PIXUS850I",processfor850i},
-  {"PIXUS550I",processfor550i}
+   {"BJF900",		processforf9xx}
+  ,{"BJF9000",		processforf9xx}
+  ,{"BJS300",		processfors300}
+  ,{"BJS500",		processfors500}
+  ,{"PIXUS950I",	processfor950i}
+  ,{"PIXUS850I",	processfor850i}
+  ,{"PIXUS550I",	processfor550i}
 };
 
 

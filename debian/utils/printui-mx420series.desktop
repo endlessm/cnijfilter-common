@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MX420
-Exec=cngpij -PCanon-MX420
+Exec=cngpij -P Canon-MX420
 Icon=printer.png
 Categories=Graphics
 Type=Application

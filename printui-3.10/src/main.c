@@ -226,7 +226,7 @@ void InitOption(int argc, char* argv[])
 			break;
 		}
 	}
-
+	
 	if( rc < -1 )
 		g_warning("Unknown switch, %s\n",
 			 poptBadOption(context, POPT_BADOPTION_NOALIAS));

@@ -18,12 +18,12 @@
 *%  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 *FormatVersion:	"4.3"
-*FileVersion: "1.1"
+*FileVersion: "1.0"
 *LanguageVersion: English
 *LanguageEncoding: ISOLatin1
 *PCFileName: "CNPX950I.PPD"
 *Manufacturer: "Canon"
-*Product: "pixus950i"
+*Product: "(pixus950i)"
 *cupsVersion: 1.1
 *cupsManualCopies: True
 *cupsModelNumber: 154

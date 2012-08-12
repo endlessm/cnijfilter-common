@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP280
-Exec=cngpij -PCanon-MP280
+Exec=cngpij -P Canon-MP280
 Icon=printer.png
 Categories=Graphics
 Type=Application

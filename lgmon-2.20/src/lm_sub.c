@@ -33,8 +33,7 @@
 #include	<signal.h>
 #include	<sys/ioctl.h>
 #include	<stdlib.h>
-#include	<errno.h>
-#include	<asm/errno.h>
+#include	<errno.h>					/* asm/errno.h -> errno.h */
 
 #include	"lmsmsock.h"
 #include	"lm.h"
@@ -525,7 +524,7 @@ int signal_setup(int sig, void (*func)())
 
 int status_to_viewer(struct bjst_rback *rback)
 {
-	int error;
+	int error, __attribute__ ((unused)) result2;
         char *buf;
         int reg = 0;
         lmsm_socket sm_data;
@@ -585,7 +584,7 @@ int status_to_viewer(struct bjst_rback *rback)
 		memcpy(sm_data.prn_data.stat.stat_buffer, buf, MAX_STATBUF);
 
 		if(rback->rback_handle > 0)
-			write(rback->rback_handle, &sm_data, sizeof(sm_data));
+			result2 = write(rback->rback_handle, &sm_data, sizeof(sm_data));
 	}
 	else{
 		/* status return to stderr(used by CUPS system) */
@@ -607,13 +606,13 @@ int status_to_viewer(struct bjst_rback *rback)
 				default:               odev.dev = 0; break;
 			}
 
-			strcpy( &info_sts.header[0], "INFO:" );
+			strncpy( &info_sts.header[0], "INFO:" ,strlen("INFO:"));
 
 			/* Printer Status Convert */
 			lib_stat = bscc2sts(PACKAGE_PRINTER_MODEL, buf, &odev, &info_sts.sts);
 
 			if(rback->rback_handle > 0 && lib_stat == OK )	
-				write(rback->rback_handle, (void *)&info_sts, (size_t)sizeof(info_sts));
+				result2 = write(rback->rback_handle, (void *)&info_sts, (size_t)sizeof(info_sts));
 #ifdef DEBUG
 			else {
 				fprintf(log_path,"Status Convert Error rback_handle:%d lib_stat:%d\n",rback->rback_handle,lib_stat);

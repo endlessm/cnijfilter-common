@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MG8200
-Exec=cngpij -PCanon-MG8200
+Exec=cngpij -P Canon-MG8200
 Icon=printer.png
 Categories=Graphics
 Type=Application

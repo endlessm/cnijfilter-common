@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2004 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -29,6 +28,7 @@
 #include <stdlib.h>
 #include <popt.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "cncl.h"
 #include "cncldef.h"
@@ -48,7 +48,7 @@ short SetCmdOption(int, char **, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVIC
 static void usage( char * );
 static void init_optioninfo( LPBJF_OPTINFO lpbjfoption );
 static int cmdlinesw(poptContext *, OPT *, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char *, char *, char *, char *);
-static void MakeModelnameConfname(  char *, char *, char *);
+void MakeModelnameConfname(  char *, char *, char *, char *, char *);
 static short ParseBbox(char *bbox , LPBJF_OPTINFO lpbjf_optinfo);
 
 static long convert_str_to_long(char *);
@@ -100,16 +100,16 @@ void usage( char *modelname )
 	for( i=0; i<sizeof(small_tmpname); i++)
 		small_tmpname[i] = tolower(modelname[i]);
 
-	sprintf(tmpname, "%s%s",usage_bjfiltergui,small_tmpname);
-	sprintf(tmpname, "%s%s",usage_bjfilter,small_tmpname);
+	snprintf(tmpname, sizeof(tmpname) , "%s%s",usage_bjfiltergui,small_tmpname);
+	snprintf(tmpname, sizeof(tmpname) ,"%s%s",usage_bjfilter,small_tmpname);
 
 	if( *modelname == '\0' ){
-		sprintf(useagebjfiltergui, "%s%s",usage_str0,"");
-		sprintf(useagebjfilter, "%s%s",usage_str1,"");
+		snprintf(useagebjfiltergui,sizeof(useagebjfiltergui), "%s%s",usage_str0,"");
+		snprintf(useagebjfilter,sizeof(useagebjfilter), "%s%s",usage_str1,"");
 	} 
 	else{
-		sprintf(useagebjfiltergui, "%s%s",tmpname,usage_guimode);
-		sprintf(useagebjfilter, "%s%s",tmpname,usage_switches);
+		snprintf(useagebjfiltergui, sizeof(useagebjfiltergui),"%s%s",tmpname,usage_guimode);
+		snprintf(useagebjfilter, sizeof(useagebjfilter),"%s%s",tmpname,usage_switches);
 	}
 
 	fprintf(stderr, "\n%s\n%s\n%s\n\n%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s\n",
@@ -118,7 +118,6 @@ void usage( char *modelname )
 					COPYRIGHT_STR1,
 					useagebjfiltergui,
 					useagebjfilter,
-
 					usage_str_ime,
 					usage_str_car,
 					usage_str_med,
@@ -438,7 +437,7 @@ short SetCmdOption(
 	OPT					opt;
 	poptContext			optcon;
 	char				confname[256];
-	short				first_modelstrnum,i;
+	short __attribute__ ((unused))	first_modelstrnum,i;
 	short				ret;
 
 	struct poptOption optionsTable[] = {
@@ -488,10 +487,10 @@ short SetCmdOption(
 	/*--- Analyze command line ---*/
 	init_optioninfo( lpbjfoption );
 	
-	/* optcon = poptGetContext( "bjfilter", cargc, cargv, optionsTable, 0 ); */
-	optcon = poptGetContext( NULL, cargc, cargv, optionsTable, 0 );
+	optcon = poptGetContext( NULL, cargc, (const char **)cargv, optionsTable, 0 );
 	
-	MakeModelnameConfname( cargv[0], modelname, confname );
+	memset(confname , 0x00 , sizeof(confname));
+	MakeModelnameConfname( cargv[0], modelname, confname, BJFILTERXXXXRCPATH, BJFILTERDOTCONF );
 	first_modelstrnum = strlen(modelname);
 
 	if ( ( ret = cmdlinesw( &optcon, &opt, lpbjfoption, bjcolor, bjdevice, psize, dispname, filename, confname, modelname ) ) < 0 ){
@@ -532,8 +531,7 @@ int cmdlinesw(
 	int				id;
 	UIDB			uidb;
 	short			DefaultGamma = 0;
-
-	short			i,j;
+	short __attribute__ ((unused)) i,j;
 	char			bkup_modelname[24];
 	short			count_switch=0;
 	short			ret;
@@ -623,7 +621,6 @@ int cmdlinesw(
 		lpbjf_optinfo->bbox.bbox_flag = BBOX_ON;
 	}
 
-
 	/* if GUI mode, then return here */
 	if (setopt[OPTINDEX(OPTGUI)] & OPTBIT(OPTGUI)) {
 		lpbjf_optinfo->ui=ON;
@@ -692,7 +689,6 @@ int cmdlinesw(
 		}
 
 		lpbjf_optinfo->copies = opt->copies;
-
 	}
 	
 	/* revprint */
@@ -704,6 +700,7 @@ int cmdlinesw(
 	if (setopt[OPTINDEX(OPTCOLLATE)] & OPTBIT(OPTCOLLATE)) {
 		lpbjf_optinfo->collate = ON;
 	}
+
 
 	/* -- Check --fit option before location */
 	if (setopt[OPTINDEX(OPTFIT)] & OPTBIT(OPTFIT)) {
@@ -717,8 +714,6 @@ int cmdlinesw(
 		count_switch++;
 	}
 
-
-	/* -- changed the place of code to work in gui mode, and work with --fit option */
     /* Location */
 	if (setopt[OPTINDEX(OPTLOCATION)] & OPTBIT(OPTLOCATION)) {
 		if (strcmp(opt->location, "center") == 0)
@@ -751,7 +746,6 @@ int cmdlinesw(
 	}
 
 
-
 	/* Cartridge */
 	if (setopt[OPTINDEX(OPTCARTRIDGE)] & OPTBIT(OPTCARTRIDGE)) {
 
@@ -771,6 +765,7 @@ int cmdlinesw(
 		}
 	}
 
+
 	/* MediaType */
 	if (setopt[OPTINDEX(OPTMEDIA)] & OPTBIT(OPTMEDIA)) {
 
@@ -789,6 +784,7 @@ int cmdlinesw(
 			goto onErrorInappropriate;
 		}
 	}
+
 
 	/* GrayScale */
 	if (setopt[OPTINDEX(OPTGRAY)] & OPTBIT(OPTGRAY)) {
@@ -915,6 +911,7 @@ int cmdlinesw(
 			goto onErrorInappropriate;
 		}
 	}
+
 
 	/* PaperGap */
 	if (setopt[OPTINDEX(OPTPAPERGAP)] & OPTBIT(OPTPAPERGAP)) {
@@ -1122,13 +1119,13 @@ void init_optioninfo( LPBJF_OPTINFO lpbjfoption )
 
 /*-------------------------------------------------------------*/
 /* make  modelname, confname                                   */
-/*          modelname = BJF900                                 */
-/*          confname = /usr/lib/bjlib/bjfilterf900.conf etc    */
+/*          modelname = ip4200                                 */
+/*          confname = /usr/lib/bjlib/cifip4200.conf etc       */
 /*-------------------------------------------------------------*/
-static void MakeModelnameConfname( char *argv0, char *modelname, char *confname )
+void MakeModelnameConfname( char *argv0, char *modelname, char *confname, char *path, char *extname )
 {
-	static char		bjfilter_path[] = "bjfilter";
-	char			small_modelname[256],tmpconfilename[256],confilename[256];
+	static char		bjfilter_path[] = "cif";
+	char			small_modelname[256],tmpconfilename[256], __attribute__ ((unused)) confilename[256];
 	short			bjfiltstrlen = strlen(bjfilter_path);
 	short			argv0strlen = strlen(argv0);
 	short			i,count;
@@ -1145,13 +1142,13 @@ static void MakeModelnameConfname( char *argv0, char *modelname, char *confname 
 	for( i=0; i<(short)(argv0strlen - count - bjfiltstrlen); i++ )
 		small_modelname[i] = (char)(argv0[count + bjfiltstrlen + i]);
 
-	/* modelname = BJF900 etc.. */
+	/* modelname = ip4200 etc.. */
 	for( i=0; i<sizeof(small_modelname); i++)
 		modelname[i] = toupper(small_modelname[i]);
 
-	/* confname = /usr/lib/bjlib/bjfilterf900.conf etc.. */
-	sprintf(tmpconfilename, "%s%s",BJFILTERXXXXRCPATH,small_modelname);
-	sprintf(confname, "%s%s",tmpconfilename,BJFILTERDOTCONF);
+	/* confname = /usr/lib/bjlib/cifip4200.conf etc.. */
+	snprintf(tmpconfilename,sizeof(tmpconfilename), "%s%s",path,small_modelname);
+	snprintf(confname, 256,"%s%s",tmpconfilename, extname);
 
 }
 
@@ -1206,9 +1203,9 @@ static long convert_str_to_long(char *str)
 	long	value = 0L;
 	char	c;
 	
-	while(c = *str)
+	while((c = *str))
 	{
-		if(c < '0' && '9' < c)
+		if(c < '0' || '9' < c)
 			return -2; /* invalid value */
 		
 		value = value * 10 + ( c - '0' );

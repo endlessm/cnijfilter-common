@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MX330
-Exec=cngpij -PCanon-MX330
+Exec=cngpij -P Canon-MX330
 Icon=printer.png
 Categories=Graphics
 Type=Application

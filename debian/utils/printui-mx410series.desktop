@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MX410
-Exec=cngpij -PCanon-MX410
+Exec=cngpij -P Canon-MX410
 Icon=printer.png
 Categories=Graphics
 Type=Application

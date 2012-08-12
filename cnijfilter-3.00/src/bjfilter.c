@@ -1,12 +1,11 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2008 
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -47,12 +46,13 @@
 #include "bjfimage.h"
 #include "bjfoption.h"
 #include "bjfrcaccess.h"
+#include "bjflist.h"
 #include "bjfpos.h"
 #include "bjipc.h"
 #include "bjfilter.h"
 #include "uitypes.h"
-#include "bjflist.h"
 #include "bjfpath.h"
+
 
 /* function prototypes */
 extern short GetIPCData(LPIPCU pipc, char *sname);
@@ -142,8 +142,7 @@ int main( int argc, char *argv[] )
 #if DEBUGLOG
 	create_log( );
 #endif
-
-
+	
 	/* allocate new work area */
 	if ( (lpbjinfo = (LPBJFILTERINFO)malloc( sizeof(BJFILTERINFO) )) == NULL ) goto onErr;
 	
@@ -202,13 +201,13 @@ int main( int argc, char *argv[] )
 	if ( CheckSettings( &bjfltdevice , confname ) < 0 ){
 		goto onErr;
 	}
-
+	
 	/* Make Printing Data */
 	if ( MakeBJPrintData( lpbjinfo, &bjfltdevice, &cnclpapersize, &bjfltcolor ) < 0 ){
 		fprintf( stderr, "Err in MakeBJPrintData!\n" );	
 		goto onErr;
 	}
-
+	
 onErr:
 	close( lpbjinfo->prn );	/* Ver.3.00 */
 	
@@ -253,7 +252,7 @@ static short MakeBJPrintData
 	CIFRASTERINFO		CifRasterInfo;
 	int					f_input = -1;
 	LPBJF_ROOT			root = NULL;
-	int	__attribute__ ((unused)) fd;
+	int					fd;
 	short				dumpp_ret;
 	BJFLTOVERMARGININFO	bjfltovermargin;
 
@@ -292,9 +291,7 @@ static short MakeBJPrintData
 
 	/****** CNCL Startjob ******/
 	if ( (cnclerr = CNCL_StartJob( &CnclData )) != CNCL_OK ) goto finish1;
-	
 	outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
-
 
 	/*--- 
 		Input Image open. 
@@ -605,7 +602,7 @@ static short MakeBJPrintData
 	}else{							/* "duplex OFF" or "duplex ON and input is image file" */
 		if( ( dumpp_ret = dumpPluralPages_flush(root, lpbjinfo->prn) ) < 0 ) goto onErr;
 	}
-
+	
 	if ( cnclerr < 0 ) goto onErr;
 	
 	cnclerr = 0;
@@ -1459,6 +1456,7 @@ static short modify_image_form( LPBJFILTERINFO lpbjinfo )
 	/*---------
 		if bbox option is selected, 
 	---------*/
+
 	if ( lpbjinfo->bjfoption.bbox.bbox_flag == BBOX_ON ){
 		if ( SetBbox( &lpbjinfo->bjfposimg,
 			lpbjinfo->bjfoption.bbox.value, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto onErr;

@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MG5100
-Exec=cngpij -PCanon-MG5100
+Exec=cngpij -P Canon-MG5100
 Icon=printer.png
 Categories=Graphics
 Type=Application

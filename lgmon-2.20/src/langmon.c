@@ -32,7 +32,8 @@
 int  sem_id = 0;			/* printer access semapho id */
 int  filter_exist = 1;			/* parent process is bjfilter(flag) */
 int  device_type;			/* Device type (USB/LP/PARPORT/1394......) */
-int  print_system = PRNSYS_LPR;		/* lpr(ng) or CUPS (default is lpr(ng)) */
+int  print_system = PRNSYS_CUPS;		/* lpr(ng) or CUPS (default is CUPS) */
+//int  print_system = PRNSYS_LPR;		/* lpr(ng) or CUPS (default is lpr(ng)) */
 char *stamon_arg[ARGV_MAX];		/* arg space */
 struct ptdev_func dev_access;		/* read/write dispatch struct */
 struct ptdev_func *p_dvacs = &dev_access;
@@ -382,7 +383,7 @@ static int check_signal()
 
 static int print_normal()
 {
-	int error = 0;
+	int __attribute__ ((unused)) error = 0;
 	int r_size;
 	int w_size;
 	char *buf;

@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MX430
-Exec=cngpij -PCanon-MX430
+Exec=cngpij -P Canon-MX430
 Icon=printer.png
 Categories=Graphics
 Type=Application

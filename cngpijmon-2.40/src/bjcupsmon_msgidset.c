@@ -185,8 +185,7 @@ int chk_servicecall(ST_CUPSSTS *p_tbl, ST_PrinterStatus *p_sts)
 int chk_operatorcall_level1(ST_CUPSSTS *p_tbl, ST_PrinterStatus *p_sts)
 {
   int ret;
-  int msgid;
-  
+
   ret=processstandardmsgcheck(p_sts, &operatelevel1[0], p_tbl->operator_call, sizeof(p_tbl->operator_call));
   
   if( *(p_sts->pMessageID) == ID_STS_MESSAGE_OC_CARTRIDGE_NONE )		// v2.4

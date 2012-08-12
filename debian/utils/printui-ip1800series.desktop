@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-IP1800
-Exec=cngpij -PCanon-IP1800
+Exec=cngpij -P Canon-IP1800
 Icon=printer.png
 Categories=Graphics
 Type=Application

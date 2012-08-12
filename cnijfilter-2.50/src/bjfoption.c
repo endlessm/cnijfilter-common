@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2005 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -29,6 +28,7 @@
 #include <stdlib.h>
 #include <popt.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "cncl.h"
 #include "cncldef.h"
@@ -230,7 +230,6 @@ short FindValue(LPCNCLDB lpdbTop, short dbsize, short id, short value)
 	}
 	return ret;
 }
-
 
 
 /*-------------------------------------------------------------*/
@@ -468,7 +467,7 @@ static short ConvExtToID( short value )
 		}
 	}
 	
-onErr:
+//onErr:
 	return result; 
 
 }
@@ -491,7 +490,7 @@ short SetCmdOption(
 	OPT					opt;
 	poptContext			optcon;
 	char				confname[256];
-	short				first_modelstrnum,i;
+	short __attribute__ ((unused))	first_modelstrnum,i;
 	short				ret;
 
 	struct poptOption optionsTable[] = {
@@ -542,8 +541,7 @@ short SetCmdOption(
 	/*--- Analyze command line ---*/
 	init_optioninfo( lpbjfoption );
 	
-	/* optcon = poptGetContext( "bjfilter", cargc, cargv, optionsTable, 0 ); */
-	optcon = poptGetContext( NULL, cargc, cargv, optionsTable, 0 );
+	optcon = poptGetContext( NULL, cargc, (const char **)cargv, optionsTable, 0 );
 	
 	memset(confname , 0x00 , sizeof(confname));
 	MakeModelnameConfname( cargv[0], modelname, confname, BJFILTERXXXXRCPATH, BJFILTERDOTCONF );
@@ -592,8 +590,7 @@ int cmdlinesw(
 	int				id;
 	UIDB			uidb;
 	short			DefaultGamma = 0;
-
-	short			i,j;
+	short __attribute__ ((unused)) i,j;
 	char			bkup_modelname[24];
 	short			count_switch=0;
 	short			ext = -1;
@@ -695,7 +692,6 @@ int cmdlinesw(
 		lpbjf_optinfo->bbox.bbox_flag = BBOX_ON;
 	}
 
-
 	/* if GUI mode, then return here */
 	if (setopt[OPTINDEX(OPTGUI)] & OPTBIT(OPTGUI)) {
 		lpbjf_optinfo->ui=ON;
@@ -784,7 +780,6 @@ int cmdlinesw(
 		}
 
 		lpbjf_optinfo->copies = opt->copies;
-
 	}
 	
 	/* revprint */
@@ -796,6 +791,7 @@ int cmdlinesw(
 	if (setopt[OPTINDEX(OPTCOLLATE)] & OPTBIT(OPTCOLLATE)) {
 		lpbjf_optinfo->collate = ON;
 	}
+
 
 	/* -- Check --fit option before location */
 	if (setopt[OPTINDEX(OPTFIT)] & OPTBIT(OPTFIT)) {
@@ -809,8 +805,6 @@ int cmdlinesw(
 		count_switch++;
 	}
 
-
-	/* -- changed the place of code to work in gui mode, and work with --fit option */
     /* Location */
 	if (setopt[OPTINDEX(OPTLOCATION)] & OPTBIT(OPTLOCATION)) {
 		if (strcmp(opt->location, "center") == 0)
@@ -845,7 +839,6 @@ int cmdlinesw(
 	}
 
 
-
 	/* Cartridge */
 	if (setopt[OPTINDEX(OPTCARTRIDGE)] & OPTBIT(OPTCARTRIDGE)) {
 
@@ -865,6 +858,7 @@ int cmdlinesw(
 			goto onError;
 		}
 	}
+
 
 	/* MediaType */
 	if (setopt[OPTINDEX(OPTMEDIA)] & OPTBIT(OPTMEDIA)) {
@@ -886,6 +880,7 @@ int cmdlinesw(
 		}
 	}
 
+
 	/* GrayScale */
 	if (setopt[OPTINDEX(OPTGRAY)] & OPTBIT(OPTGRAY)) {
 		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_GRAYSCALE, CND_BJGRAYSCALE_ON) >= 0) {
@@ -902,17 +897,20 @@ int cmdlinesw(
 
 	/* Borderless */
 	if (setopt[OPTINDEX(OPTBORDERLESS)] & OPTBIT(OPTBORDERLESS))
-	 {
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, CND_MARGIN_MINUS) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, 1, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			if(borderless_support){
-				fprintf(stderr, "Error: inappropriate borderless selection\n");
-			}else{
-				fprintf(stderr, "Error: \"--borderless\" option is not supported by this printer\n");
+	{
+		if( borderless_support ){
+			if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, CND_MARGIN_MINUS) >= 0) {
+				SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, 1, 1);
+				CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 			}
+			else {
+				fprintf(stderr, "Error: inappropriate borderless selection\n");
+				/* inappropriate selection error. */
+				goto onError;
+			}
+
+		}else{	/* not support borderless */
+			fprintf(stderr, "Error: \"--borderless\" option is not supported by this printer\n");
 			/* inappropriate selection error. */
 			goto onError;
 		}
@@ -1061,22 +1059,25 @@ int cmdlinesw(
 	/* PaperGap */
 	if (setopt[OPTINDEX(OPTPAPERGAP)] & OPTBIT(OPTPAPERGAP)) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRPAPERGAP, opt->papergap )) == BJFRCACCESSERROR ){
-			fprintf(stderr, "Error: invalid papergap\n");
-			ret = OPT_ERR_GAP - 50;
-			goto onErrorMessage;
-		}
-
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			if(papergap_support){
-				fprintf(stderr, "Error: inappropriate papergap selection\n");
-			}else{
-				fprintf(stderr, "Error: \"--papergap\" option is not supported by this printer\n");
+		if( papergap_support ){
+			if ((id = bjf_get_resource_id( confname, OPTSTRPAPERGAP, opt->papergap )) == BJFRCACCESSERROR ){
+				fprintf(stderr, "Error: invalid papergap\n");
+				ret = OPT_ERR_GAP - 50;
+				goto onErrorMessage;
 			}
+	
+			if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id) >= 0) {
+				SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id, 1);
+				CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
+			}
+			else {
+				fprintf(stderr, "Error: inappropriate papergap selection\n");
+				/* inappropriate selection error. */
+				goto onError;
+			}
+		
+		}else{	/* not support PaperGap */
+			fprintf(stderr, "Error: \"--papergap\" option is not supported by this printer\n");
 			/* inappropriate selection error. */
 			goto onError;
 		}
@@ -1280,13 +1281,13 @@ void init_optioninfo( LPBJF_OPTINFO lpbjfoption )
 
 /*-------------------------------------------------------------*/
 /* make  modelname, confname                                   */
-/*          modelname = BJF900                                 */
-/*          confname = /usr/lib/bjlib/bjfilterf900.conf etc    */
+/*          modelname = ip4200                                 */
+/*          confname = /usr/lib/bjlib/cifip4200.conf etc       */
 /*-------------------------------------------------------------*/
 void MakeModelnameConfname( char *argv0, char *modelname, char *confname, char *path, char *extname )
 {
 	static char		bjfilter_path[] = "cif";
-	char			small_modelname[256],tmpconfilename[256],confilename[256];
+	char			small_modelname[256],tmpconfilename[256], __attribute__ ((unused)) confilename[256];
 	short			bjfiltstrlen = strlen(bjfilter_path);
 	short			argv0strlen = strlen(argv0);
 	short			i,count;
@@ -1304,11 +1305,11 @@ void MakeModelnameConfname( char *argv0, char *modelname, char *confname, char *
 	for( i=0; i<(short)(argv0strlen - count - bjfiltstrlen); i++ )
 		small_modelname[i] = (char)(argv0[count + bjfiltstrlen + i]);
 
-	/* modelname = BJF900 etc.. */
+	/* modelname = ip4200 etc.. */
 	for( i=0; i<sizeof(small_modelname); i++)
 		modelname[i] = toupper(small_modelname[i]);
 
-	/* confname = /usr/lib/bjlib/bjfilterf900.conf etc.. */
+	/* confname = /usr/lib/bjlib/cifip4200.conf etc.. */
 	snprintf(tmpconfilename,sizeof(tmpconfilename), "%s%s",path,small_modelname);
 	snprintf(confname, 256,"%s%s",tmpconfilename, extname);
 
@@ -1365,7 +1366,7 @@ static long convert_str_to_long(char *str)
 	long	value = 0L;
 	char	c;
 	
-	while(c = *str)
+	while((c = *str))
 	{
 		if(c < '0' || '9' < c)
 			return -2; /* invalid value */

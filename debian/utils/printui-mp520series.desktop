@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP520
-Exec=cngpij -PCanon-MP520
+Exec=cngpij -P Canon-MP520
 Icon=printer.png
 Categories=Graphics
 Type=Application

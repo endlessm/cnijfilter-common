@@ -64,14 +64,14 @@ create_mainWindow (void)
   gtk_container_set_border_width (GTK_CONTAINER (scrolledMain), 10);
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolledMain), GTK_POLICY_NEVER, GTK_POLICY_ALWAYS);
 
-  textMainStatus = gtk_text_new (NULL, NULL);
+  textMainStatus = gtk_text_view_new ();
   gtk_widget_ref (textMainStatus);
   gtk_object_set_data_full (GTK_OBJECT (mainWindow), "textMainStatus", textMainStatus,
                             (GtkDestroyNotify) gtk_widget_unref);
   gtk_widget_show (textMainStatus);
   gtk_container_add (GTK_CONTAINER (scrolledMain), textMainStatus);
-  gtk_text_insert (GTK_TEXT_VIEW (textMainStatus), NULL, NULL, NULL,
-                   _("printer status message"), 22);
+//  gtk_text_insert (GTK_TEXT_VIEW (textMainStatus), NULL, NULL, NULL,
+//                   _("printer status message"), 22);
 
   hseparatorMain1 = gtk_hseparator_new ();
   gtk_widget_ref (hseparatorMain1);

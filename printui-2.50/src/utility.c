@@ -1775,11 +1775,13 @@ void on_autopower_send_button_clicked(GtkButton *button, gpointer user_data)
 	result = ID_OK;
 
 	power_on_combo = LookupWidget(GTK_WIDGET(button), "autopower_combo1");	
-	power_on_mode
-		= gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_on_combo)->entry));	
 	power_off_combo = LookupWidget(GTK_WIDGET(button), "autopower_combo2");	
-	power_off_mode
-		= gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_off_combo)->entry));	
+
+	/* Ver.2.80 */
+	power_on_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_on_combo));
+	power_off_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_off_combo));
+//	power_on_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_on_combo)->entry));	
+//	power_off_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_off_combo)->entry));	
 	
 	poweron_index = GetAutoPowerIndex(AutoPowerOnKey, 2, power_on_mode);
 	poweroff_index = GetAutoPowerIndex(AutoPowerOffKey, 6, power_off_mode);
@@ -5269,7 +5271,7 @@ void UtilInkReset(LPUIDB uidb)
 	GtkWidget*	reset_dialog;	
 	char		buf[128];
 	char		*p = buf;
-	char 		*model_name;
+	char __attribute__ ((unused)) *model_name;
 	int			total_bytes=0;
 	GtkWidget*	cancel_button;
 	
@@ -5335,7 +5337,7 @@ void UtilInkWarning(LPUIDB uidb)
 	int			cmd_bytes;
 	char		*p = buf;
 	char 		temp[32];
-	char 		*model_name;
+	char __attribute__ ((unused)) *model_name;
 	int 		total_bytes;
 	GtkWidget*	send_button;
 	
@@ -5400,7 +5402,7 @@ void UtilQuietMode(LPUIDB uidb)
 	int			cmd_bytes;
 	char		*p = buf;
 	char 		temp[32];
-	char 		*model_name;
+	char __attribute__ ((unused)) *model_name;
 	int 		total_bytes;
 	GtkWidget*	send_button;
 	

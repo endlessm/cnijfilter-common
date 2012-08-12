@@ -222,7 +222,7 @@ typedef struct {
 
 static int header_read(int sm_sock_fd, int *type, int *size)
 {
-	int err;
+	int err , __attribute__ ((unused)) result2;
 	bjdata_header head;
 	lmsm_socket sm_data;
 
@@ -239,7 +239,7 @@ static int header_read(int sm_sock_fd, int *type, int *size)
 			else
 				sm_data.command = LM_PRN_UTIL;
 
-			write(sm_sock_fd, &sm_data, sizeof(sm_data));	/* message to stsmon */
+			result2 = write(sm_sock_fd, &sm_data, sizeof(sm_data));	/* message to stsmon */
 
 			*type = head.type;
 			*size = head.size;
@@ -271,7 +271,7 @@ static unsigned int data_output_main(int sm_sock_fd, int fix_size)
 		ptr = buf;
 		/* data print(output) loop */
 		for(;r_size > 0;r_size -= w_size){
-			int err;
+			int __attribute__ ((unused)) err;
 
 			signal_block(sigmask);   /* signal block */
 			get_printer_sem(sem_id); /* printer lock */
@@ -371,7 +371,7 @@ static void data_output_header(int sm_sock_fd)
 {
 	int type = 0;
 	int size = 0;
-	unsigned int total;
+	unsigned int __attribute__ ((unused)) total;
 
 	while(1){
 		if(header_read(sm_sock_fd, &type, &size) != 0)

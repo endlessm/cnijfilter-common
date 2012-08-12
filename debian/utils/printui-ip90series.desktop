@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-IP90
-Exec=cngpij -PCanon-IP90
+Exec=cngpij -P Canon-IP90
 Icon=printer.png
 Categories=Graphics
 Type=Application

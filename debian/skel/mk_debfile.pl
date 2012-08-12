@@ -39,6 +39,8 @@ while( <IN> ){
 
 			# printui.desktop file
 			`perl -pe 's/YYYY/${modeluc}/' printui.desktop.skel > printui-${model}series.desktop`;
+			`perl -i -pe 's/PIXUS/PIXUS-/' printui-${model}series.desktop`;
+			`perl -i -pe 's/PIXMA/PIXMA-/' printui-${model}series.desktop`;
 
 			# cngpijmon.desktop file
 			`perl -pe 's/XXXX/${model}/' cngpijmon.desktop.skel > cngpijmon-${model}series.desktop`;

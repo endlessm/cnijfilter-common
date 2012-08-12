@@ -171,7 +171,7 @@ int main(int argc, char *argv[])
 void SetGtkResourceFile()
 {
 	// Get gtk resources.
-	gchar* home_dir = NULL;
+	const gchar* home_dir = NULL;
 	gchar* rc_path = NULL;
 
 	home_dir = g_get_home_dir();
@@ -221,7 +221,7 @@ void InitOption(int argc, char* argv[])
 			break;
 		}
 	}
-
+	
 	if( rc < -1 )
 		g_warning("Unknown switch, %s\n",
 			 poptBadOption(context, POPT_BADOPTION_NOALIAS));

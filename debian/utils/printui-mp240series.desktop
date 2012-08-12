@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP240
-Exec=cngpij -PCanon-MP240
+Exec=cngpij -P Canon-MP240
 Icon=printer.png
 Categories=Graphics
 Type=Application

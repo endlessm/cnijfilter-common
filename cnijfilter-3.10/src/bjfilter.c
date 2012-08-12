@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2009
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -46,12 +46,13 @@
 #include "bjfimage.h"
 #include "bjfoption.h"
 #include "bjfrcaccess.h"
+#include "bjflist.h"
 #include "bjfpos.h"
 #include "bjipc.h"
 #include "bjfilter.h"
 #include "uitypes.h"
-#include "bjflist.h"
 #include "bjfpath.h"
+
 
 /* function prototypes */
 extern short GetIPCData(LPIPCU pipc, char *sname);
@@ -141,8 +142,7 @@ int main( int argc, char *argv[] )
 #if DEBUGLOG
 	create_log( );
 #endif
-
-
+	
 	/* allocate new work area */
 	if ( (lpbjinfo = (LPBJFILTERINFO)malloc( sizeof(BJFILTERINFO) )) == NULL ) goto onErr;
 	
@@ -177,7 +177,7 @@ int main( int argc, char *argv[] )
 
 		memset(tmp_modelname , 0x00 , sizeof(tmp_modelname));
 		MakeModelnameConfname( argv[0], tmp_modelname, lpbjinfo->bsccname, BJFILTERXXXXRCPATH, BJFILTERDOTBSCC );
-		
+
 		if ( (fp = fopen( lpbjinfo->bsccname, "r" )) != NULL ){
 
 #if DEBUGLOG
@@ -252,7 +252,7 @@ static short MakeBJPrintData
 	CIFRASTERINFO		CifRasterInfo;
 	int					f_input = -1;
 	LPBJF_ROOT			root = NULL;
-	int	__attribute__ ((unused)) fd;
+	int					fd;
 	short				dumpp_ret;
 	BJFLTOVERMARGININFO	bjfltovermargin;
 
@@ -291,9 +291,7 @@ static short MakeBJPrintData
 
 	/****** CNCL Startjob ******/
 	if ( (cnclerr = CNCL_StartJob( &CnclData )) != CNCL_OK ) goto finish1;
-	
 	outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
-
 
 	/*--- 
 		Input Image open. 
@@ -585,7 +583,7 @@ static short MakeBJPrintData
 	
 	/* insert blank page */
 	if(  ( CnclData.PageNum % 2 ) && (root->isDuplex == ON) && ( lpbjinfo->bjfoption.copies > 1 ) )
-																																																																																																																													{
+	{
 		fd = 0;
 		if( ( fd = createTempfile(root) ) < 0 ) {
 			fprintf(stderr, "error : createTempfile\n");
@@ -1458,6 +1456,7 @@ static short modify_image_form( LPBJFILTERINFO lpbjinfo )
 	/*---------
 		if bbox option is selected, 
 	---------*/
+
 	if ( lpbjinfo->bjfoption.bbox.bbox_flag == BBOX_ON ){
 		if ( SetBbox( &lpbjinfo->bjfposimg,
 			lpbjinfo->bjfoption.bbox.value, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto onErr;

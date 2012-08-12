@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP640
-Exec=cngpij -PCanon-MP640
+Exec=cngpij -P Canon-MP640
 Icon=printer.png
 Categories=Graphics
 Type=Application

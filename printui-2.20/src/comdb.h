@@ -39,9 +39,9 @@ short GetCurrentPaperGap();
 
 int GetValueAndNameArray(short id, short** value, char*** name);
 char *ValueToKey(short id, short value);
-short KeyToValue(short id, char *name);
+short KeyToValue(short id, char* name);
 char *ValueToName(short id, short value);
-short NameToValue(short id, char *name);
+short NameToValue(short id, char* name);
 GList *GetComboList(short ObjectID);
 short GetComboNum(short ObjectID);
 
@@ -52,4 +52,4 @@ short SetTemporaryFlag(short id, short value, short flag);
 short GetAllFlags(short id, short value);
 int UpdateMenuLink(short id, short value);
 void DumpDataBase(int id);
-int SetCallbackTableFunc(short id, void (*func)(void *arg), void *func_data);
+int SetCallbackTableFunc(short id, void (*func)(void *arg), void* func_data);

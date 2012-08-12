@@ -76,10 +76,10 @@
 #define CARTRIGE_CLASS_NUM	22		// add 860i*2 990i*2 add ip8600i*2
 
 // Num of cartridge pixmap.
-#define CARTRIDGE_PIXMAP_NUM	15	// +2(Red+SenryoB)+1(Green)
+#define CARTRIDGE_PIXMAP_NUM	16	// +2(Red+SenryoB)+1(Green)
 
 // Num of cartridge XPM set.
-#define CARTRIDGE_XPM_SET_NUM	15	// +2(Red+yobi)+1(Green)
+#define CARTRIDGE_XPM_SET_NUM	16	// +2(Red+yobi)+1(Green)
 
 // Max height pixmap drawing area.
 #define MAX_PIXMAP_HEIGHT	66

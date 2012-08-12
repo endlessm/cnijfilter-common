@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2005 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -40,17 +39,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #include <png.h>
 
-
 #include "cpktypes.h"
-
 #include "cncl.h"
 #include "cncldef.h"
-
 #include "bjfimage.h"
 #include "bjferror.h"
+
 
 /* function prototypes */
 short bjf_image_open( LPBJF_IMAGEINFO, char * );
@@ -108,13 +104,13 @@ short bjf_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 	if ( filename == NULL ){
 		if ( !fread( tbuf, 2, 1, stdin ) ) goto onErr;
 
-		/*-- not support bmp stdin, support png stdin --*/
-		if ( bufmatch( PPMRAWSTART, tbuf, 2 ) > 0 ){
+		/*-- support ppm stdin --*/
+		if ( bufmatch( (char *)PPMRAWSTART, (char *)tbuf, 2 ) > 0 ){
 			lpbjfimage->imageformat = BJFIMAGE_PPM;
 		}
-		else if ( bufmatch( PNGSTART1, tbuf, 2 ) > 0 ){
+		else if ( bufmatch( PNGSTART1, (char *)tbuf, 2 ) > 0 ){
 				if ( !fread( tbuf, 6, 1, stdin ) ) goto onErr;
-				if ( bufmatch( PNGSTART2, tbuf, 6 ) > 0 ){
+				if ( bufmatch( PNGSTART2, (char *)tbuf, 6 ) > 0 ){
 					lpbjfimage->imageformat = BJFIMAGE_PNG;
 				}
 				else {
@@ -139,13 +135,13 @@ short bjf_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 			tf = NULL;
 		}
 	
-		if ( ( bufmatch( TIFFSTART1, tbuf, 2 ) > 0 ) | ( bufmatch( TIFFSTART2, tbuf, 2 ) > 0 ) )
+		if ( ( bufmatch( (char*)TIFFSTART1, (char *)tbuf, 2 ) > 0 ) | ( bufmatch( (char*)TIFFSTART2, (char *)tbuf, 2 ) > 0 ) )
 			lpbjfimage->imageformat = BJFIMAGE_TIFF;
-		else if ( bufmatch( BMPSTART, tbuf, 2 ) > 0 )
+		else if ( bufmatch( (char*)BMPSTART, (char *)tbuf, 2 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_BMP;
-		else if ( bufmatch( PPMRAWSTART, tbuf, 2 ) > 0 )
+		else if ( bufmatch( (char*)PPMRAWSTART, (char *)tbuf, 2 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_PPM;
-		else if ( bufmatch( PNGSTART, tbuf, 8 ) > 0 )
+		else if ( bufmatch( (char*)PNGSTART, (char *)tbuf, 8 ) > 0 )
 			lpbjfimage->imageformat = BJFIMAGE_PNG;
 		else{
 			bjf_error( "not support this image format", FILE_ERROR );
@@ -380,8 +376,8 @@ static short bufmatch( char *buf1, char *buf2, short length )
 {
 	short i = 0;
 	short result = -1;
-	char *tmp1;
-	char *tmp2;
+	char __attribute__ ((unused)) *tmp1;
+	char __attribute__ ((unused)) *tmp2;
 	
 	tmp1 = buf1;
 	tmp2 = buf2;
@@ -542,7 +538,7 @@ onErr:
 static short tiff_image_read_raster( LPBJF_IMAGEINFO lpbjfimage, char *buf, long x, long y, long width )
 {
 	char				*localbuf = NULL;
-	long				RasterLength;
+	long __attribute__ ((unused))	RasterLength;
 	short				bpp;
 	short				result = -1;
 	
@@ -600,13 +596,14 @@ static short bmp_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 	FILE				*readfp = NULL;
 	unsigned char		buffer[5];
 	short				result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	/* firstcall flg on for plural document */
 	lpbjfimage->isfirstcall = 1;
 
 	if ( filename != NULL ){
 		if ( (readfp = fopen( filename, "rb" )) == NULL ) goto onErr;
-		fread( buffer, 2, 1, readfp );
+		result1 = fread( buffer, 2, 1, readfp );
 	}
 	else
 		readfp = stdin;
@@ -631,7 +628,7 @@ static short bmp_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	unsigned char		**rawbuf = NULL;
 	unsigned char		*buf = NULL;
 	long				rstep = 0;
-	short				retbyte;
+	short __attribute__ ((unused))	retbyte;
 	short				tmpflg;
 	short				tmpformat;
 	FILE				*tmpfp;
@@ -719,7 +716,7 @@ static short bmp_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	lpbjfimage->readraster += rstep;
 
 
-	/*--- set bjfilter parameter ---*/
+	/*--- set cif parameter ---*/
 	lpbjfimage->width = bmpinfo.biWidth;
 	lpbjfimage->length = bmpinfo.biHeight;
 	lpbjfimage->rasterlength = rastLength;
@@ -755,6 +752,7 @@ static short bmp_image_read_raster( LPBJF_IMAGEINFO lpbjfimage, char *buf, long 
 	unsigned char 		**rawbuf=NULL;
 	FILE				*readfp= NULL;
 	short				result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	/*--- current area check ---*/
 	img_bpp = lpbjfimage->bpp;
@@ -800,18 +798,18 @@ static short bmp_image_read_raster( LPBJF_IMAGEINFO lpbjfimage, char *buf, long 
 		
 		if ( isfinalblock == 1 ){
 			for ( i=0; i<(block-1); i++ ){
-				fread( rawbuf[0], rasterlength, rstep, readfp );
+				result1 = fread( rawbuf[0], rasterlength, rstep, readfp );
 				lpbjfimage->readraster += rstep;
 			}
 			/*--- read reverse ---*/
 			fseek( readfp, 54L, SEEK_SET );
-			fread( rawbuf[rstep-laststep], rasterlength, laststep, readfp );
+			result1 = fread( rawbuf[rstep-laststep], rasterlength, laststep, readfp );
 			lpbjfimage->readraster += laststep;
 		}
 		else{
 			/*--- read reverse ---*/
 			fseek( readfp, ( rasterlength * (img_height - rstep - top) + 54L ), SEEK_SET );
-			fread( rawbuf[0], rasterlength, rstep, readfp );
+			result1 = fread( rawbuf[0], rasterlength, rstep, readfp );
 			lpbjfimage->readraster += rstep;
 		}	
 	}
@@ -850,13 +848,14 @@ onErr:
 static short bmp_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
 	long				length = 0;
-	long				top = 0;
+	long __attribute__ ((unused))	top = 0;
 	long				readraster = 0;
 	long				rasterlength = 0;
 	long				remain = 0;
 	unsigned char		*tmp;
 	FILE				*readfp = NULL;
 	short				result = -1;
+	size_t __attribute__ ((unused)) result1;
 	
 
 	/* copy global to local */
@@ -871,7 +870,7 @@ static short bmp_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 	if ( remain > 0 ){
 		if ( (tmp = malloc( remain * rasterlength )) == NULL ) goto onErr;
 	
-		fread( tmp, rasterlength, remain, readfp );
+		result1 = fread( tmp, rasterlength, remain, readfp );
 		
 		lpbjfimage->readraster = 0;
 
@@ -913,6 +912,7 @@ static short ppm_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 	FILE			*readfp = NULL;
 	unsigned char	buffer[5];
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	
 	/* firstcall flg on for plural document */
@@ -920,7 +920,7 @@ static short ppm_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 
 	if ( filename != NULL ){
 		if ( (readfp = fopen( filename, "rb" )) == NULL ) goto onErr;
-		fread( buffer, 2, 1, readfp );
+		result1 = fread( buffer, 2, 1, readfp );
 	}
 	else {
 		readfp = stdin;
@@ -985,7 +985,7 @@ static short ppm_image_init( LPBJF_IMAGEINFO lpbjfimage )
 			goto onErr;
 		}
 
-		if ( bufmatch( PPMRAWSTART, buffer, 2 ) < 0 ) goto onErr;
+		if ( bufmatch( (char*)PPMRAWSTART, (char*)buffer, 2 ) < 0 ) goto onErr;
 	}
 
 	/* skip "0x0A" after "P6" */
@@ -1019,7 +1019,7 @@ static short ppm_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	if ( !fread( buf, (width*bpp), rstep, readfp ) ) goto onErr;
 	lpbjfimage->readraster += rstep;
 
-	/*--- Set Bjfilter Parameter ---*/
+	/*--- Set cif Parameter ---*/
 	lpbjfimage->width        = width;
 	lpbjfimage->length       = length;
 	lpbjfimage->bpp          = bpp;
@@ -1056,6 +1056,7 @@ static short ppm_image_read_raster
 	long			RasterLength = 0;
 	FILE			*readfp = NULL;
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 
 	/*---
@@ -1102,15 +1103,15 @@ static short ppm_image_read_raster
 
 		if ( isfinalblock == 1 ){
 			for ( i=0; i<(block-1); i++ ){
-				fread( rawbuf[0], RasterLength, rstep, readfp );
+				result1 = fread( rawbuf[0], RasterLength, rstep, readfp );
 				lpbjfimage->readraster += rstep;			 
 			}
-			fread( rawbuf[0], RasterLength, laststep, readfp );
+			result1 = fread( rawbuf[0], RasterLength, laststep, readfp );
 			lpbjfimage->readraster += laststep; 
 		}
 		else{
 			for ( i=0; i<block; i++ ){
-				fread( rawbuf[0], RasterLength, rstep, readfp );
+				result1 = fread( rawbuf[0], RasterLength, rstep, readfp );
 				lpbjfimage->readraster += rstep;
 			}
 		}
@@ -1134,13 +1135,14 @@ onErr:
 
 static short ppm_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
-	long			length, width, top;
+	long			length, width, __attribute__ ((unused))  top;
 	long			readraster, remain;
 	long			RasterLength;
 	short			bpp;
 	unsigned char	*tmp = NULL;
 	FILE			*readfp = NULL;
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 	top        = lpbjfimage->top;
 	width	   = lpbjfimage->width;
@@ -1155,7 +1157,7 @@ static short ppm_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 
 	if ( remain > 0 ){
 		if ( (tmp = malloc( remain * (width*bpp))) == NULL ) goto onErr;
-		fread( tmp, RasterLength, remain, readfp );
+		result1 = fread( tmp, RasterLength, remain, readfp );
 		lpbjfimage->readraster = 0;
 	}
 
@@ -1176,6 +1178,7 @@ onErr:
 static short ppm_image_close( LPBJF_IMAGEINFO lpbjfimage )
 {
 	short			result = -1;
+
 
 	if ( lpbjfimage->bmp ){
 		fclose( lpbjfimage->bmp );
@@ -1245,6 +1248,7 @@ static short png_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 	FILE			*readfp = NULL;
 	unsigned char	buffer[10];
 	short			result = -1;
+	size_t __attribute__ ((unused)) result1;
 
 
 	/* firstcall flg on for plural document */
@@ -1252,7 +1256,7 @@ static short png_image_open( LPBJF_IMAGEINFO lpbjfimage, char *filename )
 
 	if ( filename != NULL ){
 		if ( (readfp = fopen( filename, "rb" )) == NULL ) goto onErr;
-		fread( buffer, 8, 1, readfp );
+		result1 = fread( buffer, 8, 1, readfp );
 	}
 	else {
 		readfp = stdin;
@@ -1271,12 +1275,12 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 {
 	FILE			*readfp;
 	FILE			*tmpfp;
-	unsigned char	buffer[50];
+	unsigned char __attribute__ ((unused)) buffer[50];
 	unsigned char	*buf = NULL;
 	unsigned char	**rawbuf = NULL;
 	short			tmpflg;
 	short			tmpformat;
-	short			retbyte = 0;
+	short __attribute__ ((unused)) retbyte = 0;
 	short			bpp = 3;
 	long			width = 0;
 	long			length = 0;
@@ -1284,13 +1288,13 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	long			RasterLength = 0;
 	long			i;
 	short			result = -1;
-	char			ch;
-	png_structp		png_ptr;
-	png_infop		info_ptr;
+	char __attribute__ ((unused)) ch;
+	png_structp		png_p;
+	png_infop		info_p;
 	int				bit_depth, color_type, interlace_type;
 
-	png_color_16 my_background, *image_background;
-   int intent,screen_gamma;
+	png_color_16 __attribute__ ((unused)) my_background, *image_background;
+	int __attribute__ ((unused)) intent,screen_gamma;
 
 
 	/*---
@@ -1321,29 +1325,29 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	}
 
 	/*-- call pnglib function --*/
-	png_ptr = png_create_read_struct (PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);
-	if (png_ptr == NULL){
+	png_p = png_create_read_struct (PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);
+	if (png_p == NULL){
 		goto onErr;
 	}
 
-	info_ptr = png_create_info_struct (png_ptr);
-	if (info_ptr==NULL){
-		png_destroy_read_struct(&png_ptr, (png_infopp)NULL, (png_infopp)NULL);
+	info_p = png_create_info_struct (png_p);
+	if (info_p==NULL){
+		png_destroy_read_struct(&png_p, (png_infopp)NULL, (png_infopp)NULL);
 		goto onErr;
 	}
 
-	if (setjmp (png_ptr->jmpbuf))
+	if (setjmp (png_p->jmpbuf))
 	{
-		png_destroy_read_struct(&png_ptr, &info_ptr, (png_infopp)NULL);
+		png_destroy_read_struct(&png_p, &info_p, (png_infopp)NULL);
 		goto onErr;
 	}
 
-	png_init_io(png_ptr, readfp);
-	png_set_sig_bytes(png_ptr, 8);
+	png_init_io(png_p, readfp);
+	png_set_sig_bytes(png_p, 8);
 
-	png_read_info( png_ptr, info_ptr );
+	png_read_info( png_p, info_p );
 
-	png_get_IHDR( png_ptr, info_ptr, &width, &length, &bit_depth,
+	png_get_IHDR( png_p, info_p, (unsigned long *)&width, (unsigned long *)&length, &bit_depth,
 	              &color_type, &interlace_type, NULL, NULL);
 
 	/* not support Interlace */
@@ -1352,38 +1356,32 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 		goto onErr;
 	}
 
-	/* tell libpng to strip 16 bit/color files down to 8 bits/color */
-	png_set_strip_16(png_ptr);
+	/* 16 bit/color */
+	png_set_strip_16(png_p);
 
-	/* Strip alpha bytes from the input data without combining with the
-	* background (not recommended).
-	*/
-	png_set_strip_alpha(png_ptr);
+	/* alpha */
+	png_set_strip_alpha(png_p);
 
-	/* Extract multiple pixels with bit depths of 1, 2, and 4 from a single
-	* byte into separate bytes (useful for paletted and grayscale images).
-	*/
-	png_set_packing(png_ptr);
+	/* packing */
+	png_set_packing(png_p);
 
-	/* Expand paletted colors into true RGB triplets */
+	/* paletted colors */
 	if (color_type == PNG_COLOR_TYPE_PALETTE)
-		png_set_expand(png_ptr);
+		png_set_expand(png_p);
 
-	/* Expand grayscale images to the full 8 bits from 1, 2, or 4 bits/pixel */
+	/* grayscale */
 	if (color_type == PNG_COLOR_TYPE_GRAY && bit_depth < 8)
-		png_set_expand(png_ptr);
+		png_set_expand(png_p);
 
-	/* Expand paletted or RGB images with transparency to full alpha channels
-	* so the data will be available as RGBA quartets. 
-	*/
-	if (png_get_valid(png_ptr, info_ptr, PNG_INFO_tRNS))
-		png_set_expand(png_ptr);
+	/* full alpha channels */
+	if (png_get_valid(png_p, info_p, PNG_INFO_tRNS))
+		png_set_expand(png_p);
 
 	if ( color_type == PNG_COLOR_TYPE_GRAY || color_type == PNG_COLOR_TYPE_GRAY_ALPHA ){
-		png_set_gray_to_rgb(png_ptr);
+		png_set_gray_to_rgb(png_p);
 	}
 
-	png_read_update_info(png_ptr, info_ptr);
+	png_read_update_info(png_p, info_p);
 
 	if ( (!width) || (!length) ) goto onErr;
 
@@ -1405,18 +1403,18 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 		rawbuf[i] = buf + RasterLength * i;
 
 	/*-- all Data read --*/
-	/* png_read_image(png_ptr, rawbuf); */
+	/* png_read_image(png_p, rawbuf); */
 
 	/*-- some rasters read --*/
-	png_read_rows(png_ptr, &rawbuf[0], NULL, rstep);
+	png_read_rows(png_p, &rawbuf[0], NULL, rstep);
 
 	lpbjfimage->readraster += rstep;
 
 	/* copy */
-	lpbjfimage->png_ptr = (char*)png_ptr;
-	lpbjfimage->info_ptr = (char*)info_ptr;
+	lpbjfimage->png_ptr = (char*)png_p;
+	lpbjfimage->info_ptr = (char*)info_p;
 
-	/*--- Set Bjfilter Parameter ---*/
+	/*--- Set cif Parameter ---*/
 	lpbjfimage->width        = width;
 	lpbjfimage->length       = length;
 	lpbjfimage->bpp          = bpp;
@@ -1451,8 +1449,8 @@ static short png_image_read_raster
 	long			i;
 	long			top, skip, rstep, laststep;
 	long			currentmax, currentpos;
-	long			RasterLength = 0;
-	FILE			*readfp = NULL;
+	long __attribute__ ((unused)) RasterLength = 0;
+	FILE __attribute__ ((unused)) *readfp = NULL;
 	short			result = -1;
 	png_structp		png_ptr;
 
@@ -1536,7 +1534,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
 	png_structp		png_ptr;
 	png_infop		info_ptr;
-	FILE			*readfp;
+	FILE __attribute__ ((unused)) *readfp;
 	short			result = -1;
 
 	png_ptr = (png_structp)lpbjfimage->png_ptr;
@@ -1549,7 +1547,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 	lpbjfimage->info_ptr = NULL;
 
 	return 0;
-onErr:
+//onErr:
 	return result;	
 
 }

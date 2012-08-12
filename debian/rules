@@ -11,98 +11,35 @@
 
 # define package name
 COMMON_PKG=cnijfilter-common
-PRINTER_DEPEND_PKG+=cnijfilter-pixus550i-154-2.20-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-pixus850i-156-2.20-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-pixus950i-158-2.20-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-pixus560i-189-2.40-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-pixus860i-187-2.40-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-pixus990i-191-2.40-32-no
 
 PRINTER_DEPEND_PKG+=cnijfilter-pixmaip1000-230-2.50-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-pixmaip1500-214-2.50-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-pixusip3100-218-2.50-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-pixusip4100-221-2.50-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-pixusip8600-238-2.50-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip2200-256-2.60-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip4200-260-2.60-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-ip6600d-265-2.60-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip7500-266-2.60-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp500-273-2.60-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip90-253-2.70-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp160-291-2.70-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip3300-292-2.70-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp510-293-2.70-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip4300-294-2.70-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp600-295-2.70-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip2500-311-2.70-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-ip1800-312-2.70-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mp140-315-2.80-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp210-316-2.80-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip3500-319-2.80-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp520-328-2.80-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip4500-326-2.80-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-mp610-327-2.80-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip100-303-3.70-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-ip2600-331-2.90-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip3600-333-3.00-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip4600-334-3.00-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp630-336-3.00-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp540-338-3.00-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp240-341-3.00-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp190-342-3.00-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-ip1900-346-3.00-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mx860-347-3.10-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mx320-348-3.10-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-mx330-349-3.10-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mp270-357-3.20-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp490-358-3.20-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp550-359-3.20-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp560-360-3.20-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip4700-361-3.20-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-mp640-362-3.20-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-ip2700-364-3.30-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mx340-365-3.30-32-no
-PRINTER_DEPEND_PKG+=cnijfilter-mx350-366-3.30-32-no
 PRINTER_DEPEND_PKG+=cnijfilter-mx870-367-3.30-32-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mp250-356-3.40-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp280-370-3.40-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mp495-369-3.40-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg5100-373-3.40-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg5200-374-3.40-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip4800-375-3.40-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg6100-376-3.40-64-no
 PRINTER_DEPEND_PKG+=cnijfilter-mg8100-377-3.40-64-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mx360-380-3.50-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mx410-381-3.50-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mx420-382-3.50-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mx880-383-3.50-64-no
 PRINTER_DEPEND_PKG+=cnijfilter-ix6500-384-3.50-64-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mg2100-386-3.60-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg3100-387-3.60-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg4100-388-3.60-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg5300-389-3.60-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg6200-390-3.60-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-mg8200-391-3.60-64-no
-PRINTER_DEPEND_PKG+=cnijfilter-ip4900-392-3.60-64-no
 PRINTER_DEPEND_PKG+=cnijfilter-e500-393-3.60-64-no
 
-PRINTER_DEPEND_PKG+=cnijfilter-mx710-394-3.70-64-yes
-PRINTER_DEPEND_PKG+=cnijfilter-mx890-395-3.70-64-yes
-PRINTER_DEPEND_PKG+=cnijfilter-mx370-396-3.70-64-yes
-PRINTER_DEPEND_PKG+=cnijfilter-mx430-397-3.70-64-yes
-PRINTER_DEPEND_PKG+=cnijfilter-mx510-398-3.70-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-e600-399-3.70-64-yes
 
 PRINTER_DEPEND_VER+=2.20
@@ -291,18 +228,13 @@ install: build
 		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpcnclapi$${model_num}.so.* $${deb_model_dir}/usr/lib; \
 		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpcnclbjcmd$${model_num}.so.* $${deb_model_dir}/usr/lib; \
 		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpcnclui$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		if [ -f $${model_num}/libs_bin${_lib_arc}/libcnbphtmg$${model_num}.so.* ]; then \
-		install -c -m 755 $${model_num}/libs_bin${_lib_arc}/libcnbphtmg$${model_num}.so.* $${deb_model_dir}/usr/${_lib_path}; \
-		fi; \
-		if [ -f $${model_num}/libs_bin${_arc}/libcnbpess$${model_num}.so.* ]; then \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpess$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		fi; \
 		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpo$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		if [ -f $${model_num}/libs_bin${_lib_arc}/libcnbpsmth$${model_num}.so.* ]; then \
-		install -c -m 755 $${model_num}/libs_bin${_lib_arc}/libcnbpsmth$${model_num}.so.* $${deb_model_dir}/usr/${_lib_path}; \
-		fi; \
-		if [ -f $${model_num}/libs_bin${_lib_arc}/libcnbpwcc$${model_num}.so.* ]; then \
-		install -c -m 755 $${model_num}/libs_bin${_lib_arc}/libcnbpwcc$${model_num}.so.* $${deb_model_dir}/usr/${_lib_path}; \
+		if [ $${model_ver} = "2.20" ]; then \
+		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbphtmg$${model_num}.so.* $${deb_model_dir}/usr/lib; \
+		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpsmth$${model_num}.so.* $${deb_model_dir}/usr/lib; \
+		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpwcc$${model_num}.so.* $${deb_model_dir}/usr/lib; \
+		else \
+		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpess$${model_num}.so.* $${deb_model_dir}/usr/lib; \
 		fi; \
 		mkdir -p $${deb_model_dir}/usr/lib/bjlib; \
 		install -c -m 644 $${model_num}/database/cif*.conf $${deb_model_dir}/usr/lib/bjlib; \

@@ -70,10 +70,10 @@
 #define CARTRIGE_CLASS_NUM	16
 
 // Num of cartridge pixmap.
-#define CARTRIDGE_PIXMAP_NUM	12
+#define CARTRIDGE_PIXMAP_NUM	13
 
 // Num of cartridge XPM set.
-#define CARTRIDGE_XPM_SET_NUM	12
+#define CARTRIDGE_XPM_SET_NUM	13
 
 // Max height pixmap drawing area.
 #define MAX_PIXMAP_HEIGHT	66

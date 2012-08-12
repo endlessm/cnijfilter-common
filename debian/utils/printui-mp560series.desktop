@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP560
-Exec=cngpij -PCanon-MP560
+Exec=cngpij -P Canon-MP560
 Icon=printer.png
 Categories=Graphics
 Type=Application

@@ -32,4 +32,3 @@ void DrawString(GdkWindow* window, GdkFont* font, GdkGC* gc,
 			 gint dstx, gint dsty, gchar* str);
 void UpperAsciiStr(char *str);
 int LowerAsciiCode( int c );
-

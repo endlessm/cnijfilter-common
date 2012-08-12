@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2004 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -88,12 +87,15 @@ static char *bjf_access_resource( char *rcFname, char *objString, char *rcString
 	int			num,str;
 	int			isSpace,isObject, strnum;
 	short		id = 0;
+	short		i = 0;
 	char		nambuf[MODELLEN];
 	char		*ptr[MODELNUM];
 	char		*result = NULL;
 	static char tmpbuf[MODELLEN];
-	short		flag;
+	short __attribute__ ((unused)) flag;
 
+
+	for( i=0 ; i<MODELNUM ; i++ ) ptr[i] = NULL;
 
 	if ( fileflag == 0 ){
 		if ( (fp = fopen( rcFname, "r" )) == NULL ) goto onErr;
@@ -123,41 +125,56 @@ static char *bjf_access_resource( char *rcFname, char *objString, char *rcString
 						ptr[1] : ptr for id string
 					*/
 					if ( rcString != NULL ){
-						if ( strcmp( rcString, ptr[0]  ) == 0 ){
+						if( ptr[0] != NULL ){
+							if ( strcmp( rcString, ptr[0]  ) == 0 ){
 #if DEBUG
-							fprintf( stderr, "Find ModelID !\n" );
-							fprintf( stderr, "Printer Model : %s\n", ptr[0] );
+								fprintf( stderr, "Find ModelID !\n" );
+								fprintf( stderr, "Printer Model : %s\n", ptr[0] );
 #endif
-							strcpy( tmpbuf, ptr[1] ); result = tmpbuf;
-							goto onErr;
-						}
-						else {
+								strncpy( tmpbuf, ptr[1], sizeof(tmpbuf) ); result = tmpbuf;
+								tmpbuf[sizeof(tmpbuf) - 1] = '\0';
+								goto onErr;
+							}
+							else {
+								/* Re Initialize */
+								num = str = strnum = 0;
+								isSpace = 1;
+							}
+						}else{
 							/* Re Initialize */
 							num = str = strnum = 0;
 							isSpace = 1;
 						}
 					}
 					else {
-						id = (short)atoi( ptr[1] );
-						if ( id == rcID ){
+						if( ptr[1] != NULL ){
+							id = (short)atoi( ptr[1] );
+							if ( id == rcID ){
 #if DEBUG
-							fprintf( stderr, "Find ModelID !\n" );
-							fprintf( stderr, "Printer Model : %s\n", ptr[0] );
+								fprintf( stderr, "Find ModelID !\n" );
+								fprintf( stderr, "Printer Model : %s\n", ptr[0] );
 #endif
-							/* for bjfilterv230 */
-							if(fileflag == 1){ 
-								if( strlen(ptr[0]) != strlen(writeString) ) goto onErr;
-								if( (fseek(fp, -(strlen(ptr[0]) + strlen(ptr[1]) + 2) ,SEEK_CUR) ) == -1 ) goto onErr;
-								if( (fputs(writeString, fp) ) == EOF ) goto onErr;
+								/* for bjfilterv230 */
+								if(fileflag == 1){ 
+									if( strlen(ptr[0]) != strlen(writeString) ) goto onErr;
+									if( (fseek(fp, -(strlen(ptr[0]) + strlen(ptr[1]) + 2) ,SEEK_CUR) ) == -1 ) goto onErr;
+									if( (fputs(writeString, fp) ) == EOF ) goto onErr;
+								}
+	
+								strncpy( tmpbuf, ptr[0], sizeof(tmpbuf) ); result = tmpbuf;
+								tmpbuf[sizeof(tmpbuf) - 1] = '\0';
+								goto onErr;
 							}
-
-							strcpy( tmpbuf, ptr[0] ); result = tmpbuf;
-							goto onErr;
-						}
-						else { /* Re Initialize */
+							
+							else { /* Re Initialize */
+								num = str = strnum = 0;
+								isSpace = 1;
+							}				
+						}else{
+							/* Re Initialize */
 							num = str = strnum = 0;
 							isSpace = 1;
-						}				
+						}
 					}
 					
 				}

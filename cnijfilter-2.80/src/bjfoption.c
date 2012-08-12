@@ -1,12 +1,11 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2007 
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -231,7 +230,6 @@ short FindValue(LPCNCLDB lpdbTop, short dbsize, short id, short value)
 	}
 	return ret;
 }
-
 
 
 /*-------------------------------------------------------------*/
@@ -596,7 +594,7 @@ int cmdlinesw(
 	UIDB			uidb;
 	short			DefaultGamma = 0;
 	short			DefaultIntent = 0;	/* Default value (PHOTO) */
-	short  i, __attribute__ ((unused)) j;
+	short __attribute__ ((unused)) i,j;
 	short			count_switch=0;
 	short			ext = -1;
 	short			change_paperload = 0;
@@ -796,7 +794,7 @@ int cmdlinesw(
 	if (FindValue(uidb.lpdbTop, uidb.dbsize, CNCL_VIVID, CND_VIVID_SUPPORT) >= 0) {	/* Ver.2.70 */
 		vivid_support = 1;
 	}
-
+	
 	/* Check --help option */
 	/* if "--help", then return here */
 	if (setopt[OPTINDEX(OPTHELP)] & OPTBIT(OPTHELP)) {
@@ -838,8 +836,6 @@ int cmdlinesw(
 		count_switch++;
 	}
 
-
-	/* -- changed the place of code to work in gui mode, and work with --fit option */
     /* Location */
 	if (setopt[OPTINDEX(OPTLOCATION)] & OPTBIT(OPTLOCATION)) {
 		if (strcmp(opt->location, "center") == 0)
@@ -1533,8 +1529,7 @@ short CheckSettings( LPBJFLTDEVICE bjdevice , char *confname )
 			bjdevice->bjfltInkcartridgesettings = GetDefaultnValue(uidb.lpdbTop, uidb.dbsize, CNCL_INKCARTRIDGESETTINGS);
 		}
 	}
-
-
+	
 	/* Check mismatch between fineart media and size */
 	if ( ( bjdevice->bjfltMediaType == CND_MEDIA_FINE_ART_PAPER ) || (  bjdevice->bjfltMediaType == CND_MEDIA_OTHER_FINE_ART_PAPER ) ){
 		if( bjdevice->bjfltPaperSize != CND_SIZE_A4_FINE_ART ){

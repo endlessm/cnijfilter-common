@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP500
-Exec=cngpij -PCanon-MP500
+Exec=cngpij -P Canon-MP500
 Icon=printer.png
 Categories=Graphics
 Type=Application

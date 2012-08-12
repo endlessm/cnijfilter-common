@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2011
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -1826,7 +1826,7 @@ int ppm_write_tmpfile( LPBJF_IMAGEINFO lpbjfimage, char *filename , char *outfil
 	long			length = 0;
 	long			maxvalue = 0;
 	short			bpp = 3;
-	long __attribute__ ((unused)) RasterLength = 0;	/* width of a raster */
+	long			RasterLength = 0;	/* width of a raster */
 	long			read_len = 0;
 	long			imagesize = 0;
 	short			retbyte;

@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-E500
-Exec=cngpij -PCanon-E500
+Exec=cngpij -P Canon-E500
 Icon=printer.png
 Categories=Graphics
 Type=Application

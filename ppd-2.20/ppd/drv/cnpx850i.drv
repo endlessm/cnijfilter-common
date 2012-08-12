@@ -25,7 +25,7 @@
   Manufacturer "Canon"
   ModelName "PIXUS 850i"
   PCFileName "CNPX850I.PPD"
-  Version "1.1"
+  Version "1.0"
   DriverType ps
   ModelNumber 154
   ManualCopies Yes
@@ -33,7 +33,7 @@
   Throughput 1
   Attribute "NickName" "" "Canon PIXUS 850i ver.2.2"
   Attribute "ShortNickName" "" "PIXUS850i"
-  Attribute "Product" "" "pixus850i"
+  Attribute "Product" "" "(pixus850i)"
   Attribute "PSVersion" "" "(3010.000) 550"
   Attribute "PSVersion" "" "(3010.000) 651"
   Attribute "PSVersion" "" "(3010.000) 705"

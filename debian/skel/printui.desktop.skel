@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-YYYY
-Exec=cngpij -PCanon-YYYY
+Exec=cngpij -P Canon-YYYY
 Icon=printer.png
 Categories=Graphics
 Type=Application

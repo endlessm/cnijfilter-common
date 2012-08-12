@@ -49,6 +49,7 @@ PRIVATE ST_ErrorCodeTbl	gErrorCodeTbl[] = {	// Error code table.
 PRIVATE gint initApplication(gint, gchar**, gchar*);
 PRIVATE gboolean updateUI(void);
 PRIVATE void initPrinterStatus(ST_PrinterStatus*);
+PRIVATE void SetGtkResourceDefault();
 
 
 /*** Functions ***/
@@ -112,7 +113,7 @@ PRIVATE gint initApplication(gint argc, gchar *argv[], gchar *pPrinterName)
 	gchar			statusStr[MAX_BUF_SIZE];	// Buffer for printer status message.
 	gboolean		printerReady = FALSE;		// Flag for printer is ready or not.
 	gboolean		jobExist = FALSE;			// Flag for active job exist or not.
-	gint			i = 0;						// Counter.
+	//gint			i = 0;						// Counter.
 	gint			retVal = ID_ERR_NO_ERROR;	// Return value.
 /*** Parameters end ***/
 
@@ -123,8 +124,8 @@ PRIVATE gint initApplication(gint argc, gchar *argv[], gchar *pPrinterName)
 	memset(windowTitle, 0, sizeof(windowTitle));
 	memset(statusStr, 0, sizeof(statusStr));
 	
-	strcpy(windowTitle, STR_MANUFACTURER_NAME);
-	strcat(windowTitle, " ");
+//	strcpy(windowTitle, STR_MANUFACTURER_NAME);		delete V2.3
+//	strcat(windowTitle, " ");						delete V2.3
 	
 	// Initialize printer status area.
 	initPrinterStatus(&gPrinterStatus);
@@ -141,7 +142,7 @@ PRIVATE gint initApplication(gint argc, gchar *argv[], gchar *pPrinterName)
 		}
 	}
 	else {
-		strcpy(gDestName, pPrinterName);
+		strncpy(gDestName, pPrinterName, sizeof(gDestName));
 	}
 	
 	if (retVal == ID_ERR_NO_ERROR) {
@@ -153,7 +154,7 @@ PRIVATE gint initApplication(gint argc, gchar *argv[], gchar *pPrinterName)
 
 
 #ifndef USE_libglade
-//		SetGtkResourceDefault();
+		SetGtkResourceDefault();
 #endif 
 		gtk_set_locale();
 		gtk_init(&argc, &argv);
@@ -169,10 +170,10 @@ PRIVATE gint initApplication(gint argc, gchar *argv[], gchar *pPrinterName)
 //				productName[i] = toupper(productName[i]);
 //				i++;
 //			}
-			strcpy(windowTitle, productName);
-			strcat(windowTitle, " ");
-			strcat(windowTitle, STR_PRODUCT_NAME);
-			
+			strncpy(windowTitle, productName, sizeof(windowTitle)-strlen(STR_PRODUCT_NAME)-1 );		// V2.3 strcat->strcpy
+			strncat(windowTitle, " ", strlen(" "));
+			strncat(windowTitle, STR_PRODUCT_NAME, strlen(STR_PRODUCT_NAME));
+
 			// Check printer and job.
 			retVal = checkPrinterAndJobState(gDestName, &printerReady, &jobExist);
 			if (retVal == ID_ERR_NO_ERROR) {
@@ -210,7 +211,9 @@ PRIVATE gint initApplication(gint argc, gchar *argv[], gchar *pPrinterName)
 			}
 		}
 		else {
-			strcat(windowTitle, STR_PRODUCT_NAME);
+			strncpy(windowTitle, STR_MANUFACTURER_NAME, sizeof(windowTitle)-strlen(STR_PRODUCT_NAME)-1 );		// V2.3 add
+			strncat(windowTitle, " ", strlen(" "));						// V2.3 add
+			strncat(windowTitle, STR_PRODUCT_NAME, strlen(STR_PRODUCT_NAME));
 		}
 	}
 	
@@ -245,6 +248,8 @@ PUBLIC void closeApplication(void)
 	// Free message ID area.
 	if (gPrinterStatus.pMessageID != NULL) {
 		free(gPrinterStatus.pMessageID);
+		/* for GTK2 ver280 */
+		gPrinterStatus.pMessageID = NULL;
 	}
 	
 	// Free pixmaps of cartridge.
@@ -308,8 +313,8 @@ PRIVATE gboolean updateUI(void)
 	retVal = checkPrinterAndJobState(gDestName, NULL, &jobExist);
 	if (retVal == ID_ERR_NO_ERROR) {
 
-		// Disable [Cancel Printing] button.
-		activateWidget(STR_MAIN_BUTTON_NAME_CANCEL, FALSE);
+		//// Disable [Cancel Printing] button.
+		//activateWidget(STR_MAIN_BUTTON_NAME_CANCEL, FALSE);
 			
 		if (jobExist == FALSE) {
 			retVal = ID_ERR_PRINT_JOB_NOT_EXIST;
@@ -329,8 +334,8 @@ PRIVATE gboolean updateUI(void)
 
 					if (retVal == ID_ERR_NO_ERROR) {
 						// Enable [Cancel Printing] button.
-						if (gPrinterStatus.printInterface == ID_DEV_1284 )
-							activateWidget(STR_MAIN_BUTTON_NAME_CANCEL, TRUE);
+						//if (gPrinterStatus.printInterface == ID_DEV_1284 )
+						//	activateWidget(STR_MAIN_BUTTON_NAME_CANCEL, TRUE);
 			
 						// Check status changed or not.
 						
@@ -469,3 +474,24 @@ PUBLIC void getErrorCodeInfo(gint errorCode, ST_ErrorCodeTbl *pErrorInfo)
 	
 	return;
 }// End getErrorCodeInfo
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// 
+// PUBLIC void SetGtkResourceDefault()
+// IN     : None.
+// OUT    : None.
+// RETURN : pointer to default Resource file path 
+// 
+PUBLIC void SetGtkResourceDefault()
+{
+//	gchar* home_dir = NULL;
+	gchar* rc_path = NULL;
+
+//	home_dir = g_get_home_dir();
+//	rc_path = g_strdup_printf("%s/.gtkrc",home_dir);
+	rc_path = g_strdup_printf("%s/.gtkrc",g_get_home_dir());
+	gtk_rc_add_default_file(rc_path);
+	g_free(rc_path);
+}
+

@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2005 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -85,7 +84,7 @@ static long round_up( double );
 
 
 
-static short check_imagesize( double defwidth, double defheight, double inwidth, double inheight )
+static short __attribute__ ((unused)) check_imagesize( double defwidth, double defheight, double inwidth, double inheight )
 { 
 	short result = 0;
 	
@@ -563,7 +562,7 @@ short ImageCenter(
 )
 {
 	long				img_width,img_height;
-	double				img_xresolution, img_yresolution;
+	double __attribute__ ((unused)) img_xresolution, img_yresolution;
 	double				prn_xresolution, prn_yresolution;
 	double				prnarea_width, prnarea_height;
 	double				prn_width, prn_height;

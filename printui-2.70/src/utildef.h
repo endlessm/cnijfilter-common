@@ -23,7 +23,8 @@
  *    choice whether to permit this exception to apply to your modifications.
  *    If you do not wish that, delete this exception.
  */
-
+#ifndef _UTILDEF_H_
+#define _UTILDEF_H_
 
 #define	PICTURE_WIDTH		100		
 #define	PICTURE_HEIGHT		144		
@@ -2230,3 +2231,4 @@ INKCRTRGMSGINFO InkCartridgeInfo =
 			CND_CARTRIDGE_BK_COLOR }
 };
 
+#endif

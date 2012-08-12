@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2005 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -35,6 +34,7 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <fcntl.h>
+#include <ctype.h>
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
 #define CIFTEMPFILEINPUT "/tmp/ciftmpXXXXXX"
@@ -46,12 +46,13 @@
 #include "bjfimage.h"
 #include "bjfoption.h"
 #include "bjfrcaccess.h"
+#include "bjflist.h"
 #include "bjfpos.h"
 #include "bjipc.h"
 #include "bjfilter.h"
 #include "uitypes.h"
-#include "bjflist.h"
 #include "bjfpath.h"
+
 
 /* function prototypes */
 extern short GetIPCData(LPIPCU pipc, char *sname);
@@ -76,7 +77,7 @@ static void WaitLgmon( LPBJFILTERINFO lpbjfinfo, short isPrint );
 static void WaitPrintUi( LPBJFILTERINFO lpbjfinfo );
 static int createTempfile(LPBJF_ROOT root);
 static void removeTempfileCompletely(LPBJF_ROOT root);
-static void outCmdPlural( char *buf, unsigned long size, int prn, int fd, LPBJF_ROOT root );
+static void outCmdPlural( CPKByte CPKPTR buf, unsigned long size, int prn, int fd, LPBJF_ROOT root );
 static short dumpPage(LPBJF_NODE node, int prn);
 static short dumpPluralPages( LPBJF_ROOT root, int prn );
 static short dumpPluralPages_flush( LPBJF_ROOT root, int prn );
@@ -117,6 +118,7 @@ static void print_ierr2(long err)
 }
 #endif
 
+
 void Usr1Handler(int signum)
 {
 	ReceiveSignal = 1;
@@ -145,7 +147,7 @@ int main( int argc, char *argv[] )
 	char				printuiname[256],tmp_modelname[256],small_modelname[256];
 	char				*tmpargv[] = { PRINTUIPATH, "--display", dispname, "-s", socketname, "--model", modelname, NULL};
 	struct sigaction	sigact;
-	char				*bsccdata = NULL;
+	char __attribute__ ((unused))	*bsccdata = NULL;
 	FILE				*fp = NULL;
 	char				confname[256];
 	short				id = 0;
@@ -156,8 +158,7 @@ int main( int argc, char *argv[] )
 #if DEBUGLOG
 	create_log( );
 #endif
-
-
+	
 	/* allocate new work area */
 	if ( (lpbjinfo = (LPBJFILTERINFO)malloc( sizeof(BJFILTERINFO) )) == NULL ) goto onErr;
 	
@@ -170,11 +171,15 @@ int main( int argc, char *argv[] )
 	if (sigaction(SIGUSR1, &sigact, NULL)) perror("sigaction");
 
 	snprintf(socketname, sizeof(socketname), "%s%d",BJSOCKET,getpid());
-
 	memset(tmp_modelname , 0x00 , sizeof(tmp_modelname));
 
+
+	/*---------
+		Analyze command line options.
+	---------*/
 	if ( (modelstrnum = SetCmdOption( argc, (char **)argv, &lpbjinfo->bjfoption, &bjfltcolor, 
 			&bjfltdevice, &cnclpapersize, dispname, lpbjinfo->filename, tmp_modelname )) < 0 ) goto onErr;
+
 
 	for( i=0; i<sizeof(tmp_modelname); i++ )	modelname[i] = tmp_modelname[i];
 	for( i=0; i<sizeof(small_modelname); i++ )	small_modelname[i] = tolower(tmp_modelname[i]);
@@ -378,7 +383,7 @@ int main( int argc, char *argv[] )
 		fprintf( stderr, "Err in MakeBJPrintData!\n" );	
 		goto onErr;
 	}
-
+	
 onErr:
 	WaitLgmon( lpbjinfo, isprint );
 	
@@ -416,21 +421,20 @@ static short MakeBJPrintData
 	long				y;
 	long				left=0, right=0;
 	long				Rest, TotalRest, PrevPos, CurrPos, Quotient;
-	long				restLines, tmpRestLines;
+	long __attribute__ ((unused)) restLines, tmpRestLines;
 	long				page_width;
-	long				i,h;
+	long				i, __attribute__ ((unused)) h;
 	short				bpp;
 	
 	CNCLNAMEINFO		cnclnameinfo;
 	BJFLTCOMSYSTEM		bjfltcom;
 	char 				tblPath[] = BJLIBPATH;
-
-	FILE				*fp=NULL;
+	FILE __attribute__ ((unused)) *fp=NULL;
 	CPKInt16 result;
 	
 	/* dump plural pages. */
 	LPBJF_ROOT	root = NULL;
-	int			fd;
+	int	__attribute__ ((unused)) fd;
 	short		dumpp_ret;
 	/* over margin  */
 	BJFLTOVERMARGININFO	bjfltovermargin;
@@ -457,7 +461,6 @@ static short MakeBJPrintData
 
 	CnclData.CommandParamPtr = NULL;
 	CnclData.CommandParamSize = 0;
-	
 	CnclData.TablePath = tblPath;
 	
 	/*--- 
@@ -474,22 +477,18 @@ static short MakeBJPrintData
 
 	/****** CNCL Startjob ******/
 	if ( (cnclerr = CNCL_StartJob( &CnclData )) != CNCL_OK ) goto finish1;
-	
 	outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
 
-
 	/*--- 
-		Input Image open. Now Supported image format is
-			jpeg, bmp, tiff.
-		we deal width only bmp image format as stdin.
+		Input Image open. 
+		we deal width only ppm image format as stdin.
 	---*/
 	if ( lpbjinfo->bjfoption.stdswitch == ON ){
 		if ( bjf_image_open( &lpbjinfo->bjfimage, NULL ) < 0 ) goto finish2;
-	}
-	else{
+
+	}else{
 		if ( bjf_image_open( &lpbjinfo->bjfimage, lpbjinfo->filename ) < 0 ) goto finish2;
 	}
-
 
 	/*---
 		Get DataBaseName, and BJFLTCOM structure, which has printer infomation( wMediaType,
@@ -624,7 +623,7 @@ static short MakeBJPrintData
 #endif
 
 		/*---------
-			get scaling parameter which bjfilter needs.
+			get scaling parameter which cif needs.
 		---------*/
 		width = 0;			height = 0;
 		width_offset = 0;	height_offset = 0;
@@ -687,11 +686,9 @@ static short MakeBJPrintData
 		memset( rgbBuf, 0xFF, page_width * bpp );
 
 #if DEBUG 
-		/* display papaer size parameter */	
+		/* display parameters */	
 		display_position_parameter( lpbjinfo, lpcnclpapersize );
-		/* display cncl infomation */
 		display_cncl_printerinfo( &CnclData );
-		/* display position parameter */	
 		display_pos_info( &lpbjinfo->bjfposinfo );
 #endif
 		
@@ -726,11 +723,10 @@ static short MakeBJPrintData
 
 		/****** CNCL Start page ******/
 		if ( (cnclerr = CNCL_StartPage( &CnclData )) != CNCL_OK ) goto onErr;
-		/* dump plural pages. */
 		outCmdPlural( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn, fd, root );
 
 		/*---
-			if topskip is, increase Vposition 
+			if topskip is, increase Vposition
 		---*/
 		if ( topskip ){
 			CnclData.Vpos    = topskip;
@@ -762,7 +758,7 @@ static short MakeBJPrintData
 
 			if ( CurrPos != PrevPos ){
 				PrevPos = CurrPos;
-				if ( bjf_image_read_raster( &lpbjinfo->bjfimage, srcBuf, (long)width_offset, 
+				if ( bjf_image_read_raster( &lpbjinfo->bjfimage, (char *)srcBuf, (long)width_offset, 
 							(long)(CurrPos + height_offset), (long)width ) < 0 ){
 					fprintf( stderr, "err in bjf_image_read_raster\n" );	
 					goto onErr;
@@ -784,7 +780,7 @@ static short MakeBJPrintData
 			}
 			
 			/* Check white line */
-			if ( whiteLine( rgbBuf, CnclData.width*bpp, bpp, &left, &right ) ){
+			if ( whiteLine( rgbBuf, CnclData.width*bpp, bpp, (CPKUInt32 *)&left, (CPKUInt32 *)&right ) ){
 				CnclData.WhiteLine = CND_WL_WHITE;
 				CnclData.left_white = left;
 				CnclData.right_white = right;
@@ -817,7 +813,7 @@ static short MakeBJPrintData
 					goto onErr;
 				}
 			} while ( cnclerr == 1 );
-next:
+//next:
 			CnclData.Vpos += 1 ;
 
 			TotalRest += Rest;
@@ -859,7 +855,7 @@ next:
 		/****** CNCL End page ******/
 		if ( (cnclerr = CNCL_EndPage( &CnclData )) != CNCL_OK ) goto onErr;
 		/* dump plural pages. */
-		outCmdPlural( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn, fd, root );
+		outCmdPlural( (CPKByte *)CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn, fd, root );
 		/* outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn ); */
 
 		CnclData.PageNum += 1;
@@ -889,13 +885,12 @@ finish3:
 	bjf_image_close( &lpbjinfo->bjfimage );
 	
 	/* dump plural pages. */
-	if(fd>0)close(fd);
+//	if(fd>0)close(fd);
 	while(bjf_dispose_root(root) > 0) {
 		removeTempfileCompletely(root);
 	}
 
 finish2:
-
 	/****** CNCL End job ******/
 	if ( (cnclerr = CNCL_EndJob( &CnclData )) == CNCL_OK ) {
 		outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
@@ -1019,7 +1014,7 @@ outCmd ( CPKByte CPKPTR buf, CPKUInt32 size, int prn )	/* to take file pointer *
 
 	if(size == 0) return; /* do nothing. */
 
-	ptr = buf;
+	ptr = (char *)buf;
 	r_size = size;
 	while( 1 ){
 		if(r_size == 0) return;
@@ -1404,6 +1399,7 @@ static short ForkLgmon( LPBJFILTERINFO lpbjfinfo, char *dispname, char *modelnam
 	char	small_modelname[256],lgmonname[256];
 	short	i;
 	short	result = 0;
+	size_t __attribute__ ((unused)) result1;
 
 	short cnt;
 	
@@ -1419,7 +1415,7 @@ static short ForkLgmon( LPBJFILTERINFO lpbjfinfo, char *dispname, char *modelnam
 		
 		if  ( lpbjfinfo->pid_lgmon == 0 ) {			/* lgmon is not invoked yet */
 
-			pipe( lpbjfinfo->pipefds );
+			result1 = pipe( lpbjfinfo->pipefds );
 			lpbjfinfo->pid_lgmon = fork();
 
 			if ( lpbjfinfo->pid_lgmon == 0 ) {		/* child process */
@@ -1484,7 +1480,7 @@ static void WaitPrintUi( LPBJFILTERINFO lpbjfinfo )
 /*-------------------------------------------------------------*/
 /* write command to prn and fd.                            */
 /*-------------------------------------------------------------*/
-static void outCmdPlural( char *buf, unsigned long size, int prn, int fd, LPBJF_ROOT root )
+static void outCmdPlural( CPKByte CPKPTR buf, unsigned long size, int prn, int fd, LPBJF_ROOT root )
 {
 	if(root->isRPrint == REVPRINT_OFF)
 		outCmd( buf, size, prn ); /* write to prn. */
@@ -1540,12 +1536,13 @@ static void removeTempfileCompletely(LPBJF_ROOT root)
 }
 
 
+
 /*-------------------------------------------------------------*/
 /* dump singular page. page data read from tempfile.           */
 /*-------------------------------------------------------------*/
 static short dumpPage(LPBJF_NODE node, int prn)
 {
-	char	buf[BUFSIZ];
+	CPKByte	buf[BUFSIZ];
 	int		fd = 0;
 	int		r_size = 0;
 	short	ret = -1;
@@ -1671,7 +1668,7 @@ static short dumpPluralPages_flush( LPBJF_ROOT root, int prn )
 			}
 		}
 		else {
-			while( bjf_exist_q(root) ) {
+			while( bjf_exist_q(root) ) {	/* root is not NULL */
 				node = root->head;
 				while( (ret = dumpPage(node, prn)) != 0 ) {
 					if (ret < 0) goto onErr;
@@ -1693,7 +1690,7 @@ onErr:
 /*-------------------------------------------------------------*/
 static short exec_testprint( char *command , long cmdslen , char *filename , int prn)
 {
-	char	buf[BUFSIZ];
+	CPKByte	buf[BUFSIZ];
 	int		fd = 0;
 	int		r_size = 0;
 	short	ret = -1;

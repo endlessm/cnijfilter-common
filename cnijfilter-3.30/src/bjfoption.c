@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -226,7 +226,6 @@ short FindValue(LPCNCLDB lpdbTop, short dbsize, short id, short value)
 	}
 	return ret;
 }
-
 
 
 /*-------------------------------------------------------------*/
@@ -1599,8 +1598,7 @@ short CheckSettings( LPBJFLTDEVICE bjdevice , char *confname )
 			}
 		}
 	}
-
-
+	
 	/* Check mismatch between fineart media and size */
 	if ( ( bjdevice->bjfltMediaType == CND_MEDIA_FINE_ART_PAPER ) || (  bjdevice->bjfltMediaType == CND_MEDIA_OTHER_FINE_ART_PAPER ) ){
 		if( bjdevice->bjfltPaperSize != CND_SIZE_A4_FINE_ART ){

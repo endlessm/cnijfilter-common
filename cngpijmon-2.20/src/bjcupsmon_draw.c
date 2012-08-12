@@ -409,7 +409,7 @@ PUBLIC void initDrawing(void)
 	gpInk[ID_PIXMAP_EL] = &gpInkEL;
 	gpInk[ID_PIXMAP_ER] = &gpInkER;
 	gpInk[ID_PIXMAP_SP] = &gpInkSP;
-	
+
 	gpMask[ID_PIXMAP_BK] = &gpMaskNal;
 	gpMask[ID_PIXMAP_PB] = &gpMaskNal;
 	gpMask[ID_PIXMAP_BB] = &gpMaskWid;
@@ -425,11 +425,11 @@ PUBLIC void initDrawing(void)
 	gpMask[ID_PIXMAP_SP] = &gpMaskSP;
 	
 	// Get pixmap directory.
-	strcpy(gPixmapDirectory, STR_SHARE_DIRECTORY_NAME);
+	memset(gPixmapDirectory,0,MAX_BUF_SIZE);
+	strncpy(gPixmapDirectory, STR_SHARE_DIRECTORY_NAME, 
+	(MAX_BUF_SIZE<(strlen(STR_SHARE_DIRECTORY_NAME)+strlen(STR_PIXMAP_DIRECTORY_NAME)+1))? MAX_BUF_SIZE:strlen(STR_SHARE_DIRECTORY_NAME)+strlen(STR_PIXMAP_DIRECTORY_NAME)+1);
 	strcat(gPixmapDirectory, "/");
-	strcat(gPixmapDirectory, STR_APPLICATION_NAME);
-	strcat(gPixmapDirectory, "/");
-	strcat(gPixmapDirectory, STR_PIXMAP_DIRECTORY_NAME);
+	strncat(gPixmapDirectory, STR_PIXMAP_DIRECTORY_NAME, strlen(STR_PIXMAP_DIRECTORY_NAME));
 	
 	return;
 }// End initDrawing
@@ -704,10 +704,11 @@ PRIVATE gchar* checkFileExists(const gchar *pDirectory, const gchar *pFileName)
 /*** Parameters start ***/
 	
 	pFullFileName = (gchar*)g_malloc(strlen(pDirectory) + 1 + strlen(pFileName) + 1);
+	memset(pFullFileName, 0, (strlen(pDirectory) + 1 + strlen(pFileName) + 1));
 	if (pFullFileName != NULL) {
-		strcpy(pFullFileName, pDirectory);
+		strncpy(pFullFileName, pDirectory, strlen(pDirectory));
 		strcat(pFullFileName, "/");
-		strcat(pFullFileName, pFileName);
+		strncat(pFullFileName, pFileName, strlen(pFileName));
 		
 		retVal = stat(pFullFileName, &fileInfo);
 		if (retVal != 0 || S_ISREG(fileInfo.st_mode) == 0) {

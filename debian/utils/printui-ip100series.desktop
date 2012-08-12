@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-IP100
-Exec=cngpij -PCanon-IP100
+Exec=cngpij -P Canon-IP100
 Icon=printer.png
 Categories=Graphics
 Type=Application

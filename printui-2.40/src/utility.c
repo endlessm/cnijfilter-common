@@ -81,7 +81,7 @@ static	LPCTRLITEM	lpCtrlItem;
 static	LPBOXINF	lpBoxInf;				
 static	char		**lpBJLtbl;				
 static	short		head_type;				
-static	short		regi_flag;
+static	short		regi_flag=0;
 
 static	short		refresh_head_type;	
 
@@ -181,7 +181,8 @@ static int UtilMessageBoxSetDefault(
 	GtkWidget	*label;                 
 	GtkWidget	*hbuttonbox1;           
 	GtkWidget	*button;                
-	GdkPixmap	*icon, *iconMask;       
+	GdkPixmap	*icon = NULL;
+	GdkPixmap	*iconMask = NULL;
 	GtkStyle	*style;
 	int		i;
 	
@@ -1379,11 +1380,16 @@ void on_autopower_send_button_clicked(GtkButton *button, gpointer user_data)
 	result = ID_OK;
 
 	power_on_combo = LookupWidget(GTK_WIDGET(button), "autopower_combo1");	
-	power_on_mode
-		= gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_on_combo)->entry));	
 	power_off_combo = LookupWidget(GTK_WIDGET(button), "autopower_combo2");	
-	power_off_mode
-		= gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_off_combo)->entry));	
+
+	/* Ver.2.80 */
+	power_on_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_on_combo));
+	power_off_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_off_combo));
+//	power_on_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_on_combo)->entry));	
+//	power_off_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_off_combo)->entry));	
+	
+	poweron_index = GetAutoPowerIndex(AutoPowerOnKey, 2, power_on_mode);
+	poweroff_index = GetAutoPowerIndex(AutoPowerOffKey, 6, power_off_mode);
 
 #ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
@@ -1793,12 +1799,13 @@ on_ink_reset_dialog_delete_event
 (GtkWidget *widget, GdkEvent *event, gpointer user_data)
 {
 
-	GtkWidget	*black_button;
-	GtkWidget	*color_button;
-
 	result = ID_CANCEL;
 
 #ifdef USE_LIB_GLADE
+	{
+		GtkWidget	*black_button;
+		GtkWidget	*color_button;
+
 		black_button = LookupWidget(GTK_WIDGET(widget),
 									"black_reset_checkbutton");	
 		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(black_button), FALSE);  
@@ -1807,6 +1814,7 @@ on_ink_reset_dialog_delete_event
 		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(color_button), FALSE);  
 		gtk_widget_hide(GTK_WIDGET(widget));
 		gtk_main_quit();
+	}
 #else
 	gtk_widget_destroy(GTK_WIDGET(widget));
 #endif
@@ -1847,12 +1855,13 @@ void on_ink_reset_execute_button_clicked(GtkButton *button, gpointer user_data)
 void on_ink_reset_cancel_button_clicked
 				(GtkButton *button, gpointer user_data)
 {
-	GtkWidget	*black_button;
-	GtkWidget	*color_button;
-		
 	result = ID_CANCEL;
 
 #ifdef USE_LIB_GLADE
+	{
+		GtkWidget	*black_button;
+		GtkWidget	*color_button;
+
 		black_button = LookupWidget(GTK_WIDGET(button),
 									"black_reset_checkbutton");	
 		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(black_button), FALSE);  
@@ -1861,6 +1870,7 @@ void on_ink_reset_cancel_button_clicked
 		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(color_button), FALSE);  
 		gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 		gtk_main_quit();			
+	}
 #else
 	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 #endif
@@ -1878,11 +1888,13 @@ static void SetDryLevel(void)
 	char 		buf[128];
 	char		*p=buf;
 	char 		temp[32];
-	int 		total_bytes, temp_bytes, cmd_bytes;
 	char		*model_name;
 	GtkWidget	*button=NULL;
 	GtkWidget*	send_button=NULL;
 	int i;
+	int total_bytes = 0;
+	int temp_bytes = 0;
+	int cmd_bytes = 0;
 
 	model_name = GetModelName();
 
@@ -1963,7 +1975,8 @@ static void SetDryLevel(void)
 	memcpy(p, temp, cmd_bytes); p+=cmd_bytes;
 
 	if( config_flag & SETCONFIG_ABRASION ){
-		temp_bytes = sprintf(temp, BJLPAPERGAP, PaperGapString[papergap_mode]);
+		temp_bytes = snprintf(temp, 31, BJLPAPERGAP, 
+							  PaperGapString[papergap_mode]);
 		memcpy(p, temp, temp_bytes); p+=temp_bytes;
 	}
 	memcpy(p, BJLEND, BJLENDLEN); p+=BJLENDLEN;

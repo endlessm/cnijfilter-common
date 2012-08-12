@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+MimeType=text/pro
+Name=Cngpijmon-PIXUS560I
+Exec=cngpijmonpixus560i
+Icon=printer.png
+Categories=Graphics
+Type=Application
+Terminal=false
+Comment=Status monitor for Canon Inkjet Printer Driver under CUPS.
+

@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-IP2200
-Exec=cngpij -PCanon-IP2200
+Exec=cngpij -P Canon-IP2200
 Icon=printer.png
 Categories=Graphics
 Type=Application

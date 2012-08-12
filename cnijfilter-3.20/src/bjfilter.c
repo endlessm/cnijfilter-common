@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2009
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -47,12 +47,13 @@
 #include "bjfimage.h"
 #include "bjfoption.h"
 #include "bjfrcaccess.h"
+#include "bjflist.h"
 #include "bjfpos.h"
 #include "bjipc.h"
 #include "bjfilter.h"
 #include "uitypes.h"
-#include "bjflist.h"
 #include "bjfpath.h"
+
 
 /* function prototypes */
 extern short GetIPCData(LPIPCU pipc, char *sname);
@@ -142,8 +143,7 @@ int main( int argc, char *argv[] )
 #if DEBUGLOG
 	create_log( );
 #endif
-
-
+	
 	/* allocate new work area */
 	if ( (lpbjinfo = (LPBJFILTERINFO)malloc( sizeof(BJFILTERINFO) )) == NULL ) goto onErr;
 	
@@ -256,7 +256,7 @@ static short MakeBJPrintData
 	int					fd;
 	short				dumpp_ret;
 	BJFLTOVERMARGININFO	bjfltovermargin;
-	char				command_buffer[CNCL_MAKECOMMAND_BUF_LEN];
+	char		command_buffer[CNCL_MAKECOMMAND_BUF_LEN];
 	
 #if DEBUGLOG
 	fprintf(stderr,"LGMONPATH:%s\n",LGMONPATH);
@@ -305,9 +305,7 @@ static short MakeBJPrintData
 	
 	/****** CNCL Startjob ******/
 	if ( (cnclerr = CNCL_StartJob( &CnclData )) != CNCL_OK ) goto finish1;
-	
 	outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
-
 
 	/*--- 
 		Input Image open. 
@@ -1480,6 +1478,7 @@ static short modify_image_form( LPBJFILTERINFO lpbjinfo )
 	/*---------
 		if bbox option is selected, 
 	---------*/
+
 	if ( lpbjinfo->bjfoption.bbox.bbox_flag == BBOX_ON ){
 		if ( SetBbox( &lpbjinfo->bjfposimg,
 			lpbjinfo->bjfoption.bbox.value, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto onErr;

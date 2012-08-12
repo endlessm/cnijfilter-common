@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2005 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -43,6 +42,7 @@ short GetIPCData(LPIPCU pipc, char *sname)
 {
 	struct sockaddr_un		sun;
 	int						s, c;
+	int __attribute__ ((unused)) result1;
 	char					buf[128];
 	size_t					adrlen;
 	short					ret = RET_ERROR;
@@ -64,12 +64,12 @@ short GetIPCData(LPIPCU pipc, char *sname)
 	if (listen(s, 5))
 		return RET_ERROR;
 
-	while ((c = accept(s, (struct sockaddr *)&sun, &adrlen)) >= 0) {
+	while ((c = accept(s, (struct sockaddr *)&sun, (socklen_t *)&adrlen)) >= 0) {
 		/* read command first */
-		read(c, buf, IPCCMDLEN);
+		result1 = read(c, buf, IPCCMDLEN);
 
 		if (strcmp(buf, "PRINT") == 0) {			/* PRINT command */
-			read(c, pipc, sizeof(IPCU));
+			result1 = read(c, pipc, sizeof(IPCU));
 			close(c);
 			ret = RET_PRINT;
 			break;
@@ -80,13 +80,13 @@ short GetIPCData(LPIPCU pipc, char *sname)
 			break;
 		}
 		else if (strcmp(buf, "PDATA") == 0) {		/* PDATA command (for maintenance) */
-			read(c, pipc, sizeof(IPCU));
+			result1 = read(c, pipc, sizeof(IPCU));
 			close(c);
 			ret = RET_PDATA;
 			break;
 		}
 		else if (strcmp(buf, "FDATA") == 0) {		/* FDATA command (to print testpattern) */
-			read(c, pipc, sizeof(IPCU));
+			result1 = read(c, pipc, sizeof(IPCU));
 			close(c);
 			ret = RET_FDATA;
 			break;

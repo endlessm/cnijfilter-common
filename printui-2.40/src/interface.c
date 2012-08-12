@@ -4579,7 +4579,7 @@ create_autopower_dialog (void)
   GtkWidget *autopower_button1;
   GtkWidget *autopower_button2;
 
-//  autopower_dialog = gtk_window_new (GTK_WINDOW_DIALOG);
+  autopower_dialog = gtk_window_new (GTK_WINDOW_TOPLEVEL);
   gtk_object_set_data (GTK_OBJECT (autopower_dialog), "autopower_dialog", autopower_dialog);
   gtk_window_set_title (GTK_WINDOW (autopower_dialog), _("Auto Power Setting"));
   gtk_window_set_position (GTK_WINDOW (autopower_dialog), GTK_WIN_POS_CENTER);
@@ -4726,7 +4726,7 @@ create_cleaning_dialog (void)
   GtkWidget *cleaning_button1;
   GtkWidget *cleaning_button2;
 
-//  cleaning_dialog = gtk_window_new (GTK_WINDOW_DIALOG);
+  cleaning_dialog = gtk_window_new (GTK_WINDOW_TOPLEVEL);
   gtk_object_set_data (GTK_OBJECT (cleaning_dialog), "cleaning_dialog", cleaning_dialog);
   gtk_window_set_title (GTK_WINDOW (cleaning_dialog), _("Print Head Cleaning"));
   gtk_window_set_position (GTK_WINDOW (cleaning_dialog), GTK_WIN_POS_CENTER);
@@ -7816,7 +7816,7 @@ create_PX990Iregi_dialog (void)
   GtkWidget *PX990Iregi_spinbutton4;
   GtkObject *PX990Iregi_spinbutton5_adj;
   GtkWidget *PX990Iregi_spinbutton5;
-  GtkWidget *PX990Iregi_label3;
+  GtkWidget  __attribute__ ((unused)) *PX990Iregi_label3;
   GtkWidget *PX990Iregi_label4;
   GtkWidget *PX990Iregi_label15;
   GtkWidget *PX990Iregi_label6;

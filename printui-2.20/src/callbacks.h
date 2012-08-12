@@ -137,11 +137,11 @@ on_media_size_popwin_event(GtkWidget* widget,
 void
 on_media_size_entry_changed            (GtkEditable     *editable,
                                         gpointer         user_data);
+
 gboolean
 on_cartridge_type_popwin_event(GtkWidget* widget,
 							 GdkEvent* event,
 							 gpointer user_data);
-
 void
 on_cartridge_type_entry_changed        (GtkEditable     *editable,
                                         gpointer         user_data);

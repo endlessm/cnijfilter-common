@@ -17,31 +17,32 @@
 *%  along with this program; if not, write to the Free Software
 *%  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+*FileVersion: "1.0"
 *FormatVersion:	"4.3"
-*FileVersion: "1.1"
-*LanguageVersion: English
 *LanguageEncoding: ISOLatin1
-*PCFileName: "CNPX550I.PPD"
+*LanguageVersion: English
 *Manufacturer: "Canon"
-*Product: "pixus550i"
-*cupsVersion: 1.1
-*cupsManualCopies: True
-*cupsModelNumber: 154
-*cupsFilter: "application/vnd.cups-postscript 0 pstocanonij"
 *ModelName: "Canon PIXUS 550i"
-*ShortNickName: "PIXUS550i"
 *NickName: "Canon PIXUS 550i ver.2.2"
+*PCFileName: "CNPX550I.PPD"
+*Product: "(pixus550i)"
 *PSVersion: "(3010.000) 550"
 *PSVersion: "(3010.000) 651"
 *PSVersion: "(3010.000) 705"
-*LanguageLevel: "3"
+*ShortNickName: "PIXUS550i"
+
 *ColorDevice: True
 *DefaultColorSpace: RGB
-*FileSystem: False
 *Throughput: "1"
 *LandscapeOrientation: Plus90
+*LanguageLevel: "3"
+*FileSystem: False
 *TTRasterizer: Type42
 
+*cupsFilter: "application/vnd.cups-postscript 0 pstocanonij"
+*cupsManualCopies: True
+*cupsModelNumber: 154
+*cupsVersion: 1.1
 
 *MaxMediaWidth: "842"
 *MaxMediaHeight: "1225"

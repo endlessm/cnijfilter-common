@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2004
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -19,6 +19,7 @@
 
 /*** Includes ***/
 #include <cups/cups.h>
+#include <cups/ppd.h>
 #include <cups/language.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -27,6 +28,30 @@
 
 #include "bjcupsmon_common.h"
 #include "bjcupsmon_cups.h"
+
+//////////////////////////////////////////////////////////////
+// 
+// CS     :	PRIVATE cups_lang_t * bjcupsLangDefault()
+// IN     : none
+// OUT    : LC_ALL(locale)
+// RETURN : pointer to cupa_lang_t structure
+//
+// This routine written for cups-1.1.19 Turbolinux10(Suzuka)
+// Replace to cupsLangDefault()
+//
+PRIVATE cups_lang_t * bjcupsLangDefault( )
+{
+	cups_lang_t	*pLanguage;
+	char		*tLang;	
+	
+	if( (tLang = getenv("LC_ALL"))==NULL)
+			tLang = getenv("LANG");
+	
+	pLanguage = cupsLangDefault();
+	setlocale(LC_ALL,tLang);
+	
+	return pLanguage;
+}
 
 
 /*** Functions ***/
@@ -80,20 +105,25 @@ PUBLIC gint getProductName(gchar *pDestName, gchar *pProductName)
 	const gchar	*pPPDName = NULL;					// Pointer to PPD file name.
 	ppd_file_t	*pPPD;								// Pointer to PPD file.
 	gint		retVal = ID_ERR_UNKNOWN_PRINTER;	// Return value.
+	ipp_status_t status;
 /*** Parameters start ***/
 
 	// Get PPD file name.
 	pPPDName = cupsGetPPD(pDestName);
 	if (pPPDName != NULL) {
 		if ((pPPD = ppdOpenFile(pPPDName)) != NULL) {
-			if (strcmp(pPPD->manufacturer, STR_MANUFACTURER_NAME) == 0 && 
-			   ( !strncmp(pPPD->product,STR_PRODUCT_BJ,2) || !strncmp(pPPD->product,STR_PRODUCT_PIXUS,5)) ) {
-				strcpy(pProductName, pPPD->modelname);	// use modelname from 22th Jan.'03
+			if (strcmp(pPPD->manufacturer, STR_MANUFACTURER_NAME) == 0) {
+				strncpy(pProductName, pPPD->modelname, strlen(pPPD->modelname));	// use modelname from 22th Jan.'03
 				retVal = ID_ERR_NO_ERROR;
 			}
 			ppdClose(pPPD);
 		}
 		unlink(pPPDName);	// Tora 020418: You should remove the copy of the PPD file.
+	}
+	else {
+		status = cupsLastError();
+		if( status == IPP_SERVICE_UNAVAILABLE )	// cupsd stop status
+			retVal = ID_ERR_CUPS_API_FAILED;
 	}
 	
 	return(retVal);
@@ -118,7 +148,7 @@ PUBLIC gint checkPrinterAndJobState(gchar *pDestName, gboolean *pPrinterReady, g
 /*** Parameters end ***/
 	
 	snprintf(printerURI, sizeof(printerURI), "ipp://localhost/printers/%s", pDestName);
-	strcpy(serverName, "localhost");
+	strncpy(serverName, "localhost", HTTP_MAX_URI-1);
 	
 	// Check printer state.
 	retVal = checkPrinterState(pDestName, printerURI, serverName);
@@ -185,8 +215,8 @@ PRIVATE gint checkPrinterState(gchar *pDestName, gchar *pURI, gchar *pServerName
 		pRequest->request.op.operation_id = IPP_GET_PRINTER_ATTRIBUTES;
 		pRequest->request.op.request_id   = 1;
 		
-		pLanguage = cupsLangDefault();
-		
+		pLanguage = bjcupsLangDefault();			// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19 
+				
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_CHARSET, "attributes-charset", NULL, cupsLangEncoding(pLanguage));
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_LANGUAGE, "attributes-natural-language", NULL, pLanguage->language);
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_URI, "printer-uri", NULL, pURI);
@@ -258,7 +288,7 @@ PUBLIC gint getPrinterStatus(gchar *pDestName, gchar *pStatus, gint bufSize)
 			pRequest->request.op.operation_id = IPP_GET_PRINTER_ATTRIBUTES;
 			pRequest->request.op.request_id   = 1;
 			
-			pLanguage = cupsLangDefault();
+			pLanguage = bjcupsLangDefault();		// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19
 			
 			ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_CHARSET, "attributes-charset", NULL, cupsLangEncoding(pLanguage));
 			ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_LANGUAGE, "attributes-natural-language", NULL, pLanguage->language);
@@ -333,7 +363,7 @@ PUBLIC gint removeJob(gchar *pDestName)
 				pRequest->request.op.operation_id = IPP_CANCEL_JOB;
 				pRequest->request.op.request_id   = 1;
 				
-				pLanguage = cupsLangDefault();
+				pLanguage = bjcupsLangDefault();		// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19
 				
 				ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_CHARSET, "attributes-charset", NULL, cupsLangEncoding(pLanguage));
 				ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_LANGUAGE, "attributes-natural-language", NULL, pLanguage->language);
@@ -385,6 +415,13 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 	uid_t			userID;									// User ID.
 	struct passwd	*pPasswd;								// Pointer to password structure.
 	gint			retVal = ID_ERR_PRINT_JOB_NOT_EXIST;	// Return value.
+	//for CUPS 1.4.3 STR #3383
+	static const char * const jobattrs[] =					// Job attributes
+ 		{
+		  "job-id",
+		  "job-originating-user-name",
+		  "job-state"
+		};
 /*** Parameters end ***/
 	
 	// Get login name.
@@ -401,11 +438,13 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 		pRequest->request.op.operation_id = IPP_GET_JOBS;
 		pRequest->request.op.request_id   = 1;
 		
-		pLanguage = cupsLangDefault();
+		pLanguage = bjcupsLangDefault();	// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19
 		
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_CHARSET, "attributes-charset", NULL, cupsLangEncoding(pLanguage));
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_LANGUAGE, "attributes-natural-language", NULL, pLanguage->language);
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_URI, "printer-uri", NULL, pURI);
+		//for CUPS 1.4.3 STR #3383
+		ippAddStrings(pRequest, IPP_TAG_OPERATION, IPP_TAG_KEYWORD, "requested-attributes",(int)(sizeof(jobattrs) / sizeof(jobattrs[0])), NULL, jobattrs);
 		
 		if ((pResponse = cupsDoRequest(pHTTP, pRequest, "/")) != NULL) {
 			if (pResponse->request.status.status_code > IPP_OK_CONFLICT) {
@@ -439,7 +478,9 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 							if (strcmp(pPasswd->pw_name, pJobUserName) == 0) {
 								retVal = ID_ERR_NO_ERROR;
 							}
-							else if (pJobUserName[0] == '\0') {
+							//v.2.00.01.010 for CUPS 1.2 test Print is "guest", but CUPS 1.1 is ""
+							else if( (pJobUserName[0] == '\0') || (strcmp(pJobUserName, "guest") == 0) ){
+							//else if (pJobUserName[0] == '\0') {
 								retVal = ID_ERR_NO_ERROR;
 							}
 						}
@@ -508,7 +549,7 @@ PRIVATE gint getPrinterURI(gchar *pDestName, gchar *pURI, gchar *pServerName, gi
 		pRequest->request.op.operation_id = CUPS_GET_PRINTERS;
 		pRequest->request.op.request_id   = 1;
 		
-		pLanguage = cupsLangDefault();
+		pLanguage = bjcupsLangDefault();	// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19
 		
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_CHARSET, "attributes-charset", NULL, cupsLangEncoding(pLanguage));
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_LANGUAGE, "attributes-natural-language", NULL, pLanguage->language);
@@ -571,7 +612,7 @@ PRIVATE gint getPrinterURI(gchar *pDestName, gchar *pURI, gchar *pServerName, gi
 		snprintf(pURI, bufSize, "ipp://localhost/printers/%s", pDestName);
 	}
 	if (pServerName[0] == '\0') {
-		strcpy(pServerName, "localhost");
+		strncpy(pServerName, "localhost", strlen("localhost"));
 	}
 	
 	return(retVal);

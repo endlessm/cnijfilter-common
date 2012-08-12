@@ -133,7 +133,7 @@ int main(int argc, char *argv[])
 		EnableSignal();
 
 		// Set window title.
-		sprintf(g_window_title, "Canon %s", GetDispModelName());
+		snprintf(g_window_title, sizeof(g_window_title), "Canon %s", GetDispModelName());	//Ver.2.90(s)
 
 		gtk_window_set_title(
 			GTK_WINDOW(UI_DIALOG(g_main_window)->window), g_window_title);
@@ -227,7 +227,7 @@ void InitOption(int argc, char* argv[])
 			break;
 		}
 	}
-
+	
 	if( rc < -1 )
 		g_warning("Unknown switch, %s\n",
 			 poptBadOption(context, POPT_BADOPTION_NOALIAS));

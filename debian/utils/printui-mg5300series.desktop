@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MG5300
-Exec=cngpij -PCanon-MG5300
+Exec=cngpij -P Canon-MG5300
 Icon=printer.png
 Categories=Graphics
 Type=Application

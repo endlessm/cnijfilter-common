@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2006 
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -46,12 +46,13 @@
 #include "bjfimage.h"
 #include "bjfoption.h"
 #include "bjfrcaccess.h"
+#include "bjflist.h"
 #include "bjfpos.h"
 #include "bjipc.h"
 #include "bjfilter.h"
 #include "uitypes.h"
-#include "bjflist.h"
 #include "bjfpath.h"
+
 
 /* function prototypes */
 extern short GetIPCData(LPIPCU pipc, char *sname);
@@ -160,7 +161,7 @@ int main( int argc, char *argv[] )
 	char				printuiname[256],tmp_modelname[256],small_modelname[256];
 	char				*tmpargv[] = { PRINTUIPATH, "--display", dispname, "-s", socketname, "--model", modelname, NULL};
 	struct sigaction	sigact;
-	char  __attribute__ ((unused))	*bsccdata = NULL;
+	char __attribute__ ((unused))	*bsccdata = NULL;
 	FILE				*fp = NULL;
 	char				confname[256];
 	short				id = 0;
@@ -171,8 +172,7 @@ int main( int argc, char *argv[] )
 #if DEBUGLOG
 	create_log( );
 #endif
-
-
+	
 	/* allocate new work area */
 	if ( (lpbjinfo = (LPBJFILTERINFO)malloc( sizeof(BJFILTERINFO) )) == NULL ) goto onErr;
 	
@@ -403,7 +403,7 @@ int main( int argc, char *argv[] )
 		fprintf( stderr, "Err in MakeBJPrintData!\n" );	
 		goto onErr;
 	}
-
+	
 onErr:
 	WaitLgmon( lpbjinfo, isprint );
 	
@@ -453,7 +453,8 @@ static short MakeBJPrintData
 	int	__attribute__ ((unused)) fd;
 	short				dumpp_ret;
 	BJFLTOVERMARGININFO	bjfltovermargin;
-	
+
+
 #if DEBUGLOG
 	fprintf(stderr,"LGMONPATH:%s\n",LGMONPATH);
 	fprintf(stderr,"PRINTUIPATH:%s\n",PRINTUIPATH);
@@ -486,6 +487,7 @@ static short MakeBJPrintData
 			goto finish1;
 		}
 	}
+
 	/****** CNCL Startjob ******/
 	if ( (cnclerr = CNCL_StartJob( &CnclData )) != CNCL_OK ) goto finish1;
 	outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
@@ -824,7 +826,7 @@ finish2:
 		outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
 	}
 
-finish1:
+finish1:	
 	if ( CnclData.Work1Buf ) free( CnclData.Work1Buf );
 
 	/* remove temp file */
@@ -1741,6 +1743,7 @@ static short modify_image_form( LPBJFILTERINFO lpbjinfo )
 	/*---------
 		if bbox option is selected, 
 	---------*/
+
 	if ( lpbjinfo->bjfoption.bbox.bbox_flag == BBOX_ON ){
 		if ( SetBbox( &lpbjinfo->bjfposimg,
 			lpbjinfo->bjfoption.bbox.value, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto onErr;

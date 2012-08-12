@@ -35,6 +35,7 @@
 #endif
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "callbacks.h"
 #ifndef	USE_LIB_GLADE

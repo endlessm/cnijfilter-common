@@ -39,6 +39,8 @@
 #endif
 #include <stdio.h>
 
+#include <string.h>
+
 #include "bjuidefs.h"
 #include "msgtable.h"
 
@@ -353,7 +355,7 @@ char *ValueToKey(short id, short value)
 	return (i < count)? key_array[i] :  "";
 }
 
-short KeyToValue(short id, char *name)
+short KeyToValue(short id, char* name)
 {
 	short *value_array;
 	char **key_array;
@@ -380,7 +382,7 @@ char *ValueToName(short id, short value)
 	return name;
 }
 
-short NameToValue(short id, char *name)
+short NameToValue(short id, char* name)
 {
 	short *value_array;
 	char **key_array;
@@ -663,7 +665,7 @@ static void CompCallbackTableValue(void)
 
 
 
-int SetCallbackTableFunc(short id, void (*func)(void *arg), void *func_data)
+int SetCallbackTableFunc(short id, void (*func)(void *arg), void* func_data)
 {
 
 	int table_num;
@@ -696,8 +698,7 @@ int UpdateMenuLink(short id, short value)
 	if( GetCallbackTableNum() )
 		SetCallbackTableOldValue();
 	
-
-	// Save all low level values.
+	/* Save all low level values. */
 	SaveIDValue(id, CNCL_MEDIATYPE, &media_type);
 	SaveIDValue(id, CNCL_GRAYSCALE, &gray_scale);
 

@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-IP3600
-Exec=cngpij -PCanon-IP3600
+Exec=cngpij -P Canon-IP3600
 Icon=printer.png
 Categories=Graphics
 Type=Application

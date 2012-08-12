@@ -1,12 +1,11 @@
 /*
- *  Canon Bubble Jet Print Filter for Linux
- *  Copyright CANON INC. 2001-2004 
- *  All Right Reserved.
+ *  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
+ *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -88,49 +87,65 @@ static char *bjf_access_resource( char *rcFname, char *objString, char *rcString
 	while ( (str = fgetc( fp )) != EOF ){
 		
 		if ( str == '[' ){
-			if ( read_tag( &fp, objString ) == 0 )	isObject = 1; // hit objString
-			else									isObject = 0; // not hit objString
+			if ( read_tag( &fp, objString ) == 0 )	isObject = 1; /* hit objString */
+			else									isObject = 0; /* not hit objString */
 		}
 		else{
-			if ( isObject == 1 ) {		// search rcString and rcID
+			if ( isObject == 1 ) {		/* search rcString and rcID */
 				if ( num > MODELLEN ) goto onErr;
 
 				if ( str == 0x0A ){
-					nambuf[num] = 0x00;	// string terminate
+					nambuf[num] = 0x00;	/* string terminate */
 					
 					/*
 						ptr[0] : ptr for parameter string
 						ptr[1] : ptr for id string
 					*/
 					if ( rcString != NULL ){
-						if ( strcmp( rcString, ptr[0]  ) == 0 ){
+						if( ptr[0] != NULL ){
+							if ( strcmp( rcString, ptr[0]  ) == 0 ){
 #if DEBUG
-							fprintf( stderr, "Find ModelID !\n" );
-							fprintf( stderr, "Printer Model : %s\n", ptr[0] );
+								fprintf( stderr, "Find ModelID !\n" );
+								fprintf( stderr, "Printer Model : %s\n", ptr[0] );
 #endif
-							strcpy( tmpbuf, ptr[1] ); result = tmpbuf;
-							goto onErr;
-						}
-						else {
+								strncpy( tmpbuf, ptr[1], sizeof(tmpbuf) ); result = tmpbuf;
+								tmpbuf[sizeof(tmpbuf) - 1] = '\0';
+								goto onErr;
+							}
+							else {
+								/* Re Initialize */
+								num = str = strnum = 0;
+								isSpace = 1;
+							}
+						}else{
 							/* Re Initialize */
 							num = str = strnum = 0;
 							isSpace = 1;
 						}
 					}
 					else {
-						id = (short)atoi( ptr[1] );
-						if ( id == rcID ){
+						if( ptr[1] != NULL ){
+							id = (short)atoi( ptr[1] );
+							if ( id == rcID ){
 #if DEBUG
-							fprintf( stderr, "Find ModelID !\n" );
-							fprintf( stderr, "Printer Model : %s\n", ptr[0] );
+								fprintf( stderr, "Find ModelID !\n" );
+								fprintf( stderr, "Printer Model : %s\n", ptr[0] );
 #endif
-							strcpy( tmpbuf, ptr[0] ); result = tmpbuf;
-							goto onErr;
-						}
-						else { /* Re Initialize */
+	
+								strncpy( tmpbuf, ptr[0], sizeof(tmpbuf) ); result = tmpbuf;
+								tmpbuf[sizeof(tmpbuf) - 1] = '\0';
+								goto onErr;
+							}
+							
+							else { /* Re Initialize */
+								num = str = strnum = 0;
+								isSpace = 1;
+							}				
+						}else{
+							/* Re Initialize */
 							num = str = strnum = 0;
 							isSpace = 1;
-						}				
+						}
 					}
 					
 				}

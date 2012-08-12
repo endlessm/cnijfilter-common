@@ -1,6 +1,6 @@
 *PPD-Adobe: "4.3"
 *%%%% PPD file for PIXUS 850i with CUPS.
-*%%%% Created by the CUPS PPD Compiler CUPS v1.4.6.
+*%%%% Created by the CUPS PPD Compiler CUPS v1.5.3.
 *% CUPS add-on PPD file for Canon Inkjet Printer Driver.
 *% Copyright CANON INC. 2001-2003
 *% All Rights Reserved.
@@ -18,11 +18,11 @@
 *% along with this program; if not, write to the Free Software
 *% Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
 *FormatVersion: "4.3"
-*FileVersion: "1.1"
+*FileVersion: "1.0"
 *LanguageVersion: English
 *LanguageEncoding: ISOLatin1
 *PCFileName: "CNPX850I.PPD"
-*Product: "pixus850i"
+*Product: "(pixus850i)"
 *Manufacturer: "Canon"
 *ModelName: "Canon PIXUS 850i"
 *ShortNickName: "PIXUS850i"
@@ -42,7 +42,7 @@
 *CenterRegistered: False
 *LeadingEdge Short: ""
 *DefaultLeadingEdge: Short
-*cupsVersion: 1.4
+*cupsVersion: 1.5
 *cupsModelNumber: 154
 *cupsManualCopies: True
 *cupsFilter: "application/vnd.cups-postscript 0 pstocanonij"
@@ -78,17 +78,17 @@
 *PageRegion panorama/Panorama [3.50"x10.00" 89.0x254.0mm]: "<</CNPageSizeName(panorama)/PageSize[252 720]/ImagingBBox null>>setpagedevice"
 *CloseUI: *PageRegion
 *DefaultImageableArea: A4
-*ImageableArea Letter/Letter [8.50"x11.00" 215.9x279.4mm]: "18.139999389648 14.170000076294 594.140014648438 783.5"
-*ImageableArea Legal/Legal [8.50"x14.00" 215.9x355.6mm]: "18.139999389648 14.170000076294 594.140014648438 999.5"
-*ImageableArea A5/A5 [5.83"x8.27" 148.0x210.0mm]: "9.640000343323 14.170000076294 409.890014648438 586.77001953125"
-*ImageableArea A4/A4 [8.27"x11.69" 210.0x297.0mm]: "9.640000343323 14.170000076294 585.640014648438 833.390014648438"
-*ImageableArea B5/B5 [7.17"x10.12" 182.0x257.0mm]: "9.640000343323 14.170000076294 506.269989013672 720"
-*ImageableArea l/L [3.50"x5.00" 89.0x127.0mm]: "9.640000343323 14.170000076294 242.649993896484 351.5"
-*ImageableArea 2l/2L [5.00"x7.01" 127.0x178.0mm]: "9.640000343323 14.170000076294 350.359985351562 496.059997558594"
-*ImageableArea postcard/Hagaki [3.94"x5.83" 100.0x148.0mm]: "9.640000343323 14.170000076294 273.829986572266 411.019989013672"
-*ImageableArea envj4p/Youkei 4 [4.13"x9.25" 105.0x235.0mm]: "9.640000343323 75.120002746582 288 657.640014648438"
-*ImageableArea envj6p/Youkei 6 [3.86"x7.48" 98.0x190.0mm]: "9.640000343323 75.120002746582 268.160003662109 530.080017089844"
-*ImageableArea panorama/Panorama [3.50"x10.00" 89.0x254.0mm]: "9.640000343323 14.170000076294 242.649993896484 711.5"
+*ImageableArea Letter/Letter [8.50"x11.00" 215.9x279.4mm]: "18.139999389648 14.170000076294 594.139999389648 783.5"
+*ImageableArea Legal/Legal [8.50"x14.00" 215.9x355.6mm]: "18.139999389648 14.170000076294 594.139999389648 999.5"
+*ImageableArea A5/A5 [5.83"x8.27" 148.0x210.0mm]: "9.640000343323 14.170000076294 409.890000343323 586.770000457764"
+*ImageableArea A4/A4 [8.27"x11.69" 210.0x297.0mm]: "9.640000343323 14.170000076294 585.640000343323 833.390000343323"
+*ImageableArea B5/B5 [7.17"x10.12" 182.0x257.0mm]: "9.640000343323 14.170000076294 506.270000457764 720"
+*ImageableArea l/L [3.50"x5.00" 89.0x127.0mm]: "9.640000343323 14.170000076294 242.64999961853 351.5"
+*ImageableArea 2l/2L [5.00"x7.01" 127.0x178.0mm]: "9.640000343323 14.170000076294 350.359999656677 496.060000419617"
+*ImageableArea postcard/Hagaki [3.94"x5.83" 100.0x148.0mm]: "9.640000343323 14.170000076294 273.829999923706 411.020000457764"
+*ImageableArea envj4p/Youkei 4 [4.13"x9.25" 105.0x235.0mm]: "9.640000343323 75.120002746582 288 657.640000343323"
+*ImageableArea envj6p/Youkei 6 [3.86"x7.48" 98.0x190.0mm]: "9.640000343323 75.120002746582 268.159999847412 530.079999923706"
+*ImageableArea panorama/Panorama [3.50"x10.00" 89.0x254.0mm]: "9.640000343323 14.170000076294 242.64999961853 711.5"
 *DefaultPaperDimension: A4
 *PaperDimension Letter/Letter [8.50"x11.00" 215.9x279.4mm]: "612 792"
 *PaperDimension Legal/Legal [8.50"x14.00" 215.9x355.6mm]: "612 1008"
@@ -1177,7 +1177,7 @@
 *hu.Translation ModelName/Canon PIXUS 850i: ""
 *hu.Translation ShortNickName/PIXUS850i: ""
 *hu.Translation NickName/Canon PIXUS 850i ver.2.2: ""
-*hu.Translation PageSize/Media Size: ""
+*hu.Translation PageSize/Média mérete: ""
 *hu.PageSize Letter/Letter [215.9x279.4mm 8.50"x11.00"]: ""
 *hu.PageSize Legal/Legal [215.9x355.6mm 8.50"x14.00"]: ""
 *hu.PageSize A5/A5 [148.0x210.0mm 5.83"x8.27"]: ""
@@ -3144,4 +3144,4 @@
 *Font Times-Roman: Standard "(001.007S)" Standard ROM
 *Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
 *Font ZapfDingbats: Special "(001.004S)" Standard ROM
-*% End of CNPX850I.PPD, 116709 bytes.
+*% End of CNPX850I.PPD, 116714 bytes.

@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-E600
-Exec=cngpij -PCanon-E600
+Exec=cngpij -P Canon-E600
 Icon=printer.png
 Categories=Graphics
 Type=Application

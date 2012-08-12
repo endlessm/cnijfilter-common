@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-IX6500
-Exec=cngpij -PCanon-IX6500
+Exec=cngpij -P Canon-IX6500
 Icon=printer.png
 Categories=Graphics
 Type=Application

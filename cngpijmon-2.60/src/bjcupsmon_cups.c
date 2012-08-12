@@ -1,6 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2006
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -415,6 +415,13 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 	uid_t			userID;									// User ID.
 	struct passwd	*pPasswd;								// Pointer to password structure.
 	gint			retVal = ID_ERR_PRINT_JOB_NOT_EXIST;	// Return value.
+	//for CUPS 1.4.3 STR #3383
+	static const char * const jobattrs[] =					// Job attributes
+ 		{
+		  "job-id",
+		  "job-originating-user-name",
+		  "job-state"
+		};
 /*** Parameters end ***/
 	
 	// Get login name.
@@ -436,6 +443,8 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_CHARSET, "attributes-charset", NULL, cupsLangEncoding(pLanguage));
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_LANGUAGE, "attributes-natural-language", NULL, pLanguage->language);
 		ippAddString(pRequest, IPP_TAG_OPERATION, IPP_TAG_URI, "printer-uri", NULL, pURI);
+		//for CUPS 1.4.3 STR #3383
+		ippAddStrings(pRequest, IPP_TAG_OPERATION, IPP_TAG_KEYWORD, "requested-attributes",(int)(sizeof(jobattrs) / sizeof(jobattrs[0])), NULL, jobattrs);
 		
 		if ((pResponse = cupsDoRequest(pHTTP, pRequest, "/")) != NULL) {
 			if (pResponse->request.status.status_code > IPP_OK_CONFLICT) {
@@ -469,7 +478,9 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 							if (strcmp(pPasswd->pw_name, pJobUserName) == 0) {
 								retVal = ID_ERR_NO_ERROR;
 							}
-							else if (pJobUserName[0] == '\0') {
+							//v.2.00.01.010 for CUPS 1.2 test Print is "guest", but CUPS 1.1 is ""
+							else if( (pJobUserName[0] == '\0') || (strcmp(pJobUserName, "guest") == 0) ){
+							//else if (pJobUserName[0] == '\0') {
 								retVal = ID_ERR_NO_ERROR;
 							}
 						}

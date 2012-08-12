@@ -25,7 +25,7 @@
   Manufacturer "Canon"
   ModelName "PIXUS 550i"
   PCFileName "CNPX550I.PPD"
-  Version "1.1"
+  Version "1.0"
   DriverType ps
   ModelNumber 154
   ManualCopies Yes
@@ -33,7 +33,7 @@
   Throughput 1
   Attribute "NickName" "" "Canon PIXUS 550i ver.2.2"
   Attribute "ShortNickName" "" "PIXUS550i"
-  Attribute "Product" "" "pixus550i"
+  Attribute "Product" "" "(pixus550i)"
   Attribute "PSVersion" "" "(3010.000) 550"
   Attribute "PSVersion" "" "(3010.000) 651"
   Attribute "PSVersion" "" "(3010.000) 705"

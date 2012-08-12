@@ -13,14 +13,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
- *
- * NOTE:
- *  - As a special exception, this program is permissible to link with the
- *    libraries released as the binary modules.
- *  - If you write modifications of your own for these programs, it is your
- *    choice whether to permit this exception to apply to your modifications.
- *    If you do not wish that, delete this exception.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
 #include	<signal.h>
@@ -38,7 +31,8 @@
 int  sem_id = 0;			/* printer access semapho id */
 int  filter_exist = 1;			/* parent process is bjfilter(flag) */
 int  device_type;			/* Device type (USB/LP/PARPORT/1394......) */
-int  print_system = PRNSYS_LPR;		/* lpr(ng) or CUPS (default is lpr(ng)) */
+int  print_system = PRNSYS_CUPS;		/* lpr(ng) or CUPS (default is CUPS) */
+//int  print_system = PRNSYS_LPR;		/* lpr(ng) or CUPS (default is lpr(ng)) */
 char *stamon_arg[ARGV_MAX];		/* arg space */
 struct ptdev_func dev_access;		/* read/write dispatch struct */
 struct ptdev_func *p_dvacs = &dev_access;

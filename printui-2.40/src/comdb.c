@@ -39,6 +39,8 @@
 #endif
 #include <stdio.h>
 
+#include <string.h>
+
 #include "bjuidefs.h"
 #include "msgtable.h"
 
@@ -716,8 +718,7 @@ int UpdateMenuLink(short id, short value)
 	if( GetCallbackTableNum() )
 		SetCallbackTableOldValue();
 	
-
-	// Save all low level values.
+	/* Save all low level values. */
 	SaveIDValue(id, CNCL_MEDIATYPE, &media_type);
 	SaveIDValue(id, CNCL_GRAYSCALE, &gray_scale);
 

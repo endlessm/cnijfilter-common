@@ -26,6 +26,7 @@
 	#include  "support.h"
 #endif
 
+#include "interface.h"
 #include "bjcupsmon_common.h"
 #include "bjcupsmon_ui.h"
 #include "bjcupsmon_funcprot.h"
@@ -117,9 +118,9 @@ PUBLIC void initUI(gchar *pWindowTitle, ST_PrinterStatus *pPrinterStatus, gboole
 /*** Parameters end ***/
 	
 	// Create full path of glade file name.
-	strcpy(gladeFileName, STR_SHARE_DIRECTORY_NAME);
-	strcat(gladeFileName, "/");
-	strcat(gladeFileName, STR_APPLICATION_NAME);
+	memset (gladeFileName, 0, MAX_BUF_SIZE);
+	strncpy(gladeFileName, STR_SHARE_DIRECTORY_NAME, 
+		(MAX_BUF_SIZE<(strlen(STR_SHARE_DIRECTORY_NAME)+strlen(GLADE_FILE_NAME)+1))? MAX_BUF_SIZE<(strlen(STR_SHARE_DIRECTORY_NAME)+strlen(GLADE_FILE_NAME)+1));
 	strcat(gladeFileName, "/");
 	strcat(gladeFileName, GLADE_FILE_NAME);
 	
@@ -259,7 +260,7 @@ PUBLIC void updateUISettings(ST_PrinterStatus *pPrinterStatus, ENUM_OtherMessage
 	if (updateCT == TRUE) {
 		// Set cartridge type string.
 		memset(tempBuf, 0, sizeof(tempBuf));
-		strcpy(tempBuf, dgettext(PACKAGE, N_("Cartridge Type : ")));
+		strncpy(tempBuf, dgettext(PACKAGE, N_("Cartridge Type : ")), MAX_BUF_SIZE-1);
 		if (pPrinterStatus != NULL) {
 			for (i = 0; i < 2; i++) {
 				switch (pPrinterStatus->cartridgeClass[i].type) {
@@ -353,9 +354,9 @@ PUBLIC void updateUISettings(ST_PrinterStatus *pPrinterStatus, ENUM_OtherMessage
 			
 			if( pPrinterStatus->leverPosition != ID_LEVER_POSITION_INVALID 
 			  && pPrinterStatus->leverPosition != ID_LEVER_POSITION_NONE ) 
-				strcpy(tempBuf, dgettext(PACKAGE, N_("Paper thickness lever position : ")));
+				strncpy(tempBuf, dgettext(PACKAGE, N_("Paper thickness lever position : ")), MAX_BUF_SIZE-1);
 			else
-				strcpy(tempBuf, dgettext(PACKAGE, "                                                "));
+				strncpy(tempBuf, dgettext(PACKAGE, "                                                "), MAX_BUF_SIZE-1);
 			switch (pPrinterStatus->leverPosition) {
 				case ID_LEVER_POSITION_UP:		// Up.
 					strcat(tempBuf, dgettext(PACKAGE, N_("up")));
@@ -555,7 +556,7 @@ PRIVATE void insertStringToText(const gchar *pWidgetName, const gchar *pString)
 PRIVATE void freezeText(const gchar *pWidgetName, gboolean freeze)
 {
 /*** Parameters start ***/
-	GtkWidget	*widget = NULL;		// Temporary pointer to widget.
+	GtkWidget __attribute__ ((unused))	*widget = NULL;		// Temporary pointer to widget.
 /*** Parameters end ***/
 	
 	widget = lookupWidget(pWidgetName);
@@ -649,7 +650,7 @@ PUBLIC GtkWidget* lookupWidget(const gchar *pWidgetName)
 PUBLIC void outputCommandLineMessage(ENUM_OtherMessageID messageID)
 {
 	if (messageID > ID_OTHER_MESSAGE_NONE) {
-		fprintf(stderr, gOtherMessageTable[messageID]);
+		fprintf(stderr, "%s",gOtherMessageTable[messageID]);
 	}
 	
 	return;

@@ -23,10 +23,11 @@
 #include	<stdio.h>
 #include	<fcntl.h>
 #include	<stdlib.h>
-#include	<errno.h>
-#include	<asm/errno.h>
+#include	<errno.h>					/* asm/errno.h -> errno.h */
 #include	<sys/ioctl.h>
 #include	<linux/lp.h>
+#include	<string.h>
+
 #ifdef DATA_LOG
 #include        <sys/stat.h>
 #endif
@@ -246,7 +247,7 @@ int data_output_process(int sm_sock_fd)
 		ptr = buf;
 		/* data print(output) loop */
 		for(;r_size > 0;r_size -= w_size){
-			int err;
+			int __attribute__ ((unused)) err;
 
 			signal_block(sigmask);   /* signal block */
 			get_printer_sem(sem_id); /* printer lock */

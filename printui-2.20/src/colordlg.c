@@ -40,6 +40,8 @@
 #	include "support.h"
 #endif
 
+#include <string.h>
+
 #include "bjuidefs.h"
 
 

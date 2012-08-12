@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MP610
-Exec=cngpij -PCanon-MP610
+Exec=cngpij -P Canon-MP610
 Icon=printer.png
 Categories=Graphics
 Type=Application

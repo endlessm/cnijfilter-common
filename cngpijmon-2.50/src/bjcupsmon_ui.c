@@ -26,6 +26,7 @@
 	#include  "support.h"
 #endif
 
+#include "interface.h"
 #include "bjcupsmon_common.h"
 #include "bjcupsmon_ui.h"
 #include "bjcupsmon_funcprot.h"
@@ -206,7 +207,7 @@ PUBLIC void initUI(gchar *pWindowTitle, ST_PrinterStatus *pPrinterStatus, gboole
 /*** Parameters start ***/
 	ENUM_STSMessageID	*pMessageID;					// Pointer to array of message ID.
 	gint				i;								// Counter.
-	struct	sigaction	sa;
+//	struct	sigaction	sa;
 /*** Parameters end ***/
 
 	// Show window.
@@ -630,7 +631,7 @@ PRIVATE void insertStringToText_NoConv(const gchar *pWidgetName, const gchar *pS
 PRIVATE void freezeText(const gchar *pWidgetName, gboolean freeze)
 {
 /*** Parameters start ***/
-	GtkWidget	*widget = NULL;		// Temporary pointer to widget.
+	GtkWidget __attribute__ ((unused))	*widget = NULL;		// Temporary pointer to widget.
 /*** Parameters end ***/
 	
 	widget = lookupWidget(pWidgetName);
@@ -724,7 +725,7 @@ PUBLIC GtkWidget* lookupWidget(const gchar *pWidgetName)
 PUBLIC void outputCommandLineMessage(ENUM_OtherMessageID messageID)
 {
 	if (messageID > ID_OTHER_MESSAGE_NONE) {
-		fprintf(stderr, gOtherMessageTable[messageID]);
+		fprintf(stderr, "%s",gOtherMessageTable[messageID]);
 	}
 	
 	return;

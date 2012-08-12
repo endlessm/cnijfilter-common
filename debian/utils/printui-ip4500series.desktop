@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-IP4500
-Exec=cngpij -PCanon-IP4500
+Exec=cngpij -P Canon-IP4500
 Icon=printer.png
 Categories=Graphics
 Type=Application

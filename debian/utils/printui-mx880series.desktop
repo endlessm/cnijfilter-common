@@ -2,7 +2,7 @@
 [Desktop Entry]
 MimeType=text/pro
 Name=Printui-MX880
-Exec=cngpij -PCanon-MX880
+Exec=cngpij -P Canon-MX880
 Icon=printer.png
 Categories=Graphics
 Type=Application
