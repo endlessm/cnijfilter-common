@@ -21,6 +21,7 @@
 #include	<config.h>
 #endif	// HAVE_CONFIG_H
 
+#define _IPP_PRIVATE_STRUCTURES 1
 #include <cups/cups.h>
 #include <cups/language.h>
 #include <cups/ppd.h>

@@ -1,11 +1,10 @@
-/*  Canon Bubble Jet Print Filter.
- *  Copyright CANON INC. 2001-2005
+/*  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +13,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -37,7 +36,8 @@
 #ifdef	USE_LIB_GLADE
 #	include <glade/glade.h>
 #endif
-#include <libxml/parser.h>
+/* #include <gnome-xml/parser.h> */
+#include <libxml/parser.h>	/* Ver.2.80 */
 #include <string.h>
 
 #ifndef	USE_LIB_GLADE
@@ -71,14 +71,18 @@ static void FreeTree(GTree* tree)
 
 static void AddKeyAndTextToTree(xmlNodePtr xmlnode, GTree* tree)
 {
-	char *key, *text;
+	/*  patch to overcome libxml2-issue */
+	/* char *key, *text; */
+	xmlChar *key, *text;
 
 	if( !xmlnode->name || g_ascii_strcasecmp((const gchar *)xmlnode->name,"Item") != 0 )
 		return;
 
-	key  = g_strdup((const gchar *)xmlGetProp(xmlnode,(const xmlChar *)"key"));
-	text = g_strdup((const gchar *)xmlNodeGetContent(xmlnode));
-
+	/*  patch to overcome libxml2-issue */
+	/* key  = g_strdup((const gchar *)xmlGetProp(xmlnode,(const xmlChar *)"key")); */
+	/* text = g_strdup((const gchar *)xmlNodeGetContent(xmlnode)); */
+	key  = xmlStrdup(xmlGetProp(xmlnode,xmlCharStrdup("key")));
+	text = xmlStrdup(xmlNodeGetContent(xmlnode));
 	if( key != NULL && text != NULL )
 	{
 		g_tree_insert(tree, (gpointer)key, (gpointer)text);
@@ -89,7 +93,10 @@ static void ParseXMLDoc(xmlDocPtr doc, GTree* tree)
 {
 	xmlNodePtr node;
 
-	for( node = doc->xmlRootNode->xmlChildrenNode ; node != NULL ; node = node->next )
+	/*  patch to overcome libxml2-issue */
+	/* for( node = doc->root->childs ; node != NULL ; node = node->next ) */
+	/* for( node = doc->xmlRootNode->xmlChildrenNode ; node != NULL ; node = node->next ) */
+	for( node = xmlDocGetRootElement(doc)->children ; node != NULL ; node = node->next )
 	{
 		AddKeyAndTextToTree(node, tree);
 	}
@@ -102,9 +109,22 @@ static gboolean ReadXMLFile(char *fname, GTree* tree)
 	if( (doc = xmlParseFile(fname)) == NULL )
 		return FALSE;
 
-	if( doc->xmlRootNode == NULL
-	 || doc->xmlRootNode->name == NULL
-	 || g_ascii_strcasecmp((const gchar *)doc->xmlRootNode->name, "KeyTextList") != 0)
+#if 0
+	if( doc->root == NULL
+	 || doc->root->name == NULL
+	 || g_strcasecmp(doc->root->name, "KeyTextList") != 0)
+	{
+		xmlFreeDoc(doc);
+		return FALSE;
+	}
+#endif
+	/*  patch to overcome libxml2-issue */
+	/* if( doc->xmlRootNode == NULL */
+	/* || doc->xmlRootNode->name == NULL */
+	/* || g_ascii_strcasecmp((const gchar *)doc->xmlRootNode->name, "KeyTextList") != 0) */
+	if( xmlDocGetRootElement(doc) == NULL
+	 || xmlDocGetRootElement(doc)->name == NULL
+	 || xmlStrcasecmp(xmlDocGetRootElement(doc)->name, xmlCharStrdup("KeyTextList")) != 0)
 	{
 		xmlFreeDoc(doc);
 		return FALSE;

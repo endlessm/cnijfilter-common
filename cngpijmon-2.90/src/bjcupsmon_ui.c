@@ -37,6 +37,7 @@
 PRIVATE GladeXML	*gXmlMainWnd = NULL;		// Pointer to glade xml of main window.
 #else
 PRIVATE GtkWidget	*gMainWnd = NULL;			// Pointer to main window. ver.2.50
+GtkWidget* create_mainWindow (void);
 #endif
 
 PRIVATE const gchar	*gSTSMessageTable[] = {		// Printer status message table.

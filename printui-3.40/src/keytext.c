@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -71,14 +71,18 @@ static void FreeTree(GTree* tree)
 
 static void AddKeyAndTextToTree(xmlNodePtr xmlnode, GTree* tree)
 {
-	char *key, *text;
+	/*  patch to overcome libxml2-issue */
+	/* char *key, *text; */
+	xmlChar *key, *text;
 
 	if( !xmlnode->name || g_ascii_strcasecmp((const gchar *)xmlnode->name,"Item") != 0 )
 		return;
 
-	key  = g_strdup((const gchar *)xmlGetProp(xmlnode,(const xmlChar *)"key"));
-	text = g_strdup((const gchar *)xmlNodeGetContent(xmlnode));
-
+	/*  patch to overcome libxml2-issue */
+	/* key  = g_strdup((const gchar *)xmlGetProp(xmlnode,(const xmlChar *)"key")); */
+	/* text = g_strdup((const gchar *)xmlNodeGetContent(xmlnode)); */
+	key  = xmlStrdup(xmlGetProp(xmlnode,xmlCharStrdup("key")));
+	text = xmlStrdup(xmlNodeGetContent(xmlnode));
 	if( key != NULL && text != NULL )
 	{
 		g_tree_insert(tree, (gpointer)key, (gpointer)text);
@@ -89,8 +93,10 @@ static void ParseXMLDoc(xmlDocPtr doc, GTree* tree)
 {
 	xmlNodePtr node;
 
-/*	for( node = doc->root->childs ; node != NULL ; node = node->next ) */
-	for( node = doc->xmlRootNode->xmlChildrenNode ; node != NULL ; node = node->next )
+	/*  patch to overcome libxml2-issue */
+	/* for( node = doc->root->childs ; node != NULL ; node = node->next ) */
+	/* for( node = doc->xmlRootNode->xmlChildrenNode ; node != NULL ; node = node->next ) */
+	for( node = xmlDocGetRootElement(doc)->children ; node != NULL ; node = node->next )
 	{
 		AddKeyAndTextToTree(node, tree);
 	}
@@ -112,9 +118,13 @@ static gboolean ReadXMLFile(char *fname, GTree* tree)
 		return FALSE;
 	}
 #endif
-	if( doc->xmlRootNode == NULL
-	 || doc->xmlRootNode->name == NULL
-	 || g_ascii_strcasecmp((const gchar *)doc->xmlRootNode->name, "KeyTextList") != 0)
+	/*  patch to overcome libxml2-issue */
+	/* if( doc->xmlRootNode == NULL */
+	/* || doc->xmlRootNode->name == NULL */
+	/* || g_ascii_strcasecmp((const gchar *)doc->xmlRootNode->name, "KeyTextList") != 0) */
+	if( xmlDocGetRootElement(doc) == NULL
+	 || xmlDocGetRootElement(doc)->name == NULL
+	 || xmlStrcasecmp(xmlDocGetRootElement(doc)->name, xmlCharStrdup("KeyTextList")) != 0)
 	{
 		xmlFreeDoc(doc);
 		return FALSE;

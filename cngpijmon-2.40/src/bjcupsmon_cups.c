@@ -17,6 +17,7 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  */
 
+#define _IPP_PRIVATE_STRUCTURES 1
 /*** Includes ***/
 #include <cups/cups.h>
 #include <cups/ppd.h>

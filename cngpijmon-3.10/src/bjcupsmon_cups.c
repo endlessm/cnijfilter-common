@@ -17,6 +17,7 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  */
 
+#define _IPP_PRIVATE_STRUCTURES 1
 /*** Includes ***/
 #include <cups/cups.h>
 #include <cups/ppd.h>
@@ -212,9 +213,8 @@ PRIVATE gint checkPrinterState(gchar *pDestName, gchar *pURI, gchar *pServerName
 	else {
 		pRequest = ippNew();
 		
-		pRequest = ippNewRequest(IPP_GET_PRINTER_ATTRIBUTES);
-//		pRequest->request.op.operation_id = IPP_GET_PRINTER_ATTRIBUTES;
-//		pRequest->request.op.request_id   = 1;
+		pRequest->request.op.operation_id = IPP_GET_PRINTER_ATTRIBUTES;
+		pRequest->request.op.request_id   = 1;
 		
 		pLanguage = bjcupsLangDefault();			// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19 
 				

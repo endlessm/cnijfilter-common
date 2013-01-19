@@ -1072,14 +1072,18 @@ char* make_cmd_param(cups_option_t *p_cups_opt, int num_opt,
 			else
 			{
 				fprintf(stderr,"DEBUG: (3)Make cif options : choice=%s(p_table->ppd_key=%s)\n",choice,p_table->ppd_key);
-				to_lower_except_size_X(choice);
-
+				/* this is supposed to fix borderless printing */
+				/* to_lower_except_size_X(choice); */
 				if( !strcmp(p_table->ppd_key, "PageSize") && is_borderless(choice) )
 				{
 					fprintf(stderr,"DEBUG: (3)Make cif options : Add borderless(%s)\n",choice);
 					param_list_add(&p_list, "--borderless", "", 1);
 					borderless_exist = 1;
 				}
+
+				/* this is supposed to fix borderless printing */
+				to_lower_except_size_X(choice);
+
 				param_list_add(&p_list, p_table->opt_key, choice, strlen(choice) + 1);
 			}
 		}
