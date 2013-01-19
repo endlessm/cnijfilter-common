@@ -1,0 +1,92 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(configure.in)
+AC_ARG_PROGRAM
+
+AC_ARG_ENABLE(progpath)
+if test "${enable_progpath}" = "" ; then
+   enable_progpath="${ac_default_prefix}/bin"
+fi
+
+AC_DEFINE([ENABLE_NLS], [], [Description])
+AC_DEFINE([HAVE_GETTEXT], [], [Description])
+AC_DEFINE([HAVE_LC_MESSAGES], [], [Description])
+AC_DEFINE([PACKAGE_LOCALE_DIR], [], [Description])
+AC_DEFINE([PACKAGE_DATA_DIR], [], [Description])
+AC_DEFINE([PACKAGE_SOURCE_DIR], [], [Description])
+AC_DEFINE([PROG_PATH], [], [Description])
+
+AC_DEFINE_UNQUOTED(PROG_PATH, "$enable_progpath")
+AC_SUBST(PROG_PATH)
+
+if test "${program_suffix}" = "NONE"; then
+  program_suffix="mg6300"
+  program_transform_name="s,\$\$,${program_suffix},;"
+fi
+
+
+AM_INIT_AUTOMAKE(cngpijmon${program_suffix}, 3.80-1)
+AM_CONFIG_HEADER(config.h)
+
+AC_ISC_POSIX
+AC_PROG_CC
+AM_PROG_CC_STDC
+AC_HEADER_STDC
+
+AM_PATH_GTK_2_0(2.0.0, ,
+            AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
+
+GETTEXT_PACKAGE=cngpijmon${program_suffix}
+AC_SUBST(GETTEXT_PACKAGE)
+dnl AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+
+dnl Add the languages which your application supports here.
+ALL_LINGUAS="cs da de el es fi fr hu it ja ko nl nb pl pt ru sv th tr zh zh_TW id"
+AM_GLIB_GNU_GETTEXT
+
+dnl Set PACKAGE_LOCALE_DIR in config.h.
+if test "x${prefix}" = "xNONE"; then
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${ac_default_prefix}/${DATADIRNAME}/locale")
+else
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${prefix}/${DATADIRNAME}/locale")
+fi
+
+dnl Set PACKAGE_DATA_DIR in config.h.
+if test "x${datadir}" = 'x${prefix}/share'; then
+  if test "x${prefix}" = "xNONE"; then
+    AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${ac_default_prefix}/share/${PACKAGE}")
+  else
+    AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${prefix}/share/${PACKAGE}")
+  fi
+else
+  AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${datadir}/${PACKAGE}")
+fi
+
+dnl Set PACKAGE_SOURCE_DIR in config.h.
+packagesrcdir=`cd $srcdir && pwd`
+AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "${packagesrcdir}")
+
+case "$CFLAGS" in
+  *-O2* ) ;;
+  *) CFLAGS="$CFLAGS -O2"
+esac
+
+dnl Use -Wall if we have gcc.
+changequote(,)dnl
+if test "x$GCC" = "xyes"; then
+  case " $CFLAGS " in
+  *[\ \	]-Wall[\ \	]*) ;;
+  *) CFLAGS="$CFLAGS -Wall" ;;
+  esac
+fi
+changequote([,])dnl
+
+XML2_CFLAGS=`xml2-config --cflags`
+AC_SUBST(XML2_CFLAGS)
+
+AC_OUTPUT([  
+Makefile
+src/Makefile
+po/Makefile.in
+])
+

@@ -21,7 +21,7 @@
 ##
 ##############################################################################
 
-C_version="3.70-1"
+C_version="3.80-1"
 C_copyright_end="2012"
 C_default_system="deb"
 
@@ -73,7 +73,7 @@ L_INST_PRN_01_20="Enter the printer name.%s"
 
 L_INST_PRN_01_21="The printer name you entered already exists. Do you want to overwrite it?\nEnter [y] for Yes or [n] for No.%s"
 
-L_INST_PRN_01_22="The printer name is invalid.\nYou can only use the following characters for the printer name:\n alphanumeric characters (a-z, A-Z, 0-9), \".\", \"-\", \"_\", \"+\", \"@\", \"&\"\n"
+L_INST_PRN_01_22="The printer name is invalid.\nYou can only use the following characters for the printer name:\n alphanumeric characters (a-z, A-Z, 0-9), \".\", \"-\", \"_\", \"+\", \"@\"\n"
 
 L_INST_PRN_01_23="Set as Default Printer\n"
 L_INST_PRN_01_24="Do you want to set this printer as the default printer?\nEnter [y] for Yes or [n] for No.%s"
@@ -285,12 +285,27 @@ p_FUNC_get_cupsd_command()
 {
 	local p_local_service_command_tmp=""
 	local p_local_service_command=""
+	local p_local_systemctl_command_tmp=""
+	local p_local_systemctl_command=""
+
+	#-----------------------------
+	# Check "systemctl" command
+	#-----------------------------
+	p_local_systemctl_command_tmp=`whereis -b systemctl`
+	p_local_systemctl_command=`echo -n ${p_local_systemctl_command_tmp} | cut -s -d' ' -f2`
+	if [ -n "$p_local_systemctl_command" ]; then
+		${p_local_systemctl_command} status cups.service 1> /dev/null
+		if [ $? -eq 0 ]; then
+			P_cupsd_command_current=${P_printer_sudo_command}${p_local_systemctl_command}" restart cups.service"
+			return 0
+		fi
+	fi
 
 	#-----------------------------
 	# Check "service" command
 	#-----------------------------
 	p_local_service_command_tmp=`whereis -b service`
-	p_local_service_command=`echo -n ${p_local_service_command_tmp} | cut -d' ' -f2`
+	p_local_service_command=`echo -n ${p_local_service_command_tmp} | cut -s -d' ' -f2`
 	if [ -n "$p_local_service_command" ]; then
 		${p_local_service_command} cups status 1> /dev/null
 		if [ $? -eq 0 ]; then
@@ -444,7 +459,7 @@ p_FUNC_is_valid_entry_name()
 	p_local_tmpname="$1"
 
 	case "$p_local_tmpname" in
-		*[^a-zA-Z0-9\.\+\-\_\&\@]*)
+		*[^a-zA-Z0-9\.\+\-\_\@]*)
 			return 0;;	#NG
 		*)
 			return 1;;	#OK
@@ -460,7 +475,7 @@ p_FUNC_execute_prepare_process()
 	local p_local_command=""
 
 	p_local_command=`whereis -b ldconfig | cut -d' ' -f2`
-	`${p_local_command}`;
+	`${P_printer_sudo_command}${p_local_command}`;
 }
 
 #################################################################
@@ -1477,7 +1492,7 @@ if [ ${0##*/} = $C_install_script_fname ]; then
 		if [ $C_system = "rpm" ]; then
 			##  Check permission by root ##
 			if test `id -un` != "root"; then
-				su -c "$0 $C_argment"
+				su -c "$0 $*"
 				exit
 			fi
 		else

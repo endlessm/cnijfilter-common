@@ -37,13 +37,17 @@
 #define CNCL_CHECK_START2		(2)
 #define CNCL_CHECK_END			(3)
 #define CNCL_CHECK_DATA			(4)
+#define CNCL_CHECK_POWERON		(5)
+
 #define CNCL_COMMAND_POWEROFF	(11)
+#define CNCL_COMMAND_POWERON	(12)
 
 #define CNCL_COMMAND_START1		(21)
 #define CNCL_COMMAND_START2		(22)
 #define CNCL_COMMAND_END		(23)
 
 #define CNCL_MAKECOMMAND_BUF_LEN	(1024)
+
 
 /*
  *   prototypes
@@ -53,5 +57,6 @@ extern CNCLErr CNCL_MakeDeviceCommand( short operation_id , char *out_data_buf ,
 extern CNCLErr CNCL_CheckPrintCommand( short operation_id , char *in_data_buf , short in_data_size  , char *id_str_buf , short id_buf_len );
 extern CNCLErr CNCL_GetStatusCommand  ( char *in_data_buf , short in_data_size , char *out_data_buf , short out_buf_len , short *out_data_size );
 extern CNCLErr CNCL_SetSSRDef        ( char *in_data_buf  , short *data_size );
+extern CNCLErr CNCL_SetImageDirection( char  *in_data_buf, short *data_size, short direction);
 
 #endif	/* __IVECUTILS_H__ */

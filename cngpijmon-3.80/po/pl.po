@@ -1,0 +1,3018 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cngpijmon 3.80\n"
+"POT-Creation-Date: 2012-05-08 10:55+0900\n"
+"PO-Revision-Date: 2012-07-03 10:42+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. ID_STS_MESSAGE_SC_USEDTANK_FULL
+#: src/bjcupsmon_ui.c:43
+msgid ""
+"The ink absorber is full.\n"
+"Contact the service center.\n"
+msgstr ""
+"Pochłaniacz atramentu jest pełny.\n"
+"Skontaktuj się z punktem serwisowym.\n"
+
+#. ID_STS_MESSAGE_SC_USEDTANK_FULLJP
+#: src/bjcupsmon_ui.c:45
+msgid ""
+"The ink absorber is full.\n"
+"It needs to be replaced.\n"
+"Further printing is not possible until this part is replaced.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Pochłaniacz atramentu jest pełny.\n"
+"Konieczna jest jego wymiana.\n"
+"Do czasu czasu jego wymiany dalsze drukowanie jest niemożliwe.\n"
+"Skontaktuj się z punktem obsługi lub punktem serwisowym.\n"
+"Pochłaniacz atramentu może wymieniać tylko wykwalifikowany personel.\n"
+
+#. ID_STS_MESSAGE_ERROR_COMMON_NUMBER
+#. ID_STS_MESSAGE_SC_SERVICE_ERROR_09COMMON_NUMBER
+#: src/bjcupsmon_ui.c:47 src/bjcupsmon_ui.c:627
+#, c-format
+msgid ""
+"Support Code : %s\n"
+"\n"
+msgstr ""
+"Kod pomocniczy: %s\n"
+"\n"
+
+#. ID_STS_MESSAGE_SC_SERVICE_ERROR_PRE
+#: src/bjcupsmon_ui.c:49
+#, c-format
+msgid ""
+"Service error %s.\n"
+"Cancel printing and turn the printer off and then on again.\n"
+"If this doesn't clear the error, see the printer manual for more detail."
+msgstr ""
+"Błąd serwisowy %s.\n"
+"Anuluj drukowanie, wyłącz drukarkę i włącz ją ponownie.\n"
+"Jeśli nie spowoduje to usunięcia błędu, poszukaj szczegółowych informacji w podręczniku drukarki."
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT1
+#: src/bjcupsmon_ui.c:53
+msgid "Paper has run out.\n"
+msgstr "Skończył się papier.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT
+#: src/bjcupsmon_ui.c:55
+msgid "Load paper.\n"
+msgstr "Załaduj papier.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT21
+#: src/bjcupsmon_ui.c:57
+msgid "Load paper into the sheet feeder.\n"
+msgstr "Załaduj papier do podajnika arkuszy.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT22
+#: src/bjcupsmon_ui.c:59
+msgid "Load paper into the cassette.\n"
+msgstr "Załaduj papier do kasety.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT42
+#: src/bjcupsmon_ui.c:61
+msgid "Load paper into the front feeder.\n"
+msgstr "Załaduj papier do podajnika przedniego.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT3
+#: src/bjcupsmon_ui.c:63
+msgid "Press the printer's RESUME button.\n"
+msgstr "Naciśnij przycisk WZNÓW (RESUME) na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT33
+#: src/bjcupsmon_ui.c:65
+msgid "Press the printer's OK button.\n"
+msgstr "Naciśnij przycisk OK na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT_START
+#: src/bjcupsmon_ui.c:67
+msgid "Press the printer's Start button.\n"
+msgstr "Naciśnij przycisk Rozpocznij (Start) na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM
+#: src/bjcupsmon_ui.c:69
+msgid "Paper is jammed.\n"
+msgstr "Wystąpiło zakleszczenie papieru.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM1
+#: src/bjcupsmon_ui.c:71
+msgid "Paper is jammed at the paper output slot.\n"
+msgstr "Wystąpiło zakleszczenie papieru w wyjściowej szczelinie papieru.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM1_2nd
+#: src/bjcupsmon_ui.c:73
+msgid "Remove the jammed paper.\n"
+msgstr "Usuń zacięty papier.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM1_3rd
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT_3rd
+#: src/bjcupsmon_ui.c:75 src/bjcupsmon_ui.c:159
+msgid ""
+"Press the printer's RESUME button. Printing resumes from the next paper.\n"
+msgstr "Naciśnij przycisk WZNÓW (RESUME) na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM2_3rd
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT2_3rd
+#: src/bjcupsmon_ui.c:77 src/bjcupsmon_ui.c:163
+msgid "Press the printer's OK button. Printing resumes from the next paper.\n"
+msgstr "Naciśnij przycisk OK na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM2_START
+#: src/bjcupsmon_ui.c:79
+msgid ""
+"Press the printer's Start button. Printing resumes from the next paper.\n"
+msgstr "Naciśnij przycisk Rozpocznij (Start) na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03
+#: src/bjcupsmon_ui.c:81
+msgid "Paper is jammed in the transport unit.\n"
+msgstr "Wystąpiło zacięcie papieru w zespole przenoszenia papieru.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_2nd
+#: src/bjcupsmon_ui.c:83
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, first remove the cassette and remove the paper from the cassette "
+"side.\n"
+msgstr "Otwórz pokrywę tylną, usuń zacięty papier. Jeśli nie można wyjąć zakleszczonego papieru, najpierw usuń kasetę i usuń papier od strony kasety.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_2ndFF
+#: src/bjcupsmon_ui.c:85
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, remove the paper from the front feeder side.\n"
+msgstr "Otwórz pokrywę tylną, usuń zacięty papier. Jeśli nie można tego zrobić, usuń zacięty papier od strony podajnika przedniego.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM04
+#: src/bjcupsmon_ui.c:87
+msgid "Paper is jammed in the duplexing transport unit.\n"
+msgstr "Papier jest zakleszczony w zespole odwracania papieru.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM04_2nd
+#: src/bjcupsmon_ui.c:89
+msgid ""
+"Remove the cassette, push the printer over onto its back side, and then open "
+"the duplexing transport unit cover. Next, remove the jammed paper, and "
+"immediately return the printer to its original position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Wyjmij kasetę, postaw drukarkę na jej tylnej ściance i otwórz zespół przenoszenia papieru dla druku dwustronnego. Następnie usuń zacięty papier i szybko ustaw drukarkę w pierwotnym położeniu.\n"
+"Dodatkowe informacje na ten temat znajdują się w podręczniku użytkownika.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM05_2nd
+#: src/bjcupsmon_ui.c:91
+msgid ""
+"Remove the cassette, push the printer over onto its side, and then open the "
+"duplexing transport unit cover. Next, remove the jammed paper, and "
+"immediately return the printer to its original position.\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Wyjmij kasetę, postaw drukarkę na boku i otwórz zespół przenoszenia papieru dla druku dwustronnego. Następnie usuń zacięty papier i szybko ustaw drukarkę w pierwotnym położeniu.\n"
+"Dodatkowe informacje na ten temat znajdują się w podręczniku użytkownika.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST
+#: src/bjcupsmon_ui.c:93
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Aby kontynuować drukowanie, naciśnij na drukarce przycisk WZNÓW (RESUME).\n"
+"Skontaktuj się z punktem serwisowym."
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST2
+#: src/bjcupsmon_ui.c:95
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Aby kontynuować drukowanie, naciśnij na drukarce przycisk OK.\n"
+"Skontaktuj się z punktem serwisowym."
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP
+#: src/bjcupsmon_ui.c:97
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Aby kontynuować drukowanie, naciśnij na drukarce przycisk WZNÓW (RESUME).\n"
+"Wkrótce konieczne będzie przekazanie drukarki do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z punktem obsługi lub punktem serwisowym.\n"
+"Pochłaniacz atramentu może wymieniać tylko wykwalifikowany personel."
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP2
+#: src/bjcupsmon_ui.c:99
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Aby kontynuować drukowanie, naciśnij na drukarce przycisk OK.\n"
+"Wkrótce konieczne będzie przekazanie drukarki do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z punktem obsługi lub punktem serwisowym.\n"
+"Pochłaniacz atramentu może wymieniać tylko wykwalifikowany personel."
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST_START
+#: src/bjcupsmon_ui.c:101
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"Contact the service center."
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Aby kontynuować drukowanie, naciśnij na drukarce przycisk Rozpocznij (Start).\n"
+"Skontaktuj się z punktem serwisowym."
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP_START
+#: src/bjcupsmon_ui.c:103
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the support center or the service center.\n"
+"The ink absorber can only be replaced by a qualified technician."
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Aby kontynuować drukowanie, naciśnij na drukarce przycisk Rozpocznij (Start).\n"
+"Wkrótce konieczne będzie przekazanie drukarki do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z punktem obsługi lub punktem serwisowym.\n"
+"Pochłaniacz atramentu może wymieniać tylko wykwalifikowany personel."
+
+#. ID_STS_MESSAGE_OC_COVER_OPEN
+#: src/bjcupsmon_ui.c:105
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the cartridge cannot be changed. Close the "
+"cover, wait for printing to finish, then open the cover again and change the "
+"cartridge.\n"
+"\n"
+msgstr ""
+"Pokrywa drukarki jest otwarta.\n"
+"Jeśli trwa drukowanie, nie istnieje możliwość zmiany kasety. Zamknij pokrywę i poczekaj na zakończenie drukowania, a następnie otwórz pokrywę ponownie i zmień kasetę.\n"
+"\n"
+
+#. ID_STS_MESSAGE_OC_COVER_OPEN2
+#: src/bjcupsmon_ui.c:107
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the print head or ink tank cannot be changed. "
+"Close the cover, wait for printing to finish, then open the cover again and "
+"change the print head or ink tank.\n"
+"\n"
+msgstr ""
+"Pokrywa drukarki jest otwarta.\n"
+"eśli trwa drukowanie, nie można wymienić głowicy drukującej ani zbiornika z atramentem. Zamknij pokrywę, poczekaj na zakończenie drukowania, a następnie ponownie otwórz pokrywę i wymień głowicę drukującą lub zbiornik atramentu.\n"
+"\n"
+
+#. ID_STS_MESSAGE_OC_COVER_CLOSE
+#: src/bjcupsmon_ui.c:109
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Open the paper output tray. Printing will restart.\n"
+msgstr ""
+"Nie można wydrukować dokumentu, ponieważ taca wyprowadzania papieru jest zamknięta.\n"
+"Otwórz wyjściowy zasobnik papieru. Drukowanie zostanie wznowione.\n"
+
+#. ID_STS_MESSAGE_OC_COVER_CLOSE2
+#: src/bjcupsmon_ui.c:111
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+"Press the printer's Open button, and open the paper output tray. Printing "
+"will restart.\n"
+msgstr ""
+"Nie można wydrukować dokumentu, ponieważ taca wyprowadzania papieru jest zamknięta.\n"
+"Naciśnij przycisk Otwórz na drukarce i otwórz tacę wyprowadzania papieru. Drukowanie zostanie wznowione.\n"
+
+#. ID_STS_MESSAGE_OC_COVER_CLOSE3
+#: src/bjcupsmon_ui.c:113
+msgid ""
+"Document printing cannot be executed because the front cover is closed.\n"
+"Open the front cover. Printing will restart.\n"
+msgstr ""
+"Nie można uruchomić drukowania, ponieważ pokrywa przednia jest zamknięta.\n"
+"Otwórz pokrywę przednią. Drukowanie zostanie uruchomione ponownie.\n"
+
+#. ID_STS_MESSAGE_BUSY_CLEANING
+#: src/bjcupsmon_ui.c:115
+msgid ""
+"Cleaning.\n"
+"Please wait.\n"
+msgstr ""
+"Czyszczenie.\n"
+"Czekaj.\n"
+
+#. ID_STS_MESSAGE_BUSY_CARTRIDGE_CHANGE
+#: src/bjcupsmon_ui.c:117
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the ink cartridge, close the printer's cover.\n"
+"\n"
+msgstr ""
+"Uchwyt znajduje się w pozycji umożliwiającej wymianę.\n"
+"Po wymianie kasety z atramentem zamknij pokrywę drukarki.\n"
+"\n"
+
+#. ID_STS_MESSAGE_BUSY_CARTRIDGE_CHANGE2
+#: src/bjcupsmon_ui.c:119
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the print head or the ink tank, close the cover of the "
+"printer. To replace only the ink tank, do not remove the print head from the "
+"printer. Do not touch the lock lever.\n"
+"\n"
+msgstr ""
+"Uchwyt znajduje się w pozycji umożliwiającej wymianę.\n"
+"Po wymianie głowicy drukującej lub zbiornika z atramentem zamknij pokrywę drukarki. Aby wymienić jedynie zbiornik z atramentem, nie wyjmuj z drukarki głowicy drukującej. Nie dotykaj dźwigni blokady.\n"
+"\n"
+
+#. ID_STS_MESSAGE_BUSY_TEST_PRINTING
+#. ID_STS_MESSAGE_BASE_PRINTING
+#: src/bjcupsmon_ui.c:121 src/bjcupsmon_ui.c:129
+msgid "Printing.\n"
+msgstr "Trwa drukowanie.\n"
+
+#. ID_STS_MESSAGE_BUSY_PRINTER_USED
+#. ID_OTHER_MESSAGE_OTHEROPERATION
+#: src/bjcupsmon_ui.c:123 src/bjcupsmon_ui.c:835
+msgid "The printer is performing another operation.\n"
+msgstr "Drukarka wykonuje inną operację.\n"
+
+#. ID_STS_MESSAGE_BUSY_TANK_CHANGE
+#: src/bjcupsmon_ui.c:125
+msgid ""
+"The holder is in the replacement position.\n"
+"After replacing the ink tank, close the cover.\n"
+"\n"
+msgstr ""
+"Uchwyt znajduje się w pozycji umożliwiającej wymianę.\n"
+"Po wymianie zbiornika z atramentem zamknij pokrywę.\n"
+"\n"
+
+#. ID_STS_MESSAGE_CARTRIDGE_NONE
+#: src/bjcupsmon_ui.c:127
+msgid ""
+"A print head is not installed or the installed print head is not compatible "
+"with this printer.\n"
+"Install an appropriate print head and close the cover of the printer.\n"
+msgstr ""
+"Głowica drukująca nie jest zainstalowana lub zainstalowana głowica drukująca nie jest zgodna z tą drukarką.\n"
+"Zainstaluj właściwą głowicę drukującą i zamknij pokrywę drukarki.\n"
+
+#. ID_STS_MESSAGE_BASE_ONLINE
+#: src/bjcupsmon_ui.c:131
+msgid "Printer is online.\n"
+msgstr "Drukarka jest podłączona.\n"
+
+#. ID_STS_MESSAGE_WAR_INKLOW_PRE
+#: src/bjcupsmon_ui.c:133
+msgid ""
+"\n"
+"The following ink tank is running low.\n"
+msgstr ""
+"\n"
+"W następującym zbiorniku kończy się atrament.\n"
+
+#. ID_STS_MESSAGE_WAR_INKLOW_40_PRE
+#: src/bjcupsmon_ui.c:135
+msgid ""
+"\n"
+"The following ink is running low.\n"
+msgstr ""
+"\n"
+"Kończy się następujący atrament.\n"
+
+#. ID_STS_MESSAGE_WAR_INKLOW_AFTER
+#: src/bjcupsmon_ui.c:137
+msgid ""
+"\n"
+"Prepare a new ink tank.\n"
+msgstr ""
+"\n"
+"Przygotuj nowy zbiornik z atramentem.\n"
+
+#. ID_STS_MESSAGE_WAR_INKLOW_40_AFTER
+#: src/bjcupsmon_ui.c:139
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"The resulting print quality may not be satisfactory, if printing is "
+"continued under this condition.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"Przygotuj nową kasetę z atramentem.\n"
+"W przypadku kontynuowania drukowania mimo braku atramentu jakość wydruku może być niezadowalająca.\n"
+"Jeśli wyczerpała się kaseta z czarnym lub kolorowym atramentem, to można tak skonfigurować drukarkę, aby kontynuować drukowanie za pomocą innej kasety wybranej w opcji Ustawienia kasety z atramentem na karcie Obsługa sterownika drukarki.\n"
+
+#. ID_STS_MESSAGE_WAR_REG_NO_ADJUSTMENT
+#: src/bjcupsmon_ui.c:141
+msgid ""
+"\n"
+"The ink cartridge has been installed or replaced.\n"
+"\n"
+"If the printout contains misaligned lines or is not satisfactory after the "
+"installation or replacement, refer to the user's guide and carry out the "
+"print head alignment.\n"
+msgstr ""
+"\n"
+"Zainstalowano lub wymieniono kasetę z atramentem.\n"
+"\n"
+"Jeśli po zainstalowaniu lub wymianie kasety z atramentem na wydruku występują nierówne linie lub wydruk jest niezadowalający, zapoznaj się z instrukcjami zamieszczonymi w podręczniku użytkownika i przeprowadź wyrównywanie głowic drukujących.\n"
+
+#. ID_STS_MESSAGE_CIL_OFF
+#: src/bjcupsmon_ui.c:143
+msgid ""
+"\n"
+"The printer is set not to display a low ink warning.\n"
+msgstr ""
+"\n"
+"Drukarka nie jest ustawiona na wyświetlanie ostrzeżenia o niskim poziomie atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE
+#: src/bjcupsmon_ui.c:147
+msgid "Printing cannot be executed because the inner cover is open.\n"
+msgstr "Nie można przeprowadzić drukowania, ponieważ pokrywa wewnętrzna jest otwarta.\n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE_2nd
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT_2nd
+#: src/bjcupsmon_ui.c:149 src/bjcupsmon_ui.c:157
+msgid "Close the inner cover.\n"
+msgstr "Zamknij pokrywę wewnętrzną.\n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE_3rd
+#: src/bjcupsmon_ui.c:151
+msgid "Press the printer's RESUME button. Printing will restart.\n"
+msgstr "Naciśnij przycisk WZNÓW (RESUME) na drukarce. Drukowanie zostanie wznowione.\n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE2_3rd
+#: src/bjcupsmon_ui.c:153
+msgid "Press the printer's OK button. Printing will restart.\n"
+msgstr "Naciśnij przycisk OK na drukarce. Drukowanie zostanie wznowione.\n"
+
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT2
+#: src/bjcupsmon_ui.c:155 src/bjcupsmon_ui.c:161
+msgid "During printing, the inner cover of the printer was opened.\n"
+msgstr "Pokrywa wewnętrzna drukarki została otwarta podczas drukowania.\n"
+
+#. ID_STS_MESSAGE_OC_INKTANK_NOTPROPERLY
+#: src/bjcupsmon_ui.c:165
+msgid ""
+"An ink tank is not installed properly.\n"
+"Open the cover of the printer, make sure the ink tank is installed properly, "
+"and close the cover."
+msgstr ""
+"Zbiornik z atramentem nie jest prawidłowo zainstalowany.\n"
+"Otwórz pokrywę drukarki, upewnij się, że zbiornik z atramentem jest prawidłowo zainstalowany, a następnie zamknij pokrywę."
+
+#. ID_STS_MESSAGE_OC_INKTANK_NOTPROPERLY_LOCKLEVER_01
+#: src/bjcupsmon_ui.c:167
+msgid ""
+"The print head lock lever is not locked or an ink tank is installed "
+"improperly.\n"
+msgstr "Dźwignie blokady głowicy drukującej nie są zablokowane lub zbiornik z atramentem został zainstalowany w niewłaściwy sposób.\n"
+
+#. ID_STS_MESSAGE_OC_INKTANK_NOTPROPERLY_LOCKLEVER_02
+#: src/bjcupsmon_ui.c:169
+msgid ""
+"Open the printer cover and firmly push down both sides of the print head "
+"lock lever. Make sure both sides of the lever are locked securely.\n"
+msgstr "Otwórz pokrywę drukarki i mocno naciśnij obie strony dźwigni blokady głowicy drukującej. Upewnij się, że obie strony dźwigni są starannie zablokowane.\n"
+
+#. ID_STS_MESSAGE_OC_INKTANK_NOTPROPERLY_LOCKLEVER_03
+#: src/bjcupsmon_ui.c:171
+msgid ""
+"Firmly push down the front side of the top of the ink tank. Make sure the "
+"ink tank is installed properly, and then close the cover.\n"
+msgstr "Mocno naciśnij przód górnej części zbiornika z atramentem. Upewnij się, że zbiornik jest prawidłowo zainstalowany, a następnie zamknij pokrywę.\n"
+
+#. ID_STS_MESSAGE_OC_CARTRIDGE_NOTPROPERLY
+#: src/bjcupsmon_ui.c:173
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Open the printer's cover, make sure the ink cartridge is installed properly, "
+"and close the cover.\n"
+msgstr ""
+"Kaseta z atramentem jest zainstalowana nieprawidłowo.\n"
+"Otwórz pokrywę drukarki, upewnij się, że kaseta z atramentem jest właściwie zainstalowana i zamknij pokrywę.\n"
+
+#. ID_STS_MESSAGE_OC_USBDEVICE
+#: src/bjcupsmon_ui.c:175
+msgid ""
+"A digital camera or device that is not supported by the direct printing "
+"function is connected to the direct print port. Disconnect the cable from "
+"the direct print port. If the device is connected via a USB hub, unplug the "
+"USB hub, and then connect the device directly to the direct print port.\n"
+msgstr "Do portu drukowania bezpośredniego podłączono cyfrowy aparat fotograficzny lub urządzenie nieobsługiwane przez funkcję drukowania bezpośredniego. Odłącz kabel od portu drukowania bezpośredniego. Jeśli urządzenie podłączono przez koncentrator USB, odłącz koncentrator USB, a następnie podłącz urządzenie bezpośrednio do portu drukowania bezpośredniego.\n"
+
+#. ID_STS_MESSAGE_OC_USBDEVICE_BLUETOOTH
+#: src/bjcupsmon_ui.c:177
+msgid ""
+"A noncompliant device is connected to the direct print port or the Bluetooth "
+"unit connector. Disconnect the cable from the direct print port or the "
+"Bluetooth unit connector. If the device is connected via a USB hub, unplug "
+"the USB hub, and then connect the device directly to the direct print port "
+"or the Bluetooth unit connector.\n"
+msgstr "Do portu drukowania bezpośredniego lub modułu łączności Bluetooth podłączono niezgodne urządzenie. Odłącz kabel od portu drukowania bezpośredniego lub modułu łączności Bluetooth. Jeśli urządzenie podłączono przez koncentrator USB, odłącz koncentrator USB, a następnie podłącz urządzenie bezpośrednio do portu drukowania bezpośredniego lub modułu łączności Bluetooth.\n"
+
+#. ID_STS_MESSAGE_OC_HEADALIGNMENT
+#: src/bjcupsmon_ui.c:179
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's RESUME button to clear the error.\n"
+msgstr ""
+"Wystąpił błąd podczas automatycznego wyrównywania głowicy drukującej.\n"
+"\n"
+"Dysze głowicy drukującej mogą być zatkane. Na karcie Obsługa sterownika drukarki uruchom czyszczenie i ponownie wykonaj wyrównanie głowicy drukującej.\n"
+"\n"
+"Jeśli błąd nadal występuje, sprawdź opis błędu w podręczniku użytkownika lub wykonaj ręczne wyrównanie.\n"
+"\n"
+"Naciśnij przycisk WZNÓW (RESUME) na drukarce, aby usunąć błąd.\n"
+
+#. ID_STS_MESSAGE_OC_HEADALIGNMENT2
+#: src/bjcupsmon_ui.c:181
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Press the printer's OK button to clear the error.\n"
+msgstr ""
+"Wystąpił błąd podczas automatycznego wyrównywania głowicy drukującej.\n"
+"\n"
+"Dysze głowicy drukującej mogą być zatkane. Na karcie Obsługa sterownika drukarki uruchom czyszczenie i ponownie wykonaj wyrównanie głowicy drukującej.\n"
+"\n"
+"Jeśli błąd nadal występuje, sprawdź opis błędu w Podręczniku użytkownika lub wykonaj ręczne wyrównanie.\n"
+"\n"
+"Naciśnij przycisk OK na drukarce, aby skasować błąd.\n"
+
+#. ID_STS_MESSAGE_OC_HARDWAREERROR_TANK
+#: src/bjcupsmon_ui.c:183
+msgid ""
+"An ink tank cannot be recognized.\n"
+"Open the printer's cover and replace the ink tank on which the ink lamp is "
+"off.\n"
+msgstr ""
+"Nie można rozpoznać zbiornika z atramentem.\n"
+"Otwórz pokrywę drukarki i wymień zbiornik z atramentem, na którym nie świeci się lampka atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_PLURALERROR_TANK
+#: src/bjcupsmon_ui.c:185
+msgid "More than one ink tank of the following color is installed.\n"
+msgstr "Zainstalowano więcej niż jeden zbiornik z atramentem następującego koloru.\n"
+
+#. ID_STS_MESSAGE_OC_DIFFERENT_REGION_TANK
+#. ID_STS_MESSAGE_OC_UNINSTALLATION_TANK
+#: src/bjcupsmon_ui.c:187 src/bjcupsmon_ui.c:191
+msgid "The following ink tank cannot be recognized.\n"
+msgstr "Nie można rozpoznać poniższego zbiornika z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_POSITION_MISMACH_TANK
+#: src/bjcupsmon_ui.c:189
+msgid ""
+"An ink tank is not installed in the correct position.\n"
+"Confirm that the following ink tank is installed in the appropriate "
+"position.\n"
+msgstr ""
+"Zbiornik z atramentem został zainstalowany w nieprawidłowej pozycji.\n"
+"Upewnij się, że następujący zbiornik z atramentem jest zainstalowany prawidłowej pozycji.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT_TANK2
+#: src/bjcupsmon_ui.c:193
+msgid "The following ink may have run out.\n"
+msgstr "Być może skończył się poniższy atrament.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT_TANK2_4R
+#: src/bjcupsmon_ui.c:195
+msgid ""
+"\n"
+"The following ink may have run out.\n"
+msgstr ""
+"\n"
+"Być może skończył się poniższy atrament.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT06_TANK
+#: src/bjcupsmon_ui.c:197
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's RESUME button. Then printing can continue. Replacing the ink tank "
+"is recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Zalecana jest wymiana zbiornika z atramentem.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować, naciśnij przycisk WZNÓW (RESUME) na drukarce. Drukowanie będzie kontynuowane. Po zakończeniu drukowania zalecana jest wymiana zbiornika z atramentem. W przypadku kontynuowania drukowania mimo braku atramentu, drukarka może ulec uszkodzeniu.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT06_TANK_MFP
+#: src/bjcupsmon_ui.c:199
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's OK button. Then printing can continue. Replacing the ink tank is "
+"recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Zalecana jest wymiana zbiornika z atramentem.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować, naciśnij przycisk OK na drukarce. Drukowanie będzie kontynuowane. Po zakończeniu drukowania zalecana jest wymiana zbiornika z atramentem. W przypadku kontynuowania drukowania mimo braku atramentu, drukarka może ulec uszkodzeniu.\n"
+
+#. ID_STS_MESSAGE_OC_REFILL_LONG
+#: src/bjcupsmon_ui.c:201
+msgid ""
+"The remaining level of the following ink cannot be correctly detected. "
+"Replace the ink tank.\n"
+msgstr "Wykrycie poziomu następującego atramentu nie powiodło się. Wymień pojemnik z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_REFILL
+#: src/bjcupsmon_ui.c:203
+msgid ""
+"The remaining level of the following ink cannot be correctly detected.\n"
+msgstr "Nie można prawidłowo wykryć pozostałego poziomu poniższego atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_TANK_NO
+#: src/bjcupsmon_ui.c:205
+msgid ""
+"The ink tank is not installed.\n"
+"Install the ink tank properly and close the printer's cover.\n"
+msgstr ""
+"Zbiornik z atramentem nie jest zainstalowany.\n"
+"Zainstaluj prawidłowo zbiornik z atramentem i zamknij pokrywę drukarki.\n"
+
+#. ID_STS_MESSAGE_OC_NO_RECOGNIZE_CART
+#: src/bjcupsmon_ui.c:207
+msgid "The following ink cartridge cannot be recognized.\n"
+msgstr "Nie można rozpoznać poniższej kasety z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN2
+#: src/bjcupsmon_ui.c:209
+msgid "The following ink may have run out. \n"
+msgstr "Być może skończył się poniższy atrament. \n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN3
+#: src/bjcupsmon_ui.c:211
+msgid "The remaining level of the following ink is unknown.\n"
+msgstr "Pozostały poziom następującego atramentu jest nieznany.\n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN3_3rd
+#: src/bjcupsmon_ui.c:213
+msgid ""
+"\n"
+"There is a possibility that the printer cannot detect the remaining ink "
+"level properly. \n"
+"Reset the ink counter using the Maintenance tab of the printer driver "
+"whenever you have replaced any ink tank with new one.\n"
+msgstr ""
+"\n"
+"Istnieje możliwość, że drukarka nie może poprawnie wykryć poziomu pozostałego atramentu. Resetuj licznik używając karty Obsługa sterownika drukarki po każdej wymianie któregokolwiek zbiornika z atramentem na nowy.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT_CART
+#: src/bjcupsmon_ui.c:215
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"RESUME button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"Skończył się atrament.\n"
+"Wymień zbiornik z atramentem i zamknij pokrywę.\n"
+"\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować, naciśnij przycisk WZNÓW (RESUME) przy zainstalowanej kasecie z atramentem. Drukowanie można będzie kontynuować mimo braku atramentu. Wymień pusty zbiornik natychmiast po zakończeniu drukowania. W przypadku kontynuowania drukowania mimo braku atramentu, jakość wydruku może być niezadowalająca.\n"
+"\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT_CART_START
+#: src/bjcupsmon_ui.c:217
+msgid ""
+"Ink has run out.\n"
+"Replace the ink cartridge and close the cover.\n"
+"\n"
+"If printing is in progress and you want to continue printing, press the "
+"Start button with the ink cartridge installed. Then printing can continue "
+"under the ink out condition. Replace the empty ink cartridge immediately "
+"after the printing. The resulting print quality is not satisfactory, if "
+"printing is continued under the ink out condition. \n"
+"\n"
+msgstr ""
+"Skończył się atrament.\n"
+"Wymień zbiornik z atramentem i zamknij pokrywę.\n"
+"\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować, naciśnij przycisk Rozpocznij (Start) przy zainstalowanej kasecie z atramentem. Drukowanie można będzie kontynuować mimo braku atramentu. Wymień pusty zbiornik natychmiast po zakończeniu drukowania. W przypadku kontynuowania drukowania mimo braku atramentu, jakość wydruku może być niezadowalająca.\n"
+"\n"
+
+#. ID_STS_MESSAGE_INK_BLACK7e
+#: src/bjcupsmon_ui.c:219
+msgid " Black <BCI-7eBK>\n"
+msgstr " Czarny <BCI-7eBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK9
+#: src/bjcupsmon_ui.c:221
+msgid " Black <BCI-9BK>\n"
+msgstr " Czarny <BCI-9BK>\n"
+
+#. ID_STS_MESSAGE_INK_PHOTO_CYAN7e
+#: src/bjcupsmon_ui.c:223
+msgid " Photo Cyan <BCI-7ePC>\n"
+msgstr " Błękitny fotograficzny <BCI-7ePC>\n"
+
+#. ID_STS_MESSAGE_INK_PHOTO_MAGENTA7e
+#: src/bjcupsmon_ui.c:225
+msgid " Photo Magenta <BCI-7ePM>\n"
+msgstr " Amarantowy fotograficzny <BCI-7ePM>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN7e
+#: src/bjcupsmon_ui.c:227
+msgid " Cyan <BCI-7eC>\n"
+msgstr " Błękitny <BCI-7eC>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA7e
+#: src/bjcupsmon_ui.c:229
+msgid " Magenta <BCI-7eM>\n"
+msgstr " Amarantowy <BCI-7eM>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW7e
+#: src/bjcupsmon_ui.c:231
+msgid " Yellow <BCI-7eY>\n"
+msgstr " Żółty <BCI-7eY>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK
+#: src/bjcupsmon_ui.c:233
+msgid " Black\n"
+msgstr " Czarny\n"
+
+#. ID_STS_MESSAGE_INK_COLOR
+#: src/bjcupsmon_ui.c:235
+msgid " Color\n"
+msgstr " Kolor\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA
+#: src/bjcupsmon_ui.c:237
+msgid " Magenta\n"
+msgstr " Amarantowy\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW
+#: src/bjcupsmon_ui.c:239
+msgid " Yellow\n"
+msgstr " Żółty\n"
+
+#. ID_STS_MESSAGE_INK_CYAN
+#: src/bjcupsmon_ui.c:241
+msgid " Cyan\n"
+msgstr " Błękitny\n"
+
+#. ID_STS_MESSAGE_INK_GLAY
+#: src/bjcupsmon_ui.c:243
+msgid " Gray\n"
+msgstr " Szary\n"
+
+#. ID_STS_MESSAGE_INK_BLACK30
+#: src/bjcupsmon_ui.c:245
+msgid " Black <PG-30>\n"
+msgstr " Czarny <PG-30>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK830
+#: src/bjcupsmon_ui.c:247
+msgid " Black <PG-830>\n"
+msgstr " Czarny <PG-830>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK37
+#: src/bjcupsmon_ui.c:249
+msgid " Black <PG-37>\n"
+msgstr " Czarny <PG-37>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK40
+#: src/bjcupsmon_ui.c:251
+msgid " Black <PG-40>\n"
+msgstr " Czarny <PG-40>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK50
+#: src/bjcupsmon_ui.c:253
+msgid " Black <PG-50>\n"
+msgstr " Czarny <PG-50>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR31
+#: src/bjcupsmon_ui.c:255
+msgid " Color <CL-31>\n"
+msgstr " Kolor <CL-31>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR831
+#: src/bjcupsmon_ui.c:257
+msgid " Color <CL-831>\n"
+msgstr " Kolor <CL-831>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR38
+#: src/bjcupsmon_ui.c:259
+msgid " Color <CL-38>\n"
+msgstr " Kolor <CL-38>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR41
+#: src/bjcupsmon_ui.c:261
+msgid " Color <CL-41>\n"
+msgstr " Kolor <CL-41>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR51
+#: src/bjcupsmon_ui.c:263
+msgid " Color <CL-51>\n"
+msgstr " Kolor <CL-51>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK70
+#: src/bjcupsmon_ui.c:265
+msgid " Black <BC-70>\n"
+msgstr " Czarny <BC-70>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK90
+#: src/bjcupsmon_ui.c:267
+msgid " Black <BC-90>\n"
+msgstr " Czarny <BC-90>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR71
+#: src/bjcupsmon_ui.c:269
+msgid " Color <BC-71>\n"
+msgstr " Kolor <BC-71>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR91
+#: src/bjcupsmon_ui.c:271
+msgid " Color <BC-91>\n"
+msgstr " Kolor <BC-91>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK8
+#: src/bjcupsmon_ui.c:273
+msgid " Black <CLI-8BK>\n"
+msgstr " Czarny <CLI-8BK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK5
+#: src/bjcupsmon_ui.c:275
+msgid " Black <PGI-5BK>\n"
+msgstr " Czarny <PGI-5BK>\n"
+
+#. ID_STS_MESSAGE_INK_PHOTO_CYAN8
+#: src/bjcupsmon_ui.c:277
+msgid " Photo Cyan <CLI-8PC>\n"
+msgstr " Błękitny fotograficzny <CLI-8PC>\n"
+
+#. ID_STS_MESSAGE_INK_PHOTO_MAGENTA8
+#: src/bjcupsmon_ui.c:279
+msgid " Photo Magenta <CLI-8PM>\n"
+msgstr " Amarantowy fotograficzny <CLI-8PM>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN8
+#: src/bjcupsmon_ui.c:281
+msgid " Cyan <CLI-8C>\n"
+msgstr " Błękitny <CLI-8C>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA8
+#: src/bjcupsmon_ui.c:283
+msgid " Magenta <CLI-8M>\n"
+msgstr " Amarantowy <CLI-8M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW8
+#: src/bjcupsmon_ui.c:285
+msgid " Yellow <CLI-8Y>\n"
+msgstr " Żółty <CLI-8Y>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK19
+#: src/bjcupsmon_ui.c:287
+msgid " Black <BCI-19 Black>\n"
+msgstr " Czarny <BCI-19 Black>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR19
+#: src/bjcupsmon_ui.c:289
+msgid " Color <BCI-19 Color>\n"
+msgstr " Kolor <BCI-19 Color>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK35
+#: src/bjcupsmon_ui.c:291
+msgid " Black <PGI-35 Black>\n"
+msgstr " Czarny <PGI-35 Black>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR36
+#: src/bjcupsmon_ui.c:293
+msgid " Color <CLI-36 Color>\n"
+msgstr " Kolor <CLI-36 Color>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK15
+#: src/bjcupsmon_ui.c:295
+msgid " Black <BCI-15 Black>\n"
+msgstr " Czarny <BCI-15 Black>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR16
+#: src/bjcupsmon_ui.c:297
+msgid " Color <BCI-16 Color>\n"
+msgstr " Kolor <BCI-16 Color>\n"
+
+#. ID_STS_MESSAGE_INK_BLACKTANK
+#: src/bjcupsmon_ui.c:299
+msgid " Black Ink Tank\n"
+msgstr " Zbiornik z atramentem czarnym\n"
+
+#. ID_STS_MESSAGE_INK_COLORTANK
+#: src/bjcupsmon_ui.c:301
+msgid " Color Ink Tank\n"
+msgstr " Zbiornik z atramentem kolorowym\n"
+
+#. ID_STS_MESSAGE_OC_PLURALERROR_TANK_3rd
+#: src/bjcupsmon_ui.c:303
+msgid ""
+"\n"
+"Use only one ink tank per color at a time.\n"
+msgstr ""
+"\n"
+"Używaj tylko jednego zbiornika z atramentem danego koloru jednocześnie.\n"
+
+#. ID_STS_MESSAGE_OC_UNINSTALLATION_TANK_3rd
+#: src/bjcupsmon_ui.c:305
+msgid ""
+"\n"
+"Printing cannot be executed because the ink tank may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink tank.\n"
+msgstr ""
+"\n"
+"Nie można przeprowadzić drukowania, ponieważ zbiornik z atramentem może być nieprawidłowo zainstalowany lub może być niezgodny z tą drukarką.\n"
+"\n"
+"Zainstaluj właściwy zbiornik z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_1st
+#: src/bjcupsmon_ui.c:307
+msgid "The following ink has run out.\n"
+msgstr "Skończył się poniższy atrament.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY0602_TANK_1st
+#: src/bjcupsmon_ui.c:309
+msgid "Printer detected ink out condition of the following ink.\n"
+msgstr "Drukarka wykryła brak poniższego atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_REFILL_3rd_LONG
+#: src/bjcupsmon_ui.c:311
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's RESUME button for at least "
+"5 seconds, and then release it. Releasing the function for detecting the "
+"remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"Drukowanie w obecnym stanie może spowodować uszkodzenie drukarki. Firma Canon nie ponosi odpowiedzialności za żadne uszkodzenia ani awarie drukarki, spowodowane korzystaniem z ponownie napełnianych pojemników z atramentem.\n"
+"\n"
+"Aby kontynuować drukowanie, konieczne jest wyłączenie funkcji wykrywania pozostałego poziomu atramentu. Naciśnij i przytrzymaj przez co najmniej 5 sekund przycisk WZNÓW, a następnie zwolnij go. Wyłączenie funkcji wykrywania pozostałego poziomu atramentu zostanie zapamiętane.\n"
+"Ta operacja spowoduje wyłączenie funkcji wykrywania pozostałego poziomu następującego atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_REFILL2_3rd_LONG
+#: src/bjcupsmon_ui.c:313
+msgid ""
+"\n"
+"Printing under the current condition may damage the printer. Please be "
+"advised that Canon shall not be liable for any printer malfunction or damage "
+"caused by refilled ink tanks.\n"
+"\n"
+"To continue printing, you need to release the function for detecting the "
+"remaining ink level. Press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it. Releasing the function for detecting "
+"the remaining ink level is memorized.\n"
+"This operation will release the function for detecting the remaining level "
+"of the above ink.\n"
+msgstr ""
+"\n"
+"Drukowanie w obecnym stanie może spowodować uszkodzenie drukarki. Firma Canon nie ponosi odpowiedzialności za żadne uszkodzenia ani awarie drukarki, spowodowane korzystaniem z ponownie napełnianych pojemników z atramentem.\n"
+"\n"
+"Aby kontynuować drukowanie, konieczne jest wyłączenie funkcji wykrywania pozostałego poziomu atramentu. Naciśnij i przytrzymaj przez co najmniej 5 sekund przycisk Zatrzymaj/Zresetuj, a następnie zwolnij go. Wyłączenie funkcji wykrywania pozostałego poziomu atramentu zostanie zapamiętane.\n"
+"Ta operacja spowoduje wyłączenie funkcji wykrywania pozostałego poziomu następującego atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_REFILL_3rd
+#: src/bjcupsmon_ui.c:315
+msgid ""
+"\n"
+"Replace the ink tank.\n"
+msgstr ""
+"\n"
+"Wymień zbiornik z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_NO_RECOGNIZE_CART_3rd
+#: src/bjcupsmon_ui.c:317
+msgid ""
+"\n"
+"Printing cannot be executed because the ink cartridge may not be installed "
+"properly or may not be compatible with this printer.\n"
+"\n"
+"Install the appropriate ink cartridge.\n"
+msgstr ""
+"\n"
+"Nie można przeprowadzić drukowania, ponieważ kaseta z atramentem może być nieprawidłowo zainstalowana lub może być niezgodna z tą drukarką.\n"
+"\n"
+"Zainstaluj właściwą kasetę z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN2_3rd
+#: src/bjcupsmon_ui.c:319
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"If you want to continue printing without this function, press the printer's "
+"RESUME button for at least 5 seconds.\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+msgstr ""
+"\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona, ponieważ nie można poprawnie określić poziomu atramentu.\n"
+"Jeśli chcesz kontynuować drukowanie bez tej funkcji, naciśnij przycisk WZNÓW (RESUME) na drukarce i przytrzymaj go przez co najmniej 5 sekund.\n"
+"W celu uzyskania optymalnej jakości firma Canon zaleca używanie nowych oryginalnych kaset firmy Canon.\n"
+"Firma Canon nie ponosi odpowiedzialności za jakiekolwiek awarie lub problemy spowodowane kontynuowaniem drukowania mimo braku atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN2_3rd_MFP
+#: src/bjcupsmon_ui.c:321
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the printer's "
+"OK button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona, ponieważ nie można poprawnie określić poziomu atramentu.\n"
+"\n"
+"Jeśli chcesz kontynuować drukowanie bez tej funkcji, naciśnij przycisk OK na drukarce.\n"
+"\n"
+"W celu uzyskania optymalnej jakości firma Canon zaleca używanie nowych oryginalnych kaset firmy Canon.\n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN2_3rd_START
+#: src/bjcupsmon_ui.c:323
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"\n"
+"If you want to continue printing without this function, press the printer's "
+"Start button.\n"
+"\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+msgstr ""
+"\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona, ponieważ nie można poprawnie określić poziomu atramentu.\n"
+"\n"
+"Jeśli chcesz kontynuować drukowanie bez tej funkcji, naciśnij przycisk Rozpocznij (Start) na drukarce.\n"
+"\n"
+"W celu uzyskania optymalnej jakości firma Canon zaleca używanie nowych oryginalnych kaset firmy Canon.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT_CART_3rd
+#: src/bjcupsmon_ui.c:325
+msgid ""
+"\n"
+"Prepare a new ink cartridge.\n"
+"If either black or color ink cartridge has run out, you can set the printer "
+"to continue printing with the other cartridge from the Ink Cartridge "
+"Settings on the Maintenance tab of the printer driver.\n"
+msgstr ""
+"\n"
+"Przygotuj nową kasetę z atramentem.\n"
+"Jeśli wyczerpała się kaseta z czarnym lub kolorowym atramentem, to można tak skonfigurować drukarkę, aby kontynuować drukowanie za pomocą innej kasety wybranej w opcji Ustawienia kasety z atramentem na karcie Obsługa sterownika drukarki.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd
+#: src/bjcupsmon_ui.c:327
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, press and hold the printer's RESUME button for at "
+"least 5 seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Wymień zbiornik z atramentem. Drukowanie w obecnych warunkach grozi uszkodzeniem drukarki.\n"
+"Aby kontynuować drukowanie, naciśnij i przytrzymaj przez co najmniej 5 sekund przycisk WZNÓW (RESUME) na drukarce, a następnie zwolnij go.\n"
+"Ta operacja spowoduje wyłączenie funkcji wykrywania pozostałego poziomu atramentu, a wyłączenie funkcji zostanie zapamiętane.\n"
+"Firma Canon nie ponosi odpowiedzialności za jakiekolwiek awarie lub problemy spowodowane kontynuowaniem drukowania mimo braku atramentu.\n"
+"\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_MFP
+#: src/bjcupsmon_ui.c:329
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, press and hold the printer's Stop/Reset button for at "
+"least 5 seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Wymień zbiornik z atramentem. Drukowanie w obecnych warunkach grozi uszkodzeniem drukarki.\n"
+"Aby kontynuować drukowanie, naciśnij i przytrzymaj przez co najmniej 5 sekund przycisk Zatrzymaj/Uruchom ponownie (Stop/Reset) na drukarce, a następnie zwolnij go.\n"
+"Ta operacja spowoduje wyłączenie funkcji wykrywania pozostałego poziomu atramentu, a wyłączenie funkcji zostanie zapamiętane.\n"
+"Firma Canon nie ponosi odpowiedzialności za jakiekolwiek awarie lub problemy spowodowane kontynuowaniem drukowania mimo braku atramentu.\n"
+"\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_CARTRIDGE
+#: src/bjcupsmon_ui.c:331
+msgid ""
+"\n"
+"Replace the ink cartridge and close the cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's RESUME button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Wymień kasetę z atramentem i zamknij pokrywę.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować z zainstalowaną obecnie kasetą z atramentem, naciśnij przycisk WZNÓW (RESUME) na drukarce i przytrzymaj go przez co najmniej 5 sekund. Drukowanie można będzie kontynuować mimo braku atramentu.\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona.\n"
+"Wymień pustą kasetę z atramentem natychmiast po zakończeniu drukowania.\n"
+"W przypadku kontynuowania drukowania mimo braku atramentu jakość wydruku może być niezadowalająca.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_CARTRIDGE_STOPRESET
+#: src/bjcupsmon_ui.c:333
+msgid ""
+"\n"
+"Replace the ink cartridge and close the cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's Stop/Reset button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Wymień kasetę z atramentem i zamknij pokrywę.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować z zainstalowaną obecnie kasetą z atramentem, naciśnij przycisk Zatrzymaj/Uruchom ponownie (Stop/Reset) na drukarce i przytrzymaj go przez co najmniej 5 sekund. Drukowanie można będzie kontynuować mimo braku atramentu.\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona.\n"
+"Wymień pustą kasetę z atramentem natychmiast po zakończeniu drukowania.\n"
+"W przypadku kontynuowania drukowania mimo braku atramentu jakość wydruku może być niezadowalająca.\n"
+
+#. ID_STS_MESSAGE_INKSTATUS_OFF
+#: src/bjcupsmon_ui.c:335
+msgid ""
+"\n"
+"The function for detecting the remaining levels of the following ink has "
+"been released.\n"
+msgstr ""
+"\n"
+"Funkcja wykrywania poziomu następującego atramentu została wyłączona.\n"
+
+#. ID_STS_MESSAGE_OC_BATTERY_OUT
+#: src/bjcupsmon_ui.c:337
+msgid ""
+"Battery exhausted!\n"
+"\n"
+"Turn the printer off and either plug the AC adapter in, or change to a fully "
+"charged battery pack. If printing is in progress, stop printing, then "
+"perform the process.\n"
+msgstr ""
+"Akumulator wyczerpany!\n"
+"\n"
+"Wyłącz drukarkę i podłącz zasilacz sieciowy lub zmień akumulator na całkowicie naładowany. Jeśli trwa drukowanie, przerwij je przed wykonaniem powyższych czynności.\n"
+
+#. ID_STS_MESSAGE_SC_BATTERY_ERROR
+#: src/bjcupsmon_ui.c:339
+msgid ""
+"A problem has occurred with the battery. Cancel printing and turn the "
+"printer off. Then either change to a new battery pack or remove the battery "
+"pack and plug the AC adapter in."
+msgstr "Wystąpił problem z akumulatorem. Anuluj drukowanie i wyłącz drukarkę. Następnie wymień akumulator na nowy lub wyjmij akumulator i podłącz zasilacz sieciowy."
+
+#. ID_STS_MESSAGE_WAR_BATTERY_LOW
+#: src/bjcupsmon_ui.c:341
+msgid "The battery is low.\n"
+msgstr "Akumulator jest prawie wyczerpany.\n"
+
+#. ID_STS_MESSAGE_JOB_JOBCANCEL_RESUME
+#: src/bjcupsmon_ui.c:343
+msgid ""
+"Print job has been canceled by the printer's RESUME button being pressed.\n"
+msgstr "Zadanie drukowania zostało anulowane po naciśnięciu przycisku WZNÓW (RESUME) drukarki.\n"
+
+#. ID_STS_MESSAGE_JOB_JOBCANCEL_STOPRESET
+#: src/bjcupsmon_ui.c:345
+msgid ""
+"Print job has been canceled by the printer's Stop/Reset button being "
+"pressed.\n"
+msgstr "Zadanie drukowania zostało anulowane po naciśnięciu przycisku Zatrzymaj/Uruchom ponownie (Stop/Reset) drukarki.\n"
+
+#. ID_STS_MESSAGE_JOB_PREPARE
+#: src/bjcupsmon_ui.c:347
+msgid "Preparing for printing.\n"
+msgstr "Trwa przygotowywanie do drukowania.\n"
+
+#. ID_STS_MESSAGE_JOB_DELAY
+#: src/bjcupsmon_ui.c:349
+msgid "Waiting for the previous page to dry.\n"
+msgstr "Oczekiwanie na wyschnięcie poprzedniej strony.\n"
+
+#. ID_STS_MESSAGE_BUSY_PRINTER
+#. ID_OTHER_MESSAGE_BUSY
+#: src/bjcupsmon_ui.c:351 src/bjcupsmon_ui.c:831
+msgid "Printer is busy.\n"
+msgstr "Drukarka jest zajęta.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT21RT
+#: src/bjcupsmon_ui.c:353
+msgid "Load paper into the rear tray.\n"
+msgstr "Załaduj papier na tylną tacę.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUT42FT
+#: src/bjcupsmon_ui.c:355
+msgid "Load paper into the front tray.\n"
+msgstr "Załaduj papier na przednią tacę.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_2ndFT
+#: src/bjcupsmon_ui.c:357
+msgid ""
+"Open the rear cover, remove the jammed paper. If the jammed paper cannot be "
+"removed, remove the paper from the front tray side.\n"
+msgstr "Otwórz pokrywę przednią i usuń zacięty papier. Jeśli nie można tego zrobić, usuń zacięty papier od strony przedniej tacy.\n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN2_3rd_START_07SPRING
+#: src/bjcupsmon_ui.c:359
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"If you want to continue printing without this function, press the printer's "
+"Stop/Reset button for at least 5 seconds.\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+msgstr ""
+"\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona, ponieważ nie można poprawnie określić poziomu atramentu.\n"
+"Jeśli chcesz kontynuować drukowanie bez tej funkcji, naciśnij przycisk Zatrzymaj/Uruchom ponownie (Stop/Reset) na drukarce i przytrzymaj go przez co najmniej 5 sekund.\n"
+"W celu uzyskania optymalnej jakości firma Canon zaleca używanie nowych oryginalnych kaset firmy Canon.\n"
+"Firma Canon nie ponosi odpowiedzialności za jakiekolwiek awarie lub problemy spowodowane kontynuowaniem drukowania mimo braku atramentu.\n"
+
+#. ID_STS_MESSAGE_INK_BLACK310
+#: src/bjcupsmon_ui.c:361
+msgid " Black <BC-310>\n"
+msgstr " Czarny <BC-310>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR311
+#: src/bjcupsmon_ui.c:363
+msgid " Color <BC-311>\n"
+msgstr " Kolor <BC-311>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK815
+#: src/bjcupsmon_ui.c:365
+msgid " Black <PG-815>\n"
+msgstr " Czarny <PG-815>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR816
+#: src/bjcupsmon_ui.c:367
+msgid " Color <CL-816>\n"
+msgstr " Kolor <CL-816>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK815XL
+#: src/bjcupsmon_ui.c:369
+msgid " Black <PG-815XL>\n"
+msgstr " Czarny <PG-815XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR816XL
+#: src/bjcupsmon_ui.c:371
+msgid " Color <CL-816XL>\n"
+msgstr " Kolor <CL-816XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK810
+#: src/bjcupsmon_ui.c:373
+msgid " Black <PG-810>\n"
+msgstr " Czarny <PG-810>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR811
+#: src/bjcupsmon_ui.c:375
+msgid " Color <CL-811>\n"
+msgstr " Kolor <CL-811>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK810XL
+#: src/bjcupsmon_ui.c:377
+msgid " Black <PG-810XL>\n"
+msgstr " Czarny <PG-810XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR810XL
+#: src/bjcupsmon_ui.c:379
+msgid " Color <CL-811XL>\n"
+msgstr " Kolor <CL-811XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK210
+#: src/bjcupsmon_ui.c:381
+msgid " Black <PG-210>\n"
+msgstr " Czarny <PG-210>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR211
+#: src/bjcupsmon_ui.c:383
+msgid " Color <CL-211>\n"
+msgstr " Kolor <CL-211>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK210XL
+#: src/bjcupsmon_ui.c:385
+msgid " Black <PG-210XL>\n"
+msgstr " Czarny <PG-210XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR210XL
+#: src/bjcupsmon_ui.c:387
+msgid " Color <CL-211XL>\n"
+msgstr " Kolor <CL-211XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK510
+#: src/bjcupsmon_ui.c:389
+msgid " Black <PG-510>\n"
+msgstr " Czarny <PG-510>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR511
+#: src/bjcupsmon_ui.c:391
+msgid " Color <CL-511>\n"
+msgstr " Kolor <CL-511>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK512
+#: src/bjcupsmon_ui.c:393
+msgid " Black <PG-512>\n"
+msgstr " Czarny <PG-512>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR513
+#: src/bjcupsmon_ui.c:395
+msgid " Color <CL-513>\n"
+msgstr " Kolor <CL-513>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK320
+#: src/bjcupsmon_ui.c:397
+msgid " Black <BCI-320PGBK>\n"
+msgstr " Czarny <BCI-320PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK321
+#: src/bjcupsmon_ui.c:399
+msgid " Black <BCI-321BK>\n"
+msgstr " Czarny <BCI-321BK>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN321
+#: src/bjcupsmon_ui.c:401
+msgid " Cyan <BCI-321C>\n"
+msgstr " Błękitny <BCI-321C>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA321
+#: src/bjcupsmon_ui.c:403
+msgid " Magenta <BCI-321M>\n"
+msgstr " Amarantowy <BCI-321M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW321
+#: src/bjcupsmon_ui.c:405
+msgid " Yellow <BCI-321Y>\n"
+msgstr " Żółty <BCI-321Y>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK820
+#: src/bjcupsmon_ui.c:407
+msgid " Black <PGI-820BK>\n"
+msgstr " Czarny <PGI-820BK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK821
+#: src/bjcupsmon_ui.c:409
+msgid " Black <CLI-821BK>\n"
+msgstr " Czarny <CLI-821BK>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN821
+#: src/bjcupsmon_ui.c:411
+msgid " Cyan <CLI-821C>\n"
+msgstr " Błękitny <CLI-821C>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA821
+#: src/bjcupsmon_ui.c:413
+msgid " Magenta <CLI-821M>\n"
+msgstr " Amarantowy <CLI-821M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW821
+#: src/bjcupsmon_ui.c:415
+msgid " Yellow <CLI-821Y>\n"
+msgstr " Żółty <CLI-821Y>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK220
+#: src/bjcupsmon_ui.c:417
+msgid " Black <PGI-220BK>\n"
+msgstr " Czarny <PGI-220BK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK221
+#: src/bjcupsmon_ui.c:419
+msgid " Black <CLI-221BK>\n"
+msgstr " Czarny <CLI-221BK>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN221
+#: src/bjcupsmon_ui.c:421
+msgid " Cyan <CLI-221C>\n"
+msgstr " Błękitny <CLI-221C>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA221
+#: src/bjcupsmon_ui.c:423
+msgid " Magenta <CLI-221M>\n"
+msgstr " Amarantowy <CLI-221M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW221
+#: src/bjcupsmon_ui.c:425
+msgid " Yellow <CLI-221Y>\n"
+msgstr " Żółty <CLI-221Y>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK520
+#: src/bjcupsmon_ui.c:427
+msgid " Black <PGI-520BK>\n"
+msgstr " Czarny <PGI-520BK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK521
+#: src/bjcupsmon_ui.c:429
+msgid " Black <CLI-521BK>\n"
+msgstr " Czarny <CLI-521BK>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN521
+#: src/bjcupsmon_ui.c:431
+msgid " Cyan <CLI-521C>\n"
+msgstr " Błękitny <CLI-521C>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA521
+#: src/bjcupsmon_ui.c:433
+msgid " Magenta <CLI-521M>\n"
+msgstr " Amarantowy <CLI-521M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW521
+#: src/bjcupsmon_ui.c:435
+msgid " Yellow <CLI-521Y>\n"
+msgstr " Żółty <CLI-521Y>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK125
+#: src/bjcupsmon_ui.c:437
+msgid " Black <PGI-125PGBK>\n"
+msgstr " Czarny <PGI-125PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK126
+#: src/bjcupsmon_ui.c:439
+msgid " Black <CLI-126BK>\n"
+msgstr " Czarny <CLI-126BK>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA126
+#: src/bjcupsmon_ui.c:441
+msgid " Magenta <CLI-126M>\n"
+msgstr " Amarantowy <CLI-126M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW126
+#: src/bjcupsmon_ui.c:443
+msgid " Yellow <CLI-126Y>\n"
+msgstr " Żółty <CLI-126Y>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN126
+#: src/bjcupsmon_ui.c:445
+msgid " Cyan <CLI-126C>\n"
+msgstr " Błękitny <CLI-126C>\n"
+
+#. ID_STS_MESSAGE_INK_GLAY126
+#: src/bjcupsmon_ui.c:447
+msgid " Gray <CLI-126GY>\n"
+msgstr " Szary <CLI-126GY>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK225
+#: src/bjcupsmon_ui.c:449
+msgid " Black <PGI-225PGBK>\n"
+msgstr " Czarny <PGI-225PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK226
+#: src/bjcupsmon_ui.c:451
+msgid " Black <CLI-226BK>\n"
+msgstr " Czarny <CLI-226BK>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA226
+#: src/bjcupsmon_ui.c:453
+msgid " Magenta <CLI-226M>\n"
+msgstr " Amarantowy <CLI-226M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW226
+#: src/bjcupsmon_ui.c:455
+msgid " Yellow <CLI-226Y>\n"
+msgstr " Żółty <CLI-226Y>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN226
+#: src/bjcupsmon_ui.c:457
+msgid " Cyan <CLI-226C>\n"
+msgstr " Błękitny <CLI-226C>\n"
+
+#. ID_STS_MESSAGE_INK_GLAY226
+#: src/bjcupsmon_ui.c:459
+msgid " Gray <CLI-226GY>\n"
+msgstr " Szary <CLI-226GY>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK325
+#: src/bjcupsmon_ui.c:461
+msgid " Black <BCI-325PGBK>\n"
+msgstr " Czarny <BCI-325PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK326
+#: src/bjcupsmon_ui.c:463
+msgid " Black <BCI-326BK>\n"
+msgstr " Czarny <BCI-326BK>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA326
+#: src/bjcupsmon_ui.c:465
+msgid " Magenta <BCI-326M>\n"
+msgstr " Amarantowy <BCI-326M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW326
+#: src/bjcupsmon_ui.c:467
+msgid " Yellow <BCI-326Y>\n"
+msgstr " Żółty <BCI-326Y>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN326
+#: src/bjcupsmon_ui.c:469
+msgid " Cyan <BCI-326C>\n"
+msgstr " Błękitny <BCI-326C>\n"
+
+#. ID_STS_MESSAGE_INK_GLAY326
+#: src/bjcupsmon_ui.c:471
+msgid " Gray <BCI-326GY>\n"
+msgstr " Szary <BCI-326GY>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK425
+#: src/bjcupsmon_ui.c:473
+msgid " Black <PGI-425PGBK>\n"
+msgstr " Czarny <PGI-425PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK426
+#: src/bjcupsmon_ui.c:475
+msgid " Black <CLI-426BK>\n"
+msgstr " Czarny <CLI-426BK>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA426
+#: src/bjcupsmon_ui.c:477
+msgid " Magenta <CLI-426M>\n"
+msgstr " Amarantowy <CLI-426M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW426
+#: src/bjcupsmon_ui.c:479
+msgid " Yellow <CLI-426Y>\n"
+msgstr " Żółty <CLI-426Y>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN426
+#: src/bjcupsmon_ui.c:481
+msgid " Cyan <CLI-426C>\n"
+msgstr " Błękitny <CLI-426C>\n"
+
+#. ID_STS_MESSAGE_INK_GLAY426
+#: src/bjcupsmon_ui.c:483
+msgid " Gray <CLI-426GY>\n"
+msgstr " Szary <CLI-426GY>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK525
+#: src/bjcupsmon_ui.c:485
+msgid " Black <PGI-525PGBK>\n"
+msgstr " Czarny <PGI-525PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK526
+#: src/bjcupsmon_ui.c:487
+msgid " Black <CLI-526BK>\n"
+msgstr " Czarny <CLI-526BK>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA526
+#: src/bjcupsmon_ui.c:489
+msgid " Magenta <CLI-526M>\n"
+msgstr " Amarantowy <CLI-526M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW526
+#: src/bjcupsmon_ui.c:491
+msgid " Yellow <CLI-526Y>\n"
+msgstr " Żółty <CLI-526Y>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN526
+#: src/bjcupsmon_ui.c:493
+msgid " Cyan <CLI-526C>\n"
+msgstr " Błękitny <CLI-526C>\n"
+
+#. ID_STS_MESSAGE_INK_GLAY526
+#: src/bjcupsmon_ui.c:495
+msgid " Gray <CLI-526GY>\n"
+msgstr " Szary <CLI-526GY>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK725
+#: src/bjcupsmon_ui.c:497
+msgid " Black <PGI-725PGBK>\n"
+msgstr " Czarny <PGI-725PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK726
+#: src/bjcupsmon_ui.c:499
+msgid " Black <CLI-726BK>\n"
+msgstr " Czarny <CLI-726BK>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA726
+#: src/bjcupsmon_ui.c:501
+msgid " Magenta <CLI-726M>\n"
+msgstr " Amarantowy <CLI-726M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW726
+#: src/bjcupsmon_ui.c:503
+msgid " Yellow <CLI-726Y>\n"
+msgstr " Żółty <CLI-726Y>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN726
+#: src/bjcupsmon_ui.c:505
+msgid " Cyan <CLI-726C>\n"
+msgstr " Błękitny <CLI-726C>\n"
+
+#. ID_STS_MESSAGE_INK_GLAY726
+#: src/bjcupsmon_ui.c:507
+msgid " Gray <CLI-726GY>\n"
+msgstr " Szary <CLI-726GY>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK825
+#: src/bjcupsmon_ui.c:509
+msgid " Black <PGI-825PGBK>\n"
+msgstr " Czarny <PGI-825PGBK>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK826
+#: src/bjcupsmon_ui.c:511
+msgid " Black <CLI-826BK>\n"
+msgstr " Czarny <CLI-826BK>\n"
+
+#. ID_STS_MESSAGE_INK_MAGENTA826
+#: src/bjcupsmon_ui.c:513
+msgid " Magenta <CLI-826M>\n"
+msgstr " Amarantowy <CLI-826M>\n"
+
+#. ID_STS_MESSAGE_INK_YELLOW826
+#: src/bjcupsmon_ui.c:515
+msgid " Yellow <CLI-826Y>\n"
+msgstr " Żółty <CLI-826Y>\n"
+
+#. ID_STS_MESSAGE_INK_CYAN826
+#: src/bjcupsmon_ui.c:517
+msgid " Cyan <CLI-826C>\n"
+msgstr " Błękitny <CLI-826C>\n"
+
+#. ID_STS_MESSAGE_INK_GLAY826
+#: src/bjcupsmon_ui.c:519
+msgid " Gray <CLI-826GY>\n"
+msgstr " Szary <CLI-826GY>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR141XL
+#: src/bjcupsmon_ui.c:521
+msgid " Color <CL-141XL>\n"
+msgstr " Kolor <CL-141XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR141
+#: src/bjcupsmon_ui.c:523
+msgid " Color <CL-141>\n"
+msgstr " Kolor <CL-141>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR241XL
+#: src/bjcupsmon_ui.c:525
+msgid " Color <CL-241XL>\n"
+msgstr " Kolor <CL-241XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR241
+#: src/bjcupsmon_ui.c:527
+msgid " Color <CL-241>\n"
+msgstr " Kolor <CL-241>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR341XL
+#: src/bjcupsmon_ui.c:529
+msgid " Color <BC-341XL>\n"
+msgstr " Kolor <BC-341XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR341
+#: src/bjcupsmon_ui.c:531
+msgid " Color <BC-341>\n"
+msgstr " Kolor <BC-341>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR441XL
+#: src/bjcupsmon_ui.c:533
+msgid " Color <CL-441XL>\n"
+msgstr " Kolor <CL-441XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR441
+#: src/bjcupsmon_ui.c:535
+msgid " Color <CL-441>\n"
+msgstr " Kolor <CL-441>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR541XL
+#: src/bjcupsmon_ui.c:537
+msgid " Color <CL-541XL>\n"
+msgstr " Kolor <CL-541XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR541
+#: src/bjcupsmon_ui.c:539
+msgid " Color <CL-541>\n"
+msgstr " Kolor <CL-541>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR641XL
+#: src/bjcupsmon_ui.c:541
+msgid " Color <CL-641XL>\n"
+msgstr " Kolor <CL-641XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR641
+#: src/bjcupsmon_ui.c:543
+msgid " Color <CL-641>\n"
+msgstr " Kolor <CL-641>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR741XL
+#: src/bjcupsmon_ui.c:545
+msgid " Color <CL-741XL>\n"
+msgstr " Kolor <CL-741XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR741
+#: src/bjcupsmon_ui.c:547
+msgid " Color <CL-741>\n"
+msgstr " Kolor <CL-741>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR841XL
+#: src/bjcupsmon_ui.c:549
+msgid " Color <CL-841XL>\n"
+msgstr " Kolor <CL-841XL>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR841
+#: src/bjcupsmon_ui.c:551
+msgid " Color <CL-841>\n"
+msgstr " Kolor <CL-841>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR93
+#: src/bjcupsmon_ui.c:553
+msgid " Color <CL-93>\n"
+msgstr " Kolor <CL-93>\n"
+
+#. ID_STS_MESSAGE_INK_COLOR98
+#: src/bjcupsmon_ui.c:555
+msgid " Color <CL-98>\n"
+msgstr " Kolor <CL-98>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK140XXL
+#: src/bjcupsmon_ui.c:557
+msgid " Black <PG-140XXL>\n"
+msgstr " Czarny <PG-140XXL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK140XL
+#: src/bjcupsmon_ui.c:559
+msgid " Black <PG-140XL>\n"
+msgstr " Czarny <PG-140XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK140
+#: src/bjcupsmon_ui.c:561
+msgid " Black <PG-140>\n"
+msgstr " Czarny <PG-140>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK240XXL
+#: src/bjcupsmon_ui.c:563
+msgid " Black <PG-240XXL>\n"
+msgstr " Czarny <PG-240XXL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK240XL
+#: src/bjcupsmon_ui.c:565
+msgid " Black <PG-240XL>\n"
+msgstr " Czarny <PG-240XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK240
+#: src/bjcupsmon_ui.c:567
+msgid " Black <PG-240>\n"
+msgstr " Czarny <PG-240>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK340XL
+#: src/bjcupsmon_ui.c:569
+msgid " Black <BC-340XL>\n"
+msgstr " Czarny <BC-340XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK340
+#: src/bjcupsmon_ui.c:571
+msgid " Black <BC-340>\n"
+msgstr " Czarny <BC-340>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK440XL
+#: src/bjcupsmon_ui.c:573
+msgid " Black <PG-440XL>\n"
+msgstr " Czarny <PG-440XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK440
+#: src/bjcupsmon_ui.c:575
+msgid " Black <PG-440>\n"
+msgstr " Czarny <PG-440>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK540XL
+#: src/bjcupsmon_ui.c:577
+msgid " Black <PG-540XL>\n"
+msgstr " Czarny <PG-540XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK540
+#: src/bjcupsmon_ui.c:579
+msgid " Black <PG-540>\n"
+msgstr " Czarny <PG-540>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK640XXL
+#: src/bjcupsmon_ui.c:581
+msgid " Black <PG-640XXL>\n"
+msgstr " Czarny <PG-640XXL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK640XL
+#: src/bjcupsmon_ui.c:583
+msgid " Black <PG-640XL>\n"
+msgstr " Czarny <PG-640XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK640
+#: src/bjcupsmon_ui.c:585
+msgid " Black <PG-640>\n"
+msgstr " Czarny <PG-640>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK740XL
+#: src/bjcupsmon_ui.c:587
+msgid " Black <PG-740XL>\n"
+msgstr " Czarny <PG-740XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK740
+#: src/bjcupsmon_ui.c:589
+msgid " Black <PG-740>\n"
+msgstr " Czarny <PG-740>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK840XL
+#: src/bjcupsmon_ui.c:591
+msgid " Black <PG-840XL>\n"
+msgstr " Czarny <PG-840XL>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK840
+#: src/bjcupsmon_ui.c:593
+msgid " Black <PG-840>\n"
+msgstr " Czarny <PG-840>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK83
+#: src/bjcupsmon_ui.c:595
+msgid " Black <PG-83>\n"
+msgstr " Czarny <PG-83>\n"
+
+#. ID_STS_MESSAGE_INK_BLACK88
+#: src/bjcupsmon_ui.c:597
+msgid " Black <PG-88>\n"
+msgstr " Czarny <PG-88>\n"
+
+#. ID_STS_MESSAGE_PREPARE
+#: src/bjcupsmon_ui.c:599
+msgid "Preparing...\n"
+msgstr "Przygotowywanie...\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM04_2nd_NOT_ONTOSIDE
+#: src/bjcupsmon_ui.c:601
+msgid ""
+"Detach the rear cover, and then remove the jammed paper.\n"
+"If the jammed paper cannot be found inside the rear cover, refer to the "
+"user's guide for how to remove the paper.\n"
+msgstr ""
+"Odłącz tylną pokrywę i usuń zacięty papier. \n"
+"Jeśli nie możesz znaleźć zaciętego papieru pod tylną pokrywą, zobacz instrukcje dotyczące usuwania papieru w podręczniku użytkownika.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM05_2nd_NOT_ONTOSIDE
+#: src/bjcupsmon_ui.c:603
+msgid ""
+"Raise the paper support, detach the rear cover, and then remove the jammed "
+"paper.\n"
+"If the jammed paper cannot be found inside the rear cover, refer to the "
+"user's guide for how to remove the paper.\n"
+msgstr ""
+"Podnieś podpórkę papieru, odłącz tylną pokrywę i usuń zacięty papier. \n"
+"Jeśli nie możesz znaleźć zaciętego papieru pod tylną pokrywą, zobacz instrukcje dotyczące usuwania papieru w podręczniku użytkownika.\n"
+
+#. ID_STS_MESSAGE_COVERCLOSE_SLOWY
+#: src/bjcupsmon_ui.c:605
+msgid "When closing the cover, lift it up first and then close it slowly.\n"
+msgstr "Aby zamknąć pokrywę, podnieś ją najpierw, a następnie powoli opuść.\n"
+
+#. ID_STS_MESSAGE_OC_MEDIA
+#: src/bjcupsmon_ui.c:607
+msgid "Media Type : "
+msgstr "Typ nośnika : "
+
+#. ID_STS_MESSAGE_OC_PLAINPAPER
+#: src/bjcupsmon_ui.c:609
+msgid "Plain Paper\n"
+msgstr "Papier zwykły\n"
+
+#. ID_STS_MESSAGE_OC_DETAILS
+#: src/bjcupsmon_ui.c:611
+msgid ""
+"Paper that can be fed from the cassette is plain paper of A4, Letter, B5, "
+"and A5 sizes.\n"
+msgstr "Za pośrednictwem kasety można podawać papier o rozmiarze A4, Letter, B5 lub A5.\n"
+
+#. ID_STS_MESSAGE_JOB_JOBCANCEL_STOP
+#: src/bjcupsmon_ui.c:613
+msgid ""
+"Print job has been canceled by the printer's Stop button being pressed.\n"
+msgstr "Zadanie drukowania zostało anulowane po naciśnięciu przycisku Zatrzymaj (Stop) drukarki.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_MFP_STOP
+#: src/bjcupsmon_ui.c:615
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, press and hold the printer's Stop button for at least "
+"5 seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Wymień zbiornik z atramentem. Kontynuowanie drukowania mimo braku atramentu grozi uszkodzeniem drukarki.\n"
+"Aby kontynuować drukowanie, naciśnij i przytrzymaj przez co najmniej 5 sekund przycisk Zatrzymaj (Stop), a następnie zwolnij go.\n"
+"Ta operacja spowoduje wyłączenie funkcji wykrywania pozostałego poziomu atramentu, a wyłączenie funkcji zostanie zapamiętane.\n"
+"Firma Canon nie ponosi odpowiedzialności za jakiekolwiek awarie lub problemy spowodowane kontynuowaniem drukowania mimo braku atramentu.\n"
+"\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_02SFP_2nd
+#: src/bjcupsmon_ui.c:617
+msgid ""
+"Detach the rear cover, and then remove the jammed paper. If the jammed paper "
+"cannot be removed, first remove the cassette and remove the paper from the "
+"cassette side.\n"
+msgstr "Odłącz tylną pokrywę i usuń zacięty papier. Jeśli nie można wyjąć papieru, wyjmij kasetę, a następnie usuń papier od strony kasety.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_02MFP_2nd
+#: src/bjcupsmon_ui.c:619
+msgid ""
+"Raise the paper support, detach the rear cover, and then remove the jammed "
+"paper. If the jammed paper cannot be removed, first remove the cassette and "
+"remove the paper from the cassette side.\n"
+msgstr "Podnieś podpórkę papieru, odłącz tylną pokrywę i usuń zacięty papier. Jeśli nie można wyjąć papieru, wyjmij kasetę, a następnie wyjmij papier od strony kasety.\n"
+
+#. ID_STS_MESSAGE_OC_LCDPANEL
+#: src/bjcupsmon_ui.c:621
+msgid "An error has occurred. Check the display on the printer.\n"
+msgstr "Wystąpił błąd. Sprawdź informacje na wyświetlaczu drukarki.\n"
+
+#. ID_STS_MESSAGE_OC_INKTANK_NOTPROPERLY_LOCKLEVER_PUSH
+#: src/bjcupsmon_ui.c:623
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Open the printer's cover, firmly push down the ink cartridge locking cover, "
+"and then make sure the ink cartridge is installed properly. Then close the "
+"printer's cover.\n"
+msgstr ""
+"Kaseta z atramentem została zainstalowana nieprawidłowo.\n"
+"Otwórz pokrywę drukarki, dociśnij pokrywę kasety z atramentem i upewnij się, że jest ona właściwie zainstalowana. Następnie zamknij pokrywę drukarki.\n"
+
+#. ID_STS_MESSAGE_OTHER_USE
+#: src/bjcupsmon_ui.c:625
+msgid ""
+"Another computer is using the printer.\n"
+"The following status is the usage status of that computer.\n"
+"---\n"
+msgstr ""
+"Inny komputer korzysta z drukarki.\n"
+"Poniżej przedstawiono stan wykorzystania drukarki przez ten komputer.\n"
+"---\n"
+
+#. ID_STS_MESSAGE_SC_SERVICE_ERROR_09COMMON
+#: src/bjcupsmon_ui.c:629
+msgid ""
+"A printer error has occurred.\n"
+"Turn the printer off and then on again.\n"
+"If this doesn't clear the error, the printer needs repair. See the user's "
+"guide and contact the service center.\n"
+msgstr ""
+"Wystąpił błąd drukarki.\n"
+"Wyłącz ją, a następnie włącz ponownie.\n"
+"Jeśli błąd nie zostanie usunięty, drukarka wymaga naprawy. Zajrzyj do podręcznika użytkownika i skontaktuj się z centrum serwisowym.\n"
+
+#. ID_STS_MESSAGE_SC_SERVICE_ERROR_09VHMONITOR
+#: src/bjcupsmon_ui.c:631
+msgid ""
+"An error has occurred. The printer needs repair.\n"
+"Turn the printer off and unplug the power cord of the printer from the power "
+"supply.\n"
+"Then see the user's guide and contact the service center.\n"
+msgstr ""
+"Wystąpił błąd. Drukarka wymaga naprawy.\n"
+"Wyłącz ją i odłącz wtyczkę przewodu zasilającego od gniazda zasilania.\n"
+"Następnie zajrzyj do podręcznika użytkownika i skontaktuj się z centrum serwisowym.\n"
+
+#. ID_STS_MESSAGE_SC_USEDTANK_FULL_09
+#: src/bjcupsmon_ui.c:633
+msgid ""
+"Printer error has occurred.\n"
+"Contact the service center.\n"
+msgstr ""
+"Wystąpił błąd drukarki.\n"
+"Skontaktuj się z centrum serwisowym.\n"
+
+#. ID_STS_MESSAGE_SC_USEDTANK_FULLJP_09
+#: src/bjcupsmon_ui.c:635
+msgid ""
+"The ink absorber is full.\n"
+"It needs to be replaced.\n"
+"Contact the service center for replacement.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Trzeba go wymienić.\n"
+"Skontaktuj się z centrum serwisowym w sprawie wymiany.\n"
+"Pochłaniacz atramentu może wymienić tylko wykwalifikowany technik.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST_OK2
+#: src/bjcupsmon_ui.c:637
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"Contact the service center. \n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Naciśnij przycisk OK na drukarce, aby kontynuować drukowanie.\n"
+"Skontaktuj się z centrum serwisowym. \n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP_OK2
+#: src/bjcupsmon_ui.c:639
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's OK button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the service center for replacement.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Naciśnij przycisk OK na drukarce, aby kontynuować drukowanie.\n"
+"Drukarka musi wkrótce trafić do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z centrum serwisowym w sprawie wymiany.\n"
+"Pochłaniacz atramentu może wymienić tylko wykwalifikowany technik.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT06_FAX
+#: src/bjcupsmon_ui.c:641
+msgid ""
+"\n"
+"Since the information contained in the fax may be lost if it is printed in "
+"this condition, the received fax will not be printed and will be stored in "
+"memory until the ink is replaced. You must manually print out faxes that "
+"were stored in memory.\n"
+"You can change the setting so that the received fax is forcibly printed out "
+"instead of being stored in memory, but all or part of the fax information "
+"may not be printed because of the ink out condition.\n"
+msgstr ""
+"\n"
+"Ponieważ może dojść do utraty informacji zawartych w faksie, gdyby został on wydrukowany w tej formie, otrzymany faks nie zostanie wydrukowany, lecz zostanie przechowany w pamięci do momentu wymiany atramentu. Faksy przechowywane w pamięci należy drukować ręcznie.\n"
+"Można zmienić ustawienie, by wymuszać drukowanie faksu zamiast przechowywania go w pamięci, lecz wówczas część informacji z faksu może nie zostać wydrukowana z powodu braku atramentu.\n"
+
+#. ID_STS_MESSAGE_BUSY_HEADPROTECT
+#: src/bjcupsmon_ui.c:643
+msgid ""
+"The ink cannot be replaced because the print head is in a standby "
+"condition.\n"
+"Close the cover, wait for a while, and then replace the ink.\n"
+msgstr ""
+"Nie można wymienić atramentu, ponieważ głowica drukująca znajduje się w stanie oczekiwania.\n"
+"Zamknij pokrywę, odczekaj chwilę, a następnie wymień atrament.\n"
+
+#. ID_STS_MESSAGE_OC_REMAIN_UNKNOWN2_3rd_OK_07SPRING
+#: src/bjcupsmon_ui.c:645
+msgid ""
+"\n"
+"The function for detecting the remaining ink level will be disabled since "
+"the ink level cannot be correctly detected.\n"
+"If you want to continue printing without this function, press the printer's "
+"Stop button for at least 5 seconds.\n"
+"Canon recommends to use new genuine Canon cartridges in order to obtain "
+"optimum qualities.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+msgstr ""
+"\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona, ponieważ nie można poprawnie określić poziomu atramentu.\n"
+"Jeśli chcesz kontynuować drukowanie bez tej funkcji, naciśnij przycisk Zatrzymaj (Stop) na drukarce i przytrzymaj go przez co najmniej 5 sekund.\n"
+"W celu uzyskania optymalnej jakości firma Canon zaleca używanie nowych oryginalnych kaset firmy Canon.\n"
+"Firma Canon nie ponosi odpowiedzialności za jakiekolwiek awarie lub problemy spowodowane kontynuowaniem drukowania mimo braku atramentu.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_CARTRIDGE_STOP
+#: src/bjcupsmon_ui.c:647
+msgid ""
+"\n"
+"Replace the ink cartridge and close the cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's Stop button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Wymień zbiornik z atramentem i zamknij pokrywę.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować z zainstalowaną obecnie kasetą z atramentem, naciśnij przycisk Zatrzymaj (Stop) na drukarce i przytrzymaj go przez co najmniej 5 sekund. Drukowanie można będzie kontynuować mimo braku atramentu.\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona.\n"
+"Wymień pustą kasetę z atramentem natychmiast po zakończeniu drukowania.\n"
+"W przypadku kontynuowania drukowania mimo braku atramentu jakość wydruku może być niezadowalająca.\n"
+
+#. ID_STS_MESSAGE_OC_SMARTTRAY_CLOSE1
+#. ID_STS_MESSAGE_OC_EJECTCOVERCLOSE12
+#: src/bjcupsmon_ui.c:649 src/bjcupsmon_ui.c:813
+msgid ""
+"Document printing cannot be executed because the paper output tray is "
+"closed.\n"
+msgstr "Nie można wykonać drukowania dokumentu, ponieważ taca wyjściowa papieru jest zamknięta.\n"
+
+#. ID_STS_MESSAGE_OC_SMARTTRAY_CLOSE2
+#: src/bjcupsmon_ui.c:651
+msgid "Open the paper output tray.\n"
+msgstr "Otwórz tacę wyjściową papieru.\n"
+
+#. ID_STS_MESSAGE_JOB_JOBCANCEL_NOKEY
+#: src/bjcupsmon_ui.c:653
+msgid "Print job has been canceled by the operation of the printer.\n"
+msgstr "Zadanie drukowania zostało anulowane przy obsłudze drukarki.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST_START2
+#: src/bjcupsmon_ui.c:655
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"Contact the service center. \n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Naciśnij przycisk Rozpocznij (Start) na drukarce, aby kontynuować drukowanie.\n"
+"Skontaktuj się z centrum serwisowym. \n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP_START2
+#: src/bjcupsmon_ui.c:657
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's Start button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the service center for replacement.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Naciśnij przycisk Rozpocznij (Start) na drukarce, aby kontynuować drukowanie.\n"
+"Drukarka musi wkrótce trafić do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z centrum serwisowym w sprawie wymiany.\n"
+"Pochłaniacz atramentu może wymienić tylko wykwalifikowany technik.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST_RESUME2
+#: src/bjcupsmon_ui.c:659
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"Contact the service center. \n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Naciśnij przycisk WZNÓW (RESUME) na drukarce, aby kontynuować drukowanie.\n"
+"Skontaktuj się z centrum serwisowym. \n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP_RESUME2
+#: src/bjcupsmon_ui.c:661
+msgid ""
+"The ink absorber is almost full.\n"
+"Press the printer's RESUME button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the service center for replacement.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Naciśnij przycisk WZNÓW (RESUME) na drukarce, aby kontynuować drukowanie.\n"
+"Drukarka musi wkrótce trafić do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z centrum serwisowym w sprawie wymiany.\n"
+"Pochłaniacz atramentu może wymienić tylko wykwalifikowany technik.\n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE3
+#: src/bjcupsmon_ui.c:663
+msgid "Printing cannot be executed because the inner cover is open. \n"
+msgstr "Nie można przeprowadzić drukowania, ponieważ pokrywa wewnętrzna jest otwarta. \n"
+
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT3
+#: src/bjcupsmon_ui.c:665
+msgid "During printing, the inner cover of the printer was opened. \n"
+msgstr "Pokrywa wewnętrzna drukarki została otwarta podczas drukowania. \n"
+
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT2_2nd
+#: src/bjcupsmon_ui.c:667
+msgid "Close the inner cover. \n"
+msgstr "Zamknij pokrywę wewnętrzną. \n"
+
+#. ID_STS_MESSAGE_PAPERTHICKNESS_LEVERPOSITION
+#: src/bjcupsmon_ui.c:669 src/bjcupsmon_ui.c:1164
+msgid "Paper Thickness Lever Position: "
+msgstr "Pozycja dźwigni grubości papieru: "
+
+#. ID_STS_MESSAGE_LEFT
+#: src/bjcupsmon_ui.c:671 src/bjcupsmon_ui.c:1183
+msgid "Left"
+msgstr "Z lewej"
+
+#. ID_STS_MESSAGE_RIGHT
+#: src/bjcupsmon_ui.c:673 src/bjcupsmon_ui.c:1188
+msgid "Right"
+msgstr "Z prawej"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE_RESUME
+#: src/bjcupsmon_ui.c:675
+msgid ""
+"Automatic duplex printing cannot be continued because the size of the paper "
+"loaded in the printer is not supported by the automatic duplex printing "
+"function, or a paper size that does not allow automatic duplex printing was "
+"specified. Load paper of the correct size into the printer, check the paper "
+"size setting then press the printer's RESUME button. Printing resumes from "
+"the next paper.\n"
+msgstr "Nie można kontynuować automatycznego drukowania dwustronnego, ponieważ format papieru załadowanego do drukarki nie jest obsługiwany przez funkcję automatycznego drukowania dwustronnego lub określono format papieru, który nie umożliwia automatycznego drukowania dwustronnego. Załaduj do drukarki papier odpowiedniego formatu i sprawdź ustawienie formatu papieru, a następnie kliknij przycisk WZNÓW (RESUME) na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE_OK
+#: src/bjcupsmon_ui.c:677
+msgid ""
+"Automatic duplex printing cannot be continued because the size of the paper "
+"loaded in the printer is not supported by the automatic duplex printing "
+"function, or a paper size that does not allow automatic duplex printing was "
+"specified. Load paper of the correct size into the printer, check the paper "
+"size setting then press the printer's OK button. Printing resumes from the "
+"next paper.\n"
+msgstr "Nie można kontynuować automatycznego drukowania dwustronnego, ponieważ format papieru załadowanego do drukarki nie jest obsługiwany przez funkcję automatycznego drukowania dwustronnego lub określono format papieru, który nie umożliwia automatycznego drukowania dwustronnego. Załaduj do drukarki papier odpowiedniego formatu i sprawdź ustawienie formatu papieru, a następnie kliknij przycisk OK na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_OC_OLDINK
+#: src/bjcupsmon_ui.c:679
+msgid ""
+"Appropriate ink tank is not installed.\n"
+"Make sure the following ink tank is installed properly.\n"
+msgstr ""
+"Nie zainstalowano właściwego zbiornika z atramentem.\n"
+"Upewnij się, że poniższy zbiornik z atramentem został prawidłowo zainstalowany.\n"
+
+#. ID_STS_MESSAGE_OC_OLDINK02
+#: src/bjcupsmon_ui.c:681
+msgid ""
+"\n"
+"Printing cannot be executed because the ink tank is not compatible with this "
+"printer.\n"
+"\n"
+"Install the appropriate ink tank.\n"
+msgstr ""
+"\n"
+"Nie można wykonać drukowania, ponieważ zbiornik z atramentem jest niezgodny z tą drukarką.\n"
+"\n"
+"Zainstaluj właściwy zbiornik z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE4
+#: src/bjcupsmon_ui.c:683
+msgid "Printer cannot be ready because its inner cover is open. \n"
+msgstr "Drukarka nie może być gotowa, ponieważ pokrywa wewnętrzna jest otwarta. \n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE3_3rd
+#: src/bjcupsmon_ui.c:685
+msgid "Touch the printer's OK button. Printing will restart.\n"
+msgstr "Dotknij przycisku OK na drukarce. Drukowanie zostanie wznowione.\n"
+
+#. ID_STS_MESSAGE_OC_CDR_GUIDE5
+#: src/bjcupsmon_ui.c:687
+msgid ""
+"Printer cannot be ready for printing because its inner cover is open. \n"
+msgstr "Drukarka nie może być gotowa do drukowania, ponieważ pokrywa wewnętrzna jest otwarta. \n"
+
+#. ID_STS_MESSAGE_SMMSG_TOUCH
+#: src/bjcupsmon_ui.c:689
+msgid "Touch the printer's OK button.\n"
+msgstr "Dotknij przycisku OK na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT06_TANK_TOUCH
+#: src/bjcupsmon_ui.c:691
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, touch the "
+"printer's OK button. Then printing can continue. Replacing the ink tank is "
+"recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Zalecana jest wymiana zbiornika z atramentem.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować, dotknij przycisku OK na drukarce. Drukowanie będzie kontynuowane. Po zakończeniu drukowania zalecana jest wymiana zbiornika z atramentem. W przypadku kontynuowania drukowania mimo braku atramentu, drukarka może ulec uszkodzeniu.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST_TOUCH
+#: src/bjcupsmon_ui.c:693
+msgid ""
+"The ink absorber is almost full.\n"
+"Touch the printer's OK button to continue printing.\n"
+"Contact the service center.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Dotknij przycisku OK na drukarce, aby kontynuować drukowanie.\n"
+"Skontaktuj się z centrum serwisowym.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP_TOUCH
+#: src/bjcupsmon_ui.c:695
+msgid ""
+"The ink absorber is almost full.\n"
+"Touch the printer's OK button to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the service center for replacement.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Dotknij przycisku OK na drukarce, aby kontynuować drukowanie.\n"
+"Drukarka musi wkrótce trafić do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z centrum serwisowym w sprawie wymiany.\n"
+"Pochłaniacz atramentu może wymienić tylko wykwalifikowany technik.\n"
+
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT_3rd_TOUCH
+#. ID_STS_MESSAGE_OC_PAPER_JAM2_3rd_TOUCH
+#: src/bjcupsmon_ui.c:697 src/bjcupsmon_ui.c:747
+msgid "Touch the printer's OK button. Printing resumes from the next paper.\n"
+msgstr "Dotknij przycisku OK na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE2_TOUCH
+#: src/bjcupsmon_ui.c:699
+msgid ""
+"Duplex printing cannot be continued because the size of the paper loaded in "
+"the printer is not supported by the duplex printing function or a paper size "
+"that does not allow duplex printing was specified. Load paper of the correct "
+"size in the printer, check the paper size setting, then touch the OK button "
+"on the printer.\n"
+msgstr "Nie można kontynuować drukowania dwustronnego, ponieważ rozmiar papieru załadowanego do drukarki nie jest obsługiwany przez funkcję drukowania dwustronnego lub określono rozmiar papieru, który nie umożliwia drukowania dwustronnego. Załaduj do drukarki papier w odpowiednim rozmiarze i sprawdź ustawienie rozmiaru papieru, a następnie dotknij przycisk OK na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE2_OK
+#: src/bjcupsmon_ui.c:701
+msgid ""
+"Duplex printing cannot be continued because the size of the paper loaded in "
+"the printer is not supported by the duplex printing function or a paper size "
+"that does not allow duplex printing was specified. Load paper of the correct "
+"size in the printer, check the paper size setting, then press the OK button "
+"on the printer.\n"
+msgstr "Nie można kontynuować drukowania dwustronnego, ponieważ rozmiar papieru załadowanego do drukarki nie jest obsługiwany przez funkcję drukowania dwustronnego lub określono rozmiar papieru, który nie umożliwia drukowania dwustronnego. Załaduj do drukarki papier w odpowiednim rozmiarze i sprawdź ustawienie rozmiaru papieru, a następnie kliknij przycisk OK na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE2_RESUME
+#: src/bjcupsmon_ui.c:703
+msgid ""
+"Duplex printing cannot be continued because the size of the paper loaded in "
+"the printer is not supported by the duplex printing function or a paper size "
+"that does not allow duplex printing was specified. Load paper of the correct "
+"size in the printer, check the paper size setting, then press the RESUME "
+"button on the printer.\n"
+msgstr "Nie można kontynuować drukowania dwustronnego, ponieważ rozmiar papieru załadowanego do drukarki nie jest obsługiwany przez funkcję drukowania dwustronnego lub określono rozmiar papieru, który nie umożliwia drukowania dwustronnego. Załaduj do drukarki papier w odpowiednim rozmiarze i sprawdź ustawienie rozmiaru papieru, a następnie kliknij przycisk WZNÓW (RESUME) na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE2_START
+#: src/bjcupsmon_ui.c:705
+msgid ""
+"Duplex printing cannot be continued because the size of the paper loaded in "
+"the printer is not supported by the duplex printing function or a paper size "
+"that does not allow duplex printing was specified. Load paper of the correct "
+"size in the printer, check the paper size setting, then press the Start "
+"button on the printer.\n"
+msgstr "Nie można kontynuować drukowania dwustronnego, ponieważ rozmiar papieru załadowanego do drukarki nie jest obsługiwany przez funkcję drukowania dwustronnego lub określono rozmiar papieru, który nie umożliwia drukowania dwustronnego. Załaduj do drukarki papier w odpowiednim rozmiarze i sprawdź ustawienie rozmiaru papieru, a następnie kliknij przycisk Rozpocznij (Start) na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_HEADALIGNMENT_TOUCH
+#: src/bjcupsmon_ui.c:707
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Touch the printer's OK button to clear the error.\n"
+msgstr ""
+"Wystąpił błąd podczas automatycznego wyrównywania głowicy drukującej.\n"
+"\n"
+"Dysze głowicy drukującej mogą być zatkane. Na karcie Obsługa sterownika drukarki uruchom czyszczenie i ponownie wykonaj wyrównanie głowicy drukującej.\n"
+"\n"
+"Jeśli błąd nadal występuje, sprawdź opis błędu w podręczniku użytkownika lub wykonaj ręczne wyrównanie.\n"
+"\n"
+"Dotknij przycisku OK na drukarce, aby skasować błąd.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_MFP_TOUCH
+#: src/bjcupsmon_ui.c:709
+msgid ""
+"\n"
+"Replace the ink tank. Printing under the current condition may damage the "
+"printer.\n"
+"To continue printing, touch the printer's Stop button for at least 5 "
+"seconds, and then release it.\n"
+"This operation releases the function for detecting the remaining level of "
+"the above ink, and releasing the function is memorized.\n"
+"Please be advised that Canon shall not be liable for any malfunction or "
+"trouble caused by continuation of printing under the ink out condition.\n"
+"\n"
+msgstr ""
+"\n"
+"Wymień zbiornik z atramentem. Kontynuowanie drukowania mimo braku atramentu grozi uszkodzeniem drukarki.\n"
+"Aby kontynuować drukowanie, dotknij przycisku Zatrzymaj (Stop) i przytrzymaj go przez co najmniej 5 sekund, a następnie go zwolnij.\n"
+"Ta operacja spowoduje wyłączenie funkcji wykrywania pozostałego poziomu atramentu, a wyłączenie funkcji zostanie zapamiętane.\n"
+"Firma Canon nie ponosi odpowiedzialności za jakiekolwiek awarie lub problemy spowodowane kontynuowaniem drukowania mimo braku atramentu.\n"
+"\n"
+
+#. ID_STS_MESSAGE_SC_SERVICE_CARRIAGEPOSITION_ERROR
+#: src/bjcupsmon_ui.c:711
+msgid ""
+"The protective material may still be attached to the holder in the printer.\n"
+"You need to remove this material before using the printer.\n"
+"Open the printer's cover and remove the protective material if it is still "
+"attached.\n"
+"Then close the printer's cover, turn off power and turn it back on.\n"
+"If this message appears again, please see the user's guide.\n"
+msgstr ""
+"Na uchwycie w drukarce mógł pozostać materiał ochronny.\n"
+"Przed użyciem drukarki należy go usunąć.\n"
+"Otwórz pokrywę drukarki i usuń materiał ochronny, jeśli nadal znajduje się na uchwycie.\n"
+"Następnie zamknij pokrywę drukarki, wyłącz zasilanie i włącz je ponownie.\n"
+"Jeśli ten komunikat znowu się pojawi, zajrzyj do podręcznika użytkownika.\n"
+
+#. ID_STS_MESSAGE_OC_PROTECTIVEMATERIAL
+#: src/bjcupsmon_ui.c:713
+msgid ""
+"The protective material or tape may still be attached to the holder in the "
+"printer.\n"
+"You need to remove this protective material or tape before using the "
+"printer.\n"
+"Open the printer's paper output cover and remove the protective material or "
+"tape if it is still attached.\n"
+"Then close the printer's paper output cover.\n"
+msgstr ""
+"Na uchwycie w drukarce mógł pozostać materiał ochronny lub taśma.\n"
+"Przed użyciem drukarki należy usunąć ten materiał ochronny lub taśmę.\n"
+"Otwórz pokrywę wyprowadzania papieru drukarki i usuń materiał ochronny lub taśmę, jeśli nadal znajduje się na uchwycie.\n"
+"Następnie zamknij pokrywę wyprowadzania papieru drukarki.\n"
+
+#. ID_STS_MESSAGE_OC_NO_RECOGNIZE_CART2
+#: src/bjcupsmon_ui.c:715
+msgid "Appropriate ink cartridge is not installed.\n"
+msgstr "Nie zainstalowano właściwej kasety z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_NO_RECOGNIZE_CART2_3rd
+#: src/bjcupsmon_ui.c:717
+msgid ""
+"\n"
+"Printing cannot be executed because the ink cartridge is not compatible with "
+"this printer.\n"
+"\n"
+"Install the appropriate ink cartridge.\n"
+msgstr ""
+"\n"
+"Nie można wykonać drukowania, ponieważ kaseta z atramentem jest niezgodna z tą drukarką.\n"
+"\n"
+"Zainstaluj właściwą kasetę z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_OUTFR2
+#: src/bjcupsmon_ui.c:719
+msgid ""
+"Load paper into the front tray.\n"
+"Insert the paper completely to the end of the front tray.\n"
+msgstr ""
+"Załaduj papier na przednią tacę.\n"
+"Wsuń papier do końca przedniej tacy.\n"
+
+#. ID_STS_MESSAGE_OC_HEADCOVER_OPEN
+#: src/bjcupsmon_ui.c:721
+msgid ""
+"The paper output cover is open.\n"
+"Close the cover.\n"
+msgstr ""
+"Pokrywa wyprowadzania papieru jest otwarta.\n"
+"Zamknij pokrywę.\n"
+
+#. ID_STS_MESSAGE_OC_INKTANK_NOTPROPERLY_LOCKLEVER_PUSHUP
+#: src/bjcupsmon_ui.c:723
+msgid ""
+"An ink cartridge is not installed properly.\n"
+"Push up the ink cartridge locking lever firmly, and then make sure the ink "
+"cartridge is installed properly. Then close the paper output cover.\n"
+msgstr ""
+"Kaseta z atramentem jest zainstalowana nieprawidłowo.\n"
+"Energicznie odciągnij dźwignię blokady kasety z atramentem i upewnij się, że kaseta jest właściwie zainstalowana. Następnie zamknij pokrywę wyprowadzania papieru.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_FRONTCOVERCLOSE_IFMEM
+#: src/bjcupsmon_ui.c:725
+msgid ""
+"Remove the loaded paper in the front tray and close the front cover.\n"
+"If a memory card is inserted, be sure to remove it.\n"
+msgstr ""
+"Wyjmij papier z przedniej tacy, a następnie zamknij pokrywę przednią.\n"
+"Jeśli włożona jest karta pamięci, wyjmij ją.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_RIGHTSIDEDOWN
+#: src/bjcupsmon_ui.c:727
+msgid ""
+"Place the printer upright with the right side down, then open the transport "
+"unit by pressing down the open lever.\n"
+"Remove the jammed paper and immediately return the printer to its original "
+"position.\n"
+"\n"
+"Refer to the user's guide for details.\n"
+msgstr ""
+"Ustaw drukarkę pionowo prawą stroną do dołu, a następnie otwórz zespół przenoszenia papieru, naciskając dźwignię Otwórz.\n"
+"Usuń zacięty papier i natychmiast ustaw drukarkę w pierwotnym położeniu.\n"
+"\n"
+"Dodatkowe informacje na ten temat znajdują się w podręczniku użytkownika.\n"
+
+#. ID_STS_MESSAGE_BUSY_CARTRIDGE_CHANGE_FRONT
+#: src/bjcupsmon_ui.c:729
+msgid ""
+"The holder is in the ink cartridge replacement position.\n"
+"After replacing the ink cartridge, close the paper output cover.\n"
+msgstr ""
+"Uchwyt znajduje się w pozycji umożliwiającej wymianę kasety z atramentem.\n"
+"Po wymianie kasety z atramentem zamknij pokrywę wyprowadzania papieru.\n"
+
+#. ID_STS_MESSAGE_BUSY_HEADPROTECT_FRONT
+#: src/bjcupsmon_ui.c:731
+msgid ""
+"The ink cannot be replaced because the print head is in a standby "
+"condition.\n"
+"Close the paper output cover, wait for a while, and then replace the ink.\n"
+msgstr ""
+"Nie można wymienić atramentu, ponieważ głowica drukująca znajduje się w stanie oczekiwania.\n"
+"Zamknij pokrywę wyprowadzania papieru, odczekaj chwilę, a następnie wymień atrament.\n"
+
+#. ID_STS_MESSAGE_OC_COVER_OPEN_OUTPUTCOVER
+#: src/bjcupsmon_ui.c:733
+msgid ""
+"The paper output cover is open.\n"
+"If printing is in progress, the ink cartridges cannot be replaced while "
+"printing.\n"
+"Close the paper output cover, wait for printing to finish, then open the "
+"cover again and replace the ink cartridges.\n"
+msgstr ""
+"Pokrywa wyprowadzania papieru jest otwarta.\n"
+"Jeśli trwa drukowanie, nie można wymieniać kaset z atramentem.\n"
+"Zamknij pokrywę wyprowadzania papieru i poczekaj na zakończenie drukowania, a następnie otwórz ponownie pokrywę i wymień kasety z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_FRONTCOVERCLOSE
+#: src/bjcupsmon_ui.c:735
+msgid "Remove the loaded paper in the front tray and close the front cover.\n"
+msgstr "Wyjmij papier z przedniej tacy, a następnie zamknij pokrywę przednią.\n"
+
+#. ID_STS_MESSAGE_SC_SERVICE_SCANNER_LOCK_ERROR
+#: src/bjcupsmon_ui.c:737
+msgid ""
+"Printing cannot be executed because the lock switch is on.\n"
+"Cancel printing, release the lock switch, and turn the printer off and then "
+"back on.\n"
+msgstr ""
+"Nie można przeprowadzić drukowania, ponieważ włączony jest przełącznik blokady.\n"
+"Anuluj drukowanie, zwolnij przełącznik blokady i wyłącz drukarkę, a następnie włącz ją ponownie.\n"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE_TOUCH
+#: src/bjcupsmon_ui.c:739
+msgid ""
+"Automatic duplex printing cannot be continued because the size of the paper "
+"loaded in the printer is not supported by the automatic duplex printing "
+"function, or a paper size that does not allow automatic duplex printing was "
+"specified. Load paper of the correct size into the printer, check the paper "
+"size setting then touch the printer's OK button. Printing resumes from the "
+"next paper.\n"
+msgstr "Nie można kontynuować automatycznego drukowania dwustronnego, ponieważ rozmiar papieru załadowanego do drukarki nie jest obsługiwany przez funkcję automatycznego drukowania dwustronnego lub określono rozmiar papieru, który nie umożliwia automatycznego drukowania dwustronnego. Załaduj do drukarki papier odpowiedniego rozmiaru i sprawdź ustawienie rozmiaru papieru, a następnie dotknij przycisku OK na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_OC_POSITION_MISMACH_CARTRIDGE
+#: src/bjcupsmon_ui.c:741
+msgid ""
+"An ink cartridge is not installed in the correct position.\n"
+"Install the following ink cartridge in the appropriate position. If printing "
+"is in progress, cancel printing and install the ink cartridge.\n"
+msgstr ""
+"Kaseta z atramentem została zainstalowana w nieprawidłowej pozycji.\n"
+"Zainstaluj następującą kasetę z atramentem w prawidłowej pozycji. Jeśli trwa drukowanie, anuluj je i zainstaluj kasetę z atramentem.\n"
+
+#. ID_STS_MESSAGE_OC_PLURALERROR_CARTRIDGE
+#: src/bjcupsmon_ui.c:743
+msgid "More than one ink cartridge of the following type is installed.\n"
+msgstr "Zainstalowano więcej niż jedną kasetę z atramentem następującego typu.\n"
+
+#. ID_STS_MESSAGE_OC_PLURALERROR_CARTRIDGE_3rd
+#: src/bjcupsmon_ui.c:745
+msgid ""
+"\n"
+"Use only one ink cartridge per type at a time.\n"
+msgstr ""
+"\n"
+"Jednocześnie używaj tylko jednej kasety z atramentem na typ.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_CARTRIDGE_STOPRESET_OUTPUTCOVER
+#: src/bjcupsmon_ui.c:749
+msgid ""
+"\n"
+"Replace the ink cartridge and close the paper output cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's Stop/Reset button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Wymień kasetę z atramentem i zamknij pokrywę wyprowadzania papieru.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować z zainstalowaną obecnie kasetą z atramentem, naciśnij przycisk Zatrzymaj/Uruchom ponownie (Stop/Reset) na drukarce i przytrzymaj go przez co najmniej 5 sekund. Drukowanie można będzie kontynuować mimo braku atramentu.\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona.\n"
+"Wymień pustą kasetę z atramentem natychmiast po zakończeniu drukowania.\n"
+"W przypadku kontynuowania drukowania mimo braku atramentu jakość wydruku może być niezadowalająca.\n"
+
+#. ID_STS_MESSAGE_OC_INKEMPTY06_TANK_3rd_CARTRIDGE_STOP_OUTPUTCOVER
+#: src/bjcupsmon_ui.c:751
+msgid ""
+"\n"
+"Replace the ink cartridge and close the paper output cover.\n"
+"If printing is in progress and you want to continue printing, press the "
+"printer's Stop button for at least 5 seconds with the ink cartridge "
+"installed. Then printing can continue under the ink out condition.\n"
+"The function for detecting the remaining ink level will be disabled.\n"
+"Replace the empty ink cartridge immediately after the printing.\n"
+"The resulting print quality is not satisfactory, if printing is continued "
+"under the ink out condition.\n"
+msgstr ""
+"\n"
+"Wymień kasetę z atramentem i zamknij pokrywę wyprowadzania papieru.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować z zainstalowaną obecnie kasetą z atramentem, naciśnij przycisk Zatrzymaj (Stop) na drukarce i przytrzymaj go przez co najmniej 5 sekund. Drukowanie można będzie kontynuować mimo braku atramentu.\n"
+"Funkcja wykrywania poziomu pozostałego atramentu zostanie wyłączona.\n"
+"Wymień pustą kasetę z atramentem natychmiast po zakończeniu drukowania.\n"
+"W przypadku kontynuowania drukowania mimo braku atramentu jakość wydruku może być niezadowalająca.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_FRONTCOVERCLOSE2
+#: src/bjcupsmon_ui.c:753
+msgid ""
+"Remove the loaded paper in the front tray and close the front cover. Keep "
+"the document cover open.\n"
+msgstr "Wyjmij papier z przedniej tacy, a następnie zamknij pokrywę przednią. Pokrywę dokumentów pozostaw otwartą.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM03_FRONTCOVERCLOSE_IFMEM2
+#: src/bjcupsmon_ui.c:755
+msgid ""
+"Remove the loaded paper in the front tray and close the front cover. Keep "
+"the document cover open.\n"
+"If a memory card is inserted, be sure to remove it.\n"
+msgstr ""
+"Wyjmij papier z przedniej tacy, a następnie zamknij pokrywę przednią. Pokrywę dokumentów pozostaw otwartą.\n"
+"Jeśli włożona jest karta pamięci, wyjmij ją.\n"
+
+#. ID_STS_MESSAGE_INK_BLACK0
+#. ID_STS_MESSAGE_INK_BLACK1
+#: src/bjcupsmon_ui.c:757 src/bjcupsmon_ui.c:759
+msgid " Black"
+msgstr " Czarny"
+
+#. ID_STS_MESSAGE_INK_MAGENTA0
+#: src/bjcupsmon_ui.c:761
+msgid " Magenta"
+msgstr " Amarantowy"
+
+#. ID_STS_MESSAGE_INK_YELLOW0
+#: src/bjcupsmon_ui.c:763
+msgid " Yellow"
+msgstr " Żółty"
+
+#. ID_STS_MESSAGE_INK_CYAN0
+#: src/bjcupsmon_ui.c:765
+msgid " Cyan"
+msgstr " Błękitny"
+
+#. ID_STS_MESSAGE_INK_GLAY0
+#: src/bjcupsmon_ui.c:767
+msgid " Gray"
+msgstr " Szary"
+
+#. ID_STS_MESSAGE_SC_SERVICE_ERROR_CARRIAGEPOS
+#: src/bjcupsmon_ui.c:769
+msgid ""
+"A printer error has occurred.\n"
+"Turn the printer off. Then check that there are no foreign objects in the "
+"printer and that the ink tanks are installed properly.\n"
+"After that, turn the printer on again.\n"
+"\n"
+"If this doesn't clear the error, the printer needs repair. See the user's "
+"guide and contact the service center.\n"
+msgstr ""
+"Wystąpił błąd drukarki.\n"
+"Wyłącz ją. Następnie sprawdź, czy w drukarce nie znajdują się obce przedmioty i czy zbiorniki z atramentem są prawidłowo zainstalowane.\n"
+"Potem włącz drukarkę ponownie.\n"
+"\n"
+"Jeśli błąd nie zostanie usunięty, drukarka wymaga naprawy. Zajrzyj do podręcznika użytkownika i skontaktuj się z centrum serwisowym.\n"
+
+#. ID_STS_MESSAGE_OC_FITPAPER_CASSETUP
+#: src/bjcupsmon_ui.c:771
+msgid "Fit paper into the cassette (upper).\n"
+msgstr "Umieść papier w kasecie (górnej).\n"
+
+#. ID_STS_MESSAGE_OC_FITPAPER_CASSETLOWER
+#: src/bjcupsmon_ui.c:773
+msgid "Fit paper into the cassette (lower).\n"
+msgstr "Umieść papier w kasecie (dolnej).\n"
+
+#. ID_STS_MESSAGE_SMMSG_TAP
+#: src/bjcupsmon_ui.c:775
+msgid "Tap [OK] on the printer.\n"
+msgstr "Dotknij [OK] na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_USERSIZE_RESUME
+#: src/bjcupsmon_ui.c:777
+msgid ""
+"Cannot print with the specified paper size.\n"
+"Press the RESUME button on the printer to cancel printing. Then, change the "
+"paper size setting and print again.\n"
+"See the user's guide for the correct paper size setting.\n"
+msgstr ""
+"Nie można drukować przy określonym rozmiarze papieru.\n"
+"Aby anulować drukowanie, naciśnij na drukarce przycisk WZNÓW (RESUME). Następnie zmień ustawienie rozmiaru papieru i ponownie rozpocznij drukowanie.\n"
+"Zajrzyj do podręcznika użytkownika, aby sprawdzić prawidłowe ustawienie rozmiaru papieru.\n"
+
+#. ID_STS_MESSAGE_OC_USERSIZE_STOP
+#: src/bjcupsmon_ui.c:779
+msgid ""
+"Cannot print with the specified paper size.\n"
+"Press the printer's Stop button on the printer to cancel printing. Then, "
+"change the paper size setting and print again.\n"
+"See the user's guide for the correct paper size setting.\n"
+msgstr ""
+"Nie można drukować przy określonym rozmiarze papieru.\n"
+"Aby anulować drukowanie, naciśnij na drukarce przycisk Zatrzymaj (Stop). Następnie zmień ustawienie rozmiaru papieru i ponownie rozpocznij drukowanie.\n"
+"Zajrzyj do podręcznika użytkownika, aby sprawdzić prawidłowe ustawienie rozmiaru papieru.\n"
+
+#. ID_STS_MESSAGE_OC_USERSIZE_STOP_TOUCH
+#: src/bjcupsmon_ui.c:781
+msgid ""
+"Cannot print with the specified paper size.\n"
+"Touch the printer's Stop button on the printer to cancel printing. Then, "
+"change the paper size setting and print again.\n"
+"See the user's guide for the correct paper size setting.\n"
+msgstr ""
+"Nie można drukować przy określonym rozmiarze papieru.\n"
+"Aby anulować drukowanie, dotknij na drukarce przycisku Zatrzymaj (Stop). Następnie zmień ustawienie rozmiaru papieru i ponownie rozpocznij drukowanie.\n"
+"Zajrzyj do podręcznika użytkownika, aby sprawdzić prawidłowe ustawienie rozmiaru papieru.\n"
+
+#. ID_STS_MESSAGE_OC_EJECTCOVERCLOSE12_1_BTN
+#: src/bjcupsmon_ui.c:783
+msgid ""
+"Check that there are no objects in front of the printer and that the "
+"cassette (upper) is fully inserted, and then press the open button on the "
+"printer to open the paper output tray.\n"
+msgstr "Sprawdź, czy w drukarce nie znajdują się obce przedmioty i czy kaseta (górna) jest wsunięta do końca, a następnie naciśnij przycisk Otwórz, aby otworzyć tacę wyprowadzania papieru.\n"
+
+#. ID_STS_MESSAGE_OC_EJECTCOVERCLOSE12_1
+#: src/bjcupsmon_ui.c:785
+msgid ""
+"Check that there are no objects in front of the printer and that the "
+"cassette (upper) is fully inserted, and then open the paper output tray.\n"
+msgstr "Sprawdź, czy w drukarce nie znajdują się obce przedmioty i czy kaseta (górna) jest wsunięta do końca, a następnie otwórz tacę wyprowadzania papieru.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM_BACK12_1
+#: src/bjcupsmon_ui.c:787
+msgid ""
+"Detach the rear cover.\n"
+"Open the paper output tray if it is closed.\n"
+msgstr ""
+"Zdejmij pokrywę tylną.\n"
+"Otwórz tacę wyprowadzania papieru, jeśli jest zamknięta.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM_BACK12_1_2
+#: src/bjcupsmon_ui.c:789
+msgid ""
+"Detach the rear cover, and then detach the transport unit cover inside.\n"
+"Open the paper output tray if it is closed.\n"
+msgstr ""
+"Zdejmij pokrywę tylną, a następnie pokrywę zespołu przenoszenia papieru znajdującą się wewnątrz.\n"
+"Otwórz tacę wyprowadzania papieru, jeśli jest zamknięta.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM_BACK12_2
+#: src/bjcupsmon_ui.c:791
+msgid ""
+"Remove the jammed paper from inside the transport unit.\n"
+"If the paper cannot be removed, refer to the user's guide to remove it.\n"
+msgstr ""
+"Wyjmij zacięty papier z zespołu przenoszenia papieru.\n"
+"Jeśli nie można usunąć papieru, zapoznaj się z instrukcjami na ten temat zawartymi w podręczniku użytkownika.\n"
+
+#. ID_STS_MESSAGE_OC_PAPER_JAM2_3rd_TAP
+#. ID_STS_MESSAGE_CDR_GUIDE_PRINT_3rd_TAP
+#: src/bjcupsmon_ui.c:793 src/bjcupsmon_ui.c:811
+msgid "Tap [OK] on the printer. Printing resumes from the next paper.\n"
+msgstr "Dotknij [OK] na drukarce. Drukowanie zostanie wznowione od następnego arkusza.\n"
+
+#. ID_STS_MESSAGE_BUSY_HEADCHANGING
+#: src/bjcupsmon_ui.c:795
+msgid ""
+"The print head holder has moved to the head replacement position.\n"
+"\n"
+msgstr ""
+"Uchwyt głowicy drukującej przesunął się do pozycji umożliwiającej wymianę głowicy.\n"
+"\n"
+
+#. ID_STS_MESSAGE_OC_COVER_OPEN3
+#: src/bjcupsmon_ui.c:797
+msgid ""
+"The printer's cover is open.\n"
+"If printing is in progress, the ink tank cannot be replaced. Close the "
+"cover, wait for printing to finish, then open the cover again and replace "
+"the ink tank.\n"
+"\n"
+msgstr ""
+"Pokrywa drukarki jest otwarta.\n"
+"Jeśli trwa drukowanie, nie można wymienić zbiornika z atramentem. Zamknij pokrywę, poczekaj na zakończenie drukowania, a następnie ponownie otwórz pokrywę i wymień zbiornik z atramentem.\n"
+"\n"
+
+#. ID_STS_MESSAGE_SC_SERVICE_ERROR_CARRIAGEPOS_DISPO
+#: src/bjcupsmon_ui.c:799
+msgid ""
+"A printer error has occurred.\n"
+"Turn the printer off. Then check that there are no foreign objects in the "
+"printer and that the ink cartridges are installed properly.\n"
+"After that, turn the printer on again.\n"
+"\n"
+"If this doesn't clear the error, the printer needs repair. See the user's "
+"guide and contact the service center.\n"
+msgstr ""
+"Wystąpił błąd drukarki.\n"
+"Wyłącz ją. Następnie sprawdź, czy w drukarce nie znajdują się obce przedmioty i czy kasety z atramentem są prawidłowo zainstalowane.\n"
+"Potem włącz drukarkę ponownie.\n"
+"\n"
+"Jeśli błąd nie zostanie usunięty, drukarka wymaga naprawy. Zajrzyj do podręcznika użytkownika i skontaktuj się z centrum serwisowym.\n"
+
+#. ID_STS_MESSAGE_OC_INKOUT06_TANK_TAP
+#: src/bjcupsmon_ui.c:801
+msgid ""
+"\n"
+"Replacing the ink tank is recommended.\n"
+"If printing is in progress and you want to continue printing, tap [OK] on "
+"the printer. Then printing can continue. Replacing the ink tank is "
+"recommended after the printing. The printer may be damaged if printing is "
+"continued under the ink out condition.\n"
+msgstr ""
+"\n"
+"Zalecana jest wymiana zbiornika z atramentem.\n"
+"Jeśli trwa drukowanie i chcesz je kontynuować, dotknij [OK] na drukarce. Drukowanie będzie kontynuowane. Po zakończeniu drukowania zalecana jest wymiana zbiornika z atramentem. W przypadku kontynuowania drukowania mimo braku atramentu, drukarka może ulec uszkodzeniu.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOST_TAP
+#: src/bjcupsmon_ui.c:803
+msgid ""
+"The ink absorber is almost full.\n"
+"Tap [OK] on the printer to continue printing.\n"
+"Contact the service center.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Dotknij [OK] na drukarce, aby kontynuować drukowanie.\n"
+"Skontaktuj się z centrum serwisowym.\n"
+
+#. ID_STS_MESSAGE_OC_USEDTANK_ALMOSTJP_TAP
+#: src/bjcupsmon_ui.c:805
+msgid ""
+"The ink absorber is almost full.\n"
+"Tap [OK] on the printer to continue printing.\n"
+"The printer will soon require servicing to replace the ink absorber.\n"
+"Contact the service center for replacement.\n"
+"The ink absorber can only be replaced by a qualified technician.\n"
+msgstr ""
+"Pochłaniacz atramentu jest prawie pełny.\n"
+"Dotknij [OK] na drukarce, aby kontynuować drukowanie.\n"
+"Drukarka musi wkrótce trafić do serwisu w celu wymiany pochłaniacza atramentu.\n"
+"Skontaktuj się z centrum serwisowym w sprawie wymiany.\n"
+"Pochłaniacz atramentu może wymienić tylko wykwalifikowany technik.\n"
+
+#. ID_STS_MESSAGE_OC_DUPLEX_STOPPAGE2_TAP
+#: src/bjcupsmon_ui.c:807
+msgid ""
+"Duplex printing cannot be continued because the size of the paper loaded in "
+"the printer is not supported by the duplex printing function or a paper size "
+"that does not allow duplex printing was specified. Load paper of the correct "
+"size in the printer, check the paper size setting, then tap [OK] on the "
+"printer.\n"
+msgstr "Nie można kontynuować drukowania dwustronnego, ponieważ rozmiar papieru załadowanego do drukarki nie jest obsługiwany przez funkcję drukowania dwustronnego lub określono rozmiar papieru, który nie umożliwia drukowania dwustronnego. Załaduj do drukarki papier w odpowiednim rozmiarze i sprawdź ustawienie rozmiaru papieru, a następnie dotknij [OK] na drukarce.\n"
+
+#. ID_STS_MESSAGE_OC_HEADALIGNMENT_TAP
+#: src/bjcupsmon_ui.c:809
+msgid ""
+"An error occurred during automatic print head alignment.\n"
+"\n"
+"The print head nozzles may be clogged. Execute cleaning on the Maintenance "
+"tab of the printer driver, and reexecute print head alignment.\n"
+"\n"
+"If an error still occurs, refer to the user's guide to check the error or "
+"carry out manual alignment.\n"
+"\n"
+"Tap [OK] on the printer to clear the error.\n"
+msgstr ""
+"Wystąpił błąd podczas automatycznego wyrównywania głowicy drukującej.\n"
+"\n"
+"Dysze głowicy drukującej mogą być zatkane. Na karcie Obsługa sterownika drukarki uruchom czyszczenie i ponownie wykonaj wyrównanie głowicy drukującej.\n"
+"\n"
+"Jeśli błąd nadal występuje, sprawdź opis błędu w podręczniku użytkownika lub wykonaj ręczne wyrównanie.\n"
+"\n"
+"Dotknij [OK] na drukarce, aby skasować błąd.\n"
+
+#. ID_OTHER_MESSAGE_PRINTER_IS_READY
+#: src/bjcupsmon_ui.c:819
+msgid "Ready.\n"
+msgstr "Gotowa.\n"
+
+#. ID_OTHER_MESSAGE_UNKNOWN_PRINTER
+#: src/bjcupsmon_ui.c:821
+msgid "Unknown printer.\n"
+msgstr "Nieznana drukarka.\n"
+
+#. ID_OTHER_MESSAGE_SPOOLER_ERROR
+#: src/bjcupsmon_ui.c:823
+msgid "Spooler error.\n"
+msgstr "Błąd buforu.\n"
+
+#. ID_OTHER_MESSAGE_NO_RESPONSE
+#. ID_OTHER_MESSAGE_USB_BACKEND_NORMAL
+#: src/bjcupsmon_ui.c:825 src/bjcupsmon_ui.c:839
+msgid "Printer not responding.\n"
+msgstr "Drukarka nie odpowiada.\n"
+
+#. ID_OTHER_MESSAGE_COLLECTING_STATUS
+#: src/bjcupsmon_ui.c:827
+msgid "Collecting printer status.\n"
+msgstr "Zbieranie informacji o stanie drukarki.\n"
+
+#. ID_OTHER_MESSAGE_SLEEP
+#: src/bjcupsmon_ui.c:829
+msgid "Printer is standing by.\n"
+msgstr "Drukarka jest gotowa do pracy.\n"
+
+#. ID_OTHER_MESSAGE_FIRMUP
+#: src/bjcupsmon_ui.c:833
+msgid ""
+"The printer is updating the firmware.\n"
+"Turn the printer off and then on again.\n"
+"If this message appears again, update the firmware once more.\n"
+msgstr ""
+"Trwa aktualizowanie oprogramowania układowego drukarki.\n"
+"Wyłącz drukarkę, a następnie włącz ją ponownie.\n"
+"Jeśli ten komunikat znowu się pojawi, przeprowadź ponownie aktualizację oprogramowania układowego.\n"
+
+#. ID_OTHER_MESSAGE_OFFLINE
+#: src/bjcupsmon_ui.c:837
+msgid ""
+"The printer is offline.\n"
+"Check that the printer cable is connected and the printer power is on.\n"
+msgstr "Drukarka nie jest podłączona (tryb offline). Sprawdź, czy kabel drukarki jest podłączony, a drukarka włączona.\n"
+
+#. ** Parameters start **
+#. Buffer for glade file name.
+#. Pointer to array of message ID.
+#. Counter.
+#. ID_STS_MESSAGE_COLOR
+#: src/bjcupsmon_ui.c:870
+msgid "COLOR[AA-123]\n"
+msgstr ""
+
+#. ID_STS_MESSAGE_UNKNOWN_COLOR
+#: src/bjcupsmon_ui.c:872
+msgid "COLOR\n"
+msgstr "COLOR\n"
+
+#: src/bjcupsmon_ui.c:1173
+msgid "Up"
+msgstr ""
+
+#: src/bjcupsmon_ui.c:1178
+msgid "Down"
+msgstr ""
+

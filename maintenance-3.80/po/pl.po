@@ -1,0 +1,3742 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maintenance 3.80\n"
+"POT-Creation-Date: 2012-04-17 19:15+0900\n"
+"PO-Revision-Date: 2012-06-13 11:27+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_CAPTION
+#: po/keystr.h:2
+msgid "Canon XXXXXX"
+msgstr ""
+
+#. model_BJF850
+#: po/keystr.h:4
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:6
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:8
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:12
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:14
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:16
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:18
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:20
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:22
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:24
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:26
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:28
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:30
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:32
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:34
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:36
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:38
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:40
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:42
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:44
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:46
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:48
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:50
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:52
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:54
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:56
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:58
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:60
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:62
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:64
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:66
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:68
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:70
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:72
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:74
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:76
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:78
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:80
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:82
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:84
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:86
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:88
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:90
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:92
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:94
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:96
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:98
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:100
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:102
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:104
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:106
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:108
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:110
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:112
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:114
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:116
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:118
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:120
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:122
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:124
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:126
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:128
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:130
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:132
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:134
+msgid "MX870 series"
+msgstr ""
+
+#. model_MP495
+#: po/keystr.h:136
+msgid "MP495 series"
+msgstr ""
+
+#. model_MP280
+#: po/keystr.h:138
+msgid "MP280 series"
+msgstr ""
+
+#. model_MG5100
+#: po/keystr.h:140
+msgid "MG5100 series"
+msgstr ""
+
+#. model_MG5200
+#: po/keystr.h:142
+msgid "MG5200 series"
+msgstr ""
+
+#. model_IP4800
+#: po/keystr.h:144
+msgid "iP4800 series"
+msgstr ""
+
+#. model_MG6100
+#: po/keystr.h:146
+msgid "MG6100 series"
+msgstr ""
+
+#. model_MG8100
+#: po/keystr.h:148
+msgid "MG8100 series"
+msgstr ""
+
+#. model_MX360
+#: po/keystr.h:150
+msgid "MX360 series"
+msgstr ""
+
+#. model_MX410
+#: po/keystr.h:152
+msgid "MX410 series"
+msgstr ""
+
+#. model_MX420
+#: po/keystr.h:154
+msgid "MX420 series"
+msgstr ""
+
+#. model_MX880
+#: po/keystr.h:156
+msgid "MX880 series"
+msgstr ""
+
+#. model_IX6500
+#: po/keystr.h:158
+msgid "iX6500 series"
+msgstr ""
+
+#. model_MG2100
+#: po/keystr.h:160
+msgid "MG2100 series"
+msgstr ""
+
+#. model_MG3100
+#: po/keystr.h:162
+msgid "MG3100 series"
+msgstr ""
+
+#. model_MG4100
+#: po/keystr.h:164
+msgid "MG4100 series"
+msgstr ""
+
+#. model_MG5300
+#: po/keystr.h:166
+msgid "MG5300 series"
+msgstr ""
+
+#. model_MG6200
+#: po/keystr.h:168
+msgid "MG6200 series"
+msgstr ""
+
+#. model_MG8200
+#: po/keystr.h:170
+msgid "MG8200 series"
+msgstr ""
+
+#. model_IP4900
+#: po/keystr.h:172
+msgid "iP4900 series"
+msgstr ""
+
+#. model_E500
+#: po/keystr.h:174
+msgid "E500 series"
+msgstr ""
+
+#. model_MX710
+#: po/keystr.h:176
+msgid "MX710 series"
+msgstr ""
+
+#. model_MX890
+#: po/keystr.h:178
+msgid "MX890 series"
+msgstr ""
+
+#. model_MX370
+#: po/keystr.h:180
+msgid "MX370 series"
+msgstr ""
+
+#. model_MX430
+#: po/keystr.h:182
+msgid "MX430 series"
+msgstr ""
+
+#. model_MX510
+#: po/keystr.h:184
+msgid "MX510 series"
+msgstr ""
+
+#. model_E600
+#: po/keystr.h:186
+msgid "E600 series"
+msgstr ""
+
+#. model_MP230
+#: po/keystr.h:188
+msgid "MP230 series"
+msgstr ""
+
+#. model_MG2200
+#: po/keystr.h:190
+msgid "MG2200 series"
+msgstr ""
+
+#. model_E510
+#: po/keystr.h:192
+msgid "E510 series"
+msgstr ""
+
+#. model_MG3200
+#: po/keystr.h:194
+msgid "MG3200 series"
+msgstr ""
+
+#. model_MG4200
+#: po/keystr.h:196
+msgid "MG4200 series"
+msgstr ""
+
+#. model_IP7200
+#: po/keystr.h:198
+msgid "iP7200 series"
+msgstr ""
+
+#. model_MG5400
+#: po/keystr.h:200
+msgid "MG5400 series"
+msgstr ""
+
+#. model_MG6300
+#: po/keystr.h:202
+msgid "MG6300 series"
+msgstr ""
+
+#. print_color_message
+#: po/keystr.h:204
+msgid "Color"
+msgstr ""
+
+#. supply_asf_reartray
+#: po/keystr.h:206
+msgid "Rear Tray"
+msgstr "Tylna taca"
+
+#. supply_cassette_02
+#: po/keystr.h:208
+msgid "Cassette"
+msgstr "Kaseta"
+
+#. cartridge_bk
+#: po/keystr.h:210
+msgid "Black"
+msgstr "Czarny"
+
+#. message_button_ok
+#: po/keystr.h:212
+msgid "OK"
+msgstr "OK"
+
+#. message_button_cancel
+#: po/keystr.h:214
+msgid "Cancel"
+msgstr "Anuluj"
+
+#. message_button_yes
+#: po/keystr.h:216
+msgid "Yes"
+msgstr "Tak"
+
+#. message_button_no
+#: po/keystr.h:218
+msgid "No"
+msgstr "Nie"
+
+#. message_button_abort
+#: po/keystr.h:220
+msgid "Abort"
+msgstr ""
+
+#. message_button_ignore
+#: po/keystr.h:222
+msgid "Ignore"
+msgstr "Ignoruj"
+
+#. autopower_enable
+#: po/keystr.h:224
+msgid "Enable"
+msgstr "Włączone"
+
+#. autopower_disable
+#: po/keystr.h:226
+msgid "Disable"
+msgstr "Wyłączone"
+
+#. autopower_5min
+#: po/keystr.h:228
+msgid "5 minutes"
+msgstr "5 minut"
+
+#. autopower_10min
+#: po/keystr.h:230
+msgid "10 minutes"
+msgstr "10 minut"
+
+#. autopower_15min
+#: po/keystr.h:232
+msgid "15 minutes"
+msgstr "15 minut"
+
+#. autopower_30min
+#: po/keystr.h:234
+msgid "30 minutes"
+msgstr "30 minut"
+
+#. autopower_60min
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 minut"
+
+#. utility_message_3
+#: po/keystr.h:238
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Czy deseń został wydrukowany prawidłowo?\n"
+"\n"
+"Jeśli deseń nie został wydrukowany lub są na nim widoczne smugi, kliknij \n"
+"przycisk Nie i rozpocznij od początku."
+
+#. utility_message_4
+#: po/keystr.h:242
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Upewnij się, że drukarka jest włączona, kabel jest podłączony prawidłowo i \n"
+"aktywny jest tryb online, a następnie ponów próbę."
+
+#. utility_message_5
+#: po/keystr.h:244
+msgid "Print head alignment is now complete."
+msgstr "Wyrównywanie głowic drukujących zakończone."
+
+#. utility_message_6
+#: po/keystr.h:246
+msgid "Do not start another operation until the current one has finished."
+msgstr ""
+"Nie rozpoczynaj następnej operacji, dopóki nie zostanie zakończona bieżąca \n"
+"operacja."
+
+#. utility_message_8
+#: po/keystr.h:248
+msgid "Turn the printer off?"
+msgstr "Wyłączyć drukarkę?"
+
+#. utility_message_9
+#: po/keystr.h:250
+msgid "Apply settings to printer?"
+msgstr "Zastosować ustawienia do drukarki?"
+
+#. utility_message_12
+#: po/keystr.h:252
+msgid "Start print head deep cleaning?"
+msgstr "Czy rozpocząć dokładne czyszczenie głowicy drukującej?"
+
+#. regi_bidir
+#: po/keystr.h:254
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Wyrównanie dwukierunkowe (-5 – +5)"
+
+#. utility_message_23
+#: po/keystr.h:256
+msgid "Execute black print head deep cleaning?"
+msgstr "Czy przeprowadzić dokładne czyszczenie głowicy drukującej atramentem czarnym?"
+
+#. utility_message_24
+#: po/keystr.h:258
+msgid "Execute color print head deep cleaning?"
+msgstr "Czy przeprowadzić dokładne czyszczenie głowicy drukującej atramentem kolorowym?"
+
+#. utility_message_27
+#: po/keystr.h:260
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podawania papieru.\n"
+"\n"
+"Wyjmij papier z podajnika arkuszy. Kliknięcie przycisku OK spowoduje \n"
+"uruchomienie rolek podawania papieru 30 razy pod rząd. Potrwa to około półtorej \n"
+"minuty. Po wyświetleniu komunikatu należy umieścić w podajniku trzy arkusze \n"
+"zwykłego papieru, które zostaną wysunięte po zakończeniu czyszczenia rolek.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podajnika?"
+
+#. utility_message_28
+#: po/keystr.h:268
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Załaduj trzy arkusze zwykłego papieru do podajnika arkuszy.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:270
+msgid "Feed roller cleaning is complete."
+msgstr "Czyszczenie rolek podajnika zakończone."
+
+#. util_ink_all_1
+#: po/keystr.h:272
+msgid "All Colors"
+msgstr "Wszystkie kolory"
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:274
+msgid "All Colors   BK, C, M, Y"
+msgstr "Wszystkie kolory   BK, C, M, Y"
+
+#. util_ink_black_2
+#: po/keystr.h:276
+msgid "Black   PGBK"
+msgstr "Czarny   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:278
+msgid "Black   BK"
+msgstr "Czarny   BK"
+
+#. util_ink_color_5
+#: po/keystr.h:280
+msgid "Color   C, M, Y, BK"
+msgstr "Kolor   C, M, Y, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:282
+msgid "Color   C, M, Y"
+msgstr "Kolor   C, M, Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:284
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Nie rozpoczynaj następnej operacji, dopóki nie zostanie zakończone czyszczenie.\n"
+"\n"
+"Po zakończeniu czyszczenia przeprowadź sprawdzanie dysz, aby upewnić się, że \n"
+"dysze głowicy drukującej zostały odetkane."
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:288
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Czyści zatkane dysze głowicy drukującej.\n"
+"\n"
+"Wybierz grupę atramentu przeznaczoną do czyszczenia. Jeśli nie jesteś pewien, \n"
+"którą grupę atramentu należy wyczyścić, przeprowadź sprawdzanie dysz."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:293
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Odblokowuje dysze, których nie można było wyczyścić przez zwykłe czyszczenie.\n"
+"\n"
+"Wybierz grupę atramentu przeznaczoną do dokładnego czyszczenia. Jeśli nie \n"
+"jesteś pewien, którą grupę atramentu należy dokładnie wyczyścić, przeprowadź \n"
+"sprawdzanie dysz."
+
+#. utility_message_41
+#: po/keystr.h:298
+msgid "Ink Group:"
+msgstr "Grupa atramentu:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:300
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Podczas dokładnego czyszczenia zużywana jest dużo większa ilość atramentu, niż \n"
+"podczas zwykłego czyszczenia. Dokładne czyszczenie należy przeprowadzać tylko \n"
+"wtedy, gdy drukowany wzór nie poprawi się po zwykłym czyszczeniu.\n"
+"\n"
+"Po zakończeniu dokładnego czyszczenia przeprowadź sprawdzanie dysz i upewnij \n"
+"się, że dysze głowicy drukującej zostały odetkane."
+
+#. utility_message_43
+#: po/keystr.h:306
+msgid "Cleaning consumes ink."
+msgstr "Czyszczenie powoduje zużycie atramentu."
+
+#. utility_message_44
+#: po/keystr.h:308
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Załaduj arkusz papieru A4 lub Letter do źródła papieru wybranego przy użyciu \n"
+"przełącznika podawania papieru i kliknij przycisk OK.\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:310
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Jeśli wydrukowany wzór przypomina wzór \n"
+"przedstawiony w tym miejscu, dysze \n"
+"głowicy drukującej mogą być zatkane.\n"
+"Kliknij przycisk Czyszczenie.\n"
+"\n"
+"Jeśli drukowany wzór nie poprawi się \n"
+"nawet po dwukrotnym czyszczeniu, \n"
+"przeprowadź dokładne czyszczenie."
+
+#. utility_message_50
+#: po/keystr.h:318
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Załaduj arkusz papieru formatu A4 lub Letter do podajnika arkuszy i kliknij \n"
+"przycisk OK."
+
+#. utility_message_53
+#: po/keystr.h:320
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń w lewo dźwignię grubości papieru i załaduj \n"
+"arkusz papieru zwykłego formatu A4 lub Letter do podajnika arkuszy. Zostanie \n"
+"wydrukowany deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać położenie głowicy drukującej, kliknij przycisk OK.\n"
+
+#. utility_message_54
+#: po/keystr.h:328
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click Print Check Pattern.\n"
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), przesuń w lewo dźwignię \n"
+"grubości papieru, załaduj arkusz zwykłego papieru formatu A4 lub Letter do \n"
+"podajnika arkuszy i kliknij przycisk Drukuj wzór testu.\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:333
+msgid "Color Only"
+msgstr "Tylko kolor"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:335
+msgid "Black Only"
+msgstr "Tylko czarny"
+
+#. utility_message_55
+#: po/keystr.h:337
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Drukuje tylko za pomocą kasety kolorowej zamiast kasety czarnej."
+
+#. utility_message_56
+#: po/keystr.h:340
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Drukuje tylko za pomocą kasety czarnej zamiast kolorowej, jeśli na karcie \n"
+"Główny jako Typ nośnika jest wybrany Papier zwykły."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:344
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Wydrukowany zostanie jeden arkusz deseni w celu rozpoczęcia automatycznego \n"
+"wyrównywania.\n"
+"Nie rozpoczynaj następnej operacji, dopóki nie zostanie zakończona bieżąca \n"
+"operacja."
+
+#. utility_message_60
+#: po/keystr.h:347
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Zostanie wydrukowany drugi arkusz deseniem wyrównywania głowic drukujących.\n"
+"\n"
+"Kliknij przycisk OK, aby rozpocząć drukowanie."
+
+#. utility_message_61
+#: po/keystr.h:351
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Zostanie wydrukowany trzeci arkusz z deseniem wyrównywania głowicy.\n"
+"\n"
+"Kliknij przycisk OK, aby rozpocząć drukowanie."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:355
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń na lewo dźwignię grubości papieru i załaduj \n"
+"arkusz zwykłego papieru formatu A4 lub Letter do źródła papieru wybranego \n"
+"przełącznikiem podawania papieru. Drukarka wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. utility_message_63
+#: po/keystr.h:365
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Wyrównywanie głowic drukujących zostało zakończone.\n"
+"Aby zakończyć wyrównywanie, kliknij przycisk Anuluj.\n"
+"\n"
+"Jeśli po stronie wydruku pojawiają się smugi, można zapobiec ich występowaniu, \n"
+"wyrównując głowice drukujące.\n"
+"Aby wykonać operację wyrównywania, włóż arkusz papieru do podajnika arkuszy i \n"
+"kliknij przycisk OK."
+
+#. utility_message_64
+#: po/keystr.h:371
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), przesuń w lewo dźwignię \n"
+"grubości papieru, załaduj arkusz zwykłego papieru formatu A4 lub Letter do \n"
+"źródła papieru wybranego przy użyciu przełącznika podawania papieru i kliknij \n"
+"przycisk Drukuj wzór testu."
+
+#. utility_message_66
+#: po/keystr.h:377
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Załaduj arkusz zwykłego papieru formatu A4 lub Letter do podajnika arkuszy i \n"
+"kliknij przycisk Drukuj wzór testu."
+
+#. utility_message_67
+#: po/keystr.h:381
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Wyrównywanie głowic drukujących zostało zakończone.\n"
+"Aby zakończyć wyrównywanie, kliknij przycisk Anuluj.\n"
+"\n"
+"Jeśli po stronie wydruku pojawiają się smugi, można zapobiec ich występowaniu, \n"
+"wyrównując głowice drukujące.\n"
+"Aby wykonać tę operację wyrównywania, załaduj arkusz papieru do źródła papieru \n"
+"wybranego przy użyciu przełącznika podawania papieru i kliknij przycisk OK."
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:389
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń w prawo dźwignię grubości papieru i załaduj \n"
+"arkusz zwykłego papieru formatu A4 lub Letter do podajnika arkuszy. Drukarka \n"
+"wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:399
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Jeśli wydrukowany wzór przypomina wzór przedstawiony w tym miejscu, dysze \n"
+"głowicy drukującej mogą być zatkane.\n"
+"Kliknij przycisk Czyszczenie.\n"
+"\n"
+"Jeśli drukowany wzór nie poprawi się nawet po dwu- lub trzykrotnym czyszczeniu, \n"
+"przeprowadź dokładne czyszczenie."
+
+#. utility_message_71
+#: po/keystr.h:407
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Nie można zresetować licznika atramentu, ponieważ wyłączona jest funkcja \n"
+"wyświetlania ostrzeżeń o niskim poziomie atramentu.\n"
+"\n"
+"Aby włączyć wyświetlanie ostrzeżeń o niskim poziomie atramentu, kliknij \n"
+"przycisk Ustawienie ostrzeżenia dot. atramentu dostępny na karcie Obsługa w \n"
+"sterowniku drukarki.\n"
+"Przed wykonaniem tej operacji zapoznaj się z podręcznikiem drukarki."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:413
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podajnika papieru.\n"
+"\n"
+"Najpierw wyjmij papier z tylnej tacy.\n"
+"Kliknięcie przycisku OK spowoduje 30-krotne włączenie rolek podajnika papieru. \n"
+"Potrwa to około półtorej minuty.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podajnika?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:420
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podajnika papieru.\n"
+"\n"
+"Za pomocą przełącznika podawania papieru na drukarce wybierz źródło papieru do \n"
+"czyszczenia, a następnie wyjmij z niego papier.\n"
+"Kliknięcie przycisku OK spowoduje 30-krotne włączenie rolek podajnika papieru. \n"
+"Potrwa to około półtorej minuty.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podajnika?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:428
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Upewnij się, że drukarka przestała wydawać dźwięki związane z pracą, a \n"
+"następnie załaduj trzy arkusze zwykłego papieru na tylną tacę.\n"
+"Kliknięcie przycisku OK spowoduje wysunięcie papieru i zakończenie czyszczenia \n"
+"rolek podajnika."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:431
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Upewnij się, że drukarka przestała wydawać dźwięki związane z pracą, a \n"
+"następnie załaduj trzy arkusze zwykłego papieru do wybranego źródła papieru.\n"
+"Kliknięcie przycisku OK spowoduje wysunięcie papieru i zakończenie czyszczenia \n"
+"rolek podajnika."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:434
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Usuń papier z podajnika arkuszy.\n"
+"2. Złóż arkusz zwykłego papieru formatu A4 lub Letter na pół, a następnie \n"
+"rozłóż go.\n"
+"3. Załaduj arkusz grzbietem zagięcia skierowanym do dołu do podajnika arkuszy.\n"
+"4. Kliknij przycisk Wykonaj."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:439
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Usuń papier z tylnej tacy.\n"
+"2. Złóż arkusz zwykłego papieru formatu A4 lub Letter na pół, a następnie \n"
+"rozłóż go.\n"
+"3. Załaduj arkusz grzbietem zagięcia skierowanym do dołu na tylną tacę.\n"
+"4. Kliknij przycisk Wykonaj."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:444
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load one sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), przesuń w lewo dźwignię \n"
+"grubości papieru, załaduj jeden arkusz zwykłego papieru formatu A4 lub Letter \n"
+"na tylną tacę i kliknij przycisk Drukuj wzór testu."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:450
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń na lewo dźwignię grubości papieru i załaduj \n"
+"dwa arkusze zwykłego papieru formatu A4 lub Letter na tylną tacę. Drukarka \n"
+"wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:460
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się automatyczne wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ operacja wyrównania wymaga wykonania wydruków, przygotuj drukarkę \n"
+"(podłącz kabel i włącz zasilanie), załaduj jeden arkusz zwykłego papieru \n"
+"formatu A4 lub Letter do podajnika arkuszy i kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby przeprowadzić ręczne wyrównywanie głowic, kliknij przycisk Anuluj.\n"
+"Następnie kliknij przycisk Ustawienia niestandardowe na karcie Obsługa \n"
+"sterownika drukarki, zaznacz opcję Wyrównaj głowice ręcznie i kliknij przycisk \n"
+"OK. Następnie spróbuj ponownie.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:471
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się automatyczne wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), załaduj dwa arkusze papieru Matte Photo Paper \n"
+"(MP-101) formatu A4 lub Letter na tylną tacę i kliknij przycisk Wyrównaj \n"
+"głowicę drukującą.\n"
+"\n"
+"Aby przeprowadzić ręczne wyrównywanie głowic, kliknij przycisk Anuluj.\n"
+"Następnie kliknij przycisk Ustawienia niestandardowe na karcie Obsługa \n"
+"sterownika drukarki, zaznacz opcję Wyrównaj głowice ręcznie i kliknij przycisk \n"
+"OK. Następnie spróbuj ponownie.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:483
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK."
+msgstr ""
+"Załaduj na tylną tacę jeden arkusz zwykłego papieru formatu A4 lub Letter i \n"
+"kliknij przycisk OK."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:485
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Wydrukowane zostaną dwa arkusze deseni w celu rozpoczęcia automatycznego \n"
+"wyrównywania.\n"
+"Nie rozpoczynaj następnej operacji, dopóki nie zostanie zakończona bieżąca \n"
+"operacja."
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:488
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie) i załaduj cztery arkusze zwykłego papieru formatu A4 \n"
+"lub Letter do źródła papieru wybranego przełącznikiem podawania papieru. \n"
+"Drukarka wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:498
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Zostanie wydrukowany czwarty arkusz desenia wyrównywania głowic drukujących.\n"
+"\n"
+"Kliknij przycisk OK, aby rozpocząć drukowanie."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Załaduj arkusz zwykłego papieru formatu A4 lub Letter do źródła papieru \n"
+"wybranego przy użyciu przełącznika podawania papieru i kliknij przycisk Drukuj \n"
+"wzór testu."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:507
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń na lewo dźwignię grubości papieru i załaduj \n"
+"arkusz zwykłego papieru formatu A4 lub Letter na tylną tacę. Drukarka wydrukuje \n"
+"deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:517
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie) i załaduj arkusz zwykłego papieru formatu A4 lub \n"
+"Letter do źródła papieru wybranego przełącznikiem podawania papieru. Drukarka \n"
+"wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:527
+msgid ""
+"Load one sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Załaduj na tylną tacę jeden arkusz papieru formatu A4 lub Letter i kliknij \n"
+"przycisk OK."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:529
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Wyrównywanie głowic drukujących zostało zakończone.\n"
+"Aby zakończyć wyrównywanie, kliknij przycisk Anuluj.\n"
+"\n"
+"Jeśli po stronie wydruku pojawiają się smugi, można zapobiec ich występowaniu, \n"
+"wyrównując głowice drukujące.\n"
+"Aby wykonać operację wyrównywania, włóż arkusz papieru na tylną tacę i kliknij \n"
+"przycisk OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:535
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie) i załaduj trzy arkusze zwykłego papieru formatu A4 lub \n"
+"Letter do źródła papieru wybranego przełącznikiem podawania papieru. Drukarka \n"
+"wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:545
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń na lewo dźwignię grubości papieru i załaduj \n"
+"arkusz zwykłego papieru formatu A4 lub Letter do podajnika arkuszy. Drukarka \n"
+"wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:555
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), przesuń na prawo dźwignię \n"
+"grubości papieru, załaduj arkusz zwykłego papieru formatu A4 lub Letter na \n"
+"tylną tacę i kliknij przycisk Drukuj wzór testu."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:560
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Drukuje jedynie za pomocą kasety z atramentem czarnym, nie kolorowym tylko \n"
+"wtedy, gdy na karcie Główny jako Typ nośnika wybrano opcję Papier zwykły, \n"
+"Hagaki lub Koperta."
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:563
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load one sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń w lewo dźwignię grubości papieru i załaduj \n"
+"jeden arkusz zwykłego papieru formatu A4 lub Letter na tylną tacę. Drukarka \n"
+"wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:571
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie), przesuń na prawo dźwignię grubości papieru i załaduj \n"
+"dwa arkusze zwykłego papieru formatu A4 lub Letter na tylną tacę. Drukarka \n"
+"wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:581
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się automatyczne wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ operacja wyrównania wymaga wykonania wydruków, przygotuj drukarkę \n"
+"(podłącz kabel i włącz zasilanie), przesuń na prawo dźwignię grubości papieru, \n"
+"załaduj arkusz papieru Matte Photo Paper (MP-101) formatu A4 lub Letter na \n"
+"tylną tacę i kliknij przycisk Wyrównaj głowicę drukującą.\n"
+"\n"
+"Aby przeprowadzić ręczne wyrównywanie głowic, kliknij przycisk Anuluj.\n"
+"Następnie kliknij przycisk Ustawienia niestandardowe na karcie Obsługa \n"
+"sterownika drukarki, zaznacz opcję Wyrównaj głowice ręcznie i kliknij przycisk \n"
+"OK. Następnie spróbuj ponownie.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:593
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Wyjmij papier z tylnej tacy, a następnie załaduj pierwszy arkusz zwykłego \n"
+"papieru formatu A4 lub Letter na tylną tacę. \n"
+"2. Złóż na pół drugi arkusz zwykłego papieru formatu A4 lub Letter, a następnie \n"
+"rozłóż go. \n"
+"3. Załaduj drugi arkusz przed pierwszym arkuszem, złożoną krawędzią do dołu. \n"
+"4. Kliknij przycisk Wykonaj."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:598
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Rozpoczynanie czyszczenia przy użyciu płyty dolnej w celu zapobieżenia \n"
+"brudzeniu papieru w trakcie drukowania.\n"
+"\n"
+"Ta operacja wymaga załadowania dwóch arkuszy zwykłego papieru formatu A4 lub \n"
+"Letter. Aby przeprowadzić czyszczenie przy użyciu płyty dolnej, postępuj \n"
+"zgodnie z poniższymi wskazówkami."
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:602
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click OK."
+msgstr ""
+"Ustawia źródło papieru na papier zwykły w przypadku wybrania dla opcji Źródło \n"
+"papieru ustawienia Wybór automatyczny.\n"
+"\n"
+"Wybierz źródło papieru zwykłego i kliknij przycisk OK."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:606
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Odblokowuje dysze, których nie można było wyczyścić przez zwykłe czyszczenie.\n"
+"\n"
+"Wybierz grupę atramentu przeznaczoną do dokładnego czyszczenia. Jeśli zatkana \n"
+"jest tylko dysza czarna, wybierz opcję Czarny. Jeśli zatkane są tylko dysze \n"
+"kolorowe lub wszystkie, wybierz opcję Wszystkie kolory. Jeśli nie jesteś \n"
+"pewien, która dysza jest zatkana, przeprowadź sprawdzanie dysz.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:612
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Czyszczenie rolek podajnika papieru.\n"
+"\n"
+"Wybierz docelowe źródło papieru, które ma zostać wyczyszczone, a następnie \n"
+"kliknij przycisk OK."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:616
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podawania papieru tylnej tacy.\n"
+"\n"
+"Wyjmij papier z tylnej tacy, a następnie otwórz tacę wyjściową papieru.\n"
+"Kliknięcie przycisku OK spowoduje włączenie rolek podawania papieru. Potrwa to \n"
+"około półtorej minuty.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podawania papieru?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:623
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podawania papieru kasety.\n"
+"\n"
+"Wyjmij papier z kasety, a następnie otwórz tacę wyjściową papieru.\n"
+"Kliknięcie przycisku OK spowoduje włączenie rolek podawania papieru. Potrwa to \n"
+"około dwóch minut.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podawania papieru?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:630
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podawania papieru tylnej tacy.\n"
+"\n"
+"Wyjmij papier z tylnej tacy.\n"
+"Kliknięcie przycisku OK spowoduje włączenie rolek podawania papieru. Potrwa to \n"
+"około półtorej minuty.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podawania papieru?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:637
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podawania papieru kasety.\n"
+"\n"
+"Wyjmyj papier z kasety.\n"
+"Kliknięcie przycisku OK spowoduje włączenie rolek podawania papieru. Potrwa to \n"
+"około dwóch minut.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podawania papieru?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:644
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Upewnij się, że drukarka przestała wydawać dźwięki związane z pracą, a \n"
+"następnie załaduj trzy arkusze zwykłego papieru do kasety.\n"
+"Kliknięcie przycisku OK spowoduje wysunięcie papieru i zakończenie czyszczenia \n"
+"rolek podajnika."
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:647
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load one sheet of A4 or "
+"letter size, \n"
+"plain paper into the selected paper source and click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Na początku wybierz odpowiednie źródło papieru. Następnie załaduj do wybranego \n"
+"źródła papieru jeden arkusz zwykłego papieru formatu A4 lub Letter, po czym \n"
+"kliknij przycisk Drukuj wzór testu."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:652
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), załaduj do kasety jeden \n"
+"arkusz zwykłego papieru formatu A4 lub Letter, a następnie kliknij przycisk \n"
+"Drukuj wzór testu."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:657
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), załaduj na tylną tacę \n"
+"jeden arkusz zwykłego papieru formatu A4 lub Letter, a następnie kliknij \n"
+"przycisk Drukuj wzór testu."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:662
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Rozpocznie się wyrównywanie głowic drukujących.Ponieważ wyrównywanie jest \n"
+"związane z drukowaniem, przygotuj drukarkę (podłącz kabel i włącz zasilanie) i \n"
+"załaduj dwa arkusze zwykłego papieru formatu A4 lub Letter na tylną tacę. \n"
+"Drukarka wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:671
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Wyrównywanie jest związane z drukowaniem. Wybierz odpowiednie źródło papieru i \n"
+"kliknij przycisk Wyrównaj głowicę drukującą."
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:675
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:677
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie) i załaduj trzy arkusze \n"
+"zwykłego papieru formatu A4 lub Letter na tylną tacę.\n"
+"\n"
+"Kliknięcie przycisku OK spowoduje wydrukowanie deseniu wyrównywania."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:682
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie) i załaduj trzy arkusze \n"
+"zwykłego papieru formatu A4 lub Letter do kasety.\n"
+"\n"
+"Kliknięcie przycisku OK spowoduje wydrukowanie deseniu wyrównywania."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:687
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), po czym załaduj na tylną \n"
+"tacę jeden arkusz zwykłego papieru formatu A4 lub Letter.\n"
+"\n"
+"Kliknięcie przycisku OK spowoduje wydrukowanie bieżących ustawień."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:692
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), po czym załaduj do kasety \n"
+"jeden arkusz zwykłego papieru formatu A4 lub Letter.\n"
+"\n"
+"Kliknięcie przycisku OK spowoduje wydrukowanie bieżących ustawień."
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:697
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Wybierz odpowiednie źródło papieru i kliknij przycisk OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:699
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Załaduj do kasety jeden arkusz zwykłego papieru formatu A4 lub Letter i kliknij \n"
+"przycisk OK."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:701
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się automatyczne wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ operacja wyrównania wymaga wykonania wydruków, przygotuj drukarkę \n"
+"(podłącz kabel i włącz zasilanie), załaduj jeden arkusz papieru Matte Photo \n"
+"Paper (MP-101) formatu A4 lub Letter na tylną tacę i kliknij przycisk Wyrównaj \n"
+"głowicę drukującą.\n"
+"\n"
+"Aby przeprowadzić ręczne wyrównywanie głowic, kliknij przycisk Anuluj.\n"
+"Następnie kliknij przycisk Ustawienia niestandardowe na karcie Obsługa \n"
+"sterownika drukarki, zaznacz opcję Wyrównaj głowice ręcznie i kliknij przycisk \n"
+"OK. Następnie spróbuj ponownie.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:712
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Powoduje włączenie funkcji Zapobieganie ścieraniu atramentu. Włączenie tej \n"
+"funkcji może wpłynąć na jakość wydruku lub szybkość drukowania. Aby zmienić to \n"
+"ustawienie, usuń zaznaczenie pola wyboru Zapobieganie ścieraniu atramentu."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:715
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Odblokowuje dysze, których nie można było wyczyścić przez zwykłe czyszczenie.\n"
+"\n"
+"Podczas dokładnego czyszczenia zużywana jest dużo większa ilość atramentu, niż \n"
+"podczas zwykłego czyszczenia. Dokładne czyszczenie należy przeprowadzać tylko \n"
+"wtedy, gdy drukowany wzór nie poprawi się po zwykłym czyszczeniu.\n"
+"\n"
+"Po zakończeniu dokładnego czyszczenia przeprowadź sprawdzanie dysz i upewnij \n"
+"się, że dysze głowicy drukującej zostały odetkane."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:723
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Nie rozpoczynaj innej operacji przed zakończeniem dokładnego czyszczenia.\n"
+"\n"
+"Po zakończeniu dokładnego czyszczenia wykonaj sprawdzanie dysz, aby sprawdzić, \n"
+"czy dysze głowicy drukującej zostały przetkane."
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:728
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Wykonanie wyrównywania głowicy drukującej powoduje skorygowanie przesunięć \n"
+"kolorów i linii. Zapoznaj się z informacjami podanymi w instrukcji obsługi i \n"
+"wyrównaj głowicę drukującą za pomocą panelu sterowania drukarki.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienie, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:733 po/keystr.h:755
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie) i załaduj trzy arkusze zwykłego papieru formatu A4 lub \n"
+"Letter na tylną tacę. Drukarka wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania.\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:742
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpoczęcie automatycznego wyrównywania głowicy drukującej.\n"
+"\n"
+"Ponieważ operacja wyrównania wymaga wykonania wydruków, przygotuj drukarkę \n"
+"(podłącz kabel i włącz zasilanie), załaduj do tylnej tacy jeden arkusz papieru \n"
+"Matte Photo Paper (MP-101) o formatu A4 lub Letter i kliknij przycisk Wyrównaj \n"
+"głowicę drukującą.\n"
+"\n"
+"Jeśli wyniki automatycznego wyrównywania głowicy drukującej nie są \n"
+"zadowalające, wykonaj ręczne wyrównywanie, które pozwala na większą precyzję.\n"
+"Aby przeprowadzić ręczne wyrównywanie głowicy drukującej, kliknij przycisk \n"
+"Anuluj.\n"
+"Następnie w sterowniku drukarki kliknij na karcie Obsługa przycisk Ustawienia \n"
+"niestandardowe, zaznacz pole wyboru Wyrównaj głowice ręcznie i kliknij przycisk \n"
+"OK. Następnie spróbuj ponownie.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienie, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/keystr.h:764 po/keystr.h:1114
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/keystr.h:766 po/keystr.h:1116
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/keystr.h:768 po/keystr.h:1118
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/keystr.h:770 po/keystr.h:1120
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/keystr.h:772 po/keystr.h:1122
+msgid "5"
+msgstr "5"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:774
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Dostosowanie w kolumnach A–C (-3–+7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/keystr.h:776
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Dostosowanie w kolumnach A–D (-3–+7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:778
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Dostosowanie w kolumnach A–E (-3–+7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/keystr.h:780
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Dostosowanie w kolumnach A–E (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/keystr.h:782
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Dostosowanie w kolumnach A–F (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/keystr.h:784
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Dostosowanie w kolumnach A–G (-5–+5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:786
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Dostosowanie w kolumnach D–F (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/keystr.h:788
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Dostosowanie w kolumnach E–G (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/keystr.h:790
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Dostosowanie w kolumnach F i G (-3–+3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:792
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Dostosowanie w kolumnach F–K (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/keystr.h:794
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Dostosowanie w kolumnach G–J (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/keystr.h:796
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Dostosowanie w kolumnach G–L (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/keystr.h:798
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Dostosowanie w kolumnach H–K (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/keystr.h:800
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Dostosowanie w kolumnach H–L (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/keystr.h:802
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Dostosowanie w kolumnach H–N (-5–+5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:804
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Dostosowanie w kolumnach K i L (-3–+3)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:806
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Dostosowanie w kolumnach L i M (-3–+3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/keystr.h:808
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Dostosowanie w kolumnach L–O (-5–+5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:810
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Dostosowanie w kolumnach M i N (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/keystr.h:812
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Dostosowanie w kolumnach M–P (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/keystr.h:814
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Dostosowanie w kolumnach M–Q (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/keystr.h:816
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Dostosowanie w kolumnach O–T (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/keystr.h:818
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Dostosowanie w kolumnach P–T (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/keystr.h:820
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Dostosowanie w kolumnach Q i R (-4–+4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/keystr.h:822
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Dostosowanie w kolumnach U i V (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/keystr.h:824
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Dostosowanie w kolumnach U i V (-3–+3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/keystr.h:826
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Dostosowanie w kolumnach W i X (-3–+3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/keystr.h:828
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Dostosowanie w kolumnach a–e (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/keystr.h:830
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Dostosowanie w kolumnach f–j (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/keystr.h:832
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Dostosowanie w kolumnach f–k (-2–+2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/keystr.h:834
+msgid "Align Print Head"
+msgstr "Wyrównaj głowicę drukującą"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/keystr.h:836 po/keystr.h:1106
+msgid "Align heads manually"
+msgstr "Wyrównaj głowice ręcznie"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/keystr.h:838
+msgid "Auto Power"
+msgstr "Automatyczne włączanie/wyłączanie"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:840
+msgid "Auto Power Off"
+msgstr "Automatyczne wyłączanie"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:842
+msgid "Auto Power Off:"
+msgstr "Autom. wył.:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/keystr.h:844
+msgid "Auto Power On:"
+msgstr "Autom. wł.:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/keystr.h:846
+msgid "Auto Power Settings"
+msgstr "Ustawienia automatycznego wł./wył."
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/keystr.h:848
+msgid "Black Ink Tank"
+msgstr "Zbiornik z atramentem czarnym"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/keystr.h:850
+msgid "Bottom Plate Cleaning"
+msgstr "Czyszczenie przy użyciu płyty dolnej"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/keystr.h:852
+msgid "Cleaning"
+msgstr "Czyszczenie"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/keystr.h:854
+msgid "Color Ink Tank"
+msgstr "Zbiornik z atramentem kolorowym"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/keystr.h:856
+msgid "Column A:"
+msgstr "Kolumna A:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/keystr.h:858
+msgid "Column B:"
+msgstr "Kolumna B:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/keystr.h:860
+msgid "Column C:"
+msgstr "Kolumna C:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/keystr.h:862
+msgid "Column D:"
+msgstr "Kolumna D:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/keystr.h:864
+msgid "Column E:"
+msgstr "Kolumna E:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/keystr.h:866
+msgid "Column F:"
+msgstr "Kolumna F:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/keystr.h:868
+msgid "Column G:"
+msgstr "Kolumna G:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/keystr.h:870
+msgid "Column H:"
+msgstr "Kolumna H:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/keystr.h:872
+msgid "Column I:"
+msgstr "Kolumna I:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/keystr.h:874
+msgid "Column J:"
+msgstr "Kolumna J:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/keystr.h:876
+msgid "Column K:"
+msgstr "Kolumna K:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/keystr.h:878
+msgid "Column L:"
+msgstr "Kolumna L:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/keystr.h:880
+msgid "Column M:"
+msgstr "Kolumna M:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/keystr.h:882
+msgid "Column N:"
+msgstr "Kolumna N:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/keystr.h:884
+msgid "Column O:"
+msgstr "Kolumna O:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/keystr.h:886
+msgid "Column P:"
+msgstr "Kolumna P:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/keystr.h:888
+msgid "Column Q:"
+msgstr "Kolumna Q:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/keystr.h:890
+msgid "Column R:"
+msgstr "Kolumna R:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/keystr.h:892
+msgid "Column S:"
+msgstr "Kolumna S:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/keystr.h:894
+msgid "Column T:"
+msgstr "Kolumna T:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/keystr.h:896
+msgid "Column U:"
+msgstr "Kolumna U:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/keystr.h:898
+msgid "Column V:"
+msgstr "Kolumna V:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/keystr.h:900
+msgid "Column W:"
+msgstr "Kolumna W:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/keystr.h:902
+msgid "Column X:"
+msgstr "Kolumna X:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/keystr.h:904
+msgid "Column a:"
+msgstr "Kolumna a:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/keystr.h:906
+msgid "Column b:"
+msgstr "Kolumna b:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/keystr.h:908
+msgid "Column c:"
+msgstr "Kolumna c:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/keystr.h:910
+msgid "Column d:"
+msgstr "Kolumna d:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/keystr.h:912
+msgid "Column e:"
+msgstr "Kolumna e:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/keystr.h:914
+msgid "Column f:"
+msgstr "Kolumna f:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/keystr.h:916
+msgid "Column g:"
+msgstr "Kolumna g:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/keystr.h:918
+msgid "Column h:"
+msgstr "Kolumna h:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/keystr.h:920
+msgid "Column i:"
+msgstr "Kolumna i:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/keystr.h:922
+msgid "Column j:"
+msgstr "Kolumna j:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/keystr.h:924
+msgid "Column k:"
+msgstr "Kolumna k:"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/keystr.h:926 po/keystr.h:1102
+msgid "Custom Settings"
+msgstr "Ustawienia niestandardowe"
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/keystr.h:928
+msgid "Deep Cleaning"
+msgstr "Dokładne czyszczenie"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/keystr.h:930
+msgid "Defaults"
+msgstr "Domyślne"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/keystr.h:932
+msgid "Display low ink warning"
+msgstr "Wyświetlaj ostrzeżenie o niskim poziomie atramentu"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:934
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od G do L i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/keystr.h:938
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od H do O i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/keystr.h:942
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od M do R i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/keystr.h:946
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od P do V i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/keystr.h:950
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom od O do V \n"
+"wprowadź numery deseni, na których widać najmniej poziomych pasków."
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/keystr.h:954
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Sprawdź wydrukowane desenie i wprowadź numer deseniu o największym stopniu \n"
+"wyrównania dla kolumn M i N."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/keystr.h:957
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom od a do j \n"
+"wprowadź numery deseni, na których widać najmniej poziomych pasków."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/keystr.h:960
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom od a do k \n"
+"wprowadź numery deseni, na których widać najmniej poziomych pasków."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/keystr.h:963
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od H do Q i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:966
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Sprawdź wydrukowane desenie i w kolumnach L i M wprowadź numery wydrukowanych \n"
+"deseni, które są najbardziej jednolicie wypełnione i nie mają pasków w \n"
+"obszarach wskazywanych przez strzałki."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/keystr.h:970
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom W i X wprowadź \n"
+"numery deseni, które są najbardziej jednolicie wypełnione i nie mają pasków w \n"
+"obszarach wskazywanych przez strzałki."
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/keystr.h:974
+msgid "Execute"
+msgstr "Wykonaj"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/keystr.h:976
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Przeprowadź wyrównywanie głowic drukujących. Sprawdź desenie wydrukowane w \n"
+"kolumnach od A do F i w odpowiednich polach wprowadź numery deseni, na których \n"
+"widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/keystr.h:980
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Przeprowadź wyrównywanie głowic drukujących. Sprawdź desenie wydrukowane w \n"
+"kolumnach od A do G i w odpowiednich polach wprowadź numery deseni, na których \n"
+"widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/keystr.h:984
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Przeprowadź wyrównywanie głowic drukujących. Sprawdź desenie wydrukowane w \n"
+"kolumnach od A do K i w odpowiednich polach wprowadź numery deseni, na których \n"
+"widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/keystr.h:988
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Przeprowadź wyrównywanie głowic drukujących. Sprawdź desenie wydrukowane w \n"
+"kolumnach od A do L i w odpowiednich polach wprowadź numery deseni, na których \n"
+"widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/keystr.h:992
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Przeprowadź wyrównywanie głowic drukujących. Sprawdź desenie wydrukowane w \n"
+"kolumnach od A do N i w odpowiednich polach wprowadź numery deseni, na których \n"
+"widać najmniej smug."
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/keystr.h:996
+msgid "Exit"
+msgstr "Zakończ"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:998
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Wyrównanie w poziomie (-3 – +7)"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/keystr.h:1000
+msgid "Ink Cartridge Settings"
+msgstr "Ustawienia kasety z atramentem"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/keystr.h:1002
+msgid "Ink Cartridge:"
+msgstr "Kaseta z atramentem:"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/keystr.h:1004
+msgid "Ink Counter Reset"
+msgstr "Resetowanie licznika atramentu"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/keystr.h:1006 po/keystr.h:1108
+msgid "Ink Drying Wait Time:"
+msgstr "Czas oczekiwania na wyschnięcie atramentu:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/keystr.h:1008 po/keystr.h:1112
+msgid "Long"
+msgstr "Długi"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/keystr.h:1010
+msgid "Low Ink Warning Setting"
+msgstr "Ustawienie ostrzeżenia dot. atramentu"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/keystr.h:1012
+msgid "Maintenance"
+msgstr "Obsługa"
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/keystr.h:1014
+msgid "Nozzle Check"
+msgstr "Sprawdzanie dysz"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/keystr.h:1016
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Ustawienie źródła zwykłego papieru"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/keystr.h:1018
+msgid "Pattern Check"
+msgstr "Sprawdzanie deseniu"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/keystr.h:1020
+msgid "Power Off"
+msgstr "Wyłączanie"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/keystr.h:1022 po/keystr.h:1104
+msgid "Prevent paper abrasion"
+msgstr "Zapobieganie ścieraniu atramentu"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/keystr.h:1024
+msgid "Print Alignment Value"
+msgstr "Wydrukuj wartość wyrównania"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/keystr.h:1026
+msgid "Print Check Pattern"
+msgstr "Drukuj wzór testu"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/keystr.h:1028
+msgid "Print Head Alignment"
+msgstr "Wyrównywanie głowic drukujących"
+
+#. LUM_IDD_CLEAN
+#: po/keystr.h:1030
+msgid "Print Head Cleaning"
+msgstr "Czyszczenie głowicy drukującej"
+
+#. LUM_IDD_SILENTMODE
+#: po/keystr.h:1032
+msgid "Quiet Mode"
+msgstr "Tryb cichy"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/keystr.h:1034
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Szczegółowe informacje na temat ostrzeżeń o niskim poziomie atramentu można \n"
+"znaleźć w podręczniku drukarki."
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/keystr.h:1036
+msgid "Roller Cleaning"
+msgstr "Czyszczenie rolek"
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/keystr.h:1038
+msgid "Select the ink cartridge for printing."
+msgstr "Wybierz kasetę z atramentem do drukowania."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/keystr.h:1040
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Wybierz nowo wymieniony zbiornik z atramentem i kliknij przycisk Wykonaj.\n"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/keystr.h:1042 po/keystr.h:1110
+msgid "Short"
+msgstr "Krótki"
+
+#. LUM_IDD_PHA_START
+#: po/keystr.h:1044
+msgid "Start Print Head Alignment"
+msgstr "Rozpocznij wyrównanie głowicy drukującej"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/keystr.h:1046
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires one sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Rozpoczynanie czyszczenia przy użyciu płyty dolnej w celu zapobieżenia \n"
+"brudzeniu papieru w trakcie drukowania.\n"
+"\n"
+"Ta operacja wymaga załadowania jednego arkusza zwykłego papieru formatu A4 lub \n"
+"Letter. Aby przeprowadzić czyszczenie przy użyciu płyty dolnej, postępuj \n"
+"zgodnie z poniższymi instrukcjami."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/keystr.h:1050
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Licznik odpowiadający wymienionemu zbiornikowi z atramentem wskaże pełen \n"
+"zbiornik. Wykonanie tej operacji zapewnia prawidłowe wyświetlanie ostrzeżenia o \n"
+"niskim poziomie atramentu."
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/keystr.h:1054
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Dysze głowicy drukującej nie są zatkane.\n"
+"Jeśli wydrukowany deseń jest podobny do \n"
+"tego deseniu, można natychmiast użyć \n"
+"drukarki.\n"
+"Kliknij przycisk Zakończ."
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/keystr.h:1059
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Aby zapewnić poprawne wyświetlanie ostrzeżenia o niskim poziomie atramentu, \n"
+"należy wykonać następującą operację:\n"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/keystr.h:1062
+msgid "Use quiet mode"
+msgstr "Używaj trybu cichego"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/keystr.h:1064
+msgid "Using AC Adapter:"
+msgstr "Użycie zasilacza sieciowego:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/keystr.h:1066
+msgid "Using Battery:"
+msgstr "Użycie akumulatora:"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/keystr.h:1068
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Za każdym razem, gdy zostanie wymieniony zbiornik z atramentem, kliknij \n"
+"przycisk Resetowanie licznika atramentu na karcie Obsługa w sterowniku drukarki \n"
+"i wybierz nowo wymieniony zbiornik z atramentem."
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/keystr.h:1072
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Który z następujących deseni jest najbardziej podobny do wydrukowanego?"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/keystr.h:1074
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "Dostosowanie w kolumnach K–P (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/keystr.h:1076
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "Dostosowanie w kolumnie F (-3–+3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/keystr.h:1078
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "Dostosowanie w kolumnie G (-3–+3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/keystr.h:1080
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "Dostosowanie w kolumnie Q (-4–+4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/keystr.h:1082
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "Dostosowanie w kolumnach R–U (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/keystr.h:1084
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "Dostosowanie w kolumnach V–Y (-2–+2)"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/keystr.h:1086
+msgid "Close"
+msgstr "Zamknij"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/keystr.h:1088
+msgid "Column Y:"
+msgstr "Kolumna Y:"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/keystr.h:1090
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom od Q do Y \n"
+"wprowadź numery deseni, na których widać najmniej poziomych pasków."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/keystr.h:1094
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr ""
+"Sprawdź wydrukowane wzory i wprowadź numer wzoru o najmniej widocznych smugach \n"
+"w polach kolumn od K do P."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/keystr.h:1098
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"Rozpocznij wyrównywanie głowicy drukującej. Sprawdź wydrukowane wzory i \n"
+"wprowadź numer wzoru o najmniej widocznych smugach w polach kolumn od A do J."
+
+#. LUM_IDS_CLEAN_ITEM_E5
+#: po/keystr.h:1124
+msgid "Color   C, M, Y, BK, GY"
+msgstr "Kolorowy   C, M, Y, BK, GY"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A3_07
+#: po/keystr.h:1126
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half vertically, then unfold the "
+"paper.\n"
+"3. With the ridge of the crease facing down, load the paper in landscape "
+"orientation into the rear tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Wyjmij papier z tylnej tacy.\n"
+"2. Złóż na pół w pionie papier zwykły o rozmiarze A4 lub Letter, a następnie \n"
+"rozłóż go.\n"
+"3. Załaduj papier w orientacji poziomej do tylnej tacy, z grzbietem zagięcia \n"
+"skierowanym do dołu.\n"
+"4. Kliknij przycisk Wykonaj."
+
+#. LUM_IDS_AUTOPOWER_120MINUTES
+#: po/keystr.h:1131
+msgid "120 minutes"
+msgstr "120 minut"
+
+#. LUM_IDS_AUTOPOWER_240MINUTES
+#: po/keystr.h:1133
+msgid "240 minutes"
+msgstr "240 minut"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_11_PAPERSRC
+#: po/keystr.h:1135
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size plain paper, and click Align Print "
+"Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się automatyczne wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ operacja wyrównywania wymaga sporządzenia wydruku, przygotuj drukarkę \n"
+"(podłącz kabel i włącz zasilanie), załaduj jeden arkusz papieru zwykłego w \n"
+"formacie A4 lub Letter i kliknij opcję Wyrównaj głowicę drukującą.\n"
+"\n"
+"Jeśli wynik automatycznego wyrównywania głowicy drukującej jest \n"
+"niezadowalający, wykonaj ręczne wyrównywanie, aby precyzyjnie wyrównać głowicę.\n"
+"Aby przeprowadzić ręczne wyrównywanie głowic, kliknij przycisk Anuluj.\n"
+"Następnie na karcie Obsługa sterownika drukarki kliknij opcję Ustawienia \n"
+"niestandardowe, zaznacz pole Wyrównaj głowice ręcznie i kliknij przycisk OK. \n"
+"Następnie ponów próbę.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTPAPERJAM
+#: po/keystr.h:1146
+msgid "Prevent paper jam"
+msgstr "Zapobieganie zacięciu papieru"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR7
+#: po/keystr.h:1148
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray, then open the front cover and extend "
+"the paper output tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podajnika papieru.\n"
+"\n"
+"Usuń zacięty papier z tylnej tacy, a następnie otwórz pokrywę przednią i rozsuń \n"
+"tacę wyprowadzania papieru.\n"
+"Kliknięcie przycisku OK spowoduje 30-krotne włączenie rolek podajnika papieru. \n"
+"Potrwa to około półtorej minuty.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek podajnika?"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_P
+#: po/keystr.h:1155
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for columns H to "
+"P."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od H do P i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_55
+#: po/keystr.h:1158 po/keystr.h:1350
+msgid "Adjustment in Columns M to P (-5 to +5)"
+msgstr "Dostosowanie w kolumnach M–P (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_i
+#: po/keystr.h:1160
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for "
+"columns a to i."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom od a do i \n"
+"wprowadź numery deseni, na których widać najmniej poziomych pasków."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_i_22
+#: po/keystr.h:1163
+msgid "Adjustment in Columns f to i (-2 to +2)"
+msgstr "Dostosowanie w kolumnach f–i (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PREVENTPAPERGAP_MSG
+#: po/keystr.h:1165
+msgid ""
+"Set Prevent paper jam only when A3 size plain paper jams frequently near the "
+"paper output slot.\n"
+"\n"
+"This setting increases the printing time for A3 size plain paper.\n"
+"Also, the print quality may deteriorate."
+msgstr ""
+"Funkcję Zapobieganie zacięciu papieru należy włączyć, tylko jeśli często \n"
+"zdarzają się zacięcia zwykłego papieru o rozmiarze A3 w pobliżu szczeliny \n"
+"wyprowadzania papieru.\n"
+"\n"
+"To ustawienie wydłuża czas drukowania na zwykłym papierze o rozmiarze A3.\n"
+"Może też powodować pogorszenie jakości wydruku."
+
+#. LUM_IDD_QUIETSETTINGS
+#: po/keystr.h:1170
+msgid "Quiet Settings"
+msgstr "Ustawienia ciche"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_DISABLE
+#: po/keystr.h:1172
+msgid "Do not use quiet mode"
+msgstr "Nie używaj trybu cichego"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_ENABLE
+#: po/keystr.h:1174
+msgid "Always use quiet mode"
+msgstr "Zawsze używaj trybu cichego"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_HOURS
+#: po/keystr.h:1176
+msgid "Use quiet mode during specified hours"
+msgstr "Używaj trybu cichego przez określoną liczbę godzin"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_FROM
+#: po/keystr.h:1178
+msgid "Start time:"
+msgstr "Godzina rozpoczęcia:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_TO
+#: po/keystr.h:1180
+msgid "End time:"
+msgstr "Godzina zakończenia:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTING_WARN
+#: po/keystr.h:1182
+msgid ""
+"When the hours are specified, quiet mode is not applied to operations \n"
+"(copy, direct print, etc.) performed directly from the printer."
+msgstr ""
+"Po określeniu godzin tryb cichy nie jest stosowany do czynności (kopiowanie, \n"
+"drukowanie bezpośrednie itd.) wykonywanych bezpośrednio za pomocą drukarki."
+
+#. LUM_COLON
+#: po/keystr.h:1185
+msgid ":"
+msgstr ":"
+
+#. LUM_IDS_MNTMSG_WRITESETTING_ATPOFF_NW
+#: po/keystr.h:1187
+msgid ""
+"Apply the setting to printer?\n"
+"If the printer is connected to a network, it will not turn off \n"
+"automatically even if Auto Power Off is set."
+msgstr ""
+"Czy zastosować ustawienie do drukarki?\n"
+"Jeśli drukarka jest podłączona do sieci, nie wyłączy się automatycznie nawet w \n"
+"przypadku ustawienia opcji Autom. wył."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT7
+#: po/keystr.h:1191
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the front tray, then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Czyszczenie rolek podawania papieru.\n"
+"\n"
+"Wyjmij papier z przedniej tacy, a następnie otwórz tacę wyprowadzania papieru.\n"
+"Kliknięcie przycisku OK spowoduje włączenie rolek podawania papieru. Potrwa to \n"
+"około dwóch minut.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie rolek?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT7
+#: po/keystr.h:1198
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the front tray.\n"
+"After confirming that the paper output tray is open, clicking OK will eject "
+"paper and complete feed roller cleaning."
+msgstr ""
+"Upewnij się, że drukarka przestała wydawać dźwięki związane z pracą, a \n"
+"następnie załaduj trzy arkusze zwykłego papieru na przednią tacę.\n"
+"Po potwierdzeniu, że taca wyprowadzania papieru jest otwarta, kliknij przycisk \n"
+"OK. Spowoduje to wysunięcie papieru i zakończenie czyszczenia rolek."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_FRONT
+#: po/keystr.h:1201
+msgid ""
+"1. Remove the paper from the front tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the front "
+"tray, \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Open the paper output tray and click Execute."
+msgstr ""
+"1. Wyjmij papier z przedniej tacy.\n"
+"2. Złóż arkusz zwykłego papieru formatu A4 lub Letter na pół, a następnie \n"
+"rozłóż go.\n"
+"3. Złóż jedną stronę papieru ponownie na pół, wyrównując krawędź ze środkowym \n"
+"zagięciem, a następnie rozłóż papier.\n"
+"4. Załaduj papier do przedniej tacy, z grzbietami zagięć skierowanymi do góry, \n"
+"tak aby mieć dalej od siebie krawędź połowy bez zagięcia.\n"
+"5. Otwórz tacę wyprowadzania papieru i kliknij przycisk Wykonaj."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTWFEED
+#: po/keystr.h:1208
+msgid "Prevent paper double-feed"
+msgstr "Zapobieganie pobieraniu dwóch arkuszy"
+
+#. LUM_IDS_MNTMSG_PREVENTWFEED_MSG
+#: po/keystr.h:1210
+msgid ""
+"Set Prevent paper double-feed only when double-feeding of plain paper "
+"occurs.\n"
+"\n"
+"Using this function decreases the print speed but reduces the occurrence of "
+"double-feeding."
+msgstr ""
+"Włącz tę opcję tylko wtedy, gdy występuje pobieranie dwóch arkuszy zwykłego \n"
+"papieru naraz.\n"
+"\n"
+"Korzystanie z tej funkcji zmniejsza prędkość drukowania, ale ogranicza zjawisko \n"
+"pobierania dwóch arkuszy naraz."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_PAPERSRC_11
+#: po/keystr.h:1214
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 \n"
+"or letter size plain paper, and click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), załaduj jeden arkusz \n"
+"zwykłego papieru formatu A4 lub Letter, a następnie kliknij przycisk Drukuj \n"
+"wzór testu."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_PAPERSRC_11
+#: po/keystr.h:1219
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpoczęcie wyrównywania głowicy drukującej.\n"
+"\n"
+"Ze względu na to, że podczas wyrównywania następuje drukowanie, przygotuj \n"
+"drukarkę (podłącz kabel i włącz zasilanie) i załaduj trzy arkusze zwykłego \n"
+"papieru formatu A4 lub Letter. Drukarka wydrukuje wzór wyrównywania.\n"
+"\n"
+"Aby wyrównać położenie głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienie, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_K_55
+#: po/keystr.h:1228
+msgid "Adjustment in Columns G to K (-5 to +5)"
+msgstr "Dostosowanie w kolumnach G–K (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_L_Q
+#: po/keystr.h:1230
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns L to Q."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od L do Q i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_R_Z
+#: po/keystr.h:1234
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for \n"
+"columns R to Z."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom od R do Z \n"
+"wprowadź numery deseni, na których widać najmniej poziomych pasków."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_44
+#: po/keystr.h:1238
+msgid "Adjustment in Column R (-4 to +4)"
+msgstr "Dostosowanie w kolumnie R (-4–+4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_S_V_22
+#: po/keystr.h:1240
+msgid "Adjustment in Columns S to V (-2 to +2)"
+msgstr "Dostosowanie w kolumnach S–V (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_Z_22
+#: po/keystr.h:1242
+msgid "Adjustment in Columns W to Z (-2 to +2)"
+msgstr "Dostosowanie w kolumnach W–Z (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_Q_55
+#: po/keystr.h:1244
+msgid "Adjustment in Columns L to Q (-5 to +5)"
+msgstr "Dostosowanie w kolumnach L–Q (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Z
+#: po/keystr.h:1246
+msgid "Column Z:"
+msgstr "Kolumna Z:"
+
+#. LUM_IDS_MNTMSG_MSI_COLLECTING
+#: po/keystr.h:1248
+msgid ""
+"Collecting printer status about maintenance.\n"
+"Please wait."
+msgstr ""
+"Zbieranie informacji o obsłudze drukarki.\n"
+"Proszę czekać."
+
+#. LUM_IDS_MNTMSG_MSI_NOTAVAILABLE
+#: po/keystr.h:1251
+msgid ""
+"This printer status about maintenance cannot be collected.\n"
+"The displayed information may be different from the current settings."
+msgstr ""
+"Nie można uzyskać informacji o obsłudze drukarki.\n"
+"Wyświetlane informacje mogą się różnić od wynikających z bieżących ustawień."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_FRONTTRAY
+#: po/keystr.h:1254
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the front tray, and click Print Check Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), załaduj na przednią tacę \n"
+"jeden arkusz zwykłego papieru formatu A4 lub Letter, a następnie kliknij \n"
+"przycisk Drukuj wzór testu."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_FRONT_11
+#: po/keystr.h:1259
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the front tray and "
+"click OK."
+msgstr ""
+"Załaduj na przednią tacę jeden arkusz zwykłego papieru formatu A4 lub Letter i \n"
+"kliknij przycisk OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_PAPERSRC_11
+#: po/keystr.h:1261
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, plain paper.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), po czym załaduj jeden \n"
+"arkusz zwykłego papieru formatu A4 lub Letter.\n"
+"\n"
+"Kliknięcie przycisku OK spowoduje wydrukowanie bieżących ustawień."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_11
+#: po/keystr.h:1265
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK. "
+msgstr ""
+"Załaduj do kasety jeden arkusz zwykłego papieru formatu A4 lub Letter i kliknij \n"
+"przycisk OK. "
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_REAR_11
+#: po/keystr.h:1267
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK. "
+msgstr ""
+"Załaduj na tylną tacę jeden arkusz zwykłego papieru formatu A4 lub Letter i \n"
+"kliknij przycisk OK. "
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_FRONTTRAY
+#: po/keystr.h:1269
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the front tray. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpoczęcie wyrównywania głowicy drukującej.\n"
+"\n"
+"Ze względu na to, że podczas wyrównywania następuje drukowanie, przygotuj \n"
+"drukarkę (podłącz kabel i włącz zasilanie) i załaduj na przednią tacę trzy \n"
+"arkusze zwykłego papieru formatu A4 lub Letter. Drukarka wydrukuje wzór \n"
+"wyrównywania.\n"
+"\n"
+"Aby wyrównać położenie głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienie, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE
+#: po/keystr.h:1279
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size, plain paper into the cassette. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Ponieważ wyrównywanie jest związane z drukowaniem, przygotuj drukarkę (podłącz \n"
+"kabel i włącz zasilanie) i załaduj trzy arkusze zwykłego papieru formatu A4 lub \n"
+"Letter do kasety. Drukarka wydrukuje deseń wyrównywania.\n"
+"\n"
+"Aby wyrównać pozycję głowicy drukującej, kliknij przycisk Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienia, kliknij przycisk Wydrukuj \n"
+"wartość wyrównania."
+
+#. LUM_SPACE_01
+#: po/keystr.h:1289
+msgid " "
+msgstr " "
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_UPPER
+#: po/keystr.h:1291
+msgid "Cassette (upper)"
+msgstr "Kaseta (górna)"
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_LOWER
+#: po/keystr.h:1293
+msgid "Cassette (lower)"
+msgstr "Kaseta (dolna)"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_UPPER
+#: po/keystr.h:1295
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (upper).\n"
+"\n"
+"First remove paper from the cassette (upper).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about "
+"three minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"Rozpoczynanie czyszczenia rolek podawania papieru kasety (górnej).\n"
+"\n"
+"Najpierw wyjmij papier z kasety (górnej).\n"
+"Następnie kliknij przycisk OK. Rolki podawania papieru zaczną się obracać. \n"
+"Potrwa to około trzy minuty.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_UPPER
+#: po/keystr.h:1302
+msgid ""
+"Cut A4 or letter size plain paper in half lengthwise, then widthwise to "
+"create four equal pieces.\n"
+"Confirm the operating noise of the printer has stopped, and then load the "
+"four pieces of paper into the cassette (upper), \n"
+"with the cut edges towards you.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Przetnij zwykły papier formatu A4 lub Letter na pół wzdłuż, a następnie wszerz, \n"
+"aby otrzymać cztery równe części.\n"
+"Upewnij się, że ustały odgłosy pracy drukarki, a następnie załaduj do kasety \n"
+"(górnej) cztery kawałki papieru tak, aby cięte krawędzie znalazły się bliżej \n"
+"Ciebie.\n"
+"Kliknięcie przycisku OK spowoduje wysunięcie papieru i zakończenie czyszczenia \n"
+"rolek podawania papieru."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_LOWER
+#: po/keystr.h:1307
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (lower).\n"
+"\n"
+"First remove paper from the cassette (lower).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"Rozpoczynanie czyszczenia rolek podawania papieru dla kasety (dolnej).\n"
+"\n"
+"Najpierw wyjmij papier z kasety (dolnej).\n"
+"Następnie kliknij przycisk OK. Rolki podawania papieru zaczną się obracać. \n"
+"Potrwa to około dwie minuty.\n"
+"\n"
+"Czy chcesz rozpocząć czyszczenie?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_LOWER
+#: po/keystr.h:1314
+msgid ""
+"Confirm the operating noise of the printer has stopped, \n"
+"and then load three sheets of A4 or letter size plain paper into the "
+"cassette (lower).\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Upewnij się, że ustały odgłosy pracy drukarki, a następnie załaduj do kasety \n"
+"(dolnej) trzy arkusze zwykłego papieru formatu A4 lub Letter.\n"
+"Kliknięcie przycisku OK spowoduje wysunięcie papieru i zakończenie czyszczenia \n"
+"rolek podawania papieru."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_CASSETTE_LOWER
+#: po/keystr.h:1318
+msgid ""
+"1. Remove paper from the cassette (lower).\n"
+"2. Fold A4 or letter size plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the "
+"cassette (lower), \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Click Execute."
+msgstr ""
+"1. Wyjmij papier z kasety (dolnej).\n"
+"2. Złóż zwykły papier formatu A4 lub Letter na pół, a następnie rozłóż go.\n"
+"3. Złóż jedną stronę papieru ponownie na połowę, wyrównując krawędź z linią \n"
+"zagięcia biegnącą przez środek, a następnie rozłóż papier.\n"
+"4. Trzymając papier zagiętymi grzbietami skierowanymi w górę, załaduj go do \n"
+"kasety (dolnej) w taki sposób, aby krawędź połowy bez zagięcia znalazła się \n"
+"dalej od Ciebie.\n"
+"5. Kliknij opcję Wykonaj."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_LOWER
+#: po/keystr.h:1325
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or \n"
+"letter size plain paper into the cassette (lower), and click Print Check "
+"Pattern."
+msgstr ""
+"Drukuje wzór, który umożliwia sprawdzenie, czy dysze głowicy drukującej są \n"
+"zakleszczone.\n"
+"\n"
+"Przygotuj drukarkę (podłącz kabel i włącz zasilanie), załaduj do kasety \n"
+"(dolnej) jeden arkusz zwykłego papieru formatu A4 lub Letter, a następnie \n"
+"kliknij przycisk Drukuj wzór testu."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE_LOWER
+#: po/keystr.h:1330
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size plain paper into the cassette "
+"(lower). The printer will print an alignment pattern.\n"
+"\n"
+"To start the print head alignment, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpocznie się wyrównywanie głowic drukujących.\n"
+"\n"
+"Wyrównywanie wymaga drukowania, dlatego przygotuj drukarkę (podłącz kabel i \n"
+"włącz zasilanie) i załaduj do kasety (dolnej) trzy arkusze zwykłego papieru \n"
+"formatu A4 lub Letter. Drukarka wydrukuje wzór wyrównywania.\n"
+"\n"
+"Aby rozpocząć wyrównywanie głowicy drukującej, kliknij opcję Wyrównaj głowicę \n"
+"drukującą.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienie, kliknij opcję Wydrukuj wartość \n"
+"wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_H
+#: po/keystr.h:1339
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to H."
+msgstr ""
+"Przeprowadź wyrównywanie głowic drukujących. Sprawdź desenie wydrukowane w \n"
+"kolumnach od A do H i w odpowiednich polach wprowadź numery deseni, na których \n"
+"widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_33
+#: po/keystr.h:1343
+msgid "Adjustment in Column H (-3 to +3)"
+msgstr "Dostosowanie w kolumnie H (-3–+3)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_I_P
+#: po/keystr.h:1345
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns I to P."
+msgstr ""
+"Sprawdź desenie wydrukowane w kolumnach od I do P i w odpowiednich polach \n"
+"wprowadź numery deseni, na których widać najmniej smug."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_I_L_55
+#: po/keystr.h:1348
+msgid "Adjustment in Columns I to L (-5 to +5)"
+msgstr "Dostosowanie w kolumnach I–L (-5–+5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_h
+#: po/keystr.h:1352
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"h."
+msgstr ""
+"Sprawdź wydrukowane desenie i w polach odpowiadających kolumnom od a do h \n"
+"wprowadź numery deseni, na których widać najmniej poziomych pasków."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_d_22
+#: po/keystr.h:1355
+msgid "Adjustment in Columns a to d (-2 to +2)"
+msgstr "Dostosowanie w kolumnach a–d (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_e_h_22
+#: po/keystr.h:1357
+msgid "Adjustment in Columns e to h (-2 to +2)"
+msgstr "Dostosowanie w kolumnach e–h (-2–+2)"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_CASSETTE_LOWER
+#: po/keystr.h:1359
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size Matte Photo Paper (MP-101) into the "
+"cassette (lower) and click Align Print Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment \n"
+"to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Rozpoczynanie automatycznego wyrównywania głowicy drukującej.\n"
+"\n"
+"Wyrównywanie wymaga drukowania, dlatego przygotuj drukarkę (podłącz kabel i \n"
+"włącz zasilanie), załaduj do kasety (dolnej) jeden arkusz papieru Matte Photo \n"
+"Paper (MP-101) formatu A4 lub Letter i kliknij opcję Wyrównaj głowicę drukującą.\n"
+"\n"
+"Jeśli wyniki automatycznego wyrównywania głowicy drukującej są niezadowalające, \n"
+"wykonaj operację ręcznie, aby precyzyjnie wyrównać głowicę.\n"
+"Aby wykonać ręczne wyrównywanie głowicy drukującej, kliknij przycisk Anuluj.\n"
+"Następnie kliknij opcję Ustawienia niestandardowe na karcie Obsługa sterownika \n"
+"drukarki, zaznacz opcję Wyrównaj głowice ręcznie i kliknij przycisk OK. Potem \n"
+"ponów próbę.\n"
+"\n"
+"Aby wydrukować i sprawdzić bieżące ustawienie, kliknij opcję Wydrukuj wartość \n"
+"wyrównania."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_LOWER
+#: po/keystr.h:1372
+msgid ""
+"Load one sheet of A4 or letter size plain paper into the cassette (lower) "
+"and click OK."
+msgstr ""
+"Załaduj jeden arkusz zwykłego papieru formatu A4 lub Letter do kasety (dolnej) \n"
+"i kliknij przycisk OK."
+

@@ -1,0 +1,314 @@
+﻿********************************************************************************
+Canon 喷墨打印机驱动程序
+版本 3.80
+版权所有 CANON INC. 2012
+保留所有权利。
+********************************************************************************
+
+1. 关于本文件
+    本文件介绍当使用lpr命令在本打印机上打印时可用的选项。
+
+2. 选项列表
+    本节介绍可用于通过lpr命令来进行打印设置的选项。
+    有关可用的选项及组合这些选项时的限制等信息，请参阅以下部分 :
+
+    介质类型 **
+    纸张来源 **
+    打印质量 **
+    色彩平衡
+    浓度
+    对比度
+    亮度
+    灰度打印
+    墨盒设置
+    页尺寸 **
+    打印尺寸
+    打印位置
+    自动双面打印 **
+    无边距打印 **
+    份数
+
+    与其他选项组合使用时，任何带有 ** 标识的设置都会受到相应的限制。
+    有关打印选项组合的限制信息，请参阅“打印选项组合限制”。
+
+    介质类型 **
+
+        语法                     :  -o MediaType=[参数]
+        参数                    : 可选择以下介质。
+                                   [默认值=plain]
+
+        plain                    普通纸
+        glossygold               高级光面照片纸 II
+        proplatinum              优质专业照片纸
+        luster                   专业绒面照片纸
+        semigloss                亚高光泽照片纸
+        glossypaper              光面照相纸
+        matte                    无光泽照片纸
+        envelope                 信封
+        postcardaddress          Hagaki A
+        ijpostcard               Ink Jet Hagaki
+        glossypost               Hagaki K
+        postcard                 Hagaki
+        highres                  高分辨率纸
+        tshirt                   T 恤转印介质
+        otherphoto               其他照片纸
+
+    纸张来源 **
+
+        语法                     :  -o InputSlot=[参数]
+        参数                    : 可选择以下纸张来源。
+                                   [默认值=front2]
+
+        front2                   从前端托盘进纸
+
+    打印质量 **
+
+        语法                     :  -o CNQuality=[参数]
+        参数                    : 1 - 5 [默认值=根据选项而不同]
+
+        随着值逐步减小，打印质量不断提高。随着值逐步增大，打印速度不断加快。
+        默认值根据其他打印选项而不同。
+
+
+    色彩平衡
+
+        语法                     :  青色      -o CNBalanceC=[参数]
+                                   品红色      -o CNBalanceM=[参数]
+                                   黄色      -o CNBalanceY=[参数]
+                                   参数 : -50 - 50 ［默认值=0］
+
+        随着数字逐步增大，色调不断增强。
+
+    浓度
+
+        语法                     :  -o CNDensity=[参数]
+        参数                    : -50 - 50 ［默认值=0］
+
+        随着数字逐步增大，浓度不断提高。
+
+    对比度
+
+        语法                     :  -o CNContrast=[参数]
+        参数                    : -50 - 50 ［默认值=0］
+
+        随着数字逐步增大，对比度不断提高。
+
+    亮度
+
+        语法                     :  -o CNGamma=[参数]
+        参数                    : 可选择以下参数。
+                                   [默认值=1.8]
+
+        1.4                      亮
+        1.8                      普通
+        2.2                      暗
+
+    灰度打印
+
+        语法                     :  -o CNGrayscale
+        参数                    : 无参数。
+
+
+    墨盒设置
+
+        语法                     :  -o CNInkCartridgeSettings=[参数]
+        参数                    : 可选择以下参数。
+                                   [默认值=bkcolor]
+
+        color                    仅彩色
+        bk                       仅黑色
+        bkcolor                  黑色和彩色
+
+        *移除墨盒不能打印。
+        即使墨盒不用于打印，也请不要将其移除。
+        *以下情况中忽略“bk”。使用彩色墨盒也执行打印。
+        - 当介质类型指定“plain”，“postcard”，“postcardaddress”
+        或“envelope”以外的媒介时
+        - 当设置无边距打印时
+
+
+    页尺寸 **
+
+        语法                     :  -o PageSize=[参数]
+        参数                    : 可选择以下页尺寸。[默认值=a4]
+
+        letter                   Letter [8.50"x11.00" 215.9x279.4mm]
+        legal                    Legal [8.50"x14.00" 215.9x355.6mm]
+        a5                       A5 [5.83"x8.27" 148.0x210.0mm]
+        a4                       A4 [8.27"x11.69" 210.0x297.0mm]
+        b5                       B5 [7.17"x10.12" 182.0x257.0mm]
+        4X6                      4"x6" [4.00"x6.00" 101.6x152.4mm]
+        5X7                      5"x7" [5.00"x7.00" 127.0x177.8mm]
+        8X10                     8"x10" [8.00"x10.00" 203.2x254.0mm]
+        l                        L [3.50"x5.00" 89.0x127.0mm]
+        2l                       2L [5.00"x7.01" 127.0x178.0mm]
+        postcard                 Hagaki [3.94"x5.83" 100.0x148.0mm]
+        postdbl                  Hagaki 2 [7.87"x5.83" 200.0x148.0mm]
+        envelop10p               Comm. 信封 #10 [4.12"x9.50" 104.8x241.3mm]
+        envelopdlp               DL 信封 [4.33"x8.66" 110.0x220.0mm]
+        envj4p                   Youkei 4 [4.13"x9.25" 105.0x235.0mm]
+        envj6p                   Youkei 6 [3.86"x7.48" 98.0x190.0mm]
+        Custom.value1xvalue2mm   用户定义
+        letter.bl                Letter [8.50"x11.00" 215.9x279.4mm](无边距打印)
+        a4.bl                    A4 [8.27"x11.69" 210.0x297.0mm](无边距打印)
+        4X6.bl                   4"x6" [4.00"x6.00" 101.6x152.4mm](无边距打印)
+        5X7.bl                   5"x7" [5.00"x7.00" 127.0x177.8mm](无边距打印)
+        8X10.bl                  8"x10" [8.00"x10.00" 203.2x254.0mm](无边距打印)
+        l.bl                     L [3.50"x5.00" 89.0x127.0mm](无边距打印)
+        2l.bl                    2L [5.00"x7.01" 127.0x178.0mm](无边距打印)
+        postcard.bl              Hagaki [3.94"x5.83" 100.0x148.0mm](无边距打印)
+
+        如果为页尺寸指定用户定义的值，应确保该尺寸位于以下范围以内。
+        必须同时设置纸张宽度(值1)和高度(值2)。
+
+        语法                     :  -o PageSize=Custom.[值1]x[值2]mm
+        参数                    : 值1 = 89 mm - 215.9 mm，
+                                   值2 = 127 mm - 676 mm
+
+
+    打印尺寸
+
+        i) 比例指定
+
+        指定尺寸的放大或缩小率(%)。对于lpr命令而言，可以使用标准选项
+        “natural-scaling”来执行比例指定。
+        有关可以在lpr命令(CUPS)中设置的选项的信息，
+        请参阅通用UNIX打印系统主页(http://www.cups.org/)。
+
+        ii) 按页面大小打印
+
+        语法                     :  -o scaling=100
+
+        该功能在不改变纵横比的情况下对图像进行缩放，以适应打印区域。为了适应打印区域，
+        图像缩放方向可以是横向或纵向。
+
+        *比例指定和按页面大小打印不能同时指定。
+
+
+    打印位置
+
+        对于lpr命令而言，可以使用标准选项“position”来执行打印位置调整。
+        有关可以在lpr命令(CUPS)中设置的选项的信息，
+        请参阅通用UNIX打印系统主页(http://www.cups.org/)。
+
+
+    自动双面打印 **
+
+        语法                     :  -o Duplex
+        参数                    : 无参数。
+
+        装订边
+
+
+
+        语法                     :  -o CNStapleSide=[参数]
+        参数                    : 可选择以下装订边。
+                                   [默认值=longside]
+
+        longside                 打印时沿长边装订。
+        shortside                打印时沿短边装订。
+
+        *仅当指定自动双面打印时启用本选项。
+
+    无边距打印 **
+
+        该参数调整在无边距打印过程中超出纸张大小部分的量。
+        只有在指定无边距打印时才会启用该参数。
+
+
+
+
+        语法                     :  -o CNExtension=[参数]
+        参数                    :  0 - 3 ［默认值=2］
+        随着数的逐步增大，扩展量不断增加。
+
+    份数
+
+        语法                     :  -o CNCopies=[参数]
+        参数                    : 1 - 999 ［默认值=1］
+
+
+3. 打印选项组合限制
+
+    lpr命令的打印选项组合仅限如下所示的情况。
+
+    *自动双面打印与介质类型/页尺寸
+
+
+
+        如果指定了以下介质类型，则可以指定自动双面打印 :
+
+        plain
+
+        如果指定了以下页尺寸，则可以指定自动双面打印 :
+
+        letter
+        a4
+
+    *介质类型、自动双面打印、打印质量与无边距打印
+
+        在组合介质类型、自动双面打印、打印质量与无边距打印时，
+        可以利用lpr命令指定以下打印设置组合 :
+
+        指定无边距打印时(为无边距打印指定页尺寸时) :
+         -o MediaType=plain -o CNQuality=3 
+         -o MediaType=postcard -o CNQuality=2 
+         -o MediaType=postcard -o CNQuality=3 
+         -o MediaType=glossypaper -o CNQuality=2 
+         -o MediaType=glossypaper -o CNQuality=3 
+         -o MediaType=ijpostcard -o CNQuality=2 
+         -o MediaType=ijpostcard -o CNQuality=3 
+         -o MediaType=matte -o CNQuality=2 
+         -o MediaType=matte -o CNQuality=3 
+         -o MediaType=otherphoto -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=3 
+         -o MediaType=semigloss -o CNQuality=2 
+         -o MediaType=semigloss -o CNQuality=3 
+         -o MediaType=proplatinum -o CNQuality=1 
+         -o MediaType=proplatinum -o CNQuality=2 
+         -o MediaType=proplatinum -o CNQuality=3 
+         -o MediaType=glossypost -o CNQuality=2 
+         -o MediaType=glossypost -o CNQuality=3 
+         -o MediaType=postcardaddress -o CNQuality=2 
+         -o MediaType=postcardaddress -o CNQuality=3 
+         -o MediaType=luster -o CNQuality=2 
+         -o MediaType=luster -o CNQuality=3 
+        
+
+        未指定无边距打印时(没有为无边距打印指定页尺寸时) :
+         -o MediaType=plain -o CNQuality=2 
+         -o MediaType=plain -o Duplex -o CNQuality=2 
+         -o MediaType=plain -o CNQuality=3 
+         -o MediaType=plain -o Duplex -o CNQuality=3 
+         -o MediaType=plain -o CNQuality=4 
+         -o MediaType=plain -o Duplex -o CNQuality=4 
+         -o MediaType=postcard -o CNQuality=2 
+         -o MediaType=postcard -o CNQuality=3 
+         -o MediaType=envelope -o CNQuality=2 
+         -o MediaType=envelope -o CNQuality=3 
+         -o MediaType=highres -o CNQuality=2 
+         -o MediaType=highres -o CNQuality=3 
+         -o MediaType=tshirt -o CNQuality=2 
+         -o MediaType=glossypaper -o CNQuality=2 
+         -o MediaType=glossypaper -o CNQuality=3 
+         -o MediaType=ijpostcard -o CNQuality=2 
+         -o MediaType=ijpostcard -o CNQuality=3 
+         -o MediaType=matte -o CNQuality=2 
+         -o MediaType=matte -o CNQuality=3 
+         -o MediaType=otherphoto -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=3 
+         -o MediaType=semigloss -o CNQuality=2 
+         -o MediaType=semigloss -o CNQuality=3 
+         -o MediaType=proplatinum -o CNQuality=1 
+         -o MediaType=proplatinum -o CNQuality=2 
+         -o MediaType=proplatinum -o CNQuality=3 
+         -o MediaType=glossypost -o CNQuality=2 
+         -o MediaType=glossypost -o CNQuality=3 
+         -o MediaType=postcardaddress -o CNQuality=2 
+         -o MediaType=postcardaddress -o CNQuality=3 
+         -o MediaType=luster -o CNQuality=2 
+         -o MediaType=luster -o CNQuality=3 
+        
+

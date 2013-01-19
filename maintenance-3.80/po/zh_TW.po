@@ -1,0 +1,3503 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maintenance 3.80\n"
+"POT-Creation-Date: 2012-04-17 19:15+0900\n"
+"PO-Revision-Date: 2012-06-13 11:27+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_CAPTION
+#: po/keystr.h:2
+msgid "Canon XXXXXX"
+msgstr ""
+
+#. model_BJF850
+#: po/keystr.h:4
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:6
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:8
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:12
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:14
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:16
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:18
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:20
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:22
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:24
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:26
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:28
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:30
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:32
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:34
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:36
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:38
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:40
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:42
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:44
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:46
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:48
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:50
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:52
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:54
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:56
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:58
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:60
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:62
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:64
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:66
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:68
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:70
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:72
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:74
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:76
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:78
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:80
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:82
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:84
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:86
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:88
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:90
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:92
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:94
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:96
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:98
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:100
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:102
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:104
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:106
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:108
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:110
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:112
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:114
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:116
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:118
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:120
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:122
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:124
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:126
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:128
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:130
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:132
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:134
+msgid "MX870 series"
+msgstr ""
+
+#. model_MP495
+#: po/keystr.h:136
+msgid "MP495 series"
+msgstr ""
+
+#. model_MP280
+#: po/keystr.h:138
+msgid "MP280 series"
+msgstr ""
+
+#. model_MG5100
+#: po/keystr.h:140
+msgid "MG5100 series"
+msgstr ""
+
+#. model_MG5200
+#: po/keystr.h:142
+msgid "MG5200 series"
+msgstr ""
+
+#. model_IP4800
+#: po/keystr.h:144
+msgid "iP4800 series"
+msgstr ""
+
+#. model_MG6100
+#: po/keystr.h:146
+msgid "MG6100 series"
+msgstr ""
+
+#. model_MG8100
+#: po/keystr.h:148
+msgid "MG8100 series"
+msgstr ""
+
+#. model_MX360
+#: po/keystr.h:150
+msgid "MX360 series"
+msgstr ""
+
+#. model_MX410
+#: po/keystr.h:152
+msgid "MX410 series"
+msgstr ""
+
+#. model_MX420
+#: po/keystr.h:154
+msgid "MX420 series"
+msgstr ""
+
+#. model_MX880
+#: po/keystr.h:156
+msgid "MX880 series"
+msgstr ""
+
+#. model_IX6500
+#: po/keystr.h:158
+msgid "iX6500 series"
+msgstr ""
+
+#. model_MG2100
+#: po/keystr.h:160
+msgid "MG2100 series"
+msgstr ""
+
+#. model_MG3100
+#: po/keystr.h:162
+msgid "MG3100 series"
+msgstr ""
+
+#. model_MG4100
+#: po/keystr.h:164
+msgid "MG4100 series"
+msgstr ""
+
+#. model_MG5300
+#: po/keystr.h:166
+msgid "MG5300 series"
+msgstr ""
+
+#. model_MG6200
+#: po/keystr.h:168
+msgid "MG6200 series"
+msgstr ""
+
+#. model_MG8200
+#: po/keystr.h:170
+msgid "MG8200 series"
+msgstr ""
+
+#. model_IP4900
+#: po/keystr.h:172
+msgid "iP4900 series"
+msgstr ""
+
+#. model_E500
+#: po/keystr.h:174
+msgid "E500 series"
+msgstr ""
+
+#. model_MX710
+#: po/keystr.h:176
+msgid "MX710 series"
+msgstr ""
+
+#. model_MX890
+#: po/keystr.h:178
+msgid "MX890 series"
+msgstr ""
+
+#. model_MX370
+#: po/keystr.h:180
+msgid "MX370 series"
+msgstr ""
+
+#. model_MX430
+#: po/keystr.h:182
+msgid "MX430 series"
+msgstr ""
+
+#. model_MX510
+#: po/keystr.h:184
+msgid "MX510 series"
+msgstr ""
+
+#. model_E600
+#: po/keystr.h:186
+msgid "E600 series"
+msgstr ""
+
+#. model_MP230
+#: po/keystr.h:188
+msgid "MP230 series"
+msgstr ""
+
+#. model_MG2200
+#: po/keystr.h:190
+msgid "MG2200 series"
+msgstr ""
+
+#. model_E510
+#: po/keystr.h:192
+msgid "E510 series"
+msgstr ""
+
+#. model_MG3200
+#: po/keystr.h:194
+msgid "MG3200 series"
+msgstr ""
+
+#. model_MG4200
+#: po/keystr.h:196
+msgid "MG4200 series"
+msgstr ""
+
+#. model_IP7200
+#: po/keystr.h:198
+msgid "iP7200 series"
+msgstr ""
+
+#. model_MG5400
+#: po/keystr.h:200
+msgid "MG5400 series"
+msgstr ""
+
+#. model_MG6300
+#: po/keystr.h:202
+msgid "MG6300 series"
+msgstr ""
+
+#. print_color_message
+#: po/keystr.h:204
+msgid "Color"
+msgstr ""
+
+#. supply_asf_reartray
+#: po/keystr.h:206
+msgid "Rear Tray"
+msgstr "後端托盤"
+
+#. supply_cassette_02
+#: po/keystr.h:208
+msgid "Cassette"
+msgstr "紙匣"
+
+#. cartridge_bk
+#: po/keystr.h:210
+msgid "Black"
+msgstr "黑色"
+
+#. message_button_ok
+#: po/keystr.h:212
+msgid "OK"
+msgstr "確定"
+
+#. message_button_cancel
+#: po/keystr.h:214
+msgid "Cancel"
+msgstr "取消"
+
+#. message_button_yes
+#: po/keystr.h:216
+msgid "Yes"
+msgstr "是"
+
+#. message_button_no
+#: po/keystr.h:218
+msgid "No"
+msgstr "否"
+
+#. message_button_abort
+#: po/keystr.h:220
+msgid "Abort"
+msgstr ""
+
+#. message_button_ignore
+#: po/keystr.h:222
+msgid "Ignore"
+msgstr "忽略"
+
+#. autopower_enable
+#: po/keystr.h:224
+msgid "Enable"
+msgstr "啟用"
+
+#. autopower_disable
+#: po/keystr.h:226
+msgid "Disable"
+msgstr "禁用"
+
+#. autopower_5min
+#: po/keystr.h:228
+msgid "5 minutes"
+msgstr "5 分鐘"
+
+#. autopower_10min
+#: po/keystr.h:230
+msgid "10 minutes"
+msgstr "10 分鐘"
+
+#. autopower_15min
+#: po/keystr.h:232
+msgid "15 minutes"
+msgstr "15 分鐘"
+
+#. autopower_30min
+#: po/keystr.h:234
+msgid "30 minutes"
+msgstr "30 分鐘"
+
+#. autopower_60min
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 分鐘"
+
+#. utility_message_3
+#: po/keystr.h:238
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"圖案列印是否正常？\n"
+"\n"
+"如果未列印圖案或列印結果明顯模糊，請按一下 [否] 並重新開始列印。"
+
+#. utility_message_4
+#: po/keystr.h:242
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr "確認印表機電源已經開啟，電纜線已經正確地連接，印表機已連線，然後重試。"
+
+#. utility_message_5
+#: po/keystr.h:244
+msgid "Print head alignment is now complete."
+msgstr "現在已完成列印頭校準。"
+
+#. utility_message_6
+#: po/keystr.h:246
+msgid "Do not start another operation until the current one has finished."
+msgstr "在當前操作結束之前，不要開始其他操作。"
+
+#. utility_message_8
+#: po/keystr.h:248
+msgid "Turn the printer off?"
+msgstr "是否關閉印表機電源？"
+
+#. utility_message_9
+#: po/keystr.h:250
+msgid "Apply settings to printer?"
+msgstr "將設定套用至印表機嗎？"
+
+#. utility_message_12
+#: po/keystr.h:252
+msgid "Start print head deep cleaning?"
+msgstr "是否開始列印頭深度清潔？"
+
+#. regi_bidir
+#: po/keystr.h:254
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "雙向校準 (-5 至 +5)"
+
+#. utility_message_23
+#: po/keystr.h:256
+msgid "Execute black print head deep cleaning?"
+msgstr "是否執行黑色列印頭深度清潔？"
+
+#. utility_message_24
+#: po/keystr.h:258
+msgid "Execute color print head deep cleaning?"
+msgstr "是否執行彩色列印頭深度清潔？"
+
+#. utility_message_27
+#: po/keystr.h:260
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔送紙滾軸。\n"
+"\n"
+"首先從送紙器移除紙張。按一下 [確定] 將會使送紙滾軸動作 30 次。該操作將需\n"
+"要大約一分半鐘。當您遵從這一訊息放置三張一般紙張，紙張會被輸出從而完成送紙滾軸清\n"
+"潔。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. utility_message_28
+#: po/keystr.h:268
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "在送紙器中裝入三張一般紙張。\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:270
+msgid "Feed roller cleaning is complete."
+msgstr "送紙滾軸清潔完畢。"
+
+#. util_ink_all_1
+#: po/keystr.h:272
+msgid "All Colors"
+msgstr "所有色彩"
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:274
+msgid "All Colors   BK, C, M, Y"
+msgstr "所有色彩   BK, C, M, Y"
+
+#. util_ink_black_2
+#: po/keystr.h:276
+msgid "Black   PGBK"
+msgstr "黑色   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:278
+msgid "Black   BK"
+msgstr "黑色   BK"
+
+#. util_ink_color_5
+#: po/keystr.h:280
+msgid "Color   C, M, Y, BK"
+msgstr "彩色   C, M, Y, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:282
+msgid "Color   C, M, Y"
+msgstr "彩色   C, M, Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:284
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"在清潔結束之前，不要開始其他操作。\n"
+"\n"
+"清潔完成後，執行 [噴嘴檢查] 以檢查列印頭噴嘴是否已經被清潔。"
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:288
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"清潔堵塞的列印頭噴嘴。\n"
+"\n"
+"選擇要清潔的目標墨水組。如果您無法確定要清潔的墨水組，請執行 [噴嘴檢查]。"
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:293
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"清理按普通清潔無法清潔乾淨的噴嘴。\n"
+"\n"
+"選擇要深度清潔的目標墨水組。如果您無法確定要深度清潔的墨水組，請執行 [噴嘴檢查\n"
+"]。"
+
+#. utility_message_41
+#: po/keystr.h:298
+msgid "Ink Group:"
+msgstr "墨水組:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:300
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"深度清潔比普通清潔消耗更多墨水。僅在普通清潔後噴嘴狀態仍未改善的情況下，執行 [\n"
+"深度清潔]。\n"
+"\n"
+"深度清潔完成後，執行 [噴嘴檢查] 並檢查列印頭噴嘴是否已經被清潔。"
+
+#. utility_message_43
+#: po/keystr.h:306
+msgid "Cleaning consumes ink."
+msgstr "清潔消耗墨水。"
+
+#. utility_message_44
+#: po/keystr.h:308
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"在由 [送紙轉換] 選擇的紙張來源中裝入一張 A4 或 Letter 大小的紙張\n"
+"，然後按一下 [確定]。\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:310
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"如果列印圖案類似此圖案，列印頭噴嘴可能被\n"
+"堵塞。\n"
+"按一下 [清潔]。\n"
+"\n"
+"如果執行兩次清潔操作後列印圖案質量仍未改\n"
+"善，請執行深度清潔。"
+
+#. utility_message_50
+#: po/keystr.h:318
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr "在送紙器中裝入一張 A4 或 Letter 大小的一般紙張並按一下 [確定]。"
+
+#. utility_message_53
+#: po/keystr.h:320
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至左端，並在送紙器中裝入一張 A4 或 Letter 大小的一般紙張。印表\n"
+"機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [確定]。\n"
+
+#. utility_message_54
+#: po/keystr.h:328
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click Print Check Pattern.\n"
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調整桿移至左端，在送\n"
+"紙器中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [列印檢查圖案\n"
+"]。\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:333
+msgid "Color Only"
+msgstr "僅彩色"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:335
+msgid "Black Only"
+msgstr "僅黑色"
+
+#. utility_message_55
+#: po/keystr.h:337
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "使用彩色墨盒代替黑色墨盒列印。"
+
+#. utility_message_56
+#: po/keystr.h:340
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"僅當 [主要] 標籤上的 [媒體類型] 選擇為 [一般紙張] 時，使用黑色墨盒代\n"
+"替彩色墨盒列印。"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:344
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"印表機將列印一張圖案以開始自動校準。\n"
+"在當前操作結束之前，不要開始其他操作。"
+
+#. utility_message_60
+#: po/keystr.h:347
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"將列印第二張列印頭校準圖案。\n"
+"\n"
+"按一下 [確定] 開始列印。"
+
+#. utility_message_61
+#: po/keystr.h:351
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"將列印第三張列印頭校準圖案。\n"
+"\n"
+"按一下 [確定] 開始列印。"
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:355
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至左端，並在由 [送紙轉換] 選定的紙張來源中裝入一張 A4 或 Lett\n"
+"er 大小的一般紙張。印表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. utility_message_63
+#: po/keystr.h:365
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"列印頭校準完成。\n"
+"要結束校準，請按一下 [取消]。\n"
+"\n"
+"如果列印面出現條紋，可以透過校準列印頭防止條紋出現。\n"
+"要執行該校準，在送紙器中裝入一張紙並按一下 [確定]。"
+
+#. utility_message_64
+#: po/keystr.h:371
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調整桿移至左端，在由\n"
+" [送紙轉換] 選定的紙張來源中裝入一張 A4 或 Letter 大小的一般紙張\n"
+"，並按一下 [列印檢查圖案]。"
+
+#. utility_message_66
+#: po/keystr.h:377
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"在送紙器中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [列印檢查\n"
+"圖案]。"
+
+#. utility_message_67
+#: po/keystr.h:381
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"列印頭校準完成。\n"
+"要結束校準，請按一下 [取消]。\n"
+"\n"
+"如果列印面出現條紋，可以透過校準列印頭防止條紋出現。\n"
+"要執行該校準，在由 [送紙轉換] 選擇的紙張來源中裝入一張紙並按一下 [確定]。"
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:389
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至右端，並在送紙器中裝入一張 A4 或 Letter 大小的一般紙張。印表\n"
+"機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:399
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"如果列印圖案類似此圖案，列印頭噴嘴可能被堵塞。\n"
+"按一下 [清潔]。\n"
+"\n"
+"如果執行兩三次 [清潔] 操作後列印圖案質量仍未改善，請執行 [深度清潔]。"
+
+#. utility_message_71
+#: po/keystr.h:407
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"您無法重置墨水計數器，因為印表機被設定為不顯示低墨水警示。\n"
+"\n"
+"要開啟低墨水警告顯示，請按一下印表機驅動程式 [維護] 標籤中的 [低墨水警示設\n"
+"定] 按鈕。\n"
+"執行此操作前請先詳讀印表機手冊。"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:413
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔送紙滾軸。\n"
+"\n"
+"首先從後端托盤移除紙張。\n"
+"按一下 [確定] 將會使送紙滾軸動作 30 次。該操作將需要大約一分半鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:420
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔送紙滾軸。\n"
+"\n"
+"首先按印表機上的 [送紙轉換] 來選擇要清潔的目標紙張來源，然後從選定的紙張來源\n"
+"移除紙張。\n"
+"按一下 [確定] 將會使送紙滾軸動作 30 次。該操作將需要大約一分半鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:428
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"確認印表機操作噪音已經停止，然後在後端托盤中裝入三張一般紙張。\n"
+"按一下 [確定] 將會彈出紙張並且完成送紙滾軸清潔。"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:431
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"確認印表機操作噪音已經停止，然後在選定的紙張來源中裝入三張一般紙張。\n"
+"按一下 [確定] 將會彈出紙張並且完成送紙滾軸清潔。"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:434
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. 從送紙器移除紙張。\n"
+"2. 將 A4 或 Letter 大小的一般紙張對摺，然後展開該紙張。\n"
+"3. 保持摺痕隆起部分朝下，將紙張裝入送紙器中。\n"
+"4. 按一下 [執行]。"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:439
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. 從後端托盤移除紙張。\n"
+"2. 將 A4 或 Letter 大小的一般紙張對摺，然後展開該紙張。\n"
+"3. 保持摺痕隆起部分朝下，將紙張裝入後端托盤中。\n"
+"4. 按一下 [執行]。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:444
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load one sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調整桿移至左端，在後\n"
+"端托盤中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [列印檢查圖\n"
+"案]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:450
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至左端，並在後端托盤中裝入兩張 A4 或 Letter 大小的一般紙張。印\n"
+"表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:460
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始自動列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在送紙器中裝入一張 \n"
+"A4 或 Letter 大小的一般紙張並按一下 [對齊列印頭]。\n"
+"\n"
+"要執行手動列印頭校準，請按一下 [取消]。\n"
+"接著，按一下印表機驅動程式 [維護] 標籤上的 [自訂設定]，勾選 [手動校準列\n"
+"印頭] 並按一下 [確定]。然後重試。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:471
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始自動列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在後端托盤中裝入兩張\n"
+" A4 或 Letter 大小的霧面相片紙(MP-101)並按一下 [對齊列印頭\n"
+"]。\n"
+"\n"
+"要執行手動列印頭校準，請按一下 [取消]。\n"
+"接著，按一下印表機驅動程式 [維護] 標籤上的 [自訂設定]，勾選 [手動校準列\n"
+"印頭] 並按一下 [確定]。然後重試。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:483
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK."
+msgstr ""
+"在後端托盤中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [確定]\n"
+"。"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:485
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"印表機將列印兩張圖案以開始自動校準。\n"
+"在當前操作結束之前，不要開始其他操作。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:488
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，並在由 [送紙轉換]\n"
+" 選定的紙張來源中裝入四張 A4 或 Letter 大小的一般紙張。印表機將列印\n"
+"校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:498
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"將列印第四張列印頭校準圖案。\n"
+"\n"
+"按一下 [確定] 開始列印。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"在由 [送紙轉換] 選擇的紙張來源中裝入一張 A4 或 Letter 大小的一般\n"
+"紙張，並按一下 [列印檢查圖案]。"
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:507
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至左端，並在後端托盤中裝入一張 A4 或 Letter 大小的一般紙張。印\n"
+"表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:517
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，並在由 [送紙轉換]\n"
+" 選擇的紙張來源中裝入一張 A4 或 Letter 大小的一般紙張。印表機將列印\n"
+"校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:527
+msgid ""
+"Load one sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr "在後端托盤中裝入一張 A4 或 Letter 大小的一般紙張並按一下 [確定]。"
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:529
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"列印頭校準完成。\n"
+"要結束校準，請按一下 [取消]。\n"
+"\n"
+"如果列印面出現條紋，可以透過校準列印頭防止條紋出現。\n"
+"要執行該校準，在後端托盤中裝入一張紙並按一下 [確定]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:535
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，並在由 [送紙轉換]\n"
+" 選擇的紙張來源中裝入三張 A4 或 Letter 大小的一般紙張。印表機將列印\n"
+"校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:545
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至左端，並在送紙器中裝入一張 A4 或 Letter 大小的一般紙張。印表\n"
+"機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:555
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調整桿移至右端，在後\n"
+"端托盤中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [列印檢查圖\n"
+"案]。"
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:560
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"僅當 [主要] 標籤上的 [媒體類型] 選擇為 [一般紙張]、[Hagaki] \n"
+"或 [西式信封] 時，使用黑色墨盒代替彩色墨盒列印。"
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:563
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load one sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至左端，並在後端托盤中裝入一張 A4 或 Letter 大小的一般紙張。印\n"
+"表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [確定]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:571
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至右端，並在後端托盤中裝入兩張 A4 或 Letter 大小的一般紙張。印\n"
+"表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:581
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始自動列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，將印表機的紙張厚度調\n"
+"整桿移至右端，在後端托盤中裝入一張 A4 或 Letter 大小的霧面相片紙(M\n"
+"P-101)並按一下 [對齊列印頭]。\n"
+"\n"
+"要執行手動列印頭校準，請按一下 [取消]。\n"
+"接著，按一下印表機驅動程式 [維護] 標籤上的 [自訂設定]，勾選 [手動校準列\n"
+"印頭] 並按一下 [確定]。然後重試。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:593
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. 從後端托盤移除紙張，然後裝入第一張 A4 或 Letter 大小的一般紙張\n"
+"。\n"
+"2. 將第二張 A4 或 Letter 大小的一般紙張對摺，然後展開該紙張。\n"
+"3. 保持摺痕隆起部分朝下，將第二張紙裝第一張紙的前面。\n"
+"4. 按一下 [執行]。"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:598
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"開始底板清潔，以防止列印過程中紙張污損。\n"
+"\n"
+"該操作需要兩張 A4 或 Letter 大小的一般紙張。遵照這些指示來執行底板清\n"
+"潔。"
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:602
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click OK."
+msgstr ""
+"當 [紙張來源] 選擇為 [自動選取] 時，紙張來源設定為一般紙張。\n"
+"\n"
+"紙張來源選擇為一般紙張，然後按一下 [確定]。"
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:606
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"清理按普通清潔無法清潔乾淨的噴嘴。\n"
+"\n"
+"選擇要深度清潔的目標墨水組。如果僅黑色噴嘴被堵塞，選擇 [黑色]。如果僅彩色或黑\n"
+"色和彩色噴嘴都被堵塞，選擇 [所有色彩]。如果您不確定哪個噴嘴被堵塞，執行 [噴\n"
+"嘴檢查]。\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:612
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"清潔送紙滾軸。\n"
+"\n"
+"選擇要清潔的目標紙張來源，然後按一下 [確定]。"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:616
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔後端托盤的送紙滾軸。\n"
+"\n"
+"首先從後端托盤移除紙張，然後開啟出紙托盤。\n"
+"按一下 [確定] 將會使送紙滾軸動作。該操作將需要大約一分半鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:623
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔紙匣的送紙滾軸。\n"
+"\n"
+"首先從紙匣移除紙張，然後開啟出紙托盤。\n"
+"按一下 [確定] 將會使送紙滾軸動作。該操作將需要大約兩分鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:630
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔後端托盤的送紙滾軸。\n"
+"\n"
+"首先從後端托盤移除紙張。\n"
+"按一下 [確定] 將會使送紙滾軸動作。該操作將需要大約一分半鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:637
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔紙匣的送紙滾軸。\n"
+"\n"
+"首先從紙匣移除紙張。\n"
+"按一下 [確定] 將會使送紙滾軸動作。該操作將需要大約兩分鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:644
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"確認印表機操作噪音已經停止，然後在紙匣中裝入三張一般紙張。\n"
+"按一下 [確定] 將會彈出紙張並且完成送紙滾軸清潔。"
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:647
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load one sheet of A4 or "
+"letter size, \n"
+"plain paper into the selected paper source and click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"首先選擇要使用的紙張來源。然後在選定的紙張來源中裝入一張 A4 或 Letter\n"
+" 大小的一般紙張，並按一下 [列印檢查圖案]。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:652
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，在紙匣中裝入一張 A4 或 Lette\n"
+"r 大小的一般紙張，並按一下 [列印檢查圖案]。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:657
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，在後端托盤中裝入一張 A4 或 Let\n"
+"ter 大小的一般紙張，並按一下 [列印檢查圖案]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:662
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，並在後端托盤中裝入兩\n"
+"張 A4 或 Letter 大小的一般紙張。印表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:671
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"校準需要列印。選擇要使用的紙張來源，然後按一下 [對齊列印頭]。"
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:675
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr "要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:677
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"備妥印表機(連接電纜線並開啟印表機電源)，並在後端托盤中裝入三張 A4 或 Le\n"
+"tter 大小的一般紙張。\n"
+"\n"
+"按一下 [確定] 將列印校準圖案。"
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:682
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"備妥印表機(連接電纜線並開啟印表機電源)，並在紙匣中裝入三張 A4 或 Lett\n"
+"er 大小的一般紙張。\n"
+"\n"
+"按一下 [確定] 將列印校準圖案。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:687
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"備妥印表機(連接電纜線並開啟印表機電源)，並在後端托盤中裝入一張 A4 或 Le\n"
+"tter 大小的一般紙張。\n"
+"\n"
+"按一下 [確定] 將列印當前設定。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:692
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"備妥印表機(連接電纜線並開啟印表機電源)，並在紙匣中裝入一張 A4 或 Lett\n"
+"er 大小的一般紙張。\n"
+"\n"
+"按一下 [確定] 將列印當前設定。"
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:697
+msgid "Select the paper source to be used, and then click OK."
+msgstr "選擇要使用的紙張來源，然後按一下 [確定]。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:699
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr "在紙匣中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [確定]。"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:701
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始自動列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在後端托盤中裝入一張\n"
+" A4 或 Letter 大小的霧面相片紙(MP-101)並按一下 [對齊列印頭\n"
+"]。\n"
+"\n"
+"要執行手動列印頭校準，請按一下 [取消]。\n"
+"接著，按一下印表機驅動程式 [維護] 標籤上的 [自訂設定]，勾選 [手動校準列\n"
+"印頭] 並按一下 [確定]。然後重試。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:712
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"設定 [防止紙張磨損]。如果列印時啟用該設定，列印品質或列印速度可能會受到影響。\n"
+"要變更設定，不勾選 [防止紙張磨損]。"
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:715
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"清理按普通清潔無法清潔乾淨的噴嘴。\n"
+"\n"
+"深度清潔比普通清潔消耗更多墨水。僅在普通清潔後噴嘴狀態仍未改善的情況下，執行 [\n"
+"深度清潔]。\n"
+"\n"
+"深度清潔完成後，執行 [噴嘴檢查] 並檢查列印頭噴嘴是否已經被清潔。"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:723
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"在深度清潔結束之前，不要開始其他操作。\n"
+"\n"
+"深度清潔完成後，執行 [噴嘴檢查] 以檢查列印頭噴嘴是否已經被清潔。"
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:728
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"執行列印頭校準以校正色彩和線條脫軌。請參閱使用者指南並從印表機操作面板校準列印頭\n"
+"。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:733 po/keystr.h:755
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在後端托盤中裝入三張\n"
+" A4 或 Letter 大小的一般紙張。印表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:742
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始自動列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在後端托盤中裝入一張\n"
+" A4 或 Letter 大小的霧面相片紙(MP-101)並按一下 [對齊列印頭\n"
+"]。\n"
+"\n"
+"如果自動列印頭校準的結果不令人滿意，請執行手動列印頭校準以精確校準列印頭。\n"
+"要執行手動列印頭校準，請按一下 [取消]。\n"
+"接著，按一下印表機驅動程式 [維護] 標籤上的 [自訂設定]，勾選 [手動校準列\n"
+"印頭] 並按一下 [確定]。然後重試。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/keystr.h:764 po/keystr.h:1114
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/keystr.h:766 po/keystr.h:1116
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/keystr.h:768 po/keystr.h:1118
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/keystr.h:770 po/keystr.h:1120
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/keystr.h:772 po/keystr.h:1122
+msgid "5"
+msgstr "5"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:774
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "調整 A 至 C 欄 (-3 至 +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/keystr.h:776
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "調整 A 至 D 欄 (-3 至 +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:778
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "調整 A 至 E 欄 (-3 至 +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/keystr.h:780
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "調整 A 至 E 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/keystr.h:782
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "調整 A 至 F 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/keystr.h:784
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "調整 A 至 G 欄 (-5 至 +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:786
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "調整 D 至 F 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/keystr.h:788
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "調整 E 至 G 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/keystr.h:790
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "調整 F 與 G 欄 (-3 至 +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:792
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "調整 F 至 K 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/keystr.h:794
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "調整 G 至 J 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/keystr.h:796
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "調整 G 至 L 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/keystr.h:798
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "調整 H 至 K 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/keystr.h:800
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "調整 H 至 L 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/keystr.h:802
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "調整 H 至 N 欄 (-5 至 +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:804
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "調整 K 與 L 欄 (-3 至 +3)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:806
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "調整 L 與 M 欄 (-3 至 +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/keystr.h:808
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "調整 L 至 O 欄 (-5 至 +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:810
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "調整 M 與 N 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/keystr.h:812
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "調整 M 至 P 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/keystr.h:814
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "調整 M 至 Q 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/keystr.h:816
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "調整 O 至 T 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/keystr.h:818
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "調整 P 至 T 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/keystr.h:820
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "調整 Q 與 R 欄 (-4 至 +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/keystr.h:822
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "調整 U 與 V 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/keystr.h:824
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "調整 U 與 V 欄 (-3 至 +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/keystr.h:826
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "調整 W 與 X 欄 (-3 至 +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/keystr.h:828
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "調整 a 至 e 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/keystr.h:830
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "調整 f 至 j 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/keystr.h:832
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "調整 f 至 k 欄 (-2 至 +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/keystr.h:834
+msgid "Align Print Head"
+msgstr "對齊列印頭"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/keystr.h:836 po/keystr.h:1106
+msgid "Align heads manually"
+msgstr "手動校準列印頭"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/keystr.h:838
+msgid "Auto Power"
+msgstr "自動電源"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:840
+msgid "Auto Power Off"
+msgstr "自動電源關閉"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:842
+msgid "Auto Power Off:"
+msgstr "自動電源關閉:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/keystr.h:844
+msgid "Auto Power On:"
+msgstr "自動電源開啟:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/keystr.h:846
+msgid "Auto Power Settings"
+msgstr "自動電源設定"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/keystr.h:848
+msgid "Black Ink Tank"
+msgstr "黑色墨水盒"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/keystr.h:850
+msgid "Bottom Plate Cleaning"
+msgstr "底板清潔"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/keystr.h:852
+msgid "Cleaning"
+msgstr "清潔"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/keystr.h:854
+msgid "Color Ink Tank"
+msgstr "彩色墨水盒"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/keystr.h:856
+msgid "Column A:"
+msgstr "A 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/keystr.h:858
+msgid "Column B:"
+msgstr "B 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/keystr.h:860
+msgid "Column C:"
+msgstr "C 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/keystr.h:862
+msgid "Column D:"
+msgstr "D 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/keystr.h:864
+msgid "Column E:"
+msgstr "E 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/keystr.h:866
+msgid "Column F:"
+msgstr "F 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/keystr.h:868
+msgid "Column G:"
+msgstr "G 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/keystr.h:870
+msgid "Column H:"
+msgstr "H 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/keystr.h:872
+msgid "Column I:"
+msgstr "I 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/keystr.h:874
+msgid "Column J:"
+msgstr "J 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/keystr.h:876
+msgid "Column K:"
+msgstr "K 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/keystr.h:878
+msgid "Column L:"
+msgstr "L 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/keystr.h:880
+msgid "Column M:"
+msgstr "M 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/keystr.h:882
+msgid "Column N:"
+msgstr "N 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/keystr.h:884
+msgid "Column O:"
+msgstr "O 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/keystr.h:886
+msgid "Column P:"
+msgstr "P 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/keystr.h:888
+msgid "Column Q:"
+msgstr "Q 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/keystr.h:890
+msgid "Column R:"
+msgstr "R 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/keystr.h:892
+msgid "Column S:"
+msgstr "S 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/keystr.h:894
+msgid "Column T:"
+msgstr "T 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/keystr.h:896
+msgid "Column U:"
+msgstr "U 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/keystr.h:898
+msgid "Column V:"
+msgstr "V 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/keystr.h:900
+msgid "Column W:"
+msgstr "W 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/keystr.h:902
+msgid "Column X:"
+msgstr "X 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/keystr.h:904
+msgid "Column a:"
+msgstr "a 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/keystr.h:906
+msgid "Column b:"
+msgstr "b 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/keystr.h:908
+msgid "Column c:"
+msgstr "c 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/keystr.h:910
+msgid "Column d:"
+msgstr "d 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/keystr.h:912
+msgid "Column e:"
+msgstr "e 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/keystr.h:914
+msgid "Column f:"
+msgstr "f 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/keystr.h:916
+msgid "Column g:"
+msgstr "g 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/keystr.h:918
+msgid "Column h:"
+msgstr "h 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/keystr.h:920
+msgid "Column i:"
+msgstr "i 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/keystr.h:922
+msgid "Column j:"
+msgstr "j 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/keystr.h:924
+msgid "Column k:"
+msgstr "k 欄:"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/keystr.h:926 po/keystr.h:1102
+msgid "Custom Settings"
+msgstr "自訂設定"
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/keystr.h:928
+msgid "Deep Cleaning"
+msgstr "深度清潔"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/keystr.h:930
+msgid "Defaults"
+msgstr "預設值"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/keystr.h:932
+msgid "Display low ink warning"
+msgstr "顯示低墨水警示"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:934
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr "檢查列印圖案，並在 G 至 L 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/keystr.h:938
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr "檢查列印圖案，並在 H 至 O 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/keystr.h:942
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr "檢查列印圖案，並在 M 至 R 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/keystr.h:946
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr "檢查列印圖案，並在 P 至 V 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/keystr.h:950
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr "檢查列印圖案，並在 O 至 V 欄區域內輸入具有最少明顯水平條帶數量的圖案號碼。"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/keystr.h:954
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr "檢查列印圖案，並在 M 與 N 欄區域內輸入具有最平滑圖案的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/keystr.h:957
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr "檢查列印圖案，並在 a 至 j 欄區域內輸入具有最少明顯水平條帶數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/keystr.h:960
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr "檢查列印圖案，並在 a 至 k 欄區域內輸入具有最少明顯水平條帶數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/keystr.h:963
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr "檢查列印圖案，並在 H 至 Q 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:966
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"檢查列印圖案，並用最平滑且箭號所指區域沒有條帶的圖案的號碼填充 L 與 M 欄區\n"
+"域。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/keystr.h:970
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"檢查列印圖案，並用最平滑且箭號所指區域沒有條帶的圖案的號碼填充 W 與 X 欄區\n"
+"域。"
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/keystr.h:974
+msgid "Execute"
+msgstr "執行"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/keystr.h:976
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"執行列印頭校準。檢查列印圖案，並在 A 至 F 欄區域內輸入具有最少明顯條紋數量\n"
+"的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/keystr.h:980
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"執行列印頭校準。檢查列印圖案，並在 A 至 G 欄區域內輸入具有最少明顯條紋數量\n"
+"的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/keystr.h:984
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"執行列印頭校準。檢查列印圖案，並在 A 至 K 欄區域內輸入具有最少明顯條紋數量\n"
+"的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/keystr.h:988
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"執行列印頭校準。檢查列印圖案，並在 A 至 L 欄區域內輸入具有最少明顯條紋數量\n"
+"的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/keystr.h:992
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"執行列印頭校準。檢查列印圖案，並在 A 至 N 欄區域內輸入具有最少明顯條紋數量\n"
+"的圖案號碼。"
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/keystr.h:996
+msgid "Exit"
+msgstr "結束"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:998
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "水平校準 (-3 至 +7)"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/keystr.h:1000
+msgid "Ink Cartridge Settings"
+msgstr "墨盒設定"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/keystr.h:1002
+msgid "Ink Cartridge:"
+msgstr "墨盒:"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/keystr.h:1004
+msgid "Ink Counter Reset"
+msgstr "墨水計數器重置"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/keystr.h:1006 po/keystr.h:1108
+msgid "Ink Drying Wait Time:"
+msgstr "墨水晾乾等待時間:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/keystr.h:1008 po/keystr.h:1112
+msgid "Long"
+msgstr "長"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/keystr.h:1010
+msgid "Low Ink Warning Setting"
+msgstr "低墨水警示設定"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/keystr.h:1012
+msgid "Maintenance"
+msgstr "維護"
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/keystr.h:1014
+msgid "Nozzle Check"
+msgstr "噴嘴檢查"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/keystr.h:1016
+msgid "Paper Source Setting for Plain Paper"
+msgstr "一般紙張的紙張來源設定"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/keystr.h:1018
+msgid "Pattern Check"
+msgstr "圖案檢查"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/keystr.h:1020
+msgid "Power Off"
+msgstr "電源關閉"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/keystr.h:1022 po/keystr.h:1104
+msgid "Prevent paper abrasion"
+msgstr "防止紙張磨損"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/keystr.h:1024
+msgid "Print Alignment Value"
+msgstr "列印校準值"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/keystr.h:1026
+msgid "Print Check Pattern"
+msgstr "列印檢查圖案"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/keystr.h:1028
+msgid "Print Head Alignment"
+msgstr "列印頭校準"
+
+#. LUM_IDD_CLEAN
+#: po/keystr.h:1030
+msgid "Print Head Cleaning"
+msgstr "列印頭清潔"
+
+#. LUM_IDD_SILENTMODE
+#: po/keystr.h:1032
+msgid "Quiet Mode"
+msgstr "靜音模式"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/keystr.h:1034
+msgid "Read your printer manual for details about low ink warnings."
+msgstr "關於低墨水警示的詳細資訊，請先詳讀您的使用手冊。"
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/keystr.h:1036
+msgid "Roller Cleaning"
+msgstr "滾軸清潔"
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/keystr.h:1038
+msgid "Select the ink cartridge for printing."
+msgstr "選擇列印的墨盒。"
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/keystr.h:1040
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "請選擇新換的墨水盒然後按一下 [執行] 按鈕。\n"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/keystr.h:1042 po/keystr.h:1110
+msgid "Short"
+msgstr "短"
+
+#. LUM_IDD_PHA_START
+#: po/keystr.h:1044
+msgid "Start Print Head Alignment"
+msgstr "開始列印頭校準"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/keystr.h:1046
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires one sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"開始底板清潔，以防止列印過程中紙張污損。\n"
+"\n"
+"該操作需要一張 A4 或 Letter 大小的一般紙張。 遵照這些指示來執行底板\n"
+"清潔。"
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/keystr.h:1050
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr "計數器將顯示新換的墨水盒為全滿狀態。這個操作確保低墨水警示能夠正確顯示。"
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/keystr.h:1054
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"列印頭噴嘴未被堵塞。\n"
+"如果列印圖案類似此圖案，可以立即使用此印\n"
+"表機。\n"
+"按一下 [結束]。"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/keystr.h:1059
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr "為了確保低墨水警示能正確地顯示，請執行下列操作:\n"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/keystr.h:1062
+msgid "Use quiet mode"
+msgstr "使用靜音模式"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/keystr.h:1064
+msgid "Using AC Adapter:"
+msgstr "使用 AC 轉接器:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/keystr.h:1066
+msgid "Using Battery:"
+msgstr "使用電池:"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/keystr.h:1068
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"每當您更換新墨水盒時，請按一下印表機驅動程式 [維護] 標籤中的 [墨水計數器重\n"
+"置] 按鈕並選擇新的墨水盒。"
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/keystr.h:1072
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "列印圖案最接近下面哪個圖案？"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/keystr.h:1074
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "調整 K 至 P 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/keystr.h:1076
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "調整 F 欄 (-3 至 +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/keystr.h:1078
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "調整 G 欄 (-3 至 +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/keystr.h:1080
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "調整 Q 欄 (-4 至 +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/keystr.h:1082
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "調整 R 至 U 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/keystr.h:1084
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "調整 V 至 Y 欄(-2 至 +2)"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/keystr.h:1086
+msgid "Close"
+msgstr "關閉"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/keystr.h:1088
+msgid "Column Y:"
+msgstr "Y 欄:"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/keystr.h:1090
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr "檢查列印圖案，並在 Q 至 Y 欄區域內輸入具有最少明顯水平條帶數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/keystr.h:1094
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr "檢查列印圖案，並在 K 至 P 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/keystr.h:1098
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"執行列印頭校準。檢查列印圖案，並在 A 至 J 欄區域內輸入具有最少明顯條紋數量\n"
+"的圖案號碼。"
+
+#. LUM_IDS_CLEAN_ITEM_E5
+#: po/keystr.h:1124
+msgid "Color   C, M, Y, BK, GY"
+msgstr "彩色   C, M, Y, BK, GY"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A3_07
+#: po/keystr.h:1126
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half vertically, then unfold the "
+"paper.\n"
+"3. With the ridge of the crease facing down, load the paper in landscape "
+"orientation into the rear tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. 從後端托盤移除紙張。\n"
+"2. 將 A4 或 Letter 大小的一般紙張垂直對摺，然後展開該紙張。\n"
+"3. 保持摺痕隆起部分朝下，將紙張以水平方向裝入後端托盤中。\n"
+"4. 按一下 [執行]。"
+
+#. LUM_IDS_AUTOPOWER_120MINUTES
+#: po/keystr.h:1131
+msgid "120 minutes"
+msgstr "120 分鐘"
+
+#. LUM_IDS_AUTOPOWER_240MINUTES
+#: po/keystr.h:1133
+msgid "240 minutes"
+msgstr "240 分鐘"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_11_PAPERSRC
+#: po/keystr.h:1135
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size plain paper, and click Align Print "
+"Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始自動列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，裝入一張 A4 或 \n"
+"Letter 大小的一般紙張並按一下 [對齊列印頭]。\n"
+"\n"
+"如果自動列印頭校準的結果不令人滿意，請執行手動列印頭校準以精確校準列印頭。\n"
+"要執行手動列印頭校準，請按一下 [取消]。\n"
+"接著，按一下印表機驅動程式 [維護] 標籤上的 [自訂設定]，勾選 [手動校準列\n"
+"印頭] 並按一下 [確定]。然後重試。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTPAPERJAM
+#: po/keystr.h:1146
+msgid "Prevent paper jam"
+msgstr "防止夾紙"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR7
+#: po/keystr.h:1148
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray, then open the front cover and extend "
+"the paper output tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔送紙滾軸。\n"
+"\n"
+"首先從後端托盤移除紙張，然後開啟前蓋並擴展出紙托盤。\n"
+"按一下 [確定] 將會使送紙滾軸動作 30 次。該操作將需要大約一分半鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_P
+#: po/keystr.h:1155
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for columns H to "
+"P."
+msgstr "檢查列印圖案，並在 H 至 P 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_55
+#: po/keystr.h:1158 po/keystr.h:1350
+msgid "Adjustment in Columns M to P (-5 to +5)"
+msgstr "調整 M 至 P 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_i
+#: po/keystr.h:1160
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for "
+"columns a to i."
+msgstr "檢查列印圖案，並在 a 至 i 欄區域內輸入具有最少明顯水平條帶數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_i_22
+#: po/keystr.h:1163
+msgid "Adjustment in Columns f to i (-2 to +2)"
+msgstr "調整 f 至 i 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PREVENTPAPERGAP_MSG
+#: po/keystr.h:1165
+msgid ""
+"Set Prevent paper jam only when A3 size plain paper jams frequently near the "
+"paper output slot.\n"
+"\n"
+"This setting increases the printing time for A3 size plain paper.\n"
+"Also, the print quality may deteriorate."
+msgstr ""
+"僅當 A3 大小的一般紙張經常在出紙槽附近夾紙時，請設定 [防止夾紙]。\n"
+"\n"
+"該設定增加 A3 大小的一般紙張的列印時間。\n"
+"同時，列印品質可能降低。"
+
+#. LUM_IDD_QUIETSETTINGS
+#: po/keystr.h:1170
+msgid "Quiet Settings"
+msgstr "靜音設定"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_DISABLE
+#: po/keystr.h:1172
+msgid "Do not use quiet mode"
+msgstr "不使用靜音模式"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_ENABLE
+#: po/keystr.h:1174
+msgid "Always use quiet mode"
+msgstr "總是使用靜音模式"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_HOURS
+#: po/keystr.h:1176
+msgid "Use quiet mode during specified hours"
+msgstr "在指定時間內使用靜音模式"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_FROM
+#: po/keystr.h:1178
+msgid "Start time:"
+msgstr "開始時間:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_TO
+#: po/keystr.h:1180
+msgid "End time:"
+msgstr "結束時間:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTING_WARN
+#: po/keystr.h:1182
+msgid ""
+"When the hours are specified, quiet mode is not applied to operations \n"
+"(copy, direct print, etc.) performed directly from the printer."
+msgstr "當指定時間時，靜音模式無法套用至從印表機直接執行的操作(影印、直接列印等)。"
+
+#. LUM_COLON
+#: po/keystr.h:1185
+msgid ":"
+msgstr ":"
+
+#. LUM_IDS_MNTMSG_WRITESETTING_ATPOFF_NW
+#: po/keystr.h:1187
+msgid ""
+"Apply the setting to printer?\n"
+"If the printer is connected to a network, it will not turn off \n"
+"automatically even if Auto Power Off is set."
+msgstr ""
+"將設定套用至印表機嗎？\n"
+"如果印表機已連接至網路，即使設定 [自動電源關閉]，印表機也不會自動關閉。"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT7
+#: po/keystr.h:1191
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the front tray, then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"清潔送紙滾軸。\n"
+"\n"
+"首先從前端托盤移除紙張，然後開啟出紙托盤。\n"
+"按一下 [確定] 將會使送紙滾軸動作。完成該操作將需要大約兩分鐘。\n"
+"\n"
+"想開始送紙滾軸清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT7
+#: po/keystr.h:1198
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the front tray.\n"
+"After confirming that the paper output tray is open, clicking OK will eject "
+"paper and complete feed roller cleaning."
+msgstr ""
+"確認印表機操作噪音已經停止，然後在前端托盤中裝入三張一般紙張。\n"
+"在確認出紙托盤已開啟後，按一下 [確定] 將會彈出紙張並且完成送紙滾軸清潔。"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_FRONT
+#: po/keystr.h:1201
+msgid ""
+"1. Remove the paper from the front tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the front "
+"tray, \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Open the paper output tray and click Execute."
+msgstr ""
+"1. 從前端托盤中移除紙張。\n"
+"2. 將 A4 或 Letter 大小的一般紙張對摺，然後展開該紙張。\n"
+"3. 將紙張的一側邊緣與中央摺痕對齊進行對折，然後展開該紙張。\n"
+"4. 保持摺痕隆起部分朝下，將紙張裝入前端托盤並使無摺痕的半側邊緣遠離您。\n"
+"5. 開啟出紙托盤並按一下 [執行]。"
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTWFEED
+#: po/keystr.h:1208
+msgid "Prevent paper double-feed"
+msgstr "防止重複送紙"
+
+#. LUM_IDS_MNTMSG_PREVENTWFEED_MSG
+#: po/keystr.h:1210
+msgid ""
+"Set Prevent paper double-feed only when double-feeding of plain paper "
+"occurs.\n"
+"\n"
+"Using this function decreases the print speed but reduces the occurrence of "
+"double-feeding."
+msgstr ""
+"僅在一般紙張出現重複送紙時設定 [防止重複送紙]。\n"
+"\n"
+"使用該功能會降低列印速度，但可減少重複送紙的發生幾率。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_PAPERSRC_11
+#: po/keystr.h:1214
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 \n"
+"or letter size plain paper, and click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，裝入一張 A4 或 Letter 大小\n"
+"的一般紙張，並按一下 [列印檢查圖案]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_PAPERSRC_11
+#: po/keystr.h:1219
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，並裝入三張 A4 或\n"
+" Letter 大小的一般紙張。印表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_K_55
+#: po/keystr.h:1228
+msgid "Adjustment in Columns G to K (-5 to +5)"
+msgstr "調整 G 至 K 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_L_Q
+#: po/keystr.h:1230
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns L to Q."
+msgstr "檢查列印圖案，並在 L 至 Q 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_R_Z
+#: po/keystr.h:1234
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for \n"
+"columns R to Z."
+msgstr "檢查列印圖案，並在 R 至 Z 欄區域內輸入具有最少明顯水平條帶數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_44
+#: po/keystr.h:1238
+msgid "Adjustment in Column R (-4 to +4)"
+msgstr "調整 R 欄 (-4 至 +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_S_V_22
+#: po/keystr.h:1240
+msgid "Adjustment in Columns S to V (-2 to +2)"
+msgstr "調整 S 至 V 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_Z_22
+#: po/keystr.h:1242
+msgid "Adjustment in Columns W to Z (-2 to +2)"
+msgstr "調整 W 至 Z 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_Q_55
+#: po/keystr.h:1244
+msgid "Adjustment in Columns L to Q (-5 to +5)"
+msgstr "調整 L 至 Q 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Z
+#: po/keystr.h:1246
+msgid "Column Z:"
+msgstr "Z 欄:"
+
+#. LUM_IDS_MNTMSG_MSI_COLLECTING
+#: po/keystr.h:1248
+msgid ""
+"Collecting printer status about maintenance.\n"
+"Please wait."
+msgstr ""
+"正在收集關於維護的印表機狀態資訊。\n"
+"請稍候。"
+
+#. LUM_IDS_MNTMSG_MSI_NOTAVAILABLE
+#: po/keystr.h:1251
+msgid ""
+"This printer status about maintenance cannot be collected.\n"
+"The displayed information may be different from the current settings."
+msgstr ""
+"無法收集關於維護的印表機狀態資訊。\n"
+"顯示的資訊可能不同於目前設定。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_FRONTTRAY
+#: po/keystr.h:1254
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the front tray, and click Print Check Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，在前端托盤中裝入一張 A4 或 Let\n"
+"ter 大小的一般紙張，並按一下 [列印檢查圖案]。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_FRONT_11
+#: po/keystr.h:1259
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the front tray and "
+"click OK."
+msgstr ""
+"在前端托盤中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [確定]\n"
+"。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_PAPERSRC_11
+#: po/keystr.h:1261
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, plain paper.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"備妥印表機(連接電纜線並開啟印表機電源)，並裝入一張 A4 或 Letter 大\n"
+"小的一般紙張。\n"
+"\n"
+"按一下 [確定] 將列印當前設定。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_11
+#: po/keystr.h:1265
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK. "
+msgstr "在紙匣中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [確定]。 "
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_REAR_11
+#: po/keystr.h:1267
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK. "
+msgstr ""
+"在後端托盤中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [確定]\n"
+"。 "
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_FRONTTRAY
+#: po/keystr.h:1269
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the front tray. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，並在前端托盤中裝入三\n"
+"張 A4 或 Letter 大小的一般紙張。 印表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE
+#: po/keystr.h:1279
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size, plain paper into the cassette. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在紙匣中裝入三張 A\n"
+"4 或 Letter 大小的一般紙張。印表機將列印校準圖案。\n"
+"\n"
+"要校準列印頭位置，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_SPACE_01
+#: po/keystr.h:1289
+msgid " "
+msgstr " "
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_UPPER
+#: po/keystr.h:1291
+msgid "Cassette (upper)"
+msgstr "紙匣(上)"
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_LOWER
+#: po/keystr.h:1293
+msgid "Cassette (lower)"
+msgstr "紙匣(下)"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_UPPER
+#: po/keystr.h:1295
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (upper).\n"
+"\n"
+"First remove paper from the cassette (upper).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about "
+"three minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"對紙匣(上)開始執行送紙滾軸清潔。\n"
+"\n"
+"首先從紙匣(上)中移除紙張。\n"
+"接著，按一下 [確定]。送紙滾軸將旋轉。完成該操作將需要大約三分鐘。\n"
+"\n"
+"想開始清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_UPPER
+#: po/keystr.h:1302
+msgid ""
+"Cut A4 or letter size plain paper in half lengthwise, then widthwise to "
+"create four equal pieces.\n"
+"Confirm the operating noise of the printer has stopped, and then load the "
+"four pieces of paper into the cassette (upper), \n"
+"with the cut edges towards you.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"將 A4 或 Letter 大小的一般紙張縱向剪切，然後橫向剪切紙張成四等分。\n"
+"確認印表機操作噪音已經停止，然後在紙匣(上)中裝入四張紙，使剪切邊緣朝向您。\n"
+"按一下 [確定] 將會彈出紙張並且完成送紙滾軸清潔。"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_LOWER
+#: po/keystr.h:1307
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (lower).\n"
+"\n"
+"First remove paper from the cassette (lower).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"對紙匣(下)開始執行送紙滾軸清潔。\n"
+"\n"
+"首先從紙匣(下)取出紙張。\n"
+"接著，按一下 [確定]。送紙滾軸將旋轉。完成該操作將需要大約兩分鐘。\n"
+"\n"
+"想開始清潔嗎？"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_LOWER
+#: po/keystr.h:1314
+msgid ""
+"Confirm the operating noise of the printer has stopped, \n"
+"and then load three sheets of A4 or letter size plain paper into the "
+"cassette (lower).\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"確認印表機操作噪音已經停止，然後在紙匣(下)中裝入三張 A4 或 Letter \n"
+"大小的一般紙張。\n"
+"按一下 [確定] 將會彈出紙張並且完成送紙滾軸清潔。"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_CASSETTE_LOWER
+#: po/keystr.h:1318
+msgid ""
+"1. Remove paper from the cassette (lower).\n"
+"2. Fold A4 or letter size plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the "
+"cassette (lower), \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Click Execute."
+msgstr ""
+"1. 從紙匣(下)中移除紙張。\n"
+"2. 將 A4 或 Letter 大小的一般紙張對摺，然後展開該紙張。\n"
+"3. 將紙張的一側邊緣與中央摺痕對齊進行對摺，然後展開該紙張。\n"
+"4. 保持摺痕隆起部分朝上，將紙張裝入紙匣(下)並使無摺痕的半側邊緣遠離您。\n"
+"5. 按一下 [執行]。"
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_LOWER
+#: po/keystr.h:1325
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or \n"
+"letter size plain paper into the cassette (lower), and click Print Check "
+"Pattern."
+msgstr ""
+"列印圖案，以檢查列印頭噴嘴是否堵塞。\n"
+"\n"
+"備妥印表機(連接電纜線並開啟印表機電源)，在紙匣(下)中裝入一張 A4 或 Le\n"
+"tter 大小的一般紙張，並按一下 [列印檢查圖案]。"
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE_LOWER
+#: po/keystr.h:1330
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size plain paper into the cassette "
+"(lower). The printer will print an alignment pattern.\n"
+"\n"
+"To start the print head alignment, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在紙匣(下)中裝入三\n"
+"張 A4 或 Letter 大小的一般紙張。印表機將列印校準圖案。\n"
+"\n"
+"要開始列印頭校準，按一下 [對齊列印頭]。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_H
+#: po/keystr.h:1339
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to H."
+msgstr ""
+"執行列印頭校準。檢查列印圖案，並在 A 至 H 欄區域內輸入具有最少明顯條紋數量\n"
+"的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_33
+#: po/keystr.h:1343
+msgid "Adjustment in Column H (-3 to +3)"
+msgstr "調整 H 欄 (-3 至 +3)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_I_P
+#: po/keystr.h:1345
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns I to P."
+msgstr "檢查列印圖案，並在 I 至 P 欄區域內輸入具有最少明顯條紋數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_I_L_55
+#: po/keystr.h:1348
+msgid "Adjustment in Columns I to L (-5 to +5)"
+msgstr "調整 I 至 L 欄 (-5 至 +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_h
+#: po/keystr.h:1352
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"h."
+msgstr "檢查列印圖案，並在 a 至 h 欄區域內輸入具有最少明顯水平條帶數量的圖案號碼。"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_d_22
+#: po/keystr.h:1355
+msgid "Adjustment in Columns a to d (-2 to +2)"
+msgstr "調整 a 至 d 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_e_h_22
+#: po/keystr.h:1357
+msgid "Adjustment in Columns e to h (-2 to +2)"
+msgstr "調整 e 至 h 欄 (-2 至 +2)"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_CASSETTE_LOWER
+#: po/keystr.h:1359
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size Matte Photo Paper (MP-101) into the "
+"cassette (lower) and click Align Print Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment \n"
+"to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"開始自動列印頭校準。\n"
+"\n"
+"由於校準需要列印，備妥印表機(連接電纜線並開啟印表機電源)，在紙匣(下)中裝入一\n"
+"張 A4 或 Letter 大小的霧面相片紙(MP-101)並按一下 [對齊列印\n"
+"頭]。\n"
+"\n"
+"如果自動列印頭校準的結果不令人滿意，請執行手動列印頭校準以精確校準列印頭。\n"
+"要執行手動列印頭校準，請按一下 [取消]。\n"
+"接著，按一下印表機驅動程式 [維護] 標籤上的 [自訂設定]，勾選 [手動校準列\n"
+"印頭] 並按一下 [確定]。然後重試。\n"
+"\n"
+"要列印並檢查當前設定，按一下 [列印校準值]。"
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_LOWER
+#: po/keystr.h:1372
+msgid ""
+"Load one sheet of A4 or letter size plain paper into the cassette (lower) "
+"and click OK."
+msgstr ""
+"在紙匣(下)中裝入一張 A4 或 Letter 大小的一般紙張，並按一下 [確定\n"
+"]。"
+

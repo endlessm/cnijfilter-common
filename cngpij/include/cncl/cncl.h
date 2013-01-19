@@ -142,6 +142,9 @@ typedef struct
 	CPKInt16			Contrast ;
 	
 	CPKInt16			MonochromeTone ;
+	
+	CPKInt16			ImageRotate;
+
 
 	CPKInt8				reserved[24] ;
 } CNCLData, CPKPTR CNCLPtr ;

@@ -1,0 +1,28 @@
+cngpij          --- CUPS fornt-end GUI for Canon Inkjet Printer.
+
+DESCRIPTION
+    The "cngpij" is the CUPS front-end GUI program for Canon Inkjet Printer.
+    You can print the file by using the "lpr" command on the command line, but
+    if you want to set several printing options, the "cngpij" command will help
+    you setting those options quite easily. The only thing you have to do on
+    the command line is as following;
+
+        cngpij  -P MX860 sample.jpg
+
+        * You can ommit the printer option "-P MX860", and the default
+          printer will be used.
+
+    The GUI is shown on the screen, and you can choose all options on it.
+    After choosing the options, press the [OK] button to start the printing.
+
+REQUIREMENTS
+    You need the following libraries.
+    * libcups                 (1.1.x or above)
+    * libpopt                 (1.6.x or above)
+
+    And you need the following programs.
+    * CUPS                    (1.1.14 or above)
+    * Ghostscript             (5.50   or above)
+
+INSTALLATION
+    See the file "INSTALL"

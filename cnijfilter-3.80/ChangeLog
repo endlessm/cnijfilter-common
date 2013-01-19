@@ -1,0 +1,76 @@
+2000-11-16
+	* Created
+
+2001-03-20
+	* Added /usr/lib/bjlib/bjfilter.conf to separate command line strings resource
+
+	* Added bjfrcaccess.c to separate command line strings resource 
+
+	* bjfilter.c: modify to separate command line strings resource
+ 
+2001-03-28
+	* Modify command line option "--renderintent"
+
+2001-07-23
+	* Add bjfversion.h to separate version strings
+
+	* Modify bjfoption.c to reffer /include/misc/psize.h
+
+	* Add /include/misc/psize.h
+
+2002-03-04
+	* Support BJ S500.
+
+2002-04-15
+	* Support BJ F900/BJ F9000/BJ S300.
+
+2002-12-19
+	* Support PIXUS 550i/PIXUS 850i/PIXUS 950i.
+
+2003-12-17
+	* Support i250/i255.
+
+2004-02-10
+	* Support PIXUS 560i/PIXUS 860i/PIXUS 990i.
+
+2005-02-17
+	* Support PIXMA iP1000/PIXMA iP1500/PIXUS iP3100/PIXUS iP4100/PIXUS iP8600.
+
+2006-02-16
+	* Support iP2200/iP4200/iP7500/iP6600D/MP500.
+
+2007-03-14
+	* Support iP3300/MP510/iP4300/MP600/MP160/iP2500 series/iP1800 series/iP90.
+
+2007-11-26
+	* Support iP3500 series/MP520 series/iP4500 series/MP610 series/MP140 series/MP210 series.
+
+2008-04-09
+	* Support iP100 series/iP2600 series.
+	
+2008-11-10
+	* Support iP3600 series/MP540 series/iP4600 series/MP630 series/iP1900 series/MP190 series/MP240 series.
+
+2009-03-19
+	* Support MX860 series/MX320 series/MX330 series.
+
+2009-09-29
+	* Support MP250 series/MP270 series/MP490 series/MP550 series/MP560 series/iP4700 series/MP640 series.
+
+2010-02-19
+	* Support iP2700 series/MX340 series/MX350 series/MX870 series.
+
+2010-08-19
+	* Support MP250 series/MP280 series/MP495 series/MG5100 series/MG5200 series/iP4800 series/MG6100 series/MG8100 series.
+
+2011-01-18
+	* Support MX360 series/MX410 series/MX420 series/MX880 series/iX6500 series.
+
+2011-07-20
+	* Support MG8200 series/MG6200 series/MG5300 series/MG4100 series/MG3100 series/MG2100 series/iP4900 series/E500 series.
+
+2012-01-16
+	* Support iP100 series/MX710 series/MX890 series/MX370 series/MX430 series/MX510 series/E600 series.
+
+2012-08-23
+	* Support MG6300 series/MG5400 series/MG4200 series/MG3200 series/MG2200 series/MP230 series/E510 series/iP7200 series.

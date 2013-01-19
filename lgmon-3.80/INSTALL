@@ -1,0 +1,29 @@
+To build and install lgmon:
+
+        for rpm
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        for deb
+        ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=<Printer Model Name>
+        make
+        make install
+
+To build and install lgmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            ip7200
+            mp230
+            mg2200
+            mg3200
+            mg4200
+            mg5400
+            mg6300
+            e510
+
+Example for building the mg6300 lgmon with the new automake and autoconf:
+        for rpm
+        ./autogen.sh --program-suffix=mg6300
+        for deb
+        ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=mg6300
+        make
+        make install
+

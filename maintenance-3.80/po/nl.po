@@ -1,0 +1,3753 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maintenance 3.80\n"
+"POT-Creation-Date: 2012-04-17 19:15+0900\n"
+"PO-Revision-Date: 2012-06-13 11:27+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_CAPTION
+#: po/keystr.h:2
+msgid "Canon XXXXXX"
+msgstr ""
+
+#. model_BJF850
+#: po/keystr.h:4
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:6
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:8
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:12
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:14
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:16
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:18
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:20
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:22
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:24
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:26
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:28
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:30
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:32
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:34
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:36
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:38
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:40
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:42
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:44
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:46
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:48
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:50
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:52
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:54
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:56
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:58
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:60
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:62
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:64
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:66
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:68
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:70
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:72
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:74
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:76
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:78
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:80
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:82
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:84
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:86
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:88
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:90
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:92
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:94
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:96
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:98
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:100
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:102
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:104
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:106
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:108
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:110
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:112
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:114
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:116
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:118
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:120
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:122
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:124
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:126
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:128
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:130
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:132
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:134
+msgid "MX870 series"
+msgstr ""
+
+#. model_MP495
+#: po/keystr.h:136
+msgid "MP495 series"
+msgstr ""
+
+#. model_MP280
+#: po/keystr.h:138
+msgid "MP280 series"
+msgstr ""
+
+#. model_MG5100
+#: po/keystr.h:140
+msgid "MG5100 series"
+msgstr ""
+
+#. model_MG5200
+#: po/keystr.h:142
+msgid "MG5200 series"
+msgstr ""
+
+#. model_IP4800
+#: po/keystr.h:144
+msgid "iP4800 series"
+msgstr ""
+
+#. model_MG6100
+#: po/keystr.h:146
+msgid "MG6100 series"
+msgstr ""
+
+#. model_MG8100
+#: po/keystr.h:148
+msgid "MG8100 series"
+msgstr ""
+
+#. model_MX360
+#: po/keystr.h:150
+msgid "MX360 series"
+msgstr ""
+
+#. model_MX410
+#: po/keystr.h:152
+msgid "MX410 series"
+msgstr ""
+
+#. model_MX420
+#: po/keystr.h:154
+msgid "MX420 series"
+msgstr ""
+
+#. model_MX880
+#: po/keystr.h:156
+msgid "MX880 series"
+msgstr ""
+
+#. model_IX6500
+#: po/keystr.h:158
+msgid "iX6500 series"
+msgstr ""
+
+#. model_MG2100
+#: po/keystr.h:160
+msgid "MG2100 series"
+msgstr ""
+
+#. model_MG3100
+#: po/keystr.h:162
+msgid "MG3100 series"
+msgstr ""
+
+#. model_MG4100
+#: po/keystr.h:164
+msgid "MG4100 series"
+msgstr ""
+
+#. model_MG5300
+#: po/keystr.h:166
+msgid "MG5300 series"
+msgstr ""
+
+#. model_MG6200
+#: po/keystr.h:168
+msgid "MG6200 series"
+msgstr ""
+
+#. model_MG8200
+#: po/keystr.h:170
+msgid "MG8200 series"
+msgstr ""
+
+#. model_IP4900
+#: po/keystr.h:172
+msgid "iP4900 series"
+msgstr ""
+
+#. model_E500
+#: po/keystr.h:174
+msgid "E500 series"
+msgstr ""
+
+#. model_MX710
+#: po/keystr.h:176
+msgid "MX710 series"
+msgstr ""
+
+#. model_MX890
+#: po/keystr.h:178
+msgid "MX890 series"
+msgstr ""
+
+#. model_MX370
+#: po/keystr.h:180
+msgid "MX370 series"
+msgstr ""
+
+#. model_MX430
+#: po/keystr.h:182
+msgid "MX430 series"
+msgstr ""
+
+#. model_MX510
+#: po/keystr.h:184
+msgid "MX510 series"
+msgstr ""
+
+#. model_E600
+#: po/keystr.h:186
+msgid "E600 series"
+msgstr ""
+
+#. model_MP230
+#: po/keystr.h:188
+msgid "MP230 series"
+msgstr ""
+
+#. model_MG2200
+#: po/keystr.h:190
+msgid "MG2200 series"
+msgstr ""
+
+#. model_E510
+#: po/keystr.h:192
+msgid "E510 series"
+msgstr ""
+
+#. model_MG3200
+#: po/keystr.h:194
+msgid "MG3200 series"
+msgstr ""
+
+#. model_MG4200
+#: po/keystr.h:196
+msgid "MG4200 series"
+msgstr ""
+
+#. model_IP7200
+#: po/keystr.h:198
+msgid "iP7200 series"
+msgstr ""
+
+#. model_MG5400
+#: po/keystr.h:200
+msgid "MG5400 series"
+msgstr ""
+
+#. model_MG6300
+#: po/keystr.h:202
+msgid "MG6300 series"
+msgstr ""
+
+#. print_color_message
+#: po/keystr.h:204
+msgid "Color"
+msgstr ""
+
+#. supply_asf_reartray
+#: po/keystr.h:206
+msgid "Rear Tray"
+msgstr "Achterste lade"
+
+#. supply_cassette_02
+#: po/keystr.h:208
+msgid "Cassette"
+msgstr "Cassette"
+
+#. cartridge_bk
+#: po/keystr.h:210
+msgid "Black"
+msgstr "Zwart"
+
+#. message_button_ok
+#: po/keystr.h:212
+msgid "OK"
+msgstr "OK"
+
+#. message_button_cancel
+#: po/keystr.h:214
+msgid "Cancel"
+msgstr "Annuleren"
+
+#. message_button_yes
+#: po/keystr.h:216
+msgid "Yes"
+msgstr "Ja"
+
+#. message_button_no
+#: po/keystr.h:218
+msgid "No"
+msgstr "Nee"
+
+#. message_button_abort
+#: po/keystr.h:220
+msgid "Abort"
+msgstr ""
+
+#. message_button_ignore
+#: po/keystr.h:222
+msgid "Ignore"
+msgstr "Negeren"
+
+#. autopower_enable
+#: po/keystr.h:224
+msgid "Enable"
+msgstr "Inschakelen"
+
+#. autopower_disable
+#: po/keystr.h:226
+msgid "Disable"
+msgstr "Uitschakelen"
+
+#. autopower_5min
+#: po/keystr.h:228
+msgid "5 minutes"
+msgstr "5 minuten"
+
+#. autopower_10min
+#: po/keystr.h:230
+msgid "10 minutes"
+msgstr "10 minuten"
+
+#. autopower_15min
+#: po/keystr.h:232
+msgid "15 minutes"
+msgstr "15 minuten"
+
+#. autopower_30min
+#: po/keystr.h:234
+msgid "30 minutes"
+msgstr "30 minuten"
+
+#. autopower_60min
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 minuten"
+
+#. utility_message_3
+#: po/keystr.h:238
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Zijn de rasters correct afgedrukt?\n"
+"\n"
+"Als geen rasters werden afgedrukt of de afdruk zichtbaar vlekkerig is, klikt u \n"
+"op Nee en begint u opnieuw."
+
+#. utility_message_4
+#: po/keystr.h:242
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Zorg dat de printer is ingeschakeld, de kabel goed is aangesloten, de printer \n"
+"online staat en probeer het opnieuw."
+
+#. utility_message_5
+#: po/keystr.h:244
+msgid "Print head alignment is now complete."
+msgstr "Uitlijning printkop is voltooid."
+
+#. utility_message_6
+#: po/keystr.h:246
+msgid "Do not start another operation until the current one has finished."
+msgstr "Start een nieuwe bewerking pas als de huidige is afgerond."
+
+#. utility_message_8
+#: po/keystr.h:248
+msgid "Turn the printer off?"
+msgstr "Printer uitschakelen?"
+
+#. utility_message_9
+#: po/keystr.h:250
+msgid "Apply settings to printer?"
+msgstr "Wilt u de instellingen op de printer toepassen?"
+
+#. utility_message_12
+#: po/keystr.h:252
+msgid "Start print head deep cleaning?"
+msgstr "Wilt u de diepte-reiniging van de printkop starten?"
+
+#. regi_bidir
+#: po/keystr.h:254
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Bi-directionele uitlijning (-5 t/m +5)"
+
+#. utility_message_23
+#: po/keystr.h:256
+msgid "Execute black print head deep cleaning?"
+msgstr "Wilt u diepte-reiniging van de zwarte printkop uitvoeren?"
+
+#. utility_message_24
+#: po/keystr.h:258
+msgid "Execute color print head deep cleaning?"
+msgstr "Wilt u diepte-reiniging van de kleurenprintkop uitvoeren?"
+
+#. utility_message_27
+#: po/keystr.h:260
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Reinigen van papierinvoerrollen.\n"
+"\n"
+"Verwijder eerst het papier uit de papierinvoer. Wanneer u op OK klikt, worden \n"
+"de papierinvoerrollen 30 keer geactiveerd. Dit duurt ongeveer anderhalve \n"
+"minuut. Wanneer u de instructie opvolgt en drie vellen normaal papier in de \n"
+"printer plaatst, wordt het papier uit de printer geworpen and wordt het \n"
+"reinigen van de invoerrol voltooid.\n"
+"\n"
+"Wilt u de reiniging van de invoerrol starten?"
+
+#. utility_message_28
+#: po/keystr.h:268
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Plaats drie vellen normaal papier in de papierinvoer.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:270
+msgid "Feed roller cleaning is complete."
+msgstr "Reiniging van de invoerrol is voltooid."
+
+#. util_ink_all_1
+#: po/keystr.h:272
+msgid "All Colors"
+msgstr "Alle kleuren"
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:274
+msgid "All Colors   BK, C, M, Y"
+msgstr "Alle kleuren   BK, C, M, Y"
+
+#. util_ink_black_2
+#: po/keystr.h:276
+msgid "Black   PGBK"
+msgstr "Zwart   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:278
+msgid "Black   BK"
+msgstr "Zwart   BK"
+
+#. util_ink_color_5
+#: po/keystr.h:280
+msgid "Color   C, M, Y, BK"
+msgstr "Kleur   C, M, Y, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:282
+msgid "Color   C, M, Y"
+msgstr "Kleur   C, M, Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:284
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Start een nieuwe bewerking pas als de reiniging is afgerond.\n"
+"\n"
+"U kunt na het reinigen controleren of de spuitopeningen van de printerkop vrij \n"
+"zijn door een controle van de spuitopeningen uit te voeren."
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:288
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Reinigt verstopte spuitopeningen van de printkop.\n"
+"\n"
+"Selecteer de inktgroep die u wilt reinigen. Als u niet weet welke inktgroep \n"
+"moet worden gereinigd, voert u een controle van de spuitopeningen uit."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:293
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Maakt verstopte spuitopeningen vrij wanneer een normale reiniging niet werkt.\n"
+"\n"
+"Selecteer de inktgroep waarop u diepte-reiniging wilt uitvoeren. Als u niet \n"
+"weet op welke inktgroep een diepte-reiniging moet worden uitgevoerd, voert u \n"
+"een controle van de spuitopeningen uit."
+
+#. utility_message_41
+#: po/keystr.h:298
+msgid "Ink Group:"
+msgstr "Inktgroep:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:300
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Bij diepte-reiniging wordt veel meer inkt verbruikt dan bij een normale \n"
+"reiniging. Voer alleen een diepte-reiniging uit als de conditie van \n"
+"spuitopeningen niet kan worden verbeterd met een normale reiniging.\n"
+"\n"
+"Wanneer de diepte-reiniging is uitgevoerd, voert u een controle van de \n"
+"spuitopeningen van de printkop uit en controleert u of de spuitopeningen zijn \n"
+"vrijgemaakt."
+
+#. utility_message_43
+#: po/keystr.h:306
+msgid "Cleaning consumes ink."
+msgstr "Bij het reinigen wordt inkt gebruikt."
+
+#. utility_message_44
+#: po/keystr.h:308
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Plaats een vel papier van A4- of Letter-formaat in de papierbron die door de \n"
+"Schakelaar papierinvoer is geselecteerd en klik op OK.\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:310
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Als het afgedrukte raster overeenkomt \n"
+"met dit raster, is het mogelijk dat de \n"
+"spuitopeningen van de printkop verstopt \n"
+"zijn.\n"
+"Klik op Reiniging.\n"
+"\n"
+"Als het afgedrukte raster zelfs niet \n"
+"verbetert wanneer u tweemaal een \n"
+"normale reiniging uitvoert, voert u een \n"
+"diepte-reiniging uit."
+
+#. utility_message_50
+#: po/keystr.h:318
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Plaats een vel papier van A4- of Letter-formaat in de papierinvoer en klik op \n"
+"OK."
+
+#. utility_message_53
+#: po/keystr.h:320
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, zorgt u ervoor dat de printer \n"
+"gereed is (de kabel is aangesloten en de printer is ingeschakeld), schuift u de \n"
+"hendel voor papierdikte naar links en plaatst u een vel normaal papier van A4- \n"
+"of Letter-formaat in de papierinvoer. De printer drukt een uitlijningsraster af.\n"
+"\n"
+"Klik op OK om de positie van de printkop uit te lijnen.\n"
+
+#. utility_message_54
+#: po/keystr.h:328
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click Print Check Pattern.\n"
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), schuif de hendel voor papierdikte naar links, plaats een vel \n"
+"normaal papier van A4- of Letter-formaat in de papierinvoer en klik op \n"
+"Controleraster afdrukken.\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:333
+msgid "Color Only"
+msgstr "Alleen kleur"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:335
+msgid "Black Only"
+msgstr "Alleen zwart"
+
+#. utility_message_55
+#: po/keystr.h:337
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Drukt af met alleen de kleureninktpatroon in plaats van de zwarte inktpatroon."
+
+#. utility_message_56
+#: po/keystr.h:340
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Drukt af met alleen de zwarte inktpatroon in plaats van alleen de \n"
+"kleureninktpatroon wanneer Normaal papier is geselecteerd bij Mediumtype op het \n"
+"tabblad Afdruk."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:344
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"De printer drukt één rastervel af om de uitlijning automatisch te starten.\n"
+"Start een nieuwe bewerking pas als de huidige is afgerond."
+
+#. utility_message_60
+#: po/keystr.h:347
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Tweede vel voor raster voor printkopuitlijning wordt afgedrukt.\n"
+"\n"
+"Klik op OK om het afdrukken te starten."
+
+#. utility_message_61
+#: po/keystr.h:351
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Derde vel voor raster voor printkopuitlijning wordt afgedrukt.\n"
+"\n"
+"Klik op OK om het afdrukken te starten."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:355
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Schuif de hendel voor papierdikte naar links en plaats een vel normaal papier \n"
+"van A4- of Letter-formaat in de papierbron die door de Schakelaar papierinvoer \n"
+"is geselecteerd. De printer drukt een uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. utility_message_63
+#: po/keystr.h:365
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Uitlijning printkop is voltooid.\n"
+"Klik op Annuleren om de uitlijning te voltooien.\n"
+"\n"
+"Als er op de bedrukte zijde balken verschijnen, kunt u dit voorkomen door de \n"
+"printkop uit te lijnen.\n"
+"U voert een uitlijning uit door een vel papier in de papierinvoer te plaatsen \n"
+"en op OK te klikken."
+
+#. utility_message_64
+#: po/keystr.h:371
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), schuif de hendel voor papierdikte naar links, plaats een vel \n"
+"normaal papier van A4- of Letter-formaat in de papierbron die door de \n"
+"schakelaar voor papierinvoer is geselecteerd en klik op Controleraster \n"
+"afdrukken."
+
+#. utility_message_66
+#: po/keystr.h:377
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Plaats een vel normaal papier van A4- of Letter-formaat in de papierinvoer en \n"
+"klik op Controleraster afdrukken."
+
+#. utility_message_67
+#: po/keystr.h:381
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Uitlijning printkop is voltooid.\n"
+"Klik op Annuleren om de uitlijning te voltooien.\n"
+"\n"
+"Als er op de bedrukte zijde balken verschijnen, kunt u dit voorkomen door de \n"
+"printkop uit te lijnen.\n"
+"U voert een uitlijning uit door een vel papier te laden in de papierbron die is \n"
+"geselecteerd door de Schakelaar papierinvoer en op OK te klikken."
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:389
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Schuif de hendel voor papierdikte naar rechts en plaats een vel normaal papier \n"
+"van A4- of Letter-formaat in de papierinvoer. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:399
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Als het afgedrukte raster overeenkomt met dit raster, is het mogelijk dat de \n"
+"spuitopeningen van de printkop verstopt zijn.\n"
+"Klik op Reiniging.\n"
+"\n"
+"Als het afgedrukte raster niet verbetert wanneer u twee- tot driemaal een \n"
+"normale reiniging uitvoert, voert u een diepte-reiniging uit."
+
+#. utility_message_71
+#: po/keystr.h:407
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"U kunt de inktteller niet opnieuw instellen, omdat de waarschuwing voor weinig \n"
+"inkt is uitgeschakeld.\n"
+"\n"
+"U schakelt de weergave van een dergelijke waarschuwing in door te klikken op de \n"
+"knop Instelling waarschuwing weinig inkt op het tabblad Onderhoud van het \n"
+"printerstuurprogramma.\n"
+"Raadpleeg de printerhandleiding voordat u deze procedure uitvoert."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:413
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Reiniging van papierinvoerrollen wordt gestart.\n"
+"\n"
+"Verwijder eerst het papier uit de achterste lade.\n"
+"Als u op OK klikt, worden de papierinvoerrollen 30 keer geactiveerd. Dit duurt \n"
+"ongeveer anderhalve minuut.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:420
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Papierinvoerrollen reinigen.\n"
+"\n"
+"Druk eerst op de schakelaar papierinvoer op de printer om de doelpapierbron \n"
+"voor reiniging te selecteren en verwijder het papier uit de geselecteerde \n"
+"papierbron.\n"
+"Als u op OK klikt, worden de papierinvoerrollen 30 keer geactiveerd. Dit duurt \n"
+"ongeveer anderhalve minuut.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:428
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Controleer of de printer geen werkingsgeluid meer maakt en plaats drie vellen \n"
+"normaal papier inde achterste lade.\n"
+"Als u op OK klikt, wordt het papier uitgevoerd en wordt de reiniging van de \n"
+"invoerrollen voltooid."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:431
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Controleer of de printer geen werkingsgeluid meer maakt en plaats drie vellen \n"
+"normaal papier inde geselecteerde papierbron.\n"
+"Als u op OK klikt, wordt het papier uitgevoerd en wordt de reiniging van de \n"
+"invoerrollen voltooid."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:434
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Verwijder het papier uit de papierinvoer.\n"
+"2. Vouw een vel normaal papier van A4- of Letter-formaat doormidden en vouw het \n"
+"vervolgens weer uit.\n"
+"3. Plaats het papier met de rand van de vouw naar beneden gericht in de \n"
+"papierinvoer.\n"
+"4. Klik op Uitvoeren."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:439
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Verwijder het papier uit de achterste lade.\n"
+"2. Vouw een vel normaal papier van A4- of Letter-formaat doormidden en vouw het \n"
+"vervolgens weer uit.\n"
+"3. Plaats het papier met de rand van de vouw naar beneden gericht in de \n"
+"achterste lade.\n"
+"4. Klik op Uitvoeren."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:444
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load one sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), schuif de hendel voor papierdikte naar links, plaats één vel \n"
+"normaal papier van A4- of Letter-formaat in de achterste lade en klik op \n"
+"Controleraster afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:450
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Schuif de hendel voor papierdikte naar links en plaats twee vellen normaal \n"
+"papier van A4- of Letter-formaat in de achterste lade. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:460
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Automatische uitlijning van de printkop wordt gestart.\n"
+"\n"
+"Aangezien hierbij wordt afgedrukt, moet u ervoor zorgen dat de printer gereed \n"
+"is (de kabel is aangesloten en de printer is ingeschakeld). Plaats een vel \n"
+"normaal papier van A4- of Letter-formaat in de papierinvoer en klik op Printkop \n"
+"uitlijnen.\n"
+"\n"
+"Klik op Annuleren als u de printkoppen handmatig wilt uitlijnen.\n"
+"Klik vervolgens op Aangepaste instellingen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma, schakel Koppen handmatig uitlijnen in en klik op OK. \n"
+"Probeer het vervolgens opnieuw.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:471
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Automatische uitlijning van de printkop wordt gestart.\n"
+"\n"
+"Aangezien hierbij wordt afgedrukt, moet u ervoor zorgen dat de printer gereed \n"
+"is (de kabel is aangesloten en de printer is ingeschakeld). Plaats twee vellen \n"
+"Matglans Foto Papier (MP-101) van A4- of Letter-formaat in de achterste lade en \n"
+"klik op Printkop uitlijnen.\n"
+"\n"
+"Klik op Annuleren als u de printkoppen handmatig wilt uitlijnen.\n"
+"Klik vervolgens op Aangepaste instellingen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma, schakel Koppen handmatig uitlijnen in en klik op OK. \n"
+"Probeer het vervolgens opnieuw.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:483
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK."
+msgstr ""
+"Plaats één vel normaal papier van A4- of Letter-formaat in de achterste lade en \n"
+"klik op OK."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:485
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"De printer drukt twee rastervellen af om de uitlijning automatisch te starten.\n"
+"Start een nieuwe bewerking pas als de huidige is afgerond."
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:488
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Plaats vier vellen normaal papier van A4- of Letter-formaat in de papierbron \n"
+"die door de Schakelaar papierinvoer is geselecteerd. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:498
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Vierde vel voor patroon voor printkopuitlijning wordt afgedrukt.\n"
+"\n"
+"Klik op OK om het afdrukken te starten."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Plaats een vel normaal papier van A4- of Letter-formaat in de papierbron die \n"
+"door de schakelaar voor papierinvoer is geselecteerd en klik op Controleraster \n"
+"afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:507
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Schuif de hendel voor papierdikte naar links en plaats een vel normaal papier \n"
+"van A4- of Letter-formaat in de achterste lade. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:517
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Plaats een vel normaal papier van A4- of Letter-formaat in de papierbron die \n"
+"door de Schakelaar papierinvoer is geselecteerd. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:527
+msgid ""
+"Load one sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Plaats één vel papier van A4- of Letter-formaat in de achterste lade en klik op \n"
+"OK."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:529
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Uitlijning printkop is voltooid.\n"
+"Klik op Annuleren om de uitlijning te voltooien.\n"
+"\n"
+"Als er op de bedrukte zijde balken verschijnen, kunt u dit voorkomen door de \n"
+"printkop uit te lijnen.\n"
+"U voert een uitlijning uit door een vel papier in de achterste lade te plaatsen \n"
+"en op OK te klikken."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:535
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Plaats drie vellen normaal papier van A4- of Letter-formaat in de papierbron \n"
+"die door de Schakelaar papierinvoer is geselecteerd. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:545
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Schuif de hendel voor papierdikte naar links en plaats een vel normaal papier \n"
+"van A4- of Letter-formaat in de papierinvoer. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:555
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), schuif de hendel voor papierdikte naar rechts, plaats een vel \n"
+"normaal papier van A4- of Letter-formaat in de achterste lade en klik op \n"
+"Controleraster afdrukken."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:560
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Drukt af met alleen de zwarte inktpatroon in plaats van alleen de \n"
+"kleureninktpatroon wanneer Normaal papier, Hagaki of Envelop is geselecteerd \n"
+"bij Mediumtype op het tabblad Afdruk."
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:563
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load one sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Schuif de hendel voor papierdikte naar links en plaats één vel normaal papier \n"
+"van A4- of Letter-formaat in de achterste lade. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op OK om de positie van de printkop uit te lijnen."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:571
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop wordt gestart.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Schuif de hendel voor papierdikte naar rechts en plaats twee vellen normaal \n"
+"papier van A4- of Letter-formaat in de achterste lade. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:581
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Automatische uitlijning van de printkop wordt gestart.\n"
+"\n"
+"Aangezien hierbij wordt afgedrukt, moet u ervoor zorgen dat de printer gereed \n"
+"is (de kabel is aangesloten en de printer is ingeschakeld). Schuif de hendel \n"
+"voor papierdikte naar rechts, plaats één vel Matglans Foto Papier (MP-101) van \n"
+"A4- of Letter-formaat in de achterste lade en klik op Printkop uitlijnen.\n"
+"\n"
+"Klik op Annuleren als u de printkoppen handmatig wilt uitlijnen.\n"
+"Klik vervolgens op Aangepaste instellingen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma, schakel Koppen handmatig uitlijnen in en klik op OK. \n"
+"Probeer het vervolgens opnieuw.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:593
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Verwijder het papier uit de achterste lade en plaats het eerste vel normaal \n"
+"papier van A4- of Letter-formaat.\n"
+"2. Vouw het tweede vel normaal papier van A4- of Letter-formaat dubbel en vouw \n"
+"het papier weer open.\n"
+"3. Plaats het tweede vel voor het eerste vel met de rand van de vouw naar \n"
+"beneden gericht.\n"
+"4. Klik op Uitvoeren."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:598
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Reiniging van de onderste plaat wordt gestart om te voorkomen dat er vegen op \n"
+"de afdruk ontstaan.\n"
+"\n"
+"Voor deze bewerking zijn twee vellen normaal papier van A4- of Letter-formaat \n"
+"vereist. Volg deze aanwijzingen om reiniging van de onderste plaat uit te \n"
+"voeren."
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:602
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click OK."
+msgstr ""
+"Hiermee stelt u de papierbron in voor normaal papier wanneer Automatisch \n"
+"selecteren is geselecteerd voor Papierbron.\n"
+"\n"
+"Selecteer de papierbron voor normaal papier en klik vervolgens op OK."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:606
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Maakt verstopte spuitopeningen vrij wanneer een normale reiniging niet werkt.\n"
+"\n"
+"Selecteer de inktgroep waarop u diepte-reiniging wilt uitvoeren. Als alleen de \n"
+"zwarte spuitopening verstopt is, selecteert u Zwart. Als alleen de \n"
+"kleurenspuitopeningen verstopt zijn of de zwarte en de kleurenspuitopeningen \n"
+"beide verstopt zijn, selecteert u Alle kleuren. Als het niet zeker is welke \n"
+"spuitopening verstopt is, kunt u controle van de spuitopeningen uitvoeren.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:612
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"De papierinvoerrollen reinigen.\n"
+"\n"
+"Selecteer de doelpapierbron voor reiniging en klik op OK."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:616
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Papierinvoerrollen voor de achterste lade reinigen.\n"
+"\n"
+"Verwijder eerst het papier uit de achterste lade en open de papieruitvoerlade.\n"
+"Als u op OK klikt, worden de papierinvoerrollen geactiveerd. Dit duurt ongeveer \n"
+"anderhalve minuut.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:623
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Papierinvoerrollen voor de cassette reinigen.\n"
+"\n"
+"Verwijder eerst het papier uit de cassette en open de papieruitvoerlade.\n"
+"Als u op OK klikt, worden de papierinvoerrollen geactiveerd. Dit duurt ongeveer \n"
+"twee minuten.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:630
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Papierinvoerollen voor de achterste lade reinigen.\n"
+"\n"
+"Verwijder eerst het papier uit de achterste lade.\n"
+"Als u op OK klikt, worden de papierinvoerrollen geactiveerd. Dit duurt ongeveer \n"
+"anderhalve minuut.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:637
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Papierinvoerollen voor de cassette reinigen.\n"
+"\n"
+"Verwijder eerst het papier uit de cassette.\n"
+"Als u op OK klikt, worden de papierinvoerrollen geactiveerd. Dit duurt ongeveer \n"
+"twee minuten.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:644
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Controleer of de printer geen werkingsgeluid meer maakt en plaats drie vellen \n"
+"normaal papier in de cassette.\n"
+"Als u op OK klikt, wordt het papier uitgevoerd en wordt het reinigen van de \n"
+"invoerrollen voltooid."
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:647
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load one sheet of A4 or "
+"letter size, \n"
+"plain paper into the selected paper source and click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Selecteer eerst de papierbron. Plaats vervolgens één vel normaal papier van A4- \n"
+"of Letter-formaat in de geselecteerde papierbron en klik op Controleraster \n"
+"afdrukken."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:652
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), plaats één vel normaal papier van A4- of Letter-formaat in de \n"
+"cassette en klik op Controleraster afdrukken."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:657
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), plaats één vel normaal papier van A4- of Letter-formaat in de \n"
+"achterste lade en klik op Controleraster afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:662
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop starten.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Plaats twee vellen normaal papier van A4- of Letter-formaat in de achterste \n"
+"lade. De printer drukt een uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:671
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Uitlijning printkop starten.\n"
+"\n"
+"Bij uitlijning wordt afgedrukt. Selecteer de papierbron en klik vervolgens op \n"
+"Printkop uitlijnen."
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:675
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:677
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), plaats drie vellen normaal papier van A4- of Letter-formaat in \n"
+"de achterste lade.\n"
+"\n"
+"Klik op OK om een uitlijningsraster af te drukken."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:682
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), plaats drie vellen normaal papier van A4- of Letter-formaat in \n"
+"de cassette.\n"
+"\n"
+"Klik op OK om een uitlijningsraster af te drukken."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:687
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Maak de printer hiervoor klaar (sluit de kabel aan en schakel de printer in) en \n"
+"plaats één vel normaal papier van A4- of Letter-formaat in de achterste lade.\n"
+"\n"
+"Klik op OK om de huidige instellingen af te drukken."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:692
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Maak de printer hiervoor klaar (sluit de kabel aan en schakel de printer in) en \n"
+"plaats één vel normaal papier van A4- of Letter-formaat in de cassette.\n"
+"\n"
+"Klik op OK om de huidige instellingen af te drukken."
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:697
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Selecteer de papierbron en klik vervolgens op OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:699
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Plaats één vel normaal papier van A4- of Letter-formaat in de cassette en klik \n"
+"op OK."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:701
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Automatische uitlijning van de printkop wordt gestart.\n"
+"\n"
+"Aangezien hierbij wordt afgedrukt, moet u ervoor zorgen dat de printer gereed \n"
+"is (de kabel is aangesloten en de printer is ingeschakeld). Plaats één vel \n"
+"Matglans Foto Papier (MP-101) van A4- of Letter-formaat in de achterste lade en \n"
+"klik op Printkop uitlijnen.\n"
+"\n"
+"Klik op Annuleren als u de printkoppen handmatig wilt uitlijnen.\n"
+"Klik vervolgens op Aangepaste instellingen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma, schakel Koppen handmatig uitlijnen in en klik op OK. \n"
+"Probeer het vervolgens opnieuw.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:712
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Hiermee wordt Schuring van papier voorkomen ingesteld. Als u afdrukt en deze \n"
+"instelling hebt ingeschakeld, kan dit van invloed zijn op de afdrukkwaliteit of \n"
+"-snelheid. Als u de instelling wilt wijzigen, schakelt u Schuring van papier \n"
+"voorkomen uit."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:715
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Maakt verstopte spuitopeningen vrij wanneer een normale reiniging niet werkt.\n"
+"\n"
+"Bij diepte-reiniging wordt veel meer inkt verbruikt dan bij een normale \n"
+"reiniging. Voer alleen een diepte-reiniging uit als de conditie van \n"
+"spuitopeningen niet kan worden verbeterd met een normale reiniging.\n"
+"\n"
+"Wanneer de diepte-reiniging is uitgevoerd, voert u een controle van de \n"
+"spuitopeningen van de printkop uit en controleert u of de spuitopeningen zijn \n"
+"vrijgemaakt."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:723
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Start geen andere bewerking voor de dieptereiniging is voltooid.\n"
+"\n"
+"Voer na de dieptereiniging een controle van de spuitopeningen van de printkop \n"
+"uit om te controleren of deze niet meer zijn verstopt."
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:728
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"U kunt de printkop uitlijnen om een onjuiste uitlijning van kleuren en lijnen \n"
+"te verhelpen. Raadpleeg de gebruikershandleiding en lijn de printkop uit via \n"
+"het bedieningspaneel van de printer.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:733 po/keystr.h:755
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"Uitlijning printkop starten.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Plaats drie vellen normaal papier van A4- of Letter-formaat in de achterste \n"
+"lade. De printer drukt een uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken.\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:742
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Automatische uitlijning van de printkop starten.\n"
+"\n"
+"Aangezien hierbij moet worden afgedrukt, zorgt u dat de printer gereed is \n"
+"(sluit de kabel aan en zet de printer aan). Plaats één vel Matglans Foto Papier \n"
+"(MP-101) van A4- of Letter-formaat in de achterste lade en klik op Printkop \n"
+"uitlijnen.\n"
+"\n"
+"Als het resultaat van de automatische uitlijning van de printkop niet naar wens \n"
+"is, lijnt u de printkop handmatig uit. Hierbij wordt de printkop nauwkeuriger \n"
+"uitgelijnd.\n"
+"Klik op Annuleren als u de printkop handmatig wilt uitlijnen.\n"
+"Klik vervolgens op Aangepaste instellingen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma. Schakel Koppen handmatig uitlijnen in en klik op OK. \n"
+"Probeer het vervolgens opnieuw.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/keystr.h:764 po/keystr.h:1114
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/keystr.h:766 po/keystr.h:1116
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/keystr.h:768 po/keystr.h:1118
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/keystr.h:770 po/keystr.h:1120
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/keystr.h:772 po/keystr.h:1122
+msgid "5"
+msgstr "5"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:774
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Aanpassing in kolom A t/m C (-3 t/m +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/keystr.h:776
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Aanpassing in kolom A t/m D (-3 t/m +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:778
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Aanpassing in kolom A t/m E (-3 t/m +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/keystr.h:780
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Aanpassing in kolom A t/m E (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/keystr.h:782
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Aanpassing in kolom A t/m F (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/keystr.h:784
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Aanpassing in kolom A t/m G (-5 t/m +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:786
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Aanpassing in kolom D t/m F (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/keystr.h:788
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Aanpassing in kolom E t/m G (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/keystr.h:790
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Aanpassing in kolom F en G (-3 t/m +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:792
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Aanpassing in kolom F t/m K (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/keystr.h:794
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Aanpassing in kolom G t/m J (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/keystr.h:796
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Aanpassing in kolom G t/m L (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/keystr.h:798
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Aanpassing in kolom H t/m K (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/keystr.h:800
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Aanpassing in kolom H t/m L (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/keystr.h:802
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Aanpassing in kolom H t/m N (-5 t/m +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:804
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Aanpassing in kolom K en L (-3 t/m +3)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:806
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Aanpassing in kolom L en M (-3 t/m +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/keystr.h:808
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Aanpassing in kolom L t/m O (-5 t/m +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:810
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Aanpassing in kolom M en N (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/keystr.h:812
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Aanpassing in kolom M t/m P (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/keystr.h:814
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Aanpassing in kolom M t/m Q (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/keystr.h:816
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Aanpassing in kolom O t/m T (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/keystr.h:818
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Aanpassing in kolom P t/m T (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/keystr.h:820
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Aanpassing in kolom Q en R (-4 t/m +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/keystr.h:822
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Aanpassing in kolom U en V (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/keystr.h:824
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Aanpassing in kolom U en V (-3 t/m +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/keystr.h:826
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Aanpassing in kolom W en X (-3 t/m +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/keystr.h:828
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Aanpassing in kolom a t/m e (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/keystr.h:830
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Aanpassing in kolom f t/m j (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/keystr.h:832
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Aanpassing in kolom f t/m k (-2 t/m +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/keystr.h:834
+msgid "Align Print Head"
+msgstr "Printkop uitlijnen"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/keystr.h:836 po/keystr.h:1106
+msgid "Align heads manually"
+msgstr "Koppen handmatig uitlijnen"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/keystr.h:838
+msgid "Auto Power"
+msgstr "Printer automatisch aan/uit"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:840
+msgid "Auto Power Off"
+msgstr "Printer automatisch uit"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:842
+msgid "Auto Power Off:"
+msgstr "Printer automatisch uit:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/keystr.h:844
+msgid "Auto Power On:"
+msgstr "Printer automatisch aan:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/keystr.h:846
+msgid "Auto Power Settings"
+msgstr "Printer automatisch aan/uit"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/keystr.h:848
+msgid "Black Ink Tank"
+msgstr "Zwarte-Inkttank"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/keystr.h:850
+msgid "Bottom Plate Cleaning"
+msgstr "Reiniging onderste plaat"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/keystr.h:852
+msgid "Cleaning"
+msgstr "Reiniging"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/keystr.h:854
+msgid "Color Ink Tank"
+msgstr "Kleureninkttank"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/keystr.h:856
+msgid "Column A:"
+msgstr "Kolom A:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/keystr.h:858
+msgid "Column B:"
+msgstr "Kolom B:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/keystr.h:860
+msgid "Column C:"
+msgstr "Kolom C:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/keystr.h:862
+msgid "Column D:"
+msgstr "Kolom D:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/keystr.h:864
+msgid "Column E:"
+msgstr "Kolom E:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/keystr.h:866
+msgid "Column F:"
+msgstr "Kolom F:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/keystr.h:868
+msgid "Column G:"
+msgstr "Kolom G:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/keystr.h:870
+msgid "Column H:"
+msgstr "Kolom H:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/keystr.h:872
+msgid "Column I:"
+msgstr "Kolom I:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/keystr.h:874
+msgid "Column J:"
+msgstr "Kolom J:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/keystr.h:876
+msgid "Column K:"
+msgstr "Kolom K:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/keystr.h:878
+msgid "Column L:"
+msgstr "Kolom L:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/keystr.h:880
+msgid "Column M:"
+msgstr "Kolom M:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/keystr.h:882
+msgid "Column N:"
+msgstr "Kolom N:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/keystr.h:884
+msgid "Column O:"
+msgstr "Kolom O:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/keystr.h:886
+msgid "Column P:"
+msgstr "Kolom P:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/keystr.h:888
+msgid "Column Q:"
+msgstr "Kolom Q:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/keystr.h:890
+msgid "Column R:"
+msgstr "Kolom R:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/keystr.h:892
+msgid "Column S:"
+msgstr "Kolom S:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/keystr.h:894
+msgid "Column T:"
+msgstr "Kolom T:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/keystr.h:896
+msgid "Column U:"
+msgstr "Kolom U:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/keystr.h:898
+msgid "Column V:"
+msgstr "Kolom V:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/keystr.h:900
+msgid "Column W:"
+msgstr "Kolom W:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/keystr.h:902
+msgid "Column X:"
+msgstr "Kolom X:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/keystr.h:904
+msgid "Column a:"
+msgstr "Kolom a:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/keystr.h:906
+msgid "Column b:"
+msgstr "Kolom b:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/keystr.h:908
+msgid "Column c:"
+msgstr "Kolom c:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/keystr.h:910
+msgid "Column d:"
+msgstr "Kolom d:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/keystr.h:912
+msgid "Column e:"
+msgstr "Kolom e:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/keystr.h:914
+msgid "Column f:"
+msgstr "Kolom f:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/keystr.h:916
+msgid "Column g:"
+msgstr "Kolom g:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/keystr.h:918
+msgid "Column h:"
+msgstr "Kolom h:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/keystr.h:920
+msgid "Column i:"
+msgstr "Kolom i:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/keystr.h:922
+msgid "Column j:"
+msgstr "Kolom j:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/keystr.h:924
+msgid "Column k:"
+msgstr "Kolom k:"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/keystr.h:926 po/keystr.h:1102
+msgid "Custom Settings"
+msgstr "Aangepaste instellingen"
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/keystr.h:928
+msgid "Deep Cleaning"
+msgstr "Diepte-reiniging"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/keystr.h:930
+msgid "Defaults"
+msgstr "Standaard"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/keystr.h:932
+msgid "Display low ink warning"
+msgstr "Waarschuwing weinig inkt weergeven"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:934
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom G tot en met L in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/keystr.h:938
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom H tot en met O in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/keystr.h:942
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom M tot en met R in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/keystr.h:946
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom P tot en met V in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/keystr.h:950
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het patroonnummer van het raster dat de \n"
+"minste horizontale strepen bevat in de velden voor kolom O tot en met V in."
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/keystr.h:954
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het meest gelijkmatige \n"
+"raster voor kolom M en N in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/keystr.h:957
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het patroonnummer in van het raster dat de \n"
+"minste horizontale strepen bevat in de velden voor kolom a tot en met j."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/keystr.h:960
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het patroonnummer van het raster dat de \n"
+"minste horizontale strepen bevat in de velden voor kolom a tot en met k in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/keystr.h:963
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom H tot en met Q in."
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:966
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Bekijk de afgedrukte rasters en vul het nummer van het meest effen raster dat \n"
+"geen strepen bevat in de gebieden die door pijlen zijn aangegeven, in de velden \n"
+"voor kolom L en M in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/keystr.h:970
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Bekijk de afgedrukte rasters en vul het nummer van het meest effen raster dat \n"
+"geen strepen bevat in de gebieden die door pijlen zijn aangegeven, in de velden \n"
+"voor kolom W en X in."
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/keystr.h:974
+msgid "Execute"
+msgstr "Uitvoeren"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/keystr.h:976
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Voer uitlijning printkop uit. Bekijk de afgedrukte rasters en voer het nummer \n"
+"van het raster dat de minste balken bevat in de velden voor kolom A tot en met \n"
+"F in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/keystr.h:980
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Voer uitlijning printkop uit. Bekijk de afgedrukte rasters en voer het nummer \n"
+"van het raster dat de minste balken bevat in de velden voor kolom A tot en met \n"
+"G in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/keystr.h:984
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Voer uitlijning printkop uit. Bekijk de afgedrukte rasters en voer het nummer \n"
+"van het raster dat de minste balken bevat in de velden voor kolom A tot en met \n"
+"K in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/keystr.h:988
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Voer uitlijning printkop uit. Bekijk de afgedrukte rasters en voer het nummer \n"
+"van het raster dat de minste balken bevat in de velden voor kolom A tot en met \n"
+"L in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/keystr.h:992
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Voer uitlijning printkop uit. Bekijk de afgedrukte rasters en voer het nummer \n"
+"van het raster dat de minste balken bevat in de velden voor kolom A tot en met \n"
+"N in."
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/keystr.h:996
+msgid "Exit"
+msgstr "Afsluiten"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:998
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Horizontale uitlijning (-3 t/m +7)"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/keystr.h:1000
+msgid "Ink Cartridge Settings"
+msgstr "Inktcartridge-instellingen"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/keystr.h:1002
+msgid "Ink Cartridge:"
+msgstr "Inktpatroon:"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/keystr.h:1004
+msgid "Ink Counter Reset"
+msgstr "Inktteller opnieuw instellen"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/keystr.h:1006 po/keystr.h:1108
+msgid "Ink Drying Wait Time:"
+msgstr "Droogtijd inkt:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/keystr.h:1008 po/keystr.h:1112
+msgid "Long"
+msgstr "Lang"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/keystr.h:1010
+msgid "Low Ink Warning Setting"
+msgstr "Instelling waarschuwing weinig inkt"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/keystr.h:1012
+msgid "Maintenance"
+msgstr "Onderhoud"
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/keystr.h:1014
+msgid "Nozzle Check"
+msgstr "Controle spuitopening"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/keystr.h:1016
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Papierbroninstelling voor normaal papier"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/keystr.h:1018
+msgid "Pattern Check"
+msgstr "Rastercontrole"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/keystr.h:1020
+msgid "Power Off"
+msgstr "Printer uit"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/keystr.h:1022 po/keystr.h:1104
+msgid "Prevent paper abrasion"
+msgstr "Schuring van papier voorkomen"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/keystr.h:1024
+msgid "Print Alignment Value"
+msgstr "Uitlijningswaarde afdrukken"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/keystr.h:1026
+msgid "Print Check Pattern"
+msgstr "Controleraster afdrukken"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/keystr.h:1028
+msgid "Print Head Alignment"
+msgstr "Uitlijning printkop"
+
+#. LUM_IDD_CLEAN
+#: po/keystr.h:1030
+msgid "Print Head Cleaning"
+msgstr "Reiniging printkop"
+
+#. LUM_IDD_SILENTMODE
+#: po/keystr.h:1032
+msgid "Quiet Mode"
+msgstr "Stille modus"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/keystr.h:1034
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Raadpleeg de printerhandleiding voor meer informatie over de waarschuwing voor \n"
+"weinig inkt."
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/keystr.h:1036
+msgid "Roller Cleaning"
+msgstr "Reiniging rollen"
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/keystr.h:1038
+msgid "Select the ink cartridge for printing."
+msgstr "Selecteer de inktpatroon voor het afdrukken."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/keystr.h:1040
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Selecteer de pas geplaatste inkttank en klik op de knop Uitvoeren.\n"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/keystr.h:1042 po/keystr.h:1110
+msgid "Short"
+msgstr "Kort"
+
+#. LUM_IDD_PHA_START
+#: po/keystr.h:1044
+msgid "Start Print Head Alignment"
+msgstr "Uitlijning printkop starten"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/keystr.h:1046
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires one sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Reiniging van de onderste plaat wordt gestart om te voorkomen dat er vegen op \n"
+"de afdruk ontstaan.\n"
+"\n"
+"Voor deze bewerking is één vel normaal papier van A4- of Letter-formaat \n"
+"vereist. Volg deze aanwijzingen om reiniging van de onderste plaat uit te \n"
+"voeren."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/keystr.h:1050
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"De teller die behoort bij de vervangen inkttank geeft aan dat de inkttank vol \n"
+"is. Deze bewerking zorgt ervoor dat de waarschuwing voor weinig inkt correct \n"
+"werkt."
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/keystr.h:1054
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"De spuitopeningen van de printkop zijn \n"
+"niet verstop.\n"
+"Als het afgedrukte raster overeenkomt \n"
+"met dit raster, kunt u de printer \n"
+"direct gebruiken.\n"
+"Klik op Afsluiten."
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/keystr.h:1059
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr "U zorgt er als volgt voor dat de waarschuwing voor weinig inkt goed werkt:\n"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/keystr.h:1062
+msgid "Use quiet mode"
+msgstr "Stille modus gebruiken"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/keystr.h:1064
+msgid "Using AC Adapter:"
+msgstr "Netspanningsadapter gebruiken:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/keystr.h:1066
+msgid "Using Battery:"
+msgstr "Batterij gebruiken:"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/keystr.h:1068
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Wanneer u een inkttank hebt vervangen door een nieuwe, moet u altijd klikken op \n"
+"de knop Inktteller opnieuw instellen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma en de nieuwe inkttank selecteren."
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/keystr.h:1072
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Met welk van de volgende rasters komt het afgedrukte raster het meest overeen?"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/keystr.h:1074
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "Aanpassing in kolom K t/m P (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/keystr.h:1076
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "Aanpassing in kolom F (-3 t/m +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/keystr.h:1078
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "Aanpassing in kolom G (-3 t/m +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/keystr.h:1080
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "Aanpassing in kolom Q (-4 t/m +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/keystr.h:1082
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "Aanpassing in kolom R t/m U (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/keystr.h:1084
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "Aanpassing in kolom V t/m Y (-2 t/m +2)"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/keystr.h:1086
+msgid "Close"
+msgstr "Sluiten"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/keystr.h:1088
+msgid "Column Y:"
+msgstr "Kolom Y:"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/keystr.h:1090
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het patroonnummer van het raster dat de \n"
+"minste horizontale strepen bevat in de velden voor kolom Q tot en met Y in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/keystr.h:1094
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr ""
+"Bekijk de afgedrukte rasters en typ het rasternummer van het raster met de \n"
+"minst zichtbare strepen in de velden voor de kolommen K tot en met P."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/keystr.h:1098
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"Printkop uitlijnen. Bekijk de afgedrukte rasters en typ het rasternummer van \n"
+"het raster met de minst zichtbare strepen in de velden voor de kolommen A tot \n"
+"en met J."
+
+#. LUM_IDS_CLEAN_ITEM_E5
+#: po/keystr.h:1124
+msgid "Color   C, M, Y, BK, GY"
+msgstr "Kleur   C, M, Y, BK, GY"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A3_07
+#: po/keystr.h:1126
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half vertically, then unfold the "
+"paper.\n"
+"3. With the ridge of the crease facing down, load the paper in landscape "
+"orientation into the rear tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Verwijder het papier uit de achterste lade.\n"
+"2. Vouw een normaal papier van A4- of Letter-formaat in de lengte doormidden en \n"
+"haal het weer uit de vouw.\n"
+"3. Plaats het papier in de liggende afdrukstand in de achterste lade, met de \n"
+"rand van de vouw naar onderen.\n"
+"4. Klik op Uitvoeren."
+
+#. LUM_IDS_AUTOPOWER_120MINUTES
+#: po/keystr.h:1131
+msgid "120 minutes"
+msgstr "120 minuten"
+
+#. LUM_IDS_AUTOPOWER_240MINUTES
+#: po/keystr.h:1133
+msgid "240 minutes"
+msgstr "240 minuten"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_11_PAPERSRC
+#: po/keystr.h:1135
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size plain paper, and click Align Print "
+"Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Automatische uitlijning van de printkop starten.\n"
+"\n"
+"Aangezien hierbij wordt afgedrukt, moet u ervoor zorgen dat de printer gereed \n"
+"is (de kabel is aangesloten en de printer is ingeschakeld). Plaats één vel \n"
+"normaal papier van A4- of Letter-formaat en klik op Printkop uitlijnen.\n"
+"\n"
+"Als het resultaat van de automatische uitlijning van de printkop niet naar wens \n"
+"is, lijnt u de printkop handmatig uit. Hierbij wordt de printkop nauwkeuriger \n"
+"uitgelijnd.\n"
+"Klik op Annuleren als u de printkoppen handmatig wilt uitlijnen.\n"
+"Klik vervolgens op Aangepaste instellingen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma, schakel Koppen handmatig uitlijnen in en klik op OK. \n"
+"Probeer het vervolgens opnieuw.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTPAPERJAM
+#: po/keystr.h:1146
+msgid "Prevent paper jam"
+msgstr "Papierstoring voorkomen"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR7
+#: po/keystr.h:1148
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray, then open the front cover and extend "
+"the paper output tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Papierinvoerrollen reinigen.\n"
+"\n"
+"Verwijder eerst het papier uit de achterste lade. Open daarna de voorklep en \n"
+"trek de papieruitvoerlade uit.\n"
+"Als u op OK klikt, worden de papierinvoerrollen 30 keer geactiveerd. Dit duurt \n"
+"ongeveer anderhalve minuut.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_P
+#: po/keystr.h:1155
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for columns H to "
+"P."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom H tot en met P in."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_55
+#: po/keystr.h:1158 po/keystr.h:1350
+msgid "Adjustment in Columns M to P (-5 to +5)"
+msgstr "Aanpassing in kolom M t/m P (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_i
+#: po/keystr.h:1160
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for "
+"columns a to i."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het patroonnummer in van het raster dat de \n"
+"minste horizontale strepen bevat in de velden voor kolom a tot en met i."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_i_22
+#: po/keystr.h:1163
+msgid "Adjustment in Columns f to i (-2 to +2)"
+msgstr "Aanpassing in kolom f t/m i (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PREVENTPAPERGAP_MSG
+#: po/keystr.h:1165
+msgid ""
+"Set Prevent paper jam only when A3 size plain paper jams frequently near the "
+"paper output slot.\n"
+"\n"
+"This setting increases the printing time for A3 size plain paper.\n"
+"Also, the print quality may deteriorate."
+msgstr ""
+"Selecteer Papierstoring voorkomen alleen als normaal A3-papier vaak een \n"
+"papierstoring bij de papieruitvoersleuf veroorzaakt.\n"
+"\n"
+"Deze instelling zorgt ervoor dat de printer langzamer afdrukt als er normaal \n"
+"A3-papier gebruikt wordt.\n"
+"Het is bovendien mogelijk dat de afdrukkwaliteit afneemt."
+
+#. LUM_IDD_QUIETSETTINGS
+#: po/keystr.h:1170
+msgid "Quiet Settings"
+msgstr "Stille instellingen"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_DISABLE
+#: po/keystr.h:1172
+msgid "Do not use quiet mode"
+msgstr "Stille modus niet gebruiken"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_ENABLE
+#: po/keystr.h:1174
+msgid "Always use quiet mode"
+msgstr "Stille modus altijd gebruiken"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_HOURS
+#: po/keystr.h:1176
+msgid "Use quiet mode during specified hours"
+msgstr "Stille modus gebruiken op opgegeven tijden"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_FROM
+#: po/keystr.h:1178
+msgid "Start time:"
+msgstr "Begintijd:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_TO
+#: po/keystr.h:1180
+msgid "End time:"
+msgstr "Eindtijd:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTING_WARN
+#: po/keystr.h:1182
+msgid ""
+"When the hours are specified, quiet mode is not applied to operations \n"
+"(copy, direct print, etc.) performed directly from the printer."
+msgstr ""
+"Als de tijden zijn opgegeven, wordt de stille modus niet toegepast op \n"
+"bewerkingen (kopiëren, direct afdrukken enz.) die rechtstreeks vanaf de printer \n"
+"worden uitgevoerd."
+
+#. LUM_COLON
+#: po/keystr.h:1185
+msgid ":"
+msgstr ":"
+
+#. LUM_IDS_MNTMSG_WRITESETTING_ATPOFF_NW
+#: po/keystr.h:1187
+msgid ""
+"Apply the setting to printer?\n"
+"If the printer is connected to a network, it will not turn off \n"
+"automatically even if Auto Power Off is set."
+msgstr ""
+"Wilt u de instelling toepassen op de printer?\n"
+"Als de printer is verbonden met een netwerk, wordt de printer niet automatisch \n"
+"uitgeschakeld ook al is Printer automatisch uit ingesteld."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT7
+#: po/keystr.h:1191
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the front tray, then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Papierinvoerrollen reinigen.\n"
+"\n"
+"Verwijder eerst het papier uit de voorste lade en open de papieruitvoerlade.\n"
+"Als u op OK klikt, worden de papierinvoerrollen geactiveerd. Dit duurt ongeveer \n"
+"twee minuten.\n"
+"\n"
+"Wilt u de papierinvoerrollen reinigen?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT7
+#: po/keystr.h:1198
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the front tray.\n"
+"After confirming that the paper output tray is open, clicking OK will eject "
+"paper and complete feed roller cleaning."
+msgstr ""
+"Controleer of de printer geen werkingsgeluid meer maakt en plaats drie vellen \n"
+"normaal papier in de voorste lade.\n"
+"Nadat u hebt gecontroleerd of de papieruitvoerlade is geopend, klikt u op OK om \n"
+"het papier uit te voeren en de reiniging van de invoerrollen te voltooien."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_FRONT
+#: po/keystr.h:1201
+msgid ""
+"1. Remove the paper from the front tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the front "
+"tray, \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Open the paper output tray and click Execute."
+msgstr ""
+"1. Verwijder het papier uit de voorste lade.\n"
+"2. Vouw een vel normaal papier van A4- of Letter-formaat doormidden en vouw het \n"
+"vervolgens weer uit.\n"
+"3. Vouw één zijde van het papier nogmaals doormidden, waarbij u de rand \n"
+"uitlijnt met de middelste vouw. Vouw het papier daarna weer open.\n"
+"4. Plaats het papier met de randen van de vouwen omhoog in de voorste lade, \n"
+"waarbij de rand van de helft zonder vouw van u af is gericht.\n"
+"5. Open de papieruitvoerlade en klik op Uitvoeren."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTWFEED
+#: po/keystr.h:1208
+msgid "Prevent paper double-feed"
+msgstr "Invoer van twee vellen voorkomen"
+
+#. LUM_IDS_MNTMSG_PREVENTWFEED_MSG
+#: po/keystr.h:1210
+msgid ""
+"Set Prevent paper double-feed only when double-feeding of plain paper "
+"occurs.\n"
+"\n"
+"Using this function decreases the print speed but reduces the occurrence of "
+"double-feeding."
+msgstr ""
+"Stel Invoer van twee vellen voorkomen alleen in als twee vellen normaal papier \n"
+"tegelijk worden ingevoerd.\n"
+"\n"
+"Bij gebruik van deze functie neemt de afdruksnelheid af, maar worden minder \n"
+"vaak twee vellen papier tegelijk ingevoerd."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_PAPERSRC_11
+#: po/keystr.h:1214
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 \n"
+"or letter size plain paper, and click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), plaats één vel normaal papier van A4- of Letter-formaat en klik \n"
+"op Controleraster afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_PAPERSRC_11
+#: po/keystr.h:1219
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"De printkop wordt uitgelijnd.\n"
+"\n"
+"Aangezien hierbij wordt afgedrukt, moet u ervoor zorgen dat de printer gereed \n"
+"is (de kabel is aangesloten en de printer is ingeschakeld). Plaats drie vellen \n"
+"normaal papier van A4- of Letter-formaat. De printer drukt een \n"
+"uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de printkoppositie uit te lijnen.\n"
+"\n"
+"Klik op Uitlijningswaarde afdrukken om de huidige instelling af te drukken en \n"
+"te controleren."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_K_55
+#: po/keystr.h:1228
+msgid "Adjustment in Columns G to K (-5 to +5)"
+msgstr "Aanpassing in kolom G t/m K (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_L_Q
+#: po/keystr.h:1230
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns L to Q."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom L tot en met Q in."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_R_Z
+#: po/keystr.h:1234
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for \n"
+"columns R to Z."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het patroonnummer van het raster dat de \n"
+"minste horizontale strepen bevat in de velden voor kolom R tot en met Z in."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_44
+#: po/keystr.h:1238
+msgid "Adjustment in Column R (-4 to +4)"
+msgstr "Aanpassing in kolom R (-4 t/m +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_S_V_22
+#: po/keystr.h:1240
+msgid "Adjustment in Columns S to V (-2 to +2)"
+msgstr "Aanpassing in kolom S t/m V (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_Z_22
+#: po/keystr.h:1242
+msgid "Adjustment in Columns W to Z (-2 to +2)"
+msgstr "Aanpassing in kolom W t/m Z (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_Q_55
+#: po/keystr.h:1244
+msgid "Adjustment in Columns L to Q (-5 to +5)"
+msgstr "Aanpassing in kolom L t/m Q (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Z
+#: po/keystr.h:1246
+msgid "Column Z:"
+msgstr "Kolom Z:"
+
+#. LUM_IDS_MNTMSG_MSI_COLLECTING
+#: po/keystr.h:1248
+msgid ""
+"Collecting printer status about maintenance.\n"
+"Please wait."
+msgstr ""
+"De printerstatus voor onderhoud wordt opgehaald.\n"
+"Een ogenblik geduld."
+
+#. LUM_IDS_MNTMSG_MSI_NOTAVAILABLE
+#: po/keystr.h:1251
+msgid ""
+"This printer status about maintenance cannot be collected.\n"
+"The displayed information may be different from the current settings."
+msgstr ""
+"De printerstatus voor onderhoud kan niet worden bepaald.\n"
+"De weergegeven informatie kan anders zijn dan de huidige instellingen."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_FRONTTRAY
+#: po/keystr.h:1254
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the front tray, and click Print Check Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), plaats één vel normaal papier van A4- of Letter-formaat in de \n"
+"voorste lade en klik op Controleraster afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_FRONT_11
+#: po/keystr.h:1259
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the front tray and "
+"click OK."
+msgstr ""
+"Plaats één vel normaal papier van A4- of Letter-formaat in de voorste lade en \n"
+"klik op OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_PAPERSRC_11
+#: po/keystr.h:1261
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, plain paper.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Maak de printer hiervoor klaar (sluit de kabel aan en schakel de printer in) en \n"
+"plaats één vel normaal papier van A4- of Letter-formaat.\n"
+"\n"
+"Klik op OK om de huidige instellingen af te drukken."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_11
+#: po/keystr.h:1265
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK. "
+msgstr ""
+"Plaats één vel normaal papier van A4- of Letter-formaat in de cassette en klik \n"
+"op OK. "
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_REAR_11
+#: po/keystr.h:1267
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK. "
+msgstr ""
+"Plaats één vel normaal papier van A4- of Letter-formaat in de achterste lade en \n"
+"klik op OK. "
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_FRONTTRAY
+#: po/keystr.h:1269
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the front tray. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"De printkop wordt uitgelijnd.\n"
+"\n"
+"Hierbij moet worden afgedrukt, maak de printer hiervoor klaar (sluit de kabel \n"
+"aan en schakel de printer in) en plaats drie vellen normaal papier van A4- of \n"
+"Letter-formaat in de voorste lade. Er wordt een uitlijningspatroon afgedrukt.\n"
+"\n"
+"Klik op Printkop uitlijnen om de printkoppositie uit te lijnen.\n"
+"\n"
+"Klik op Uitlijningswaarde afdrukken om de huidige instelling af te drukken en \n"
+"te controleren."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE
+#: po/keystr.h:1279
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size, plain paper into the cassette. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop starten.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Plaats drie vellen normaal papier van A4- of Letter-formaat in de cassette. De \n"
+"printer drukt een uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de positie van de printkop uit te lijnen.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op Waarde \n"
+"voor uitlijning bij afdrukken."
+
+#. LUM_SPACE_01
+#: po/keystr.h:1289
+msgid " "
+msgstr " "
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_UPPER
+#: po/keystr.h:1291
+msgid "Cassette (upper)"
+msgstr "Cassette (bovenste)"
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_LOWER
+#: po/keystr.h:1293
+msgid "Cassette (lower)"
+msgstr "Cassette (onderste)"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_UPPER
+#: po/keystr.h:1295
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (upper).\n"
+"\n"
+"First remove paper from the cassette (upper).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about "
+"three minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"De reiniging van de papierinvoerrollen voor de cassette (bovenste) starten.\n"
+"\n"
+"Verwijder eerst papier uit de cassette (bovenste).\n"
+"Klik daarna op OK. De papierinvoerrollen gaan draaien. Dit duurt circa drie \n"
+"minuten.\n"
+"\n"
+"Wilt u de reiniging starten?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_UPPER
+#: po/keystr.h:1302
+msgid ""
+"Cut A4 or letter size plain paper in half lengthwise, then widthwise to "
+"create four equal pieces.\n"
+"Confirm the operating noise of the printer has stopped, and then load the "
+"four pieces of paper into the cassette (upper), \n"
+"with the cut edges towards you.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Knip normaal papier van A4- of Letter-formaat in de lengte en daarna in de \n"
+"breedte doormidden tot vier gelijke stukken.\n"
+"Controleer of het werkingsgeluid van de printer is gestopt en plaats daarna de \n"
+"vier stukken papier in de cassette (bovenste) met de geknipte zijde naar u toe.\n"
+"Klik op OK om het papier uit te werpen en de reiniging van de invoerrollen te \n"
+"voltooien."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_LOWER
+#: po/keystr.h:1307
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (lower).\n"
+"\n"
+"First remove paper from the cassette (lower).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"De reiniging van de papierinvoerrollen voor de cassette (onderste) starten.\n"
+"\n"
+"Verwijder eerst papier uit de cassette (onderste).\n"
+"Klik daarna op OK. De papierinvoerrollen gaan draaien. Dit duurt circa twee \n"
+"minuten.\n"
+"\n"
+"Wilt u de reiniging starten?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_LOWER
+#: po/keystr.h:1314
+msgid ""
+"Confirm the operating noise of the printer has stopped, \n"
+"and then load three sheets of A4 or letter size plain paper into the "
+"cassette (lower).\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Controleer of het werkingsgeluid van de printer is gestopt en plaats daarna \n"
+"drie vellen normaal papier van A4- of Letter-formaat in de cassette (onderste).\n"
+"Klik op OK om het papier uit te werpen en de reiniging van de invoerrollen te \n"
+"voltooien."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_CASSETTE_LOWER
+#: po/keystr.h:1318
+msgid ""
+"1. Remove paper from the cassette (lower).\n"
+"2. Fold A4 or letter size plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the "
+"cassette (lower), \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Click Execute."
+msgstr ""
+"1. Verwijder papier uit de cassette (onderste).\n"
+"2. Vouw normaal papier van A4- of Letter-formaat dubbel en vouw het weer open.\n"
+"3. Vouw één helft van het papier dubbel, waarbij u de rand uitlijnt met de vouw \n"
+"in het midden. Vouw het papier weer open.\n"
+"4. Plaats het papier met de ruggen van de vouwen omhoog in de cassette \n"
+"(onderste), waarbij de rand van de helft zonder vouw van u af is gericht.\n"
+"5. Klik op Uitvoeren."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_LOWER
+#: po/keystr.h:1325
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or \n"
+"letter size plain paper into the cassette (lower), and click Print Check "
+"Pattern."
+msgstr ""
+"Drukt een raster af waarmee u kunt controleren of de spuitopeningen van de \n"
+"printkop verstopt zijn.\n"
+"\n"
+"Zorg ervoor dat de printer gereed is (de kabel is aangesloten en de printer is \n"
+"ingeschakeld), plaats één vel normaal papier van A4- of Letter-formaat in de \n"
+"cassette (onderste) en klik op Controleraster afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE_LOWER
+#: po/keystr.h:1330
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size plain paper into the cassette "
+"(lower). The printer will print an alignment pattern.\n"
+"\n"
+"To start the print head alignment, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Uitlijning printkop starten.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld) en \n"
+"drie vellen normaal papier van A4- of Letter-formaat in de cassette (onderste) \n"
+"plaatsen. De printer drukt een uitlijningsraster af.\n"
+"\n"
+"Klik op Printkop uitlijnen om de uitlijning van de printkop te starten.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_H
+#: po/keystr.h:1339
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to H."
+msgstr ""
+"Voer uitlijning printkop uit. Bekijk de afgedrukte rasters en voer het nummer \n"
+"van het raster dat de minste balken bevat in de velden voor kolom A tot en met \n"
+"H in."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_33
+#: po/keystr.h:1343
+msgid "Adjustment in Column H (-3 to +3)"
+msgstr "Aanpassing in kolom H (-3 t/m +3)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_I_P
+#: po/keystr.h:1345
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns I to P."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het nummer van het raster dat de minste \n"
+"balken bevat in de velden voor kolom I tot en met P in."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_I_L_55
+#: po/keystr.h:1348
+msgid "Adjustment in Columns I to L (-5 to +5)"
+msgstr "Aanpassing in kolom I t/m L (-5 t/m +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_h
+#: po/keystr.h:1352
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"h."
+msgstr ""
+"Bekijk de afgedrukte rasters en voer het patroonnummer in van het raster dat de \n"
+"minste horizontale strepen bevat in de velden voor kolom a tot en met h."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_d_22
+#: po/keystr.h:1355
+msgid "Adjustment in Columns a to d (-2 to +2)"
+msgstr "Aanpassing in kolom a t/m d (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_e_h_22
+#: po/keystr.h:1357
+msgid "Adjustment in Columns e to h (-2 to +2)"
+msgstr "Aanpassing in kolom e t/m h (-2 t/m +2)"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_CASSETTE_LOWER
+#: po/keystr.h:1359
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size Matte Photo Paper (MP-101) into the "
+"cassette (lower) and click Align Print Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment \n"
+"to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Automatische uitlijning van de printkop starten.\n"
+"\n"
+"Aangezien er bij uitlijning wordt afgedrukt, moet u ervoor zorgen dat de \n"
+"printer gereed is (de kabel is aangesloten en de printer is ingeschakeld). \n"
+"Plaats één vel Matglans Foto Papier (MP-101) van A4- of Letter-formaat in de \n"
+"cassette (onderste) en klik op Printkop uitlijnen.\n"
+"\n"
+"Als het resultaat van de automatische uitlijning niet naar wens is, voert u een \n"
+"handmatige uitlijning van de printkop uit om de printkop nauwkeurig uit te \n"
+"lijnen.\n"
+"Klik op Annuleren als u de printkop handmatig wilt uitlijnen.\n"
+"Klik daarna op Aangepaste instellingen op het tabblad Onderhoud van het \n"
+"printerstuurprogramma. Klik op Koppen handmatig uitlijnen en klik op OK. \n"
+"Probeer het daarna opnieuw.\n"
+"\n"
+"Als u de huidige instelling wilt afdrukken en controleren, klikt u op \n"
+"Uitlijningswaarde afdrukken."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_LOWER
+#: po/keystr.h:1372
+msgid ""
+"Load one sheet of A4 or letter size plain paper into the cassette (lower) "
+"and click OK."
+msgstr ""
+"Plaats één vel normaal papier van A4- of Letter-formaat in de cassette \n"
+"(onderste) en klik op OK."
+

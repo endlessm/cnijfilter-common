@@ -237,6 +237,7 @@ enum {
 	CND_SUPPLY_AUTO_CONTINUOUS_FEED,/* Auto Continuous Media Supply */
 	CND_SUPPLY_AUTO_SELECT,			/* Auto Select */
 	CND_SUPPLY_CASSETTE_06,		/* Front Feeder MG2100 type */
+	CND_SUPPLY_CASSETTE_AUTO,	/* Auto Casette Feed */
 	CND_SUPPLY_NA,				/* Not Applicable */
 	CND_SUPPLY_MAX,				/* Max indicator */
 } ;
@@ -377,6 +378,17 @@ enum {
 #define CNCL_LIBERR			-4			/* Library internal error. see ierr */
 #define CNCL_PARAMERR		-5			/* Invalid parameter is set */
 #define CNCL_LIBERR2			-6		/* Library internal error. see ierr2 */
+
+
+/*
+ *   Image Rotate
+ */
+#define CNCL_IMAGEROTATE_UNDEFINED	(0)
+#define CNCL_IMAGEROTATE_0			(1)
+#define CNCL_IMAGEROTATE_90			(2)
+#define CNCL_IMAGEROTATE_180		(3)
+#define CNCL_IMAGEROTATE_270		(4)
+
 
 /* 2009/04/01 */
 #define CNCL_UTILS_NOTCOMPLETE		1		/* Success.Not match. */

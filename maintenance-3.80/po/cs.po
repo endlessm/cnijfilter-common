@@ -1,0 +1,3705 @@
+# Inkjet Printer Driver for Linux
+# Copyright CANON INC. 2001-2012
+# All Rights Reserved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maintenance 3.80\n"
+"POT-Creation-Date: 2012-04-17 19:15+0900\n"
+"PO-Revision-Date: 2012-06-13 11:27+0900\n"
+"Last-Translator: CANON INC.\n"
+"Language-Team: CANON INC.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n."
+
+
+
+#. LUM_LID_CAPTION
+#: po/keystr.h:2
+msgid "Canon XXXXXX"
+msgstr ""
+
+#. model_BJF850
+#: po/keystr.h:4
+msgid "BJF850"
+msgstr ""
+
+#. model_BJF860
+#: po/keystr.h:6
+msgid "BJF860"
+msgstr ""
+
+#. model_BJF870
+#: po/keystr.h:8
+msgid "BJF870"
+msgstr ""
+
+#. model_BJF360
+#: po/keystr.h:10
+msgid "BJF360"
+msgstr ""
+
+#. model_BJS600
+#: po/keystr.h:12
+msgid "BJS600"
+msgstr ""
+
+#. model_BJS630
+#: po/keystr.h:14
+msgid "BJS630"
+msgstr ""
+
+#. model_BJS6300
+#: po/keystr.h:16
+msgid "BJS6300"
+msgstr ""
+
+#. model_BJF900
+#: po/keystr.h:18
+msgid "BJF900"
+msgstr ""
+
+#. model_BJF9000
+#: po/keystr.h:20
+msgid "BJF9000"
+msgstr ""
+
+#. model_BJS500
+#: po/keystr.h:22
+msgid "BJS500"
+msgstr ""
+
+#. model_BJS300
+#: po/keystr.h:24
+msgid "BJS300"
+msgstr ""
+
+#. model_PIXUS550i
+#: po/keystr.h:26
+msgid "PIXUS 550i"
+msgstr ""
+
+#. model_PIXUS850i
+#: po/keystr.h:28
+msgid "PIXUS 850i"
+msgstr ""
+
+#. model_PIXUS950i
+#: po/keystr.h:30
+msgid "PIXUS 950i"
+msgstr ""
+
+#. model_i250
+#: po/keystr.h:32
+msgid "i250"
+msgstr ""
+
+#. model_i255
+#: po/keystr.h:34
+msgid "i255"
+msgstr ""
+
+#. model_PIXUS560i
+#: po/keystr.h:36
+msgid "PIXUS 560i"
+msgstr ""
+
+#. model_PIXUS860i
+#: po/keystr.h:38
+msgid "PIXUS 860i"
+msgstr ""
+
+#. model_PIXUS990i
+#: po/keystr.h:40
+msgid "PIXUS 990i"
+msgstr ""
+
+#. model_PIXUSiP3100
+#: po/keystr.h:42
+msgid "PIXUS iP3100"
+msgstr ""
+
+#. model_PIXUSiP4100
+#: po/keystr.h:44
+msgid "PIXUS iP4100"
+msgstr ""
+
+#. model_PIXUSiP8600
+#: po/keystr.h:46
+msgid "PIXUS iP8600"
+msgstr ""
+
+#. model_PIXMAiP1000
+#: po/keystr.h:48
+msgid "PIXMA iP1000"
+msgstr ""
+
+#. model_PIXMAiP1500
+#: po/keystr.h:50
+msgid "PIXMA iP1500"
+msgstr ""
+
+#. model_iP2200
+#: po/keystr.h:52
+msgid "iP2200"
+msgstr ""
+
+#. model_iP4200
+#: po/keystr.h:54
+msgid "iP4200"
+msgstr ""
+
+#. model_iP6600d
+#: po/keystr.h:56
+msgid "iP6600D"
+msgstr ""
+
+#. model_iP7500
+#: po/keystr.h:58
+msgid "iP7500"
+msgstr ""
+
+#. model_MP500
+#: po/keystr.h:60
+msgid "MP500"
+msgstr ""
+
+#. model_iP3300
+#: po/keystr.h:62
+msgid "iP3300"
+msgstr ""
+
+#. model_MP510
+#: po/keystr.h:64
+msgid "MP510"
+msgstr ""
+
+#. model_iP4300
+#: po/keystr.h:66
+msgid "iP4300"
+msgstr ""
+
+#. model_MP600
+#: po/keystr.h:68
+msgid "MP600"
+msgstr ""
+
+#. model_MP160
+#: po/keystr.h:70
+msgid "MP160"
+msgstr ""
+
+#. model_iP90
+#: po/keystr.h:72
+msgid "iP90"
+msgstr ""
+
+#. model_iP2500
+#: po/keystr.h:74
+msgid "iP2500 series"
+msgstr ""
+
+#. model_iP1800
+#: po/keystr.h:76
+msgid "iP1800 series"
+msgstr ""
+
+#. model_MP140
+#: po/keystr.h:78
+msgid "MP140 series"
+msgstr ""
+
+#. model_MP210
+#: po/keystr.h:80
+msgid "MP210 series"
+msgstr ""
+
+#. model_iP3500
+#: po/keystr.h:82
+msgid "iP3500 series"
+msgstr ""
+
+#. model_iP4500
+#: po/keystr.h:84
+msgid "iP4500 series"
+msgstr ""
+
+#. model_MP610
+#: po/keystr.h:86
+msgid "MP610 series"
+msgstr ""
+
+#. model_MP520
+#: po/keystr.h:88
+msgid "MP520 series"
+msgstr ""
+
+#. model_IP100
+#: po/keystr.h:90
+msgid "iP100 series"
+msgstr ""
+
+#. model_IP2600
+#: po/keystr.h:92
+msgid "iP2600 series"
+msgstr ""
+
+#. model_IP3600
+#: po/keystr.h:94
+msgid "iP3600 series"
+msgstr ""
+
+#. model_IP4600
+#: po/keystr.h:96
+msgid "iP4600 series"
+msgstr ""
+
+#. model_MP630
+#: po/keystr.h:98
+msgid "MP630 series"
+msgstr ""
+
+#. model_MP540
+#: po/keystr.h:100
+msgid "MP540 series"
+msgstr ""
+
+#. model_MP240
+#: po/keystr.h:102
+msgid "MP240 series"
+msgstr ""
+
+#. model_MP190
+#: po/keystr.h:104
+msgid "MP190 series"
+msgstr ""
+
+#. model_IP1900
+#: po/keystr.h:106
+msgid "iP1900 series"
+msgstr ""
+
+#. model_MX860
+#: po/keystr.h:108
+msgid "MX860 series"
+msgstr ""
+
+#. model_MX320
+#: po/keystr.h:110
+msgid "MX320 series"
+msgstr ""
+
+#. model_MX330
+#: po/keystr.h:112
+msgid "MX330 series"
+msgstr ""
+
+#. model_MP250
+#: po/keystr.h:114
+msgid "MP250 series"
+msgstr ""
+
+#. model_MP270
+#: po/keystr.h:116
+msgid "MP270 series"
+msgstr ""
+
+#. model_MP490
+#: po/keystr.h:118
+msgid "MP490 series"
+msgstr ""
+
+#. model_MP550
+#: po/keystr.h:120
+msgid "MP550 series"
+msgstr ""
+
+#. model_MP560
+#: po/keystr.h:122
+msgid "MP560 series"
+msgstr ""
+
+#. model_IP4700
+#: po/keystr.h:124
+msgid "iP4700 series"
+msgstr ""
+
+#. model_MP640
+#: po/keystr.h:126
+msgid "MP640 series"
+msgstr ""
+
+#. model_IP2700
+#: po/keystr.h:128
+msgid "iP2700 series"
+msgstr ""
+
+#. model_MX340
+#: po/keystr.h:130
+msgid "MX340 series"
+msgstr ""
+
+#. model_MX350
+#: po/keystr.h:132
+msgid "MX350 series"
+msgstr ""
+
+#. model_MX870
+#: po/keystr.h:134
+msgid "MX870 series"
+msgstr ""
+
+#. model_MP495
+#: po/keystr.h:136
+msgid "MP495 series"
+msgstr ""
+
+#. model_MP280
+#: po/keystr.h:138
+msgid "MP280 series"
+msgstr ""
+
+#. model_MG5100
+#: po/keystr.h:140
+msgid "MG5100 series"
+msgstr ""
+
+#. model_MG5200
+#: po/keystr.h:142
+msgid "MG5200 series"
+msgstr ""
+
+#. model_IP4800
+#: po/keystr.h:144
+msgid "iP4800 series"
+msgstr ""
+
+#. model_MG6100
+#: po/keystr.h:146
+msgid "MG6100 series"
+msgstr ""
+
+#. model_MG8100
+#: po/keystr.h:148
+msgid "MG8100 series"
+msgstr ""
+
+#. model_MX360
+#: po/keystr.h:150
+msgid "MX360 series"
+msgstr ""
+
+#. model_MX410
+#: po/keystr.h:152
+msgid "MX410 series"
+msgstr ""
+
+#. model_MX420
+#: po/keystr.h:154
+msgid "MX420 series"
+msgstr ""
+
+#. model_MX880
+#: po/keystr.h:156
+msgid "MX880 series"
+msgstr ""
+
+#. model_IX6500
+#: po/keystr.h:158
+msgid "iX6500 series"
+msgstr ""
+
+#. model_MG2100
+#: po/keystr.h:160
+msgid "MG2100 series"
+msgstr ""
+
+#. model_MG3100
+#: po/keystr.h:162
+msgid "MG3100 series"
+msgstr ""
+
+#. model_MG4100
+#: po/keystr.h:164
+msgid "MG4100 series"
+msgstr ""
+
+#. model_MG5300
+#: po/keystr.h:166
+msgid "MG5300 series"
+msgstr ""
+
+#. model_MG6200
+#: po/keystr.h:168
+msgid "MG6200 series"
+msgstr ""
+
+#. model_MG8200
+#: po/keystr.h:170
+msgid "MG8200 series"
+msgstr ""
+
+#. model_IP4900
+#: po/keystr.h:172
+msgid "iP4900 series"
+msgstr ""
+
+#. model_E500
+#: po/keystr.h:174
+msgid "E500 series"
+msgstr ""
+
+#. model_MX710
+#: po/keystr.h:176
+msgid "MX710 series"
+msgstr ""
+
+#. model_MX890
+#: po/keystr.h:178
+msgid "MX890 series"
+msgstr ""
+
+#. model_MX370
+#: po/keystr.h:180
+msgid "MX370 series"
+msgstr ""
+
+#. model_MX430
+#: po/keystr.h:182
+msgid "MX430 series"
+msgstr ""
+
+#. model_MX510
+#: po/keystr.h:184
+msgid "MX510 series"
+msgstr ""
+
+#. model_E600
+#: po/keystr.h:186
+msgid "E600 series"
+msgstr ""
+
+#. model_MP230
+#: po/keystr.h:188
+msgid "MP230 series"
+msgstr ""
+
+#. model_MG2200
+#: po/keystr.h:190
+msgid "MG2200 series"
+msgstr ""
+
+#. model_E510
+#: po/keystr.h:192
+msgid "E510 series"
+msgstr ""
+
+#. model_MG3200
+#: po/keystr.h:194
+msgid "MG3200 series"
+msgstr ""
+
+#. model_MG4200
+#: po/keystr.h:196
+msgid "MG4200 series"
+msgstr ""
+
+#. model_IP7200
+#: po/keystr.h:198
+msgid "iP7200 series"
+msgstr ""
+
+#. model_MG5400
+#: po/keystr.h:200
+msgid "MG5400 series"
+msgstr ""
+
+#. model_MG6300
+#: po/keystr.h:202
+msgid "MG6300 series"
+msgstr ""
+
+#. print_color_message
+#: po/keystr.h:204
+msgid "Color"
+msgstr ""
+
+#. supply_asf_reartray
+#: po/keystr.h:206
+msgid "Rear Tray"
+msgstr "Zadní přihrádka"
+
+#. supply_cassette_02
+#: po/keystr.h:208
+msgid "Cassette"
+msgstr "Kazeta"
+
+#. cartridge_bk
+#: po/keystr.h:210
+msgid "Black"
+msgstr "Černá"
+
+#. message_button_ok
+#: po/keystr.h:212
+msgid "OK"
+msgstr "OK"
+
+#. message_button_cancel
+#: po/keystr.h:214
+msgid "Cancel"
+msgstr "Storno"
+
+#. message_button_yes
+#: po/keystr.h:216
+msgid "Yes"
+msgstr "Ano"
+
+#. message_button_no
+#: po/keystr.h:218
+msgid "No"
+msgstr "Ne"
+
+#. message_button_abort
+#: po/keystr.h:220
+msgid "Abort"
+msgstr ""
+
+#. message_button_ignore
+#: po/keystr.h:222
+msgid "Ignore"
+msgstr "Ignorovat"
+
+#. autopower_enable
+#: po/keystr.h:224
+msgid "Enable"
+msgstr "Povolit"
+
+#. autopower_disable
+#: po/keystr.h:226
+msgid "Disable"
+msgstr "Zakázat"
+
+#. autopower_5min
+#: po/keystr.h:228
+msgid "5 minutes"
+msgstr "5 minut"
+
+#. autopower_10min
+#: po/keystr.h:230
+msgid "10 minutes"
+msgstr "10 minut"
+
+#. autopower_15min
+#: po/keystr.h:232
+msgid "15 minutes"
+msgstr "15 minut"
+
+#. autopower_30min
+#: po/keystr.h:234
+msgid "30 minutes"
+msgstr "30 minut"
+
+#. autopower_60min
+#: po/keystr.h:236
+msgid "60 minutes"
+msgstr "60 minut"
+
+#. utility_message_3
+#: po/keystr.h:238
+msgid ""
+"Were the patterns printed normally?\n"
+"\n"
+"If no patterns were printed or if the printout is noticeably blurred, click "
+"No and start again from the beginning."
+msgstr ""
+"Vytiskly se vzorky správně?\n"
+"\n"
+"Pokud se nevytiskly žádné vzorky nebo pokud je tiskový výstup znatelně \n"
+"rozmazaný, klepněte na tlačítko Ne a začněte znovu od začátku."
+
+#. utility_message_4
+#: po/keystr.h:242
+msgid ""
+"Make sure that the printer power is on, the cable is connected properly, and "
+"the printer is online then try again."
+msgstr ""
+"Zkontrolujte, zda je tiskárna zapnuta, zda je kabel správně připojen a zda je \n"
+"tiskárna online. Potom akci opakujte."
+
+#. utility_message_5
+#: po/keystr.h:244
+msgid "Print head alignment is now complete."
+msgstr "Nastavení tiskové hlavy je nyní dokončeno."
+
+#. utility_message_6
+#: po/keystr.h:246
+msgid "Do not start another operation until the current one has finished."
+msgstr "Nespouštějte další operaci, dokud není dokončena aktuální operace."
+
+#. utility_message_8
+#: po/keystr.h:248
+msgid "Turn the printer off?"
+msgstr "Chcete vypnout tiskárnu?"
+
+#. utility_message_9
+#: po/keystr.h:250
+msgid "Apply settings to printer?"
+msgstr "Použít nastavení v tiskárně?"
+
+#. utility_message_12
+#: po/keystr.h:252
+msgid "Start print head deep cleaning?"
+msgstr "Chcete spustit hloubkové čištění tiskové hlavy?"
+
+#. regi_bidir
+#: po/keystr.h:254
+msgid "Bi-directional Alignment (-5 to +5)"
+msgstr "Oboustranné nastavení (-5 až +5)"
+
+#. utility_message_23
+#: po/keystr.h:256
+msgid "Execute black print head deep cleaning?"
+msgstr "Chcete spustit hloubkové čištění černé tiskové hlavy?"
+
+#. utility_message_24
+#: po/keystr.h:258
+msgid "Execute color print head deep cleaning?"
+msgstr "Chcete spustit hloubkové čištění barevné tiskové hlavy?"
+
+#. utility_message_27
+#: po/keystr.h:260
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the sheet feeder. Clicking OK will activate paper "
+"feed rollers 30 times. \n"
+"This will take about a minute and a half. When you load three sheets of "
+"plain paper according to \n"
+"the message, paper will be ejected and feed roller cleaning will be "
+"completed.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve vyjměte z podavače listů veškerý papír. Klepnutím na tlačítko OK se 30x \n"
+"aktivují válečky podavače papíru. Celá akce bude trvat asi minutu a půl. Když \n"
+"vložíte tři listy běžného papíru podle zobrazené zprávy, papír se vysune a \n"
+"čištění válečku podavače bude dokončeno.\n"
+"\n"
+"Chcete spustit čištění válečku podavače?"
+
+#. utility_message_28
+#: po/keystr.h:268
+msgid "Load three sheets of plain paper into the sheet feeder.\n"
+msgstr "Do podavače listů vložte tři listy běžného papíru.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_I320_3
+#: po/keystr.h:270
+msgid "Feed roller cleaning is complete."
+msgstr "Čištění válečků podavače je dokončeno."
+
+#. util_ink_all_1
+#: po/keystr.h:272
+msgid "All Colors"
+msgstr "Všechny barvy"
+
+#. LUM_IDS_CLEAN_ITEM_ALL_KCMY
+#: po/keystr.h:274
+msgid "All Colors   BK, C, M, Y"
+msgstr "Všechny barvy   BK, C, M, Y"
+
+#. util_ink_black_2
+#: po/keystr.h:276
+msgid "Black   PGBK"
+msgstr "Černá   PGBK"
+
+#. LUM_IDS_CLEAN_ITEM_H1
+#: po/keystr.h:278
+msgid "Black   BK"
+msgstr "Černá   BK"
+
+#. util_ink_color_5
+#: po/keystr.h:280
+msgid "Color   C, M, Y, BK"
+msgstr "Barva   C, M, Y, BK"
+
+#. LUM_IDS_CLEAN_ITEM_E4
+#: po/keystr.h:282
+msgid "Color   C, M, Y"
+msgstr "Barva   C, M, Y"
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_CLEANING
+#: po/keystr.h:284
+msgid ""
+"Do not start another operation until the cleaning has finished.\n"
+"\n"
+"After cleaning ends, execute nozzle check to check whether the print head "
+"nozzles have been unclogged."
+msgstr ""
+"Nespouštějte další operaci, dokud čištění neskončí.\n"
+"\n"
+"Po dokončení čištění spusťte kontrolu trysek a zkontrolujte, zda jsou trysky \n"
+"tiskových hlav vyčištěny."
+
+#. LUM_IDS_CLEAN_TOPIC_EX
+#: po/keystr.h:288
+msgid ""
+"Cleans clogged print head nozzles.\n"
+"\n"
+"Select the target ink group for cleaning. If you are not sure of the ink "
+"group \n"
+"for cleaning, execute nozzle check."
+msgstr ""
+"Vyčistí ucpané trysky tiskové hlavy.\n"
+"\n"
+"Vyberte skupinu inkoustů, pro kterou chcete vyčistit tiskové hlavy. Pokud si \n"
+"nejste jisti, pro kterou skupinu inkoustů je nutné trysky tiskové hlavy \n"
+"vyčistit, proveďte kontrolu trysek."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX
+#: po/keystr.h:293
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If you are not sure of the "
+"ink \n"
+"group for deep cleaning, execute nozzle check."
+msgstr ""
+"Vyčistí trysky tiskové hlavy, které nelze vyčistit běžným čištěním.\n"
+"\n"
+"Vyberte skupinu inkoustů, pro které chcete tiskové hlavy hloubkově vyčistit. \n"
+"Pokud si nejste jisti, pro kterou skupinu inkoustů je nutné tiskové hlavy \n"
+"hloubkově vyčistit, proveďte kontrolu trysek."
+
+#. utility_message_41
+#: po/keystr.h:298
+msgid "Ink Group:"
+msgstr "Skupina inkoustů:"
+
+#. LUM_IDS_CLEAN_PS_DEEP_EX
+#: po/keystr.h:300
+msgid ""
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Hloubkové čištění spotřebuje mnohem více inkoustu než běžné čištění. Spusťte \n"
+"hloubkové čištění, pouze pokud se stav trysek nezlepší po běžném čištění.\n"
+"\n"
+"Po skončení hloubkového čištění spusťte program Kontrola trysek a zkontrolujte, \n"
+"zda jsou trysky tiskových hlav vyčištěny."
+
+#. utility_message_43
+#: po/keystr.h:306
+msgid "Cleaning consumes ink."
+msgstr "Při čištění se spotřebovává inkoust."
+
+#. utility_message_44
+#: po/keystr.h:308
+msgid ""
+"Load a sheet of A4 or letter size paper into the paper source selected by "
+"the Paper Feed Switch and click OK.\n"
+msgstr ""
+"Vložte list papíru formátu A4 nebo Letter do zdroje vybraného přepínačem \n"
+"Podávání papíru a klepněte na tlačítko OK.\n"
+
+#. LUM_IDS_MNTMSG_PC_NG2
+#: po/keystr.h:310
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two times, \n"
+"execute deep cleaning."
+msgstr ""
+"Pokud se vytištěný vzorek podobá tomuto \n"
+"vzorku, mohou být trysky tiskových hlav \n"
+"ucpané.\n"
+"Klepněte na tlačítko Čištění.\n"
+"\n"
+"Pokud se vytištěný vzorek nezlepší ani \n"
+"po druhém čištění, spusťte hloubkové \n"
+"čištění."
+
+#. utility_message_50
+#: po/keystr.h:318
+msgid ""
+"Load a sheet of A4 or letter size paper into the sheet feeder and click OK."
+msgstr ""
+"Do podavače papíru vložte list papíru velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko OK."
+
+#. utility_message_53
+#: po/keystr.h:320
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready(connect the "
+"cable and turn \n"
+"the power on), set the printer's paper thickness lever to the left and load "
+"a sheet of \n"
+"A4 or letter size, plain paper into the sheet feeder. The printer will print "
+"an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK.\n"
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabely a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do podavače papíru \n"
+"vložte list běžného papíru formátu A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko OK nastavíte polohu tiskové hlavy.\n"
+
+#. utility_message_54
+#: po/keystr.h:328
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the left, \n"
+"load a sheet of A4 or letter size, plain paper into the sheet feeder, and "
+"click Print Check Pattern.\n"
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), posuňte páčku tloušťky \n"
+"papíru na tiskárně doleva, vložte do podavače list běžného papíru formátu A4 \n"
+"nebo Letter a klepněte na tlačítko Tisk testovacího vzorku.\n"
+
+#. util_ink_cartridge_1
+#: po/keystr.h:333
+msgid "Color Only"
+msgstr "Pouze barevná"
+
+#. util_ink_cartridge_2
+#: po/keystr.h:335
+msgid "Black Only"
+msgstr "Pouze černá"
+
+#. utility_message_55
+#: po/keystr.h:337
+msgid ""
+"Prints using only color cartridge instead of \n"
+"black cartridge."
+msgstr "Tiskne pouze pomocí barevné kazety místo černé kazety."
+
+#. utility_message_56
+#: po/keystr.h:340
+msgid ""
+"Prints using only black cartridge instead of \n"
+"color cartridge only when Plain Paper is \n"
+"selected for the Media Type on the Main Tab."
+msgstr ""
+"Tiskne pouze pomocí černé kazety místo barevné kazety, a to pouze v případě, že \n"
+"je na kartě Hlavní v poli Typ média vybrána možnost Běžný papír."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_1
+#: po/keystr.h:344
+msgid ""
+"The printer will print one sheet of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Tiskárna zahájí automatické nastavení vytisknutím jednoho listu se vzorky.\n"
+"Nespouštějte další operaci, dokud není dokončena aktuální operace."
+
+#. utility_message_60
+#: po/keystr.h:347
+msgid ""
+"Second sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Bude vytištěn druhý list vzorků pro kontrolu nastavení tiskové hlavy.\n"
+"\n"
+"Spusťte tisk klepnutím na tlačítko OK."
+
+#. utility_message_61
+#: po/keystr.h:351
+msgid ""
+"Third sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Bude vytištěn třetí list vzorků pro kontrolu nastavení tiskové hlavy.\n"
+"\n"
+"Spusťte tisk klepnutím na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_2BIN
+#: po/keystr.h:355
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the paper source selected by the Paper Feed Switch. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zdroje papíru \n"
+"vybraného přepínačem podávání papíru vložte list běžného papíru velikosti A4 \n"
+"nebo Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. utility_message_63
+#: po/keystr.h:365
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the sheet feeder and "
+"click OK."
+msgstr ""
+"Nastavení tiskové hlavy je dokončeno.\n"
+"Chcete-li dokončit nastavení, klepněte na tlačítko Storno.\n"
+"\n"
+"Pokud se na potištěné straně objevují proužky, můžete zabránit jejich výskytu \n"
+"nastavením tiskové hlavy.\n"
+"Chcete-li provést toto nastavení, vložte do list papíru do podavače listů a \n"
+"klepněte na tlačítko OK."
+
+#. utility_message_64
+#: po/keystr.h:371
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper \n"
+"thickness lever to the left, load a sheet of A4 or letter size, plain paper "
+"into the paper \n"
+"source selected by the Paper Feed Switch, and click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), posuňte páčku tloušťky \n"
+"papíru na tiskárně doleva, vložte list běžného papíru formátu A4 nebo Letter do \n"
+"zdroje vybraného přepínačem podávání papíru a klepněte na tlačítko Tisk \n"
+"testovacího vzorku."
+
+#. utility_message_66
+#: po/keystr.h:377
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Do podavače listů vložte list běžného papíru velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko Tisk testovacího vzorku."
+
+#. utility_message_67
+#: po/keystr.h:381
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, \n"
+"you can prevent them from appearing by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the paper source "
+"selected \n"
+"by the Paper Feed Switch and click OK."
+msgstr ""
+"Nastavení tiskové hlavy je dokončeno.\n"
+"Chcete-li dokončit nastavení, klepněte na tlačítko Storno.\n"
+"\n"
+"Pokud se na potištěné straně objevují proužky, můžete zabránit jejich výskytu \n"
+"nastavením tiskové hlavy.\n"
+"Chcete-li provést toto nastavení, vložte list papíru do zdroje vybraného \n"
+"přepínačem podávání papíru a klepněte na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PHA_START1_RIGHT
+#: po/keystr.h:389
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doprava a do podavače listů \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PC_NG
+#: po/keystr.h:399
+msgid ""
+"If the printed pattern resembles this pattern, \n"
+"the print head nozzles may be clogged.\n"
+"Click Cleaning.\n"
+"\n"
+"If the printed pattern does not improve, \n"
+"even after Cleaning is executed two to three times, \n"
+"execute deep cleaning."
+msgstr ""
+"Pokud se vytištěný vzorek podobá tomuto vzorku, mohou být trysky tiskových hlav \n"
+"ucpané.\n"
+"Klepněte na tlačítko Čištění.\n"
+"\n"
+"Pokud se vytištěný vzorek nezlepší ani po druhém či třetím čištění, spusťte \n"
+"hloubkové čištění."
+
+#. utility_message_71
+#: po/keystr.h:407
+msgid ""
+"You cannot reset the ink counter because the printer is set to disable the "
+"display of low ink warning.\n"
+"\n"
+"To enable the display of a low ink warning, click the Low Ink Warning "
+"Setting button on \n"
+"the Maintenance tab of the printer driver.\n"
+"Read your printer manual before carrying out this operation."
+msgstr ""
+"Počítadlo inkoustu nelze vynulovat, protože v tiskárně je vypnuto zobrazení \n"
+"varování při nízké hladině inkoustu.\n"
+"\n"
+"Zobrazení varování při nízké hladině inkoustu zapnete klepnutím na tlačítko \n"
+"Nastavení varování při nízké hladině inkoustu na kartě Údržba v ovladači \n"
+"tiskárny.\n"
+"Před provedením této akce si přečtěte uživatelskou příručku k tiskárně."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR
+#: po/keystr.h:413
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve vyjměte ze zadní přihrádky veškerý papír.\n"
+"Klepnutím na tlačítko OK se 30x aktivují válečky podavače papíru. Celá akce \n"
+"bude trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_2BIN
+#: po/keystr.h:420
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First press the Paper Feed Switch on the printer to select the target paper "
+"source for cleaning, \n"
+"and then remove paper from the selected paper source.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve stisknutím přepínače podávání papíru vyberte cílový zdroj papíru pro \n"
+"čištění a pak z vybraného zdroje papíru vyjměte papír.\n"
+"Klepnutím na tlačítko OK se 30x aktivují válečky podavače papíru. Celá akce \n"
+"bude trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_REAR
+#: po/keystr.h:428
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the rear tray.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Ověřte, že se neozývá provozní hluk tiskárny, a pak vložte do zadní přihrádky \n"
+"tři listy běžného papíru.\n"
+"Klepnutím na tlačítko OK se papír vysune a čištění válečků podavače bude \n"
+"dokončeno."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_2BIN
+#: po/keystr.h:431
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the selected paper source.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Ověřte, že se neozývá provozní hluk tiskárny, a pak vložte do vybraného zdroje \n"
+"papíru tři listy běžného papíru.\n"
+"Klepnutím na tlačítko OK se papír vysune a čištění válečků podavače bude \n"
+"dokončeno."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4
+#: po/keystr.h:434
+msgid ""
+"1. Remove the paper from the sheet feeder.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the sheet "
+"feeder.\n"
+"4. Click Execute."
+msgstr ""
+"1. Vyjměte papír z podavače listů.\n"
+"2. Přeložte běžný papír velikosti A4 nebo Letter na polovinu a potom ho opět \n"
+"rozložte.\n"
+"3. Do podavače listů vložte papír vnitřní stranou listů směrem nahoru.\n"
+"4. Klepněte na tlačítko Provést."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07
+#: po/keystr.h:439
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the paper into the rear "
+"tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Vyjměte papír ze zadní přihrádky.\n"
+"2. Přeložte běžný papír velikosti A4 nebo Letter na polovinu a potom ho opět \n"
+"rozložte.\n"
+"3. Do zadní přihrádky vložte papír vnitřní stranou listů směrem nahoru.\n"
+"4. Klepněte na tlačítko Provést."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERLEFT_07
+#: po/keystr.h:444
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness \n"
+"lever to the left, load one sheet of A4 or letter size, plain paper into the "
+"rear tray, and click \n"
+"Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), posuňte páčku tloušťky \n"
+"papíru doleva, vložte do zadní přihrádky jeden list běžného papíru velikosti A4 \n"
+"nebo Letter a klepněte na tlačítko Tisk testovacího vzorku."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_LEFT_07
+#: po/keystr.h:450
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load two sheets of "
+"A4 or letter size, plain \n"
+"paper into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zadní přihrádky \n"
+"vložte dva listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC
+#: po/keystr.h:460
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, plain paper into the sheet feeder and "
+"click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), do podavače listů vložte list běžného papíru velikosti A4 \n"
+"nebo Letter a klepněte na tlačítko Nastavit tiskovou hlavu.\n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko OK. \n"
+"Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP2_07
+#: po/keystr.h:471
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load two sheets of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click \n"
+"Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), do zadní přihrádky vložte dva listy papíru Matte Photo Paper \n"
+"(MP-101) velikosti A4 nebo Letter a klepněte na tlačítko Nastavit tiskovou \n"
+"hlavu.\n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko OK. \n"
+"Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_PLAIN_07
+#: po/keystr.h:483
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK."
+msgstr ""
+"Do zadní přihrádky vložte jeden list běžného papíru velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_NUMBER_2
+#: po/keystr.h:485
+msgid ""
+"The printer will print two sheets of pattern to start alignment "
+"automatically.\n"
+"Do not start another operation until the current one has finished."
+msgstr ""
+"Tiskárna zahájí automatické nastavení vytisknutím dvou listů se vzorky.\n"
+"Nespouštějte další operaci, dokud není dokončena aktuální operace."
+
+#. LUM_IDS_MNTMSG_PHA_START2_4P_2BIN
+#: po/keystr.h:488
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load four sheets of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zdroje papíru vybraného přepínačem podávání papíru \n"
+"vložte čtyři listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT4P_2BIN
+#: po/keystr.h:498
+msgid ""
+"Fourth sheet of head alignment pattern will be printed.\n"
+"\n"
+"Click OK to start printing."
+msgstr ""
+"Bude vytištěn čtvrtý list vzorků pro kontrolu nastavení tiskové hlavy.\n"
+"\n"
+"Spusťte tisk klepnutím na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_2BIN
+#: po/keystr.h:502
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper Feed Switch \n"
+"and click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Vložte list běžného papíru velikosti A4 nebo Letter do zdroje vybraného \n"
+"přepínačem podávání papíru a klepněte na tlačítko Tisk testovacího vzorku."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT_07
+#: po/keystr.h:507
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zadní přihrádky \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2BIN
+#: po/keystr.h:517
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load a sheet of A4 or letter size, plain paper into the paper source "
+"selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zdroje papíru vybraného přepínačem podávání papíru \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_ASF_07
+#: po/keystr.h:527
+msgid ""
+"Load one sheet of A4 or letter size paper into the rear tray and click OK."
+msgstr ""
+"Do zadní přihrádky vložte jeden list papíru velikosti A4 nebo Letter a klepněte \n"
+"na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PHA_NEXT_DETAILCANCEL_07
+#: po/keystr.h:529
+msgid ""
+"Print head alignment is complete.\n"
+"To finish the alignment, click Cancel.\n"
+"\n"
+"If streaks appear on the printing side, you can prevent them from appearing "
+"by aligning the print head.\n"
+"To execute this alignment, load a sheet of paper into the rear tray and "
+"click OK."
+msgstr ""
+"Nastavení tiskové hlavy je dokončeno.\n"
+"Chcete-li dokončit nastavení, klepněte na tlačítko Storno.\n"
+"\n"
+"Pokud se na potištěné straně objevují proužky, můžete zabránit jejich výskytu \n"
+"nastavením tiskové hlavy.\n"
+"Chcete-li provést toto nastavení, vložte do list papíru do zadní přihrádky a \n"
+"klepněte na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_2BIN
+#: po/keystr.h:535
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the paper "
+"source selected by the Paper \n"
+"Feed Switch. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zdroje papíru vybraného přepínačem podávání papíru \n"
+"vložte tři listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_START1_LEFT
+#: po/keystr.h:545
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load a sheet of A4 "
+"or letter size, plain paper \n"
+"into the sheet feeder. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do podavače listů \n"
+"vložte list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne vzorek \n"
+"nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_LEVERRIGHT_07
+#: po/keystr.h:555
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), set the "
+"printer's paper thickness lever to the right, \n"
+"load a sheet of A4 or letter size, plain paper into the rear tray, and click "
+"Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), posuňte páčku tloušťky \n"
+"papíru doprava, do zadní přihrádky vložte list běžného papíru formátu A4 nebo \n"
+"Letter a klepněte na tlačítko Tisk testovacího vzorku."
+
+#. LUM_IDS_CARTRIDGE_EXP_BK_2
+#: po/keystr.h:560
+msgid ""
+"Prints using only black cartridge instead of color cartridge only when Plain "
+"Paper, \n"
+"Hagaki, or Envelope is selected for the Media Type on the Main Tab."
+msgstr ""
+"Tiskne pouze pomocí černé kazety místo barevné kazety, a to pouze v případě, že \n"
+"je na kartě Hlavní v poli Typ média vybrána možnost Běžný papír, Hagaki nebo \n"
+"Obálka."
+
+#. LUM_IDS_MNTMSG_PHA_START_LEVERLEFT_07
+#: po/keystr.h:563
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the left and load one sheet of A4 "
+"or letter size, plain paper into the rear tray. \n"
+"The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click OK."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doleva a do zadní přihrádky \n"
+"vložte jeden list běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko OK nastavíte polohu tiskové hlavy."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_RIGHT_07
+#: po/keystr.h:571
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right and load two sheets of "
+"A4 or letter size, plain paper \n"
+"into the rear tray. The printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doprava a do zadní přihrádky \n"
+"vložte dva listy běžného papíru velikosti A4 nebo Letter. Tiskárna vytiskne \n"
+"vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_LEVERRIGHT_07
+#: po/keystr.h:581
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"set the printer's paper thickness lever to the right, load one sheet of A4 "
+"or letter size, Matte Photo Paper (MP-101) \n"
+"into the rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), posuňte páčku tloušťky papíru doprava, do zadní přihrádky \n"
+"vložte list papíru Matte Photo Paper (MP-101) velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko Nastavit tiskovou hlavu.\n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko OK. \n"
+"Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_07_2P
+#: po/keystr.h:593
+msgid ""
+"1. Remove the paper from the rear tray, and then load the first sheet of A4 "
+"or letter size, plain paper.\n"
+"2. Fold the second sheet of A4 or letter size, plain paper in half, and then "
+"unfold the paper.\n"
+"3. With the ridge of the crease facing down, load the second sheet in front "
+"of the first sheet.\n"
+"4. Click Execute."
+msgstr ""
+"1. Vyjměte papír ze zadní přihrádky a pak vložte první list běžného papíru \n"
+"velikosti A4 nebo Letter.\n"
+"2. Přeložte druhý list běžného papíru velikosti A4 nebo Letter na polovinu a \n"
+"potom ho opět rozložte.\n"
+"3. Vložte druhý list před první, a to hřbetem přeložení směrem dolů.\n"
+"4. Klepněte na tlačítko Provést."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC_2P
+#: po/keystr.h:598
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires two sheets of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Spouští se čištění spodní desky, které zabraňuje rozmazání inkoustu po papíru \n"
+"během tisku.\n"
+"\n"
+"Tato operace vyžaduje jeden list běžného papíru velikosti A4 nebo Letter. Podle \n"
+"těchto pokynů proveďte čištění spodní desky."
+
+#. LUM_IDS_MNTMSG_PPSOURCE
+#: po/keystr.h:602
+msgid ""
+"Sets the paper source for plain paper when Automatically Select is selected "
+"for Paper Source.\n"
+"\n"
+"Select the paper source for plain paper, and then click OK."
+msgstr ""
+"Pokud je v poli Zdroj papíru vybrána možnost Automaticky vybrat, nastaví zdroj \n"
+"papíru pro běžný papír.\n"
+"\n"
+"Vyberte zdroj papíru pro běžný papír a pak klepněte na tlačítko OK."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_3
+#: po/keystr.h:606
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Select the target ink group for deep cleaning. If only the black nozzle is "
+"clogged, select Black. \n"
+"If only the color nozzles or both the black and color nozzles are clogged, "
+"select All Colors. \n"
+"If you are not sure which nozzle is clogged, execute nozzle check.\n"
+msgstr ""
+"Vyčistí trysky tiskové hlavy, které nelze vyčistit běžným čištěním.\n"
+"\n"
+"Vyberte skupinu inkoustů, pro které chcete tiskové hlavy hloubkově vyčistit. \n"
+"Pokud je ucpaná pouze černá tryska, vyberte možnost Černá. Pokud jsou ucpány \n"
+"pouze barevné trysky nebo černé i barevné trysky, vyberte možnost Všechny \n"
+"barvy. Pokud si nejste jisti, která tryska je ucpaná, proveďte kontrolu trysek.\n"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_SELECTBIN
+#: po/keystr.h:612
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"Select the target paper source for cleaning, and then click OK."
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Vyberte cílový zdroj papíru pro čištění a pak klepněte na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR3
+#: po/keystr.h:616
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro zadní přihrádku.\n"
+"\n"
+"Nejprve odeberte papír ze zadní přihrádky a pak otevřete výstupní přihrádku na \n"
+"papír.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT3
+#: po/keystr.h:623
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette, and then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro kazetu.\n"
+"\n"
+"Nejprve odeberte papír z kazety a pak otevřete výstupní přihrádku na papír.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi dvě minuty.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR4
+#: po/keystr.h:630
+msgid ""
+"Cleaning paper feed rollers for the rear tray.\n"
+"\n"
+"First remove paper from the rear tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about a minute "
+"and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro zadní přihrádku.\n"
+"\n"
+"Nejprve odeberte papír ze zadní přihrádky.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4
+#: po/keystr.h:637
+msgid ""
+"Cleaning paper feed rollers for the cassette.\n"
+"\n"
+"First remove paper from the cassette.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podávání papíru pro kazetu.\n"
+"\n"
+"Nejprve odeberte papír z kazety.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podávání papíru. Celá akce bude \n"
+"trvat asi dvě minuty.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2
+#: po/keystr.h:644
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the cassette.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Ověřte, že se neozývá provozní hluk tiskárny, a pak do kazety vložte tři listy \n"
+"běžného papíru.\n"
+"Klepnutím na tlačítko OK se papír vysune a čištění válečků podavače bude \n"
+"dokončeno."
+
+#. LUM_IDS_MNTMSG_NOZZLECHECK_SELECTBIN
+#: po/keystr.h:647
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"First select the paper source to be used. Then load one sheet of A4 or "
+"letter size, \n"
+"plain paper into the selected paper source and click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Nejprve vyberte požadovaný zdroj papíru. Potom vložte jeden list běžného papíru \n"
+"velikosti A4 nebo Letter do vybraného zdroje papíru a klepněte na tlačítko Tisk \n"
+"testovacího vzorku."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_07
+#: po/keystr.h:652
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette, and click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), do kazety vložte jeden \n"
+"list běžného papíru velikosti A4 nebo Letter a klepněte na tlačítko Tisk \n"
+"testovacího vzorku."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_07
+#: po/keystr.h:657
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray, and click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), do zadní přihrádky \n"
+"vložte jeden list běžného papíru velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko Tisk testovacího vzorku."
+
+#. LUM_IDS_MNTMSG_PHA_START2_2P_07
+#: po/keystr.h:662
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load two sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zadní přihrádky vložte dva listy běžného papíru \n"
+"velikosti A4 nebo Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_PHA_START_SELECT_UPPER
+#: po/keystr.h:671
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"The alignment involves printing. Select the paper source to be used, and "
+"then click Align Print Head."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Při nastavení probíhá tisk. Vyberte požadovaný zdroj papíru a pak klepněte na \n"
+"tlačítko Nastavit tiskovou hlavu."
+
+#. LUM_IDS_PHA_START_SELECT_LOWER
+#: po/keystr.h:675
+msgid "To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_ASF
+#: po/keystr.h:677
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte) a do zadní přihrádky \n"
+"vložte tři listy běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne vzorek nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_3_BINSELECT_FSF
+#: po/keystr.h:682
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load "
+"three sheets of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print an alignment pattern."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte) a do kazety vložte tři \n"
+"listy běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne vzorek nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_ASF
+#: po/keystr.h:687
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the rear tray.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a zapněte ji) a do zadní přihrádky vložte \n"
+"jeden list běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_EXPLAIN_FSF
+#: po/keystr.h:692
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the cassette.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a zapněte ji) a do kazety vložte jeden list \n"
+"běžného papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_SELECTBIN_SIMPLE
+#: po/keystr.h:697
+msgid "Select the paper source to be used, and then click OK."
+msgstr "Vyberte požadovaný zdroj papíru a pak klepněte na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_2BIN_CASSETTE
+#: po/keystr.h:699
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK."
+msgstr ""
+"Do kazety vložte jeden list běžného papíru velikosti A4 nebo Letter a klepněte \n"
+"na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_07
+#: po/keystr.h:701
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), do zadní přihrádky vložte jeden list papíru Matte Photo \n"
+"Paper (MP-101) velikosti A4 nebo Letter a klepněte na tlačítko Nastavit \n"
+"tiskovou hlavu.\n"
+"\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko OK. \n"
+"Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_LID_WARNING_PAPER_ABRASION
+#: po/keystr.h:712
+msgid ""
+"Sets Prevent paper abrasion. If you print with this setting enabled, the "
+"print quality or print speed may be affected. \n"
+"To change the setting, uncheck Prevent paper abrasion."
+msgstr ""
+"Nastaví možnost Zamezit otěru papíru. Budete-li tisknout s tímto nastavením, \n"
+"může to ovlivnit kvalitu nebo rychlost tisku. Chcete-li změnit toto nastavení, \n"
+"zrušte zaškrtnutí políčka Zamezit otěru papíru."
+
+#. LUM_IDS_CLEAN_TOPIC_DEEP_EX_2
+#: po/keystr.h:715
+msgid ""
+"Unclogs nozzles that cannot be cleared by regular cleaning.\n"
+"\n"
+"Deep cleaning consumes much more ink than regular cleaning. Execute deep \n"
+"cleaning only if the nozzle condition does not improve after regular "
+"cleaning.\n"
+"\n"
+"After the deep cleaning ends, execute nozzle check and check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Vyčistí trysky tiskové hlavy, které nelze vyčistit běžným čištěním.\n"
+"\n"
+"Hloubkové čištění spotřebuje mnohem více inkoustu než běžné čištění. Spusťte \n"
+"hloubkové čištění, pouze pokud se stav trysek nezlepší po běžném čištění.\n"
+"\n"
+"Po skončení hloubkového čištění spusťte program Kontrola trysek a zkontrolujte, \n"
+"zda jsou trysky tiskových hlav vyčištěny."
+
+#. LUM_IDS_MNTMSG_UNTILFINISH_DEEPCLEANING
+#: po/keystr.h:723
+msgid ""
+"Do not start another operation until the deep cleaning has finished.\n"
+"\n"
+"After deep cleaning ends, execute nozzle check to check whether \n"
+"the print head nozzles have been unclogged."
+msgstr ""
+"Se zahájením další operace počkejte, dokud není dokončeno hloubkové čištění.\n"
+"\n"
+"Po dokončení hloubkového čištění proveďte kontrolu trysek a ověřte, že trysky \n"
+"tiskové hlavy již nejsou zaneseny."
+
+#. LUM_IDS_MNTMSG_PHA_GUIDE_FROD
+#: po/keystr.h:728
+msgid ""
+"Executing print head alignment corrects the misalignment of colors and "
+"lines. \n"
+"Refer to the user's guide, and align the print head from the printer's "
+"operation panel.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spustí nastavení tiskové hlavy, které opraví chybné zarovnání barev a čar. \n"
+"Nahlédněte do uživatelské příručky a podle uvedených pokynů nastavte tiskovou \n"
+"hlavu pomocí ovládacího panelu tiskárny.\n"
+"\n"
+"Pokud chcete vytisknout a zkontrolovat aktuální nastavení, klepněte na možnost \n"
+"Tisknout hodnotu zarovnání."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_07
+#: po/keystr.h:733 po/keystr.h:755
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) and \n"
+"load three sheets of A4 or letter size, plain paper into the rear tray. The "
+"printer will print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value.\n"
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do zadní přihrádky vložte tři listy běžného papíru \n"
+"velikosti A4 nebo Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení.\n"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_MP1_09
+#: po/keystr.h:742
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size, Matte Photo Paper (MP-101) into the "
+"rear tray and click Align Print Head. \n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to \n"
+"precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, \n"
+"and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskových hlav.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabely a \n"
+"tiskárnu zapněte), do zadní přihrádky vložte jeden list matného fotografického \n"
+"papíru Matte Photo Paper (MP-101) velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko Nastavit tiskovou hlavu.\n"
+"\n"
+"Jestliže nejsou výsledky automatického nastavení tiskové hlavy uspokojivé, \n"
+"ručně nastavte tiskovou hlavu.\n"
+"Pokud chcete provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Potom na kartě Údržba v ovladači tiskárny klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko OK. \n"
+"Poté pokus zopakujte.\n"
+"\n"
+"Pokud chcete vytisknout a zkontrolovat aktuální nastavení, klepněte na možnost \n"
+"Tisknout hodnotu zarovnání."
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_5
+#: po/keystr.h:764 po/keystr.h:1114
+msgid "1"
+msgstr "1"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_4
+#: po/keystr.h:766 po/keystr.h:1116
+msgid "2"
+msgstr "2"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_3
+#: po/keystr.h:768 po/keystr.h:1118
+msgid "3"
+msgstr "3"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_2
+#: po/keystr.h:770 po/keystr.h:1120
+msgid "4"
+msgstr "4"
+
+#. LUM_IDD_CUSTOMQUALITY_IDC_STT_CUSTOMQUALITY_1
+#: po/keystr.h:772 po/keystr.h:1122
+msgid "5"
+msgstr "5"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:774
+msgid "Adjustment in Columns A to C (-3 to +7)"
+msgstr "Nastavení ve sloupcích A až C (-3 až +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_D_37
+#: po/keystr.h:776
+msgid "Adjustment in Columns A to D (-3 to +7)"
+msgstr "Nastavení ve sloupcích A až D (-3 až +7)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:778
+msgid "Adjustment in Columns A to E (-3 to +7)"
+msgstr "Nastavení ve sloupcích A až E (-3 až +7)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_E_55
+#: po/keystr.h:780
+msgid "Adjustment in Columns A to E (-5 to +5)"
+msgstr "Nastavení ve sloupcích A až E (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_F_55
+#: po/keystr.h:782
+msgid "Adjustment in Columns A to F (-5 to +5)"
+msgstr "Nastavení ve sloupcích A až F (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_A_G_55
+#: po/keystr.h:784
+msgid "Adjustment in Columns A to G (-5 to +5)"
+msgstr "Nastavení ve sloupcích A až G (-5 až +5)"
+
+#. LUM_IDD_PHA_A3430_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:786
+msgid "Adjustment in Columns D to F (-5 to +5)"
+msgstr "Nastavení ve sloupcích D až F (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_E_G_55
+#: po/keystr.h:788
+msgid "Adjustment in Columns E to G (-5 to +5)"
+msgstr "Nastavení ve sloupcích E až G (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_G_33
+#: po/keystr.h:790
+msgid "Adjustment in Columns F and G (-3 to +3)"
+msgstr "Nastavení ve sloupcích F a G (-3 až +3)"
+
+#. LUM_IDD_PHA_A2630_1_IDC_STT_PHA_B1_LABEL
+#: po/keystr.h:792
+msgid "Adjustment in Columns F to K (-5 to +5)"
+msgstr "Nastavení ve sloupcích F až K (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_J_55
+#: po/keystr.h:794
+msgid "Adjustment in Columns G to J (-5 to +5)"
+msgstr "Nastavení ve sloupcích G až J (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_L_55
+#: po/keystr.h:796
+msgid "Adjustment in Columns G to L (-5 to +5)"
+msgstr "Nastavení ve sloupcích G až L (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_K_55
+#: po/keystr.h:798
+msgid "Adjustment in Columns H to K (-5 to +5)"
+msgstr "Nastavení ve sloupcích H až K (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_L_55
+#: po/keystr.h:800
+msgid "Adjustment in Columns H to L (-5 to +5)"
+msgstr "Nastavení ve sloupcích H až L (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_N_55
+#: po/keystr.h:802
+msgid "Adjustment in Columns H to N (-5 to +5)"
+msgstr "Nastavení ve sloupcích H až N (-5 až +5)"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:804
+msgid "Adjustment in Columns K and L (-3 to +3)"
+msgstr "Nastavení ve sloupcích K a L (-3 až +3)"
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_V1_LABEL
+#: po/keystr.h:806
+msgid "Adjustment in Columns L and M (-3 to +3)"
+msgstr "Nastavení ve sloupcích L a M (-3 až +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_O_55
+#: po/keystr.h:808
+msgid "Adjustment in Columns L to O (-5 to +5)"
+msgstr "Nastavení ve sloupcích L až O (-5 až +5)"
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:810
+msgid "Adjustment in Columns M and N (-2 to +2)"
+msgstr "Nastavení ve sloupcích M a N (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_22
+#: po/keystr.h:812
+msgid "Adjustment in Columns M to P (-2 to +2)"
+msgstr "Nastavení ve sloupcích M až P (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_Q_55
+#: po/keystr.h:814
+msgid "Adjustment in Columns M to Q (-5 to +5)"
+msgstr "Nastavení ve sloupcích M až Q (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_O_T_22
+#: po/keystr.h:816
+msgid "Adjustment in Columns O to T (-2 to +2)"
+msgstr "Nastavení ve sloupcích O až T (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_P_T_55
+#: po/keystr.h:818
+msgid "Adjustment in Columns P to T (-5 to +5)"
+msgstr "Nastavení ve sloupcích P až T (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_R_44
+#: po/keystr.h:820
+msgid "Adjustment in Columns Q and R (-4 to +4)"
+msgstr "Nastavení ve sloupcích Q a R (-4 až +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_22
+#: po/keystr.h:822
+msgid "Adjustment in Columns U and V (-2 to +2)"
+msgstr "Nastavení ve sloupcích U a V (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_U_V_33
+#: po/keystr.h:824
+msgid "Adjustment in Columns U and V (-3 to +3)"
+msgstr "Nastavení ve sloupcích U a V (-3 až +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_X_33
+#: po/keystr.h:826
+msgid "Adjustment in Columns W and X (-3 to +3)"
+msgstr "Nastavení ve sloupcích W a X (-3 až +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_e_22
+#: po/keystr.h:828
+msgid "Adjustment in Columns a to e (-2 to +2)"
+msgstr "Nastavení ve sloupcích a až e (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_j_22
+#: po/keystr.h:830
+msgid "Adjustment in Columns f to j (-2 to +2)"
+msgstr "Nastavení ve sloupcích f až j (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_k_22
+#: po/keystr.h:832
+msgid "Adjustment in Columns f to k (-2 to +2)"
+msgstr "Nastavení ve sloupcích f až k (-2 až +2)"
+
+#. LUM_IDD_PHA_START_IDOK
+#: po/keystr.h:834
+msgid "Align Print Head"
+msgstr "Nastavit tiskovou hlavu"
+
+#. LUM_IDS_CUSTOM_CPT_MANUALPHA
+#: po/keystr.h:836 po/keystr.h:1106
+msgid "Align heads manually"
+msgstr "Nastavit hlavy ručně"
+
+#. LUM_IDS_MNT_CPT_AUTOPOWER
+#: po/keystr.h:838
+msgid "Auto Power"
+msgstr "Automatické zapínání/vypínání"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:840
+msgid "Auto Power Off"
+msgstr "Automatické vypnutí"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_OFF
+#: po/keystr.h:842
+msgid "Auto Power Off:"
+msgstr "Automatické vypnutí:"
+
+#. LUM_IDD_AUTOPOWER_IDC_STT_AUTOPOWER_ON
+#: po/keystr.h:844
+msgid "Auto Power On:"
+msgstr "Automatické zapnutí:"
+
+#. LUM_IDD_AUTOPOWER
+#: po/keystr.h:846
+msgid "Auto Power Settings"
+msgstr "Nastavení automatického zapínání/vypínání"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_BLACK
+#: po/keystr.h:848
+msgid "Black Ink Tank"
+msgstr "Nádržka s černým inkoustem"
+
+#. LUM_IDS_MNT_CPT_PLATENCLEAN
+#: po/keystr.h:850
+msgid "Bottom Plate Cleaning"
+msgstr "Čištění spodní desky"
+
+#. LUM_IDS_MNT_CPT_CLEAN
+#: po/keystr.h:852
+msgid "Cleaning"
+msgstr "Čištění"
+
+#. LUM_IDD_INKCOUNT_IDC_CHK_INKCOUNT_COLOR
+#: po/keystr.h:854
+msgid "Color Ink Tank"
+msgstr "Nádržka s barevným inkoustem"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_A
+#: po/keystr.h:856
+msgid "Column A:"
+msgstr "Sloupec A:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_B
+#: po/keystr.h:858
+msgid "Column B:"
+msgstr "Sloupec B:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_C
+#: po/keystr.h:860
+msgid "Column C:"
+msgstr "Sloupec C:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_D
+#: po/keystr.h:862
+msgid "Column D:"
+msgstr "Sloupec D:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_E
+#: po/keystr.h:864
+msgid "Column E:"
+msgstr "Sloupec E:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_F
+#: po/keystr.h:866
+msgid "Column F:"
+msgstr "Sloupec F:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_G
+#: po/keystr.h:868
+msgid "Column G:"
+msgstr "Sloupec G:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_H
+#: po/keystr.h:870
+msgid "Column H:"
+msgstr "Sloupec H:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_I
+#: po/keystr.h:872
+msgid "Column I:"
+msgstr "Sloupec I:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_J
+#: po/keystr.h:874
+msgid "Column J:"
+msgstr "Sloupec J:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_K
+#: po/keystr.h:876
+msgid "Column K:"
+msgstr "Sloupec K:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_L
+#: po/keystr.h:878
+msgid "Column L:"
+msgstr "Sloupec L:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_M
+#: po/keystr.h:880
+msgid "Column M:"
+msgstr "Sloupec M:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_N
+#: po/keystr.h:882
+msgid "Column N:"
+msgstr "Sloupec N:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_O
+#: po/keystr.h:884
+msgid "Column O:"
+msgstr "Sloupec O:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_P
+#: po/keystr.h:886
+msgid "Column P:"
+msgstr "Sloupec P:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Q
+#: po/keystr.h:888
+msgid "Column Q:"
+msgstr "Sloupec Q:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_R
+#: po/keystr.h:890
+msgid "Column R:"
+msgstr "Sloupec R:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_S
+#: po/keystr.h:892
+msgid "Column S:"
+msgstr "Sloupec S:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_T
+#: po/keystr.h:894
+msgid "Column T:"
+msgstr "Sloupec T:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_U
+#: po/keystr.h:896
+msgid "Column U:"
+msgstr "Sloupec U:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_V
+#: po/keystr.h:898
+msgid "Column V:"
+msgstr "Sloupec V:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_W
+#: po/keystr.h:900
+msgid "Column W:"
+msgstr "Sloupec W:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_X
+#: po/keystr.h:902
+msgid "Column X:"
+msgstr "Sloupec X:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_a
+#: po/keystr.h:904
+msgid "Column a:"
+msgstr "Sloupec a:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_b
+#: po/keystr.h:906
+msgid "Column b:"
+msgstr "Sloupec b:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_c
+#: po/keystr.h:908
+msgid "Column c:"
+msgstr "Sloupec c:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_d
+#: po/keystr.h:910
+msgid "Column d:"
+msgstr "Sloupec d:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_e
+#: po/keystr.h:912
+msgid "Column e:"
+msgstr "Sloupec e:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_f
+#: po/keystr.h:914
+msgid "Column f:"
+msgstr "Sloupec f:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_g
+#: po/keystr.h:916
+msgid "Column g:"
+msgstr "Sloupec g:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_h
+#: po/keystr.h:918
+msgid "Column h:"
+msgstr "Sloupec h:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_i
+#: po/keystr.h:920
+msgid "Column i:"
+msgstr "Sloupec i:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_j
+#: po/keystr.h:922
+msgid "Column j:"
+msgstr "Sloupec j:"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_k
+#: po/keystr.h:924
+msgid "Column k:"
+msgstr "Sloupec k:"
+
+#. LUM_IDS_MNT_CPT_CUSTOM
+#: po/keystr.h:926 po/keystr.h:1102
+msgid "Custom Settings"
+msgstr "Uživatelská nastavení"
+
+#. LUM_IDS_MNT_CPT_DEEPCLEAN
+#: po/keystr.h:928
+msgid "Deep Cleaning"
+msgstr "Hloubkové čištění"
+
+#. LUM_IDD_PAG_MAIN_IDC_BTN_MAIN_DEFAULT
+#: po/keystr.h:930
+msgid "Defaults"
+msgstr "Výchozí"
+
+#. LUM_IDD_INKALERT_IDC_CHK_INKALERT_ENABLE
+#: po/keystr.h:932
+msgid "Display low ink warning"
+msgstr "Zobrazit varování při nízké hladině inkoustu"
+
+#. LUM_IDD_PHA_A3430_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:934
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns G to L."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce G až L zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_O
+#: po/keystr.h:938
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns H to O."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce H až O zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_M_R
+#: po/keystr.h:942
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns M to R."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce M až R zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_P_V
+#: po/keystr.h:946
+msgid ""
+"Examine the printed patterns, and enter the pattern number \n"
+"of the pattern with the least noticeable streaks in the fields \n"
+"for columns P to V."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce P až V zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_O_V
+#: po/keystr.h:950
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields \n"
+"for columns O to V."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce O až V zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#. LUM_IDD_PHA_A3430_3_IDC_STT_PHA_TEXT
+#: po/keystr.h:954
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the most \n"
+"even pattern for columns M and N."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce M a N zadejte čísla \n"
+"nejzarovnanějších vzorků."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_j
+#: po/keystr.h:957
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"j."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce a až j zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_k
+#: po/keystr.h:960
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"k."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce a až k zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_Q
+#: po/keystr.h:963
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns H to Q."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce H až Q zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDD_PHA_A2630_2_IDC_STT_PHA_TEXT
+#: po/keystr.h:966
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns \n"
+"L and M with the number of the pattern that is smoothest and \n"
+"has no stripes in the areas indicated by arrows."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce L a M zadejte číslo \n"
+"vzorku, který je nejlépe vyhlazený a nemá v oblastech označených šipkami žádné \n"
+"pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC5_W_X
+#: po/keystr.h:970
+msgid ""
+"Examine the printed patterns, and fill in the fields for columns W \n"
+"and X with the number of the pattern that is smoothest and has \n"
+"no stripes in the areas indicated by arrows."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce W a X zadejte číslo \n"
+"vzorku, který je nejlépe vyhlazený a nemá v oblastech označených šipkami žádné \n"
+"pruhy."
+
+#. LUM_IDD_BITMAPMESSAGE_IDOK
+#: po/keystr.h:974
+msgid "Execute"
+msgstr "Provést"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_F
+#: po/keystr.h:976
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to F."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až F zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_G
+#: po/keystr.h:980
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to G."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až G zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_K
+#: po/keystr.h:984
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to K."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až K zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_L
+#: po/keystr.h:988
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to L."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až L zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_N
+#: po/keystr.h:992
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to N."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až N zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDD_PATTERNCHECK_EX_IDOK
+#: po/keystr.h:996
+msgid "Exit"
+msgstr "Konec"
+
+#. LUM_IDD_PHA_I850_1_IDC_STT_PHA_H1_LABEL
+#: po/keystr.h:998
+msgid "Horizontal Alignment (-3 to +7)"
+msgstr "Horizontální nastavení (-3 až +7)"
+
+#. LUM_IDS_MNT_CPT_CARTRIDGE
+#: po/keystr.h:1000
+msgid "Ink Cartridge Settings"
+msgstr "Nastavení inkoustové kazety"
+
+#. LUM_IDS_SELECTCHD_TITLE
+#: po/keystr.h:1002
+msgid "Ink Cartridge:"
+msgstr "Inkoustová kazeta:"
+
+#. LUM_IDS_MNT_CPT_INKCOUNT
+#: po/keystr.h:1004
+msgid "Ink Counter Reset"
+msgstr "Vynulování počítadla inkoustu"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY
+#: po/keystr.h:1006 po/keystr.h:1108
+msgid "Ink Drying Wait Time:"
+msgstr "Doba čekání na zaschnutí inkoustu:"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_DRYNESS
+#: po/keystr.h:1008 po/keystr.h:1112
+msgid "Long"
+msgstr "Dlouhá"
+
+#. LUM_IDS_MNT_CPT_INKALERT
+#: po/keystr.h:1010
+msgid "Low Ink Warning Setting"
+msgstr "Nastavení varování při nízké hladině inkoustu"
+
+#. LUM_IDD_PAG_MAINTENANCE
+#: po/keystr.h:1012
+msgid "Maintenance"
+msgstr "Údržba"
+
+#. LUM_IDS_MNT_CPT_NOZZLE
+#: po/keystr.h:1014
+msgid "Nozzle Check"
+msgstr "Kontrola trysek"
+
+#. LUM_IDS_MNT_CPT_PPSOURCE
+#: po/keystr.h:1016
+msgid "Paper Source Setting for Plain Paper"
+msgstr "Nastavení zdroje papíru pro běžný papír"
+
+#. LUM_IDD_PATTERNCHECK_EX
+#: po/keystr.h:1018
+msgid "Pattern Check"
+msgstr "Kontrola vzorku"
+
+#. LUM_IDS_MNT_CPT_POWEROFF
+#: po/keystr.h:1020
+msgid "Power Off"
+msgstr "Vypnout"
+
+#. LUM_IDS_CUSTOM_CPT_PAPERGAP
+#: po/keystr.h:1022 po/keystr.h:1104
+msgid "Prevent paper abrasion"
+msgstr "Zamezit otěru papíru"
+
+#. LUM_IDD_PHA_START_IDC_BTN_CHKPHA
+#: po/keystr.h:1024
+msgid "Print Alignment Value"
+msgstr "Tisknout hodnotu zarovnání"
+
+#. LUM_IDD_PATTERNCHECK_START_IDOK
+#: po/keystr.h:1026
+msgid "Print Check Pattern"
+msgstr "Tisk testovacího vzorku"
+
+#. LUM_IDS_MNT_CPT_PHA
+#: po/keystr.h:1028
+msgid "Print Head Alignment"
+msgstr "Nastavení tiskové hlavy"
+
+#. LUM_IDD_CLEAN
+#: po/keystr.h:1030
+msgid "Print Head Cleaning"
+msgstr "Čištění tiskové hlavy"
+
+#. LUM_IDD_SILENTMODE
+#: po/keystr.h:1032
+msgid "Quiet Mode"
+msgstr "Tichý režim"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_1
+#: po/keystr.h:1034
+msgid "Read your printer manual for details about low ink warnings."
+msgstr ""
+"Podrobné informace o varování při nízké hladině inkoustu naleznete v příručce \n"
+"tiskárny."
+
+#. LUM_IDS_MNT_CPT_ROLLCLEAN
+#: po/keystr.h:1036
+msgid "Roller Cleaning"
+msgstr "Čištění kladek"
+
+#. LUM_IDS_MNTMSG_CARTRIDGE_TOPIC
+#: po/keystr.h:1038
+msgid "Select the ink cartridge for printing."
+msgstr "Vyberte kazetu s inkoustem pro tisk."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_1
+#: po/keystr.h:1040
+msgid "Select the newly replaced ink tank and click the Execute button.\n"
+msgstr "Vyberte nově vyměněnou nádržku a klepněte na tlačítko Provést.\n"
+
+#. LUM_IDD_CUSTOM_IDC_STT_INKDRY_SPEEDY
+#: po/keystr.h:1042 po/keystr.h:1110
+msgid "Short"
+msgstr "Krátká"
+
+#. LUM_IDD_PHA_START
+#: po/keystr.h:1044
+msgid "Start Print Head Alignment"
+msgstr "Spustit nastavení tiskové hlavy"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_TOPIC
+#: po/keystr.h:1046
+msgid ""
+"Starting bottom plate cleaning to prevent paper smudges during printing.\n"
+"\n"
+"This operation requires one sheet of A4 or letter size, plain paper. Follow "
+"these directions to execute bottom plate cleaning."
+msgstr ""
+"Spouští se čištění spodní desky, které zabraňuje rozmazání inkoustu po papíru \n"
+"během tisku.\n"
+"\n"
+"Tato operace vyžaduje jeden list běžného papíru velikosti A4 nebo Letter. Podle \n"
+"těchto pokynů proveďte čištění spodní desky."
+
+#. LUM_IDD_INKCOUNT_IDC_STT_INKCOUNT_2
+#: po/keystr.h:1050
+msgid ""
+"The counter corresponding to the replaced ink tank will indicate \n"
+"the tank is full. This operation ensures proper display of a low \n"
+"ink warning."
+msgstr ""
+"Počítadlo příslušné vyměněné nádržky s inkoustem bude ukazovat plnou nádržku. \n"
+"Tento úkon zajistí správné zobrazení varování o docházejícím inkoustu."
+
+#. LUM_IDS_MNTMSG_PC_OK
+#: po/keystr.h:1054
+msgid ""
+"The print head nozzles are not clogged.\n"
+"If the printed pattern resembles this pattern, you can \n"
+"use the printer immediately.\n"
+"Click Exit."
+msgstr ""
+"Trysky tiskových hlav nejsou ucpané.\n"
+"Pokud se vytištěný vzorek podobá tomuto \n"
+"vzorku, můžete tiskárnu použít ihned.\n"
+"Klepněte na tlačítko Konec."
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_2
+#: po/keystr.h:1059
+msgid ""
+"To ensure proper display of a low ink warning, the following operation is \n"
+"required:\n"
+msgstr ""
+"Chcete-li zajistit správné zobrazení varování při nízké hladině inkoustu, \n"
+"musíte postupovat následovně:\n"
+
+#. LUM_IDD_SILENTMODE_EX_IDC_CHK_QUIET
+#: po/keystr.h:1062
+msgid "Use quiet mode"
+msgstr "Použít tichý režim"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_AC
+#: po/keystr.h:1064
+msgid "Using AC Adapter:"
+msgstr "Použití síťového adaptéru:"
+
+#. LUM_IDD_AUTOPOWER2_OFFONLY_IDC_STT_AUTOPOWER_OFF_BATTERY
+#: po/keystr.h:1066
+msgid "Using Battery:"
+msgstr "Použití baterie:"
+
+#. LUM_IDD_INKALERT_IDC_STT_INKALERT_3
+#: po/keystr.h:1068
+msgid ""
+"When you have replaced an ink tank with a new one, always click \n"
+"the Ink Counter Reset button on the Maintenance tab of the printer driver \n"
+"and select the new ink tank."
+msgstr ""
+"Po každé výměně nádržky s inkoustem za novou klepněte na tlačítko Vynulování \n"
+"počitadla inkoustu na kartě Údržba v ovladači tiskárny a vyberte novou nádržku."
+
+#. LUM_IDS_MNTMSG_PC_TOPIC
+#: po/keystr.h:1072
+msgid ""
+"Which of the following patterns does the printed pattern most closely "
+"resemble?"
+msgstr "Který z následujících vzorků se nejvíce podobá vytištěnému vzorku?"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_K_P_55
+#: po/keystr.h:1074
+msgid "Adjustment in Columns K to P (-5 to +5)"
+msgstr "Nastavení ve sloupcích K až P (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_F_33
+#: po/keystr.h:1076
+msgid "Adjustment in Column F (-3 to +3)"
+msgstr "Nastavení ve sloupci F (-3 až +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_33
+#: po/keystr.h:1078
+msgid "Adjustment in Column G (-3 to +3)"
+msgstr "Nastavení ve sloupci G (-3 až +3)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_Q_44
+#: po/keystr.h:1080
+msgid "Adjustment in Column Q (-4 to +4)"
+msgstr "Nastavení ve sloupci Q (-4 až +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_U_22
+#: po/keystr.h:1082
+msgid "Adjustment in Columns R to U (-2 to +2)"
+msgstr "Nastavení ve sloupcích R až U (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_V_Y_22
+#: po/keystr.h:1084
+msgid "Adjustment in Columns V to Y (-2 to +2)"
+msgstr "Nastavení ve sloupcích V až Y (-2 až +2)"
+
+#. LUM_IDD_PHA_GUIDE_IDCANCEL
+#: po/keystr.h:1086
+msgid "Close"
+msgstr "Zavřít"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Y
+#: po/keystr.h:1088
+msgid "Column Y:"
+msgstr "Sloupec Y:"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_Q_Y
+#: po/keystr.h:1090
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in \n"
+"the fields for columns Q to Y."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce Q až Y zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_K_P
+#: po/keystr.h:1094
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns K to P."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce K až P, zadejte čísla \n"
+"vzorků, které obsahují nejslabší pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_J
+#: po/keystr.h:1098
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to J."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až J zadejte čísla vzorků, které obsahují nejslabší pruhy."
+
+#. LUM_IDS_CLEAN_ITEM_E5
+#: po/keystr.h:1124
+msgid "Color   C, M, Y, BK, GY"
+msgstr "Barva   C, M, Y, BK, GY"
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A3_07
+#: po/keystr.h:1126
+msgid ""
+"1. Remove the paper from the rear tray.\n"
+"2. Fold A4 or letter size, plain paper in half vertically, then unfold the "
+"paper.\n"
+"3. With the ridge of the crease facing down, load the paper in landscape "
+"orientation into the rear tray.\n"
+"4. Click Execute."
+msgstr ""
+"1. Vyjměte papír ze zadní přihrádky.\n"
+"2. Složte list běžného papíru formátu A4 nebo Letter svisle na polovinu a pak \n"
+"jej rozložte.\n"
+"3. Nastavte papír na šířku a vložte jej přehybem dolů do zadní přihrádky.\n"
+"4. Klepněte na tlačítko Provést."
+
+#. LUM_IDS_AUTOPOWER_120MINUTES
+#: po/keystr.h:1131
+msgid "120 minutes"
+msgstr "120 minut"
+
+#. LUM_IDS_AUTOPOWER_240MINUTES
+#: po/keystr.h:1133
+msgid "240 minutes"
+msgstr "240 minut"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_11_PAPERSRC
+#: po/keystr.h:1135
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size plain paper, and click Align Print "
+"Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Jelikož při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte), vložte jeden list běžného papíru velikosti A4 nebo Letter a \n"
+"pak klepněte na tlačítko Nastavit tiskovou hlavu.\n"
+"\n"
+"Pokud nejsou výsledky automatického nastavení tiskové hlavy uspokojivé, \n"
+"nastavte tiskovou hlavu ručně.\n"
+"Chcete-li provést ruční nastavení tiskové hlavy, klepněte na tlačítko Storno.\n"
+"Dále v ovladači tiskárny na kartě Údržba klepněte na tlačítko Uživatelská \n"
+"nastavení, zaškrtněte políčko Nastavit hlavy ručně a klepněte na tlačítko OK. \n"
+"Potom akci opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTPAPERJAM
+#: po/keystr.h:1146
+msgid "Prevent paper jam"
+msgstr "Zamezit uvíznutí papíru"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_REAR7
+#: po/keystr.h:1148
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the rear tray, then open the front cover and extend "
+"the paper output tray.\n"
+"Clicking OK will activate paper feed rollers 30 times. This will take about "
+"a minute and a half.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve vyjměte ze zadního zásobníku veškerý papír a pak otevřete přední kryt a \n"
+"vysuňte nástavec výstupního zásobníku na papír.\n"
+"Klepnutím na tlačítko OK se 30x aktivují válečky podavače papíru. Celá akce \n"
+"bude trvat asi minutu a půl.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_H_P
+#: po/keystr.h:1155
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for columns H to "
+"P."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce H až P zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_M_P_55
+#: po/keystr.h:1158 po/keystr.h:1350
+msgid "Adjustment in Columns M to P (-5 to +5)"
+msgstr "Nastavení ve sloupcích M až P (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_i
+#: po/keystr.h:1160
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for "
+"columns a to i."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce a až i zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_f_i_22
+#: po/keystr.h:1163
+msgid "Adjustment in Columns f to i (-2 to +2)"
+msgstr "Nastavení ve sloupcích f až i (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PREVENTPAPERGAP_MSG
+#: po/keystr.h:1165
+msgid ""
+"Set Prevent paper jam only when A3 size plain paper jams frequently near the "
+"paper output slot.\n"
+"\n"
+"This setting increases the printing time for A3 size plain paper.\n"
+"Also, the print quality may deteriorate."
+msgstr ""
+"Nastavte možnost Zamezit uvíznutí papíru pouze v případě, pokud se papír \n"
+"velikosti A3 zachytává v blízkosti výstupního otvoru pro papír.\n"
+"\n"
+"Toto nastavení prodlužuje dobu tisku běžného papíru velikosti A3.\n"
+"Může dojít rovněž ke zhoršení kvality tisku."
+
+#. LUM_IDD_QUIETSETTINGS
+#: po/keystr.h:1170
+msgid "Quiet Settings"
+msgstr "Tiché nastavení"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_DISABLE
+#: po/keystr.h:1172
+msgid "Do not use quiet mode"
+msgstr "Nepoužít tichý režim"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_ENABLE
+#: po/keystr.h:1174
+msgid "Always use quiet mode"
+msgstr "Vždy použít tichý režim"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_RAD_QUIETSETTINGS_HOURS
+#: po/keystr.h:1176
+msgid "Use quiet mode during specified hours"
+msgstr "Použít tichý režim v určených hodinách"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_FROM
+#: po/keystr.h:1178
+msgid "Start time:"
+msgstr "Čas spuštění:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTINGS_TO
+#: po/keystr.h:1180
+msgid "End time:"
+msgstr "Čas ukončení:"
+
+#. LUM_IDD_QUIETSETTINGS_IDC_STT_QUIETSETTING_WARN
+#: po/keystr.h:1182
+msgid ""
+"When the hours are specified, quiet mode is not applied to operations \n"
+"(copy, direct print, etc.) performed directly from the printer."
+msgstr ""
+"V určených hodinách se tichý režim nepoužívá pro činnosti prováděné přímo na \n"
+"tiskárně (kopírování, přímý tisk apod.)."
+
+#. LUM_COLON
+#: po/keystr.h:1185
+msgid ":"
+msgstr ":"
+
+#. LUM_IDS_MNTMSG_WRITESETTING_ATPOFF_NW
+#: po/keystr.h:1187
+msgid ""
+"Apply the setting to printer?\n"
+"If the printer is connected to a network, it will not turn off \n"
+"automatically even if Auto Power Off is set."
+msgstr ""
+"Použít nastavení v tiskárně?\n"
+"Pokud je tiskárna připojená v síti, tiskárna se automaticky nevypne, i když je \n"
+"nastavena možnost Automatické vypnutí."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT7
+#: po/keystr.h:1191
+msgid ""
+"Cleaning paper feed rollers.\n"
+"\n"
+"First remove paper from the front tray, then open the paper output tray.\n"
+"Clicking OK will activate paper feed rollers. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start feed roller cleaning?"
+msgstr ""
+"Čistí se válečky podavače papíru.\n"
+"\n"
+"Nejprve odeberte papír z předního zásobníku a pak otevřete výstupní zásobník na \n"
+"papír.\n"
+"Klepnutím na tlačítko OK se aktivují válečky podavače papíru. Celá akce bude \n"
+"trvat asi dvě minuty.\n"
+"\n"
+"Chcete spustit čištění válečků podavače?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT7
+#: po/keystr.h:1198
+msgid ""
+"Confirm the operating noise of the printer has stopped, and then load three "
+"sheets of plain paper into the front tray.\n"
+"After confirming that the paper output tray is open, clicking OK will eject "
+"paper and complete feed roller cleaning."
+msgstr ""
+"Zkontrolujte, zda se neozývá provozní hluk tiskárny, a pak vložte do předního \n"
+"zásobníku tři listy běžného papíru.\n"
+"Po ověření, zda je výstupní zásobník na papír otevřený, klepnutím na tlačítko \n"
+"OK vysuňte papír a dokončete čištění válečku podavače papíru."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_A4_FRONT
+#: po/keystr.h:1201
+msgid ""
+"1. Remove the paper from the front tray.\n"
+"2. Fold A4 or letter size, plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the front "
+"tray, \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Open the paper output tray and click Execute."
+msgstr ""
+"1. Vyjměte papír z předního zásobníku.\n"
+"2. Přeložte běžný papír velikosti A4 nebo Letter na polovinu a potom ho opět \n"
+"rozložte.\n"
+"3. Přeložte jednu stranu papíru na polovinu, srovnejte okraj se středovým \n"
+"přehybem a papír opět narovnejte.\n"
+"4. Hřbetem přeložení směrem nahoru vložte papír do předního zásobníku tak, aby \n"
+"okraj poloviny papíru bez přeložení směřoval od vás.\n"
+"5. Otevřete výstupní zásobník na papír a klepněte na tlačítko Provést."
+
+#. LUM_IDS_CUSTOM_CPT_PREVENTWFEED
+#: po/keystr.h:1208
+msgid "Prevent paper double-feed"
+msgstr "Zamezit dvojitému podání papíru"
+
+#. LUM_IDS_MNTMSG_PREVENTWFEED_MSG
+#: po/keystr.h:1210
+msgid ""
+"Set Prevent paper double-feed only when double-feeding of plain paper "
+"occurs.\n"
+"\n"
+"Using this function decreases the print speed but reduces the occurrence of "
+"double-feeding."
+msgstr ""
+"Funkci Zamezit dvojitému podání papíru zapněte pouze tehdy, pokud k tomuto jevu \n"
+"dochází při podávání běžného papíru.\n"
+"\n"
+"Použití této funkce snižuje rychlost tisku, ale zamezuje dvojitému podání \n"
+"papíru."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_PAPERSRC_11
+#: po/keystr.h:1214
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 \n"
+"or letter size plain paper, and click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), vložte jeden list \n"
+"běžného papíru velikosti A4 nebo Letter a klepněte na tlačítko Tisk testovacího \n"
+"vzorku."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_PAPERSRC_11
+#: po/keystr.h:1219
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper. The printer will "
+"print an alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Bude zahájeno nastavení tiskové hlavy.\n"
+"\n"
+"Vzhledem k tomu, že tato operace zahrnuje tisk, připravte tiskárnu (připojte \n"
+"kabel a zapněte ji) a vložte tři listy běžného papíru velikosti A4 nebo Letter. \n"
+"Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Chcete-li nastavit pozici tiskové hlavy, klepněte na tlačítko Nastavit tiskovou \n"
+"hlavu.\n"
+"\n"
+"Chcete-li provést tisk a zkontrolovat aktuální nastavení, klepněte na tlačítko \n"
+"Tisknout hodnotu zarovnání."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_G_K_55
+#: po/keystr.h:1228
+msgid "Adjustment in Columns G to K (-5 to +5)"
+msgstr "Nastavení ve sloupcích G až K (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_L_Q
+#: po/keystr.h:1230
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable streaks in the fields for \n"
+"columns L to Q."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce L až Q zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_R_Z
+#: po/keystr.h:1234
+msgid ""
+"Examine the printed patterns, and enter the pattern number of \n"
+"the pattern with the least noticeable horizontal stripes in the fields for \n"
+"columns R to Z."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce R až Z zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_R_44
+#: po/keystr.h:1238
+msgid "Adjustment in Column R (-4 to +4)"
+msgstr "Nastavení ve sloupci R (-4 až +4)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_S_V_22
+#: po/keystr.h:1240
+msgid "Adjustment in Columns S to V (-2 to +2)"
+msgstr "Nastavení ve sloupcích S až V (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_W_Z_22
+#: po/keystr.h:1242
+msgid "Adjustment in Columns W to Z (-2 to +2)"
+msgstr "Nastavení ve sloupcích W až Z (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_L_Q_55
+#: po/keystr.h:1244
+msgid "Adjustment in Columns L to Q (-5 to +5)"
+msgstr "Nastavení ve sloupcích L až Q (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_ITEM_Z
+#: po/keystr.h:1246
+msgid "Column Z:"
+msgstr "Sloupec Z:"
+
+#. LUM_IDS_MNTMSG_MSI_COLLECTING
+#: po/keystr.h:1248
+msgid ""
+"Collecting printer status about maintenance.\n"
+"Please wait."
+msgstr ""
+"Zjišťování stavu údržby tiskárny.\n"
+"Počkejte prosím."
+
+#. LUM_IDS_MNTMSG_MSI_NOTAVAILABLE
+#: po/keystr.h:1251
+msgid ""
+"This printer status about maintenance cannot be collected.\n"
+"The displayed information may be different from the current settings."
+msgstr ""
+"Stav údržby tiskárny nelze zjistit.\n"
+"Zobrazené informace se mohou lišit od aktuálních nastavení."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_FRONTTRAY
+#: po/keystr.h:1254
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or letter size, \n"
+"plain paper into the front tray, and click Print Check Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), do přední přihrádky \n"
+"vložte jeden list běžného papíru velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko Tisk testovacího vzorku."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_FRONT_11
+#: po/keystr.h:1259
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the front tray and "
+"click OK."
+msgstr ""
+"Do přední přihrádky vložte jeden list běžného papíru velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko OK."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_PAPERSRC_11
+#: po/keystr.h:1261
+msgid ""
+"Get the printer ready (connect the cable and turn the power on) and load one "
+"sheet of A4 or letter size, plain paper.\n"
+"\n"
+"Clicking OK will print the current setting."
+msgstr ""
+"Připravte tiskárnu (připojte kabel a zapněte ji) a vložte jeden list běžného \n"
+"papíru velikosti A4 nebo Letter.\n"
+"\n"
+"Po klepnutí na tlačítko OK se vytiskne aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_11
+#: po/keystr.h:1265
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the cassette and click "
+"OK. "
+msgstr ""
+"Do kazety vložte jeden list běžného papíru velikosti A4 nebo Letter a klepněte \n"
+"na tlačítko OK. "
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_REAR_11
+#: po/keystr.h:1267
+msgid ""
+"Load one sheet of A4 or letter size, plain paper into the rear tray and "
+"click OK. "
+msgstr ""
+"Do zadní přihrádky vložte jeden list běžného papíru velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko OK. "
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_FRONTTRAY
+#: po/keystr.h:1269
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on) \n"
+"and load three sheets of A4 or letter size, plain paper into the front tray. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Bude zahájeno nastavení tiskové hlavy.\n"
+"\n"
+"Vzhledem k tomu, že tato operace zahrnuje tisk, připravte tiskárnu (připojte \n"
+"kabel a zapněte ji) a do přední přihrádky vložte tři listy běžného papíru \n"
+"velikosti A4 nebo Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Chcete-li nastavit pozici tiskové hlavy, klepněte na tlačítko Nastavit tiskovou \n"
+"hlavu.\n"
+"\n"
+"Chcete-li provést tisk a zkontrolovat aktuální nastavení, klepněte na tlačítko \n"
+"Tisknout hodnotu zarovnání."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE
+#: po/keystr.h:1279
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size, plain paper into the cassette. "
+"The printer will print an \n"
+"alignment pattern.\n"
+"\n"
+"To align the print head position, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do kazety vložte tři listy běžného papíru velikosti A4 nebo \n"
+"Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Klepnutím na tlačítko Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_SPACE_01
+#: po/keystr.h:1289
+msgid " "
+msgstr " "
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_UPPER
+#: po/keystr.h:1291
+msgid "Cassette (upper)"
+msgstr "Kazeta (horní)"
+
+#. LUM_IDS_MNTMSG_BIN_CASSETTE_LOWER
+#: po/keystr.h:1293
+msgid "Cassette (lower)"
+msgstr "Kazeta (spodní)"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_UPPER
+#: po/keystr.h:1295
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (upper).\n"
+"\n"
+"First remove paper from the cassette (upper).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about "
+"three minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"Probíhá zahájení čištění válečků podavače papíru v kazetě (horní) pomocí papíru.\n"
+"\n"
+"Nejprve odeberte papír z kazety (horní).\n"
+"Poté klepněte na tlačítko OK. Válečky podavače papíru se začnou otáčet. \n"
+"Dokončení tohoto procesu potrvá přibližně tři minuty.\n"
+"\n"
+"Chcete zahájit čištění?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_UPPER
+#: po/keystr.h:1302
+msgid ""
+"Cut A4 or letter size plain paper in half lengthwise, then widthwise to "
+"create four equal pieces.\n"
+"Confirm the operating noise of the printer has stopped, and then load the "
+"four pieces of paper into the cassette (upper), \n"
+"with the cut edges towards you.\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Rozstřihnutím papíru velikosti A4 nebo Letter podél delší a následně užší \n"
+"strany vytvořte čtyři stejně velké díly.\n"
+"Ujistěte se, že ustaly provozní zvuky tiskárny, a vložte do kazety (horní) \n"
+"čtyři díly papíru stříhanou stranou směrem k vám.\n"
+"Klepnutím na tlačítko OK papír vysunete, a dokončíte tak čištění válečků \n"
+"podavače papíru."
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_1_FRONT4_LOWER
+#: po/keystr.h:1307
+msgid ""
+"Starting the paper feed roller cleaning for the cassette (lower).\n"
+"\n"
+"First remove paper from the cassette (lower).\n"
+"Next, click OK. The paper feed rollers will rotate. This will take about two "
+"minutes to complete.\n"
+"\n"
+"Do you want to start the cleaning?"
+msgstr ""
+"Probíhá zahájení čištění válečků podavače papíru v kazetě (spodní) pomocí \n"
+"papíru.\n"
+"\n"
+"Nejprve odeberte papír z kazety (spodní).\n"
+"Poté klepněte na tlačítko OK. Válečky podavače papíru se začnou otáčet. \n"
+"Dokončení tohoto procesu potrvá přibližně dvě minuty.\n"
+"\n"
+"Chcete zahájit čištění?"
+
+#. LUM_IDS_MNTMSG_ROLLCLEAN_2_FRONT2_LOWER
+#: po/keystr.h:1314
+msgid ""
+"Confirm the operating noise of the printer has stopped, \n"
+"and then load three sheets of A4 or letter size plain paper into the "
+"cassette (lower).\n"
+"Clicking OK will eject paper and complete feed roller cleaning."
+msgstr ""
+"Ujistěte se, že ustaly provozní zvuky tiskárny, a vložte do kazety (spodní) tři \n"
+"listy běžného papíru velikosti A4 nebo Letter.\n"
+"Klepnutím na tlačítko OK papír vysunete, a dokončíte tak čištění válečků \n"
+"podavače papíru."
+
+#. LUM_IDS_MNTMSG_PLATENCLEAN_CASSETTE_LOWER
+#: po/keystr.h:1318
+msgid ""
+"1. Remove paper from the cassette (lower).\n"
+"2. Fold A4 or letter size plain paper in half, then unfold the paper.\n"
+"3. Fold one side of the paper in another half, aligning the edge with the "
+"center crease, then unfold the paper.\n"
+"4. With the ridges of the creases facing up, load the paper into the "
+"cassette (lower), \n"
+"so that the edge of the half with no crease faces away from you.\n"
+"5. Click Execute."
+msgstr ""
+"1. Vyjměte papír z kazety (spodní).\n"
+"2. Přehněte běžný papír velikosti A4 nebo Letter napůl a znova jej rozevřete.\n"
+"3. Přehněte jednu stranu papíru opět napůl tak, aby okraj lícoval s přehybem \n"
+"uprostřed a poté jej znovu rozevřete.\n"
+"4. Papír otočte vystupující stranou přehybů nahoru a okrajem nepřehnuté \n"
+"poloviny směrem od vás a vložte jej do kazety (spodní).\n"
+"5. Klepněte na tlačítko Provést."
+
+#. LUM_IDS_MNTMSG_PATTERNCHECKPRE_CASSETTE_LOWER
+#: po/keystr.h:1325
+msgid ""
+"Prints a pattern that lets you check whether the print head nozzles are "
+"clogged.\n"
+"\n"
+"Get the printer ready (connect the cable and turn the power on), load one "
+"sheet of A4 or \n"
+"letter size plain paper into the cassette (lower), and click Print Check "
+"Pattern."
+msgstr ""
+"Vytiskne vzorek, který vám umožní zkontrolovat, zda nejsou trysky tiskové hlavy \n"
+"ucpané.\n"
+"\n"
+"Připravte tiskárnu (připojte kabel a tiskárnu zapněte), do kazety (spodní) \n"
+"vložte jeden list běžného papíru velikosti A4 nebo Letter a klepněte na \n"
+"tlačítko Tisk testovacího vzorku."
+
+#. LUM_IDS_MNTMSG_PHA_START2_3P_CASSETTE_LOWER
+#: po/keystr.h:1330
+msgid ""
+"Starting print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"and load three sheets of A4 or letter size plain paper into the cassette "
+"(lower). The printer will print an alignment pattern.\n"
+"\n"
+"To start the print head alignment, click Align Print Head.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do kazety (spodní) vložte tři listy běžného papíru \n"
+"velikosti A4 nebo Letter. Tiskárna vytiskne vzorek nastavení.\n"
+"\n"
+"Klepnutím na možnost Nastavit tiskovou hlavu nastavíte polohu tiskové hlavy.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC1_A_H
+#: po/keystr.h:1339
+msgid ""
+"Execute print head alignment. Examine the printed patterns, \n"
+"and enter the pattern number of the pattern with the least \n"
+"noticeable streaks in the fields for columns A to H."
+msgstr ""
+"Proveďte nastavení tiskové hlavy. Prohlédněte si vytištěné vzorky a do polí pro \n"
+"sloupce A až H zadejte číslo vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_H_33
+#: po/keystr.h:1343
+msgid "Adjustment in Column H (-3 to +3)"
+msgstr "Nastavení ve sloupci H (-3 až +3)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC2_I_P
+#: po/keystr.h:1345
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable streaks in the fields for columns I to P."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce I až P zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné proužky."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_I_L_55
+#: po/keystr.h:1348
+msgid "Adjustment in Columns I to L (-5 to +5)"
+msgstr "Nastavení ve sloupcích I až L (-5 až +5)"
+
+#. LUM_IDS_MNTMSG_PHA_TOPIC3_a_h
+#: po/keystr.h:1352
+msgid ""
+"Examine the printed patterns, and enter the pattern number of the pattern \n"
+"with the least noticeable horizontal stripes in the fields for columns a to "
+"h."
+msgstr ""
+"Prohlédněte si vytištěné vzorky a do polí pro sloupce a až h zadejte číslo \n"
+"vzorku, který obsahuje nejméně viditelné horizontální pruhy."
+
+#. LUM_IDS_MNTMSG_PHA_CPT_a_d_22
+#: po/keystr.h:1355
+msgid "Adjustment in Columns a to d (-2 to +2)"
+msgstr "Nastavení ve sloupcích a až d (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_CPT_e_h_22
+#: po/keystr.h:1357
+msgid "Adjustment in Columns e to h (-2 to +2)"
+msgstr "Nastavení ve sloupcích e až h (-2 až +2)"
+
+#. LUM_IDS_MNTMSG_PHA_START_AUTOMATIC_CASSETTE_LOWER
+#: po/keystr.h:1359
+msgid ""
+"Starting automatic print head alignment.\n"
+"\n"
+"Since the alignment involves printing, get the printer ready (connect the "
+"cable and turn the power on), \n"
+"load one sheet of A4 or letter size Matte Photo Paper (MP-101) into the "
+"cassette (lower) and click Align Print Head.\n"
+"\n"
+"If the results of automatic print head alignment are not satisfactory, "
+"perform manual print head alignment \n"
+"to precisely align the print head.\n"
+"To carry out manual head alignment, click Cancel.\n"
+"Next, click Custom Settings on the Maintenance tab of the printer driver, "
+"check Align heads manually, and click OK. \n"
+"Then try again.\n"
+"\n"
+"To print and check the current setting, click Print Alignment Value."
+msgstr ""
+"Spouští se automatické nastavení tiskové hlavy.\n"
+"\n"
+"Protože při nastavení probíhá tisk, připravte tiskárnu (připojte kabel a \n"
+"tiskárnu zapněte) a do kazety (spodní) vložte jeden list papíru Matte Photo \n"
+"Paper (MP-101) velikosti A4 nebo Letter a klepněte na možnost Nastavit tiskovou \n"
+"hlavu.\n"
+"\n"
+"Nebudou-li výsledky automatického nastavení tiskové hlavy uspokojivé, můžete \n"
+"provést přesné ruční nastavení tiskové hlavy.\n"
+"Pokud chcete spustit ruční nastavení hlavy, klepněte na tlačítko Storno.\n"
+"Následně v ovladači tiskárny klepněte na kartě Údržba na položku Uživatelská \n"
+"nastavení, zaškrtněte možnost Nastavit hlavy ručně a klepněte na tlačítko OK. \n"
+"Poté pokus opakujte.\n"
+"\n"
+"Klepnutím na tlačítko Tisknout hodnotu zarovnání lze vytisknout a zkontrolovat \n"
+"aktuální nastavení."
+
+#. LUM_IDS_MNTMSG_PHA_CHKPHA_CASSETTE_LOWER
+#: po/keystr.h:1372
+msgid ""
+"Load one sheet of A4 or letter size plain paper into the cassette (lower) "
+"and click OK."
+msgstr ""
+"Do kazety (spodní) vložte jeden list běžného papíru velikosti A4 nebo Letter a \n"
+"klepněte na tlačítko OK."
+

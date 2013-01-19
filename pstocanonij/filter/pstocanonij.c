@@ -216,11 +216,22 @@ ParamList *get_ps_params(int ifd, BufList **ps_data)
 	int FlagCopies = 0;		// Ver.3.50
 	char *StrCopies = NULL;	// Ver.3.50
 	int FlagLanguageLevel = 0;	// Ver.3.50
+	/* ver.3.80 Landscape/Portrait */
+	int endpage_count = 0;
+	int line_count = 0;
+	int endpage_flg = 0;
+	int rotate_flg = 0;
+	int rotate_info = 0;
+	char rotate_buf[16];
+	/* ver.3.80 Landscape/Portrait */
+
+	memset(rotate_buf, 0, 16);
 
 	while( (read_bytes = read_line(ifd, read_buf, DATA_BUF_SIZE - 1)) > 0 )
 	{
 		int dev_len = strlen(PAGE_DEV_BEGIN);
 		int end_len = strlen(PAGE_DEV_END);
+
 		// For Acrobat Reader 
 		{
 			if( is_acro_util(read_buf, read_bytes) ){
@@ -247,6 +258,52 @@ ParamList *get_ps_params(int ifd, BufList **ps_data)
 				}
 			}
 		}
+
+		/* ver.3.80 Landscape/Portrait */
+		if( read_bytes > 6 ){
+			if( (strncmp(&read_buf[read_bytes-5], "] cm", 4) == 0) || (strncmp(&read_buf[read_bytes-5], "] Tm", 4) == 0) ){
+			//if( strncmp(&read_buf[read_bytes-5], "] cm", 4) == 0 ){
+				char *tok;
+				char dimx[4][32];
+				int k;
+
+			 	fprintf( stderr, "DEBUG: ###find cm/Tm[ = %d: %s, \n" ,line_count, read_buf );
+
+				tok = strtok( &read_buf[1], " " );
+				strncpy(dimx[0], tok, 32);
+				dimx[0][31] = '\0';
+				fprintf( stderr, "DEBUG: dimx[0] = %s\n" ,dimx[0] );
+				for( k=1; k<4; k++ ){
+					tok = strtok( NULL, " " );
+					strncpy(dimx[k], tok, 32);
+					dimx[k][31] = '\0';
+					fprintf( stderr, "DEBUG: dimx[%d] = %s\n", k, dimx[k] );
+				}
+				
+				if( (strncmp( dimx[1], dimx[2], 32) == 0) && (strncmp( dimx[1], "0", 32) == 0) ){
+					if( strncmp( dimx[0], "-", 1) == 0 ){
+						rotate_info = 2;  /* Rotate:180 */
+					}
+					else{
+						rotate_info = 0;  /* Rotate:  0 */
+					}
+				}
+				else if( (strncmp( dimx[0], dimx[3], 32) == 0) && (strncmp( dimx[0], "0", 32) == 0) ){
+					if( strncmp( dimx[1], "-", 1) == 0 ){
+						rotate_info = 1;  /* Rotate:270 */
+					}
+					else{
+						rotate_info = 3;  /* Rotate: 90 */
+					}
+				}
+				else{
+					 rotate_info = 0;
+				}
+			 	rotate_flg = 1;
+			 }
+		}
+		line_count = line_count + 1;
+		/* ver.3.80 Landscape/Portrait */
 
 		/* ver.3.50 File Transfer */
 		if( (strncmp(read_buf, "%%LanguageLevel: 2", 18) == 0) || (strncmp(read_buf, "%%LanguageLevel: 3", 18) == 0) )
@@ -370,14 +427,46 @@ ParamList *get_ps_params(int ifd, BufList **ps_data)
 		}
 		else if( begin_page )
 		{
-			if( strncmp(read_buf, "%%EndPageSetup", 14) == 0 )
+			/* ver.3.80 Landscape/Portrait */
+			/* EndPageSetup etc from 100 line */
+			if( (endpage_flg == 1) && ( (rotate_flg == 1) || ((endpage_count + 100) < line_count)) ) {
+				fprintf( stderr, "DEBUG: ****$$$ endpage_count,line_count = %d, %d\n",endpage_count, line_count );
 				break;
-			else if( strncmp(read_buf, "gsave", 5) == 0 )
-				break;
-			else if( read_buf[0] >= '0' && read_buf[0] <= '9' )
-				break;
+			}
+			/* ver.3.80 Landscape/Portrait */
+
+			if( strncmp(read_buf, "%%EndPageSetup", 14) == 0 ){
+				if( endpage_flg == 0 ){
+					endpage_count = line_count;
+				}
+				endpage_flg = 1;
+				/* break; */
+			}
+			else if( strncmp(read_buf, "gsave", 5) == 0 ){
+				if( endpage_flg == 0 ){
+					endpage_count = line_count;
+				}
+				endpage_flg = 1;
+				/* break; */
+			}
+
+			else if( read_buf[0] >= '0' && read_buf[0] <= '9' ){
+				if( endpage_flg == 0 ){
+					endpage_count = line_count;
+				}
+				endpage_flg = 1;
+				/* break; */
+			}
+
+			/* ver.3.80 Landscape/Portrait */
+			/* if( strncmp(read_buf, "%%EndPageSetup", 14) == 0 ) */
+			/* 	break; */
+			/* else if( strncmp(read_buf, "gsave", 5) == 0 ) */
+			/* 	break; */
+			/* else if( read_buf[0] >= '0' && read_buf[0] <= '9' ) */
+			/* 	break; */
 		}
-		// For InkJet <</***(...)>>setpagedevice.
+		/* For InkJet <</xxx(...)>>setpagedevice. */
 		else if(strncmp(read_buf + (read_bytes - 1 - end_len), PAGE_DEV_END, end_len) == 0)
 		{
 			char key_buf[MAX_KEY_LEN + 1];
@@ -430,6 +519,12 @@ ParamList *get_ps_params(int ifd, BufList **ps_data)
 			}
 		}
 	}
+	
+	/* ver.3.80 Landscape/Portrait */
+	fprintf( stderr, "DEBUG: ****$$$ rotate_info = %d\n",rotate_info );
+	snprintf(rotate_buf, 16, "%d", rotate_info);
+	param_list_add_multi(&p_list, "CNRotate", rotate_buf, strlen(rotate_buf) + 1, 1);
+	/* ver.3.80 Landscape/Portrait */
 
 	while( (read_bytes = read_line(-1, read_buf, DATA_BUF_SIZE - 1)) > 0 )
 	{
@@ -789,6 +884,7 @@ char* make_cmd_param(cups_option_t *p_cups_opt, int num_opt,
 	char	*canon_usb_backend_str = "cnijusb:";
 	char	*canon_net_backend_str = "cnijnet:";
 	short	canon_backend_flag = 0;
+	short	rotate_flag = 0;
 
 
 //For InkJet
@@ -825,7 +921,11 @@ char* make_cmd_param(cups_option_t *p_cups_opt, int num_opt,
 
 	/* Ver.3.20 */
 	if( p_ppd->model_number < 356 ) canon_backend_flag = 0;
-	fprintf(stderr,"DEBUG: p_ppd->model_number=(%d)\n",p_ppd->model_number);
+	/* fprintf(stderr,"DEBUG: p_ppd->model_number=(%d)\n",p_ppd->model_number); */
+
+	/* Ver.3.80 */
+	if( p_ppd->model_number < 401 ) rotate_flag = 0;
+	else                            rotate_flag = 1;
 
 	if( p_opt_key_table == NULL)
 		return NULL;
@@ -1183,6 +1283,18 @@ char* make_cmd_param(cups_option_t *p_cups_opt, int num_opt,
 		param_list_add(&p_list, "--copies", pl->value, strlen(pl->value) + 1);
 	}
 
+	/* Ver.3.80 */
+	/* If rotate_flag -> 1 : "--rotate" */
+	if( rotate_flag == 1 ){
+		ParamList *plx = NULL;
+		plx = param_list_find(p_param, "CNRotate");
+		if ( plx != NULL )
+		{
+			param_list_add(&p_list, "--rotate", plx->value, strlen(plx->value) + 1);
+		}
+	}
+	
+
 	/* Make "cif command" */
 	flt_cmd_buf = make_filter_param_line(p_product, reso, p_list);
 
@@ -1423,8 +1535,9 @@ int main(int argc, char *argv[])
 
 	close(fds[1]);
 
-	if( g_filter_pid != -1 )
-		waitpid(g_filter_pid, NULL, 0);
+	if( g_filter_pid != -1 ) { 
+		waitpid(g_filter_pid, NULL, 0); /* Ver.3.80 */
+	}
 
 	return 0;
 

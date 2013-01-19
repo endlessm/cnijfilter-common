@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+MimeType=text/pro
+Name=Maintenance-MG2200
+Exec=cngpijmnt Canon-MG2200
+Icon=printer.png
+Categories=Graphics
+Type=Application
+Terminal=false
+Comment="maintenance" is a GUI program for Canon Inkjet Printer. You can easily select several parameters for printing.
+

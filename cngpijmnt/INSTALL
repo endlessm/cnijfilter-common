@@ -1,0 +1,26 @@
+To build and install cngpij:
+
+  1) Building misc libraries.
+        cd ../libs
+        ./autogen.sh
+        make
+        cd ../cngpij
+
+
+  2) Building "cngpij".
+        ./autogen.sh
+        make
+        make install
+
+     Appendix:
+        * You can also set the following options.
+           --prefix
+
+           --enable-progpath
+                printui(ex.printuimp230)
+
+     Example:
+           ./autogen.sh --prefix=/usr/local --enable-progpath=/usr/local/bin
+           make
+           make install
+

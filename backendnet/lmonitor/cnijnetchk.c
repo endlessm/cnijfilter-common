@@ -210,7 +210,7 @@ int sendData(CNNLHANDLE hnd, void *buffer, unsigned long size, int sendmode, FIL
 ********************************************************************************/
 int dispatchCommandIVEC(CNNLHANDLE hnd, int type){
 	char command_buffer[CNCL_MAKECOMMAND_BUF_LEN];
-	char read_buffer[2048];
+	char read_buffer[4096];
 	static char job_id[16];
 	
 	unsigned long timeout = 6000;
@@ -238,13 +238,25 @@ int dispatchCommandIVEC(CNNLHANDLE hnd, int type){
 			}
 			type = CNCL_CHECK_END;
 			break;
+		case CNCL_COMMAND_POWERON:
+			if (makePrintCommand(type, command_buffer, sizeof(command_buffer), NULL, "0") != CNCL_OK){
+				return -1;
+			}
+			type = CNCL_CHECK_POWERON;
+			break;
 		default:
 			return -1;
 	}
 	
 	/* send */
 	if (sendData(hnd, command_buffer, strlen(command_buffer), SEND_IVEC, NULL) < 0){
+		fprintf(stderr, "DEBUG: [cnijnetprn] dispatchCommandIVEC failed(%d)\n", __LINE__);
 		return -1;
+	}
+	
+	/* poweron command is not need to check response */
+	if (type == CNCL_CHECK_POWERON){
+		return 0;
 	}
 	
 	/* receive */
@@ -252,19 +264,23 @@ int dispatchCommandIVEC(CNNLHANDLE hnd, int type){
 		unsigned long rsize = 0;
 		memset(read_buffer, 0x00, sizeof(read_buffer));
 		
-		usleep(100*1000);
+		usleep(1000*1000);
 		
-		fprintf(stderr, "DEBUG: [cnijnetprn] dispatchCommandIVEC Receive(%d)\n", type);
-		if (CNNL_DataRead(hnd, read_buffer, &rsize, sizeof(read_buffer), 3, timeout) == CNNL_RET_SUCCESS){
+		int result = CNNL_DataRead(hnd, read_buffer, &rsize, sizeof(read_buffer), 3, timeout);
+		fprintf(stderr, "DEBUG: [cnijnetprn] dispatchCommandIVEC Receive(type=%d, result=%d, err=%d)\n", type, result, error_count);
+
+		if (result == CNNL_RET_SUCCESS){
 			// check response
 			if (checkPrintCommand(type, read_buffer, (short)rsize, job_id, sizeof(job_id)) == CNCL_OK){
 				// response status is OK
 				return 0;
 			}
-			
+			error_count = 0;
+		} else if (result == CNNL_RET_BUSY_RESPONSE){
 			error_count = 0;
 		} else {
-			if (error_count > (SESSION_TIMEOUT*1000/timeout)){
+			if (error_count >= 30){
+				fprintf(stderr, "DEBUG: [cnijnetprn] dispatchCommandIVEC failed(%d)\n", __LINE__);
 				return -1;
 			} else {
 				error_count++;
@@ -272,6 +288,7 @@ int dispatchCommandIVEC(CNNLHANDLE hnd, int type){
 		}
 		CheckParentProcess(hnd);
 	}
+	fprintf(stderr, "DEBUG: [cnijnetprn] dispatchCommandIVEC failed(%d)\n", __LINE__);
 	return -1;
 }
 
@@ -280,13 +297,13 @@ int dispatchCommandIVEC(CNNLHANDLE hnd, int type){
 	getPrinterStatus
 ********************************************************************************/
 static int getPrinterStatus(CNNLHANDLE hnd, char *buf, unsigned long size){
-	char read_buffer[2048], status_buffer[2048];
+	char read_buffer[4096], status_buffer[4096];
 	unsigned long rsize = 0, ssize=0, copysize=0;
 	
 	memset(read_buffer, 0x00, sizeof(read_buffer));
 	memset(buf, 0x00, sizeof(size));
 	
-	fprintf(stderr, "DEBUG: [cnijnetprn] getPrinterStatus\n");
+	fprintf(stderr, "DEBUG: [cnijnetprn] getPrinterStatus starts.\n");
 	if (CNNL_DataRead(hnd, read_buffer, &rsize, sizeof(read_buffer), 3, 6000) == CNNL_RET_SUCCESS){
 		short short_ssize = (short)ssize;
 		memset(status_buffer, 0x00, sizeof(status_buffer));
@@ -300,6 +317,7 @@ static int getPrinterStatus(CNNLHANDLE hnd, char *buf, unsigned long size){
 			return 0;
 		}
 	}
+	fprintf(stderr, "DEBUG: [cnijnetprn] getPrinterStatus finished with errors.\n");
 	return -1;
 }
 
@@ -381,10 +399,21 @@ success:
 static int isPrinterWorking(CNNLHANDLE h, const int retry, const unsigned long timeout){
 	char *buf;
 	char buffer[512];
+	unsigned long readsz = 0;
 	
-	fprintf(stderr, "DEBUG: [cnijnetprn] IsPrinterWorking\n");
-
+	fprintf(stderr, "DEBUG: [cnijnetprn] IsPrinterWorking starts.\n");
 	CheckParentProcess(h);
+	
+	if (CNNL_GetDeviceID(h, buffer, &readsz, sizeof(buffer), 3, 6000) != CNNL_RET_SUCCESS){
+		return CNNL_RET_FAILURE;
+	} else {
+		buf = buffer+2;
+		fprintf(stderr, "DEBUG: [cnijnetprn] DeviceID=[%s]\n", buf);
+		if (getStatusCode((char *)buf, "STA:", "20", 1) == CNNL_RET_SUCCESS){
+			return CNNL_RET_NOT_WORKING;
+		}
+	}
+
 	if (getPrinterStatus(h, buffer, sizeof(buffer)) < 0){
 		return CNNL_RET_FAILURE;
 	} else {

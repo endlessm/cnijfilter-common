@@ -148,6 +148,7 @@ int main(int argc, char **argv){
 			fprintf(stderr, "ERROR: missing parameter(%s)\n", OPTION_STRING_SEARCH);
 			exit(1);
 		}
+
 		
 		_ij_network_search(mode, is_installer);
 		exit(0);
@@ -254,7 +255,7 @@ init_printing:
 		/* Init */
 		if (CNNL_Init(&hnd) != CNNL_RET_SUCCESS){
 			errcode = 1;
-			fprintf(stderr, "ERROR: error occurred while preparing\n");
+			fprintf(stderr, "ERROR: error occurred while preparing(%d)\n", __LINE__);
 			goto error_init;
 		}
 		if (CNNL_Config(hnd, CNNL_CONFIG_SET_VERSION, &latest_version, &param_size) != CNNL_RET_SUCCESS){
@@ -302,21 +303,21 @@ init_printing:
 
 		if (CNNL_OpenEx(hnd, ipaddr, CNNET_TYPE_PRINTER, 10, 60000) != CNNL_RET_SUCCESS){
 			errcode = 1;
-			fprintf(stderr, "ERROR: error occurred while preparing\n");
+			fprintf(stderr, "ERROR: error occurred while preparing(%d)\n", __LINE__);
 			goto error_open;
 		}
 		
 		// check wether the printer exists or not
 		if (CNNL_CheckVersion(hnd, 10, 60000) != CNNL_RET_SUCCESS){
 			errcode = 1;
-			fprintf(stderr, "ERROR: error occurred while preparing\n");
+			fprintf(stderr, "ERROR: error occurred while preparing(%d)\n", __LINE__);
 			goto error_close;
 		}
 		
 		// check command type
 		if (CNNL_GetCommandType(hnd, &command, 10, 60000) != CNNL_RET_SUCCESS){
 			errcode = 1;
-			fprintf(stderr, "ERROR: error occurred while preparing\n");
+			fprintf(stderr, "ERROR: error occurred while preparing(%d)\n", __LINE__);
 			goto error_close;
 		}
 		
@@ -333,28 +334,28 @@ init_printing:
 			// load functions
 			lib_handle = dlopen(library_path, RTLD_LAZY);
 			if (lib_handle == NULL){
-				fprintf(stderr, "ERROR: cannot load library\n");
+				fprintf(stderr, "ERROR: cannot load library(%d)\n", __LINE__);
 				errcode = 1;
 				goto error_close;
 			}
 			
 			makePrintCommand  = dlsym(lib_handle, "CNCL_MakePrintCommand");
 			if (dlerror() != NULL){
-				fprintf(stderr, "ERROR: cannot load function\n");
+				fprintf(stderr, "ERROR: cannot load function(%d)\n", __LINE__);
 				errcode = 1;
 				goto error_close;
 			}
 			
 			checkPrintCommand = dlsym(lib_handle, "CNCL_CheckPrintCommand");
 			if (dlerror() != NULL){
-				fprintf(stderr, "ERROR: cannot load function\n");
+				fprintf(stderr, "ERROR: cannot load function(%d)\n", __LINE__);
 				errcode = 1;
 				goto error_close;
 			}
 			
 			getStatusCommand  = dlsym(lib_handle, "CNCL_GetStatusCommand");
 			if (dlerror() != NULL){
-				fprintf(stderr, "ERROR: cannot load function\n");
+				fprintf(stderr, "ERROR: cannot load function(%d)\n", __LINE__);
 				errcode = 1;
 				goto error_close;
 			}
@@ -423,28 +424,30 @@ init_printing:
 		if (!(mode & CNNL_JOB_ERROR) && start_print(hnd, 3, 9000) != CNNL_RET_SUCCESS){
 			errcode = 1;
 			mode |= CNNL_JOB_ERROR;
-			fprintf(stderr, "ERROR: error occurred while preparing\n");
+			fprintf(stderr, "ERROR: error occurred while preparing(%d)\n", __LINE__);
 			goto error_printing;
 		}
 		
 		/* ---------------------------------------------------------------------
-		    print(after this line, response error is fatal; job is cancelled)
+		    print(after this line, response error is fatal; job is canceled)
 		*/
 		
 		/* send start command... */
 		if (is_direct == 0 && command == CNNL_COMMAND_IVEC){
 			// IVEC
+			dispatchCommandIVEC(hnd, CNCL_COMMAND_POWERON);
+			
 			if (dispatchCommandIVEC(hnd, CNCL_COMMAND_START1) < 0){
 				errcode = 1;
 				mode |= CNNL_JOB_ERROR;
-				fprintf(stderr, "ERROR: error occurred while printing\n");
+				fprintf(stderr, "ERROR: error occurred while printing(%d)\n", __LINE__);
 				goto error_printing;
 			}
 			
 			if (dispatchCommandIVEC(hnd, CNCL_COMMAND_START2) < 0){
 				errcode = 1;
 				mode |= CNNL_JOB_ERROR;
-				fprintf(stderr, "ERROR: error occurred while printing\n");
+				fprintf(stderr, "ERROR: error occurred while printing(%d)\n", __LINE__);
 				goto error_printing;
 			}
 		} else {
@@ -458,7 +461,7 @@ init_printing:
 			len = fread_with_retry(rbuffer, READ_BUFFER_SIZE, fp);
 			if ((mode & CNNL_JOB_ERROR)){
 				errcode = 1;
-				fprintf(stderr, "ERROR: error occurred while printing\n");
+				fprintf(stderr, "ERROR: error occurred while printing(%d)\n", __LINE__);
 				goto error_close;
 			}
 			
@@ -469,7 +472,7 @@ init_printing:
 				if (sendData(hnd, p, len, SEND_PRINT_DATA, fp) < 0){
 					errcode = 1;
 					mode |= CNNL_JOB_ERROR;
-					fprintf(stderr, "ERROR: error occurred while printing\n");
+					fprintf(stderr, "ERROR: error occurred while printing(%d)\n", __LINE__);
 					goto error_printing;
 				}
 				
@@ -492,7 +495,7 @@ init_printing:
 			if (dispatchCommandIVEC(hnd, CNCL_COMMAND_END) < 0){
 				errcode = 1;
 				mode |= CNNL_JOB_ERROR;
-				fprintf(stderr, "ERROR: error occurred while printing\n");
+				fprintf(stderr, "ERROR: error occurred while printing(%d)\n", __LINE__);
 				goto error_printing;
 			}
 		}
@@ -515,7 +518,7 @@ init_printing:
 			// cannot get end of print
 			errcode = 1;
 			mode |= CNNL_JOB_ERROR;
-			fprintf(stderr, "ERROR: error occurred while printing\n");
+			fprintf(stderr, "ERROR: error occurred while printing(%d)\n", __LINE__);
 			goto error_printing;
 		}
 		
@@ -646,6 +649,8 @@ error:
 	_ij_network_terminate
 ********************************************************************************/
 static void _ij_network_terminate(int sig_code){
+	fprintf(stderr, "DEBUG: _ij_network_terminate called(%d)\n", __LINE__);
+			
 	CNNL_Abort(hnd);
 	mode |= CNNL_JOB_CANCELLED;
 }

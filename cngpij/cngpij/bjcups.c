@@ -43,8 +43,8 @@
 #include "bjcups.h"
 #include "bjutil.h"
 
-#define	BJCUPS_VERSION	"cngpij Ver.3.70  Copyright CANON INC. 2002-2012\n"
-#define BJCUPS_INTVER	"cngpij Internal Version : 3.70.01.005\n"
+#define	BJCUPS_VERSION	"cngpij Ver.3.80  Copyright CANON INC. 2002-2012\n"
+#define BJCUPS_INTVER	"cngpij Internal Version : 3.80.01.001\n"
 
 #define	BJ_SOCKET		"/tmp/ijui"
 
@@ -59,9 +59,9 @@
 #define	UI_OPT_INTVER	8
 #define	UI_OPT_CHECKENTRY	16
 
-/* Ver.3.70 */
 #define	LINE_BUF_SIZE	1024
-#define CNPPD_SETTINGS_SUPPORT_DEVURI_OPT	"EnableDEVURIOption"
+#define CNPPD_SETTINGS_SUPPORT_DEVURI_OPT		"EnableDEVURIOption"
+#define CNPPD_SETTINGS_SUPPORT_FRONTEND_OPT		"EnableFrontEnd" /* Ver.3.80 */
 #define TRUE 1
 #define FALSE 0
 
@@ -834,6 +834,24 @@ onErr:
 	return result;
 }
 
+/* Ver.3.80 */
+static int isSupportFrontEnd( void )
+{
+	int value;
+	int result = FALSE;
+
+	if ( ParseCNPpdOption( &value, CNPPD_SETTINGS_SUPPORT_FRONTEND_OPT ) < 0 ) goto onErr;
+
+	if ( value == 1 ) {
+		result = TRUE;
+	}
+	else {
+		result = FALSE;
+	}
+
+onErr:
+	return result;
+}
 
 
 int main(int argc, char* argv[])
@@ -891,6 +909,13 @@ int main(int argc, char* argv[])
 	if( get_product_name(g_printer_name, product_name, 64) == NULL )
 	{
 		fputs("ERROR: Illegal printer name.\n", stderr);
+		exit(1);
+	}
+
+	/* Ver.3.80 */
+	if( isSupportFrontEnd() == TRUE )
+	{
+		fputs("ERROR: The specified printer is not supported.\n", stderr);
 		exit(1);
 	}
 

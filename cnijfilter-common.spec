@@ -2,7 +2,7 @@
 %bcond_with fastbuild
 %bcond_with build_common_package
 
-%define VERSION 3.70
+%define VERSION 3.80
 %define RELEASE 1
 
 %define _arc  %(getconf LONG_BIT)
@@ -18,7 +18,7 @@
 
 %define CNBP_LIBS libcnbpcmcm libcnbpcnclapi libcnbpcnclbjcmd libcnbpcnclui libcnbpess libcnbpo
 %define COM_LIBS libcnnet
-%define PRINT_PKG_PROGRAM ppd cnijfilter printui lgmon cngpijmon
+%define PRINT_PKG_PROGRAM ppd cnijfilter maintenance lgmon cngpijmon
 
 %define PKG %{MODEL}series
 
@@ -91,7 +91,7 @@ popd
 pushd cnijfilter
     ./autogen.sh --prefix=%{_prefix} --program-suffix=CN_IJ_MODEL --enable-libpath=%{_libdir}/bjlib --enable-binpath=%{_bindir}
 popd
-pushd printui
+pushd maintenance
     ./autogen.sh --prefix=%{_prefix} --program-suffix=CN_IJ_MODEL --datadir=%{_prefix}/share --enable-libpath=%{_libdir}/bjlib
 popd
 pushd lgmon
@@ -129,7 +129,7 @@ pushd cnijfilter
 	make clean
 	make
 popd
-pushd printui
+pushd maintenance
     ./autogen.sh --prefix=%{_prefix} --program-suffix=%{MODEL} --datadir=%{_prefix}/share --enable-libpath=%{_libdir}/bjlib
 	make clean
 	make
@@ -155,6 +155,10 @@ pushd libs
 popd
 
 pushd cngpij
+    ./autogen.sh --prefix=%{_prefix} --enable-progpath=%{_bindir}
+popd
+
+pushd cngpijmnt
     ./autogen.sh --prefix=%{_prefix} --enable-progpath=%{_bindir}
 popd
 
@@ -187,7 +191,7 @@ pushd cnijfilter
     make install DESTDIR=${RPM_BUILD_ROOT}
 popd
 
-pushd printui
+pushd maintenance
     make install DESTDIR=${RPM_BUILD_ROOT}
 popd
 
@@ -247,7 +251,7 @@ done
 if [ "$1" = 0 ] ; then
 	rmdir -p --ignore-fail-on-non-empty %{_prefix}/share/locale/*/LC_MESSAGES
 	rmdir -p --ignore-fail-on-non-empty %{_prefix}/share/cngpijmon%{MODEL}
-	rmdir -p --ignore-fail-on-non-empty %{_prefix}/share/printui%{MODEL}
+	rmdir -p --ignore-fail-on-non-empty %{_prefix}/share/maintenance%{MODEL}
 	rmdir -p --ignore-fail-on-non-empty %{_bindir}
 fi
 if [ -x /sbin/ldconfig ]; then
@@ -297,12 +301,12 @@ fi
 %defattr(-,root,root)
 %{_bindir}/cngpijmon%{MODEL}
 %{_bindir}/lgmon%{MODEL}
-%{_bindir}/printui%{MODEL}
+%{_bindir}/maintenance%{MODEL}
 %{_ppddir}/share/cups/model/canon%{MODEL}.ppd
 %{_prefix}/share/locale/*/LC_MESSAGES/cngpijmon%{MODEL}.mo
-%{_prefix}/share/locale/*/LC_MESSAGES/printui%{MODEL}.mo
+%{_prefix}/share/locale/*/LC_MESSAGES/maintenance%{MODEL}.mo
 %{_prefix}/share/cngpijmon%{MODEL}/*
-%{_prefix}/share/printui%{MODEL}/*
+%{_prefix}/share/maintenance%{MODEL}/*
 
 %{_bindir}/cif%{MODEL}
 %{_libdir}/libcnbp*%{MODEL_NUM}.so*
@@ -330,6 +334,7 @@ fi
 %{_cupsbindir64}/backend/cnijusb
 %{_cupsbindir64}/backend/cnijnet
 %{_bindir}/cngpij
+%{_bindir}/cngpijmnt
 %{_bindir}/cnijnpr
 %{_bindir}/cnijnetprn
 %{_libdir}/libcnnet.so*

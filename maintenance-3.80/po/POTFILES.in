@@ -1,0 +1,13 @@
+# List of source files containing translatable strings.
+#src/loadres.c
+
+# If you DO NOT USE libglade, uncomment below 4 lines.
+# src/main.c
+# src/callbacks.c
+# src/support.c
+# src/interface.c
+
+# Strings created from keytext/printui.res.
+# Always use this file.
+po/keystr.h
+

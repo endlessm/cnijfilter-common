@@ -1,0 +1,334 @@
+﻿********************************************************************************
+Canon Inkjet Printer Driver
+Version 3.80
+Copyright CANON INC. 2012
+All Rights Reserved.
+********************************************************************************
+
+1. About this file
+    This file describes the options available when printing on this printer using the lpr command.
+
+2. Option list
+    This section describes options available for setting up printing with the lpr command.
+    For information about the options that can be used and restrictions
+    on combining options, see the following:
+
+    Media Type **
+    Paper Source **
+    Print Quality **
+    Color Balance
+    Intensity
+    Contrast
+    Brightness
+    Grayscale Printing **
+    Tone **
+    Page Size **
+    Print Size
+    Print Position
+    Automatic Duplex Printing **
+    Borderless Printing **
+    Copies
+
+    Any setting identified with ** has restrictions when combined
+    with other options. For information about restrictions based on print option
+    combinations, see "Restrictions on the combinations of print options."
+
+    Media Type **
+
+        Syntax                  :  -o MediaType=[parameter]
+        Parameter               : The following media can be selected.
+                                   [Default Value=plain]
+
+        plain                    Plain Paper
+        glossygold               Photo Paper Plus Glossy II
+        proplatinum              Photo Paper Pro Platinum
+        luster                   Photo Paper Pro Luster
+        semigloss                Photo Paper Plus Semi-gloss
+        glossypaper              Glossy Photo Paper
+        matte                    Matte Photo Paper
+        envelope                 Envelope
+        postcardaddress          Hagaki A
+        ijpostcard               Ink Jet Hagaki
+        glossypost               Hagaki K
+        postcard                 Hagaki
+        otherfineart             Other Fine Art Paper
+        highres                  High Resolution Paper
+        tshirt                   T-Shirt Transfers
+        otherphoto               Other Photo Paper
+
+        *If selecting Fine Art paper, specify "letterfineart35" or "a4fineart35" for Page Size.
+
+    Paper Source **
+
+        Syntax                  :  -o InputSlot=[parameter]
+        Parameter               : The following Paper Sources can be selected.
+                                   [Default Value=cassetteauto]
+
+        cassetteauto             Feed from Cassette
+
+    Print Quality **
+
+        Syntax                  :  -o CNQuality=[parameter]
+        Parameter               : 1 - 5 [Default Value=differs depending on options]
+
+        As the value becomes smaller, the print quality improves. As the value becomes larger,
+         the print speed increases.
+        The default value differs depending on other print options.
+
+
+    Color Balance
+
+        Syntax                  :  Cyan      -o CNBalanceC=[parameter]
+                                   Magenta      -o CNBalanceM=[parameter]
+                                   Yellow      -o CNBalanceY=[parameter]
+                                   Parameter : -50 - 50 [Default Value=0]
+
+        The color tone increases as the number increases.
+
+    Intensity
+
+        Syntax                  :  -o CNDensity=[parameter]
+        Parameter               : -50 - 50 [Default Value=0]
+
+        The intensity increases as the number increases.
+
+    Contrast
+
+        Syntax                  :  -o CNContrast=[parameter]
+        Parameter               : -50 - 50 [Default Value=0]
+
+        The contrast increases as the number increases.
+
+    Brightness
+
+        Syntax                  :  -o CNGamma=[parameter]
+        Parameter               : The following parameters can be selected.
+                                   [Default Value=1.8]
+
+        1.4                      Light
+        1.8                      Normal
+        2.2                      Dark
+
+    Grayscale Printing **
+
+        Syntax                  :  -o CNGrayscale
+        Parameter               : There is no parameter.
+
+    Tone **
+
+        Syntax                  :  -o CNTone=[parameter]
+        Parameter               : -50 - 50 [Default Value=0]
+
+        The color tone becomes warmer as the number increases.
+
+    Page Size **
+
+        Syntax                  :  -o PageSize=[parameter]
+        Parameter               : The following Page Sizes can be selected.
+                                   [Default Value=a4]
+
+        letter                   Letter [8.50"x11.00" 215.9x279.4mm]
+        legal                    Legal [8.50"x14.00" 215.9x355.6mm]
+        a5                       A5 [5.83"x8.27" 148.0x210.0mm]
+        a4                       A4 [8.27"x11.69" 210.0x297.0mm]
+        b5                       B5 [7.17"x10.12" 182.0x257.0mm]
+        4X6                      4"x6" [4.00"x6.00" 101.6x152.4mm]
+        5X7                      5"x7" [5.00"x7.00" 127.0x177.8mm]
+        8X10                     8"x10" [8.00"x10.00" 203.2x254.0mm]
+        letterfineart35          Letter (Art Paper Margin 35) [8.50"x11.00" 215.9x279.4mm]
+        a4fineart35              A4 (Art Paper Margin 35) [8.27"x11.69" 210.0x297.0mm]
+        l                        L [3.50"x5.00" 89.0x127.0mm]
+        2l                       2L [5.00"x7.01" 127.0x178.0mm]
+        postcard                 Hagaki [3.94"x5.83" 100.0x148.0mm]
+        postdbl                  Hagaki 2 [7.87"x5.83" 200.0x148.0mm]
+        envelop10p               Comm. Env. #10 [4.12"x9.50" 104.8x241.3mm]
+        envelopdlp               DL Env. [4.33"x8.66" 110.0x220.0mm]
+        envj4p                   Youkei 4 [4.13"x9.25" 105.0x235.0mm]
+        envj6p                   Youkei 6 [3.86"x7.48" 98.0x190.0mm]
+        Custom.value1xvalue2mm   Custom
+        letter.bl                Letter [8.50"x11.00" 215.9x279.4mm] with Borderless Printing
+        a4.bl                    A4 [8.27"x11.69" 210.0x297.0mm] with Borderless Printing
+        4X6.bl                   4"x6" [4.00"x6.00" 101.6x152.4mm] with Borderless Printing
+        5X7.bl                   5"x7" [5.00"x7.00" 127.0x177.8mm] with Borderless Printing
+        8X10.bl                  8"x10" [8.00"x10.00" 203.2x254.0mm] with Borderless Printing
+        l.bl                     L [3.50"x5.00" 89.0x127.0mm] with Borderless Printing
+        2l.bl                    2L [5.00"x7.01" 127.0x178.0mm] with Borderless Printing
+        postcard.bl              Hagaki [3.94"x5.83" 100.0x148.0mm] with Borderless Printing
+
+        If you specify Custom for Page Size, specify the size within the following range.
+        You must set both the paper width (value1) and height (value2).
+
+        Syntax                  :  -o PageSize=Custom.[value1]x[value2]mm
+        Parameter               : value1 = 89 mm - 215.9 mm,
+                                   value2 = 127 mm - 355.6 mm
+
+
+    Print Size
+
+        i) Scaling Specification
+
+        Specify the size ratio for enlargement or reduction as a % value. With the lpr command,
+        you can use "natural-scaling," which is a standard option, to perform
+        the Scaling Specification.
+        For information about the options that can be set in the lpr command (CUPS),
+        see the homepage for the Common UNIX Printing System (http://www.cups.org/).
+
+        ii) Fit-to-Page Printing
+
+        Syntax                  : -o scaling=100
+
+        This function expands or reduces the image to fit the print area, without changing
+        the vertical-horizontal ratio. It scales the image to fit to the print area
+        in either the horizontal or vertical direction.
+
+        *Scaling Specification and Fit-to-Page Printing cannot be specified
+        at the same time.
+
+    Print Position
+
+        With the lpr command, you can use "position," which is a standard option, to perform
+        the Print Position adjustment. For information about the options that can be set
+        in the lpr command (CUPS), see the homepage for the Common UNIX Printing System
+        (http://www.cups.org/).
+
+
+    Automatic Duplex Printing **
+
+        Syntax                  :  -o Duplex
+        Parameter               : There is no parameter.
+
+        Staple Side
+
+        Syntax                  :  -o CNStapleSide=[parameter]
+        Parameter               : The following Staple Sides can be selected.
+                                   [Default Value=longside]
+
+        longside                 Printing with stapling on the long side.
+        shortside                Printing with stapling on the short side.
+
+        *This option is enabled only when Automatic Duplex Printing is specified.
+
+    Borderless Printing **
+
+        This parameter adjusts the amount that extends outside the paper during
+        Borderless Printing. This parameter is enabled only when Borderless Printing is specified.
+
+        Syntax                  :  -o CNExtension=[parameter]
+        Parameter               : 0 - 3 [Default Value=2]
+        As the number becomes larger, the extension amount increases.
+
+    Copies
+
+        Syntax                  :  -o CNCopies=[parameter]
+        Parameter               : 1 - 999 [Default Value=1]
+
+
+3. Restrictions on the combinations of print options
+
+    The combinations of print option for the lpr command are restricted as shown below.
+
+    *Grayscale Printing, Tone, and Media Type
+
+        When Tone is specified for Grayscale Printing, you must specify
+        one of the following for Media Type.
+        glossygold
+        proplatinum
+        luster
+        semigloss
+        otherfineart
+        
+    *Media Type and Page Size
+        When "otherfineart" is specified for Media Type,
+        you must specify "letterfineart35" or "a4fineart35".
+
+    *Automatic Duplex Printing and Media Type/Page Size
+
+        You can specify the Automatic Duplex Printing if you specified the following Media Type:
+
+        plain
+        postcardaddress
+        postcard
+
+        You can specify the Automatic Duplex Printing if you specified the following Page Size:
+
+        letter
+        a5
+        a4
+        b5
+        postcard
+
+    *Media Type, Automatic Duplex Printing, Print Quality, and Borderless Printing
+
+        When combining Media Type, Automatic Duplex Printing, Print Quality,
+        and Borderless Printing, you can specify the following print setting combinations
+        using the lpr command:
+
+        When Borderless Printing is specified (when specifying a Page Size
+        for Borderless Printing):
+         -o MediaType=plain -o CNQuality=3 
+         -o MediaType=postcard -o CNQuality=2 
+         -o MediaType=postcard -o CNQuality=3 
+         -o MediaType=glossypaper -o CNQuality=2 
+         -o MediaType=glossypaper -o CNQuality=3 
+         -o MediaType=ijpostcard -o CNQuality=2 
+         -o MediaType=ijpostcard -o CNQuality=3 
+         -o MediaType=matte -o CNQuality=2 
+         -o MediaType=matte -o CNQuality=3 
+         -o MediaType=otherphoto -o CNQuality=3 
+         -o MediaType=glossygold -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=3 
+         -o MediaType=semigloss -o CNQuality=2 
+         -o MediaType=semigloss -o CNQuality=3 
+         -o MediaType=proplatinum -o CNQuality=1 
+         -o MediaType=proplatinum -o CNQuality=2 
+         -o MediaType=proplatinum -o CNQuality=3 
+         -o MediaType=glossypost -o CNQuality=2 
+         -o MediaType=glossypost -o CNQuality=3 
+         -o MediaType=postcardaddress -o CNQuality=2 
+         -o MediaType=postcardaddress -o CNQuality=3 
+         -o MediaType=luster -o CNQuality=2 
+         -o MediaType=luster -o CNQuality=3 
+        
+
+        When Borderless Printing is not specified (when not specifying a Page Size
+        for Borderless Printing):
+         -o MediaType=plain -o CNQuality=2 
+         -o MediaType=plain -o Duplex -o CNQuality=2 
+         -o MediaType=plain -o CNQuality=3 
+         -o MediaType=plain -o Duplex -o CNQuality=3 
+         -o MediaType=plain -o CNQuality=4 
+         -o MediaType=plain -o Duplex -o CNQuality=4 
+         -o MediaType=postcard -o CNQuality=2 
+         -o MediaType=postcard -o Duplex -o CNQuality=2 
+         -o MediaType=postcard -o CNQuality=3 
+         -o MediaType=postcard -o Duplex -o CNQuality=3 
+         -o MediaType=envelope -o CNQuality=2 
+         -o MediaType=envelope -o CNQuality=3 
+         -o MediaType=highres -o CNQuality=2 
+         -o MediaType=highres -o CNQuality=3 
+         -o MediaType=tshirt -o CNQuality=2 
+         -o MediaType=glossypaper -o CNQuality=2 
+         -o MediaType=glossypaper -o CNQuality=3 
+         -o MediaType=ijpostcard -o CNQuality=2 
+         -o MediaType=ijpostcard -o CNQuality=3 
+         -o MediaType=matte -o CNQuality=2 
+         -o MediaType=matte -o CNQuality=3 
+         -o MediaType=otherphoto -o CNQuality=3 
+         -o MediaType=otherfineart -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=3 
+         -o MediaType=semigloss -o CNQuality=2 
+         -o MediaType=semigloss -o CNQuality=3 
+         -o MediaType=proplatinum -o CNQuality=1 
+         -o MediaType=proplatinum -o CNQuality=2 
+         -o MediaType=proplatinum -o CNQuality=3 
+         -o MediaType=glossypost -o CNQuality=2 
+         -o MediaType=glossypost -o CNQuality=3 
+         -o MediaType=postcardaddress -o CNQuality=2 
+         -o MediaType=postcardaddress -o Duplex -o CNQuality=2 
+         -o MediaType=postcardaddress -o CNQuality=3 
+         -o MediaType=postcardaddress -o Duplex -o CNQuality=3 
+         -o MediaType=luster -o CNQuality=2 
+         -o MediaType=luster -o CNQuality=3 
+        
+

@@ -1,3 +1,9 @@
+cnijfilter-common-3.80 (3.80.1) quantal; urgency=low
+
+  * add 3.80 driver.
+
+ -- Michael Gruz <michael-gruz@seznam.cz>  Sat, 19 Jan 2013 13:12:02 +0100
+
 cnijfilter-common-3.70 (3.70.1) precise; urgency=low
 
   * RC2 add 3.70.

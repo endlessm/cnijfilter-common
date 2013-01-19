@@ -4,4 +4,5 @@ cd skel
 mv cnijfilter-* ../
 mv printui-* ../utils/
 mv cngpijmon-* ../utils/
+mv maintenance-* ../utils/
 

@@ -52,7 +52,7 @@ L_INST_PRN_01_20="Entrez le nom de l'imprimante.%s"
 
 L_INST_PRN_01_21="Le nom de l'imprimante que vous avez entré existe déjà. Voulez-vous l'écraser ?\nEntrez [y] pour Oui ou [n] pour Non.%s"
 
-L_INST_PRN_01_22="Le nom de l'imprimante n'est pas valide.\nVous ne pouvez utiliser que les caractères suivants pour le nom de l'imprimante :\n caractères alphanumériques (a-z, A-Z, 0-9), \".\", \"-\", \"_\", \"+\", \"@\", \"&\"\n"
+L_INST_PRN_01_22="Le nom de l'imprimante n'est pas valide.\nVous ne pouvez utiliser que les caractères suivants pour le nom de l'imprimante :\n caractères alphanumériques (a-z, A-Z, 0-9), \".\", \"-\", \"_\", \"+\", \"@\"\n"
 
 L_INST_PRN_01_23="Définir l'imprimante par défaut\n"
 L_INST_PRN_01_24="Voulez-vous définir cette imprimante par défaut ?\nEntrez [y] pour Oui ou [n] pour Non.%s"

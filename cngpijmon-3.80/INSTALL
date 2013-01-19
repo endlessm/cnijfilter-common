@@ -1,0 +1,36 @@
+To build and install cngpijmon:
+
+        for rpm
+        ./autogen.sh --datadir=/usr/local/share --program-suffix=<Printer Model Name> --enable-progpath=<cnijnpr Program Path>
+        for deb
+        ./autogen.sh --prefix=/usr --program-suffix=<Printer Model Name> --enable-progpath=<cnijnpr Program Path> --datadir=/usr/share
+        
+        make
+        make install
+
+To build and install cngpijmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            e510
+            mp230
+            mg2200
+            mg3200
+            mg4200
+            mg5400
+            mg6300
+            ip7200
+            
+You can set the following <cnijnpr Program Path>.
+            /usr/local/bin
+            /usr/bin
+
+
+Example for building the mg6300 cngpijmon with the new automake and autoconf:
+        for rpm
+        ./autogen.sh --datadir=/usr/local/share --program-suffix=mg6300 --enable-progpath=/usr/local/bin
+        for deb
+        ./autogen.sh --prefix=/usr --program-suffix=mg6300 --enable-progpath=/usr/bin --datadir=/usr/share
+        
+        make
+        make install
+
