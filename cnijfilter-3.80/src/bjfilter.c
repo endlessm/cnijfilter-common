@@ -34,6 +34,7 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <fcntl.h>
+#include <ctype.h>
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
 #define CIFTEMPFILEINPUT "/tmp/ciftmpXXXXXX"
@@ -86,7 +87,7 @@ static short exec_testprint( char *command , long cmdslen , char *filename , int
 static long get_file_bytes( char *filename );
 
 
-static int createInputfile( char name );
+//static int __attribute__ ((unused)) createInputfile( char name );
 
 static short modify_image_form( LPBJFILTERINFO lpbjinfo , int isDuplex, int pageNum );
 static short output_blank_page( CNCLPtr , int , int , LPBJF_ROOT );
@@ -125,19 +126,19 @@ int main( int argc, char *argv[] )
 	CNCLPAPERSIZE   	cnclpapersize;
 	BJFLTCOLORSYSTEM	bjfltcolor;
 	LPBJFILTERINFO		lpbjinfo = NULL;
-	IPCU				ipc;
-	short				ret;
+	IPCU __attribute__ ((unused))	ipc;
+	short __attribute__ ((unused))	ret;
 	char				socketname[256];
 	short				modelstrnum,i;
 	char				dispname[256];
 	char				modelname[256];
 	char				tmp_modelname[256],small_modelname[256];
-	char				*bsccdata = NULL;
+	char __attribute__ ((unused))	*bsccdata = NULL;
 	FILE				*fp = NULL;
 	char				confname[256];
 	short				id = 0;
-	short				testprint_ret;
-	DATA_INFO			data_info;
+	short __attribute__ ((unused))	testprint_ret;
+	DATA_INFO __attribute__ ((unused))data_info;
 	short				return_code = 1;
 
 #if DEBUGLOG
@@ -242,14 +243,14 @@ static short MakeBJPrintData
 	long				ImageHeight;
 	long				topskip;
 	long				page_width;
-	long				i;
+	long __attribute__ ((unused))	i;
 	short				bpp;
 	
 	CNCLNAMEINFO		cnclnameinfo;
 	BJFLTCOMSYSTEM		bjfltcom;
 	char 				tblPath[] = BJLIBPATH;
-	FILE				*fp=NULL;
-	CPKInt16			result;
+	FILE __attribute__ ((unused)) *fp=NULL;
+	CPKInt16 __attribute__ ((unused)) result;
 	char				*tmp_filename = NULL;
 	short				rev_flag = 0;
 	CIFRASTERINFO		CifRasterInfo;
@@ -1307,7 +1308,7 @@ static short dumpPage(LPBJF_NODE node, int prn)
 	}
 	ret = node->curCopies;
 	
-onErr:
+//onErr:
 	if(fd>0)close(fd);
 	return ret;
 }
@@ -1506,7 +1507,7 @@ static short exec_testprint( char *command , long cmdslen , char *filename , int
 
 	ret = 0;
 	
-onErr:
+//onErr:
 	if(fd>0)close(fd);
 	return ret;
 	
@@ -1844,7 +1845,7 @@ onErr:
 /*-------------------------------------------------------------*/
 static short flush_raster_data( CNCLPtr lpCnclData , LPBJFILTERINFO lpbjinfo , int fd , LPBJF_ROOT root )
 {
-	long				restLines, tmpRestLines;
+	long __attribute__ ((unused))	restLines, tmpRestLines;
 	short				result;
 	long				i;
 	CNCLErr				cnclerr = -1;

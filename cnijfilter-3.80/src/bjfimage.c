@@ -632,7 +632,7 @@ static short bmp_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	unsigned char		**rawbuf = NULL;
 	unsigned char		*buf = NULL;
 	long				rstep = 0;
-	short				retbyte;
+	short __attribute__ ((unused))	retbyte;
 	short				tmpflg;
 	short				tmpformat;
 	FILE				*tmpfp;
@@ -1520,12 +1520,12 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 {
 	FILE			*readfp;
 	FILE			*tmpfp;
-	unsigned char	buffer[50];
+	unsigned char __attribute__ ((unused)) buffer[50];
 	unsigned char	*buf = NULL;
 	unsigned char	**rawbuf = NULL;
 	short			tmpflg;
 	short			tmpformat;
-	short			retbyte = 0;
+	short __attribute__ ((unused)) retbyte = 0;
 	short			bpp = 3;
 	/* Modifications to fit the new libpng interface. */
 	png_uint_32		width = 0;
@@ -1536,13 +1536,13 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	long			RasterLength = 0;
 	long			i;
 	short			result = -1;
-	char			ch;
+	char __attribute__ ((unused)) ch;
 	png_structp		png_p;
 	png_infop		info_p;
 	int				bit_depth, color_type, interlace_type;
 
-	png_color_16 my_background, *image_background;
-   int intent,screen_gamma;
+	png_color_16 __attribute__ ((unused)) my_background, *image_background;
+	int __attribute__ ((unused)) intent,screen_gamma;
 
 
 	/*---
@@ -1784,7 +1784,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 {
 	png_structp		png_ptr;
 	png_infop		info_ptr;
-	FILE			*readfp;
+	FILE __attribute__ ((unused)) *readfp;
 	short			result = -1;
 
 	png_ptr = (png_structp)lpbjfimage->png_ptr;
@@ -1797,7 +1797,7 @@ static short png_image_flush( LPBJF_IMAGEINFO lpbjfimage )
 	lpbjfimage->info_ptr = NULL;
 
 	return 0;
-onErr:
+//onErr:
 	return result;	
 
 }

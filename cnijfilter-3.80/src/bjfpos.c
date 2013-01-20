@@ -84,7 +84,7 @@ static long round_up( double );
 
 
 
-static short check_imagesize( double defwidth, double defheight, double inwidth, double inheight )
+static short __attribute__ ((unused)) check_imagesize( double defwidth, double defheight, double inwidth, double inheight )
 { 
 	short result = 0;
 	
