@@ -1,0 +1,7 @@
+Package: cnijfilter-XXXXseries
+Architecture: ARCHITECTURE
+Depends: ${misc:Depends}, cnijfilter-YYYYseries
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+

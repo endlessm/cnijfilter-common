@@ -1,8 +1,15 @@
 #/bin/bash
 cd skel
 ./mk_debfile.pl ../rules
+cd ..
+rm cnijfilter-*
+cd utils
+rm printui-*
+rm cngpijmon-*
+rm maintenance-*
+cd ../skel
 mv cnijfilter-* ../
 mv printui-* ../utils/
 mv cngpijmon-* ../utils/
 mv maintenance-* ../utils/
-
+mv control ../

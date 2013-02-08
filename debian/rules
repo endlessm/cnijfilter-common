@@ -9,6 +9,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# define build amd64 as ia32 libs
+PRINTER_BUILD_64_AS=64
+
 # define package name
 COMMON_PKG=cnijfilter-common
 PRINTER_DEPEND_PKG+=cnijfilter-pixus550i-154-2.20-32-no
@@ -137,8 +140,8 @@ PRINTER_PKG_PROGRAM+=printui
 PRINTER_PKG_PROGRAM+=lgmon
 PRINTER_PKG_PROGRAM+=cngpijmon
 
-PRINTER_PKG_PPD+=cnijfilter-ip5200-2.60
-PRINTER_PKG_PPD+=cnijfilter-ip5200r-2.60
+PRINTER_PKG_PPD+=cnijfilter-ip5200-2.60-ip4200-32
+PRINTER_PKG_PPD+=cnijfilter-ip5200r-2.60-ip4200-32
 
 SHELL = /bin/bash
 CFLAGS = -Wall -g
