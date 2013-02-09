@@ -161,6 +161,13 @@ else
 	_arc=64
 #	_arc=32
 endif
+ifeq ($(PRINTER_BUILD_64_AS),"32")
+	CC += -m32
+	CXX += -m32
+	CFLAGS = $CFLAGS -m32
+	LDFLAGS = -L/lib32 -L/usr/lib32
+	_arc=32
+endif
 LDFLAGS += -L../../com/libs_bin${_arc}
 
 configure: configure-stamp
