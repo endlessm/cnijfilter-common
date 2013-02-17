@@ -9,8 +9,11 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# define build version to create "control" file.
+PRINTER_BUILD_VERSION=3.80
+
 # define build amd64 as ia32 libs
-PRINTER_BUILD_64_AS=64
+PRINTER_BUILD_64_AS=33
 
 # define package name
 COMMON_PKG=cnijfilter-common
@@ -144,6 +147,7 @@ PRINTER_PKG_PPD+=cnijfilter-ip5200-2.60-ip4200-32
 PRINTER_PKG_PPD+=cnijfilter-ip5200r-2.60-ip4200-32
 
 SHELL = /bin/bash
+export echo=echo
 CFLAGS = -Wall -g
 # -m32
 #LDFLAGS += -L/lib32 -L/usr/lib32
@@ -159,13 +163,10 @@ ifeq ($(LNGBITS),32)
 	_arc=32
 else
 	_arc=64
-#	_arc=32
 endif
-ifeq ($(PRINTER_BUILD_64_AS),"32")
-	CC += -m32
-	CXX += -m32
-	CFLAGS = $CFLAGS -m32
-	LDFLAGS = -L/lib32 -L/usr/lib32
+ifeq ($(PRINTER_BUILD_64_AS),32)
+	CFLAGS += -m32
+	LDFLAGS += -L/lib32 -L/usr/lib32 -L/lib/i386-linux-gnu -L/usr/lib/i386-linux-gnu
 	_arc=32
 endif
 LDFLAGS += -L../../com/libs_bin${_arc}
@@ -284,6 +285,11 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 
+	if [ ${_arc} = "64" ]; then \
+		if [ ${PRINTER_BUILD_64_AS} = "33" ]; then
+			COMMON_PKG=${COMMON_PKG}-64
+		fi
+	fi
 	### build & install printer package
 	for pkg in ${PRINTER_DEPEND_PKG}; do \
 		model_name=`echo $${pkg} | cut -d- -f2` && \
@@ -297,6 +303,9 @@ install: build
 		if [ ${_arc} = "64" ]; then \
 			if [ $${model_type} = "64" ]; then \
 				model_in="1"; \
+				if [ ${PRINTER_BUILD_64_AS} = "33" ]; then \
+					deb_model_dir=$${deb_model_dir}-64; \
+				fi; \
 			fi; \
 		else \
 			model_in="1"; \
@@ -337,7 +346,12 @@ install: build
 		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpess$${model_num}.so.* $${deb_model_dir}/usr/lib; \
 		fi; \
 		mkdir -p $${deb_model_dir}/usr/lib/bjlib; \
+		if [ -f $${model_num}/database/bjfilter$${model_name}.conf ]; then \
+		install -c -m 644 $${model_num}/database/bjfilter*.conf $${deb_model_dir}/usr/lib/bjlib; \
+		fi; \
+		if [ -f $${model_num}/database/cif$${model_name}.conf ]; then \
 		install -c -m 644 $${model_num}/database/cif*.conf $${deb_model_dir}/usr/lib/bjlib; \
+		fi; \
 		install -c -m 644 $${model_num}/database/cnb_$${model_num}0.tbl $${deb_model_dir}/usr/lib/bjlib; \
 		install -c -m 644 $${model_num}/database/cnbpname$${model_num}.tbl $${deb_model_dir}/usr/lib/bjlib; \
 		if [ -f $${model_num}/database/cif$${model_name}.bscc ]; then \
@@ -352,6 +366,13 @@ install: build
 		model_ver=`echo $${pkgppd} | cut -d- -f3` && \
 		model_dir=$${comm_name}-$${model_name}series && \
 		deb_model_dir=$(CURDIR)/debian/$${model_dir}; \
+		if [ ${_arc} = "64" ]; then \
+			if [ $${model_type} = "64" ]; then \
+				if [ ${PRINTER_BUILD_64_AS} = "33" ]; then \
+					deb_model_dir=$${deb_model_dir}-64; \
+				fi; \
+			fi; \
+		fi; \
 			pushd ./ppd-$${model_ver}; \
 			find . -name Makefile -print > file_lists_ppd; \
 			find . -name config.h -print >> file_lists_ppd; \

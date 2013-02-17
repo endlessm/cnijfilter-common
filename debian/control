@@ -6,630 +6,1609 @@ Build-Depends: debhelper (>= 4.0.0), libcupsys2-dev | libcups2-dev, libxml2-dev,
 Standards-Version: 3.7.2
 
 Package: cnijfilter-common
-Architecture: amd64 i386
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-common-32
+Architecture: amd64 ia64
+Depends: cnijfilter-common
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-common-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixus550iseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixus550iseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixus550iseries
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixus850iseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixus850iseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixus850iseries
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixus950iseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixus950iseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixus950iseries
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixus560iseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixus560iseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixus560iseries
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.40)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixus860iseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixus860iseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixus860iseries
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.40)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixus990iseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixus990iseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixus990iseries
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.40)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixmaip1000series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixmaip1000series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixmaip1000series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.50)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixmaip1500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixmaip1500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixmaip1500series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.50)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixusip3100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixusip3100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixusip3100series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.50)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixusip4100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixusip4100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixusip4100series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.50)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-pixusip8600series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-pixusip8600series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-pixusip8600series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.50)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip2200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip2200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip2200series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.60)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip4200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip4200series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.60)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip6600dseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip6600dseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip6600dseries
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.60)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip7500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip7500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip7500series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.60)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp500series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.60)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip90series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip90series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip90series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp160series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp160series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp160series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip3300series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip3300series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip3300series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp510series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp510series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp510series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4300series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip4300series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip4300series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp600series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp600series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp600series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip2500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip2500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip2500series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip1800series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip1800series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip1800series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.70)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp140series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp140series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp140series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.80)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp210series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp210series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp210series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.80)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip3500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip3500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip3500series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.80)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp520series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp520series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp520series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.80)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip4500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip4500series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.80)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp610series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp610series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp610series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.80)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip100series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.70)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip100series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip2600series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip2600series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip2600series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 2.90)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip3600series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip3600series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip3600series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.00)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4600series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip4600series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip4600series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.00)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp630series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp630series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp630series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.00)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp540series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp540series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp540series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.00)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp240series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp240series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp240series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.00)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp190series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp190series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp190series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.00)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip1900series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip1900series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip1900series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.00)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx860series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx860series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx860series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.10)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx320series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx320series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx320series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.10)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx330series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx330series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx330series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.10)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp270series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp270series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp270series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp490series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp490series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp490series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp550series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp550series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp550series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp560series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp560series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp560series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4700series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip4700series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip4700series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp640series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp640series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp640series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.20)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip2700series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip2700series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip2700series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.30)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx340series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx340series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx340series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.30)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx350series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx350series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx350series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.30)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx870series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx870series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx870series
 Architecture: i386
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.30)
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp250series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp250series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp250series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp250series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp280series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp280series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp280series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp280series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp495series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp495series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp495series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp495series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg5100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg5100series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5100series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg5200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg5200series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5200series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4800series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip4800series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip4800series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4800series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg6100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg6100series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6100series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg8100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg8100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg8100series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.40)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg8100series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx360series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx360series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx360series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.50)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx360series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx410series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx410series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx410series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.50)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx410series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx420series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx420series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx420series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.50)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx420series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx880series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx880series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx880series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.50)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx880series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ix6500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ix6500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ix6500series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.50)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ix6500series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg2100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg2100series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2100series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg3100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg3100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg3100series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg3100series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg4100series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg4100series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg4100series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg4100series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5300series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg5300series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg5300series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5300series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg6200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg6200series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6200series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg8200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg8200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg8200series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg8200series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4900series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip4900series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip4900series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip4900series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-e500series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-e500series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-e500series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.60)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-e500series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx710series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx710series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx710series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.70)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx710series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx890series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx890series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx890series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.70)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx890series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx370series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx370series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx370series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.70)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx370series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx430series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx430series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx430series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.70)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx430series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx510series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mx510series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mx510series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.70)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mx510series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-e600series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-e600series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-e600series
-Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.70)
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-e600series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp230series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mp230series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mp230series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mp230series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg2200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg2200series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2200series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-e510series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-e510series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-e510series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-e510series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg3200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg3200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg3200series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg3200series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg4200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg4200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg4200series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg4200series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip7200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip7200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip7200series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip7200series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5400series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg5400series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-mg5400series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
+Package: cnijfilter-mg5400series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6300series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-mg6300series
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
 Package: cnijfilter-mg6300series
-Architecture: i386 amd64
+Architecture: i386
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6300series-64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= 3.80)
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip5200series-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip5200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip5200series
 Architecture: i386
+Multi-Arch: foreign
 Depends: ${misc:Depends}, cnijfilter-ip4200series
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-ip5200rseries-32
+Architecture: amd64 ia64
+Depends: cnijfilter-ip5200rseries
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
 Package: cnijfilter-ip5200rseries
 Architecture: i386
+Multi-Arch: foreign
 Depends: ${misc:Depends}, cnijfilter-ip4200series
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet

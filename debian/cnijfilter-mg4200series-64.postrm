@@ -1,0 +1,28 @@
+#!/bin/sh
+
+PKG_INFO=cnijfilter-mg4200-405;
+
+model_name=`echo ${PKG_INFO} | cut -d- -f2`
+model_num=`echo ${PKG_INFO} | cut -d- -f3`
+
+_cups_path2=/usr/share/cups/model
+ppd_name=canon${model_name}.ppd
+
+if [ -x /sbin/ldconfig ]; then
+	/sbin/ldconfig
+fi
+# remove cnbp* libs
+for LIBS in libcnbpcmcm libcnbpcnclapi libcnbpcnclbjcmd libcnbpcnclui libcnbpess libcnbpo
+do
+	if [ -h /usr/lib/${LIBS}${model_num}.so ]; then
+		rm -f /usr/lib/${LIBS}${model_num}.so
+	fi	
+done
+# remove directory
+if [ "$1" = 0 ] ; then
+	rmdir -p --ignore-fail-on-non-empty /usr/share/locale/*/LC_MESSAGES
+	rmdir -p --ignore-fail-on-non-empty /usr/share/cngpijmon${model_name}
+	rmdir -p --ignore-fail-on-non-empty /usr/share/printui${model_name}
+fi
+# remove symbolic link for ppd
+rm -f ${_cups_path2}/${ppd_name}

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+PKG_INFO=cnijfilter-ip7200-406;
+
+model_name=`echo ${PKG_INFO} | cut -d- -f2`
+model_num=`echo ${PKG_INFO} | cut -d- -f3`
+
+_cups_path1=/usr/share/ppd
+_cups_path2=/usr/share/cups/model
+ppd_name=canon${model_name}.ppd
+
+if [ -x /sbin/ldconfig ]; then
+	/sbin/ldconfig
+fi
+# make symbolic link for ppd
+if [ ! -d ${_cups_path2} ]; then
+	mkdir ${_cups_path2}
+fi
+ln -fs ${_cups_path1}/${ppd_name} ${_cups_path2}/${ppd_name}
