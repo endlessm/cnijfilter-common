@@ -48,7 +48,7 @@ short SetCmdOption(int, char **, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVIC
 static void usage( char * );
 static void init_optioninfo( LPBJF_OPTINFO lpbjfoption );
 static int cmdlinesw(poptContext *, OPT *, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char *, char *, char *, char *);
-void MakeModelnameConfname(  char *, char *, char *, char *, char *);
+void MakeModelnameConfname(  char *, char *, char *);
 static short ParseBbox(char *bbox , LPBJF_OPTINFO lpbjf_optinfo);
 
 static long convert_str_to_long(char *);
