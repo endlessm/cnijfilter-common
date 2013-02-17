@@ -1,0 +1,28 @@
+To build and install pstocanonij:
+
+  1) Building misc libraries.
+        cd ../libs
+        ./autogen.sh
+        make
+        cd ../pstocanonij
+   
+
+
+  2) Building "pstocanonij".
+        ./autogen.sh
+        make
+        make install
+
+
+     Appendix:
+        * You can also set the following options.
+           --prefix
+
+           --enable-progpath
+                cif(ex.cifmx710)
+
+     Example:
+           ./autogen.sh --prefix=/usr --enable-progpath=/usr/local/bin
+           make
+           make install
+

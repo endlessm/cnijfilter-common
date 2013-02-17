@@ -1,0 +1,18 @@
+pstocanonij     --- CUPS filter for Canon Inkjet Printer.
+
+DESCRIPTION
+    The "pstocanonij" is the CUPS filter program converting the Postscript
+    file to the Canon Inkjet Printer command stream. This filter call the
+    Ghostscript to convert the Postscript data into the image data, and also
+    call the Inkjet Print Filter for Linux to create the command stream.
+
+REQUIREMENTS
+    You need the following libraries.
+    * libcups               (1.1.x or above)
+
+    And you need the following programs.
+    * CUPS                  (1.1.14 or above)
+    * Ghostscript           (5.50   or above)
+
+INSTALLATION
+    See the file "INSTALL"

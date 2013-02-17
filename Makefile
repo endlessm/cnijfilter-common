@@ -1,5 +1,5 @@
 #dirs = libs cngpij cngpijmon ppd pstocanonij 
-dirs = libs cngpij cngpijmnt pstocanonij backend backendnet cngpijmon-3.80/cnijnpr \
+dirs = libs cngpij cngpijmnt pstocanonbj pstocanonij backend backendnet cngpijmon-3.80/cnijnpr \
 	cngpijmon-2.20 cnijfilter-2.20 lgmon-2.20 ppd-2.20 printui-2.20 \
 	cngpijmon-2.40 cnijfilter-2.40 lgmon-2.40 ppd-2.40 printui-2.40 \
 	cngpijmon-2.50 cnijfilter-2.50 lgmon-2.50 ppd-2.50 printui-2.50 \

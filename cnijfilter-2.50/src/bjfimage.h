@@ -60,8 +60,6 @@
 /*--- bmp support ---*/
 #define MAXBUF	0x00100000
 
-#define CIF_FILE_END (-2)
-
 #define	TOLONG(buffer, off) (buffer[(off)] | buffer[(off)+1]<<8 | buffer[(off)+2]<<16 | buffer[(off)+3]<<24)
 #define TOSHORT(buffer, off) (buffer[(off)] | buffer[(off)+1]<<8)
 

@@ -35,9 +35,11 @@
 #include <signal.h>
 #include <fcntl.h>
 #include <ctype.h>
+#include <errno.h>
+
+extern int errno;
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
-#define CIFTEMPFILEINPUT "/tmp/ciftmpXXXXXX"
 
 #include "cncl.h"
 #include "cncldef.h"
@@ -191,7 +193,7 @@ int main( int argc, char *argv[] )
 
 
 	/*---------
-		Check If bscc_file is required(refer to "cif.conf").
+		Check If bscc_file is required(refer to "bjfilter.conf").
 	    If required ;
 	     1. Make bscc_file neme (lipjinfo->bsccname).
 	     2. Set "lipjinfo->bsccfile_exit"-->1.
@@ -623,7 +625,7 @@ static short MakeBJPrintData
 #endif
 
 		/*---------
-			get scaling parameter which cif needs.
+			get scaling parameter which bjfilter needs.
 		---------*/
 		width = 0;			height = 0;
 		width_offset = 0;	height_offset = 0;
@@ -1024,16 +1026,15 @@ outCmd ( CPKByte CPKPTR buf, CPKUInt32 size, int prn )	/* to take file pointer *
 
 		w_size = write( prn, ptr, r_size );
 
-		if ( w_size <= 0 ){
-			w_size = 0;
+		if ( w_size < 0 && errno != EINTR)
+		  	return;
+		if ( w_size <= 0 )
 			continue;
-		}
 		WriteData = 1;
-		if ( w_size < r_size ){
-			r_size -= w_size;
-			ptr    += w_size;
-		}
-		else break;
+		if ( w_size >= r_size )
+			break;
+		r_size -= w_size;
+		ptr    += w_size;
 	}
 
 	return;

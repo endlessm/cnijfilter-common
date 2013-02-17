@@ -1,17 +1,20 @@
-cif --- filter program for Canon Inkjet Printer.
+bjfilter --- Canon Bubble Jet Printer filter.
 
 DESCRIPTION
-    cif is a filter program for Canon Inkjet Printer.
+    bjfilter is a filter program for Canon Bubble Jet Printer.
 
-    cif has a basic command line interface. You can print
+    bjfilter has a basic command line interface. You can print
     a image file directly, and select printing parameters,
     for example a paper type, paper size, print speed, print quality,
     color adjustment, etc.
 
+    Additionally bjfilter has a useful GUI, so you can easily select
+    several parameters for printing.
+
 REQUIREMENTS
     You need automake and autoconf to build programs.
-    * automake     (1.9.5  or above)
-    * autoconf     (2.59   or above)
+    * automake  (1.4   or above)
+    * autoconf  (2.13  or above)
 
     You need the following libraries.
     * libm         (6.0    or above)
@@ -43,7 +46,7 @@ INSTALLATION
     See the file "INSTALL"
 
 LICENSE
-    * "cif" is licensed under the terms of the GNU General
+    * "bjfilter" is licensed under the terms of the GNU General
       Public License.  (See the file COPYING.)
 
 EXCEPTION

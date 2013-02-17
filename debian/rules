@@ -185,6 +185,8 @@ configure-stamp:
 	cd ./cngpij; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	@echo "######## configure cngpijmnt"; \
 	cd ./cngpijmnt; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
+	@echo "######## configure pstocanonbj"; \
+	cd ./pstocanonbj; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	@echo "######## configure pstocanonij"; \
 	cd ./pstocanonij; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	@echo "######## configure backend"; \
@@ -370,6 +372,8 @@ install: build
 	cd ./cngpij; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install cngpijmnt"; \
 	cd ./cngpijmnt; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
+	@echo "######## install pstocanonbj"; \
+	cd ./pstocanonbj; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install pstocanonij"; \
 	cd ./pstocanonij; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install backend"; \

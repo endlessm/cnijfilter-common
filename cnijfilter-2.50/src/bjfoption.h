@@ -121,7 +121,8 @@
 #define	OPTSTRPAPERGAP		"papergap"
 #define	OPTSTRHELP			"help"
 
-/* cif.bscc value */
+/* for bjfilterv230 */
+/* bjfilter.bscc value */
 #define	BSCCREG		0
 
 
