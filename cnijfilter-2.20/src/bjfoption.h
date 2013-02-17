@@ -190,6 +190,5 @@ typedef struct {
 
 
 extern 	short SetCmdOption(int, char **, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char *, char *, char *);
-extern void MakeModelnameConfname(  char *, char *, char *);
 
 #endif
