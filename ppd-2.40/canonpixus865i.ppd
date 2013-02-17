@@ -36,7 +36,7 @@
 *Throughput: "1"
 *LandscapeOrientation: Plus90
 
-*cupsFilter: "application/vnd.cups-postscript 0 pstocanonij"
+*cupsFilter: "application/vnd.cups-postscript 0 pstocanonbj"
 *cupsManualCopies: True
 *cupsModelNumber: 180
 *cupsVersion: 1.1

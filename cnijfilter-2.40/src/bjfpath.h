@@ -31,7 +31,7 @@
 #include  <config.h>
 #endif
 
-#define BJFILTERRC			"/cif"
+#define BJFILTERRC			"/bjfilter"
 #define LGMON				"/lgmon"
 #define PRINTUI				"/printui"
 

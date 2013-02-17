@@ -716,7 +716,7 @@ static short bmp_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	lpbjfimage->readraster += rstep;
 
 
-	/*--- set cif parameter ---*/
+	/*--- set bjfilter parameter ---*/
 	lpbjfimage->width = bmpinfo.biWidth;
 	lpbjfimage->length = bmpinfo.biHeight;
 	lpbjfimage->rasterlength = rastLength;
@@ -1015,7 +1015,7 @@ static short ppm_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	if ( !fread( buf, (width*bpp), rstep, readfp ) ) goto onErr;
 	lpbjfimage->readraster += rstep;
 
-	/*--- Set cif Parameter ---*/
+	/*--- Set Bjfilter Parameter ---*/
 	lpbjfimage->width        = width;
 	lpbjfimage->length       = length;
 	lpbjfimage->bpp          = bpp;
@@ -1417,7 +1417,7 @@ static short png_image_init( LPBJF_IMAGEINFO lpbjfimage )
 	lpbjfimage->png_ptr = (char*)png_p;
 	lpbjfimage->info_ptr = (char*)info_p;
 
-	/*--- Set cif Parameter ---*/
+	/*--- Set Bjfilter Parameter ---*/
 	lpbjfimage->width        = width;
 	lpbjfimage->length       = length;
 	lpbjfimage->bpp          = bpp;

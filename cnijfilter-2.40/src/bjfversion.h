@@ -26,10 +26,11 @@
 #ifndef _BJFVERSION_H_
 #define _BJFVERSION_H_
 
-#define VERSION_STR		"Canon Inkjet Printer Driver Ver.2.40 for Linux (cif)"
+#define VERSION_STR		"Canon Bubble Jet Print Filter for Linux ver.2.4.0"
 #define COPYRIGHT_STR0	"Copyright CANON INC. 2001-2004"
 #define COPYRIGHT_STR1	"All Rights Reserved."
 
+#define INTERNAL_VERSION		2,40,01,005
 #define INTERNAL_VERSION_STR	"2.40.01.005"
 
 #endif

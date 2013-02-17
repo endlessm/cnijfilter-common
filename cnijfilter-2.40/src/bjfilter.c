@@ -37,7 +37,6 @@
 #include <ctype.h>
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
-#define CIFTEMPFILEINPUT "/tmp/ciftmpXXXXXX"
 
 #include "cncl.h"
 #include "cncldef.h"
@@ -189,7 +188,7 @@ int main( int argc, char *argv[] )
 
 
 	/*---------
-		Check If bscc_file is required(refer to "cif.conf").
+		Check If bscc_file is required(refer to "bjfilter.conf").
 	    If required ;
 	     1. Make bscc_file neme (lipjinfo->bsccname).
 	     2. Set "lipjinfo->bsccfile_exit"-->1.
@@ -593,7 +592,7 @@ static short MakeBJPrintData
 #endif
 
 		/*---------
-			get scaling parameter which cif needs.
+			get scaling parameter which bjfilter needs.
 		---------*/
 		width = 0;			height = 0;
 		width_offset = 0;	height_offset = 0;

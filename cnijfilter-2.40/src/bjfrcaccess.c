@@ -195,7 +195,7 @@ static char *bjf_access_resource( char *rcFname, char *objString, char *rcString
 						ptr[strnum++]	= &nambuf[num]; num++;
 					
 						if ( strnum >= 3 ) {
-							fprintf( stderr, "cif.conf file format error!\n" );
+							fprintf( stderr, "bjfiler.conf file format error!\n" );
 							goto onErr;
 						}
 					}

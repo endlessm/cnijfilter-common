@@ -1,4 +1,4 @@
-To build and install cif command:
+To build and install bjfilter:
 
         ./autogen.sh --program-suffix=<Printer Model Name>
         make
@@ -18,11 +18,11 @@ Appendix:
 
         * You can also set the following path.
            --prefix
-                cif command (ex.cifip4200)                : default ... /usr/local
+                bjfilter command (ex.bjfilterip4200)                : default ... /usr/local
            --enable-binpath
                 printui,lgmon(ex.printuipixusip3100)      : default ... /usr/local/bin
            --enable-libpath
-                *.conf,*.tbl(ex.cifpixusip3100.conf) : default ... /usr/lib/bjlib
+                *.conf,*.tbl(ex.bjfilterpixusip3100.conf) : default ... /usr/lib/bjlib
 
        Example:
 

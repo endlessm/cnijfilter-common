@@ -119,7 +119,7 @@
 
 #define	OPTSTRPAPERGAP		"papergap"
 
-/* cif.bscc value */
+/* bjfilter.bscc value */
 #define	BSCCREG		0
 
 
