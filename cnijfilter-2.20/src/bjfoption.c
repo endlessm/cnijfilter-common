@@ -55,8 +55,8 @@ static long convert_str_to_long(char *);
 
 const char bjlibdir[] = BJLIBPATH;
 
-const char usage_bjfiltergui[]		= "Usage: cif";
-const char usage_bjfilter[]			= "       cif";
+const char usage_bjfiltergui[]		= "Usage: bjfilter";
+const char usage_bjfilter[]			= "       bjfilter";
 const char usage_guimode[]			= " --gui (gui mode)\n";
 const char usage_switches[]			= " [switches] [file]\n\n";
 
@@ -490,7 +490,7 @@ short SetCmdOption(
 	optcon = poptGetContext( NULL, cargc, (const char **)cargv, optionsTable, 0 );
 	
 	memset(confname , 0x00 , sizeof(confname));
-	MakeModelnameConfname( cargv[0], modelname, confname, BJFILTERXXXXRCPATH, BJFILTERDOTCONF );
+	MakeModelnameConfname( cargv[0], modelname, confname );
 	first_modelstrnum = strlen(modelname);
 
 	if ( ( ret = cmdlinesw( &optcon, &opt, lpbjfoption, bjcolor, bjdevice, psize, dispname, filename, confname, modelname ) ) < 0 ){
@@ -1119,13 +1119,13 @@ void init_optioninfo( LPBJF_OPTINFO lpbjfoption )
 
 /*-------------------------------------------------------------*/
 /* make  modelname, confname                                   */
-/*          modelname = ip4200                                 */
-/*          confname = /usr/lib/bjlib/cifip4200.conf etc       */
+/*          modelname = BJF900                                 */
+/*          confname = /usr/lib/bjlib/bjfilterf900.conf etc    */
 /*-------------------------------------------------------------*/
-void MakeModelnameConfname( char *argv0, char *modelname, char *confname, char *path, char *extname )
+void MakeModelnameConfname( char *argv0, char *modelname, char *confname )
 {
-	static char		bjfilter_path[] = "cif";
-	char			small_modelname[256],tmpconfilename[256], __attribute__ ((unused)) confilename[256];
+	static char		bjfilter_path[] = "bjfilter";
+	char			small_modelname[256],tmpconfilename[256],confilename[256];
 	short			bjfiltstrlen = strlen(bjfilter_path);
 	short			argv0strlen = strlen(argv0);
 	short			i,count;
@@ -1142,13 +1142,13 @@ void MakeModelnameConfname( char *argv0, char *modelname, char *confname, char *
 	for( i=0; i<(short)(argv0strlen - count - bjfiltstrlen); i++ )
 		small_modelname[i] = (char)(argv0[count + bjfiltstrlen + i]);
 
-	/* modelname = ip4200 etc.. */
+	/* modelname = BJF900 etc.. */
 	for( i=0; i<sizeof(small_modelname); i++)
 		modelname[i] = toupper(small_modelname[i]);
 
-	/* confname = /usr/lib/bjlib/cifip4200.conf etc.. */
-	snprintf(tmpconfilename,sizeof(tmpconfilename), "%s%s",path,small_modelname);
-	snprintf(confname, 256,"%s%s",tmpconfilename, extname);
+	/* confname = /usr/lib/bjlib/bjfilterf900.conf etc.. */
+	snprintf(tmpconfilename,sizeof(tmpconfilename), "%s%s",BJFILTERXXXXRCPATH,small_modelname);
+	snprintf(confname, 256,"%s%s",tmpconfilename, BJFILTERDOTCONF);
 
 }
 

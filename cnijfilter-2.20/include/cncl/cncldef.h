@@ -359,9 +359,9 @@ enum {
 #define CNCL_ERROR			-1			/* Failed */
 #define CNCL_NOMEM			-2			/* No memory */
 #define CNCL_NOLIB			-3			/* No Library file */
-#define CNCL_LIBERR			-4			/* Library internal error. see ierr */
+#define CNCL_LIBERR			-4			/* Library internal error */
 #define CNCL_PARAMERR		-5			/* Invalid parameter is set */
-#define CNCL_LIBERR2			-6		/* Library internal error. see ierr2 */
+
 
 
 #if defined(__cplusplus)

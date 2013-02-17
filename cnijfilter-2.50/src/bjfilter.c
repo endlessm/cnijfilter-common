@@ -35,9 +35,6 @@
 #include <signal.h>
 #include <fcntl.h>
 #include <ctype.h>
-#include <errno.h>
-
-extern int errno;
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
 
@@ -1026,15 +1023,16 @@ outCmd ( CPKByte CPKPTR buf, CPKUInt32 size, int prn )	/* to take file pointer *
 
 		w_size = write( prn, ptr, r_size );
 
-		if ( w_size < 0 && errno != EINTR)
-		  	return;
-		if ( w_size <= 0 )
+		if ( w_size <= 0 ){
+			w_size = 0;
 			continue;
+		}
 		WriteData = 1;
-		if ( w_size >= r_size )
-			break;
-		r_size -= w_size;
-		ptr    += w_size;
+		if ( w_size < r_size ){
+			r_size -= w_size;
+			ptr    += w_size;
+		}
+		else break;
 	}
 
 	return;

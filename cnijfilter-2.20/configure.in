@@ -29,7 +29,7 @@ AC_DEFINE_UNQUOTED(XBINPATH, $enable_binpath)
 AC_SUBST(XBINPATH)
 
 
-AM_INIT_AUTOMAKE(cif${program_suffix}, 2.20-1)
+AM_INIT_AUTOMAKE(bjfilter${program_suffix}, 2.20-1)
 AM_CONFIG_HEADER(config.h)
 
 dnl Checks for programs.

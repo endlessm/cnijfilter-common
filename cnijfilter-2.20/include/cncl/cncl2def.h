@@ -42,12 +42,6 @@
 #define	CND_PIXUS850I	(1156)
 #define	CND_PIXUS950I	(1158)
 
-#define	CND_I250		(1180)
-#define	CND_I255		(1182)
-
-#define	CND_PIXUS560I	(1189)
-#define	CND_PIXUS860I	(1187)
-#define	CND_PIXUS990I	(1191)
 
 /* MediaType (MediaType) */
 #define	CND_MEDIA_MATTE		(1028)
@@ -60,17 +54,11 @@
 #define CND_SIZE_ENV_DL_P	(1047)
 #define CND_SIZE_ENV_J4_P	(1048)
 #define CND_SIZE_ENV_J6_P	(1049)
-#define CND_SIZE_L			(1050)
-#define CND_SIZE_2L			(1051)
+#define CND_SIZE_L		(1050)
+#define CND_SIZE_2L		(1051)
 #define CND_SIZE_4X6		(1052)
 #define CND_SIZE_DISCTRAY	(1053)
 #define CND_SIZE_PANORAMA	(1056)
-
-#define CND_SIZE_5X7			(1055)
-#define CND_SIZE_POST_DBL      	(1057)
-#define CND_SIZE_ENV_CHOU3_P    (1058)
-#define CND_SIZE_ENV_CHOU4_P    (1059)
-
 
 /* Intent */
 #define CND_INTENT_VIVID	(1003)

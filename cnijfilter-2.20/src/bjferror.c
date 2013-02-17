@@ -35,7 +35,7 @@ short bjf_error( char *message, short err_code )
 {
 	if ( err_code == NO_ERROR ) return 0;
 	
-	fprintf( stderr, "CIF COMMAND ERROR :" );
+	fprintf( stderr, "BJFILTER ERROR :" );
 	
 	switch( err_code ){
 		case FILE_ERROR:

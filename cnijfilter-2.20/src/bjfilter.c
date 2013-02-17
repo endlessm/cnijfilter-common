@@ -37,7 +37,6 @@
 #include <ctype.h>
 
 #define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
-#define CIFTEMPFILEINPUT "/tmp/ciftmpXXXXXX"
 
 #include "cncl.h"
 #include "cncldef.h"
@@ -475,7 +474,7 @@ static short MakeBJPrintData
 #endif
 
 		/*---------
-			get scaling parameter which cif needs.
+			get scaling parameter which bjfilter needs.
 		---------*/
 		width = 0;			height = 0;
 		width_offset = 0;	height_offset = 0;

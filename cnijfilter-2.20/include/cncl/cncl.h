@@ -130,12 +130,8 @@ typedef struct
 	CPKInt16			MarginType ;
 	CPKInt16			PaperGap ;
 	
-	CPKChar CPKPTR		CommandParamPtr ;
-	CPKInt32			CommandParamSize ;
-	
-	CPKInt32			ierr2;
-	
-	CPKInt8				reserved[32] ;
+	CPKInt8				reserved[8] ;
+
 } CNCLData, CPKPTR CNCLPtr ;
 
 

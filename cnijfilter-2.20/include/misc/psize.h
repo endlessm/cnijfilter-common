@@ -1,11 +1,11 @@
-/*
- *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
+/*  Canon Bubble Jet Print Filter.
+ *  Copyright CANON INC. 2001-2003
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -53,18 +53,18 @@ const long PaperTbl[][3] =
 	{18, 43180, 55800},		/* C size (17 x 22inch) */
 	{19, 10000, 14800},		/* Postcard (10mm 0x 148mm) */
 	{20, 14800, 10000},		/* Postcard-L (14mm 8x 100mm) */
-	{21, 24130, 10477},		/* #10 Envelope (9.5inch x 4.125inch) */
+	{21, 24130, 10478},		/* #10 Envelope (9.5inch x 4.125inch) */
 	{22, 22000, 11000},		/* DL Envelope (220mm x 110mm) */
 	{23, 34290, 43180},		/* Foolscap (13.5inch x 17inch) */
 	{24, 21590, 27940},		/* Fanfold (8.5inch x 11inch) */
-	{25, 24130, 27940},		/* Fanfold (9.5inch x 11inch) */
-	{26, 25400, 27940},		/* Fanfold (10inch x 11inch) */
-	{27, 25400, 30480},		/* Fanfold (10inch x 12inch) */
-	{28, 30480, 21590},		/* Fanfold (12inch x 8.5inch) */
-	{29, 36830, 27940},		/* Fanfold (14.5inch x 11inch) */
-	{30, 38100, 27940},		/* Fanfold (15inch x 11inch) */
-	{31, 38100, 30480},		/* Fanfold (15inch x 12inch) */
-	{32, 37782, 27940},		/* Fanfold (14.875inch x 11inch) */
+	{25, 21590, 30480},		/* Fanfold (9.5inch x 11inch) */
+	{26, 24130, 27940},		/* Fanfold (10inch x 11inch) */
+	{27, 25400, 27940},		/* Fanfold (10inch x 12inch) */
+	{28, 25400, 30480},		/* Fanfold (12inch x 8.5inch) */
+	{29, 30480, 21590},		/* Fanfold (14.5inch x 11inch) */
+	{30, 36830, 27940},		/* Fanfold (15inch x 11inch) */
+	{31, 38100, 27940},		/* Fanfold (15inch x 12inch) */
+	{32, 38100, 30480},		/* Fanfold (14.875inch x 11inch) */
 	{33, 23500, 10500},		/* Envelope-J4 */
 	{34, 19000,  9800},		/* Envelope-J6 */
 	{35, 22860, 33782},		/* Letter full-bleed */
@@ -73,18 +73,14 @@ const long PaperTbl[][3] =
 	{38, 11860, 21390},		/* Photocard (FM-101) */
 	{39, 0,0},				/* User define */
 	{40, 0,0},				/* Not Applicable */
-	{1046, 10477, 24130},	/* #10 Envelope Tate (4.125inch x 9.5inch) */
+	{1046, 10478, 24130},	/* #10 Envelope Tate (4.125inch x 9.5inch) */
 	{1047, 11000, 22000},	/* DL Envelope Tate ( 110mm x 220mm ) */
 	{1048, 10500, 23500},	/* Envelope-J4 Tate ( 105mm x 235mm ) */
 	{1049,  9800, 19000},	/* Envelope-J6 Tate (  98mm x 190mm ) */
 	{1050,  8900, 12700},	/* Actual Size L ( 89mm x 127mm ) */
 	{1051, 12700, 17800},	/* Actual Size 2L ( 127mm x 178mm ) */
 	{1052, 10160, 15240},	/* Actual Size 4x6 ( 101.6mm x 152.4mm ) */
-	{1055, 12700, 17780},	/* Actual Size 5x7 ( 127mm x 177.8mm ) */
 	{1056,  8900, 25400},	/* Panorama or L x 2 ( 89mm x 254mm ) */
-	{1057, 20000, 14800},	/* Double postal card ( 200mm x 148mm ) */
-	{1058, 12000, 23500},	/* Long Env #3( 120mm x 235mm ) */
-	{1059, 9000, 20500},	/* Long Env #4 ( 90mm x 205mm ) */
 	{-1, -1, -1}			/* Max indicator */	
 };
 

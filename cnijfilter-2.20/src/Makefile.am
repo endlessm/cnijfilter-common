@@ -2,9 +2,9 @@ INCLUDES = \
 	-I$(top_srcdir)/include/cncl \
 	-I$(top_srcdir)/include/misc
 
-bin_PROGRAMS = cif
+bin_PROGRAMS = bjfilter
 
-cif_SOURCES = \
+bjfilter_SOURCES = \
 	bjferror.c \
 	bjferror.h \
 	bjfilter.c \
@@ -24,6 +24,6 @@ cif_SOURCES = \
 	uitypes.h 
 
 
-cif_LDADD = -lcnbpcmcm@CNCL_LIB_ID@ -lcnbpwcc@CNCL_LIB_ID@ -lcnbphtmg@CNCL_LIB_ID@ -lm -ldl -ltiff -lpng\
+bjfilter_LDADD = -lcnbpcmcm@CNCL_LIB_ID@ -lcnbpwcc@CNCL_LIB_ID@ -lcnbphtmg@CNCL_LIB_ID@ -lm -ldl -ltiff -lpng\
 			-lcnbpcnclapi@CNCL_LIB_ID@ -lcnbpcnclbjcmd@CNCL_LIB_ID@ -lcnbpsmth@CNCL_LIB_ID@ -lcnbpcnclui@CNCL_LIB_ID@ -lpopt
-cif_LDFLAGS = -L../../@CNCL_LIB_ID@/libs_bin@ARC@
+bjfilter_LDFLAGS = -L../../@CNCL_LIB_ID@/libs_bin@ARC@

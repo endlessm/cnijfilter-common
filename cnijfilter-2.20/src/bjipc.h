@@ -73,7 +73,3 @@ typedef union {
 #define RET_EXECLM	30
 
 #define	IPCCMDLEN	128
-
-#define	PRINT_DATA	(0x01L)
-#define	UTIL_DATA	(0x02L)
-
