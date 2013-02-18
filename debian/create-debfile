@@ -3,6 +3,9 @@ cd skel
 ./mk_debfile.pl ../rules
 cd ..
 rm cnijfilter-*
+rm docs
+rm postinst
+rm postrm
 cd utils
 rm printui-*
 rm cngpijmon-*
@@ -13,3 +16,7 @@ mv printui-* ../utils/
 mv cngpijmon-* ../utils/
 mv maintenance-* ../utils/
 mv control ../
+mv docs ../
+mv postinst ../
+mv postrm ../
+

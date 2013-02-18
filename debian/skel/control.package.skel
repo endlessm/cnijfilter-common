@@ -1,6 +1,5 @@
 Package: cnijfilter-XXXXseries
 Architecture: ARCHITECTURE
-Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common (>= VERSION)
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet

@@ -31,7 +31,13 @@ while( <IN> ){
 			}
 			if ( $as64build32 eq "33" ){
 				`cp control.common.ia32.skel control`;
+				`perl -pe 's/VERSION/${version}/' docs.skel >> cnijfilter-common-64.docs`;
+				`cp postinst.common.skel cnijfilter-common-64.postinst`;
+				`cp postrm.common.skel cnijfilter-common-64.postrm`;
 			}
+			`perl -pe 's/VERSION/${version}/' docs.skel >> docs`;
+			`cp postinst.common.skel postinst`;
+			`cp postrm.common.skel postrm`;
 		}
 	}
 	# PRINTER_DEPEND_PKG+=cnijfilter-mg6300-408-3.80-64-yes
@@ -51,50 +57,54 @@ while( <IN> ){
 			if ( $as64build32 eq "33" ){
 			if ( $cputype eq "64" ){
 				# doc file
-				`cp docs.skel cnijfilter-${model}series-64.docs`;
+				`perl -pe 's/VERSION/${version}/' docs.skel >> cnijfilter-${model}series-64.docs`;
 				if ( $lpropt eq "yes" ){
 					`perl -pe 's/MODEL/${model}/' lproptions.skel >>  cnijfilter-${model}series-64.docs`;
 					`perl -i -pe 's/VERSION/${version2}/' cnijfilter-${model}series-64.docs`;
 				}
 	
 				# postinst file
-				`perl -pe 's/XXXX/${deco}/' postinst.skel >  cnijfilter-${model}series-64.postinst`;
+				`perl -pe 's/XXXX/${deco}/' postinst.package.skel >  cnijfilter-${model}series-64.postinst`;
 		
 				# postrm file
-				`perl -pe 's/XXXX/${deco}/' postrm.skel > cnijfilter-${model}series-64.postrm`;
+				`perl -pe 's/XXXX/${deco}/' postrm.package.skel > cnijfilter-${model}series-64.postrm`;
 	
 				# printui.desktop file
 				if ( $version2 eq "3.80" ){
-				`perl -pe 's/XXXX/${model}/' install.3.80.skel > cnijfilter-${model}series-64.install`;
+				`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series-64.install`;
+				`perl -i -pe 's/GGGG/maintenance/' cnijfilter-${model}series-64.install`;
 				}else{
 				`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series-64.install`;
+				`perl -i -pe 's/GGGG/printui/' cnijfilter-${model}series-64.install`;
 				}
 			}}
 
 			# doc file
-			`cp docs.skel cnijfilter-${model}series.docs`;
+			`perl -pe 's/VERSION/${version}/' docs.skel >> cnijfilter-${model}series.docs`;
 			if ( $lpropt eq "yes" ){
 				`perl -pe 's/MODEL/${model}/' lproptions.skel >>  cnijfilter-${model}series.docs`;
 				`perl -i -pe 's/VERSION/${version2}/' cnijfilter-${model}series.docs`;
 			}
 
 			# postinst file
-			`perl -pe 's/XXXX/${deco}/' postinst.skel >  cnijfilter-${model}series.postinst`;
+			`perl -pe 's/XXXX/${deco}/' postinst.package.skel >  cnijfilter-${model}series.postinst`;
 
 			# postrm file
-			`perl -pe 's/XXXX/${deco}/' postrm.skel > cnijfilter-${model}series.postrm`;
+			`perl -pe 's/XXXX/${deco}/' postrm.package.skel > cnijfilter-${model}series.postrm`;
 
 			# printui.desktop file
 			if ( $version2 eq "3.80" ){
 			`perl -pe 's/YYYY/${modeluc}/' maintenance.desktop.skel > maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXUS/PIXUS-/' maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXMA/PIXMA-/' maintenance-${model}series.desktop`;
-			`perl -pe 's/XXXX/${model}/' install.3.80.skel > cnijfilter-${model}series.install`;
+			`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series.install`;
+			`perl -i -pe 's/GGGG/maintenance/' cnijfilter-${model}series.install`;
 			}else{
 			`perl -pe 's/YYYY/${modeluc}/' printui.desktop.skel > printui-${model}series.desktop`;
 			`perl -i -pe 's/PIXUS/PIXUS-/' printui-${model}series.desktop`;
 			`perl -i -pe 's/PIXMA/PIXMA-/' printui-${model}series.desktop`;
 			`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series.install`;
+			`perl -i -pe 's/GGGG/printui/' cnijfilter-${model}series.install`;
 			}
 
 			# cngpijmon.desktop file
@@ -135,51 +145,56 @@ while( <IN> ){
 			$model2 = $4;
 			$cputype = $5;
 			$modeluc = uc $model;
+			$model2uc = uc $model2;
 			$deco = "cnijfilter-$2";
 			printf( "model: %s\n", $2 );
 			if ( $as64build32 eq "33" ){
 			if ( $cputype eq "64" ){
 				# doc file
-				`cp docs.skel cnijfilter-${model}series-64.docs`;
+				`perl -pe 's/VERSION/${version}/' docs.skel >> cnijfilter-${model}series-64.docs`;
 	
 				# postinst file
-				`perl -pe 's/XXXX/${deco}/' postinst2.skel >  cnijfilter-${model}series-64.postinst`;
+				`perl -pe 's/XXXX/${deco}/' postinst.package.ppd.skel >  cnijfilter-${model}series-64.postinst`;
 	
 				# postrm file
-				`perl -pe 's/XXXX/${deco}/' postrm2.skel > cnijfilter-${model}series-64.postrm`;
+				`perl -pe 's/XXXX/${deco}/' postrm.package.ppd.skel > cnijfilter-${model}series-64.postrm`;
 
 				# printui.desktop file
 				if ( $version2 eq "3.80" ){
-				`perl -pe 's/XXXX/${model}/' install.3.80.skel > cnijfilter-${model}series-64.install`;
+				`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series-64.install`;
+				`perl -i -pe 's/GGGG/maintenance/' cnijfilter-${model}series-64.install`;
 				}else{
 				`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series-64.install`;
+				`perl -i -pe 's/GGGG/printui/' cnijfilter-${model}series-64.install`;
 				}
 			}}
 			# doc file
-			`cp docs.skel cnijfilter-${model}series.docs`;
+			`perl -pe 's/VERSION/${version}/' docs.skel >> cnijfilter-${model}series.docs`;
 
 			# postinst file
-			`perl -pe 's/XXXX/${deco}/' postinst2.skel >  cnijfilter-${model}series.postinst`;
+			`perl -pe 's/XXXX/${deco}/' postinst.package.ppd.skel >  cnijfilter-${model}series.postinst`;
 
 			# postrm file
-			`perl -pe 's/XXXX/${deco}/' postrm2.skel > cnijfilter-${model}series.postrm`;
+			`perl -pe 's/XXXX/${deco}/' postrm.package.ppd.skel > cnijfilter-${model}series.postrm`;
 
 			# printui.desktop file
 			if ( $version2 eq "3.80" ){
 			`perl -pe 's/YYYY/${modeluc}/' maintenance.desktop.skel > maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXUS/PIXUS-/' maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXMA/PIXMA-/' maintenance-${model}series.desktop`;
-			`perl -pe 's/XXXX/${model}/' install.3.80.skel > cnijfilter-${model}series.install`;
+			`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series.install`;
+			`perl -i -pe 's/GGGG/maintenance/' cnijfilter-${model}series.install`;
 			}else{
 			`perl -pe 's/YYYY/${modeluc}/' printui.desktop.skel > printui-${model}series.desktop`;
 			`perl -i -pe 's/PIXUS/PIXUS-/' printui-${model}series.desktop`;
 			`perl -i -pe 's/PIXMA/PIXMA-/' printui-${model}series.desktop`;
 			`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series.install`;
+			`perl -i -pe 's/GGGG/printui/' cnijfilter-${model}series.install`;
 			}
 
 			# cngpijmon.desktop file
 			`perl -pe 's/XXXX/${model}/' cngpijmon.desktop.skel > cngpijmon-${model}series.desktop`;
-			`perl -i -pe 's/YYYY/${modeluc}/' cngpijmon-${model}series.desktop`;
+			`perl -i -pe 's/YYYY/${model2uc}/' cngpijmon-${model}series.desktop`;
 
 
 			# control file
@@ -193,16 +208,16 @@ while( <IN> ){
 				$buildtype = "i386 amd64";
 			}
 			if ( $as64build32 eq "33" ){
-				`perl -pe 's/XXXX/${model}/' control.package2.ia32.skel >> control`;
+				`perl -pe 's/XXXX/${model}/' control.package.ppd.ia32.skel >> control`;
 				`perl -i -pe 's/VERSION/${version}/' control`;
 				`perl -i -pe 's/YYYY/${model2}/' control`;
 				if ( $cputype eq "64" ){
-					`perl -pe 's/XXXX/${model}/' control.package2.amd64.skel >> control`;
+					`perl -pe 's/XXXX/${model}/' control.package.ppd.amd64.skel >> control`;
 					`perl -i -pe 's/VERSION/${version}/' control`;
 					`perl -i -pe 's/YYYY/${model2}/' control`;
 				}
 			}else{
-				`perl -pe 's/XXXX/${model}/' control.package2.skel >> control`;
+				`perl -pe 's/XXXX/${model}/' control.package.ppd.skel >> control`;
 				`perl -i -pe 's/VERSION/${version}/' control`;
 				`perl -i -pe 's/YYYY/${model2}/' control`;
 				`perl -i -pe 's/ARCHITECTURE/$buildtype/' control`;
