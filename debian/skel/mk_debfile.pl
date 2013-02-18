@@ -54,7 +54,7 @@ while( <IN> ){
 				`cp docs.skel cnijfilter-${model}series-64.docs`;
 				if ( $lpropt eq "yes" ){
 					`perl -pe 's/MODEL/${model}/' lproptions.skel >>  cnijfilter-${model}series-64.docs`;
-					`perl -i -pe 's/VERSION/${version}/' cnijfilter-${model}series-64.docs`;
+					`perl -i -pe 's/VERSION/${version2}/' cnijfilter-${model}series-64.docs`;
 				}
 	
 				# postinst file
@@ -75,7 +75,7 @@ while( <IN> ){
 			`cp docs.skel cnijfilter-${model}series.docs`;
 			if ( $lpropt eq "yes" ){
 				`perl -pe 's/MODEL/${model}/' lproptions.skel >>  cnijfilter-${model}series.docs`;
-				`perl -i -pe 's/VERSION/${version}/' cnijfilter-${model}series.docs`;
+				`perl -i -pe 's/VERSION/${version2}/' cnijfilter-${model}series.docs`;
 			}
 
 			# postinst file

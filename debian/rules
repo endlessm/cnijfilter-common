@@ -164,6 +164,11 @@ ifeq ($(LNGBITS),32)
 else
 	_arc=64
 endif
+ifeq ($(PRINTER_BUILD_64_AS),33)
+	ifeq ($(_arc),64)
+		COMMON_PKG=cnijfilter-common-64
+	endif
+endif
 ifeq ($(PRINTER_BUILD_64_AS),32)
 	CFLAGS += -m32
 	LDFLAGS += -L/lib32 -L/usr/lib32 -L/lib/i386-linux-gnu -L/usr/lib/i386-linux-gnu
@@ -285,11 +290,6 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 
-	if [ ${_arc} = "64" ]; then \
-		if [ ${PRINTER_BUILD_64_AS} = "33" ]; then
-			COMMON_PKG=${COMMON_PKG}-64
-		fi
-	fi
 	### build & install printer package
 	for pkg in ${PRINTER_DEPEND_PKG}; do \
 		model_name=`echo $${pkg} | cut -d- -f2` && \
@@ -364,6 +364,7 @@ install: build
 		model_name=`echo $${pkgppd} | cut -d- -f2` && \
 		comm_name=`echo $${pkgppd} | cut -d- -f1` && \
 		model_ver=`echo $${pkgppd} | cut -d- -f3` && \
+		model_type=`echo $${pkg} | cut -d- -f5` && \
 		model_dir=$${comm_name}-$${model_name}series && \
 		deb_model_dir=$(CURDIR)/debian/$${model_dir}; \
 		if [ ${_arc} = "64" ]; then \
