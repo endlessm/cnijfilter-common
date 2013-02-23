@@ -1747,9 +1747,10 @@ Description: IJ Printer Driver for Linux.
 
 Package: cnijfilter-ip5200series-32
 Architecture: amd64 ia64
-Depends: cnijfilter-ip5200series, cnijfilter-common-32 (>= 3.80), \
-		cnijfilter-ip5200series-32
-Breaks: cnijfilter-ip5200series-64
+Depends: cnijfilter-ip5200series, cnijfilter-common, \
+		cnijfilter-ip4200series-32, cnijfilter-common-32, \
+		cnijfilter-ip4200series
+Breaks: cnijfilter-ip5200series-64, cnijfilter-common-64
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
@@ -1764,9 +1765,10 @@ Description: IJ Printer Driver for Linux.
 
 Package: cnijfilter-ip5200rseries-32
 Architecture: amd64 ia64
-Depends: cnijfilter-ip5200rseries, cnijfilter-common-32 (>= 3.80), \
-		cnijfilter-ip5200rseries-32
-Breaks: cnijfilter-ip5200rseries-64
+Depends: cnijfilter-ip5200rseries, cnijfilter-common, \
+		cnijfilter-ip4200series-32, cnijfilter-common-32, \
+		cnijfilter-ip4200series
+Breaks: cnijfilter-ip5200rseries-64, cnijfilter-common-64
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
