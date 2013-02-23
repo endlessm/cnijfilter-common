@@ -149,8 +149,6 @@ PRINTER_PKG_PPD+=cnijfilter-ip5200r-2.60-ip4200-32
 SHELL = /bin/bash
 export echo=echo
 CFLAGS = -Wall -g
-# -m32
-#LDFLAGS += -L/lib32 -L/usr/lib32
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
 	CFLAGS += -O0
@@ -332,30 +330,22 @@ install: build
 		done; \
 		echo "######## install library"; \
 		dh_install -s; \
-		mkdir -p $${deb_model_dir}/usr/lib; \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpcmcm$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpcnclapi$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpcnclbjcmd$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpcnclui$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpo$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		if [ $${model_ver} = "2.20" ]; then \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbphtmg$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpsmth$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpwcc$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		else \
-		install -c -m 755 $${model_num}/libs_bin${_arc}/libcnbpess$${model_num}.so.* $${deb_model_dir}/usr/lib; \
-		fi; \
-		mkdir -p $${deb_model_dir}/usr/lib/bjlib; \
-		if [ -f $${model_num}/database/bjfilter$${model_name}.conf ]; then \
-		install -c -m 644 $${model_num}/database/bjfilter*.conf $${deb_model_dir}/usr/lib/bjlib; \
-		fi; \
-		if [ -f $${model_num}/database/cif$${model_name}.conf ]; then \
-		install -c -m 644 $${model_num}/database/cif*.conf $${deb_model_dir}/usr/lib/bjlib; \
-		fi; \
-		install -c -m 644 $${model_num}/database/cnb_$${model_num}0.tbl $${deb_model_dir}/usr/lib/bjlib; \
-		install -c -m 644 $${model_num}/database/cnbpname$${model_num}.tbl $${deb_model_dir}/usr/lib/bjlib; \
-		if [ -f $${model_num}/database/cif$${model_name}.bscc ]; then \
-			install -c -m 644 -o lp -g lp $${model_num}/database/cif$${model_name}.bscc $${deb_model_dir}/usr/lib/bjlib; \
+		if [ -d $${model_num}/libs_bin${_arc} ]; then \
+			mkdir -p $${deb_model_dir}/usr/lib; \
+			for i in $(CURDIR)/$${model_num}/libs_bin${_arc}/*.so.*.*.*; do\
+				install -m 755 $$i $${deb_model_dir}/usr/lib;\
+			done; \
+			cd $${deb_model_dir}/usr/lib &&\
+			  for i in lib*; do\
+				if [ ! -f `echo $$i | sed s/so.*$$/so/` ]; then \
+				    ln -s $$i `echo $$i | sed s/so.*$$/so/`;\
+				fi; \
+			  done; \
+			cd $(CURDIR); \
+			mkdir -p $${deb_model_dir}/usr/lib/bjlib; \
+			for i in $(CURDIR)/$${model_num}/database/*.*; do\
+				install -m 0644 $$i $${deb_model_dir}/usr/lib/bjlib;\
+			done; \
 		fi; \
 		fi; \
 	done
@@ -404,13 +394,24 @@ install: build
 	cd ./backendnet; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	@echo "######## install sm sub process"; \
 	cd ./cngpijmon-3.80/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## install common library"; \
-	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
-	install -c -m 755 com/libs_bin${_arc}/libcnnet.so.* $(CURDIR)/debian/${COMMON_PKG}/usr/lib; \
+	@echo "######## copy common libraries"; \
+	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib
+	for i in $(CURDIR)/com/libs_bin${_arc}/*.so.*.*.*; do\
+	  install -m 755 $$i $(CURDIR)/debian/${COMMON_PKG}/usr/lib;\
+	done; \
+	cd $(CURDIR)/debian/${COMMON_PKG}/usr/lib &&\
+	  for i in lib*; do\
+		if [ ! -f `echo $$i | sed s/so.*$$/so/` ]; then \
+		    ln -s $$i `echo $$i | sed s/so.*$$/so/`;\
+		fi; \
+	  done; \
+	cd $(CURDIR)
+	@echo "######## copy ini file"; \
 	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib; \
-	install -c -m 644 -o lp -g lp com/ini/cnnet.ini $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib; \
+	install -c -m 644 -o lp -g lp $(CURDIR)/com/ini/cnnet.ini $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib;
+	@echo "######## copy udev rules file"; \
 	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d; \
-	install -c -m 644 etc/*.rules $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d;
+	install -c -m 644 $(CURDIR)/etc/*.rules $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d;
 
 	# Add here commands to install the package into debian/cnijfilter-common.
 	#$(MAKE) install DESTDIR=$(CURDIR)/debian/cnijfilter-common
