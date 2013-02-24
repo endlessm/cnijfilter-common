@@ -1,6 +1,6 @@
 /*
  *  CUPS add-on module for Canon Inkjet Printer.
- *  Copyright CANON INC. 2001-2012
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -43,8 +43,8 @@
 #include "bjcups.h"
 #include "bjutil.h"
 
-#define	BJCUPS_VERSION	"cngpij Ver.3.80  Copyright CANON INC. 2002-2012\n"
-#define BJCUPS_INTVER	"cngpij Internal Version : 3.80.01.001\n"
+#define	BJCUPS_VERSION	"cngpij Ver.3.90  Copyright CANON INC. 2002-2013\n"
+#define BJCUPS_INTVER	"cngpij Internal Version : 3.90.01.001\n"
 
 #define	BJ_SOCKET		"/tmp/ijui"
 

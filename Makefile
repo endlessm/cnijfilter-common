@@ -1,5 +1,5 @@
 #dirs = libs cngpij cngpijmon ppd pstocanonij 
-dirs = libs cngpij cngpijmnt pstocanonbj pstocanonij backend backendnet cngpijmon-3.80/cnijnpr \
+dirs = libs cngpij cngpijmnt pstocanonbj pstocanonij backend backendnet cngpijmon-3.90/cnijnpr \
 	cngpijmon-2.20 cnijfilter-2.20 lgmon-2.20 ppd-2.20 printui-2.20 \
 	cngpijmon-2.40 cnijfilter-2.40 lgmon-2.40 ppd-2.40 printui-2.40 \
 	cngpijmon-2.50 cnijfilter-2.50 lgmon-2.50 ppd-2.50 printui-2.50 \
@@ -15,7 +15,8 @@ dirs = libs cngpij cngpijmnt pstocanonbj pstocanonij backend backendnet cngpijmo
 	cngpijmon-3.50 cnijfilter-3.50 lgmon-3.50 ppd-3.50 printui-3.50 \
 	cngpijmon-3.60 cnijfilter-3.60 lgmon-3.60 ppd-3.60 printui-3.60 \
 	cngpijmon-3.70 cnijfilter-3.70 lgmon-3.70 ppd-3.70 printui-3.70 \
-	cngpijmon-3.80 cnijfilter-3.80 lgmon-3.80 ppd-3.80 maintenance-3.80
+	cngpijmon-3.80 cnijfilter-3.80 lgmon-3.80 ppd-3.80 printui-3.80 \
+	cngpijmon-3.90 cnijfilter-3.90 lgmon-3.90 ppd-3.90 printui-3.90
 
 scripts=for dir in $(dirs); do\
 			(cd $$dir; make $$target)|| exit 1;\

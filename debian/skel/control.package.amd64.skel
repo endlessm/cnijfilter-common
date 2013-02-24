@@ -1,8 +1,17 @@
 Package: cnijfilter-XXXXseries-64
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, cnijfilter-common-64 (>= VERSION)
-Breaks: cnijfilter-XXXXseries, cnijfilter-common, \
-		cnijfilter-XXXXseries-32, cnijfilter-common-32
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= VERSION),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-XXXXseries,
+			cnijfilter-XXXXseries-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-XXXXseries,
+			cnijfilter-XXXXseries-32
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.

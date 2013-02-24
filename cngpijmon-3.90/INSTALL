@@ -1,0 +1,34 @@
+To build and install cngpijmon:
+
+        for rpm
+        ./autogen.sh --datadir=/usr/local/share --program-suffix=<Printer Model Name> --enable-progpath=<cnijnpr Program Path>
+        for deb
+        ./autogen.sh --prefix=/usr --program-suffix=<Printer Model Name> --enable-progpath=<cnijnpr Program Path> --datadir=/usr/share
+        
+        make
+        make install
+
+To build and install cngpijmon with AUTOCONF
+
+You can set the following <Printer Model Name>.
+            e610
+            mx390
+            mx450
+            mx520
+            mx720
+            mx920
+                        
+You can set the following <cnijnpr Program Path>.
+            /usr/local/bin
+            /usr/bin
+
+
+Example for building the mx920 cngpijmon with the new automake and autoconf:
+        for rpm
+        ./autogen.sh --datadir=/usr/local/share --program-suffix=mx920 --enable-progpath=/usr/local/bin
+        for deb
+        ./autogen.sh --prefix=/usr --program-suffix=mx920 --enable-progpath=/usr/bin --datadir=/usr/share
+        
+        make
+        make install
+

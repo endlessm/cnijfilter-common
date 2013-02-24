@@ -10,7 +10,7 @@
 #export DH_VERBOSE=1
 
 # define build version to create "control" file.
-PRINTER_BUILD_VERSION=3.80
+PRINTER_BUILD_VERSION=3.90
 
 # define build amd64 as ia32 libs
 PRINTER_BUILD_64_AS=33
@@ -120,6 +120,13 @@ PRINTER_DEPEND_PKG+=cnijfilter-ip7200-406-3.80-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-mg5400-407-3.80-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-mg6300-408-3.80-64-yes
 
+PRINTER_DEPEND_PKG+=cnijfilter-mx720-416-3.90-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx920-417-3.90-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx390-418-3.90-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx450-419-3.90-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx520-420-3.90-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-e610-421-3.90-64-yes
+
 PRINTER_DEPEND_VER+=2.20
 PRINTER_DEPEND_VER+=2.40
 PRINTER_DEPEND_VER+=2.50
@@ -136,6 +143,7 @@ PRINTER_DEPEND_VER+=3.50
 PRINTER_DEPEND_VER+=3.60
 PRINTER_DEPEND_VER+=3.70
 PRINTER_DEPEND_VER+=3.80
+PRINTER_DEPEND_VER+=3.90
 
 PRINTER_PKG_PROGRAM+=ppd
 PRINTER_PKG_PROGRAM+=cnijfilter
@@ -179,53 +187,46 @@ configure-stamp:
 	dh_testdir
 	# Add here commands to configure the package.
 
-	@echo "######## configure lib symlink"; \
+	######## configure lib symlink
 	cd ./; ./make-symlink.sh
 
 	### configure common package
-	@echo "######## configure libs"; \
+	######## configure libs
 	cd ./libs; ./autogen.sh --prefix=/usr
-	@echo "######## configure cngpij"; \
+	######## configure cngpij
 	cd ./cngpij; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
-	@echo "######## configure cngpijmnt"; \
+	######## configure cngpijmnt
 	cd ./cngpijmnt; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
-	@echo "######## configure pstocanonbj"; \
+	######## configure pstocanonbj
 	cd ./pstocanonbj; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
-	@echo "######## configure pstocanonij"; \
+	######## configure pstocanonij
 	cd ./pstocanonij; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
-	@echo "######## configure backend"; \
+	######## configure backend
 	cd ./backend; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
-	@echo "######## configure backendnet"; \
+	######## configure backendnet
 	cd ./backendnet; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
-	@echo "######## configure sm sub process"; \
-	cd ./cngpijmon-3.80/cnijnpr; ./autogen.sh --prefix=/usr
+	######## configure sm sub process
+	cd ./cngpijmon-${PRINTER_BUILD_VERSION}/cnijnpr; ./autogen.sh --prefix=/usr
 
 	#### configure printer package
 	for ver in ${PRINTER_DEPEND_VER}; do \
-		echo "######## configure ppd file"; \
+		echo "######## configure ppd-$${ver} file"; \
 		pushd ./ppd-$${ver}; \
 		./autogen.sh --prefix=/usr --enable-ppdpath=/usr/share/ppd --program-suffix=CN_IJ_MODEL; \
 		popd; \
-		echo "######## configure cnijfilter"; \
+		echo "######## configure cnijfilter-$${ver}"; \
 		pushd ./cnijfilter-$${ver}; \
 		./autogen.sh --prefix=/usr --enable-libpath=/usr/lib/bjlib --enable-binpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
 		popd; \
-		if [ $${ver} = "3.80" ]; then \
-			echo "######## configure maintenance"; \
-			pushd ./maintenance-$${ver}; \
-			./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --datadir=/usr/share; \
-			popd; \
-		else \
-			echo "######## configure printui"; \
-			pushd ./printui-$${ver}; \
-			./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --datadir=/usr/share; \
-			popd; \
-		fi; \
-		echo "######## configure lgmon"; \
+		echo "######## configure printui-$${ver}"; \
+		pushd ./printui-$${ver}; \
+		./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --datadir=/usr/share; \
+		popd; \
+		echo "######## configure lgmon-$${ver}"; \
 		pushd ./lgmon-$${ver}; \
 		./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
 		popd; \
-		echo "######## configure cngpijmon"; \
+		echo "######## configure cngpijmon-$${ver}"; \
 		pushd ./cngpijmon-$${ver}; \
 		./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --enable-progpath=/usr/bin --datadir=/usr/share; \
 		popd; \
@@ -298,25 +299,19 @@ install: build
 		model_dir=$${comm_name}-$${model_name}series && \
 		deb_model_dir=$(CURDIR)/debian/$${model_dir}; \
 		model_in="0"; \
-		if [ ${_arc} = "64" ]; then \
-			if [ $${model_type} = "64" ]; then \
-				model_in="1"; \
-				if [ ${PRINTER_BUILD_64_AS} = "33" ]; then \
-					deb_model_dir=$${deb_model_dir}-64; \
-				fi; \
+		if [ ${_arc} = "64" ] && [ $${model_type} = "64" ]; then \
+			model_in="1"; \
+			if [ ${PRINTER_BUILD_64_AS} = "33" ]; then \
+				deb_model_dir=$${deb_model_dir}-64; \
 			fi; \
-		else \
+		fi; \
+		if [ ${_arc} = "32" ]; then \
 			model_in="1"; \
 		fi; \
 		if [ $${model_in} = "1" ]; then \
 		for pg_name in ${PRINTER_PKG_PROGRAM}; do \
-			if [ $${pg_name} = "printui" ] && [ $${model_ver} = "3.80" ]; then \
-				m_pg_name="maintenance"; \
-			else \
-				m_pg_name=$${pg_name}; \
-			fi; \
-			echo "######## install $${m_pg_name}"; \
-			pushd ./$${m_pg_name}-$${model_ver}; \
+			echo "######## install $${pg_name}-$${model_ver}"; \
+			pushd ./$${pg_name}-$${model_ver}; \
 			find . -name Makefile -print > file_lists; \
 			find . -name config.h -print >> file_lists; \
 			for fn in `cat file_lists`; do \
@@ -328,12 +323,12 @@ install: build
 			make clean; make; make install DESTDIR=$${deb_model_dir}; \
 			popd; \
 		done; \
-		echo "######## install library"; \
+		echo "######## install library $${model_num}"; \
 		dh_install -s; \
 		if [ -d $${model_num}/libs_bin${_arc} ]; then \
 			mkdir -p $${deb_model_dir}/usr/lib; \
 			for i in $(CURDIR)/$${model_num}/libs_bin${_arc}/*.so.*.*.*; do\
-				install -m 755 $$i $${deb_model_dir}/usr/lib;\
+				install -c -m 755 $$i $${deb_model_dir}/usr/lib;\
 			done; \
 			cd $${deb_model_dir}/usr/lib &&\
 			  for i in lib*; do\
@@ -344,7 +339,7 @@ install: build
 			cd $(CURDIR); \
 			mkdir -p $${deb_model_dir}/usr/lib/bjlib; \
 			for i in $(CURDIR)/$${model_num}/database/*.*; do\
-				install -m 0644 $$i $${deb_model_dir}/usr/lib/bjlib;\
+				install -c -m 644 $$i $${deb_model_dir}/usr/lib/bjlib;\
 			done; \
 		fi; \
 		fi; \
@@ -354,17 +349,22 @@ install: build
 		model_name=`echo $${pkgppd} | cut -d- -f2` && \
 		comm_name=`echo $${pkgppd} | cut -d- -f1` && \
 		model_ver=`echo $${pkgppd} | cut -d- -f3` && \
-		model_type=`echo $${pkg} | cut -d- -f5` && \
+		model_type=`echo $${pkgppd} | cut -d- -f5` && \
 		model_dir=$${comm_name}-$${model_name}series && \
 		deb_model_dir=$(CURDIR)/debian/$${model_dir}; \
-		if [ ${_arc} = "64" ]; then \
-			if [ $${model_type} = "64" ]; then \
-				if [ ${PRINTER_BUILD_64_AS} = "33" ]; then \
-					deb_model_dir=$${deb_model_dir}-64; \
-				fi; \
+		model_in="0"; \
+		if [ ${_arc} = "64" ] && [ $${model_type} = "64" ]; then \
+			model_in="1"; \
+			if [ ${PRINTER_BUILD_64_AS} = "33" ]; then \
+				deb_model_dir=$${deb_model_dir}-64; \
 			fi; \
 		fi; \
-			pushd ./ppd-$${model_ver}; \
+		if [ ${_arc} = "32" ]; then \
+			model_in="1"; \
+		fi; \
+		if [ $${model_in} = "1" ]; then \
+		echo "######## install ppd-$${model_ver}"; \
+		pushd ./ppd-$${model_ver}; \
 			find . -name Makefile -print > file_lists_ppd; \
 			find . -name config.h -print >> file_lists_ppd; \
 			for fn in `cat file_lists_ppd`; do \
@@ -374,44 +374,45 @@ install: build
 				sed -e s/CN_IJ_MODEL/$${model_name}/g $${fn}.org > cn_ij_tmp; mv cn_ij_tmp $${fn}; \
 			done; \
 			make clean; make; make install DESTDIR=$${deb_model_dir}; \
-			popd; \
+		popd; \
+		fi; \
 	done
 
 	### install common package
-	@echo "######## compile libs"; \
+	######## compile libs
 	cd ./libs; make clean; make
-	@echo "######## install cngpij"; \
+	######## install cngpij
 	cd ./cngpij; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## install cngpijmnt"; \
+	######## install cngpijmnt
 	cd ./cngpijmnt; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## install pstocanonbj"; \
+	######## install pstocanonbj
 	cd ./pstocanonbj; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## install pstocanonij"; \
+	######## install pstocanonij
 	cd ./pstocanonij; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## install backend"; \
+	######## install backend
 	cd ./backend; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## install backendnet"; \
+	######## install backendnet
 	cd ./backendnet; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## install sm sub process"; \
-	cd ./cngpijmon-3.80/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	@echo "######## copy common libraries"; \
+	######## install sm sub process
+	cd ./cngpijmon-${PRINTER_BUILD_VERSION}/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
+	######## copy common libraries
 	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib
 	for i in $(CURDIR)/com/libs_bin${_arc}/*.so.*.*.*; do\
-	  install -m 755 $$i $(CURDIR)/debian/${COMMON_PKG}/usr/lib;\
-	done; \
+	  install -c -m 755 $$i $(CURDIR)/debian/${COMMON_PKG}/usr/lib;\
+	done
 	cd $(CURDIR)/debian/${COMMON_PKG}/usr/lib &&\
 	  for i in lib*; do\
 		if [ ! -f `echo $$i | sed s/so.*$$/so/` ]; then \
 		    ln -s $$i `echo $$i | sed s/so.*$$/so/`;\
 		fi; \
-	  done; \
+	  done
 	cd $(CURDIR)
-	@echo "######## copy ini file"; \
-	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib; \
-	install -c -m 644 -o lp -g lp $(CURDIR)/com/ini/cnnet.ini $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib;
-	@echo "######## copy udev rules file"; \
-	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d; \
-	install -c -m 644 $(CURDIR)/etc/*.rules $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d;
+	######## copy ini file
+	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib
+	install -c -m 644 -o lp -g lp $(CURDIR)/com/ini/cnnet.ini $(CURDIR)/debian/${COMMON_PKG}/usr/lib/bjlib
+	######## copy udev rules file
+	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d
+	install -c -m 644 $(CURDIR)/etc/*.rules $(CURDIR)/debian/${COMMON_PKG}/etc/udev/rules.d
 
 	# Add here commands to install the package into debian/cnijfilter-common.
 	#$(MAKE) install DESTDIR=$(CURDIR)/debian/cnijfilter-common

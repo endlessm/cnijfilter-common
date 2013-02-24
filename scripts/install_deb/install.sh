@@ -3,7 +3,7 @@
 ##############################################################################
 ##
 ##  Canon Inkjet Printer Driver for Linux
-##  Copyright CANON INC. 2001-2012
+##  Copyright CANON INC. 2001-2013
 ##  All Rights Reserved.
 ##
 ##  This program is free software; you can redistribute it and/or modify
@@ -21,8 +21,8 @@
 ##
 ##############################################################################
 
-C_version="3.80-1"
-C_copyright_end="2012"
+C_version="3.90-1"
+C_copyright_end="2013"
 C_default_system="deb"
 
 L_INST_COM_01_01="Command executed = %s\n"
@@ -1031,14 +1031,10 @@ P_FUNC_MAIN_make_queue()
 	fi
 
 	####################################
-	### Restart cupsd.
+	### Add the entry name to the "entry_list" file.(not to add if the entry is overwrited)
 	####################################
-#	$P_cupsd_command_current restart 1> /dev/null		#show error message only
-	$P_cupsd_command_current 1> /dev/null		#show error message only
-	if [ $? -ne 0 ]; then
-		printf "$L_INST_PRN_01_27"
-		exit		#quit immediately
-	fi
+	p_FUNC_write_entrydata_to_file "$P_entry_list_fullname" $p_local_ENTRYNAME
+	
 
 	####################################
 	### Set the registered entry as default printer.
@@ -1060,6 +1056,16 @@ P_FUNC_MAIN_make_queue()
 	fi
 
 	####################################
+	### Restart cupsd.
+	####################################
+#	$P_cupsd_command_current restart 1> /dev/null		#show error message only
+	$P_cupsd_command_current 1> /dev/null		#show error message only
+	if [ $? -ne 0 ]; then
+		printf "$L_INST_PRN_01_27"
+		exit		#quit immediately
+	fi
+
+####################################
 	### Finish (Show registration information)
 	####################################
 	printf "\n"
@@ -1070,11 +1076,6 @@ P_FUNC_MAIN_make_queue()
 	printf "#=========================================================#\n"
 	printf ""
 
-	####################################
-	### Add the entry name to the "entry_list" file.(not to add if the entry is overwrited)
-	####################################
-	p_FUNC_write_entrydata_to_file "$P_entry_list_fullname" $p_local_ENTRYNAME
-	
 	return 0
 	
 }

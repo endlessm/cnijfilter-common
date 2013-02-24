@@ -35,6 +35,7 @@
 #include <net/if.h>
 #include <sys/sysctl.h>
 #include <config.h>
+#include <unistd.h>
 #include <fcntl.h>
 
 #include <dlfcn.h>
@@ -68,7 +69,7 @@ static int get_printer_devid(int);
 
 void cnijnpr_sigterm_handler(int sig_code)
 {
-	int err;
+	int __attribute__ ((unused)) err;
 
 	if( p_search_result == 1 ){
 		err = CNNL_Abort(h);

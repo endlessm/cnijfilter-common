@@ -1,0 +1,7 @@
+To build and install cnijnpr:
+
+  1) Building "cnijnpr".
+        ./autogen.sh --enable-libpath=/usr/lib/bjlib
+        make
+        make install
+

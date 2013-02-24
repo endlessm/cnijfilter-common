@@ -70,7 +70,7 @@ while( <IN> ){
 				`perl -pe 's/XXXX/${deco}/' postrm.package.skel > cnijfilter-${model}series-64.postrm`;
 	
 				# printui.desktop file
-				if ( $version2 eq "3.80" ){
+				if (( $version2 eq "3.80" ) || ( $version2 eq "3.90"  )){
 				`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series-64.install`;
 				`perl -i -pe 's/GGGG/maintenance/' cnijfilter-${model}series-64.install`;
 				}else{
@@ -93,7 +93,7 @@ while( <IN> ){
 			`perl -pe 's/XXXX/${deco}/' postrm.package.skel > cnijfilter-${model}series.postrm`;
 
 			# printui.desktop file
-			if ( $version2 eq "3.80" ){
+			if (( $version2 eq "3.80" ) || ( $version2 eq "3.90"  )){
 			`perl -pe 's/YYYY/${modeluc}/' maintenance.desktop.skel > maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXUS/PIXUS-/' maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXMA/PIXMA-/' maintenance-${model}series.desktop`;
@@ -160,7 +160,7 @@ while( <IN> ){
 				`perl -pe 's/XXXX/${deco}/' postrm.package.ppd.skel > cnijfilter-${model}series-64.postrm`;
 
 				# printui.desktop file
-				if ( $version2 eq "3.80" ){
+				if (( $version2 eq "3.80" ) || ( $version2 eq "3.90" )){
 				`perl -pe 's/XXXX/${model}/' install.skel > cnijfilter-${model}series-64.install`;
 				`perl -i -pe 's/GGGG/maintenance/' cnijfilter-${model}series-64.install`;
 				}else{
@@ -178,7 +178,7 @@ while( <IN> ){
 			`perl -pe 's/XXXX/${deco}/' postrm.package.ppd.skel > cnijfilter-${model}series.postrm`;
 
 			# printui.desktop file
-			if ( $version2 eq "3.80" ){
+			if (( $version2 eq "3.80" ) || ( $version2 eq "3.90"  )){
 			`perl -pe 's/YYYY/${modeluc}/' maintenance.desktop.skel > maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXUS/PIXUS-/' maintenance-${model}series.desktop`;
 			`perl -i -pe 's/PIXMA/PIXMA-/' maintenance-${model}series.desktop`;

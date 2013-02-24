@@ -168,6 +168,7 @@ SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10d5", MODE="664"
 # Canon iX6500 series
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10d7", MODE="664"
+# Ver.3.80
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="10dc", MODE="664"
 # Canon mp110
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1700", MODE="664"
@@ -333,6 +334,7 @@ SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175d", MODE="664"
 # Canon MX890 series
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175e", MODE="664"
+# Ver.3.80
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="175f", MODE="664"
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1760", MODE="664"
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1761", MODE="664"
@@ -340,6 +342,13 @@ SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1763", MODE="664"
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1764", MODE="664"
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1765", MODE="664"
+# Ver.3.90
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1766", MODE="664"
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1767", MODE="664"
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1768", MODE="664"
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="1769", MODE="664"
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="176a", MODE="664"
+SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="176b", MODE="664"
 # Canon MP730
 SUBSYSTEM=="usb", KERNEL=="lp[0-9]*", ATTRS{idVendor}=="04a9", ATTRS{idProduct}=="262f", MODE="664"
 # Canon MP700

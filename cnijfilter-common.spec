@@ -2,7 +2,7 @@
 %bcond_with fastbuild
 %bcond_with build_common_package
 
-%define VERSION 3.80
+%define VERSION 3.90
 %define RELEASE 1
 
 %define _arc  %(getconf LONG_BIT)
@@ -32,7 +32,7 @@ Group: Applications/Publishing
 Source0: cnijfilter-source-%{version}-%{release}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-root
 #Requires:  cups popt
-Requires: cnijfilter-common >= %{version} cups popt libxml2 gtk2 libtiff libpng
+Requires: cnijfilter-common >= %{version} cups popt gtk2
 #BuildRequires: gtk-devel cups-devel 
 
 %if %{with build_common_package}

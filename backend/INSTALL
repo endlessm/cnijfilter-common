@@ -10,7 +10,7 @@ To build and install backend(USB):
            --prefix
 
            --enable-progpath
-                lgmon(ex.lgmonmx710)
+                lgmon(ex.lgmonmx720)
  
  
      Example:

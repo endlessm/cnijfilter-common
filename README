@@ -18,25 +18,23 @@ How to build rpm:
     You can set the following [Printer Model Name]/[Printer Model ID].
         [Printer Model Name]        [Printer Model ID]
     ------------------------------------------------------------------
-         mp230                       401
-         mg2200                      402
-         e510                        403
-         mg3200                      404
-         mg4200                      405
-         ip7200                      406
-         mg5400                      407
-         mg6300                      408
+         mx720                       416
+         mx920                       417
+         mx390                       418
+         mx450                       419
+         mx520                       420
+         e610                        421
 
 
 Example:
 ========
-    * Example for build MP230 package:
+    * Example for build MX720 package:
 	----------------------------------
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --define="MODEL MP230" --define="MODEL_NUM 401" --with build_common_package	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --define="MODEL mx720" --define="MODEL_NUM 416" --with build_common_package	
 
-    * Example for build MG2200/E510/MG3200 packages:
+    * Example for build MX720/MX920/MX390 packages:
 	-----------------------------------------------
     $ rpmbuild -tc cnijfilter-source-X.XX-Y.tar.gz --with prepare_fastbuild
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL MG2200" --define="MODEL_NUM 402" --with build_common_package	
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL E510" --define="MODEL_NUM 403"	
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL MG3200" --define="MODEL_NUM 404"	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL mx720" --define="MODEL_NUM 416" --with build_common_package	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL mx920" --define="MODEL_NUM 417"	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL mx390" --define="MODEL_NUM 418"	

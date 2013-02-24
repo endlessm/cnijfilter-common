@@ -1,0 +1,11 @@
+To install ppd file:
+    ./autogen.sh --prefix=/usr --program-suffix=<Printer Model Name>
+	make install
+
+You can set the following <Printer Model Name>.
+mx720
+mx920
+mx390
+mx450
+mx520
+e610
