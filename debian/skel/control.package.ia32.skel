@@ -1,7 +1,8 @@
 Package: cnijfilter-XXXXseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common-32 (>= VERSION),
+Depends: 	cnijfilter-common (>= VERSION),
+			cnijfilter-common-32 (>= VERSION),
 			cnijfilter-XXXXseries (>= VERSION),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-XXXXseries-64
