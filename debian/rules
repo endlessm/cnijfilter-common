@@ -311,7 +311,7 @@ install: build
 			if [ $${pg_name} = "ppd" ]; then \
 				echo "######## install $${pg_name}"; \
 				pushd ./$${pg_name}; \
-			else; \
+			else \
 				echo "######## install $${pg_name}-$${model_ver}"; \
 				pushd ./$${pg_name}-$${model_ver}; \
 			fi; \
