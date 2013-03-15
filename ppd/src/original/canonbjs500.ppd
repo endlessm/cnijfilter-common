@@ -1,0 +1,179 @@
+*PPD-Adobe: "4.3"
+*%  CUPS add-on PPD file for Canon Bubble Jet Printer.
+*%  Copyright CANON INC. 2001-2002
+*%  All Rights Reserved.
+*%
+*%  This program is free software; you can redistribute it and/or modify
+*%  it under the terms of the GNU General Public License as published by
+*%  the Free Software Foundation; either version 2 of the License, or
+*%  (at your option) any later version.
+*%
+*%  This program is distributed in the hope that it will be useful,
+*%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*%  GNU General Public License for more details.
+*%
+*%  You should have received a copy of the GNU General Public License
+*%  along with this program; if not, write to the Free Software
+*%  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+*FormatVersion:	"4.3"
+*FileVersion: "1.1"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "CNS500.PPD"
+*Manufacturer: "Canon"
+*Product: "(bjs500)"
+*cupsVersion: 1.1
+*cupsManualCopies: True
+*cupsModelNumber: 131
+*cupsFilter: "application/vnd.cups-postscript 0 pstocanonbj"
+*ModelName: "BJS500"
+*ShortNickName: "BJS500"
+*NickName: "Canon BJ S500 ver.2.1"
+*PSVersion: "(3010.000) 550"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*VariablePaperSize: False
+*TTRasterizer: Type42
+
+*OpenUI *PageSize/Paper Size: PickOne
+*DefaultPageSize: a4
+*PageSize a5/A5: "<</PageSize[420 595]/ImagingBBox null>>setpagedevice"
+*PageSize a4/A4: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageSize b5/B5: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+*PageSize letter/Letter: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageSize legal/Legal: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+*PageSize postcard/Postcard: "<</PageSize[283 420]/ImagingBBox null>>setpagedevice"
+*PageSize envj4p/Env. #4: "<</PageSize[298 666]/ImagingBBox null>>setpagedevice"
+*PageSize envj6p/Env. #6: "<</PageSize[278 539]/ImagingBBox null>>setpagedevice"
+*PageSize l/L size: "<</PageSize[252 360]/ImagingBBox null>>setpagedevice"
+*PageSize 2l/2L size: "<</PageSize[360 505]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*DefaultPageRegion: a4
+*PageRegion a5/A5: "<</PageSize[420 595]/ImagingBBox null>>setpagedevice"
+*PageRegion a4/A4: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion b5/B5: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+*PageRegion letter/Letter: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion legal/Legal: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+*PageRegion postcard/Postcard: "<</PageSize[283 420]/ImagingBBox null>>setpagedevice"
+*PageRegion envj4p/Env. #4: "<</PageSize[298 666]/ImagingBBox null>>setpagedevice"
+*PageRegion envj6p/Env. #6: "<</PageSize[278 539]/ImagingBBox null>>setpagedevice"
+*PageRegion l/L size: "<</PageSize[252 360]/ImagingBBox null>>setpagedevice"
+*PageRegion 2l/2L size: "<</PageSize[360 505]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*OpenUI *MediaType/Media Type: PickOne
+*DefaultMediaType: plain
+*MediaType plain/Plain Paper: "<</MediaType(plain)>>setpagedevice"
+*MediaType highres/High Resolution Paper: "<</MediaType(highres)>>setpagedevice"
+*MediaType prophoto/Photo Paper Pro: "<</MediaType(prophoto)>>setpagedevice"
+*MediaType glossypaper/Glossy Photo Paper: "<</MediaType(glossypaper)>>setpagedevice"
+*MediaType ijpostcard/Inkjet Hagaki: "<</MediaType(ijpostcard)>>setpagedevice"
+*MediaType postcard/Hagaki: "<</MediaType(postcard)>>setpagedevice"
+*MediaType higloss2/High Gloss Photo Film: "<</MediaType(higloss2)>>setpagedevice"
+*MediaType tshirt/T-Shirt Transfer: "<</MediaType(tshirt)>>setpagedevice"
+*MediaType ohp/Transparency: "<</MediaType(ohp)>>setpagedevice"
+*MediaType envelope/Envelope: "<</MediaType(envelope)>>setpagedevice"
+*CloseUI: *MediaType
+
+*OpenUI *InputSlot/Paper Feed: PickOne
+*DefaultInputSlot: asf
+*InputSlot asf/Auto Feeder: "<</cupsMediaPosition 1>>setpagedevice"
+*CloseUI: *InputSlot
+
+*OpenUI *Resolution/Output Resolution: PickOne
+*DefaultResolution: 600
+*Resolution 600/600 dpi: "<</HWResolution[600 600]>>setpagedevice"
+*CloseUI: *Resolution
+
+*OpenUI *ColorModel/Color Model: PickOne
+*DefaultColorModel: rgb
+*ColorModel rgb/RGB: "<</cupsColorOrder 0/cupsColorSpace 1/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *ColorModel
+
+*DefaultImageableArea: a4
+*ImageableArea a5: "9.64 14.17 409.89 586.77"
+*ImageableArea a4: "9.64 14.17 585.64 833.39"
+*ImageableArea b5: "9.64 14.17 506.27 720.00"
+*ImageableArea letter: "18.14 14.17 594.14 783.50"
+*ImageableArea legal: "18.14 14.17 594.14 999.50"
+*ImageableArea postcard: "9.64 14.17 273.83 411.02"
+*ImageableArea envj4p: "9.64 75.12 288.00 657.64"
+*ImageableArea envj6p: "9.64 75.12 268.16 530.08"
+*ImageableArea l: "9.64 14.17 242.65 351.50"
+*ImageableArea 2l: "9.64 14.17 350.36 496.06"
+
+*DefaultPaperDimension: A4
+*PaperDimension a5: "420 595"
+*PaperDimension a4: "595 842"
+*PaperDimension b5: "516 729"
+*PaperDimension letter: "612 792"
+*PaperDimension legal: "612 1008"
+*PaperDimension postcard: "283 420"
+*PaperDimension envj4p: "298 666"
+*PaperDimension envj6p: "278 539"
+*PaperDimension l: "252 360"
+*PaperDimension 2l: "360 505"
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
+*%CNPpdToOptKey PageSize       --papersize
+*%CNPpdToOptKey MediaType      --media
+*%CNPpdToOptKey InputSlot      --paperload
+*%CNPpdToOptKey CNCartridge    --cartridge
+*%CNPpdToOptKey CNQuality      --quality
+*%CNPpdToOptKey CNHalftoning   --halftoning
+*%CNPpdToOptKey CNRenderIntent --renderintent
+*%CNPpdToOptKey CNGamma        --gamma
+*%CNPpdToOptKey CNBalanceC     --balance_c
+*%CNPpdToOptKey CNBalanceM     --balance_m
+*%CNPpdToOptKey CNBalanceY     --balance_y
+*%CNPpdToOptKey CNBalanceK     --balance_k
+*%CNPpdToOptKey CNDensity      --density
+*%CNPpdToOptKey CNGrayscale    --grayscale
+*%CNPpdToOptKey CNLocation     --location
+*%CNPpdToOptKey CNPercent      --percent
+*%CNPpdToOptKey CNCopies       --copies
+

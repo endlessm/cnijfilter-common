@@ -1,0 +1,23 @@
+#/bin/bash
+
+ls -1 ../*.ppd > file_lists2
+
+#PRINTER_PPD+=ppd-ip2200-ip2200-
+
+
+
+val0=$(pwd)
+for fn in `cat file_lists2`; do
+	ModelName1=`echo ${fn} | cut '-d/' -f2 | cut '-d.' -f1`
+	model_smol=`echo ${ModelName1} | cut -dn -f3`
+	ModelName2=`cat ${fn} | grep "PCFileName" | cut '-d"' -f2 | cut '-d.' -f1`
+	val1=""
+	rm -f uiconstraints/${ModelName1}.uiconstraints
+	val1=`cat ${fn} | grep "*UIConstraints:"`
+	if [ ! "${val1}" = "" ]; then
+		`cat ${fn} | grep "*UIConstraints:" > uiconstraints/${model_smol}.uiconstraints`
+	fi
+	echo "Ripp ${model_smol}"
+done
+
+rm -f file_lists2

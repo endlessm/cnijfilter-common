@@ -1,0 +1,309 @@
+#/bin/bash
+
+ls -1 ../*.ppd > file_lists2
+
+#1  Letter
+#2  Legal
+#3  ledger
+#4  A5
+#5  A4
+#6  a3
+#7  a3plus
+#8  B5
+#9  b4
+#10 4X6
+#11 4X8
+#12 5X7
+#13 8X10
+#14 10X12
+#15 l
+#16 2l
+#17 letterfineart35
+#18 a4fineart35
+#19 postcard
+#20 postdbl
+#21 panorama
+#22 creditcard
+#23 businesscard
+#24 wide
+#25 fineartletter
+#26 finearta4
+#27 envelop10p
+
+rm -f include/canon_pagesize.txt
+
+val0=$(pwd)
+for fn in `cat file_lists2`; do
+	ModelName1=`echo ${fn} | cut '-d/' -f2 | cut '-d.' -f1`
+	model_smol=`echo ${ModelName1} | cut -dn -f3`
+	ModelName2=`cat ${fn} | grep "PCFileName" | cut '-d"' -f2 | cut '-d.' -f1`
+
+	Letter=`cat ${fn} | grep -i "*ImageableArea Letter:"`
+	if [ ! "${Letter}" = "" ]; then
+	_Letter=1
+	else
+	_Letter=0
+	fi
+
+	Legal=`cat ${fn} | grep -i "*ImageableArea Legal:"`
+	if [ ! "${Legal}" = "" ]; then
+	_Legal=1
+	else
+	_Legal=0
+	fi
+
+	ledger=`cat ${fn} | grep -i "*ImageableArea ledger:"`
+	if [ ! "${ledger}" = "" ]; then
+	_ledger=1
+	else
+	_ledger=0
+	fi
+
+	A5=`cat ${fn} | grep -i "*ImageableArea A5:"`
+	if [ ! "${A5}" = "" ]; then
+	_A5=1
+	else
+	_A5=0
+	fi
+
+	A4=`cat ${fn} | grep -i "*ImageableArea A4:"`
+	if [ ! "${A4}" = "" ]; then
+	_A4=1
+	else
+	_A4=0
+	fi
+
+	a3=`cat ${fn} | grep -i "*ImageableArea a3:"`
+	if [ ! "${a3}" = "" ]; then
+	_a3=1
+	else
+	_a3=0
+	fi
+
+	a3plus=`cat ${fn} | grep -i "*ImageableArea a3plus:"`
+	if [ ! "${a3plus}" = "" ]; then
+	_a3plus=1
+	else
+	_a3plus=0
+	fi
+
+	B5=`cat ${fn} | grep -i "*ImageableArea B5:"`
+	if [ ! "${B5}" = "" ]; then
+	_B5=1
+	else
+	_B5=0
+	fi
+
+	b4=`cat ${fn} | grep -i "*ImageableArea b4:"`
+	if [ ! "${b4}" = "" ]; then
+	_b4=1
+	else
+	_b4=0
+	fi
+
+	__4X6=`cat ${fn} | grep -i "*ImageableArea 4X6:"`
+	if [ ! "${__4X6}" = "" ]; then
+	_4X6=1
+	else
+	_4X6=0
+	fi
+
+	__4X8=`cat ${fn} | grep -i "*ImageableArea 4X8:"`
+	if [ ! "${__4X8}" = "" ]; then
+	_4X8=1
+	else
+	_4X8=0
+	fi
+
+	__5X7=`cat ${fn} | grep -i "*ImageableArea 5X7:"`
+	if [ ! "${__5X7}" = "" ]; then
+	_5X7=1
+	else
+	_5X7=0
+	fi
+
+	__8X10=`cat ${fn} | grep -i "*ImageableArea 8X10:"`
+	if [ ! "${__8X10}" = "" ]; then
+	_8X10=1
+	else
+	_8X10=0
+	fi
+
+	__10X12=`cat ${fn} | grep -i "*ImageableArea 10X12:"`
+	if [ ! "${__10X12}" = "" ]; then
+	_10X12=1
+	else
+	_10X12=0
+	fi
+
+	__l=`cat ${fn} | grep -i "*ImageableArea l:"`
+	if [ ! "${__l}" = "" ]; then
+	_l=1
+	else
+	_l=0
+	fi
+
+	__2l=`cat ${fn} | grep -i "*ImageableArea 2l:"`
+	if [ ! "${__2l}" = "" ]; then
+	_2l=1
+	else
+	_2l=0
+	fi
+
+	letterfineart35=`cat ${fn} | grep -i "*ImageableArea letterfineart35:"`
+	if [ ! "${letterfineart35}" = "" ]; then
+	_letterfineart35=1
+	else
+	_letterfineart35=0
+	fi
+
+	a4fineart35=`cat ${fn} | grep -i "*ImageableArea a4fineart35:"`
+	if [ ! "${a4fineart35}" = "" ]; then
+	_a4fineart35=1
+	else
+	_a4fineart35=0
+	fi
+
+	postcard=`cat ${fn} | grep -i "*ImageableArea postcard:"`
+	if [ ! "${postcard}" = "" ]; then
+	_postcard=1
+	else
+	_postcard=0
+	fi
+
+	postdbl=`cat ${fn} | grep -i "*ImageableArea postdbl:"`
+	if [ ! "${postdbl}" = "" ]; then
+	_postdbl=1
+	else
+	_postdbl=0
+	fi
+
+	panorama=`cat ${fn} | grep -i "*ImageableArea panorama:"`
+	if [ ! "${panorama}" = "" ]; then
+	_panorama=1
+	else
+	_panorama=0
+	fi
+
+	creditcard=`cat ${fn} | grep -i "*ImageableArea creditcard:"`
+	if [ ! "${creditcard}" = "" ]; then
+	_creditcard=1
+	else
+	_creditcard=0
+	fi
+
+	businesscard=`cat ${fn} | grep -i "*ImageableArea businesscard:"`
+	if [ ! "${businesscard}" = "" ]; then
+	_businesscard=1
+	else
+	_businesscard=0
+	fi
+
+	wide=`cat ${fn} | grep -i "*ImageableArea wide:"`
+	if [ ! "${wide}" = "" ]; then
+	_wide=1
+	else
+	_wide=0
+	fi
+
+	fineartletter=`cat ${fn} | grep -i "*ImageableArea fineartletter:"`
+	if [ ! "${fineartletter}" = "" ]; then
+	_fineartletter=1
+	else
+	_fineartletter=0
+	fi
+
+	finearta4=`cat ${fn} | grep -i "*ImageableArea finearta4:"`
+	if [ ! "${finearta4}" = "" ]; then
+	_finearta4=1
+	else
+	_finearta4=0
+	fi
+
+	envelop10p=`cat ${fn} | grep -i "*ImageableArea envelop10p:"`
+	if [ ! "${envelop10p}" = "" ]; then
+		left=`cat ${fn} | grep -i "*ImageableArea envelop10p:" | cut '-d"' -f2 | cut '-d ' -f1`
+		bottom=`cat ${fn} | grep -i "*ImageableArea envelop10p:" | cut '-d"' -f2 | cut '-d ' -f2`
+		if [ ${left} = "15.87" ]; then
+			if [ ${bottom} = "106.02" ]; then
+				_envelop10p=6
+			elif [ ${bottom} = "92.13" ]; then
+				_envelop10p=7
+			fi
+		elif [ ${left} = "9.64" ]; then
+			if [ ${bottom} = "106.02" ]; then
+				_envelop10p=5
+			elif [ ${bottom} = "75.12" ]; then
+				_envelop10p=1
+			elif [ ${bottom} = "88.44" ]; then
+				_envelop10p=2
+			elif [ ${bottom} = "89.29" ]; then
+				_envelop10p=3
+			elif [ ${bottom} = "92.13" ]; then
+				_envelop10p=4
+			fi
+		fi			
+	else
+		envelop10p=`cat ${fn} | grep -i "*ImageableArea envj4p:"`
+		if [ ! "${envelop10p}" = "" ]; then
+			left=`cat ${fn} | grep -i "*ImageableArea envj4p:" | cut '-d"' -f2 | cut '-d ' -f1`
+			bottom=`cat ${fn} | grep -i "*ImageableArea envj4p:" | cut '-d"' -f2 | cut '-d ' -f2`
+			if [ ${left} = "15.87" ]; then
+				if [ ${bottom} = "106.02" ]; then
+					_envelop10p=6
+				elif [ ${bottom} = "92.13" ]; then
+					_envelop10p=7
+				fi
+			elif [ ${left} = "9.64" ]; then
+				if [ ${bottom} = "106.02" ]; then
+					_envelop10p=5
+				elif [ ${bottom} = "75.12" ]; then
+					_envelop10p=1
+				elif [ ${bottom} = "88.44" ]; then
+						_envelop10p=2
+				elif [ ${bottom} = "89.29" ]; then
+					_envelop10p=3
+				elif [ ${bottom} = "92.13" ]; then
+					_envelop10p=4
+				fi
+			fi			
+		fi
+	fi
+#1  Letter
+#2  Legal
+#3  ledger
+#4  A5
+#5  A4
+#6  a3
+#7  a3plus
+#8  B5
+#9  b4
+#10 4X6
+#11 4X8
+#12 5X7
+#13 8X10
+#14 10X12
+#15 l
+#16 2l
+#17 letterfineart35
+#18 a4fineart35
+#19 postcard
+#20 postdbl
+#21 panorama
+#22 creditcard
+#23 businesscard
+#24 wide
+#25 fineartletter
+#26 finearta4
+#27 envelop10p
+
+	_tex=""
+	_tex="${_Letter}-${_Legal}-${_ledger}-${_A5}-${_A4}-${_a3}-${_a3plus}-${_B5}"
+	_tex+="-${_b4}-${_4X6}-${_4X8}-${_5X7}-${_8X10}-${_10X12}-${_l}-${_2l}"
+	_tex+="-${_letterfineart35}-${_a4fineart35}-${_postcard}-${_postdbl}-${_panorama}-${_creditcard}-${_businesscard}-${_wide}"
+	_tex+="-${_fineartletter}-${_finearta4}-${_envelop10p}"
+	echo "${_tex}-${model_smol}" >> include/canon_pagesize.txt
+	echo "${_envelop10p}-${model_smol}"
+done
+
+rm -f file_lists2

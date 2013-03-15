@@ -1,0 +1,48 @@
+#/bin/bash
+
+ls -1 ../*.ppd > file_lists2
+
+#1  manual
+#2  asf
+#3  asf2bin
+#4  auto
+#5  cassette
+#6  cassette1
+#7  cassette2
+#8  cassetteauto
+#9  continuous
+#10 front
+#11 front2
+#12 frontplain
+#13 switch
+#14 consecutive1
+#15 consecutive2
+#16 tractor
+
+rm -f include/canon_margin.txt
+
+val0=$(pwd)
+for fn in `cat file_lists2`; do
+	ModelName1=`echo ${fn} | cut '-d/' -f2 | cut '-d.' -f1`
+	model_smol=`echo ${ModelName1} | cut -dn -f3`
+	ModelName2=`cat ${fn} | grep "PCFileName" | cut '-d"' -f2 | cut '-d.' -f1`
+	_HWMargins1=`cat ${fn} | grep -i "*HWMargins: " | cut '-d ' -f2`
+	_HWMargins2=`cat ${fn} | grep -i "*HWMargins: " | cut '-d ' -f3`
+	_HWMargins3=`cat ${fn} | grep -i "*HWMargins: " | cut '-d ' -f4`
+	_HWMargins4=`cat ${fn} | grep -i "*HWMargins: " | cut '-d ' -f5`
+	_Width1=`cat ${fn} | grep -i "*ParamCustomPageSize Width: " | cut '-d ' -f5`
+	_Width2=`cat ${fn} | grep -i "*ParamCustomPageSize Width: " | cut '-d ' -f6`
+	_Height1=`cat ${fn} | grep -i "*ParamCustomPageSize Height: " | cut '-d ' -f5`
+	_Height2=`cat ${fn} | grep -i "*ParamCustomPageSize Height: " | cut '-d ' -f6`
+	_MaxMediaWidth=`cat ${fn} | grep -i "*MaxMediaWidth: " | cut '-d"' -f2`
+	_MaxMediaHeight=`cat ${fn} | grep -i "*MaxMediaHeight: " | cut '-d"' -f2`
+
+	_tex="${_HWMargins1}-${_HWMargins2}-${_HWMargins3}-${_HWMargins4}"
+	_tex+="-${_Width1}-${_Width2}-${_Height1}-${_Height2}"
+	_tex+="-${_MaxMediaWidth}-${_MaxMediaHeight}"
+
+	echo "${_tex}-${model_smol}" >> include/canon_margin.txt
+	echo "Rip-${model_smol}"
+done
+
+rm -f file_lists2

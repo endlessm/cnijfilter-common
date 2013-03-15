@@ -1,0 +1,332 @@
+*UIConstraints: *Duplex *MediaType glossygold
+*UIConstraints: *MediaType glossygold *Duplex
+*UIConstraints: *Duplex *MediaType proplatinum
+*UIConstraints: *MediaType proplatinum *Duplex
+*UIConstraints: *Duplex *MediaType luster
+*UIConstraints: *MediaType luster *Duplex
+*UIConstraints: *Duplex *MediaType semigloss
+*UIConstraints: *MediaType semigloss *Duplex
+*UIConstraints: *Duplex *MediaType glossypaper
+*UIConstraints: *MediaType glossypaper *Duplex
+*UIConstraints: *Duplex *MediaType matte
+*UIConstraints: *MediaType matte *Duplex
+*UIConstraints: *Duplex *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *Duplex
+*UIConstraints: *Duplex *MediaType envelope
+*UIConstraints: *MediaType envelope *Duplex
+*UIConstraints: *Duplex *MediaType ijpostcard
+*UIConstraints: *MediaType ijpostcard *Duplex
+*UIConstraints: *Duplex *MediaType glossypost
+*UIConstraints: *MediaType glossypost *Duplex
+*UIConstraints: *Duplex *MediaType highres
+*UIConstraints: *MediaType highres *Duplex
+*UIConstraints: *Duplex *MediaType tshirt
+*UIConstraints: *MediaType tshirt *Duplex
+*UIConstraints: *Duplex *MediaType otherphoto
+*UIConstraints: *MediaType otherphoto *Duplex
+*UIConstraints: *Duplex *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *Duplex
+*UIConstraints: *Duplex *PageSize Legal
+*UIConstraints: *PageSize Legal *Duplex
+*UIConstraints: *Duplex *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *Duplex
+*UIConstraints: *Duplex *PageSize 4X6
+*UIConstraints: *PageSize 4X6 *Duplex
+*UIConstraints: *Duplex *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *Duplex
+*UIConstraints: *Duplex *PageSize 5X7
+*UIConstraints: *PageSize 5X7 *Duplex
+*UIConstraints: *Duplex *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *Duplex
+*UIConstraints: *Duplex *PageSize 8X10
+*UIConstraints: *PageSize 8X10 *Duplex
+*UIConstraints: *Duplex *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *Duplex
+*UIConstraints: *Duplex *PageSize l
+*UIConstraints: *PageSize l *Duplex
+*UIConstraints: *Duplex *PageSize l.bl
+*UIConstraints: *PageSize l.bl *Duplex
+*UIConstraints: *Duplex *PageSize 2l
+*UIConstraints: *PageSize 2l *Duplex
+*UIConstraints: *Duplex *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *Duplex
+*UIConstraints: *Duplex *PageSize letterfineart35
+*UIConstraints: *PageSize letterfineart35 *Duplex
+*UIConstraints: *Duplex *PageSize a4fineart35
+*UIConstraints: *PageSize a4fineart35 *Duplex
+*UIConstraints: *Duplex *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *Duplex
+*UIConstraints: *Duplex *PageSize postdbl
+*UIConstraints: *PageSize postdbl *Duplex
+*UIConstraints: *Duplex *PageSize envelop10p
+*UIConstraints: *PageSize envelop10p *Duplex
+*UIConstraints: *Duplex *PageSize envelopdlp
+*UIConstraints: *PageSize envelopdlp *Duplex
+*UIConstraints: *Duplex *PageSize envj4p
+*UIConstraints: *PageSize envj4p *Duplex
+*UIConstraints: *Duplex *PageSize envj6p
+*UIConstraints: *PageSize envj6p *Duplex
+*UIConstraints: *MediaType otherfineart *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType otherfineart
+*UIConstraints: *MediaType envelope *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType envelope
+*UIConstraints: *MediaType highres *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType highres
+*UIConstraints: *MediaType tshirt *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType tshirt
+*UIConstraints: *CNTone -50 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -50
+*UIConstraints: *CNTone -49 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -49
+*UIConstraints: *CNTone -48 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -48
+*UIConstraints: *CNTone -47 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -47
+*UIConstraints: *CNTone -46 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -46
+*UIConstraints: *CNTone -45 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -45
+*UIConstraints: *CNTone -44 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -44
+*UIConstraints: *CNTone -43 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -43
+*UIConstraints: *CNTone -42 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -42
+*UIConstraints: *CNTone -41 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -41
+*UIConstraints: *CNTone -40 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -40
+*UIConstraints: *CNTone -39 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -39
+*UIConstraints: *CNTone -38 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -38
+*UIConstraints: *CNTone -37 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -37
+*UIConstraints: *CNTone -36 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -36
+*UIConstraints: *CNTone -35 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -35
+*UIConstraints: *CNTone -34 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -34
+*UIConstraints: *CNTone -33 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -33
+*UIConstraints: *CNTone -32 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -32
+*UIConstraints: *CNTone -31 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -31
+*UIConstraints: *CNTone -30 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -30
+*UIConstraints: *CNTone -29 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -29
+*UIConstraints: *CNTone -28 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -28
+*UIConstraints: *CNTone -27 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -27
+*UIConstraints: *CNTone -26 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -26
+*UIConstraints: *CNTone -25 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -25
+*UIConstraints: *CNTone -24 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -24
+*UIConstraints: *CNTone -23 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -23
+*UIConstraints: *CNTone -22 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -22
+*UIConstraints: *CNTone -21 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -21
+*UIConstraints: *CNTone -20 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -20
+*UIConstraints: *CNTone -19 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -19
+*UIConstraints: *CNTone -18 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -18
+*UIConstraints: *CNTone -17 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -17
+*UIConstraints: *CNTone -16 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -16
+*UIConstraints: *CNTone -15 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -15
+*UIConstraints: *CNTone -14 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -14
+*UIConstraints: *CNTone -13 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -13
+*UIConstraints: *CNTone -12 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -12
+*UIConstraints: *CNTone -11 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -11
+*UIConstraints: *CNTone -10 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -10
+*UIConstraints: *CNTone -9 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -9
+*UIConstraints: *CNTone -8 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -8
+*UIConstraints: *CNTone -7 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -7
+*UIConstraints: *CNTone -6 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -6
+*UIConstraints: *CNTone -5 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -5
+*UIConstraints: *CNTone -4 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -4
+*UIConstraints: *CNTone -3 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -3
+*UIConstraints: *CNTone -2 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -2
+*UIConstraints: *CNTone -1 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -1
+*UIConstraints: *CNTone 1 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 1
+*UIConstraints: *CNTone 2 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 2
+*UIConstraints: *CNTone 3 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 3
+*UIConstraints: *CNTone 4 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 4
+*UIConstraints: *CNTone 5 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 5
+*UIConstraints: *CNTone 6 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 6
+*UIConstraints: *CNTone 7 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 7
+*UIConstraints: *CNTone 8 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 8
+*UIConstraints: *CNTone 9 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 9
+*UIConstraints: *CNTone 10 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 10
+*UIConstraints: *CNTone 11 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 11
+*UIConstraints: *CNTone 12 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 12
+*UIConstraints: *CNTone 13 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 13
+*UIConstraints: *CNTone 14 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 14
+*UIConstraints: *CNTone 15 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 15
+*UIConstraints: *CNTone 16 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 16
+*UIConstraints: *CNTone 17 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 17
+*UIConstraints: *CNTone 18 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 18
+*UIConstraints: *CNTone 19 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 19
+*UIConstraints: *CNTone 20 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 20
+*UIConstraints: *CNTone 21 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 21
+*UIConstraints: *CNTone 22 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 22
+*UIConstraints: *CNTone 23 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 23
+*UIConstraints: *CNTone 24 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 24
+*UIConstraints: *CNTone 25 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 25
+*UIConstraints: *CNTone 26 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 26
+*UIConstraints: *CNTone 27 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 27
+*UIConstraints: *CNTone 28 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 28
+*UIConstraints: *CNTone 29 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 29
+*UIConstraints: *CNTone 30 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 30
+*UIConstraints: *CNTone 31 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 31
+*UIConstraints: *CNTone 32 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 32
+*UIConstraints: *CNTone 33 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 33
+*UIConstraints: *CNTone 34 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 34
+*UIConstraints: *CNTone 35 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 35
+*UIConstraints: *CNTone 36 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 36
+*UIConstraints: *CNTone 37 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 37
+*UIConstraints: *CNTone 38 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 38
+*UIConstraints: *CNTone 39 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 39
+*UIConstraints: *CNTone 40 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 40
+*UIConstraints: *CNTone 41 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 41
+*UIConstraints: *CNTone 42 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 42
+*UIConstraints: *CNTone 43 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 43
+*UIConstraints: *CNTone 44 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 44
+*UIConstraints: *CNTone 45 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 45
+*UIConstraints: *CNTone 46 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 46
+*UIConstraints: *CNTone 47 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 47
+*UIConstraints: *CNTone 48 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 48
+*UIConstraints: *CNTone 49 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 49
+*UIConstraints: *CNTone 50 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 50

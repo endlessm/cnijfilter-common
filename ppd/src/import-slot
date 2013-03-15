@@ -1,0 +1,167 @@
+#/bin/bash
+
+ls -1 ../*.ppd > file_lists2
+
+#1  manual
+#2  asf
+#3  asf2bin
+#4  auto
+#5  cassette
+#6  cassette1
+#7  cassette2
+#8  cassetteauto
+#9  continuous
+#10 front
+#11 front2
+#12 frontplain
+#13 switch
+#14 consecutive1
+#15 consecutive2
+#16 tractor
+
+rm -f include/canon_slot.txt
+
+val0=$(pwd)
+for fn in `cat file_lists2`; do
+	ModelName1=`echo ${fn} | cut '-d/' -f2 | cut '-d.' -f1`
+	model_smol=`echo ${ModelName1} | cut -dn -f3`
+	ModelName2=`cat ${fn} | grep "PCFileName" | cut '-d"' -f2 | cut '-d.' -f1`
+	_default=`cat ${fn} | grep -i "*DefaultInputSlot: " | cut '-d ' -f2`
+
+	manual=`cat ${fn} | grep -i "*InputSlot manual/"`
+	if [ ! "${manual}" = "" ]; then
+	_manual=1
+	else
+	_manual=0
+	fi
+
+	asf=`cat ${fn} | grep -i "*InputSlot asf/"`
+	if [ ! "${asf}" = "" ]; then
+	_asf=1
+	else
+	_asf=0
+	fi
+
+	asf2bin=`cat ${fn} | grep -i "*InputSlot asf2bin/"`
+	if [ ! "${asf2bin}" = "" ]; then
+	_asf2bin=1
+	else
+	_asf2bin=0
+	fi
+
+	auto=`cat ${fn} | grep -i "*InputSlot auto/"`
+	if [ ! "${auto}" = "" ]; then
+	_auto=1
+	else
+	_auto=0
+	fi
+
+	cassette=`cat ${fn} | grep -i "*InputSlot cassette/"`
+	if [ ! "${cassette}" = "" ]; then
+	_cassette=1
+	else
+	_cassette=0
+	fi
+
+	cassette1=`cat ${fn} | grep -i "*InputSlot cassette1/"`
+	if [ ! "${cassette1}" = "" ]; then
+	_cassette1=1
+	else
+	_cassette1=0
+	fi
+
+	cassette2=`cat ${fn} | grep -i "*InputSlot cassette2/"`
+	if [ ! "${cassette2}" = "" ]; then
+	_cassette2=1
+	else
+	_cassette2=0
+	fi
+
+	cassetteauto=`cat ${fn} | grep -i "*InputSlot cassetteauto/"`
+	if [ ! "${cassetteauto}" = "" ]; then
+	_cassetteauto=1
+	else
+	_cassetteauto=0
+	fi
+
+	continuous=`cat ${fn} | grep -i "*InputSlot continuous/"`
+	if [ ! "${continuous}" = "" ]; then
+	_continuous=1
+	else
+	_continuous=0
+	fi
+
+	front=`cat ${fn} | grep -i "*InputSlot front/"`
+	if [ ! "${front}" = "" ]; then
+	_front=1
+	else
+	_front=0
+	fi
+
+	front2=`cat ${fn} | grep -i "*InputSlot front2/"`
+	if [ ! "${front2}" = "" ]; then
+	_front2=1
+	else
+	_front2=0
+	fi
+
+	frontplain=`cat ${fn} | grep -i "*InputSlot frontplain/"`
+	if [ ! "${frontplain}" = "" ]; then
+	_frontplain=1
+	else
+	_frontplain=0
+	fi
+
+	switch=`cat ${fn} | grep -i "*InputSlot switch/"`
+	if [ ! "${switch}" = "" ]; then
+	_switch=1
+	else
+	_switch=0
+	fi
+
+	consecutive1=`cat ${fn} | grep -i "*InputSlot consecutive1/"`
+	if [ ! "${consecutive1}" = "" ]; then
+	_consecutive1=1
+	else
+	_consecutive1=0
+	fi
+
+	consecutive2=`cat ${fn} | grep -i "*InputSlot consecutive2/"`
+	if [ ! "${consecutive2}" = "" ]; then
+	_consecutive2=1
+	else
+	_consecutive2=0
+	fi
+
+	tractor=`cat ${fn} | grep -i "*InputSlot tractor/"`
+	if [ ! "${tractor}" = "" ]; then
+	_tractor=1
+	else
+	_tractor=0
+	fi
+
+#1  manual
+#2  asf
+#3  asf2bin
+#4  auto
+#5  cassette
+#6  cassette1
+#7  cassette2
+#8  cassetteauto
+#9  continuous
+#10 front
+#11 front2
+#12 frontplain
+#13 switch
+#14 consecutive1
+#15 consecutive2
+#16 tractor
+
+	_tex="${_manual}-${_asf}-${_asf2bin}-${_auto}-${_cassette}-${_cassette1}"
+	_tex+="-${_cassette2}-${_cassetteauto}-${_continuous}-${_front}-${_front2}-${_frontplain}"
+	_tex+="-${_switch}-${_consecutive1}-${_consecutive2}-${_tractor}"
+	echo "${_tex}-${_default}-${model_smol}" >> include/canon_slot.txt
+	echo "Rip-${model_smol}"
+done
+
+rm -f file_lists2

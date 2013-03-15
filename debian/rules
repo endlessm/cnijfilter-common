@@ -207,13 +207,11 @@ configure-stamp:
 	cd ./backendnet; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	######## configure sm sub process
 	cd ./cngpijmon-${PRINTER_BUILD_VERSION}/cnijnpr; ./autogen.sh --prefix=/usr
+	######## configure ppd file
+	cd ./ppd; ./autogen.sh --prefix=/usr --enable-ppdpath=/usr/share/ppd --program-suffix=CN_IJ_MODEL
 
 	#### configure printer package
 	for ver in ${PRINTER_DEPEND_VER}; do \
-		echo "######## configure ppd-$${ver} file"; \
-		pushd ./ppd-$${ver}; \
-		./autogen.sh --prefix=/usr --enable-ppdpath=/usr/share/ppd --program-suffix=CN_IJ_MODEL; \
-		popd; \
 		echo "######## configure cnijfilter-$${ver}"; \
 		pushd ./cnijfilter-$${ver}; \
 		./autogen.sh --prefix=/usr --enable-libpath=/usr/lib/bjlib --enable-binpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
@@ -310,8 +308,13 @@ install: build
 		fi; \
 		if [ $${model_in} = "1" ]; then \
 		for pg_name in ${PRINTER_PKG_PROGRAM}; do \
-			echo "######## install $${pg_name}-$${model_ver}"; \
-			pushd ./$${pg_name}-$${model_ver}; \
+			if [ $${pg_name} = "ppd" ]; then \
+				echo "######## install $${pg_name}"; \
+				pushd ./$${pg_name}; \
+			else; \
+				echo "######## install $${pg_name}-$${model_ver}"; \
+				pushd ./$${pg_name}-$${model_ver}; \
+			fi; \
 			find . -name Makefile -print > file_lists; \
 			find . -name config.h -print >> file_lists; \
 			for fn in `cat file_lists`; do \
@@ -364,7 +367,7 @@ install: build
 		fi; \
 		if [ $${model_in} = "1" ]; then \
 		echo "######## install ppd-$${model_ver}"; \
-		pushd ./ppd-$${model_ver}; \
+		pushd ./ppd; \
 			find . -name Makefile -print > file_lists_ppd; \
 			find . -name config.h -print >> file_lists_ppd; \
 			for fn in `cat file_lists_ppd`; do \

@@ -1,0 +1,191 @@
+#/bin/bash
+
+source include/defs.sh
+source include/media.sh
+source include/pagesize.sh
+source include/slot.sh
+source include/font.sh
+source include/lang.sh
+
+_new_ver=3.90
+
+for pkgppd in `cat include/canon_plug.txt`; do
+	_halftoning=`echo ${pkgppd} | cut -d- -f1`
+	_balance_k=`echo ${pkgppd} | cut -d- -f2`
+	_papergap=`echo ${pkgppd} | cut -d- -f3`
+	_duplex=`echo ${pkgppd} | cut -d- -f4`
+	_stapleside=`echo ${pkgppd} | cut -d- -f5`
+	_contrast=`echo ${pkgppd} | cut -d- -f6`
+	_inkcartridgesettings=`echo ${pkgppd} | cut -d- -f7`
+	_extension=`echo ${pkgppd} | cut -d- -f8`
+	_tone=`echo ${pkgppd} | cut -d- -f9`
+	_EnableDEVURIOption=`echo ${pkgppd} | cut -d- -f10`
+	_EnableFrontEnd=`echo ${pkgppd} | cut -d- -f11`
+	_EnableCNGPIJMNT=`echo ${pkgppd} | cut -d- -f12`
+	_num=`echo ${pkgppd} | cut -d- -f13`
+	_ver=`echo ${pkgppd} | cut -d- -f14`
+	model_type=`echo ${pkgppd} | cut -d- -f15`
+	model_name1=`echo ${pkgppd} | cut -d- -f16`
+	model_name2=`echo ${pkgppd} | cut -d- -f17`
+	model_master=`echo ${pkgppd} | cut -d- -f18`
+	model_smol=${model_name1,,}
+	if [ "${model_master}" = "" ]; then
+		model_master=${model_name1}
+	fi
+
+	if [ ${model_type} = "1" ]; then
+		_dest=ppd/canonbj${model_smol}.ppd
+	elif [ ${model_type} = "2" ]; then
+		_dest=ppd/canonpixus${model_smol}.ppd
+	elif [ ${model_type} = "3" ]; then
+		_dest=ppd/canonpixma${model_smol}.ppd
+	else
+		_dest=ppd/canon${model_smol}.ppd
+	fi
+
+#	_dest=ppd/canon${model_smol}.ppd
+
+	rm -f ${_dest}
+	echo "Create ${_dest}"
+
+	Copyright
+	PpdPut1
+	PpdPut2
+	PpdPut3
+
+	HWMargins
+	ImageableArea
+	PaperDimension
+
+	CNMain
+		MediaType
+		InputSlot
+		CNQuality
+		CNGrayscale
+		if [ ${_halftoning} = "1" ]; then
+			CNHalftoning
+		fi
+		CNRenderIntent
+		if [ ${_papergap} = "1" ]; then
+			CNPaperGap
+		fi
+	CNMain_close
+
+	CNPagesetup
+	PageSize
+	PageRegion
+#	MediaType
+#	InputSlot
+	if [ ${_duplex} = "1" ]; then
+			Duplex
+	fi
+	CNPagesetup_close
+
+	if [ ${_extension} = "1" ]; then
+		CNBorderless
+			CNExtension
+		CNBorderless_close
+	fi
+
+#	ImageableArea
+#	PaperDimension
+
+	CNColorAdjust
+		CNBalanceC
+		CNBalanceM
+		CNBalanceY
+		if [ ${_balance_k} = "1" ]; then
+			CNBalanceK
+		fi
+		if [ ${_tone} = "1" ]; then
+			CNTone
+		fi
+		CNGamma
+		CNDensity
+		if [ ${_contrast} = "1" ]; then
+			CNContrast
+		fi
+	CNColorAdjust_close
+	CNGeneral
+		if [ ${_inkcartridgesettings} = "1" ]; then
+			CNInkCartridgeSettings
+		fi
+		Resolution
+		ColorModel
+	CNGeneral_close
+
+	if [ -f uiconstraints/${model_smol}.uiconstraints ]; then
+		echo "" >> ${_dest}
+		cat uiconstraints/${model_smol}.uiconstraints >> ${_dest}
+		echo "" >> ${_dest}
+	fi
+
+	Font
+
+	CNInternal
+	CNOptKey_PageSize
+	CNOptKey_MediaType
+	CNOptKey_InputSlot
+	CNOptKey_CNCartridge
+	CNOptKey_CNQuality
+
+	if [ ${_halftoning} = "1" ]; then
+		CNOptKey_CNHalftoning
+	fi
+	CNOptKey_CNRenderIntent
+	CNOptKey_CNGamma
+	CNOptKey_CNBalanceC
+	CNOptKey_CNBalanceM
+	CNOptKey_CNBalanceY
+
+	if [ ${_balance_k} = "1" ]; then
+		CNOptKey_CNBalanceK
+	fi
+	CNOptKey_CNDensity
+	CNOptKey_CNGrayscale
+
+	CNOptKey_CNCopies
+
+	if [ ${_papergap} = "1" ]; then
+		CNOptKey_CNPaperGap
+	fi
+
+	if [ ${_duplex} = "1" ]; then
+		CNOptKey_Duplex
+	fi
+
+	if [ ${_stapleside} = "1" ]; then
+		CNOptKey_CNStapleSide
+	fi
+
+	if [ ${_contrast} = "1" ]; then
+		CNOptKey_CNContrast
+	fi
+
+	if [ ${_inkcartridgesettings} = "1" ]; then
+		CNOptKey_CNInkCartridgeSettings
+	fi
+
+	if [ ${_extension} = "1" ]; then
+		CNOptKey_CNExtension
+	fi
+
+	if [ ${_tone} = "1" ]; then
+		CNOptKey_CNTone
+	fi
+
+	if [ ${_EnableDEVURIOption} = "1" ]; then
+		CNOptKey_EnableDEVURIOption
+	fi
+
+	if [ ${_EnableFrontEnd} = "1" ]; then
+		CNOptKey_EnableFrontEnd
+	fi
+
+	if [ ${_EnableCNGPIJMNT} = "1" ]; then
+		CNOptKey_EnableCNGPIJMNT
+	fi
+	CNInternalVersion
+	translate
+done
+

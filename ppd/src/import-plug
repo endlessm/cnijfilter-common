@@ -1,0 +1,178 @@
+#/bin/bash
+
+ls -1 original/*.ppd > file_lists2
+
+#PRINTER_PPD+=ppd-ip2200-ip2200-
+
+#1 halftoning
+#2 balance_k
+#3 papergap
+#4 duplex
+#5 stapleside
+#6 contrast
+#7 inkcartridgesettings
+#8 extension
+#9 tone
+#10 EnableDEVURIOption
+#11 EnableFrontEnd
+#12 EnableCNGPIJMNT
+
+rm -f canon_plug.txt
+
+val0=$(pwd)
+for fn in `cat file_lists2`; do
+	ModelName1=`echo ${fn} | cut '-d/' -f2 | cut '-d.' -f1`
+	model_smol=`cat ${fn} | grep "*ModelName: \"Canon " | cut '-d"' -f2 | cut '-d ' -f2`
+	ModelName2=`cat ${fn} | grep "PCFileName" | cut '-d"' -f2 | cut '-d.' -f1`
+	ver=`cat ${fn} |  grep "*NickName:" | cut '-d"' -f2 | cut '-d.' -f2`.`cat ${fn} |  grep "*NickName:" | cut '-d"' -f2 | cut '-d.' -f3`
+	num=`cat ${fn} |  grep "*cupsModelNumber:" | cut '-d ' -f2`
+	_model_type="0"
+
+	series=`cat ${fn} | grep "*ModelName: \"Canon " | cut '-d"' -f2 | cut '-d ' -f3`
+	if [ "${series}" = "series" ]; then
+		model_smol=`cat ${fn} | grep "*ModelName: \"Canon " | cut '-d"' -f2 | cut '-d ' -f2`
+		_model_type=4
+	fi
+
+	bj=`cat ${fn} | grep "*ModelName: \"BJ"`
+	if [ ! "${bj}" = "" ]; then
+		model_smol=`cat ${fn} | grep "*NickName: \"Canon BJ" | cut '-d"' -f2 | cut '-d ' -f3`
+		_model_type=1
+	fi
+
+	pixus=`cat ${fn} | grep "*ModelName: \"Canon PIXUS"`
+	if [ ! "${pixus}" = "" ]; then
+		model_smol=`cat ${fn} | grep "*ModelName: \"Canon " | cut '-d"' -f2 | cut '-d ' -f3`
+		_model_type=2
+	fi
+
+	pixma=`cat ${fn} | grep "*ModelName: \"Canon PIXMA"`
+	if [ ! "${pixma}" = "" ]; then
+		model_smol=`cat ${fn} | grep "*ModelName: \"Canon " | cut '-d"' -f2 | cut '-d ' -f3`
+		_model_type=3
+	fi
+
+	halftoning=`cat ${fn} | grep "\--halftoning"`
+	if [ ! "${halftoning}" = "" ]; then
+	_halftoning=1
+	else
+	_halftoning=0
+	fi
+
+	balance_k=`cat ${fn} | grep "\--balance_k"`
+	if [ ! "${balance_k}" = "" ]; then
+	_balance_k=1
+	else
+	_balance_k=0
+	fi
+
+	papergap=`cat ${fn} | grep "\--papergap"`
+	if [ ! "${papergap}" = "" ]; then
+	_papergap=1
+	else
+	_papergap=0
+	fi
+
+	duplex=`cat ${fn} | grep "\--duplex"`
+	if [ ! "${duplex}" = "" ]; then
+	_duplex=1
+	else
+	_duplex=0
+	fi
+
+	stapleside=`cat ${fn} | grep "\--stapleside"`
+	if [ ! "${stapleside}" = "" ]; then
+	_stapleside=1
+	else
+	_stapleside=0
+	fi
+
+	contrast=`cat ${fn} | grep "\--contrast"`
+	if [ ! "${contrast}" = "" ]; then
+	_contrast=1
+	else
+	_contrast=0
+	fi
+
+	inkcartridgesettings=`cat ${fn} | grep "\--inkcartridgesettings"`
+	if [ ! "${inkcartridgesettings}" = "" ]; then
+	_inkcartridgesettings=1
+	else
+	_inkcartridgesettings=0
+	fi
+
+	_extension=0
+	extension=`cat ${fn} | grep "\--extension"`
+	if [ ! "${extension}" = "" ]; then
+	_extension=1
+	else
+	_extension=0
+	fi
+	
+	if [ "${ver}" = "2.1" ]; then
+		_extension=1
+		ver=2.10
+	elif [ "${ver}" = "2.3" ]; then
+		_extension=1
+		ver=2.30
+	elif [ "${ver}" = "2.20" ]; then
+		_extension=1
+	elif [ "${ver}" = "2.40" ]; then
+		_extension=1
+	elif [ "${ver}" = "2.50" ]; then 
+		_extension=1
+	elif [ "${ver}" = "2.60" ]; then 
+		_extension=1
+	elif [ "${ver}" = "2.70" ]; then 
+		_extension=1
+	elif [ "${ver}" = "2.80" ]; then 
+		_extension=1
+	elif [ "${ver}" = "2.90" ]; then
+		_extension=1
+	elif [ "${ModelName1}" = "canonmp230" ]; then
+		_extension=0
+	fi
+
+	tone=`cat ${fn} | grep "\--tone"`
+	if [ ! "${tone}" = "" ]; then
+	_tone=1
+	else
+	_tone=0
+	fi
+
+	EnableDEVURIOption=`cat ${fn} | grep "EnableDEVURIOption"`
+	if [ ! "${EnableDEVURIOption}" = "" ]; then
+	_EnableDEVURIOption=1
+	else
+	_EnableDEVURIOption=0
+	fi
+
+	EnableFrontEnd=`cat ${fn} | grep "EnableFrontEnd"`
+	if [ ! "${EnableFrontEnd}" = "" ]; then
+	_EnableFrontEnd=1
+	else
+	_EnableFrontEnd=0
+	fi
+
+	EnableCNGPIJMNT=`cat ${fn} | grep "EnableCNGPIJMNT"`
+	if [ ! "${EnableCNGPIJMNT}" = "" ]; then
+	_EnableCNGPIJMNT=1
+	else
+	_EnableCNGPIJMNT=0
+	fi
+
+	echo "${ModelName1} ${ver}"
+	_tex="${_halftoning}-${_balance_k}-${_papergap}-${_duplex}-${_stapleside}-${_contrast}"
+	_tex+="-${_inkcartridgesettings}-${_extension}-${_tone}"
+	_tex+="-${_EnableDEVURIOption}-${_EnableFrontEnd}-${_EnableCNGPIJMNT}"
+	echo "${_tex}-${num}-${ver}-${_model_type}-${model_smol}-${ModelName2,,}" >> plug_list.txt.temp
+done
+
+for _ver in 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50 3.60 3.70 3.80 3.90
+do
+	cat plug_list.txt.temp | grep "\-${_ver}" >> canon_plug.txt
+#	echo "" >> include/canon_plug.txt
+done
+
+rm -f plug_list.txt.temp
+rm -f file_lists2

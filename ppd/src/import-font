@@ -1,0 +1,45 @@
+#/bin/bash
+
+ls -1 ../*.ppd > file_lists2
+
+#1  manual
+#2  asf
+#3  asf2bin
+#4  auto
+#5  cassette
+#6  cassette1
+#7  cassette2
+#8  cassetteauto
+#9  continuous
+#10 front
+#11 front2
+#12 frontplain
+#13 switch
+#14 consecutive1
+#15 consecutive2
+#16 tractor
+
+rm -f include/canon_font.txt
+
+val0=$(pwd)
+for fn in `cat file_lists2`; do
+	ModelName1=`echo ${fn} | cut '-d/' -f2 | cut '-d.' -f1`
+	model_smol=`echo ${ModelName1} | cut -dn -f3`
+	ModelName2=`cat ${fn} | grep "PCFileName" | cut '-d"' -f2 | cut '-d.' -f1`
+	_font=0
+
+	font=`cat ${fn} | grep -i "*Font Courier: Standard \"(002.004S)\" Standard ROM"`
+	if [ ! "${font}" = "" ]; then
+	_font=1
+	fi
+
+	font=`cat ${fn} | grep -i "*Font Courier: Standard \"(001.001)\" Standard ROM"`
+	if [ ! "${font}" = "" ]; then
+	_font=2
+	fi
+
+	echo "${_font}-${model_smol}" >> include/canon_font.txt
+	echo "Rip-${model_smol}"
+done
+
+rm -f file_lists2

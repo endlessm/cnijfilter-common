@@ -1,6 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 
-backend_bindir = /usr/lib/cups/backend
+backend_bindir = $(libdir)/cups/backend
 backend_bin_PROGRAMS = cnijusb
 transform = 
 

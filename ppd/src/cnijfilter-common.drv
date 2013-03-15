@@ -1,0 +1,3176 @@
+// CUPS PPD Compiler CUPS v1.6.1
+
+// Include necessary files...
+//#include <font.defs>
+//#include <media.defs>
+
+//#define	HAVE_CANON_ADDON	false
+
+
+#include "canonmedia.defs"
+#include "canonaddon.h"
+
+#define ppdver      	3.90
+
+
+Copyright "CUPS add-on PPD file for Canon Inkjet Printer Driver."
+Copyright "Copyright CANON INC. 2001-2013"
+Copyright "All Rights Reserved."
+Copyright ""
+Copyright "This program is free software; you can redistribute it and/or modify"
+Copyright "it under the terms of the GNU General Public License as published by"
+Copyright "the Free Software Foundation; version 2 of the License."
+Copyright ""
+Copyright "This program is distributed in the hope that it will be useful,"
+Copyright "but WITHOUT ANY WARRANTY; without even the implied warranty of"
+Copyright "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
+Copyright "GNU General Public License for more details."
+Copyright ""
+Copyright "You should have received a copy of the GNU General Public License"
+Copyright "along with this program; if not, write to the Free Software"
+Copyright "Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA."
+
+Manufacturer "Canon"
+Version "1.0"
+DriverType ps
+ManualCopies Yes
+ColorDevice Yes
+Throughput 1
+Attribute "PSVersion" "" "(3010.000) 550"
+Attribute "PSVersion" "" "(3010.000) 651"
+Attribute "PSVersion" "" "(3010.000) 705"
+Attribute "PSVersion" "" "(3010.000) 715"
+Attribute "DefaultColorSpace" "" "RGB"
+Attribute "LandscapeOrientation" "" "Plus90"
+Attribute "LanguageLevel" "" "3"
+Attribute "FileSystem" "" "False"
+Attribute "TTRasterizer" "" "Type42"
+Attribute "CenterRegistered" "" "False"
+Attribute "LeadingEdge" "Short" ""
+Attribute "DefaultLeadingEdge" "" "Short"
+
+#if HAVE_CANON_ADDON
+Group "*CNGeneral/General"
+    Option "Resolution/Output Resolution" PickOne AnySetup 0,0
+      Choice "300dpi/300 dpi" "<</HWResolution[300 300]>>setpagedevice"
+      *Choice "600dpi/600 dpi" "<</HWResolution[600 600]>>setpagedevice"
+      Choice "1200dpi/1200 dpi" "<</HWResolution[1200 1200]>>setpagedevice"
+      Choice "2400dpi/2400 dpi" "<</HWResolution[2400 2400]>>setpagedevice"
+      Choice "4800dpi/4800 dpi" "<</HWResolution[4800 4800]>>setpagedevice"
+	Option "ColorModel/Color Model" PickOne AnySetup 0,0
+      Choice "Gray/Grayscale" "<</cupsColorSpace 0/cupsColorOrder 0/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+      Choice "Black/Inverted Grayscale" "<</cupsColorSpace 3/cupsColorOrder 0/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+      *Choice "RGB/RGB Color" "<</cupsColorSpace 1/cupsColorOrder 0/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+      Choice "CMY/CMY Color" "<</cupsColorSpace 4/cupsColorOrder 0/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+      Choice "CMYK/CMYK" "<</cupsColorSpace 6/cupsColorOrder 0/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+      Choice "KCMY/KCMY" "<</cupsColorSpace 8/cupsColorOrder 0/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+#endif
+
+
+
+{
+#if HAVE_CANON_ADDON
+Group "*CNMain/Main"
+  Group "*CNBorderless/Borderless"
+    Option "CNExtension/Amount of Extension" PickOne AnySetup 0,0
+      Choice "0/0" "<</CNExtension(0)>>setpagedevice"
+      Choice "1/1" "<</CNExtension(1)>>setpagedevice"
+      *Choice "2/2" "<</CNExtension(2)>>setpagedevice"
+      Choice "3/3" "<</CNExtension(3)>>setpagedevice"
+#endif
+Filter "application/vnd.cups-postscript 0 pstocanonbj"
+VariablePaperSize Yes
+MinSize 255,12 340,16
+MaxSize 612,00 1656,00
+  {
+	Font "AvantGarde-Book" "Standard" "(001.006S)" "Standard" ROM
+	Font "AvantGarde-BookOblique" "Standard" "(001.006S)" "Standard" ROM
+	Font "AvantGarde-Demi" "Standard" "(001.007S)" "Standard" ROM
+	Font "AvantGarde-DemiOblique" "Standard" "(001.007S)" "Standard" ROM
+	Font "Bookman-Demi" "Standard" "(001.004S)" "Standard" ROM
+	Font "Bookman-DemiItalic" "Standard" "(001.004S)" "Standard" ROM
+ 	Font "Bookman-Light" "Standard" "(001.004S)" "Standard" ROM
+   	Font "Bookman-LightItalic" "Standard" "(001.004S)" "Standard" ROM
+   	Font "Courier" "Standard" "(002.004S)" "Standard" ROM
+   	Font "Courier-Bold" "Standard" "(002.004S)" "Standard" ROM
+	Font "Courier-BoldOblique" "Standard" "(002.004S)" "Standard" ROM
+	Font "Courier-Oblique" "Standard" "(002.004S)" "Standard" ROM
+	Font "Helvetica" "Standard" "(001.006S)" "Standard" ROM
+	Font "Helvetica-Bold" "Standard" "(001.007S)" "Standard" ROM
+	Font "Helvetica-BoldOblique" "Standard" "(001.007S)" "Standard" ROM
+	Font "Helvetica-Narrow" "Standard" "(001.006S)" "Standard" ROM
+	Font "Helvetica-Narrow-Bold" "Standard" "(001.007S)" "Standard" ROM
+	Font "Helvetica-Narrow-BoldOblique" "Standard" "(001.007S)" "Standard" ROM
+	Font "Helvetica-Narrow-Oblique" "Standard" "(001.006S)" "Standard" ROM
+	Font "Helvetica-Oblique" "Standard" "(001.006S)" "Standard" ROM
+   	Font "NewCenturySchlbk-Bold" "Standard" "(001.009S)" "Standard" ROM
+  	Font "NewCenturySchlbk-BoldItalic" "Standard" "(001.007S)" "Standard" ROM
+	Font "NewCenturySchlbk-Italic" "Standard" "(001.006S)" "Standard" ROM
+	Font "NewCenturySchlbk-Roman" "Standard" "(001.007S)" "Standard" ROM
+	Font "Palatino-Bold" "Standard" "(001.005S)" "Standard" ROM
+	Font "Palatino-BoldItalic" "Standard" "(001.005S)" "Standard" ROM
+	Font "Palatino-Italic" "Standard" "(001.005S)" "Standard" ROM
+	Font "Palatino-Roman" "Standard" "(001.005S)" "Standard" ROM
+	Font "Symbol" "Special" "(001.007S)" "Special" ROM
+	Font "Times-Bold" "Standard" "(001.007S)" "Standard" ROM
+	Font "Times-BoldItalic" "Standard" "(001.009S)" "Standard" ROM
+	Font "Times-Italic" "Standard" "(001.007S)" "Standard" ROM
+	Font "Times-Roman" "Standard" "(001.007S)" "Standard" ROM
+	Font "ZapfChancery-MediumItalic" "Standard" "(001.007S)" "Standard" ROM
+	Font "ZapfDingbats" "Special" "(001.004S)" "Standard" ROM
+	// ***** VER 1.00
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_higloss2 $_higloss2_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+ 			Choice $_photocard $_photocard_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,36 8,61
+			{
+  			ModelName "BJS300"
+  			PCFileName "CNS300.PPD"
+  			ModelNumber 117
+  			Attribute "NickName" "" "Canon BJ S300 ver."$ppdver
+  			Attribute "ShortNickName" "" "BJS300"
+  			Attribute "Product" "" "(bjs300)"
+			}
+	}
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_envelope $_envelope_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_higloss2 $_higloss2_set
+			Choice $_highres $_highres_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,36 8,61
+			{
+  			ModelName "BJS500"
+  			PCFileName "CNS500.PPD"
+  			ModelNumber 131
+  			Attribute "NickName" "" "Canon BJ S500 ver."$ppdver
+  			Attribute "ShortNickName" "" "BJS500"
+  			Attribute "Product" "" "(bjs500)"
+			}
+	}
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_higloss2 $_higloss2_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_b4				729,00 1032,00  9,64 14,17 10,13  8,69 $_b4_set 				$_b4_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_a3				842,00 1191,00  9,64 14,17  9,75  8,95 $_a3_set					$_a3_set
+	CustomMedia $_a3_bl				843,00 1192,00  0,00  0,00  1,00  1,00 $_a3_bl_set				$_a3_bl_set
+	CustomMedia $_a3plus			933,00 1369,00  9,64 14,17 10,04  8,37 $_a3plus_set				$_a3plus_set
+	CustomMedia $_a3plus_bl			934,00 1370,00  0,00  0,00  1,00  1,00 $_a3plus_bl_set			$_a3plus_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,36 8,61
+			{
+			ModelName "BJF9000"
+			PCFileName "CNF9000.PPD"
+			ModelNumber 127
+			Attribute "NickName" "" "Canon BJ F9000 ver."$ppdver
+			Attribute "ShortNickName" "" "BJF9000"
+			Attribute "Product" "" "(bjf9000)"
+			}
+	}
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_higloss2 $_higloss2_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,36 8,61
+			{
+  			ModelName "PIXUS 550i"
+  			PCFileName "CNPX550I.PPD"
+  			ModelNumber 154
+  			Attribute "NickName" "" "Canon PIXUS 550i ver."$ppdver
+  			Attribute "ShortNickName" "" "PIXUS550i"
+  			Attribute "Product" "" "(pixus550i)"
+			}
+			{
+  			ModelName "PIXUS 850i"
+  			PCFileName "CNPX850I.PPD"
+  			ModelNumber 156
+	  		Attribute "NickName" "" "Canon PIXUS 850i ver."$ppdver
+	  		Attribute "ShortNickName" "" "PIXUS850i"
+	  		Attribute "Product" "" "(pixus850i)"
+			}
+			{
+	  		ModelName "PIXUS 950i"
+	  		PCFileName "CNPX950I.PPD"
+	  		ModelNumber 158
+	  		Attribute "NickName" "" "Canon PIXUS 950i ver."$ppdver
+	  		Attribute "ShortNickName" "" "PIXUS950i"
+	  		Attribute "Product" "" "(pixus950i)"
+			}
+			{
+			ModelName "BJF900"
+			PCFileName "CNF900.PPD"
+			ModelNumber 125
+			Attribute "NickName" "" "Canon BJ F900 ver."$ppdver
+			Attribute "ShortNickName" "" "BJF900"
+			Attribute "Product" "" "(bjf900)"
+			}
+	}
+  }
+  {
+	Font "Courier" "Standard" "(001.001)" "Standard" ROM
+	{	
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,05 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,64 8,50
+			{
+  			ModelName "i250"
+  			PCFileName "CNI250.PPD"
+  			ModelNumber 180
+  			Attribute "NickName" "" "Canon i250 ver."$ppdver
+  			Attribute "ShortNickName" "" "i250"
+  			Attribute "Product" "" "(i250)"
+			}
+			{
+  			ModelName "i255"
+  			PCFileName "CNI255.PPD"
+  			ModelNumber 180
+  			Attribute "NickName" "" "Canon i255 ver."$ppdver
+  			Attribute "ShortNickName" "" "i255"
+  			Attribute "Product" "" "(i255)"
+			}
+	}
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,64 8,50
+			{
+	  		ModelName "PIXUS 560i"
+	  		PCFileName "CNPX560I.PPD"
+	  		ModelNumber 189
+	  		Attribute "NickName" "" "Canon PIXUS 560i ver."$ppdver
+	  		Attribute "ShortNickName" "" "PIXUS560i"
+	  		Attribute "Product" "" "(pixus560i)"
+			}
+			{
+	  		ModelName "PIXUS 860i"
+	  		PCFileName "CNPX860I.PPD"
+	  		ModelNumber 187
+	  		Attribute "NickName" "" "Canon PIXUS 860i ver."$ppdver
+	  		Attribute "ShortNickName" "" "PIXUS860i"
+	  		Attribute "Product" "" "(pixus860i)"
+			}
+			{
+	  		ModelName "PIXUS 990i"
+	  		PCFileName "CNPX990I.PPD"
+	  		ModelNumber 191
+	  		Attribute "NickName" "" "Canon PIXUS 990i ver."$ppdver
+	  		Attribute "ShortNickName" "" "PIXUS990i"
+	  		Attribute "Product" "" "(pixus990i)"
+			}
+ 	}
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+   			Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  9,00 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+  	HWMargins 9,64 14,17 9,64 8,50
+			{
+  			ModelName "PIXMA iP1000"
+  			PCFileName "CNPM1000.PPD"
+  			ModelNumber 230
+  			Attribute "NickName" "" "Canon PIXMA iP1000 Ver."$ppdver
+  			Attribute "ShortNickName" "" "PIXMAiP1000"
+  			Attribute "Product" "" "(pixmaip1000)"
+			}
+	}
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+   			Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 1>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  9,00 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+  	HWMargins 9,64 14,17 9,64 8,50
+			{
+  			ModelName "PIXMA iP1500"
+  			PCFileName "CNPM1500.PPD"
+  			ModelNumber 214
+  			Attribute "NickName" "" "Canon PIXMA iP1500 Ver."$ppdver
+  			Attribute "ShortNickName" "" "PIXMAiP1500"
+  			Attribute "Product" "" "(pixmaip1500)"
+			}
+	}
+	{
+	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf ""
+   			Choice $_cassette ""
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	  		{
+			ModelName "PIXUS iP3100"
+  			PCFileName "CNPX3100.PPD"
+  			ModelNumber 218
+  			Attribute "NickName" "" "Canon PIXUS iP3100 Ver."$ppdver
+  			Attribute "ShortNickName" "" "PIXUSIP3100"
+  			Attribute "Product" "" "(pixusip3100)"
+			}
+	  		{
+  			ModelName "PIXUS iP4100"
+  			PCFileName "CNPX4100.PPD"
+  			ModelNumber 221
+  			Attribute "NickName" "" "Canon PIXUS iP4100 Ver."$ppdver
+  			Attribute "ShortNickName" "" "PIXUSIP4100"
+  			Attribute "Product" "" "(pixusip4100)"
+			}
+	  		{
+  			ModelName "PIXUS iP8600"
+  			PCFileName "CNPX8600.PPD"
+  			ModelNumber 238
+  			Attribute "NickName" "" "Canon PIXUS iP8600 Ver."$ppdver
+  			Attribute "ShortNickName" "" "PIXUSIP8600"
+  			Attribute "Product" "" "(pixusip8600)"
+			}
+	}
+  }
+}
+
+
+// *******************************************************************************************
+// *******************************************************************************************
+// *******************************************************************************************
+// *******************************************************************************************
+{
+#if HAVE_CANON_ADDON
+Group "*CNMain/Main"
+  Group "*CNBorderless/Borderless"
+    Option "CNExtension/Amount of Extension" PickOne AnySetup 0,0
+      Choice "0/0" "<</CNExtension(0)>>setpagedevice"
+      Choice "1/1" "<</CNExtension(1)>>setpagedevice"
+      *Choice "2/2" "<</CNExtension(2)>>setpagedevice"
+      Choice "3/3" "<</CNExtension(3)>>setpagedevice"
+#endif
+Filter "application/vnd.cups-postscript 0 pstocanonij"
+Font "Courier" "Standard" "(001.001)" "Standard" ROM
+VariablePaperSize Yes
+MinSize 255,12 340,16
+MaxSize 612,00 1656,00
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf ""
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+  	HWMargins 9,64 14,17 9,64 8,50
+		  	{
+	  		ModelName "iP2200"
+	  		PCFileName "CNIP2200.PPD"
+	  		ModelNumber 256
+	  		Attribute "NickName" "" "Canon iP2200 Ver."$ppdver
+	  		Attribute "ShortNickName" "" "IP2200"
+	  		Attribute "Product" "" "(ip2200)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_switch 		"<</MediaPosition 2>>setpagedevice"
+      		Choice $_asf 			"<</MediaPosition 0>>setpagedevice"
+      		Choice $_cassette 		"<</MediaPosition 1>>setpagedevice"
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+   		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+   			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+   			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+   			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+  	HWMargins 9,64 14,17 9,64 8,50
+		  		{
+		  		ModelName "iP4200"
+	  			PCFileName "CNIP4200.PPD"
+	  			ModelNumber 260
+	  			Attribute "NickName" "" "Canon iP4200 Ver."$ppdver
+	  			Attribute "ShortNickName" "" "IP4200"
+	  			Attribute "Product" "" "(ip4200)"
+				}
+		  		{
+		  		ModelName "iP5200"
+	  			PCFileName "CNIP5200.PPD"
+	  			ModelNumber 260
+	  			Attribute "NickName" "" "Canon iP5200 Ver."$ppdver
+	  			Attribute "ShortNickName" "" "IP5200"
+	  			Attribute "Product" "" "(ip4200)"
+				}
+		  		{
+	  			ModelName "iP6600D"
+	  			PCFileName "CNIP6600.PPD"
+	  			ModelNumber 265
+	  			Attribute "NickName" "" "Canon iP6600D Ver."$ppdver
+	  			Attribute "ShortNickName" "" "IP6600D"
+	  			Attribute "Product" "" "(ip6600d)"
+				}
+		  		{
+	  			ModelName "MP500"
+			  	PCFileName "CNMP500.PPD"
+	  			ModelNumber 273
+	  			Attribute "NickName" "" "Canon MP500 Ver."$ppdver
+	  			Attribute "ShortNickName" "" "MP500"
+	  			Attribute "Product" "" "(mp500)"
+				}
+	}
+  	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_fineartphotorag $_fineartphotorag_set
+			Choice $_otherfineart $_otherfineart_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_switch "<</MediaPosition 2>>setpagedevice"
+      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+      		Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+   		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+   			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+   			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+   			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65 72,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_finearta4			595,00  842,00  9,64 14,17  9,36  8,61 $_finearta4_set			$_finearta4_set
+  	HWMargins 9,64 14,17 9,64 8,50
+				{
+  				ModelName "iP7500"
+  				PCFileName "CNIP7500.PPD"
+  				ModelNumber 266
+  				Attribute "NickName" "" "Canon iP7500 Ver."$ppdver
+  				Attribute "ShortNickName" "" "IP7500"
+  				Attribute "Product" "" "(ip7500)"
+	  			}
+	}	
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_ohp $_ohp_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+  	CustomMedia $_panorama			252,00  720,00  9,64 14,17  9,35  8,50 $_panorama_set 			$_panorama_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65  8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83  8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+			{
+  			ModelName "iP90"
+  			PCFileName "CNIP90.PPD"
+  			ModelNumber 253
+  			Attribute "NickName" "" "Canon iP90 Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP90"
+  			Attribute "Product" "" "(ip90)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 88,44  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 88,44  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 88,44 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 88,44  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+			{
+  			ModelName "MP160"
+  			PCFileName "CNMP160.PPD"
+  			ModelNumber 291
+  			Attribute "NickName" "" "Canon MP160 Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP160"
+  			Attribute "Product" "" "(mp160)"
+			}
+			{
+  			ModelName "iP2500 series"
+  			PCFileName "CNIP2500.PPD"
+  			ModelNumber 311
+  			Attribute "NickName" "" "Canon iP2500 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP2500"
+  			Attribute "Product" "" "(ip2500)"
+			}
+			{
+  			ModelName "iP1800 series"
+  			PCFileName "CNIP1800.PPD"
+  			ModelNumber 312
+  			Attribute "NickName" "" "Canon iP1800 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP1800"
+  			Attribute "Product" "" "(ip1800)"
+			}
+			{
+  			ModelName "MP140 series"
+  			PCFileName "CNMP140.PPD"
+  			ModelNumber 315
+  			Attribute "NickName" "" "Canon MP140 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP140"
+  			Attribute "Product" "" "(mp140)"
+			}
+			{
+  			ModelName "MP210 series"
+  			PCFileName "CNMP210.PPD"
+  			ModelNumber 316
+  			Attribute "NickName" "" "Canon MP210 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP210"
+  			Attribute "Product" "" "(mp210)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_switch "<</MediaPosition 2>>setpagedevice"
+      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+      		Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+   		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+   			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+   			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+   			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65  8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83  8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+			{
+  			ModelName "MP600"
+  			PCFileName "CNMP600.PPD"
+  			ModelNumber 295
+  			Attribute "NickName" "" "Canon MP600 Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP600"
+  			Attribute "Product" "" "(mp600)"
+			}
+			{
+  			ModelName "iP4300"
+  			PCFileName "CNIP4300.PPD"
+  			ModelNumber 294
+  			Attribute "NickName" "" "Canon iP4300 Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP4300"
+  			Attribute "Product" "" "(ip4300)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_glossygold $_glossygold_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+   		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+   			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+   			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+   			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65  8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83  8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+		{
+	  	Group "*CNMain/Main"
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+	      		*Choice $_switch "<</MediaPosition 2>>setpagedevice"
+	      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	      		Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+			{
+  			ModelName "MP610 series"
+  			PCFileName "CNMP610.PPD"
+  			ModelNumber 327
+  			Attribute "NickName" "" "Canon MP610 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP610"
+  			Attribute "Product" "" "(mp610)"
+			}
+			{
+  			ModelName "iP4500 series"
+  			PCFileName "CNIP4500.PPD"
+  			ModelNumber 326
+  			Attribute "NickName" "" "Canon iP4500 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP4500"
+  			Attribute "Product" "" "(ip4500)"
+			}
+		}
+		{
+	  	Group "*CNMain/Main"
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+	      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	      		*Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+			{
+  			ModelName "MP620 series"
+			PCFileName "CNMP620.PPD"
+  			ModelNumber 327
+  			Attribute "NickName" "" "Canon MP620 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP620"
+  			Attribute "Product" "" "(mp610)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_glossygold $_glossygold_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65  8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83  8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+			{
+  			ModelName "iP100 series"
+  			PCFileName "CNIP100.PPD"
+  			ModelNumber 303
+  			Attribute "NickName" "" "Canon iP100 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP100"
+  			Attribute "Product" "" "(ip100)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+      		Choice $_front "<</MediaPosition 3>>setpagedevice"
+      		Choice $_frontplain "<</MediaPosition 4>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 89,29  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 89,29  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 89,29 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 89,29  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+			{
+  			ModelName "MP510"
+  			PCFileName "CNMP510.PPD"
+  			ModelNumber 293
+  			Attribute "NickName" "" "Canon MP510 Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP510"
+  			Attribute "Product" "" "(mp510)"
+			}
+			{
+  			ModelName "iP3300"
+  			PCFileName "CNIP3300.PPD"
+  			ModelNumber 292
+  			Attribute "NickName" "" "Canon iP3300 Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP3300"
+  			Attribute "Product" "" "(ip3300)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_glossygold $_glossygold_set
+   			Choice $_doublesidephoto $_doublesidephoto_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+      		Choice $_front "<</MediaPosition 3>>setpagedevice"
+      		Choice $_frontplain "<</MediaPosition 4>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 89,29  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 89,29  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 89,29 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 89,29  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+			{
+  			ModelName "MP520 series"
+  			PCFileName "CNMP520.PPD"
+  			ModelNumber 328
+  			Attribute "NickName" "" "Canon MP520 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP520"
+  			Attribute "Product" "" "(mp520)"
+			}
+			{
+  			ModelName "iP3500 series"
+  			PCFileName "CNIP3500.PPD"
+  			ModelNumber 319
+  			Attribute "NickName" "" "Canon iP3500 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP3500"
+  			Attribute "Product" "" "(ip3500)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto $_prophoto_set
+			Choice $_superphoto $_superphoto_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_matte $_matte_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 88,44  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 88,44  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 88,44 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 88,44  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_creditcard		153,00  244,00  9,64 14,17  9,57  8,72 $_creditcard_set			$_creditcard_set
+	CustomMedia $_creditcard_bl		154,00  245,00  0,00  0,00  1,00  1,00 $_creditcard_bl_set		$_creditcard_bl_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 153,08 243,78
+			{
+  			ModelName "iP2600 series"
+  			PCFileName "CNIP2600.PPD"
+  			ModelNumber 331
+  			Attribute "NickName" "" "Canon iP2600 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP2600"
+  			Attribute "Product" "" "(ip2600)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto2 $_prophoto2_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_auto "<</MediaPosition 0>>setpagedevice"
+      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+      		Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+      		Choice $_continuous "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 75,12  9,65  8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 75,12  9,83  8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 75,12 10,00  8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 75,12  9,84  8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "iP3600 series"
+  			PCFileName "CNIP3600.PPD"
+  			ModelNumber 333
+  			Attribute "NickName" "" "Canon iP3600 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP3600"
+  			Attribute "Product" "" "(ip3600)"
+			}
+			{
+  			ModelName "MP540 series"
+  			PCFileName "CNMP540.PPD"
+  			ModelNumber 338
+  			Attribute "NickName" "" "Canon MP540 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP540"
+  			Attribute "Product" "" "(mp540)"
+			}
+		{
+#if HAVE_CANON_ADDON
+		Group "*CNPagesetup/Page Setup"
+			Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+				*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+				Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+				Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+			{
+  			ModelName "iP4600 series"
+			PCFileName "CNIP4600.PPD"
+  			ModelNumber 334
+  			Attribute "NickName" "" "Canon iP4600 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP4600"
+  			Attribute "Product" "" "(ip4600)"
+			}
+			{
+  			ModelName "MP630 series"
+  			PCFileName "CNMP630.PPD"
+  			ModelNumber 336
+  			Attribute "NickName" "" "Canon MP630 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP630"
+  			Attribute "Product" "" "(mp630)"
+			}
+			{
+  			ModelName "MX860 series"
+  			PCFileName "CNMX860.PPD"
+  			ModelNumber 347
+  			Attribute "NickName" "" "Canon MX860 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX860"
+  			Attribute "Product" "" "(mx860)"
+			}
+		}
+	}
+	{
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 88,44  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 88,44  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 88,44 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 88,44  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_prophoto2 $_prophoto2_set
+				Choice $_proplatinum $_proplatinum_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+	      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+			{
+  			ModelName "MP240 series"
+  			PCFileName "CNMP240.PPD"
+  			ModelNumber 341
+  			Attribute "NickName" "" "Canon MP240 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP240"
+  			Attribute "Product" "" "(mp240)"
+			}
+		}
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_prophoto2 $_prophoto2_set
+				Choice $_prophoto $_prophoto_set
+				Choice $_superphoto $_superphoto_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+	      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+			{
+  			ModelName "MP190 series"
+  			PCFileName "CNMP190.PPD"
+  			ModelNumber 342
+  			Attribute "NickName" "" "Canon MP190 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP190"
+  			Attribute "Product" "" "(mp190)"
+			}
+		}
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_prophoto2 $_prophoto2_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+	      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+		MaxSize 612,00 1656,00
+			{
+  			ModelName "iP1900 series"
+  			PCFileName "CNIP1900.PPD"
+  			ModelNumber 346
+  			Attribute "NickName" "" "Canon iP1900 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP1900"
+  			Attribute "Product" "" "(ip1900)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto2 $_prophoto2_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 92,13  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 92,13  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 92,13 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 92,13  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "MX320 series"
+  			PCFileName "CNMX320.PPD"
+  			ModelNumber 348
+  			Attribute "NickName" "" "Canon MX320 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX320"
+  			Attribute "Product" "" "(mx320)"
+			}
+			{
+  			ModelName "MX330 series"
+  			PCFileName "CNMX330.PPD"
+  			ModelNumber 349
+  			Attribute "NickName" "" "Canon MX330 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX330"
+  			Attribute "Product" "" "(mx330)"
+			}
+	}
+	{
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 92,13  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 92,13  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 92,13 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 92,13  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_prophoto2 $_prophoto2_set
+				Choice $_proplatinum $_proplatinum_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_postcardaddress $_postcardaddress_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_glossypost $_glossypost_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+	      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+			{
+  			ModelName "MP270 series"
+  			PCFileName "CNMP270.PPD"
+  			ModelNumber 357
+  			Attribute "NickName" "" "Canon MP270 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP270"
+  			Attribute "Product" "" "(mp270)"
+			}
+			{
+  			ModelName "MP490 series"
+  			PCFileName "CNMP490.PPD"
+  			ModelNumber 358
+  			Attribute "NickName" "" "Canon MP490 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP490"
+  			Attribute "Product" "" "(mp490)"
+			}
+		}
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_prophoto2 $_prophoto2_set
+				Choice $_proplatinum $_proplatinum_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_postcardaddress $_postcardaddress_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_glossypost $_glossypost_set
+				Choice $_prophotopost $_prophotopost_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+	      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+			{
+  			ModelName "MP250 series"
+  			PCFileName "CNMP250.PPD"
+  			ModelNumber 356
+  			Attribute "NickName" "" "Canon MP250 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP250"
+  			Attribute "Product" "" "(mp250)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto2 $_prophoto2_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_prophotopost $_prophotopost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+			*Choice $_auto "<</MediaPosition 0>>setpagedevice"
+      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+			Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+			Choice $_continuous "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 106,02  9,65 8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 106,02  9,83 8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 106,02 10,00 8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 106,02  9,84 8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "MP550 series"
+  			PCFileName "CNMP550.PPD"
+  			ModelNumber 359
+  			Attribute "NickName" "" "Canon MP550 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP550"
+  			Attribute "Product" "" "(mp550)"
+			}
+		{
+#if HAVE_CANON_ADDON
+		Group "*CNPagesetup/Page Setup"
+			Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+				*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+				Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+				Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+			{
+  			ModelName "MP560 series"
+  			PCFileName "CNMP560.PPD"
+  			ModelNumber 360
+  			Attribute "NickName" "" "Canon MP560 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP560"
+  			Attribute "Product" "" "(mp560)"
+			}
+			{
+  			ModelName "MP640 series"
+  			PCFileName "CNMP640.PPD"
+  			ModelNumber 362
+  			Attribute "NickName" "" "Canon MP640 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP640"
+  			Attribute "Product" "" "(mp640)"
+			}
+			{
+  			ModelName "iP4700 series"
+  			PCFileName "CNIP4700.PPD"
+  			ModelNumber 361
+  			Attribute "NickName" "" "Canon iP4700 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP4700"
+  			Attribute "Product" "" "(ip4700)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto2 $_prophoto2_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 92,13  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 92,13  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 92,13 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 92,13  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "iP2700 series"
+  			PCFileName "CNIP2700.PPD"
+  			ModelNumber 364
+  			Attribute "NickName" "" "Canon iP2700 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP2700"
+  			Attribute "Product" "" "(ip2700)"
+			}
+			{
+  			ModelName "MX340 series"
+  			PCFileName "CNMX340.PPD"
+  			ModelNumber 365
+  			Attribute "NickName" "" "Canon MX340 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX340"
+  			Attribute "Product" "" "(mx340)"
+			}
+			{
+  			ModelName "MX350 series"
+  			PCFileName "CNMX350.PPD"
+  			ModelNumber 366
+  			Attribute "NickName" "" "Canon MX350 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX350"
+  			Attribute "Product" "" "(mx350)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_prophoto2 $_prophoto2_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+			*Choice $_auto "<</MediaPosition 0>>setpagedevice"
+      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+			Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+			Choice $_continuous "<</MediaPosition 0>>setpagedevice"
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 106,02  9,65 8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 106,02  9,83 8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 106,02 10,00 8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 106,02  9,84 8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "MX870 series"
+  			PCFileName "CNMX870.PPD"
+  			ModelNumber 367
+  			Attribute "NickName" "" "Canon MX870 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX870"
+  			Attribute "Product" "" "(mx870)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 92,13  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 92,13  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 92,13 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 92,13  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "MP280 series"
+  			PCFileName "CNMP280.PPD"
+  			ModelNumber 370
+  			Attribute "NickName" "" "Canon MP280 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP280"
+  			Attribute "Product" "" "(mp280)"
+			}
+			{
+  			ModelName "MP495 series"
+  			PCFileName "CNMP495.PPD"
+  			ModelNumber 369
+  			Attribute "NickName" "" "Canon MP495 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP495"
+  			Attribute "Product" "" "(mp495)"
+			}
+			{
+  			ModelName "MX360 series"
+  			PCFileName "CNMX360.PPD"
+  			ModelNumber 380
+  			Attribute "NickName" "" "Canon MX360 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX360"
+  			Attribute "Product" "" "(mx360)"
+			}
+			{
+  			ModelName "MX410 series"
+  			PCFileName "CNMX410.PPD"
+  			ModelNumber 381
+  			Attribute "NickName" "" "Canon MX410 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX410"
+  			Attribute "Product" "" "(mx410)"
+			}
+			{
+  			ModelName "MX420 series"
+  			PCFileName "CNMX420.PPD"
+  			ModelNumber 382
+  			Attribute "NickName" "" "Canon MX420 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX420"
+  			Attribute "Product" "" "(mx420)"
+			}
+	}
+	{
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 106,02  9,65 8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 106,02  9,83 8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 106,02 10,00 8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 106,02  9,84 8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_proplatinum $_proplatinum_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_postcardaddress $_postcardaddress_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_glossypost $_glossypost_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+				*Choice $_auto "<</MediaPosition 0>>setpagedevice"
+	      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+				Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+				Choice $_continuous "<</MediaPosition 0>>setpagedevice"
+			{
+  			ModelName "MG5100 series"
+  			PCFileName "CNMG5100.PPD"
+  			ModelNumber 373
+  			Attribute "NickName" "" "Canon MG5100 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG5100"
+  			Attribute "Product" "" "(mg5100)"
+			}
+			{
+  			ModelName "MG5200 series"
+  			PCFileName "CNMG5200.PPD"
+  			ModelNumber 374
+  			Attribute "NickName" "" "Canon MG5200 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG5200"
+  			Attribute "Product" "" "(mg5200)"
+			}
+			{
+  			ModelName "iP4800 series"
+  			PCFileName "CNIP4800.PPD"
+  			ModelNumber 375
+  			Attribute "NickName" "" "Canon iP4800 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP4800"
+  			Attribute "Product" "" "(ip4800)"
+			}
+			{
+  			ModelName "MX880 series"
+  			PCFileName "CNMX880.PPD"
+  			ModelNumber 383
+  			Attribute "NickName" "" "Canon MX880 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX880"
+  			Attribute "Product" "" "(mx880)"
+			}
+		}
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_proplatinum $_proplatinum_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_postcardaddress $_postcardaddress_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_glossypost $_glossypost_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_fineartphotorag $_fineartphotorag_set
+				Choice $_otherfineart $_otherfineart_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+				*Choice $_auto "<</MediaPosition 0>>setpagedevice"
+	      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+				Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+				Choice $_continuous "<</MediaPosition 0>>setpagedevice"
+			CustomMedia $_fineartletter		612,00  792,00 18,14 99,21 17,86 99,21 $_fineartletter_set		$_fineartletter_set
+			CustomMedia $_finearta4			595,00  842,00  9,64 99,21  9,36 99,32 $_finearta4_set			$_finearta4_set
+			{
+  			ModelName "MG6100 series"
+  			PCFileName "CNMG6100.PPD"
+  			ModelNumber 376
+  			Attribute "NickName" "" "Canon MG6100 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG6100"
+  			Attribute "Product" "" "(mg6100)"
+			}
+			{
+  			ModelName "MG8100 series"
+  			PCFileName "CNMG8100.PPD"
+  			ModelNumber 377
+  			Attribute "NickName" "" "Canon MG8100 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG8100"
+  			Attribute "Product" "" "(mg8100)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_ledger			792,00 1224,00  9,64 14,17  9,64  8,50 $_ledger_set				$_ledger_set
+	CustomMedia $_ledger_bl			793,00 1225,00  0,00  0,00  1,00  1,00 $_ledger_bl_set			$_ledger_bl_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_a3				842,00 1191,00  9,64 14,17  9,75  8,95 $_a3_set					$_a3_set
+	CustomMedia $_a3_bl				843,00 1192,00  0,00  0,00  1,00  1,00 $_a3_bl_set				$_a3_bl_set
+	CustomMedia $_a3plus			933,00 1369,00  9,64 14,17 10,04  8,37 $_a3plus_set				$_a3plus_set
+	CustomMedia $_a3plus_bl			934,00 1370,00  0,00  0,00  1,00  1,00 $_a3plus_bl_set			$_a3plus_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_b4				729,00 1032,00  9,64 14,17 10,13  8,69 $_b4_set					$_b4_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_10X12				720,00  864,00  9,64 14,17  9,64  8,50 $_10X12_set				$_10X12_set
+	CustomMedia $_10X12_bl			721,00  865,00  0,00  0,00  1,00  1,00 $_10X12_bl_set			$_10X12_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 106,02  9,65 8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 106,02  9,83 8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 106,02 10,00 8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 106,02  9,84 8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 932,60 1916,23
+			{
+  			ModelName "iX6500 series"
+  			PCFileName "CNIX6500.PPD"
+  			ModelNumber 384
+  			Attribute "NickName" "" "Canon iX6500 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IX6500"
+  			Attribute "Product" "" "(ix6500)"
+			}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+			*Choice $_front2 "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00 15,87 92,13 15,89 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00 15,87 92,13 16,06 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00 15,87 92,13 16,24 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00 15,87 92,13 16,08 23,09 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 252,29 360,00
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "MG2100 series"
+  			PCFileName "CNMG2100.PPD"
+  			ModelNumber 386
+  			Attribute "NickName" "" "Canon MG2100 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG2100"
+  			Attribute "Product" "" "(mg2100)"
+			}
+			{
+  			ModelName "E500 series"
+  			PCFileName "CNE500.PPD"
+  			ModelNumber 393
+  			Attribute "NickName" "" "Canon E500 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "E500"
+  			Attribute "Product" "" "(e500)"
+			}
+			{
+  			ModelName "MX370 series"
+  			PCFileName "CNMX370.PPD"
+  			ModelNumber 396
+  			Attribute "NickName" "" "Canon MX370 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX370"
+  			Attribute "Product" "" "(mx370)"
+			}
+			{
+  			ModelName "MX430 series"
+  			PCFileName "CNMX430.PPD"
+  			ModelNumber 397
+  			Attribute "NickName" "" "Canon MX430 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX430"
+  			Attribute "Product" "" "(mx430)"
+			}
+			{
+  			ModelName "E600 series"
+  			PCFileName "CNE600.PPD"
+  			ModelNumber 399
+  			Attribute "NickName" "" "Canon E600 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "E600"
+  			Attribute "Product" "" "(e600)"
+			}
+		{
+#if HAVE_CANON_ADDON
+		Group "*CNPagesetup/Page Setup"
+			Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+				*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+				Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+				Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+			{
+  			ModelName "MG3100 series"
+  			PCFileName "CNMG3100.PPD"
+  			ModelNumber 387
+  			Attribute "NickName" "" "Canon MG3100 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG3100"
+  			Attribute "Product" "" "(mg3100)"
+			}
+			{
+  			ModelName "MG4100 series"
+  			PCFileName "CNMG4100.PPD"
+  			ModelNumber 388
+  			Attribute "NickName" "" "Canon MG4100 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG4100"
+  			Attribute "Product" "" "(mg4100)"
+			}
+			{
+  			ModelName "MX510 series"
+  			PCFileName "CNMX510.PPD"
+  			ModelNumber 398
+  			Attribute "NickName" "" "Canon MX510 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX510"
+  			Attribute "Product" "" "(mx510)"
+			}
+		}
+	}
+	{
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+	CustomMedia $_4X8				288,00  576,00  9,64 14,17  9,64  8,50 $_4X8_set				$_4X8_set
+	CustomMedia $_4X8_bl			289,00  577,00  0,00  0,00  1,00  1,00 $_4X8_bl_set				$_4X8_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 106,02  9,65 8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 106,02  9,83 8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 106,02 10,00 8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 106,02  9,84 8,92 $_envj6p_set 			$_envj6p_set
+	CustomMedia $_businesscard		156,00  258,00  9,64 14,17  9,73  8,55 $_businesscard_set		$_businesscard_set
+	CustomMedia $_businesscard_bl	157,00  259,00  0,00  0,00  1,00  1,00 $_businesscard_bl_set	$_businesscard_bl_set
+	CustomMedia $_wide				288,00  512,00  9,64 14,17  9,64  8,51 $_wide_set				$_wide_set
+	CustomMedia $_wide_bl			289,00  513,00  0,00  0,00  1,00  1,00 $_wide_bl_set			$_wide_bl_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 155,91 257,96
+	MaxSize 612,00 1916,23
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_proplatinum $_proplatinum_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_highres $_highres_set
+				Choice $_postcardaddress $_postcardaddress_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_glossypost $_glossypost_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+				*Choice $_auto "<</MediaPosition 0>>setpagedevice"
+	      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+				Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+				Choice $_continuous "<</MediaPosition 0>>setpagedevice"
+			{
+  			ModelName "MG5300 series"
+  			PCFileName "CNMG5300.PPD"
+  			ModelNumber 389
+  			Attribute "NickName" "" "Canon MG5300 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG5300"
+  			Attribute "Product" "" "(mg5300)"
+			}
+			{
+  			ModelName "iP4900 series"
+  			PCFileName "CNIP4900.PPD"
+  			ModelNumber 392
+  			Attribute "NickName" "" "Canon iP4900 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP4900"
+  			Attribute "Product" "" "(ip4900)"
+			}
+			{
+  			ModelName "MX710 series"
+  			PCFileName "CNMX710.PPD"
+  			ModelNumber 394
+  			Attribute "NickName" "" "Canon MX710 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX710"
+  			Attribute "Product" "" "(mx710)"
+			}
+			{
+  			ModelName "MX890 series"
+  			PCFileName "CNMX890.PPD"
+  			ModelNumber 395
+  			Attribute "NickName" "" "Canon MX890 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX890"
+  			Attribute "Product" "" "(mx890)"
+			}
+		}
+		{
+	  	Group "*CNMain/Main"
+			Option "MediaType/Media Type" PickOne AnySetup 0,0
+				*Choice $_plain $_plain_set
+				Choice $_proplatinum $_proplatinum_set
+				Choice $_semigloss $_semigloss_set
+				Choice $_glossygold $_glossygold_set
+				Choice $_glossypaper $_glossypaper_set
+				Choice $_matte $_matte_set
+				Choice $_fineartphotorag $_fineartphotorag_set
+				Choice $_otherfineart $_otherfineart_set
+				Choice $_highres $_highres_set
+				Choice $_postcardaddress $_postcardaddress_set
+				Choice $_ijpostcard $_ijpostcard_set
+				Choice $_glossypost $_glossypost_set
+				Choice $_postcard_type $_postcard_type_set
+				Choice $_tshirt $_tshirt_set
+				Choice $_envelope $_envelope_set
+		      	Choice $_otherphoto $_otherphoto_set
+	    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+				*Choice $_auto "<</MediaPosition 0>>setpagedevice"
+	      		Choice $_asf "<</MediaPosition 0>>setpagedevice"
+				Choice $_cassette "<</MediaPosition 1>>setpagedevice"
+				Choice $_continuous "<</MediaPosition 0>>setpagedevice"
+			CustomMedia $_fineartletter		612,00  792,00 18,14 99,21 17,86 99,21 $_fineartletter_set		$_fineartletter_set
+			CustomMedia $_finearta4			595,00  842,00  9,64 99,21  9,36 99,32 $_finearta4_set			$_finearta4_set
+			{
+  			ModelName "MG6200 series"
+  			PCFileName "CNMG6200.PPD"
+  			ModelNumber 390
+  			Attribute "NickName" "" "Canon MG6200 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG6200"
+  			Attribute "Product" "" "(mg6200)"
+			}
+			{
+  			ModelName "MG8200 series"
+  			PCFileName "CNMG8200.PPD"
+  			ModelNumber 391
+  			Attribute "NickName" "" "Canon MG8200 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG8200"
+  			Attribute "Product" "" "(mg8200)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_luster $_luster_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+			*Choice $_front2 "<</MediaPosition 0>>setpagedevice"
+#if HAVE_CANON_ADDON
+	Group "*CNGeneral/General"
+		Option "CNInkCartridgeSettings/Ink Cartridge Settings" PickOne AnySetup 0,0
+			Choice "color/Color Only" "<</CNInkCartridgeSettings(color)>>setpagedevice"
+			Choice "bk/Black Only" "<</CNInkCartridgeSettings(bk)>>setpagedevice"
+			*Choice "bkcolor/Both Black and Color" "<</CNInkCartridgeSettings(bkcolor)>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00 15,87 92,13 15,89 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00 15,87 92,13 16,06 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00 15,87 92,13 16,24 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00 15,87 92,13 16,08 23,09 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 252,29 360,00
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "MG2200 series"
+  			PCFileName "CNMG2200.PPD"
+  			ModelNumber 402
+  			Attribute "NickName" "" "Canon MG2200 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG2200"
+  			Attribute "Product" "" "(mg2200)"
+			}
+			{
+  			ModelName "E510 series"
+  			PCFileName "CNE510.PPD"
+  			ModelNumber 403
+  			Attribute "NickName" "" "Canon E510 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "E510"
+  			Attribute "Product" "" "(e510)"
+			}
+			{
+  			ModelName "MX390 series"
+  			PCFileName "CNMX390.PPD"
+  			ModelNumber 418
+  			Attribute "NickName" "" "Canon MX390 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX390"
+  			Attribute "Product" "" "(mx390)"
+			}
+			{
+  			ModelName "MX450 series"
+  			PCFileName "CNMX450.PPD"
+  			ModelNumber 419
+  			Attribute "NickName" "" "Canon MX450 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX450"
+  			Attribute "Product" "" "(mx450)"
+			}
+			{
+  			ModelName "E610 series"
+  			PCFileName "CNE610.PPD"
+  			ModelNumber 421
+  			Attribute "NickName" "" "Canon E610 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "E610"
+  			Attribute "Product" "" "(e610)"
+			}
+		{
+#if HAVE_CANON_ADDON
+		Group "*CNPagesetup/Page Setup"
+			Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+				*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+				Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+				Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+			{
+  			ModelName "MG3200 series"
+  			PCFileName "CNMG3200.PPD"
+  			ModelNumber 404
+  			Attribute "NickName" "" "Canon MG3200 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG3200"
+  			Attribute "Product" "" "(mg3200)"
+			}
+			{
+  			ModelName "MG4200 series"
+  			PCFileName "CNMG4200.PPD"
+  			ModelNumber 405
+  			Attribute "NickName" "" "Canon MG4200 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG4200"
+  			Attribute "Product" "" "(mg4200)"
+			}
+			{
+  			ModelName "MX520 series"
+  			PCFileName "CNMX520.PPD"
+  			ModelNumber 420
+  			Attribute "NickName" "" "Canon MX520 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX520"
+  			Attribute "Product" "" "(mx520)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_luster $_luster_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+			*Choice $_cassetteauto "<</MediaPosition 0>>setpagedevice"
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00 15,87 106,02 15,89 8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00 15,87 106,02 16,06 8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00 15,87 106,02 16,24 8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00 15,87 106,02 16,08 8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 252,29 360,00
+	MaxSize 612,00 1008,00
+		{
+#if HAVE_CANON_ADDON
+		Group "*CNPagesetup/Page Setup"
+			Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+				*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+				Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+				Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+			{
+  			ModelName "MX720 series"
+  			PCFileName "CNMX720.PPD"
+  			ModelNumber 416
+  			Attribute "NickName" "" "Canon MX720 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX720"
+  			Attribute "Product" "" "(mx720)"
+			}
+			{
+  			ModelName "MG5400 series"
+  			PCFileName "CNMG5400.PPD"
+  			ModelNumber 407
+  			Attribute "NickName" "" "Canon MG5400 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG5400"
+  			Attribute "Product" "" "(mg5400)"
+			}
+			{
+  			ModelName "MX920 series"
+  			PCFileName "CNMX920.PPD"
+  			ModelNumber 417
+  			Attribute "NickName" "" "Canon MX920 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MX920"
+  			Attribute "Product" "" "(mx920)"
+			}
+			{
+  			ModelName "iP7200 series"
+  			PCFileName "CNIP7200.PPD"
+  			ModelNumber 406
+  			Attribute "NickName" "" "Canon iP7200 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "IP7200"
+  			Attribute "Product" "" "(ip7200)"
+			}
+		}
+	}
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_luster $_luster_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+      		Choice $_otherfineart $_otherfineart_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+			*Choice $_cassetteauto "<</MediaPosition 0>>setpagedevice"
+#if HAVE_CANON_ADDON
+	Group "*CNPagesetup/Page Setup"
+		Option "Duplex/Duplex Printing" PickOne AnySetup 0,0
+			*Choice "None/OFF" "<</Duplex false>>setpagedevice"
+			Choice "DuplexNoTumble/ON (Long-side stapling)" "<</Duplex true/Tumble false>>setpagedevice"
+			Choice "DuplexTumble/ON (Short-side stapling)" "<</Duplex true/Tumble true>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Letter_bl 		613,00  793,00  0,00  0,00  1,00  1,00 $_Letter_bl_set			$_Letter_bl_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_A4_bl				596,00  843,00  0,00  0,00  1,00  1,00 $_A4_bl_set				$_A4_bl_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+	CustomMedia $_4X6_bl			289,00  433,00  0,00  0,00  1,00  1,00 $_4X6_bl_set				$_4X6_bl_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_5X7_bl			361,00  505,00  0,00  0,00  1,00  1,00 $_5X7_bl_set				$_5X7_bl_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+  	CustomMedia $_8X10_bl			577,00  721,00  0,00  0,00  1,00  1,00 $_8X10_bl_set			$_8X10_bl_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_l_bl				253,00  361,00  0,00  0,00  1,00  1,00 $_l_bl_set				$_l_bl_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_2l_bl				361,00  506,00  0,00  0,00  1,00  1,00 $_2l_bl_set				$_2l_bl_set
+	CustomMedia $_letterfineart35	612,00  792,00 18,14 99,21 17,86 99,21 $_letterfineart35_set	$_letterfineart35_set
+	CustomMedia $_a4fineart35		595,00  842,00  9,64 99,21  9,36 99,32 $_a4fineart35_set		$_a4fineart35_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postcard_bl		284,00  421,00  0,00  0,00  1,00  1,00 $_postcard_bl_set		$_postcard_bl_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00 15,87 106,02 15,89 8,50 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00 15,87 106,02 16,06 8,88 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00 15,87 106,02 16,24 8,36 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00 15,87 106,02 16,08 8,92 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 252,29 360,00
+	MaxSize 612,00 1008,00
+	#if HAVE_CANON_ADDON
+  	UIConstraints "*CNTone -50 *CNGrayscale False"
+  	UIConstraints "*CNTone -49 *CNGrayscale False"
+  	UIConstraints "*CNTone -48 *CNGrayscale False"
+  	UIConstraints "*CNTone -47 *CNGrayscale False"
+  	UIConstraints "*CNTone -46 *CNGrayscale False"
+  	UIConstraints "*CNTone -45 *CNGrayscale False"
+  	UIConstraints "*CNTone -44 *CNGrayscale False"
+  	UIConstraints "*CNTone -43 *CNGrayscale False"
+  	UIConstraints "*CNTone -42 *CNGrayscale False"
+  	UIConstraints "*CNTone -41 *CNGrayscale False"
+  	UIConstraints "*CNTone -40 *CNGrayscale False"
+  	UIConstraints "*CNTone -39 *CNGrayscale False"
+  	UIConstraints "*CNTone -38 *CNGrayscale False"
+  	UIConstraints "*CNTone -37 *CNGrayscale False"
+  	UIConstraints "*CNTone -36 *CNGrayscale False"
+  	UIConstraints "*CNTone -35 *CNGrayscale False"
+  	UIConstraints "*CNTone -34 *CNGrayscale False"
+  	UIConstraints "*CNTone -33 *CNGrayscale False"
+  	UIConstraints "*CNTone -32 *CNGrayscale False"
+  	UIConstraints "*CNTone -31 *CNGrayscale False"
+  	UIConstraints "*CNTone -30 *CNGrayscale False"
+  	UIConstraints "*CNTone -29 *CNGrayscale False"
+  	UIConstraints "*CNTone -28 *CNGrayscale False"
+  	UIConstraints "*CNTone -27 *CNGrayscale False"
+  	UIConstraints "*CNTone -26 *CNGrayscale False"
+  	UIConstraints "*CNTone -25 *CNGrayscale False"
+  	UIConstraints "*CNTone -24 *CNGrayscale False"
+  	UIConstraints "*CNTone -23 *CNGrayscale False"
+  	UIConstraints "*CNTone -22 *CNGrayscale False"
+  	UIConstraints "*CNTone -21 *CNGrayscale False"
+  	UIConstraints "*CNTone -20 *CNGrayscale False"
+  	UIConstraints "*CNTone -19 *CNGrayscale False"
+  	UIConstraints "*CNTone -18 *CNGrayscale False"
+  	UIConstraints "*CNTone -17 *CNGrayscale False"
+  	UIConstraints "*CNTone -16 *CNGrayscale False"
+  	UIConstraints "*CNTone -15 *CNGrayscale False"
+  	UIConstraints "*CNTone -14 *CNGrayscale False"
+  	UIConstraints "*CNTone -13 *CNGrayscale False"
+  	UIConstraints "*CNTone -12 *CNGrayscale False"
+  	UIConstraints "*CNTone -11 *CNGrayscale False"
+  	UIConstraints "*CNTone -10 *CNGrayscale False"
+  	UIConstraints "*CNTone -9 *CNGrayscale False"
+  	UIConstraints "*CNTone -8 *CNGrayscale False"
+  	UIConstraints "*CNTone -7 *CNGrayscale False"
+  	UIConstraints "*CNTone -6 *CNGrayscale False"
+  	UIConstraints "*CNTone -5 *CNGrayscale False"
+  	UIConstraints "*CNTone -4 *CNGrayscale False"
+  	UIConstraints "*CNTone -3 *CNGrayscale False"
+  	UIConstraints "*CNTone -2 *CNGrayscale False"
+  	UIConstraints "*CNTone -1 *CNGrayscale False"
+  	UIConstraints "*CNTone 1 *CNGrayscale False"
+  	UIConstraints "*CNTone 2 *CNGrayscale False"
+  	UIConstraints "*CNTone 3 *CNGrayscale False"
+  	UIConstraints "*CNTone 4 *CNGrayscale False"
+  	UIConstraints "*CNTone 5 *CNGrayscale False"
+  	UIConstraints "*CNTone 6 *CNGrayscale False"
+  	UIConstraints "*CNTone 7 *CNGrayscale False"
+  	UIConstraints "*CNTone 8 *CNGrayscale False"
+  	UIConstraints "*CNTone 9 *CNGrayscale False"
+  	UIConstraints "*CNTone 10 *CNGrayscale False"
+  	UIConstraints "*CNTone 11 *CNGrayscale False"
+  	UIConstraints "*CNTone 12 *CNGrayscale False"
+  	UIConstraints "*CNTone 13 *CNGrayscale False"
+  	UIConstraints "*CNTone 14 *CNGrayscale False"
+  	UIConstraints "*CNTone 15 *CNGrayscale False"
+  	UIConstraints "*CNTone 16 *CNGrayscale False"
+  	UIConstraints "*CNTone 17 *CNGrayscale False"
+  	UIConstraints "*CNTone 18 *CNGrayscale False"
+  	UIConstraints "*CNTone 19 *CNGrayscale False"
+  	UIConstraints "*CNTone 20 *CNGrayscale False"
+  	UIConstraints "*CNTone 21 *CNGrayscale False"
+  	UIConstraints "*CNTone 22 *CNGrayscale False"
+  	UIConstraints "*CNTone 23 *CNGrayscale False"
+  	UIConstraints "*CNTone 24 *CNGrayscale False"
+  	UIConstraints "*CNTone 25 *CNGrayscale False"
+  	UIConstraints "*CNTone 26 *CNGrayscale False"
+  	UIConstraints "*CNTone 27 *CNGrayscale False"
+  	UIConstraints "*CNTone 28 *CNGrayscale False"
+  	UIConstraints "*CNTone 29 *CNGrayscale False"
+  	UIConstraints "*CNTone 30 *CNGrayscale False"
+  	UIConstraints "*CNTone 31 *CNGrayscale False"
+  	UIConstraints "*CNTone 32 *CNGrayscale False"
+  	UIConstraints "*CNTone 33 *CNGrayscale False"
+  	UIConstraints "*CNTone 34 *CNGrayscale False"
+  	UIConstraints "*CNTone 35 *CNGrayscale False"
+  	UIConstraints "*CNTone 36 *CNGrayscale False"
+  	UIConstraints "*CNTone 37 *CNGrayscale False"
+  	UIConstraints "*CNTone 38 *CNGrayscale False"
+  	UIConstraints "*CNTone 39 *CNGrayscale False"
+  	UIConstraints "*CNTone 40 *CNGrayscale False"
+  	UIConstraints "*CNTone 41 *CNGrayscale False"
+  	UIConstraints "*CNTone 42 *CNGrayscale False"
+  	UIConstraints "*CNTone 43 *CNGrayscale False"
+  	UIConstraints "*CNTone 44 *CNGrayscale False"
+  	UIConstraints "*CNTone 45 *CNGrayscale False"
+  	UIConstraints "*CNTone 46 *CNGrayscale False"
+  	UIConstraints "*CNTone 47 *CNGrayscale False"
+  	UIConstraints "*CNTone 48 *CNGrayscale False"
+  	UIConstraints "*CNTone 49 *CNGrayscale False"
+  	UIConstraints "*CNTone 50 *CNGrayscale False"
+  	Group "*CNColorAdjust/Manual Color Adjustment"
+    	Option "CNTone/Tone" PickOne AnySetup 0,0
+	      	Choice "-50/-50" "<</CNTone(-50)>>setpagedevice"
+      		Choice "-49/-49" "<</CNTone(-49)>>setpagedevice"
+      		Choice "-48/-48" "<</CNTone(-48)>>setpagedevice"
+      		Choice "-47/-47" "<</CNTone(-47)>>setpagedevice"
+      		Choice "-46/-46" "<</CNTone(-46)>>setpagedevice"
+      		Choice "-45/-45" "<</CNTone(-45)>>setpagedevice"
+      		Choice "-44/-44" "<</CNTone(-44)>>setpagedevice"
+      		Choice "-43/-43" "<</CNTone(-43)>>setpagedevice"
+      		Choice "-42/-42" "<</CNTone(-42)>>setpagedevice"
+      		Choice "-41/-41" "<</CNTone(-41)>>setpagedevice"
+      		Choice "-40/-40" "<</CNTone(-40)>>setpagedevice"
+      		Choice "-39/-39" "<</CNTone(-39)>>setpagedevice"
+      		Choice "-38/-38" "<</CNTone(-38)>>setpagedevice"
+      		Choice "-37/-37" "<</CNTone(-37)>>setpagedevice"
+      		Choice "-36/-36" "<</CNTone(-36)>>setpagedevice"
+      		Choice "-35/-35" "<</CNTone(-35)>>setpagedevice"
+      		Choice "-34/-34" "<</CNTone(-34)>>setpagedevice"
+      		Choice "-33/-33" "<</CNTone(-33)>>setpagedevice"
+      		Choice "-32/-32" "<</CNTone(-32)>>setpagedevice"
+      		Choice "-31/-31" "<</CNTone(-31)>>setpagedevice"
+	      	Choice "-30/-30" "<</CNTone(-30)>>setpagedevice"
+      		Choice "-29/-29" "<</CNTone(-29)>>setpagedevice"
+      		Choice "-28/-28" "<</CNTone(-28)>>setpagedevice"
+      		Choice "-27/-27" "<</CNTone(-27)>>setpagedevice"
+      		Choice "-26/-26" "<</CNTone(-26)>>setpagedevice"
+      		Choice "-25/-25" "<</CNTone(-25)>>setpagedevice"
+      		Choice "-24/-24" "<</CNTone(-24)>>setpagedevice"
+      		Choice "-23/-23" "<</CNTone(-23)>>setpagedevice"
+      		Choice "-22/-22" "<</CNTone(-22)>>setpagedevice"
+      		Choice "-21/-21" "<</CNTone(-21)>>setpagedevice"
+      		Choice "-20/-20" "<</CNTone(-20)>>setpagedevice"
+      		Choice "-19/-19" "<</CNTone(-19)>>setpagedevice"
+      		Choice "-18/-18" "<</CNTone(-18)>>setpagedevice"
+      		Choice "-17/-17" "<</CNTone(-17)>>setpagedevice"
+      		Choice "-16/-16" "<</CNTone(-16)>>setpagedevice"
+      		Choice "-15/-15" "<</CNTone(-15)>>setpagedevice"
+      		Choice "-14/-14" "<</CNTone(-14)>>setpagedevice"
+      		Choice "-13/-13" "<</CNTone(-13)>>setpagedevice"
+      		Choice "-12/-12" "<</CNTone(-12)>>setpagedevice"
+      		Choice "-11/-11" "<</CNTone(-11)>>setpagedevice"
+      		Choice "-10/-10" "<</CNTone(-10)>>setpagedevice"
+      		Choice "-9/-9" "<</CNTone(-9)>>setpagedevice"
+      		Choice "-8/-8" "<</CNTone(-8)>>setpagedevice"
+      		Choice "-7/-7" "<</CNTone(-7)>>setpagedevice"
+      		Choice "-6/-6" "<</CNTone(-6)>>setpagedevice"
+      		Choice "-5/-5" "<</CNTone(-5)>>setpagedevice"
+      		Choice "-4/-4" "<</CNTone(-4)>>setpagedevice"
+      		Choice "-3/-3" "<</CNTone(-3)>>setpagedevice"
+      		Choice "-2/-2" "<</CNTone(-2)>>setpagedevice"
+      		Choice "-1/-1" "<</CNTone(-1)>>setpagedevice"
+      		*Choice "0/0" "<</CNTone(0)>>setpagedevice"
+      		Choice "1/1" "<</CNTone(1)>>setpagedevice"
+      		Choice "2/2" "<</CNTone(2)>>setpagedevice"
+      		Choice "3/3" "<</CNTone(3)>>setpagedevice"
+      		Choice "4/4" "<</CNTone(4)>>setpagedevice"
+      		Choice "5/5" "<</CNTone(5)>>setpagedevice"
+      		Choice "6/6" "<</CNTone(6)>>setpagedevice"
+      		Choice "7/7" "<</CNTone(7)>>setpagedevice"
+      		Choice "8/8" "<</CNTone(8)>>setpagedevice"
+      		Choice "9/9" "<</CNTone(9)>>setpagedevice"
+      		Choice "10/10" "<</CNTone(10)>>setpagedevice"
+      		Choice "11/11" "<</CNTone(11)>>setpagedevice"
+      		Choice "12/12" "<</CNTone(12)>>setpagedevice"
+      		Choice "13/13" "<</CNTone(13)>>setpagedevice"
+      		Choice "14/14" "<</CNTone(14)>>setpagedevice"
+      		Choice "15/15" "<</CNTone(15)>>setpagedevice"
+      		Choice "16/16" "<</CNTone(16)>>setpagedevice"
+      		Choice "17/17" "<</CNTone(17)>>setpagedevice"
+      		Choice "18/18" "<</CNTone(18)>>setpagedevice"
+      		Choice "19/19" "<</CNTone(19)>>setpagedevice"
+      		Choice "20/20" "<</CNTone(20)>>setpagedevice"
+      		Choice "21/21" "<</CNTone(21)>>setpagedevice"
+      		Choice "22/22" "<</CNTone(22)>>setpagedevice"
+      		Choice "23/23" "<</CNTone(23)>>setpagedevice"
+      		Choice "24/24" "<</CNTone(24)>>setpagedevice"
+      		Choice "25/25" "<</CNTone(25)>>setpagedevice"
+      		Choice "26/26" "<</CNTone(26)>>setpagedevice"
+      		Choice "27/27" "<</CNTone(27)>>setpagedevice"
+      		Choice "28/28" "<</CNTone(28)>>setpagedevice"
+      		Choice "29/29" "<</CNTone(29)>>setpagedevice"
+      		Choice "30/30" "<</CNTone(30)>>setpagedevice"
+      		Choice "31/31" "<</CNTone(31)>>setpagedevice"
+      		Choice "32/32" "<</CNTone(32)>>setpagedevice"
+      		Choice "33/33" "<</CNTone(33)>>setpagedevice"
+      		Choice "34/34" "<</CNTone(34)>>setpagedevice"
+      		Choice "35/35" "<</CNTone(35)>>setpagedevice"
+      		Choice "36/36" "<</CNTone(36)>>setpagedevice"
+      		Choice "37/37" "<</CNTone(37)>>setpagedevice"
+      		Choice "38/38" "<</CNTone(38)>>setpagedevice"
+      		Choice "39/39" "<</CNTone(39)>>setpagedevice"
+      		Choice "40/40" "<</CNTone(40)>>setpagedevice"
+      		Choice "41/41" "<</CNTone(41)>>setpagedevice"
+      		Choice "42/42" "<</CNTone(42)>>setpagedevice"
+      		Choice "43/43" "<</CNTone(43)>>setpagedevice"
+      		Choice "44/44" "<</CNTone(44)>>setpagedevice"
+      		Choice "45/45" "<</CNTone(45)>>setpagedevice"
+      		Choice "46/46" "<</CNTone(46)>>setpagedevice"
+      		Choice "47/47" "<</CNTone(47)>>setpagedevice"
+      		Choice "48/48" "<</CNTone(48)>>setpagedevice"
+      		Choice "49/49" "<</CNTone(49)>>setpagedevice"
+      		Choice "50/50" "<</CNTone(50)>>setpagedevice"
+			#endif
+			{
+  			ModelName "MG6300 series"
+  			PCFileName "CNMG6300.PPD"
+  			ModelNumber 408
+  			Attribute "NickName" "" "Canon MG6300 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MG6300"
+  			Attribute "Product" "" "(mg6300)"
+			}
+	}
+}
+
+
+
+// *******************************************************************************************
+// *******************************************************************************************
+// *******************************************************************************************
+// *******************************************************************************************
+{
+Filter "application/vnd.cups-postscript 0 pstocanonij"
+Font "Courier" "Standard" "(001.001)" "Standard" ROM
+VariablePaperSize Yes
+	{
+  	Group "*CNMain/Main"
+		Option "MediaType/Media Type" PickOne AnySetup 0,0
+			*Choice $_plain $_plain_set
+			Choice $_proplatinum $_proplatinum_set
+			Choice $_luster $_luster_set
+			Choice $_semigloss $_semigloss_set
+			Choice $_glossygold $_glossygold_set
+			Choice $_glossypaper $_glossypaper_set
+			Choice $_matte $_matte_set
+			Choice $_highres $_highres_set
+			Choice $_postcardaddress $_postcardaddress_set
+			Choice $_ijpostcard $_ijpostcard_set
+			Choice $_glossypost $_glossypost_set
+			Choice $_postcard_type $_postcard_type_set
+			Choice $_tshirt $_tshirt_set
+			Choice $_envelope $_envelope_set
+	      	Choice $_otherphoto $_otherphoto_set
+    	Option "InputSlot/Paper Source" PickOne AnySetup 0,0
+      		*Choice $_asf "<</MediaPosition 0>>setpagedevice"
+#if HAVE_CANON_ADDON
+	Group "*CNGeneral/General"
+		Option "CNInkCartridgeSettings/Ink Cartridge Settings" PickOne AnySetup 0,0
+			Choice "color/Color Only" "<</CNInkCartridgeSettings(color)>>setpagedevice"
+			Choice "bk/Black Only" "<</CNInkCartridgeSettings(bk)>>setpagedevice"
+			*Choice "bkcolor/Both Black and Color" "<</CNInkCartridgeSettings(bkcolor)>>setpagedevice"
+#endif
+	CustomMedia $_Letter 			612,00  792,00 18,14 14,17 17,86  8,50 $_Letter_set				$_Letter_set
+	CustomMedia $_Legal 			612,00 1008,00 18,14 14,17 17,86  8,50 $_Legal_set				$_Legal_set
+	CustomMedia $_A5				420,00  595,00  9,64 14,17 10,11  8,23 $_A5_set					$_A5_set
+	*CustomMedia $_A4 				595,00  842,00  9,64 14,17  9,36  8,61 $_A4_set					$_A4_set
+	CustomMedia $_B5				516,00  729,00  9,64 14,17  9,73  9,00 $_B5_set					$_B5_set
+	CustomMedia $_4X6				288,00  432,00  9,64 14,17  9,64  8,50 $_4X6_set				$_4X6_set
+  	CustomMedia $_5X7				360,00  504,00  9,64 14,17  9,64  8,50 $_5X7_set				$_5X7_set
+	CustomMedia $_8X10				576,00  720,00  9,64 14,17  9,64  8,50 $_8X10_set				$_8X10_set
+	CustomMedia $_l					252,00  360,00  9,64 14,17  9,35  8,50 $_l_set					$_l_set
+	CustomMedia $_2l				360,00  505,00  9,64 14,17  9,64  8,94 $_2l_set					$_2l_set
+	CustomMedia $_postcard			283,00  420,00  9,64 14,17  9,17  8,98 $_postcard_set			$_postcard_set
+	CustomMedia $_postdbl			567,00  420,00  9,64 14,17  9,71  8,98 $_postdbl_set			$_postdbl_set
+	CustomMedia $_envelop10p		297,00  684,00  9,64 92,13  9,65 22,68 $_envelop10p_set 		$_envelop10p_set
+	CustomMedia $_envelopdlp		312,00  624,00  9,64 92,13  9,83 23,06 $_envelopdlp_set 		$_envelopdlp_set
+	CustomMedia $_envj4p			298,00  666,00  9,64 92,13 10,00 22,54 $_envj4p_set 			$_envj4p_set
+	CustomMedia $_envj6p			278,00  539,00  9,64 92,13  9,84 23,09 $_envj6p_set 			$_envj6p_set
+	HWMargins 9,64 14,17 9,64 8,50
+	MinSize 252,29 360,00
+	MaxSize 612,00 1916,23
+			{
+  			ModelName "MP230 series"
+			PCFileName "CNMP230.PPD"
+  			ModelNumber 401
+  			Attribute "NickName" "" "Canon MP230 series Ver."$ppdver
+  			Attribute "ShortNickName" "" "MP230"
+  			Attribute "Product" "" "(mp230)"
+			}
+	}
+}
+
+
+
+

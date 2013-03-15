@@ -1,0 +1,177 @@
+#/bin/bash
+
+ls -1 ../*.ppd > file_lists2
+
+ls -1 ../../../cnijfilter-common/ppd/zal/src/*.ppd > file_lists3
+
+search1(){
+	ret_text=""
+	for fna in `cat file_lists2`; do
+		if [ ${_find} = "0" ]; then
+			_vala=`cat ${fna} | grep -i "${find_text}"`
+			if [ ! "${_vala}" = "" ]; then
+				ret_text=`cat ${fna} | grep -i "${find_text}" | cut '-d:' -f1 | cut '-d/' -f2`
+				_find=1
+				break
+			fi
+		fi
+	done
+}
+
+search2(){
+	ret_text=""
+	for fna in `cat file_lists3`; do
+		if [ ${_find} = "0" ]; then
+			_vala=`cat ${fna} | grep -i "${find_text}"`
+			if [ ! "${_vala}" = "" ]; then
+				ret_text=`cat ${fna} | grep -i "${find_text}" | cut '-d:' -f1 | cut '-d/' -f2`
+				_find=1
+				break
+			fi
+		fi
+	done
+}
+
+for lng in cs da de es fi fr el hu it nl no pl pt ru sv tr ko zh zh_TW th id ja
+do
+	rm -f lang/${lng}.translate
+
+	for _media in manual asf asf2bin auto cassette cassette1 cassette2 cassetteauto continuous front front2 frontplain switch consecutive1 consecutive2 tractor
+	do
+	_find=0
+	find_text="*${lng}.InputSlot ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.InputSlot ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.InputSlot ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.InputSlot ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.InputSlot ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+
+	for _media in CNMain MediaType InputSlot CNQuality CNGrayscale CNPagesetup PageSize Duplex CNBorderless CNExtension CNHalftoning CNRenderIntent CNPaperGap CNColorAdjust CNBalanceC CNBalanceM CNBalanceY CNBalanceK CNGamma CNDensity CNContrast CNTone CNInkCartridgeSettings
+	do
+	_find=0
+	find_text="*${lng}.Translation ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.Translation ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.Translation ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.Translation ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.Translation ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+
+	for _media in DuplexNoTumble DuplexTumble
+	do
+	_find=0
+	find_text="*${lng}.Duplex ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.Duplex ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.Duplex ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.Duplex ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.Duplex ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+
+	for _media in 1.4 1.8 2.2
+	do
+	_find=0
+	find_text="*${lng}.CNGamma ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.CNGamma ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.CNGamma ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.CNGamma ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.CNGamma ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+
+	for _media in color bk bkcolor
+	do
+	_find=0
+	find_text="*${lng}.CNInkCartridgeSettings ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.CNInkCartridgeSettings ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.CNInkCartridgeSettings ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.CNInkCartridgeSettings ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.CNInkCartridgeSettings ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+
+	for _media in 1 4
+	do
+	_find=0
+	find_text="*${lng}.CNQuality ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.CNQuality ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.CNQuality ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.CNQuality ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.CNQuality ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+
+	for _media in Letter Letter.bl Legal ledger ledger.bl A5 A4 A4.bl a3 a3.bl a3plus a3plus.bl B5 b4 4X6 4X6.bl 4X8 4X8.bl 5X7 5X7.bl 8X10 8X10.bl 10X12 10X12.bl l l.bl 2l 2l.bl letterfineart35 a4fineart35 postcard postcard.bl postdbl panorama envelop10p envelopdlp envj4p envj6p creditcard creditcard.bl businesscard businesscard.bl wide wide.bl fineartletter finearta4 
+	do
+	_find=0
+	find_text="*${lng}.PageSize ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.PageSize ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.PageSize ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.PageSize ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.PageSize ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+	for _media in plain prophoto superphoto glossygold prophoto2 proplatinum luster doublesidephoto semigloss glossypaper matte fineartphotorag otherfineart envelope postcardaddress ijpostcard glossypost prophotopost postcard_type photocard higloss2 highres tshirt ohp otherphoto
+	do
+	_find=0
+	find_text="*${lng}.MediaType ${_media}/"
+	search1 
+	if [ ${_find} = "1" ]; then
+		echo "*${lng}.MediaType ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+		echo "*${lng}.MediaType ${_media}/${ret_text}: \"\""
+	else
+		search2
+		if [ ${_find} = "1" ]; then
+			echo "*${lng}.MediaType ${_media}/${ret_text}: \"\"" >> lang/${lng}.translate
+			echo "*${lng}.MediaType ${_media}/${ret_text}: \"\""
+		fi
+	fi
+	done
+
+done
+
+rm -f file_lists2
+rm -f file_lists3

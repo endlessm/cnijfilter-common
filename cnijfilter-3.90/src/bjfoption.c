@@ -1825,7 +1825,7 @@ static long convert_str_to_long(char *str)
 	long	value = 0L;
 	char	c;
 	
-	while(c = *str)
+	while((c = *str))
 	{
 		if(c < '0' || '9' < c)
 			return -2; /* invalid value */

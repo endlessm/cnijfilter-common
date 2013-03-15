@@ -1,0 +1,250 @@
+#/bin/bash
+
+ls -1 ../*.ppd > file_lists2
+
+#1  plain
+#2  prophoto
+#3  superphoto
+#4  glossygold
+#5  prophoto2
+#6  proplatinum
+#7  luster
+#8  doublesidephoto
+#9  semigloss
+#10 glossypaper
+#11 matte
+#12 fineartphotorag
+#13 otherfineart
+#14 envelope
+#15 postcardaddress
+#16 ijpostcard
+#17 glossypost
+#18 prophotopost
+#19 postcard
+#20 photocard
+#21 higloss2
+#22 highres
+#23 tshirt
+#24 ohp
+#25 otherphoto
+
+rm -f include/canon_media.txt
+
+val0=$(pwd)
+for fn in `cat file_lists2`; do
+	ModelName1=`echo ${fn} | cut '-d/' -f2 | cut '-d.' -f1`
+	model_smol=`echo ${ModelName1} | cut -dn -f3`
+	ModelName2=`cat ${fn} | grep "PCFileName" | cut '-d"' -f2 | cut '-d.' -f1`
+
+	plain=`cat ${fn} | grep -i "*MediaType plain/"`
+	if [ ! "${plain}" = "" ]; then
+	_plain=1
+	else
+	_plain=0
+	fi
+
+	prophoto=`cat ${fn} | grep -i "*MediaType prophoto/"`
+	if [ ! "${prophoto}" = "" ]; then
+	_prophoto=1
+	else
+	_prophoto=0
+	fi
+
+	superphoto=`cat ${fn} | grep -i "*MediaType superphoto/"`
+	if [ ! "${superphoto}" = "" ]; then
+	_superphoto=1
+	else
+	_superphoto=0
+	fi
+
+	glossygold=`cat ${fn} | grep -i "*MediaType glossygold/"`
+	if [ ! "${glossygold}" = "" ]; then
+	_glossygold=1
+	else
+	_glossygold=0
+	fi
+
+	prophoto2=`cat ${fn} | grep -i "*MediaType prophoto2/"`
+	if [ ! "${prophoto2}" = "" ]; then
+	_prophoto2=1
+	else
+	_prophoto2=0
+	fi
+
+	proplatinum=`cat ${fn} | grep -i "*MediaType proplatinum/"`
+	if [ ! "${proplatinum}" = "" ]; then
+	_proplatinum=1
+	else
+	_proplatinum=0
+	fi
+
+	luster=`cat ${fn} | grep -i "*MediaType luster/"`
+	if [ ! "${luster}" = "" ]; then
+	_luster=1
+	else
+	_luster=0
+	fi
+
+	doublesidephoto=`cat ${fn} | grep -i "*MediaType doublesidephoto/"`
+	if [ ! "${doublesidephoto}" = "" ]; then
+	_doublesidephoto=1
+	else
+	_doublesidephoto=0
+	fi
+
+	semigloss=`cat ${fn} | grep -i "*MediaType semigloss/"`
+	if [ ! "${semigloss}" = "" ]; then
+	_semigloss=1
+	else
+	_semigloss=0
+	fi
+
+	glossypaper=`cat ${fn} | grep -i "*MediaType glossypaper/"`
+	if [ ! "${glossypaper}" = "" ]; then
+	_glossypaper=1
+	else
+	_glossypaper=0
+	fi
+
+	matte=`cat ${fn} | grep -i "*MediaType matte/"`
+	if [ ! "${matte}" = "" ]; then
+	_matte=1
+	else
+	_matte=0
+	fi
+
+	fineartphotorag=`cat ${fn} | grep -i "*MediaType fineartphotorag/"`
+	if [ ! "${fineartphotorag}" = "" ]; then
+	_fineartphotorag=1
+	else
+	_fineartphotorag=0
+	fi
+
+	otherfineart=`cat ${fn} | grep -i "*MediaType otherfineart/"`
+	if [ ! "${otherfineart}" = "" ]; then
+	_otherfineart=1
+	else
+	_otherfineart=0
+	fi
+
+	envelope=`cat ${fn} | grep -i "*MediaType envelope/"`
+	if [ ! "${envelope}" = "" ]; then
+	_envelope=1
+	else
+	_envelope=0
+	fi
+
+	postcardaddress=`cat ${fn} | grep -i "*MediaType postcardaddress/"`
+	if [ ! "${postcardaddress}" = "" ]; then
+	_postcardaddress=1
+	else
+	_postcardaddress=0
+	fi
+
+	ijpostcard=`cat ${fn} | grep -i "*MediaType ijpostcard/"`
+	if [ ! "${ijpostcard}" = "" ]; then
+	_ijpostcard=1
+	else
+	_ijpostcard=0
+	fi
+
+	glossypost=`cat ${fn} | grep -i "*MediaType glossypost/"`
+	if [ ! "${glossypost}" = "" ]; then
+	_glossypost=1
+	else
+	_glossypost=0
+	fi
+
+	prophotopost=`cat ${fn} | grep -i "*MediaType prophotopost/"`
+	if [ ! "${prophotopost}" = "" ]; then
+	_prophotopost=1
+	else
+	_prophotopost=0
+	fi
+
+	postcard=`cat ${fn} | grep -i "*MediaType postcard/"`
+	if [ ! "${postcard}" = "" ]; then
+	_postcard=1
+	else
+	_postcard=0
+	fi
+
+	photocard=`cat ${fn} | grep -i "*MediaType photocard/"`
+	if [ ! "${photocard}" = "" ]; then
+	_photocard=1
+	else
+	_photocard=0
+	fi
+
+	higloss2=`cat ${fn} | grep -i "*MediaType higloss2/"`
+	if [ ! "${higloss2}" = "" ]; then
+	_higloss2=1
+	else
+	_higloss2=0
+	fi
+
+	highres=`cat ${fn} | grep -i "*MediaType highres/"`
+	if [ ! "${highres}" = "" ]; then
+	_highres=1
+	else
+	_highres=0
+	fi
+
+	tshirt=`cat ${fn} | grep -i "*MediaType tshirt/"`
+	if [ ! "${tshirt}" = "" ]; then
+	_tshirt=1
+	else
+	_tshirt=0
+	fi
+
+	ohp=`cat ${fn} | grep -i "*MediaType ohp/"`
+	if [ ! "${ohp}" = "" ]; then
+	_ohp=1
+	else
+	_ohp=0
+	fi
+
+	otherphoto=`cat ${fn} | grep -i "*MediaType otherphoto/"`
+	if [ ! "${otherphoto}" = "" ]; then
+	_otherphoto=1
+	else
+	_otherphoto=0
+	fi
+
+
+#1  plain
+#2  prophoto
+#3  superphoto
+#4  glossygold
+#5  prophoto2
+#6  proplatinum
+#7  luster
+#8  doublesidephoto
+#9  semigloss
+#10 glossypaper
+#11 matte
+#12 fineartphotorag
+#13 otherfineart
+#14 envelope
+#15 postcardaddress
+#16 ijpostcard
+#17 glossypost
+#18 prophotopost
+#19 postcard
+#20 photocard
+#21 higloss2
+#22 highres
+#23 tshirt
+#24 ohp
+#25 otherphoto
+
+	_tex=""
+	_tex="${_plain}-${_prophoto}-${_superphoto}-${_glossygold}-${_prophoto2}-${_proplatinum}-${_luster}-${_doublesidephoto}"
+	_tex+="-${_semigloss}-${_glossypaper}-${_matte}-${_fineartphotorag}-${_otherfineart}-${_envelope}-${_postcardaddress}-${_ijpostcard}"
+	_tex+="-${_glossypost}-${_prophotopost}-${_postcard}-${_photocard}-${_higloss2}-${_highres}-${_tshirt}-${_ohp}"
+	_tex+="-${_otherphoto}"
+	echo "${_tex}-${model_smol}" >> include/canon_media.txt
+	echo "${model_smol}"
+done
+
+rm -f file_lists2

@@ -1,0 +1,86 @@
+// CUPS PPD Compiler CUPS v1.6.1
+
+// Include necessary files...
+#include <font.defs>
+#include <media.defs>
+
+// Canon PIXMA iP1000
+{
+  Copyright "CUPS add-on PPD file for Canon Bubble Jet Printer."
+  Copyright "Copyright CANON INC. 2001-2005"
+  Copyright "All Rights Reserved."
+  Copyright ""
+  Copyright "This program is free software; you can redistribute it and/or modify"
+  Copyright "it under the terms of the GNU General Public License as published by"
+  Copyright "the Free Software Foundation; either version 2 of the License, or"
+  Copyright "(at your option) any later version."
+  Copyright ""
+  Copyright "This program is distributed in the hope that it will be useful,"
+  Copyright "but WITHOUT ANY WARRANTY; without even the implied warranty of"
+  Copyright "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
+  Copyright "GNU General Public License for more details."
+  Copyright ""
+  Copyright "You should have received a copy of the GNU General Public License"
+  Copyright "along with this program; if not, write to the Free Software"
+  Copyright "Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"
+  Manufacturer "Canon"
+  ModelName "PIXMA iP1000"
+  PCFileName "CNPM1000.PPD"
+  Version "1.0"
+  DriverType ps
+  ModelNumber 180
+  ManualCopies Yes
+  ColorDevice Yes
+  Throughput 1
+  Attribute "NickName" "" "Canon PIXMA iP1000 Ver.2.50"
+  Attribute "ShortNickName" "" "PIXMAiP1000"
+  Attribute "Product" "" "(pixmaip1000)"
+  Attribute "PSVersion" "" "(3010.000) 550"
+  Attribute "PSVersion" "" "(3010.000) 651"
+  Attribute "PSVersion" "" "(3010.000) 705"
+  Attribute "PSVersion" "" "(3010.000) 715"
+  Attribute "DefaultColorSpace" "" "RGB"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "CenterRegistered" "" "False"
+  Attribute "LeadingEdge" "Short" ""
+  Attribute "DefaultLeadingEdge" "" "Short"
+  Filter "application/vnd.cups-postscript 0 pstocanonbj"
+  Group "General/General"
+    Option "MediaType/Media Type" PickOne AnySetup 0,0
+      *Choice "plain/Plain Paper" "<</MediaType(plain)>>setpagedevice"
+      Choice "prophoto/Photo Paper Pro" "<</MediaType(prophoto)>>setpagedevice"
+      Choice "superphoto/Photo Paper Plus Glossy" "<</MediaType(superphoto)>>setpagedevice"
+      Choice "matte/Matte Photo Paper" "<</MediaType(matte)>>setpagedevice"
+      Choice "glossypaper/Glossy Photo Paper" "<</MediaType(glossypaper)>>setpagedevice"
+      Choice "highres/High Resolution Paper" "<</MediaType(highres)>>setpagedevice"
+      Choice "tshirt/T-Shirt Transfer" "<</MediaType(tshirt)>>setpagedevice"
+      Choice "ohp/Transparency" "<</MediaType(ohp)>>setpagedevice"
+      Choice "envelope/Envelope" "<</MediaType(envelope)>>setpagedevice"
+      Choice "otherphoto/Other Photo Paper" "<</MediaType(otherphoto)>>setpagedevice"
+    Option "InputSlot/Paper Feed" PickOne AnySetup 0,0
+      *Choice "asf/Auto Feeder" "<</cupsMediaPosition 1>>setpagedevice"
+    Option "CNQuality/Quality" PickOne AnySetup 0,0
+      Choice "2/High" "2"
+      *Choice "3/Normal" "3"
+      Choice "4/Standard" "4"
+      Choice "5/Economy" "5"
+    Option "Resolution/Output Resolution" PickOne AnySetup 0,0
+      *Choice "600/600 dpi" "<</HWResolution[600 600]>>setpagedevice"
+      Choice "1200/1200 dpi" "<</HWResolution[1200 1200]>>setpagedevice"
+      Choice "2400/2400 dpi" "<</HWResolution[2400 2400]>>setpagedevice"
+    Option "ColorModel/Color Model" PickOne AnySetup 0,0
+      *Choice "rgb/RGB" "<</cupsColorOrder 0/cupsColorSpace 1/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+  CustomMedia "a5/A5" 420,00 595,00 9,64 14,17 10,11 8,23 "<</CNPageSizeName(a5)/PageSize[420 595]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(a5)/PageSize[420 595]/ImagingBBox null>>setpagedevice"
+  *CustomMedia "a4/A4" 595,00 842,00 9,64 14,17 9,36 8,61 "<</CNPageSizeName(a4)/PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(a4)/PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "b5/B5" 516,00 729,00 9,64 14,17 9,73 9,00 "<</CNPageSizeName(b5)/PageSize[516 729]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(b5)/PageSize[516 729]/ImagingBBox null>>setpagedevice"
+  CustomMedia "letter/Letter" 612,00 792,00 18,14 14,17 17,86 8,50 "<</CNPageSizeName(letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "legal/Legal" 612,00 1008,00 18,14 14,17 17,86 8,50 "<</CNPageSizeName(legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "envelope10p/Comm. Env. #10" 297,00 684,00 9,64 75,12 9,65 72,68 "<</CNPageSizeName(envelope10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(envelope10p)/PageSize[297 684]/ImageingBBox null>>setpagedevice"
+  CustomMedia "envelopedlp/DL Env." 312,00 624,00 9,64 75,12 9,83 23,06 "<</CNPageSizeName(envelopedlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(envelopedlp)/PageSize[312 624]/ImageingBBox null>>setpagedevice"
+  CustomMedia "4X6/4x6in 101.6x152.4mm" 288,00 432,00 9,64 14,17 9,64 9,00 "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice"
+  CustomMedia "5X7/5x7in 127.0x177.8mm" 360,00 504,00 9,64 14,17 9,64 8,50 "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice" "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  HWMargins 9,64 14,17 9,64 8,50
+  MinSize 255,12 340,16
+  MaxSize 612,00 1656,00
+}

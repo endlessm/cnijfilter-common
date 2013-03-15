@@ -1,0 +1,56 @@
+*UIConstraints: *InputSlot switch *PageSize Legal
+*UIConstraints: *PageSize Legal *InputSlot switch
+*UIConstraints: *InputSlot switch *PageSize creditcard
+*UIConstraints: *PageSize creditcard *InputSlot switch
+*UIConstraints: *InputSlot switch *PageSize businesscard
+*UIConstraints: *PageSize businesscard *InputSlot switch
+*UIConstraints: *InputSlot cassette *PageSize Legal
+*UIConstraints: *PageSize Legal *InputSlot cassette
+*UIConstraints: *InputSlot cassette *PageSize creditcard
+*UIConstraints: *PageSize creditcard *InputSlot cassette
+*UIConstraints: *InputSlot cassette *PageSize businesscard
+*UIConstraints: *PageSize businesscard *InputSlot cassette
+*UIConstraints: *Duplex *MediaType prophoto
+*UIConstraints: *MediaType prophoto *Duplex
+*UIConstraints: *Duplex *MediaType superphoto
+*UIConstraints: *MediaType superphoto *Duplex
+*UIConstraints: *Duplex *MediaType glossygold
+*UIConstraints: *MediaType glossygold *Duplex
+*UIConstraints: *Duplex *MediaType matte
+*UIConstraints: *MediaType matte *Duplex
+*UIConstraints: *Duplex *MediaType glossypaper
+*UIConstraints: *MediaType glossypaper *Duplex
+*UIConstraints: *Duplex *MediaType highres
+*UIConstraints: *MediaType highres *Duplex
+*UIConstraints: *Duplex *MediaType ijpostcard
+*UIConstraints: *MediaType ijpostcard *Duplex
+*UIConstraints: *Duplex *MediaType tshirt
+*UIConstraints: *MediaType tshirt *Duplex
+*UIConstraints: *Duplex *MediaType envelope
+*UIConstraints: *MediaType envelope *Duplex
+*UIConstraints: *Duplex *MediaType otherphoto
+*UIConstraints: *MediaType otherphoto *Duplex
+*UIConstraints: *Duplex *PageSize Legal
+*UIConstraints: *PageSize Legal *Duplex
+*UIConstraints: *Duplex *PageSize 4X6
+*UIConstraints: *PageSize 4X6 *Duplex
+*UIConstraints: *Duplex *PageSize 4X8
+*UIConstraints: *PageSize 4X8 *Duplex
+*UIConstraints: *Duplex *PageSize 8X10
+*UIConstraints: *PageSize 8X10 *Duplex
+*UIConstraints: *Duplex *PageSize l
+*UIConstraints: *PageSize l *Duplex
+*UIConstraints: *Duplex *PageSize envelop10p
+*UIConstraints: *PageSize envelop10p *Duplex
+*UIConstraints: *Duplex *PageSize envelopdlp
+*UIConstraints: *PageSize envelopdlp *Duplex
+*UIConstraints: *Duplex *PageSize envj4p
+*UIConstraints: *PageSize envj4p *Duplex
+*UIConstraints: *Duplex *PageSize envj6p
+*UIConstraints: *PageSize envj6p *Duplex
+*UIConstraints: *Duplex *PageSize creditcard
+*UIConstraints: *PageSize creditcard *Duplex
+*UIConstraints: *Duplex *PageSize businesscard
+*UIConstraints: *PageSize businesscard *Duplex
+*UIConstraints: *Duplex *PageSize wide
+*UIConstraints: *PageSize wide *Duplex
