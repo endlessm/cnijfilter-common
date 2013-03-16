@@ -127,10 +127,7 @@ typedef struct
 	/* Pointer to raster data output area */
 	RasterDataPtr		rasterDataPtr ;
 	
-	CPKInt16			MarginType ;
-	CPKInt16			PaperGap ;
-	
-	CPKInt8				reserved[8] ;
+	CPKInt8				reserved[12] ;
 
 } CNCLData, CPKPTR CNCLPtr ;
 

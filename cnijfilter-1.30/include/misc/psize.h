@@ -80,7 +80,6 @@ const long PaperTbl[][3] =
 	{1050,  8900, 12700},	/* Actual Size L ( 89mm x 127mm ) */
 	{1051, 12700, 17800},	/* Actual Size 2L ( 127mm x 178mm ) */
 	{1052, 10160, 15240},	/* Actual Size 4x6 ( 101.6mm x 152.4mm ) */
-	{1056,  8900, 25400},	/* Panorama or L x 2 ( 89mm x 254mm ) */
 	{-1, -1, -1}			/* Max indicator */	
 };
 

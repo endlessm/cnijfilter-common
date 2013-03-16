@@ -315,22 +315,7 @@ enum {
 	CND_GAMMA_MAX,			/* Max indicator */
 } ;
 
-/* Margin Type */
-enum {
-	CND_MARGIN_NORMAL,
-	CND_MARGIN_MINUS,
-	CND_MARGIN_NA,
-	CND_MARGIN_MAX,
-};
 
-/* Paper Gap */
-enum {
-	CND_PGAP_CMD_AUTO,
-	CND_PGAP_CMD_WIDE,
-	CND_PGAP_CMD_NARROW,
-	CND_PGAP_CMD_NA,
-	CND_PGAP_CMD_MAX,
-};
 
 /*
  * Source type values for CNCLData.sourcetype

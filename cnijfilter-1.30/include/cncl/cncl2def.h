@@ -33,35 +33,12 @@
 #define	CND_BJS6300		(1113)	
 #define	CND_BJS630		(1123)	
 
-#define	CND_BJF900		(1125)
-#define	CND_BJF9000		(1127)
-#define	CND_BJS300		(1117)
-#define	CND_BJS500		(1131)
-
-#define	CND_PIXUS550I	(1154)
-#define	CND_PIXUS850I	(1156)
-#define	CND_PIXUS950I	(1158)
-
-
 /* MediaType (MediaType) */
-#define	CND_MEDIA_MATTE		(1028)
-#define	CND_MEDIA_SUPER_PHOTO	(1029)
-#define	CND_MEDIA_DISC1		(1031)
-#define	CND_MEDIA_DISC2		(1032)
 
 /* PaperSize (Paper Size) */
 #define CND_SIZE_ENV_10_P	(1046)
 #define CND_SIZE_ENV_DL_P	(1047)
 #define CND_SIZE_ENV_J4_P	(1048)
 #define CND_SIZE_ENV_J6_P	(1049)
-#define CND_SIZE_L		(1050)
-#define CND_SIZE_2L		(1051)
-#define CND_SIZE_4X6		(1052)
-#define CND_SIZE_DISCTRAY	(1053)
-#define CND_SIZE_PANORAMA	(1056)
-
-/* Intent */
-#define CND_INTENT_VIVID	(1003)
-
 
 #endif

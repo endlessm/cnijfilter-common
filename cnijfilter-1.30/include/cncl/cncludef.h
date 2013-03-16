@@ -63,9 +63,6 @@ enum
 	CNCL_MESS_AUTO_HT_ED,	
 	CNCL_MESS_AUTO_HT_PAT,	
 	CNCL_INPUT_GAMMA,		
-	CNCL_MARGINTYPE,
-	CNCL_VIVID,
-	CNCL_PAPERGAP_COMMAND,
 };
 
 /* Media Type */
@@ -233,18 +230,5 @@ enum
 
 /* Gray Scale */
 /* defined in cncl.h */
-
-/* Margin Type */
-/* defined in cncldef.h */
-
-/* Vivid support */
-enum {
-	CND_VIVID_SUPPORT,
-	CND_VIVID_NA,
-	CND_VIVID_MAX,
-};
-
-/* Paper Gap */
-/* defined in cncldef.h */
 
 #endif

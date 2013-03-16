@@ -53,9 +53,7 @@ typedef struct BJFLTDEVICE{
 	short	bjfltBanner ;
 	long	bjfltPaperWidth ;
 	long	bjfltPaperHeight ;
-	short	bjfltMarginType ;
-	short	bjfltPaperGap;
-	short	reserve[8];
+	short	reserve[10];
 } BJFLTDEVICE, *LPBJFLTDEVICE;
 
 typedef struct {
