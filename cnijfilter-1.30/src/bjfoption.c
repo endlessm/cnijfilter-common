@@ -800,21 +800,6 @@ int cmdlinesw(
 	}
 
 
-	/* Borderless */
-	if (setopt[OPTINDEX(OPTBORDERLESS)] & OPTBIT(OPTBORDERLESS))
-	 {
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, CND_MARGIN_MINUS) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE, 1, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			fprintf(stderr, "Error: inappropriate medium selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
-		}
-	}
-
-
 	/* -- Check --extension option */ 
 	if (setopt[OPTINDEX(OPTEXTENSION)] & OPTBIT(OPTEXTENSION)) {
 		if (!(setopt[OPTINDEX(OPTBORDERLESS)] & OPTBIT(OPTBORDERLESS))) {
@@ -907,26 +892,6 @@ int cmdlinesw(
 		}
 		else {
 			fprintf(stderr, "Error: inappropriate paper load selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
-		}
-	}
-
-
-	/* PaperGap */
-	if (setopt[OPTINDEX(OPTPAPERGAP)] & OPTBIT(OPTPAPERGAP)) {
-
-		if ((id = bjf_get_resource_id( confname, OPTSTRPAPERGAP, opt->papergap )) == BJFRCACCESSERROR ){
-			fprintf(stderr, "Error: invalid papergap\n");
-			goto onError;
-		}
-
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND, id, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			fprintf(stderr, "Error: inappropriate papergap selection\n");
 			/* inappropriate selection error. */
 			goto onErrorInappropriate;
 		}
@@ -1059,8 +1024,6 @@ int cmdlinesw(
 	bjdevice->bjfltMediaType		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_MEDIATYPE);
 	bjdevice->bjfltPrintQuality 	= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_PRINTQUALITY);
 	bjdevice->bjfltMediaSupply		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_MEDIASUPPLY);
-	bjdevice->bjfltPaperGap			= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERGAP_COMMAND);
-	if( bjdevice->bjfltPaperGap == -1 ) bjdevice->bjfltPaperGap = CND_PGAP_CMD_NA;
 
 	/* bjdevice->bjfltPaperSize is set already. */
 	/*bjdevice->bjfltPaperSize		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERSIZE);*/
@@ -1073,9 +1036,6 @@ int cmdlinesw(
 	bjdevice->bjfltInkType			= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_CARTRIDGE);
 	bjdevice->bjfltGrayScale		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_GRAYSCALE);
 
-	bjdevice->bjfltMarginType		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_MARGINTYPE);
-	if( bjdevice->bjfltMarginType == -1 ) bjdevice->bjfltMarginType = CND_MARGIN_NORMAL;
-	
 	/* then prepare BJCOLORSYSTEM structure */
 	*bjcolor = uidb.bjcolor;
 
