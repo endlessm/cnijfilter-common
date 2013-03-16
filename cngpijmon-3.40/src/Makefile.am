@@ -19,10 +19,6 @@ cngpijmon_SOURCES = \
 	interface.c interface.h support.c support.h 
 
 
-#cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lxml -lcups 
-#cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lcups 
-#cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lcups libbscc2sts.a
-#cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lcups -lbscc2sts
 cngpijmon_LDADD = @GTK_LIBS@ $(INTLLIBS) -lcups
 
 cngpijmon_LDFLAGS = -L../../lgmon-3.40/src
