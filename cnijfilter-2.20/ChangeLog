@@ -18,11 +18,3 @@
 
 	* Add /include/misc/psize.h
 
-2002-03-04
-	* Support BJ S500.
-
-2002-04-15
-	* Support BJ F900/BJ F9000/BJ S300.
-
-2002-12-19
-	* Support PIXUS 550i/PIXUS 850i/PIXUS 950i.
