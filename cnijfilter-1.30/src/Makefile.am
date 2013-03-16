@@ -22,7 +22,6 @@ bjfilter_SOURCES = \
 	getipc.c \
 	uitypes.h 
 
-
-bjfilter_LDADD = -lcnbpcmcm@CNCL_LIB_ID@ -lcnbpwcc@CNCL_LIB_ID@ -lcnbphtmg@CNCL_LIB_ID@ -lm -ldl -ltiff -lpng\
-			-lcnclapi@CNCL_LIB_ID@ -lcnclbjcmd@CNCL_LIB_ID@ -lcnbpsmth@CNCL_LIB_ID@ -lcnclui@CNCL_LIB_ID@ -lpopt
-bjfilter_LDFLAGS = -L../../@CNCL_LIB_ID@/libs_bin@ARC@
+bjfilter_LDADD = -lcnbpcmcm -lcnbpwcc -lcnbphtmg -lm -ldl -ltiff -lpng\
+			-lcnclapi -lcnclbjcmd -lcnbpsmth -lcnclui -lpopt
+bjfilter_LDFLAGS = -L../../001/libs_bin@ARC@
