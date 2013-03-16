@@ -1,0 +1,14 @@
+#!/bin/sh
+
+PKG_INFO=cnijfilter-i850;
+
+model_name=`echo ${PKG_INFO} | cut -d- -f2`
+
+_cups_path2=/usr/share/cups/model
+ppd_name=canon${model_name}.ppd
+
+if [ -x /sbin/ldconfig ]; then
+	/sbin/ldconfig
+fi
+# remove symbolic link for ppd
+rm -f ${_cups_path2}/${ppd_name}

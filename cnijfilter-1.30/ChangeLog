@@ -1,0 +1,20 @@
+2000-11-16
+	* Created
+
+2001-03-20
+	* Added /usr/lib/bjlib/bjfilter.conf to separate command line strings resource
+
+	* Added bjfrcaccess.c to separate command line strings resource 
+
+	* bjfilter.c: modify to separate command line strings resource
+ 
+2001-03-28
+	* Modify command line option "--renderintent"
+
+2001-07-23
+	* Add bjfversion.h to separate version strings
+
+	* Modify bjfoption.c to reffer /include/misc/psize.h
+
+	* Add /include/misc/psize.h
+
