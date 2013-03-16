@@ -1,11 +1,12 @@
 /*
- *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
- *  All Rights Reserved.
+ *  Canon Bubble Jet Print Filter for Linux
+ *  Copyright CANON INC. 2001 
+ *  All Right Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +15,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -35,9 +36,6 @@
 #define BJFIMAGE_GIF		12
 #define BJFIMAGE_BMP		13
 #define BJFIMAGE_PPM		14
-/*-- for PNG  --*/
-#define BJFIMAGE_PNG		15
-
 
 /*--- output type ---*/
 #define BJFOUTPUT_COLOR		30
@@ -49,13 +47,7 @@
 #define TIFFSTART2			"\x4D\x4D\x00\x2A"
 #define JPEGSTART			"\xFF\xD8"
 #define BMPSTART			"\x42\x4D"
-#define PPMRAWSTART			"\x50\x36"			/* "P6" */
-/*-- for PNG  --*/
-#define PNGSTART			"\x89\x50\x4E\x47\x0D\x0A\x1A\x0A"
-#define PNGSTART1			"\x89\x50"
-#define PNGSTART2			"\x4E\x47\x0D\x0A\x1A\x0A"
-/*-- for PNG  --*/
-#define PNGDATAEND			"\x49\x45\x4E\x44\xAE\x42\x60\x82"
+#define PPMRAWSTART			"\x50\x36"			// "P6"
 
 /*--- bmp support ---*/
 #define MAXBUF	0x00100000
@@ -98,9 +90,6 @@ typedef struct BJF_IMAGEINFO
 	long				rstep;
 	long				top;
 	long				readraster;
-	/* for png Parameter */
-	char				*png_ptr;
-	char				*info_ptr;
 	/* common Parameter */
 	short				imageformat;
 	long				width;

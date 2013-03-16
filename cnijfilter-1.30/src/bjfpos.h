@@ -1,11 +1,12 @@
 /*
- *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
- *  All Rights Reserved.
+ *  Canon Bubble Jet Print Filter for Linux
+ *  Copyright CANON INC. 2001 
+ *  All Right Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +15,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -27,7 +28,6 @@
 #ifndef __BJFPOS_H__
 #define	__BJFPOS_H__
 
-#include "cncl.h"
 
 #define XDEFAULTRESOLUTION 120
 #define YDEFAULTRESOLUTION 120
@@ -52,33 +52,17 @@ typedef struct BJF_POS_PRNINFO			/* printer infomation */
 
 typedef struct BJF_POSINFO				/* scaling and position infomation */
 {
-	double	mask_width;					/* actual image width */
-	double	mask_height;				/* actual image height */
-	double	width_offset;				/* x offset when output pixel is over printer available width */
-	double	height_offset;				/* y offset when output pixel is over printer available heigth */
-	double	out_width;					/* output width */
-	double	out_height;					/* otuput height */
-	double	leftskip;					/* left skip ( pixel ) */
-	double	topskip;					/* top skip ( pixel ) */
-	double	page_width;					/* page width ( pixel ) */
+	long	mask_width;					/* actual image width */
+	long	mask_height;				/* actual image height */
+	long	width_offset;				/* x offset when output pixel is over printer available width */
+	long	height_offset;				/* y offset when output pixel is over printer available heigth */
+	long	out_width;					/* output width */
+	long	out_height;					/* otuput height */
+	long	leftskip;					/* left skip ( pixel ) */
+	long	topskip;					/* top skip ( pixel ) */
+	long	page_width;					/* page width ( pixel ) */
 	double	scaling;					/* scaling parameter */
 } BJF_POSINFO, *LPBJF_POSINFO;
-
-
-typedef struct BJF_MARGIN_INFO				/* borderless information  */
-{
-	double	curtopmargin;					/* printer top margin [1/100mm] */
-	double	curleftmargin;					/* printer left margin [1/100mm] */
-	double	currightmargin;					/* printer top margin [1/100mm] */
-	double	curbottommargin;				/* printer left margin [1/100mm] */
-	double	curprn_width;					/* printer available width [1/100mm] */
-	double	curprn_height;					/* printer available height [1/100mm] */
-	long	PaperWidth;
-	long	PaperLength;
-	long	bbox[4];
-	short	extension;
-} BJF_MARGIN_INFO, *LPBJF_MARGIN_INFO;
-
 
 /* function prototypes */
 extern void bjf_pos_img_init( LPBJF_POS_IMGINFO lpimginfo );
@@ -112,20 +96,5 @@ extern short bjf_pos_set_prnXres( LPBJF_POS_PRNINFO, double );
 extern short bjf_pos_set_prnYres( LPBJF_POS_PRNINFO, double );
 extern short bjf_pos_set_prnwidth( LPBJF_POS_PRNINFO, long );
 extern short bjf_pos_set_prnheight( LPBJF_POS_PRNINFO, long );
-
-extern short SetImageSize( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO);
-extern short ImageFitShort( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
-extern short ImageFitLong( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
-extern short ImageScaling(LPBJF_POS_PRNINFO, LPBJF_POSINFO,short);
-extern short ImageCenter( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
-extern short ImageCut( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
-extern short MarginInit(LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO);
-extern short SetExtMargin(LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO);
-extern short SetBbox( LPBJF_POS_IMGINFO, long *, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
-short bjf_pos_set_paperwidth( LPBJF_MARGIN_INFO , long );
-short bjf_pos_set_paperlength( LPBJF_MARGIN_INFO , long );
-
-extern void bjf_margin_init( LPBJF_MARGIN_INFO );
-extern short SetExtLevel( LPBJF_MARGIN_INFO, short);
 
 #endif

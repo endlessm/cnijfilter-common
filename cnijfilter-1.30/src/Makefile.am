@@ -20,7 +20,6 @@ bjfilter_SOURCES = \
 	bjfrcaccess.h \
 	bjfversion.h \
 	getipc.c \
-	bjflist.c \
 	uitypes.h 
 
 

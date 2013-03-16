@@ -1,11 +1,12 @@
 /*
- *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
- *  All Rights Reserved.
+ *  Canon Bubble Jet Print Filter for Linux
+ *  Copyright CANON INC. 2001 
+ *  All Right Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +15,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -36,8 +37,6 @@
 #include <fcntl.h>
 #include <ctype.h>
 
-#define BJFTEMPFILE "/tmp/bjtmpXXXXXX"
-
 #include "cncl.h"
 #include "cncldef.h"
 #include "cnclucom.h"
@@ -45,17 +44,13 @@
 #include "bjfimage.h"
 #include "bjfoption.h"
 #include "bjfrcaccess.h"
-#include "bjflist.h"
 #include "bjfpos.h"
 #include "bjipc.h"
 #include "bjfilter.h"
 #include "uitypes.h"
-#include "bjfpath.h"
-
 
 /* function prototypes */
 extern short GetIPCData(LPIPCU pipc, char *sname);
-extern short PsudoGetIPCData(LPIPCU pipc);
 
 /* local function prototypes */
 static short h_extend( CPKByte CPKPTR, CPKByte CPKPTR, int, int, int );
@@ -67,18 +62,9 @@ static void set_cncl_imginfo( CNCLPtr, long, long, short, short );
 static void set_cncl_printerinfo( CNCLPtr, LPBJFLTDEVICE, LPCNCLPAPERSIZE, LPBJFLTCOMSYSTEM );
 static void set_position_parameter( LPBJFILTERINFO, LPCNCLPAPERSIZE, LPBJFLTCOMSYSTEM );
 static void set_cncl_colorinfo( CNCLPtr, LPBJFLTCOLORSYSTEM ); 
+static void check_lgmon_status(LPBJFILTERINFO, char *, char *);
 static short MakeBJPrintData( LPBJFILTERINFO, LPBJFLTDEVICE, LPCNCLPAPERSIZE, LPBJFLTCOLORSYSTEM );
 static short mirror_raster( CPKByte CPKPTR, long, short );
-static void SetPrinterFd( LPBJFILTERINFO lpbjfinfo );
-static short ForkLgmon( LPBJFILTERINFO lpbjfinfo, char *dispname, char *modelname );
-static void WaitLgmon( LPBJFILTERINFO lpbjfinfo, short isPrint );
-static void WaitPrintUi( LPBJFILTERINFO lpbjfinfo );
-static int createTempfile(LPBJF_ROOT root);
-static void removeTempfileCompletely(LPBJF_ROOT root);
-static void outCmdPlural( CPKByte CPKPTR buf, unsigned long size, int prn, int fd, LPBJF_ROOT root );
-static short dumpPage(LPBJF_NODE node, int prn);
-static short dumpPluralPages( LPBJF_ROOT root, int prn );
-static short dumpPluralPages_flush( LPBJF_ROOT root, int prn );
 /* testprint function */
 #if DEBUG
 static void display_cncl_printerinfo( CNCLPtr );
@@ -86,28 +72,12 @@ static void display_position_parameter( LPBJFILTERINFO,  LPCNCLPAPERSIZE );
 static void display_pos_info( LPBJF_POSINFO );
 #endif
 
-#if DEBUGLOG
-
-#define DEBUGLOGFILE "/var/tmp/bjlogXXXXXX"
-
-char		log_path_name[256];
-int			log_fd;
-FILE		*log_path = NULL;
-char		log_buf[256];
-void create_log(void);
-void write_log(char *str);
-#endif
-
-volatile int OutputFD = -1;
 volatile int ReceiveSignal = 0;
 volatile int WriteData = 0;
 
 void Usr1Handler(int signum)
 {
 	ReceiveSignal = 1;
-
-	if( OutputFD != -1 )
-		close(OutputFD);
 }
 
 
@@ -116,6 +86,8 @@ void Usr1Handler(int signum)
 /*-------------------------------------------------------------*/
 int main( int argc, char *argv[] )
 {
+	OPT					opt;
+	poptContext			optcon; 
 	BJFLTDEVICE			bjfltdevice;
 	CNCLPAPERSIZE   	cnclpapersize;
 	BJFLTCOLORSYSTEM	bjfltcolor;
@@ -124,18 +96,45 @@ int main( int argc, char *argv[] )
 	short				isprint = 0;
 	short				ret;
 	char				socketname[256];
-	short				modelstrnum,i;
 	char				dispname[256];
 	char				modelname[256];
-	char				printuiname[256],tmp_modelname[256],small_modelname[256];
 	char				*tmpargv[] = { PRINTUIPATH, "--display", dispname, "-s", socketname, "--model", modelname, NULL};
 	struct sigaction	sigact;
-	FILE __attribute__ ((unused))	*flog=NULL;
 
-#if DEBUGLOG
-	create_log( );
-#endif
-	
+	struct poptOption optionsTable[] = {
+		{ OPTSTRGUI, 			'u',	POPT_ARG_NONE,		&opt.gui,				'u' 		},
+		{ OPTSTRLOCATION, 		'l',	POPT_ARG_STRING,	&opt.location,			OPTLOCATION },
+		{ OPTSTRMODEL, 			'M',	POPT_ARG_STRING,	&opt.model,				OPTMODEL	},
+		{ OPTSTRCARTRIDGE,		'c',	POPT_ARG_STRING,	&opt.cartridge,			OPTCARTRIDGE},
+		{ OPTSTRMEDIA,			'm',	POPT_ARG_STRING,	&opt.media,				OPTMEDIA	},
+		{ OPTSTRQUALITY,		'q',	POPT_ARG_STRING,	&opt.quality,			OPTQUALITY	},
+		{ OPTSTRGRAY,			'G',	POPT_ARG_NONE,		&opt.grayscale,			OPTGRAY		},
+		{ OPTSTRHALFTONE, 		'H',	POPT_ARG_STRING,	&opt.halftoning,		OPTHALFTONE	},
+		{ OPTSTRBANNER,			'b',	POPT_ARG_NONE,		&opt.banner,			OPTBANNER	},
+		{ OPTSTRLOAD,			'L',	POPT_ARG_STRING,	&opt.paperload,			OPTLOAD		},
+		{ OPTSTRCORRECT,		0,		POPT_ARG_STRING,	&opt.correctionmode,	OPTCORRECT	},
+		{ OPTSTRRENDER,			0,		POPT_ARG_STRING,	&opt.renderintent,		OPTRENDER	},
+		{ OPTSTRGAMMA,			0,		POPT_ARG_STRING,	&opt.gamma,				OPTGAMMA	},
+		{ OPTSTRSOURCE,			0,		POPT_ARG_STRING,	&opt.imagesource,		OPTSOURCE	},
+		{ OPTSTRBALC,			0,		POPT_ARG_INT,		&opt.balance_c,			OPTBALC		},
+		{ OPTSTRBALM,			0,		POPT_ARG_INT,		&opt.balance_m,			OPTBALM		},
+		{ OPTSTRBALY,			0,		POPT_ARG_INT,		&opt.balance_y,			OPTBALY		},
+		{ OPTSTRBALK,			0,		POPT_ARG_INT,		&opt.balance_k,			OPTBALK		},
+		{ OPTSTRDENSITY,		0,		POPT_ARG_INT,		&opt.density,			OPTDENSITY	},
+		{ OPTSTRPSIZE,			'p',	POPT_ARG_STRING,	&opt.papersize,			OPTPSIZE	},
+		/*   to support 1.) add a switch --lgmon to invoke Language monitor (and output data thru a pipe). */
+		/*              2.) add an option --imageres, to cover with the bug in the bmp filter in           */
+		/*                  previous version of ghostscript. (lacking image resolution information)        */
+		/*              3.) add --display, to specify X server to show printui/stamon                      */
+		{ OPTSTRLGMON,			0,		POPT_ARG_NONE,		&opt.lgmon,				OPTLGMON	},
+		{ OPTSTRIMGRES,			0,		POPT_ARG_INT,		&opt.imageres,			OPTIMGRES	},
+		{ OPTSTRDISPLAY,		0,		POPT_ARG_STRING,	&opt.display,			OPTDISPLAY	},
+		{ OPTSTRFIT,            'F',    POPT_ARG_NONE,      &opt.fit,               OPTFIT      },
+		{ OPTSTRINTVER,         0,      POPT_ARG_NONE,      &opt.internalversion,   OPTINTVER   },
+		{ NULL,					0,		0,					NULL,					0 			}
+	};
+
+
 	/* allocate new work area */
 	if ( (lpbjinfo = (LPBJFILTERINFO)malloc( sizeof(BJFILTERINFO) )) == NULL ) goto onErr;
 	
@@ -153,20 +152,44 @@ int main( int argc, char *argv[] )
 	/*---------
 		Analyze command line options.
 	---------*/
-	if ( (modelstrnum = SetCmdOption( argc, (char **)argv, &lpbjinfo->bjfoption, &bjfltcolor, 
-			&bjfltdevice, &cnclpapersize, dispname, lpbjinfo->filename, tmp_modelname )) < 0 ) goto onErr;
+	init_optioninfo( &lpbjinfo->bjfoption );
+	
+	/* optcon = poptGetContext( "bjfilter", argc, argv, optionsTable, 0 ); */
+	optcon = poptGetContext( "bjfilter", argc, (const char **)argv, optionsTable, 0 );
+	
+	if ( cmdlinesw( &optcon, &opt, &lpbjinfo->bjfoption, &bjfltcolor, &bjfltdevice,
+			&cnclpapersize, dispname, lpbjinfo->filename ) < 0 ){
+		usage();
+		poptFreeContext( optcon );
+		goto onErr;
+	}
+	
+	poptFreeContext( optcon );
 
+	/* prepare communication pipe between lgmon & bjfilter */
+	if ( lpbjinfo->bjfoption.lgmon == ON ) {
+		/* open pipe */
+		if ( pipe( lpbjinfo->pipefds ) ) {
+			fprintf(stderr, "bjfilter: pipe failed\n");
+			goto onErr;
+		}
 
-	for( i=0; i<sizeof(tmp_modelname); i++ )	modelname[i] = tmp_modelname[i];
-	for( i=0; i<sizeof(small_modelname); i++ )	small_modelname[i] = tolower(tmp_modelname[i]);
-
-	if( modelstrnum == 0 )
-		snprintf(printuiname, sizeof(printuiname), "%s%s",PRINTUIPATH,"");
+		/* then prepare for file pointer */
+		lpbjinfo->prn = lpbjinfo->pipefds[1];
+	}
 	else
-		snprintf(printuiname, sizeof(printuiname), "%s%s",PRINTUIPATH,small_modelname);
-
-	/* set stdout descriptor to prn  */
-	SetPrinterFd( lpbjinfo );
+		lpbjinfo->prn = 1;
+#if 0
+	if (strcpy(modelname, convID2Name(lpbjinfo->bjfoption.modelid, (NOMID *)nomidTable)) == 0) {
+		fprintf(stderr, "bjfilter: invalid modelid - internal error\n");
+		goto onErr;
+	}
+#endif
+	if ( strcpy(modelname, bjf_get_resource_string( BJFILTERRCPATH, 
+						OPTSTRMODEL, lpbjinfo->bjfoption.modelid)) == 0) {
+		fprintf(stderr, "bjfilter: invalid modelid - internal error\n");
+		goto onErr;
+	}
 
 	isprint = 0;
 	if ( lpbjinfo->bjfoption.ui == ON ){				/* UI command mode */
@@ -175,82 +198,36 @@ int main( int argc, char *argv[] )
 		lpbjinfo->pid_printui = fork();
 		
 		if ( lpbjinfo->pid_printui == 0 ){
-			if ( execv( printuiname, tmpargv ) ) {
+			if ( execv( PRINTUIPATH, tmpargv ) ) {
 				perror("invoke printui:");
 				goto onErr;
 			}
 		}
 		else{
 			while( 1 ){
-				int *status = 0;
 				/* communicate to PrintUI Program */
 				ret = GetIPCData( &ipc , socketname );
 
 				if ( ret == RET_PRINT ){
-					/* wait printui program */
-					waitpid( lpbjinfo->pid_printui, status, 0 );
-					lpbjinfo->pid_printui = 0;
-
-					/* check_lgmon_status(lpbjinfo, dispname, modelname); */
-					if ( ForkLgmon( lpbjinfo, dispname, modelname ) < 0 ){
-						fprintf( stderr, "ForkLgmon Error\n" );
-						goto onErr;
-					}
+					check_lgmon_status(lpbjinfo, dispname, modelname);
 					/* copy data from ui */
 					bjfltdevice = ipc.parm.bjfltdev;
 					cnclpapersize = ipc.parm.papersize;
 					bjfltcolor = ipc.parm.bjfltcolor;
 					isprint = 1;
-
-					lpbjinfo->bjfoption.fit = ipc.parm.bjflt_uisetup.bjflt_fit;
-					lpbjinfo->bjfoption.extension = ipc.parm.bjflt_uisetup.bjflt_extension;
-					lpbjinfo->bjfoption.percent = ipc.parm.bjflt_uisetup.bjflt_percent;
-					lpbjinfo->bjfoption.location = ipc.parm.bjflt_uisetup.bjflt_location;
-
-					lpbjinfo->bjfoption.copies = ipc.parm.bjflt_uisetup.bjflt_copies;
-					lpbjinfo->bjfoption.revprint = ipc.parm.bjflt_uisetup.bjflt_revprint;
-					lpbjinfo->bjfoption.collate = ipc.parm.bjflt_uisetup.bjflt_collate;
-			
-
-#if DEBUGLOG
-					write_log( "RET_PRINT\n" );
-#endif
 					break;
 				}
 				else if ( ret == RET_CANCEL ){
-					/* wait printui program */
-					waitpid( lpbjinfo->pid_printui, status, 0 );
-					lpbjinfo->pid_printui = 0;
-
 					break;
 				}
 				else if ( ret == RET_PDATA ){
-					/* check_lgmon_status(lpbjinfo, dispname, modelname); */
-					if ( ForkLgmon( lpbjinfo, dispname, modelname ) < 0 ){
-						fprintf( stderr, "ForkLgmon Error\n" );
-						goto onErr;
-					}
+					check_lgmon_status(lpbjinfo, dispname, modelname);
 					outCmd( (CPKByte CPKPTR)ipc.cmds.cmds, (CPKUInt32)ipc.cmds.cmdslen, lpbjinfo->prn );
-#if DEBUGLOG
-					write_log( "RET_PDATA\n" );
-					sprintf( log_buf, "cmdslen : %d\n", ipc.cmds.cmdslen );
-					write_log( log_buf );
-#endif
 				}
 				else if ( ret == RET_EXECLM ){
-					/* check_lgmon_status(lpbjinfo, dispname, modelname); */
-					if ( ForkLgmon( lpbjinfo, dispname, modelname ) < 0 ){
-						fprintf( stderr, "ForkLgmon Error\n" );
-						goto onErr;
-					}
-#if DEBUGLOG
-					write_log( "RET_EXECLM\n" );
-#endif
+					check_lgmon_status(lpbjinfo, dispname, modelname);
 				}
 				else if ( ret == RET_ERROR ){
-#if DEBUGLOG
-					write_log( "RET_ERROR\n" );
-#endif
 					break;
 				}
 				else{
@@ -266,31 +243,40 @@ int main( int argc, char *argv[] )
 
 	/* error check */
 	if ( isprint == 0 ) goto onErr;
-	
+
 	/* Make Printing Data */
 	if ( MakeBJPrintData( lpbjinfo, &bjfltdevice, &cnclpapersize, &bjfltcolor ) < 0 ){
 		fprintf( stderr, "Err in MakeBJPrintData!\n" );	
 		goto onErr;
 	}
-	
+
 onErr:
-	WaitLgmon( lpbjinfo, isprint );
-	
-	WaitPrintUi( lpbjinfo );
+
+	/* and at last, send quitting SIGNAL to lgmon */
+	if (lpbjinfo->pid_lgmon != 0) {
+		int *status = 0;
+		int sigcode;
+
+		if( isprint && WriteData )
+			sigcode = SIGUSR1;	/* Cancel in printing		*/
+		else
+			sigcode = SIGTERM;	/* Cancel before printing	*/
+
+		kill(lpbjinfo->pid_lgmon, sigcode);			/* Send signal to lgmon */
+		/* 20001005 tora, modified to here */
+
+		waitpid(lpbjinfo->pid_lgmon, status, 0);	/* wait until lgmon is terminated */
+	}
+
+	if (lpbjinfo->bjfoption.lgmon == ON)
+		close(lpbjinfo->prn);
 
 	if ( lpbjinfo ) free( lpbjinfo );
 	
-#if DEBUGLOG
-	dispose_log( );
-#endif
-
 	return 0;
 }
 
 
-/*-------------------------------------------------------------*/
-/*  MakeBJPrintData                                            */
-/*-------------------------------------------------------------*/
 static short MakeBJPrintData
 (
 	LPBJFILTERINFO		lpbjinfo,
@@ -317,18 +303,8 @@ static short MakeBJPrintData
 	
 	CNCLNAMEINFO		cnclnameinfo;
 	BJFLTCOMSYSTEM		bjfltcom;
-	char 				tblPath[] = BJLIBPATH;
-	FILE __attribute__ ((unused)) *fp=NULL;
-	
-	/* dump plural pages. */
-	LPBJF_ROOT	root = NULL;
-	int	__attribute__ ((unused)) fd;
-	short		dumpp_ret;
+	char 				tblPath[] = "/usr/lib/bjlib";
 
-#if DEBUGLOG
-	fprintf(stderr,"LGMONPATH:%s\n",LGMONPATH);
-	fprintf(stderr,"PRINTUIPATH:%s\n",PRINTUIPATH);
-#endif
 
 	/****** CNCLInit ******/
 	memset( (CNCLData CPKPTR)&CnclData, 0, sizeof(CNCLData) );
@@ -373,12 +349,6 @@ static short MakeBJPrintData
 	cnclerr = CNCL_GetComSystem( &cnclnameinfo, (void *)tblPath, lpbjfltdevice, &bjfltcom );
 	if( cnclerr < 0 ) goto finish3;
 
-	/* dump plural pages. */
-	if( ( root = bjf_create_root() ) == NULL ) {
-		fprintf(stderr, "error : bjf_create_root\n");
-		goto finish3;
-	}
-	bjf_init_root(root, lpbjinfo->bjfoption.copies, lpbjinfo->bjfoption.collate, lpbjinfo->bjfoption.revprint);
 
 	/********************************************************************Make Printing Data */
 
@@ -389,81 +359,27 @@ static short MakeBJPrintData
 		---*/
 		set_position_parameter( lpbjinfo, lpcnclpapersize, &bjfltcom );
 
-		if ( MarginInit( &lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo, &lpbjinfo->bjfmgninfo) < 0 ) goto finish3;
-
-
-
 		/*---------
-			if bbox option is selected, 
+			if fit option is selected, output image is fit for current media size
+				if not, output image is fit for size reached by using resolution of its image
 		---------*/
-		if ( lpbjinfo->bjfoption.bbox.bbox_flag == BBOX_ON ){
-			if ( SetBbox( &lpbjinfo->bjfposimg,
-				lpbjinfo->bjfoption.bbox.value, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto finish3;
+		if ( lpbjinfo->bjfoption.fit == ON ){
+			if ( bjf_pos_imageresolution_fit( &lpbjinfo->bjfposimg,
+				&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo ) < 0 ) goto finish3;
 		}
-
-
-		/***************** Change image size <- "fit" & "percent" ***************/
-
-		/*---------
-			if fitshort option is selected, output image is fit for current media size
-		---------*/
-		if ( lpbjinfo->bjfoption.fit == FIT_SHORT ){
-			if ( ImageFitShort( &lpbjinfo->bjfposimg,
-				&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto finish3;
+		else {
+			if ( bjf_pos_imageresolution( &lpbjinfo->bjfposimg,
+				&lpbjinfo->bjfposprn,&lpbjinfo->bjfposinfo ) < 0 ) goto finish3;
 		}
-		else if ( lpbjinfo->bjfoption.fit == FIT_LONG ){
-			if ( ImageFitLong( &lpbjinfo->bjfposimg,
-				&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto finish3;
-		}
-		else{
-			if ( SetImageSize( &lpbjinfo->bjfposimg,
-				&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo) < 0 ) goto finish3;
-		}
-
-		/*---------
-			if percent option is selected, output image is scaled 
-		---------*/
-		if ( lpbjinfo->bjfoption.percent){
-		  if ( ImageScaling(&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo,lpbjinfo->bjfoption.percent ) < 0 ) goto finish3;
-		}
-
-
-		/***************** Change image location <- "center" ***************/
 
 		/*---------
 			if center option is selected, two parameter is culcurated, these are leftskip and topskip
 		---------*/
-		if ( lpbjinfo->bjfoption.location == LOCATION_CENTER ){
-			if ( ImageCenter( &lpbjinfo->bjfposimg,
-				&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto finish3;
-
+		if ( lpbjinfo->bjfoption.location == OPTLOC_CENTER ){
+			if ( bjf_pos_imageresolution_center( &lpbjinfo->bjfposimg,
+				&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo ) < 0 ) goto finish3;
 		}
 
-	
-		/***************** Cut image <- always ****************************/
-	
-		/* Extract the image to be printed. */
-		if ( ImageCut( &lpbjinfo->bjfposimg,
-				  &lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo,&lpbjinfo->bjfmgninfo ) < 0 ) goto finish3;
-
-
-
-#if DEBUG 
-		fprintf(stderr,"\n### AFTER CUT ###\n");
-		fprintf(stderr,"MaskWidth:%f\n",lpbjinfo->bjfposinfo.mask_width);
-		fprintf(stderr,"MaskHeight:%f\n",lpbjinfo->bjfposinfo.mask_height);
-		fprintf(stderr,"WidthOffset:%f\n",lpbjinfo->bjfposinfo.width_offset);
-		fprintf(stderr,"HeightOffset:%f\n",lpbjinfo->bjfposinfo.height_offset);
-		fprintf(stderr,"OutWidth:%f\n",lpbjinfo->bjfposinfo.out_width);
-		fprintf(stderr,"OutHeight:%f\n",lpbjinfo->bjfposinfo.out_height);
-		fprintf(stderr,"TopSkip:%f\n",lpbjinfo->bjfposinfo.topskip);
-		fprintf(stderr,"LeftSkip:%f\n",lpbjinfo->bjfposinfo.leftskip);
-		fprintf(stderr,"PageWidth[pixel]:%f\n",lpbjinfo->bjfposinfo.page_width);
-		fprintf(stderr,"TopMargin:%ld\n",lpbjinfo->bjfposprn.topmargin);
-		fprintf(stderr,"LeftMargin:%ld\n",lpbjinfo->bjfposprn.leftmargin);
-		fprintf(stderr,"CurPrnWidth[1/100mm]:%f\n",lpbjinfo->bjfmgninfo.curprn_width);
-		fprintf(stderr,"CurPrnHeight[1/100mm]:%f\n",lpbjinfo->bjfmgninfo.curprn_height);
-#endif
 
 		/*---------
 			get scaling parameter which bjfilter needs.
@@ -483,19 +399,6 @@ static short MakeBJPrintData
 		bjf_pos_leftskip( &lpbjinfo->bjfposinfo, &leftskip );
 		bjf_pos_topskip( &lpbjinfo->bjfposinfo, &topskip );
 		bjf_pos_page_width ( &lpbjinfo->bjfposinfo, &page_width );
-
-#if DEBUG 
-		fprintf(stderr,"\n*** set parameters ***\n");
-		fprintf(stderr,"MaskWidth:%ld\n",width);
-		fprintf(stderr,"MaskHeight:%ld\n",height);
-		fprintf(stderr,"WidthOffset:%ld\n",width_offset);
-		fprintf(stderr,"HeightOffset:%ld\n",height_offset);
-		fprintf(stderr,"OutWidth:%ld\n",ImageWidth);
-		fprintf(stderr,"OutHeight:%ld\n",ImageHeight);
-		fprintf(stderr,"TopSkip:%ld\n",topskip);
-		fprintf(stderr,"LeftSkip:%ld\n",leftskip);
-		fprintf(stderr,"PageWidth[pixel]:%ld\n",page_width);
-#endif
 
 		/*---
 			get bytes per pixel
@@ -549,16 +452,11 @@ static short MakeBJPrintData
 		}	
 		if ( CnclData.Work2Buf == CPKNULL ) goto onErr;
 	
-		/* dump plural pages. */
-		fd = 0;
-		if( ( fd = createTempfile(root) ) < 0 ) {
-			fprintf(stderr, "error : createTempfile\n");
-			goto onErr;
-		}
-		
+	
 		/****** CNCL Start page ******/
 		if ( (cnclerr = CNCL_StartPage( &CnclData )) != CNCL_OK ) goto onErr;
-		outCmdPlural( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn, fd, root );
+		outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
+
 
 		/*---
 			if topskip is, increase Vposition
@@ -642,10 +540,8 @@ static short MakeBJPrintData
 				if ( tmpRestLines < 0 ) goto onErr;
 
 				for ( i=0; i<CnclData.numBuf; i++ ){
-					/* dump plural pages. */
-					outCmdPlural( (CPKByte *)CnclData.rasterDataPtr[i].buf, CnclData.rasterDataPtr[i].size, lpbjinfo->prn, fd, root );
-					/* use rasterDataPtr. */
-					//outCmd( CnclData.rasterDataPtr[i].buf, CnclData.rasterDataPtr[i].size, lpbjinfo->prn );
+					//use rasterDataPtr.	2000/12/09
+					outCmd( CnclData.rasterDataPtr[i].buf, CnclData.rasterDataPtr[i].size, lpbjinfo->prn );
 					//outCmd( CnclData.RasterDatas[i].buf, CnclData.RasterDatas[i].size, lpbjinfo->prn );
 				}
 			
@@ -658,8 +554,7 @@ next:
 			TotalRest += Rest;
 			CurrPos += Quotient;
 			
-			if ( (( 2 * TotalRest + Rest ) >> 1) >= ImageHeight ){
-			//if ( TotalRest >= ImageHeight ){
+			if ( TotalRest >= ImageHeight ){
 				TotalRest -= ImageHeight;
 				CurrPos++;
 			}
@@ -675,17 +570,16 @@ next:
 
 			/*--- Data ---*/
 			for ( i=0; i<CnclData.numBuf; i++ ){
-				/* use rasterDataPtr. */
-				/* dump plural pages. */
-				outCmdPlural( (CPKByte *)CnclData.rasterDataPtr[i].buf, CnclData.rasterDataPtr[i].size, lpbjinfo->prn, fd, root );
-				/* outCmd( CnclData.rasterDataPtr[i].buf, CnclData.rasterDataPtr[i].size, lpbjinfo->prn ); */
-				/* outCmd( CnclData.RasterDatas[i].buf, CnclData.RasterDatas[i].size, lpbjinfo->prn ); */
+				//use rasterDataPtr.	2000/12/09
+				outCmd( CnclData.rasterDataPtr[i].buf, CnclData.rasterDataPtr[i].size, lpbjinfo->prn );
+				//outCmd( CnclData.RasterDatas[i].buf, CnclData.RasterDatas[i].size, lpbjinfo->prn );
 			}
 		
 			/****** CNCL Complete data ******/
 			if ( (cnclerr = CNCL_CompleteData( &CnclData )) != CNCL_OK ) goto onErr;
-			/* outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn ); */
+			outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
 
+			CnclData.PageNum += 1;
 		}while( restLines );
 
 		/*--- flush image ---*/
@@ -693,22 +587,10 @@ next:
 			
 		/****** CNCL End page ******/
 		if ( (cnclerr = CNCL_EndPage( &CnclData )) != CNCL_OK ) goto onErr;
-		/* dump plural pages. */
-		outCmdPlural( (CPKByte *)CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn, fd, root );
-		/* outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn ); */
+		outCmd( CnclData.outputBuffer, CnclData.outputSize, lpbjinfo->prn );
 
 		CnclData.PageNum += 1;
-
-		/* dump plural pages. */
-		if(fd>0){
-			close(fd);
-			fd = 0;
-		}
-		if( ( dumpp_ret = dumpPluralPages(root, lpbjinfo->prn) ) < 0 ) goto onErr;
 	}
-	
-	/* dump plural pages. */
-	if( ( dumpp_ret = dumpPluralPages_flush(root, lpbjinfo->prn) ) < 0 ) goto onErr;
 
 	if ( cnclerr < 0 ) goto onErr;
 	
@@ -722,12 +604,6 @@ onErr:
 finish3:
 	/*---close image---*/
 	bjf_image_close( &lpbjinfo->bjfimage );
-	
-	/* dump plural pages. */
-//	if(fd>0)close(fd);
-	while(bjf_dispose_root(root) > 0) {
-		removeTempfileCompletely(root);
-	}
 
 finish2:
 	/****** CNCL End job ******/
@@ -829,8 +705,7 @@ static short h_extend(
 		TotalRest += Rest;
 		CurrPos += Quotient;
 		
-		if ( (( 2 * TotalRest + Rest ) >> 1) >= dst_width ){
-		/* if ( TotalRest >= dst_width ){ */
+		if ( TotalRest >= dst_width ){
 			TotalRest -= dst_width;
 			CurrPos++;
 		}
@@ -847,35 +722,11 @@ static short h_extend(
 static void
 outCmd ( CPKByte CPKPTR buf, CPKUInt32 size, int prn )	/* to take file pointer */
 {
-	char *ptr;
-	int w_size;
-	int r_size;
-
-	if(size == 0) return; /* do nothing. */
-
-	ptr = (char *)buf;
-	r_size = size;
-	while( 1 ){
-		if(r_size == 0) return;
-		
-		if ( ReceiveSignal )
-			return;
-
-		w_size = write( prn, ptr, r_size );
-
-		if ( w_size <= 0 ){
-			w_size = 0;
-			continue;
-		}
-		WriteData = 1;
-		if ( w_size < r_size ){
-			r_size -= w_size;
-			ptr    += w_size;
-		}
-		else break;
+	if ( size && !ReceiveSignal ) { 
+		if( write ( prn, buf, size ) > 0 )
+			WriteData = 1;
 	}
-
-	return;
+	return ;
 }
 
 
@@ -1036,7 +887,6 @@ static void set_position_parameter( LPBJFILTERINFO lpbjinfo, LPCNCLPAPERSIZE lpc
 	bjf_pos_img_init( &lpbjinfo->bjfposimg );
 	bjf_pos_prn_init( &lpbjinfo->bjfposprn );
 	bjf_pos_init( &lpbjinfo->bjfposinfo );
-    bjf_margin_init( &lpbjinfo->bjfmgninfo );
 
 	/* get original image parameter */
 	bjf_image_get_width( &lpbjinfo->bjfimage, &img_width );
@@ -1053,7 +903,7 @@ static void set_position_parameter( LPBJFILTERINFO lpbjinfo, LPCNCLPAPERSIZE lpc
 	}
 	else{
 		/* set xresolution */
-		if ( lpbjinfo->bjfimage.xresolution == 0 ){
+		if ( lpbjinfo->bjfimage.xresolution < XDEFAULTRESOLUTION ){
 			bjf_pos_set_imgXres( &lpbjinfo->bjfposimg, XDEFAULTRESOLUTION );
 		}
 		else{
@@ -1061,11 +911,11 @@ static void set_position_parameter( LPBJFILTERINFO lpbjinfo, LPCNCLPAPERSIZE lpc
 		}
 
 		/* set yresolution */
-		if ( lpbjinfo->bjfimage.yresolution == 0 ){
+		if ( lpbjinfo->bjfimage.yresolution < YDEFAULTRESOLUTION ){
 			bjf_pos_set_imgYres( &lpbjinfo->bjfposimg, YDEFAULTRESOLUTION );
 		}
 		else{	/* use xresolution */
-			bjf_pos_set_imgYres( &lpbjinfo->bjfposimg, lpbjinfo->bjfimage.xresolution );
+			bjf_pos_set_imgYres( &lpbjinfo->bjfposimg, lpbjinfo->bjfimage.yresolution );
 		}
 	}
 	/* set printer parameter */
@@ -1075,10 +925,6 @@ static void set_position_parameter( LPBJFILTERINFO lpbjinfo, LPCNCLPAPERSIZE lpc
 	bjf_pos_set_prnYres( &lpbjinfo->bjfposprn, (double)lpbjfcom->bjfltInputVResolution  );
 	bjf_pos_set_prnwidth( &lpbjinfo->bjfposprn,lpcnclpapersize->nWidthPrintArea );
 	bjf_pos_set_prnheight( &lpbjinfo->bjfposprn,lpcnclpapersize->nLengthPrintArea  );
-
-	/* set paper size */
-	bjf_pos_set_paperwidth( &lpbjinfo->bjfmgninfo , lpcnclpapersize->nSelPaperWidth );
-	bjf_pos_set_paperlength( &lpbjinfo->bjfmgninfo , lpcnclpapersize->nSelPaperLength );
 } 
 
 static void set_cncl_colorinfo( CNCLPtr lpcncldata, LPBJFLTCOLORSYSTEM lpbjfltcolor )
@@ -1109,7 +955,6 @@ static void display_cncl_printerinfo( CNCLPtr lpcncldata )
 	fprintf( stderr, "lpcncldata->MediaType:%d\n", lpcncldata->MediaType);
 	fprintf( stderr, "lpcncldata->PaperSize:%d\n", lpcncldata->PaperSize);
 	fprintf( stderr, "lpcncldata->MediaSupply:%d\n", lpcncldata->MediaSupply);
-	fprintf( stderr, "lpcncldata->PaperGap:%d\n", lpcncldata->PaperGap);
 	fprintf( stderr, "lpcncldata->BinMethod:%d\n", lpcncldata->BinMethod);
 	fprintf( stderr, "lpcncldata->Grayscale:%d\n", lpcncldata->Grayscale);
 	fprintf( stderr, "lpcncldata->PrintQuality:%d\n", lpcncldata->PrintQuality);
@@ -1147,17 +992,48 @@ static void display_pos_info( LPBJF_POSINFO lpbjfpos )
 {
 	fprintf( stderr, "\n" );
 	fprintf( stderr, "< Print Position Paramter >\n" );
-	fprintf( stderr, "mask_width:%f\n", lpbjfpos->mask_width );
-	fprintf( stderr, "mask_height:%f\n", lpbjfpos->mask_height );
-	fprintf( stderr, "width_offset:%f\n", lpbjfpos->width_offset );
-	fprintf( stderr, "height_offset:%f\n", lpbjfpos->height_offset );
-	fprintf( stderr, "out_width:%f\n", lpbjfpos->out_width );
-	fprintf( stderr, "out_height:%f\n", lpbjfpos->out_height );
-	fprintf( stderr, "leftskip:%f\n", lpbjfpos->leftskip );
-	fprintf( stderr, "topskip:%f\n", lpbjfpos->topskip );
-	fprintf( stderr, "page_width:%f\n",lpbjfpos->page_width );
+	fprintf( stderr, "mask_width:%ld\n", lpbjfpos->mask_width );
+	fprintf( stderr, "mask_height:%ld\n", lpbjfpos->mask_height );
+	fprintf( stderr, "width_offset:%ld\n", lpbjfpos->width_offset );
+	fprintf( stderr, "height_offset:%ld\n", lpbjfpos->height_offset );
+	fprintf( stderr, "out_width:%ld\n", lpbjfpos->out_width );
+	fprintf( stderr, "out_height:%ld\n", lpbjfpos->out_height );
+	fprintf( stderr, "leftskip:%ld\n", lpbjfpos->leftskip );
+	fprintf( stderr, "topskip:%ld\n", lpbjfpos->topskip );
+	fprintf( stderr, "page_width:%ld\n",lpbjfpos->page_width );
 }
 #endif
+
+static void check_lgmon_status(LPBJFILTERINFO bjfinfo, char *dispname, char *modelname)
+{
+	char *arg_noui[] = { LGMONPATH, "--model", modelname, NULL };
+	char *arg_ui[] = { LGMONPATH, "--gui", "--display", dispname, "--model", modelname, NULL };
+
+	if ( bjfinfo->bjfoption.lgmon == ON ) {
+		if  ( bjfinfo->pid_lgmon == 0 ) {			/* lgmon is not invoked yet */
+			bjfinfo->pid_lgmon = fork();
+
+			if (bjfinfo->pid_lgmon == 0) {			/* child process */
+				close( 0 );
+				dup( bjfinfo->pipefds[0] );			/* duplicate input fd to stdin */
+				close( bjfinfo->pipefds[0] );		/* close input and output fd */
+				close( bjfinfo->pipefds[1] );
+
+				if ( bjfinfo->bjfoption.ui == ON )
+					execv( LGMONPATH, arg_ui );
+				else
+					execv( LGMONPATH, arg_noui );
+			}
+			else {									/* parent process */
+				close( bjfinfo->pipefds[0] );		/* close input fd */
+				return;
+			}
+		}
+		else {										/* lgmon is already invoked */
+			kill(bjfinfo->pid_lgmon, SIGUSR2);
+		}
+	}
+}
 
 static short mirror_raster( CPKByte CPKPTR buf, long width, short bpp )
 {
@@ -1190,325 +1066,3 @@ onErr:
 	return result;	
 }
 
-
-static void SetPrinterFd( LPBJFILTERINFO lpbjfinfo )
-{
-	OutputFD = lpbjfinfo->prn = 1;
-}
-
-
-static short ForkLgmon( LPBJFILTERINFO lpbjfinfo, char *dispname, char *modelname )
-{
-	char *arg_noui[] = { LGMONPATH, "--model", modelname, NULL };
-	char *arg_ui[] = { LGMONPATH, "--gui", "--display", dispname, "--model", modelname, NULL };
-	char	small_modelname[256],lgmonname[256];
-	short	i;
-	size_t __attribute__ ((unused)) result1;
-
-	for( i=0; i<strlen(modelname); i++ )	small_modelname[i] = tolower(modelname[i]);
-	small_modelname[i] = '\0';
-
-	snprintf(lgmonname, sizeof(lgmonname), "%s%s",LGMONPATH,small_modelname);
-
-	if ( lpbjfinfo->bjfoption.lgmon == ON ) {
-		if  ( lpbjfinfo->pid_lgmon == 0 ) {			/* lgmon is not invoked yet */
-
-			result1 = pipe( lpbjfinfo->pipefds );
-			lpbjfinfo->pid_lgmon = fork();
-
-			if ( lpbjfinfo->pid_lgmon == 0 ) {		/* child process */
-				dup2( lpbjfinfo->pipefds[0], 0 );	/* duplicate input fd to stdin */
-				close( lpbjfinfo->pipefds[0] );		/* close input fd */
-				close( lpbjfinfo->pipefds[1] );		/* close output pipefds */
-
-				if ( lpbjfinfo->bjfoption.ui == ON )
-					execv( lgmonname, arg_ui );
-				else
-					execv( lgmonname, arg_noui );
-			}
-			else {									/* parent process */
-				OutputFD = lpbjfinfo->prn = lpbjfinfo->pipefds[1];
-				close( lpbjfinfo->pipefds[0] );		/* close input fd */
-				lpbjfinfo->pipefds[0] = 0;
-			}
-		}
-		else {										/* lgmon is already invoked */
-			kill( lpbjfinfo->pid_lgmon, SIGUSR2 );
-		}
-	}
-
-	return 0;
-}
-
-
-static void WaitLgmon( LPBJFILTERINFO lpbjfinfo, short isPrint )
-{
-	int *status = 0;
-	int sigcode = 0;
-	
-	if ( isPrint && WriteData ) sigcode = SIGUSR1;		/* Cancel in printing */
-	else						sigcode = SIGTERM;		/* Cancel brefore printing */
-
-	if ( lpbjfinfo->pid_lgmon ){
-		kill( lpbjfinfo->pid_lgmon, sigcode );
-		waitpid( lpbjfinfo->pid_lgmon, status, 0 );
-	}
-
-	close( lpbjfinfo->prn );
-
-	return;	
-}
-
-
-static void WaitPrintUi( LPBJFILTERINFO lpbjfinfo )
-{
-	int *status = 0;
-
-	if ( lpbjfinfo->pid_printui != 0 ){
-		kill( lpbjfinfo->pid_printui, SIGTERM );
-		waitpid( lpbjfinfo->pid_printui, status, 0 );
-	}
-
-	return;	
-}
-
-/***************************************/
-/*   dump plural pages functions       */
-/***************************************/
-/*-------------------------------------------------------------*/
-/* write command to prn and fd.                            */
-/*-------------------------------------------------------------*/
-static void outCmdPlural( CPKByte CPKPTR buf, unsigned long size, int prn, int fd, LPBJF_ROOT root )
-{
-	if(root->isRPrint == REVPRINT_OFF)
-		outCmd( buf, size, prn ); /* write to prn. */
-
-	if(root->Copies > 1 || root->isRPrint == REVPRINT_ON)
-		if(fd>0)outCmd( buf, size, fd ); /* write to tempfile. */
-}
-
-
-/*-------------------------------------------------------------*/
-/* create tempfile and put queue if necessary.                 */
-/*-------------------------------------------------------------*/
-static int createTempfile(LPBJF_ROOT root)
-{
-	char name[32];
-	int fd = -1;
-	LPBJF_NODE	node = NULL;
-
-	if(root->Copies > 1 || root->isRPrint == REVPRINT_ON) {
-		/* create and open tempfile. */
-		memset(name,0,sizeof(name));
-		strncpy( name, BJFTEMPFILE, sizeof(name) );
-		name[sizeof(name) - 1] = '\0';
-		if( ( fd = mkstemp(name) ) < 0 ) return -1; /* tempfile open error. */
-
-		/* create and put queue. */
-		if( ( node = bjf_new_q( name ) ) == NULL ) goto onErr;
-		if( ( node = bjf_put_q( root, node ) ) == NULL ) goto onErr;
-	}
-	else
-		fd = 0;
-	
-	/* no error */
-	return fd;
-	
-onErr:
-	/* queue error */
-	if(fd>0)close(fd);
-	return -2;
-}
-
-
-/*-------------------------------------------------------------*/
-/* remove tempfile and dispose queue completely.               */
-/*-------------------------------------------------------------*/
-static void removeTempfileCompletely(LPBJF_ROOT root)
-{
-	while(root->head != NULL)
-	{
-		unlink(root->head->fileName);
-		bjf_dispose_q(root,BJF_HEAD_NODE);
-	}
-}
-
-
-
-/*-------------------------------------------------------------*/
-/* dump singular page. page data read from tempfile.           */
-/*-------------------------------------------------------------*/
-static short dumpPage(LPBJF_NODE node, int prn)
-{
-	CPKByte	buf[BUFSIZ];
-	int		fd = 0;
-	int		r_size = 0;
-	short	ret = -1;
-	
-	if(node==NULL)return 0;
-	
-	if( node->curCopies > 0 ){
-		if ( (fd = open( node->fileName, O_RDONLY )) < 0 ){
-			/* perror( "open" ); */
-			return -2;	
-		}
-		
-		while ( (r_size = read( fd, buf, BUFSIZ)) > 0 ){
-			if (ReceiveSignal == 1)	/* Abort from lgmon */
-				goto onErr;
-			outCmd( buf, r_size, prn );  /* write( prn, buf, r_size ); */
-		}
-		node->curCopies--;
-	}
-	ret = node->curCopies;
-	
-onErr:
-	if(fd>0)close(fd);
-	return ret;
-}
-
-
-/*-------------------------------------------------------------*/
-/* dump plural pages.                                          */
-/*-------------------------------------------------------------*/
-static short dumpPluralPages( LPBJF_ROOT root, int prn )
-{
-	short ret = 0;
-	
-	if(!bjf_exist_q(root))
-		return ret; /* do nothing. */
-	
-	if(root->isRPrint == REVPRINT_ON)
-		return ret; /* do nothing. */
-
-	if(root->isCollate == COLLATE_ON)
-		return ret; /* do nothing. */
-
-	/* 1 page written to prn already. */
-	root->head->curCopies--;
-	
-	while( ( ret = dumpPage(root->head, prn) ) != 0 ) {
-		if(ret < 0)goto onErr;
-	}
-	
-onErr:
-	/* remove tempfile and dispose head-queue. */
-	if( bjf_exist_q(root) ) {
-		unlink(root->head->fileName);
-		bjf_dispose_q(root,BJF_HEAD_NODE);
-	}
-	
-	return ret;
-}
-
-
-/*-------------------------------------------------------------*/
-/* flush and dump plural pages.                                */
-/*-------------------------------------------------------------*/
-static short dumpPluralPages_flush( LPBJF_ROOT root, int prn )
-{
-	LPBJF_NODE	node = NULL, next_node = NULL;
-	short	ret = 0;
-
-	/* tail -> head */
-	if(root->isRPrint == REVPRINT_ON) { 
-		if(root->isCollate == COLLATE_ON) {
-			while( bjf_exist_q(root) ) {
-				
-				node = root->tail;
-				while( node != NULL ) {
-					next_node = node->prev;
-					
-					if( (ret = dumpPage(node, prn)) == 0 ) {
-						/* remove tempfile and dispose tail-queue. */
-						unlink(node->fileName);
-						bjf_dispose_q(root,BJF_TAIL_NODE);
-					}
-					else if (ret < 0) goto onErr;
-					
-					node = next_node;
-				}
-			}
-		}
-		else {
-			while( bjf_exist_q(root) ) {
-				node = root->tail;
-				while( (ret = dumpPage(node, prn)) != 0 ) {
-					if (ret < 0) goto onErr;
-				}
-				/* remove tempfile and dispose tail-queue. */
-				unlink(node->fileName);
-				bjf_dispose_q(root,BJF_TAIL_NODE);
-			}
-		}
-	}
-	/* head -> tail */
-	else {
-		/* 1 page written to prn already. */
-		for(node = root->head; node != NULL; node = node->next) node->curCopies--;
-
-		if(root->isCollate == COLLATE_ON) {
-			while( bjf_exist_q(root) ) {
-			
-				node = root->head;
-				while( node != NULL ) {
-					next_node = node->next;
-					
-					if( (ret = dumpPage(node, prn)) == 0 ) {
-						/* remove tempfile and dispose head-queue. */
-						unlink(node->fileName);
-						bjf_dispose_q(root,BJF_HEAD_NODE);
-					}
-					else if (ret < 0) goto onErr;
-					
-					node = next_node;
-				}
-			}
-		}
-		else {
-			while( bjf_exist_q(root) ) {	/* root is not NULL */
-				node = root->head;
-				while( (ret = dumpPage(node, prn)) != 0 ) {
-					if (ret < 0) goto onErr;
-				}
-				/* remove tempfile and dispose head-queue. */
-				unlink(node->fileName);
-				bjf_dispose_q(root,BJF_HEAD_NODE);
-			}
-		}
-	}
-	ret = 0;
-
-onErr:
-	return ret;
-}
-
-/*-------------------------------------------------------------*/
-#if DEBUGLOG
-
-void create_log(void)
-{
-    FILE *path;
-    int fd;
-
-	strncpy(log_path_name, DEBUGLOGFILE, sizeof(log_path_name));
-	log_path_name[sizeof(log_path_name)-1] = '\0';
-	fd = mkstemp(log_path_name);
-	if (fd < 0) return;
-	close(fd);
-
-	path = fopen(log_path_name, "r+");
-
-	log_path = path;
-	write_log("**********  LOG start  ***********\n");
-}
-
-void write_log(char *str)
-{
-	if(log_path == 0)
-		return ;
-
-	fwrite(str, 1, strlen(str), log_path);
-	fflush(log_path);
-}
-#endif

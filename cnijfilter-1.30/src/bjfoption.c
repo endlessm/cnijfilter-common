@@ -1,11 +1,12 @@
 /*
- *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
- *  All Rights Reserved.
+ *  Canon Bubble Jet Print Filter for Linux
+ *  Copyright CANON INC. 2001 
+ *  All Right Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +15,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -37,110 +38,44 @@
 #include "bjfoption.h"
 #include "bjfrcaccess.h"
 #include "uitypes.h"
-#include "bjipc.h"
 
 #define  DEFINE_GLOBALS
 #include "psize.h"
 #include "bjfversion.h"
-#include "bjfpath.h"
-
-short SetCmdOption(int, char **, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char *, char *, char *);
-static void usage( char * );
-static void init_optioninfo( LPBJF_OPTINFO lpbjfoption );
-static int cmdlinesw(poptContext *, OPT *, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char *, char *, char *, char *);
-static void MakeModelnameConfname(  char *, char *, char *);
-static short ParseBbox(char *bbox , LPBJF_OPTINFO lpbjf_optinfo);
-
-static long convert_str_to_long(char *);
 
 const char bjlibdir[] = BJLIBPATH;
-
-const char usage_bjfiltergui[]		= "Usage: bjfilter";
-const char usage_bjfilter[]			= "       bjfilter";
-const char usage_guimode[]			= " --gui (gui mode)\n";
-const char usage_switches[]			= " [switches] [file]\n\n";
 
 const char usage_str0[]		= "Usage: bjfilter --gui --model modelname   (gui mode)\n";
 const char usage_str1[]		= "       bjfilter --model modelname [switches] [file]\n\n";
 
-
-const char usage_str_ime[]	= "       switches: [ --imageres     1 - 32767             ]\n";
-const char usage_str_car[]	= "                 [ --cartridge    cartridgetype         ]\n";
-const char usage_str_med[]	= "                 [ --media        mediatype             ]\n";
-const char usage_str_hal[]	= "                 [ --halftoning   halftonetype          ]\n";
-const char usage_str_qua[]	= "                 [ --quality      1 - 5                 ]\n";
-const char usage_str_gra[]	= "                 [ --grayscale                          ]\n";
-const char usage_str_pap[]	= "                 [ --papersize    size                  ]\n";
-const char usage_str_pal[]	= "                 [ --paperload    position              ]\n";
-const char usage_str_bor[]	= "                 [ --borderless                         ]\n";
-const char usage_str_ext[]	= "                 [ --extension    0 - 3                 ]\n";
-const char usage_str_loc[]	= "                 [ --location     position              ]\n";
-const char usage_str_fit[]	= "                 [ --fit                                ]\n";
-const char usage_str_ful[]	= "                 [ --full                               ]\n";
-const char usage_str_per[]	= "                 [ --percent      20 - 400              ]\n";
-const char usage_str_cop[]	= "                 [ --copies       1 - 999               ]\n";
-const char usage_str_int[]	= "                 [ --renderintent intent                ]\n";
-const char usage_str_gam[]	= "                 [ --gamma        1.4/1.8/2.2           ]\n";
-const char usage_str_bac[]	= "                 [ --balance_c    -50  -   50           ]\n";
-const char usage_str_bam[]	= "                 [ --balance_m    -50  -   50           ]\n";
-const char usage_str_bay[]	= "                 [ --balance_y    -50  -   50           ]\n";
-const char usage_str_bak[]	= "                 [ --balance_k    -50  -   50           ]\n";
-const char usage_str_den[]	= "                 [ --density      -50  -   50           ]\n";
-const char usage_str_gap[]	= "                 [ --papergap     gaptype               ]\n";
-
+const char usage_str2[]		= "       switches: [ --cartridge   cartridge  ]\n";
+const char usage_str3[]		= "                 [ --location    location   ]\n";
+const char usage_str4[]		= "                 [ --media       mediatype  ]\n";
+const char usage_str5[]		= "                 [ --halftoning  halftoning ]\n";
+const char usage_str6[]		= "                 [ --paperload   cartridge  ]\n";
+const char usage_str7[]		= "                 [ --quality     1 - 5      ]\n";
+const char usage_str8[]		= "                 [ --grayscale              ]\n";
+const char usage_str9[]		= "                 [ --banner                 ]\n";
 
 /*-------------------------------------------------------------*/
 /* Display usage                                               */
 /*-------------------------------------------------------------*/
-void usage( char *modelname )
+void usage( void )
 {
-	char	small_tmpname[64],tmpname[64],useagebjfilter[64],useagebjfiltergui[64];
-	short	i;
-
-	for( i=0; i<sizeof(small_tmpname); i++)
-		small_tmpname[i] = tolower(modelname[i]);
-
-	snprintf(tmpname, sizeof(tmpname) , "%s%s",usage_bjfiltergui,small_tmpname);
-	snprintf(tmpname, sizeof(tmpname) ,"%s%s",usage_bjfilter,small_tmpname);
-
-	if( *modelname == '\0' ){
-		snprintf(useagebjfiltergui,sizeof(useagebjfiltergui), "%s%s",usage_str0,"");
-		snprintf(useagebjfilter,sizeof(useagebjfilter), "%s%s",usage_str1,"");
-	} 
-	else{
-		snprintf(useagebjfiltergui, sizeof(useagebjfiltergui),"%s%s",tmpname,usage_guimode);
-		snprintf(useagebjfilter, sizeof(useagebjfilter),"%s%s",tmpname,usage_switches);
-	}
-
-	fprintf(stderr, "\n%s\n%s\n%s\n\n%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s\n",
+	fprintf(stderr, "\n%s\n%s\n%s\n\n%s%s%s%s%s%s%s%s",
 					VERSION_STR,
 					COPYRIGHT_STR0,
 					COPYRIGHT_STR1,
-					useagebjfiltergui,
-					useagebjfilter,
-					usage_str_ime,
-					usage_str_car,
-					usage_str_med,
-					usage_str_hal,
-					usage_str_qua,
-					usage_str_gra,
-					usage_str_pap,
-					usage_str_pal,
-					usage_str_bor,
-					usage_str_ext,
-					usage_str_loc,
-					usage_str_fit,
-					usage_str_ful,
-					usage_str_per,
-					usage_str_cop,
-					usage_str_int,
-					usage_str_gam,
-					usage_str_bac,
-					usage_str_bam,
-					usage_str_bay,
-					usage_str_bak,
-					usage_str_den,
-					usage_str_gap
+					usage_str0,
+					usage_str1,
+					usage_str2,
+					usage_str3,
+					usage_str4,
+					usage_str5,
+					usage_str6,
+					usage_str7
+//					usage_str8,
+//					usage_str9
 	);
 }
 
@@ -162,9 +97,9 @@ static short GetPaperSize( short id, long *width, long *height )
 	short paper = 0;
 	short result = -1;
 
-	while ((id != PaperTbl[paper][PSID]) && (PaperTbl[paper][PSID] != -1)) paper++;
+	while( (id != PaperTbl[paper][PSID]) && (id != -1) ) paper++;
 
-	if ( PaperTbl[paper][PSID] == -1 ) goto onErr;
+	if ( id == -1 ) goto onErr;
 
 	*width = PaperTbl[paper][YOKO];
 	*height = PaperTbl[paper][TATE];
@@ -289,8 +224,6 @@ short SetCurrentFlag(LPCNCLDB lpdbTop, short dbsize, short id, short value)
 	for (i=0; i<dbsize; i++, lpdb++) {
 		if (lpdb->nObjectID == id) {
 			if (lpdb->nValue == value) {
-				if(lpdb->disable == 1)
-					break;
 				lpdb->curset = 1;
 				ret = i;
 				/* printf("nObjectID %d, nValue %d\n", id, value); */
@@ -422,99 +355,6 @@ short GetAllFlags(LPCNCLDB lpdbTop, short dbsize, short id, short value)
 /*-------------------------------------------------------------*/
 /* Option analization entry function                           */
 /*-------------------------------------------------------------*/
-short SetCmdOption( 
-	int 				cargc,
-	char 				*cargv[],
-	LPBJF_OPTINFO		lpbjfoption,
-	LPBJFLTCOLORSYSTEM	bjcolor,
-	LPBJFLTDEVICE		bjdevice,
-	LPCNCLPAPERSIZE		psize,
-	char 				*dispname,
-	char 				*filename,
-	char 				*modelname
-)
-{
-	OPT					opt;
-	poptContext			optcon;
-	char				confname[256];
-	short __attribute__ ((unused))	first_modelstrnum,i;
-	short				ret;
-
-	struct poptOption optionsTable[] = {
-		{ OPTSTRGUI, 			0,		POPT_ARG_NONE,		&opt.gui,				OPTGUI 		},
-		{ OPTSTRLOCATION, 		0,		POPT_ARG_STRING,	&opt.location,			OPTLOCATION },
-		{ OPTSTRMODEL, 			'M',	POPT_ARG_STRING,	&opt.model,				OPTMODEL	},
-		{ OPTSTRCARTRIDGE,		'c',	POPT_ARG_STRING,	&opt.cartridge,			OPTCARTRIDGE},
-		{ OPTSTRMEDIA,			'm',	POPT_ARG_STRING,	&opt.media,				OPTMEDIA	},
-		{ OPTSTRQUALITY,		'q',	POPT_ARG_STRING,	&opt.quality,			OPTQUALITY	},
-		{ OPTSTRGRAY,			'g',	POPT_ARG_NONE,		&opt.grayscale,			OPTGRAY		},
-		{ OPTSTRHALFTONE, 		0,		POPT_ARG_STRING,	&opt.halftoning,		OPTHALFTONE	},
-		{ OPTSTRLOAD,			0,		POPT_ARG_STRING,	&opt.paperload,			OPTLOAD		},
-		{ OPTSTRCORRECT,		0,		POPT_ARG_STRING,	&opt.correctionmode,	OPTCORRECT	},
-		{ OPTSTRRENDER,			0,		POPT_ARG_STRING,	&opt.renderintent,		OPTRENDER	},
-		{ OPTSTRGAMMA,			0,		POPT_ARG_STRING,	&opt.gamma,				OPTGAMMA	},
-		{ OPTSTRSOURCE,			0,		POPT_ARG_STRING,	&opt.imagesource,		OPTSOURCE	},
-		{ OPTSTRBALC,			0,		POPT_ARG_INT,		&opt.balance_c,			OPTBALC		},
-		{ OPTSTRBALM,			0,		POPT_ARG_INT,		&opt.balance_m,			OPTBALM		},
-		{ OPTSTRBALY,			0,		POPT_ARG_INT,		&opt.balance_y,			OPTBALY		},
-		{ OPTSTRBALK,			0,		POPT_ARG_INT,		&opt.balance_k,			OPTBALK		},
-		{ OPTSTRDENSITY,		0,		POPT_ARG_INT,		&opt.density,			OPTDENSITY	},
-		{ OPTSTRPSIZE,			'p',	POPT_ARG_STRING,	&opt.papersize,			OPTPSIZE	},
-		/*   to support 1.) add a switch --lgmon to invoke Language monitor (and output data thru a pipe). */
-		/*              2.) add an option --imageres, to cover with the bug in the bmp filter in           */
-		/*                  previous version of ghostscript. (lacking image resolution information)        */
-		/*              3.) add --display, to specify X server to show printui/stamon                      */
-		{ OPTSTRLGMON,			0,		POPT_ARG_NONE,		&opt.lgmon,				OPTLGMON	},
-		{ OPTSTRIMGRES,			0,		POPT_ARG_INT,		&opt.imageres,			OPTIMGRES	},
-		{ OPTSTRDISPLAY,		0,		POPT_ARG_STRING,	&opt.display,			OPTDISPLAY	},
-		{ OPTSTRFIT,            0,	    POPT_ARG_NONE,      &opt.fit,               OPTFIT      },
-		{ OPTSTRINTVER,         0,      POPT_ARG_NONE,      &opt.internalversion,   OPTINTVER   },
-		{ OPTSTRBORDERLESS,		0,		POPT_ARG_NONE,		&opt.borderless,		OPTBORDERLESS	},
-		{ OPTSTRBBOX,			0,		POPT_ARG_STRING,	&opt.bbox,				OPTBBOX		},
-		{ OPTSTREXTENSION,		0,		POPT_ARG_INT,		&opt.extension,			OPTEXTENSION},
-		{ OPTSTRPERCENT,		0,		POPT_ARG_INT,		&opt.percent,			OPTPERCENT	},
-		{ OPTSTRCOPIES, 		0,		POPT_ARG_INT,		&opt.copies,			OPTCOPIES	},
-		{ OPTSTRREVPRINT, 		0,		POPT_ARG_NONE,		&opt.revprint,			OPTREVPRINT	},
-		{ OPTSTRCOLLATE, 		0,		POPT_ARG_NONE,		&opt.collate,			OPTCOLLATE	},
-		{ OPTSTRFULL,			0,      POPT_ARG_NONE,		&opt.full,				OPTFULL		},
-		{ OPTSTRPAPERWIDTH,		0,      POPT_ARG_STRING,	&opt.paperwidth,		OPTPAPERWIDTH	},
-		{ OPTSTRPAPERHEIGHT,	0,      POPT_ARG_STRING,	&opt.paperheight,		OPTPAPERHEIGHT	},
-		{ OPTSTRPAPERGAP,		0,      POPT_ARG_STRING,	&opt.papergap,			OPTPAPERGAP	},
-		{ NULL,					0,		0,					NULL,					0 			}
-	};
-
-
-	/*--- Analyze command line ---*/
-	init_optioninfo( lpbjfoption );
-	
-	optcon = poptGetContext( NULL, cargc, (const char **)cargv, optionsTable, 0 );
-	
-	memset(confname , 0x00 , sizeof(confname));
-	MakeModelnameConfname( cargv[0], modelname, confname );
-	first_modelstrnum = strlen(modelname);
-
-	if ( ( ret = cmdlinesw( &optcon, &opt, lpbjfoption, bjcolor, bjdevice, psize, dispname, filename, confname, modelname ) ) < 0 ){
-		if(ret == -1)
-			usage( modelname );
-		goto onErr;
-	}
-
-	if( optcon ) poptFreeContext( optcon );
-	return (first_modelstrnum);
-	
-onErr:
-	if( optcon ) poptFreeContext( optcon );
-
-	return -1;
-
-
-}	
-
-
-
-/*-------------------------------------------------------------*/
-/* Set option informations                                     */
-/*-------------------------------------------------------------*/
 int cmdlinesw(
 	poptContext			*optcon,
 	OPT					*opt,
@@ -523,39 +363,28 @@ int cmdlinesw(
 	LPBJFLTDEVICE		bjdevice,
 	LPCNCLPAPERSIZE		psize,
 	char				*dispname,
-	char 				*fname,
-	char 				*confname,
-	char 				*modelname )
+	char 				*fname )
 {
-	int				rc,setopt[4];
+	int				rc, setopt;
 	int				id;
 	UIDB			uidb;
 	short			DefaultGamma = 0;
-	short __attribute__ ((unused)) i,j;
-	char			bkup_modelname[24];
-	short			count_switch=0;
-	short			ret;
 
-	for(i=0;i<4;i++){
-		setopt[i]=0;
-	}
+	setopt = 0;
 	lpbjf_optinfo->ui = OFF;
 	uidb.lpdbTop = NULL;
 
 	/* analize commandline arguments with popt, then set option values into struct opt.*/
 	while ((rc = poptGetNextOpt(*optcon)) > 0) {
-		setopt[OPTINDEX(rc)] |= OPTBIT(rc);
-	}
-
-	if( *modelname != '\0' )
-		strcpy(bkup_modelname, modelname);
-	else if (setopt[OPTINDEX(OPTMODEL)] & OPTBIT(OPTMODEL)) {
-		strcpy(bkup_modelname, opt->model);
-		strcpy(modelname, opt->model);
-	}
-	else {
-		fprintf(stderr, "Error: printer model has to be specified with --model option\n");
-		goto onError;
+		switch (rc) {
+			case 'u':
+				// set ui flag to invoke GUI here.
+				lpbjf_optinfo->ui = ON;
+				break;
+			default:
+				setopt |= rc;
+				break;
+		}
 	}
 
 	if (rc < -1) {
@@ -566,7 +395,7 @@ int cmdlinesw(
 	}
 
 	/* Display Internal Version */
-	if (setopt[OPTINDEX(OPTINTVER)] & OPTBIT(OPTINTVER)) {
+	if ( setopt & OPTINTVER ){
 		internalversion();
 		goto onError;
 	}
@@ -590,43 +419,55 @@ int cmdlinesw(
 
 	/* ModelID Check is moved here.                                */
 	/* because this option must be specified in any operation mode */
-	if ((id = bjf_get_resource_id( confname, OPTSTRMODEL, bkup_modelname )) == BJFRCACCESSERROR ){
-		fprintf(stderr, "Error: invalid printer model name\n");
+	if (setopt & OPTMODEL) {
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRMODEL, opt->model )) == BJFRCACCESSERROR ){
+			fprintf(stderr, "Error: invalid printer model name\n");
+			goto onError;
+		}
+	}
+	else {
+		fprintf(stderr, "Error: printer model has to be specified with --model option\n");
 		goto onError;
 	}
 
 	lpbjf_optinfo->modelid = id;					/* save ModelID to pass to printui */
 
 	/* Specify Image resolution */
-	if (setopt[OPTINDEX(OPTIMGRES)] & OPTBIT(OPTIMGRES)) {
-		/* resolution limit */
-		if ((opt->imageres < 1) || (opt->imageres > 32767)) {
-			fprintf(stderr, "Error: invalid image resolution \n");
-			goto onError;
-		}
+	if (setopt & OPTIMGRES) {
 		lpbjf_optinfo->imageres = (short)opt->imageres;
 	}
 
     /* Invoke Language Monitor ? */
-	if (setopt[OPTINDEX(OPTLGMON)] & OPTBIT(OPTLGMON)) {
+	if (setopt & OPTLGMON) {
 		lpbjf_optinfo->lgmon = ON;
 	}
 
-	/* -- Check --bbox option */ 
-	if (setopt[OPTINDEX(OPTBBOX)] & OPTBIT(OPTBBOX)) {
-		if( ParseBbox(opt->bbox , lpbjf_optinfo) < 0){
-			fprintf(stderr,"Error:invalid bbox value\n");
+	/* -- Check --fit / -F option before location */
+	if (setopt & OPTFIT) {
+		lpbjf_optinfo->fit = ON;
+	}
+
+	/* -- changed the place of code to work in gui mode, and work with --fit option */
+    /* Location */
+	if (setopt & OPTLOCATION) {
+		if (strcmp(opt->location, "center") == 0)
+			lpbjf_optinfo->location = OPTLOC_CENTER;
+
+		else if (strcmp(opt->location, "upperleft") == 0)
+			lpbjf_optinfo->location = OPTLOC_UPPERLEFT;
+
+		else {
+			fprintf(stderr, "Error: invalid location option\n");
 			goto onError;
 		}
-		lpbjf_optinfo->bbox.bbox_flag = BBOX_ON;
 	}
 
 	/* if GUI mode, then return here */
-	if (setopt[OPTINDEX(OPTGUI)] & OPTBIT(OPTGUI)) {
-		lpbjf_optinfo->ui=ON;
+	if (lpbjf_optinfo->ui == ON) {
+
 		/* if --display option is set, then pass the argument to dispname */
 		/* and if not, set "locahost:0.0", by default                     */
-		if (setopt[OPTINDEX(OPTDISPLAY)] & OPTBIT(OPTDISPLAY)) {
+		if (setopt & OPTDISPLAY) {
 			strcpy(dispname, opt->display);
 		}
 		else {
@@ -652,19 +493,11 @@ int cmdlinesw(
 		uidb.lpdbTop = (LPCNCLDB)malloc(sizeof(CNCLDB) * uidb.dbsize);
 		uidb.ModelID = id;
 
-		/* Check errors. */
-		if ( CNCL_GetEntries( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop) < 0) {
-				fprintf(stderr, "Error: CNCL_GetEntries\n");
-				goto onError;
-		}
-		if ( CNCL_GetDefaults( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize) < 0) {
-				fprintf(stderr, "Error: CNCL_GetDefaults\n");
-				goto onError;
-		}
-		if ( CNCL_InitMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize) < 0) {
-				fprintf(stderr, "Error: CNCL_InitMenulink\n");
-				goto onError;
-		}
+		CNCL_GetEntries( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop);
+		CNCL_GetDefaults( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
+
+		SetCurrentFlag( uidb.lpdbTop, uidb.dbsize, CNCL_DITHER_PAT, CND_UIBIN_ED );
+		CNCL_InitMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 
 		/* Initialize bjcolor contents, make it in a function later */
 		uidb.bjcolor.bjfltIntent = 0;
@@ -680,76 +513,10 @@ int cmdlinesw(
 		uidb.bjcolor.bjfltDensity = 0;
 	}
 
-
-	/* copies */
-	if (setopt[OPTINDEX(OPTCOPIES)] & OPTBIT(OPTCOPIES)) {
-		if ((opt->copies < 1) || (opt->copies > 999)) {
-			fprintf(stderr, "Error: invalid copies value \n");
-			goto onError;
-		}
-
-		lpbjf_optinfo->copies = opt->copies;
-	}
-	
-	/* revprint */
-	if (setopt[OPTINDEX(OPTREVPRINT)] & OPTBIT(OPTREVPRINT)) {
-		lpbjf_optinfo->revprint = ON;
-	}
-	
-	/* collate */
-	if (setopt[OPTINDEX(OPTCOLLATE)] & OPTBIT(OPTCOLLATE)) {
-		lpbjf_optinfo->collate = ON;
-	}
-
-
-	/* -- Check --fit option before location */
-	if (setopt[OPTINDEX(OPTFIT)] & OPTBIT(OPTFIT)) {
-		lpbjf_optinfo->fit = FIT_SHORT;
-		count_switch++;
-	}
-
-	/* -- Check --full option before location */
-	if (setopt[OPTINDEX(OPTFULL)] & OPTBIT(OPTFULL)) {
-		lpbjf_optinfo->fit = FIT_LONG;
-		count_switch++;
-	}
-
-    /* Location */
-	if (setopt[OPTINDEX(OPTLOCATION)] & OPTBIT(OPTLOCATION)) {
-		if (strcmp(opt->location, "center") == 0)
-			lpbjf_optinfo->location = LOCATION_CENTER;
-
-		else if (strcmp(opt->location, "upperleft") == 0)
-			lpbjf_optinfo->location = LOCATION_UPPERLEFT;
-
-		else {
-			fprintf(stderr, "Error: invalid location option\n");
-			goto onError;
-		}
-	}
-
-
-	/* Specify Image scaling */
-	if (setopt[OPTINDEX(OPTPERCENT)] & OPTBIT(OPTPERCENT)) {
-		if ((opt->percent < 20) || (opt->percent > 400)) {
-			fprintf(stderr, "Error: invalid scaling value:%d \n",opt->percent);
-			goto onError;
-		}
-		lpbjf_optinfo->percent = (short)opt->percent;
-		count_switch++;
-	}
-
-	if(count_switch > 1){
-		fprintf(stderr,"Error: Only one of the following options can be selected.\n");
-		fprintf(stderr,"\t--fit / --full / --percent\n");
-		goto onError;
-	}
-
-
 	/* Cartridge */
-	if (setopt[OPTINDEX(OPTCARTRIDGE)] & OPTBIT(OPTCARTRIDGE)) {
+	if (setopt & OPTCARTRIDGE) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRCARTRIDGE, opt->cartridge )) == BJFRCACCESSERROR ){
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRCARTRIDGE, opt->cartridge )) == BJFRCACCESSERROR ){
 			fprintf(stderr, "Error: invalid printer cartridge name\n");
 			goto onError;
 		}
@@ -759,17 +526,19 @@ int cmdlinesw(
 			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 		}
 		else {
-			fprintf(stderr, "Error: inappropriate cartridge selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
+			// tolerant mode
+			// strict mode
+				// simple mode
+				fprintf(stderr, "Error: inappropriate cartridge selection\n");
+				goto onError;
+				// verbose mode
 		}
 	}
 
-
 	/* MediaType */
-	if (setopt[OPTINDEX(OPTMEDIA)] & OPTBIT(OPTMEDIA)) {
+	if (setopt & OPTMEDIA) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRMEDIA, opt->media )) == BJFRCACCESSERROR){
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRMEDIA, opt->media )) == BJFRCACCESSERROR){
 			fprintf(stderr, "Error: invalid printer mediatype name\n");
 			goto onError;
 		}
@@ -779,52 +548,19 @@ int cmdlinesw(
 			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 		}
 		else {
-			fprintf(stderr, "Error: inappropriate medium selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
+			// tolerant mode
+			// strict mode
+				// simple mode
+				fprintf(stderr, "Error: inappropriate medium selection\n");
+				goto onError;
+				// verbose mode
 		}
 	}
-
-
-	/* GrayScale */
-	if (setopt[OPTINDEX(OPTGRAY)] & OPTBIT(OPTGRAY)) {
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_GRAYSCALE, CND_BJGRAYSCALE_ON) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_GRAYSCALE, CND_BJGRAYSCALE_ON, 1);
-			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
-		}
-		else {
-			fprintf(stderr, "Error: inappropriate grayscale selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
-		}
-	}
-
-
-	/* -- Check --extension option */ 
-	if (setopt[OPTINDEX(OPTEXTENSION)] & OPTBIT(OPTEXTENSION)) {
-		if (!(setopt[OPTINDEX(OPTBORDERLESS)] & OPTBIT(OPTBORDERLESS))) {
-			fprintf(stderr, "Error: Cannot select \"--extension\" option without \"--borderless\" \n");
-			goto onError;
-		}
-
-		if( opt->extension >=0 && opt->extension<=3 ){
-			lpbjf_optinfo->extension = (short)opt->extension;
-		}else{
-			fprintf(stderr, "Error: invalid extension\n");
-			goto onError;
-		}
-	}else{
-		if ((id = bjf_get_resource_id( confname, "extension_default", modelname )) == BJFRCACCESSERROR){
-			lpbjf_optinfo->extension = 3;	/* Default: Max */
-		}else{
-			lpbjf_optinfo->extension = id;
-		}
-	}
-
 
 	/* PrintQuality */
-	if (setopt[OPTINDEX(OPTQUALITY)] & OPTBIT(OPTQUALITY)) {
-		if ((id = bjf_get_resource_id( confname, OPTSTRQUALITY, opt->quality )) == BJFRCACCESSERROR ){
+	if (setopt & OPTQUALITY) {
+		// 
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRQUALITY, opt->quality )) == BJFRCACCESSERROR ){
 			fprintf(stderr, "Error: invalid printer quality\n");
 			goto onError;
 		}
@@ -834,35 +570,30 @@ int cmdlinesw(
 			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 		}
 		else {
-			fprintf(stderr, "Error: inappropriate print quality selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
+			// tolerant mode
+			// strict mode
+				// simple mode
+				fprintf(stderr, "Error: inappropriate print quality selection\n");
+				goto onError;
+				// verbose mode
 		}
 	}
 
-	/* PaperSize */
-	if (setopt[OPTINDEX(OPTPSIZE)] & OPTBIT(OPTPSIZE)) {
-		if ((id = bjf_get_resource_id( confname, OPTSTRPSIZE, opt->papersize )) == BJFRCACCESSERROR ){
-			fprintf(stderr, "Error: invalid papersize\n");
-			goto onError;
-		}
-
-		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERSIZE, id) >= 0) {
-			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERSIZE, id, 1);
+	/* GrayScale */
+	if (setopt & OPTGRAY) {
+		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_GRAYSCALE, CND_BJGRAYSCALE_ON) >= 0) {
+			SetTemporaryFlag(uidb.lpdbTop, uidb.dbsize, CNCL_GRAYSCALE, CND_BJGRAYSCALE_ON, 1);
 			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 		}
 		else {
-			fprintf(stderr, "Error: inappropriate papersize selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
+			fprintf(stderr, "Error: inappropriate grayscale selection\n");
 		}
 	}
 
-
 	/* Dither Pattern */
-	if (setopt[OPTINDEX(OPTHALFTONE)] & OPTBIT(OPTHALFTONE)) {
+	if (setopt & OPTHALFTONE) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRHALFTONE, opt->halftoning )) == BJFRCACCESSERROR ){
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRHALFTONE, opt->halftoning )) == BJFRCACCESSERROR ){
 			fprintf(stderr, "Error: invalid halftoning mode\n");
 			goto onError;
 		}
@@ -872,16 +603,30 @@ int cmdlinesw(
 			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 		}
 		else {
-			fprintf(stderr, "Error: inappropriate halftoning mode selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
+			// tolerant mode
+			// strict mode
+				// simple mode
+				fprintf(stderr, "Error: inappropriate halftoning mode selection\n");
+				goto onError;
+				// verbose mode
+		}
+	}
+
+	/* Banner */
+	if (setopt & OPTBANNER) {
+		if (QueryValue(uidb.lpdbTop, uidb.dbsize, CNCL_BANNER, CND_BANNER_ON) >= 0) {
+			SetTemporaryFlag( uidb.lpdbTop, uidb.dbsize, CNCL_BANNER, id, 1);
+			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
+		}
+		else {
+			fprintf(stderr, "Error: inappropriate banner selection\n");
 		}
 	}
 
 	/* PaperLoad */
-	if (setopt[OPTINDEX(OPTLOAD)] & OPTBIT(OPTLOAD)) {
+	if (setopt & OPTLOAD) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRLOAD, opt->paperload )) == BJFRCACCESSERROR ){
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRLOAD, opt->paperload )) == BJFRCACCESSERROR ){
 			fprintf(stderr, "Error: invalid paper load mode\n");
 			goto onError;
 		}
@@ -891,26 +636,29 @@ int cmdlinesw(
 			CNCL_GetMenulink( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, uidb.dbsize);
 		}
 		else {
-			fprintf(stderr, "Error: inappropriate paper load selection\n");
-			/* inappropriate selection error. */
-			goto onErrorInappropriate;
+			// tolerant mode
+			// strict mode
+				// simple mode
+				fprintf(stderr, "Error: inappropriate paper load selection\n");
+				goto onError;
+				// verbose mode
 		}
 	}
 
 	/* rendering intent */
-	if (setopt[OPTINDEX(OPTRENDER)] & OPTBIT(OPTRENDER)) {
+	if (setopt & OPTRENDER) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRRENDER, opt->renderintent )) == BJFRCACCESSERROR ){
-			fprintf(stderr, "Error: invalid rendering intent\n");
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRRENDER, opt->renderintent )) == BJFRCACCESSERROR ){
+			fprintf(stderr, "Error: invalid paper load mode\n");
 			goto onError;
 		}
 		uidb.bjcolor.bjfltIntent = id;
 	}
 
 	/* gamma */
-	if (setopt[OPTINDEX(OPTGAMMA)] & OPTBIT(OPTGAMMA)) {
+	if (setopt & OPTGAMMA) {
 
-		if ((id = bjf_get_resource_id( confname, OPTSTRGAMMA, opt->gamma )) == BJFRCACCESSERROR ){
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRGAMMA, opt->gamma )) == BJFRCACCESSERROR ){
 			fprintf(stderr, "Error: invalid gamma value\n");
 			goto onError;
 		}
@@ -918,7 +666,7 @@ int cmdlinesw(
 	}
 
 	/* balance CYAN */
-	if (setopt[OPTINDEX(OPTBALC)] & OPTBIT(OPTBALC)) {
+	if (setopt & OPTBALC) {
 		if ((opt->balance_c < -50) || (opt->balance_c > 50)) {
 			fprintf(stderr, "Error: invalid Cyan balance value \n");
 			goto onError;
@@ -927,7 +675,7 @@ int cmdlinesw(
 	}
 
 	/* balance MAGENTA */
-	if (setopt[OPTINDEX(OPTBALM)] & OPTBIT(OPTBALM)) {
+	if (setopt & OPTBALM) {
 		if ((opt->balance_m < -50) || (opt->balance_m > 50)) {
 			fprintf(stderr, "Error: invalid Magenta balance value \n");
 			goto onError;
@@ -936,7 +684,7 @@ int cmdlinesw(
 	}
 
 	/* balance YELLOW */
-	if (setopt[OPTINDEX(OPTBALY)] & OPTBIT(OPTBALY)) {
+	if (setopt & OPTBALY) {
 		if ((opt->balance_y < -50) || (opt->balance_y > 50)) {
 			fprintf(stderr, "Error: invalid Yellow balance value \n");
 			goto onError;
@@ -945,7 +693,7 @@ int cmdlinesw(
 	}
 
 	/* balance BLACK */
-	if (setopt[OPTINDEX(OPTBALK)] & OPTBIT(OPTBALK)) {
+	if (setopt & OPTBALK) {
 		if ((opt->balance_k < -50) || (opt->balance_k > 50)) {
 			fprintf(stderr, "Error: invalid Black balance value \n");
 			goto onError;
@@ -953,7 +701,7 @@ int cmdlinesw(
 		uidb.bjcolor.bjfltBalanceK = opt->balance_k;
 	}
 
-	if (setopt[OPTINDEX(OPTDENSITY)] & OPTBIT(OPTDENSITY)) {
+	if (setopt & OPTDENSITY) {
 		if ((opt->density < -50) || (opt->density > 50)) {
 			fprintf(stderr, "Error: invalid density value \n");
 			goto onError;
@@ -961,72 +709,26 @@ int cmdlinesw(
 		uidb.bjcolor.bjfltDensity = opt->density;
 	}
 
-	/* support CND_SIZE_USER */
-	bjdevice->bjfltPaperSize = GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERSIZE);
-	if(bjdevice->bjfltPaperSize == CND_SIZE_USER) {
-		psize->nSelPaperWidth = -1;
-		psize->nSelPaperLength = -1;
-		
-		/* paperwidth */
-		if (setopt[OPTINDEX(OPTPAPERWIDTH)] & OPTBIT(OPTPAPERWIDTH)) {
-			psize->nSelPaperWidth = convert_str_to_long(opt->paperwidth);
-			if(psize->nSelPaperWidth == -2) {
-				fprintf(stderr, "Error: invalid paperwidth value \n");
-				goto onErrorInappropriate;
-			}
+	/* PaperSize */
+	if (setopt & OPTPSIZE) {
+
+		if ((id = bjf_get_resource_id( BJFILTERRCPATH, OPTSTRPSIZE, opt->papersize )) == BJFRCACCESSERROR ){
+			fprintf(stderr, "Error: invalid papersize\n");
+			goto onError;
 		}
-		/* paperheight */
-		if (setopt[OPTINDEX(OPTPAPERHEIGHT)] & OPTBIT(OPTPAPERHEIGHT)) {
-			psize->nSelPaperLength = convert_str_to_long(opt->paperheight);
-			if(psize->nSelPaperLength == -2) {
-				fprintf(stderr, "Error: invalid paperheight value \n");
-				goto onErrorInappropriate;
-			}
-		}
-		
-		/* if user is set, need to set both paperwidth and paperheight.  */
-		if(psize->nSelPaperWidth == -1 || psize->nSelPaperLength == -1) {
-			fprintf(stderr, "Error: if \"--papersize\" is \"user\",\n");
-			fprintf(stderr, "       both \"--paperwidth\" and \"--paperheight\" must be set.\n");
-			goto onErrorInappropriate;
-		}
-	}
-	else {
-		/* check paperwidth and paperheight*/
-		if ((setopt[OPTINDEX(OPTPAPERWIDTH)] & OPTBIT(OPTPAPERWIDTH)) ||
-			(setopt[OPTINDEX(OPTPAPERHEIGHT)] & OPTBIT(OPTPAPERHEIGHT)) ) {
-				fprintf(stderr, "Error: Cannot select \"--paperwidth\" and \"--paperheight\" without \"--papersize user\" \n");
-				goto onErrorInappropriate;
-		}
-		
-		if ( (ret = GetPaperSize( bjdevice->bjfltPaperSize,
-			&bjdevice->bjfltPaperWidth, &bjdevice->bjfltPaperHeight) ) < 0 ) goto onError;
+
+		if (SetCurrentFlag(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERSIZE, id) < 0)
+			fprintf(stderr, "Error: Papersize flag set error\n");
 	}
 
-
-	if((ret=CNCL_GetMargin( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, psize, uidb.dbsize)) < 0)
-	{
-		if(ret < -2) {/* height out of range. */
-			fprintf(stderr, "Error: invalid paperheight value. (integer: %5ld - %5ld [1/100mm])\n",
-					psize->nMinCustomLength, psize->nMaxCustomLength);
-			ret += 2;
-		}
-		if (ret == -2) {/* width out of range. */
-			fprintf(stderr, "Error: invalid paperwidth value.  (integer: %5ld - %5ld [1/100mm])\n",
-					psize->nMinCustomWidth, psize->nMaxCustomWidth);
-		}
-		goto onErrorInappropriate;
-	}
-
+	CNCL_GetMargin( &uidb.nominfo, (void *)bjlibdir, uidb.lpdbTop, psize, uidb.dbsize);
 
 	/* Prepare bjdevice structure, to handover main routine */
 	bjdevice->bjfltModelID			= uidb.ModelID;
 	bjdevice->bjfltMediaType		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_MEDIATYPE);
 	bjdevice->bjfltPrintQuality 	= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_PRINTQUALITY);
 	bjdevice->bjfltMediaSupply		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_MEDIASUPPLY);
-
-	/* bjdevice->bjfltPaperSize is set already. */
-	/*bjdevice->bjfltPaperSize		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERSIZE);*/
+	bjdevice->bjfltPaperSize		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_PAPERSIZE);
 	
 	bjdevice->bjfltBinMethod		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_DITHER_PAT);
 	if ( bjdevice->bjfltBinMethod == CND_UIBIN_PATTERN_HS  )
@@ -1036,141 +738,35 @@ int cmdlinesw(
 	bjdevice->bjfltInkType			= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_CARTRIDGE);
 	bjdevice->bjfltGrayScale		= GetCurrentnValue(uidb.lpdbTop, uidb.dbsize, CNCL_GRAYSCALE);
 
+	//bjdevice->bjfltPaperWidth	    = PaperTbl[bjdevice->bjfltPaperSize][YOKO];
+	//bjdevice->bjfltPaperHeight	    = PaperTbl[bjdevice->bjfltPaperSize][TATE];
+
+	// add 2001/05/06
+	if ( GetPaperSize( bjdevice->bjfltPaperSize, &bjdevice->bjfltPaperWidth,
+		&bjdevice->bjfltPaperHeight	) < 0 ) goto onError;
+
 	/* then prepare BJCOLORSYSTEM structure */
 	*bjcolor = uidb.bjcolor;
 
-	ret = 0;
-
-Exit:
 	if (uidb.lpdbTop)
 		free(uidb.lpdbTop);
-	return ret;
+	return 0;
 
 onError:
-	ret = -1;
-	goto Exit;
+	if (uidb.lpdbTop)
+		free(uidb.lpdbTop);
 
-onErrorInappropriate:
-	ret = -2;
-	goto Exit;
+	return -1;
 }
 
 void init_optioninfo( LPBJF_OPTINFO lpbjfoption )
 {
 	/* init option parameter */
-	lpbjfoption->location = LOCATION_UPPERLEFT;
+	lpbjfoption->location = OPTLOC_UPPERLEFT;
+	lpbjfoption->fit	= 0;
 	lpbjfoption->ui		= 0;
 	lpbjfoption->stdswitch = 0;
 	lpbjfoption->imageres = 0;
 	lpbjfoption->modelid = 0;
 	lpbjfoption->lgmon = 0;
-
-	lpbjfoption->extension = -1;
-	lpbjfoption->fit = FIT_OFF;
-	lpbjfoption->bbox.bbox_flag = BBOX_OFF;
-	lpbjfoption->percent = 0;
-	lpbjfoption->copies = 1;
-	lpbjfoption->revprint = REVPRINT_OFF;
-	lpbjfoption->collate = COLLATE_OFF;
-	
 }
-
-
-
-/*-------------------------------------------------------------*/
-/* make  modelname, confname                                   */
-/*          modelname = BJF900                                 */
-/*          confname = /usr/lib/bjlib/bjfilterf900.conf etc    */
-/*-------------------------------------------------------------*/
-static void MakeModelnameConfname( char *argv0, char *modelname, char *confname )
-{
-	static char		bjfilter_path[] = "bjfilter";
-	char			small_modelname[256],tmpconfilename[256],confilename[256];
-	short			bjfiltstrlen = strlen(bjfilter_path);
-	short			argv0strlen = strlen(argv0);
-	short			i,count;
-
-	for( count=argv0strlen; count>0; count-- ){
-		if( argv0[count-1] == '/' )
-			break;
-	}
-
-	for( i=0; i<sizeof(small_modelname); i++)	small_modelname[i] = '\0';
-	for( i=0; i<sizeof(modelname); i++)	modelname[i] = '\0';
-	for( i=0; i<sizeof(confname); i++)	confname[i] = '\0';
-
-	for( i=0; i<(short)(argv0strlen - count - bjfiltstrlen); i++ )
-		small_modelname[i] = (char)(argv0[count + bjfiltstrlen + i]);
-
-	/* modelname = BJF900 etc.. */
-	for( i=0; i<sizeof(small_modelname); i++)
-		modelname[i] = toupper(small_modelname[i]);
-
-	/* confname = /usr/lib/bjlib/bjfilterf900.conf etc.. */
-	snprintf(tmpconfilename,sizeof(tmpconfilename), "%s%s",BJFILTERXXXXRCPATH,small_modelname);
-	snprintf(confname, 256,"%s%s",tmpconfilename, BJFILTERDOTCONF);
-
-}
-
-
-/*-------------------------------------------------------------*/
-/* Parse --bbox option                                         */
-/*-------------------------------------------------------------*/
-static short ParseBbox(char *bbox , LPBJF_OPTINFO lpbjf_optinfo)
-{
-
-	short			i=0,j=0;
-	char			param[24];
-	short			result=-1;
-	
-	
-	if(!bbox) return result;
-	
-	do{
-		j=0;
-
-		while( (*bbox=='-') || ((*bbox>='0') && (*bbox<='9')) ){
-			if(j > (sizeof(param)-1) ) return result;
-			param[j]=*bbox++;
-			j++;
-		}
-
-		if( (*bbox!=',') && (*bbox!='\0')){
-			return result;
-		}
-		
-		if( i > 3 ) return result;
-		param[j]=0x00;
-		lpbjf_optinfo->bbox.value[i] = atol(param);
-		
-		if( (lpbjf_optinfo->bbox.value[i]) < 0) return result;
-		
-		i++;
-	}while( *bbox++ );
-	
-	if( i !=4 ) return result;
-	
-	return 0;
-		
-}
-
-
-/*-------------------------------------------------------------*/
-/* convert str to long value                                   */
-/*-------------------------------------------------------------*/
-static long convert_str_to_long(char *str)
-{
-	long	value = 0L;
-	char	c;
-	
-	while((c = *str))
-	{
-		if(c < '0' || '9' < c)
-			return -2; /* invalid value */
-		
-		value = value * 10 + ( c - '0' );
-		str++;
-	}
-	return value;
-}
-

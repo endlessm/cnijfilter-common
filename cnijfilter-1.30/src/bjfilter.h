@@ -1,11 +1,12 @@
 /*
- *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
- *  All Rights Reserved.
+ *  Canon Bubble Jet Print Filter for Linux
+ *  Copyright CANON INC. 2001 
+ *  All Right Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +15,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -30,6 +31,10 @@
 #define ON		1
 #define OFF		0
 
+/* program file path */
+#define PRINTUIPATH			"/usr/local/bin/printui"
+#define LGMONPATH			"/usr/local/bin/lgmon"
+#define BJSOCKET			"/tmp/bjui"
 
 /* structure define */
 typedef struct BJFILTERINFO
@@ -43,7 +48,6 @@ typedef struct BJFILTERINFO
 	BJF_POS_PRNINFO		bjfposprn;				/* printer infomation */
 	BJF_POSINFO			bjfposinfo;				/* position infomation */
 	BJF_OPTINFO			bjfoption;				/* option infomation */
-	BJF_MARGIN_INFO		bjfmgninfo;				/* borderless information */
 	int					pipefds[2];				/* File descriptor for pipes */
 	int					pid_printui;			/* save printui process id */
 	int					pid_lgmon;				/* save lgmon process id */

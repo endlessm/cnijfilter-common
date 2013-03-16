@@ -1,11 +1,12 @@
 /*
- *  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
- *  All Rights Reserved.
+ *  Canon Bubble Jet Print Filter for Linux
+ *  Copyright CANON INC. 2001 
+ *  All Right Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +15,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -30,53 +31,33 @@
 #define ON  1
 #define OFF 0
 
-#define	BBOX_ON		1
-#define	BBOX_OFF	0
+#define OPTLOCATION		0x00000001
+#define OPTMODEL		0x00000002
+#define OPTCARTRIDGE	0x00000004
+#define OPTMEDIA		0x00000008
+#define OPTQUALITY		0x00000010
+#define OPTGRAY			0x00000020
+#define OPTHALFTONE		0x00000040
+#define OPTBANNER		0x00000080
+#define OPTLOAD			0x00000100
+#define OPTCORRECT		0x00000200
+#define OPTRENDER		0x00000400
+#define OPTSOURCE		0x00000800
+#define OPTBALC			0x00001000
+#define OPTBALM			0x00002000
+#define OPTBALY			0x00004000
+#define OPTBALK			0x00008000
+#define OPTGAMMA		0x00010000
+#define OPTDENSITY		0x00020000
+#define OPTPSIZE		0x00040000
+#define OPTLGMON		0x00080000
+#define OPTIMGRES		0x00100000
+#define OPTDISPLAY		0x00200000
+#define OPTFIT			0x00400000
+#define OPTINTVER		0x00800000
 
-
-#define	OPTGUI			1
-#define OPTMODEL		2
-#define OPTCARTRIDGE	3
-#define OPTMEDIA		4
-#define OPTQUALITY		5
-#define OPTGRAY			6
-#define OPTHALFTONE		7
-#define OPTBANNER		8
-#define OPTLOAD			9
-#define OPTCORRECT		10
-#define OPTRENDER		11
-#define OPTSOURCE		12
-#define OPTBALC			13
-#define OPTBALM			14
-#define OPTBALY			15
-#define OPTBALK			16
-#define OPTGAMMA		17
-#define OPTDENSITY		18
-#define OPTPSIZE		19
-#define OPTLGMON		20
-#define OPTIMGRES		21
-#define OPTDISPLAY		22
-#define OPTFIT			23
-#define OPTLOCATION		24
-#define OPTINTVER		25
-#define	OPTFULL			26
-
-#define OPTBORDERLESS	30
-#define OPTEXTENSION	31
-#define OPTPERCENT		32
-#define	OPTBBOX			33
-#define OPTCOPIES		34
-#define OPTREVPRINT		35
-#define OPTCOLLATE		36
-
-#define OPTPAPERWIDTH	37
-#define OPTPAPERHEIGHT	38
-
-#define OPTPAPERGAP		39
-
-
-#define	OPTINDEX(x)		( (x >> 5) & 0xf)
-#define	OPTBIT(x)		( 1 << (x & 0x1f) )
+#define OPTLOC_UPPERLEFT		0
+#define OPTLOC_CENTER			1
 
 /* command line option define */
 #define OPTSTRGUI			"gui"
@@ -88,7 +69,7 @@
 #define OPTSTRGRAY			"grayscale"
 #define OPTSTRHALFTONE		"halftoning"
 #define OPTSTRBANNER		"banner"
-#define OPTSTRLOAD			"paperload"
+#define OPTSTRLOAD			"load"
 #define OPTSTRCORRECT		"correctionmode"
 #define OPTSTRRENDER		"renderintent"
 #define OPTSTRSOURCE		"imagesource"
@@ -103,24 +84,10 @@
 #define OPTSTRIMGRES		"imageres"
 #define OPTSTRDISPLAY		"display"
 #define OPTSTRFIT			"fit"
-#define OPTSTRFULL			"full"
 #define OPTSTRINTVER		"internalversion"	
-#define OPTSTRBORDERLESS	"borderless"
-#define OPTSTREXTENSION		"extension"
-#define OPTSTRPERCENT		"percent"
-#define OPTSTRBBOX			"bbox"
-#define OPTSTRPRNAREA		"prnarea"
-#define OPTSTRCOPIES		"copies"
-#define OPTSTRREVPRINT		"revprint"
-#define OPTSTRCOLLATE		"collate"
 
-#define OPTSTRPAPERWIDTH	"paperwidth"
-#define OPTSTRPAPERHEIGHT	"paperheight"
-
-#define	OPTSTRPAPERGAP		"papergap"
-
-/* cif.bscc value */
-
+/* data base file path */
+#define	BJLIBPATH			"/usr/lib/bjlib"
 
 /* structure define */
 typedef struct {
@@ -136,7 +103,6 @@ typedef struct {
 	int		lgmon;
 	int		imageres;
 	int		fit;
-	int		full;
 	int		internalversion;
 	char	*location;
 	char	*model;
@@ -151,25 +117,7 @@ typedef struct {
 	char	*papersize;
 	char	*display;
 	char	*quality;
-	char	*bbox;
-	int		borderless;
-	int		extension;
-	int		percent;
-	int		copies;
-	int		revprint;
-	int		collate;
-	char	*paperwidth;
-	char	*paperheight;
-	char	*papergap;
 } OPT, *LPOPT;
-
-
-typedef struct {
-	short	bbox_flag;
-	short	dummy;
-	long	value[4];
-} BJF_BBOX, *LPBJF_BBOX;
-
 
 typedef struct {
 	short	location;
@@ -179,16 +127,10 @@ typedef struct {
 	short	imageres;
 	short	modelid;
 	short	lgmon;
-	short	extension;
-	short	percent;
-	short	copies;
-	short	revprint;
-	short	collate;
-	BJF_BBOX	bbox;
 } BJF_OPTINFO, *LPBJF_OPTINFO;
 
-
-
-extern 	short SetCmdOption(int, char **, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char *, char *, char *);
+extern void usage( void );
+extern int cmdlinesw(poptContext*, OPT*, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char*, char *);
+extern void init_optioninfo( LPBJF_OPTINFO lpbjfoption );
 
 #endif
