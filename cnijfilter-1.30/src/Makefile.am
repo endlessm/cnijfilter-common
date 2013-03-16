@@ -23,5 +23,5 @@ bjfilter_SOURCES = \
 	uitypes.h 
 
 bjfilter_LDADD = -lcnbpcmcm -lcnbpwcc -lcnbphtmg -lm -ldl -ltiff -lpng\
-			-lcnclapi -lcnclbjcmd -lcnbpsmth -lcnclui -lpopt
+			-lcnclapi -lcnclbjcmd -lcnbpsmth -lcnclui -lpopt -ldl
 bjfilter_LDFLAGS = -L../../001/libs_bin@ARC@
