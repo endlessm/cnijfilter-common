@@ -36,6 +36,10 @@ dnl Checks for programs.
 AC_ISC_POSIX
 
 case "${program_suffix}" in
+  BJF900) CNCL_LIB_ID=125;;
+  BJF9000) CNCL_LIB_ID=127;;
+  BJS300) CNCL_LIB_ID=117;;
+  BJS500) CNCL_LIB_ID=131;;
   pixus550i) CNCL_LIB_ID=154;;
   pixus850i) CNCL_LIB_ID=156;;
   pixus950i) CNCL_LIB_ID=158;;
