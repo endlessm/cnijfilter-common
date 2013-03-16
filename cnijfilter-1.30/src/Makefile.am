@@ -25,5 +25,5 @@ bjfilter_SOURCES = \
 
 
 bjfilter_LDADD = -lcnbpcmcm@CNCL_LIB_ID@ -lcnbpwcc@CNCL_LIB_ID@ -lcnbphtmg@CNCL_LIB_ID@ -lm -ldl -ltiff -lpng\
-			-lcnbpcnclapi@CNCL_LIB_ID@ -lcnbpcnclbjcmd@CNCL_LIB_ID@ -lcnbpsmth@CNCL_LIB_ID@ -lcnbpcnclui@CNCL_LIB_ID@ -lpopt
+			-lcnclapi@CNCL_LIB_ID@ -lcnclbjcmd@CNCL_LIB_ID@ -lcnbpsmth@CNCL_LIB_ID@ -lcnclui@CNCL_LIB_ID@ -lpopt
 bjfilter_LDFLAGS = -L../../@CNCL_LIB_ID@/libs_bin@ARC@
