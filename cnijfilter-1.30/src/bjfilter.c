@@ -392,14 +392,6 @@ static short MakeBJPrintData
 		if ( MarginInit( &lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo, &lpbjinfo->bjfmgninfo) < 0 ) goto finish3;
 
 
-		/*---------
-			if borderless option is selected, prntarea is changed.
-		---------*/
-		if ( lpbjfltdevice->bjfltMarginType==CND_MARGIN_MINUS )
-		{
-			SetExtLevel(&lpbjinfo->bjfmgninfo, lpbjinfo->bjfoption.extension);
-			SetExtMargin(&lpbjinfo->bjfposprn, &lpbjinfo->bjfposinfo, &lpbjinfo->bjfmgninfo);
-		}
 
 		/*---------
 			if bbox option is selected, 
@@ -1001,7 +993,6 @@ static void set_cncl_printerinfo( CNCLPtr lpcncldata, LPBJFLTDEVICE lpbjfltdevic
 	lpcncldata->MediaType    = lpbjfltdevice->bjfltMediaType;
 	lpcncldata->PaperSize    = lpbjfltdevice->bjfltPaperSize;
 	lpcncldata->MediaSupply  = lpbjfltdevice->bjfltMediaSupply;
-	lpcncldata->PaperGap 	 = lpbjfltdevice->bjfltPaperGap;
 
 	switch( lpbjfltdevice->bjfltBinMethod ){
 		case CND_UIBIN_PATTERN:
@@ -1029,8 +1020,6 @@ static void set_cncl_printerinfo( CNCLPtr lpcncldata, LPBJFLTDEVICE lpbjfltdevic
 	lpcncldata->PaperWidth   = lpcnclpapersize->nSelPaperWidth;
 	lpcncldata->PaperHeight  = lpcnclpapersize->nSelPaperLength;
 	lpcncldata->Smoothing    = CND_SMOOTH_NA ;
-	lpcncldata->MarginType   = lpbjfltdevice->bjfltMarginType;
-
 }
 
 
