@@ -50,21 +50,21 @@ Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJS600series-32
+Package: cnijfilter-bjf900series-32
 Architecture: amd64 ia64
 Section: graphics
 Depends: 	cnijfilter-common (>= 3.90),
 			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-BJS600series (>= 3.90),
+			cnijfilter-bjf900series (>= 3.90),
 Breaks: 	cnijfilter-common-64,
-			cnijfilter-BJS600series-64
+			cnijfilter-bjf900series-64
 Replaces: 	cnijfilter-common-64,
-			cnijfilter-BJS600series-64
+			cnijfilter-bjf900series-64
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJS600series
+Package: cnijfilter-bjf900series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
@@ -75,21 +75,21 @@ Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJS6300series-32
+Package: cnijfilter-bjf9000series-32
 Architecture: amd64 ia64
 Section: graphics
 Depends: 	cnijfilter-common (>= 3.90),
 			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-BJS6300series (>= 3.90),
+			cnijfilter-bjf9000series (>= 3.90),
 Breaks: 	cnijfilter-common-64,
-			cnijfilter-BJS6300series-64
+			cnijfilter-bjf9000series-64
 Replaces: 	cnijfilter-common-64,
-			cnijfilter-BJS6300series-64
+			cnijfilter-bjf9000series-64
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJS6300series
+Package: cnijfilter-bjf9000series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
@@ -100,21 +100,21 @@ Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJS630series-32
+Package: cnijfilter-bjs300series-32
 Architecture: amd64 ia64
 Section: graphics
 Depends: 	cnijfilter-common (>= 3.90),
 			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-BJS630series (>= 3.90),
+			cnijfilter-bjs300series (>= 3.90),
 Breaks: 	cnijfilter-common-64,
-			cnijfilter-BJS630series-64
+			cnijfilter-bjs300series-64
 Replaces: 	cnijfilter-common-64,
-			cnijfilter-BJS630series-64
+			cnijfilter-bjs300series-64
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJS630series
+Package: cnijfilter-bjs300series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
@@ -125,96 +125,21 @@ Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJF900series-32
+Package: cnijfilter-bjs500series-32
 Architecture: amd64 ia64
 Section: graphics
 Depends: 	cnijfilter-common (>= 3.90),
 			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-BJF900series (>= 3.90),
+			cnijfilter-bjs500series (>= 3.90),
 Breaks: 	cnijfilter-common-64,
-			cnijfilter-BJF900series-64
+			cnijfilter-bjs500series-64
 Replaces: 	cnijfilter-common-64,
-			cnijfilter-BJF900series-64
+			cnijfilter-bjs500series-64
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
-Package: cnijfilter-BJF900series
-Architecture: i386
-Section: graphics
-Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			${shlibs:Depends},
-			${misc:Depends}
-Description: IJ Printer Driver for Linux.
- This IJ Printer Driver provides printing functions for Canon Inkjet
- printers operating under the CUPS (Common UNIX Printing System) environment.
-
-Package: cnijfilter-BJF9000series-32
-Architecture: amd64 ia64
-Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-BJF9000series (>= 3.90),
-Breaks: 	cnijfilter-common-64,
-			cnijfilter-BJF9000series-64
-Replaces: 	cnijfilter-common-64,
-			cnijfilter-BJF9000series-64
-Description: IJ Printer Driver for Linux.
- This IJ Printer Driver provides printing functions for Canon Inkjet
- printers operating under the CUPS (Common UNIX Printing System) environment.
-
-Package: cnijfilter-BJF9000series
-Architecture: i386
-Section: graphics
-Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			${shlibs:Depends},
-			${misc:Depends}
-Description: IJ Printer Driver for Linux.
- This IJ Printer Driver provides printing functions for Canon Inkjet
- printers operating under the CUPS (Common UNIX Printing System) environment.
-
-Package: cnijfilter-BJS300series-32
-Architecture: amd64 ia64
-Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-BJS300series (>= 3.90),
-Breaks: 	cnijfilter-common-64,
-			cnijfilter-BJS300series-64
-Replaces: 	cnijfilter-common-64,
-			cnijfilter-BJS300series-64
-Description: IJ Printer Driver for Linux.
- This IJ Printer Driver provides printing functions for Canon Inkjet
- printers operating under the CUPS (Common UNIX Printing System) environment.
-
-Package: cnijfilter-BJS300series
-Architecture: i386
-Section: graphics
-Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			${shlibs:Depends},
-			${misc:Depends}
-Description: IJ Printer Driver for Linux.
- This IJ Printer Driver provides printing functions for Canon Inkjet
- printers operating under the CUPS (Common UNIX Printing System) environment.
-
-Package: cnijfilter-BJS500series-32
-Architecture: amd64 ia64
-Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-BJS500series (>= 3.90),
-Breaks: 	cnijfilter-common-64,
-			cnijfilter-BJS500series-64
-Replaces: 	cnijfilter-common-64,
-			cnijfilter-BJS500series-64
-Description: IJ Printer Driver for Linux.
- This IJ Printer Driver provides printing functions for Canon Inkjet
- printers operating under the CUPS (Common UNIX Printing System) environment.
-
-Package: cnijfilter-BJS500series
+Package: cnijfilter-bjs500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign

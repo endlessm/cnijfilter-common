@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PKG_INFO=cnijfilter-BJS600-104;
+PKG_INFO=cnijfilter-bjs500-131;
 
 model_name=`echo ${PKG_INFO} | cut -d- -f2`
 model_num=`echo ${PKG_INFO} | cut -d- -f3`
