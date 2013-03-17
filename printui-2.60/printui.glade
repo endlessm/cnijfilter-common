@@ -2,16 +2,21 @@
 <!DOCTYPE glade-interface SYSTEM "http://glade.gnome.org/glade-2.0.dtd" >
 
 <glade-interface>
-  <widget class="GtkWindow" id="ui_window">
-    <property name="visible">no</property>
-    <property name="title" translatable="yes"></property>
-    <property name="type">GTK_WINDOW_TOPLEVEL</property>
-    <property name="modal">no</property>
-    <property name="allow_shrink">no</property>
-    <property name="allow_grow">no</property>
-    <property name="window-position">GTK_WIN_POS_NONE</property>
 
-    <signal name="destroy" handler="on_ui_window_destroy" />
+<widget class="GtkWindow" id="ui_window">
+  <property name="title" translatable="yes"></property>
+  <property name="type">GTK_WINDOW_TOPLEVEL</property>
+  <property name="window_position">GTK_WIN_POS_NONE</property>
+  <property name="modal">False</property>
+  <property name="resizable">False</property>
+  <property name="destroy_with_parent">False</property>
+  <property name="decorated">True</property>
+  <property name="skip_taskbar_hint">False</property>
+  <property name="skip_pager_hint">False</property>
+  <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
+  <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
+  <property name="focus_on_map">True</property>
+  <signal name="destroy" handler="on_ui_window_destroy"/>
 
     <child>
       <widget class="GtkVBox" id="vbox1">

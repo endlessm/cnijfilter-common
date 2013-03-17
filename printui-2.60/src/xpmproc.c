@@ -97,10 +97,13 @@ gchar* CheckFileExists(const gchar *dirname, const gchar *filename)
 	gchar *full_filename;
 	struct stat s;
 	gint status;
+	gint full_filename_len;
 
-	full_filename = (gchar*)g_malloc(strlen (dirname) + 1
-                                   + strlen (filename) + 1);
-	strcpy(full_filename, dirname);
+	full_filename_len = strlen (dirname) + 1 + strlen (filename) + 1;
+	full_filename = (gchar*)g_malloc0( full_filename_len );
+
+	strncpy(full_filename, dirname, full_filename_len); /* Ver.3.60 */
+	full_filename[ full_filename_len -1 ] = '\0';
 	strcat(full_filename, G_DIR_SEPARATOR_S);
 	strcat(full_filename, filename);
 
