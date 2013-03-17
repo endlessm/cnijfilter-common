@@ -115,8 +115,6 @@ int PutPrintData(char *cmdsbuf, short length)
 	int fd, __attribute__ ((unused)) result2;
 	IPCU ipc;
 	char buf[IVEC_BUF_SIZE];
-	char *curPtr;
-	long cmdLen = 0;
 	int retVal = -1;
 
 	if( (fd = ConnectToServer()) == -1 ) goto Err1;
@@ -129,68 +127,12 @@ int PutPrintData(char *cmdsbuf, short length)
 	// Prepare for ipc union, then copy buffer data.
 	ipc.cmds.cmdslen = (long)length;
 	memcpy(ipc.cmds.cmds, cmdsbuf, length);
-
 	result2 = write(fd, &ipc, sizeof(IPCU));
 	retVal = 0;
-Err1:
-	return retVal;
-}
 
-int PutDeviceData(char *cmdsbuf, short length, char *devMode )
-{
-	int fd, __attribute__ ((unused)) result2;
-	IPCU ipc;
-	char buf[IVEC_BUF_SIZE];
-	long cmdLen = 0;
-	short cmdType;
-	int retVal = -1;
-	char *curPtr;
-	char __attribute__ ((unused)) *model_name;
-
-	model_name = GetModelName();
-
-	if ( (devMode == NULL) || (devMode == NULL) ) goto Err1;
-
-	if ( strcmp( devMode, "POWEROFF" ) == 0 ){
-		cmdType = CNCL_COMMAND_POWEROFF;
-	}
-	else {
-		goto Err1;
-	}
-	
-	if( (fd = ConnectToServer()) == -1 ) goto Err1;
-
-	// Write "POWEROFF" command first.
-	strncpy(buf, devMode, IVEC_BUF_SIZE);
-	buf[IVEC_BUF_SIZE-1] = '\0';
-	result2 = write(fd, buf, IPCCMDLEN);
-
-	if ( (IsIVECModel() == TRUE) ){
-		curPtr = ipc.cmds.cmds;
-
-		if ( CNCL_MakeDeviceCommand( cmdType, buf ,IVEC_BUF_SIZE ) != CNCL_OK ) goto Err2;
-		if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
-		memcpy( curPtr, buf, cmdLen );
-		curPtr += cmdLen;
-
-		/* Add terminate */
-		*curPtr = 0x00;
-		curPtr++;
-
-		ipc.cmds.cmdslen = (long)(curPtr - ipc.cmds.cmds);
-	}
-	else {
-		ipc.cmds.cmdslen = (long)length;
-		memcpy( ipc.cmds.cmds, cmdsbuf, length );
-	}
-
-	result2 = write(fd, &ipc, sizeof(IPCU));
-	retVal = 0;
-Err2:
 	close(fd);
 Err1:
 	return retVal;
-
 }
 
 int PutFileData(char *cmdsbuf, short cmds_length, 

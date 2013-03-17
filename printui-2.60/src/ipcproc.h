@@ -27,7 +27,6 @@
 int PutIPCData(LPIPCU pipc);
 int PutCancel();
 int PutPrintData(char *cmdsbuf, short length);
-int PutDeviceData(char *cmdsbuf, short length, char *devMode );	// added in 09_2h
 int PutFileData(char*, short, char*, short);
 int PutDoubleData(char*, short, char*, short);
 
