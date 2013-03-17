@@ -126,47 +126,12 @@ int PutPrintData(char *cmdsbuf, short length)
 	buf[IVEC_BUF_SIZE -1] = '\0';
 	result2 = write(fd, buf, IPCCMDLEN);
 
-	if ( (IsIVECModel() == TRUE) && (g_bidi_mode == FALSE) ){
-		curPtr = ipc.cmds.cmds;
-
-		/* Start job */
-		if ( CNCL_MakePrintCommand( CNCL_COMMAND_START1 , buf ,IVEC_BUF_SIZE , NULL , "1" ) != CNCL_OK ) goto Err2;
-		if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
-		memcpy( curPtr, buf, cmdLen );
-		curPtr += cmdLen;
-		
-		/* Mode shift */	
-		if ( CNCL_MakePrintCommand( CNCL_COMMAND_START2 , buf ,IVEC_BUF_SIZE , NULL , NULL ) != CNCL_OK ) goto Err2;
-		if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
-		memcpy( curPtr, buf, cmdLen );
-		curPtr += cmdLen;
-
-		/* BJL data */
-		/* length -1 : remove 0 data */
-		memcpy( curPtr, cmdsbuf, (length-1) );
-		curPtr += (length - 1);
-
-		/* End job */
-		if ( CNCL_MakePrintCommand( CNCL_COMMAND_END , buf ,IVEC_BUF_SIZE , NULL , NULL ) != CNCL_OK ) goto Err2;
-		if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
-		memcpy( curPtr, buf, cmdLen );
-		curPtr += cmdLen;
-
-		/* Add terminate */
-		*curPtr = 0x00;
-		curPtr++;
-
-		ipc.cmds.cmdslen = (long)(curPtr - ipc.cmds.cmds);
-	}
-	else {
-		ipc.cmds.cmdslen = (long)length;
-		memcpy(ipc.cmds.cmds, cmdsbuf, length);
-	}	
+	// Prepare for ipc union, then copy buffer data.
+	ipc.cmds.cmdslen = (long)length;
+	memcpy(ipc.cmds.cmds, cmdsbuf, length);
 
 	result2 = write(fd, &ipc, sizeof(IPCU));
 	retVal = 0;
-Err2:
-	close(fd);
 Err1:
 	return retVal;
 }
