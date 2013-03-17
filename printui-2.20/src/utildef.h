@@ -1,11 +1,10 @@
-/*  Canon Bubble Jet Print Filter.
- *  Copyright CANON INC. 2001-2003
+/*  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +13,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -32,10 +31,8 @@
 #define	PICTURE_WIDTH_BIG2	118		
 #define	PICTURE_HEIGHT_BIG2	170     
 
-// Ver.2.2 Start
 #define PICTURE_WIDTH_BIG3	128
 #define PICTURE_HEIGHT_BIG3	180
-// Ver.2.2 End
 
 
 #define	PORT			0x0000		
@@ -44,12 +41,7 @@
 #define	ORNAMENT_S600	0x0100		
 #define	BANDREGI_TYPE	0x1000		
 #define	BIGAREA_TYPE2	0x2000		
-// Ver.2.2 Start
 #define BIGAREA_TYPE3	0x4000
-// Ver.2.2 End
-
-
-
 
 #define	BJLSTART		"BJLSTART\x0a"					
 #define BJLCTRLMODE		"ControlMode=Common\x0a"		
@@ -59,11 +51,9 @@
 #define	BJLCLEAN4		"@Cleaning=2ALL\x0a"			
 #define	BJLCLEAN5		"@Cleaning=1K\x0a"				
 #define	BJLCLEAN6		"@Cleaning=1CMY\x0a"			
-
-// Ver.2.2 Start
 #define BJLCLEAN7		"@Cleaning=2K\x0a"
 #define BJLCLEAN8		"@Cleaning=2CMY\x0a"
-// Ver.2.2 End
+
 
 #define BJLNOZZLECHECK	"@TestPrint=NozzleCheck\x0a"	
 #define	BJLMANUAL		"@TestPrint=Manual\x0a"			
@@ -80,7 +70,6 @@
 #define BJLROLLER1		"@RollerCleaning=PLATE\x0a"		
 #define	BJLROLLER2		"@RollerCleaning\x0a"			
 
-
 #define BJLSCANDELAY	"Reserve=A311\x0a"				
 #define BJLNOSCANDELAY	"Reserve=A312\x0a"				
 #define BJLPAGEDELAY	"Reserve=A321\x0a"				
@@ -91,45 +80,39 @@
 #define BJLNOPAGEDELAY1	"DelayMode=PD0\x0a"				
 #define	BJLSETTIME		"SetTime="						
 
-// Added '01.11.05
 #define BJLSILENT		"SetSilent=%s\x0a"
 #define BJLDRYLEVEL		"DryLevel=%d\x0a"
-// Added '01.11.16
-
 #define BJLINKDETECTION	"InkDetection=%s\x0a"
 #define BJLRESETBLACK	"@DotCountClear=ColorK\x0a"
 #define BJLRESETCMY		"@DotCountClear=CMY\x0a"
 
-#define BJLLEN				7							
-#define	BJLSTARTLEN			9							
-#define BJLCTRLMODELEN		19                          
-#define	BJLCLEAN1LEN		12                          
-#define BJLCLEAN2LEN		12                          
-#define	BJLCLEAN3LEN		15                          
-#define BJLCLEAN4LEN		15                          
-#define	BJLCLEAN5LEN		13							
-#define	BJLCLEAN6LEN		15							
-
-// Ver.2.2 Start
+#define BJLLEN				7
+#define	BJLSTARTLEN			9
+#define BJLCTRLMODELEN		19
+#define	BJLCLEAN1LEN		12
+#define BJLCLEAN2LEN		12
+#define	BJLCLEAN3LEN		15
+#define BJLCLEAN4LEN		15
+#define	BJLCLEAN5LEN		13
+#define	BJLCLEAN6LEN		15
 #define BJLCLEAN7LEN		13
 #define BJLCLEAN8LEN		15
-// Ver.2.2 End
 
-#define BJLNOZZLECHECKLEN	23                          
-#define	BJLMANUALLEN		18                          
-#define	BJLREGI1LEN			17                          
-#define	BJLBANDREGI1LEN		21							
-#define	BJLMANUAL1LEN		19                          
-#define	BJLMANUAL2LEN		19                          
-#define	BJLSETREGLEN		26                          
-#define	BJLSETBANDREGLEN	17							
-#define	BJLPOWEROFFLEN		10                          
 
+
+#define BJLNOZZLECHECKLEN	23
+#define	BJLMANUALLEN		18
+#define	BJLREGI1LEN			17
+#define	BJLBANDREGI1LEN		21
+#define	BJLMANUAL1LEN		19
+#define	BJLMANUAL2LEN		19
+#define	BJLSETREGLEN		26
+#define	BJLSETBANDREGLEN	17
+#define	BJLPOWEROFFLEN		10
 
 #define BJLENDLEN			7                           
 #define	BJLROLLER1LEN		22                          
 #define	BJLROLLER2LEN		16                          
-
 
 #define BJLSCANDELAYLEN		13                          
 #define	BJLNOSCANDELAYLEN	13                          
@@ -165,16 +148,12 @@ CLEANCMD	S600CleanCommand[3] = {
 				{ BJLCLEAN6LEN, BJLCLEAN6 }		
 			};
 
-
-// Ver.2.2 Start
-
 CLEANCMD	RefreshingCommand[3] = {
 				{ BJLCLEAN4LEN, BJLCLEAN4 },	
 				{ BJLCLEAN7LEN, BJLCLEAN7 },	
 				{ BJLCLEAN8LEN, BJLCLEAN8 }		
 			};
 
-// Ver.2.2 Start
 
 
 char	*AutoPowerOnKey[2] = {		
@@ -207,13 +186,10 @@ char	*AutoPowerOffValue[6] = {
 			};
 
 
-
-// Added '01.11.05
 char	*SwitchString[2] = {
 					"OFF",
 					"ON"
 			};
-
 
 
 
@@ -247,7 +223,7 @@ typedef struct {
 } CTRLITEM, *LPCTRLITEM;
 
 
-
+#define REGI_TBL_MAX_NUM	2
 typedef struct RegiInfo {
 	char		*ModelName;			
 	struct	RegiTbl {				
@@ -258,7 +234,7 @@ typedef struct RegiInfo {
 		LPBOXINF	lpBoxInf;		
 		short		cnt;			
 		u_short		type;			
-	} regi[2];					
+	} regi[REGI_TBL_MAX_NUM];					
 } REGINFO;
 
 
@@ -283,16 +259,15 @@ typedef struct {
 	short	red;                    
 	short	green;                  
 	short	blue;                   
-} HOTSPOT, *LPHOTSPOT;
+} HOTSPOT, *LPHOTSPOT; 
+
+#define	REGI_EDITMAX		14           
 
 
-
-
-
+/* BJF850 */
 #define	IDM_BJC_F850		"BJF850"	
 #define	REGI_F850_1STCNT	6           
 #define	REGI_F850_2NDCNT	0           
-#define	REGI_EDITMAX		14           
 
 
 CTRLITEM F850Regi1stTbl[REGI_F850_1STCNT] = {
@@ -745,12 +720,6 @@ BOXINF PX550IBox1stTbl[REGI_PX550I_1STCNT] = {
 
 };
 
-/* I250 */
-// Ver.2.2 End
-
-
-
-
 
 
 
@@ -815,7 +784,6 @@ REGINFO	RegiInfo[] =
 			  { 0, 0, 0, 0, 0, 0, 0 }
 	} },
 
-// Ver.2.2 Start
 
 	{ IDM_PIXUS_950I,
 	{ { "PX950Iregi_dialog", "PX950Iregi_drawingarea", PX950IRegi1stTbl, 
@@ -835,10 +803,6 @@ REGINFO	RegiInfo[] =
 		PX550IBJL1stTbl, PX550IBox1stTbl, 6, PORT|BIGAREA_TYPE3 },
 	  { 0, 0, 0, 0, 0, 0, 0 }
 	} }
-
-// Ver.2.2 End
-
-	};
-
+};
 
 #endif

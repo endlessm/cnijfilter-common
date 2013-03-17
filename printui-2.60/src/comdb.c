@@ -33,9 +33,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 #include <stdio.h>
 
 #include <string.h>
@@ -150,10 +147,12 @@ long GetPaperHeight(short value)
 int ModelNameToID(char* name)
 {
 	int i = 0;
-	gchar* upname = g_malloc(strlen(name) + 1);
+	gint upname_len = strlen(name) + 1;
+	gchar* upname = g_malloc0( upname_len );
 	int value = -1;
 
-	strcpy(upname, name);
+	strncpy(upname, name, upname_len); /* Ver.3.60 */
+	upname[ upname_len -1 ] = '\0';
 
 	// Because the display trouble was found by tr_TR.ISO8859-9, 
 	// g_strup() is replaced with UpperAsciiStr(). 

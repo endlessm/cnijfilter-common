@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -387,7 +387,6 @@ GLOBAL ModelTable g_model_table[] =
   	{CND_IP6600D,     UF_IP6600D, g_media_size_table_ip4200,   	g_media_size_table_ip4200_japanese,	-1}, 
   	{CND_IP7500,      UF_IP7500,  g_media_size_table_ip7500,   	g_media_size_table_ip7500_japanese,	-1},	
   	{CND_MP500,       UF_MP500,   g_media_size_table_ip4200,   	g_media_size_table_ip4200_japanese,	-1},	
-
 	{0,0,NULL}
 };
 

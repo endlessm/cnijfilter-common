@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -27,6 +27,7 @@
 int PutIPCData(LPIPCU pipc);
 int PutCancel();
 int PutPrintData(char *cmdsbuf, short length);
+int PutDeviceData(char *cmdsbuf, short length, char *devMode );	// added in 09_2h
 int PutFileData(char*, short, char*, short);
 int PutDoubleData(char*, short, char*, short);
 
