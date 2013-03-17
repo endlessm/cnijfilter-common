@@ -1,0 +1,43 @@
+#/bin/bash
+tes=`ls -1 /etc/cups/ppd/*.ppd`
+if [ ! "${tes}" = "" ]; then
+
+let count=1
+for fn in `ls -1 /etc/cups/ppd/*.ppd`; do
+	pstocanonij=`cat ${fn} | grep "*cupsFilter: \"application/vnd.cups-postscript 0 pstocanon"`
+	if [ ! "${pstocanonij}" = "" ]; then
+		printer[$count]=`echo ${fn} | cut '-d/' -f5 | cut '-d.' -f1`
+		printer_master[$count]=`cat ${fn} | grep "*Product: \"" | cut '-d"' -f2 | cut '-d(' -f2 | cut '-d)' -f1`
+		ver_a=`cat ${fn} | grep "*% internalversion" | cut '-d ' -f4 | cut '-d.' -f1`
+		ver_b=`cat ${fn} | grep "*% internalversion" | cut '-d ' -f4 | cut '-d.' -f2`
+		ver[$count]="${ver_a}.${ver_b}"
+		if [ $count = 1 ]; then
+			_printer+="TRUE ${count} ${printer[$count]// /-}"
+		else
+			_printer+=" FALSE ${count} ${printer[$count]// /-}"
+		fi
+		((count++))
+	fi		
+done
+if [ ${count} -gt 2 ]; then
+	num=$(zenity  --list  --text "Select the printer" --radiolist  --hide-header --hide-column=2 --column "choice" --column "printer" --column "count" ${_printer})
+	if [ "${ver[$num]}" = "3.80" ]; then
+		cngpijmnt ${printer[$num]}
+	elif [ "${ver[$num]}" = "3.90" ]; then
+		cngpijmnt ${printer[$num]}
+	else
+		cngpij -P ${printer[$num]}
+	fi
+else
+	if [ ${ver[1]} = "3.80" ]; then
+		cngpijmnt ${printer[1]}
+	elif [ ${ver[1]} = "3.90" ]; then
+		cngpijmnt ${printer[1]}
+	else
+		cngpij -P ${printer[1]}
+	fi
+fi
+
+else
+	zenity --info --text "Not found supported printers."
+fi
