@@ -1,11 +1,10 @@
-/*  Canon Bubble Jet Print Filter.
- *  Copyright CANON INC. 2001-2005
+/*  Canon Inkjet Printer Driver for Linux
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +13,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -260,7 +259,7 @@ typedef struct {
 } CTRLITEM, *LPCTRLITEM;
 
 
-
+#define REGI_TBL_MAX_NUM	3
 typedef struct RegiInfo {
 	char		*ModelName;			
 	struct	RegiTbl {				
@@ -271,7 +270,7 @@ typedef struct RegiInfo {
 		LPBOXINF	lpBoxInf;		
 		short		cnt;			
 		u_short		type;			
-	} regi[3];					
+	} regi[REGI_TBL_MAX_NUM];					
 } REGINFO;
 
 
@@ -296,16 +295,15 @@ typedef struct {
 	short	red;                    
 	short	green;                  
 	short	blue;                   
-} HOTSPOT, *LPHOTSPOT;
+} HOTSPOT, *LPHOTSPOT; 
+
+#define	REGI_EDITMAX		14           
 
 
-
-
-
+/* BJF850 */
 #define	IDM_BJC_F850		"BJF850"	
 #define	REGI_F850_1STCNT	6           
 #define	REGI_F850_2NDCNT	0           
-#define	REGI_EDITMAX		14           
 
 
 CTRLITEM F850Regi1stTbl[REGI_F850_1STCNT] = {
@@ -1254,7 +1252,6 @@ TESTPATTERNINFO TestPatternInfo[] =
 };
 
 #define BSCCREGFORMAT	"%6s%c%02d\x0a"	
-//#define BSCCFILEPATH	"/usr/lib/bjlib/"
 #define BSCCFILEPATH	catpath(mkpath(XBJLIBPATH),"/")
 #define BSCCREGLEN		9
 
@@ -1376,7 +1373,6 @@ SETCONFIGINFO SetConfigInfo[] =
 #define OK_CHECK_PATTN 0
 #define NG_CHECK_PATTN 1
 
-//#define CHECKPATTERNPATH	"/usr/local/share/printui"
 #define CHECKPATTERNPATH	PACKAGE_DATA_DIR
 
 typedef struct{
@@ -1415,6 +1411,4 @@ char* DryLevel5NameList[6] =
 	  "drylevel5_radiobutton5"
 	};
 
-
 #endif
-

@@ -295,7 +295,6 @@ typedef struct RegiInfo {
 		LPBOXINF	lpBoxInf;		
 		short		cnt;			
 		u_short		type;			
-//	} regi[3];					
 	} regi[REGI_TBL_MAX_NUM];					
 } REGINFO;
 
@@ -1070,7 +1069,7 @@ TESTPATTERNINFO TestPatternInfo[] =
 };
 
 #define BSCCREGFORMAT	"%6s%c%02d\x0a"	
-#define BSCCFILEPATH	"/usr/lib/bjlib/"
+#define BSCCFILEPATH	catpath(mkpath(XBJLIBPATH),"/")
 #define BSCCREGLEN		9
 
 #define BSCCID_REG	0
@@ -1218,7 +1217,6 @@ SETCONFIGINFO SetConfigInfo[] =
 #define OK_CHECK_PATTN 0
 #define NG_CHECK_PATTN 1
 
-//#define CHECKPATTERNPATH	"/usr/local/share/printui"
 #define CHECKPATTERNPATH	PACKAGE_DATA_DIR
 
 typedef struct{

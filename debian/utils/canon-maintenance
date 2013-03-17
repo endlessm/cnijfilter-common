@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 tes=`ls -1 /etc/cups/ppd/*.ppd`
 if [ ! "${tes}" = "" ]; then
 

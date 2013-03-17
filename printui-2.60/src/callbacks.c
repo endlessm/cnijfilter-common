@@ -85,6 +85,7 @@ static void SetBJFltDevice(LPBJFLTDEVICE bjdev)
 
 static void SetBJFltColorSystem(LPBJFLTCOLORSYSTEM bjcolor)
 {
+	memset(bjcolor, 0, sizeof(BJFLTCOLORSYSTEM));	/* for reserve */
 
 	if( g_main_window->color_auto )
 		g_color_dialog = 
@@ -141,6 +142,8 @@ static void SetUISetup(LPBJFLT_UISETUP uisetup)
 
 static void GetMargin(LPCNCLPAPERSIZE psize)
 {
+	memset(psize, 0, sizeof(CNCLPAPERSIZE));
+
 	short size = GetCurrentnValue(CNCL_PAPERSIZE);
 
 	psize->nSelPaperWidth  = GetPaperWidth(size);
@@ -445,29 +448,6 @@ on_quality_button_clicked              (GtkButton       *button,
 	EnableSignal();
 }
 
-#if 0
-static void
-confirm_media_supply_change(short old_supply_value)
-{
-	int ret;
-	gchar* alert_msg = LookupText(g_keytext_list, "paper_supply_change_alert");
-	gchar* supply_str = GetCurrentString(CNCL_MEDIASUPPLY);
-//	gchar* supply_str = ValueToName(CNCL_MEDIASUPPLY, old_supply_value);
-	gchar* message = (gchar*)g_malloc(strlen(alert_msg) + strlen(supply_str));
-
-	sprintf(message, alert_msg, supply_str);
-
-	ret = UtilMessageBox(message, g_window_title,
-			 MB_OK | MB_CANCEL | MB_ICON_INFORMATION);
-
-	g_free(message);
-
-	if( ret == ID_CANCEL )
-	{
-		UpdateMenuLink(CNCL_MEDIASUPPLY, old_supply_value);
-	}
-}
-#endif
 
 static void
 update_by_media_type_entry()

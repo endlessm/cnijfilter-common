@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -231,10 +231,6 @@ char	*PaperGapString[2] = {
 
 
 
-
-
-
-
 typedef struct {
 	char	x;						
 	char	y;                      
@@ -257,6 +253,7 @@ typedef struct {
 	short	ornament;               // 0:none 1:one 2:two
 } BOXINF, *LPBOXINF;
 
+
 typedef struct {
 	char	*CtrlName;				
 	short	nDefault;               
@@ -265,7 +262,7 @@ typedef struct {
 } CTRLITEM, *LPCTRLITEM;
 
 
-
+#define REGI_TBL_MAX_NUM	3
 typedef struct RegiInfo {
 	char		*ModelName;			
 	struct	RegiTbl {				
@@ -276,7 +273,7 @@ typedef struct RegiInfo {
 		LPBOXINF	lpBoxInf;		
 		short		cnt;			
 		u_short		type;			
-	} regi[3];					
+	} regi[REGI_TBL_MAX_NUM];					
 } REGINFO;
 
 
@@ -301,13 +298,12 @@ typedef struct {
 	short	red;                    
 	short	green;                  
 	short	blue;                   
-} HOTSPOT, *LPHOTSPOT;
-
+} HOTSPOT, *LPHOTSPOT; 
 
 #define	REGI_EDITMAX		14           
 
 
-
+/* BJF850 */
 #define	IDM_BJC_F850		"BJF850"	
 #define	REGI_F850_1STCNT	6           
 #define	REGI_F850_2NDCNT	0           
@@ -1594,7 +1590,6 @@ TESTPATTERNINFO TestPatternInfo[] =
 };
 
 #define BSCCREGFORMAT	"%6s%c%02d\x0a"	
-//#define BSCCFILEPATH	"/usr/lib/bjlib/"
 #define BSCCFILEPATH	catpath(mkpath(XBJLIBPATH),"/")
 #define BSCCREGLEN		9
 
@@ -1736,7 +1731,6 @@ SETCONFIGINFO SetConfigInfo[] =
 #define OK_CHECK_PATTN 0
 #define NG_CHECK_PATTN 1
 
-//#define CHECKPATTERNPATH	"/usr/local/share/printui"
 #define CHECKPATTERNPATH	PACKAGE_DATA_DIR
 
 typedef struct{
@@ -1811,5 +1805,5 @@ INKCRTRGMSGINFO InkCartridgeInfo =
 		   	CND_CARTRIDGE_BK,
 			CND_CARTRIDGE_BK_COLOR }
 };
-#endif
 
+#endif
