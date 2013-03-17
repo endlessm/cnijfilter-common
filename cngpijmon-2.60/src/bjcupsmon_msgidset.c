@@ -447,8 +447,6 @@ ST_DEVCLR_TBL color_tbl_inkout[]={
   {"IP7500",  color_ip7500},
   {"IP6600D", color_ip6600d},
   {"MP500",   color_ip4200},
-  {"IP5200",   color_ip4200},
-  {"IP5200R",   color_ip4200},
   {ENDTAG, 0}
 };
 
@@ -490,8 +488,6 @@ ST_DEVCLR_TBL color_tbl_op3[]={
   {"IP7500",  color_ip7500},
   {"IP6600D", color_ip6600d},
   {"MP500",   color_ip4200},
-  {"IP5200",  color_ip4200},
-  {"IP5200R",  color_ip4200},
   {ENDTAG, 0}
 };
 

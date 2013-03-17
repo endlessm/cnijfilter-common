@@ -6,17 +6,12 @@ rm cnijfilter-*
 rm docs
 rm postinst
 rm postrm
-cd utils
-rm printui-*
-rm cngpijmon-*
-rm maintenance-*
-cd ../skel
+rm install
+cd skel
 mv cnijfilter-* ../
-mv printui-* ../utils/
-mv cngpijmon-* ../utils/
-mv maintenance-* ../utils/
 mv control ../
 mv docs ../
 mv postinst ../
 mv postrm ../
+mv install ../
 

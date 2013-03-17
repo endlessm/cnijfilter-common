@@ -20,7 +20,8 @@ Architecture: i386
 Section: graphics
 Multi-Arch: foreign
 Depends: 	${shlibs:Depends},
-			${misc:Depends}
+			${misc:Depends},
+			zenity
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
@@ -39,7 +40,8 @@ Package: cnijfilter-common-64
 Architecture: amd64
 Section: graphics
 Depends: 	${shlibs:Depends},
-			${misc:Depends}
+			${misc:Depends},
+			zenity
 Breaks: 	cnijfilter-common,
 			cnijfilter-common-32
 Replaces: 	cnijfilter-common,
