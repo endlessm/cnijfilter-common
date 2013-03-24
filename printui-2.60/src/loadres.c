@@ -71,7 +71,8 @@ static int ReadLine(FILE* fp, char* buf, int size)
 }
 
 #define	READ_MAX_BUF			1024
-#define	DEFAULT_GLADE_FILE		"printui.ui"
+#define	DEFAULT_UI_FILE		"printui.ui"
+#define	DEFAULT_GLADE_FILE		"printui.glade"
 #define	DEFAULT_KEYTEXT_FILE	"printui.res"
 #define	DEFAULT_UNIT_MM			"mm"	// "mm" or "inch"
 
@@ -142,6 +143,7 @@ int LoadResources()
 		// Load text resource.
 		g_keytext_list = LoadKeyTextList(keytext_name);
 
+			glade_name   = DEFAULT_UI_FILE;
 			char* glade_path = g_malloc(strlen(PACKAGE_DATA_DIR) + 1
 									  + strlen(glade_name) + 1);
 
