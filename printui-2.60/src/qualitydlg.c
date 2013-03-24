@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,15 +29,11 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
+
 #include <stdio.h>
 
 #include "bjuidefs.h"
@@ -90,11 +86,7 @@ UIQualityDialog* CreateQualityDialog(UIDialog* parent)
 	UIQualityDialog* dialog
 		 = (UIQualityDialog*)CreateDialog(sizeof(UIQualityDialog), parent);
 
-#ifdef	USE_LIB_GLADE
 	UI_DIALOG(dialog)->window = window = LookupWidget(NULL, "quality_dialog");
-#else
-	UI_DIALOG(dialog)->window = window = create_quality_dialog();
-#endif
 
 	dialog->print_quality = GetCurrentnValue(CNCL_PRINTQUALITY);
 	dialog->bin_method = GetCurrentnValue(CNCL_DITHER_PAT);
@@ -257,6 +249,11 @@ void UpdateQualityDialogWidgets(GtkWidget* window, gchar* except_name)
 		}
 		if( i == 3 )
 		{
+				gtk_label_set_text(
+					GTK_LABEL(LookupWidget(window, "quality_level_name_label")),"");
+		}
+
+		{	/* Ver.2.70: Write 5position value always */
 			int index
 			 	= GetActiveButtonIndex( window, print_quality_button_name, 0);
 			char message[16];
@@ -264,16 +261,9 @@ void UpdateQualityDialogWidgets(GtkWidget* window, gchar* except_name)
 			sprintf(message, "%d", 5 - index);
 			gtk_label_set_text(
 				GTK_LABEL(
-					LookupWidget(window, "quality_level_name_label")), message);
+					LookupWidget(window, "quality_level_num_label")), message);
 		}
 	}
-
-/*
-	// Print quality message.
-	gtk_label_set_text(
-		GTK_LABEL(LookupWidget(window, "quality_level_name_label")),
-									GetCurrentString(CNCL_MESS_QUALITY));
-*/
 
 	// Halftoning button and label.
 	{

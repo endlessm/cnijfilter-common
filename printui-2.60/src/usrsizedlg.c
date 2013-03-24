@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,16 +29,11 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 #include <stdio.h>
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 
@@ -50,20 +45,21 @@ static const gchar* user_size_scale_button_name[] =
 	NULL
 };
 
-static const gchar* user_size_scale_label[] =
+
+/* Ver.280 */
+static const gchar* user_size_scale_format_res[] =
 {
-	"mm",
-	"in",
+	"custom_size_mm_format",
+	"custom_size_inches_format",
 	NULL
 };
 
-static const gchar* user_size_scale_format[] =
+static const gchar* user_size_range_format[] =
 {
-	"%s (%5.1f-%5.1f)",
-	"%s (%4.2f-%4.2f)",
+	"%5.1f",
+	"%4.2f",
 	NULL
 };
-
 
 static
 double Milli2Inch(double min_mm, double max_mm,
@@ -115,11 +111,7 @@ UIUserSizeDialog* CreateUserSizeDialog(UIDialog* parent, gboolean unit_inch)
 	UIUserSizeDialog* dialog
 		 = (UIUserSizeDialog*)CreateDialog(sizeof(UIUserSizeDialog), parent);
 
-#ifdef	USE_LIB_GLADE
 	UI_DIALOG(dialog)->window = LookupWidget(NULL, "user_size_dialog");
-#else
-	UI_DIALOG(dialog)->window = create_user_size_dialog();
-#endif
 
 	// 1:inches, 0:mm
 	dialog->scale = dialog->old_scale = unit_inch? 1 : 0;
@@ -219,6 +211,12 @@ void UpdateUserSizeWidgets(UIUserSizeDialog* dialog, gboolean init_flag)
 	double new_w, new_h;
 	GtkWidget* label;
 	gchar scale_label[64];
+	gchar* scale_string;
+	gchar width_min_string[12];
+	gchar width_max_string[12];
+	gchar height_min_string[12];
+	gchar height_max_string[12];
+
 
 	// The scale of dialog->width and dialog->height is "mm", 
 	// so old_scale must be 0 when showing this dialog.
@@ -291,17 +289,25 @@ void UpdateUserSizeWidgets(UIUserSizeDialog* dialog, gboolean init_flag)
 	gtk_spin_button_set_value(width_spin, new_w);
 	gtk_spin_button_set_value(height_spin, new_h);
 
+
+	/* Ver.2.80 */
+	sprintf( width_min_string, user_size_range_format[new_scale], (float)min_w );
+	sprintf( width_max_string, user_size_range_format[new_scale], (float)max_w );
+	sprintf( height_min_string, user_size_range_format[new_scale], (float)min_h );
+	sprintf( height_max_string, user_size_range_format[new_scale], (float)max_h );
+
+	scale_string = LookupText(g_keytext_list, user_size_scale_format_res[new_scale]);
+
 	// Width scale label.
 	label = LookupWidget(UI_DIALOG(dialog)->window, "user_size_width_label");
-	sprintf(scale_label, user_size_scale_format[new_scale],
-		user_size_scale_label[new_scale], (float)min_w, (float)max_w);
+	sprintf(scale_label, scale_string, width_min_string, width_max_string );
 	gtk_label_set_text(GTK_LABEL(label), scale_label);
 
 	// Height scale label.
 	label = LookupWidget(UI_DIALOG(dialog)->window, "user_size_height_label");
-	sprintf(scale_label, user_size_scale_format[new_scale],
-		user_size_scale_label[new_scale], (float)min_h, (float)max_h);
+	sprintf(scale_label, scale_string, height_min_string, height_max_string );
 	gtk_label_set_text(GTK_LABEL(label), scale_label);
+
 
 	dialog->old_scale = new_scale;
 }

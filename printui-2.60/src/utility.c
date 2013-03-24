@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,9 +29,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>			
@@ -41,10 +38,8 @@
 #include <fcntl.h>
 
 #include "callbacks.h"
-#ifndef USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 #include "utildef.h"
@@ -58,13 +53,20 @@ static	gchar	*power_on_mode;
 static	gchar	*power_off_mode;	
 static	int poweron_index;
 static	int poweroff_index;	
+static  int current_poweron_index;			// 2006/11/10
+static  int current_poweroff_index;			// 2006/11/10
 static	int drylevel_value;
+static	int current_drylevel_value;
 static 	int quiet_mode;			
+static 	int current_quiet_mode;				// 2006/11/10
 static	int warning_mode = 1;
+static	int current_warning_mode;			// 2006/11/10
 static 	int black_reset;
 static	int color_reset;
 static	int papergap_mode;
+static	int current_papergap_mode;			// 2006/11/10
 static	int manual_head_mode;
+static	int current_manual_head_mode;		// 2006/11/10
 static	int cartridge_index;
 static	int cartridge_cur_index;
 
@@ -92,7 +94,8 @@ extern	KeyTextList	*g_keytext_list;
 
 int getnum(char *ptr);
 char *GetParamValue(char **Keytbl, char **Valuetbl, int n, char *mode);	
-void SetComboBox(GtkWidget *combo, char **Keytbl, int n, int index);
+void SetComboBoxItems(GtkWidget *combo, char **Keytbl, int n, int index);	/* Ver.2.80 */
+
 int GetAutoPowerIndex(char **Keytbl, int n, char *mode);
 int nValueToIndex(short *nValuetbl, int n, short nValue);
 int KeyToIndex(char **Keytbl, int n, char *type);
@@ -419,12 +422,8 @@ on_pattern_check_dialog_delete_event   (GtkWidget       *widget,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
 	return TRUE;
 }
@@ -436,12 +435,8 @@ on_pattern_check_exit_button_clicked   (GtkButton       *button,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -452,12 +447,8 @@ on_pattern_check_cleaning_button_clicked
 {
 	result = ID_OK;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -476,12 +467,8 @@ on_nozzle_check_dialog_delete_event    (GtkWidget       *widget,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
 	return TRUE;
 }
@@ -493,12 +480,8 @@ on_nozzle_check_execute_button_clicked (GtkButton       *button,
 {
 	result = ID_OK;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -508,12 +491,8 @@ on_nozzle_check_cancel_button_clicked  (GtkButton       *button,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -532,12 +511,8 @@ on_head_alignment_dialog_delete_event  (GtkWidget       *widget,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(widget)));
-#endif
 		
 	return TRUE;
 }
@@ -551,12 +526,8 @@ on_head_alignment_execute_button_clicked
 
 	result = ID_OK;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 static void CheckAlignmentSetting(GtkWidget *widget)
@@ -599,12 +570,8 @@ on_head_alignment_check_setting_button_clicked
 (GtkButton       *button, gpointer         user_data)
 {
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 	CheckAlignmentSetting(gtk_widget_get_toplevel(GTK_WIDGET(button)));
 	result = ID_CANCEL;
@@ -618,12 +585,8 @@ on_head_alignment_cancel_button_clicked
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));
-#endif
 
 }
 
@@ -643,12 +606,8 @@ on_deep_cleaning_dialog_delete_event   (GtkWidget       *widget,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
 	return TRUE;
 }
@@ -661,12 +620,8 @@ on_deep_cleaning_execute_button_clicked
 {
 	result = ID_OK;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -676,12 +631,8 @@ on_deep_cleaning_cancel_button_clicked (GtkButton       *button,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 }
 
@@ -702,12 +653,8 @@ on_plate_cleaning_dialog_delete_event  (GtkWidget       *widget,
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
 	return TRUE;
 }
@@ -721,12 +668,8 @@ on_plate_cleaning_execute_button_clicked
 
 	result = ID_OK;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 }
 
@@ -739,12 +682,8 @@ on_plate_cleaning_cancel_button_clicked
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 }
 
@@ -768,13 +707,9 @@ gboolean on_special_dialog_delete_event
 
 	result = ID_CANCEL;
 	
-#ifdef USE_LIB_GLADE
 	special_set_default(widget);
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
 	return TRUE;
 }
@@ -800,12 +735,8 @@ void on_special_send_button_clicked(GtkButton *button, gpointer user_data)
 	scan_button = LookupWidget(GTK_WIDGET(button), "scan_checkbutton");	
 	scan_pause_mode = GTK_TOGGLE_BUTTON(scan_button)->active;	
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -817,13 +748,9 @@ void on_special_cancel_button_clicked(GtkButton *button, gpointer user_data)
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	special_set_default(window);
 	gtk_widget_hide(window);	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(window);	
-#endif
 }
 
 
@@ -1116,7 +1043,7 @@ void DrawTestPrintPage(
 		 		}
 			}
 			
-		} else {		
+		} else {
 			if (group == i)		
 			 	SetPenColor(gc,
 					hotspot[i].red, hotspot[i].green, hotspot[i].blue);	
@@ -1184,7 +1111,7 @@ void MakeHotSpotTable(
 	GtkWidget	*drawarea;		
 	char		*model_name;	
 	short		frame_width, frame_height;		
-
+	
 	
 	model_name = GetModelName();		
 	index = -1;
@@ -1203,9 +1130,10 @@ void MakeHotSpotTable(
 	nKindCnt   = RegiInfo[index].regi[page].cnt;            
 	type	   = RegiInfo[index].regi[page].type;			
 	
-
+	
 	drawarea = LookupWidget(GTK_WIDGET(dialog), GetRegiDrawingName(nPageNum));	
 	gdk_window_get_size(drawarea->window, &draw_width, &draw_height);           
+	
 	
 	for (i=0; i < nKindCnt; i++) {		
 		
@@ -1251,80 +1179,23 @@ void MakeHotSpotTable(
 
 
 
-typedef struct regi_dialog_table_s
-{
-	char *model_name;
-	GtkWidget* (*create_regi)(void);
-	GtkWidget* (*create_band)(void);
-} RegiDialogTable;
-
-
-static
-RegiDialogTable regi_dialog_table[]=
-{
-	{"PIXMAIP1000", create_PX550Iregi_dialog,   NULL                      },
-	{"PIXMAIP1500", create_PX850Iregi1_dialog,  NULL                      },
-	{"PIXUSIP3100", create_PX850Iregi1_dialog,  create_PX850Iregi2_dialog },
-	{"PIXUSIP4100", create_PX860Iregi1_dialog,  create_PX860Iregi2_dialog },
-	{"PIXUSIP8600", create_ip8600regi_dialog,   NULL                      },
-	{"IP2200", 		create_IP2200regi_dialog,   NULL                      },
-	{"IP4200", 		create_IP4200regi1_dialog,  create_IP4200regi2_dialog },
-	{"IP6600D", 	create_IP6600Dregi1_dialog, create_IP6600Dregi2_dialog },
-	{"IP7500", 		create_IP7500regi1_dialog,  create_IP7500regi2_dialog },
-	{"MP500", 		create_IP4200regi1_dialog,  create_IP4200regi2_dialog },
-	{NULL, NULL}
-};
-
-
-static
-RegiDialogTable *find_regi_dialog_table(char *model)
-{
-
-	RegiDialogTable *pTable = regi_dialog_table;
-
-	while( pTable->model_name != NULL ){
-		if( !strcmp(pTable->model_name, model) )
-			return pTable;
-		pTable++;
-	}
-	return NULL;
-}
-
 
 int UtilRegiDialog(short page)
 {
+
 	int			i;
 	GtkWidget	*regi_dialog;		
 	GtkObject	*adj;               
 	short		frame_width, frame_height;		
 
-#ifndef USER_LIB_GLADE
-	RegiDialogTable *pTable = NULL;
-#endif
 	
-#ifdef USE_LIB_GLADE
 	regi_dialog = LookupWidget(NULL, GetRegiDialogName(page));	
-#else
-	pTable = find_regi_dialog_table(GetModelName());
-
-	switch(page){
-	case 0:
-	default:
-		regi_dialog = pTable->create_regi();
-		break;
-	case 1:
-		regi_dialog = pTable->create_band();
-		break;
-	}
-#endif
 
 	gtk_widget_realize(regi_dialog);		
 	gtk_widget_realize(LookupWidget(regi_dialog, GetRegiDrawingName(page)));  
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_add_events(LookupWidget(regi_dialog, GetRegiDrawingName(page)),
 												 GDK_BUTTON_PRESS_MASK);
-#endif
 
 	
 	if (!(strcmp(GetModelName(), "BJF860") & strcmp(GetModelName(), "BJF870"))) {	
@@ -1368,12 +1239,12 @@ int UtilRegiDialog(short page)
 	}
 	
 
+
 	gtk_widget_show(regi_dialog);	
 	gtk_window_set_transient_for(
 		GTK_WINDOW(regi_dialog), GTK_WINDOW(UI_DIALOG(g_main_window)->window));
 
 	gtk_main();						
-
 
 	gdk_pixmap_unref(regi_pixmap);		
 	
@@ -1392,23 +1263,27 @@ gboolean on_regi_dialog_delete_event(
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));	
 	gtk_main_quit();
-#else
-    gtk_widget_destroy(GTK_WIDGET(widget));	
-#endif
 	
 	return TRUE;
 }
 
-
+// 2007/08/09
+gboolean on_regi_dialog_delete_event_no_destroy(
+	GtkWidget *widget, GdkEvent *event, gpointer user_data)
+{
+	result = ID_CANCEL;
+	return TRUE;
+}
 
 
 void on_regi_dialog_destroy(GtkObject *object, gpointer user_data)
 {
   gtk_main_quit();
 }
+
+
 
 
 gboolean on_regi_drawingarea_button_press_event(
@@ -1486,8 +1361,8 @@ gboolean on_regi_drawingarea_expose_event(
 	GtkWidget *widget, GdkEventExpose *event, gpointer user_data)
 {
 	int	width, height, pix_width, pix_height;
-
-
+	
+	
 	gdk_window_get_size(widget->window, &width, &height);	
 	gdk_window_get_size(regi_pixmap, &pix_width, &pix_height);	
 	
@@ -1506,18 +1381,18 @@ gboolean on_regi_drawingarea_expose_event(
 
 
 
-void on_regi_spinbutton_changed(GtkEditable *editable, gpointer user_data)
+void on_regi_spinbutton_changed(GtkSpinButton *spinbutton, gpointer user_data)
 {
 	int		current, i;
 	short	items[REGI_EDITMAX];
 	GtkWidget	*dialog;
 	
 	current = getnum(user_data);
-	dialog = LookupWidget(GTK_WIDGET(editable), GetRegiDialogName(nPageNum));
+	dialog = LookupWidget(GTK_WIDGET(spinbutton), GetRegiDialogName(nPageNum));
 	
 	for (i=0; i<nKindCnt; i++)
 		items[i] = gtk_spin_button_get_value_as_int(
-			GTK_SPIN_BUTTON(LookupWidget(GTK_WIDGET(editable),
+			GTK_SPIN_BUTTON(LookupWidget(GTK_WIDGET(spinbutton),
 				lpCtrlItem[i].CtrlName)));
 
 	DrawTestPrintPage(dialog, regi_pixmap, HotSpot, lpCtrlItem,
@@ -1589,12 +1464,8 @@ on_regi_cancel_button_clicked          (GtkButton       *button,
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));
 	gtk_main_quit();
-#else
-    gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));
-#endif
 
 }
 
@@ -1610,12 +1481,8 @@ void on_regi_ok_button_clicked(GtkButton *button, gpointer user_data)
 				lpCtrlItem[i].CtrlName)));
 	regi_flag++;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));
 	gtk_main_quit();
-#else
-    gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));
-#endif
 }
 
 
@@ -1642,12 +1509,8 @@ gboolean on_cleaning_dialog_delete_event
 
 	result = ID_CANCEL;			
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
 	return TRUE;
 }
@@ -1664,12 +1527,8 @@ void on_cleaning_dialog_destroy(GtkObject *object, gpointer user_data)
 void on_cleaning_execute_button_clicked(GtkButton *button, gpointer user_data)
 {
 	result = ID_OK;
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -1679,12 +1538,8 @@ void on_cleaning_cancel_button_clicked(GtkButton *button, gpointer user_data)
 	
 	result = ID_CANCEL;			
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -1723,12 +1578,8 @@ on_refreshing_dialog_delete_event      (GtkWidget       *widget,
 
 	result = ID_CANCEL;			
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
 	return TRUE;
 
@@ -1749,12 +1600,8 @@ on_refreshing_execute_button_clicked   (GtkButton       *button,
 {
 	result = ID_OK;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 }
 
@@ -1767,12 +1614,8 @@ on_refreshing_cancel_button_clicked    (GtkButton       *button,
 
 	result = ID_CANCEL;			
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 }
 
@@ -1789,6 +1632,8 @@ on_refreshing_radiobutton_toggled      (GtkToggleButton *togglebutton,
 
 static void autopower_set_default(void)
 {
+	current_poweron_index = 0;
+	current_poweroff_index = 0;
 	poweron_index = 0;
 	poweroff_index = 0;
 }
@@ -1798,12 +1643,8 @@ gboolean on_autopower_dialog_delete_event
 {
 	result = ID_CANCEL;
 	
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 	autopower_set_default();
 	
 	return TRUE;
@@ -1818,7 +1659,8 @@ void on_autopower_send_button_clicked(GtkButton *button, gpointer user_data)
 {
 	GtkWidget	*power_on_combo;		
 	GtkWidget	*power_off_combo;		
-  
+
+
 	result = ID_OK;
 
 	power_on_combo = LookupWidget(GTK_WIDGET(button), "autopower_combo1");	
@@ -1827,30 +1669,20 @@ void on_autopower_send_button_clicked(GtkButton *button, gpointer user_data)
 	/* Ver.2.80 */
 	power_on_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_on_combo));
 	power_off_mode = gtk_combo_box_get_active_text(GTK_COMBO_BOX(power_off_combo));
-//	power_on_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_on_combo)->entry));	
-//	power_off_mode = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(power_off_combo)->entry));	
-	
-	poweron_index = GetAutoPowerIndex(AutoPowerOnKey, 2, power_on_mode);
-	poweroff_index = GetAutoPowerIndex(AutoPowerOffKey, 6, power_off_mode);
 
-#ifdef USE_LIB_GLADE
+	current_poweron_index = GetAutoPowerIndex(AutoPowerOnKey, 2, power_on_mode);
+	current_poweroff_index = GetAutoPowerIndex(AutoPowerOffKey, 6, power_off_mode);
+
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 void on_autopower_cancel_button_clicked(GtkButton *button, gpointer user_data)
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 	autopower_set_default();
 }
 
@@ -1906,17 +1738,13 @@ on_drylevel_dialog_delete_event
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	drylevel_set_default(widget);
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 		
-	papergap_mode = 0;
-	manual_head_mode = 0;
-	drylevel_value = 0;
+//	papergap_mode = 0;
+//	manual_head_mode = 0;
+//	drylevel_value = 0;
 
 	return TRUE;
 
@@ -1942,7 +1770,7 @@ void on_drylevel_send_button_clicked(GtkButton *button, gpointer user_data)
 		else if( config_flag & SETCONFIG_DRY_5 )
 			check_button =  LookupWidget(
 						GTK_WIDGET(button), "drylevel5_abrasion_checkbutton");
-		papergap_mode = GTK_TOGGLE_BUTTON(check_button)->active;
+		current_papergap_mode = GTK_TOGGLE_BUTTON(check_button)->active;
 	}
 	if( config_flag & SETCONFIG_MANHEAD ){
 		if( config_flag & SETCONFIG_DRY_3 )
@@ -1951,15 +1779,11 @@ void on_drylevel_send_button_clicked(GtkButton *button, gpointer user_data)
 		else if( config_flag & SETCONFIG_DRY_5 )
 			check_button =  LookupWidget(
 						GTK_WIDGET(button), "drylevel5_manhead_checkbutton");
-		manual_head_mode = GTK_TOGGLE_BUTTON(check_button)->active;
+		current_manual_head_mode = GTK_TOGGLE_BUTTON(check_button)->active;
 	}
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 }
 
@@ -1973,16 +1797,12 @@ void on_drylevel_cancel_button_clicked
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	drylevel_set_default(window);
 	gtk_widget_hide(window);	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(window);	
-#endif
-	papergap_mode = 0;
-	manual_head_mode = 0;
-	drylevel_value = 0;
+//	papergap_mode = 0;
+//	manual_head_mode = 0;
+//	drylevel_value = 0;
 }
 
 
@@ -2004,13 +1824,16 @@ void on_drylevel_radiobutton_toggled(GtkToggleButton *togglebutton,
 
 
 
-
 /*****************************************************************
  *
  *	 Quiet Mode Signal Handler 
  *			    Added '01.11.05
  *****************************************************************/
-
+void init_quiet_settings( void )
+{
+	current_quiet_mode = 0;
+	quiet_mode = 0;
+}
 
 static void quiet_set_default(GtkWidget *widget)
 {
@@ -2019,7 +1842,6 @@ static void quiet_set_default(GtkWidget *widget)
 			LookupWidget(GTK_WIDGET(widget), "quiet_checkbutton");
 
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(quiet_button), FALSE);  
-
 }
 
 
@@ -2037,16 +1859,12 @@ on_quiet_dialog_delete_event
 	
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	quiet_set_default(GTK_WIDGET(widget));
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 	return TRUE;
 
-	quiet_mode = 0;
+//	quiet_mode = 0;
 }
 
 
@@ -2060,15 +1878,11 @@ void on_quiet_send_button_clicked(GtkButton *button, gpointer user_data)
 	result = ID_OK;
 
 	quiet_button = LookupWidget(GTK_WIDGET(button), "quiet_checkbutton");	
-	quiet_mode = GTK_TOGGLE_BUTTON(quiet_button)->active;
+	current_quiet_mode = GTK_TOGGLE_BUTTON(quiet_button)->active;
 
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -2082,14 +1896,10 @@ void on_quiet_cancel_button_clicked
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	quiet_set_default(window);
 	gtk_widget_hide(window);	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(window);	
-#endif
-	quiet_mode = 0;
+//	quiet_mode = 0;
 
 }
 
@@ -2112,6 +1922,13 @@ void on_quiet_std_button_clicked(GtkButton *button, gpointer user_data)
  *	 Ink Warning Signal Handler 
  *			    Added '01.11.16
  *****************************************************************/
+
+//  2006/11/10
+void init_inkwarning_settings( void )
+{
+	current_warning_mode = 1;
+	warning_mode = 1;
+}
 
 static void ink_warning_set_default(GtkWidget *widget)
 {
@@ -2137,14 +1954,10 @@ on_ink_warning_dialog_delete_event
 	result = ID_CANCEL;
 
 
-#ifdef USE_LIB_GLADE
 	ink_warning_set_default(widget);
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
-	warning_mode = 1;
+//	warning_mode = 1;
 	return TRUE;
 
 }
@@ -2161,15 +1974,11 @@ void on_ink_warning_send_button_clicked(GtkButton *button, gpointer user_data)
 
 	warning_button = LookupWidget(GTK_WIDGET(button),
 								  "ink_warning_checkbutton");	
-	warning_mode = GTK_TOGGLE_BUTTON(warning_button)->active;
+	current_warning_mode = GTK_TOGGLE_BUTTON(warning_button)->active;
 
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -2181,14 +1990,10 @@ void on_ink_warning_cancel_button_clicked
 	GtkWidget *window = GetTopWidget(GTK_WIDGET(button));
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	ink_warning_set_default(window);
 	gtk_widget_hide(window);	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(window);
-#endif
-	warning_mode = 1;
+//	warning_mode = 1;
 }
 
 
@@ -2253,8 +2058,6 @@ on_ink_reset_dialog_delete_event
 
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
-	{
 		GtkWidget	*black_button;
 		GtkWidget	*color_button;
 
@@ -2266,10 +2069,6 @@ on_ink_reset_dialog_delete_event
 		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(color_button), FALSE);  
 		gtk_widget_hide(GTK_WIDGET(widget));
 		gtk_main_quit();
-	}
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 	return TRUE;
 
 }
@@ -2291,14 +2090,10 @@ void on_ink_reset_execute_button_clicked(GtkButton *button, gpointer user_data)
 								"color_reset_checkbutton");	
 	color_reset = GTK_TOGGLE_BUTTON(color_button)->active;
 
-#ifdef USE_LIB_GLADE
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(black_button), FALSE);
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(color_button), FALSE);
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 }
 
 
@@ -2309,8 +2104,6 @@ void on_ink_reset_cancel_button_clicked
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
-	{
 		GtkWidget	*black_button;
 		GtkWidget	*color_button;
 
@@ -2322,10 +2115,6 @@ void on_ink_reset_cancel_button_clicked
 		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(color_button), FALSE);  
 		gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
 		gtk_main_quit();			
-	}
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));	
-#endif
 
 }
 
@@ -2333,24 +2122,27 @@ void on_ink_reset_cancel_button_clicked
 int UtilInkCartrigeDialog()
 {
 	GtkWidget*	dialog;
-	GtkWidget*	entry;
+//	GtkWidget*	entry;
 	GtkWidget*	combo;
 	GtkWidget*	label;
 	gchar* 		msg;
 	int   		index_num = InkCartridgeInfo.index_num;
 
-#ifdef USE_LIB_GLADE
 	dialog = LookupWidget(NULL, "ink_cartridge_dialog");
-#else
-	dialog = create_ink_cartridge_dialog();
-#endif
 	gtk_widget_realize(dialog);
 
 	cartridge_cur_index = nValueToIndex(InkCartridgeInfo.nValue, index_num, 
 								GetCurrentnValue(CNCL_INKCARTRIDGESETTINGS) );
 
 	combo = LookupWidget(dialog, "ink_cartridge_dialog_combo");
-	SetComboBox(combo, InkCartridgeInfo.type, index_num, cartridge_cur_index);
+	
+	/* Ver.2.80 */
+	//SetComboBox(combo, InkCartridgeInfo.type, index_num, cartridge_cur_index);
+	if( DisableSignal() )
+	{
+		SetComboBoxItems(combo, InkCartridgeInfo.type, index_num, cartridge_cur_index);
+	}
+	EnableSignal();
 
 	msg = LookupText(g_keytext_list, InkCartridgeInfo.info[cartridge_cur_index]);
 	label = LookupWidget(dialog, "ink_cartridge_dialog_label3");
@@ -2359,8 +2151,10 @@ int UtilInkCartrigeDialog()
 	gtk_widget_show(dialog);
 	gtk_window_set_transient_for(GTK_WINDOW(dialog),
 		GTK_WINDOW(UI_DIALOG(g_main_window)->window));
-	entry = LookupWidget(dialog, "ink_cartridge_dialog_entry");
-	gtk_widget_grab_focus(entry);
+
+	/* Ver.2.80 */
+	//gtk_widget_grab_focus(entry);
+//	gtk_widget_grab_focus(combo);
 
 	gtk_main();
 
@@ -2377,12 +2171,8 @@ on_ink_cartridge_dialog_delete_event   (GtkWidget       *widget,
 {
 	result = ID_CANCEL;
 	
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(GTK_WIDGET(widget));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(GTK_WIDGET(widget));
-#endif
 	cartridge_cur_index = cartridge_index;
 	return TRUE;
 }
@@ -2394,22 +2184,30 @@ on_ink_cartridge_dialog_destroy        (GtkObject       *object,
 	gtk_main_quit();
 }
 
+
+/* Ver.2.80 */
 void
-on_ink_cartridge_dialog_entry_changed  (GtkEditable     *editable,
+on_ink_cartridge_dialog_combo_changed  (GtkComboBox     *combobox,
                                         gpointer         user_data)
 {
 	GtkWidget*	label;
 	char*		type;
 	gchar* 		msg;
 
-	type = (char*)gtk_entry_get_text(GTK_ENTRY(editable));
-	cartridge_cur_index = KeyToIndex(InkCartridgeInfo.type, 
-										InkCartridgeInfo.index_num, type);
-
-	msg = LookupText(g_keytext_list, InkCartridgeInfo.info[cartridge_cur_index]);
-	label = LookupWidget(GTK_WIDGET(editable), "ink_cartridge_dialog_label3");
-	gtk_label_set_text(GTK_LABEL(label), msg);
+	if( DisableSignal() )
+	{
+		type = (char*)gtk_combo_box_get_active_text( combobox );
+	
+		cartridge_cur_index = KeyToIndex(InkCartridgeInfo.type, 
+											InkCartridgeInfo.index_num, type);
+	
+		msg = LookupText(g_keytext_list, InkCartridgeInfo.info[cartridge_cur_index]);
+		label = LookupWidget(GTK_WIDGET(combobox), "ink_cartridge_dialog_label3");
+		gtk_label_set_text(GTK_LABEL(label), msg);
+	}
+	EnableSignal();
 }
+
 
 void
 on_ink_cartridge_dialog_ok_button_clicked
@@ -2422,17 +2220,13 @@ on_ink_cartridge_dialog_ok_button_clicked
 	result = ID_OK;
 
 	combo = LookupWidget(GTK_WIDGET(button), "ink_cartridge_dialog_combo");
-	type = (char*)gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
+	type = (char*)gtk_combo_box_get_active_text( GTK_COMBO_BOX(combo) );	/* Ver.2.80 */
 
 	cartridge_cur_index = KeyToIndex(InkCartridgeInfo.type, 
 										InkCartridgeInfo.index_num, type);
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));
 	gtk_main_quit();			
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));
-#endif
 	cartridge_index = cartridge_cur_index;
 }
 
@@ -2443,12 +2237,8 @@ on_ink_cartridge_dialog_cancel_button_clicked
 {
 	result = ID_CANCEL;
 
-#ifdef USE_LIB_GLADE
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));
 	gtk_main_quit();
-#else
-	gtk_widget_destroy(gtk_widget_get_toplevel(GTK_WIDGET(button)));
-#endif
 
 	cartridge_cur_index = cartridge_index;
 }
@@ -2464,9 +2254,15 @@ on_ink_cartridge_dialog_defaults_button_clicked
 	gchar* 		msg;
 
 	cartridge_cur_index = InkCartridgeInfo.index_default;
-
 	combo = LookupWidget(GTK_WIDGET(button), "ink_cartridge_dialog_combo");
-	SetComboBox(combo, InkCartridgeInfo.type, InkCartridgeInfo.index_num, cartridge_cur_index);
+
+	/* Ver.2.80 */
+	if( DisableSignal() )
+	{
+		SetComboBoxItems(combo, InkCartridgeInfo.type, InkCartridgeInfo.index_num, cartridge_cur_index);
+	}
+	EnableSignal();
+
 	msg = LookupText(g_keytext_list, InkCartridgeInfo.info[cartridge_cur_index]);
 	label = LookupWidget(GTK_WIDGET(button), "ink_cartridge_dialog_label3");
 	gtk_label_set_text(GTK_LABEL(label), msg);
@@ -2500,23 +2296,12 @@ static void SetDryLevel(void)
 		!strcmp(model_name,"PIXUS950I") || !strcmp(model_name,"PIXUS990I") ||
 		!strcmp(model_name, "PIXUSIP8600") ){
 
-#ifdef USE_LIB_GLADE
 		drylevel_dialog = LookupWidget(NULL, "drylevel3_dialog");
-#else
-		drylevel_dialog = create_drylevel3_dialog();
-#endif
 		button = LookupWidget(drylevel_dialog, 
 							  DryLevel3NameList[drylevel_value]);
 		send_button = LookupWidget(drylevel_dialog, "drylevel3_send_button");
-
-	}
-	else{
-
-#ifdef USE_LIB_GLADE
+	}else{
 		drylevel_dialog = LookupWidget(NULL, "drylevel5_dialog");
-#else
-		drylevel_dialog = create_drylevel5_dialog();
-#endif
 		button = LookupWidget(drylevel_dialog, 
 							  DryLevel5NameList[drylevel_value]);
 		send_button = LookupWidget(drylevel_dialog, "drylevel5_send_button");
@@ -2581,11 +2366,17 @@ static void SetDryLevel(void)
 	if(UtilMessageBox(LookupText(g_keytext_list, "utility_message_9"),
 					  g_window_title, MB_ICON_EXCLAMATION | MB_OK | 
 					  MB_CANCEL)==ID_CANCEL){
-		papergap_mode = 0;
-		manual_head_mode = 0;
-		drylevel_value = 0;
+//		papergap_mode = 0;
+//		manual_head_mode = 0;
+//		drylevel_value = 0;
 		return ;
 	}
+
+	// preserve setting
+	papergap_mode = current_papergap_mode;
+	manual_head_mode = current_manual_head_mode;
+	drylevel_value = current_drylevel_value;
+	
 		
 	memcpy(p, bjl_cmds, BJLLEN); p+=BJLLEN;
 	memcpy(p, BJLSTART, BJLSTARTLEN); p+=BJLSTARTLEN;
@@ -2620,7 +2411,7 @@ void UtilCleaning(LPUIDB uidb)
 	if (g_socketname == NULL)			
 		return ;                        
 
-	model_name = GetModelName();	
+	model_name = GetModelName();
 
 	if( !strcmp(model_name,"BJS600") || !strcmp(model_name,"BJS630")
 		|| !strcmp(model_name,"BJS6300") || !strcmp(model_name, "BJS500")
@@ -2633,11 +2424,7 @@ void UtilCleaning(LPUIDB uidb)
 		GtkWidget *radio_button;
 		int i;
 		
-#ifdef USE_LIB_GLADE
 		cleaning_dialog = LookupWidget(NULL, "cleaning_dialog");	
-#else
-		cleaning_dialog = create_cleaning_dialog();	
-#endif
 		gtk_widget_realize(cleaning_dialog);			
 		cleaning_set_default(cleaning_dialog);
 
@@ -2692,11 +2479,7 @@ void UtilCleaning(LPUIDB uidb)
 		GtkWidget *radio_button;
 		int i;
 		
-#ifdef USE_LIB_GLADE
 		cleaning_dialog = LookupWidget(NULL, "cleaning_dialog");	
-#else
-		cleaning_dialog = create_cleaning_dialog();	
-#endif
 		gtk_widget_realize(cleaning_dialog);			
 		cleaning_set_default(cleaning_dialog);
 
@@ -2760,11 +2543,7 @@ void UtilCleaning(LPUIDB uidb)
 		GtkWidget *radio_button;
 		int i;
 		
-#ifdef USE_LIB_GLADE
 		cleaning_dialog = LookupWidget(NULL, "cleaning_dialog");	
-#else
-		cleaning_dialog = create_cleaning_dialog();	
-#endif
 		gtk_widget_realize(cleaning_dialog);			
 		cleaning_set_default(cleaning_dialog);
 
@@ -2992,11 +2771,7 @@ void UtilRefreshing(LPUIDB uidb)
 		GtkWidget *radio_button;
 		int i;
 
-#ifdef USE_LIB_GLADE
 		refreshing_dialog = LookupWidget(NULL, "refreshing_dialog");
-#else
-		refreshing_dialog = create_refreshing_dialog();
-#endif
 		gtk_widget_realize( refreshing_dialog);
 		
 		for (i=0; i < sizeof(InkMsgInfo)/sizeof(INKMSGINFO); i++) {
@@ -3057,11 +2832,7 @@ void UtilRefreshing(LPUIDB uidb)
 		GtkWidget *radio_button;
 		int i;
 
-#ifdef USE_LIB_GLADE
 		refreshing_dialog = LookupWidget(NULL, "refreshing_dialog");
-#else
-		refreshing_dialog = create_refreshing_dialog();
-#endif
 		gtk_widget_realize(refreshing_dialog);
 		
 		gtk_label_set_text(
@@ -3128,11 +2899,7 @@ void UtilRefreshing(LPUIDB uidb)
 		
 		GtkWidget *excute_button = NULL;
 
-#ifdef USE_LIB_GLADE
 		refreshing_dialog = LookupWidget(NULL, "deep_cleaning_dialog");
-#else
-		refreshing_dialog = create_deep_cleaning_dialog();
-#endif
 		gtk_widget_realize(refreshing_dialog);
 		gtk_widget_show(refreshing_dialog);
 		gtk_window_set_transient_for(GTK_WINDOW(refreshing_dialog),
@@ -3159,11 +2926,7 @@ void UtilRefreshing(LPUIDB uidb)
 		
 		GtkWidget *excute_button = NULL;
 
-#ifdef USE_LIB_GLADE
 		refreshing_dialog = LookupWidget(NULL, "deep_cleaning_dialog");
-#else
-		refreshing_dialog = create_deep_cleaning_dialog();
-#endif
 		gtk_widget_realize(refreshing_dialog);
 		gtk_widget_show(refreshing_dialog);
 		gtk_window_set_transient_for(GTK_WINDOW(refreshing_dialog),
@@ -3188,11 +2951,7 @@ void UtilRefreshing(LPUIDB uidb)
 		GtkWidget *radio_button;
 		int i;
 
-#ifdef USE_LIB_GLADE
 		refreshing_dialog = LookupWidget(NULL, "refreshing_dialog");
-#else
-		refreshing_dialog = create_refreshing_dialog();
-#endif
 		gtk_widget_realize(refreshing_dialog);
 		
 		gtk_label_set_text(
@@ -3400,11 +3159,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		char ok_buf[256], ng_buf[256];
 		char bufModelName[64];
 
-#ifdef USE_LIB_GLADE
 		nozzle_check_dialog = LookupWidget(NULL, "nozzle_check_dialog");
-#else
-		nozzle_check_dialog = create_nozzle_check_dialog();
-#endif
 		gtk_widget_realize(nozzle_check_dialog);
 		gtk_widget_show(nozzle_check_dialog);
 		gtk_window_set_transient_for(GTK_WINDOW(nozzle_check_dialog),
@@ -3431,11 +3186,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		UtilMessageBox(LookupText(g_keytext_list, "utility_message_6"),
 			g_window_title, MB_ICON_EXCLAMATION | MB_OK);
 
-#ifdef USE_LIB_GLADE
 		pattern_check_dialog = LookupWidget(NULL, "pattern_check_dialog");
-#else
-		pattern_check_dialog = create_pattern_check_dialog();
-#endif
 		gtk_widget_realize(pattern_check_dialog);
 
 		style = gtk_widget_get_style(pattern_check_dialog);
@@ -3444,7 +3195,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		strncpy(ok_buf, CHECKPATTERNPATH, strlen(CHECKPATTERNPATH)+1);
 		memset(bufModelName, 0, 64);
 		for( i=0; i<=strlen(model_name)||i<64; i++)
-			bufModelName[i] = tolower(model_name[i]);
+			bufModelName[i] = LowerAsciiCode(model_name[i]);
 
 		strncat(ok_buf, bufModelName, 63);
 		strncat(ok_buf, "/", 1);
@@ -3514,11 +3265,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		char bufModelName[64];
 		char ok_buf[256], ng_buf[256];
 
-#ifdef USE_LIB_GLADE
 		nozzle_check_dialog = LookupWidget(NULL, "nozzle_check_dialog");
-#else
-		nozzle_check_dialog = create_nozzle_check_dialog();
-#endif
 		gtk_widget_realize(nozzle_check_dialog);
 		gtk_label_set_text(
 			GTK_LABEL(LookupWidget(nozzle_check_dialog, "nozzle_check_label1")),
@@ -3542,7 +3289,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		strncpy(fnamebuf, BJTESTFILEPATH, strlen(BJTESTFILEPATH)+1);
 		memset(bufModelName, 0, 63);
 		for( i=0; i<=strlen(model_name)||i<64; i++)
-			bufModelName[i] = tolower(model_name[i]);	
+			bufModelName[i] = LowerAsciiCode(model_name[i]);	
 
 		strncat(fnamebuf, bufModelName, 63);
 		strncat(fnamebuf, "/", 1);
@@ -3554,11 +3301,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		UtilMessageBox(LookupText(g_keytext_list, "utility_message_6"),
 			g_window_title, MB_ICON_EXCLAMATION | MB_OK);
 
-#ifdef USE_LIB_GLADE
 		pattern_check_dialog = LookupWidget(NULL, "pattern_check_dialog");
-#else
-		pattern_check_dialog = create_pattern_check_dialog();
-#endif
 		gtk_widget_realize(pattern_check_dialog);
 
 		style = gtk_widget_get_style(pattern_check_dialog);
@@ -3626,11 +3369,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		char bufModelName[64];
 		char ok_buf[256], ng_buf[256];
 
-#ifdef USE_LIB_GLADE
 		nozzle_check_dialog = LookupWidget(NULL, "nozzle_check_dialog");
-#else
-		nozzle_check_dialog = create_nozzle_check_dialog();
-#endif
 		gtk_widget_realize(nozzle_check_dialog);
 		gtk_label_set_text(
 			GTK_LABEL(LookupWidget(nozzle_check_dialog, "nozzle_check_label1")),
@@ -3666,11 +3405,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		UtilMessageBox(LookupText(g_keytext_list, "utility_message_6"),
 			g_window_title, MB_ICON_EXCLAMATION | MB_OK);
 
-#ifdef USE_LIB_GLADE
 		pattern_check_dialog = LookupWidget(NULL, "pattern_check_dialog");
-#else
-		pattern_check_dialog = create_pattern_check_dialog();
-#endif
 		gtk_widget_realize(pattern_check_dialog);
 
 		style = gtk_widget_get_style(pattern_check_dialog);
@@ -3743,11 +3478,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		char ok_buf[256], ng_buf[256];
 		char bufModelName[64];
 
-#ifdef USE_LIB_GLADE
 		nozzle_check_dialog = LookupWidget(NULL, "nozzle_check_dialog");
-#else
-		nozzle_check_dialog = create_nozzle_check_dialog();
-#endif
 		gtk_widget_realize(nozzle_check_dialog);
 		gtk_widget_show(nozzle_check_dialog);
 		gtk_window_set_transient_for(GTK_WINDOW(nozzle_check_dialog),
@@ -3774,11 +3505,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 		UtilMessageBox(LookupText(g_keytext_list, "utility_message_6"),
 			g_window_title, MB_ICON_EXCLAMATION | MB_OK);
 
-#ifdef USE_LIB_GLADE
 		pattern_check_dialog = LookupWidget(NULL, "pattern_check_dialog");
-#else
-		pattern_check_dialog = create_pattern_check_dialog();
-#endif
 		gtk_widget_realize(pattern_check_dialog);
 
 		style = gtk_widget_get_style(pattern_check_dialog);
@@ -3885,7 +3612,7 @@ void UtilNozzleCheck(LPUIDB uidb)
 				memset(fnamebuf, 0, 256);
 				strncpy(fnamebuf, BJTESTFILEPATH, strlen(BJTESTFILEPATH)+1);
 				for( i=0; i<=strlen(model_name)||i<64; i++)
-					bufModelName[i] = tolower(model_name[i]);	
+					bufModelName[i] = LowerAsciiCode(model_name[i]);	
 				strncat(fnamebuf, bufModelName, 63);
 				strncat(fnamebuf, "/", 1);
 				strncat(fnamebuf, GetPatternFileName(NOZZLEPATTERN),
@@ -3919,7 +3646,7 @@ void UtilHeadAdjust(LPUIDB uidb)
 	char		*p = buf;                   
 	char		*msg;                       
 	int			nValue;
-	short		nKindCntValue;				
+	short		nKindCntValue;
 	char		*model_name;				
 
 	if (g_socketname == NULL)			
@@ -4418,58 +4145,53 @@ void UtilHeadAdjust(LPUIDB uidb)
 		char bufModelName[64];
 		char print_file[256];
 
-		msg = LookupText(g_keytext_list, "utility_message_25");
-
-		if (UtilMessageBox(msg, g_window_title,
-				MB_ICON_EXCLAMATION | MB_OK | MB_CANCEL) == ID_CANCEL)
-			return ;			
+		if(UtilMessageBox(LookupText(g_keytext_list, "utility_message_25"),
+		g_window_title, MB_ICON_EXCLAMATION | MB_OK | MB_CANCEL) == ID_CANCEL)
+			return;
 
 		n = SetCurrentTime(p); p+=n;	
 		*p = 0x00;
-		
+			
 		memset(fnamebuf, 0, 256);
 		strncpy(fnamebuf, BJTESTFILEPATH, strlen(BJTESTFILEPATH)+1);
 		for( i=0; i<=strlen(model_name)|| i<64; i++)
-			bufModelName[i] = tolower(model_name[i]);	
-		strncat( fnamebuf, bufModelName, 63);
-		strncat(fnamebuf, "/", 1);
+			bufModelName[i] = LowerAsciiCode(model_name[i]);
+		strncat(fnamebuf, bufModelName, 63);
+		strncat(fnamebuf, "/",1);
 		strncat(fnamebuf, GetPatternFileName(REGIPATTERN1),
 			   190-strlen(BJTESTFILEPATH));
 		fname_length = strlen(fnamebuf) + 1;
 		PutFileData(buf, n+1, fnamebuf, fname_length);
 
-		
 		UtilMessageBox(LookupText(g_keytext_list, "utility_message_6"),
-			g_window_title, MB_ICON_EXCLAMATION | MB_OK);
-
+					   g_window_title, MB_ICON_EXCLAMATION | MB_OK);
 		
 		if(UtilMessageBox(LookupText(g_keytext_list, "utility_message_3"),
-			g_window_title, MB_ICON_EXCLAMATION | MB_YES | MB_NO) == ID_NO) { 
-			
+		g_window_title, MB_ICON_EXCLAMATION | MB_YES | MB_NO) == ID_NO) { 
+		
 			UtilMessageBox(LookupText(g_keytext_list, "utility_message_4"),
 						   g_window_title, MB_ICON_EXCLAMATION | MB_OK);
 			return;
 		}
-  
 		
 		nPageNum = 0;
 		if (UtilRegiDialog(nPageNum) != ID_OK)		
 			return ;						
-
+		
 		/* BJL Command */
 		p = buf;
-  		memcpy(p, bjl_cmds, BJLLEN); p+=BJLLEN;						
-  		memcpy(p, BJLSTART, BJLSTARTLEN); p+=BJLSTARTLEN;			
+		memcpy(p, bjl_cmds, BJLLEN); p+=BJLLEN;						
+		memcpy(p, BJLSTART, BJLSTARTLEN); p+=BJLSTARTLEN;			
 		memcpy(p, BJLCTRLMODE, BJLCTRLMODELEN); p+=BJLCTRLMODELEN;	
 		
-  		for (i=0; i<nKindCnt; i++) {	
-  			int		nValue;
+		for (i=0; i<nKindCnt; i++) {	
+			int		nValue;
   		
-  			nValue = ItemValue[i];		
-  			sprintf(temp, BJLSETREG, lpBJLtbl[i],
-				nValue<0? '-':(nValue>0? '+':'0'), abs(nValue));
-  			memcpy(p, temp, BJLSETREGLEN); p += BJLSETREGLEN;
-  		}
+			nValue = ItemValue[i];		
+			sprintf(temp, BJLSETREG, lpBJLtbl[i],
+					nValue<0? '-':(nValue>0? '+':'0'), abs(nValue));
+			memcpy(p, temp, BJLSETREGLEN); p += BJLSETREGLEN;
+		}
 
 		nValue = ItemValue[2];
   		sprintf(temp, BJLSETREG, lpBJLtbl[6],
@@ -4483,14 +4205,14 @@ void UtilHeadAdjust(LPUIDB uidb)
 
 		if( g_cups_mode == FALSE ){
 			PutPrintData(buf,
-						 BJLLEN+BJLSTARTLEN+BJLCTRLMODELEN
-						 +(BJLSETREGLEN*(nKindCnt+1))+BJLENDLEN+1);
+					 BJLLEN+BJLSTARTLEN+BJLCTRLMODELEN
+					 +(BJLSETREGLEN*(nKindCnt+1))+BJLENDLEN+1);
 
 			/* Write To File : REG */
 			if( WriteToBSCCFile(bscc_file, bscc_buf, BSCCID_REG) )
 				fprintf(stderr,"Error: Bscc file Error!\n");
 		}
-		else{
+		else {
 			if( WriteToPrintFile(print_file, bscc_buf, bscc_len, BSCCID_REG))
 				fprintf(stderr,"Error: Bscc Error!\n");
 
@@ -4498,17 +4220,13 @@ void UtilHeadAdjust(LPUIDB uidb)
 			PutDoubleData(buf, BJLLEN+BJLSTARTLEN+BJLCTRLMODELEN+
 					  (BJLSETREGLEN*(nKindCnt+1))+BJLENDLEN+1, 
 					  print_file, fname_length);
-
 		}
-		
 
 		UtilMessageBox(LookupText(g_keytext_list, "utility_message_5"),
-			g_window_title, MB_ICON_INFORMATION | MB_OK);
-  			
-		  
-	} 
-	else if (!strcmp(model_name,"PIXMAIP1000")){
-				
+					   g_window_title, MB_ICON_INFORMATION | MB_OK);
+	}
+	else if( !strcmp(model_name,"PIXMAIP1000"))
+	{
 		int 	n;
 		int fname_length;
 		char fnamebuf[256];
@@ -4524,7 +4242,7 @@ void UtilHeadAdjust(LPUIDB uidb)
 		memset(fnamebuf, 0, 256);
 		strncpy(fnamebuf, BJTESTFILEPATH, strlen(BJTESTFILEPATH)+1);
 		for( i=0; i<=strlen(model_name)|| i<64; i++)
-			bufModelName[i] = tolower(model_name[i]);	
+			bufModelName[i] = LowerAsciiCode(model_name[i]);	
 		strncat(fnamebuf, bufModelName, 63);
 		strncat(fnamebuf, "/", 1);
 		strncat(fnamebuf, GetPatternFileName(REGIPATTERN1),
@@ -4597,7 +4315,7 @@ void UtilHeadAdjust(LPUIDB uidb)
 		memset(fnamebuf, 0, 256);
 		strncpy(fnamebuf, BJTESTFILEPATH, strlen(BJTESTFILEPATH)+1);
 		for( i=0; i<=strlen(model_name)|| i<64; i++)
-			bufModelName[i] = tolower(model_name[i]);	
+			bufModelName[i] = LowerAsciiCode(model_name[i]);	
 		strncat(fnamebuf, bufModelName, 63);
 		strncat(fnamebuf, "/",1);
 		strncat(fnamebuf, GetPatternFileName(REGIPATTERN1),
@@ -4952,12 +4670,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 		/* Auto Head Alignment */
 		if( !manual_head_mode ){
 
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_widget_show(head_alignment_dialog);
 			gtk_window_set_transient_for(GTK_WINDOW(head_alignment_dialog),
@@ -4988,12 +4702,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 		}
 		else{		/* Manual Head Alignment */
 
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 
 			gtk_label_set_text(
@@ -5132,13 +4842,11 @@ void UtilHeadAdjust(LPUIDB uidb)
 		/* Auto Head Alignment */
 		if( !manual_head_mode ){
 
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
+			gtk_label_set_text( GTK_LABEL(LookupWidget(head_alignment_dialog, "head_alignment_label1")),
+				LookupText(g_keytext_list, "LUM_IDS_MNTMSG_PHA_START_AUTOMATIC")); 	// 2007/06/27
 			gtk_widget_show(head_alignment_dialog);
 			gtk_window_set_transient_for(GTK_WINDOW(head_alignment_dialog),
 								 GTK_WINDOW(UI_DIALOG(g_main_window)->window));
@@ -5168,12 +4876,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 		}
 		else{		/* Manual Head Alignment */
 
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 
 			gtk_label_set_text(
@@ -5313,12 +5017,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 		/* Auto Head Alignment */
 		if( !manual_head_mode ){
 
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_widget_show(head_alignment_dialog);
 			gtk_window_set_transient_for(GTK_WINDOW(head_alignment_dialog),
@@ -5350,12 +5050,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 		else{		/* Manual Head Alignment */
 
 			
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 
 			gtk_label_set_text(
@@ -5512,12 +5208,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 		/* Auto Head Alignment */
 		if( !manual_head_mode ){
 
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_widget_show(head_alignment_dialog);
 			gtk_window_set_transient_for(GTK_WINDOW(head_alignment_dialog),
@@ -5547,12 +5239,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 			return;
 		}
 		else{		/* Manual Head Alignment */
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_label_set_text(
 				GTK_LABEL(LookupWidget(head_alignment_dialog, 
@@ -5695,12 +5383,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 
 		/* Auto Head Alignment */
 		if( !manual_head_mode ){
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_widget_show(head_alignment_dialog);
 			gtk_window_set_transient_for(GTK_WINDOW(head_alignment_dialog),
@@ -5730,12 +5414,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 			return;
 		}
 		else{		/* Manual Head Alignment */
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_label_set_text(
 				GTK_LABEL(LookupWidget(head_alignment_dialog, 
@@ -5878,12 +5558,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 		/* Auto Head Alignment */
 		if( !manual_head_mode ){
 
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_widget_show(head_alignment_dialog);
 			gtk_window_set_transient_for(GTK_WINDOW(head_alignment_dialog),
@@ -5913,12 +5589,8 @@ void UtilHeadAdjust(LPUIDB uidb)
 			return;
 		}
 		else{		/* Manual Head Alignment */
-#ifdef USE_LIB_GLADE
 			head_alignment_dialog = LookupWidget(NULL, 
 												 "head_alignment_dialog");
-#else
-			head_alignment_dialog = create_head_alignment_dialog();
-#endif
 			gtk_widget_realize(head_alignment_dialog);
 			gtk_label_set_text(
 				GTK_LABEL(LookupWidget(head_alignment_dialog, 
@@ -6426,17 +6098,14 @@ void UtilSetConfig(LPUIDB uidb)
 		return;
 	}
 
-#ifdef USE_LIB_GLADE
 	special_dialog = LookupWidget(NULL, "special_dialog");	
-#else
-	special_dialog = create_special_dialog();	
-#endif
 	gtk_widget_realize(special_dialog);			
 	gtk_widget_show(special_dialog);			
 	gtk_window_set_transient_for(GTK_WINDOW(special_dialog),
 		GTK_WINDOW(UI_DIALOG(g_main_window)->window));
 	send_button = LookupWidget(special_dialog, "special_send_button");
 	gtk_widget_grab_focus(send_button);
+
 
 	gtk_main();									
   
@@ -6535,11 +6204,7 @@ void UtilAutoPower(LPUIDB uidb)
 	if (g_socketname == NULL)			
 		return ;                        
 	
-#ifdef USE_LIB_GLADE
 	autopower_dialog = LookupWidget(NULL, "autopower_dialog");	
-#else
-	autopower_dialog = create_autopower_dialog();	
-#endif
 	gtk_widget_realize(autopower_dialog);			
 	
 	poweron_combo = LookupWidget(autopower_dialog, "autopower_combo1");	
@@ -6601,11 +6266,7 @@ void UtilInkReset(LPUIDB uidb)
 
 	model_name = GetModelName();
 
-#ifdef USE_LIB_GLADE
 	reset_dialog = LookupWidget(NULL, "ink_reset_dialog");	
-#else
-	reset_dialog = create_ink_reset_dialog();	
-#endif
 	gtk_widget_realize(reset_dialog);			
 	gtk_widget_show(reset_dialog);				
 	gtk_window_set_transient_for(GTK_WINDOW(reset_dialog),
@@ -6668,11 +6329,7 @@ void UtilInkWarning(LPUIDB uidb)
 	model_name = GetModelName();
 
 	
-#ifdef USE_LIB_GLADE
 	warning_dialog = LookupWidget(NULL, "ink_warning_dialog");	
-#else
-	warning_dialog = create_ink_warning_dialog();	
-#endif
 	gtk_widget_realize(warning_dialog);			
 	gtk_toggle_button_set_active(
 		GTK_TOGGLE_BUTTON(LookupWidget(warning_dialog,
@@ -6732,11 +6389,7 @@ void UtilQuietMode(LPUIDB uidb)
 
 	model_name = GetModelName();
 
-#ifdef USE_LIB_GLADE
 	quiet_dialog = LookupWidget(NULL, "quiet_dialog");	
-#else
-	quiet_dialog = create_quiet_dialog();	
-#endif
 	gtk_toggle_button_set_active(
 		GTK_TOGGLE_BUTTON(LookupWidget(quiet_dialog, "quiet_checkbutton")),
 		quiet_mode);
@@ -6798,11 +6451,7 @@ void UtilPlateCleaning(LPUIDB uidb)
 		 !strcmp(model_name, "MP500") ){
 		int n;
 
-#ifdef USE_LIB_GLADE
 		plate_dialog = LookupWidget(NULL, "plate_cleaning_dialog");	
-#else
-		plate_dialog = create_plate_cleaning_dialog();
-#endif
 		gtk_widget_realize(plate_dialog);	
 		gtk_widget_show(plate_dialog);				
 		gtk_window_set_transient_for(GTK_WINDOW(plate_dialog),
@@ -6853,21 +6502,34 @@ void UtilInkCartridgeSet( LPUIDB uidb )
 	}
 }
 
-void SetComboBox(GtkWidget *combo, char **Keytbl, int n, int index)
+
+
+/* Ver.2.80 GtkComboBox */
+/* Set UI string list corresponding to "keytbl" to "combo" and select index item */
+void SetComboBoxItems(GtkWidget *combo, char **Keytbl, int n, int index)
 {
 	int		i;
-	GList	*popdown;
-	
-	popdown = NULL;			
-	for (i=0; i < n; i++) {		
-		popdown = g_list_append(popdown, LookupText(g_keytext_list, Keytbl[i]));
-	}
-	
-	gtk_combo_set_popdown_strings(GTK_COMBO(combo), popdown);	
-	gtk_entry_set_text(GTK_ENTRY(GTK_COMBO(combo)->entry), 
-						g_list_nth_data(popdown, index));
-}
 
+	/* Remove all items in current list */
+	if(gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ){
+		while( 1 ){
+			gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), 0 );
+			if( ! gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ) break;
+			gtk_combo_box_remove_text( GTK_COMBO_BOX( combo ), 0 );
+		}
+	}
+
+
+	/* Add items in "Keytbl" */
+	for (i=0; i < n; i++)
+	{
+		gtk_combo_box_append_text( GTK_COMBO_BOX( combo ), LookupText(g_keytext_list, Keytbl[i]) );
+	}
+
+	if( index >= n ) index = 0;
+	gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), index );
+
+}
 
 
 

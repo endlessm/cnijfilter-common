@@ -29,18 +29,13 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 #include "utility.h"
@@ -178,7 +173,7 @@ const static gchar* _alert_str = "_alert";
 	if( position_alert_msg == NULL )
 		position_alert_msg = GetCurrentString(CNCL_MESS_THICK);
 
-	msg_buf = (gchar*)g_malloc(strlen(alert_msg) + strlen(position_alert_msg));
+	msg_buf = (gchar*)g_malloc(strlen(alert_msg) + strlen(position_alert_msg) +1 );	/* Ver.2.80 "1":\0 */
 
 	sprintf(msg_buf, alert_msg, position_alert_msg);
 
@@ -415,6 +410,8 @@ void
 on_quality_button_clicked              (GtkButton       *button,
                                         gpointer         user_data)
 {
+	short	ht_value;
+
 	if( DisableSignal() )
 	{
 		GtkWidget* window = GetTopWidget(GTK_WIDGET(button));
@@ -426,17 +423,28 @@ on_quality_button_clicked              (GtkButton       *button,
 		case CNCL_MESS_Q_MAP1:
 		case CNCL_MESS_Q_MAP2:
 		case CNCL_MESS_Q_MAP3:
-		{
-			UpdateMenuLink(CNCL_PRINTQUALITY, GetCurrentnValue(quality));
-			UpdateMenuLink(CNCL_DITHER_PAT, CND_UIBIN_ED);
-			break;
-		}
+			{
+				UpdateMenuLink(CNCL_PRINTQUALITY, GetCurrentnValue(quality));
+			//	UpdateMenuLink(CNCL_DITHER_PAT, CND_UIBIN_ED);
+				/* Ver.2.70 */
+				/* If 3 position is changed , set default value to CNCL_DITHER_PAT (force) */
+				if( !(GetAllFlags(CNCL_DITHER_PAT, CND_UIBIN_ED) & DISABLE_FLAG) ){
+					ht_value = CND_UIBIN_ED;
+				}else{
+					ht_value = CND_UIBIN_PATTERN;
+				}
+				UpdateMenuLink(CNCL_DITHER_PAT, ht_value);	
+#ifdef _PRINTUI_DEBUG_
+				fprintf(stderr,"\nCurrent HT=%d(old:%d)\n",ht_value,CND_UIBIN_ED);
+#endif
+				break;
+			}
 		default:
-		{
-			UpdateMenuLink(CNCL_PRINTQUALITY, g_quality_dialog->print_quality);
-			UpdateMenuLink(CNCL_DITHER_PAT, g_quality_dialog->bin_method);
-			break;
-		}
+			{
+				UpdateMenuLink(CNCL_PRINTQUALITY, g_quality_dialog->print_quality);
+				UpdateMenuLink(CNCL_DITHER_PAT, g_quality_dialog->bin_method);
+				break;
+			}
 		}
 		
 
@@ -453,69 +461,19 @@ static void
 update_by_media_type_entry()
 {
 	GtkWidget* window = UI_DIALOG(g_main_window)->window;
-	GtkWidget* entry = LookupWidget(window, "media_type_entry");
-	short type_value = NameToValue(CNCL_MEDIATYPE, 
-				(char*)gtk_entry_get_text(GTK_ENTRY(entry)));
 
-	// Save current supply value.
-//	short supply_value = GetCurrentnValue(CNCL_MEDIASUPPLY);
+	/* Ver.2.80 */
+	GtkWidget* combo = LookupWidget(window,  "media_type_combo");
+	short type_value = NameToValue(CNCL_MEDIATYPE, (char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo)) );
 
 	UpdateMenuLink(CNCL_MEDIATYPE, type_value);
-
-	// If changed the supply value, show the alert.
-//	if( supply_value != GetCurrentnValue(CNCL_MEDIASUPPLY) )
-//	{
-//		confirm_media_supply_change(supply_value);
-//	}
 
 	UpdateWidgets(window, "media_type_combo");
 #ifdef	GUI_WITH_PIXMAPS
 	UpdateDrawingArea(window, "basic_draw_area");
 #endif
-	g_media_type_entry_changed = FALSE;
 }
 
-gboolean
-on_media_type_popwin_event(GtkWidget* widget,
-							 GdkEvent* event,
-							 gpointer user_data)
-{
-	if( event->type == GDK_MAP )
-	{
-		g_media_type_popwin_mapped = TRUE;
-	}
-	else if( event->type == GDK_UNMAP )
-	{
-		g_media_type_popwin_mapped = FALSE;
-
-		if( DisableSignal() )
-		{
-			if( g_media_type_entry_changed )
-			{
-				update_by_media_type_entry();
-			}
-		}
-		EnableSignal();
-	}
-
-	return FALSE;
-}
-
-void
-on_media_type_entry_changed            (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		g_media_type_entry_changed = TRUE;
-
-		if( !g_media_type_popwin_mapped )
-		{
-			update_by_media_type_entry();
-		}
-	}
-	EnableSignal();
-}
 
 static void
 set_user_paper_size()
@@ -527,45 +485,59 @@ static void
 update_by_media_size_entry()
 {
 	GtkWidget* window = UI_DIALOG(g_main_window)->window;
-	GtkWidget* entry = LookupWidget(window, "media_size_entry");
-	short value = NameToValue(CNCL_PAPERSIZE, 
-						(char*)gtk_entry_get_text(GTK_ENTRY(entry)));
+	GtkWidget* supply_combo = LookupWidget(window, "media_supply_combo");
+
+
+	/* Ver.2.80 */
+	short value = -1;
+	char *name = NULL;
+
+	GtkWidget* combo = LookupWidget(window,  "media_size_combo");
+	name = (char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo));
+
+	value = NameToValue(CNCL_PAPERSIZE, name );
+
+
 
 	if( !IsAvailablePageSize(g_pagesize_dialog,value) )
 	{
-		if( ShowPageSizeDialog(g_pagesize_dialog) )
+		if( ShowPageSizeDialog(g_pagesize_dialog) )	/* "Change" button */
 		{
 			// Change
 			UpdateMenuLink(CNCL_MEDIASUPPLY, CND_SUPPLY_ASF);
 			UpdateMenuLink(CNCL_PAPERSIZE, value);
-			g_paper_size_value = value;
 
 			if( CND_SIZE_USER == GetCurrentnValue(CNCL_PAPERSIZE) )
 			{
 				set_user_paper_size();
 			}
+			
+			/* Ver.2.70: Change "supply_combo" entry to "ASF" */
+			/* Ver.2.80 */
+			gtk_combo_box_set_active( GTK_COMBO_BOX( supply_combo ), (gint)ValueToComboIndex( supply_combo , CNCL_MEDIASUPPLY , CND_SUPPLY_ASF ) );
+			
 		}
-		else
+		else	//Back to Setup
 		{
 			// Back to Setup
 			short margin_type = GetCurrentnValue(CNCL_MARGINTYPE);
-			UpdateMenuLink(CNCL_PAPERSIZE, g_paper_size_value);
 			if( margin_type == CND_MARGIN_MINUS )
 			{
-				SetGListToCombo(window, "media_size_combo",	g_paper_size_margin_list, 
-								ValueToName(CNCL_PAPERSIZE,g_paper_size_value));
+				/* Ver.2.80 : Use static list(g_paper_size_margin_list) to prevent "Page Size list" decrease (depending on Paper Source value) */
+				SetGListToComboBox(window, "media_size_combo",	g_paper_size_margin_list, 
+								ValueToName(CNCL_PAPERSIZE,GetCurrentnValue(CNCL_PAPERSIZE)) , CNCL_PAPERSIZE);
 			}
 			else
 			{
-				SetGListToCombo(window, "media_size_combo",	g_paper_size_list, 
-								ValueToName(CNCL_PAPERSIZE,g_paper_size_value));
+				/* Ver.2.80 : Use static list(g_paper_size_list) to prevent "Page Size list" decrease (depending on Paper Source value) */
+				SetGListToComboBox(window, "media_size_combo",	g_paper_size_list, 
+								ValueToName(CNCL_PAPERSIZE,GetCurrentnValue(CNCL_PAPERSIZE)) , CNCL_PAPERSIZE );
 			}
 		}
 	}
 	else
 	{
-		UpdateMenuLink(CNCL_PAPERSIZE, value);
-		g_paper_size_value = value;
+		UpdateMenuLink(CNCL_PAPERSIZE, value);	
 
 		if( CND_SIZE_USER == GetCurrentnValue(CNCL_PAPERSIZE) )
 		{
@@ -578,55 +550,22 @@ update_by_media_size_entry()
 #ifdef	GUI_WITH_PIXMAPS
 	UpdateDrawingArea(window, "basic_draw_area");
 #endif
-	g_media_size_entry_changed = FALSE;
+
 }
 
-gboolean
-on_media_size_popwin_event(GtkWidget* widget,
-							 GdkEvent* event,
-							 gpointer user_data)
-{
-	if( event->type == GDK_MAP )
-	{
-		g_media_size_popwin_mapped = TRUE;
-	}
-	else if( event->type == GDK_UNMAP )
-	{
-		g_media_size_popwin_mapped = FALSE;
-
-		if( DisableSignal() )
-		{
-			update_by_media_size_entry();
-		}
-		EnableSignal();
-	}
-
-	return FALSE;
-}
-
-void
-on_media_size_entry_changed            (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		g_media_size_entry_changed = TRUE;
-
-		if( !g_media_size_popwin_mapped )
-		{
-			update_by_media_size_entry();
-		}
-	}
-	EnableSignal();
-}
 
 static void
 update_by_media_supply_entry()
 {
 	GtkWidget* window = UI_DIALOG(g_main_window)->window;
-	GtkWidget* entry = LookupWidget(window, "media_supply_entry");
-	short value = NameToValue(CNCL_MEDIASUPPLY, 
-						(char*)gtk_entry_get_text(GTK_ENTRY(entry)));
+
+	/* Ver.2.80 */
+	short value = -1;
+	char *name = NULL;
+
+	GtkWidget* combo = LookupWidget(window,  "media_supply_combo");
+	name = (char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo));
+	value = NameToValue(CNCL_MEDIASUPPLY, name );
 
 	UpdateMenuLink(CNCL_MEDIASUPPLY, value);
 
@@ -634,59 +573,27 @@ update_by_media_supply_entry()
 #ifdef	GUI_WITH_PIXMAPS
 	UpdateDrawingArea(window, "basic_draw_area");
 #endif
-	g_media_supply_entry_changed = FALSE;
 }
 
-gboolean
-on_media_supply_popwin_event(GtkWidget* widget,
-							 GdkEvent* event,
-							 gpointer user_data)
-{
-	if( event->type == GDK_MAP )
-	{
-		g_media_supply_popwin_mapped = TRUE;
-	}
-	else if( event->type == GDK_UNMAP )
-	{
-		g_media_supply_popwin_mapped = FALSE;
-
-		if( DisableSignal() )
-		{
-			if( g_media_supply_entry_changed )
-			{
-				update_by_media_supply_entry();
-			}
-		}
-		EnableSignal();
-	}
-
-	return FALSE;
-}
-
-void
-on_media_supply_entry_changed          (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		g_media_supply_entry_changed = TRUE;
-
-		if( !g_media_supply_popwin_mapped )
-		{
-			update_by_media_supply_entry();
-		}
-	}
-	EnableSignal();
-}
 
 static void
 update_by_cartridge_type_entry()
 {
 	GtkWidget* window = UI_DIALOG(g_main_window)->window;
-	GtkWidget* entry = LookupWidget(window, "cartridge_type_entry");
-	short new_cartridge_value = NameToValue(CNCL_CARTRIDGE, 
-						(char*)gtk_entry_get_text(GTK_ENTRY(entry)));
 	short media_type_value = GetCurrentnValue(CNCL_MEDIATYPE);
+
+	/* Ver.2.80 */
+	short new_cartridge_value = -1;
+	char *name = NULL;
+
+	GtkWidget* combo = LookupWidget(window,  "cartridge_type_combo");
+	name = (char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo));
+	
+	/* Ver.2.80 */
+	if( !name ) my_printui_quit();
+	
+	new_cartridge_value = NameToValue(CNCL_CARTRIDGE, name );
+
 
 	if( !IsAvailableMedia(g_mediatype_dialog,
 			media_type_value, new_cartridge_value) )
@@ -734,50 +641,8 @@ update_by_cartridge_type_entry()
 #ifdef	GUI_WITH_PIXMAPS
 	UpdateDrawingArea(window, "basic_draw_area");
 #endif
-	g_cartridge_type_entry_changed = FALSE;
 }
 
-gboolean
-on_cartridge_type_popwin_event(GtkWidget* widget,
-							 GdkEvent* event,
-							 gpointer user_data)
-{
-	if( event->type == GDK_MAP )
-	{
-		g_cartridge_type_popwin_mapped = TRUE;
-	}
-	else if( event->type == GDK_UNMAP )
-	{
-		g_cartridge_type_popwin_mapped = FALSE;
-
-		if( DisableSignal() )
-		{
-			if( g_cartridge_type_entry_changed )
-			{
-				update_by_cartridge_type_entry();
-			}
-		}
-		EnableSignal();
-	}
-
-	return FALSE;
-}
-
-void
-on_cartridge_type_entry_changed          (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		g_cartridge_type_entry_changed = TRUE;
-
-		if( !g_cartridge_type_popwin_mapped )
-		{
-			update_by_cartridge_type_entry();
-		}
-	}
-	EnableSignal();
-}
 
 void
 on_color_button_clicked                (GtkButton       *button,
@@ -798,9 +663,17 @@ static void
 update_by_paper_gap_entry()
 {
 	GtkWidget* window = UI_DIALOG(g_main_window)->window;
-	GtkWidget* entry = LookupWidget(window, "paper_gap_entry");
-	short value = NameToValue(CNCL_PAPERGAP_COMMAND, 
-						(char*)gtk_entry_get_text(GTK_ENTRY(entry)));
+	/* Ver.2.80 */
+	short value = -1;
+	char *name = NULL;
+
+	GtkWidget* combo = LookupWidget(window,  "paper_gap_combo");
+	name = (char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo));
+
+	/* Ver.2.80 */
+	if( !name ) my_printui_quit();
+
+	value = NameToValue(CNCL_PAPERGAP_COMMAND, name );
 
 	UpdateMenuLink(CNCL_PAPERGAP_COMMAND, value);
 	UpdateWidgets(window, "paper_gap_combo");
@@ -808,50 +681,8 @@ update_by_paper_gap_entry()
 #ifdef	GUI_WITH_PIXMAPS
 	UpdateDrawingArea(window, "basic_draw_area");
 #endif
-	g_paper_gap_entry_changed = FALSE;
 }
 
-gboolean
-on_paper_gap_popwin_event(GtkWidget* widget,
-							 GdkEvent* event,
-							 gpointer user_data)
-{
-	if( event->type == GDK_MAP )
-	{
-		g_paper_gap_popwin_mapped = TRUE;
-	}
-	else if( event->type == GDK_UNMAP )
-	{
-		g_paper_gap_popwin_mapped = FALSE;
-
-		if( DisableSignal() )
-		{
-			if( g_paper_gap_entry_changed )
-			{
-				update_by_paper_gap_entry();
-			}
-		}
-		EnableSignal();
-	}
-
-	return FALSE;
-}
-
-void
-on_paper_gap_entry_changed          (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		g_paper_gap_entry_changed = TRUE;
-
-		if( !g_paper_gap_popwin_mapped )
-		{
-			update_by_paper_gap_entry();
-		}
-	}
-	EnableSignal();
-}
 
 void
 on_version_button_clicked              (GtkButton       *button,
@@ -928,66 +759,8 @@ update_by_printing_type_entry()
 #ifdef	GUI_WITH_PIXMAPS
 	UpdateDrawingArea(window, "basic_draw_area");
 #endif
-	g_printing_type_entry_changed = FALSE;
 }
 
-gboolean
-on_printing_type_popwin_event(GtkWidget* widget,
-							 GdkEvent* event,
-							 gpointer user_data)
-{
-	if( event->type == GDK_MAP )
-	{
-		g_printing_type_popwin_mapped = TRUE;
-	}
-	else if( event->type == GDK_UNMAP )
-	{
-		g_printing_type_popwin_mapped = FALSE;
-
-		if( DisableSignal() )
-		{
-			if( g_printing_type_entry_changed )
-			{
-				update_by_printing_type_entry();
-			}
-		}
-		EnableSignal();
-	}
-
-	return FALSE;
-}
-
-void
-on_printing_type_entry_changed          (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		g_printing_type_entry_changed = TRUE;
-
-		if( !g_printing_type_popwin_mapped )
-		{
-			update_by_printing_type_entry();
-		}
-	}
-	EnableSignal();
-}
-
-void
-on_printing_scaling_spin_changed       (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		GtkWidget* window = GetTopWidget(GTK_WIDGET(editable));
-		GtkSpinButton* scaling_spin
-			= (GtkSpinButton*)LookupWidget(window, "printing_scaling_spin");
-		g_main_window->scaling = (short)scaling_spin->adjustment->value;
-
-//		UpdateWidgets(window, "pringing_scaling_spin");
-	}
-	EnableSignal();
-}
 
 void
 on_centering_button_clicked            (GtkButton       *button,
@@ -1052,6 +825,13 @@ on_borderless_button_clicked           (GtkButton       *button,
 
 		UpdateWidgets(window, "borderless_button");
 
+		/* Ver.2.80 : To risize the window now. */
+		while( gtk_events_pending() ){
+			gtk_main_iteration();
+		}			
+		UpdateWidgets(window, "borderless_button");
+
+
 #ifdef	GUI_WITH_PIXMAPS
 		UpdateDrawingArea(window, "basic_draw_area");
 #endif
@@ -1074,21 +854,6 @@ on_border_ext_i_button_toggled         (GtkToggleButton *togglebutton,
 	EnableSignal();
 }
 
-void
-on_copies_spin_changed                 (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-	if( DisableSignal() )
-	{
-		GtkWidget* window = GetTopWidget(GTK_WIDGET(editable));
-		GtkSpinButton* copies_spin
-			= (GtkSpinButton*)LookupWidget(window, "copies_spin");
-		g_main_window->copies = (short)copies_spin->adjustment->value;
-
-//		UpdateWidgets(window, "copies_spin");
-	}
-	EnableSignal();
-}
 
 void
 on_reverse_order_button_clicked        (GtkButton       *button,
@@ -1110,14 +875,44 @@ on_default_button_clicked              (GtkButton       *button,
 {
 	short paper_size_value = GetCurrentnValue(CNCL_PAPERSIZE);
 	short margin_type_value = GetCurrentnValue(CNCL_MARGINTYPE);
-
 	FreeDataBase();
 	InitDataBase(g_model_name);
 
 	// Initialize the print quality toggle button.
+	/* Ver.2.70 */
+	/* Get default Quality(3position) by "ENUMDEF" and toggle corresponding radio button */
+	{
+		GtkWidget* __attribute__ ((unused)) button;
+		short value[3];
+		int i;
+		short quality_value = GetDefaultnValue(CNCL_PRINTQUALITY);
+
+		for( i = 0 ; i < 3 ; i++ )
+		{
+			button = LookupWidget(UI_DIALOG(g_main_window)->window,g_quality_button_name[i]);
+			value[i] = GetDefaultnValue(g_mess_map[i]);
+
+			if( value[i] == quality_value )
+			{
+				gtk_toggle_button_set_active(
+					GTK_TOGGLE_BUTTON(LookupWidget(UI_DIALOG(g_main_window)->window,g_quality_button_name[i])), TRUE);
+#ifdef _PRINTUI_DEBUG_
+				fprintf(stderr,"default 3position=%s\n",g_quality_button_name[i]);
+#endif
+				break;
+			}
+		}
+		if( i == 3 ){
+			gtk_toggle_button_set_active(
+				GTK_TOGGLE_BUTTON(LookupWidget(UI_DIALOG(g_main_window)->window,"quality_standard_button")), TRUE);
+		}
+	}
+
+#if 0
 	gtk_toggle_button_set_active(
 		GTK_TOGGLE_BUTTON(LookupWidget(UI_DIALOG(g_main_window)->window,
 			"quality_standard_button")), TRUE);
+#endif
 	SetQualityCustomValue(g_quality_dialog);
 
 	// Initialize the color adjustment toggle button.
@@ -1170,7 +965,13 @@ on_page_setup_default_button_clicked   (GtkButton       *button,
 		UpdateMenuLink(CNCL_MARGINTYPE, CND_MARGIN_NORMAL);
 
 	// Initialize dupelx printing.
-	g_duplex_value = CND_DUPLEX_OFF;
+	/* Toggle(ON) "Duplex Printing" by hand (This toggle setting is not changed in "UpdateWidgets") */
+	/* CNCLDB is restored in "UpdateMenuLink" based on the toggle status */
+	{
+		GtkWidget* window = UI_DIALOG(g_main_window)->window;
+		GtkWidget* button = LookupWidget(window, "auto_duplex_button");
+		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(button), FALSE);
+	}
 	UpdateMenuLink(CNCL_DUPLEX_PRINTING, CND_DUPLEX_OFF);
 
 	// Initialize scaling, etc.
@@ -1215,13 +1016,14 @@ on_auto_duplex_button_clicked          (GtkButton       *button,
 	if( DisableSignal() )
 	{
 		GtkWidget* window = GetTopWidget(GTK_WIDGET(button));
+		short value;
 
 		if( GTK_TOGGLE_BUTTON(button)->active )
-			g_duplex_value = CND_DUPLEX_AUTO;
+			value = CND_DUPLEX_AUTO;
 		else
-			g_duplex_value = CND_DUPLEX_OFF;
+			value = CND_DUPLEX_OFF;
 
-		UpdateMenuLink(CNCL_DUPLEX_PRINTING, g_duplex_value);
+		UpdateMenuLink(CNCL_DUPLEX_PRINTING, value);
 		UpdateWidgets(window, "auto_duplex_button");
 	}
 	EnableSignal();
@@ -1273,12 +1075,22 @@ on_ui_main_notebook_switch_page        (GtkNotebook     *notebook,
                                         gint             page_num,
                                         gpointer         user_data)
 {
-	// "Page Size" Processing to make display of combo box left justify.
-	// Because it is displayed by right adjust after the switch of the tab. 
-	// For instance, "Comm. Env.#10 4.12x9.50in 104.6x241.3mm" etc.
-	if( page_num == NOTOPAGE_PAFGESETUP) {
-		GtkWidget* combo = LookupWidget(UI_DIALOG(g_main_window)->window, "media_size_combo");
-		gtk_editable_set_position(GTK_EDITABLE(GTK_COMBO(combo)->entry), 0);
-	}
+	/* Ver.2.80FNothing to do here... ( GtkComboBox ) */
 }
+void
+on_usersize_button_clicked             (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	set_user_paper_size();
+}
+
+
+void
+on_util_paper_source_setting_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UtilPaperSourceSetting(&g_uidb);
+}
+
 

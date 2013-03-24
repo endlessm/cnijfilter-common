@@ -54,6 +54,12 @@ typedef struct {
 	short ext_border;
 } ModelTable;
 
+/* Ver.2.80 : Treat the string ID related to "lever position" as "CNCL value" */
+/* of CNCL Object"CNUI_OBJECT_LEVER". */
+#define CNUI_OBJECT_LEVER			(1000)
+#define CNUI_VALUE_LEVER_LABEL		(0)
+#define CNUI_VALUE_LEVER_ALERT		(1)
+
 
 // Utility button flag.
 #define	UF_CLEANING			1

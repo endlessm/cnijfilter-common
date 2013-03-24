@@ -33,18 +33,13 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 
@@ -147,33 +142,13 @@ int LoadResources()
 		// Load text resource.
 		g_keytext_list = LoadKeyTextList(keytext_name);
 
-#ifdef	USE_LIB_GLADE
-		// Load the glade XML file and build widgets.
-		{
-			char* glade_path = g_malloc(strlen(PACKAGE_DATA_DIR) + 1
-									  + strlen(glade_name) + 1);
-
-			strcpy(glade_path, PACKAGE_DATA_DIR);
-			strcat(glade_path, G_DIR_SEPARATOR_S);
-			strcat(glade_path, glade_name);
-
-			g_ui_xml = glade_xml_new(glade_path, NULL);
-
-			g_free(glade_path);
-		}
-
-		if( g_keytext_list != NULL && g_ui_xml != NULL )
-			break;
-		else
-		{
-			if( g_keytext_list != NULL )
-				FreeKeyTextList(g_keytext_list);
-		}
-#else
-		if( g_keytext_list != NULL )
-			break;
-#endif
-		if( last )
+			GError* error = NULL;
+			GtkBuilder* builder = gtk_builder_new ();
+			if (!gtk_builder_add_from_file (builder, UI_FILE, &error))
+			  {
+			    g_warning ("Couldn't load builder file: %s", error->message);
+			    g_error_free (error);
+			  }
 			return 0;
 	}
 

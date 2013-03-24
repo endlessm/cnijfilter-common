@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,18 +29,14 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 
@@ -54,12 +50,8 @@ UIPageSizeDialog* CreatePageSizeDialog(UIDialog* parent)
 				sizeof(UIPageSizeDialog), parent);
 
 	// Create dialog window.
-#ifdef	USE_LIB_GLADE
 	UI_DIALOG(dialog)->window = window
 		= LookupWidget(NULL, "pagesize_dialog");
-#else
-	UI_DIALOG(dialog)->window = window = create_pagesize_dialog();
-#endif
 
 	return dialog;
 }

@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2012
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -38,18 +38,13 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <popt.h>
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
 #	include "interface.h"
 #	include "support.h"
-#endif
 
 
 #define	DEFINE_GLOBALS
@@ -85,21 +80,13 @@ int main(int argc, char *argv[])
 
 	gtk_init(&argc, &argv);
 
-#ifdef	USE_LIB_GLADE
-	// Initialize the glade library.
-	glade_init();
-#endif
-
 	// Parse options.
 	InitOption(argc, argv);
 
 	// Set the directory name for storing keytext files.
 	SetKeyTextDir(PACKAGE_DATA_DIR);
 
-#ifndef	USE_LIB_GLADE
-	// Set the directory name for storing xpm files.
 	SetPixmapDir(PACKAGE_DATA_DIR);
-#endif
 
 	// Load fontset.
 	//g_main_font = LoadFontSet();

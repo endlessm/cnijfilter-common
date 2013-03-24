@@ -29,18 +29,13 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
 #include <string.h>
 
-#ifndef	USE_LIB_GLADE
-#	include "support.h"
-#endif
+//#	include "support.h"
 #include "bjuidefs.h"
 
 

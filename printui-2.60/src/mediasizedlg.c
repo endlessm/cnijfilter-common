@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,18 +29,13 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 
@@ -210,27 +205,15 @@ UIMediaSizeDialog* CreateMediaSizeDialog(
 	switch( type )
 	{
 	case UI_MEDIASIZE_DLG_ILLEGAL:
-#ifdef	USE_LIB_GLADE
 		window = LookupWidget(NULL, "mediasize_illegal_dialog");
-#else
-		window = create_mediasize_illegal_dialog();
-#endif
 		break;
 
 	case UI_MEDIASIZE_DLG_RECOMMEND:
-#ifdef	USE_LIB_GLADE
 		window = LookupWidget(NULL, "mediasize_recommend_dialog");
-#else
-		window = create_mediasize_recommend_dialog();
-#endif
 		break;
 
 	case UI_MEDIASIZE_DLG_ILLEGAL_SELECT:
-#ifdef	USE_LIB_GLADE
 		window = LookupWidget(NULL, "mediasize_illegal_select_dialog");
-#else
-		window = create_mediasize_illegal_select_dialog();
-#endif
 		break;
 
 	default:
@@ -315,6 +298,7 @@ int ShowMediaSizeRecommendDialog(UIMediaSizeDialog* dialog, gchar* applied)
 	char* change_msg;
 	int i;
 
+
 	// Current paper size.
 	current_size_label = LookupWidget(UI_DIALOG(dialog)->window,
 							"mediasize_recommend_current_size_label");
@@ -356,6 +340,9 @@ int ShowMediaSizeRecommendDialog(UIMediaSizeDialog* dialog, gchar* applied)
 	// In case of changing only 1 recommended item.
 	if( dialog->item_count == 1 )
 	{
+#ifdef _PRINTUI_DEBUG_
+fprintf(stderr,"ShowMediaSizeRecommendDialog:4\n");
+#endif
 		gchar* alert_msg1_1
 			= LookupText(g_keytext_list, "mediasize_recommend_message1_1");
 		gchar* alert_msg1_2
@@ -364,9 +351,9 @@ int ShowMediaSizeRecommendDialog(UIMediaSizeDialog* dialog, gchar* applied)
 			= LookupText(g_keytext_list, applied);
 		gchar* message
 			= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg1_1) +
-				strlen(alert_msg1_2) +strlen(change_to));
+				strlen(alert_msg1_2) +strlen(change_to) +2 );	/* Ver.2.80 "2":\n+\0 */
 		gchar* tmp_message
-			= (gchar*)g_malloc(strlen(change_msg) + strlen(change_to) + strlen(alert_msg1_1));
+			= (gchar*)g_malloc(strlen(change_msg) + strlen(change_to) + strlen(alert_msg1_1) + 1 );	/* Ver.2.80 "1":\0 */
 
 		sprintf(tmp_message, alert_msg1_1, change_msg, change_to);
 		sprintf(message, "%s\n%s", tmp_message, alert_msg1_2);
@@ -384,13 +371,16 @@ int ShowMediaSizeRecommendDialog(UIMediaSizeDialog* dialog, gchar* applied)
 			= LookupText(g_keytext_list, "mediasize_recommend_message2_1");
 		gchar* alert_msg2_2
 			= LookupText(g_keytext_list, "mediasize_recommend_message2_2");
+		gchar* alert_msg2_3
+			= LookupText(g_keytext_list, "mediasize_recommend_message2_3");
+			
 		gchar* message
-			= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1) + strlen(alert_msg2_2));
+			= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1) + strlen(alert_msg2_2) + strlen(alert_msg2_3) +3 );	/* "3":\n+\n+\0 */
 		gchar* tmp_message
-			= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1));
+			= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1) +1 );/* "1":\0 */
 
 		sprintf(tmp_message, alert_msg2_1, change_msg );
-		sprintf(message, "%s\n%s", tmp_message, alert_msg2_2);
+		sprintf(message, "%s\n%s\n%s", tmp_message, alert_msg2_2,alert_msg2_3);
 		gtk_label_set_text(GTK_LABEL(message_label), message);
 
 		g_free(tmp_message);
@@ -421,7 +411,6 @@ int ShowMediaSizeRecommendDialog(UIMediaSizeDialog* dialog, gchar* applied)
 				dialog->item_value[i] = KeyToValue(change_id, word);
 
 				words = next;
-				
 			}
 			g_free(word);
 		}
@@ -496,9 +485,9 @@ int ShowMediaSizeIllegalSelectDialog(UIMediaSizeDialog* dialog, gchar* applied)
 	alert_msg2_2
 		= LookupText(g_keytext_list, "mediasize_illegal_select_message2_2");
 	message
-		= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1) + strlen(alert_msg2_2));
+		= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1) + strlen(alert_msg2_2) +2 );	/* Ver.2.80 "2":\n+\0 */
 	tmp_message
-		= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1));
+		= (gchar*)g_malloc(strlen(change_msg) + strlen(alert_msg2_1) +1 );	/* Ver.2.80 "1":\0 */
 
 	sprintf(tmp_message, alert_msg2_1, change_msg );
 	sprintf(message, "%s\n%s", tmp_message, alert_msg2_2);
@@ -693,52 +682,127 @@ gboolean CheckMediaSizeCombination(LPBJFLTDEVICE bjdev, gboolean* change_item)
 	return result;
 }
 
-static
-UIMediaSizeDialog* GetMediaSizeDialog(char* name)
-{
-	UIMediaSizeDialog* dialog = NULL;
 
-	if( !strcmp("illegal", name)
-	 || !strcmp("\"illegal\"", name) )			// because libglade bug.
-		dialog = g_mediasize_illegal_dialog;
-	else if( !strcmp("recommend", name)
-	      || !strcmp("\"recommend\"", name) )	// because libglade bug.
-		dialog = g_mediasize_recommend_dialog;
-	else if( !strcmp("illegal_select", name)
-	      || !strcmp("\"recommend_select\"", name) )	// because libglade bug.
-		dialog = g_mediasize_illegal_select_dialog;
 
-	return dialog;
-}
-
-void
-on_mediasize_apply_button_clicked      (GtkButton       *button,
-                                        gpointer         user_data)
-{
-	HideMediaSizeDialog(GetMediaSizeDialog((char*)user_data), TRUE, TRUE);
-}
-
-void
-on_mediasize_not_apply_button_clicked  (GtkButton       *button,
-                                        gpointer         user_data)
-{
-	HideMediaSizeDialog(GetMediaSizeDialog((char*)user_data), TRUE, FALSE);
-}
-
-void
-on_mediasize_cancel_button_clicked     (GtkButton       *button,
-                                        gpointer         user_data)
-{
-	HideMediaSizeDialog(GetMediaSizeDialog((char*)user_data), FALSE, FALSE);
-}
-
+/* Ver.2.80 */
+/*--- illegal ---*/
 gboolean
-on_mediasize_delete_event              (GtkWidget       *widget,
+on_mediasize_illegal_dialog_delete_event
+                                        (GtkWidget       *widget,
                                         GdkEvent        *event,
                                         gpointer         user_data)
 {
-	HideMediaSizeDialog(GetMediaSizeDialog((char*)user_data), FALSE, FALSE);
+	UIMediaSizeDialog* dialog = g_mediasize_illegal_dialog;
+	
+	HideMediaSizeDialog( dialog , FALSE, FALSE);
 	return TRUE;
+}
+
+
+void
+on_mediasize_illegal_apply_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_illegal_dialog;
+	
+	HideMediaSizeDialog( dialog , TRUE, TRUE);
+}
+
+
+void
+on_mediasize_illegal_cancel_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_illegal_dialog;
+	
+	HideMediaSizeDialog( dialog , FALSE, FALSE);
+}
+
+
+
+/*--- illegal_select ---*/
+gboolean
+on_mediasize_illegal_select_dialog_delete_event
+                                        (GtkWidget       *widget,
+                                        GdkEvent        *event,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_illegal_select_dialog;
+	
+	HideMediaSizeDialog( dialog , FALSE, FALSE);
+	return TRUE;
+}
+
+
+void
+on_mediasize_illegal_select_apply_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_illegal_select_dialog;
+	
+	HideMediaSizeDialog( dialog , TRUE, TRUE);
+}
+
+
+void
+on_mediasize_illegal_select_cancel_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_illegal_select_dialog;
+	
+	HideMediaSizeDialog( dialog , FALSE, FALSE);
+}
+
+
+
+/*--- recommend ---*/
+gboolean
+on_mediasize_recommend_dialog_delete_event
+                                        (GtkWidget       *widget,
+                                        GdkEvent        *event,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_recommend_dialog;
+	
+	HideMediaSizeDialog( dialog , FALSE, FALSE);
+	return TRUE;
+}
+
+
+void
+on_mediasize_recommend_apply_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_recommend_dialog;
+	
+	HideMediaSizeDialog( dialog , TRUE, TRUE);
+}
+
+
+void
+on_mediasize_recommend_not_apply_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_recommend_dialog;
+	
+	HideMediaSizeDialog( dialog , TRUE, FALSE);
+}
+
+
+void
+on_mediasize_recommend_cancel_button_clicked
+                                        (GtkButton       *button,
+                                        gpointer         user_data)
+{
+	UIMediaSizeDialog* dialog = g_mediasize_recommend_dialog;
+	
+	HideMediaSizeDialog( dialog , FALSE, FALSE);
 }
 
 

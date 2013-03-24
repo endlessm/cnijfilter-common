@@ -1,11 +1,10 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2007
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ *  the Free Software Foundation; version 2 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,7 +13,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -573,28 +572,6 @@ on_quality_button_clicked              (GtkButton       *button,
 	EnableSignal();
 }
 
-#if 0
-static void
-confirm_media_supply_change(short old_supply_value)
-{
-	int ret;
-	gchar* alert_msg = LookupText(g_keytext_list, "paper_supply_change_alert");
-	gchar* supply_str = GetCurrentString(CNCL_MEDIASUPPLY);
-	gchar* message = (gchar*)g_malloc(strlen(alert_msg) + strlen(supply_str));
-
-	sprintf(message, alert_msg, supply_str);
-
-	ret = UtilMessageBox(message, g_window_title,
-			 MB_OK | MB_CANCEL | MB_ICON_INFORMATION);
-
-	g_free(message);
-
-	if( ret == ID_CANCEL )
-	{
-		UpdateMenuLink(CNCL_MEDIASUPPLY, old_supply_value);
-	}
-}
-#endif
 
 static void
 update_by_media_type_entry()

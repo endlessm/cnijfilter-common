@@ -29,15 +29,10 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 
@@ -46,11 +41,7 @@ UIVersionDialog* CreateVersionDialog(UIDialog* parent)
 	UIVersionDialog* dialog
 		 = (UIVersionDialog*)CreateDialog(sizeof(UIVersionDialog), parent);
 
-#ifdef	USE_LIB_GLADE
 	UI_DIALOG(dialog)->window = LookupWidget(NULL, "version_dialog");
-#else
-	UI_DIALOG(dialog)->window = create_version_dialog();
-#endif
 
 	return dialog;
 }

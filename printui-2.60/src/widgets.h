@@ -38,16 +38,24 @@ int GetActiveButtonIndex(GtkWidget* window,
 			const gchar* button_name[], int default_index);
 
 
-void SetGListToCombo(GtkWidget* window, gchar *combo_name,
-						GList* glist, gchar* current);
-void SetTextArrayToCombo(GtkWidget* window, gchar *combo_name,
-		const gchar* key_array[], const short value_array[], short value);
 int GetTextArrayValueFromCombo(GtkWidget* window, gchar *combo_name,
 		const gchar* key_arrya[], const short value_array[]);
 
 void UpdateDrawingArea(GtkWidget* window, const gchar* name);
-void UpdateScaleValue(GtkWidget* window, GtkAdjustment* adjust, gchar* name);
 
 void DrawPrinterDrawingArea(GtkWidget* window, GtkWidget* area);
 void DrawQualityDrawingArea(GtkWidget* window, GtkWidget* area);
 
+/* Ver.2.70 */
+void SetPopdownStringsToCombo(GtkWidget *combo, GList *glist, int focus_index);
+
+/* Ver.2.80 */
+short SetItemsToComboBox(GtkWidget* window,  gchar *combo_name, short objectid, short currentid );
+short ValueToComboIndex( GtkWidget *combo , short object , short target_value ); //nValue -> combo index
+/* short NameToComboIndex( GtkWidget *combo , gchar *target_name );*/	/*UI String -> combo index */
+void SetTextArrayToComboBox(GtkWidget* window, gchar *combo_name,
+		const gchar* key_array[], const short value_array[], short value);
+short SetGListToComboBox(GtkWidget* window, gchar *combo_name,
+						GList* glist, gchar* current , short objectid);
+
+void UpdateScaleRangeValue(GtkWidget* window, GtkRange* range, gchar* name);

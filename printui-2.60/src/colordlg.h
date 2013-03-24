@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -30,12 +30,6 @@ typedef struct
 {
 	UIDialog dialog;
 
-	GtkAdjustment* cyan_adjust;
-	GtkAdjustment* magenta_adjust;
-	GtkAdjustment* yellow_adjust;
-	GtkAdjustment* black_adjust;
-	GtkAdjustment* density_adjust;
-
 	short cyan_balance;
 	short magenta_balance;
 	short yellow_balance;
@@ -47,7 +41,7 @@ typedef struct
 	short gamma;
 	short default_gamma;
 
-	GList* gamma_list;
+	short gamma_num;	/* Ver.2.80 */
 } UIColorDialog;
 
 
@@ -55,19 +49,4 @@ UIColorDialog* CreateColorDialog(UIDialog* parent);
 void ShowColorDialog(UIColorDialog* dialog);
 void HideColorDialog(UIColorDialog* dialog, gboolean apply);
 UIColorDialog* ReCreateColorDialog(UIColorDialog* dialog, UIDialog* parent);
-
-void on_color_dialog_cyan_adjust_value_changed(
-		GtkAdjustment* adjust, gpointer* user_data);
-
-void on_color_dialog_magenta_adjust_value_changed(
-		GtkAdjustment* adjust, gpointer* user_data);
-
-void on_color_dialog_yellow_adjust_value_changed(
-		GtkAdjustment* adjust, gpointer* user_data);
-
-void on_color_dialog_black_adjust_value_changed(
-		GtkAdjustment* adjust, gpointer* user_data);
-
-void on_color_dialog_density_adjust_value_changed(
-		GtkAdjustment* adjust, gpointer* user_data);
 

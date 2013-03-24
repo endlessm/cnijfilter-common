@@ -39,6 +39,7 @@
 #define catpath(dir,name)	catpath2(dir , name)
 #define mkpath2(path)		#path
 #define mkpath(path)		mkpath2(path)
+#define UI_FILE "src/printui2.ui"
 
 
 #define	PRINTING_TYPE_FIT		1
@@ -116,22 +117,11 @@ GLOBAL gchar* g_staple_button_name[] =
 	NULL
 };
 
-GLOBAL gboolean g_media_type_entry_changed = FALSE;
 GLOBAL gboolean g_media_type_popwin_mapped = FALSE;
-
-GLOBAL gboolean g_media_size_entry_changed = FALSE;
 GLOBAL gboolean g_media_size_popwin_mapped = FALSE;
-
-GLOBAL gboolean g_media_supply_entry_changed = FALSE;
 GLOBAL gboolean g_media_supply_popwin_mapped = FALSE;
-
-GLOBAL gboolean g_cartridge_type_entry_changed = FALSE;
 GLOBAL gboolean g_cartridge_type_popwin_mapped = FALSE;
-
-GLOBAL gboolean g_printing_type_entry_changed = FALSE;
 GLOBAL gboolean g_printing_type_popwin_mapped = FALSE;
-
-GLOBAL gboolean g_paper_gap_entry_changed = FALSE;
 GLOBAL gboolean g_paper_gap_popwin_mapped = FALSE;
 
 #else
@@ -147,22 +137,11 @@ GLOBAL const short g_printing_type_cups_value[];
 GLOBAL const gchar* g_border_ext_button_name[];
 GLOBAL const gchar* g_staple_button_name[];
 
-GLOBAL gboolean g_media_type_entry_changed;
 GLOBAL gboolean g_media_type_popwin_mapped;
-
-GLOBAL gboolean g_media_size_entry_changed;
 GLOBAL gboolean g_media_size_popwin_mapped;
-
-GLOBAL gboolean g_media_supply_entry_changed;
 GLOBAL gboolean g_media_supply_popwin_mapped;
-
-GLOBAL gboolean g_cartridge_type_entry_changed;
 GLOBAL gboolean g_cartridge_type_popwin_mapped;
-
-GLOBAL gboolean g_printing_type_entry_changed;
 GLOBAL gboolean g_printing_type_popwin_mapped;
-
-GLOBAL gboolean g_paper_gap_entry_changed;
 GLOBAL gboolean g_paper_gap_popwin_mapped;
 
 #endif
@@ -170,9 +149,8 @@ GLOBAL gboolean g_paper_gap_popwin_mapped;
 /////////////////////////////////////////////////////////
 // Non initialized variables
 
-#ifdef	USE_LIB_GLADE
-GLOBAL GladeXML* g_ui_xml;
-#endif
+GLOBAL GtkBuilder* builder;
+GLOBAL GtkWidget* create_PX550Iregi_dialog;
 
 GLOBAL gboolean g_unit_inch;
 

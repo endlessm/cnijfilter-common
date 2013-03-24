@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2010
+ *  Copyright CANON INC. 2001-2013
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,18 +29,14 @@
 //#endif
 
 #include <gtk/gtk.h>
-#ifdef	USE_LIB_GLADE
-#	include <glade/glade.h>
-#endif
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
 #include "callbacks.h"
-#ifndef	USE_LIB_GLADE
-#	include "interface.h"
-#	include "support.h"
-#endif
+//#	include "interface.h"
+//#	include "support.h"
 
 #include "bjuidefs.h"
 
@@ -105,12 +101,8 @@ UIMediaBorderDialog* CreateMediaBorderDialog(UIDialog* parent)
 				sizeof(UIMediaBorderDialog), parent);
 
 	// Create dialog window.
-#ifdef	USE_LIB_GLADE
 	UI_DIALOG(dialog)->window = window
 		= LookupWidget(NULL, "mediaborder_dialog");
-#else
-	UI_DIALOG(dialog)->window = window = create_mediaborder_dialog();
-#endif
 
 	InitBorderlessMedia(dialog);
 
@@ -133,7 +125,7 @@ int ShowMediaBorderDialog(UIMediaBorderDialog* dialog, short media_type)
 		= LookupText(g_keytext_list, "mediaborder_dialog_message1");
 	gchar* media_type_msg = GetCurrentString(CNCL_MEDIATYPE);
 	gchar* message = (gchar*)g_malloc(strlen(dialog_msg)
-						 + strlen(media_type_msg));
+						 + strlen(media_type_msg) +1 );	/* Ver.2.80 "1":\0 */
 
 	GtkWidget* alert_label = LookupWidget(UI_DIALOG(dialog)->window,
 									"mediaborder_dialog_alert_label");
@@ -153,8 +145,9 @@ int ShowMediaBorderDialog(UIMediaBorderDialog* dialog, short media_type)
 
 	if( dialog->media_list )
 	{
-		SetGListToCombo(UI_DIALOG(dialog)->window, "mediaborder_dialog_combo",
-						dialog->media_list, dialog->media_list->data);
+		SetGListToComboBox(UI_DIALOG(dialog)->window, "mediaborder_dialog_combo",
+						dialog->media_list, dialog->media_list->data , CNCL_MEDIATYPE);
+	
 	}
 
 	ShowDialog((UIDialog*)dialog, "mediaborder_dialog_ok_button"); 
@@ -166,12 +159,10 @@ void HideMediaBorderDialog(UIMediaBorderDialog* dialog, gboolean apply)
 {
 	if( apply )
 	{
-		GtkWidget* entry
-			= LookupWidget(
-				UI_DIALOG(dialog)->window, "mediaborder_dialog_entry");
-
+		/* Ver.2.80 */
+		GtkWidget* combo = LookupWidget( UI_DIALOG(dialog)->window , "mediaborder_dialog_combo" );
 		dialog->selected_media = NameToValue(CNCL_MEDIATYPE, 
-								(char*)gtk_entry_get_text(GTK_ENTRY(entry)));
+								(char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo)) );
 	}
 
 	dialog->apply = apply;
@@ -224,12 +215,4 @@ on_mediaborder_dialog_cancel_button_clicked  (GtkButton       *button,
 {
 	HideMediaBorderDialog(g_mediaborder_dialog, FALSE);
 }
-
-void
-on_mediaborder_dialog_entry_changed      (GtkEditable     *editable,
-                                        gpointer         user_data)
-{
-
-}
-
 

@@ -43,8 +43,8 @@
 #include <popt.h>
 
 #include "callbacks.h"
-#	include "interface.h"
-#	include "support.h"
+//#	include "interface.h"
+//#	include "support.h"
 
 
 #define	DEFINE_GLOBALS
