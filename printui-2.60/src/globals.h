@@ -39,7 +39,6 @@
 #define catpath(dir,name)	catpath2(dir , name)
 #define mkpath2(path)		#path
 #define mkpath(path)		mkpath2(path)
-#define UI_FILE "src/printui2.ui"
 
 
 #define	PRINTING_TYPE_FIT		1
@@ -150,7 +149,6 @@ GLOBAL gboolean g_paper_gap_popwin_mapped;
 // Non initialized variables
 
 GLOBAL GtkBuilder* builder;
-GLOBAL GtkWidget* create_PX550Iregi_dialog;
 
 GLOBAL gboolean g_unit_inch;
 
