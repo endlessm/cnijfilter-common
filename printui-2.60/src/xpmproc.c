@@ -43,15 +43,6 @@ static char* g_pixmapdir = NULL;
 
 void SetPixmapDir(gchar* dirname)
 {
-#ifndef	USE_LIB_GLADE
-	if( g_pixmapdir != NULL )
-		g_free(g_pixmapdir);
-
-	g_pixmapdir = g_strdup(dirname);
-
-	// Set the pixmaps directory path for create_pixmap() in support.c
-	add_pixmap_directory(dirname);
-#endif
 }
 
 

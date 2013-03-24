@@ -6208,9 +6208,9 @@ void UtilAutoPower(LPUIDB uidb)
 	gtk_widget_realize(autopower_dialog);			
 	
 	poweron_combo = LookupWidget(autopower_dialog, "autopower_combo1");	
-	SetComboBox(poweron_combo, AutoPowerOnKey, 2, poweron_index);		
+	SetComboBoxItems(poweron_combo, AutoPowerOnKey, 2, poweron_index);		
 	poweroff_combo = LookupWidget(autopower_dialog, "autopower_combo2");	
-	SetComboBox(poweroff_combo, AutoPowerOffKey, 6, poweroff_index);
+	SetComboBoxItems(poweroff_combo, AutoPowerOffKey, 6, poweroff_index);
 	
 	gtk_widget_show(autopower_dialog);				
 	gtk_window_set_transient_for(GTK_WINDOW(autopower_dialog),

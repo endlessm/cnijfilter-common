@@ -1090,7 +1090,7 @@ on_util_paper_source_setting_button_clicked
                                         (GtkButton       *button,
                                         gpointer         user_data)
 {
-	UtilPaperSourceSetting(&g_uidb);
+//	UtilPaperSourceSetting(&g_uidb);
 }
 
 
