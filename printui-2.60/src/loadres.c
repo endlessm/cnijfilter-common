@@ -140,25 +140,24 @@ int LoadResources()
 			}
 		}
 		// Load text resource.
-		g_keytext_list = LoadKeyTextList(keytext_name);
-
-			glade_name   = DEFAULT_UI_FILE;
-			char* glade_path = g_malloc(strlen(PACKAGE_DATA_DIR) + 1
-									  + strlen(glade_name) + 1);
-
-			strcpy(glade_path, PACKAGE_DATA_DIR);
-			strcat(glade_path, G_DIR_SEPARATOR_S);
-			strcat(glade_path, glade_name);
-
-			GError* error = NULL;
-			GtkBuilder* builder = gtk_builder_new ();
-			if (!gtk_builder_add_from_file (builder, glade_path, &error))
-			  {
-			    g_warning ("Couldn't load builder file: %s", error->message);
-			    g_error_free (error);
-			  }
 			return 0;
 	}
+	g_keytext_list = LoadKeyTextList(keytext_name);
+
+		glade_name   = DEFAULT_UI_FILE;
+		char* glade_path = g_malloc(strlen(PACKAGE_DATA_DIR) + 1 + strlen(glade_name) + 1);
+
+		strcpy(glade_path, PACKAGE_DATA_DIR);
+		strcat(glade_path, G_DIR_SEPARATOR_S);
+		strcat(glade_path, glade_name);
+
+		GError* error = NULL;
+		GtkBuilder* builder = gtk_builder_new ();
+		if (!gtk_builder_add_from_file (builder, glade_path, &error))
+		  {
+		    g_warning ("Couldn't load builder file: %s", error->message);
+		    g_error_free (error);
+		  }
 
 	g_unit_inch = (strcmp(unit_name, DEFAULT_UNIT_MM))? TRUE : FALSE; 
 

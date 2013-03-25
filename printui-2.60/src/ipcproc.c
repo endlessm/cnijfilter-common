@@ -34,9 +34,6 @@
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <unistd.h>
-#ifdef _PRINTUI_DEBUG_
-#include <fcntl.h>
-#endif /* _PRINTUI_DEBUG_ */
 
 #include "bjuidefs.h"
 
@@ -44,11 +41,6 @@
 
 static int ConnectToServer()
 {
-#ifdef _PRINTUI_DEBUG_
-	int fd;
-	fd = open( "/tmp/out.prn", O_WRONLY|O_CREAT|O_TRUNC, 0644 );
-	return fd;
-#else
 	int fd;
 	struct sockaddr_un addr;
 
@@ -70,7 +62,6 @@ static int ConnectToServer()
 		close(fd);
 	}
 	return -1;
-#endif
 }
 
 int PutIPCData(LPIPCU pipc)
