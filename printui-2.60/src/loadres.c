@@ -79,8 +79,7 @@ static int ReadLine(FILE* fp, char* buf, int size)
 
 int LoadResources()
 {
-	FILE* fp = fopen(PACKAGE_DATA_DIR
-					 G_DIR_SEPARATOR_S "locale-table", "r");
+	FILE* fp = fopen(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "locale-table", "r");
 
 	char* env_locale;
 	char* __attribute__ ((unused)) glade_name;
@@ -163,10 +162,7 @@ int LoadResources()
 
 	g_unit_inch = (strcmp(unit_name, DEFAULT_UNIT_MM))? TRUE : FALSE; 
 
-#ifdef	USE_LIB_GLADE
-	// Connect all signal handlers.
-	glade_xml_signal_autoconnect(g_ui_xml);
-#endif
+	gtk_builder_connect_signals (builder, NULL);
 
 	return 1;
 }

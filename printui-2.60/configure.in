@@ -61,6 +61,11 @@ AM_PROG_CC_C_O
 AM_PATH_GTK_2_0(2.6.0, ,
             AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
 
+dnl ***************************************************************************
+dnl Internationalization
+dnl ***************************************************************************
+IT_PROG_INTLTOOL([0.35.0])
+
 GETTEXT_PACKAGE=printui${program_suffix}
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
@@ -75,6 +80,8 @@ if test "x${prefix}" = "xNONE"; then
 else
   AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${prefix}/${DATADIRNAME}/locale")
 fi
+
+LT_INIT
 
 dnl Set PACKAGE_DATA_DIR in config.h.
 if test "x${datadir}" = 'x${prefix}/share'; then

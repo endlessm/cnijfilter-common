@@ -42,8 +42,7 @@ UIMainDialog* CreateMainWindow()
 {
 	short supply_value;
 	short margin_value;
-	UIMainDialog* main_window
-		= (UIMainDialog*)CreateDialog(sizeof(UIMainDialog), NULL);
+	UIMainDialog* main_window = (UIMainDialog*)CreateDialog(sizeof(UIMainDialog), NULL);
 
 	UI_DIALOG(main_window)->window = LookupWidget(NULL, "ui_window");
 
@@ -97,18 +96,15 @@ void ConnectSignalHandlers()
 	gtk_widget_realize(combo);
 
 	// Media supply combo.
-	combo = LookupWidget(
-				UI_DIALOG(g_main_window)->window, "media_supply_combo");
+	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "media_supply_combo");
 	gtk_widget_realize(combo);
 
 	// Cartridge type combo.
-	combo = LookupWidget(
-				UI_DIALOG(g_main_window)->window, "cartridge_type_combo");
+	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "cartridge_type_combo");
 	gtk_widget_realize(combo);
 
 	// Printing type combo.
-	combo = LookupWidget(
-				UI_DIALOG(g_main_window)->window, "printing_type_combo");
+	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "printing_type_combo");
 	gtk_widget_realize(combo);
 }
 
@@ -145,13 +141,11 @@ void ShowCartridgeVBox(UIMainDialog* main_window)
 	// Show or hide cartridge combo and label.
 	if( GetComboNum(CNCL_CARTRIDGE) > 1 )
 	{
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
-			"cartridge_type_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "cartridge_type_vbox"));
 	}
 	else
 	{
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
-			"one_cartridge_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "one_cartridge_vbox"));
 	}
 }
 
@@ -159,23 +153,20 @@ static
 void ShowBorderlessVBox(UIMainDialog* main_window)
 {
 	if( IsAvailableBorderless() && g_cups_mode == FALSE )
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
-			"borderless_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "borderless_vbox"));
 }
 
 static
 void ShowDuplexVBox(UIMainDialog* main_window)
 {
 	if( IsAvailableDuplex() )
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
-			"duplex_printing_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "duplex_printing_vbox"));
 }
 
 static
 void ShowUtilButton(UIMainDialog* main_window, char* button_name)
 {
-	GtkWidget* button
-		= LookupWidget(UI_DIALOG(main_window)->window, button_name);
+	GtkWidget* button = LookupWidget(UI_DIALOG(main_window)->window, button_name);
 	gtk_widget_show(button);
 
 /*
