@@ -33,6 +33,9 @@
 #endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 #include <stdio.h>
 
 #include <string.h>
@@ -147,12 +150,10 @@ long GetPaperHeight(short value)
 int ModelNameToID(char* name)
 {
 	int i = 0;
-	gint upname_len = strlen(name) + 1;
-	gchar* upname = g_malloc0( upname_len );
+	gchar* upname = g_malloc(strlen(name) + 1);
 	int value = -1;
 
-	strncpy(upname, name, upname_len); /* Ver.3.60 */
-	upname[ upname_len -1 ] = '\0';
+	strcpy(upname, name);
 
 	// Because the display trouble was found by tr_TR.ISO8859-9, 
 	// g_strup() is replaced with UpperAsciiStr(). 
@@ -268,14 +269,8 @@ short GetCurrentInkCartridgeSettings()
 	int media_type = GetCurrentnValue(CNCL_MEDIATYPE);
 	int margin_type = GetCurrentnValue(CNCL_MARGINTYPE);
 
-	/* Ver.2.70 */
-	if( cartridge == -1 )
-		cartridge = CND_CARTRIDGE_NA;
-
 	if( cartridge != CND_CARTRIDGE_BK )
 		return cartridge;
-
-	/* CND_CARTRIDGE_BK */
 	if( media_type == CND_MEDIA_PLAIN && margin_type == CND_MARGIN_NORMAL )
 		return cartridge;
 	return CND_CARTRIDGE_BK_COLOR;
@@ -296,82 +291,96 @@ short GetDefaultExtBorder(int model_id)
 int GetValueAndNameArray(short id, short** value, char*** name)
 {
 	int count;
-	int type = CNCL_GetTableFormatType(&g_uidb.nominfo, (void *)g_bjlibdir);
 
 	switch( id )
 	{
 	case CNCL_MEDIATYPE:	// Media Type.
 		*value = g_media_value;
+		*name  = g_media_name;
 		count = sizeof(g_media_value) / sizeof(short);
 		break;
 
 	case CNCL_MEDIASUPPLY:	// Media Supply.
 		*value = g_supply_value;
+		*name  = g_supply_name;
 		count = sizeof(g_supply_value) / sizeof(short);
 		break;
 
 	case CNCL_ENHBK:		// Black Enhancement.
 		*value = g_bkenh_value;
+		*name  = g_bkenh_name;
 		count = sizeof(g_bkenh_value) / sizeof(short);
 		break;
 
 	case CNCL_PAPERSIZE:	// Paper Size.
 		*value = g_size_value;
+		*name  = g_size_name;
 		count = sizeof(g_size_value) / sizeof(short);
 		break;
 
 	case CNCL_MESS_QUALITY:	// Message for Quality.
 		*value = g_quality_msg_value;
+		*name  = g_quality_msg_name;
 		count = sizeof(g_quality_msg_value) / sizeof(short);
 		break;
 
 	case CNCL_MESS_THICK:	// Message for Thickness.
 		*value = g_thickness_msg_value;
+		*name  = g_thickness_msg_name;
 		count = sizeof(g_thickness_msg_value) / sizeof(short);
 		break;
 
 	case CNCL_MESS_PAPERLOAD:	// Message for Preload.
 		*value = g_preload_msg_value;
+		*name  = g_preload_msg_name;
 		count = sizeof(g_preload_msg_value) / sizeof(short);
 		break;
 
 	case CNCL_MESS_RESOLUTION:	// Message for Resolution.
 		*value = g_resolution_msg_value;
+		*name  = g_resolution_msg_name;
 		count = sizeof(g_resolution_msg_value) / sizeof(short);
 		break;
 
 	case CNCL_MESS_SMLIB:		// Message for Smoothing.
 		*value = g_smoothing_msg_value;
+		*name  = g_smoothing_msg_name;
 		count = sizeof(g_smoothing_msg_value) / sizeof(short);
 		break;
 
 	case CNCL_DITHER_PAT:		// Halftoning.
 		*value = g_halftoning_value;
+		*name  = g_halftoning_name;
 		count = sizeof(g_halftoning_value) / sizeof(short);
 		break;
 
 	case CNCL_BANNER:			// Banner.
 		*value = g_banner_value;
+		*name  = g_banner_name;
 		count = sizeof(g_banner_value) / sizeof(short);
 		break;
 
 	case CNCL_CARTRIDGE:		// Cartridge.
 		*value = g_cartridge_value;
+		*name  = g_cartridge_name;
 		count = sizeof(g_cartridge_value) / sizeof(short);
 		break;
 
 	case CNCL_INPUT_GAMMA:		// Input gamma.
 		*value = g_input_gamma_value;
+		*name  = g_input_gamma_name;
 		count = sizeof(g_input_gamma_value) / sizeof(short);
 		break;
 
 	case CNCL_PAPERGAP_COMMAND:	// Paper gap command.
 		*value = g_paper_gap_value;
+		*name  = g_paper_gap_name;
 		count = sizeof(g_paper_gap_value) / sizeof(short);
 		break;
 
 	default:
 		*value = NULL;
+		*name  = NULL;
 		count = 0;
 		break;
 	}
@@ -764,62 +773,81 @@ int UpdateMenuLink(short id, short value)
 	if( GetCallbackTableNum() )
 		SetCallbackTableOldValue();
 	
-	/* Save all low level values. */
+	// Save all low level values.
 	SaveIDValue(id, CNCL_MEDIATYPE, &media_type);
 	SaveIDValue(id, CNCL_GRAYSCALE, &gray_scale);
+
+//	if( id != CNCL_MEDIATYPE )
+//		SaveIDValue(id, CNCL_MARGINTYPE, &margin_type);
+
 	SaveIDValue(id, CNCL_MARGINTYPE, &margin_type);
 
 	if( id != CNCL_CARTRIDGE && id != CNCL_MEDIATYPE )
 		SaveIDValue(id, CNCL_PRINTQUALITY, &print_quality);
 
 	SaveIDValue(id, CNCL_MEDIASUPPLY, &media_supply);
+
 	SaveIDValue(id, CNCL_PAPERSIZE, &paper_size);
 	SaveIDValue(id, CNCL_DITHER_PAT, &dither_pat);
 
+//	SaveIDValue(id, CNCL_DUPLEX_PRINTING, &auto_duplex);
 
-	/* SetTemporaryFlag , CNCL_GetMenulink */
+	// Set new value.
 	SetTemporaryFlag(id, value, 1);
-	ret = CNCL_GetMenulink(&g_uidb.nominfo, (void*)g_bjlibdir, g_uidb.lpdbTop, g_uidb.dbsize);
 
-	/* Restore all low level values. */
+	ret = CNCL_GetMenulink(&g_uidb.nominfo,
+			(void*)g_bjlibdir, g_uidb.lpdbTop, g_uidb.dbsize);
+
+	// Restore all low level values.
 	RestoreIDValue(id, CNCL_MEDIATYPE, media_type);
 	RestoreIDValue(id, CNCL_GRAYSCALE, gray_scale);
+
+//	if( id != CNCL_MEDIATYPE )
+//		RestoreIDValue(id, CNCL_MARGINTYPE, margin_type);
+
 	RestoreIDValue(id, CNCL_MARGINTYPE, margin_type);
 
 	if( id != CNCL_CARTRIDGE && id != CNCL_MEDIATYPE )
 		RestoreIDValue(id, CNCL_PRINTQUALITY, print_quality);
 
 	RestoreIDValue(id, CNCL_MEDIASUPPLY, media_supply);
+
 	RestoreIDValue(id, CNCL_PAPERSIZE, paper_size);
 	RestoreIDValue(id, CNCL_DITHER_PAT, dither_pat);
+
+//	RestoreIDValue(id, CNCL_DUPLEX_PRINTING, auto_duplex);
 	RestoreIDValue(id, CNCL_DUPLEX_PRINTING, g_duplex_value);
 
-	/* If PaperSize is changed to "A4" and unit is "inch" , PaperSize should be changed to "Letter" */
-	if( g_unit_inch == TRUE && id != CNCL_PAPERSIZE )
-	{
+	if( g_unit_inch == TRUE && id != CNCL_PAPERSIZE ){
+
 		changed_paper_size = GetCurrentnValue(CNCL_PAPERSIZE);
 
-		if( (changed_paper_size == CND_SIZE_A4) && (select_paper_size != changed_paper_size) )
-		{
-			/* Save all low level values. */
+		if( (changed_paper_size == CND_SIZE_A4) && (select_paper_size != changed_paper_size) ) {
+
+			// Save all low level values.
 			SaveIDValue(CNCL_PAPERSIZE, CNCL_MEDIATYPE, &media_type);
 			SaveIDValue(CNCL_PAPERSIZE, CNCL_GRAYSCALE, &gray_scale);
 			SaveIDValue(CNCL_PAPERSIZE, CNCL_MARGINTYPE, &margin_type);
 			SaveIDValue(CNCL_PAPERSIZE, CNCL_PRINTQUALITY, &print_quality);
 			SaveIDValue(CNCL_PAPERSIZE, CNCL_MEDIASUPPLY, &media_supply);
+			// SaveIDValue(CNCL_PAPERSIZE, CNCL_PAPERSIZE, &paper_size);
 			SaveIDValue(CNCL_PAPERSIZE, CNCL_DITHER_PAT, &dither_pat);
+//			SaveIDValue(CNCL_PAPERSIZE, CNCL_DUPLEX_PRINTING, &auto_duplex);
 
-			/* SetTemporaryFlag , CNCL_GetMenulink */
 			SetTemporaryFlag(CNCL_PAPERSIZE, CND_SIZE_LETTER, 1);
-			ret = CNCL_GetMenulink(&g_uidb.nominfo, (void*)g_bjlibdir, g_uidb.lpdbTop, g_uidb.dbsize);
 
-			/* Restore all low level values. */
+			ret = CNCL_GetMenulink(&g_uidb.nominfo,
+					(void*)g_bjlibdir, g_uidb.lpdbTop, g_uidb.dbsize);
+
+			// Restore all low level values.
 			RestoreIDValue(CNCL_PAPERSIZE, CNCL_MEDIATYPE, media_type);
 			RestoreIDValue(CNCL_PAPERSIZE, CNCL_GRAYSCALE, gray_scale);
 			RestoreIDValue(CNCL_PAPERSIZE, CNCL_MARGINTYPE, margin_type);
 			RestoreIDValue(CNCL_PAPERSIZE, CNCL_PRINTQUALITY, print_quality);
 			RestoreIDValue(CNCL_PAPERSIZE, CNCL_MEDIASUPPLY, media_supply);
+			// RestoreIDValue(CNCL_PAPERSIZE, CNCL_PAPERSIZE, paper_size);
 			RestoreIDValue(CNCL_PAPERSIZE, CNCL_DITHER_PAT, dither_pat);
+//			RestoreIDValue(CNCL_PAPERSIZE, CNCL_DUPLEX_PRINTING, auto_duplex);
 			RestoreIDValue(CNCL_PAPERSIZE, CNCL_DUPLEX_PRINTING, g_duplex_value);
 		}
 	}
@@ -857,16 +885,4 @@ void DumpDataBase(int id)
 		}
 	}
 }
-
-
-
-void my_printui_quit()
-{
-	if( g_socketname != NULL )
-	{
-		PutCancel();
-	}
-	gtk_main_quit();
-}
-
 

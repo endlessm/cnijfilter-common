@@ -108,8 +108,41 @@ void
 on_quality_button_clicked              (GtkButton       *button,
                                         gpointer         user_data);
 
+
+gboolean
+on_media_type_popwin_event(GtkWidget* widget,
+							 GdkEvent* event,
+							 gpointer user_data);
+void
+on_media_type_entry_changed            (GtkEditable     *editable,
+                                        gpointer         user_data);
+
+gboolean
+on_media_supply_popwin_event(GtkWidget* widget,
+							 GdkEvent* event,
+							 gpointer user_data);
+void
+on_media_supply_entry_changed          (GtkEditable     *editable,
+                                        gpointer         user_data);
+
 void
 on_color_button_clicked                (GtkButton       *button,
+                                        gpointer         user_data);
+
+gboolean
+on_media_size_popwin_event(GtkWidget* widget,
+							 GdkEvent* event,
+							 gpointer user_data);
+void
+on_media_size_entry_changed            (GtkEditable     *editable,
+                                        gpointer         user_data);
+
+gboolean
+on_cartridge_type_popwin_event(GtkWidget* widget,
+							 GdkEvent* event,
+							 gpointer user_data);
+void
+on_cartridge_type_entry_changed        (GtkEditable     *editable,
                                         gpointer         user_data);
 
 void
@@ -214,11 +247,34 @@ void
 on_user_size_scale_button_clicked      (GtkButton       *button,
                                         gpointer         user_data);
 
+
+void
+on_mediasize_apply_button_clicked      (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_mediasize_cancel_button_clicked     (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_mediasize_not_apply_button_clicked  (GtkButton       *button,
+                                        gpointer         user_data);
+
+
+gboolean
+on_mediasize_delete_event              (GtkWidget       *widget,
+                                        GdkEvent        *event,
+                                        gpointer         user_data);
+
+
 gboolean
 on_mediatype_dialog_delete_event       (GtkWidget       *widget,
                                         GdkEvent        *event,
                                         gpointer         user_data);
 
+void
+on_mediatype_dialog_entry_changed      (GtkEditable     *editable,
+                                        gpointer         user_data);
 
 void
 on_mediatype_dialog_ok_button_clicked  (GtkButton       *button,
@@ -270,7 +326,7 @@ on_regi_pixmap1_button_press_event     (GtkWidget       *widget,
 #endif
 
 void
-on_regi_spinbutton_changed             (GtkSpinButton    *spinbutton,
+on_regi_spinbutton_changed             (GtkEditable     *editable,
                                         gpointer         user_data);
 
 gboolean
@@ -354,6 +410,19 @@ void
 on_cleaning_cancel_button_clicked      (GtkButton       *button,
                                         gpointer         user_data);
 
+gboolean
+on_printing_type_popwin_event(GtkWidget* widget,
+							 GdkEvent* event,
+							 gpointer user_data);
+
+void
+on_printing_type_entry_changed         (GtkEditable     *editable,
+                                        gpointer         user_data);
+
+void
+on_printing_scaling_spin_changed       (GtkEditable     *editable,
+                                        gpointer         user_data);
+
 void
 on_centering_button_clicked            (GtkButton       *button,
                                         gpointer         user_data);
@@ -364,6 +433,10 @@ on_borderless_button_clicked           (GtkButton       *button,
 
 void
 on_border_ext_i_button_toggled         (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_copies_spin_changed                 (GtkEditable     *editable,
                                         gpointer         user_data);
 
 void
@@ -380,6 +453,12 @@ on_default_button_clicked              (GtkButton       *button,
 
 void
 on_page_setup_default_button_clicked   (GtkButton       *button,
+                                        gpointer         user_data);
+
+
+
+void
+on_drylevel_radiobutton_toggled        (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
 
 gboolean
@@ -617,6 +696,10 @@ on_mediaborder_dialog_delete_event     (GtkWidget       *widget,
                                         gpointer         user_data);
 
 void
+on_mediaborder_dialog_entry_changed    (GtkEditable     *editable,
+                                        gpointer         user_data);
+
+void
 on_mediaborder_dialog_ok_button_clicked    (GtkButton       *button,
 											gpointer         user_data);
 
@@ -680,366 +763,11 @@ on_ink_cartridge_dialog_destroy        (GtkObject       *object,
                                         gpointer         user_data);
 
 void
+on_ink_cartridge_dialog_entry_changed  (GtkEditable     *editable,
+                                        gpointer         user_data);
+
+void
 on_ui_main_notebook_switch_page        (GtkNotebook     *notebook,
                                         GtkNotebookPage *page,
                                         gint             page_num,
                                         gpointer         user_data);
-
-void
-on_color_dialog_gamma2_entry_changed   (GtkEditable     *editable,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_ok_button2_clicked     (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_cancel_button2_clicked (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_default_button2_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-gboolean
-on_color_dialog_delete_event2          (GtkWidget       *widget,
-                                        GdkEvent        *event,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_vivid_button_clicked2  (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_ok_button_clicked2     (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_cancel_button_clicked2 (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_default_button_clicked2
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_autopower_type2_dialog_destroy      (GtkObject       *object,
-                                        gpointer         user_data);
-
-gboolean
-on_autopower_type2_dialog_delete_event (GtkWidget       *widget,
-                                        GdkEvent        *event,
-                                        gpointer         user_data);
-
-void
-on_autopower_type2_send_button_clicked (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_autopower_type2_cancel_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_media_type_combo_changed            (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_media_supply_combo_changed          (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_media_size_combo_changed            (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_printing_type_combo_changed         (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_correct_combo2_changed (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_gamma_combo2_changed   (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_correct_combo_changed  (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_gamma_combo_changed    (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_mediaborder_dialog_combo_changed    (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_cartridge_type_combo_changed        (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_paper_gap_combo_changed             (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_mediatype_dialog_combo_changed      (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_magenta_scale2_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_yellow_scale2_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_cyan_scale2_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_density_scale2_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_contrast_scale2_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_cyan_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_magenta_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_yellow_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_black_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-void
-on_color_dialog_density_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data);
-
-gboolean
-on_mediasize_illegal_dialog_delete_event
-                                        (GtkWidget       *widget,
-                                        GdkEvent        *event,
-                                        gpointer         user_data);
-
-void
-on_mediasize_illegal_apply_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_mediasize_illegal_cancel_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-gboolean
-on_mediasize_recommend_dialog_delete_event
-                                        (GtkWidget       *widget,
-                                        GdkEvent        *event,
-                                        gpointer         user_data);
-
-void
-on_mediasize_recommend_apply_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_mediasize_recommend_not_apply_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_mediasize_recommend_cancel_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-gboolean
-on_mediasize_illegal_select_dialog_delete_event
-                                        (GtkWidget       *widget,
-                                        GdkEvent        *event,
-                                        gpointer         user_data);
-
-void
-on_mediasize_illegal_select_apply_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_mediasize_illegal_select_cancel_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_ink_cartridge_dialog_combo_changed  (GtkComboBox     *combobox,
-                                        gpointer         user_data);
-
-void
-on_drylevel3_radiobutton_toggled       (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_drylevel5_radiobutton_toggled       (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_00   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_01   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_02   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-gboolean
-on_regi_spinbutton_focus_in_event_03   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_04   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_05   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_06   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_07   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_08   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_09   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_10   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-gboolean
-on_regi_spinbutton_focus_in_event_11   (GtkWidget       *widget,
-                                        GdkEventFocus   *event,
-                                        gpointer         user_data);
-
-
-
-void
-on_copies_spin_value_changed           (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_printing_scaling_spin_value_changed (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_00          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_01          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_02          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_03          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_04          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_05          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_06          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_07          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_08          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_09          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_10          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-void
-on_regi_spinbutton_changed_11          (GtkSpinButton   *spinbutton,
-                                        gpointer         user_data);
-
-
-gboolean
-on_regi_dialog_delete_event_no_destroy (GtkWidget       *widget,
-                                        GdkEvent        *event,
-                                        gpointer         user_data);
-
-void
-on_usersize_button_clicked             (GtkButton       *button,
-                                        gpointer         user_data);
-
-
-void
-on_util_paper_source_setting_button_clicked
-                                        (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_drylevel5_abrasion_checkbutton_toggled
-                                        (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-

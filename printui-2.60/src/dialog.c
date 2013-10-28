@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,10 +29,15 @@
 //#endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 
 #include "callbacks.h"
-//#	include "interface.h"
-//#	include "support.h"
+#ifndef	USE_LIB_GLADE
+#	include "interface.h"
+#	include "support.h"
+#endif
 
 #include <string.h>
 

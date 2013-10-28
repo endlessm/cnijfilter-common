@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -229,17 +229,26 @@ short g_bkenh_value[] =
 char *g_size_name[] =
 {
 	"size_a5",
+	"size_a5_l",
 	"size_a4",
+	"size_a4_l",
 	"size_a3",
+	"size_a3_l",
 	"size_a2",
 	"size_b5",
+	"size_b5_l",
 	"size_b4",
+	"size_b4_l",
 	"size_b3",
 	"size_letter",
+	"size_letter_l",
 	"size_legal",
+	"size_legal_l",
 	"size_ledger",
+	"size_ledger_l",
 	"size_csize",
 	"size_post",
+	"size_post_l",
 	"size_env_10",
 	"size_env_dl",
 	"size_fools",
@@ -283,17 +292,26 @@ char *g_size_name[] =
 short g_size_value[] =
 {
 	CND_SIZE_A5,			// A5 (148mm x 210mm)
+	CND_SIZE_A5_L,			// A5-L (210mm x 148mm)
 	CND_SIZE_A4,			// A4 (210mm x 297mm)
+	CND_SIZE_A4_L,			// A4-L (297mm x 210mm)
 	CND_SIZE_A3,			// A3 (297mm x 420mm)
+	CND_SIZE_A3_L,			// A3-L (420mm x 297mm)
 	CND_SIZE_A2,			// A2 (420mm x 594mm)
 	CND_SIZE_B5,			// B5 (182mm x 257mm)
+	CND_SIZE_B5_L,			// B5-L (257mm x 182mm)
 	CND_SIZE_B4,			// B4 (257mm x 364mm)
+	CND_SIZE_B4_L,			// B4-L (364mm x 257mm)
 	CND_SIZE_B3,			// B3 (364mm x 515mm)
 	CND_SIZE_LETTER,		// Letter (8.5x 11inch)
+	CND_SIZE_LETTER_L,		// Letter-L (11inch x 8.5inch)
 	CND_SIZE_LEGAL,			// Legal (8.5inch x 14inch)
+	CND_SIZE_LEGAL_L,		// Legal-L (14inch x 8.5inch)
 	CND_SIZE_LEDGER,		// Ledger  (11inch x 17inch)
+	CND_SIZE_LEDGER_L,		// Ledger-L (17inch x 11inch)
 	CND_SIZE_CSIZE,			// C size (17 x 22inch)
 	CND_SIZE_POST,			// Postcard (10mm 0x 148mm)
+	CND_SIZE_POST_L,		// Postcard-L (14mm 8x 100mm)
 	CND_SIZE_ENV_10,		// #10 Envelope (9.5inch x 4.125inch)
 	CND_SIZE_ENV_DL,		// DL Envelope (220mm x 110mm)
 	CND_SIZE_FOOLS,			// Foolscap (13.5inch x 17inch)

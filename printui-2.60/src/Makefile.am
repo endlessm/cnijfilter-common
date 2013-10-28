@@ -31,9 +31,9 @@ printui_SOURCES =  main.c \
   mediaborderdlg.c mediaborderdlg.h \
   pagesizedlg.c pagesizedlg.h \
   xpmproc.c xpmproc.h \
-  ipcproc.c ipcproc.h
-#  interface.c interface.h \
-#  support.c support.h
+  ipcproc.c ipcproc.h \
+  interface.c interface.h \
+  support.c support.h
 
 printui_CFLAGS = -O2 -Wall @UI_DFLAGS@
 

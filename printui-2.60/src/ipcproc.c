@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,14 @@
  */
 
 
+//#ifdef HAVE_CONFIG_H
+//#  include <config.h>
+//#endif
+
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 
 #include <arpa/inet.h>
 #include <netdb.h>
@@ -37,14 +44,10 @@
 
 #include "bjuidefs.h"
 
-#define IVEC_BUF_SIZE (1024)
-
 static int ConnectToServer()
 {
 	int fd;
 	struct sockaddr_un addr;
-
-	memset( &addr, 0, sizeof(addr) );
 
 	if( g_socketname == NULL )
 		return -1;
@@ -52,8 +55,7 @@ static int ConnectToServer()
 	if( (fd = socket(PF_UNIX, SOCK_STREAM, 0)) >= 0 )
 	{
 		addr.sun_family = AF_UNIX;
-		strncpy(addr.sun_path, g_socketname, sizeof(addr.sun_path));
-		addr.sun_path[sizeof(addr.sun_path) - 1] = '\0';
+		strcpy(addr.sun_path, g_socketname);
 
 		if( connect(fd, (struct sockaddr *)&addr, sizeof(addr)) != -1 )
 		{
@@ -73,8 +75,7 @@ int PutIPCData(LPIPCU pipc)
 		return -1;
 
 	// Write "PRINT" command first.
-	strncpy(buf, "PRINT", IPCCMDLEN);
-	buf[IPCCMDLEN -1] = '\0';
+	strcpy(buf, "PRINT");
 	result2 = write(fd, buf, IPCCMDLEN);
 
 	// And for the time being, simply just write the contents of pipc.
@@ -93,8 +94,7 @@ int PutCancel()
 		return -1;
 
 	// Write "CANCEL" command.
-	strncpy(buf, "CANCEL", IPCCMDLEN);
-	buf[IPCCMDLEN -1] = '\0';
+	strcpy(buf, "CANCEL");
 	result2 = write(fd, buf, IPCCMDLEN);
 
 	close(fd);
@@ -104,26 +104,23 @@ int PutCancel()
 int PutPrintData(char *cmdsbuf, short length)
 {
 	int fd, __attribute__ ((unused)) result2;
+	char buf[IPCCMDLEN];
 	IPCU ipc;
-	char buf[IVEC_BUF_SIZE];
-	int retVal = -1;
 
-	if( (fd = ConnectToServer()) == -1 ) goto Err1;
+	if( (fd = ConnectToServer()) == -1 )
+		return -1;
 
 	// Write "PDATA" command first.
-	strncpy(buf, "PDATA", IVEC_BUF_SIZE);
-	buf[IVEC_BUF_SIZE -1] = '\0';
+	strcpy(buf, "PDATA");
 	result2 = write(fd, buf, IPCCMDLEN);
 
 	// Prepare for ipc union, then copy buffer data.
 	ipc.cmds.cmdslen = (long)length;
 	memcpy(ipc.cmds.cmds, cmdsbuf, length);
 	result2 = write(fd, &ipc, sizeof(IPCU));
-	retVal = 0;
 
 	close(fd);
-Err1:
-	return retVal;
+	return 0;
 }
 
 int PutFileData(char *cmdsbuf, short cmds_length, 
@@ -138,8 +135,7 @@ int PutFileData(char *cmdsbuf, short cmds_length,
 		return -1;
 
 	// Write "FDATA" command first.
-	strncpy(buf, "FDATA", IPCCMDLEN);
-	buf[IPCCMDLEN -1] = '\0';
+	strcpy(buf, "FDATA");
 	result2 = write(fd, buf, IPCCMDLEN);
 
 	// Prepare for ipc union, then copy buffer data.
@@ -165,8 +161,7 @@ int PutDoubleData(char *cmdsbuf, short cmds_length,
 		return -1;
 
 	// Write "FDATA" command first.
-	strncpy(buf, "WDATA", IPCCMDLEN);
-	buf[IPCCMDLEN -1] = '\0';
+	strcpy(buf, "WDATA");
 	result2 = write(fd, buf, IPCCMDLEN);
 
 	// Prepare for ipc union, then copy buffer data.
@@ -189,8 +184,7 @@ int PutExecLM()
 		return -1;
 
 	// Write "EXECLM" command.
-	strncpy(buf, "EXECLM", IPCCMDLEN);
-	buf[IPCCMDLEN -1] = '\0';
+	strcpy(buf, "EXECLM");
 	result2 = write(fd, buf, IPCCMDLEN);
 
 	close(fd);

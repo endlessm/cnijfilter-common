@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -33,13 +33,18 @@
 #endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #include "callbacks.h"
-//#	include "interface.h"
-//#	include "support.h"
+#ifndef	USE_LIB_GLADE
+#	include "interface.h"
+#	include "support.h"
+#endif
 
 #include "bjuidefs.h"
 
@@ -71,7 +76,6 @@ static int ReadLine(FILE* fp, char* buf, int size)
 }
 
 #define	READ_MAX_BUF			1024
-#define	DEFAULT_UI_FILE		"printui.ui"
 #define	DEFAULT_GLADE_FILE		"printui.glade"
 #define	DEFAULT_KEYTEXT_FILE	"printui.res"
 #define	DEFAULT_UNIT_MM			"mm"	// "mm" or "inch"
@@ -79,7 +83,8 @@ static int ReadLine(FILE* fp, char* buf, int size)
 
 int LoadResources()
 {
-	FILE* fp = fopen(PACKAGE_DATA_DIR G_DIR_SEPARATOR_S "locale-table", "r");
+	FILE* fp = fopen(PACKAGE_DATA_DIR
+					 G_DIR_SEPARATOR_S "locale-table", "r");
 
 	char* env_locale;
 	char* __attribute__ ((unused)) glade_name;
@@ -140,28 +145,44 @@ int LoadResources()
 			}
 		}
 		// Load text resource.
+		g_keytext_list = LoadKeyTextList(keytext_name);
+
+#ifdef	USE_LIB_GLADE
+		// Load the glade XML file and build widgets.
+		{
+			char* glade_path = g_malloc(strlen(PACKAGE_DATA_DIR) + 1
+									  + strlen(glade_name) + 1);
+
+			strcpy(glade_path, PACKAGE_DATA_DIR);
+			strcat(glade_path, G_DIR_SEPARATOR_S);
+			strcat(glade_path, glade_name);
+
+			g_ui_xml = glade_xml_new(glade_path, NULL);
+
+			g_free(glade_path);
+		}
+
+		if( g_keytext_list != NULL && g_ui_xml != NULL )
+			break;
+		else
+		{
+			if( g_keytext_list != NULL )
+				FreeKeyTextList(g_keytext_list);
+		}
+#else
+		if( g_keytext_list != NULL )
+			break;
+#endif
+		if( last )
 			return 0;
 	}
-	g_keytext_list = LoadKeyTextList(keytext_name);
-
-		glade_name   = DEFAULT_UI_FILE;
-		char* glade_path = g_malloc(strlen(PACKAGE_DATA_DIR) + 1 + strlen(glade_name) + 1);
-
-		strcpy(glade_path, PACKAGE_DATA_DIR);
-		strcat(glade_path, G_DIR_SEPARATOR_S);
-		strcat(glade_path, glade_name);
-
-		GError* error = NULL;
-		GtkBuilder* builder = gtk_builder_new ();
-		if (!gtk_builder_add_from_file (builder, glade_path, &error))
-		  {
-		    g_warning ("Couldn't load builder file: %s", error->message);
-		    g_error_free (error);
-		  }
 
 	g_unit_inch = (strcmp(unit_name, DEFAULT_UNIT_MM))? TRUE : FALSE; 
 
-	gtk_builder_connect_signals (builder, NULL);
+#ifdef	USE_LIB_GLADE
+	// Connect all signal handlers.
+	glade_xml_signal_autoconnect(g_ui_xml);
+#endif
 
 	return 1;
 }

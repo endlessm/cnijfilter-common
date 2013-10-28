@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,10 +29,15 @@
 //#endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 
 #include "callbacks.h"
-//#	include "interface.h"
-//#	include "support.h"
+#ifndef	USE_LIB_GLADE
+#	include "interface.h"
+#	include "support.h"
+#endif
 
 #include <string.h>
 
@@ -120,12 +125,11 @@ static short GetDefaultGamma(UIColorDialog* dialog)
 	return gamma;
 }
 
-
 static short SetColorCorrectCombo(UIColorDialog* dialog, short color_correct)
 {
-	/* Ver.2.80*/
-	SetTextArrayToComboBox(UI_DIALOG(dialog)->window, "color_dialog_correct_combo",  
-		correct_key, correct_value, color_correct);
+	SetTextArrayToCombo(UI_DIALOG(dialog)->window,
+		"color_dialog_correct_combo",
+			 correct_key, correct_value, color_correct);
 
 	return color_correct;
 }
@@ -145,23 +149,25 @@ static void SensitiveColorCorrectCombo(
 	gtk_widget_set_sensitive(combo, sensitive);
 }
 
-
 static short SetGammaCombo(UIColorDialog* dialog, short gamma)
 {
-	/* Ver.2.80 : Make list and set to the combo. */
-	dialog->gamma_num = SetItemsToComboBox( UI_DIALOG(dialog)->window, "color_dialog_gamma_combo", CNCL_INPUT_GAMMA, gamma );
+	dialog->gamma_list = GetComboList(CNCL_INPUT_GAMMA);
 
-	if( dialog->gamma_num > 0 )	/* Ver.2.80 */
+	if( dialog->gamma_list )
 	{
+		gchar* name;
+
 		if( gamma != GetCurrentnValue(CNCL_INPUT_GAMMA) )
 			UpdateMenuLink(CNCL_INPUT_GAMMA, gamma);
-		/* Ver.2.80 : Setting the list to the combo is done in SetItemsToComboBox. */
 
+		name = ValueToName(CNCL_INPUT_GAMMA, gamma);
+
+		SetGListToCombo(UI_DIALOG(dialog)->window,
+			"color_dialog_gamma_combo", dialog->gamma_list, name);
 	}
-	else	/* Set the static list to the combo */
+	else
 	{
-		/* Ve.2.80 */
-		SetTextArrayToComboBox(UI_DIALOG(dialog)->window,
+		SetTextArrayToCombo(UI_DIALOG(dialog)->window,
 			"color_dialog_gamma_combo", gamma_key, gamma_value, gamma);
 	}
 
@@ -171,28 +177,57 @@ static short SetGammaCombo(UIColorDialog* dialog, short gamma)
 UIColorDialog* CreateColorDialog(UIDialog* parent)
 {
 	GtkWidget* window;
-
+	GtkAdjustment* adjust;
 	// Create dialog.
 	UIColorDialog* dialog
 		 = (UIColorDialog*)CreateDialog(sizeof(UIColorDialog), parent);
 
 	// Create dialog window.
+#ifdef	USE_LIB_GLADE
 	UI_DIALOG(dialog)->window = window = LookupWidget(NULL, "color_dialog");
+#else
+	UI_DIALOG(dialog)->window = window = create_color_dialog();
+#endif
 
 	// Cyan scale adjustment.
+	adjust = gtk_range_get_adjustment(
+		GTK_RANGE(LookupWidget(window, "color_dialog_cyan_scale")));
+	gtk_signal_connect(GTK_OBJECT(adjust), "value_changed",
+		GTK_SIGNAL_FUNC(on_color_dialog_cyan_adjust_value_changed), window);
 	dialog->cyan_balance = CYAN_BALANCE_INIT;
+	dialog->cyan_adjust = adjust;
 
 	// Magenta scale adjustment.
+	adjust = gtk_range_get_adjustment(
+		GTK_RANGE(LookupWidget(window, "color_dialog_magenta_scale")));
+	gtk_signal_connect(GTK_OBJECT(adjust), "value_changed",
+		GTK_SIGNAL_FUNC(on_color_dialog_magenta_adjust_value_changed), window);
 	dialog->magenta_balance = MAGENTA_BALANCE_INIT;
+	dialog->magenta_adjust = adjust;
 
 	// Yellow scale adjustment.
+	adjust = gtk_range_get_adjustment(
+		GTK_RANGE(LookupWidget(window, "color_dialog_yellow_scale")));
+	gtk_signal_connect(GTK_OBJECT(adjust), "value_changed",
+		GTK_SIGNAL_FUNC(on_color_dialog_yellow_adjust_value_changed), window);
 	dialog->yellow_balance = YELLOW_BALANCE_INIT;
+	dialog->yellow_adjust = adjust;
 
 	// Black scale adjustment.
+	adjust = gtk_range_get_adjustment(
+			GTK_RANGE(LookupWidget(window, "color_dialog_black_scale")));
+	gtk_signal_connect(GTK_OBJECT(adjust), "value_changed",
+		GTK_SIGNAL_FUNC(on_color_dialog_black_adjust_value_changed), window);
 	dialog->black_balance = BLACK_BALANCE_INIT;
+	dialog->black_adjust = adjust;
 
 	// Density scale adjustment.
+	adjust = gtk_range_get_adjustment(
+			GTK_RANGE(LookupWidget(window, "color_dialog_density_scale")));
+	gtk_signal_connect(GTK_OBJECT(adjust), "value_changed",
+		GTK_SIGNAL_FUNC(on_color_dialog_density_adjust_value_changed), window);
 	dialog->density_balance = DENSITY_BALANCE_INIT;
+	dialog->density_adjust = adjust;
 
 	// Color correct combo.
 	dialog->color_correct = SetColorCorrectCombo(dialog, COLOR_CORRECT_INIT);
@@ -213,15 +248,25 @@ UIColorDialog* CreateColorDialog(UIDialog* parent)
 
 void ShowColorDialog(UIColorDialog* dialog)
 {
-	/* Ver.2.80 */
-	DisableSignal();
+	// Set cyan scale adjustment value.
+	gtk_adjustment_set_value(dialog->cyan_adjust,
+							(gfloat)dialog->cyan_balance);
 
-	GtkWidget* window = UI_DIALOG(dialog)->window;
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_cyan_scale")) , (gdouble)dialog->cyan_balance );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_magenta_scale")) , (gdouble)dialog->magenta_balance );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_yellow_scale")) , (gdouble)dialog->yellow_balance );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_black_scale")) , (gdouble)dialog->black_balance );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_density_scale")) ,(gdouble)dialog->density_balance );
+	// Set magenta scale adjustment value.
+	gtk_adjustment_set_value(dialog->magenta_adjust,
+							(gfloat)dialog->magenta_balance);
+
+	// Set yellow scale adjustment value.
+	gtk_adjustment_set_value(dialog->yellow_adjust,
+							(float)dialog->yellow_balance);
+
+	// Set black scale adjustment value.
+	gtk_adjustment_set_value(dialog->black_adjust,
+							(float)dialog->black_balance);
+
+	// Set density scale adjustment value.
+	gtk_adjustment_set_value(dialog->density_adjust,
+							(float)dialog->density_balance);
 
 	// Vivid button.
 	gtk_toggle_button_set_active(
@@ -254,25 +299,18 @@ void ShowColorDialog(UIColorDialog* dialog)
 		}
 	}
 
-	/* Ver.2.80 */
-	EnableSignal();
-
 	ShowDialog((UIDialog*)dialog, "color_dialog_ok_button"); 
 }
 
 void HideColorDialog(UIColorDialog* dialog, gboolean apply)
 {
-	/* Ver.2.80 */
-	GtkWidget* window = UI_DIALOG(dialog)->window;
-
 	if( apply )
 	{
-		/* Ver.2.80 */
-		dialog->cyan_balance    = (int)(gtk_range_get_value( GTK_RANGE(  LookupWidget( window , "color_dialog_cyan_scale") ) ));
-		dialog->magenta_balance = (int)(gtk_range_get_value( GTK_RANGE(  LookupWidget( window , "color_dialog_magenta_scale") ) ));
-		dialog->yellow_balance  = (int)(gtk_range_get_value( GTK_RANGE(  LookupWidget( window , "color_dialog_yellow_scale") ) ));
-		dialog->black_balance   = (int)(gtk_range_get_value( GTK_RANGE(  LookupWidget( window , "color_dialog_black_scale") ) ));
-		dialog->density_balance = (int)(gtk_range_get_value( GTK_RANGE(  LookupWidget( window , "color_dialog_density_scale") ) ));
+		dialog->cyan_balance    = (int)dialog->cyan_adjust->value; 
+		dialog->magenta_balance = (int)dialog->magenta_adjust->value; 
+		dialog->yellow_balance  = (int)dialog->yellow_adjust->value; 
+		dialog->black_balance   = (int)dialog->black_adjust->value; 
+		dialog->density_balance = (int)dialog->density_adjust->value; 
 
 		dialog->vivid
 			= GTK_TOGGLE_BUTTON(LookupWidget(UI_DIALOG(dialog)->window,
@@ -280,20 +318,20 @@ void HideColorDialog(UIColorDialog* dialog, gboolean apply)
 
 		dialog->color_correct = GetColorCorrectCombo(dialog);
 
-		if( dialog->gamma_num < 1 )	/* Ver.2.80 */
+		if( dialog->gamma_list == NULL )
 		{
 			dialog->gamma
 				 = GetTextArrayValueFromCombo(UI_DIALOG(dialog)->window,
 					 "color_dialog_gamma_combo", gamma_key, gamma_value);
 		}
-		else	/* The list is obtained from CNCLDB */
+		else
 		{
 			dialog->gamma = GetCurrentnValue(CNCL_INPUT_GAMMA);
 		}
 	}
 	else
 	{
-		if( dialog->gamma_num > 0 )	/* Ver.2.80 */
+		if( dialog->gamma_list )
 		{
 			// Recover parameters.
 			UpdateMenuLink(CNCL_INPUT_GAMMA, dialog->gamma);
@@ -309,79 +347,41 @@ UIColorDialog* ReCreateColorDialog(UIColorDialog* dialog, UIDialog* parent)
 	return CreateColorDialog(parent);
 }
 
-
-/* Ver.2.80 */
-
-void
-on_color_dialog_cyan_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data)
+void on_color_dialog_cyan_adjust_value_changed(
+		GtkAdjustment* adjust, gpointer* user_data)
 {
-	GtkWidget* window = UI_DIALOG(g_color_dialog)->window;
-	GtkWidget* label = LookupWidget(window, "color_dialog_cyan_value" );
-	gchar value[8];
-
-	sprintf(value, "%3d", (int)(gtk_range_get_value( range )));
-	gtk_label_set_text(GTK_LABEL(label), value );
+	UpdateScaleValue(GTK_WIDGET(user_data), adjust,
+						 "color_dialog_cyan_value");
 }
 
-
-void
-on_color_dialog_magenta_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data)
+void on_color_dialog_magenta_adjust_value_changed(
+		GtkAdjustment* adjust, gpointer* user_data)
 {
-	GtkWidget* window = UI_DIALOG(g_color_dialog)->window;
-	GtkWidget* label = LookupWidget(window, "color_dialog_magenta_value" );
-	gchar value[8];
-
-	sprintf(value, "%3d", (int)(gtk_range_get_value( range )));
-	gtk_label_set_text(GTK_LABEL(label), value );
+	UpdateScaleValue(GTK_WIDGET(user_data), adjust,
+						 "color_dialog_magenta_value");
 }
 
+void on_color_dialog_yellow_adjust_value_changed(
+		GtkAdjustment* adjust, gpointer* user_data)
 
-void
-on_color_dialog_yellow_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data)
 {
-	GtkWidget* window = UI_DIALOG(g_color_dialog)->window;
-	GtkWidget* label = LookupWidget(window, "color_dialog_yellow_value" );
-	gchar value[8];
-
-	sprintf(value, "%3d", (int)(gtk_range_get_value( range )));
-	gtk_label_set_text(GTK_LABEL(label), value );
+	UpdateScaleValue(GTK_WIDGET(user_data), adjust,
+						 "color_dialog_yellow_value");
 }
 
-
-void
-on_color_dialog_black_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data)
+void on_color_dialog_black_adjust_value_changed(
+		GtkAdjustment* adjust, gpointer* user_data)
 {
-	GtkWidget* window = UI_DIALOG(g_color_dialog)->window;
-	GtkWidget* label = LookupWidget(window, "color_dialog_black_value" );
-	gchar value[8];
-
-	sprintf(value, "%3d", (int)(gtk_range_get_value( range )));
-	gtk_label_set_text(GTK_LABEL(label), value );
+	UpdateScaleValue(GTK_WIDGET(user_data), adjust,
+						 "color_dialog_black_value");
 }
 
-
-void
-on_color_dialog_density_scale_value_changed
-                                        (GtkRange        *range,
-                                        gpointer         user_data)
+void on_color_dialog_density_adjust_value_changed(
+		GtkAdjustment* adjust, gpointer* user_data)
 {
-	GtkWidget* window = UI_DIALOG(g_color_dialog)->window;
-	GtkWidget* label = LookupWidget(window, "color_dialog_density_value" );
-	gchar value[8];
-
-	sprintf(value, "%3d", (int)(gtk_range_get_value( range )));
-	gtk_label_set_text(GTK_LABEL(label), value );
+	UpdateScaleValue(GTK_WIDGET(user_data), adjust,
+						 "color_dialog_density_value");
 }
-
-
 
 gboolean
 on_color_dialog_delete_event           (GtkWidget       *widget,
@@ -415,16 +415,25 @@ on_color_dialog_default_button_clicked (GtkButton       *button,
 	UIColorDialog* dialog = g_color_dialog;
 	short print_bw = IsGrayPrint(g_main_window);
 
-	/* Ver.2.80 */
-	DisableSignal();
+	// Set cyan scale adjustment value.
+	gtk_adjustment_set_value(dialog->cyan_adjust,
+						(gfloat)CYAN_BALANCE_INIT);
 
-	/* Ver.2.80 */
-	GtkWidget* window = UI_DIALOG(dialog)->window;
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_cyan_scale")) , (gdouble)CYAN_BALANCE_INIT );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_magenta_scale")) , (gdouble)MAGENTA_BALANCE_INIT );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_yellow_scale")) , (gdouble)YELLOW_BALANCE_INIT );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_black_scale")) , (gdouble)BLACK_BALANCE_INIT );
-	gtk_range_set_value( GTK_RANGE(LookupWidget(window, "color_dialog_density_scale")) , (gdouble)DENSITY_BALANCE_INIT );
+	// Set magenta scale adjustment value.
+	gtk_adjustment_set_value(dialog->magenta_adjust,
+						(gfloat)MAGENTA_BALANCE_INIT);
+
+	// Set yellow scale adjustment value.
+	gtk_adjustment_set_value(dialog->yellow_adjust,
+						(float)YELLOW_BALANCE_INIT);
+
+	// Set black scale adjustment value.
+	gtk_adjustment_set_value(dialog->black_adjust,
+						(float)BLACK_BALANCE_INIT);
+
+	// Set density scale adjustment value.
+	gtk_adjustment_set_value(dialog->density_adjust,
+						(float)DENSITY_BALANCE_INIT);
 
 	// Vivid button.
 	gtk_toggle_button_set_active(
@@ -437,11 +446,18 @@ on_color_dialog_default_button_clicked (GtkButton       *button,
 
 	// Gamma correct combo.
 	SetGammaCombo(dialog, GetDefaultGamma(dialog));
-
-	/* Ver.2.80 */
-	EnableSignal();
 }
 
+
+void
+on_color_dialog_gamma_entry_changed    (GtkEditable     *editable,
+                                        gpointer         user_data)
+{
+	short gamma = NameToValue(CNCL_INPUT_GAMMA,
+							(char*)gtk_entry_get_text(GTK_ENTRY(editable)));
+
+	UpdateMenuLink(CNCL_INPUT_GAMMA, gamma);
+}
 
 void
 on_color_dialog_help_button_clicked    (GtkButton       *button,

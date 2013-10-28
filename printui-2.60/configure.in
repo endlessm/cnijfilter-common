@@ -57,14 +57,9 @@ AC_PROG_CC
 AM_PROG_CC_STDC
 AC_HEADER_STDC
 AM_PROG_CC_C_O
-AC_PROG_INTLTOOL
 
 AM_PATH_GTK_2_0(2.6.0, ,
             AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
-
-dnl ***************************************************************************
-dnl Internationalization
-dnl ***************************************************************************
 
 GETTEXT_PACKAGE=printui${program_suffix}
 AC_SUBST(GETTEXT_PACKAGE)

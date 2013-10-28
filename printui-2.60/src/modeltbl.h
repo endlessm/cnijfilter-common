@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -53,12 +53,6 @@ typedef struct {
 	MediaSizeTable* media_size_table_japanese;
 	short ext_border;
 } ModelTable;
-
-/* Ver.2.80 : Treat the string ID related to "lever position" as "CNCL value" */
-/* of CNCL Object"CNUI_OBJECT_LEVER". */
-#define CNUI_OBJECT_LEVER			(1000)
-#define CNUI_VALUE_LEVER_LABEL		(0)
-#define CNUI_VALUE_LEVER_ALERT		(1)
 
 
 // Utility button flag.
@@ -393,6 +387,7 @@ GLOBAL ModelTable g_model_table[] =
   	{CND_IP6600D,     UF_IP6600D, g_media_size_table_ip4200,   	g_media_size_table_ip4200_japanese,	-1}, 
   	{CND_IP7500,      UF_IP7500,  g_media_size_table_ip7500,   	g_media_size_table_ip7500_japanese,	-1},	
   	{CND_MP500,       UF_MP500,   g_media_size_table_ip4200,   	g_media_size_table_ip4200_japanese,	-1},	
+
 	{0,0,NULL}
 };
 

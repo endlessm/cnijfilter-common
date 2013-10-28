@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -30,7 +30,6 @@ typedef struct
 } KeyTextList;
 
 void SetKeyTextDir(gchar* dirname);
-void FreeKeyTextDir( void );
 KeyTextList* LoadKeyTextList(char* name);
 void FreeKeyTextList(KeyTextList* list);
 gchar* LookupText(KeyTextList* list, const gchar* key);

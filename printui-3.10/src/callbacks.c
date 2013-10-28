@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2009
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -256,6 +256,8 @@ static void ShowLeverPositionAlert()
 	gchar* msg_buf;
 const static gchar* _alert_str = "_alert";
 
+//	gchar* alert_msg = LookupText(g_keytext_list, "move_lever_position_alert");
+	/* Ver.2.80: Make alert message string according to model_name. */
 	gchar* alert_msg = ValueToName( CNUI_OBJECT_LEVER , CNUI_VALUE_LEVER_ALERT );
 	gchar* position_key
 			 = ValueToKey(CNCL_MESS_THICK, GetCurrentnValue(CNCL_MESS_THICK));

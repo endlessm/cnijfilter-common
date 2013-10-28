@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,10 +29,15 @@
 //#endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 
 #include "callbacks.h"
-//#	include "interface.h"
-//#	include "support.h"
+#ifndef	USE_LIB_GLADE
+#	include "interface.h"
+#	include "support.h"
+#endif
 
 
 #include "bjuidefs.h"
@@ -42,9 +47,14 @@ UIMainDialog* CreateMainWindow()
 {
 	short supply_value;
 	short margin_value;
-	UIMainDialog* main_window = (UIMainDialog*)CreateDialog(sizeof(UIMainDialog), NULL);
+	UIMainDialog* main_window
+		= (UIMainDialog*)CreateDialog(sizeof(UIMainDialog), NULL);
 
+#ifdef	USE_LIB_GLADE
 	UI_DIALOG(main_window)->window = LookupWidget(NULL, "ui_window");
+#else
+	UI_DIALOG(main_window)->window = create_ui_window();
+#endif
 
 	// Get initial paper size.
 	main_window->init_paper_size = GetCurrentnValue(CNCL_PAPERSIZE);
@@ -80,6 +90,12 @@ UIMainDialog* CreateMainWindow()
 	UpdateMenuLink(CNCL_MARGINTYPE, margin_value);
 	UpdateMenuLink(CNCL_MEDIASUPPLY, supply_value);
 
+	// Save current paper size value.
+	g_paper_size_value = GetCurrentnValue(CNCL_PAPERSIZE);
+
+	// Save current duplex printing
+	g_duplex_value = GetCurrentnValue(CNCL_DUPLEX_PRINTING);
+
 	return main_window;
 }
 
@@ -90,22 +106,45 @@ void ConnectSignalHandlers()
 	// Media type combo.
 	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "media_type_combo");
 	gtk_widget_realize(combo);
+	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->popwin), "event",
+			GTK_SIGNAL_FUNC(on_media_type_popwin_event), NULL);
+//	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->button), "event",
+//			GTK_SIGNAL_FUNC(on_combo_button_event), NULL);
 
 	// Media size combo.
 	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "media_size_combo");
 	gtk_widget_realize(combo);
+	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->popwin), "event",
+			GTK_SIGNAL_FUNC(on_media_size_popwin_event), NULL);
+	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->button), "event",
+			GTK_SIGNAL_FUNC(on_combo_button_event), NULL);
 
 	// Media supply combo.
-	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "media_supply_combo");
+	combo = LookupWidget(
+				UI_DIALOG(g_main_window)->window, "media_supply_combo");
 	gtk_widget_realize(combo);
+	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->popwin), "event",
+			GTK_SIGNAL_FUNC(on_media_supply_popwin_event), NULL);
+//	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->button), "event",
+//			GTK_SIGNAL_FUNC(on_combo_button_event), NULL);
 
 	// Cartridge type combo.
-	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "cartridge_type_combo");
+	combo = LookupWidget(
+				UI_DIALOG(g_main_window)->window, "cartridge_type_combo");
 	gtk_widget_realize(combo);
+	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->popwin), "event",
+			GTK_SIGNAL_FUNC(on_cartridge_type_popwin_event), NULL);
+//	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->button), "event",
+//			GTK_SIGNAL_FUNC(on_combo_button_event), NULL);
 
 	// Printing type combo.
-	combo = LookupWidget(UI_DIALOG(g_main_window)->window, "printing_type_combo");
+	combo = LookupWidget(
+				UI_DIALOG(g_main_window)->window, "printing_type_combo");
 	gtk_widget_realize(combo);
+	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->popwin), "event",
+			GTK_SIGNAL_FUNC(on_printing_type_popwin_event), NULL);
+//	gtk_signal_connect(GTK_OBJECT(GTK_COMBO(combo)->button), "event",
+//			GTK_SIGNAL_FUNC(on_combo_button_event), NULL);
 }
 
 void InitPrintingType()
@@ -141,11 +180,13 @@ void ShowCartridgeVBox(UIMainDialog* main_window)
 	// Show or hide cartridge combo and label.
 	if( GetComboNum(CNCL_CARTRIDGE) > 1 )
 	{
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "cartridge_type_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
+			"cartridge_type_vbox"));
 	}
 	else
 	{
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "one_cartridge_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
+			"one_cartridge_vbox"));
 	}
 }
 
@@ -153,23 +194,25 @@ static
 void ShowBorderlessVBox(UIMainDialog* main_window)
 {
 	if( IsAvailableBorderless() && g_cups_mode == FALSE )
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "borderless_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
+			"borderless_vbox"));
 }
 
 static
 void ShowDuplexVBox(UIMainDialog* main_window)
 {
 	if( IsAvailableDuplex() )
-		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window, "duplex_printing_vbox"));
+		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
+			"duplex_printing_vbox"));
 }
 
 static
 void ShowUtilButton(UIMainDialog* main_window, char* button_name)
 {
-	GtkWidget* button = LookupWidget(UI_DIALOG(main_window)->window, button_name);
+	GtkWidget* button
+		= LookupWidget(UI_DIALOG(main_window)->window, button_name);
 	gtk_widget_show(button);
 
-/*
 	if( g_cups_mode == FALSE )
 	{
 		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
@@ -177,7 +220,6 @@ void ShowUtilButton(UIMainDialog* main_window, char* button_name)
 		gtk_widget_show(LookupWidget(UI_DIALOG(main_window)->window,
 			"monitor_hseparator"));
 	}
-*/
 }
 
 static
@@ -218,12 +260,6 @@ void ShowPaperGapCombo(main_window)
 {
 	int show_lever_box = FALSE;
 
-	/* Ver.2.80: Set "lever_label" string according to model_name. */
-	GtkWidget* label = LookupWidget( UI_DIALOG(main_window)->window, "lever_label");
-	gchar* label_name = ValueToName( CNUI_OBJECT_LEVER , CNUI_VALUE_LEVER_LABEL );
-	gtk_label_set_text(GTK_LABEL(label), label_name);
-
-	
 	if( GetCurrentPaperGap() == CND_PGAP_CMD_NA )
 	{
 		if( GetCurrentnValue(CNCL_MESS_THICK) != CND_TMESSAGE_NA )

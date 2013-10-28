@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -56,5 +56,3 @@ short GetAllFlags(short id, short value);
 int UpdateMenuLink(short id, short value);
 void DumpDataBase(int id);
 int SetCallbackTableFunc(short id, void (*func)(void *arg), void* func_data);
-
-void my_printui_quit();

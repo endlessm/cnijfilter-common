@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -29,13 +29,18 @@
 //#endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
 #include <string.h>
 
-//#	include "support.h"
+#ifndef	USE_LIB_GLADE
+#	include "support.h"
+#endif
 #include "bjuidefs.h"
 
 
@@ -43,6 +48,15 @@ static char* g_pixmapdir = NULL;
 
 void SetPixmapDir(gchar* dirname)
 {
+#ifndef	USE_LIB_GLADE
+	if( g_pixmapdir != NULL )
+		g_free(g_pixmapdir);
+
+	g_pixmapdir = g_strdup(dirname);
+
+	// Set the pixmaps directory path for create_pixmap() in support.c
+	add_pixmap_directory(dirname);
+#endif
 }
 
 
@@ -83,13 +97,10 @@ gchar* CheckFileExists(const gchar *dirname, const gchar *filename)
 	gchar *full_filename;
 	struct stat s;
 	gint status;
-	gint full_filename_len;
 
-	full_filename_len = strlen (dirname) + 1 + strlen (filename) + 1;
-	full_filename = (gchar*)g_malloc0( full_filename_len );
-
-	strncpy(full_filename, dirname, full_filename_len); /* Ver.3.60 */
-	full_filename[ full_filename_len -1 ] = '\0';
+	full_filename = (gchar*)g_malloc(strlen (dirname) + 1
+                                   + strlen (filename) + 1);
+	strcpy(full_filename, dirname);
 	strcat(full_filename, G_DIR_SEPARATOR_S);
 	strcat(full_filename, filename);
 

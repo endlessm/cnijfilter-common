@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -116,11 +116,22 @@ GLOBAL gchar* g_staple_button_name[] =
 	NULL
 };
 
+GLOBAL gboolean g_media_type_entry_changed = FALSE;
 GLOBAL gboolean g_media_type_popwin_mapped = FALSE;
+
+GLOBAL gboolean g_media_size_entry_changed = FALSE;
 GLOBAL gboolean g_media_size_popwin_mapped = FALSE;
+
+GLOBAL gboolean g_media_supply_entry_changed = FALSE;
 GLOBAL gboolean g_media_supply_popwin_mapped = FALSE;
+
+GLOBAL gboolean g_cartridge_type_entry_changed = FALSE;
 GLOBAL gboolean g_cartridge_type_popwin_mapped = FALSE;
+
+GLOBAL gboolean g_printing_type_entry_changed = FALSE;
 GLOBAL gboolean g_printing_type_popwin_mapped = FALSE;
+
+GLOBAL gboolean g_paper_gap_entry_changed = FALSE;
 GLOBAL gboolean g_paper_gap_popwin_mapped = FALSE;
 
 #else
@@ -136,11 +147,22 @@ GLOBAL const short g_printing_type_cups_value[];
 GLOBAL const gchar* g_border_ext_button_name[];
 GLOBAL const gchar* g_staple_button_name[];
 
+GLOBAL gboolean g_media_type_entry_changed;
 GLOBAL gboolean g_media_type_popwin_mapped;
+
+GLOBAL gboolean g_media_size_entry_changed;
 GLOBAL gboolean g_media_size_popwin_mapped;
+
+GLOBAL gboolean g_media_supply_entry_changed;
 GLOBAL gboolean g_media_supply_popwin_mapped;
+
+GLOBAL gboolean g_cartridge_type_entry_changed;
 GLOBAL gboolean g_cartridge_type_popwin_mapped;
+
+GLOBAL gboolean g_printing_type_entry_changed;
 GLOBAL gboolean g_printing_type_popwin_mapped;
+
+GLOBAL gboolean g_paper_gap_entry_changed;
 GLOBAL gboolean g_paper_gap_popwin_mapped;
 
 #endif
@@ -148,7 +170,9 @@ GLOBAL gboolean g_paper_gap_popwin_mapped;
 /////////////////////////////////////////////////////////
 // Non initialized variables
 
-GLOBAL GtkBuilder* builder;
+#ifdef	USE_LIB_GLADE
+GLOBAL GladeXML* g_ui_xml;
+#endif
 
 GLOBAL gboolean g_unit_inch;
 

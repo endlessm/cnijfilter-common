@@ -1,10 +1,11 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2007
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; version 2 of the License.
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -13,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * NOTE:
  *  - As a special exception, this program is permissible to link with the
@@ -29,12 +30,17 @@
 //#endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
-//#	include "interface.h"
-//#	include "support.h"
+#ifndef	USE_LIB_GLADE
+#	include "interface.h"
+#	include "support.h"
+#endif
 
 #include "bjuidefs.h"
 
@@ -49,7 +55,11 @@ gboolean SameName(gchar* name1, gchar* name2)
 
 GtkWidget* LookupWidget(GtkWidget* window, const gchar* name)
 {
-	return GTK_WIDGET (gtk_builder_get_object (builder, name));
+#ifdef	USE_LIB_GLADE
+	return glade_xml_get_widget(g_ui_xml, name);
+#else
+	return lookup_widget(window, name);
+#endif
 }
 
 GtkWidget* GetTopWidget(GtkWidget* widget) 
@@ -84,29 +94,27 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 	// Media type combo
 	if( !SameName(except_name, "media_type_combo") )
 	{
-#ifdef _PRINTUI_DEBUG_
-		fprintf(stderr,"UpdateWidgets:media_type_combo\n");
-#endif
-		SetItemsToComboBox(window, "media_type_combo", CNCL_MEDIATYPE, GetCurrentnValue(CNCL_MEDIATYPE));/* Ver.2.80 */
+		GList* glist = GetComboList(CNCL_MEDIATYPE);
+		SetGListToCombo(window, "media_type_combo",
+							glist, GetCurrentString(CNCL_MEDIATYPE));
 	}
 
 	// Media supply combo
 	if( !SameName(except_name, "media_supply_combo") )
 	{
 		GList* glist = GetComboList(CNCL_MEDIASUPPLY);
-		SetGListToComboBox(window, "media_supply_combo",glist, GetCurrentString(CNCL_MEDIASUPPLY) , CNCL_MEDIASUPPLY);/* Ver.2.80 */
+		SetGListToCombo(window, "media_supply_combo",
+							glist, GetCurrentString(CNCL_MEDIASUPPLY));
 	}
 
 
 	// Cartridge type combo
 	if( !SameName(except_name, "cartridge_type_combo") )
 	{
-#ifdef _PRINTUI_DEBUG_
-		fprintf(stderr,"UpdateWidgets:cartridge_type_combo\n");
-#endif
-		SetItemsToComboBox(window, "cartridge_type_combo", CNCL_CARTRIDGE, GetCurrentnValue(CNCL_CARTRIDGE));/* Ver.2.80 */
+		GList* glist = GetComboList(CNCL_CARTRIDGE);
+		SetGListToCombo(window, "cartridge_type_combo",
+							glist, GetCurrentString(CNCL_CARTRIDGE));
 	}
-
 
 	// Quality radio button
 	{
@@ -170,10 +178,9 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 	// Paper gap combo
 	if( !SameName(except_name, "paper_gap_combo") )
 	{
-#ifdef _PRINTUI_DEBUG_
-		fprintf(stderr,"UpdateWidgets:paper_gap_combo\n");
-#endif
-		SetItemsToComboBox(window, "paper_gap_combo", CNCL_PAPERGAP_COMMAND, GetCurrentnValue(CNCL_PAPERGAP_COMMAND));/* Ver.2.80 */
+		GList* glist = GetComboList(CNCL_PAPERGAP_COMMAND);
+		SetGListToCombo(window, "paper_gap_combo",
+							glist, GetCurrentString(CNCL_PAPERGAP_COMMAND));
 	}
 
 	/////////////////////////////////////////////////////////////////
@@ -186,21 +193,21 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 		if( margin_type == CND_MARGIN_MINUS )
 		{
 			// Page size is displayed. ( boderless )
-			/* Ver.2.80 : Use static list(g_paper_size_margin_list) to prevent "Page Size list" decrease (depending on Paper Source value) */
-			SetGListToComboBox(window, "media_size_combo", g_paper_size_margin_list, GetCurrentString(CNCL_PAPERSIZE) , CNCL_PAPERSIZE);
+			SetGListToCombo(window, "media_size_combo",
+							g_paper_size_margin_list, GetCurrentString(CNCL_PAPERSIZE));
 		}
 		else
 		{
 			// Page size is displayed. ( All "page size" )
-			/* Ver.2.80 : Use static list(g_paper_size_list) to prevent "Page Size list" decrease (depending on Paper Source value) */
-			SetGListToComboBox(window, "media_size_combo", g_paper_size_list, GetCurrentString(CNCL_PAPERSIZE) , CNCL_PAPERSIZE);
+			SetGListToCombo(window, "media_size_combo",
+							g_paper_size_list, GetCurrentString(CNCL_PAPERSIZE));
 		}
 	}
 
 	// Printing type combo
 	if( !SameName(except_name, "printing_type_combo") )
 	{
-		SetTextArrayToComboBox(window, "printing_type_combo",
+		SetTextArrayToCombo(window, "printing_type_combo",
 			(const gchar**)g_printing_type_name,
 			(const short*)g_printing_type_value, g_main_window->printing_type);
 	}
@@ -275,7 +282,7 @@ void UpdateWidgets(GtkWidget* window, gchar* except_name)
 		gtk_widget_set_sensitive(duplex_vbox, IsAvailableValue(CNCL_DUPLEX_PRINTING, CND_DUPLEX_AUTO));
 
 		// Duplex hbox.
-		active = (CND_DUPLEX_AUTO == GetCurrentnValue(CNCL_DUPLEX_PRINTING))? TRUE : FALSE;	/* Ver.2.70 */
+		active = (CND_DUPLEX_AUTO == g_duplex_value)? TRUE : FALSE;
 		duplex_hbox = LookupWidget(window, "duplex_hbox");
 		gtk_widget_set_sensitive(duplex_hbox, active);
 
@@ -339,233 +346,42 @@ int GetActiveButtonIndex(GtkWidget* window,
 	return default_index;
 }
 
-void SetPopdownStringsToCombo(GtkWidget *combo, GList *glist, int focus_index)
-{
-	GList *p = glist;
-	GtkWidget *label;
-	int index = 0;
-
-	gtk_list_clear_items(GTK_LIST(GTK_COMBO(combo)->list), 0, -1);
-
-	while( p != NULL )
-	{
-		label = gtk_list_item_new_with_label((gchar*)p->data);
-		gtk_container_add(GTK_CONTAINER(GTK_COMBO(combo)->list), label);
-		gtk_widget_show(label);
-
-		if( index == focus_index )
-			gtk_widget_grab_focus(label);
-
-		p = p->next;
-		index++;
-	}
-}
-
-
-/* Ver.2.80 */
-/* Set items in "GList" to GtkComboBox */
-short SetGListToComboBox(GtkWidget* window, gchar *combo_name,
-									GList* glist, gchar* current , short objectid )
-{
-	GtkWidget* combo = LookupWidget(window, combo_name);
-	GList* glist_tmp = glist;
-
-	short	current_id;
-	char *str;
-	short active_item,item_count;
-
-	
-	/* Remove all items in current list */
-	if(gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ){
-	
-		while( 1 ){
-			gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), 0 );
-			if( ! gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ) break;
-			gtk_combo_box_remove_text( GTK_COMBO_BOX( combo ), 0 );
-		}
-	}
-
-
-	/* Add items in "glist" */
-	item_count = 0;
-	active_item = 0;
-	current_id = NameToValue( objectid , (char *)current);
-
-	while( glist_tmp )
-	{
-		str = (char *)glist_tmp->data;
-
-		if( str != NULL )
-		{
-			/* append one item */
-			gtk_combo_box_append_text( GTK_COMBO_BOX( combo ), str );
-			if( current_id == NameToValue( objectid , str ) )  active_item = item_count;
-			item_count++;
-		}
-		glist_tmp = glist_tmp->next;
-	}
-
-	/* Set active item */
-	gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), active_item );
-
-	return item_count;
-}
-
-
-
-/* Ver.2.80 */
-/* Make a list of available items of specified object , and Set the list to GtkComboBox */
-short SetItemsToComboBox(GtkWidget* window, gchar *combo_name, short objectid , short currentid)
+void SetGListToCombo(GtkWidget* window, gchar *combo_name,
+									GList* glist, gchar* current)
 {
 	GtkWidget* combo = LookupWidget(window, combo_name);
 
-	LPCNCLDB lpdb = g_uidb.lpdbTop;
-	char *str;
-	short i,active_item,item_count;
-
-
-	/* Remove all items in current list */
-	if(gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ){
-	
-	
-		while( 1 ){
-			gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), 0 );
-			if( ! gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ) break;
-			gtk_combo_box_remove_text( GTK_COMBO_BOX( combo ), 0 );
-		}
-	}
-
-
-	/* Add available list (not disable items from UIDB ) */
-	item_count = 0;
-	active_item = 0;
-	for( i = 0 ; i < g_uidb.dbsize ; i++, lpdb++ )
+	if( glist != NULL && current != NULL )
 	{
-		if( lpdb->nObjectID == objectid )
-		{
-			str = ValueToName(lpdb->nObjectID, lpdb->nValue);
-
-			if( str != NULL )
-			{
-				if( *str != '\0' && lpdb->disable == 0 ){
-					/* append one item */
-					gtk_combo_box_append_text( GTK_COMBO_BOX( combo ), str );
-					if( lpdb->nValue == currentid ) active_item = item_count;
-					item_count++;
-				}
-			}
-		}
+		gtk_combo_set_popdown_strings(GTK_COMBO(combo), glist);
+		gtk_entry_set_text(GTK_ENTRY(GTK_COMBO(combo)->entry), current);
+		gtk_editable_set_position(GTK_EDITABLE(GTK_COMBO(combo)->entry), 0);
 	}
-
-	/* Set active item */
-	gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), active_item );
-
-	return item_count;
 }
 
-
-/* Ver.2.80 */
-/* item value(nValue) -> combo index */
-short ValueToComboIndex( GtkWidget *combo , short object , short target_value ) //nValueÅwè
-{
-	short result = -1;
-	short item_count = 0;
-	char *combo_item_name = NULL;
-	short combo_item_value = -1;
-
-	// search in the list of the combo
-	if(gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ){
-	
-		while( 1 ){
-			gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), item_count );
-			combo_item_name = (char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo));
-			if( ! combo_item_name ) break;
-
-			combo_item_value = NameToValue( object, combo_item_name );	/* convert name(string) to CNCLID */
-
-			if( combo_item_value == target_value ){
-				result = item_count;
-				break;
-			}
-			item_count++;
-		}
-	}
-
-	return result;
-}
-
-#if 0
-/* Ver.2.80 */
-/* item strings(UI name) -> combo index */
-short NameToComboIndex( GtkWidget *combo , gchar *target_name )
-{
-	short result = -1;
-	short item_count = 0;
-	char *combo_item_name = NULL;
-
-	// search in the list of the combo
-	if(gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ){
-	
-		while( 1 ){
-			gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), item_count );
-
-			combo_item_name = (char*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo));
-			if( ! combo_item_name ) break;
-
-			if( !strcmp( combo_item_name , target_name )){
-				result = item_count;
-				break;
-			}
-			item_count++;
-		}
-	}
-
-	return result;
-}
-#endif
-
-
-/* Ver.2.80 */
-/* Set items in the key_array and value_array to GtkComboBox */
-void SetTextArrayToComboBox(GtkWidget* window, gchar *combo_name,
+void SetTextArrayToCombo(GtkWidget* window, gchar *combo_name,
 		const gchar* key_array[], const short value_array[], short value)
 {
+	GList* glist = NULL;
 	int index = 0;
 	int i;
 
-	GtkWidget* combo = LookupWidget(window, combo_name);
-
-	/* Remove all items in current list */
-	if(gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ){
-		while( 1 ){
-			gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), 0 );
-			if( ! gtk_combo_box_get_active_text( GTK_COMBO_BOX( combo )) ) break;
-			gtk_combo_box_remove_text( GTK_COMBO_BOX( combo ), 0 );
-		}
-	}
-
-	/* Add items in "key_array" */
 	for( i = 0 ; key_array[i] != NULL ; i++ )
 	{
-		gtk_combo_box_append_text( GTK_COMBO_BOX( combo ), LookupText(g_keytext_list, key_array[i]) );
-		if( value_array[i] == value ) index = i;
+		glist = g_list_append(glist, LookupText(g_keytext_list, key_array[i]));
+
+		if( value_array[i] == value )
+			index = i;
 	}
 
-	/* Set active item */
-	gtk_combo_box_set_active( GTK_COMBO_BOX( combo ), index );
+	SetGListToCombo(window, combo_name, glist, g_list_nth_data(glist, index));
 }
-
-
 
 int GetTextArrayValueFromCombo(GtkWidget* window, gchar *combo_name,
 		const gchar* key_array[], const short value_array[])
 {
 	GtkWidget* combo = LookupWidget(window, combo_name);
-
-	/* Ver.2.80 */
-	gchar *current = NULL;
-	current = (gchar*)gtk_combo_box_get_active_text(GTK_COMBO_BOX(combo));
-
+	const gchar* current = gtk_entry_get_text(GTK_ENTRY(GTK_COMBO(combo)->entry));
 	int i;
 
 	for( i = 0 ; key_array[i] != NULL ; i++ )
@@ -601,13 +417,12 @@ void UpdateDrawingArea(GtkWidget* window, const gchar* name)
 }
 #endif
 
-
-void UpdateScaleRangeValue(GtkWidget* window, GtkRange* range, gchar* name)
+void UpdateScaleValue(GtkWidget* window, GtkAdjustment* adjust, gchar* name)
 {
 	GtkWidget* label = LookupWidget(window, name);
 	gchar value[8];
 
-	sprintf(value, "%3d", (int)(gtk_range_get_value( range )));
+	sprintf(value, "%3d", (int)adjust->value);
 	gtk_label_set_text(GTK_LABEL(label), (gchar*)value);
 }
 

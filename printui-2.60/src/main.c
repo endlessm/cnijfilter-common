@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2010
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -38,13 +38,18 @@
 #endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <popt.h>
 
 #include "callbacks.h"
-//#	include "interface.h"
-//#	include "support.h"
+#ifndef	USE_LIB_GLADE
+#	include "interface.h"
+#	include "support.h"
+#endif
 
 
 #define	DEFINE_GLOBALS
@@ -68,9 +73,9 @@ int main(int argc, char *argv[])
 	g_main_window=NULL;	/* for UpdateMenuLink (check "first call") */
 	g_quality_dialog = NULL;	/* for UpdateMenuLink (check "first call") */
 
-	bindtextdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-	bind_textdomain_codeset( GETTEXT_PACKAGE, "UTF-8" );
-	textdomain(GETTEXT_PACKAGE);
+	bindtextdomain(PACKAGE, PACKAGE_LOCALE_DIR);
+	bind_textdomain_codeset( PACKAGE, "UTF-8" );
+	textdomain(PACKAGE);
 
 	gtk_set_locale();
 
@@ -78,6 +83,11 @@ int main(int argc, char *argv[])
 	SetGtkResourceFile();
 
 	gtk_init(&argc, &argv);
+
+#ifdef	USE_LIB_GLADE
+	// Initialize the glade library.
+	glade_init();
+#endif
 
 	// Parse options.
 	InitOption(argc, argv);
@@ -124,7 +134,8 @@ int main(int argc, char *argv[])
 		// Set window title.
 		snprintf(g_window_title, sizeof(g_window_title), "Canon %s", GetDispModelName());	//Ver.2.90(s)
 
-		gtk_window_set_title(GTK_WINDOW(UI_DIALOG(g_main_window)->window), g_window_title);
+		gtk_window_set_title(
+			GTK_WINDOW(UI_DIALOG(g_main_window)->window), g_window_title);
 
 		// Show widgets depend on model.
 		ShowModelDependWidgets(g_main_window);
@@ -232,15 +243,22 @@ void CreateDialogs()
 	g_color_dialog = CreateColorDialog(UI_DIALOG(g_main_window));
 
 	// Create user size dialog.
-	g_user_size_dialog = CreateUserSizeDialog(UI_DIALOG(g_main_window), g_unit_inch);
+	g_user_size_dialog
+		= CreateUserSizeDialog(UI_DIALOG(g_main_window), g_unit_inch);
 
 	// Create version dialog.
 	g_version_dialog = CreateVersionDialog(UI_DIALOG(g_main_window));
 
 	// Create Media & Size dialog.
-	g_mediasize_illegal_dialog = CreateMediaSizeDialog(UI_DIALOG(g_main_window), UI_MEDIASIZE_DLG_ILLEGAL);
-	g_mediasize_recommend_dialog = CreateMediaSizeDialog(UI_DIALOG(g_main_window), UI_MEDIASIZE_DLG_RECOMMEND);
-	g_mediasize_illegal_select_dialog = CreateMediaSizeDialog(UI_DIALOG(g_main_window),	UI_MEDIASIZE_DLG_ILLEGAL_SELECT);
+	g_mediasize_illegal_dialog
+		= CreateMediaSizeDialog(UI_DIALOG(g_main_window),
+			UI_MEDIASIZE_DLG_ILLEGAL);
+	g_mediasize_recommend_dialog
+		= CreateMediaSizeDialog(UI_DIALOG(g_main_window),
+			UI_MEDIASIZE_DLG_RECOMMEND);
+	g_mediasize_illegal_select_dialog
+		= CreateMediaSizeDialog(UI_DIALOG(g_main_window),
+			UI_MEDIASIZE_DLG_ILLEGAL_SELECT);
 
 	// Create media type dialog.
 	g_mediatype_dialog = CreateMediaTypeDialog(UI_DIALOG(g_main_window));

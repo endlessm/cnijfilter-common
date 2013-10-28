@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -33,9 +33,16 @@
 #endif
 
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
+/* #include <gnome-xml/parser.h> */
 #include <libxml/parser.h>	/* Ver.2.80 */
 #include <string.h>
 
+#ifndef	USE_LIB_GLADE
+#	include "support.h"
+#endif
 #include "bjuidefs.h"
 
 
@@ -131,10 +138,8 @@ static gboolean ReadXMLFile(char *fname, GTree* tree)
 
 void SetKeyTextDir(gchar* dirname)
 {
-	if( g_keytext_dir != NULL ) {
+	if( g_keytext_dir != NULL )
 		g_free(g_keytext_dir);
-		g_keytext_dir = NULL;
-	}
 
 	g_keytext_dir = g_strdup(dirname);
 }
@@ -173,15 +178,6 @@ void FreeKeyTextList(KeyTextList* list)
 	FreeTree(list->tree);
 	g_free(list);
 }
-
-void FreeKeyTextDir( void )
-{
-	if ( g_keytext_dir != NULL ){
-		g_free( g_keytext_dir );
-		g_keytext_dir = NULL;
-	}
-}
-
 
 static gint ReverseSearchFunc(gpointer key, gpointer value, gpointer data)
 {

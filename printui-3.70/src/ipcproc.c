@@ -1,5 +1,5 @@
 /*  Canon Inkjet Printer Driver for Linux
- *  Copyright CANON INC. 2001-2013
+ *  Copyright CANON INC. 2001-2012
  *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,14 @@
  */
 
 
+//#ifdef HAVE_CONFIG_H
+//#  include <config.h>
+//#endif
+
 #include <gtk/gtk.h>
+#ifdef	USE_LIB_GLADE
+#	include <glade/glade.h>
+#endif
 
 #include <arpa/inet.h>
 #include <netdb.h>
@@ -203,6 +210,31 @@ int PutDeviceData(char *cmdsbuf, short length, char *devMode )
 	if ( (IsIVECModel() == TRUE) ){
 		curPtr = ipc.cmds.cmds;
 
+#if 0
+		if ( isAllOutputSetTime( model_name ) ){
+
+			/* Start job */
+			if ( CNCL_MakePrintCommand( CNCL_COMMAND_START1 , buf ,IVEC_BUF_SIZE , NULL , "1" ) != CNCL_OK ) goto Err2;
+			if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
+			memcpy( curPtr, buf, cmdLen );
+			curPtr += cmdLen;
+
+			/* Mode shift */	
+			if ( CNCL_MakePrintCommand( CNCL_COMMAND_START2 , buf ,IVEC_BUF_SIZE , NULL , NULL ) != CNCL_OK ) goto Err2;
+			if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
+			memcpy( curPtr, buf, cmdLen );
+			curPtr += cmdLen;
+
+			cmdLen = WriteSetTime2Buf( curPtr ); curPtr += cmdLen;
+
+			/* End job */
+			if ( CNCL_MakePrintCommand( CNCL_COMMAND_END , buf ,IVEC_BUF_SIZE , NULL , NULL ) != CNCL_OK ) goto Err2;
+			if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
+			memcpy( curPtr, buf, cmdLen );
+			curPtr += cmdLen;
+		
+		}
+#endif
 		if ( CNCL_MakeDeviceCommand( cmdType, buf ,IVEC_BUF_SIZE ) != CNCL_OK ) goto Err2;
 		if ( (cmdLen = strlen( buf )) > IVEC_BUF_SIZE ) cmdLen = IVEC_BUF_SIZE - 1;
 		memcpy( curPtr, buf, cmdLen );

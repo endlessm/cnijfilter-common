@@ -36,8 +36,14 @@ printui_SOURCES =  main.c \
   interface.c interface.h \
   support.c support.h
 
+#UI_DFLAGS= -D_PRINTUI_DEBUG_
+
+#CFLAGS = -O2 -Wall
+#printui_CFLAGS = -O2 -Wall
 printui_CFLAGS = -O2 -Wall @UI_DFLAGS@
 
+#printui_LDADD = @GTK_LIBS@ -lxml -lpopt \
+#  -lcnbpcnclui@CNCL_LIB_ID@ -lcnbpcmcm@CNCL_LIB_ID@
 printui_LDADD = @GTK_LIBS@ -lxml2 -lpopt \
   -lcnbpcnclui@CNCL_LIB_ID@ -lcnbpcmcm@CNCL_LIB_ID@
 
