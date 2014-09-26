@@ -10,7 +10,7 @@
 #export DH_VERBOSE=1
 
 # define build version to create "control" file.
-PRINTER_BUILD_VERSION=3.90
+PRINTER_BUILD_VERSION=4.00
 
 # define build amd64 as ia32 libs
 PRINTER_BUILD_64_AS=33
@@ -135,6 +135,16 @@ PRINTER_DEPEND_PKG+=cnijfilter-mx450-419-3.90-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-mx520-420-3.90-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-e610-421-3.90-64-yes
 
+PRINTER_DEPEND_PKG+=cnijfilter-mg7100-423-4.00-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mg6500-424-4.00-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mg6400-425-4.00-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mg5500-426-4.00-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mg3500-427-4.00-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mg2400-428-4.00-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mg2500-429-4.00-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-p200-430-4.00-64-yes
+
+
 PRINTER_DEPEND_VER+=1.30
 PRINTER_DEPEND_VER+=2.20
 PRINTER_DEPEND_VER+=2.40
@@ -153,6 +163,7 @@ PRINTER_DEPEND_VER+=3.60
 PRINTER_DEPEND_VER+=3.70
 PRINTER_DEPEND_VER+=3.80
 PRINTER_DEPEND_VER+=3.90
+PRINTER_DEPEND_VER+=4.00
 
 PRINTER_PKG_PROGRAM+=ppd
 PRINTER_PKG_PROGRAM+=cnijfilter
@@ -223,6 +234,10 @@ configure-stamp:
 	### configure common package
 	######## configure libs
 	cd ./libs; ./autogen.sh --prefix=/usr
+	######## configure bscc2sts
+	cd ./bscc2sts; ./autogen.sh
+	######## configure cnijnpr
+	cd ./cnijnpr; ./autogen.sh --prefix=/usr --enable-libpath=/usr/lib/bjlib
 	######## configure cngpij
 	cd ./cngpij; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	######## configure cngpijmnt
@@ -235,8 +250,12 @@ configure-stamp:
 	cd ./backend; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
 	######## configure backendnet
 	cd ./backendnet; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
-	######## configure sm sub process
-	cd ./cngpijmon-${PRINTER_BUILD_VERSION}/cnijnpr; ./autogen.sh --prefix=/usr
+	######## configure cmdtocanonij
+	cd ./cmdtocanonij; ./autogen.sh --prefix=/usr
+	######## configure cnijbe
+	cd ./cnijbe; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin
+	######## configure lgmon2
+	cd ./lgmon2; ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin LDFLAGS="-L../../com/libs_bin${_arc}"
 	######## configure ppd file
 	cd ./ppd; ./autogen.sh --prefix=/usr --enable-ppdpath=/usr/share/ppd --program-suffix=CN_IJ_MODEL
 
@@ -246,18 +265,24 @@ configure-stamp:
 		pushd ./cnijfilter-$${ver}; \
 		./autogen.sh --prefix=/usr --enable-libpath=/usr/lib/bjlib --enable-binpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
 		popd; \
-		echo "######## configure printui-$${ver}"; \
-		pushd ./printui-$${ver}; \
-		./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --datadir=/usr/share; \
-		popd; \
-		echo "######## configure lgmon-$${ver}"; \
-		pushd ./lgmon-$${ver}; \
-		./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
-		popd; \
-		echo "######## configure cngpijmon-$${ver}"; \
-		pushd ./cngpijmon-$${ver}; \
-		./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --enable-progpath=/usr/bin --datadir=/usr/share; \
-		popd; \
+		if [ -d ./printui-$${ver}} ]; then \
+			echo "######## configure printui-$${ver}"; \
+			pushd ./printui-$${ver}; \
+			./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --datadir=/usr/share; \
+			popd; \
+		fi; \
+		if [ -d ./lgmon-$${ver} ]; then \
+			echo "######## configure lgmon-$${ver}"; \
+			pushd ./lgmon-$${ver}; \
+			./autogen.sh --prefix=/usr --enable-progpath=/usr/bin --program-suffix=CN_IJ_MODEL; \
+			popd; \
+		fi; \
+		if [ -d ./cngpijmon-$${ver} ]; then \
+			echo "######## configure cngpijmon-$${ver}"; \
+			pushd ./cngpijmon-$${ver}; \
+			./autogen.sh --prefix=/usr --program-suffix=CN_IJ_MODEL --enable-progpath=/usr/bin --datadir=/usr/share; \
+			popd; \
+		fi; \
 	done
 
 	touch configure-stamp
@@ -342,6 +367,7 @@ install: build
 				echo "######## install $${pg_name}"; \
 				pushd ./$${pg_name}; \
 			else \
+				[ -d ./$${pg_name}-$${model_ver} ] || continue; \
 				echo "######## install $${pg_name}-$${model_ver}"; \
 				pushd ./$${pg_name}-$${model_ver}; \
 			fi; \
@@ -414,6 +440,10 @@ install: build
 	### install common package
 	######## compile libs
 	cd ./libs; make clean; make
+	######## install bscc2sts
+	cd ./bscc2sts; make clean; make
+	######## install cnijnpr
+	cd ./cnijnpr; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	######## install cngpij
 	cd ./cngpij; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	######## install cngpijmnt
@@ -426,8 +456,12 @@ install: build
 	cd ./backend; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	######## install backendnet
 	cd ./backendnet; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
-	######## install sm sub process
-	cd ./cngpijmon-${PRINTER_BUILD_VERSION}/cnijnpr; make clean; make; make install  DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
+	######## install cmdtocanonij
+	cd ./cmdtocanonij; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
+	######## configure cnijbe
+	cd ./cnijbe; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
+	######## configure lgmon2
+	cd ./lgmon2; make clean; make; make install DESTDIR=$(CURDIR)/debian/${COMMON_PKG}
 	######## copy common libraries
 	mkdir -p $(CURDIR)/debian/${COMMON_PKG}/usr/lib
 	for i in $(CURDIR)/com/libs_bin${_arc}/*.so.*.*.*; do\

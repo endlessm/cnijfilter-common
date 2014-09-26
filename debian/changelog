@@ -1,3 +1,10 @@
+cnijfilter-common (4.00) unstable; urgency=low
+
+  * Add Canon 4.00 release. Many changes needed to integrate 4.x style
+    releases.
+
+ -- Dan Nicholson <nicholson@endlessm.com>  Tue, 30 Sep 2014 17:17:54 -0700
+
 cnijfilter-common (3.90) stable; urgency=low
 
   * add 3.80 driver.

@@ -29,7 +29,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-common-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00)
 Breaks: 	cnijfilter-common-64
 Replaces: 	cnijfilter-common-64
 Description: IJ Printer Driver for Linux.
@@ -53,9 +53,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-bjf900series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-bjf900series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-bjf900series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-bjf900series-64
 Replaces: 	cnijfilter-common-64,
@@ -68,7 +68,7 @@ Package: cnijfilter-bjf900series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -78,9 +78,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-bjf9000series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-bjf9000series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-bjf9000series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-bjf9000series-64
 Replaces: 	cnijfilter-common-64,
@@ -93,7 +93,7 @@ Package: cnijfilter-bjf9000series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -103,9 +103,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-bjs300series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-bjs300series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-bjs300series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-bjs300series-64
 Replaces: 	cnijfilter-common-64,
@@ -118,7 +118,7 @@ Package: cnijfilter-bjs300series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -128,9 +128,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-bjs500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-bjs500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-bjs500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-bjs500series-64
 Replaces: 	cnijfilter-common-64,
@@ -143,7 +143,7 @@ Package: cnijfilter-bjs500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -153,9 +153,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus550iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus550iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus550iseries (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus550iseries-64
 Replaces: 	cnijfilter-common-64,
@@ -168,7 +168,7 @@ Package: cnijfilter-pixus550iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -178,9 +178,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus850iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus850iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus850iseries (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus850iseries-64
 Replaces: 	cnijfilter-common-64,
@@ -193,7 +193,7 @@ Package: cnijfilter-pixus850iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -203,9 +203,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus950iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus950iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus950iseries (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus950iseries-64
 Replaces: 	cnijfilter-common-64,
@@ -218,7 +218,7 @@ Package: cnijfilter-pixus950iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -228,9 +228,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-i250series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i250series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i250series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i250series-64
 Replaces: 	cnijfilter-common-64,
@@ -243,7 +243,7 @@ Package: cnijfilter-i250series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -253,9 +253,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-i255series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i255series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i255series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i255series-64
 Replaces: 	cnijfilter-common-64,
@@ -268,7 +268,7 @@ Package: cnijfilter-i255series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -278,9 +278,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus560iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus560iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus560iseries (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus560iseries-64
 Replaces: 	cnijfilter-common-64,
@@ -293,7 +293,7 @@ Package: cnijfilter-pixus560iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -303,9 +303,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus860iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus860iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus860iseries (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus860iseries-64
 Replaces: 	cnijfilter-common-64,
@@ -318,7 +318,7 @@ Package: cnijfilter-pixus860iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -328,9 +328,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus990iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus990iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus990iseries (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus990iseries-64
 Replaces: 	cnijfilter-common-64,
@@ -343,7 +343,7 @@ Package: cnijfilter-pixus990iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -353,9 +353,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixmaip1000series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixmaip1000series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixmaip1000series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixmaip1000series-64
 Replaces: 	cnijfilter-common-64,
@@ -368,7 +368,7 @@ Package: cnijfilter-pixmaip1000series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -378,9 +378,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixmaip1500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixmaip1500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixmaip1500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixmaip1500series-64
 Replaces: 	cnijfilter-common-64,
@@ -393,7 +393,7 @@ Package: cnijfilter-pixmaip1500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -403,9 +403,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixusip3100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixusip3100series-64
 Replaces: 	cnijfilter-common-64,
@@ -418,7 +418,7 @@ Package: cnijfilter-pixusip3100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -428,9 +428,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixusip4100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixusip4100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixusip4100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixusip4100series-64
 Replaces: 	cnijfilter-common-64,
@@ -443,7 +443,7 @@ Package: cnijfilter-pixusip4100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -453,9 +453,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixusip8600series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixusip8600series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixusip8600series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixusip8600series-64
 Replaces: 	cnijfilter-common-64,
@@ -468,7 +468,7 @@ Package: cnijfilter-pixusip8600series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -478,9 +478,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip2200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip2200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip2200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip2200series-64
 Replaces: 	cnijfilter-common-64,
@@ -493,7 +493,7 @@ Package: cnijfilter-ip2200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -503,9 +503,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4200series-64
 Replaces: 	cnijfilter-common-64,
@@ -518,7 +518,7 @@ Package: cnijfilter-ip4200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -528,9 +528,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip6600dseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip6600dseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip6600dseries (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip6600dseries-64
 Replaces: 	cnijfilter-common-64,
@@ -543,7 +543,7 @@ Package: cnijfilter-ip6600dseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -553,9 +553,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip7500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip7500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip7500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip7500series-64
 Replaces: 	cnijfilter-common-64,
@@ -568,7 +568,7 @@ Package: cnijfilter-ip7500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -578,9 +578,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp500series-64
 Replaces: 	cnijfilter-common-64,
@@ -593,7 +593,7 @@ Package: cnijfilter-mp500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -603,9 +603,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip90series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip90series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip90series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip90series-64
 Replaces: 	cnijfilter-common-64,
@@ -618,7 +618,7 @@ Package: cnijfilter-ip90series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -628,9 +628,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp160series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp160series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp160series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp160series-64
 Replaces: 	cnijfilter-common-64,
@@ -643,7 +643,7 @@ Package: cnijfilter-mp160series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -653,9 +653,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip3300series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip3300series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip3300series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip3300series-64
 Replaces: 	cnijfilter-common-64,
@@ -668,7 +668,7 @@ Package: cnijfilter-ip3300series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -678,9 +678,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp510series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp510series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp510series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp510series-64
 Replaces: 	cnijfilter-common-64,
@@ -693,7 +693,7 @@ Package: cnijfilter-mp510series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -703,9 +703,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4300series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4300series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4300series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4300series-64
 Replaces: 	cnijfilter-common-64,
@@ -718,7 +718,7 @@ Package: cnijfilter-ip4300series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -728,9 +728,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp600series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp600series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp600series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp600series-64
 Replaces: 	cnijfilter-common-64,
@@ -743,7 +743,7 @@ Package: cnijfilter-mp600series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -753,9 +753,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip2500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip2500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip2500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip2500series-64
 Replaces: 	cnijfilter-common-64,
@@ -768,7 +768,7 @@ Package: cnijfilter-ip2500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -778,9 +778,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip1800series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip1800series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip1800series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip1800series-64
 Replaces: 	cnijfilter-common-64,
@@ -793,7 +793,7 @@ Package: cnijfilter-ip1800series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -803,9 +803,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp140series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp140series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp140series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp140series-64
 Replaces: 	cnijfilter-common-64,
@@ -818,7 +818,7 @@ Package: cnijfilter-mp140series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -828,9 +828,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp210series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp210series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp210series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp210series-64
 Replaces: 	cnijfilter-common-64,
@@ -843,7 +843,7 @@ Package: cnijfilter-mp210series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -853,9 +853,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip3500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip3500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip3500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip3500series-64
 Replaces: 	cnijfilter-common-64,
@@ -868,7 +868,7 @@ Package: cnijfilter-ip3500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -878,9 +878,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp520series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp520series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp520series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp520series-64
 Replaces: 	cnijfilter-common-64,
@@ -893,7 +893,7 @@ Package: cnijfilter-mp520series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -903,9 +903,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4500series-64
 Replaces: 	cnijfilter-common-64,
@@ -918,7 +918,7 @@ Package: cnijfilter-ip4500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -928,9 +928,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp610series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp610series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp610series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp610series-64
 Replaces: 	cnijfilter-common-64,
@@ -943,7 +943,7 @@ Package: cnijfilter-mp610series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -953,9 +953,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip100series-64
 Replaces: 	cnijfilter-common-64,
@@ -968,7 +968,7 @@ Package: cnijfilter-ip100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -978,7 +978,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip100series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -996,9 +996,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip2600series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip2600series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip2600series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip2600series-64
 Replaces: 	cnijfilter-common-64,
@@ -1011,7 +1011,7 @@ Package: cnijfilter-ip2600series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1021,9 +1021,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip3600series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip3600series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip3600series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip3600series-64
 Replaces: 	cnijfilter-common-64,
@@ -1036,7 +1036,7 @@ Package: cnijfilter-ip3600series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1046,9 +1046,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4600series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4600series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4600series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4600series-64
 Replaces: 	cnijfilter-common-64,
@@ -1061,7 +1061,7 @@ Package: cnijfilter-ip4600series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1071,9 +1071,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp630series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp630series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp630series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp630series-64
 Replaces: 	cnijfilter-common-64,
@@ -1086,7 +1086,7 @@ Package: cnijfilter-mp630series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1096,9 +1096,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp540series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp540series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp540series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp540series-64
 Replaces: 	cnijfilter-common-64,
@@ -1111,7 +1111,7 @@ Package: cnijfilter-mp540series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1121,9 +1121,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp240series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp240series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp240series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp240series-64
 Replaces: 	cnijfilter-common-64,
@@ -1136,7 +1136,7 @@ Package: cnijfilter-mp240series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1146,9 +1146,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp190series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp190series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp190series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp190series-64
 Replaces: 	cnijfilter-common-64,
@@ -1161,7 +1161,7 @@ Package: cnijfilter-mp190series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1171,9 +1171,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip1900series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip1900series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip1900series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip1900series-64
 Replaces: 	cnijfilter-common-64,
@@ -1186,7 +1186,7 @@ Package: cnijfilter-ip1900series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1196,9 +1196,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx860series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx860series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx860series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx860series-64
 Replaces: 	cnijfilter-common-64,
@@ -1211,7 +1211,7 @@ Package: cnijfilter-mx860series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1221,9 +1221,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx320series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx320series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx320series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx320series-64
 Replaces: 	cnijfilter-common-64,
@@ -1236,7 +1236,7 @@ Package: cnijfilter-mx320series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1246,9 +1246,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx330series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx330series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx330series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx330series-64
 Replaces: 	cnijfilter-common-64,
@@ -1261,7 +1261,7 @@ Package: cnijfilter-mx330series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1271,9 +1271,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp270series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp270series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp270series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp270series-64
 Replaces: 	cnijfilter-common-64,
@@ -1286,7 +1286,7 @@ Package: cnijfilter-mp270series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1296,9 +1296,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp490series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp490series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp490series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp490series-64
 Replaces: 	cnijfilter-common-64,
@@ -1311,7 +1311,7 @@ Package: cnijfilter-mp490series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1321,9 +1321,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp550series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp550series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp550series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp550series-64
 Replaces: 	cnijfilter-common-64,
@@ -1336,7 +1336,7 @@ Package: cnijfilter-mp550series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1346,9 +1346,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp560series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp560series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp560series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp560series-64
 Replaces: 	cnijfilter-common-64,
@@ -1361,7 +1361,7 @@ Package: cnijfilter-mp560series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1371,9 +1371,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4700series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4700series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4700series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4700series-64
 Replaces: 	cnijfilter-common-64,
@@ -1386,7 +1386,7 @@ Package: cnijfilter-ip4700series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1396,9 +1396,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp640series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp640series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp640series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp640series-64
 Replaces: 	cnijfilter-common-64,
@@ -1411,7 +1411,7 @@ Package: cnijfilter-mp640series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1421,9 +1421,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip2700series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip2700series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip2700series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip2700series-64
 Replaces: 	cnijfilter-common-64,
@@ -1436,7 +1436,7 @@ Package: cnijfilter-ip2700series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1446,9 +1446,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx340series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx340series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx340series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx340series-64
 Replaces: 	cnijfilter-common-64,
@@ -1461,7 +1461,7 @@ Package: cnijfilter-mx340series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1471,9 +1471,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx350series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx350series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx350series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx350series-64
 Replaces: 	cnijfilter-common-64,
@@ -1486,7 +1486,7 @@ Package: cnijfilter-mx350series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1496,9 +1496,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx870series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx870series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx870series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx870series-64
 Replaces: 	cnijfilter-common-64,
@@ -1511,7 +1511,7 @@ Package: cnijfilter-mx870series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1521,9 +1521,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp250series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp250series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp250series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp250series-64
 Replaces: 	cnijfilter-common-64,
@@ -1536,7 +1536,7 @@ Package: cnijfilter-mp250series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1546,7 +1546,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp250series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1564,9 +1564,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp280series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp280series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp280series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp280series-64
 Replaces: 	cnijfilter-common-64,
@@ -1579,7 +1579,7 @@ Package: cnijfilter-mp280series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1589,7 +1589,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp280series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1607,9 +1607,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp495series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp495series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp495series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp495series-64
 Replaces: 	cnijfilter-common-64,
@@ -1622,7 +1622,7 @@ Package: cnijfilter-mp495series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1632,7 +1632,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp495series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1650,9 +1650,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg5100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg5100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg5100series-64
 Replaces: 	cnijfilter-common-64,
@@ -1665,7 +1665,7 @@ Package: cnijfilter-mg5100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1675,7 +1675,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5100series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1693,9 +1693,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg5200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg5200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg5200series-64
 Replaces: 	cnijfilter-common-64,
@@ -1708,7 +1708,7 @@ Package: cnijfilter-mg5200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1718,7 +1718,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5200series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1736,9 +1736,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4800series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4800series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4800series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4800series-64
 Replaces: 	cnijfilter-common-64,
@@ -1751,7 +1751,7 @@ Package: cnijfilter-ip4800series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1761,7 +1761,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4800series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1779,9 +1779,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg6100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg6100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg6100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg6100series-64
 Replaces: 	cnijfilter-common-64,
@@ -1794,7 +1794,7 @@ Package: cnijfilter-mg6100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1804,7 +1804,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg6100series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1822,9 +1822,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg8100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg8100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg8100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg8100series-64
 Replaces: 	cnijfilter-common-64,
@@ -1837,7 +1837,7 @@ Package: cnijfilter-mg8100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1847,7 +1847,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg8100series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1865,9 +1865,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx360series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx360series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx360series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx360series-64
 Replaces: 	cnijfilter-common-64,
@@ -1880,7 +1880,7 @@ Package: cnijfilter-mx360series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1890,7 +1890,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx360series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1908,9 +1908,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx410series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx410series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx410series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx410series-64
 Replaces: 	cnijfilter-common-64,
@@ -1923,7 +1923,7 @@ Package: cnijfilter-mx410series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1933,7 +1933,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx410series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1951,9 +1951,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx420series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx420series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx420series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx420series-64
 Replaces: 	cnijfilter-common-64,
@@ -1966,7 +1966,7 @@ Package: cnijfilter-mx420series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -1976,7 +1976,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx420series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -1994,9 +1994,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx880series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx880series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx880series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx880series-64
 Replaces: 	cnijfilter-common-64,
@@ -2009,7 +2009,7 @@ Package: cnijfilter-mx880series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2019,7 +2019,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx880series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2037,9 +2037,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ix6500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ix6500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ix6500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ix6500series-64
 Replaces: 	cnijfilter-common-64,
@@ -2052,7 +2052,7 @@ Package: cnijfilter-ix6500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2062,7 +2062,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ix6500series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2080,9 +2080,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg2100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg2100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg2100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg2100series-64
 Replaces: 	cnijfilter-common-64,
@@ -2095,7 +2095,7 @@ Package: cnijfilter-mg2100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2105,7 +2105,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg2100series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2123,9 +2123,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg3100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg3100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg3100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg3100series-64
 Replaces: 	cnijfilter-common-64,
@@ -2138,7 +2138,7 @@ Package: cnijfilter-mg3100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2148,7 +2148,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg3100series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2166,9 +2166,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg4100series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg4100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg4100series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg4100series-64
 Replaces: 	cnijfilter-common-64,
@@ -2181,7 +2181,7 @@ Package: cnijfilter-mg4100series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2191,7 +2191,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg4100series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2209,9 +2209,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5300series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg5300series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg5300series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg5300series-64
 Replaces: 	cnijfilter-common-64,
@@ -2224,7 +2224,7 @@ Package: cnijfilter-mg5300series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2234,7 +2234,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5300series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2252,9 +2252,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg6200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg6200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg6200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg6200series-64
 Replaces: 	cnijfilter-common-64,
@@ -2267,7 +2267,7 @@ Package: cnijfilter-mg6200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2277,7 +2277,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg6200series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2295,9 +2295,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg8200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg8200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg8200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg8200series-64
 Replaces: 	cnijfilter-common-64,
@@ -2310,7 +2310,7 @@ Package: cnijfilter-mg8200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2320,7 +2320,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg8200series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2338,9 +2338,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4900series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4900series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4900series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4900series-64
 Replaces: 	cnijfilter-common-64,
@@ -2353,7 +2353,7 @@ Package: cnijfilter-ip4900series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2363,7 +2363,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4900series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2381,9 +2381,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-e500series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-e500series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-e500series-64
 Replaces: 	cnijfilter-common-64,
@@ -2396,7 +2396,7 @@ Package: cnijfilter-e500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2406,7 +2406,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e500series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2424,9 +2424,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx710series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx710series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx710series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx710series-64
 Replaces: 	cnijfilter-common-64,
@@ -2439,7 +2439,7 @@ Package: cnijfilter-mx710series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2449,7 +2449,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx710series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2467,9 +2467,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx890series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx890series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx890series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx890series-64
 Replaces: 	cnijfilter-common-64,
@@ -2482,7 +2482,7 @@ Package: cnijfilter-mx890series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2492,7 +2492,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx890series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2510,9 +2510,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx370series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx370series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx370series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx370series-64
 Replaces: 	cnijfilter-common-64,
@@ -2525,7 +2525,7 @@ Package: cnijfilter-mx370series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2535,7 +2535,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx370series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2553,9 +2553,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx430series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx430series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx430series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx430series-64
 Replaces: 	cnijfilter-common-64,
@@ -2568,7 +2568,7 @@ Package: cnijfilter-mx430series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2578,7 +2578,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx430series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2596,9 +2596,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx510series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx510series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx510series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx510series-64
 Replaces: 	cnijfilter-common-64,
@@ -2611,7 +2611,7 @@ Package: cnijfilter-mx510series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2621,7 +2621,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx510series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2639,9 +2639,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e600series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-e600series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-e600series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-e600series-64
 Replaces: 	cnijfilter-common-64,
@@ -2654,7 +2654,7 @@ Package: cnijfilter-e600series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2664,7 +2664,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e600series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2682,9 +2682,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp230series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp230series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp230series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp230series-64
 Replaces: 	cnijfilter-common-64,
@@ -2697,7 +2697,7 @@ Package: cnijfilter-mp230series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2707,7 +2707,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp230series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2725,9 +2725,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg2200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg2200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg2200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg2200series-64
 Replaces: 	cnijfilter-common-64,
@@ -2740,7 +2740,7 @@ Package: cnijfilter-mg2200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2750,7 +2750,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg2200series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2768,9 +2768,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e510series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-e510series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-e510series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-e510series-64
 Replaces: 	cnijfilter-common-64,
@@ -2783,7 +2783,7 @@ Package: cnijfilter-e510series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2793,7 +2793,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e510series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2811,9 +2811,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg3200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg3200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg3200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg3200series-64
 Replaces: 	cnijfilter-common-64,
@@ -2826,7 +2826,7 @@ Package: cnijfilter-mg3200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2836,7 +2836,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg3200series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2854,9 +2854,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg4200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg4200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg4200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg4200series-64
 Replaces: 	cnijfilter-common-64,
@@ -2869,7 +2869,7 @@ Package: cnijfilter-mg4200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2879,7 +2879,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg4200series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2897,9 +2897,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip7200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip7200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip7200series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip7200series-64
 Replaces: 	cnijfilter-common-64,
@@ -2912,7 +2912,7 @@ Package: cnijfilter-ip7200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2922,7 +2922,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip7200series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2940,9 +2940,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5400series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg5400series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg5400series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg5400series-64
 Replaces: 	cnijfilter-common-64,
@@ -2955,7 +2955,7 @@ Package: cnijfilter-mg5400series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -2965,7 +2965,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg5400series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -2983,9 +2983,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg6300series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mg6300series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg6300series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mg6300series-64
 Replaces: 	cnijfilter-common-64,
@@ -2998,7 +2998,7 @@ Package: cnijfilter-mg6300series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -3008,7 +3008,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mg6300series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -3026,9 +3026,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx720series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx720series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx720series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx720series-64
 Replaces: 	cnijfilter-common-64,
@@ -3041,7 +3041,7 @@ Package: cnijfilter-mx720series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -3051,7 +3051,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx720series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -3069,9 +3069,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx920series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx920series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx920series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx920series-64
 Replaces: 	cnijfilter-common-64,
@@ -3084,7 +3084,7 @@ Package: cnijfilter-mx920series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -3094,7 +3094,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx920series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -3112,9 +3112,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx390series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx390series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx390series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx390series-64
 Replaces: 	cnijfilter-common-64,
@@ -3127,7 +3127,7 @@ Package: cnijfilter-mx390series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -3137,7 +3137,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx390series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -3155,9 +3155,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx450series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx450series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx450series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx450series-64
 Replaces: 	cnijfilter-common-64,
@@ -3170,7 +3170,7 @@ Package: cnijfilter-mx450series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -3180,7 +3180,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx450series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -3198,9 +3198,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx520series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mx520series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mx520series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mx520series-64
 Replaces: 	cnijfilter-common-64,
@@ -3213,7 +3213,7 @@ Package: cnijfilter-mx520series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -3223,7 +3223,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mx520series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -3241,9 +3241,9 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e610series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-e610series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-e610series (>= 4.00),
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-e610series-64
 Replaces: 	cnijfilter-common-64,
@@ -3256,7 +3256,7 @@ Package: cnijfilter-e610series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
@@ -3266,7 +3266,7 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-e610series-64
 Architecture: amd64
 Section: graphics
-Depends: 	cnijfilter-common-64 (>= 3.90),
+Depends: 	cnijfilter-common-64 (>= 4.00),
 			${shlibs:Depends},
 			${misc:Depends}
 Breaks: 	cnijfilter-common,
@@ -3281,14 +3281,358 @@ Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
  printers operating under the CUPS (Common UNIX Printing System) environment.
 
+Package: cnijfilter-mg7100series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg7100series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-mg7100series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-mg7100series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg7100series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg7100series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg7100series,
+			cnijfilter-mg7100series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg7100series,
+			cnijfilter-mg7100series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6500series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg6500series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-mg6500series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-mg6500series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6500series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6500series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg6500series,
+			cnijfilter-mg6500series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg6500series,
+			cnijfilter-mg6500series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6400series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg6400series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-mg6400series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-mg6400series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6400series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg6400series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg6400series,
+			cnijfilter-mg6400series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg6400series,
+			cnijfilter-mg6400series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5500series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg5500series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-mg5500series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-mg5500series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5500series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg5500series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg5500series,
+			cnijfilter-mg5500series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg5500series,
+			cnijfilter-mg5500series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg3500series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg3500series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-mg3500series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-mg3500series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg3500series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg3500series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg3500series,
+			cnijfilter-mg3500series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg3500series,
+			cnijfilter-mg3500series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2400series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg2400series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-mg2400series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-mg2400series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2400series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2400series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg2400series,
+			cnijfilter-mg2400series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg2400series,
+			cnijfilter-mg2400series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2500series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mg2500series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-mg2500series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-mg2500series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2500series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-mg2500series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg2500series,
+			cnijfilter-mg2500series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-mg2500series,
+			cnijfilter-mg2500series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-p200series-32
+Architecture: amd64 ia64
+Section: graphics
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-p200series (>= 4.00),
+Breaks: 	cnijfilter-common-64,
+			cnijfilter-p200series-64
+Replaces: 	cnijfilter-common-64,
+			cnijfilter-p200series-64
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-p200series
+Architecture: i386
+Section: graphics
+Multi-Arch: foreign
+Depends: 	cnijfilter-common (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: cnijfilter-p200series-64
+Architecture: amd64
+Section: graphics
+Depends: 	cnijfilter-common-64 (>= 4.00),
+			${shlibs:Depends},
+			${misc:Depends}
+Breaks: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-p200series,
+			cnijfilter-p200series-32
+Replaces: 	cnijfilter-common,
+			cnijfilter-common-32,
+			cnijfilter-p200series,
+			cnijfilter-p200series-32
+Description: IJ Printer Driver for Linux.
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
 Package: cnijfilter-i550series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i550series (>= 3.90),
-			cnijfilter-pixus550iseries (>= 3.90),
-			cnijfilter-pixus550iseries-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i550series (>= 4.00),
+			cnijfilter-pixus550iseries (>= 4.00),
+			cnijfilter-pixus550iseries-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i550series-64,
 			cnijfilter-pixus550iseries-64
@@ -3303,8 +3647,8 @@ Package: cnijfilter-i550series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixus550iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixus550iseries (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3313,11 +3657,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-i850series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i850series (>= 3.90),
-			cnijfilter-pixus850iseries (>= 3.90),
-			cnijfilter-pixus850iseries-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i850series (>= 4.00),
+			cnijfilter-pixus850iseries (>= 4.00),
+			cnijfilter-pixus850iseries-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i850series-64,
 			cnijfilter-pixus850iseries-64
@@ -3332,8 +3676,8 @@ Package: cnijfilter-i850series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixus850iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixus850iseries (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3342,11 +3686,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-i950series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i950series (>= 3.90),
-			cnijfilter-pixus950iseries (>= 3.90),
-			cnijfilter-pixus950iseries-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i950series (>= 4.00),
+			cnijfilter-pixus950iseries (>= 4.00),
+			cnijfilter-pixus950iseries-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i950series-64,
 			cnijfilter-pixus950iseries-64
@@ -3361,8 +3705,8 @@ Package: cnijfilter-i950series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixus950iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixus950iseries (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3371,11 +3715,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus250iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus250iseries (>= 3.90),
-			cnijfilter-i250series (>= 3.90),
-			cnijfilter-i250series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus250iseries (>= 4.00),
+			cnijfilter-i250series (>= 4.00),
+			cnijfilter-i250series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus250iseries-64,
 			cnijfilter-i250series-64
@@ -3390,8 +3734,8 @@ Package: cnijfilter-pixus250iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-i250series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-i250series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3400,11 +3744,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-pixus255iseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-pixus255iseries (>= 3.90),
-			cnijfilter-i255series (>= 3.90),
-			cnijfilter-i255series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-pixus255iseries (>= 4.00),
+			cnijfilter-i255series (>= 4.00),
+			cnijfilter-i255series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-pixus255iseries-64,
 			cnijfilter-i255series-64
@@ -3419,8 +3763,8 @@ Package: cnijfilter-pixus255iseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-i255series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-i255series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3429,11 +3773,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-i560series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i560series (>= 3.90),
-			cnijfilter-pixus560iseries (>= 3.90),
-			cnijfilter-pixus560iseries-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i560series (>= 4.00),
+			cnijfilter-pixus560iseries (>= 4.00),
+			cnijfilter-pixus560iseries-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i560series-64,
 			cnijfilter-pixus560iseries-64
@@ -3448,8 +3792,8 @@ Package: cnijfilter-i560series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixus560iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixus560iseries (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3458,11 +3802,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-i860series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i860series (>= 3.90),
-			cnijfilter-pixus860iseries (>= 3.90),
-			cnijfilter-pixus860iseries-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i860series (>= 4.00),
+			cnijfilter-pixus860iseries (>= 4.00),
+			cnijfilter-pixus860iseries-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i860series-64,
 			cnijfilter-pixus860iseries-64
@@ -3477,8 +3821,8 @@ Package: cnijfilter-i860series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixus860iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixus860iseries (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3487,11 +3831,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-i990series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-i990series (>= 3.90),
-			cnijfilter-pixus990iseries (>= 3.90),
-			cnijfilter-pixus990iseries-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-i990series (>= 4.00),
+			cnijfilter-pixus990iseries (>= 4.00),
+			cnijfilter-pixus990iseries-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-i990series-64,
 			cnijfilter-pixus990iseries-64
@@ -3506,8 +3850,8 @@ Package: cnijfilter-i990series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixus990iseries (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixus990iseries (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3516,11 +3860,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip3000series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip3000series (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
-			cnijfilter-pixusip3100series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip3000series (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
+			cnijfilter-pixusip3100series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip3000series-64,
 			cnijfilter-pixusip3100series-64
@@ -3535,8 +3879,8 @@ Package: cnijfilter-ip3000series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3545,11 +3889,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-bjs700series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-bjs700series (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
-			cnijfilter-pixusip3100series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-bjs700series (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
+			cnijfilter-pixusip3100series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-bjs700series-64,
 			cnijfilter-pixusip3100series-64
@@ -3564,8 +3908,8 @@ Package: cnijfilter-bjs700series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3574,11 +3918,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp750series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp750series (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
-			cnijfilter-pixusip3100series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp750series (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
+			cnijfilter-pixusip3100series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp750series-64,
 			cnijfilter-pixusip3100series-64
@@ -3593,8 +3937,8 @@ Package: cnijfilter-mp750series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3603,11 +3947,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp780series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp780series (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
-			cnijfilter-pixusip3100series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp780series (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
+			cnijfilter-pixusip3100series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp780series-64,
 			cnijfilter-pixusip3100series-64
@@ -3622,8 +3966,8 @@ Package: cnijfilter-mp780series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixusip3100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixusip3100series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3632,11 +3976,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip4000series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip4000series (>= 3.90),
-			cnijfilter-pixusip4100series (>= 3.90),
-			cnijfilter-pixusip4100series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip4000series (>= 4.00),
+			cnijfilter-pixusip4100series (>= 4.00),
+			cnijfilter-pixusip4100series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip4000series-64,
 			cnijfilter-pixusip4100series-64
@@ -3651,8 +3995,8 @@ Package: cnijfilter-ip4000series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixusip4100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixusip4100series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3661,11 +4005,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip5000series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip5000series (>= 3.90),
-			cnijfilter-pixusip4100series (>= 3.90),
-			cnijfilter-pixusip4100series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip5000series (>= 4.00),
+			cnijfilter-pixusip4100series (>= 4.00),
+			cnijfilter-pixusip4100series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip5000series-64,
 			cnijfilter-pixusip4100series-64
@@ -3680,8 +4024,8 @@ Package: cnijfilter-ip5000series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixusip4100series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixusip4100series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3690,11 +4034,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip8500series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip8500series (>= 3.90),
-			cnijfilter-pixusip8600series (>= 3.90),
-			cnijfilter-pixusip8600series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip8500series (>= 4.00),
+			cnijfilter-pixusip8600series (>= 4.00),
+			cnijfilter-pixusip8600series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip8500series-64,
 			cnijfilter-pixusip8600series-64
@@ -3709,8 +4053,8 @@ Package: cnijfilter-ip8500series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-pixusip8600series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-pixusip8600series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3719,11 +4063,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip5200series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip5200series (>= 3.90),
-			cnijfilter-ip4200series (>= 3.90),
-			cnijfilter-ip4200series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip5200series (>= 4.00),
+			cnijfilter-ip4200series (>= 4.00),
+			cnijfilter-ip4200series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip5200series-64,
 			cnijfilter-ip4200series-64
@@ -3738,8 +4082,8 @@ Package: cnijfilter-ip5200series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-ip4200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-ip4200series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3748,11 +4092,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-ip5200rseries-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-ip5200rseries (>= 3.90),
-			cnijfilter-ip4200series (>= 3.90),
-			cnijfilter-ip4200series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-ip5200rseries (>= 4.00),
+			cnijfilter-ip4200series (>= 4.00),
+			cnijfilter-ip4200series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-ip5200rseries-64,
 			cnijfilter-ip4200series-64
@@ -3767,8 +4111,8 @@ Package: cnijfilter-ip5200rseries
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-ip4200series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-ip4200series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
@@ -3777,11 +4121,11 @@ Description: IJ Printer Driver for Linux.
 Package: cnijfilter-mp620series-32
 Architecture: amd64 ia64
 Section: graphics
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-common-32 (>= 3.90),
-			cnijfilter-mp620series (>= 3.90),
-			cnijfilter-mp630series (>= 3.90),
-			cnijfilter-mp630series-32 (>= 3.90)
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-common-32 (>= 4.00),
+			cnijfilter-mp620series (>= 4.00),
+			cnijfilter-mp630series (>= 4.00),
+			cnijfilter-mp630series-32 (>= 4.00)
 Breaks: 	cnijfilter-common-64,
 			cnijfilter-mp620series-64,
 			cnijfilter-mp630series-64
@@ -3796,8 +4140,8 @@ Package: cnijfilter-mp620series
 Architecture: i386
 Section: graphics
 Multi-Arch: foreign
-Depends: 	cnijfilter-common (>= 3.90),
-			cnijfilter-mp630series (>= 3.90),
+Depends: 	cnijfilter-common (>= 4.00),
+			cnijfilter-mp630series (>= 4.00),
 			${misc:Depends}
 Description: IJ Printer Driver for Linux.
  This IJ Printer Driver provides printing functions for Canon Inkjet
