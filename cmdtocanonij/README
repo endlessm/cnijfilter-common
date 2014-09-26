@@ -1,0 +1,15 @@
+cmdtocanonij     --- CUPS filter for Canon Inkjet Printer.
+
+DESCRIPTION
+    The "cmdtocanonij" is the CUPS filter program converting the CUPS command
+    file to the Canon Inkjet Printer command stream.
+
+REQUIREMENTS
+    You need the following libraries.
+    * libcups               (1.1.x or above)
+
+    And you need the following programs.
+    * CUPS                  (1.1.14 or above)
+
+INSTALLATION
+    See the file "INSTALL"

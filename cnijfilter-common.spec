@@ -2,7 +2,7 @@
 %bcond_with fastbuild
 %bcond_with build_common_package
 
-%define VERSION 3.90
+%define VERSION 4.00
 %define RELEASE 1
 
 %define _arc  %(getconf LONG_BIT)
@@ -17,8 +17,8 @@
 %define _ppddir /usr
 
 %define CNBP_LIBS libcnbpcmcm libcnbpcnclapi libcnbpcnclbjcmd libcnbpcnclui libcnbpess libcnbpo
-%define COM_LIBS libcnnet
-%define PRINT_PKG_PROGRAM ppd cnijfilter maintenance lgmon cngpijmon
+%define COM_LIBS libcnnet libcnbpcnclapi*
+%define PRINT_PKG_PROGRAM ppd cnijfilter
 
 %define PKG %{MODEL}series
 
@@ -91,15 +91,6 @@ popd
 pushd cnijfilter
     ./autogen.sh --prefix=%{_prefix} --program-suffix=CN_IJ_MODEL --enable-libpath=%{_libdir}/bjlib --enable-binpath=%{_bindir}
 popd
-pushd maintenance
-    ./autogen.sh --prefix=%{_prefix} --program-suffix=CN_IJ_MODEL --datadir=%{_prefix}/share --enable-libpath=%{_libdir}/bjlib
-popd
-pushd lgmon
-    ./autogen.sh --prefix=%{_prefix} --program-suffix=CN_IJ_MODEL --enable-progpath=%{_bindir}
-popd
-pushd cngpijmon
-    ./autogen.sh --prefix=%{_prefix} --program-suffix=CN_IJ_MODEL  --enable-progpath=%{_bindir} --datadir=%{_prefix}/share
-popd
 
 %else
 
@@ -129,21 +120,6 @@ pushd cnijfilter
 	make clean
 	make
 popd
-pushd maintenance
-    ./autogen.sh --prefix=%{_prefix} --program-suffix=%{MODEL} --datadir=%{_prefix}/share --enable-libpath=%{_libdir}/bjlib
-	make clean
-	make
-popd
-pushd lgmon
-    ./autogen.sh --prefix=%{_prefix} --program-suffix=%{MODEL} --enable-progpath=%{_bindir}
-	make clean
-	make
-popd
-pushd cngpijmon
-    ./autogen.sh --prefix=%{_prefix} --program-suffix=%{MODEL}  --enable-progpath=%{_bindir} --datadir=%{_prefix}/share
-	make clean
-	make
-popd
 %endif
 
 %endif
@@ -152,6 +128,14 @@ popd
 %if %{with build_common_package}
 pushd libs
     ./autogen.sh --prefix=%{_prefix} 
+popd
+
+pushd bscc2sts
+    ./autogen.sh 
+popd
+
+pushd cnijnpr
+    ./autogen.sh --prefix=%{_prefix} --enable-libpath=%{_libdir}/bjlib
 popd
 
 pushd cngpij
@@ -174,9 +158,18 @@ pushd backendnet
     ./autogen.sh --prefix=%{_prefix} --enable-libpath=%{_libdir}/bjlib --enable-progpath=%{_bindir} LDFLAGS="-L../../com/libs_bin%{_arc}"
 popd
 
-pushd cngpijmon/cnijnpr
-    ./autogen.sh --prefix=%{_prefix} --enable-libpath=%{_libdir}/bjlib
+pushd cmdtocanonij
+    ./autogen.sh --prefix=/usr --datadir=/usr/local/share
 popd
+
+pushd cnijbe
+    ./autogen.sh --prefix=/usr --enable-progpath=%{_bindir} 
+popd
+
+pushd lgmon2
+    ./autogen.sh --prefix=%{_prefix} --enable-libpath=%{_libdir}/bjlib --enable-progpath=%{_bindir}  LDFLAGS="-L../../com/libs_bin%{_arc}"
+popd
+
 make
 %endif
 
@@ -188,18 +181,6 @@ pushd  ppd
 popd
 
 pushd cnijfilter
-    make install DESTDIR=${RPM_BUILD_ROOT}
-popd
-
-pushd maintenance
-    make install DESTDIR=${RPM_BUILD_ROOT}
-popd
-
-pushd lgmon
-    make install DESTDIR=${RPM_BUILD_ROOT}
-popd
-
-pushd cngpijmon
     make install DESTDIR=${RPM_BUILD_ROOT}
 popd
 
@@ -225,6 +206,8 @@ install -c -s -m 755 com/libs_bin%{_arc}/*.so.* 	${RPM_BUILD_ROOT}%{_libdir}
 install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/filter/pstocanonij	${RPM_BUILD_ROOT}%{_cupsbindir64}/filter/pstocanonij
 install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/backend/cnijusb	${RPM_BUILD_ROOT}%{_cupsbindir64}/backend/cnijusb
 install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/backend/cnijnet	${RPM_BUILD_ROOT}%{_cupsbindir64}/backend/cnijnet
+install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/filter/cmdtocanonij	${RPM_BUILD_ROOT}%{_cupsbindir64}/filter/cmdtocanonij
+install -c -m 755 ${RPM_BUILD_ROOT}%{_cupsbindir}/backend/cnijbe	${RPM_BUILD_ROOT}%{_cupsbindir64}/backend/cnijbe
 
 install -c -m 644 etc/*.rules ${RPM_BUILD_ROOT}/etc/udev/rules.d/
 %endif
@@ -250,8 +233,6 @@ done
 # remove directory
 if [ "$1" = 0 ] ; then
 	rmdir -p --ignore-fail-on-non-empty %{_prefix}/share/locale/*/LC_MESSAGES
-	rmdir -p --ignore-fail-on-non-empty %{_prefix}/share/cngpijmon%{MODEL}
-	rmdir -p --ignore-fail-on-non-empty %{_prefix}/share/maintenance%{MODEL}
 	rmdir -p --ignore-fail-on-non-empty %{_bindir}
 fi
 if [ -x /sbin/ldconfig ]; then
@@ -264,12 +245,16 @@ if [ -e /usr/lib64/cups/backend/usb ] ; then
 	rm -f /usr/lib/cups/filter/pstocanonij
 	rm -f /usr/lib/cups/backend/cnijusb
 	rm -f /usr/lib/cups/backend/cnijnet
+	rm -f /usr/lib/cups/backend/cnijbe
+	rm -f /usr/lib/cups/filter/cmdtocanonij
 	rmdir -p --ignore-fail-on-non-empty /usr/lib/cups/filter
 	rmdir -p --ignore-fail-on-non-empty /usr/lib/cups/backend
 elif  [ -e /usr/lib/cups/backend/usb ] ; then
 	rm -f /usr/lib64/cups/filter/pstocanonij
 	rm -f /usr/lib64/cups/backend/cnijusb
 	rm -f /usr/lib64/cups/backend/cnijnet
+	rm -f /usr/lib64/cups/backend/cnijbe
+	rm -f /usr/lib64/cups/filter/cmdtocanonij
 	rmdir -p --ignore-fail-on-non-empty /usr/lib64/cups/filter
 	rmdir -p --ignore-fail-on-non-empty /usr/lib64/cups/backend
 fi
@@ -299,14 +284,7 @@ fi
 
 %files
 %defattr(-,root,root)
-%{_bindir}/cngpijmon%{MODEL}
-%{_bindir}/lgmon%{MODEL}
-%{_bindir}/maintenance%{MODEL}
 %{_ppddir}/share/cups/model/canon%{MODEL}.ppd
-%{_prefix}/share/locale/*/LC_MESSAGES/cngpijmon%{MODEL}.mo
-%{_prefix}/share/locale/*/LC_MESSAGES/maintenance%{MODEL}.mo
-%{_prefix}/share/cngpijmon%{MODEL}/*
-%{_prefix}/share/maintenance%{MODEL}/*
 
 %{_bindir}/cif%{MODEL}
 %{_libdir}/libcnbp*%{MODEL_NUM}.so*
@@ -330,15 +308,25 @@ fi
 %{_cupsbindir}/filter/pstocanonij
 %{_cupsbindir}/backend/cnijusb
 %{_cupsbindir}/backend/cnijnet
+%{_cupsbindir}/backend/cnijbe
+%{_cupsbindir}/filter/cmdtocanonij
 %{_cupsbindir64}/filter/pstocanonij
 %{_cupsbindir64}/backend/cnijusb
 %{_cupsbindir64}/backend/cnijnet
+%{_cupsbindir64}/backend/cnijbe
+%{_cupsbindir64}/filter/cmdtocanonij
+%{_bindir}/cnijnpr
 %{_bindir}/cngpij
 %{_bindir}/cngpijmnt
-%{_bindir}/cnijnpr
 %{_bindir}/cnijnetprn
+%{_bindir}/cnijlgmon2
 %{_libdir}/libcnnet.so*
+%{_libdir}/libcnbpcnclapicom.so*
 %attr(644, lp, lp) %{_libdir}/bjlib/cnnet.ini
+%{_prefix}/share/locale/*/LC_MESSAGES/cnijlgmon2.mo
+%{_prefix}/share/cnijlgmon2/*
+%{_prefix}/share/cmdtocanonij/*
+
 
 /etc/udev/rules.d/*.rules
 

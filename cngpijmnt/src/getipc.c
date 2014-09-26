@@ -41,7 +41,6 @@ int GetIPCData(LPIPCU pipc, char *sname)
 	struct sockaddr_un sun;
 	int server_fd;
 	int client_fd;
-	int __attribute__ ((unused)) result2;
 	char buf[128];
 	size_t len;
 	short ret = RET_ERROR;
@@ -65,11 +64,11 @@ int GetIPCData(LPIPCU pipc, char *sname)
 	while( (client_fd = accept(server_fd, (struct sockaddr *)&sun, (socklen_t *)&len)) >= 0 )
 	{
 		/* read command first */
-		result2 = read(client_fd, buf, IPCCMDLEN);
+		read(client_fd, buf, IPCCMDLEN);
 
 		if( strcmp(buf, "PRINT") == 0 )
 		{											/* PRINT command */
-			result2 = read(client_fd, pipc, sizeof(IPCU));
+			read(client_fd, pipc, sizeof(IPCU));
 			close(client_fd);
 			ret = RET_PRINT;
 			break;
@@ -82,28 +81,28 @@ int GetIPCData(LPIPCU pipc, char *sname)
 		}
 		else if( strcmp(buf, "PDATA") == 0 )
 		{											/* PDATA command (for maintenance) */
-			result2 = read(client_fd, pipc, sizeof(IPCU));
+			read(client_fd, pipc, sizeof(IPCU));
 			close(client_fd);
 			ret = RET_PDATA;
 			break;
 		}
 		else if( strcmp(buf, "POWEROFF") == 0 )
 		{											/* POWEROFF (for maintenance. added in 09_2h) */
-			result2 = read(client_fd, pipc, sizeof(IPCU));
+			read(client_fd, pipc, sizeof(IPCU));
 			close(client_fd);
 			ret = RET_POWEROFF;
 			break;
 		}
 		else if( strcmp(buf, "FDATA") == 0 )
 		{											/* FDATA command (for maintenance) */
-			result2 = read(client_fd, pipc, sizeof(IPCU));
+			read(client_fd, pipc, sizeof(IPCU));
 			close(client_fd);
 			ret = RET_FDATA;
 			break;
 		}
 		else if( strcmp(buf, "WDATA") == 0 )
 		{											/* WDATA command (for maintenance) */
-			result2 = read(client_fd, pipc, sizeof(IPCU));
+			read(client_fd, pipc, sizeof(IPCU));
 			close(client_fd);
 			ret = RET_WDATA;
 			break;

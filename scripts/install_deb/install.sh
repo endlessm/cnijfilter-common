@@ -21,7 +21,7 @@
 ##
 ##############################################################################
 
-C_version="3.90-1"
+C_version="4.00-1"
 C_copyright_end="2013"
 C_default_system="deb"
 
@@ -479,7 +479,7 @@ p_FUNC_execute_prepare_process()
 }
 
 #################################################################
-#### Make printer list to show from backend output data. S1:backend name
+#### Make printer list to show from backend output data. S1:USB or LAN string
 #################################################################
 p_FUNC_make_printer_list_from_backenddata()
 {
@@ -520,24 +520,10 @@ p_FUNC_make_printer_list_from_backenddata()
 	#-----------------------------
 	# Execute device search
 	#-----------------------------
-	if [ "$1" = "cnijusb" ]; then
-		if [ -x /usr/lib/cups/backend/cnijusb ]; then
-			p_local_srch_result=`${P_printer_sudo_command}/usr/lib/cups/backend/cnijusb`
-			if [ "${p_local_srch_result}" = "" ]; then
-				p_local_srch_result=`${P_printer_sudo_command}/usr/lib/cups/backend/usb 2> /dev/null`
-				p_local_is_std_usb_backend=1
-			fi
-		elif [ -x /usr/lib64/cups/backend/cnijusb ]; then
-			p_local_srch_result=`${P_printer_sudo_command}/usr/lib64/cups/backend/cnijusb`
-			if [ "${p_local_srch_result}" = "" ]; then
-				p_local_srch_result=`${P_printer_sudo_command}/usr/lib64/cups/backend/usb 2> /dev/null`
-				p_local_is_std_usb_backend=1
-			fi
-		else
-			p_local_srch_result=""
-		fi
+	if [ "$1" = "LAN" ]; then
+		p_local_srch_result=`${P_printer_sudo_command}cnijlgmon2 --installer_net`
 	else
-		p_local_srch_result=`${P_printer_sudo_command}cnijnetprn --installer --search auto`
+		p_local_srch_result=`${P_printer_sudo_command}cnijlgmon2 --installer_usb`
 	fi
 
 	#-----------------------------
@@ -552,12 +538,13 @@ p_FUNC_make_printer_list_from_backenddata()
 	
 		# Extract the 3rd field("Canon MX320 series") and set to value.
 		#value=`perl -e '"'$line'" =~ /\"(Canon.+?)\"/;print $1'`
-		value=`expr $line : '.*"\(Canon[^"]*\).*$'`
+		value=`expr $line : '.*"\(Canon[^"]*series[^"]*\)"'`
 		
 		# Skip FAX device
 		p_local_fax_term=""
-		#p_local_fax_term=`perl -e '"'$value'" =~ /(FAX)/;print $1'`
-		p_local_fax_term=`expr $value : '.*\(FAX\).*$'`
+		if [ "$value" ]; then
+			p_local_fax_term=`expr $value : '.*\(FAX\).*$'`
+		fi
 		if [ "$p_local_fax_term" ]; then
 			continue
 		fi
@@ -567,8 +554,9 @@ p_FUNC_make_printer_list_from_backenddata()
 		p_local_dvice_uri=`echo ${p_local_cn_uri} | cut -d':' -f2`
 
 		# If the I/F is LAN, delete "/" and add IPP address.
-		if [ "$1" = "cnijnet" ]; then
-			p_local_dvice_uri=`echo ${p_local_dvice_uri} | cut -d'/' -f2`
+		if [ "$1" = "LAN" ]; then
+			#p_local_dvice_uri=`echo ${p_local_dvice_uri} | cut -d'/' -f2`
+			p_local_dvice_uri=`expr ${p_local_dvice_uri} : '.*serial=\(.\+\)'`
 			
 			#p_local_ip_add=`perl -e '"'$line'" =~ /\"(IP.+)\"/;print $1'`
 			p_local_ip_add=`expr $line : '.*"\(IP[^"]*\).*$'`
@@ -633,7 +621,7 @@ p_FUNC_select_printer_from_list()
 	fi
 	
 	# Set list titles according to backend name.
-	if [ "$1" = "cnijusb" ]; then
+	if [ "$1" != "LAN" ]; then
 		p_local_target_list_title="$L_INST_PRN_01_14"
 		p_local_other_list_title="$L_INST_PRN_01_15"
 	else
@@ -770,7 +758,7 @@ p_FUNC_select_printer_from_list()
 }
 
 #################################################################
-#### Make DeviceURI  $1:backend name, $2:printer list line
+#### Make DeviceURI  $1:USB or LAN string, $2:printer list line
 #################################################################
 p_FUNC_make_uri()
 {
@@ -785,9 +773,9 @@ p_FUNC_make_uri()
 	p_local_uri=`expr $2 : '.*(\(.\+\)).*$'`
 	
 	# If I/F is LAN: "00-00-85-CE-9B-17 172.21.81.49" -> "00-00-85-CE-9B-17" -> "/00-00-85-CE-9B-17"
-	if [ "$1" = "cnijnet" ]; then	#LAN
+	if [ "$1" = "LAN" ]; then	#LAN
 		p_local_uri=`echo $p_local_uri | cut -d' ' -f1`
-		p_local_uri="/"$p_local_uri
+		p_local_uri="//Canon/?port=net&serial="$p_local_uri
 	fi
 
 	P_current_uri=$p_local_uri
@@ -890,20 +878,21 @@ P_FUNC_MAIN_make_queue()
 		
 			case $CMD in
 				"")	#USB
-					p_local_BACKENDNAME="cnijusb"
+					p_local_BACKENDNAME="cnijbe"
 					p_local_I_F="USB";;
 				"1")	#USB
-					p_local_BACKENDNAME="cnijusb"
+					p_local_BACKENDNAME="cnijbe"
 					p_local_I_F="USB";;
 				"2")	#Network
-					p_local_BACKENDNAME="cnijnet"
+					p_local_BACKENDNAME="cnijbe"
 					p_local_I_F="LAN";;
 			esac
 		done
 		
 	else
 		#Skip I/F select step
-		p_local_BACKENDNAME="cnijusb"
+		p_local_BACKENDNAME="cnijbe"
+		p_local_I_F="USB_NOTSELECT"
 	fi
 	
 
@@ -922,10 +911,12 @@ P_FUNC_MAIN_make_queue()
 	until [ $retvalue -eq 0 ]
 	do
 		#Search printers.
-		p_FUNC_make_printer_list_from_backenddata $p_local_BACKENDNAME
+		#ver400 p_FUNC_make_printer_list_from_backenddata $p_local_BACKENDNAME
+		p_FUNC_make_printer_list_from_backenddata $p_local_I_F
 
 		#Show printer list.
-		p_FUNC_select_printer_from_list $p_local_BACKENDNAME
+		#ver400 p_FUNC_select_printer_from_list $p_local_BACKENDNAME
+		p_FUNC_select_printer_from_list $p_local_I_F
 
 		retvalue=$?
 		if [ $retvalue -eq 0 ]; then		#some device selected -> re-search
@@ -945,14 +936,18 @@ P_FUNC_MAIN_make_queue()
 
 	# make URI
 	P_current_uri=""
-	p_FUNC_make_uri "$p_local_BACKENDNAME" "$P_ans"
+	p_FUNC_make_uri "$p_local_I_F" "$P_ans"
 
 	####################################
 	### Input entry name
 	####################################
 	### Make default name
 	# P_DEF_ENTRYNAME + I/F
-	P_DEF_ENTRYNAME=$P_DEF_ENTRYNAME$p_local_I_F
+	if [ "$p_local_I_F" = "USB_NOTSELECT" ]; then
+		P_DEF_ENTRYNAME=$P_DEF_ENTRYNAME
+	else
+		P_DEF_ENTRYNAME=$P_DEF_ENTRYNAME$p_local_I_F
+	fi
 	
 	# Make default(pre-set) entry name.
 	p_FUNC_make_default_entryname $P_DEF_ENTRYNAME
@@ -1065,7 +1060,7 @@ P_FUNC_MAIN_make_queue()
 		exit		#quit immediately
 	fi
 
-####################################
+	####################################
 	### Finish (Show registration information)
 	####################################
 	printf "\n"
@@ -1277,9 +1272,9 @@ C_FUNC_version_comp()
 	c_ver2=`echo ${c_tmpstr%%.*}``echo ${c_tmpstr##*.}`
 
 	# ex. 310 > 300  #
-	if [ $c_ver1 -gt $c_ver2 ]; then
+	if [ "$c_ver1" -gt "$c_ver2" ]; then
 		return $C_big
-	elif [ $c_ver1 -lt $c_ver2 ]; then
+	elif [ "$c_ver1" -lt "$c_ver2" ]; then
 		return $C_small
 	fi
 	
@@ -1293,17 +1288,17 @@ C_FUNC_version_comp()
 	c_reln2=`echo ${c_tmpstr##*[a-z]}`
 
 	# ex. [a][13] < [][2] #
-	if [ -z $c_rela1 ] && [ -n $c_rela2 ]; then
+	if [ -z "$c_rela1" ] && [ -n "$c_rela2" ]; then
 		return $C_big
-	elif [ -n $c_rela1 ] && [ -z $c_rela2 ]; then
+	elif [ -n "$c_rela1" ] && [ -z "$c_rela2" ]; then
 		return $C_small
 	fi
 	
 	# ex. [a][2] < [b][1] #
-	if [ -n $c_rela1 ] && [ $c_rela1 != $c_rela2 ]; then
+	if [ -n "$c_rela1" ] && [ "$c_rela1" != "$c_rela2" ]; then
 		list=`C_FUNC_makelist $c_rela1 $c_rela2 | sort`
 		for c_tmpstr in $list; do
-			if [ $c_tmpstr = $c_rela1 ]; then
+			if [ "$c_tmpstr" = "$c_rela1" ]; then
 				return $C_small
 			else
 				return $C_big
@@ -1312,9 +1307,9 @@ C_FUNC_version_comp()
 	fi
 	
 	# ex. [a][2] > [a][1], [b][9] < [b][10] #
-	if [ $c_reln1 -gt $c_reln2 ]; then
+	if [ "$c_reln1" -gt "$c_reln2" ]; then
 		return $C_big
-	elif [ $c_reln1 -lt $c_reln2 ];then
+	elif [ "$c_reln1" -lt "$c_reln2" ];then
 		return $C_small
 	else
 		return $C_equal

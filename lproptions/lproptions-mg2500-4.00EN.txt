@@ -1,0 +1,223 @@
+﻿********************************************************************************
+Canon Inkjet Printer Driver
+Version 4.00
+Copyright CANON INC. 2013
+All Rights Reserved.
+********************************************************************************
+
+1. About this file
+    This file describes the options available when printing on this printer using the lpr command.
+
+2. Option list
+    This section describes options available for setting up printing with the lpr command.
+    For information about the options that can be used and restrictions
+    on combining options, see the following:
+
+    Media Type **
+    Paper Source **
+    Print Quality **
+    Color Balance
+    Intensity
+    Contrast
+    Brightness
+    Grayscale Printing
+    Ink Cartridge Settings
+    Page Size **
+    Print Size
+    Print Position
+    Copies
+
+    Any setting identified with ** has restrictions when combined
+    with other options. For information about restrictions based on print option
+    combinations, see "Restrictions on the combinations of print options."
+
+    Media Type **
+
+        Syntax                  :  -o MediaType=[parameter]
+        Parameter               : The following media can be selected.
+                                   [Default Value=plain]
+
+        plain                    Plain Paper
+        glossygold               Photo Paper Plus Glossy II
+        glossypaper              Glossy Photo Paper
+        envelope                 Envelope
+
+    Paper Source **
+
+        Syntax                  :  -o InputSlot=[parameter]
+        Parameter               : The following Paper Sources can be selected.
+                                   [Default Value=asf]
+
+        asf                      Feed from Rear Tray
+
+    Print Quality **
+
+        Syntax                  :  -o CNQuality=[parameter]
+        Parameter               : 1 - 5 [Default Value=differs depending on options]
+
+        As the value becomes smaller, the print quality improves. As the value becomes larger,
+         the print speed increases.
+        The default value differs depending on other print options.
+
+
+    Color Balance
+
+        Syntax                  :  Cyan      -o CNBalanceC=[parameter]
+                                   Magenta      -o CNBalanceM=[parameter]
+                                   Yellow      -o CNBalanceY=[parameter]
+                                   Parameter : -50 - 50 [Default Value=0]
+
+        The color tone increases as the number increases.
+
+    Intensity
+
+        Syntax                  :  -o CNDensity=[parameter]
+        Parameter               : -50 - 50 [Default Value=0]
+
+        The intensity increases as the number increases.
+
+    Contrast
+
+        Syntax                  :  -o CNContrast=[parameter]
+        Parameter               : -50 - 50 [Default Value=0]
+
+        The contrast increases as the number increases.
+
+    Brightness
+
+        Syntax                  :  -o CNGamma=[parameter]
+        Parameter               : The following parameters can be selected.
+                                   [Default Value=1.8]
+
+        1.4                      Light
+        1.8                      Normal
+        2.2                      Dark
+
+    Grayscale Printing
+
+        Syntax                  :  -o CNGrayscale
+        Parameter               : There is no parameter.
+
+
+    Ink Cartridge Settings
+
+        Syntax                  :  -o CNInkCartridgeSettings=[parameter]
+        Parameter               : The following parameters can be selected.
+                                   [Default Value=bkcolor]
+
+        color                    Color Only
+        bk                       Black Only
+        bkcolor                  Both Black and Color
+
+        *You cannot print with an ink cartridge removed. Do not remove an ink cartridge
+        even if you do not use it for printing.
+        *"bk" is ignored in the following cases. Printing is performed using
+        color ink cartridges as well.
+        - When a medium other than "plain," "postcard," "postcardaddress," or "envelope"
+        is specified for Media Type
+        - When Borderless Printing is set
+
+
+    Page Size **
+
+        Syntax                  :  -o PageSize=[parameter]
+        Parameter               : The following Page Sizes can be selected.
+                                   [Default Value=a4]
+
+        letter                   Letter [8.50"x11.00" 215.9x279.4mm]
+        legal                    Legal [8.50"x14.00" 215.9x355.6mm]
+        a5                       A5 [5.83"x8.27" 148.0x210.0mm]
+        a4                       A4 [8.27"x11.69" 210.0x297.0mm]
+        b5                       B5 [7.17"x10.12" 182.0x257.0mm]
+        4X6                      4"x6" [4.00"x6.00" 101.6x152.4mm]
+        5X7                      5"x7" [5.00"x7.00" 127.0x177.8mm]
+        envelop10p               Envelope Com 10 [4.12"x9.50" 104.8x241.3mm]
+        envelopdlp               Envelope DL [4.33"x8.66" 110.0x220.0mm]
+        Custom.value1xvalue2mm   Custom
+
+        If you specify Custom for Page Size, specify the size within the following range.
+        You must set both the paper width (value1) and height (value2).
+
+        Syntax                  :  -o PageSize=Custom.[value1]x[value2]mm
+        Parameter               : value1 = 101.6 mm - 215.9 mm,
+                                   value2 = 152.4 mm - 676 mm
+
+
+    Print Size
+
+        i) Scaling Specification
+
+        Specify the size ratio for enlargement or reduction as a % value. With the lpr command,
+        you can use "natural-scaling," which is a standard option, to perform
+        the Scaling Specification.
+        For information about the options that can be set in the lpr command (CUPS),
+        see the homepage for the Common UNIX Printing System (http://www.cups.org/).
+
+        ii) Fit-to-Page Printing
+
+        Syntax                  : -o scaling=100
+
+        This function expands or reduces the image to fit the print area, without changing
+        the vertical-horizontal ratio. It scales the image to fit to the print area
+        in either the horizontal or vertical direction.
+
+        *Scaling Specification and Fit-to-Page Printing cannot be specified
+        at the same time.
+
+    Print Position
+
+        With the lpr command, you can use "position," which is a standard option, to perform
+        the Print Position adjustment. For information about the options that can be set
+        in the lpr command (CUPS), see the homepage for the Common UNIX Printing System
+        (http://www.cups.org/).
+
+
+    Copies
+
+        Syntax                  :  -o CNCopies=[parameter]
+        Parameter               : 1 - 999 [Default Value=1]
+
+3. Restrictions on the combinations of print options
+
+    The combinations of print option for the lpr command are restricted as shown below.
+
+    *Media Type, Print Quality, and Borderless Printing
+
+        When combining Media Type, Print Quality, and Borderless Printing,
+        you can specify the following print setting combinations
+        using the lpr command:
+
+        When Borderless Printing is not specified (when not specifying a Page Size
+        for Borderless Printing):
+         -o MediaType=plain -o CNQuality=2 
+         -o MediaType=plain -o CNQuality=3 
+         -o MediaType=plain -o CNQuality=4 
+         -o MediaType=envelope -o CNQuality=2 
+         -o MediaType=envelope -o CNQuality=3 
+         -o MediaType=glossypaper -o CNQuality=2 
+         -o MediaType=glossypaper -o CNQuality=3 
+         -o MediaType=glossygold -o CNQuality=1 
+         -o MediaType=glossygold -o CNQuality=2 
+         -o MediaType=glossygold -o CNQuality=3 
+        
+
+4. Maintenance Command
+    You can use the basic maintenance function of the printer by using the following
+     command. The maintenance function varies depending on its types. For more
+     details, refer to "Online Manual."
+    The following command is based on registering "MG2500USB" to the spooler as the printer name. Change it to the printer name that you have set.
+
+    Print Head Cleaning
+        Cleans clogged print head nozzles.
+        For Fedora:
+        [user@zzz /yyy]$ lpr -P MG2500USB /usr/local/share/cmdtocanonij/cleaning.utl
+        For Ubuntu:
+        [user@zzz /yyy]$ lpr -P MG2500USB /usr/share/cmdtocanonij/cleaning.utl
+
+    Print nozzle check pattern
+        Prints a pattern that lets you check whether the print head nozzles are clogged.
+        For Fedora:
+        [user@zzz /yyy]$ lpr -P MG2500USB /usr/local/share/cmdtocanonij/nozzlecheck.utl
+        For Ubuntu:
+        [user@zzz /yyy]$ lpr -P MG2500USB /usr/share/cmdtocanonij/nozzlecheck.utl
+

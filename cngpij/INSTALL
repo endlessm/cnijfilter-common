@@ -17,7 +17,7 @@ To build and install cngpij:
            --prefix
 
            --enable-progpath
-                printui(ex.printuimx720)
+                printui(ex.printuimg7100)
 
      Example:
            ./autogen.sh --prefix=/usr/local --enable-progpath=/usr/local/bin

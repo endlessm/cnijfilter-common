@@ -882,6 +882,7 @@ char* make_cmd_param(cups_option_t *p_cups_opt, int num_opt,
 	/* Ver.3.20 */
 	char	*device_uri = getenv("DEVICE_URI");
 	char	*canon_usb_backend_str = "cnijusb:";
+	char	*canon_usb_backend2_str = "cnijbe:";
 	char	*canon_net_backend_str = "cnijnet:";
 	short	canon_backend_flag = 0;
 	short	rotate_flag = 0;
@@ -914,6 +915,7 @@ char* make_cmd_param(cups_option_t *p_cups_opt, int num_opt,
 	/* Ver.3.20 */
 	fprintf(stderr,"DEBUG: device_uri=(%s)\n",device_uri);
 	if( !strncmp( device_uri , canon_usb_backend_str , strlen( canon_usb_backend_str ) ) ) canon_backend_flag = 1;
+	else if( !strncmp( device_uri , canon_usb_backend2_str , strlen( canon_usb_backend2_str ) ) ) canon_backend_flag = 1;
 	else if( !strncmp( device_uri , canon_net_backend_str , strlen( canon_net_backend_str ) ) ) canon_backend_flag = 1;
 
 	if( (p_ppd = ppdOpenFile(p_ppd_name)) == NULL )

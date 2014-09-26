@@ -17,7 +17,7 @@ To build and install cngpijmnt:
            --prefix
 
            --enable-progpath
-                maintenance(ex.maintenancemx720)
+                maintenance(ex.maintenancemg7100)
 
      Example:
            ./autogen.sh --prefix=/usr/local --enable-progpath=/usr/local/bin

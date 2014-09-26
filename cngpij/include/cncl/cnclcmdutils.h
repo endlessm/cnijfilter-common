@@ -48,7 +48,16 @@
 
 #define CNCL_MAKECOMMAND_BUF_LEN	(1024)
 
-
+/*
+ *   Parameter Id
+ */
+#define STARTJOB 1
+#define VENDERSHIFT 2
+#define ENDJOB 3
+#define STATUS 4
+#define WRITE_EP 1
+#define READ_EP 2
+ 
 /*
  *   prototypes
  */
@@ -57,6 +66,11 @@ extern CNCLErr CNCL_MakeDeviceCommand( short operation_id , char *out_data_buf ,
 extern CNCLErr CNCL_CheckPrintCommand( short operation_id , char *in_data_buf , short in_data_size  , char *id_str_buf , short id_buf_len );
 extern CNCLErr CNCL_GetStatusCommand  ( char *in_data_buf , short in_data_size , char *out_data_buf , short out_buf_len , short *out_data_size );
 extern CNCLErr CNCL_SetSSRDef        ( char *in_data_buf  , short *data_size );
+extern CNCLErr CNCL_SetForceDetectWidth(	char  *in_data_buf, short *data_size, int flag);
 extern CNCLErr CNCL_SetImageDirection( char  *in_data_buf, short *data_size, short direction);
+
+int CLSS_GetStatus(char *data, int readed_data, int *statusId, int *statusDetail, char *supportId);
+unsigned short CLSS_GetInfoResponse(char *data, int readed_data, unsigned short *oprationId, char *jobId, unsigned short **responseDetail);
+int CLSS_GetPrintCommand(char *cmdBuffer, int cmdBufferSize, unsigned long *writtenSize, char *jobId, int opration_id);
 
 #endif	/* __IVECUTILS_H__ */

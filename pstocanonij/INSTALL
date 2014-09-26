@@ -19,7 +19,7 @@ To build and install pstocanonij:
            --prefix
 
            --enable-progpath
-                cif(ex.cifmx720)
+                cif(ex.cifmg7100)
 
      Example:
            ./autogen.sh --prefix=/usr --enable-progpath=/usr/local/bin

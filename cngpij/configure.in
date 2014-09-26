@@ -1,5 +1,5 @@
 AC_INIT(cngpij/bjcups.c)
-AM_INIT_AUTOMAKE(cngpij, 3.90-1)
+AM_INIT_AUTOMAKE(cngpij, 4.00-1)
 
 AM_CONFIG_HEADER(config.h)
 
@@ -7,8 +7,6 @@ AC_ARG_ENABLE(progpath)
 if test "${enable_progpath}" = "" ; then
    enable_progpath="${ac_default_prefix}/bin"
 fi
-
-AC_DEFINE([PROG_PATH], [], [Description])
 
 AC_DEFINE_UNQUOTED(PROG_PATH, "$enable_progpath")
 AC_SUBST(PROG_PATH)

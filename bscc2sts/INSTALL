@@ -1,0 +1,4 @@
+To build and install lgmon:
+
+        ./autogen.sh
+        make
