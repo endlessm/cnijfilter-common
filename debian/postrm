@@ -4,7 +4,7 @@ if [ -x /sbin/ldconfig ]; then
 	/sbin/ldconfig
 fi
 # remove cnbp* libs
-for LIBS in libcnnet
+for LIBS in libcnnet libcnbpcnclapicom
 do
 	if [ -h /usr/lib/${LIBS}${model_num}.so ]; then
 		rm -f /usr/lib/${LIBS}${model_num}.so
