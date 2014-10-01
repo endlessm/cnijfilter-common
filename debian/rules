@@ -10,7 +10,7 @@
 #export DH_VERBOSE=1
 
 # define build version to create "control" file.
-PRINTER_BUILD_VERSION=4.00
+PRINTER_BUILD_VERSION=4.10
 
 # define build amd64 as ia32 libs
 PRINTER_BUILD_64_AS=64
@@ -143,6 +143,15 @@ PRINTER_DEPEND_PKG+=cnijfilter-mg3500-427-4.00-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-mg2400-428-4.00-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-mg2500-429-4.00-64-yes
 PRINTER_DEPEND_PKG+=cnijfilter-p200-430-4.00-64-yes
+
+PRINTER_DEPEND_PKG+=cnijfilter-ix6700-431-4.10-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-ix6800-432-4.10-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-ip2800-433-4.10-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx470-434-4.10-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-mx530-435-4.10-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-ip8700-436-4.10-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-e560-437-4.10-64-yes
+PRINTER_DEPEND_PKG+=cnijfilter-e400-438-4.10-64-yes
 
 
 PRINTER_DEPEND_VER+=1.30
