@@ -1,5 +1,5 @@
 AC_INIT(src/cnijlgmon2.c)
-AM_INIT_AUTOMAKE(cnijlgmon2, 4.00-1)
+AM_INIT_AUTOMAKE(cnijlgmon2, 4.10-1)
 
 AM_CONFIG_HEADER(config.h)
 

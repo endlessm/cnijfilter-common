@@ -1,7 +1,6 @@
 /*
  *  CUPS add-on module for Canon Inkjet Printer.
  *  Copyright CANON INC. 2001-2013
- *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -388,8 +387,7 @@ ParamList *get_ps_params(int ifd, BufList **ps_data)
 			{
 				if( !IS_BLANK(*p_code)  )
 					break;
-				//*p_code++;
-				p_code++;
+				*p_code++;
 			}
 			while( *p_code != '\0' )
 			{

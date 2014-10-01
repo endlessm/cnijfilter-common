@@ -2,7 +2,7 @@
 %bcond_with fastbuild
 %bcond_with build_common_package
 
-%define VERSION 4.00
+%define VERSION 4.10
 %define RELEASE 1
 
 %define _arc  %(getconf LONG_BIT)
@@ -17,7 +17,7 @@
 %define _ppddir /usr
 
 %define CNBP_LIBS libcnbpcmcm libcnbpcnclapi libcnbpcnclbjcmd libcnbpcnclui libcnbpess libcnbpo
-%define COM_LIBS libcnnet libcnbpcnclapi*
+%define COM_LIBS libcnnet libcnbpcnclapi
 %define PRINT_PKG_PROGRAM ppd cnijfilter
 
 %define PKG %{MODEL}series
@@ -241,23 +241,6 @@ fi
 
 %if %{with build_common_package}
 %post -n cnijfilter-common
-if [ -e /usr/lib64/cups/backend/usb ] ; then
-	rm -f /usr/lib/cups/filter/pstocanonij
-	rm -f /usr/lib/cups/backend/cnijusb
-	rm -f /usr/lib/cups/backend/cnijnet
-	rm -f /usr/lib/cups/backend/cnijbe
-	rm -f /usr/lib/cups/filter/cmdtocanonij
-	rmdir -p --ignore-fail-on-non-empty /usr/lib/cups/filter
-	rmdir -p --ignore-fail-on-non-empty /usr/lib/cups/backend
-elif  [ -e /usr/lib/cups/backend/usb ] ; then
-	rm -f /usr/lib64/cups/filter/pstocanonij
-	rm -f /usr/lib64/cups/backend/cnijusb
-	rm -f /usr/lib64/cups/backend/cnijnet
-	rm -f /usr/lib64/cups/backend/cnijbe
-	rm -f /usr/lib64/cups/filter/cmdtocanonij
-	rmdir -p --ignore-fail-on-non-empty /usr/lib64/cups/filter
-	rmdir -p --ignore-fail-on-non-empty /usr/lib64/cups/backend
-fi
 if [ -x /sbin/ldconfig ]; then
 	/sbin/ldconfig
 fi

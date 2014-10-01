@@ -1,12 +1,11 @@
 # Inkjet Printer Driver for Linux
-# Copyright CANON INC. 2013
-# All Rights Reserved.
+# Copyright CANON INC. 2013-2014
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cnijlgmon2 4.00\n"
+"Project-Id-Version: cnijlgmon2 4.10\n"
 "POT-Creation-Date: 2013-03-28 17:34+0900\n"
-"PO-Revision-Date: 2013-04-02 17:35+0900\n"
+"PO-Revision-Date: 2013-10-08 14:07+0900\n"
 "Last-Translator: CANON INC.\n"
 "Language-Team: CANON INC.\n"
 "MIME-Version: 1.0\n"

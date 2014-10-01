@@ -1,7 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
  *  Copyright CANON INC. 2013
- *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -154,12 +153,15 @@ int CNIF_USB_Open(const char *device_id, CNIF_INFO *if_info)
 					    }
 					    
 					    /*-----------------claim interface-------------*/
-						if((err = libusb_claim_interface(g_dh, g_num[1])) < 0) {
+						while((err = libusb_claim_interface(g_dh, g_num[1])) < 0) {
+							if (err != LIBUSB_ERROR_BUSY) {
 #ifdef _DEBUG_MODE_
-							fprintf(stderr, "ERROR: libusb_claim_interface Error. %d (%d)\n", g_num[1], err);
+							fprintf(stderr, "ERROR: [discover]libusb_claim_interface Error.%d (%d)\n", g_num[1], err);
 #endif
 							err = CN_USB_WRITE_ERROR;
 							goto onErr;
+								
+							}
 						}
 #ifdef _DEBUG_MODE_
 						fprintf(stderr, "DEBUG: End of claim interface %d \n", g_num[1]);
@@ -233,7 +235,7 @@ int CNIF_USB_Open(const char *device_id, CNIF_INFO *if_info)
 					}
 				}
 			}
-			CNIF_USB_Close();
+			CNIF_USB_OneDeviceClose();
 		}
 	}
 	
@@ -291,6 +293,45 @@ int CNIF_USB_Close()
 	if(g_context != NULL) {
 		libusb_exit(g_context);
 		g_context = NULL;
+	}
+	
+	return 0;
+}
+
+int CNIF_USB_OneDeviceClose()
+{	
+	int i = 0;
+	int e = 0;
+	
+	/*----------free configuration----------- */
+	if(g_cptr != NULL){
+		libusb_free_config_descriptor(g_cptr);
+		g_cptr = NULL;
+	}
+	
+	/*----------release interface/attache kernel----------- */
+	for(; i < g_usblp_attached; i++) {
+		if( (e = libusb_release_interface(g_dh, g_claimed_interface[i])) < 0) {
+#ifdef _DEBUG_MODE_
+		fprintf(stderr, "ERROR: [discover]libusb_release_interface Error.%d (%d)\n", g_claimed_interface[i], e);
+#endif
+		}
+#ifdef _DEBUG_MODE_
+		fprintf(stderr, "DEBUG: [discover]End of release interface %d (%d)\n", g_claimed_interface[i], e);
+#endif
+
+		e = libusb_attach_kernel_driver(g_dh, g_claimed_interface[i]);
+#ifdef _DEBUG_MODE_
+		fprintf(stderr, "DEBUG: [discover]End of attache %d ,%d \n", g_claimed_interface[i], e);
+#endif
+		g_claimed_interface[i] = 0;
+	}
+	g_usblp_attached = 0;
+	
+	/*----------close device----------- */
+	if(g_dh != NULL) {
+		libusb_close(g_dh);
+		g_dh = NULL;
 	}
 	
 	return 0;
@@ -457,13 +498,17 @@ int CNIF_USB_Discover()
 							}
 							
 							/*-----------------claim interface-------------*/
-							if((err = libusb_claim_interface(g_dh, g_num[1])) < 0) {
+							while((err = libusb_claim_interface(g_dh, g_num[1])) < 0) {
+								if (err != LIBUSB_ERROR_BUSY) {
 #ifdef _DEBUG_MODE_
 								fprintf(stderr, "ERROR: [discover]libusb_claim_interface Error.%d (%d)\n", g_num[1], err);
 #endif
 								err = CN_USB_WRITE_ERROR;
 								goto onErr;
+									
+								}
 							}
+							
 #ifdef _DEBUG_MODE_
 							fprintf(stderr, "DEBUG: [discover]End of claim interface %d \n", g_num[1]);
 #endif
@@ -511,12 +556,13 @@ int CNIF_USB_Discover()
 							/* make device uri */
 							memset(dev_uri, 0, sizeof(dev_uri));
 							snprintf(dev_uri, sizeof(dev_uri), "direct cnijbe://Canon/?port=usb&serial=%s \"%s\" \"USB Printer #%d with status readback for Canon IJ\"", serial, value, ++n);
+
 							fprintf(stdout, "%s\n", dev_uri);
 						}
 					}
 				}
 			}
-			CNIF_USB_Close();
+			CNIF_USB_OneDeviceClose();
 		}
 	}
 onErr:
@@ -651,7 +697,7 @@ int CNIF_USB_CmpSerialNum(const char *serial)
 	fprintf(stderr, "DEBUG: get_serialNum = %s, know serialnum = %s\n", tmp_serial, serial);
 #endif
 
-	if(strncmp(tmp_serial, serial, sizeof(serial))){
+	if(strncmp(tmp_serial, serial, length)){
 		return CN_USB_WRITE_ERROR;
 	}
 #ifdef _DEBUG_MODE_
@@ -659,107 +705,5 @@ int CNIF_USB_CmpSerialNum(const char *serial)
 #endif
 
 	return 0;
-}
-
-int CNIF_USB_MakeDeviceUri(uint8_t *uri_buffer, size_t buf_size)
-{
-	int err = 0;
-	ssize_t numdev;
-	int length = 0;
-	char serial[CN_SERIAL_NUM_LEN];
-	//char dev_uri[1024];
-	struct libusb_device_descriptor devdesc;
-	const struct libusb_interface *iptr = NULL;					/* Array of interface descriptors */
-	const struct libusb_interface_descriptor *altptr = NULL;	/* interface descriptor */
-	int i, cNum, iNum, altNum;
-	
-	err = libusb_init(&g_context);
-	if (err < 0){
-#ifdef _DEBUG_MODE_
-		fprintf(stderr, "ERROR: libusb_init was failed\n");
-#endif
-		return CN_USB_WRITE_ERROR;
-	}
-	/*-------------search canon printer--------------*/
-	numdev = libusb_get_device_list(NULL, &g_list);
-	if((int)numdev == 0) {
-		return CN_USB_WRITE_ERROR;
-	}
-	
-	for(i = 0; i < numdev; i++) {
-		g_device = g_list[i];
-		
-		err = libusb_get_device_descriptor(g_device, &devdesc);
-		if(err < 0) {
-			
-#ifdef _DEBUG_MODE_
-			fprintf(stderr, "ERROR: get device descriptor was failed\n");
-#endif
-			return CN_USB_WRITE_ERROR;
-		}
-		if(devdesc.idVendor == CN_USB_VENDERID) {
-			
-#ifdef _DEBUG_MODE_
-			fprintf(stderr, "DEBUG: [make]canon device found\n");
-#endif
-			/*-----------------device open------------------*/
-			g_dh = libusb_open_device_with_vid_pid(NULL, devdesc.idVendor, devdesc.idProduct);
-			if(g_dh == NULL) {
-				
-#ifdef _DEBUG_MODE_
-				fprintf(stderr, "ERROR: usb_open was failed.\n");//ERROR_MSG
-#endif
-				err = CN_USB_WRITE_ERROR;
-				goto onErr;
-			}
-			/*-----------------serch interface--------------*/
-			for(cNum = 0; cNum < devdesc.bNumConfigurations; cNum++) {
-				if(libusb_get_config_descriptor(g_device, cNum, &g_cptr) < 0){
-					continue;
-				}
-				for(iNum = 0; iNum < g_cptr->bNumInterfaces; iNum++) {
-					iptr = g_cptr->interface + iNum;
-					for(altNum = 0; altNum < iptr->num_altsetting; altNum++){
-						altptr = iptr->altsetting + altNum;
-					    
-						if(altptr->bInterfaceClass == LIBUSB_CLASS_PRINTER){
-							/*-----------------kernel setting--------------*/
-							if (libusb_kernel_driver_active(g_dh, iNum) == 1) { 
-#ifdef _DEBUG_MODE_
-								fprintf(stderr, "ERROR: kernel driver active\n");
-#endif
-								if(libusb_detach_kernel_driver(g_dh, iNum) == 0) {
-									
-#ifdef _DEBUG_MODE_
-								     fprintf(stderr, "ERROR: kernel driver detached!\n");
-#endif
-								} else {
-									err = CN_USB_WRITE_ERROR;
-									goto onErr;
-								}
-						    }
-							length = libusb_get_string_descriptor_ascii(g_dh, devdesc.iSerialNumber,
-																	 (unsigned char *)serial,
-																	 sizeof(serial) - 1);
-							if(length > 0) {
-								serial[length] = '\0';
-							}
-							//Make Uri
-							memset(uri_buffer, 0, buf_size);
-							snprintf((char *)uri_buffer, buf_size, "cnijbe://Canon/?port=usb&serial=%s", serial);
-							fprintf(stderr, "DEBUG: [make]URI = %s\n", uri_buffer);
-							
-							goto onErr;
-						}
-					}
-				}
-			}
-			CNIF_USB_Close();
-		}
-		
-	}
-onErr:
-	CNIF_USB_Close();
-	return err;
 }
 

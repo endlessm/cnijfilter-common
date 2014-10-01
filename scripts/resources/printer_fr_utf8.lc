@@ -1,8 +1,7 @@
 ##############################################################################
 ##
 ##  Canon Inkjet Printer Driver for Linux
-##  Copyright CANON INC. 2001-2011
-##  All Rights Reserved.
+##  Copyright CANON INC. 2001-2014
 ##
 ##  This program is free software; you can redistribute it and/or modify
 ##  it under the terms of the GNU General Public License as published by
@@ -22,7 +21,6 @@
 L_INST_PRN_00_01="Pilote d'imprimante Canon Inkjet"
 L_INST_PRN_00_02="Version %s"
 L_INST_PRN_00_03="Copyright CANON INC. %s-%s"
-L_INST_PRN_00_04="Tous droits réservés."
 
 L_INST_PRN_01_01="Enregistrer l'imprimante\n"
 L_INST_PRN_01_02="Ensuite, enregistrez l'imprimante sur l'ordinateur.\n"

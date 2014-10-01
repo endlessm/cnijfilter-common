@@ -1,7 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
  *  Copyright CANON INC. 2009-2013
- *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -49,6 +48,7 @@
 
 int CNIF_USB_Open(const char *device_id, CNIF_INFO *if_info);
 int CNIF_USB_Close();
+int CNIF_USB_OneDeviceClose();
 int CNIF_USB_Reset();
 int CNIF_USB_Read(uint8_t *buffer, size_t bufferSize, size_t *readSize);
 int CNIF_USB_Write(uint8_t *buffer, size_t bufferSize, size_t *writtenSize);

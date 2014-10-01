@@ -1,5 +1,5 @@
 AC_INIT(cngpij/bjcups.c)
-AM_INIT_AUTOMAKE(cngpij, 4.00-1)
+AM_INIT_AUTOMAKE(cngpij, 4.10-1)
 
 AM_CONFIG_HEADER(config.h)
 

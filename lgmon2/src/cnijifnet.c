@@ -1,7 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
  *  Copyright CANON INC. 2013
- *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -78,30 +77,17 @@ int CNIF_Network_Open(const char *_deviceID, CNIF_INFO *_if_info)
 	    detect specified printers
 	*/
 	{
-		//int i, j;
 		int found=0;
-		
-		//for (i=0; !isCanceled; i++){
-			
-			memset(ipaddr, 0x00, STRING_SHORT);
-			if (CNNL_GetIPAddressEx(hnd, CACHE_PATH, _deviceID, ipaddr, STRING_SHORT, CNNET_SEARCH_AUTO, 1, 5000) == CNNL_RET_SUCCESS){
-				found=1;
-				//break;
-			}
-			
-			//for (j=0; j<WAITTIME_FIND_PRINTERS; j++, sleep(1)){
-			//	// cancelled
-			//	if (isCanceled) goto error_init;
-			//}
-		//}
-		
-		/* not found */
-		if (found == 0){
-			goto error_init;
+		memset(ipaddr, 0x00, STRING_SHORT);
+		if (CNNL_GetIPAddressEx(hnd, CACHE_PATH, _deviceID, ipaddr, STRING_SHORT, CNNET_SEARCH_AUTO, 1, 5000) == CNNL_RET_SUCCESS){
+			found=1;
 		}
 		
+		/* not found */
+		if (found == 0) goto error_open;
+		
 		/* cancelled */
-		if (isCanceled) goto error_init;
+		if (isCanceled) goto error_open;
 	}
 	
 	/* ---------------------------------------------------------------------
@@ -261,7 +247,7 @@ int CNIF_Network_Discover(int installer)
 	nic = (CNNLNICINFO *)malloc(sizeof(CNNLNICINFO)*max);
 	memset(nic, 0x00, sizeof(CNNLNICINFO)*max);
 	
-	if (CNNL_SearchPrintersEx(hmdl, nic, CACHE_PATH, max, &found, (installer==1)? CNNET_SEARCH_BROADCAST:CNNET_SEARCH_AUTO, 1, 5000) == CNNL_RET_SUCCESS){
+	if (CNNL_SearchPrintersEx(hmdl, nic, CACHE_PATH, max, &found, CNNET_SEARCH_BROADCAST, 1, (installer==1)? 5000:3000) == CNNL_RET_SUCCESS){
 		
 		for (j=0; j<found; j++){
 			

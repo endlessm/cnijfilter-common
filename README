@@ -18,23 +18,25 @@ How to build rpm:
     You can set the following [Printer Model Name]/[Printer Model ID].
         [Printer Model Name]        [Printer Model ID]
     ------------------------------------------------------------------
-         mx720                       416
-         mx920                       417
-         mx390                       418
-         mx450                       419
-         mx520                       420
-         e610                        421
+        ix6700                      431
+        ix6800                      432
+        ip2800                      433
+        mx470                       434
+        mx530                       435
+        ip8700                      436
+        e560                        437
+        e400                        438
 
 
 Example:
 ========
-    * Example for build MX720 package:
+    * Example for build iX6700 package:
 	----------------------------------
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --define="MODEL mx720" --define="MODEL_NUM 416" --with build_common_package	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --define="MODEL ix6700" --define="MODEL_NUM 431" --with build_common_package	
 
-    * Example for build MX720/MX920/MX390 packages:
+    * Example for build iX6700/iX6800/iP2800 packages:
 	-----------------------------------------------
     $ rpmbuild -tc cnijfilter-source-X.XX-Y.tar.gz --with prepare_fastbuild
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL mx720" --define="MODEL_NUM 416" --with build_common_package	
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL mx920" --define="MODEL_NUM 417"	
-    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL mx390" --define="MODEL_NUM 418"	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL ix6700" --define="MODEL_NUM 431" --with build_common_package	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL ix6800" --define="MODEL_NUM 432"	
+    $ rpmbuild -tb cnijfilter-source-X.XX-Y.tar.gz --with fastbuild --define="MODEL ip2800" --define="MODEL_NUM 433"	

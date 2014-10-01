@@ -1,8 +1,7 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
  *  Copyright CANON INC. 2001-2013
- *  All Rights Reserved.
- *
+ * *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; version 2 of the License.
@@ -160,6 +159,16 @@
 #define CND_MG2500	      (1429)
 #define CND_P200	      (1430)
 
+#define CND_IX6700        (1431)
+#define CND_IX6800        (1432)
+#define CND_IP2800        (1433)
+#define CND_MX470         (1434)
+#define CND_MX530         (1435)
+#define CND_IP8700        (1436)
+#define CND_E560          (1437)
+#define CND_E400          (1438)
+
+
 /* MediaType (MediaType) */
 #define	CND_MEDIA_MATTE		(1028)
 #define	CND_MEDIA_SUPER_PHOTO	(1029)
@@ -177,6 +186,7 @@
 #define CND_MEDIA_CONTENTS_PROPHOTO				(1055)
 #define CND_MEDIA_ADDRESS_POSTCARD				(1056)
 #define CND_MEDIA_PHOTO_PAPER_PRO_LUSTER		(1063)
+#define CND_MEDIA_GLOSSY_PAPER_STANDARD         (1068)
 
   /* !!!!  When add, increase CND_MEDIA_MAX  !!!!  */
 #define CND_MEDIA_MAX (18+16) /* media num(cncldef.h + this file) */
@@ -211,6 +221,10 @@
 
 #define CND_SIZE_A4_ART_35_2    (1088)
 #define CND_SIZE_LETTER_ART_35_2 (1090)
+
+#define CND_SIZE_A3_ART_35_2      (1089)
+#define CND_SIZE_A3_PLUS_ART_35_2 (1093)
+
 
 #define CND_SIZE_HIVISION       (1082)
 

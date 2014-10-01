@@ -1,7 +1,6 @@
 /*
  *  Canon Inkjet Printer Driver for Linux
  *  Copyright CANON INC. 2013
- *  All Rights Reserved.
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -204,28 +203,6 @@ int CNIF_GetSerialNum(CNIF_INFO *_if_info, uint8_t *buffer, size_t bufferSize, c
 	
 onErr:
 	return CN_LGMON_ERROR;
-}
-
-//‰¼‚ÌŠÖ”
-int CNIF_MakeDeviceUri(CNIF_INFO *_if_info, uint8_t *uri_buffer, size_t buf_size)
-{
-	switch (_if_info->ifType)
-	{
-		case CNIF_TYPE_USB:
-			return CNIF_USB_MakeDeviceUri(uri_buffer, buf_size);
-			break;
-		case CNIF_TYPE_NET:
-			//Make Uri
-			memset(uri_buffer, 0, buf_size);
-			snprintf((char *)uri_buffer, buf_size, "cnijbe://Canon/?port=net&serial=18-0C-AC-2D-61-6E");
-			return CN_LGMON_OK;
-			break;
-		default:
-			break;
-	}
-	
-	
-	return CN_LGMON_OK;
 }
 
 int CNIF_Discover(CNIF_INFO *_if_info, int installer)

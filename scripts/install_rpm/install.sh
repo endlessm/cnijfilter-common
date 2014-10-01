@@ -3,8 +3,7 @@
 ##############################################################################
 ##
 ##  Canon Inkjet Printer Driver for Linux
-##  Copyright CANON INC. 2001-2013
-##  All Rights Reserved.
+##  Copyright CANON INC. 2001-2014
 ##
 ##  This program is free software; you can redistribute it and/or modify
 ##  it under the terms of the GNU General Public License as published by
@@ -21,8 +20,8 @@
 ##
 ##############################################################################
 
-C_version="4.00-1"
-C_copyright_end="2013"
+C_version="4.10-1"
+C_copyright_end="2014"
 C_default_system="rpm"
 
 L_INST_COM_01_01="Command executed = %s\n"
@@ -43,7 +42,6 @@ L_INST_COM_03_01="[Package]\n"
 L_INST_PRN_00_01="Canon Inkjet Printer Driver"
 L_INST_PRN_00_02="Version %s"
 L_INST_PRN_00_03="Copyright CANON INC. %s-%s"
-L_INST_PRN_00_04="All Rights Reserved."
 
 L_INST_PRN_01_01="Register Printer\n"
 L_INST_PRN_01_02="Next, register the printer to the computer.\n"
@@ -117,6 +115,7 @@ P_cupsd_command_current=""
 P_lpadmin_command_full="/usr/sbin/lpadmin"
 P_lpadmin_command_current=""
 P_is_std_usb_backend=0
+P_ppd_install_path="/usr/share/cups/model/"
 
 #################################################################
 #### Show the copyright  $1:version
@@ -125,14 +124,12 @@ P_FUNC_show_copyright()
 {
 #	p_copyright1="Canon Inkjet Printer Driver Ver."$1" for Linux"
 #	p_copyright2="Copyright CANON INC. 2001-2011"
-#	p_copyright3="All Rights Reserved."
 
 #	echo $p_copyright1; echo $p_copyright2; echo $p_copyright3
 
 	printf "$L_INST_PRN_00_01\n"
 	printf "$L_INST_PRN_00_02\n" "$1"
 	printf "$L_INST_PRN_00_03\n" "$C_copyright_start" "$C_copyright_end"
-	printf "$L_INST_PRN_00_04\n"
 }
 
 #################################################################
@@ -1019,7 +1016,7 @@ P_FUNC_MAIN_make_queue()
 	if [ $P_is_std_usb_backend -ne 0 ]; then
 		p_local_BACKENDNAME="usb"
 	fi
-	p_FUNC_show_and_exec_printer "$P_lpadmin_command_current -p $p_local_ENTRYNAME -m $p_local_PPDNAME -v $p_local_BACKENDNAME:$P_current_uri -E" 1
+	p_FUNC_show_and_exec_printer "$P_lpadmin_command_current -p $p_local_ENTRYNAME -P ${P_ppd_install_path}$p_local_PPDNAME -v $p_local_BACKENDNAME:$P_current_uri -E" 1
 	if [ $? -ne 0 ]; then
 		printf "$L_INST_PRN_01_27"
 		exit		#quit immediately
