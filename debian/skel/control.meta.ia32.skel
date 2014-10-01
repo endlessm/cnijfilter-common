@@ -1,0 +1,23 @@
+Package: printer-driver-cnijfilter
+Architecture: i386
+Depends: ${misc:Depends},
+	%DEPENDENCIES%
+Description: Canon Inkjet printer drivers
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: printer-driver-cnijfilter-32
+Architecture: amd64 ia64
+Depends: ${misc:Depends},
+	%DEPENDENCIES_32%
+Description: Canon Inkjet printer drivers
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.
+
+Package: printer-driver-cnijfilter-64
+Architecture: amd64
+Depends: ${misc:Depends},
+	%DEPENDENCIES_64%
+Description: Canon Inkjet printer drivers
+ This IJ Printer Driver provides printing functions for Canon Inkjet
+ printers operating under the CUPS (Common UNIX Printing System) environment.

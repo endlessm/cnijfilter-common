@@ -7,7 +7,8 @@ if ( @ARGV != 1 ) {
 
 
 $fn = $ARGV[0];
-
+my $as64build32;
+my @printer_packages, @printer_packages_32, @printer_packages_64;
 
 open( IN, $fn );
 while( <IN> ){
@@ -99,14 +100,18 @@ while( <IN> ){
 			if ( $as64build32 eq "33" ){
 				`perl -pe 's/XXXX/${model}/' control.package.ia32.skel >> control`;
 				`perl -i -pe 's/VERSION/${version}/' control`;
+				push @printer_packages, "cnijfilter-${model}series";
+				push @printer_packages_32, "cnijfilter-${model}series-32";
 				if ( $cputype eq "64" ){
 					`perl -pe 's/XXXX/${model}/' control.package.amd64.skel >> control`;
 					`perl -i -pe 's/VERSION/${version}/' control`;
+					push @printer_packages_64, "cnijfilter-${model}series-64";
 				}
 			}else{
 				`perl -pe 's/XXXX/${model}/' control.package.skel >> control`;
 				`perl -i -pe 's/VERSION/${version}/' control`;
 				`perl -i -pe 's/ARCHITECTURE/$buildtype/' control`;
+				push @printer_packages, "cnijfilter-${model}series";
 			}
 		}
 	}
@@ -156,18 +161,35 @@ while( <IN> ){
 				`perl -pe 's/XXXX/${model}/' control.package.ppd.ia32.skel >> control`;
 				`perl -i -pe 's/VERSION/${version}/' control`;
 				`perl -i -pe 's/YYYY/${model2}/' control`;
+				push @printer_packages, "cnijfilter-${model}series";
+				push @printer_packages_32, "cnijfilter-${model}series-32";
 				if ( $cputype eq "64" ){
 					`perl -pe 's/XXXX/${model}/' control.package.ppd.amd64.skel >> control`;
 					`perl -i -pe 's/VERSION/${version}/' control`;
 					`perl -i -pe 's/YYYY/${model2}/' control`;
+					push @printer_packages_64, "cnijfilter-${model}series-64";
 				}
 			}else{
 				`perl -pe 's/XXXX/${model}/' control.package.ppd.skel >> control`;
 				`perl -i -pe 's/VERSION/${version}/' control`;
 				`perl -i -pe 's/YYYY/${model2}/' control`;
 				`perl -i -pe 's/ARCHITECTURE/$buildtype/' control`;
+				push @printer_packages, "cnijfilter-${model}series";
 			}
 		}
 	}
 }
 close( IN );
+
+# Printer metapackages
+$deps = join(",\n\t", @printer_packages);
+$deps_32 = join(",\n\t", @printer_packages_32);
+$deps_64 = join(",\n\t", @printer_packages_64);
+
+if ( $as64build32 eq "33" ){
+	`perl -pe 's/%DEPENDENCIES%/${deps}/' control.meta.ia32.skel >> control`;
+	`perl -i -pe 's/%DEPENDENCIES_32%/${deps_32}/' control`;
+	`perl -i -pe 's/%DEPENDENCIES_64%/${deps_64}/' control`;
+}else{
+	`perl -pe 's/%DEPENDENCIES%/${deps}/' control.meta.skel >> control`;
+}
