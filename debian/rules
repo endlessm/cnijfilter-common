@@ -13,7 +13,7 @@
 PRINTER_BUILD_VERSION=4.00
 
 # define build amd64 as ia32 libs
-PRINTER_BUILD_64_AS=33
+PRINTER_BUILD_64_AS=64
 
 # define package name
 COMMON_PKG=cnijfilter-common
