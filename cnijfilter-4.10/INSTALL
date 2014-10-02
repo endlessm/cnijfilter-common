@@ -1,0 +1,32 @@
+To build and install cif command:
+
+        ./autogen.sh --program-suffix=<Printer Model Name>
+        make
+        make install
+
+        * You can set the following <Printer Model Name>.
+            ix6700, ix6800, ip2800, mx470, mx530, ip8700, e560, e400
+
+
+            
+Example ix6700:
+
+        ./autogen.sh --program-suffix=ix6700
+        make
+        make install
+
+
+Appendix:
+
+        * You can also set the following path.
+           --prefix
+                cif command (ex.cifix6700)               : default ... /usr/local
+           --enable-libpath
+                *.conf,*.tbl(ex.cifix6700.conf)          : default ... /usr/lib/bjlib
+
+       Example:
+
+           ./autogen.sh --program-suffix=ix6700 --enable-libpath=/usr/lib/bjlib
+           make
+           make install
+

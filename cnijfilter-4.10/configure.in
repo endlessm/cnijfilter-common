@@ -1,0 +1,75 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(configure.in)
+
+if test "${program_suffix}" = "NONE"; then
+  program_suffix="ix6700"
+  program_transform_name="s,\$\$,${program_suffix},;"
+fi
+
+AC_ARG_ENABLE(libpath)
+if test "${enable_libpath}" = ""; then
+  enable_libpath="/usr/lib/bjlib"
+fi
+
+AC_DEFINE_UNQUOTED(XBJLIBPATH, $enable_libpath)
+AC_SUBST(XBJLIBPATH)
+
+
+AC_ARG_ENABLE(binpath)
+if test "${enable_binpath}" = ""; then
+  enable_binpath="/usr/local/bin"
+fi
+
+AC_DEFINE_UNQUOTED(XBINPATH, $enable_binpath)
+AC_SUBST(XBINPATH)
+
+
+AM_INIT_AUTOMAKE(cif${program_suffix}, 4.10-1)
+AM_CONFIG_HEADER(config.h)
+
+dnl Checks for programs.
+AC_ISC_POSIX
+
+case "${program_suffix}" in
+    ix6700) CNCL_LIB_ID=431;;
+    ix6800) CNCL_LIB_ID=432;;
+    ip2800) CNCL_LIB_ID=433;;
+    mx470) CNCL_LIB_ID=434;;
+    mx530) CNCL_LIB_ID=435;;
+    ip8700) CNCL_LIB_ID=436;;
+    e560) CNCL_LIB_ID=437;;
+    e400) CNCL_LIB_ID=438;;
+  CN_IJ_MODEL) CNCL_LIB_ID=CN_IJ_MODEL_NUM;;
+esac
+AC_SUBST(CNCL_LIB_ID)
+
+ARC=`getconf LONG_BIT`
+AC_SUBST(ARC)
+
+AC_PROG_CC
+AM_PROG_CC_STDC
+
+dnl Checks for libraries.
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_CHECK_HEADERS(unistd.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_TYPE_SIZE_T
+
+dnl OPTION
+CFLAGS="-O2"
+
+dnl Checks for library functions.
+AC_CHECK_FUNCS(socket)
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+include/Makefile
+include/cncl/Makefile
+include/misc/Makefile
+])
