@@ -56,5 +56,6 @@ stamp-h1
 /debian/*.substvars
 /debian/cnijfilter-*/
 /debian/files
+/debian/printer-driver-cnijfilter/
 build-stamp
 configure-stamp
