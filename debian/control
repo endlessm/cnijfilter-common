@@ -5,7 +5,7 @@ Maintainer: Canon Inc. <sup-debian@list.canon.co.jp>
 Build-Depends: debhelper (>= 4.0.0), libcupsys2-dev | libcups2-dev,
                libxml2-dev, libtiff-dev, automake, autoconf,
                autotools-dev, libtool, libglib2.0-dev, libgtk2.0-dev,
-               libpopt-dev, libusb-1.0-0-dev
+               libpopt-dev, libusb-1.0-0-dev, libtool
 Standards-Version: 3.7.2
 
 Package: cnijfilter-common
