@@ -5,6 +5,7 @@ Name=Printui-YYYY
 Exec=cngpij -P Canon-YYYY
 Icon=printer.png
 Categories=Graphics
+NoDisplay=true
 Type=Application
 Terminal=false
 Comment="printui" is a GUI program for Canon Inkjet Printer. You can easily select several parameters for printing.
