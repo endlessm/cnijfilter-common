@@ -1,9 +1,3 @@
-cnijfilter-common (4.10endless1) eos; urgency=low
-
-  * Debian packaging changes to build on Endless.
-
- -- Dan Nicholson <nicholson@endlessm.com>  Wed, 01 Oct 2014 17:24:16 -0700
-
 cnijfilter-common (4.10) unstable; urgency=low
 
   * Add Canon 4.10 release.

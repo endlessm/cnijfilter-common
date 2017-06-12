@@ -5,6 +5,7 @@ Name=Cngpijmon-YYYY
 Exec=cngpijmonXXXX
 Icon=printer.png
 Categories=Graphics
+NoDisplay=true
 Type=Application
 Terminal=false
 Comment=Status monitor for Canon Inkjet Printer Driver under CUPS.

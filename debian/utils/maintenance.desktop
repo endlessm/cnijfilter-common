@@ -5,6 +5,7 @@ Name=Canon-Printer-Maintenance
 Exec=canon-maintenance
 Icon=printer.png
 Categories=Graphics
+NoDisplay=true
 Type=Application
 Terminal=false
 Comment="maintenance" is a GUI program for Canon Inkjet Printer. You can easily select several parameters for printing.
