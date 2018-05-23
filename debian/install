@@ -1,4 +1,4 @@
 debian/utils/maintenance.desktop		/usr/share/applications/
-debian/utils/cngpijmon.desktop			/usr/share/applications/
+#debian/utils/cngpijmon.desktop			/usr/share/applications/
 debian/utils/canon-maintenance			/usr/bin/
-debian/utils/canon-ijmon				/usr/bin/
+#debian/utils/canon-ijmon				/usr/bin/

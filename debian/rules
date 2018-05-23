@@ -178,7 +178,8 @@ PRINTER_PKG_PROGRAM+=ppd
 PRINTER_PKG_PROGRAM+=cnijfilter
 PRINTER_PKG_PROGRAM+=printui
 PRINTER_PKG_PROGRAM+=lgmon
-PRINTER_PKG_PROGRAM+=cngpijmon
+# Endless: we do not install the UI programs
+#PRINTER_PKG_PROGRAM+=cngpijmon
 
 PRINTER_PKG_PPD+=cnijfilter-i550-2.20-pixus550i-32
 PRINTER_PKG_PPD+=cnijfilter-i850-2.20-pixus850i-32
