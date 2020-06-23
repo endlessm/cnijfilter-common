@@ -30,6 +30,47 @@
 #include "bjcupsmon_common.h"
 #include "bjcupsmon_cups.h"
 
+#if (CUPS_VERSION_MAJOR > 1) || (CUPS_VERSION_MINOR > 5)
+#define HAVE_CUPS_1_6 1
+#endif
+
+#ifndef HAVE_CUPS_1_6
+#define ippGetCount(attr)     attr->num_values
+#define ippGetGroupTag(attr)  attr->group_tag
+#define ippGetValueTag(attr)  attr->value_tag
+#define ippGetName(attr)      attr->name
+#define ippGetBoolean(attr, element) attr->values[element].boolean
+#define ippGetInteger(attr, element) attr->values[element].integer
+#define ippGetStatusCode(ipp) ipp->request.status.status_code
+#define ippGetString(attr, element, language) attr->values[element].string.text
+
+static ipp_attribute_t * ippFirstAttribute( ipp_t *ipp )
+{
+	if (!ipp)
+		return (NULL);
+	return (ipp->current = ipp->attrs);
+}
+
+static ipp_attribute_t * ippNextAttribute( ipp_t *ipp )
+{
+	if (!ipp || !ipp->current)
+		return (NULL);
+	return (ipp->current = ipp->current->next);
+}
+
+static int ippSetOperation( ipp_t *ipp, ipp_op_t op )
+{
+	ipp->request.op.operation_id = op;
+	return (1);
+}
+
+static int ippSetRequestId( ipp_t *ipp, int request_id )
+{
+	ipp->request.any.request_id = request_id;
+	return (1);
+}
+#endif
+
 //////////////////////////////////////////////////////////////
 // 
 // CS     :	PRIVATE cups_lang_t * bjcupsLangDefault()
@@ -231,7 +272,7 @@ PRIVATE gint checkPrinterState(gchar *pDestName, gchar *pURI, gchar *pServerName
 			}
 			else {
 				if ((pAttribute = ippFindAttribute(pResponse, "printer-state", IPP_TAG_ENUM)) != NULL) {
-					printerState = (ipp_state_t)pAttribute->values[0].integer;
+					printerState = (ipp_state_t)ippGetInteger(pAttribute, 0);
 				}
 			}
 			
@@ -306,12 +347,12 @@ PUBLIC gint getPrinterStatus(gchar *pDestName, gchar *pStatus, gint bufSize)
 					/* for Network Ver.3.10 */
 					//pAttribute = ippFindAttribute(pResponse, "device-uri", IPP_TAG_URI);
 					//if (pAttribute != NULL) {
-					//	strncpy(pStatus, pAttribute->values[0].string.text, bufSize);
-					//	printf("DeviceURI = %s\n",pAttribute->values[0].string.text);
+					//	strncpy(pStatus, pippGetString(pAttribute, 0, ""), bufSize);
+					//	printf("DeviceURI = %s\n",pippGetString(pAttribute, 0, ""));
 					//}
 					pAttribute = ippFindAttribute(pResponse, "printer-state-message", IPP_TAG_TEXT);
 					if (pAttribute != NULL) {
-						strncpy(pStatus, pAttribute->values[0].string.text, bufSize);
+						strncpy(pStatus, pippGetString(pAttribute, 0, ""), bufSize);
 					}
 				}
 				ippDelete(pResponse);
@@ -464,24 +505,24 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 				pAttribute = pResponse->attrs;
 
 				while (pAttribute != NULL) {
-					while (pAttribute != NULL && pAttribute->group_tag != IPP_TAG_JOB) {
-						pAttribute = pAttribute->next;
+					while (pAttribute != NULL && ippGetGroupTag(pAttribute) != IPP_TAG_JOB) {
+						pAttribute = ippNextAttribute(pAttribute);
 					}
 					if (pAttribute == NULL) {
 						break;
 					}
 					
-					while (pAttribute != NULL && pAttribute->group_tag == IPP_TAG_JOB) {
-						if (strcmp(pAttribute->name, "job-id") == 0 && pAttribute->value_tag == IPP_TAG_INTEGER) {
-							jobID = pAttribute->values[0].integer;
+					while (pAttribute != NULL && ippGetGroupTag(pAttribute) == IPP_TAG_JOB) {
+						if (strcmp(ippGetName(pAttribute), "job-id") == 0 && ippGetValueTag(pAttribute) == IPP_TAG_INTEGER) {
+							jobID = ippGetInteger(pAttribute, 0);
 						}
-						if (strcmp(pAttribute->name, "job-state") == 0 && pAttribute->value_tag == IPP_TAG_ENUM) {
-							jobState = (ipp_jstate_t)pAttribute->values[0].integer;
+						if (strcmp(ippGetName(pAttribute), "job-state") == 0 && ippGetValueTag(pAttribute) == IPP_TAG_ENUM) {
+							jobState = (ipp_jstate_t)ippGetInteger(pAttribute, 0);
 						}
-						if (strcmp(pAttribute->name, "job-originating-user-name") == 0 && pAttribute->value_tag == IPP_TAG_NAME) {
-							pJobUserName = pAttribute->values[0].string.text;
+						if (strcmp(ippGetName(pAttribute), "job-originating-user-name") == 0 && ippGetValueTag(pAttribute) == IPP_TAG_NAME) {
+							pJobUserName = pippGetString(pAttribute, 0, "");
 						}
-						pAttribute = pAttribute->next;
+						pAttribute = ippNextAttribute(pAttribute);
 					}
 					if (jobState == IPP_JOB_PROCESSING) {
 						if (pJobUserName != NULL) {
@@ -498,7 +539,7 @@ PRIVATE gint getJobID(gchar *pDestName, gchar *pURI, gchar *pServerName, gint *p
 					}
 
 					if (pAttribute != NULL)
-						pAttribute = pAttribute->next;
+						pAttribute = ippNextAttribute(pAttribute);
 				}
 			}
 			
@@ -556,8 +597,8 @@ PRIVATE gint getPrinterURI(gchar *pDestName, gchar *pURI, gchar *pServerName, gi
 	else {
 		pRequest = ippNew();
 		
-		pRequest->request.op.operation_id = CUPS_GET_PRINTERS;
-		pRequest->request.op.request_id   = 1;
+		ippSetOperation(pRequest, CUPS_GET_PRINTERS);
+		ippSetRequestId(pRequest, 1);
 		
 		pLanguage = bjcupsLangDefault();	// cupsLangDefault() -> bjcupsLangDefault() for cups-1.1.19
 		
@@ -566,28 +607,28 @@ PRIVATE gint getPrinterURI(gchar *pDestName, gchar *pURI, gchar *pServerName, gi
 		ippAddStrings(pRequest, IPP_TAG_OPERATION, IPP_TAG_KEYWORD, "requested-attributes", sizeof(attributes) / sizeof(attributes[0]), NULL, attributes);
 		
 		if ((pResponse = cupsDoRequest(pHTTP, pRequest, "/")) != NULL) {
-			if (pResponse->request.status.status_code > IPP_OK_CONFLICT) {
+			if (ippGetStatusCode(pResponse) > IPP_OK_CONFLICT) {
 				retVal = ID_ERR_CUPS_API_FAILED;
 			}
 			else {
-				pAttribute = pResponse->attrs;
+				pAttribute = ippFirstAttribute(pResponse);
 
 				while (pAttribute != NULL) {
-					while (pAttribute != NULL && pAttribute->group_tag != IPP_TAG_PRINTER) {
-						pAttribute = pAttribute->next;
+					while (pAttribute != NULL && ippGetGroupTag(pAttribute) != IPP_TAG_PRINTER) {
+						pAttribute = ippNextAttribute(pAttribute);
 					}
 					if (pAttribute == NULL) {
 						break;
 					}
 					
-					while (pAttribute != NULL && pAttribute->group_tag == IPP_TAG_PRINTER) {
-						if (strcmp(pAttribute->name, "printer-name") == 0 && pAttribute->value_tag == IPP_TAG_NAME) {
-							pPrinter = pAttribute->values[0].string.text;
+					while (pAttribute != NULL && ippGetGroupTag(pAttribute) == IPP_TAG_PRINTER) {
+						if (strcmp(ippGetName(pAttribute), "printer-name") == 0 && ippGetValueTag(pAttribute) == IPP_TAG_NAME) {
+							pPrinter = pippGetString(pAttribute, 0, "");
 						}
-						if (strcmp(pAttribute->name, "printer-uri-supported") == 0 && pAttribute->value_tag == IPP_TAG_URI) {
-							pUri = pAttribute->values[0].string.text;
+						if (strcmp(ippGetName(pAttribute), "printer-uri-supported") == 0 && ippGetValueTag(pAttribute) == IPP_TAG_URI) {
+							pUri = pippGetString(pAttribute, 0, "");
 						}
-						pAttribute = pAttribute->next;
+						pAttribute = ippNextAttribute(pAttribute);
 					}
 					
 					// Tora 020418: Compare two printer names ignoring the character case.
@@ -604,7 +645,7 @@ PRIVATE gint getPrinterURI(gchar *pDestName, gchar *pURI, gchar *pServerName, gi
 					}
 
 					if (pAttribute != NULL)
-						 pAttribute = pAttribute->next;
+						 pAttribute = ippNextAttribute(pAttribute);
 				}
 			}
 			
@@ -676,21 +717,21 @@ PUBLIC gint getDeviceURI(gchar *pDestName, gchar *pDeviceURI, gint bufSize)
 				pAttribute = pResponse->attrs;
 
 				while (pAttribute != NULL) {
-					while (pAttribute != NULL && pAttribute->group_tag != IPP_TAG_PRINTER) {
-						pAttribute = pAttribute->next;
+					while (pAttribute != NULL && ippGetGroupTag(pAttribute) != IPP_TAG_PRINTER) {
+						pAttribute = ippNextAttribute(pAttribute);
 					}
 					if (pAttribute == NULL) {
 						break;
 					}
 					
-					while (pAttribute != NULL && pAttribute->group_tag == IPP_TAG_PRINTER) {
-						if (strcmp(pAttribute->name, "printer-name") == 0 && pAttribute->value_tag == IPP_TAG_NAME) {
-							pPrinter = pAttribute->values[0].string.text;
+					while (pAttribute != NULL && ippGetGroupTag(pAttribute) == IPP_TAG_PRINTER) {
+						if (strcmp(ippGetName(pAttribute), "printer-name") == 0 && ippGetValueTag(pAttribute) == IPP_TAG_NAME) {
+							pPrinter = pippGetString(pAttribute, 0, "");
 						}
-						if (strcmp(pAttribute->name, "device-uri") == 0 && pAttribute->value_tag == IPP_TAG_URI) {
-							pDUri = pAttribute->values[0].string.text;
+						if (strcmp(ippGetName(pAttribute), "device-uri") == 0 && ippGetValueTag(pAttribute) == IPP_TAG_URI) {
+							pDUri = pippGetString(pAttribute, 0, "");
 						}
-						pAttribute = pAttribute->next;
+						pAttribute = ippNextAttribute(pAttribute);
 					}
 
 					if (strcasecmp(pDestName, pPrinter) == 0) {
@@ -699,7 +740,7 @@ PUBLIC gint getDeviceURI(gchar *pDestName, gchar *pDeviceURI, gint bufSize)
 					}
 					
 					if (pAttribute != NULL)
-						 pAttribute = pAttribute->next;
+						 pAttribute = ippNextAttribute(pAttribute);
 				}
 			}
 			
